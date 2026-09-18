@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>XnbStringTool</RootNamespace>
+    <AssemblyName>XnbStringTool</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- reference/ holds fetched MonoGame source used only to study the XNB format; not part of the build -->
+    <Compile Remove="reference/**/*.cs" />
+  </ItemGroup>
+
+</Project>

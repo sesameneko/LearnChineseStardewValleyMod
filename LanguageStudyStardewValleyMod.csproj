@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>LanguageStudyStardewValleyMod</RootNamespace>
+        <EnableHarmony>true</EnableHarmony>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <!-- tools/ holds separate standalone projects (see tools/*/*.csproj); keep them out of this project's own compilation -->
+      <Compile Remove="tools/**/*.cs" />
+      <None Remove="tools/**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <!-- bundled translation data (see Plan.md M0/M4); must be copied to the deployed mod folder to be loadable at runtime -->
+      <None Include="assets/**/*.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

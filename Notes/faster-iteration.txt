@@ -1,0 +1,108 @@
+FASTER ITERATION IDEAS
+======================
+Brainstormed while working on this mod, since a full game restart (SMAPI +
+Stardew Valley boot, plus manual menu navigation) is slow and this project
+will need a lot of restart-test-tweak cycles. Researched online where noted.
+Status markers: [DONE] already in place, [DECLINED] considered and rejected,
+[IDEA] not yet tried.
+
+
+QUICK WINS
+----------
+
+[DONE] Skip Steam's UI, launch SMAPI directly.
+  You can run the SMAPI binary directly from a terminal instead of clicking
+  through Steam's library each time -- Steam still needs to be running in the
+  background (Steamworks requirement), but no manual navigation.
+  Implemented as scripts/run.sh: builds the mod, then execs
+  Contents/MacOS/StardewModdingAPI directly.
+
+[IDEA] Kill the menu-clicking tax on every restart.
+  "Skip Intro" and "Auto Load Game" / "Quick Load" are real, currently-working
+  (1.6.15) mods on Nexus built for exactly this -- skip the splash/title
+  screen and auto-load a save. Combined with a dedicated tiny "dev save"
+  (empty farm, day 1), this turns "relaunch and get back to a hoverable item"
+  into a few seconds instead of a minute-plus of clicking.
+  - Skip Intro: https://www.nexusmods.com/stardewvalley/mods/533
+  These are dev-only conveniences, not meant to ship with the real mod.
+
+[DECLINED] Trim the Mods folder for dev sessions.
+  Idea was a separate stripped-down dev Mods folder (this mod + GMCM only) to
+  cut load time and log noise. Explicitly asked to leave the real Mods folder
+  alone, so not doing this.
+
+[DONE] Parameterize debug/test console commands.
+  Commands added via helper.ConsoleCommands.Add should take arguments (asset
+  name, locale code, etc.) so many test variations can be tried within one
+  running game session instead of rebuilding/restarting per variation.
+  Documented in CLAUDE.md; see ls_spike_locale in ModEntry.cs for the pattern.
+
+
+STRUCTURAL CHANGES (compounds over time)
+-----------------------------------------
+
+[DONE, as a practice -- keep applying it] Push real logic into plain,
+game-independent classes with a companion xunit test project, wherever the
+logic doesn't actually need a live StardewValley/MonoGame object (lookup
+tables, string/segment matching, position/hit-testing math, JSON parsing).
+Already the pattern used by tools/XnbStringTool + tools/XnbStringTool.Tests.
+Documented in CLAUDE.md. Most bugs get caught in milliseconds via
+`dotnet test`, and actual game launches are reserved for what can only be
+verified live: Harmony patch behavior, real rendering, GMCM's UI.
+
+[IDEA] Write our own "reload data" console command.
+  Mirrors Content Patcher's own `patch reload` command, which exists exactly
+  so content-pack authors can edit and reload without restarting the game.
+  Once we're loading bundled JSON (M4's explanatory translations, eventually
+  the TranslationIndex itself), a command that just re-reads the files and
+  rebuilds the index in-place means *data* edits never need a restart -- only
+  actual C# logic changes would still require one.
+
+
+WORTH A QUICK EXPERIMENT, UNCERTAIN PAYOFF
+--------------------------------------------
+
+[IDEA] .NET Hot Reload via a debugger-*launched* (not attached) session.
+  Both Rider and VS support applying method-body edits to a running process
+  without restarting -- but explicitly NOT for "Attach to Process" scenarios,
+  only for sessions the IDE itself launched (F5). Since SMAPI's own
+  executable is just a normal .NET console app, it's plausible you could
+  point an IDE's run configuration directly at the StardewModdingAPI binary
+  as the debug target and get real Hot Reload on this mod's DLL once it's
+  loaded. Couldn't find anyone confirming this specifically for SMAPI --
+  speculative, but cheap to try once. Would only help with pure method-body
+  tweaks (not new fields/methods, not Harmony-patch changes).
+
+
+NOT REALLY VIABLE
+------------------
+
+True headless rendering doesn't exist for this game. No dedicated-server
+binary, and no clean macOS equivalent of Linux's Xvfb for a MonoGame app like
+this. The "headless server" mods that exist (SMAPIDedicatedServerMod,
+JunimoServer, Docker images) are for automating a *multiplayer host*, and the
+ones that run "headless" only do so via xvfb-run on LINUX -- meaning a whole
+Linux VM/container just to get that. Maybe worth it eventually for a CI
+"does the mod even load" smoke test, but not for checking whether a tooltip
+renders in the right place.
+
+No built-in SMAPI feature to hot-swap compiled mod C# code without a full
+restart. Confirmed via search -- long-standing known gap, not something
+overlooked here. A truly hacky version (collectible AssemblyLoadContext per
+mod) is theoretically possible in modern .NET, but Harmony-patched methods
+don't unpatch cleanly on unload, so not worth chasing -- too fragile for the
+payoff.
+
+
+SOURCES (from the research pass)
+---------------------------------
+- https://stardewvalleywiki.com/Modding:Installing_SMAPI_on_Windows
+- https://github.com/Floogen/Stardrop/issues/175 (SMAPI console access on macOS)
+- https://github.com/Pathoschild/SMAPI/blob/develop/docs/technical/smapi.md
+- https://www.nexusmods.com/stardewvalley/mods/533 (Skip Intro)
+- https://github.com/ObjectManagerManager/SMAPIDedicatedServerMod
+- https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/troubleshooting.md
+- https://www.patreon.com/posts/whats-new-in-2-4-115260984 (Content Patcher 2.4.0 patch reload)
+- https://devblogs.microsoft.com/dotnet/introducing-net-hot-reload/
+- https://www.jetbrains.com/help/rider/Hot_Reload.html
+- https://learn.microsoft.com/en-us/visualstudio/debugger/hot-reload?view=visualstudio
