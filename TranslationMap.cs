@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace LanguageStudyStardewValleyMod
 {
@@ -117,8 +118,59 @@ namespace LanguageStudyStardewValleyMod
                 return true;
             }
 
-            return false;
+            return this.TryLookupByParagraph(displayedText!, out translation);
         }
+
+        /// <summary>
+        /// Handles tooltips the game concatenates out of several table entries at draw time, which no
+        /// whole-string lookup can match. Clothing is the case that surfaced this: the body is the
+        /// item's description, a blank line, then "Dyeable." -- two separate entries (Pants and UI)
+        /// that are each in the index, joined only on screen.
+        ///
+        /// Every paragraph has to translate for this to report success: a partial result would put
+        /// untranslated source text inside a box whose whole purpose is to be the translation.
+        /// </summary>
+        private bool TryLookupByParagraph(string displayedText, out string translation)
+        {
+            translation = "";
+
+            string[] paragraphs = ParagraphBreak.Split(displayedText);
+            if (paragraphs.Length < 2)
+                return false;
+
+            var translated = new List<string>(paragraphs.Length);
+            foreach (string paragraph in paragraphs)
+            {
+                if (Normalize(paragraph).Length == 0)
+                    continue; // a stray extra blank line, not a paragraph of its own
+
+                // deliberately not recursive: a paragraph that is itself unmatched stops the whole lookup
+                string normalized = Normalize(paragraph);
+                if (this.byNormalized.TryGetValue(normalized, out string? direct))
+                {
+                    translated.Add(direct);
+                    continue;
+                }
+
+                string spaceless = RemoveWhitespace(normalized);
+                if (spaceless.Length > 0 && this.bySpaceless.TryGetValue(spaceless, out string? unwrapped))
+                {
+                    translated.Add(unwrapped);
+                    continue;
+                }
+
+                return false;
+            }
+
+            if (translated.Count < 2)
+                return false;
+
+            translation = string.Join(Environment.NewLine + Environment.NewLine, translated);
+            return true;
+        }
+
+        /// <summary>A blank line, i.e. what the game puts between two concatenated tooltip sections.</summary>
+        private static readonly Regex ParagraphBreak = new(@"\n[ \t]*\r?\n", RegexOptions.Compiled);
 
         /// <summary>Collapses every run of whitespace (the game's word-wrap newlines included) to one space, and trims.</summary>
         public static string Normalize(string? text)

@@ -117,6 +117,55 @@ namespace ModLogic.Tests
         }
 
         [Fact]
+        public void Translates_a_tooltip_the_game_concatenated_out_of_two_tables()
+        {
+            // the real Farmer Pants case: the description and the "Dyeable." notice are separate
+            // entries (Strings/Pants and Strings/UI) that only ever meet on screen
+            var map = new TranslationMap();
+            map.AddTable(
+                new Dictionary<string, string> { ["FarmerPants_Description"] = "この分野では長時間快適で丈夫。" },
+                new Dictionary<string, string> { ["FarmerPants_Description"] = "Comfortable and durable for long hours in the field." });
+            map.AddTable(
+                new Dictionary<string, string> { ["Clothes_Dyeable"] = "可染性。" },
+                new Dictionary<string, string> { ["Clothes_Dyeable"] = "Dyeable." });
+
+            // exactly as it arrives from the game: word-wrapped mid-sentence, blank line between sections
+            Assert.True(map.TryLookup("この分野では長時間快適\nで丈夫。\n\n可染性。", out string translation));
+            Assert.Equal(
+                "Comfortable and durable for long hours in the field." + Environment.NewLine + Environment.NewLine + "Dyeable.",
+                translation);
+        }
+
+        [Fact]
+        public void A_concatenated_tooltip_translates_all_its_paragraphs_or_none()
+        {
+            // a half-translated box would present untranslated source text as if it were the translation
+            var map = MapOf(("Known", "既知の段落。", "A known paragraph."));
+
+            Assert.False(map.TryLookup("既知の段落。\n\n未知の段落。", out _));
+        }
+
+        [Fact]
+        public void Paragraph_fallback_ignores_an_extra_blank_line()
+        {
+            var map = new TranslationMap();
+            map.AddTable(
+                new Dictionary<string, string> { ["A"] = "一つ目。", ["B"] = "二つ目。" },
+                new Dictionary<string, string> { ["A"] = "First.", ["B"] = "Second." });
+
+            Assert.True(map.TryLookup("一つ目。\n\n\n二つ目。", out string translation));
+            Assert.Equal("First." + Environment.NewLine + Environment.NewLine + "Second.", translation);
+        }
+
+        [Fact]
+        public void A_single_paragraph_never_goes_through_the_paragraph_fallback()
+        {
+            var map = MapOf(("Known", "既知の段落。", "A known paragraph."));
+
+            Assert.False(map.TryLookup("未知の段落。", out _));
+        }
+
+        [Fact]
         public void Normalize_collapses_every_whitespace_run_and_trims()
         {
             Assert.Equal("a b c", TranslationMap.Normalize("  a \n\t b   c  "));

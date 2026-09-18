@@ -30,6 +30,9 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>The live config, read by the Harmony patches.</summary>
         public ModConfig Config => this.currentConfig;
 
+        /// <summary>Whether to log the raw text of hover tooltips that couldn't be translated (see the ls_log_misses command).</summary>
+        public bool LogTranslationMisses { get; private set; }
+
         /// <summary>The source -> target text lookup the hover tooltips are translated through.</summary>
         public TranslationIndex TranslationIndex { get; private set; } = null!;
 
@@ -44,7 +47,8 @@ namespace LanguageStudyStardewValleyMod
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
             helper.Events.GameLoop.SaveLoaded += this.OnSaveLoaded;
             helper.Events.Display.Rendering += this.OnRendering;
-            helper.Events.Display.Rendered += this.OnRendered;
+            helper.Events.Display.RenderedHud += this.OnRenderedHud;
+            helper.Events.Display.RenderedActiveMenu += this.OnRenderedActiveMenu;
 
             this.TranslationIndex = new TranslationIndex(helper);
 
@@ -65,6 +69,13 @@ namespace LanguageStudyStardewValleyMod
                 "Rebuilds the translation index, optionally for a different locale pair than the config's. "
                 + "Usage: ls_build_index [sourceLocale] [targetLocale]  (e.g. ls_build_index ja en)",
                 this.OnBuildIndexCommand
+            );
+
+            helper.ConsoleCommands.Add(
+                "ls_log_misses",
+                "Toggles logging the raw text of every hover tooltip that couldn't be translated, so the "
+                + "gaps in the index can be found by playing rather than by guessing. Usage: ls_log_misses [on|off]",
+                this.OnLogMissesCommand
             );
 
             helper.ConsoleCommands.Add(
@@ -178,11 +189,23 @@ namespace LanguageStudyStardewValleyMod
         }
 
         /// <summary>
-        /// Draws the translation tooltip captured during this frame. Rendered (rather than
-        /// RenderedHud/RenderedActiveMenu) because it's the one point that comes after *every*
-        /// vanilla tooltip, whether it was drawn by a menu or by the HUD.
+        /// Draws the translation tooltip captured during the HUD's draw (toolbar item hover, etc.).
+        ///
+        /// These two events rather than the single, later Display.Rendered: Rendered runs against the
+        /// *world* render target, which the game composites *underneath* the UI one -- so the box was
+        /// drawn beneath every menu, and offset from the cursor by the ratio between the world's
+        /// zoomLevel and the UI's uiScale. RenderedHud/RenderedActiveMenu are the events SMAPI
+        /// guarantees run in UI mode, in the same sprite batch (and coordinate space) as the vanilla
+        /// tooltip we're stacking against. RenderedHud fires before menus draw, so a tooltip captured
+        /// during a menu's draw is still pending and gets drawn by OnRenderedActiveMenu below.
         /// </summary>
-        private void OnRendered(object? sender, RenderedEventArgs e)
+        private void OnRenderedHud(object? sender, RenderedHudEventArgs e)
+        {
+            TooltipOverlay.Draw(e.SpriteBatch);
+        }
+
+        /// <summary>Draws the translation tooltip captured during the active menu's draw.</summary>
+        private void OnRenderedActiveMenu(object? sender, RenderedActiveMenuEventArgs e)
         {
             TooltipOverlay.Draw(e.SpriteBatch);
         }
@@ -199,6 +222,15 @@ namespace LanguageStudyStardewValleyMod
             string target = args.Length > 1 ? args[1] : currentConfig.TargetLanguage;
 
             this.TranslationIndex.Build(source, target);
+        }
+
+        private void OnLogMissesCommand(string command, string[] args)
+        {
+            this.LogTranslationMisses = args.Length > 0
+                ? args[0].Equals("on", StringComparison.OrdinalIgnoreCase)
+                : !this.LogTranslationMisses;
+
+            Log($"Logging of untranslated hover text is {(this.LogTranslationMisses ? "on" : "off")}.");
         }
 
         private void OnLookupCommand(string command, string[] args)

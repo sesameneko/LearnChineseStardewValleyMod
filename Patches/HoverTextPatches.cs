@@ -27,6 +27,12 @@ namespace LanguageStudyStardewValleyMod.Patches
         private static bool haveBox;
         private static TooltipBox capturedBox;
 
+        /// <summary>
+        /// The last miss already logged. A tooltip is redrawn every frame it's hovered, so without
+        /// this one hover buries the log in dozens of identical lines.
+        /// </summary>
+        private static string? lastLoggedMiss;
+
         public static void Prefix_DrawHoverText()
         {
             capturing = true;
@@ -47,8 +53,26 @@ namespace LanguageStudyStardewValleyMod.Patches
                     return;
 
                 var map = mod.TranslationIndex.Map;
-                map.TryLookup(boldTitleText, out string translatedTitle);
-                map.TryLookup(text?.ToString(), out string translatedBody);
+                string? rawBody = text?.ToString();
+                bool haveTitle = map.TryLookup(boldTitleText, out string translatedTitle);
+                bool haveBody = map.TryLookup(rawBody, out string translatedBody);
+
+                if (mod.LogTranslationMisses && (!haveTitle || !haveBody))
+                {
+                    // the raw text of anything that didn't translate -- this is how M2's list of
+                    // still-uncovered assets gets built, since the only way to know what a tooltip
+                    // actually displays is to read what arrives here
+                    string signature = $"{boldTitleText}\u0000{rawBody}";
+                    if (signature != lastLoggedMiss)
+                    {
+                        lastLoggedMiss = signature;
+
+                        if (!haveTitle && !string.IsNullOrWhiteSpace(boldTitleText))
+                            ModEntry.Log($"[miss] title: '{boldTitleText}'");
+                        if (!haveBody && !string.IsNullOrWhiteSpace(rawBody))
+                            ModEntry.Log($"[miss] body:  '{rawBody!.Replace("\n", "\\n")}'");
+                    }
+                }
 
                 string overlayText = TooltipLayout.ComposeOverlayText(translatedTitle, translatedBody);
                 if (overlayText.Length == 0)
