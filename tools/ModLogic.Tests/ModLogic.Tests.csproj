@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      The mod's game-independent logic is compiled straight into this test project rather than
+      project-referenced: the mod itself targets net6.0 and links StardewValley/MonoGame (x64-only,
+      so it won't load on this machine's arm64 SDK). These two files deliberately have no game
+      dependency precisely so they can be tested here (see CLAUDE.md's "Development workflow").
+    -->
+    <Compile Include="../../TranslationMap.cs" Link="TranslationMap.cs" />
+    <Compile Include="../../TooltipLayout.cs" Link="TooltipLayout.cs" />
+  </ItemGroup>
+
+</Project>

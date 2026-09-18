@@ -1,0 +1,200 @@
+using System;
+using System.Collections.Generic;
+using StardewModdingAPI;
+using StardewValley;
+
+namespace LanguageStudyStardewValleyMod
+{
+    /// <summary>
+    /// Loads the game's own string tables in two locales at once and joins them into a
+    /// <see cref="TranslationMap"/> (source-language text -> target-language text).
+    ///
+    /// Built once per session rather than per hover, because the target-language half may need a
+    /// temporary <see cref="LocalizedContentManager.CurrentLanguageCode"/> flip (see below) -- which
+    /// must never happen mid-draw.
+    /// </summary>
+    public sealed class TranslationIndex
+    {
+        /// <summary>
+        /// Locale suffixes the game's own Content/Strings files are actually published under
+        /// (confirmed by inspecting the installed game's Content/Strings folder). English has no
+        /// suffixed variant on disk -- it's the unsuffixed/default file -- so getting the English
+        /// text while a non-English locale is active can't use the suffix trick and instead needs
+        /// the CurrentLanguageCode-flip fallback.
+        /// </summary>
+        public static readonly IReadOnlyDictionary<string, string> LocaleSuffixes = new Dictionary<string, string>
+        {
+            ["en"] = "",
+            ["ja"] = "ja-JP",
+            ["zh"] = "zh-CN",
+            ["ru"] = "ru-RU",
+            ["pt"] = "pt-BR",
+            ["es"] = "es-ES",
+            ["de"] = "de-DE",
+            ["th"] = "th-TH",
+            ["fr"] = "fr-FR",
+            ["ko"] = "ko-KR",
+            ["it"] = "it-IT",
+            ["tr"] = "tr-TR",
+            ["hu"] = "hu-HU",
+        };
+
+        /// <summary>
+        /// Every Strings/* asset that is a plain Dictionary&lt;string,string&gt; in both locales
+        /// (the list is the one extracted by tools/XnbStringTool -- see tools/extracted-strings).
+        /// Item names/descriptions, the ones M1 actually targets, live in Objects/BigCraftables/
+        /// Tools/Weapons/Furniture/Shirts/Pants; the rest are included because they're free.
+        /// </summary>
+        private static readonly string[] StringTables =
+        {
+            // item-ish tables first: on a duplicate source string, the first table added wins
+            "Strings/Objects",
+            "Strings/BigCraftables",
+            "Strings/Tools",
+            "Strings/Weapons",
+            "Strings/Furniture",
+            "Strings/Shirts",
+            "Strings/Pants",
+            "Strings/EnchantmentNames",
+            "Strings/UI",
+            "Strings/StringsFromCSFiles",
+            "Strings/1_6_Strings",
+            "Strings/Buildings",
+            "Strings/BundleNames",
+            "Strings/Characters",
+            "Strings/Events",
+            "Strings/FarmAnimals",
+            "Strings/Lexicon",
+            "Strings/Locations",
+            "Strings/MovieConcessions",
+            "Strings/MovieReactions",
+            "Strings/Movies",
+            "Strings/NPCNames",
+            "Strings/Notes",
+            "Strings/Quests",
+            "Strings/SimpleNonVillagerDialogues",
+            "Strings/SpecialOrderStrings",
+            "Strings/SpeechBubbles",
+            "Strings/StringsFromMaps",
+            "Strings/WorldMap",
+            "Strings/animationDescriptions",
+        };
+
+        private readonly IModHelper helper;
+
+        public TranslationIndex(IModHelper helper)
+        {
+            this.helper = helper;
+        }
+
+        /// <summary>The lookup built by the last successful <see cref="Build"/>; empty until then.</summary>
+        public TranslationMap Map { get; private set; } = new();
+
+        /// <summary>The locale pair <see cref="Map"/> was built for, or null if it hasn't been built.</summary>
+        public string? BuiltSourceLanguage { get; private set; }
+        public string? BuiltTargetLanguage { get; private set; }
+
+        /// <summary>Whether <see cref="Map"/> is already built for this exact locale pair.</summary>
+        public bool IsBuiltFor(string sourceLanguage, string targetLanguage)
+        {
+            return this.BuiltSourceLanguage == sourceLanguage && this.BuiltTargetLanguage == targetLanguage;
+        }
+
+        /// <summary>
+        /// (Re)builds the lookup for a locale pair. Must be called outside of drawing, since the
+        /// English side may temporarily flip the game's active language.
+        /// </summary>
+        public void Build(string sourceLanguage, string targetLanguage)
+        {
+            if (sourceLanguage == targetLanguage)
+            {
+                ModEntry.Log($"Source and target language are both '{sourceLanguage}' -- nothing to translate.", LogLevel.Warn);
+                this.Map = new TranslationMap();
+                this.BuiltSourceLanguage = sourceLanguage;
+                this.BuiltTargetLanguage = targetLanguage;
+                return;
+            }
+
+            var sourceTables = this.LoadAllTables(sourceLanguage);
+            var targetTables = this.LoadAllTables(targetLanguage);
+
+            var map = new TranslationMap();
+            foreach (string assetName in StringTables)
+            {
+                if (sourceTables.TryGetValue(assetName, out var source) && targetTables.TryGetValue(assetName, out var target))
+                    map.AddTable(source, target);
+            }
+
+            this.Map = map;
+            this.BuiltSourceLanguage = sourceLanguage;
+            this.BuiltTargetLanguage = targetLanguage;
+
+            ModEntry.Log($"Translation index built: {map.Count} '{sourceLanguage}' -> '{targetLanguage}' strings from {sourceTables.Count} tables.");
+        }
+
+        /// <summary>
+        /// Loads every string table in one locale. For a locale with a suffixed file on disk this is
+        /// a plain suffixed load; for English (no suffixed file) the game's active language is
+        /// flipped once for the whole batch and restored afterwards, rather than per asset.
+        /// </summary>
+        private Dictionary<string, Dictionary<string, string>> LoadAllTables(string localeCode)
+        {
+            var result = new Dictionary<string, Dictionary<string, string>>(StringComparer.Ordinal);
+
+            if (!LocaleSuffixes.TryGetValue(localeCode, out string? suffix))
+            {
+                ModEntry.Log($"Unknown locale code '{localeCode}' -- add it to TranslationIndex.LocaleSuffixes.", LogLevel.Warn);
+                return result;
+            }
+
+            if (!string.IsNullOrEmpty(suffix))
+            {
+                foreach (string assetName in StringTables)
+                {
+                    var table = this.TryLoad(() => this.helper.GameContent.Load<Dictionary<string, string>>($"{assetName}.{suffix}"), assetName, localeCode);
+                    if (table != null)
+                        result[assetName] = table;
+                }
+
+                return result;
+            }
+
+            if (!Enum.TryParse<LocalizedContentManager.LanguageCode>(localeCode, ignoreCase: true, out var language))
+            {
+                ModEntry.Log($"'{localeCode}' isn't a recognized LocalizedContentManager.LanguageCode.", LogLevel.Warn);
+                return result;
+            }
+
+            var originalLanguage = LocalizedContentManager.CurrentLanguageCode;
+            try
+            {
+                LocalizedContentManager.CurrentLanguageCode = language;
+                foreach (string assetName in StringTables)
+                {
+                    var table = this.TryLoad(() => Game1.content.Load<Dictionary<string, string>>(assetName), assetName, localeCode);
+                    if (table != null)
+                        result[assetName] = table;
+                }
+            }
+            finally
+            {
+                LocalizedContentManager.CurrentLanguageCode = originalLanguage;
+            }
+
+            return result;
+        }
+
+        private Dictionary<string, string>? TryLoad(Func<Dictionary<string, string>> load, string assetName, string localeCode)
+        {
+            try
+            {
+                return load();
+            }
+            catch (Exception ex)
+            {
+                ModEntry.Log($"Couldn't load '{assetName}' for locale '{localeCode}': {ex.GetType().Name}: {ex.Message}", LogLevel.Trace);
+                return null;
+            }
+        }
+    }
+}

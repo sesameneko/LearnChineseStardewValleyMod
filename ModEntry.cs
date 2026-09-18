@@ -1,9 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
 using GenericModConfigMenu;
+using HarmonyLib;
+using LanguageStudyStardewValleyMod.Patches;
+using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
+using StardewValley.Menus;
 
 namespace LanguageStudyStardewValleyMod
 {
@@ -18,31 +25,13 @@ namespace LanguageStudyStardewValleyMod
             Instance.Monitor.Log(message, level);
         }
 
-        /// <summary>
-        /// Locale suffixes the game's own Content/Strings files are actually published under
-        /// (confirmed by inspecting the installed game's Content/Strings folder). English has
-        /// no suffixed variant on disk -- it's the unsuffixed/default file -- so getting the
-        /// English text for a non-English active locale can't use the suffix trick and instead
-        /// needs the CurrentLanguageCode-flip fallback below.
-        /// </summary>
-        private static readonly Dictionary<string, string> LocaleSuffixes = new()
-        {
-            ["en"] = "",
-            ["ja"] = "ja-JP",
-            ["zh"] = "zh-CN",
-            ["ru"] = "ru-RU",
-            ["pt"] = "pt-BR",
-            ["es"] = "es-ES",
-            ["de"] = "de-DE",
-            ["th"] = "th-TH",
-            ["fr"] = "fr-FR",
-            ["ko"] = "ko-KR",
-            ["it"] = "it-IT",
-            ["tr"] = "tr-TR",
-            ["hu"] = "hu-HU",
-        };
-
         private ModConfig currentConfig = null!;
+
+        /// <summary>The live config, read by the Harmony patches.</summary>
+        public ModConfig Config => this.currentConfig;
+
+        /// <summary>The source -> target text lookup the hover tooltips are translated through.</summary>
+        public TranslationIndex TranslationIndex { get; private set; } = null!;
 
         public override void Entry(IModHelper helper)
         {
@@ -53,6 +42,11 @@ namespace LanguageStudyStardewValleyMod
             helper.Events.GameLoop.DayEnding += this.OnDayEnd;
             helper.Events.GameLoop.DayStarted += this.OnDayStart;
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
+            helper.Events.GameLoop.SaveLoaded += this.OnSaveLoaded;
+            helper.Events.Display.Rendering += this.OnRendering;
+            helper.Events.Display.Rendered += this.OnRendered;
+
+            this.TranslationIndex = new TranslationIndex(helper);
 
             ConfigureMod(helper.ReadConfig<ModConfig>());
 
@@ -64,6 +58,20 @@ namespace LanguageStudyStardewValleyMod
                 + "via a couple of different APIs, and logs what worked. Usage: ls_spike_locale [assetName]  "
                 + "(defaults to 'Strings/Objects')",
                 this.OnSpikeLocaleCommand
+            );
+
+            helper.ConsoleCommands.Add(
+                "ls_build_index",
+                "Rebuilds the translation index, optionally for a different locale pair than the config's. "
+                + "Usage: ls_build_index [sourceLocale] [targetLocale]  (e.g. ls_build_index ja en)",
+                this.OnBuildIndexCommand
+            );
+
+            helper.ConsoleCommands.Add(
+                "ls_lookup",
+                "Looks a piece of source-language text up in the translation index, the same way a hover would. "
+                + "Usage: ls_lookup <text>",
+                this.OnLookupCommand
             );
 
             Log("Language Study Mod initialized");
@@ -80,12 +88,45 @@ namespace LanguageStudyStardewValleyMod
 
         private void ApplyPatches()
         {
-            // add Harmony patches here, e.g.:
-            // var harmony = new Harmony(this.ModManifest.UniqueID);
-            // harmony.Patch(
-            //     original: AccessTools.Method(typeof(SomeType), nameof(SomeType.SomeMethod)),
-            //     prefix: new HarmonyMethod(typeof(SomeOverrides), nameof(SomeOverrides.Prefix_SomeMethod))
-            // );
+            try
+            {
+                var harmony = new Harmony(this.ModManifest.UniqueID);
+
+                // The StringBuilder overload is the single funnel point: drawToolTip and the string
+                // overload of drawHoverText both call through to it (see HoverTextPatches).
+                harmony.Patch(
+                    original: FindOverload(nameof(IClickableMenu.drawHoverText), parameters => parameters[1].ParameterType == typeof(StringBuilder)),
+                    prefix: new HarmonyMethod(typeof(HoverTextPatches), nameof(HoverTextPatches.Prefix_DrawHoverText)),
+                    postfix: new HarmonyMethod(typeof(HoverTextPatches), nameof(HoverTextPatches.Postfix_DrawHoverText))
+                );
+
+                // ...and this is how the tooltip's exact screen rect gets captured, rather than
+                // re-derived from vanilla's layout math.
+                harmony.Patch(
+                    original: FindOverload(nameof(IClickableMenu.drawTextureBox), parameters => parameters.Length == 11),
+                    prefix: new HarmonyMethod(typeof(HoverTextPatches), nameof(HoverTextPatches.Prefix_DrawTextureBox))
+                );
+            }
+            catch (Exception ex)
+            {
+                Log($"Failed to apply Harmony patches -- hover translation will be inactive. {ex}", LogLevel.Error);
+            }
+        }
+
+        /// <summary>
+        /// Finds one overload of a static IClickableMenu method by predicate, rather than by spelling
+        /// out its full (20+ argument) parameter list for AccessTools.
+        /// </summary>
+        private static MethodInfo FindOverload(string name, Func<ParameterInfo[], bool> matches)
+        {
+            var method = typeof(IClickableMenu)
+                .GetMethods(BindingFlags.Public | BindingFlags.Static)
+                .FirstOrDefault(candidate => candidate.Name == name && matches(candidate.GetParameters()));
+
+            if (method is null)
+                throw new InvalidOperationException($"Couldn't find a matching overload of IClickableMenu.{name} in this game version.");
+
+            return method;
         }
 
         private void OnButtonsChanged(object? sender, ButtonsChangedEventArgs e)
@@ -96,6 +137,8 @@ namespace LanguageStudyStardewValleyMod
             if (currentConfig.ToggleTranslation.JustPressed())
             {
                 currentConfig.TranslationEnabled = !currentConfig.TranslationEnabled;
+                if (!currentConfig.TranslationEnabled)
+                    TooltipOverlay.Clear();
                 Log($"Translation {(currentConfig.TranslationEnabled ? "enabled" : "disabled")}.");
             }
         }
@@ -112,6 +155,68 @@ namespace LanguageStudyStardewValleyMod
         {
         }
 
+        #region M1: hover translation
+        private void OnSaveLoaded(object? sender, SaveLoadedEventArgs e)
+        {
+            // built here rather than on GameLaunched because the English side may briefly flip the
+            // game's active language, which needs loaded content to flip against
+            this.EnsureIndexBuilt();
+        }
+
+        private void EnsureIndexBuilt()
+        {
+            if (this.TranslationIndex.IsBuiltFor(currentConfig.SourceLanguage, currentConfig.TargetLanguage))
+                return;
+
+            this.TranslationIndex.Build(currentConfig.SourceLanguage, currentConfig.TargetLanguage);
+        }
+
+        /// <summary>Drops any tooltip captured last frame that was never drawn, so nothing goes stale.</summary>
+        private void OnRendering(object? sender, RenderingEventArgs e)
+        {
+            TooltipOverlay.Clear();
+        }
+
+        /// <summary>
+        /// Draws the translation tooltip captured during this frame. Rendered (rather than
+        /// RenderedHud/RenderedActiveMenu) because it's the one point that comes after *every*
+        /// vanilla tooltip, whether it was drawn by a menu or by the HUD.
+        /// </summary>
+        private void OnRendered(object? sender, RenderedEventArgs e)
+        {
+            TooltipOverlay.Draw(e.SpriteBatch);
+        }
+
+        private void OnBuildIndexCommand(string command, string[] args)
+        {
+            if (!Context.IsWorldReady)
+            {
+                Log("Load a save first, then run this command again.", LogLevel.Warn);
+                return;
+            }
+
+            string source = args.Length > 0 ? args[0] : currentConfig.SourceLanguage;
+            string target = args.Length > 1 ? args[1] : currentConfig.TargetLanguage;
+
+            this.TranslationIndex.Build(source, target);
+        }
+
+        private void OnLookupCommand(string command, string[] args)
+        {
+            if (args.Length == 0)
+            {
+                Log("Usage: ls_lookup <text>", LogLevel.Warn);
+                return;
+            }
+
+            string text = string.Join(" ", args);
+            if (this.TranslationIndex.Map.TryLookup(text, out string translation))
+                Log($"'{text}' -> '{translation}'");
+            else
+                Log($"'{text}' -> (no translation in the index; {this.TranslationIndex.Map.Count} entries loaded)", LogLevel.Warn);
+        }
+        #endregion
+
         #region M1 spike: confirm locale-suffixed asset loading works at runtime
         /// <summary>
         /// Tries to load <paramref name="assetName"/> in the given locale code (e.g. "ja"), using
@@ -121,9 +226,9 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         private Dictionary<string, string>? TryLoadLocaleVariant(string assetName, string localeCode)
         {
-            if (!LocaleSuffixes.TryGetValue(localeCode, out var suffix))
+            if (!TranslationIndex.LocaleSuffixes.TryGetValue(localeCode, out var suffix))
             {
-                Log($"[spike] unknown locale code '{localeCode}' -- add it to LocaleSuffixes.", LogLevel.Warn);
+                Log($"[spike] unknown locale code '{localeCode}' -- add it to TranslationIndex.LocaleSuffixes.", LogLevel.Warn);
                 return null;
             }
 
@@ -240,7 +345,12 @@ namespace LanguageStudyStardewValleyMod
             configMenu.Register(
                 mod: this.ModManifest,
                 reset: () => ConfigureMod(new ModConfig()),
-                save: () => this.Helper.WriteConfig(currentConfig)
+                save: () =>
+                {
+                    this.Helper.WriteConfig(currentConfig);
+                    if (Context.IsWorldReady)
+                        this.EnsureIndexBuilt();
+                }
             );
 
             configMenu.AddSectionTitle(
