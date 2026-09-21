@@ -1,5 +1,2435 @@
 {
   "_comment": "Word/phrase-level breakdown of Stardew Valley StringsFromCSFiles.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AbandonedJojaMart": {
+    "japanese": "ジョージャマート廃墟",
+    "english": "JojaMart ruins",
+    "segments": [
+      {
+        "text": "ジョージャマート",
+        "reading": "Jōja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "廃墟",
+        "reading": "haikyo",
+        "gloss": "ruins"
+      }
+    ]
+  },
+  "AbigailGame.cs.11896": {
+    "japanese": "やつらが きたぞ！",
+    "english": "Here they come!",
+    "segments": [
+      {
+        "text": "やつら",
+        "reading": "yatsura",
+        "gloss": "those guys / them"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "きたぞ！",
+        "reading": "kita zo",
+        "gloss": "have come"
+      }
+    ]
+  },
+  "AbigailGame.cs.11897": {
+    "japanese": "これで はんぶんだ！",
+    "english": "That's half of them!",
+    "segments": [
+      {
+        "text": "これで ",
+        "reading": "kore de",
+        "gloss": "with this"
+      },
+      {
+        "text": "はんぶんだ！",
+        "reading": "hanbun da",
+        "gloss": "it's half"
+      }
+    ]
+  },
+  "AbigailGame.cs.11898": {
+    "japanese": "よくやった！",
+    "english": "Well done!",
+    "segments": [
+      {
+        "text": "よくやった！",
+        "reading": "yoku yatta",
+        "gloss": "well done"
+      }
+    ]
+  },
+  "AbigailGame.cs.11901": {
+    "japanese": "うう…",
+    "english": "Urgh...",
+    "segments": [
+      {
+        "text": "うう…",
+        "reading": "ū",
+        "gloss": "urgh"
+      }
+    ]
+  },
+  "AbigailGame.cs.11902": {
+    "japanese": "うわあ！",
+    "english": "Aaah!",
+    "segments": [
+      {
+        "text": "うわあ！",
+        "reading": "uwā",
+        "gloss": "waaah"
+      }
+    ]
+  },
+  "AbigailGame.cs.11914": {
+    "japanese": "ゲームオーバー",
+    "english": "Game over",
+    "segments": [
+      {
+        "text": "ゲームオーバー",
+        "reading": "gēmu ōbā",
+        "gloss": "game over"
+      }
+    ]
+  },
+  "AbigailGame.cs.11917": {
+    "japanese": "リスタート",
+    "english": "Restart",
+    "segments": [
+      {
+        "text": "リスタート",
+        "reading": "risutāto",
+        "gloss": "restart"
+      }
+    ]
+  },
+  "AbigailGame.cs.11919": {
+    "japanese": "しゅうりょう",
+    "english": "Quit",
+    "segments": [
+      {
+        "text": "しゅうりょう",
+        "reading": "shūryō",
+        "gloss": "end / quit"
+      }
+    ]
+  },
+  "Add": {
+    "japanese": "足す",
+    "english": "Add",
+    "segments": [
+      {
+        "text": "足す",
+        "reading": "tasu",
+        "gloss": "to add"
+      }
+    ]
+  },
+  "AdoptPet": {
+    "japanese": "この {0}をかいますか？",
+    "english": "Will you keep this {0}?",
+    "segments": [
+      {
+        "text": "この ",
+        "reading": "kono",
+        "gloss": "this"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(pet)"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "かいますか？",
+        "reading": "kaimasu ka",
+        "gloss": "will you keep (an animal)?"
+      }
+    ]
+  },
+  "Attack_Miss": {
+    "japanese": "ミス",
+    "english": "Miss",
+    "segments": [
+      {
+        "text": "ミス",
+        "reading": "misu",
+        "gloss": "miss"
+      }
+    ]
+  },
+  "Axe.cs.14023": {
+    "japanese": "町の条例により… あなたは 牧場にある 木のみ 伐採できます。",
+    "english": "By town ordinance... you may only fell trees on your own farm.",
+    "segments": [
+      {
+        "text": "町",
+        "reading": "machi",
+        "gloss": "town"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "条例",
+        "reading": "jōrei",
+        "gloss": "ordinance"
+      },
+      {
+        "text": "により… ",
+        "reading": "ni yori",
+        "gloss": "according to"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "牧場",
+        "reading": "bokujō",
+        "gloss": "farm"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "on"
+      },
+      {
+        "text": "ある ",
+        "reading": "aru",
+        "gloss": "that are"
+      },
+      {
+        "text": "木",
+        "reading": "ki",
+        "gloss": "trees"
+      },
+      {
+        "text": "のみ ",
+        "reading": "nomi",
+        "gloss": "only"
+      },
+      {
+        "text": "伐採できます。",
+        "reading": "bassai dekimasu",
+        "gloss": "may fell"
+      }
+    ]
+  },
+  "Backslash": {
+    "japanese": "バックスラッシュ",
+    "english": "Backslash",
+    "segments": [
+      {
+        "text": "バックスラッシュ",
+        "reading": "bakkusurasshu",
+        "gloss": "backslash"
+      }
+    ]
+  },
+  "BiteChime": {
+    "japanese": "魚がエサにつく音",
+    "english": "The sound of a fish taking the bait",
+    "segments": [
+      {
+        "text": "魚",
+        "reading": "sakana",
+        "gloss": "fish"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "エサ",
+        "reading": "esa",
+        "gloss": "bait"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "to"
+      },
+      {
+        "text": "つく",
+        "reading": "tsuku",
+        "gloss": "attaches / bites"
+      },
+      {
+        "text": "音",
+        "reading": "oto",
+        "gloss": "sound"
+      }
+    ]
+  },
+  "BiteChime_Default": {
+    "japanese": "デフォルト",
+    "english": "Default",
+    "segments": [
+      {
+        "text": "デフォルト",
+        "reading": "deforuto",
+        "gloss": "default"
+      }
+    ]
+  },
+  "BlueprintsMenu.cs.10002": {
+    "japanese": "資源が 足りません",
+    "english": "Not enough resources",
+    "segments": [
+      {
+        "text": "資源",
+        "reading": "shigen",
+        "gloss": "resources"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "足りません",
+        "reading": "tarimasen",
+        "gloss": "are not enough"
+      }
+    ]
+  },
+  "Boots.cs.12500": {
+    "japanese": "レベル {0}",
+    "english": "Level {0}",
+    "segments": [
+      {
+        "text": "レベル ",
+        "reading": "reberu",
+        "gloss": "level"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(number)"
+      }
+    ]
+  },
+  "Boots.cs.12501": {
+    "japanese": "はき物",
+    "english": "Footwear",
+    "segments": [
+      {
+        "text": "はき物",
+        "reading": "hakimono",
+        "gloss": "footwear"
+      }
+    ]
+  },
+  "BrowserBack": {
+    "japanese": "ブラウザーの戻るボタン",
+    "english": "Browser back button",
+    "segments": [
+      {
+        "text": "ブラウザー",
+        "reading": "burauzā",
+        "gloss": "browser"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "戻るボタン",
+        "reading": "modoru botan",
+        "gloss": "back button"
+      }
+    ]
+  },
+  "BrowserFavorites": {
+    "japanese": "ブラウザーのお気に入り",
+    "english": "Browser favourites",
+    "segments": [
+      {
+        "text": "ブラウザー",
+        "reading": "burauzā",
+        "gloss": "browser"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "お気に入り",
+        "reading": "o-ki ni iri",
+        "gloss": "favourites"
+      }
+    ]
+  },
+  "BrowserForward": {
+    "japanese": "ブラウザーの進むボタン",
+    "english": "Browser forward button",
+    "segments": [
+      {
+        "text": "ブラウザー",
+        "reading": "burauzā",
+        "gloss": "browser"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "進むボタン",
+        "reading": "susumu botan",
+        "gloss": "forward button"
+      }
+    ]
+  },
+  "BrowserHome": {
+    "japanese": "ブラウザーのホーム",
+    "english": "Browser home",
+    "segments": [
+      {
+        "text": "ブラウザー",
+        "reading": "burauzā",
+        "gloss": "browser"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ホーム",
+        "reading": "hōmu",
+        "gloss": "home"
+      }
+    ]
+  },
+  "BrowserRefresh": {
+    "japanese": "ブラウザーの更新",
+    "english": "Browser refresh",
+    "segments": [
+      {
+        "text": "ブラウザー",
+        "reading": "burauzā",
+        "gloss": "browser"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "更新",
+        "reading": "kōshin",
+        "gloss": "refresh"
+      }
+    ]
+  },
+  "BrowserSearch": {
+    "japanese": "ブラウザーの検索",
+    "english": "Browser search",
+    "segments": [
+      {
+        "text": "ブラウザー",
+        "reading": "burauzā",
+        "gloss": "browser"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "検索",
+        "reading": "kensaku",
+        "gloss": "search"
+      }
+    ]
+  },
+  "BrowserStop": {
+    "japanese": "ブラウザーの中止",
+    "english": "Browser stop",
+    "segments": [
+      {
+        "text": "ブラウザー",
+        "reading": "burauzā",
+        "gloss": "browser"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "中止",
+        "reading": "chūshi",
+        "gloss": "stop"
+      }
+    ]
+  },
+  "Buff.cs.453": {
+    "japanese": "焼け焦げ",
+    "english": "Burnt",
+    "segments": [
+      {
+        "text": "焼け焦げ",
+        "reading": "yakekoge",
+        "gloss": "scorched / burnt"
+      }
+    ]
+  },
+  "Buff.cs.456": {
+    "japanese": "満腹",
+    "english": "Full",
+    "segments": [
+      {
+        "text": "満腹",
+        "reading": "manpuku",
+        "gloss": "full stomach"
+      }
+    ]
+  },
+  "Buff.cs.457": {
+    "japanese": "水やり済",
+    "english": "Quenched",
+    "segments": [
+      {
+        "text": "水やり済",
+        "reading": "mizuyari zumi",
+        "gloss": "watered"
+      }
+    ]
+  },
+  "Buff.cs.458": {
+    "japanese": "千鳥足",
+    "english": "Tipsy",
+    "segments": [
+      {
+        "text": "千鳥足",
+        "reading": "chidoriashi",
+        "gloss": "staggering gait / tipsy"
+      }
+    ]
+  },
+  "Buff.cs.460": {
+    "japanese": "べとつき",
+    "english": "Slimed",
+    "segments": [
+      {
+        "text": "べとつき",
+        "reading": "betotsuki",
+        "gloss": "stickiness"
+      }
+    ]
+  },
+  "Buff.cs.462": {
+    "japanese": "怯え",
+    "english": "Spooked",
+    "segments": [
+      {
+        "text": "怯え",
+        "reading": "obie",
+        "gloss": "fright"
+      }
+    ]
+  },
+  "Buff.cs.464": {
+    "japanese": "不運",
+    "english": "Jinxed",
+    "segments": [
+      {
+        "text": "不運",
+        "reading": "fuun",
+        "gloss": "misfortune"
+      }
+    ]
+  },
+  "Buff.cs.466": {
+    "japanese": "凍結",
+    "english": "Frozen",
+    "segments": [
+      {
+        "text": "凍結",
+        "reading": "tōketsu",
+        "gloss": "freezing"
+      }
+    ]
+  },
+  "Buff.cs.468": {
+    "japanese": "戦士の力",
+    "english": "Warrior's strength",
+    "segments": [
+      {
+        "text": "戦士",
+        "reading": "senshi",
+        "gloss": "warrior"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "力",
+        "reading": "chikara",
+        "gloss": "strength"
+      }
+    ]
+  },
+  "Buff.cs.470": {
+    "japanese": "ヨバ神の加護",
+    "english": "Yoba's blessing",
+    "segments": [
+      {
+        "text": "ヨバ神",
+        "reading": "Yoba shin",
+        "gloss": "the god Yoba"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "加護",
+        "reading": "kago",
+        "gloss": "divine protection"
+      }
+    ]
+  },
+  "Buff.cs.471": {
+    "japanese": "被ダメージ無効",
+    "english": "Damage nullified",
+    "segments": [
+      {
+        "text": "被ダメージ",
+        "reading": "hi damēji",
+        "gloss": "damage taken"
+      },
+      {
+        "text": "無効",
+        "reading": "mukō",
+        "gloss": "nullified"
+      }
+    ]
+  },
+  "Buff.cs.472": {
+    "japanese": "アドレナリン放出",
+    "english": "Adrenaline rush",
+    "segments": [
+      {
+        "text": "アドレナリン",
+        "reading": "adorenarin",
+        "gloss": "adrenaline"
+      },
+      {
+        "text": "放出",
+        "reading": "hōshutsu",
+        "gloss": "release"
+      }
+    ]
+  },
+  "Buff.cs.474": {
+    "japanese": "ニンニクのオイル",
+    "english": "Oil of garlic",
+    "segments": [
+      {
+        "text": "ニンニク",
+        "reading": "ninniku",
+        "gloss": "garlic"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "オイル",
+        "reading": "oiru",
+        "gloss": "oil"
+      }
+    ]
+  },
+  "Buff.cs.475": {
+    "japanese": "肌がニンニクの匂いを放っている",
+    "english": "Your skin gives off a smell of garlic",
+    "segments": [
+      {
+        "text": "肌",
+        "reading": "hada",
+        "gloss": "skin"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ニンニク",
+        "reading": "ninniku",
+        "gloss": "garlic"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "匂い",
+        "reading": "nioi",
+        "gloss": "smell"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "放っている",
+        "reading": "hanatte iru",
+        "gloss": "is giving off"
+      }
+    ]
+  },
+  "Buff.cs.476": {
+    "japanese": "効果時間: ",
+    "english": "Duration:",
+    "segments": [
+      {
+        "text": "効果時間: ",
+        "reading": "kōka jikan",
+        "gloss": "effect duration"
+      }
+    ]
+  },
+  "Buff.cs.480": {
+    "japanese": " 農業",
+    "english": "Farming",
+    "segments": [
+      {
+        "text": " 農業",
+        "reading": "nōgyō",
+        "gloss": "farming"
+      }
+    ]
+  },
+  "Buff.cs.483": {
+    "japanese": " 釣り",
+    "english": "Fishing",
+    "segments": [
+      {
+        "text": " 釣り",
+        "reading": "tsuri",
+        "gloss": "fishing"
+      }
+    ]
+  },
+  "Buff.cs.486": {
+    "japanese": " 採鉱",
+    "english": "Mining",
+    "segments": [
+      {
+        "text": " 採鉱",
+        "reading": "saikō",
+        "gloss": "mining"
+      }
+    ]
+  },
+  "Buff.cs.489": {
+    "japanese": " 幸運",
+    "english": "Luck",
+    "segments": [
+      {
+        "text": " 幸運",
+        "reading": "kōun",
+        "gloss": "luck"
+      }
+    ]
+  },
+  "Buff.cs.492": {
+    "japanese": " 採取",
+    "english": "Foraging",
+    "segments": [
+      {
+        "text": " 採取",
+        "reading": "saishu",
+        "gloss": "foraging"
+      }
+    ]
+  },
+  "Buff.cs.495": {
+    "japanese": " 最大エネルギー",
+    "english": "Max energy",
+    "segments": [
+      {
+        "text": " 最大",
+        "reading": "saidai",
+        "gloss": "maximum"
+      },
+      {
+        "text": "エネルギー",
+        "reading": "enerugī",
+        "gloss": "energy"
+      }
+    ]
+  },
+  "Buff.cs.498": {
+    "japanese": " 引きつける範囲",
+    "english": "Attracting radius",
+    "segments": [
+      {
+        "text": " 引きつける",
+        "reading": "hikitsukeru",
+        "gloss": "to attract"
+      },
+      {
+        "text": "範囲",
+        "reading": "han'i",
+        "gloss": "range"
+      }
+    ]
+  },
+  "Buff.cs.501": {
+    "japanese": " 防御",
+    "english": "Defence",
+    "segments": [
+      {
+        "text": " 防御",
+        "reading": "bōgyo",
+        "gloss": "defence"
+      }
+    ]
+  },
+  "Buff.cs.504": {
+    "japanese": " 攻撃",
+    "english": "Attack",
+    "segments": [
+      {
+        "text": " 攻撃",
+        "reading": "kōgeki",
+        "gloss": "attack"
+      }
+    ]
+  },
+  "Buff.cs.507": {
+    "japanese": " 速度",
+    "english": "Speed",
+    "segments": [
+      {
+        "text": " 速度",
+        "reading": "sokudo",
+        "gloss": "speed"
+      }
+    ]
+  },
+  "Buff.cs.508": {
+    "japanese": "発生源: ",
+    "english": "Source:",
+    "segments": [
+      {
+        "text": "発生源: ",
+        "reading": "hasseigen",
+        "gloss": "source / origin"
+      }
+    ]
+  },
+  "Buff_Ravioli_Description": {
+    "japanese": "あなたは能力低下に免疫があります。",
+    "english": "You are immune to stat-lowering effects.",
+    "segments": [
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "能力低下",
+        "reading": "nōryoku teika",
+        "gloss": "ability reduction"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "to"
+      },
+      {
+        "text": "免疫",
+        "reading": "men'eki",
+        "gloss": "immunity"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あります。",
+        "reading": "arimasu",
+        "gloss": "have"
+      }
+    ]
+  },
+  "Buff_Ravioli_Title": {
+    "japanese": "イカスミのラビオリ",
+    "english": "Squid ink ravioli",
+    "segments": [
+      {
+        "text": "イカスミ",
+        "reading": "ika sumi",
+        "gloss": "squid ink"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ラビオリ",
+        "reading": "rabiori",
+        "gloss": "ravioli"
+      }
+    ]
+  },
+  "CalicoJack.cs.11924": {
+    "japanese": "ヒット",
+    "english": "Hit",
+    "segments": [
+      {
+        "text": "ヒット",
+        "reading": "hitto",
+        "gloss": "hit"
+      }
+    ]
+  },
+  "CalicoJack.cs.11927": {
+    "japanese": "スタンド",
+    "english": "Stand",
+    "segments": [
+      {
+        "text": "スタンド",
+        "reading": "sutando",
+        "gloss": "stand"
+      }
+    ]
+  },
+  "CalicoJack.cs.11930": {
+    "japanese": "ダブルアップ",
+    "english": "Double up",
+    "segments": [
+      {
+        "text": "ダブルアップ",
+        "reading": "daburu appu",
+        "gloss": "double up"
+      }
+    ]
+  },
+  "CalicoJack.cs.11933": {
+    "japanese": "新規ゲーム",
+    "english": "New game",
+    "segments": [
+      {
+        "text": "新規",
+        "reading": "shinki",
+        "gloss": "new"
+      },
+      {
+        "text": "ゲーム",
+        "reading": "gēmu",
+        "gloss": "game"
+      }
+    ]
+  },
+  "CalicoJack.cs.11936": {
+    "japanese": "しゅうりょう",
+    "english": "Quit",
+    "segments": [
+      {
+        "text": "しゅうりょう",
+        "reading": "shūryō",
+        "gloss": "end / quit"
+      }
+    ]
+  },
+  "CalicoJack.cs.11943": {
+    "japanese": "勝利！",
+    "english": "You win!",
+    "segments": [
+      {
+        "text": "勝利！",
+        "reading": "shōri",
+        "gloss": "victory"
+      }
+    ]
+  },
+  "CalicoJack.cs.11944": {
+    "japanese": "カリコジャックだ！",
+    "english": "That's a CalicoJack!",
+    "segments": [
+      {
+        "text": "カリコジャック",
+        "reading": "kariko jakku",
+        "gloss": "CalicoJack"
+      },
+      {
+        "text": "だ！",
+        "reading": "da",
+        "gloss": "it is"
+      }
+    ]
+  },
+  "CalicoJack.cs.11946": {
+    "japanese": "敗北",
+    "english": "You lose",
+    "segments": [
+      {
+        "text": "敗北",
+        "reading": "haiboku",
+        "gloss": "defeat"
+      }
+    ]
+  },
+  "CalicoJack.cs.11947": {
+    "japanese": "バスト！",
+    "english": "Bust!",
+    "segments": [
+      {
+        "text": "バスト！",
+        "reading": "basuto",
+        "gloss": "bust"
+      }
+    ]
+  },
+  "CalicoJack.cs.11950": {
+    "japanese": "ディーラーが バストした！",
+    "english": "The dealer busted!",
+    "segments": [
+      {
+        "text": "ディーラー",
+        "reading": "dīrā",
+        "gloss": "dealer"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "バストした！",
+        "reading": "basuto shita",
+        "gloss": "busted"
+      }
+    ]
+  },
+  "CalicoJack.cs.11951": {
+    "japanese": "スタンドオフ",
+    "english": "Standoff",
+    "segments": [
+      {
+        "text": "スタンドオフ",
+        "reading": "sutando ofu",
+        "gloss": "standoff"
+      }
+    ]
+  },
+  "CalicoJack.cs.11952": {
+    "japanese": "勝者なし",
+    "english": "No winner",
+    "segments": [
+      {
+        "text": "勝者",
+        "reading": "shōsha",
+        "gloss": "winner"
+      },
+      {
+        "text": "なし",
+        "reading": "nashi",
+        "gloss": "none"
+      }
+    ]
+  },
+  "CalicoJack.cs.11955": {
+    "japanese": "に近い {0}",
+    "english": "Closer to {0}",
+    "segments": [
+      {
+        "text": "に近い ",
+        "reading": "ni chikai",
+        "gloss": "close to"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(number)"
+      }
+    ]
+  },
+  "CalicoJack.cs.11958": {
+    "japanese": "ディーラーが 近い {0}",
+    "english": "The dealer is closer to {0}",
+    "segments": [
+      {
+        "text": "ディーラー",
+        "reading": "dīrā",
+        "gloss": "dealer"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "近い ",
+        "reading": "chikai",
+        "gloss": "close"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(number)"
+      }
+    ]
+  },
+  "CalicoJack.cs.11965": {
+    "japanese": "結果: {0}",
+    "english": "Result: {0}",
+    "segments": [
+      {
+        "text": "結果: ",
+        "reading": "kekka",
+        "gloss": "result"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(value)"
+      }
+    ]
+  },
+  "CalicoJack.cs.11970": {
+    "japanese": "ディーラー: {0}",
+    "english": "Dealer: {0}",
+    "segments": [
+      {
+        "text": "ディーラー: ",
+        "reading": "dīrā",
+        "gloss": "dealer"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(value)"
+      }
+    ]
+  },
+  "CalicoJack.cs.11972": {
+    "japanese": "ベット: {0}",
+    "english": "Bet: {0}",
+    "segments": [
+      {
+        "text": "ベット: ",
+        "reading": "betto",
+        "gloss": "bet"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(value)"
+      }
+    ]
+  },
+  "ChatBox.cs.10261": {
+    "japanese": " 不正な コマンド ::",
+    "english": "Invalid command ::",
+    "segments": [
+      {
+        "text": " 不正な ",
+        "reading": "fusei na",
+        "gloss": "invalid"
+      },
+      {
+        "text": "コマンド ::",
+        "reading": "komando",
+        "gloss": "command"
+      }
+    ]
+  },
+  "CloseBrackets": {
+    "japanese": "クローズ・ブラケット",
+    "english": "Close bracket",
+    "segments": [
+      {
+        "text": "クローズ・ブラケット",
+        "reading": "kurōzu burakketto",
+        "gloss": "close bracket"
+      }
+    ]
+  },
+  "Comma": {
+    "japanese": "コンマ",
+    "english": "Comma",
+    "segments": [
+      {
+        "text": "コンマ",
+        "reading": "konma",
+        "gloss": "comma"
+      }
+    ]
+  },
+  "CraftingRecipe.cs.567": {
+    "japanese": "材料:",
+    "english": "Ingredients:",
+    "segments": [
+      {
+        "text": "材料:",
+        "reading": "zairyō",
+        "gloss": "ingredients / materials"
+      }
+    ]
+  },
+  "CraftingRecipe.cs.568": {
+    "japanese": "植物 (なんでも)",
+    "english": "Greens (any)",
+    "segments": [
+      {
+        "text": "植物 ",
+        "reading": "shokubutsu",
+        "gloss": "plants"
+      },
+      {
+        "text": "(なんでも)",
+        "reading": "nan demo",
+        "gloss": "anything"
+      }
+    ]
+  },
+  "CraftingRecipe.cs.569": {
+    "japanese": "宝石 (なんでも)",
+    "english": "Gem (any)",
+    "segments": [
+      {
+        "text": "宝石 ",
+        "reading": "hōseki",
+        "gloss": "gem"
+      },
+      {
+        "text": "(なんでも)",
+        "reading": "nan demo",
+        "gloss": "anything"
+      }
+    ]
+  },
+  "CraftingRecipe.cs.570": {
+    "japanese": "野菜 (なんでも)",
+    "english": "Vegetable (any)",
+    "segments": [
+      {
+        "text": "野菜 ",
+        "reading": "yasai",
+        "gloss": "vegetable"
+      },
+      {
+        "text": "(なんでも)",
+        "reading": "nan demo",
+        "gloss": "anything"
+      }
+    ]
+  },
+  "CraftingRecipe.cs.571": {
+    "japanese": "魚 (なんでも)",
+    "english": "Fish (any)",
+    "segments": [
+      {
+        "text": "魚 ",
+        "reading": "sakana",
+        "gloss": "fish"
+      },
+      {
+        "text": "(なんでも)",
+        "reading": "nan demo",
+        "gloss": "anything"
+      }
+    ]
+  },
+  "CraftingRecipe.cs.572": {
+    "japanese": "卵 (なんでも)",
+    "english": "Egg (any)",
+    "segments": [
+      {
+        "text": "卵 ",
+        "reading": "tamago",
+        "gloss": "egg"
+      },
+      {
+        "text": "(なんでも)",
+        "reading": "nan demo",
+        "gloss": "anything"
+      }
+    ]
+  },
+  "CraftingRecipe.cs.573": {
+    "japanese": "ミルク (なんでも)",
+    "english": "Milk (any)",
+    "segments": [
+      {
+        "text": "ミルク ",
+        "reading": "miruku",
+        "gloss": "milk"
+      },
+      {
+        "text": "(なんでも)",
+        "reading": "nan demo",
+        "gloss": "anything"
+      }
+    ]
+  },
+  "CraftingRecipe.cs.574": {
+    "japanese": "野生の種(いずれか)",
+    "english": "Wild seeds (any)",
+    "segments": [
+      {
+        "text": "野生の",
+        "reading": "yasei no",
+        "gloss": "wild"
+      },
+      {
+        "text": "種",
+        "reading": "tane",
+        "gloss": "seeds"
+      },
+      {
+        "text": "(いずれか)",
+        "reading": "izureka",
+        "gloss": "any one of them"
+      }
+    ]
+  },
+  "CraftingRecipe.cs.575": {
+    "japanese": "エラーアイテム",
+    "english": "Error item",
+    "segments": [
+      {
+        "text": "エラー",
+        "reading": "erā",
+        "gloss": "error"
+      },
+      {
+        "text": "アイテム",
+        "reading": "aitemu",
+        "gloss": "item"
+      }
+    ]
+  },
+  "Crop.cs.588": {
+    "japanese": "持ちものが いっぱいです",
+    "english": "Your inventory is full",
+    "segments": [
+      {
+        "text": "持ちもの",
+        "reading": "mochimono",
+        "gloss": "belongings / inventory"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いっぱいです",
+        "reading": "ippai desu",
+        "gloss": "is full"
+      }
+    ]
+  },
+  "Cursed_Doll": {
+    "japanese": "自業自得…これで私は解放された…ヒャッ、ヒャッ、ヒャッー！",
+    "english": "You brought this on yourself... now I'm free... hee, hee, heeee!",
+    "segments": [
+      {
+        "text": "自業自得…",
+        "reading": "jigō jitoku",
+        "gloss": "you reap what you sow"
+      },
+      {
+        "text": "これで",
+        "reading": "kore de",
+        "gloss": "with this"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "解放された…",
+        "reading": "kaihō sareta",
+        "gloss": "have been freed"
+      },
+      {
+        "text": "ヒャッ、",
+        "reading": "hyat",
+        "gloss": "hee"
+      },
+      {
+        "text": "ヒャッ、",
+        "reading": "hyat",
+        "gloss": "hee"
+      },
+      {
+        "text": "ヒャッー！",
+        "reading": "hyā",
+        "gloss": "heeee"
+      }
+    ]
+  },
+  "CustomizedBootItemName": {
+    "japanese": "オーダーメイド{0}",
+    "english": "Custom-made {0}",
+    "segments": [
+      {
+        "text": "オーダーメイド",
+        "reading": "ōdā meido",
+        "gloss": "made to order"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(item)"
+      }
+    ]
+  },
+  "Darkness_BuffDescription": {
+    "japanese": "視界が暗闇につつまれて、見えにくくなります",
+    "english": "Darkness clouds your vision, making it hard to see",
+    "segments": [
+      {
+        "text": "視界",
+        "reading": "shikai",
+        "gloss": "field of vision"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "暗闇",
+        "reading": "kurayami",
+        "gloss": "darkness"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "in"
+      },
+      {
+        "text": "つつまれて、",
+        "reading": "tsutsumarete",
+        "gloss": "being enveloped"
+      },
+      {
+        "text": "見えにくく",
+        "reading": "mienikuku",
+        "gloss": "hard to see"
+      },
+      {
+        "text": "なります",
+        "reading": "narimasu",
+        "gloss": "becomes"
+      }
+    ]
+  },
+  "Darkness_BuffName": {
+    "japanese": "闇",
+    "english": "Darkness",
+    "segments": [
+      {
+        "text": "闇",
+        "reading": "yami",
+        "gloss": "darkness"
+      }
+    ]
+  },
+  "DayTimeMoneyBox.cs.10370": {
+    "japanese": "午前",
+    "english": "am",
+    "segments": [
+      {
+        "text": "午前",
+        "reading": "gozen",
+        "gloss": "morning / a.m."
+      }
+    ]
+  },
+  "DayTimeMoneyBox.cs.10371": {
+    "japanese": "午後",
+    "english": "pm",
+    "segments": [
+      {
+        "text": "午後",
+        "reading": "gogo",
+        "gloss": "afternoon / p.m."
+      }
+    ]
+  },
+  "DayTimeMoneyBox.cs.10378": {
+    "japanese": "ポーズ",
+    "english": "Paused",
+    "segments": [
+      {
+        "text": "ポーズ",
+        "reading": "pōzu",
+        "gloss": "pause"
+      }
+    ]
+  },
+  "Debris.cs.621": {
+    "japanese": "銅",
+    "english": "Copper",
+    "segments": [
+      {
+        "text": "銅",
+        "reading": "dō",
+        "gloss": "copper"
+      }
+    ]
+  },
+  "Debris.cs.622": {
+    "japanese": "鉄",
+    "english": "Iron",
+    "segments": [
+      {
+        "text": "鉄",
+        "reading": "tetsu",
+        "gloss": "iron"
+      }
+    ]
+  },
+  "Debris.cs.623": {
+    "japanese": "石炭",
+    "english": "Coal",
+    "segments": [
+      {
+        "text": "石炭",
+        "reading": "sekitan",
+        "gloss": "coal"
+      }
+    ]
+  },
+  "Debris.cs.624": {
+    "japanese": "金",
+    "english": "Gold",
+    "segments": [
+      {
+        "text": "金",
+        "reading": "kin",
+        "gloss": "gold"
+      }
+    ]
+  },
+  "Debris.cs.625": {
+    "japanese": "コイン",
+    "english": "Coins",
+    "segments": [
+      {
+        "text": "コイン",
+        "reading": "koin",
+        "gloss": "coins"
+      }
+    ]
+  },
+  "Debris.cs.626": {
+    "japanese": "イリジウム",
+    "english": "Iridium",
+    "segments": [
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      }
+    ]
+  },
+  "Debris.cs.627": {
+    "japanese": "木",
+    "english": "Wood",
+    "segments": [
+      {
+        "text": "木",
+        "reading": "ki",
+        "gloss": "wood"
+      }
+    ]
+  },
+  "Debris.cs.628": {
+    "japanese": "石",
+    "english": "Stone",
+    "segments": [
+      {
+        "text": "石",
+        "reading": "ishi",
+        "gloss": "stone"
+      }
+    ]
+  },
+  "Debris.cs.629": {
+    "japanese": "燃料",
+    "english": "Fuel",
+    "segments": [
+      {
+        "text": "燃料",
+        "reading": "nenryō",
+        "gloss": "fuel"
+      }
+    ]
+  },
+  "Debris.cs.630": {
+    "japanese": "水晶",
+    "english": "Quartz",
+    "segments": [
+      {
+        "text": "水晶",
+        "reading": "suishō",
+        "gloss": "quartz / crystal"
+      }
+    ]
+  },
+  "Debuff_Weakness": {
+    "japanese": "欠点",
+    "english": "Weakness",
+    "segments": [
+      {
+        "text": "欠点",
+        "reading": "ketten",
+        "gloss": "flaw / weak point"
+      }
+    ]
+  },
+  "Decimal": {
+    "japanese": "小数点",
+    "english": "Decimal point",
+    "segments": [
+      {
+        "text": "小数点",
+        "reading": "shōsūten",
+        "gloss": "decimal point"
+      }
+    ]
+  },
+  "Deconstructor_fail": {
+    "japanese": "このアイテムはスクラップにできません。",
+    "english": "This item can't be scrapped.",
+    "segments": [
+      {
+        "text": "この",
+        "reading": "kono",
+        "gloss": "this"
+      },
+      {
+        "text": "アイテム",
+        "reading": "aitemu",
+        "gloss": "item"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "スクラップに",
+        "reading": "sukurappu ni",
+        "gloss": "into scrap"
+      },
+      {
+        "text": "できません。",
+        "reading": "dekimasen",
+        "gloss": "cannot be made"
+      }
+    ]
+  },
+  "Delete": {
+    "japanese": "削除",
+    "english": "Delete",
+    "segments": [
+      {
+        "text": "削除",
+        "reading": "sakujo",
+        "gloss": "deletion"
+      }
+    ]
+  },
+  "DesertTrader1": {
+    "japanese": "ようこそ、旅の人...取引に興味がありますか？",
+    "english": "Welcome, traveller... are you interested in trading?",
+    "segments": [
+      {
+        "text": "ようこそ、",
+        "reading": "yōkoso",
+        "gloss": "welcome"
+      },
+      {
+        "text": "旅の人...",
+        "reading": "tabi no hito",
+        "gloss": "traveller"
+      },
+      {
+        "text": "取引",
+        "reading": "torihiki",
+        "gloss": "trade"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "in"
+      },
+      {
+        "text": "興味",
+        "reading": "kyōmi",
+        "gloss": "interest"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ありますか？",
+        "reading": "arimasu ka",
+        "gloss": "do you have?"
+      }
+    ]
+  },
+  "DesertTrader2": {
+    "japanese": "取引のためのエキゾチックな商品！",
+    "english": "Exotic goods for trade!",
+    "segments": [
+      {
+        "text": "取引",
+        "reading": "torihiki",
+        "gloss": "trade"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ため",
+        "reading": "tame",
+        "gloss": "purpose"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "エキゾチックな",
+        "reading": "ekizochikku na",
+        "gloss": "exotic"
+      },
+      {
+        "text": "商品！",
+        "reading": "shōhin",
+        "gloss": "goods"
+      }
+    ]
+  },
+  "DesertTrader3": {
+    "japanese": "私の故郷ではあなたの硬貨は価値がないです...他に取引するものはありますか？",
+    "english": "Your coins have no value where I'm from... do you have anything else to trade?",
+    "segments": [
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "故郷",
+        "reading": "kokyō",
+        "gloss": "homeland"
+      },
+      {
+        "text": "では",
+        "reading": "de wa",
+        "gloss": "in"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "硬貨",
+        "reading": "kōka",
+        "gloss": "coins"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "価値",
+        "reading": "kachi",
+        "gloss": "value"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ないです...",
+        "reading": "nai desu",
+        "gloss": "have none"
+      },
+      {
+        "text": "他に",
+        "reading": "hoka ni",
+        "gloss": "else"
+      },
+      {
+        "text": "取引する",
+        "reading": "torihiki suru",
+        "gloss": "to trade"
+      },
+      {
+        "text": "もの",
+        "reading": "mono",
+        "gloss": "thing"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ありますか？",
+        "reading": "arimasu ka",
+        "gloss": "is there?"
+      }
+    ]
+  },
+  "DesertTrader4_female": {
+    "japanese": "ラクダはあなたが好きみたいです、お嬢さん。それは確かにとても良い兆候ですね。",
+    "english": "The camel seems to like you, miss. That's certainly a very good sign.",
+    "segments": [
+      {
+        "text": "ラクダ",
+        "reading": "rakuda",
+        "gloss": "camel"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "好き",
+        "reading": "suki",
+        "gloss": "fond of"
+      },
+      {
+        "text": "みたいです、",
+        "reading": "mitai desu",
+        "gloss": "seems to be"
+      },
+      {
+        "text": "お嬢さん。",
+        "reading": "o-jōsan",
+        "gloss": "miss"
+      },
+      {
+        "text": "それ",
+        "reading": "sore",
+        "gloss": "that"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "確かに",
+        "reading": "tashika ni",
+        "gloss": "certainly"
+      },
+      {
+        "text": "とても",
+        "reading": "totemo",
+        "gloss": "very"
+      },
+      {
+        "text": "良い",
+        "reading": "yoi",
+        "gloss": "good"
+      },
+      {
+        "text": "兆候ですね。",
+        "reading": "chōkō desu ne",
+        "gloss": "is a sign"
+      }
+    ]
+  },
+  "DesertTrader4_male": {
+    "japanese": "ラクダはあなたが好きみたいです、旦那さん。それは確かにとても良い兆候ですね。",
+    "english": "The camel seems to like you, sir. That's certainly a very good sign.",
+    "segments": [
+      {
+        "text": "ラクダ",
+        "reading": "rakuda",
+        "gloss": "camel"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "好き",
+        "reading": "suki",
+        "gloss": "fond of"
+      },
+      {
+        "text": "みたいです、",
+        "reading": "mitai desu",
+        "gloss": "seems to be"
+      },
+      {
+        "text": "旦那さん。",
+        "reading": "danna-san",
+        "gloss": "sir"
+      },
+      {
+        "text": "それ",
+        "reading": "sore",
+        "gloss": "that"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "確かに",
+        "reading": "tashika ni",
+        "gloss": "certainly"
+      },
+      {
+        "text": "とても",
+        "reading": "totemo",
+        "gloss": "very"
+      },
+      {
+        "text": "良い",
+        "reading": "yoi",
+        "gloss": "good"
+      },
+      {
+        "text": "兆候ですね。",
+        "reading": "chōkō desu ne",
+        "gloss": "is a sign"
+      }
+    ]
+  },
+  "Dialogue.cs.679": {
+    "japanese": "むらさきの",
+    "english": "Purple",
+    "segments": [
+      {
+        "text": "むらさきの",
+        "reading": "murasaki no",
+        "gloss": "purple"
+      }
+    ]
+  },
+  "Dialogue.cs.680": {
+    "japanese": "ネバネバした",
+    "english": "Gooey",
+    "segments": [
+      {
+        "text": "ネバネバした",
+        "reading": "nebaneba shita",
+        "gloss": "sticky / gooey"
+      }
+    ]
+  },
+  "Dialogue.cs.681": {
+    "japanese": "こなっぽい",
+    "english": "Chalky",
+    "segments": [
+      {
+        "text": "こなっぽい",
+        "reading": "konappoi",
+        "gloss": "powdery / chalky"
+      }
+    ]
+  },
+  "Dialogue.cs.682": {
+    "japanese": "緑の",
+    "english": "Green",
+    "segments": [
+      {
+        "text": "緑の",
+        "reading": "midori no",
+        "gloss": "green"
+      }
+    ]
+  },
+  "Dialogue.cs.683": {
+    "japanese": "ぬいぐるみ",
+    "english": "Plush",
+    "segments": [
+      {
+        "text": "ぬいぐるみ",
+        "reading": "nuigurumi",
+        "gloss": "stuffed toy / plush"
+      }
+    ]
+  },
+  "Dialogue.cs.684": {
+    "japanese": "ぶあつい",
+    "english": "Chunky",
+    "segments": [
+      {
+        "text": "ぶあつい",
+        "reading": "buatsui",
+        "gloss": "thick / chunky"
+      }
+    ]
+  },
+  "Dialogue.cs.685": {
+    "japanese": "巨大な",
+    "english": "Gigantic",
+    "segments": [
+      {
+        "text": "巨大な",
+        "reading": "kyodai na",
+        "gloss": "gigantic"
+      }
+    ]
+  },
+  "Dialogue.cs.686": {
+    "japanese": "脂ぎった",
+    "english": "Greasy",
+    "segments": [
+      {
+        "text": "脂ぎった",
+        "reading": "aburagitta",
+        "gloss": "greasy"
+      }
+    ]
+  },
+  "Dialogue.cs.687": {
+    "japanese": "暗い",
+    "english": "Gloomy",
+    "segments": [
+      {
+        "text": "暗い",
+        "reading": "kurai",
+        "gloss": "dark / gloomy"
+      }
+    ]
+  },
+  "Dialogue.cs.688": {
+    "japanese": "実用的な",
+    "english": "Practical",
+    "segments": [
+      {
+        "text": "実用的な",
+        "reading": "jitsuyōteki na",
+        "gloss": "practical"
+      }
+    ]
+  },
+  "Dialogue.cs.689": {
+    "japanese": "細長い",
+    "english": "Lanky",
+    "segments": [
+      {
+        "text": "細長い",
+        "reading": "hosonagai",
+        "gloss": "long and thin"
+      }
+    ]
+  },
+  "Dialogue.cs.690": {
+    "japanese": "ぼんやりとした",
+    "english": "Dopey",
+    "segments": [
+      {
+        "text": "ぼんやりとした",
+        "reading": "bonyari to shita",
+        "gloss": "vague / dopey"
+      }
+    ]
+  },
+  "Dialogue.cs.691": {
+    "japanese": "パリパリの",
+    "english": "Crusty",
+    "segments": [
+      {
+        "text": "パリパリの",
+        "reading": "paripari no",
+        "gloss": "crispy / crusty"
+      }
+    ]
+  },
+  "Dialogue.cs.692": {
+    "japanese": "すばらしい",
+    "english": "Fantastic",
+    "segments": [
+      {
+        "text": "すばらしい",
+        "reading": "subarashii",
+        "gloss": "wonderful"
+      }
+    ]
+  },
+  "Dialogue.cs.693": {
+    "japanese": "弾力のある",
+    "english": "Rubbery",
+    "segments": [
+      {
+        "text": "弾力のある",
+        "reading": "danryoku no aru",
+        "gloss": "springy / rubbery"
+      }
+    ]
+  },
+  "Dialogue.cs.694": {
+    "japanese": "バカげた",
+    "english": "Silly",
+    "segments": [
+      {
+        "text": "バカげた",
+        "reading": "bakageta",
+        "gloss": "ridiculous"
+      }
+    ]
+  },
+  "Dialogue.cs.695": {
+    "japanese": "勇敢な",
+    "english": "Courageous",
+    "segments": [
+      {
+        "text": "勇敢な",
+        "reading": "yūkan na",
+        "gloss": "brave"
+      }
+    ]
+  },
+  "Dialogue.cs.696": {
+    "japanese": "手ごろな",
+    "english": "Reasonable",
+    "segments": [
+      {
+        "text": "手ごろな",
+        "reading": "tegoro na",
+        "gloss": "reasonable / handy"
+      }
+    ]
+  },
+  "Dialogue.cs.697": {
+    "japanese": "孤独な",
+    "english": "Lonely",
+    "segments": [
+      {
+        "text": "孤独な",
+        "reading": "kodoku na",
+        "gloss": "lonely"
+      }
+    ]
+  },
+  "Dialogue.cs.698": {
+    "japanese": "苦い",
+    "english": "Bitter",
+    "segments": [
+      {
+        "text": "苦い",
+        "reading": "nigai",
+        "gloss": "bitter"
+      }
+    ]
+  },
+  "Dialogue.cs.699": {
+    "japanese": "ドラゴン",
+    "english": "Dragon",
+    "segments": [
+      {
+        "text": "ドラゴン",
+        "reading": "doragon",
+        "gloss": "dragon"
+      }
+    ]
+  },
+  "Dialogue.cs.700": {
+    "japanese": "ビュッフェ",
+    "english": "Buffet",
+    "segments": [
+      {
+        "text": "ビュッフェ",
+        "reading": "byuffe",
+        "gloss": "buffet"
+      }
+    ]
+  },
+  "Dialogue.cs.701": {
+    "japanese": "ビスケット",
+    "english": "Biscuit",
+    "segments": [
+      {
+        "text": "ビスケット",
+        "reading": "bisuketto",
+        "gloss": "biscuit"
+      }
+    ]
+  },
+  "Dialogue.cs.702": {
+    "japanese": "ロボット",
+    "english": "Robot",
+    "segments": [
+      {
+        "text": "ロボット",
+        "reading": "robotto",
+        "gloss": "robot"
+      }
+    ]
+  },
+  "Dialogue.cs.703": {
+    "japanese": "惑星",
+    "english": "Planet",
+    "segments": [
+      {
+        "text": "惑星",
+        "reading": "wakusei",
+        "gloss": "planet"
+      }
+    ]
+  },
+  "Dialogue.cs.704": {
+    "japanese": "ペッパー",
+    "english": "Pepper",
+    "segments": [
+      {
+        "text": "ペッパー",
+        "reading": "peppā",
+        "gloss": "pepper"
+      }
+    ]
+  },
+  "Dialogue.cs.705": {
+    "japanese": "墓",
+    "english": "Tomb",
+    "segments": [
+      {
+        "text": "墓",
+        "reading": "haka",
+        "gloss": "grave / tomb"
+      }
+    ]
+  },
+  "Dialogue.cs.706": {
+    "japanese": "ハイエナ",
+    "english": "Hyena",
+    "segments": [
+      {
+        "text": "ハイエナ",
+        "reading": "haiena",
+        "gloss": "hyena"
+      }
+    ]
+  },
+  "Dialogue.cs.707": {
+    "japanese": "くちびる",
+    "english": "Lip",
+    "segments": [
+      {
+        "text": "くちびる",
+        "reading": "kuchibiru",
+        "gloss": "lip"
+      }
+    ]
+  },
+  "Dialogue.cs.708": {
+    "japanese": "ウズラ",
+    "english": "Quail",
+    "segments": [
+      {
+        "text": "ウズラ",
+        "reading": "uzura",
+        "gloss": "quail"
+      }
+    ]
+  },
+  "Dialogue.cs.709": {
+    "japanese": "チーズ",
+    "english": "Cheese",
+    "segments": [
+      {
+        "text": "チーズ",
+        "reading": "chīzu",
+        "gloss": "cheese"
+      }
+    ]
+  },
+  "Dialogue.cs.710": {
+    "japanese": "災害",
+    "english": "Disaster",
+    "segments": [
+      {
+        "text": "災害",
+        "reading": "saigai",
+        "gloss": "disaster"
+      }
+    ]
+  },
+  "Dialogue.cs.711": {
+    "japanese": "レインコート",
+    "english": "Raincoat",
+    "segments": [
+      {
+        "text": "レインコート",
+        "reading": "reinkōto",
+        "gloss": "raincoat"
+      }
+    ]
+  },
+  "Dialogue.cs.712": {
+    "japanese": "クツ",
+    "english": "Shoe",
+    "segments": [
+      {
+        "text": "クツ",
+        "reading": "kutsu",
+        "gloss": "shoe"
+      }
+    ]
+  },
+  "Dialogue.cs.713": {
+    "japanese": "城",
+    "english": "Castle",
+    "segments": [
+      {
+        "text": "城",
+        "reading": "shiro",
+        "gloss": "castle"
+      }
+    ]
+  },
+  "Dialogue.cs.714": {
+    "japanese": "エルフ",
+    "english": "Elf",
+    "segments": [
+      {
+        "text": "エルフ",
+        "reading": "erufu",
+        "gloss": "elf"
+      }
+    ]
+  },
+  "Dialogue.cs.715": {
+    "japanese": "ポンプ",
+    "english": "Pump",
+    "segments": [
+      {
+        "text": "ポンプ",
+        "reading": "ponpu",
+        "gloss": "pump"
+      }
+    ]
+  },
+  "Dialogue.cs.716": {
+    "japanese": "さわやかな",
+    "english": "Crisp",
+    "segments": [
+      {
+        "text": "さわやかな",
+        "reading": "sawayaka na",
+        "gloss": "refreshing / crisp"
+      }
+    ]
+  },
+  "Dialogue.cs.717": {
+    "japanese": "カツラ",
+    "english": "Wig",
+    "segments": [
+      {
+        "text": "カツラ",
+        "reading": "katsura",
+        "gloss": "wig"
+      }
+    ]
+  },
+  "Dialogue.cs.718": {
+    "japanese": "人魚",
+    "english": "Mermaid",
+    "segments": [
+      {
+        "text": "人魚",
+        "reading": "ningyo",
+        "gloss": "mermaid"
+      }
+    ]
+  },
   "Object.cs.12847": {
     "japanese": "家具",
     "english": "Furniture",
