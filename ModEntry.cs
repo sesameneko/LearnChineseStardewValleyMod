@@ -250,15 +250,27 @@ namespace LanguageStudyStardewValleyMod
             if (!Context.IsWorldReady)
                 return;
 
+            if (currentConfig.HoldFreezeTooltip.JustPressed())
+            {
+                if (!FrozenTooltip.IsFrozen && FrozenTooltip.Freeze(locked: false))
+                    Log("Tooltip frozen while held -- move the cursor over it to hover individual words.");
+            }
+
             if (currentConfig.FreezeTooltip.JustPressed())
             {
-                if (FrozenTooltip.IsFrozen)
+                if (FrozenTooltip.IsFrozen && !FrozenTooltip.IsLocked)
+                {
+                    // pinned by the hold key: keep it up once that key is released
+                    FrozenTooltip.Lock();
+                    Log("Tooltip locked.");
+                }
+                else if (FrozenTooltip.IsFrozen)
                 {
                     FrozenTooltip.Unfreeze();
                     Log("Tooltip unfrozen.");
                 }
-                else if (FrozenTooltip.Freeze())
-                    Log("Tooltip frozen -- move the cursor over it to hover individual words.");
+                else if (FrozenTooltip.Freeze(locked: true))
+                    Log("Tooltip locked -- move the cursor over it to hover individual words.");
                 else
                     Log("Nothing to freeze: hover a tooltip first.", LogLevel.Warn);
             }
@@ -274,6 +286,11 @@ namespace LanguageStudyStardewValleyMod
 
         private void OnTick(object? sender, UpdateTickedEventArgs updateTickedEventArgs)
         {
+            // polled rather than handled in OnButtonsChanged so the pin also drops if the key stops
+            // being reported as down without a release event (e.g. the window losing focus)
+            if (FrozenTooltip.IsFrozen && !FrozenTooltip.IsLocked && !currentConfig.HoldFreezeTooltip.IsDown())
+                FrozenTooltip.Unfreeze();
+
             QuestLogProbe.Poll(this.Helper);
         }
 
@@ -669,10 +686,18 @@ namespace LanguageStudyStardewValleyMod
 
             configMenu.AddKeybindList(
                 mod: this.ModManifest,
-                name: () => "Freeze Tooltip",
-                tooltip: () => "Pins the tooltip under the cursor so you can move the mouse onto it and hover individual words.",
+                name: () => "Lock Tooltip",
+                tooltip: () => "Pins the tooltip under the cursor until pressed again, so you can move the mouse onto it and hover individual words.",
                 getValue: () => this.currentConfig.FreezeTooltip,
                 setValue: value => this.currentConfig.FreezeTooltip = value
+            );
+
+            configMenu.AddKeybindList(
+                mod: this.ModManifest,
+                name: () => "Hold to Freeze Tooltip",
+                tooltip: () => "Pins the tooltip under the cursor for as long as this is held down.",
+                getValue: () => this.currentConfig.HoldFreezeTooltip,
+                setValue: value => this.currentConfig.HoldFreezeTooltip = value
             );
         }
         #endregion
