@@ -1,0 +1,602 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Data_Monsters.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Bat#14": {
+    "japanese": "コウモリ",
+    "english": "Bat",
+    "segments": [
+      {
+        "text": "コウモリ",
+        "reading": "kōmori",
+        "gloss": "bat"
+      }
+    ]
+  },
+  "Big Slime#14": {
+    "japanese": "ビッグスライム",
+    "english": "Big slime",
+    "segments": [
+      {
+        "text": "ビッグスライム",
+        "reading": "biggu suraimu",
+        "gloss": "big slime"
+      }
+    ]
+  },
+  "Blue Squid#14": {
+    "japanese": "青いイカ",
+    "english": "Blue squid",
+    "segments": [
+      {
+        "text": "青い",
+        "reading": "aoi",
+        "gloss": "blue"
+      },
+      {
+        "text": "イカ",
+        "reading": "ika",
+        "gloss": "squid"
+      }
+    ]
+  },
+  "Bug#14": {
+    "japanese": "昆虫",
+    "english": "Insect",
+    "segments": [
+      {
+        "text": "昆虫",
+        "reading": "konchū",
+        "gloss": "insect"
+      }
+    ]
+  },
+  "Carbon Ghost#14": {
+    "japanese": "炭素ゴースト",
+    "english": "Carbon ghost",
+    "segments": [
+      {
+        "text": "炭素",
+        "reading": "tanso",
+        "gloss": "carbon"
+      },
+      {
+        "text": "ゴースト",
+        "reading": "gōsuto",
+        "gloss": "ghost"
+      }
+    ]
+  },
+  "Cat#14": {
+    "japanese": "ネコ",
+    "english": "Cat",
+    "segments": [
+      {
+        "text": "ネコ",
+        "reading": "neko",
+        "gloss": "cat"
+      }
+    ]
+  },
+  "Crow#14": {
+    "japanese": "カラス",
+    "english": "Crow",
+    "segments": [
+      {
+        "text": "カラス",
+        "reading": "karasu",
+        "gloss": "crow"
+      }
+    ]
+  },
+  "Duggy#14": {
+    "japanese": "ダギー",
+    "english": "Duggy",
+    "segments": [
+      {
+        "text": "ダギー",
+        "reading": "dagī",
+        "gloss": "Duggy"
+      }
+    ]
+  },
+  "Dust Spirit#14": {
+    "japanese": "ススおばけ",
+    "english": "Soot goblin",
+    "segments": [
+      {
+        "text": "ススおばけ",
+        "reading": "susu obake",
+        "gloss": "soot ghost"
+      }
+    ]
+  },
+  "Dwarvish Sentry#14": {
+    "japanese": "ドワーフセントリー",
+    "english": "Dwarvish sentry",
+    "segments": [
+      {
+        "text": "ドワーフセントリー",
+        "reading": "dowāfu sentorī",
+        "gloss": "dwarvish sentry"
+      }
+    ]
+  },
+  "False Magma Cap#14": {
+    "japanese": "ニセマグマタケ",
+    "english": "False magma cap",
+    "segments": [
+      {
+        "text": "ニセ",
+        "reading": "nise",
+        "gloss": "false"
+      },
+      {
+        "text": "マグマタケ",
+        "reading": "maguma take",
+        "gloss": "magma mushroom"
+      }
+    ]
+  },
+  "Fireball#14": {
+    "japanese": "ヒノタマ",
+    "english": "Fireball",
+    "segments": [
+      {
+        "text": "ヒノタマ",
+        "reading": "hinotama",
+        "gloss": "fireball"
+      }
+    ]
+  },
+  "Fly#14": {
+    "japanese": "羽虫",
+    "english": "Winged insect",
+    "segments": [
+      {
+        "text": "羽虫",
+        "reading": "hamushi",
+        "gloss": "winged insect"
+      }
+    ]
+  },
+  "Frog#14": {
+    "japanese": "カエル",
+    "english": "Frog",
+    "segments": [
+      {
+        "text": "カエル",
+        "reading": "kaeru",
+        "gloss": "frog"
+      }
+    ]
+  },
+  "Frost Bat#14": {
+    "japanese": "フロストバット",
+    "english": "Frost bat",
+    "segments": [
+      {
+        "text": "フロストバット",
+        "reading": "furosuto batto",
+        "gloss": "frost bat"
+      }
+    ]
+  },
+  "Frost Jelly#14": {
+    "japanese": "フロストジェリー",
+    "english": "Frost jelly",
+    "segments": [
+      {
+        "text": "フロストジェリー",
+        "reading": "furosuto jerī",
+        "gloss": "frost jelly"
+      }
+    ]
+  },
+  "Ghost#14": {
+    "japanese": "ゴースト",
+    "english": "Ghost",
+    "segments": [
+      {
+        "text": "ゴースト",
+        "reading": "gōsuto",
+        "gloss": "ghost"
+      }
+    ]
+  },
+  "Green Slime#14": {
+    "japanese": "グリーンスライム",
+    "english": "Green slime",
+    "segments": [
+      {
+        "text": "グリーンスライム",
+        "reading": "gurīn suraimu",
+        "gloss": "green slime"
+      }
+    ]
+  },
+  "Grub#14": {
+    "japanese": "イモ虫",
+    "english": "Grub",
+    "segments": [
+      {
+        "text": "イモ虫",
+        "reading": "imomushi",
+        "gloss": "caterpillar / grub"
+      }
+    ]
+  },
+  "Hot Head#14": {
+    "japanese": "ホットヘッド",
+    "english": "Hot head",
+    "segments": [
+      {
+        "text": "ホットヘッド",
+        "reading": "hotto heddo",
+        "gloss": "hot head"
+      }
+    ]
+  },
+  "Iridium Bat#14": {
+    "japanese": "イリジウムコウモリ",
+    "english": "Iridium bat",
+    "segments": [
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "コウモリ",
+        "reading": "kōmori",
+        "gloss": "bat"
+      }
+    ]
+  },
+  "Iridium Crab#14": {
+    "japanese": "イリジウムカニ",
+    "english": "Iridium crab",
+    "segments": [
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "カニ",
+        "reading": "kani",
+        "gloss": "crab"
+      }
+    ]
+  },
+  "Lava Bat#14": {
+    "japanese": "溶岩コウモリ",
+    "english": "Lava bat",
+    "segments": [
+      {
+        "text": "溶岩",
+        "reading": "yōgan",
+        "gloss": "lava"
+      },
+      {
+        "text": "コウモリ",
+        "reading": "kōmori",
+        "gloss": "bat"
+      }
+    ]
+  },
+  "Lava Crab#14": {
+    "japanese": "溶岩ガニ",
+    "english": "Lava crab",
+    "segments": [
+      {
+        "text": "溶岩",
+        "reading": "yōgan",
+        "gloss": "lava"
+      },
+      {
+        "text": "ガニ",
+        "reading": "gani",
+        "gloss": "crab"
+      }
+    ]
+  },
+  "Lava Lurk#14": {
+    "japanese": "溶岩ルーク",
+    "english": "Lava lurk",
+    "segments": [
+      {
+        "text": "溶岩",
+        "reading": "yōgan",
+        "gloss": "lava"
+      },
+      {
+        "text": "ルーク",
+        "reading": "rūku",
+        "gloss": "lurk"
+      }
+    ]
+  },
+  "Magma Duggy#14": {
+    "japanese": "マグマダギー",
+    "english": "Magma duggy",
+    "segments": [
+      {
+        "text": "マグマダギー",
+        "reading": "maguma dagī",
+        "gloss": "magma Duggy"
+      }
+    ]
+  },
+  "Magma Sparker#14": {
+    "japanese": "マグマスパーカー",
+    "english": "Magma sparker",
+    "segments": [
+      {
+        "text": "マグマスパーカー",
+        "reading": "maguma supākā",
+        "gloss": "magma sparker"
+      }
+    ]
+  },
+  "Magma Sprite#14": {
+    "japanese": "マグマおばけ",
+    "english": "Magma ghost",
+    "segments": [
+      {
+        "text": "マグマ",
+        "reading": "maguma",
+        "gloss": "magma"
+      },
+      {
+        "text": "おばけ",
+        "reading": "obake",
+        "gloss": "ghost"
+      }
+    ]
+  },
+  "Metal Head#14": {
+    "japanese": "メタルヘッド",
+    "english": "Metal head",
+    "segments": [
+      {
+        "text": "メタルヘッド",
+        "reading": "metaru heddo",
+        "gloss": "metal head"
+      }
+    ]
+  },
+  "Mummy#14": {
+    "japanese": "ミイラ",
+    "english": "Mummy",
+    "segments": [
+      {
+        "text": "ミイラ",
+        "reading": "miira",
+        "gloss": "mummy"
+      }
+    ]
+  },
+  "Pepper Rex#14": {
+    "japanese": "ペッパーレックス",
+    "english": "Pepper Rex",
+    "segments": [
+      {
+        "text": "ペッパーレックス",
+        "reading": "peppā rekkusu",
+        "gloss": "Pepper Rex"
+      }
+    ]
+  },
+  "Putrid Ghost#14": {
+    "japanese": "腐ったゴースト",
+    "english": "Rotten ghost",
+    "segments": [
+      {
+        "text": "腐った",
+        "reading": "kusatta",
+        "gloss": "rotten"
+      },
+      {
+        "text": "ゴースト",
+        "reading": "gōsuto",
+        "gloss": "ghost"
+      }
+    ]
+  },
+  "Rock Crab#14": {
+    "japanese": "岩ガニ",
+    "english": "Rock crab",
+    "segments": [
+      {
+        "text": "岩",
+        "reading": "iwa",
+        "gloss": "rock"
+      },
+      {
+        "text": "ガニ",
+        "reading": "gani",
+        "gloss": "crab"
+      }
+    ]
+  },
+  "Royal Serpent#14": {
+    "japanese": "ロイヤルサーペント",
+    "english": "Royal serpent",
+    "segments": [
+      {
+        "text": "ロイヤルサーペント",
+        "reading": "roiyaru sāpento",
+        "gloss": "royal serpent"
+      }
+    ]
+  },
+  "Serpent#14": {
+    "japanese": "サーペント",
+    "english": "Serpent",
+    "segments": [
+      {
+        "text": "サーペント",
+        "reading": "sāpento",
+        "gloss": "serpent"
+      }
+    ]
+  },
+  "Shadow Brute#14": {
+    "japanese": "シャドーウォリアー",
+    "english": "Shadow warrior",
+    "segments": [
+      {
+        "text": "シャドーウォリアー",
+        "reading": "shadō woriā",
+        "gloss": "shadow warrior"
+      }
+    ]
+  },
+  "Shadow Guy#14": {
+    "japanese": "シャドーマン",
+    "english": "Shadow man",
+    "segments": [
+      {
+        "text": "シャドーマン",
+        "reading": "shadō man",
+        "gloss": "shadow man"
+      }
+    ]
+  },
+  "Shadow Shaman#14": {
+    "japanese": "シャドーシャーマン",
+    "english": "Shadow shaman",
+    "segments": [
+      {
+        "text": "シャドーシャーマン",
+        "reading": "shadō shāman",
+        "gloss": "shadow shaman"
+      }
+    ]
+  },
+  "Shadow Sniper#14": {
+    "japanese": "シャドウスナイパー",
+    "english": "Shadow sniper",
+    "segments": [
+      {
+        "text": "シャドウスナイパー",
+        "reading": "shadou sunaipā",
+        "gloss": "shadow sniper"
+      }
+    ]
+  },
+  "Skeleton#14": {
+    "japanese": "スケルトン",
+    "english": "Skeleton",
+    "segments": [
+      {
+        "text": "スケルトン",
+        "reading": "sukeruton",
+        "gloss": "skeleton"
+      }
+    ]
+  },
+  "Skeleton Mage#14": {
+    "japanese": "スケルトンメイジ",
+    "english": "Skeleton mage",
+    "segments": [
+      {
+        "text": "スケルトンメイジ",
+        "reading": "sukeruton meiji",
+        "gloss": "skeleton mage"
+      }
+    ]
+  },
+  "Skeleton Warrior#14": {
+    "japanese": "スケルトンウォリアー",
+    "english": "Skeleton warrior",
+    "segments": [
+      {
+        "text": "スケルトンウォリアー",
+        "reading": "sukeruton woriā",
+        "gloss": "skeleton warrior"
+      }
+    ]
+  },
+  "Sludge#14": {
+    "japanese": "スラッジ",
+    "english": "Sludge",
+    "segments": [
+      {
+        "text": "スラッジ",
+        "reading": "surajji",
+        "gloss": "sludge"
+      }
+    ]
+  },
+  "Spider#14": {
+    "japanese": "クモ",
+    "english": "Spider",
+    "segments": [
+      {
+        "text": "クモ",
+        "reading": "kumo",
+        "gloss": "spider"
+      }
+    ]
+  },
+  "Spiker#14": {
+    "japanese": "スパイカー",
+    "english": "Spiker",
+    "segments": [
+      {
+        "text": "スパイカー",
+        "reading": "supaikā",
+        "gloss": "spiker"
+      }
+    ]
+  },
+  "Squid Kid#14": {
+    "japanese": "スキッドキッド",
+    "english": "Squid kid",
+    "segments": [
+      {
+        "text": "スキッドキッド",
+        "reading": "sukiddo kiddo",
+        "gloss": "squid kid"
+      }
+    ]
+  },
+  "Stone Golem#14": {
+    "japanese": "ストーンゴーレム",
+    "english": "Stone golem",
+    "segments": [
+      {
+        "text": "ストーンゴーレム",
+        "reading": "sutōn gōremu",
+        "gloss": "stone golem"
+      }
+    ]
+  },
+  "Tiger Slime#14": {
+    "japanese": "タイガースライム",
+    "english": "Tiger slime",
+    "segments": [
+      {
+        "text": "タイガースライム",
+        "reading": "taigā suraimu",
+        "gloss": "tiger slime"
+      }
+    ]
+  },
+  "Wilderness Golem#14": {
+    "japanese": "荒地ゴーレム",
+    "english": "Wasteland golem",
+    "segments": [
+      {
+        "text": "荒地",
+        "reading": "arechi",
+        "gloss": "wasteland"
+      },
+      {
+        "text": "ゴーレム",
+        "reading": "gōremu",
+        "gloss": "golem"
+      }
+    ]
+  }
+}

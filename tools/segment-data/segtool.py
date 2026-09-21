@@ -27,9 +27,26 @@ DATA_EN = os.path.join(ROOT, "tools", "extracted-strings", "data-en")
 # reads. These are expanded into one pseudo-entry per displayed field, keyed
 # "<record id>#<field index>", so the rest of the pipeline can treat them like
 # any other table. Field indices are 0-based into the split record.
+# "fields": None means the value is one piece of text, not a record -- split it
+# on nothing. Several Data assets (letters, dialogue) are like that, and some of
+# them contain slashes inside the prose, so splitting would truncate them.
 DATA_TABLES = {
-    # Quests: type/name/description/objective/...
+    # type/name/description/objective/...
     "Data_Quests": {"asset": "Quests", "fields": [1, 2, 3]},
+    # englishName/description/price/defense/immunity/colorIndex/displayName
+    "Data_Boots": {"asset": "Boots", "fields": [1, 6]},
+    # englishName/reward/items/color/count/?/displayName
+    "Data_Bundles": {"asset": "Bundles", "fields": [6]},
+    # englishName/description/showHair/skipHairstyleOffset/?/displayName/?
+    "Data_hats": {"asset": "hats", "fields": [1, 5]},
+    # 14 stat fields, then displayName
+    "Data_Monsters": {"asset": "Monsters", "fields": [14]},
+    # alternating reaction line / item-id list, six pairs
+    "Data_NPCGiftTastes": {"asset": "NPCGiftTastes", "fields": [0, 2, 4, 6, 8, 10]},
+    # whole-value tables
+    "Data_mail": {"asset": "mail", "fields": None},
+    "Data_ExtraDialogue": {"asset": "ExtraDialogue", "fields": None},
+    "Data_EngagementDialogue": {"asset": "EngagementDialogue", "fields": None},
 }
 # tracked source of truth; assets/segments/ja is generated from it by the
 # csproj's CopySegmentData target and is gitignored
@@ -81,6 +98,13 @@ def data_source(table):
         en_records = {}
 
     ja, en = {}, {}
+    if spec["fields"] is None:
+        for record_id, record in ja_records.items():
+            ja[record_id] = record
+            if record_id in en_records:
+                en[record_id] = en_records[record_id]
+        return ja, en
+
     for record_id, record in ja_records.items():
         parts = record.split("/")
         en_parts = en_records.get(record_id, "").split("/")

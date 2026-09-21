@@ -1,0 +1,644 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Data_Boots.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "504#1": {
+    "japanese": "防御はうすいが、見た目はオシャレ！",
+    "english": "Thin on protection, but stylish to look at!",
+    "segments": [
+      {
+        "text": "防御",
+        "reading": "bōgyo",
+        "gloss": "defence"
+      },
+      {
+        "text": "はうすいが、",
+        "reading": "wa usui ga",
+        "gloss": "is thin, but"
+      },
+      {
+        "text": "見た目",
+        "reading": "mitame",
+        "gloss": "appearance"
+      },
+      {
+        "text": "はオシャレ！",
+        "reading": "wa oshare",
+        "gloss": "is stylish"
+      }
+    ]
+  },
+  "504#6": {
+    "japanese": "スニーカー",
+    "english": "Sneakers",
+    "segments": [
+      {
+        "text": "スニーカー",
+        "reading": "sunīkā",
+        "gloss": "sneakers"
+      }
+    ]
+  },
+  "505#1": {
+    "japanese": "エレメントから身を守ってくれる。",
+    "english": "They protect you from the elements.",
+    "segments": [
+      {
+        "text": "エレメント",
+        "reading": "eremento",
+        "gloss": "the elements"
+      },
+      {
+        "text": "から身",
+        "reading": "kara mi",
+        "gloss": "your body from"
+      },
+      {
+        "text": "を守ってくれる。",
+        "reading": "o mamotte kureru",
+        "gloss": "they protect"
+      }
+    ]
+  },
+  "505#6": {
+    "japanese": "ゴム長グツ",
+    "english": "Rubber boots",
+    "segments": [
+      {
+        "text": "ゴム長グツ",
+        "reading": "gomu nagagutsu",
+        "gloss": "rubber boots"
+      }
+    ]
+  },
+  "506#1": {
+    "japanese": "しなやかな革からつくられている。",
+    "english": "Made from supple leather.",
+    "segments": [
+      {
+        "text": "しなやかな",
+        "reading": "shinayaka na",
+        "gloss": "supple"
+      },
+      {
+        "text": "革",
+        "reading": "kawa",
+        "gloss": "leather"
+      },
+      {
+        "text": "からつくられている。",
+        "reading": "kara tsukurarete iru",
+        "gloss": "is made from"
+      }
+    ]
+  },
+  "506#6": {
+    "japanese": "革のブーツ",
+    "english": "Leather boots",
+    "segments": [
+      {
+        "text": "革",
+        "reading": "kawa",
+        "gloss": "leather"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ブーツ",
+        "reading": "būtsu",
+        "gloss": "boots"
+      }
+    ]
+  },
+  "507#1": {
+    "japanese": "しこまれた鉄板がつま先を守る。",
+    "english": "An iron plate inside protects the toes.",
+    "segments": [
+      {
+        "text": "しこまれた",
+        "reading": "shikomareta",
+        "gloss": "built-in"
+      },
+      {
+        "text": "鉄板",
+        "reading": "teppan",
+        "gloss": "iron plate"
+      },
+      {
+        "text": "がつま先",
+        "reading": "ga tsumasaki",
+        "gloss": "the toes"
+      },
+      {
+        "text": "を守る。",
+        "reading": "o mamoru",
+        "gloss": "protects"
+      }
+    ]
+  },
+  "507#6": {
+    "japanese": "作業用ブーツ",
+    "english": "Work boots",
+    "segments": [
+      {
+        "text": "作業用",
+        "reading": "sagyō yō",
+        "gloss": "for work"
+      },
+      {
+        "text": "ブーツ",
+        "reading": "būtsu",
+        "gloss": "boots"
+      }
+    ]
+  },
+  "508#1": {
+    "japanese": "鉄のあみで補強されている。",
+    "english": "Reinforced with iron mesh.",
+    "segments": [
+      {
+        "text": "鉄",
+        "reading": "tetsu",
+        "gloss": "iron"
+      },
+      {
+        "text": "のあみ",
+        "reading": "no ami",
+        "gloss": "'s mesh"
+      },
+      {
+        "text": "で補強されている。",
+        "reading": "de hokyō sarete iru",
+        "gloss": "is reinforced with"
+      }
+    ]
+  },
+  "508#6": {
+    "japanese": "コンバットブーツ",
+    "english": "Combat boots",
+    "segments": [
+      {
+        "text": "コンバットブーツ",
+        "reading": "konbatto būtsu",
+        "gloss": "combat boots"
+      }
+    ]
+  },
+  "509#1": {
+    "japanese": "毛皮の裏地が足首を寒さから守ってくれる。",
+    "english": "The fur lining keeps your ankles from the cold.",
+    "segments": [
+      {
+        "text": "毛皮",
+        "reading": "kegawa",
+        "gloss": "fur"
+      },
+      {
+        "text": "の裏地",
+        "reading": "no uraji",
+        "gloss": "'s lining"
+      },
+      {
+        "text": "が足首",
+        "reading": "ga ashikubi",
+        "gloss": "your ankles"
+      },
+      {
+        "text": "を寒さ",
+        "reading": "o samusa",
+        "gloss": "from the cold"
+      },
+      {
+        "text": "から守ってくれる。",
+        "reading": "kara mamotte kureru",
+        "gloss": "protects"
+      }
+    ]
+  },
+  "509#6": {
+    "japanese": "ツンドラブーツ",
+    "english": "Tundra boots",
+    "segments": [
+      {
+        "text": "ツンドラブーツ",
+        "reading": "tsundora būtsu",
+        "gloss": "tundra boots"
+      }
+    ]
+  },
+  "510#1": {
+    "japanese": "異常気象にそなえて設計されている。",
+    "english": "Designed with extreme weather in mind.",
+    "segments": [
+      {
+        "text": "異常気象",
+        "reading": "ijō kishō",
+        "gloss": "extreme weather"
+      },
+      {
+        "text": "にそなえて",
+        "reading": "ni sonaete",
+        "gloss": "in preparation for"
+      },
+      {
+        "text": "設計されている。",
+        "reading": "sekkei sarete iru",
+        "gloss": "is designed"
+      }
+    ]
+  },
+  "510#6": {
+    "japanese": "サーマルブーツ",
+    "english": "Thermal boots",
+    "segments": [
+      {
+        "text": "サーマルブーツ",
+        "reading": "sāmaru būtsu",
+        "gloss": "thermal boots"
+      }
+    ]
+  },
+  "511#1": {
+    "japanese": "ぶ厚い黒革からつくられている。",
+    "english": "Made from thick black leather.",
+    "segments": [
+      {
+        "text": "ぶ厚い",
+        "reading": "buatsui",
+        "gloss": "thick"
+      },
+      {
+        "text": "黒革",
+        "reading": "kurokawa",
+        "gloss": "black leather"
+      },
+      {
+        "text": "からつくられている。",
+        "reading": "kara tsukurarete iru",
+        "gloss": "is made from"
+      }
+    ]
+  },
+  "511#6": {
+    "japanese": "ダークブーツ",
+    "english": "Dark boots",
+    "segments": [
+      {
+        "text": "ダークブーツ",
+        "reading": "dāku būtsu",
+        "gloss": "dark boots"
+      }
+    ]
+  },
+  "512#1": {
+    "japanese": "アツアツの溶岩にも耐えられるらしい。",
+    "english": "They're said to withstand even scorching lava.",
+    "segments": [
+      {
+        "text": "アツアツの",
+        "reading": "atsuatsu no",
+        "gloss": "piping hot"
+      },
+      {
+        "text": "溶岩",
+        "reading": "yōgan",
+        "gloss": "lava"
+      },
+      {
+        "text": "にも耐えられるらしい。",
+        "reading": "ni mo taerareru rashii",
+        "gloss": "they can apparently withstand even"
+      }
+    ]
+  },
+  "512#6": {
+    "japanese": "防火ブーツ",
+    "english": "Fireproof boots",
+    "segments": [
+      {
+        "text": "防火",
+        "reading": "bōka",
+        "gloss": "fireproof"
+      },
+      {
+        "text": "ブーツ",
+        "reading": "būtsu",
+        "gloss": "boots"
+      }
+    ]
+  },
+  "513#1": {
+    "japanese": "布地にふしぎな力が宿っている。",
+    "english": "A mysterious power dwells in the fabric.",
+    "segments": [
+      {
+        "text": "布地",
+        "reading": "nunoji",
+        "gloss": "fabric"
+      },
+      {
+        "text": "にふしぎな力",
+        "reading": "ni fushigi na chikara",
+        "gloss": "a mysterious power in"
+      },
+      {
+        "text": "が宿っている。",
+        "reading": "ga yadotte iru",
+        "gloss": "dwells"
+      }
+    ]
+  },
+  "513#6": {
+    "japanese": "精霊のブーツ",
+    "english": "Spirit boots",
+    "segments": [
+      {
+        "text": "精霊",
+        "reading": "seirei",
+        "gloss": "spirit"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ブーツ",
+        "reading": "būtsu",
+        "gloss": "boots"
+      }
+    ]
+  },
+  "514#1": {
+    "japanese": "むらさき色の光沢は、イリジウムが編みこまれている証。",
+    "english": "The purple sheen is proof that iridium is woven in.",
+    "segments": [
+      {
+        "text": "むらさき色の光沢",
+        "reading": "murasaki iro no kōtaku",
+        "gloss": "purple sheen"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "が編みこまれている証。",
+        "reading": "ga amikomarete iru akashi",
+        "gloss": "is proof it's woven in"
+      }
+    ]
+  },
+  "514#6": {
+    "japanese": "スペースブーツ",
+    "english": "Space boots",
+    "segments": [
+      {
+        "text": "スペースブーツ",
+        "reading": "supēsu būtsu",
+        "gloss": "space boots"
+      }
+    ]
+  },
+  "515#1": {
+    "japanese": "カントリーファッションの頂点。",
+    "english": "The height of country fashion.",
+    "segments": [
+      {
+        "text": "カントリーファッション",
+        "reading": "kantorī fasshon",
+        "gloss": "country fashion"
+      },
+      {
+        "text": "の頂点。",
+        "reading": "no chōten",
+        "gloss": "'s summit"
+      }
+    ]
+  },
+  "515#6": {
+    "japanese": "カウボーイブーツ",
+    "english": "Cowboy boots",
+    "segments": [
+      {
+        "text": "カウボーイブーツ",
+        "reading": "kaubōi būtsu",
+        "gloss": "cowboy boots"
+      }
+    ]
+  },
+  "804#1": {
+    "japanese": "エミリーの愛を込めて作られました。100％堆肥です！",
+    "english": "Made with love by Emily. 100% compostable!",
+    "segments": [
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "の愛を込めて",
+        "reading": "no ai o komete",
+        "gloss": "with her love"
+      },
+      {
+        "text": "作られました。",
+        "reading": "tsukuraremashita",
+        "gloss": "were made"
+      },
+      {
+        "text": "100％堆肥です！",
+        "reading": "hyaku pāsento taihi desu",
+        "gloss": "100% compost"
+      }
+    ]
+  },
+  "804#6": {
+    "japanese": "エミリーのマジックブーツ",
+    "english": "Emily's magic boots",
+    "segments": [
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "マジックブーツ",
+        "reading": "majikku būtsu",
+        "gloss": "magic boots"
+      }
+    ]
+  },
+  "806#1": {
+    "japanese": "バックルは純金製。",
+    "english": "The buckle is solid gold.",
+    "segments": [
+      {
+        "text": "バックル",
+        "reading": "bakkuru",
+        "gloss": "buckle"
+      },
+      {
+        "text": "は純金製。",
+        "reading": "wa junkin sei",
+        "gloss": "is made of pure gold"
+      }
+    ]
+  },
+  "806#6": {
+    "japanese": "レプラコーンシューズ",
+    "english": "Leprechaun shoes",
+    "segments": [
+      {
+        "text": "レプラコーンシューズ",
+        "reading": "repurakōn shūzu",
+        "gloss": "leprechaun shoes"
+      }
+    ]
+  },
+  "853#1": {
+    "japanese": "有名なドワーフの道化師が持っていた魔法の靴。",
+    "english": "Magic shoes that belonged to a famous dwarven jester.",
+    "segments": [
+      {
+        "text": "有名な",
+        "reading": "yūmei na",
+        "gloss": "famous"
+      },
+      {
+        "text": "ドワーフ",
+        "reading": "dowāfu",
+        "gloss": "dwarf"
+      },
+      {
+        "text": "の道化師",
+        "reading": "no dōkeshi",
+        "gloss": "'s jester"
+      },
+      {
+        "text": "が持っていた",
+        "reading": "ga motte ita",
+        "gloss": "owned"
+      },
+      {
+        "text": "魔法の靴。",
+        "reading": "mahō no kutsu",
+        "gloss": "magic shoes"
+      }
+    ]
+  },
+  "853#6": {
+    "japanese": "シンダークラウンシューズ",
+    "english": "Cinderclown shoes",
+    "segments": [
+      {
+        "text": "シンダークラウンシューズ",
+        "reading": "shindā kuraun shūzu",
+        "gloss": "cinderclown shoes"
+      }
+    ]
+  },
+  "854#1": {
+    "japanese": "人魚のウロコのオーラに守られている。",
+    "english": "Protected by the aura of mermaid scales.",
+    "segments": [
+      {
+        "text": "人魚のウロコ",
+        "reading": "ningyo no uroko",
+        "gloss": "mermaid scales"
+      },
+      {
+        "text": "のオーラ",
+        "reading": "no ōra",
+        "gloss": "'s aura"
+      },
+      {
+        "text": "に守られている。",
+        "reading": "ni mamorarete iru",
+        "gloss": "is protected by"
+      }
+    ]
+  },
+  "854#6": {
+    "japanese": "マーメイドブーツ",
+    "english": "Mermaid boots",
+    "segments": [
+      {
+        "text": "マーメイドブーツ",
+        "reading": "māmeido būtsu",
+        "gloss": "mermaid boots"
+      }
+    ]
+  },
+  "855#1": {
+    "japanese": "とても丈夫でキラキラ。",
+    "english": "Very tough, and sparkling.",
+    "segments": [
+      {
+        "text": "とても丈夫で",
+        "reading": "totemo jōbu de",
+        "gloss": "very tough and"
+      },
+      {
+        "text": "キラキラ。",
+        "reading": "kirakira",
+        "gloss": "sparkling"
+      }
+    ]
+  },
+  "855#6": {
+    "japanese": "ドラゴンスケールブーツ",
+    "english": "Dragonscale boots",
+    "segments": [
+      {
+        "text": "ドラゴンスケールブーツ",
+        "reading": "doragon sukēru būtsu",
+        "gloss": "dragonscale boots"
+      }
+    ]
+  },
+  "878#1": {
+    "japanese": "足元をしっかり守ってくれる、輝くシューズ。",
+    "english": "Sparkling shoes that keep your feet thoroughly safe.",
+    "segments": [
+      {
+        "text": "足元",
+        "reading": "ashimoto",
+        "gloss": "your feet"
+      },
+      {
+        "text": "をしっかり守ってくれる、",
+        "reading": "o shikkari mamotte kureru",
+        "gloss": "that protect firmly"
+      },
+      {
+        "text": "輝くシューズ。",
+        "reading": "kagayaku shūzu",
+        "gloss": "shining shoes"
+      }
+    ]
+  },
+  "878#6": {
+    "japanese": "クリスタルシューズ",
+    "english": "Crystal shoes",
+    "segments": [
+      {
+        "text": "クリスタルシューズ",
+        "reading": "kurisutaru shūzu",
+        "gloss": "crystal shoes"
+      }
+    ]
+  }
+}
