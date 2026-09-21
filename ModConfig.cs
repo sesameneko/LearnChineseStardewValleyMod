@@ -12,8 +12,11 @@ namespace LanguageStudyStardewValleyMod
         // I Item Spawner, U Automate). Left-hand keys, since the right hand is on the mouse.
         public KeybindList ToggleTranslation { get; set; } = KeybindList.Parse("G");
 
-        /// <summary>Pins the tooltip under the cursor so individual words in it can be hovered (Plan.md M2.1).</summary>
+        /// <summary>Locks the tooltip under the cursor on/off so individual words in it can be hovered (Plan.md M2.1).</summary>
         public KeybindList FreezeTooltip { get; set; } = KeybindList.Parse("Z");
+
+        /// <summary>Pins the tooltip under the cursor only for as long as this is held down (Plan.md M2.1).</summary>
+        public KeybindList HoldFreezeTooltip { get; set; } = KeybindList.Parse("RightShift");
 
         /// <summary>The game's UI language to translate from, as a locale code (e.g. "ja"). Not yet exposed in the config UI.</summary>
         public string SourceLanguage { get; set; } = "ja";
