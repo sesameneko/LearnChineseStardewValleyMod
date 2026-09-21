@@ -255,15 +255,27 @@ namespace LanguageStudyStardewValleyMod
             if (!Context.IsWorldReady)
                 return;
 
+            if (currentConfig.HoldFreezeTooltip.JustPressed())
+            {
+                if (!FrozenTooltip.IsFrozen && FrozenTooltip.Freeze(locked: false))
+                    Log("Tooltip frozen while held -- move the cursor over it to hover individual words.");
+            }
+
             if (currentConfig.FreezeTooltip.JustPressed())
             {
-                if (FrozenTooltip.IsFrozen)
+                if (FrozenTooltip.IsFrozen && !FrozenTooltip.IsLocked)
+                {
+                    // pinned by the hold key: keep it up once that key is released
+                    FrozenTooltip.Lock();
+                    Log("Tooltip locked.");
+                }
+                else if (FrozenTooltip.IsFrozen)
                 {
                     FrozenTooltip.Unfreeze();
                     Log("Tooltip unfrozen.");
                 }
-                else if (FrozenTooltip.Freeze())
-                    Log("Tooltip frozen -- move the cursor over it to hover individual words.");
+                else if (FrozenTooltip.Freeze(locked: true))
+                    Log("Tooltip locked -- move the cursor over it to hover individual words.");
                 else
                     Log("Nothing to freeze: hover a tooltip first.", LogLevel.Warn);
             }
@@ -279,6 +291,11 @@ namespace LanguageStudyStardewValleyMod
 
         private void OnTick(object? sender, UpdateTickedEventArgs updateTickedEventArgs)
         {
+            // polled rather than handled in OnButtonsChanged so the pin also drops if the key stops
+            // being reported as down without a release event (e.g. the window losing focus)
+            if (FrozenTooltip.IsFrozen && !FrozenTooltip.IsLocked && !currentConfig.HoldFreezeTooltip.IsDown())
+                FrozenTooltip.Unfreeze();
+
             QuestLogProbe.Poll(this.Helper);
         }
 
@@ -338,8 +355,8 @@ namespace LanguageStudyStardewValleyMod
                 this.DrawOverlays(e.SpriteBatch);
         }
 
-        /// <summary>The game tick the cursor patch last drew on.</summary>
-        private int lastCursorDrawTick = int.MinValue;
+        /// <summary>The game tick the cursor patch last drew on, or null if it hasn't drawn yet.</summary>
+        private int? lastCursorDrawTick;
 
         /// <summary>
         /// Whether the cursor patch is the one doing the drawing, so the render events should keep
@@ -352,7 +369,12 @@ namespace LanguageStudyStardewValleyMod
         /// window re-arms these events within a couple of ticks if the game stops drawing a cursor
         /// (a cutscene, pan mode, the title screen).
         /// </summary>
-        private bool CursorPatchIsDrawing => Game1.ticks - this.lastCursorDrawTick <= 2;
+        /// Nullable rather than an int.MinValue sentinel, which overflowed: before the cursor patch
+        /// had ever run, "Game1.ticks - int.MinValue" wrapped to a large negative number, so this
+        /// read true and gated the events off for good. The game only draws a cursor in-game
+        /// (gameMode 3), so on the title screen that left nothing drawing at all -- which is how it
+        /// was found: word highlighting disappeared from the load-game menu.
+        private bool CursorPatchIsDrawing => this.lastCursorDrawTick is int tick && Game1.ticks - tick <= 2;
 
         /// <summary>
         /// Draws the overlays from the cursor patch, i.e. underneath the mouse cursor.
@@ -695,10 +717,18 @@ namespace LanguageStudyStardewValleyMod
 
             configMenu.AddKeybindList(
                 mod: this.ModManifest,
-                name: () => "Freeze Tooltip",
-                tooltip: () => "Pins the tooltip under the cursor so you can move the mouse onto it and hover individual words.",
+                name: () => "Lock Tooltip",
+                tooltip: () => "Pins the tooltip under the cursor until pressed again, so you can move the mouse onto it and hover individual words.",
                 getValue: () => this.currentConfig.FreezeTooltip,
                 setValue: value => this.currentConfig.FreezeTooltip = value
+            );
+
+            configMenu.AddKeybindList(
+                mod: this.ModManifest,
+                name: () => "Hold to Freeze Tooltip",
+                tooltip: () => "Pins the tooltip under the cursor for as long as this is held down.",
+                getValue: () => this.currentConfig.HoldFreezeTooltip,
+                setValue: value => this.currentConfig.HoldFreezeTooltip = value
             );
         }
         #endregion
