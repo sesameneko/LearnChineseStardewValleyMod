@@ -204,35 +204,36 @@ namespace LanguageStudyStardewValleyMod
         /// Shows the gloss in the game's own small speech bubble, pointing at the word.
         ///
         /// Vanilla art rather than a hand-drawn panel: this is what signs use, so it ships as-is.
-        /// The bubble anchors by the bottom-centre of its body with the pointer hanging below, so
-        /// sitting above the word is the natural case and going below just flips the pointer.
+        ///
+        /// Despite living in SpriteText, the bubble draws with Game1.smallFont through
+        /// Utility.drawTextWithShadow -- the same SpriteFont as the tooltips -- so "\n" is the line
+        /// break it honours and SpriteText's own "^" comes out as a literal caret. Its geometry,
+        /// from the 1.6.15 IL, is: box x = pos.X - size.X / 2 - 4, y = pos.Y - size.Y,
+        /// w = size.X + 16, h = size.Y + 12, where size is smallFont.MeasureString of the text.
+        /// The placement below mirrors that so the bubble lands exactly clear of the word.
         ///
         /// Note the bubble paints its own text, so the exact-vs-fallback colour no longer shows
         /// here -- the word outline still carries that signal.
         /// </summary>
         private static void DrawLabel(SpriteBatch b, string gloss, Rectangle wordBounds)
         {
-            // SpriteText's line break is '^', not '\n' -- the 1.6.15 IL checks for it fifteen times
-            // against once for '\n'. Describe stays renderer-neutral and it's translated here.
-            string text = gloss.Replace("\n", "^");
+            Vector2 size = Game1.smallFont.MeasureString(gloss);
 
-            int width = SpriteText.getWidthOfString(text);
-            int height = SpriteText.getHeightOfString(text);
-
-            // keep the bubble on screen: it's centred on the word, which can sit near an edge
-            int half = (width / 2) + 8;
-            int centerX = Math.Clamp(wordBounds.Center.X, half, Math.Max(half, Game1.uiViewport.Width - half));
-
-            bool above = wordBounds.Y - LabelGap - height >= 0;
+            // the anchor is the bubble's bottom centre, and its box reaches 12px below that
+            bool above = wordBounds.Y - LabelGap - size.Y - 12 >= 0;
             float bottomCenterY = above
-                ? wordBounds.Y - LabelGap
-                : wordBounds.Bottom + LabelGap + height;
+                ? wordBounds.Y - LabelGap - 12
+                : wordBounds.Bottom + LabelGap + size.Y;
+
+            // keep it on screen: it's centred on the word, which can sit near either edge
+            float half = (size.X / 2) + 12;
+            float centerX = Math.Clamp(wordBounds.Center.X, half, Math.Max(half, Game1.uiViewport.Width - half));
 
             SpriteText.drawSmallTextBubble(
                 b,
-                text,
+                gloss,
                 new Vector2(centerX, bottomCenterY),
-                maxWidth: -1,
+                maxWidth: -1, // already hard-wrapped by Describe; parseText would re-wrap it
                 layerDepth: LayerDepth,
                 drawPointerOnTop: !above
             );
