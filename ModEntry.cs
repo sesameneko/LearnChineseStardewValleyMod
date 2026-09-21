@@ -136,11 +136,15 @@ namespace LanguageStudyStardewValleyMod
 
                 // The StringBuilder overload is the single funnel point: drawToolTip and the string
                 // overload of drawHoverText both call through to it (see HoverTextPatches).
+                var drawHoverText = FindOverload(nameof(IClickableMenu.drawHoverText), parameters => parameters[1].ParameterType == typeof(StringBuilder));
                 harmony.Patch(
-                    original: FindOverload(nameof(IClickableMenu.drawHoverText), parameters => parameters[1].ParameterType == typeof(StringBuilder)),
+                    original: drawHoverText,
                     prefix: new HarmonyMethod(typeof(HoverTextPatches), nameof(HoverTextPatches.Prefix_DrawHoverText)),
                     postfix: new HarmonyMethod(typeof(HoverTextPatches), nameof(HoverTextPatches.Postfix_DrawHoverText))
                 );
+
+                // the frozen tooltip is re-issued through this same method, so it needs the handle
+                FrozenTooltip.Initialise(drawHoverText);
 
                 // ...and this is how the tooltip's exact screen rect gets captured, rather than
                 // re-derived from vanilla's layout math.

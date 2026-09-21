@@ -34,23 +34,49 @@ namespace LanguageStudyStardewValleyMod.Patches
         /// </summary>
         private static string? lastLoggedMiss;
 
-        /// <summary>The last vanilla tooltip seen this frame, for FrozenTooltip to pin.</summary>
-        private static string? lastText;
-        private static string? lastTitle;
+        /// <summary>
+        /// The full argument list of the last vanilla tooltip drawn, so FrozenTooltip can re-issue
+        /// it *exactly* -- title divider, item icon, buff rows, crafting ingredients and all. Only
+        /// replaying text and title produced a visibly different box, which is a jarring change at
+        /// the moment of freezing.
+        /// </summary>
+        private static object[]? lastArgs;
         private static TooltipBox lastBox;
-        private static bool haveLastTooltip;
 
-        /// <summary>The most recent vanilla tooltip, if one was drawn.</summary>
-        public static bool TryGetLastTooltip(out string text, out string? title, out TooltipBox box)
+        /// <summary>The most recent vanilla tooltip's arguments and screen rect, if one was drawn.</summary>
+        public static bool TryGetLastTooltip(out object[] args, out TooltipBox box)
         {
-            text = lastText ?? "";
-            title = lastTitle;
             box = lastBox;
-            return haveLastTooltip;
+
+            if (lastArgs is null)
+            {
+                args = Array.Empty<object>();
+                return false;
+            }
+
+            args = CopyArgs(lastArgs);
+            return true;
+        }
+
+        /// <summary>
+        /// Copies an argument list for safekeeping. The StringBuilder is duplicated because the game
+        /// reuses and clears its own between frames, which would otherwise empty the pinned tooltip.
+        /// </summary>
+        private static object[] CopyArgs(object[] args)
+        {
+            var copy = (object[])args.Clone();
+
+            for (int i = 0; i < copy.Length; i++)
+            {
+                if (copy[i] is StringBuilder builder)
+                    copy[i] = new StringBuilder(builder.ToString());
+            }
+
+            return copy;
         }
 
         /// <summary>Returns false to skip the vanilla draw, which is how tooltips are suppressed while one is frozen.</summary>
-        public static bool Prefix_DrawHoverText()
+        public static bool Prefix_DrawHoverText(object[] __args)
         {
             if (FrozenTooltip.ShouldSuppressVanilla)
             {
@@ -60,8 +86,12 @@ namespace LanguageStudyStardewValleyMod.Patches
 
             capturing = true;
             haveBox = false;
+            pendingArgs = __args;
             return true;
         }
+
+        /// <summary>The argument list of the draw currently in progress.</summary>
+        private static object[]? pendingArgs;
 
         public static void Postfix_DrawHoverText(SpriteBatch b, StringBuilder text, string boldTitleText)
         {
@@ -76,12 +106,10 @@ namespace LanguageStudyStardewValleyMod.Patches
                     return;
 
                 // don't overwrite the pinned tooltip with the re-issue of itself
-                if (!FrozenTooltip.IsFrozen)
+                if (!FrozenTooltip.IsFrozen && pendingArgs != null)
                 {
-                    lastText = text?.ToString() ?? "";
-                    lastTitle = boldTitleText;
+                    lastArgs = CopyArgs(pendingArgs);
                     lastBox = capturedBox;
-                    haveLastTooltip = true;
                 }
 
                 var mod = ModEntry.Instance;

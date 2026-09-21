@@ -14,7 +14,7 @@ namespace LanguageStudyStardewValleyMod.Patches
     /// <param name="Y">Top edge, in UI-space pixels.</param>
     /// <param name="Scale">Draw scale; 1 for the overloads that don't take one.</param>
     /// <param name="Font">The SpriteFont it was drawn with, or null when it was drawn by SpriteText.</param>
-    public readonly record struct DrawnText(string Text, float X, float Y, float Scale, SpriteFont? Font)
+    public readonly record struct DrawnText(string Text, float X, float Y, float Scale, SpriteFont? Font, bool FromFrozenTooltip)
     {
         /// <summary>Whether this came from SpriteText's bitmap font rather than a SpriteFont.</summary>
         public bool IsBitmapFont => this.Font is null;
@@ -151,7 +151,7 @@ namespace LanguageStudyStardewValleyMod.Patches
                 drawnThisFrame.Clear();
 
             RecordedTotal++;
-            drawnThisFrame.Add(new DrawnText(text!, x, y, scale, font));
+            drawnThisFrame.Add(new DrawnText(text!, x, y, scale, font, FrozenTooltip.IsReissuing));
         }
 
         #region SpriteBatch.DrawString -- the four overloads the game actually calls

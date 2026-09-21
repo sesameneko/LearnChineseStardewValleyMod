@@ -47,6 +47,8 @@ namespace LanguageStudyStardewValleyMod
 
             try
             {
+                using var _ = Patches.TextCapturePatches.SuppressRecording();
+
                 var font = Game1.smallFont;
                 string text = Game1.parseText(pending.Value.Text, font, MaxTextWidth);
                 Vector2 size = font.MeasureString(text);
