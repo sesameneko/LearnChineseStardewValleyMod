@@ -56,15 +56,17 @@ namespace LanguageStudyStardewValleyMod
                     if (hit is null)
                         return;
 
-                    // green when the boundaries came from hand-segmented data, amber when they came
-                    // from the character-class fallback -- so a blobbed kanji/hiragana run is
-                    // recognisable on sight as missing data rather than a hit-testing bug
-                    Color wordColor = hit.Value.Exact ? Color.Lime : Color.Orange;
-
-                    // the whole line, faintly, then the word itself -- makes a wrong line and a
-                    // wrong word within the right line distinguishable at a glance
-                    DrawOutline(spriteBatch, hit.Value.Line, Color.Cyan * 0.35f, thickness: 2);
-                    DrawOutline(spriteBatch, hit.Value.Word_Bounds, wordColor, thickness: 2);
+                    if (DebugVisualizer)
+                    {
+                        // the whole line, faintly, then the word itself -- makes a wrong line and a
+                        // wrong word within the right line distinguishable at a glance, with lime
+                        // vs amber calling out where the boundaries came from
+                        Color wordColor = hit.Value.Exact ? Color.Lime : Color.Orange;
+                        DrawOutline(spriteBatch, hit.Value.Line, Color.Cyan * 0.35f, thickness: 2);
+                        DrawOutline(spriteBatch, hit.Value.Word_Bounds, wordColor, thickness: 2);
+                    }
+                    else
+                        DrawUnderline(spriteBatch, hit.Value.Word_Bounds);
 
                     DrawLabel(spriteBatch, Describe(hit.Value.Segment), hit.Value.Word_Bounds);
                 }
@@ -175,14 +177,22 @@ namespace LanguageStudyStardewValleyMod
         /// drawn a second time *after* the overlay (see ModEntry.DrawOverlays). So this is a plain
         /// constant, kept at the front end of the range for any batch that does sort.
         /// </summary>
-        private const float LayerDepth = 1f;
-
         /// <summary>
-        /// How opaque the gloss label's backing panel is. Low enough to read the game art through
-        /// it -- at the old 0.85 only 15% of the background showed through, which looked flatly
-        /// opaque against the tooltip it sits over.
+        /// Whether to draw the authoring visualisation -- a faint cyan box round the whole line and
+        /// a coloured box round the matched word, lime when the boundaries came from hand-segmented
+        /// data and amber when they came from the character-class fallback.
+        ///
+        /// Off for the shipping look, which underlines the word instead. Turn it on when working on
+        /// segment data: the boxes are what make a wrong line, a wrong word within the right line,
+        /// and missing segment data distinguishable at a glance, and the underline deliberately
+        /// shows none of that.
+        ///
+        /// static readonly rather than const so the unused branch still compiles -- a const bool
+        /// lets the compiler prove one side dead and warn about it (CS0162).
         /// </summary>
-        private const float LabelBackgroundOpacity = 0.6f;
+        private static readonly bool DebugVisualizer = false;
+
+        private const float LayerDepth = 1f;
 
         private static void DrawOutline(SpriteBatch b, Rectangle rect, Color color, int thickness)
         {
@@ -199,6 +209,30 @@ namespace LanguageStudyStardewValleyMod
 
         /// <summary>Space between the word's outline and the bubble's pointer.</summary>
         private const int LabelGap = 12;
+
+        /// <summary>The underline's warm gold, picked to sit with the game's wood-and-parchment UI.</summary>
+        private static readonly Color UnderlineColor = new Color(255, 190, 70);
+
+        /// <summary>
+        /// Underlines the hovered word, for the shipping look.
+        ///
+        /// Drawn in three pieces rather than one bar: the middle at full height with shorter, dimmer
+        /// caps either side, which is how you fake a rounded end at pixel-art scale. A soft shadow
+        /// underneath lifts it off the text it sits against, the same trick the game's own text
+        /// uses via drawTextWithShadow.
+        /// </summary>
+        private static void DrawUnderline(SpriteBatch b, Rectangle word)
+        {
+            const int thickness = 4;
+            const int inset = 3;
+
+            int y = word.Bottom - 2;
+
+            DrawRect(b, new Rectangle(word.X + inset, y + thickness, word.Width - (inset * 2), 2), Color.Black * 0.3f);
+            DrawRect(b, new Rectangle(word.X + inset, y, word.Width - (inset * 2), thickness), UnderlineColor);
+            DrawRect(b, new Rectangle(word.X + 1, y + 1, inset - 1, thickness - 2), UnderlineColor * 0.7f);
+            DrawRect(b, new Rectangle(word.Right - inset, y + 1, inset - 1, thickness - 2), UnderlineColor * 0.7f);
+        }
 
         /// <summary>
         /// Shows the gloss in the game's own small speech bubble, pointing at the word.
