@@ -176,6 +176,13 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         private const float LayerDepth = 1f;
 
+        /// <summary>
+        /// How opaque the gloss label's backing panel is. Low enough to read the game art through
+        /// it -- at the old 0.85 only 15% of the background showed through, which looked flatly
+        /// opaque against the tooltip it sits over.
+        /// </summary>
+        private const float LabelBackgroundOpacity = 0.6f;
+
         private static void DrawOutline(SpriteBatch b, Rectangle rect, Color color, int thickness)
         {
             DrawRect(b, new Rectangle(rect.X, rect.Y, rect.Width, thickness), color);
@@ -200,7 +207,7 @@ namespace LanguageStudyStardewValleyMod
             if (y < 0)
                 y = wordBounds.Bottom + 4;
 
-            DrawRect(b, new Rectangle(x - 4, y - 2, (int)size.X + 8, (int)size.Y + 4), Color.Black * 0.85f);
+            DrawRect(b, new Rectangle(x - 4, y - 2, (int)size.X + 8, (int)size.Y + 4), Color.Black * LabelBackgroundOpacity);
             b.DrawString(font, word, new Vector2(x, y), color, 0f, Vector2.Zero, 1f, SpriteEffects.None, LayerDepth);
         }
     }

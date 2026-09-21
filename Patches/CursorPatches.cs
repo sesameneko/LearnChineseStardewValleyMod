@@ -1,3 +1,4 @@
+using Microsoft.Xna.Framework.Graphics;
 using StardewValley;
 
 namespace LanguageStudyStardewValleyMod.Patches
@@ -25,10 +26,33 @@ namespace LanguageStudyStardewValleyMod.Patches
     /// </summary>
     public static class CursorPatches
     {
+        /// <summary>
+        /// The HUD-level cursor, drawn when no menu is open.
+        ///
+        /// Skipped while a menu is open, because the menu has already drawn its own cursor by now
+        /// (see Prefix_DrawMouse) -- drawing here as well put the overlays back on top of it, which
+        /// is what made a frozen tooltip sit above the cursor in the pause menu while the same
+        /// tooltip sat correctly below it on the toolbar.
+        /// </summary>
         public static void Prefix_DrawMouseCursor()
         {
+            if (Game1.activeClickableMenu != null)
+                return;
+
             DrawTrace.Note("beforeCursor");
-            ModEntry.Instance?.DrawOverlaysBeforeCursor();
+            ModEntry.Instance?.DrawOverlaysBeforeCursor(Game1.spriteBatch);
+        }
+
+        /// <summary>
+        /// The menu-level cursor. Menus draw their own rather than going through
+        /// <c>Game1.drawMouseCursor</c> -- 53 call sites in 1.6.15 -- and they do it at the end of
+        /// their own draw, i.e. after any tooltip they raised and before the HUD pass. So this is
+        /// the point that is last-but-one with a menu open.
+        /// </summary>
+        public static void Prefix_DrawMouse(SpriteBatch b)
+        {
+            DrawTrace.Note("beforeMenuCursor");
+            ModEntry.Instance?.DrawOverlaysBeforeCursor(b);
         }
     }
 }

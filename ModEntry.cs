@@ -155,6 +155,17 @@ namespace LanguageStudyStardewValleyMod
                 );
 
                 // draws the overlays just under the cursor rather than over it (see CursorPatches)
+                var drawMouse = AccessTools.Method(typeof(IClickableMenu), "drawMouse");
+                if (drawMouse is null)
+                    Log("Couldn't find IClickableMenu.drawMouse -- the overlays will draw on top of the cursor in menus.", LogLevel.Warn);
+                else
+                {
+                    harmony.Patch(
+                        original: drawMouse,
+                        prefix: new HarmonyMethod(typeof(CursorPatches), nameof(CursorPatches.Prefix_DrawMouse))
+                    );
+                }
+
                 var drawMouseCursor = AccessTools.Method(typeof(Game1), "drawMouseCursor");
                 if (drawMouseCursor is null)
                     Log("Couldn't find Game1.drawMouseCursor -- the overlays will draw on top of the mouse cursor.", LogLevel.Warn);
@@ -387,10 +398,10 @@ namespace LanguageStudyStardewValleyMod
         /// This was once rolled back on the theory that it made the overlays disappear. It didn't:
         /// word capture was simply switched off in those runs (see TextCapturePatches.Enabled).
         /// </summary>
-        internal void DrawOverlaysBeforeCursor()
+        internal void DrawOverlaysBeforeCursor(SpriteBatch spriteBatch)
         {
             this.lastCursorDrawTick = Game1.ticks;
-            this.DrawOverlays(Game1.spriteBatch);
+            this.DrawOverlays(spriteBatch);
         }
 
         /// <summary>
