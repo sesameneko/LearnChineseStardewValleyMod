@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""Migrate Objects_Name.json from the flat reference format to the segment format.
+
+The names file predates the segment schema (see Plan.md's data task): it holds one
+prose string per key --
+
+    "Wood_Name": "Timber (mokuzai)"
+    "Granite_Name": "Granite (kakougan, lit. 'flower-emitting rock')"
+
+-- with the romanized reading, and occasionally a literal gloss, packed into a
+trailing parenthetical. SegmentDataLoader skips any entry whose value isn't an
+object, so all 756 names load as nothing and item names fall back to the
+character-class heuristic for word hover.
+
+Everything the segment schema needs is already in that string, so this rewrites it
+in place rather than spending a re-translation pass:
+
+    "Wood_Name": {
+      "japanese": "木材",
+      "english": "Timber",
+      "segments": [{"text": "木材", "reading": "mokuzai", "gloss": "Timber"}]
+    }
+
+LIMITATION, deliberate: every name becomes ONE segment covering the whole string.
+That is correct for a single-word name like 木材 and WRONG for a multi-word one
+like 木の柵 (木 / の / 柵), which still needs a hand pass to split. See TODOs.txt.
+Hovering a multi-word name shows the whole name with its full reading and gloss --
+the same granularity as before, but now with a real reading and gloss attached
+instead of the bare source text.
+"""
+import json, os, re, sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+NAMES = os.path.join(ROOT, "tools", "extracted-strings", "literal-translations", "Objects_Name.json")
+SOURCE = os.path.join(ROOT, "tools", "extracted-strings", "ja", "Objects.json")
+
+COMMENT = (
+    "Stardew Valley Objects.xnb item NAMES, translated from the Japanese (ja-JP) source text -- "
+    "not a copy of the official English localization. Migrated from the earlier flat "
+    "\"key\": \"English (reading)\" reference format by tools/segment-data/migrate_names.py, so "
+    "that SegmentDataLoader can read them. NOTE: each name is currently a SINGLE segment covering "
+    "the whole string, which is right for a one-word name like 木材 but wrong for a multi-word one "
+    "like 木の柵 (木 / の / 柵) -- those still need a hand pass to split. See TODOs.txt."
+)
+
+
+def split_trailing_parenthetical(text):
+    """Returns (english, inside) for 'English (inside)', handling nested parens."""
+    text = text.strip()
+    if not text.endswith(")"):
+        return text, ""
+
+    depth = 0
+    for i in range(len(text) - 1, -1, -1):
+        if text[i] == ")":
+            depth += 1
+        elif text[i] == "(":
+            depth -= 1
+            if depth == 0:
+                return text[:i].strip(), text[i + 1:-1].strip()
+    return text, ""
+
+
+def parse(value):
+    """Splits one flat entry into (english, reading, gloss)."""
+    english, inside = split_trailing_parenthetical(value)
+
+    # "kakougan, lit. 'flower-emitting rock'" -> reading + a literal gloss to keep
+    match = re.match(r"^(.*?),\s*lit\.\s*(.*)$", inside, re.DOTALL)
+    if match:
+        reading, literal = match.group(1).strip(), match.group(2).strip()
+        gloss = f"{english} (lit. {literal})" if english else f"lit. {literal}"
+    else:
+        reading, gloss = inside, english
+
+    return english, reading, gloss
+
+
+def main():
+    with open(SOURCE, encoding="utf-8") as f:
+        japanese = json.load(f)["entries"]
+    with open(NAMES, encoding="utf-8") as f:
+        names = json.load(f)
+
+    out = {"_comment": COMMENT}
+    migrated = already = missing = 0
+
+    for key, value in names.items():
+        if key == "_comment":
+            continue
+
+        if isinstance(value, dict):        # idempotent: leave anything hand-split alone
+            out[key] = value
+            already += 1
+            continue
+
+        source = japanese.get(key)
+        if not source:
+            print(f"  {key}: no such key in the ja Objects table, dropped", file=sys.stderr)
+            missing += 1
+            continue
+
+        english, reading, gloss = parse(value)
+        out[key] = {
+            "japanese": source,
+            "english": english,
+            "segments": [{"text": source, "reading": reading, "gloss": gloss}],
+        }
+        migrated += 1
+
+    with open(NAMES, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+    print(f"Objects_Name.json: migrated {migrated}, left {already} already-segmented, dropped {missing}")
+
+
+if __name__ == "__main__":
+    main()

@@ -29,3 +29,24 @@ generated from it by the csproj's CopySegmentData target.
 
 Status at the time of writing: Objects descriptions (744) and UI (865) done,
 6,375 entries still pending across the other tables.
+
+Objects item names — split the multi-word ones
+----------------------------------------------
+tools/segment-data/migrate_names.py has already converted Objects_Name.json from
+the old flat "key": "English (reading)" reference format into the segment format,
+so all 756 item names now load and hover with a real reading and gloss instead of
+falling back to the character-class heuristic.
+
+The migration treats each name as ONE segment covering the whole string. That is
+correct for a single-word name (木材 = mokuzai = Timber) and wrong for a
+multi-word one: 木の柵 should be 木 / の / 柵, アメシストの指輪 should be
+アメシスト / の / 指輪.
+
+Roughly 395 of the 756 names span more than one script run and so definitely need
+splitting; the other ~361 are single-run and mostly fine as they stand (though an
+unbroken kanji run like 高機能テレビリモコン can still need a split). Do this pass
+the same way as any other table -- the entries are already in the right shape, so
+it is editing segments arrays rather than translating from scratch, and
+segtool.py validate still enforces that the segments reproduce the source string.
+
+Priority: after Tools and Weapons above.
