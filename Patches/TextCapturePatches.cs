@@ -191,9 +191,49 @@ namespace LanguageStudyStardewValleyMod.Patches
         #endregion
 
         #region SpriteText -- the bitmap font (dialogue, quest log, shops)
-        public static void Prefix_SpriteTextDrawString(string s, int x, int y)
+        /// <summary>
+        /// SpriteText wraps internally rather than receiving pre-wrapped text, so the width it was
+        /// given has to be captured and the wrap replayed -- otherwise every word after the first
+        /// break is hit-tested as though the line ran off the screen (see TextHitTest.WrapToWidth).
+        /// </summary>
+        public static void Prefix_SpriteTextDrawString(string s, int x, int y, int width)
         {
-            Record(s, x, y, 1f, font: null);
+            Record(WrapLikeSpriteText(s, width), x, y, 1f, font: null);
+        }
+
+        /// <summary>
+        /// Wrapped strings, keyed by the text and the width it was wrapped to.
+        ///
+        /// The same dialogue is re-drawn every frame, and wrapping measures a growing prefix per
+        /// character, so without this the hot path would re-measure the whole string ~60 times a
+        /// second for no new information.
+        /// </summary>
+        private static readonly Dictionary<(string Text, int Width), string> wrapCache = new();
+
+        /// <summary>Locales that break a line between any two characters rather than only at spaces.</summary>
+        private static bool BreaksAnywhere =>
+            LocalizedContentManager.CurrentLanguageCode is LocalizedContentManager.LanguageCode.ja
+                or LocalizedContentManager.LanguageCode.zh
+                or LocalizedContentManager.LanguageCode.ko
+                or LocalizedContentManager.LanguageCode.th;
+
+        private static string WrapLikeSpriteText(string? text, int width)
+        {
+            if (string.IsNullOrEmpty(text) || width <= 0)
+                return text ?? string.Empty;
+
+            var key = (text!, width);
+            if (wrapCache.TryGetValue(key, out string? cached))
+                return cached;
+
+            // the game redraws the same few strings, but a shop or a quest log can cycle through
+            // many -- bound it rather than grow forever
+            if (wrapCache.Count > 512)
+                wrapCache.Clear();
+
+            string wrapped = TextHitTest.WrapToWidth(text, width, BreaksAnywhere, line => SpriteText.getWidthOfString(line));
+            wrapCache[key] = wrapped;
+            return wrapped;
         }
         #endregion
 

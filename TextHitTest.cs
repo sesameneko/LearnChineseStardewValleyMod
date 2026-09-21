@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Collections.Generic;
 
 namespace LanguageStudyStardewValleyMod
@@ -15,6 +16,70 @@ namespace LanguageStudyStardewValleyMod
     {
         /// <summary>The character classes segment boundaries are drawn between.</summary>
         private enum CharClass { Whitespace, Hiragana, Katakana, Ideograph, Latin, Punctuation, Other }
+
+        /// <summary>
+        /// Wraps text the way SpriteText does when it's given a width, by inserting newlines.
+        ///
+        /// SpriteFont text arrives already wrapped -- the game runs it through Game1.parseText,
+        /// which inserts real newlines -- but SpriteText wraps *internally* while drawing, so the
+        /// string handed to it is a single unbroken line and the mod saw it as one. That put every
+        /// word after the first line break in the wrong place: the hit-test measured its x as though
+        /// the whole string ran off the right of the screen.
+        ///
+        /// Only newlines are inserted -- never a character removed, including the space a line
+        /// break lands on. SegmentIndex.TryGetSegmentsForLine requires the rendered lines to
+        /// re-concatenate into exactly the segmented source, so dropping a space would silently
+        /// cost every gloss on the string.
+        /// </summary>
+        /// <param name="breakAnywhere">
+        /// Whether a line may break between any two characters, rather than only at spaces.
+        /// Japanese breaks mid-word even when a space is available earlier in the line -- vanilla
+        /// renders "ガタガタの ベッ" / "ドに" -- so this is set by locale, not by the text.
+        /// </param>
+        public static string WrapToWidth(string? text, int width, bool breakAnywhere, Func<string, int> measure)
+        {
+            if (string.IsNullOrEmpty(text) || width <= 0)
+                return text ?? string.Empty;
+
+            var wrapped = new StringBuilder(text.Length + 8);
+            int lineStart = 0;      // index in `wrapped` where the current line begins
+            int lastSpace = -1;     // index in `wrapped` of the last space on the current line
+
+            foreach (char c in text)
+            {
+                if (c == '\n')
+                {
+                    wrapped.Append(c);
+                    lineStart = wrapped.Length;
+                    lastSpace = -1;
+                    continue;
+                }
+
+                wrapped.Append(c);
+
+                if (c == ' ')
+                    lastSpace = wrapped.Length - 1;
+
+                string line = wrapped.ToString(lineStart, wrapped.Length - lineStart);
+                if (measure(line) <= width || line.Length <= 1)
+                    continue;
+
+                // break before the character that overflowed, or back at the last space when the
+                // locale only breaks on spaces; a line with no space breaks anywhere regardless
+                int breakAt = breakAnywhere || lastSpace < 0
+                    ? wrapped.Length - 1
+                    : lastSpace + 1;
+
+                if (breakAt <= lineStart)
+                    breakAt = wrapped.Length - 1;
+
+                wrapped.Insert(breakAt, '\n');
+                lineStart = breakAt + 1;
+                lastSpace = -1;
+            }
+
+            return wrapped.ToString();
+        }
 
         /// <summary>Splits a drawn string into its rendered lines. The game wraps by inserting newlines.</summary>
         public static string[] SplitLines(string text)
