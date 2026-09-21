@@ -26,25 +26,23 @@ namespace LanguageStudyStardewValleyMod
         public static bool LastHitWasExact { get; private set; }
 
         /// <summary>
-        /// Whether the overlay has already been drawn this frame. It gets one chance per frame, at
-        /// the latest point available: right after a tooltip is drawn when there is one, otherwise
-        /// the HUD/menu pass.
+        /// Draws the overlay for whatever word is under the cursor right now.
+        ///
+        /// Called after every tooltip draw and at the end of every render pass, deliberately
+        /// without a once-per-frame guard. There used to be one, and it was the bug: the game
+        /// raises RenderedHud *twice* per Display.Rendering, so the tooltip was drawn again after
+        /// the overlay and the guard then suppressed the redraw that would have gone on top --
+        /// leaving the overlay buried. A frame-scoped latch can only be correct if you know which
+        /// pass is the last one, and that isn't knowable here. Redrawing is idempotent, so the
+        /// robust rule is simply "always draw after a tooltip"; the cost is a few extra hit-tests
+        /// per frame in a debug-only feature.
         /// </summary>
-        public static bool DrawnThisFrame { get; set; }
-
         public static void Draw(SpriteBatch spriteBatch)
         {
             if (!TextCapturePatches.Enabled)
                 return;
 
-            if (DrawnThisFrame)
-            {
-                DrawTrace.Note("wordOverlay(skipped, already drawn)");
-                return;
-            }
-
             DrawTrace.Note("wordOverlay");
-            DrawnThisFrame = true;
 
             try
             {
@@ -135,15 +133,21 @@ namespace LanguageStudyStardewValleyMod
         /// rendered line; if either step doesn't line up exactly, the fallback is used rather than
         /// a box drawn in the wrong place.
         /// </summary>
-        /// <summary>The label text: the word plus its in-context gloss and reading where we have them.</summary>
+        /// <summary>
+        /// The label text: the gloss on the first line, the reading in brackets on the second.
+        ///
+        /// The source word itself is deliberately left out -- it's already on screen directly under
+        /// the outline, so repeating it just widened the label over the text being read. With no
+        /// gloss (the amber fallback, where there's no segment data) the word is all there is.
+        /// </summary>
         private static string Describe(TextSegment segment)
         {
             if (string.IsNullOrWhiteSpace(segment.Gloss))
                 return segment.Text;
 
             return string.IsNullOrWhiteSpace(segment.Reading)
-                ? $"{segment.Text}  —  {segment.Gloss}"
-                : $"{segment.Text} ({segment.Reading})  —  {segment.Gloss}";
+                ? segment.Gloss
+                : $"{segment.Gloss}\n({segment.Reading})";
         }
 
         private static (IReadOnlyList<TextSegment> Segments, bool Exact) ResolveSegments(string drawnText, string[] lines, int lineIndex, string line)

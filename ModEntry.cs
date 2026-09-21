@@ -161,6 +161,18 @@ namespace LanguageStudyStardewValleyMod
                     prefix: new HarmonyMethod(typeof(HoverTextPatches), nameof(HoverTextPatches.Prefix_DrawTextureBox))
                 );
 
+                // draws the overlays just under the cursor rather than over it (see CursorPatches)
+                var drawMouseCursor = AccessTools.Method(typeof(Game1), "drawMouseCursor");
+                if (drawMouseCursor is null)
+                    Log("Couldn't find Game1.drawMouseCursor -- the overlays will draw on top of the mouse cursor.", LogLevel.Warn);
+                else
+                {
+                    harmony.Patch(
+                        original: drawMouseCursor,
+                        prefix: new HarmonyMethod(typeof(CursorPatches), nameof(CursorPatches.Prefix_DrawMouseCursor))
+                    );
+                }
+
                 ApplyTextCapturePatches(harmony);
             }
             catch (Exception ex)
@@ -324,7 +336,6 @@ namespace LanguageStudyStardewValleyMod
             DrawTrace.BeginFrame();
             TooltipOverlay.Clear();
             TextCapturePatches.BeginFrame();
-            WordHoverOverlay.DrawnThisFrame = false;
         }
 
         /// <summary>
@@ -340,26 +351,54 @@ namespace LanguageStudyStardewValleyMod
         private void OnRenderedHud(object? sender, RenderedHudEventArgs e)
         {
             // with a menu open the menu's own pass comes later and would draw straight over these
-            if (Game1.activeClickableMenu is null)
+            if (!this.CursorPatchIsDrawing && Game1.activeClickableMenu is null)
                 this.DrawOverlays(e.SpriteBatch);
         }
 
         /// <summary>Draws this mod's overlays once the open menu -- and any tooltip it raised -- is on screen.</summary>
         private void OnRenderedActiveMenu(object? sender, RenderedActiveMenuEventArgs e)
         {
-            this.DrawOverlays(e.SpriteBatch);
+            if (!this.CursorPatchIsDrawing)
+                this.DrawOverlays(e.SpriteBatch);
+        }
+
+        /// <summary>The game tick the cursor patch last drew on.</summary>
+        private int lastCursorDrawTick = int.MinValue;
+
+        /// <summary>
+        /// Whether the cursor patch is the one doing the drawing, so the render events should keep
+        /// out of it.
+        ///
+        /// A recent tick rather than a flag set this frame: ls_draw_trace shows the render events
+        /// firing *before* drawMouseCursor, so a frame-scoped flag is always false when they check
+        /// it and gates nothing -- the first version of this was dead code that left three draws
+        /// per frame. Remembering that the cursor path is live yields to it instead, and the short
+        /// window re-arms these events within a couple of ticks if the game stops drawing a cursor
+        /// (a cutscene, pan mode, the title screen).
+        /// </summary>
+        private bool CursorPatchIsDrawing => Game1.ticks - this.lastCursorDrawTick <= 2;
+
+        /// <summary>
+        /// Draws the overlays from the cursor patch, i.e. underneath the mouse cursor.
+        ///
+        /// This is the normal path; the render events below only draw when the game skipped its
+        /// cursor draw (cutscenes, pan mode, the title screen), because drawing from both would put
+        /// a second copy back on top of the cursor.
+        /// </summary>
+        internal void DrawOverlaysBeforeCursor()
+        {
+            this.lastCursorDrawTick = Game1.ticks;
+            this.DrawOverlays(Game1.spriteBatch);
         }
 
         /// <summary>
         /// Everything this mod puts on screen, drawn at the latest UI-mode pass available: the
         /// active menu's when a menu is open, the HUD's otherwise.
         ///
-        /// Exactly one of those passes, never both. Calling this from both was what buried the word
-        /// overlay underneath the tooltip it annotates: the sequence per frame was pinned tooltip
-        /// (HUD pass) -> overlay drawn on top of it (from drawHoverText's postfix) -> pinned tooltip
-        /// *again* (menu pass), with the overlay's once-per-frame guard suppressing the second,
-        /// correctly-ordered attempt. That is a call-order bug, and no amount of layer depth fixes
-        /// one -- 0f, 1f and reading the batch's real sort mode were all tried first, and all failed.
+        /// One pass, not both: the menu pass comes later and paints over whatever the HUD pass put
+        /// down. Note that this is *not* the same as once per frame -- ls_draw_trace shows the HUD
+        /// pass firing twice per Display.Rendering -- which is why nothing here may rely on being
+        /// the frame's last draw. See WordHoverOverlay.Draw for what that cost us.
         /// </summary>
         private void DrawOverlays(SpriteBatch spriteBatch)
         {
@@ -380,7 +419,8 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         private void DrawWordHover(SpriteBatch spriteBatch)
         {
-            // no-ops when a tooltip's postfix already drew it this frame
+            // again, even if a tooltip's postfix already drew it in this pass: by now the
+            // translation tooltip has been drawn too, and the overlay has to sit on top of both
             WordHoverOverlay.Draw(spriteBatch);
 
             if (TextCapturePatches.DumpPending)
