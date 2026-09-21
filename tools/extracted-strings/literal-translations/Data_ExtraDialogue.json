@@ -1,0 +1,3108 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Data_ExtraDialogue.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Birdie0": {
+    "japanese": "この島で初対面の人に会えるとは思っていなかったの。でも来てくれて嬉しいわ！",
+    "english": "I never thought I'd meet someone new on this island. But I'm glad you came!",
+    "segments": [
+      {
+        "text": "この島",
+        "reading": "kono shima",
+        "gloss": "this island"
+      },
+      {
+        "text": "で初対面の人",
+        "reading": "de shotaimen no hito",
+        "gloss": "someone met for the first time on"
+      },
+      {
+        "text": "に会える",
+        "reading": "ni aeru",
+        "gloss": "to be able to meet"
+      },
+      {
+        "text": "とは思っていなかったの。",
+        "reading": "to wa omotte inakatta no",
+        "gloss": "I hadn't thought"
+      },
+      {
+        "text": "でも来てくれて嬉しいわ！",
+        "reading": "demo kite kurete ureshii wa",
+        "gloss": "but I'm glad you came"
+      }
+    ]
+  },
+  "Birdie1": {
+    "japanese": "この島にはドワーフがすぐれた文明を築いていたという古い噂があるのよ。#$e#火山の中に入ったことはある？そこには彼らの不思議な機械の残がいがたくさんあるの…",
+    "english": "There's an old rumour that dwarves built a great civilisation on this island.#$e#Have you been inside the volcano? There are plenty of the remains of their strange machines there...",
+    "segments": [
+      {
+        "text": "この島",
+        "reading": "kono shima",
+        "gloss": "this island"
+      },
+      {
+        "text": "にはドワーフ",
+        "reading": "ni wa dowāfu",
+        "gloss": "dwarves, on"
+      },
+      {
+        "text": "がすぐれた文明",
+        "reading": "ga sugureta bunmei",
+        "gloss": "a great civilisation"
+      },
+      {
+        "text": "を築いていた",
+        "reading": "o kizuite ita",
+        "gloss": "had built"
+      },
+      {
+        "text": "という古い噂",
+        "reading": "to iu furui uwasa",
+        "gloss": "an old rumour that"
+      },
+      {
+        "text": "があるのよ。#$e#",
+        "reading": "ga aru no yo",
+        "gloss": "there is"
+      },
+      {
+        "text": "火山の中",
+        "reading": "kazan no naka",
+        "gloss": "inside the volcano"
+      },
+      {
+        "text": "に入ったことはある？",
+        "reading": "ni haitta koto wa aru",
+        "gloss": "have you ever gone"
+      },
+      {
+        "text": "そこには彼ら",
+        "reading": "soko ni wa karera",
+        "gloss": "there, their"
+      },
+      {
+        "text": "の不思議な機械",
+        "reading": "no fushigi na kikai",
+        "gloss": "'s strange machines"
+      },
+      {
+        "text": "の残がい",
+        "reading": "no zangai",
+        "gloss": "'s remains"
+      },
+      {
+        "text": "がたくさんあるの…",
+        "reading": "ga takusan aru no",
+        "gloss": "there are many"
+      }
+    ]
+  },
+  "Birdie12": {
+    "japanese": "（はぁ）限りない可能性があるこの世界を生きるための正しい選択、それが出来たかどうかは誰にも分からない。$s#$b#あら、ごめんなさい。時々考え込んでしまうことがあるの…",
+    "english": "*Sigh*... living in a world of endless possibility, no one can know whether they made the right choices.$s#$b#Oh, forgive me. I get lost in thought sometimes...",
+    "segments": [
+      {
+        "text": "（はぁ）",
+        "reading": "hā",
+        "gloss": "*sigh*"
+      },
+      {
+        "text": "限りない可能性",
+        "reading": "kagirinai kanōsei",
+        "gloss": "endless possibility"
+      },
+      {
+        "text": "があるこの世界",
+        "reading": "ga aru kono sekai",
+        "gloss": "this world that has"
+      },
+      {
+        "text": "を生きるため",
+        "reading": "o ikiru tame",
+        "gloss": "for living in"
+      },
+      {
+        "text": "の正しい選択、",
+        "reading": "no tadashii sentaku",
+        "gloss": "the right choices"
+      },
+      {
+        "text": "それが出来たかどうか",
+        "reading": "sore ga dekita ka dō ka",
+        "gloss": "whether one managed it"
+      },
+      {
+        "text": "は誰にも分からない。$s#$b#",
+        "reading": "wa dare ni mo wakaranai",
+        "gloss": "no one can know"
+      },
+      {
+        "text": "あら、",
+        "reading": "ara",
+        "gloss": "oh"
+      },
+      {
+        "text": "ごめんなさい。",
+        "reading": "gomen nasai",
+        "gloss": "I'm sorry"
+      },
+      {
+        "text": "時々考え込んでしまうことがあるの…",
+        "reading": "tokidoki kangaekonde shimau koto ga aru no",
+        "gloss": "I sometimes get lost in thought"
+      }
+    ]
+  },
+  "Birdie15": {
+    "japanese": "果物、魚、食べ物の採集…食生活はバッチリよ！だからいつも元気でいられるの。",
+    "english": "Fruit, fish, foraged food... my diet is perfect! That's why I'm always in good health.",
+    "segments": [
+      {
+        "text": "果物、",
+        "reading": "kudamono",
+        "gloss": "fruit"
+      },
+      {
+        "text": "魚、",
+        "reading": "sakana",
+        "gloss": "fish"
+      },
+      {
+        "text": "食べ物の採集…",
+        "reading": "tabemono no saishū",
+        "gloss": "foraging for food"
+      },
+      {
+        "text": "食生活はバッチリよ！",
+        "reading": "shokuseikatsu wa batchiri yo",
+        "gloss": "my diet is spot on"
+      },
+      {
+        "text": "だからいつも元気でいられるの。",
+        "reading": "dakara itsumo genki de irareru no",
+        "gloss": "that's why I can always stay well"
+      }
+    ]
+  },
+  "Birdie17": {
+    "japanese": "一年中暖かくて気持ちのいい気候…ここは私にとって最高の場所よ…",
+    "english": "The weather is warm and pleasant all year round... this is the perfect place for me...",
+    "segments": [
+      {
+        "text": "一年中",
+        "reading": "ichinen jū",
+        "gloss": "all year round"
+      },
+      {
+        "text": "暖かくて気持ちのいい気候…",
+        "reading": "atatakakute kimochi no ii kikō",
+        "gloss": "a warm, pleasant climate"
+      },
+      {
+        "text": "ここは私",
+        "reading": "koko wa watashi",
+        "gloss": "here, for me"
+      },
+      {
+        "text": "にとって最高の場所よ…",
+        "reading": "ni totte saikō no basho yo",
+        "gloss": "is the best place"
+      }
+    ]
+  },
+  "Birdie19": {
+    "japanese": "ジャングルの中の小さなバナナの祭壇を見たことがある？もし私がバナナを持っていたら、そこに置いて様子を見るわ…うふふ…$h",
+    "english": "Have you seen the little banana altar in the jungle? If I had a banana I'd set it there and see what happens... heh heh...$h",
+    "segments": [
+      {
+        "text": "ジャングルの中",
+        "reading": "janguru no naka",
+        "gloss": "inside the jungle"
+      },
+      {
+        "text": "の小さなバナナの祭壇",
+        "reading": "no chiisa na banana no saidan",
+        "gloss": "'s little banana altar"
+      },
+      {
+        "text": "を見たことがある？",
+        "reading": "o mita koto ga aru",
+        "gloss": "have you seen"
+      },
+      {
+        "text": "もし私",
+        "reading": "moshi watashi",
+        "gloss": "if I"
+      },
+      {
+        "text": "がバナナ",
+        "reading": "ga banana",
+        "gloss": "a banana"
+      },
+      {
+        "text": "を持っていたら、",
+        "reading": "o motte itara",
+        "gloss": "had"
+      },
+      {
+        "text": "そこに置いて",
+        "reading": "soko ni oite",
+        "gloss": "putting it there"
+      },
+      {
+        "text": "様子を見るわ…",
+        "reading": "yōsu o miru wa",
+        "gloss": "I'd see what happens"
+      },
+      {
+        "text": "うふふ…$h",
+        "reading": "ufufu",
+        "gloss": "heh heh"
+      }
+    ]
+  },
+  "Birdie2": {
+    "japanese": "胃の調子が悪いのなら、ショウガを一口食べたらきっと良くなるはずよ。",
+    "english": "If your stomach is ever upset, a bite of ginger should set it right.",
+    "segments": [
+      {
+        "text": "胃の調子",
+        "reading": "i no chōshi",
+        "gloss": "your stomach's condition"
+      },
+      {
+        "text": "が悪いのなら、",
+        "reading": "ga warui no nara",
+        "gloss": "if it's bad"
+      },
+      {
+        "text": "ショウガ",
+        "reading": "shōga",
+        "gloss": "ginger"
+      },
+      {
+        "text": "を一口食べたら",
+        "reading": "o hitokuchi tabetara",
+        "gloss": "if you eat a mouthful"
+      },
+      {
+        "text": "きっと良くなるはずよ。",
+        "reading": "kitto yoku naru hazu yo",
+        "gloss": "it should surely improve"
+      }
+    ]
+  },
+  "Birdie22": {
+    "japanese": "こんにちは、今日はとっても元気そうね！$h",
+    "english": "Hello. You look very well today!$h",
+    "segments": [
+      {
+        "text": "こんにちは、",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      },
+      {
+        "text": "今日はとっても元気そうね！$h",
+        "reading": "kyō wa tottemo genki sō ne",
+        "gloss": "you look very well today"
+      }
+    ]
+  },
+  "Birdie23": {
+    "japanese": "とても長い間ここにいたの、もう波の音でさえ聞こえなくなってしまったわ…",
+    "english": "I've been here so long I can't even hear the waves any more...",
+    "segments": [
+      {
+        "text": "とても長い間",
+        "reading": "totemo nagai aida",
+        "gloss": "for a very long time"
+      },
+      {
+        "text": "ここにいたの、",
+        "reading": "koko ni ita no",
+        "gloss": "I've been here"
+      },
+      {
+        "text": "もう波の音でさえ",
+        "reading": "mō nami no oto de sae",
+        "gloss": "even the sound of the waves now"
+      },
+      {
+        "text": "聞こえなくなってしまったわ…",
+        "reading": "kikoenaku natte shimatta wa",
+        "gloss": "I can no longer hear"
+      }
+    ]
+  },
+  "Birdie28": {
+    "japanese": "今夜は満月よ…あなたの運が良くても悪くても、とにかく気を付けてね。霊たちがそわそわしているから。",
+    "english": "It's a full moon tonight... whether your fortune is good or bad, do be careful. The spirits are restless.",
+    "segments": [
+      {
+        "text": "今夜は満月よ…",
+        "reading": "kon'ya wa mangetsu yo",
+        "gloss": "tonight is a full moon"
+      },
+      {
+        "text": "あなたの運",
+        "reading": "anata no un",
+        "gloss": "your luck"
+      },
+      {
+        "text": "が良くても悪くても、",
+        "reading": "ga yokute mo warukute mo",
+        "gloss": "whether good or bad"
+      },
+      {
+        "text": "とにかく気を付けてね。",
+        "reading": "tonikaku ki o tsukete ne",
+        "gloss": "be careful anyway"
+      },
+      {
+        "text": "霊たち",
+        "reading": "reitachi",
+        "gloss": "the spirits"
+      },
+      {
+        "text": "がそわそわしているから。",
+        "reading": "ga sowasowa shite iru kara",
+        "gloss": "because they're restless"
+      }
+    ]
+  },
+  "Birdie3": {
+    "japanese": "ジャングルの中にある秘密のおやしろには行ってみた？そこのお花はとっても素敵な香りなのよ…私のお気に入りの場所のひとつなの。$h",
+    "english": "Have you been to the secret shrine in the jungle? The flowers there smell lovely... it's one of my favourite places.$h",
+    "segments": [
+      {
+        "text": "ジャングルの中",
+        "reading": "janguru no naka",
+        "gloss": "inside the jungle"
+      },
+      {
+        "text": "にある秘密のおやしろ",
+        "reading": "ni aru himitsu no o-yashiro",
+        "gloss": "the secret shrine that is"
+      },
+      {
+        "text": "には行ってみた？",
+        "reading": "ni wa itte mita",
+        "gloss": "have you been"
+      },
+      {
+        "text": "そこのお花",
+        "reading": "soko no o-hana",
+        "gloss": "the flowers there"
+      },
+      {
+        "text": "はとっても素敵な香りなのよ…",
+        "reading": "wa tottemo suteki na kaori na no yo",
+        "gloss": "have a lovely scent"
+      },
+      {
+        "text": "私のお気に入りの場所",
+        "reading": "watashi no o-ki ni iri no basho",
+        "gloss": "my favourite places"
+      },
+      {
+        "text": "のひとつなの。$h",
+        "reading": "no hitotsu na no",
+        "gloss": "it's one of"
+      }
+    ]
+  },
+  "Birdie4": {
+    "japanese": "毎日、朝食にはポイを食べて搾りたてのマンゴージュースを飲むの。それが若さの秘けつよ！",
+    "english": "Every morning I eat poi for breakfast and drink freshly squeezed mango juice. That's the secret to staying young!",
+    "segments": [
+      {
+        "text": "毎日、",
+        "reading": "mainichi",
+        "gloss": "every day"
+      },
+      {
+        "text": "朝食にはポイ",
+        "reading": "chōshoku ni wa poi",
+        "gloss": "poi for breakfast"
+      },
+      {
+        "text": "を食べて",
+        "reading": "o tabete",
+        "gloss": "eating"
+      },
+      {
+        "text": "搾りたてのマンゴージュース",
+        "reading": "shiboritate no mangō jūsu",
+        "gloss": "freshly squeezed mango juice"
+      },
+      {
+        "text": "を飲むの。",
+        "reading": "o nomu no",
+        "gloss": "I drink"
+      },
+      {
+        "text": "それが若さの秘けつよ！",
+        "reading": "sore ga wakasa no hiketsu yo",
+        "gloss": "that's the secret of youth"
+      }
+    ]
+  },
+  "Birdie5": {
+    "japanese": "何か新しいものが流れ着いていないか、毎日浜辺を散歩しているわ。あちこちに色々なものが浮かんでいるのよ！",
+    "english": "I walk the beach every day to see if anything new has washed up. All sorts of things drift about out there!",
+    "segments": [
+      {
+        "text": "何か新しいもの",
+        "reading": "nanika atarashii mono",
+        "gloss": "anything new"
+      },
+      {
+        "text": "が流れ着いていないか、",
+        "reading": "ga nagaretsuite inai ka",
+        "gloss": "whether it has washed up"
+      },
+      {
+        "text": "毎日浜辺を散歩しているわ。",
+        "reading": "mainichi hamabe o sanpo shite iru wa",
+        "gloss": "I walk the beach every day"
+      },
+      {
+        "text": "あちこちに色々なもの",
+        "reading": "achikochi ni iroiro na mono",
+        "gloss": "all sorts of things here and there"
+      },
+      {
+        "text": "が浮かんでいるのよ！",
+        "reading": "ga ukande iru no yo",
+        "gloss": "are floating"
+      }
+    ]
+  },
+  "Birdie6": {
+    "japanese": "私の家は小さいけけど、これで十分なの。なんてったって、自分で建てたんだから。",
+    "english": "My hut is small, but it's quite enough. Best of all, I built it myself.",
+    "segments": [
+      {
+        "text": "私の家",
+        "reading": "watashi no ie",
+        "gloss": "my house"
+      },
+      {
+        "text": "は小さいけけど、",
+        "reading": "wa chiisai kekedo",
+        "gloss": "is small, but (typo in the game)"
+      },
+      {
+        "text": "これで十分なの。",
+        "reading": "kore de jūbun na no",
+        "gloss": "this is enough"
+      },
+      {
+        "text": "なんてったって、",
+        "reading": "nantettatte",
+        "gloss": "above all"
+      },
+      {
+        "text": "自分で建てたんだから。",
+        "reading": "jibun de tateta n da kara",
+        "gloss": "because I built it myself"
+      }
+    ]
+  },
+  "Birdie_NoGift": {
+    "japanese": "あら、いいのよ…贈物なんて受け取れないわ。それはあなたが持っていて。",
+    "english": "Oh, no no... I can't accept gifts. You keep it.",
+    "segments": [
+      {
+        "text": "あら、",
+        "reading": "ara",
+        "gloss": "oh"
+      },
+      {
+        "text": "いいのよ…",
+        "reading": "ii no yo",
+        "gloss": "it's all right"
+      },
+      {
+        "text": "贈物なんて受け取れないわ。",
+        "reading": "okurimono nante uketorenai wa",
+        "gloss": "I couldn't accept a gift"
+      },
+      {
+        "text": "それはあなたが持っていて。",
+        "reading": "sore wa anata ga motte ite",
+        "gloss": "you keep it"
+      }
+    ]
+  },
+  "Clint_NoInventorySpace": {
+    "japanese": "なぁ、 どうぐの 強化は 終わったが、 持ちきれないみたいだな。",
+    "english": "Hey, your tool upgrade is finished, but it looks like you can't carry it.",
+    "segments": [
+      {
+        "text": "なぁ、 ",
+        "reading": "nā",
+        "gloss": "hey"
+      },
+      {
+        "text": "どうぐ",
+        "reading": "dōgu",
+        "gloss": "tool"
+      },
+      {
+        "text": "の 強化は 終わったが、 ",
+        "reading": "no kyōka wa owatta ga",
+        "gloss": "the upgrade is finished, but"
+      },
+      {
+        "text": "持ちきれないみたいだな。",
+        "reading": "mochikirenai mitai da na",
+        "gloss": "it seems you can't carry it"
+      }
+    ]
+  },
+  "Clint_StillWorking": {
+    "japanese": "あー、まだあんたの{0}をアップグレードし終わってないんだ。もうちょっと待っててくれ。",
+    "english": "Ah, I haven't finished upgrading your {0} yet. Wait a bit longer.",
+    "segments": [
+      {
+        "text": "あー、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "まだあんた",
+        "reading": "mada anta",
+        "gloss": "your, still"
+      },
+      {
+        "text": "の{0}",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "をアップグレードし終わってないんだ。",
+        "reading": "o appugurēdo shiowattenai n da",
+        "gloss": "I haven't finished upgrading"
+      },
+      {
+        "text": "もうちょっと待っててくれ。",
+        "reading": "mō chotto mattete kure",
+        "gloss": "wait a bit longer"
+      }
+    ]
+  },
+  "Farm_RobinWorking1": {
+    "japanese": "あたらしい{0}は、あと{1}日で完成するよ。それまで牧場にいるけど、わたしがいることは気にしないでね。",
+    "english": "Your new {0} will be finished in {1} days. I'll be on the farm until then, but don't mind me.",
+    "segments": [
+      {
+        "text": "あたらしい{0}",
+        "reading": "atarashii",
+        "gloss": "new"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あと{1}日",
+        "reading": "ato nichi",
+        "gloss": "in {1} more days"
+      },
+      {
+        "text": "で完成するよ。",
+        "reading": "de kansei suru yo",
+        "gloss": "will be completed"
+      },
+      {
+        "text": "それまで牧場にいるけど、",
+        "reading": "sore made bokujō ni iru kedo",
+        "gloss": "I'll be on the farm until then, but"
+      },
+      {
+        "text": "わたしがいること",
+        "reading": "watashi ga iru koto",
+        "gloss": "my being here"
+      },
+      {
+        "text": "は気にしないでね。",
+        "reading": "wa ki ni shinaide ne",
+        "gloss": "don't mind"
+      }
+    ]
+  },
+  "Farm_RobinWorking2": {
+    "japanese": "あたらしい{0}は、あと{1}日で完成するよ。昼も夜もぶっ続けでがんばるからね！",
+    "english": "Your new {0} will be finished in {1} days. I'll be at it day and night!",
+    "segments": [
+      {
+        "text": "あたらしい{0}",
+        "reading": "atarashii",
+        "gloss": "new"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あと{1}日",
+        "reading": "ato nichi",
+        "gloss": "in {1} more days"
+      },
+      {
+        "text": "で完成するよ。",
+        "reading": "de kansei suru yo",
+        "gloss": "will be completed"
+      },
+      {
+        "text": "昼も夜も",
+        "reading": "hiru mo yoru mo",
+        "gloss": "day and night"
+      },
+      {
+        "text": "ぶっ続けでがんばるからね！",
+        "reading": "buttsuzuke de ganbaru kara ne",
+        "gloss": "I'll work straight through"
+      }
+    ]
+  },
+  "Farm_RobinWorking_ReadyTomorrow": {
+    "japanese": "あたらしい{0}は明日には完成するよ！楽しみにしててね！",
+    "english": "Your new {0} will be finished tomorrow! Look forward to it!",
+    "segments": [
+      {
+        "text": "あたらしい{0}",
+        "reading": "atarashii",
+        "gloss": "new"
+      },
+      {
+        "text": "は明日には完成するよ！",
+        "reading": "wa ashita ni wa kansei suru yo",
+        "gloss": "will be finished by tomorrow"
+      },
+      {
+        "text": "楽しみにしててね！",
+        "reading": "tanoshimi ni shitete ne",
+        "gloss": "look forward to it"
+      }
+    ]
+  },
+  "Gunther_MuseumComplete": {
+    "japanese": "博物館が 立派になったよ！ 本当に 君の おかげだ。",
+    "english": "The museum looks splendid! It really is thanks to you.",
+    "segments": [
+      {
+        "text": "博物館",
+        "reading": "hakubutsukan",
+        "gloss": "museum"
+      },
+      {
+        "text": "が 立派になったよ！ ",
+        "reading": "ga rippa ni natta yo",
+        "gloss": "has become splendid"
+      },
+      {
+        "text": "本当に ",
+        "reading": "hontō ni",
+        "gloss": "really"
+      },
+      {
+        "text": "君の おかげだ。",
+        "reading": "kimi no okage da",
+        "gloss": "it's thanks to you"
+      }
+    ]
+  },
+  "Gunther_NoArtifactsFound": {
+    "japanese": "やあ！ スターデューバレー 博物館兼 図書館へ よく来てくれた。#$b#恥ずかしい 話だが… 前任者が コレクションを 丸々持ち逃げ したせいで、 展示できる アーティファクトが 1つも 無いんだ。#$b#でも すぐに 何とかなるだろう！ もし 貴重な アーティファクトや 鉱物を 見つけたら… 持ってきてくれるかな？",
+    "english": "Hello! Welcome to the Stardew Valley Museum and Library.#$b#It's embarrassing to say, but... the previous curator made off with the entire collection, so there isn't a single artifact to display.#$b#But it should be sorted soon! If you find any valuable artifacts or minerals... would you bring them to me?",
+    "segments": [
+      {
+        "text": "やあ！ ",
+        "reading": "yā",
+        "gloss": "hello"
+      },
+      {
+        "text": "スターデューバレー ",
+        "reading": "Sutādyū Barē",
+        "gloss": "Stardew Valley"
+      },
+      {
+        "text": "博物館兼 ",
+        "reading": "hakubutsukan ken",
+        "gloss": "museum and"
+      },
+      {
+        "text": "図書館",
+        "reading": "toshokan",
+        "gloss": "library"
+      },
+      {
+        "text": "へ よく来てくれた。#$b#",
+        "reading": "e yoku kite kureta",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "恥ずかしい 話だが… ",
+        "reading": "hazukashii hanashi da ga",
+        "gloss": "it's an embarrassing thing, but"
+      },
+      {
+        "text": "前任者",
+        "reading": "zenninsha",
+        "gloss": "the previous holder of the post"
+      },
+      {
+        "text": "が コレクション",
+        "reading": "ga korekushon",
+        "gloss": "the collection"
+      },
+      {
+        "text": "を 丸々持ち逃げ ",
+        "reading": "o marumaru mochinige",
+        "gloss": "absconded with the whole"
+      },
+      {
+        "text": "したせいで、 ",
+        "reading": "shita sei de",
+        "gloss": "because he"
+      },
+      {
+        "text": "展示できる ",
+        "reading": "tenji dekiru",
+        "gloss": "displayable"
+      },
+      {
+        "text": "アーティファクト",
+        "reading": "ātifakuto",
+        "gloss": "artifacts"
+      },
+      {
+        "text": "が 1つも 無いんだ。#$b#",
+        "reading": "ga hitotsu mo nai n da",
+        "gloss": "there isn't a single one"
+      },
+      {
+        "text": "でも すぐに ",
+        "reading": "demo sugu ni",
+        "gloss": "but soon"
+      },
+      {
+        "text": "何とかなるだろう！ ",
+        "reading": "nan toka naru darō",
+        "gloss": "it'll work out somehow"
+      },
+      {
+        "text": "もし 貴重な ",
+        "reading": "moshi kichō na",
+        "gloss": "if valuable"
+      },
+      {
+        "text": "アーティファクト",
+        "reading": "ātifakuto",
+        "gloss": "artifacts"
+      },
+      {
+        "text": "や 鉱物",
+        "reading": "ya kōbutsu",
+        "gloss": "or minerals"
+      },
+      {
+        "text": "を 見つけたら… ",
+        "reading": "o mitsuketara",
+        "gloss": "you find"
+      },
+      {
+        "text": "持ってきてくれるかな？",
+        "reading": "motte kite kureru ka na",
+        "gloss": "would you bring them"
+      }
+    ]
+  },
+  "Gunther_NothingToDonate": {
+    "japanese": "どうやら、 寄付できそうな ものを なに1つ 持っていない みたいだね。 宝探しにでも 出たら どうだ？",
+    "english": "It doesn't look like you have anything to donate. How about going treasure hunting?",
+    "segments": [
+      {
+        "text": "どうやら、 ",
+        "reading": "dōyara",
+        "gloss": "apparently"
+      },
+      {
+        "text": "寄付できそうな ",
+        "reading": "kifu dekisō na",
+        "gloss": "donatable-looking"
+      },
+      {
+        "text": "もの",
+        "reading": "mono",
+        "gloss": "things"
+      },
+      {
+        "text": "を なに1つ ",
+        "reading": "o nani hitotsu",
+        "gloss": "not a single one"
+      },
+      {
+        "text": "持っていない みたいだね。 ",
+        "reading": "motte inai mitai da ne",
+        "gloss": "you don't seem to have"
+      },
+      {
+        "text": "宝探し",
+        "reading": "takarasagashi",
+        "gloss": "treasure hunting"
+      },
+      {
+        "text": "にでも 出たら どうだ？",
+        "reading": "ni demo detara dō da",
+        "gloss": "how about setting out for"
+      }
+    ]
+  },
+  "Island_leo_rescue": {
+    "japanese": "どうやら生きてるみたいだね。$u#$b#キミを見つけた鳥の友達から、危なそうだって聞いたから、ここまで引っぱってきたんだ。$s#$b#外では十分気を付けてね。もう悲しい思いはしたくないんだ…$s",
+    "english": "It looks like you're going to live.$u#$b#My bird friends found you and said you were in danger, so I dragged you all the way down here.$s#$b#Do be careful out there. I don't want to feel sad again...$s",
+    "segments": [
+      {
+        "text": "どうやら生きてるみたいだね。$u#$b#",
+        "reading": "dōyara ikiteru mitai da ne",
+        "gloss": "it seems you're alive"
+      },
+      {
+        "text": "キミを見つけた",
+        "reading": "kimi o mitsuketa",
+        "gloss": "who found you"
+      },
+      {
+        "text": "鳥の友達",
+        "reading": "tori no tomodachi",
+        "gloss": "bird friends"
+      },
+      {
+        "text": "から、",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "危なそうだ",
+        "reading": "abunasō da",
+        "gloss": "you looked in danger"
+      },
+      {
+        "text": "って聞いたから、",
+        "reading": "tte kiita kara",
+        "gloss": "since I heard"
+      },
+      {
+        "text": "ここまで引っぱってきたんだ。$s#$b#",
+        "reading": "koko made hippatte kita n da",
+        "gloss": "I dragged you all the way here"
+      },
+      {
+        "text": "外では十分気を付けてね。",
+        "reading": "soto de wa jūbun ki o tsukete ne",
+        "gloss": "be very careful out there"
+      },
+      {
+        "text": "もう悲しい思いはしたくないんだ…$s",
+        "reading": "mō kanashii omoi wa shitakunai n da",
+        "gloss": "I don't want to feel sad again"
+      }
+    ]
+  },
+  "Island_willy_rescue": {
+    "japanese": "大丈夫か？お前さんは岸に打ち上げられてたんだよ、坊主。$s^平気か？お前さんは岸に打ち上げられてたんだよ、嬢ちゃん。$s#$b#本当に心配したんだぞ…まったく、ヒヤヒヤさせおって！もう少し気を付けるんだ…$s#$b#この島は安全ではないからな。",
+    "english": "Are you all right? You were washed up on the shore, lad.$s^Are you all right? You were washed up on the shore, miss.$s#$b#You really had me worried... you gave me a fright! Do be more careful...$s#$b#This island isn't a safe place.",
+    "segments": [
+      {
+        "text": "大丈夫か？",
+        "reading": "daijōbu ka",
+        "gloss": "are you all right"
+      },
+      {
+        "text": "お前さん",
+        "reading": "omae-san",
+        "gloss": "you"
+      },
+      {
+        "text": "は岸に打ち上げられてたんだよ、",
+        "reading": "wa kishi ni uchiagerareteta n da yo",
+        "gloss": "were washed up on the shore"
+      },
+      {
+        "text": "坊主。$s^",
+        "reading": "bōzu",
+        "gloss": "lad"
+      },
+      {
+        "text": "平気か？",
+        "reading": "heiki ka",
+        "gloss": "are you all right"
+      },
+      {
+        "text": "お前さん",
+        "reading": "omae-san",
+        "gloss": "you"
+      },
+      {
+        "text": "は岸に打ち上げられてたんだよ、",
+        "reading": "wa kishi ni uchiagerareteta n da yo",
+        "gloss": "were washed up on the shore"
+      },
+      {
+        "text": "嬢ちゃん。$s#$b#",
+        "reading": "jōchan",
+        "gloss": "miss"
+      },
+      {
+        "text": "本当に心配したんだぞ…",
+        "reading": "hontō ni shinpai shita n da zo",
+        "gloss": "I was really worried"
+      },
+      {
+        "text": "まったく、",
+        "reading": "mattaku",
+        "gloss": "honestly"
+      },
+      {
+        "text": "ヒヤヒヤさせおって！",
+        "reading": "hiyahiya saseotte",
+        "gloss": "giving me such a fright"
+      },
+      {
+        "text": "もう少し気を付けるんだ…$s#$b#",
+        "reading": "mō sukoshi ki o tsukeru n da",
+        "gloss": "be a little more careful"
+      },
+      {
+        "text": "この島は安全ではないからな。",
+        "reading": "kono shima wa anzen de wa nai kara na",
+        "gloss": "because this island isn't safe"
+      }
+    ]
+  },
+  "JoshHouse_Alex_Trash": {
+    "japanese": "あー…お前、なにしてんだ？$s",
+    "english": "Er... what are you doing?$s",
+    "segments": [
+      {
+        "text": "あー…",
+        "reading": "ā",
+        "gloss": "er"
+      },
+      {
+        "text": "お前、",
+        "reading": "omae",
+        "gloss": "you"
+      },
+      {
+        "text": "なにしてんだ？$s",
+        "reading": "nani shiten da",
+        "gloss": "what are you doing"
+      }
+    ]
+  },
+  "LostItemQuest_DefaultThankYou": {
+    "japanese": "見つけてくれたんだ！ありがとう。",
+    "english": "You found it! Thank you.",
+    "segments": [
+      {
+        "text": "見つけてくれたんだ！",
+        "reading": "mitsukete kureta n da",
+        "gloss": "you found it"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Mines_PlayerKilled_Clint": {
+    "japanese": "…あんた、鉱山で気絶してたぞ。あんたをずっとここまで運んできたもんだから、すっかり腰を痛めちまったよ。#$b#こんどはもっと気を付けろよ、な？$s",
+    "english": "...I found you unconscious in the mine. Dragging you all the way up here has done my back in.#$b#Be a bit more careful next time, eh?$s",
+    "segments": [
+      {
+        "text": "…あんた、",
+        "reading": "anta",
+        "gloss": "you"
+      },
+      {
+        "text": "鉱山で気絶してたぞ。",
+        "reading": "kōzan de kizetsu shiteta zo",
+        "gloss": "were unconscious in the mine"
+      },
+      {
+        "text": "あんたをずっとここまで運んできたもんだから、",
+        "reading": "anta o zutto koko made hakonde kita mon da kara",
+        "gloss": "since I carried you all the way here"
+      },
+      {
+        "text": "すっかり腰を痛めちまったよ。#$b#",
+        "reading": "sukkari koshi o itamechimatta yo",
+        "gloss": "I've completely done my back in"
+      },
+      {
+        "text": "こんどはもっと気を付けろよ、",
+        "reading": "kondo wa motto ki o tsukero yo",
+        "gloss": "be more careful next time"
+      },
+      {
+        "text": "な？$s",
+        "reading": "na",
+        "gloss": "eh"
+      }
+    ]
+  },
+  "Mines_PlayerKilled_Linus": {
+    "japanese": "…君は鉱山の中でたおれていたんだよ。運がよかったね、わたしが通りがかって！#$b#いいかい、次からはもっと気をつけるんだよ？$s",
+    "english": "...You'd collapsed inside the mine. Lucky for you I happened to pass by!#$b#Listen, be more careful from now on, all right?$s",
+    "segments": [
+      {
+        "text": "…君は鉱山の中でたおれていたんだよ。",
+        "reading": "kimi wa kōzan no naka de taorete ita n da yo",
+        "gloss": "you had collapsed inside the mine"
+      },
+      {
+        "text": "運がよかったね、",
+        "reading": "un ga yokatta ne",
+        "gloss": "you were lucky"
+      },
+      {
+        "text": "わたしが通りがかって！#$b#",
+        "reading": "watashi ga tōrigakatte",
+        "gloss": "that I passed by"
+      },
+      {
+        "text": "いいかい、",
+        "reading": "ii kai",
+        "gloss": "listen"
+      },
+      {
+        "text": "次からはもっと気をつけるんだよ？$s",
+        "reading": "tsugi kara wa motto ki o tsukeru n da yo",
+        "gloss": "be more careful from next time"
+      }
+    ]
+  },
+  "Mines_PlayerKilled_Maru_NotSpouse": {
+    "japanese": "…あなた、鉱山でたおれてたんだよ。鉱石を取りに鉱山に入ってたんだけど、あとちょっとであなたの頭を踏みつけるところだったよ！#$b#こんど鉱山に入るときは、もっと注意してね。$s",
+    "english": "...You'd collapsed in the mine. I was there collecting ore and I nearly trod on your head!#$b#Be more careful next time you go in.$s",
+    "segments": [
+      {
+        "text": "…あなた、",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "鉱山でたおれてたんだよ。",
+        "reading": "kōzan de taoreteta n da yo",
+        "gloss": "had collapsed in the mine"
+      },
+      {
+        "text": "鉱石を取りに鉱山に入ってたんだけど、",
+        "reading": "kōseki o tori ni kōzan ni haitteta n da kedo",
+        "gloss": "I'd gone into the mine to get ore, and"
+      },
+      {
+        "text": "あとちょっとであなたの頭を踏みつけるところだったよ！#$b#",
+        "reading": "ato chotto de anata no atama o fumitsukeru tokoro datta yo",
+        "gloss": "I very nearly trod on your head"
+      },
+      {
+        "text": "こんど鉱山に入るときは、",
+        "reading": "kondo kōzan ni hairu toki wa",
+        "gloss": "next time you go into the mine"
+      },
+      {
+        "text": "もっと注意してね。$s",
+        "reading": "motto chūi shite ne",
+        "gloss": "be more careful"
+      }
+    ]
+  },
+  "Mines_PlayerKilled_Maru_Spouse": {
+    "japanese": "…あなた、鉱山でたおれてたんだよ。いつまでたっても帰ってこないから、わたし、心配になって探しに行ったんだから！#$b#こんど鉱山に行くときは、もっと注意してね。$s",
+    "english": "...You'd collapsed in the mine. You never came home, so I got worried and went looking!#$b#Be more careful next time you go.$s",
+    "segments": [
+      {
+        "text": "…あなた、",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "鉱山でたおれてたんだよ。",
+        "reading": "kōzan de taoreteta n da yo",
+        "gloss": "had collapsed in the mine"
+      },
+      {
+        "text": "いつまでたっても帰ってこないから、",
+        "reading": "itsu made tatte mo kaette konai kara",
+        "gloss": "since you never came home"
+      },
+      {
+        "text": "わたし、心配になって探しに行ったんだから！#$b#",
+        "reading": "watashi shinpai ni natte sagashi ni itta n da kara",
+        "gloss": "I got worried and went looking"
+      },
+      {
+        "text": "こんど鉱山に行くときは、",
+        "reading": "kondo kōzan ni iku toki wa",
+        "gloss": "next time you go to the mine"
+      },
+      {
+        "text": "もっと注意してね。$s",
+        "reading": "motto chūi shite ne",
+        "gloss": "be more careful"
+      }
+    ]
+  },
+  "Mines_PlayerKilled_Robin": {
+    "japanese": "…鉱山に行ったら、気をうしなってるあなたを見つけたんだ。うっかり、変わった木材のかたまりと見まちがえて通りすぎるとこだったよ！#$b#次からはもっと気をつけなよ。いい？$s",
+    "english": "...I went into the mine and found you unconscious. I nearly walked past, mistaking you for an odd lump of timber!#$b#Be more careful from now on. All right?$s",
+    "segments": [
+      {
+        "text": "…鉱山に行ったら、",
+        "reading": "kōzan ni ittara",
+        "gloss": "when I went to the mine"
+      },
+      {
+        "text": "気をうしなってるあなたを見つけたんだ。",
+        "reading": "ki o ushinatteru anata o mitsuketa n da",
+        "gloss": "I found you unconscious"
+      },
+      {
+        "text": "うっかり、",
+        "reading": "ukkari",
+        "gloss": "carelessly"
+      },
+      {
+        "text": "変わった木材のかたまり",
+        "reading": "kawatta mokuzai no katamari",
+        "gloss": "an odd lump of timber"
+      },
+      {
+        "text": "と見まちがえて通りすぎるとこだったよ！#$b#",
+        "reading": "to mimachigaete tōrisugiru toko datta yo",
+        "gloss": "I nearly mistook you for and walked past"
+      },
+      {
+        "text": "次からはもっと気をつけなよ。",
+        "reading": "tsugi kara wa motto ki o tsukena yo",
+        "gloss": "be more careful from next time"
+      },
+      {
+        "text": "いい？$s",
+        "reading": "ii",
+        "gloss": "all right"
+      }
+    ]
+  },
+  "Mines_PlayerKilled_Spouse_PlayerFemale": {
+    "japanese": "まったく、ぜんぜん帰ってこないから心配したんだよ！たおれてるところを見つけたときはほんと、心臓発作が起きるんじゃないかと思った…$a",
+    "english": "Honestly, you never came home and I was worried sick! When I found you lying there I thought I'd have a heart attack...$a",
+    "segments": [
+      {
+        "text": "まったく、",
+        "reading": "mattaku",
+        "gloss": "honestly"
+      },
+      {
+        "text": "ぜんぜん帰ってこないから心配したんだよ！",
+        "reading": "zenzen kaette konai kara shinpai shita n da yo",
+        "gloss": "I was worried since you never came home"
+      },
+      {
+        "text": "たおれてるところを見つけたときはほんと、",
+        "reading": "taoreteru tokoro o mitsuketa toki wa honto",
+        "gloss": "when I found you collapsed, really"
+      },
+      {
+        "text": "心臓発作が起きるんじゃないかと思った…$a",
+        "reading": "shinzō hossa ga okiru n ja nai ka to omotta",
+        "gloss": "I thought I'd have a heart attack"
+      }
+    ]
+  },
+  "Mines_PlayerKilled_Spouse_PlayerMale": {
+    "japanese": "まったく、ぜんぜん帰ってこないから心配したんだぞ！たおれてるところを見つけたときはもう、涙があふれて止まらなかったよ…$s",
+    "english": "Honestly, you never came home and I was worried sick! When I found you lying there the tears just wouldn't stop...$s",
+    "segments": [
+      {
+        "text": "まったく、",
+        "reading": "mattaku",
+        "gloss": "honestly"
+      },
+      {
+        "text": "ぜんぜん帰ってこないから心配したんだぞ！",
+        "reading": "zenzen kaette konai kara shinpai shita n da zo",
+        "gloss": "I was worried since you never came home"
+      },
+      {
+        "text": "たおれてるところを見つけたときはもう、",
+        "reading": "taoreteru tokoro o mitsuketa toki wa mō",
+        "gloss": "when I found you collapsed"
+      },
+      {
+        "text": "涙があふれて止まらなかったよ…$s",
+        "reading": "namida ga afurete tomaranakatta yo",
+        "gloss": "the tears overflowed and wouldn't stop"
+      }
+    ]
+  },
+  "MisterQi_PlayerClubMember": {
+    "japanese": "若者よ、 ようやく 会うことが できたね。 我が 秘密の クラブへ ようこそ。#$e#君から 「輝き」が 見えるから… 私は 招待したのだ。#$e#輝きとは 何か？ …その身から あふれ出てきた 謎や 芸術性だ… #$b#私達のような 人々には、 他者に 常人とは異なる存在が 何たるかを 知らしめる 義務が ある。#$e#いわば… この 世界は 米の入った 皿だ。 存在はするものの、 刺激的な 味付けがなければ その価値は まったく無い。 その味付けが 私達だ。#$b#誰が あの 古い鉱山の 宝箱に ものを 入れているか 気になったことは あるかね？ 私は 人々に サプライズを あたえるのが 好きなのだ。#$e# いずれ 君にも わかるだろう。 あきらめずに ベストを 尽くしたまえ。",
+    "english": "Young one, at last we meet. Welcome to my secret club.#$e#I saw the \"spark\" in you... that is why I invited you.#$e#What is the spark? ...The mystery and artistry that spills out of a person...#$b#People like us have a duty to show others what it is to be out of the ordinary.#$e#You see... this world is a bowl of rice. It exists, but without a zesty seasoning it is worth nothing at all. We are that seasoning.#$b#Have you ever wondered who puts things in those old mine chests? I like to give people surprises.#$e#One day you'll understand. Don't give up — do your best.",
+    "segments": [
+      {
+        "text": "若者よ、 ",
+        "reading": "wakamono yo",
+        "gloss": "young one"
+      },
+      {
+        "text": "ようやく ",
+        "reading": "yōyaku",
+        "gloss": "at last"
+      },
+      {
+        "text": "会うことが できたね。 ",
+        "reading": "au koto ga dekita ne",
+        "gloss": "we've been able to meet"
+      },
+      {
+        "text": "我が ",
+        "reading": "waga",
+        "gloss": "my"
+      },
+      {
+        "text": "秘密の クラブ",
+        "reading": "himitsu no kurabu",
+        "gloss": "secret club"
+      },
+      {
+        "text": "へ ようこそ。#$e#",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "君",
+        "reading": "kimi",
+        "gloss": "you"
+      },
+      {
+        "text": "から 「輝き」",
+        "reading": "kara kagayaki",
+        "gloss": "the \"spark\" from"
+      },
+      {
+        "text": "が 見えるから… ",
+        "reading": "ga mieru kara",
+        "gloss": "because I can see"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "は 招待したのだ。#$e#",
+        "reading": "wa shōtai shita no da",
+        "gloss": "invited you"
+      },
+      {
+        "text": "輝きとは 何か？ ",
+        "reading": "kagayaki to wa nani ka",
+        "gloss": "what is the spark"
+      },
+      {
+        "text": "…その身",
+        "reading": "sono mi",
+        "gloss": "that body"
+      },
+      {
+        "text": "から あふれ出てきた ",
+        "reading": "kara afurede kita",
+        "gloss": "that overflows from"
+      },
+      {
+        "text": "謎",
+        "reading": "nazo",
+        "gloss": "mystery"
+      },
+      {
+        "text": "や 芸術性だ… #$b#",
+        "reading": "ya geijutsusei da",
+        "gloss": "and artistry"
+      },
+      {
+        "text": "私達",
+        "reading": "watashitachi",
+        "gloss": "us"
+      },
+      {
+        "text": "のような 人々",
+        "reading": "no yō na hitobito",
+        "gloss": "people like"
+      },
+      {
+        "text": "には、 ",
+        "reading": "ni wa",
+        "gloss": "for"
+      },
+      {
+        "text": "他者",
+        "reading": "tasha",
+        "gloss": "others"
+      },
+      {
+        "text": "に 常人とは異なる存在",
+        "reading": "ni jōjin to wa kotonaru sonzai",
+        "gloss": "beings different from ordinary folk"
+      },
+      {
+        "text": "が 何たるか",
+        "reading": "ga nantaru ka",
+        "gloss": "what they are"
+      },
+      {
+        "text": "を 知らしめる 義務が ある。#$e#",
+        "reading": "o shirashimeru gimu ga aru",
+        "gloss": "there is a duty to make known"
+      },
+      {
+        "text": "いわば… ",
+        "reading": "iwaba",
+        "gloss": "so to speak"
+      },
+      {
+        "text": "この 世界",
+        "reading": "kono sekai",
+        "gloss": "this world"
+      },
+      {
+        "text": "は 米の入った 皿だ。 ",
+        "reading": "wa kome no haitta sara da",
+        "gloss": "is a dish of rice"
+      },
+      {
+        "text": "存在はするものの、 ",
+        "reading": "sonzai wa suru mono no",
+        "gloss": "it exists, but"
+      },
+      {
+        "text": "刺激的な 味付け",
+        "reading": "shigekiteki na ajitsuke",
+        "gloss": "stimulating seasoning"
+      },
+      {
+        "text": "がなければ ",
+        "reading": "ga nakereba",
+        "gloss": "without"
+      },
+      {
+        "text": "その価値は まったく無い。 ",
+        "reading": "sono kachi wa mattaku nai",
+        "gloss": "its value is nil"
+      },
+      {
+        "text": "その味付け",
+        "reading": "sono ajitsuke",
+        "gloss": "that seasoning"
+      },
+      {
+        "text": "が 私達だ。#$b#",
+        "reading": "ga watashitachi da",
+        "gloss": "is us"
+      },
+      {
+        "text": "誰が ",
+        "reading": "dare ga",
+        "gloss": "who"
+      },
+      {
+        "text": "あの 古い鉱山",
+        "reading": "ano furui kōzan",
+        "gloss": "that old mine"
+      },
+      {
+        "text": "の 宝箱",
+        "reading": "no takarabako",
+        "gloss": "'s treasure chests"
+      },
+      {
+        "text": "に ものを 入れているか ",
+        "reading": "ni mono o irete iru ka",
+        "gloss": "puts things into"
+      },
+      {
+        "text": "気になったことは あるかね？ ",
+        "reading": "ki ni natta koto wa aru ka ne",
+        "gloss": "have you ever wondered"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "は 人々",
+        "reading": "wa hitobito",
+        "gloss": "people"
+      },
+      {
+        "text": "に サプライズ",
+        "reading": "ni sapuraizu",
+        "gloss": "surprises to"
+      },
+      {
+        "text": "を あたえるのが 好きなのだ。#$e# ",
+        "reading": "o ataeru no ga suki na no da",
+        "gloss": "like to give"
+      },
+      {
+        "text": "いずれ ",
+        "reading": "izure",
+        "gloss": "eventually"
+      },
+      {
+        "text": "君",
+        "reading": "kimi",
+        "gloss": "you"
+      },
+      {
+        "text": "にも わかるだろう。 ",
+        "reading": "ni mo wakaru darō",
+        "gloss": "will understand too"
+      },
+      {
+        "text": "あきらめずに ",
+        "reading": "akiramezu ni",
+        "gloss": "without giving up"
+      },
+      {
+        "text": "ベストを 尽くしたまえ。",
+        "reading": "besuto o tsukushi tamae",
+        "gloss": "do your best"
+      }
+    ]
+  },
+  "Morris_BuyMovieTheater": {
+    "japanese": "あぉ、お気に入りのお客様...あなたにとってエキサイティングなニュースがあります！Joja本社は、近くのJojaウェアハウスに代わる新しいJoja「エンターテイメントの機会」の建設を承認しました。私たちのビジョンを支えたいと思っている投資家だけが必要です！それで、当然、私はあなたに目を向けます...私たちの最も献身的で寛大なJojaメンバー。#$b#$q -1 -1#私たちはこれを小規模の投資で実現可能です...（ゴホン）...500,000g ...$h#$r -1 -1 Yes#はい#$r -1 -1 No#いいえ",
+    "english": "Ah, our favourite customer... I have exciting news for you! Joja headquarters has approved building a new Joja \"entertainment opportunity\" to replace the nearby Joja warehouse. All we need is an investor willing to support our vision! So naturally I turn to you... our most devoted and generous Joja member.#$b#$q -1 -1#We could make this happen with a small investment of... *ahem*... 500,000g...$h#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+    "segments": [
+      {
+        "text": "あぉ、",
+        "reading": "ao",
+        "gloss": "ah"
+      },
+      {
+        "text": "お気に入りのお客様...",
+        "reading": "o-ki ni iri no o-kyakusama",
+        "gloss": "our favourite customer"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "にとってエキサイティングなニュース",
+        "reading": "ni totte ekisaitingu na nyūsu",
+        "gloss": "exciting news for"
+      },
+      {
+        "text": "があります！",
+        "reading": "ga arimasu",
+        "gloss": "there is"
+      },
+      {
+        "text": "Joja本社",
+        "reading": "Joja honsha",
+        "gloss": "Joja headquarters"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "近くのJojaウェアハウス",
+        "reading": "chikaku no Joja weahausu",
+        "gloss": "the nearby Joja warehouse"
+      },
+      {
+        "text": "に代わる",
+        "reading": "ni kawaru",
+        "gloss": "to replace"
+      },
+      {
+        "text": "新しいJoja",
+        "reading": "atarashii Joja",
+        "gloss": "new Joja"
+      },
+      {
+        "text": "「エンターテイメントの機会」",
+        "reading": "entāteimento no kikai",
+        "gloss": "\"entertainment opportunity\""
+      },
+      {
+        "text": "の建設",
+        "reading": "no kensetsu",
+        "gloss": "'s construction"
+      },
+      {
+        "text": "を承認しました。",
+        "reading": "o shōnin shimashita",
+        "gloss": "has approved"
+      },
+      {
+        "text": "私たちのビジョン",
+        "reading": "watashitachi no bijon",
+        "gloss": "our vision"
+      },
+      {
+        "text": "を支えたいと思っている",
+        "reading": "o sasaetai to omotte iru",
+        "gloss": "who wants to support"
+      },
+      {
+        "text": "投資家",
+        "reading": "tōshika",
+        "gloss": "an investor"
+      },
+      {
+        "text": "だけが必要です！",
+        "reading": "dake ga hitsuyō desu",
+        "gloss": "is all that's needed"
+      },
+      {
+        "text": "それで、",
+        "reading": "sore de",
+        "gloss": "so"
+      },
+      {
+        "text": "当然、",
+        "reading": "tōzen",
+        "gloss": "naturally"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "はあなたに目を向けます...",
+        "reading": "wa anata ni me o mukemasu",
+        "gloss": "turn my eyes to you"
+      },
+      {
+        "text": "私たちの最も献身的で寛大なJojaメンバー。#$b#$q -1 -1#",
+        "reading": "watashitachi no mottomo kenshinteki de kandai na Joja menbā",
+        "gloss": "our most devoted and generous Joja member"
+      },
+      {
+        "text": "私たち",
+        "reading": "watashitachi",
+        "gloss": "we"
+      },
+      {
+        "text": "はこれ",
+        "reading": "wa kore",
+        "gloss": "this"
+      },
+      {
+        "text": "を小規模の投資",
+        "reading": "o shōkibo no tōshi",
+        "gloss": "with a small investment"
+      },
+      {
+        "text": "で実現可能です...",
+        "reading": "de jitsugen kanō desu",
+        "gloss": "can make happen"
+      },
+      {
+        "text": "（ゴホン）...",
+        "reading": "gohon",
+        "gloss": "*ahem*"
+      },
+      {
+        "text": "500,000g ...$h#$r -1 -1 Yes#",
+        "reading": "",
+        "gloss": "(amount)"
+      },
+      {
+        "text": "はい#$r -1 -1 No#",
+        "reading": "hai",
+        "gloss": "yes"
+      },
+      {
+        "text": "いいえ",
+        "reading": "iie",
+        "gloss": "no"
+      }
+    ]
+  },
+  "Morris_ComeBackLater": {
+    "japanese": "地域開発計画に ついては、 明日 話し合いましょう…  それと、 大金を 持ってくることを 忘れないでくださいね。 ハッハッハッ。",
+    "english": "Let's discuss the community development plan tomorrow... and don't forget to bring plenty of money. Ha ha ha.",
+    "segments": [
+      {
+        "text": "地域開発計画",
+        "reading": "chiiki kaihatsu keikaku",
+        "gloss": "community development plan"
+      },
+      {
+        "text": "に ついては、 ",
+        "reading": "ni tsuite wa",
+        "gloss": "as for"
+      },
+      {
+        "text": "明日 ",
+        "reading": "ashita",
+        "gloss": "tomorrow"
+      },
+      {
+        "text": "話し合いましょう…  ",
+        "reading": "hanashiaimashō",
+        "gloss": "let's discuss"
+      },
+      {
+        "text": "それと、 ",
+        "reading": "sore to",
+        "gloss": "and also"
+      },
+      {
+        "text": "大金",
+        "reading": "taikin",
+        "gloss": "a large sum"
+      },
+      {
+        "text": "を 持ってくること",
+        "reading": "o motte kuru koto",
+        "gloss": "bringing"
+      },
+      {
+        "text": "を 忘れないでくださいね。 ",
+        "reading": "o wasurenaide kudasai ne",
+        "gloss": "please don't forget"
+      },
+      {
+        "text": "ハッハッハッ。",
+        "reading": "hahhahha",
+        "gloss": "ha ha ha"
+      }
+    ]
+  },
+  "Morris_CommunityDevelopmentForm_PlayerFemale": {
+    "japanese": "$q -1 -1#Joja 地域開発計画の フォームを お持ちしましたが、 ご覧になりますか？#$r -1 -1 Yes#はい#$r -1 -1 No#いいえ",
+    "english": "$q -1 -1#I have the Joja Community Development Form right here — would you care to look?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+    "segments": [
+      {
+        "text": "$q -1 -1#",
+        "reading": "",
+        "gloss": "(dialogue command)"
+      },
+      {
+        "text": "Joja ",
+        "reading": "",
+        "gloss": "(company)"
+      },
+      {
+        "text": "地域開発計画",
+        "reading": "chiiki kaihatsu keikaku",
+        "gloss": "community development plan"
+      },
+      {
+        "text": "の フォーム",
+        "reading": "no fōmu",
+        "gloss": "'s form"
+      },
+      {
+        "text": "を お持ちしましたが、 ",
+        "reading": "o o-mochi shimashita ga",
+        "gloss": "I've brought, and"
+      },
+      {
+        "text": "ご覧になりますか？#$r -1 -1 Yes#",
+        "reading": "go-ran ni narimasu ka",
+        "gloss": "would you like to look"
+      },
+      {
+        "text": "はい#$r -1 -1 No#",
+        "reading": "hai",
+        "gloss": "yes"
+      },
+      {
+        "text": "いいえ",
+        "reading": "iie",
+        "gloss": "no"
+      }
+    ]
+  },
+  "Morris_CommunityDevelopmentForm_PlayerMale": {
+    "japanese": "$q -1 -1#Joja 地域開発計画の フォームを お持ちしましたが、 ご覧になりますか？#$r -1 -1 Yes#はい#$r -1 -1 No#いいえ",
+    "english": "$q -1 -1#I have the Joja Community Development Form right here — would you care to look?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+    "segments": [
+      {
+        "text": "$q -1 -1#",
+        "reading": "",
+        "gloss": "(dialogue command)"
+      },
+      {
+        "text": "Joja ",
+        "reading": "",
+        "gloss": "(company)"
+      },
+      {
+        "text": "地域開発計画",
+        "reading": "chiiki kaihatsu keikaku",
+        "gloss": "community development plan"
+      },
+      {
+        "text": "の フォーム",
+        "reading": "no fōmu",
+        "gloss": "'s form"
+      },
+      {
+        "text": "を お持ちしましたが、 ",
+        "reading": "o o-mochi shimashita ga",
+        "gloss": "I've brought, and"
+      },
+      {
+        "text": "ご覧になりますか？#$r -1 -1 Yes#",
+        "reading": "go-ran ni narimasu ka",
+        "gloss": "would you like to look"
+      },
+      {
+        "text": "はい#$r -1 -1 No#",
+        "reading": "hai",
+        "gloss": "yes"
+      },
+      {
+        "text": "いいえ",
+        "reading": "iie",
+        "gloss": "no"
+      }
+    ]
+  },
+  "Morris_FirstGreeting": {
+    "japanese": "Jojaマートへようこそ！本日はご機嫌いかがでしょうか。#$b#わたくしどもは現在、新しくお客さま向けにスタートする会員システムの準備をしております。登録の機会をどうぞお見逃しなく！",
+    "english": "Welcome to JojaMart! How are you today?#$b#We're currently preparing a new membership system for our customers. Don't miss your chance to sign up!",
+    "segments": [
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "へようこそ！",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "本日はご機嫌いかがでしょうか。#$b#",
+        "reading": "honjitsu wa go-kigen ikaga deshō ka",
+        "gloss": "how are you today"
+      },
+      {
+        "text": "わたくしども",
+        "reading": "watakushidomo",
+        "gloss": "we"
+      },
+      {
+        "text": "は現在、",
+        "reading": "wa genzai",
+        "gloss": "currently"
+      },
+      {
+        "text": "新しくお客さま向けに",
+        "reading": "atarashiku o-kyakusama muke ni",
+        "gloss": "newly, for customers"
+      },
+      {
+        "text": "スタートする",
+        "reading": "sutāto suru",
+        "gloss": "that will start"
+      },
+      {
+        "text": "会員システム",
+        "reading": "kaiin shisutemu",
+        "gloss": "membership system"
+      },
+      {
+        "text": "の準備をしております。",
+        "reading": "no junbi o shite orimasu",
+        "gloss": "are preparing"
+      },
+      {
+        "text": "登録の機会",
+        "reading": "tōroku no kikai",
+        "gloss": "the chance to register"
+      },
+      {
+        "text": "をどうぞお見逃しなく！",
+        "reading": "o dōzo o-minogashi naku",
+        "gloss": "please don't miss"
+      }
+    ]
+  },
+  "Morris_FirstGreeting_CommunityCenterComplete": {
+    "japanese": "Jojaマートへようこそ！ご機嫌はいかがですか？#$b#申し訳ありませんが、予期せぬ事態により、Jojaメンバーシップのオファーは現在利用できません。まもなく整理されます！",
+    "english": "Welcome to JojaMart! How are you? #$b#I'm afraid that, owing to unforeseen circumstances, the Joja membership offer is not currently available. It'll be sorted out shortly!",
+    "segments": [
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "へようこそ！",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "ご機嫌はいかがですか？#$b#",
+        "reading": "go-kigen wa ikaga desu ka",
+        "gloss": "how are you"
+      },
+      {
+        "text": "申し訳ありませんが、",
+        "reading": "mōshiwake arimasen ga",
+        "gloss": "I'm very sorry, but"
+      },
+      {
+        "text": "予期せぬ事態",
+        "reading": "yokisenu jitai",
+        "gloss": "unforeseen circumstances"
+      },
+      {
+        "text": "により、",
+        "reading": "ni yori",
+        "gloss": "owing to"
+      },
+      {
+        "text": "Jojaメンバーシップのオファー",
+        "reading": "Joja menbāshippu no ofā",
+        "gloss": "the Joja membership offer"
+      },
+      {
+        "text": "は現在利用できません。",
+        "reading": "wa genzai riyō dekimasen",
+        "gloss": "is not currently available"
+      },
+      {
+        "text": "まもなく整理されます！",
+        "reading": "mamonaku seiri saremasu",
+        "gloss": "it will be sorted shortly"
+      }
+    ]
+  },
+  "Morris_FirstGreeting_MembershipAvailable": {
+    "japanese": "Jojaマートへようこそ！本日はご機嫌いかがでしょうか。#$b#会員サービスがスタートいたしました！Joja会員にご登録いただければ、わが社の献身的な人員が地域社会の改善をお手伝いいたします…もちろん、有料で。#$b#ああ、そういえば…ルイス町長は、もしだれかひとりでも会員に登録したら、あの古い公民館を売却してJoja社の倉庫にしてもいいと約束してくださいました。すばらしいでしょう？#$q -1 -1#会員登録には{0}Gが必要です。登録なさいますか？#$r -1 -1 Yes#はい#$r -1 -1 No#いいえ",
+    "english": "Welcome to JojaMart! How are you today?#$b#Our membership service has started! Join as a Joja member and our dedicated staff will help improve the community... for a fee, of course.#$b#Oh, and by the way... Mayor Lewis has promised that if even one more person signs up, he'll sell us that old community centre to turn into a Joja warehouse. Wonderful, isn't it?#$q -1 -1#Membership costs {0}g. Would you like to join?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+    "segments": [
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "へようこそ！",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "本日はご機嫌いかがでしょうか。#$b#",
+        "reading": "honjitsu wa go-kigen ikaga deshō ka",
+        "gloss": "how are you today"
+      },
+      {
+        "text": "会員サービス",
+        "reading": "kaiin sābisu",
+        "gloss": "membership service"
+      },
+      {
+        "text": "がスタートいたしました！",
+        "reading": "ga sutāto itashimashita",
+        "gloss": "has started"
+      },
+      {
+        "text": "Joja会員",
+        "reading": "Joja kaiin",
+        "gloss": "Joja member"
+      },
+      {
+        "text": "にご登録いただければ、",
+        "reading": "ni go-tōroku itadakereba",
+        "gloss": "if you register as"
+      },
+      {
+        "text": "わが社の献身的な人員",
+        "reading": "waga sha no kenshinteki na jin'in",
+        "gloss": "our company's dedicated staff"
+      },
+      {
+        "text": "が地域社会の改善",
+        "reading": "ga chiiki shakai no kaizen",
+        "gloss": "community improvement"
+      },
+      {
+        "text": "をお手伝いいたします…",
+        "reading": "o o-tetsudai itashimasu",
+        "gloss": "will help with"
+      },
+      {
+        "text": "もちろん、",
+        "reading": "mochiron",
+        "gloss": "of course"
+      },
+      {
+        "text": "有料で。#$b#",
+        "reading": "yūryō de",
+        "gloss": "for a fee"
+      },
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "oh"
+      },
+      {
+        "text": "そういえば…",
+        "reading": "sō ieba",
+        "gloss": "come to think of it"
+      },
+      {
+        "text": "ルイス町長",
+        "reading": "Ruisu chōchō",
+        "gloss": "Mayor Lewis"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もしだれかひとりでも",
+        "reading": "moshi dareka hitori demo",
+        "gloss": "if even one more person"
+      },
+      {
+        "text": "会員に登録したら、",
+        "reading": "kaiin ni tōroku shitara",
+        "gloss": "registers as a member"
+      },
+      {
+        "text": "あの古い公民館",
+        "reading": "ano furui kōminkan",
+        "gloss": "that old community centre"
+      },
+      {
+        "text": "を売却して",
+        "reading": "o baikyaku shite",
+        "gloss": "selling"
+      },
+      {
+        "text": "Joja社の倉庫",
+        "reading": "Joja sha no sōko",
+        "gloss": "a Joja company warehouse"
+      },
+      {
+        "text": "にしてもいい",
+        "reading": "ni shite mo ii",
+        "gloss": "we may turn it into"
+      },
+      {
+        "text": "と約束してくださいました。",
+        "reading": "to yakusoku shite kudasaimashita",
+        "gloss": "he kindly promised"
+      },
+      {
+        "text": "すばらしいでしょう？#$q -1 -1#",
+        "reading": "subarashii deshō",
+        "gloss": "isn't that wonderful"
+      },
+      {
+        "text": "会員登録",
+        "reading": "kaiin tōroku",
+        "gloss": "membership registration"
+      },
+      {
+        "text": "には{0}G",
+        "reading": "ni wa",
+        "gloss": "requires"
+      },
+      {
+        "text": "が必要です。",
+        "reading": "ga hitsuyō desu",
+        "gloss": "is needed"
+      },
+      {
+        "text": "登録なさいますか？#$r -1 -1 Yes#",
+        "reading": "tōroku nasaimasu ka",
+        "gloss": "will you register"
+      },
+      {
+        "text": "はい#$r -1 -1 No#",
+        "reading": "hai",
+        "gloss": "yes"
+      },
+      {
+        "text": "いいえ",
+        "reading": "iie",
+        "gloss": "no"
+      }
+    ]
+  },
+  "Morris_FirstGreeting_SecondPlayer": {
+    "japanese": "Jojaマートへようこそ！本日はご機嫌いかがでしょうか。#$b#うーん…弊社の記録によりますと、お客様はほかの方とご一緒に牧場へお住まいのようですね…申しわけございませんが、会員登録していただけるのはご自宅の家主様のみとなっております。",
+    "english": "Welcome to JojaMart! How are you today?#$b#Hmm... our records show you live on a farm together with others... I'm sorry, but only the owner of the residence may register for membership.",
+    "segments": [
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "へようこそ！",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "本日はご機嫌いかがでしょうか。#$b#",
+        "reading": "honjitsu wa go-kigen ikaga deshō ka",
+        "gloss": "how are you today"
+      },
+      {
+        "text": "うーん…",
+        "reading": "ūn",
+        "gloss": "hmm"
+      },
+      {
+        "text": "弊社の記録",
+        "reading": "heisha no kiroku",
+        "gloss": "our company's records"
+      },
+      {
+        "text": "によりますと、",
+        "reading": "ni yorimasu to",
+        "gloss": "according to"
+      },
+      {
+        "text": "お客様",
+        "reading": "o-kyakusama",
+        "gloss": "you, the customer"
+      },
+      {
+        "text": "はほかの方",
+        "reading": "wa hoka no kata",
+        "gloss": "other people"
+      },
+      {
+        "text": "とご一緒に牧場",
+        "reading": "to go-issho ni bokujō",
+        "gloss": "on a farm together with"
+      },
+      {
+        "text": "へお住まいのようですね…",
+        "reading": "e o-sumai no yō desu ne",
+        "gloss": "seem to reside"
+      },
+      {
+        "text": "申しわけございませんが、",
+        "reading": "mōshiwake gozaimasen ga",
+        "gloss": "I'm very sorry, but"
+      },
+      {
+        "text": "会員登録していただける",
+        "reading": "kaiin tōroku shite itadakeru",
+        "gloss": "able to register for membership"
+      },
+      {
+        "text": "のはご自宅の家主様",
+        "reading": "no wa go-jitaku no yanushi-sama",
+        "gloss": "is the owner of the residence"
+      },
+      {
+        "text": "のみとなっております。",
+        "reading": "nomi to natte orimasu",
+        "gloss": "only"
+      }
+    ]
+  },
+  "Morris_Greeting": {
+    "japanese": "Jojaマートへ ようこそ！ 調子は いかがですか？#$b#初めて お目にかかりますが、 私は モーリス、 Joja 顧客満足部の担当でございます。#$b#もし Jojaの メンバーに なりたいの でしたら、 喜んで あなたに ご協力いたします。",
+    "english": "Welcome to JojaMart! How are things?#$b#I don't believe we've met — I'm Morris, of Joja Customer Satisfaction.#$b#Should you wish to become a Joja member, I'd be delighted to help.",
+    "segments": [
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "へ ようこそ！ ",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "調子は いかがですか？#$b#",
+        "reading": "chōshi wa ikaga desu ka",
+        "gloss": "how are things"
+      },
+      {
+        "text": "初めて お目にかかりますが、 ",
+        "reading": "hajimete o-me ni kakarimasu ga",
+        "gloss": "we're meeting for the first time, but"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "は モーリス、 ",
+        "reading": "wa Mōrisu",
+        "gloss": "am Morris"
+      },
+      {
+        "text": "Joja ",
+        "reading": "",
+        "gloss": "(company)"
+      },
+      {
+        "text": "顧客満足部",
+        "reading": "kokyaku manzoku bu",
+        "gloss": "customer satisfaction department"
+      },
+      {
+        "text": "の担当でございます。#$b#",
+        "reading": "no tantō de gozaimasu",
+        "gloss": "am the representative of"
+      },
+      {
+        "text": "もし Joja",
+        "reading": "moshi Joja",
+        "gloss": "if Joja"
+      },
+      {
+        "text": "の メンバー",
+        "reading": "no menbā",
+        "gloss": "'s member"
+      },
+      {
+        "text": "に なりたいの でしたら、 ",
+        "reading": "ni naritai no deshitara",
+        "gloss": "if you wish to become"
+      },
+      {
+        "text": "喜んで ",
+        "reading": "yorokonde",
+        "gloss": "gladly"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "に ご協力いたします。",
+        "reading": "ni go-kyōryoku itashimasu",
+        "gloss": "I will assist"
+      }
+    ]
+  },
+  "Morris_JojaCDConfirm": {
+    "japanese": "すばらしい！ 今夜、 作業に 取り掛かるよう 部下に 指示します。 明日には 準備が できているでしょう。",
+    "english": "Excellent! I'll instruct my staff to start work tonight. It should be ready by tomorrow.",
+    "segments": [
+      {
+        "text": "すばらしい！ ",
+        "reading": "subarashii",
+        "gloss": "excellent"
+      },
+      {
+        "text": "今夜、 ",
+        "reading": "kon'ya",
+        "gloss": "tonight"
+      },
+      {
+        "text": "作業に 取り掛かるよう ",
+        "reading": "sagyō ni torikakaru yō",
+        "gloss": "to set to work"
+      },
+      {
+        "text": "部下",
+        "reading": "buka",
+        "gloss": "my staff"
+      },
+      {
+        "text": "に 指示します。 ",
+        "reading": "ni shiji shimasu",
+        "gloss": "I will instruct"
+      },
+      {
+        "text": "明日には ",
+        "reading": "ashita ni wa",
+        "gloss": "by tomorrow"
+      },
+      {
+        "text": "準備が できているでしょう。",
+        "reading": "junbi ga dekite iru deshō",
+        "gloss": "it should be ready"
+      }
+    ]
+  },
+  "Morris_NoMoreCD": {
+    "japanese": "ああ！お気に入りのお客様...残念ですが、現時点で利用できるコミュニティ開発プロジェクトはありません。",
+    "english": "Ah! My favourite customer... I'm afraid there are no community development projects available at present.",
+    "segments": [
+      {
+        "text": "ああ！",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "お気に入りのお客様...",
+        "reading": "o-ki ni iri no o-kyakusama",
+        "gloss": "my favourite customer"
+      },
+      {
+        "text": "残念ですが、",
+        "reading": "zannen desu ga",
+        "gloss": "unfortunately"
+      },
+      {
+        "text": "現時点で利用できる",
+        "reading": "genjiten de riyō dekiru",
+        "gloss": "available at present"
+      },
+      {
+        "text": "コミュニティ開発プロジェクト",
+        "reading": "komyuniti kaihatsu purojekuto",
+        "gloss": "community development projects"
+      },
+      {
+        "text": "はありません。",
+        "reading": "wa arimasen",
+        "gloss": "there are none"
+      }
+    ]
+  },
+  "Morris_PlayerSignedUp": {
+    "japanese": "すばらしい！ Joja コーポレーションへ ようこそ！ 地域開発計画に ついては、 また 明日 話し合いましょう…  それと、 財布を 忘れないように してくださいね！ハッハッハッ。#$b#それでは、 私は ルイスさんに 電話して、 あの 古ぼけた 公民館を つぶせるか 聞いてみましょう…",
+    "english": "Excellent! Welcome to Joja Corporation! Let's discuss community development projects again tomorrow... and do remember your wallet! Ha ha ha.#$b#Now, let me ring Mr. Lewis and ask whether we can pull down that shabby old community centre...",
+    "segments": [
+      {
+        "text": "すばらしい！ ",
+        "reading": "subarashii",
+        "gloss": "excellent"
+      },
+      {
+        "text": "Joja コーポレーション",
+        "reading": "Joja kōporēshon",
+        "gloss": "Joja Corporation"
+      },
+      {
+        "text": "へ ようこそ！ ",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "地域開発計画",
+        "reading": "chiiki kaihatsu keikaku",
+        "gloss": "community development plans"
+      },
+      {
+        "text": "に ついては、 ",
+        "reading": "ni tsuite wa",
+        "gloss": "as for"
+      },
+      {
+        "text": "また 明日 ",
+        "reading": "mata ashita",
+        "gloss": "tomorrow again"
+      },
+      {
+        "text": "話し合いましょう…  ",
+        "reading": "hanashiaimashō",
+        "gloss": "let's discuss"
+      },
+      {
+        "text": "それと、 ",
+        "reading": "sore to",
+        "gloss": "and also"
+      },
+      {
+        "text": "財布",
+        "reading": "saifu",
+        "gloss": "wallet"
+      },
+      {
+        "text": "を 忘れないように してくださいね！",
+        "reading": "o wasurenai yō ni shite kudasai ne",
+        "gloss": "please see that you don't forget"
+      },
+      {
+        "text": "ハッハッハッ。#$b#",
+        "reading": "hahhahha",
+        "gloss": "ha ha ha"
+      },
+      {
+        "text": "それでは、 ",
+        "reading": "sore de wa",
+        "gloss": "well then"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "は ルイスさん",
+        "reading": "wa Ruisu-san",
+        "gloss": "Mr. Lewis"
+      },
+      {
+        "text": "に 電話して、 ",
+        "reading": "ni denwa shite",
+        "gloss": "ringing"
+      },
+      {
+        "text": "あの 古ぼけた 公民館",
+        "reading": "ano furuboketa kōminkan",
+        "gloss": "that shabby old community centre"
+      },
+      {
+        "text": "を つぶせるか ",
+        "reading": "o tsubuseru ka",
+        "gloss": "whether we can knock down"
+      },
+      {
+        "text": "聞いてみましょう…",
+        "reading": "kiite mimashō",
+        "gloss": "let's ask"
+      }
+    ]
+  },
+  "Morris_StillProcessingOrder": {
+    "japanese": "私達は現在、 あなたが 前に 提案した 地域開発計画に 取り掛かっています。 計画が 完了してから もう一度 お越しください。",
+    "english": "We are currently working on the community development plan you proposed earlier. Please come again once it's complete.",
+    "segments": [
+      {
+        "text": "私達",
+        "reading": "watashitachi",
+        "gloss": "we"
+      },
+      {
+        "text": "は現在、 ",
+        "reading": "wa genzai",
+        "gloss": "currently"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "が 前に 提案した ",
+        "reading": "ga mae ni teian shita",
+        "gloss": "proposed earlier"
+      },
+      {
+        "text": "地域開発計画",
+        "reading": "chiiki kaihatsu keikaku",
+        "gloss": "community development plan"
+      },
+      {
+        "text": "に 取り掛かっています。 ",
+        "reading": "ni torikakatte imasu",
+        "gloss": "are working on"
+      },
+      {
+        "text": "計画",
+        "reading": "keikaku",
+        "gloss": "the plan"
+      },
+      {
+        "text": "が 完了してから ",
+        "reading": "ga kanryō shite kara",
+        "gloss": "after it is complete"
+      },
+      {
+        "text": "もう一度 お越しください。",
+        "reading": "mō ichido o-koshi kudasai",
+        "gloss": "please come again"
+      }
+    ]
+  },
+  "Morris_TheaterBought": {
+    "japanese": "半分のミル...！$2#$b#（エヘン）...というのは...優秀だ！私たちのJoja建設チームは今夜新しい建物の作業を開始します！私たちの仕事を支えてくれてありがとう。",
+    "english": "Half a mil...!$2#$b#*Ahem*... I mean... excellent! Our Joja construction team will begin work on the new building tonight! Thank you for supporting our work.",
+    "segments": [
+      {
+        "text": "半分のミル...！$2#$b#",
+        "reading": "hanbun no miru",
+        "gloss": "half a mil"
+      },
+      {
+        "text": "（エヘン）...",
+        "reading": "ehen",
+        "gloss": "*ahem*"
+      },
+      {
+        "text": "というのは...",
+        "reading": "to iu no wa",
+        "gloss": "what I mean is"
+      },
+      {
+        "text": "優秀だ！",
+        "reading": "yūshū da",
+        "gloss": "excellent"
+      },
+      {
+        "text": "私たちのJoja建設チーム",
+        "reading": "watashitachi no Joja kensetsu chīmu",
+        "gloss": "our Joja construction team"
+      },
+      {
+        "text": "は今夜新しい建物の作業",
+        "reading": "wa kon'ya atarashii tatemono no sagyō",
+        "gloss": "work on the new building tonight"
+      },
+      {
+        "text": "を開始します！",
+        "reading": "o kaishi shimasu",
+        "gloss": "will begin"
+      },
+      {
+        "text": "私たちの仕事",
+        "reading": "watashitachi no shigoto",
+        "gloss": "our work"
+      },
+      {
+        "text": "を支えてくれて",
+        "reading": "o sasaete kurete",
+        "gloss": "for supporting"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Morris_WeekendGreeting": {
+    "japanese": "Jojaマートへようこそ！週末はいかがおすごしですか？#$b#わたくしどもは現在、新しくお客さま向けにスタートする会員システムの準備をしております。登録の機会をどうぞお見逃しなく！",
+    "english": "Welcome to JojaMart! How is your weekend going?#$b#We're currently preparing a new membership system for our customers. Don't miss your chance to sign up!",
+    "segments": [
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "へようこそ！",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "週末はいかがおすごしですか？#$b#",
+        "reading": "shūmatsu wa ikaga o-sugoshi desu ka",
+        "gloss": "how is your weekend going"
+      },
+      {
+        "text": "わたくしども",
+        "reading": "watakushidomo",
+        "gloss": "we"
+      },
+      {
+        "text": "は現在、",
+        "reading": "wa genzai",
+        "gloss": "currently"
+      },
+      {
+        "text": "新しくお客さま向けに",
+        "reading": "atarashiku o-kyakusama muke ni",
+        "gloss": "newly, for customers"
+      },
+      {
+        "text": "スタートする",
+        "reading": "sutāto suru",
+        "gloss": "that will start"
+      },
+      {
+        "text": "会員システム",
+        "reading": "kaiin shisutemu",
+        "gloss": "membership system"
+      },
+      {
+        "text": "の準備をしております。",
+        "reading": "no junbi o shite orimasu",
+        "gloss": "are preparing"
+      },
+      {
+        "text": "登録の機会",
+        "reading": "tōroku no kikai",
+        "gloss": "the chance to register"
+      },
+      {
+        "text": "をどうぞお見逃しなく！",
+        "reading": "o dōzo o-minogashi naku",
+        "gloss": "please don't miss"
+      }
+    ]
+  },
+  "Morris_WeekendGreeting_CommunityCenterComplete": {
+    "japanese": "Jojaマートへようこそ！週末はいかがですか？#$b#申し訳ありませんが、予期せぬ事態により、Jojaメンバーシップのオファーは現在利用できません。まもなく整理されます！",
+    "english": "Welcome to JojaMart! How is your weekend?#$b#I'm afraid that, owing to unforeseen circumstances, the Joja membership offer is not currently available. It'll be sorted out shortly!",
+    "segments": [
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "へようこそ！",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "週末はいかがですか？#$b#",
+        "reading": "shūmatsu wa ikaga desu ka",
+        "gloss": "how is your weekend"
+      },
+      {
+        "text": "申し訳ありませんが、",
+        "reading": "mōshiwake arimasen ga",
+        "gloss": "I'm very sorry, but"
+      },
+      {
+        "text": "予期せぬ事態",
+        "reading": "yokisenu jitai",
+        "gloss": "unforeseen circumstances"
+      },
+      {
+        "text": "により、",
+        "reading": "ni yori",
+        "gloss": "owing to"
+      },
+      {
+        "text": "Jojaメンバーシップのオファー",
+        "reading": "Joja menbāshippu no ofā",
+        "gloss": "the Joja membership offer"
+      },
+      {
+        "text": "は現在利用できません。",
+        "reading": "wa genzai riyō dekimasen",
+        "gloss": "is not currently available"
+      },
+      {
+        "text": "まもなく整理されます！",
+        "reading": "mamonaku seiri saremasu",
+        "gloss": "it will be sorted shortly"
+      }
+    ]
+  },
+  "Morris_WeekendGreeting_MembershipAvailable": {
+    "japanese": "Jojaマートへようこそ！週末はいかがおすごしですか？#$b#会員サービスがスタートいたしました！Joja会員にご登録いただければ、わが社の献身的な人員が地域社会の改善をお手伝いいたします…もちろん、有料で。#$b#ああ、そういえば…ルイス町長は、もしだれかひとりでも会員に登録したら、あの古い公民館を売却してJoja社の倉庫にしてもいいと約束してくださいました。すばらしいでしょう？#$q -1 -1#会員登録には{0}Gが必要です。登録なさいますか？#$r -1 -1 Yes#はい#$r -1 -1 No#いいえ",
+    "english": "Welcome to JojaMart! How is your weekend going?#$b#Our membership service has started! Join as a Joja member and our dedicated staff will help improve the community... for a fee, of course.#$b#Oh, and by the way... Mayor Lewis has promised that if even one more person signs up, he'll sell us that old community centre to turn into a Joja warehouse. Wonderful, isn't it?#$q -1 -1#Membership costs {0}g. Would you like to join?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+    "segments": [
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "へようこそ！",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "週末はいかがおすごしですか？#$b#",
+        "reading": "shūmatsu wa ikaga o-sugoshi desu ka",
+        "gloss": "how is your weekend going"
+      },
+      {
+        "text": "会員サービス",
+        "reading": "kaiin sābisu",
+        "gloss": "membership service"
+      },
+      {
+        "text": "がスタートいたしました！",
+        "reading": "ga sutāto itashimashita",
+        "gloss": "has started"
+      },
+      {
+        "text": "Joja会員",
+        "reading": "Joja kaiin",
+        "gloss": "Joja member"
+      },
+      {
+        "text": "にご登録いただければ、",
+        "reading": "ni go-tōroku itadakereba",
+        "gloss": "if you register as"
+      },
+      {
+        "text": "わが社の献身的な人員",
+        "reading": "waga sha no kenshinteki na jin'in",
+        "gloss": "our company's dedicated staff"
+      },
+      {
+        "text": "が地域社会の改善",
+        "reading": "ga chiiki shakai no kaizen",
+        "gloss": "community improvement"
+      },
+      {
+        "text": "をお手伝いいたします…",
+        "reading": "o o-tetsudai itashimasu",
+        "gloss": "will help with"
+      },
+      {
+        "text": "もちろん、",
+        "reading": "mochiron",
+        "gloss": "of course"
+      },
+      {
+        "text": "有料で。#$b#",
+        "reading": "yūryō de",
+        "gloss": "for a fee"
+      },
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "oh"
+      },
+      {
+        "text": "そういえば…",
+        "reading": "sō ieba",
+        "gloss": "come to think of it"
+      },
+      {
+        "text": "ルイス町長",
+        "reading": "Ruisu chōchō",
+        "gloss": "Mayor Lewis"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もしだれかひとりでも",
+        "reading": "moshi dareka hitori demo",
+        "gloss": "if even one more person"
+      },
+      {
+        "text": "会員に登録したら、",
+        "reading": "kaiin ni tōroku shitara",
+        "gloss": "registers as a member"
+      },
+      {
+        "text": "あの古い公民館",
+        "reading": "ano furui kōminkan",
+        "gloss": "that old community centre"
+      },
+      {
+        "text": "を売却して",
+        "reading": "o baikyaku shite",
+        "gloss": "selling"
+      },
+      {
+        "text": "Joja社の倉庫",
+        "reading": "Joja sha no sōko",
+        "gloss": "a Joja company warehouse"
+      },
+      {
+        "text": "にしてもいい",
+        "reading": "ni shite mo ii",
+        "gloss": "we may turn it into"
+      },
+      {
+        "text": "と約束してくださいました。",
+        "reading": "to yakusoku shite kudasaimashita",
+        "gloss": "he kindly promised"
+      },
+      {
+        "text": "すばらしいでしょう？#$q -1 -1#",
+        "reading": "subarashii deshō",
+        "gloss": "isn't that wonderful"
+      },
+      {
+        "text": "会員登録",
+        "reading": "kaiin tōroku",
+        "gloss": "membership registration"
+      },
+      {
+        "text": "には{0}G",
+        "reading": "ni wa",
+        "gloss": "requires"
+      },
+      {
+        "text": "が必要です。",
+        "reading": "ga hitsuyō desu",
+        "gloss": "is needed"
+      },
+      {
+        "text": "登録なさいますか？#$r -1 -1 Yes#",
+        "reading": "tōroku nasaimasu ka",
+        "gloss": "will you register"
+      },
+      {
+        "text": "はい#$r -1 -1 No#",
+        "reading": "hai",
+        "gloss": "yes"
+      },
+      {
+        "text": "いいえ",
+        "reading": "iie",
+        "gloss": "no"
+      }
+    ]
+  },
+  "Morris_WeekendGreeting_SecondPlayer": {
+    "japanese": "Jojaマートへようこそ！週末はいかがおすごしですか？#$b#うーん…弊社の記録によりますと、お客様はほかの方とご一緒に牧場へお住まいのようですね…申しわけございませんが、会員登録していただけるのはご自宅の家主様のみとなっております。",
+    "english": "Welcome to JojaMart! How is your weekend going?#$b#Hmm... our records show you live on a farm together with others... I'm sorry, but only the owner of the residence may register for membership.",
+    "segments": [
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "へようこそ！",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      },
+      {
+        "text": "週末はいかがおすごしですか？#$b#",
+        "reading": "shūmatsu wa ikaga o-sugoshi desu ka",
+        "gloss": "how is your weekend going"
+      },
+      {
+        "text": "うーん…",
+        "reading": "ūn",
+        "gloss": "hmm"
+      },
+      {
+        "text": "弊社の記録",
+        "reading": "heisha no kiroku",
+        "gloss": "our company's records"
+      },
+      {
+        "text": "によりますと、",
+        "reading": "ni yorimasu to",
+        "gloss": "according to"
+      },
+      {
+        "text": "お客様",
+        "reading": "o-kyakusama",
+        "gloss": "you, the customer"
+      },
+      {
+        "text": "はほかの方",
+        "reading": "wa hoka no kata",
+        "gloss": "other people"
+      },
+      {
+        "text": "とご一緒に牧場",
+        "reading": "to go-issho ni bokujō",
+        "gloss": "on a farm together with"
+      },
+      {
+        "text": "へお住まいのようですね…",
+        "reading": "e o-sumai no yō desu ne",
+        "gloss": "seem to reside"
+      },
+      {
+        "text": "申しわけございませんが、",
+        "reading": "mōshiwake gozaimasen ga",
+        "gloss": "I'm very sorry, but"
+      },
+      {
+        "text": "会員登録していただける",
+        "reading": "kaiin tōroku shite itadakeru",
+        "gloss": "able to register for membership"
+      },
+      {
+        "text": "のはご自宅の家主様",
+        "reading": "no wa go-jitaku no yanushi-sama",
+        "gloss": "is the owner of the residence"
+      },
+      {
+        "text": "のみとなっております。",
+        "reading": "nomi to natte orimasu",
+        "gloss": "only"
+      }
+    ]
+  },
+  "NewChild_Adoption": {
+    "japanese": "これからは{0}といっしょに暮らせるなんて、すてきだな。/これからは{0}といっしょに暮らせるなんて、すてきだね。",
+    "english": "How wonderful that we get to live with {0} from now on.",
+    "segments": [
+      {
+        "text": "これからは",
+        "reading": "kore kara wa",
+        "gloss": "from now on"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(child)"
+      },
+      {
+        "text": "といっしょに暮らせる",
+        "reading": "to issho ni kuraseru",
+        "gloss": "being able to live together with"
+      },
+      {
+        "text": "なんて、",
+        "reading": "nante",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "すてきだな。/",
+        "reading": "suteki da na",
+        "gloss": "is wonderful"
+      },
+      {
+        "text": "これからは",
+        "reading": "kore kara wa",
+        "gloss": "from now on"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(child)"
+      },
+      {
+        "text": "といっしょに暮らせる",
+        "reading": "to issho ni kuraseru",
+        "gloss": "being able to live together with"
+      },
+      {
+        "text": "なんて、",
+        "reading": "nante",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "すてきだね。",
+        "reading": "suteki da ne",
+        "gloss": "is wonderful"
+      }
+    ]
+  },
+  "NewChild_FirstChild": {
+    "japanese": "なにもかも問題なし。これからは、{0}が家族の一員になるんだな。すごく恵まれてるよなあ。/なにもかも問題なし。これからは、{0}が家族の一員になるんだね。すっごく恵まれてるよ。",
+    "english": "Everything went fine. From now on {0} is part of the family. We're very fortunate.",
+    "segments": [
+      {
+        "text": "なにもかも問題なし。",
+        "reading": "nanimokamo mondai nashi",
+        "gloss": "everything without a problem"
+      },
+      {
+        "text": "これからは、",
+        "reading": "kore kara wa",
+        "gloss": "from now on"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(child)"
+      },
+      {
+        "text": "が家族の一員になるんだな。",
+        "reading": "ga kazoku no ichiin ni naru n da na",
+        "gloss": "becomes part of the family"
+      },
+      {
+        "text": "すごく恵まれてるよなあ。/",
+        "reading": "sugoku megumareteru yo nā",
+        "gloss": "we're very blessed"
+      },
+      {
+        "text": "なにもかも問題なし。",
+        "reading": "nanimokamo mondai nashi",
+        "gloss": "everything without a problem"
+      },
+      {
+        "text": "これからは、",
+        "reading": "kore kara wa",
+        "gloss": "from now on"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(child)"
+      },
+      {
+        "text": "が家族の一員になるんだね。",
+        "reading": "ga kazoku no ichiin ni naru n da ne",
+        "gloss": "becomes part of the family"
+      },
+      {
+        "text": "すっごく恵まれてるよ。",
+        "reading": "suggoku megumareteru yo",
+        "gloss": "we're very blessed"
+      }
+    ]
+  },
+  "NewChild_SecondChild1": {
+    "japanese": "あたらしい家族か…時がたつのって早いもんだなあ。/あたらしい家族か…時がたつのって早いね。",
+    "english": "A new family member... time really does fly.",
+    "segments": [
+      {
+        "text": "あたらしい家族か…",
+        "reading": "atarashii kazoku ka",
+        "gloss": "a new family member, eh"
+      },
+      {
+        "text": "時がたつのって早いもんだなあ。/",
+        "reading": "toki ga tatsu no tte hayai mon da nā",
+        "gloss": "time passes quickly"
+      },
+      {
+        "text": "あたらしい家族か…",
+        "reading": "atarashii kazoku ka",
+        "gloss": "a new family member, eh"
+      },
+      {
+        "text": "時がたつのって早いね。",
+        "reading": "toki ga tatsu no tte hayai ne",
+        "gloss": "time passes quickly"
+      }
+    ]
+  },
+  "NewChild_SecondChild2": {
+    "japanese": "2人ともかわいいな…時がたつのって早いもんだなあ。/2人ともかわいいね…時がたつのって早いね。",
+    "english": "Both of them are lovely... time really does fly.",
+    "segments": [
+      {
+        "text": "2人ともかわいいな…",
+        "reading": "futari tomo kawaii na",
+        "gloss": "both of them are lovely"
+      },
+      {
+        "text": "時がたつのって早いもんだなあ。/",
+        "reading": "toki ga tatsu no tte hayai mon da nā",
+        "gloss": "time passes quickly"
+      },
+      {
+        "text": "2人ともかわいいね…",
+        "reading": "futari tomo kawaii ne",
+        "gloss": "both of them are lovely"
+      },
+      {
+        "text": "時がたつのって早いね。",
+        "reading": "toki ga tatsu no tte hayai ne",
+        "gloss": "time passes quickly"
+      }
+    ]
+  },
+  "ProfessorSnail_Hint_820": {
+    "japanese": "島で金のココナッツを見たかい？その中には面白いものがたくさん入っているらしいんだ…",
+    "english": "Have you seen the golden coconuts on the island? They say all sorts of interesting things are inside them...",
+    "segments": [
+      {
+        "text": "島で金のココナッツ",
+        "reading": "shima de kin no kokonattsu",
+        "gloss": "golden coconuts on the island"
+      },
+      {
+        "text": "を見たかい？",
+        "reading": "o mita kai",
+        "gloss": "have you seen"
+      },
+      {
+        "text": "その中には",
+        "reading": "sono naka ni wa",
+        "gloss": "inside them"
+      },
+      {
+        "text": "面白いもの",
+        "reading": "omoshiroi mono",
+        "gloss": "interesting things"
+      },
+      {
+        "text": "がたくさん入っているらしいんだ…",
+        "reading": "ga takusan haitte iru rashii n da",
+        "gloss": "apparently there are many"
+      }
+    ]
+  },
+  "ProfessorSnail_Hint_821": {
+    "japanese": "この島では面白い釣りが楽しめるんだよ。私が調べたところでは、多くの魚が古代の骨をついばんで遊んでいるようなんだ…",
+    "english": "You can enjoy some interesting fishing on this island. From what I've studied, many of the fish like to nibble ancient bones...",
+    "segments": [
+      {
+        "text": "この島では",
+        "reading": "kono shima de wa",
+        "gloss": "on this island"
+      },
+      {
+        "text": "面白い釣り",
+        "reading": "omoshiroi tsuri",
+        "gloss": "interesting fishing"
+      },
+      {
+        "text": "が楽しめるんだよ。",
+        "reading": "ga tanoshimeru n da yo",
+        "gloss": "can be enjoyed"
+      },
+      {
+        "text": "私が調べたところでは、",
+        "reading": "watashi ga shirabeta tokoro de wa",
+        "gloss": "from what I've investigated"
+      },
+      {
+        "text": "多くの魚",
+        "reading": "ōku no sakana",
+        "gloss": "many fish"
+      },
+      {
+        "text": "が古代の骨",
+        "reading": "ga kodai no hone",
+        "gloss": "ancient bones"
+      },
+      {
+        "text": "をついばんで遊んでいるようなんだ…",
+        "reading": "o tsuibande asonde iru yō na n da",
+        "gloss": "seem to play at nibbling"
+      }
+    ]
+  },
+  "ProfessorSnail_Hint_822": {
+    "japanese": "もし近くの川で砂金採りをしたら、きっと面白いものが見つかるはずだよ。",
+    "english": "I'd wager that if you panned in the nearby river you'd find something interesting.",
+    "segments": [
+      {
+        "text": "もし近くの川",
+        "reading": "moshi chikaku no kawa",
+        "gloss": "if in the nearby river"
+      },
+      {
+        "text": "で砂金採り",
+        "reading": "de sakin tori",
+        "gloss": "gold panning"
+      },
+      {
+        "text": "をしたら、",
+        "reading": "o shitara",
+        "gloss": "you did"
+      },
+      {
+        "text": "きっと面白いもの",
+        "reading": "kitto omoshiroi mono",
+        "gloss": "surely something interesting"
+      },
+      {
+        "text": "が見つかるはずだよ。",
+        "reading": "ga mitsukaru hazu da yo",
+        "gloss": "should be found"
+      }
+    ]
+  }
+}
