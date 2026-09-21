@@ -1,0 +1,1164 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Data_EngagementDialogue.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Abigail0": {
+    "japanese": "えへへ。このあたしが、結婚？こうなるなんて考えたことなかったよ。$h#$e#2人でいっぱい、たのしいことしようね。$h",
+    "english": "Hehe. Me, married? I never thought it would turn out this way.$h#$e#Let's do lots of fun things together.$h",
+    "segments": [
+      {
+        "text": "えへへ。",
+        "reading": "ehehe",
+        "gloss": "hehe"
+      },
+      {
+        "text": "このあたし",
+        "reading": "kono atashi",
+        "gloss": "me, of all people"
+      },
+      {
+        "text": "が、",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "結婚？",
+        "reading": "kekkon",
+        "gloss": "married"
+      },
+      {
+        "text": "こうなる",
+        "reading": "kō naru",
+        "gloss": "to turn out this way"
+      },
+      {
+        "text": "なんて",
+        "reading": "nante",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "考えたこと",
+        "reading": "kangaeta koto",
+        "gloss": "having thought"
+      },
+      {
+        "text": "なかったよ。$h#$e#",
+        "reading": "nakatta yo",
+        "gloss": "there wasn't"
+      },
+      {
+        "text": "2人で",
+        "reading": "futari de",
+        "gloss": "the two of us"
+      },
+      {
+        "text": "いっぱい、",
+        "reading": "ippai",
+        "gloss": "lots"
+      },
+      {
+        "text": "たのしいこと",
+        "reading": "tanoshii koto",
+        "gloss": "fun things"
+      },
+      {
+        "text": "しようね。$h",
+        "reading": "shiyō ne",
+        "gloss": "let's do"
+      }
+    ]
+  },
+  "Abigail1": {
+    "japanese": "牧場主と婚約かあ…ワオ！$h#$e#あたしたちの人生、いまからガラッと変わっちゃうね。$l",
+    "english": "Engaged to a farmer... wow!$h#$e#Our lives are going to change completely from now on.$l",
+    "segments": [
+      {
+        "text": "牧場主",
+        "reading": "bokujōnushi",
+        "gloss": "farm owner"
+      },
+      {
+        "text": "と婚約かあ…",
+        "reading": "to kon'yaku kā",
+        "gloss": "engaged to, eh"
+      },
+      {
+        "text": "ワオ！$h#$e#",
+        "reading": "wao",
+        "gloss": "wow"
+      },
+      {
+        "text": "あたしたち",
+        "reading": "atashitachi",
+        "gloss": "we"
+      },
+      {
+        "text": "の人生、",
+        "reading": "no jinsei",
+        "gloss": "'s lives"
+      },
+      {
+        "text": "いまから",
+        "reading": "ima kara",
+        "gloss": "from now"
+      },
+      {
+        "text": "ガラッと",
+        "reading": "garatto",
+        "gloss": "completely"
+      },
+      {
+        "text": "変わっちゃうね。$l",
+        "reading": "kawatchau ne",
+        "gloss": "are going to change"
+      }
+    ]
+  },
+  "Alex0": {
+    "japanese": "@、ありがとな。人生最高の気分だよ。$l#$e#いまから待ちきれないぜ。$h",
+    "english": "Thank you, @. I feel better than I ever have.$l#$e#I can't wait.$h",
+    "segments": [
+      {
+        "text": "@、",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "ありがとな。",
+        "reading": "arigato na",
+        "gloss": "thanks"
+      },
+      {
+        "text": "人生最高の気分",
+        "reading": "jinsei saikō no kibun",
+        "gloss": "the best feeling of my life"
+      },
+      {
+        "text": "だよ。$l#$e#",
+        "reading": "da yo",
+        "gloss": "it is"
+      },
+      {
+        "text": "いまから",
+        "reading": "ima kara",
+        "gloss": "from now"
+      },
+      {
+        "text": "待ちきれないぜ。$h",
+        "reading": "machikirenai ze",
+        "gloss": "I can't wait"
+      }
+    ]
+  },
+  "Alex1": {
+    "japanese": "牧場暮らしがいまから楽しみだぜ。$h",
+    "english": "I'm looking forward to farm life already.$h",
+    "segments": [
+      {
+        "text": "牧場暮らし",
+        "reading": "bokujō gurashi",
+        "gloss": "farm life"
+      },
+      {
+        "text": "がいまから",
+        "reading": "ga ima kara",
+        "gloss": "from now"
+      },
+      {
+        "text": "楽しみだぜ。$h",
+        "reading": "tanoshimi da ze",
+        "gloss": "I'm looking forward to"
+      }
+    ]
+  },
+  "Elliott0": {
+    "japanese": "牧場は作品の執筆にうってつけだろうね。ああ、すごく楽しみだよ。$h#$e#きっと、ぼくたちはいいパートナーになれるさ。$l",
+    "english": "The farm will be perfect for writing. Ah, I'm so looking forward to it.$h#$e#We'll make a fine pair, I'm sure.$l",
+    "segments": [
+      {
+        "text": "牧場",
+        "reading": "bokujō",
+        "gloss": "farm"
+      },
+      {
+        "text": "は作品の執筆",
+        "reading": "wa sakuhin no shippitsu",
+        "gloss": "writing works"
+      },
+      {
+        "text": "にうってつけだろうね。",
+        "reading": "ni uttetsuke darō ne",
+        "gloss": "will surely be perfect for"
+      },
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "すごく楽しみだよ。$h#$e#",
+        "reading": "sugoku tanoshimi da yo",
+        "gloss": "I'm really looking forward to it"
+      },
+      {
+        "text": "きっと、",
+        "reading": "kitto",
+        "gloss": "surely"
+      },
+      {
+        "text": "ぼくたち",
+        "reading": "bokutachi",
+        "gloss": "we"
+      },
+      {
+        "text": "はいいパートナー",
+        "reading": "wa ii pātonā",
+        "gloss": "a good pair"
+      },
+      {
+        "text": "になれるさ。$l",
+        "reading": "ni nareru sa",
+        "gloss": "can become"
+      }
+    ]
+  },
+  "Elliott1": {
+    "japanese": "結婚なんて、なんてすばらしい冒険だろう！いまから胸が高鳴るよ。きみもそうだろ？$h#$e#僕の小屋はビーチハウスとしてつかえそうだね。$l",
+    "english": "What a wonderful adventure marriage is! My heart is racing already. Yours too, surely?$h#$e#We could use my cottage as a beach house.$l",
+    "segments": [
+      {
+        "text": "結婚",
+        "reading": "kekkon",
+        "gloss": "marriage"
+      },
+      {
+        "text": "なんて、",
+        "reading": "nante",
+        "gloss": "such a thing as"
+      },
+      {
+        "text": "なんて",
+        "reading": "nante",
+        "gloss": "what a"
+      },
+      {
+        "text": "すばらしい冒険",
+        "reading": "subarashii bōken",
+        "gloss": "wonderful adventure"
+      },
+      {
+        "text": "だろう！",
+        "reading": "darō",
+        "gloss": "it must be"
+      },
+      {
+        "text": "いまから",
+        "reading": "ima kara",
+        "gloss": "from now"
+      },
+      {
+        "text": "胸が高鳴るよ。",
+        "reading": "mune ga takanaru yo",
+        "gloss": "my heart is racing"
+      },
+      {
+        "text": "きみもそうだろ？$h#$e#",
+        "reading": "kimi mo sō daro",
+        "gloss": "you too, right"
+      },
+      {
+        "text": "僕の小屋",
+        "reading": "boku no koya",
+        "gloss": "my cottage"
+      },
+      {
+        "text": "はビーチハウス",
+        "reading": "wa bīchi hausu",
+        "gloss": "as a beach house"
+      },
+      {
+        "text": "としてつかえそうだね。$l",
+        "reading": "to shite tsukaesō da ne",
+        "gloss": "looks usable"
+      }
+    ]
+  },
+  "Emily0": {
+    "japanese": "ねえ、信じられる？わたしたち、いっしょに暮らすんだよ。家族以外の人と暮らすなんて、これがはじめて。#$e#なんだか…ワクワクするな。",
+    "english": "Hey, can you believe it? We're going to live together. It's the first time I've lived with anyone but family.#$e#It's... exciting.",
+    "segments": [
+      {
+        "text": "ねえ、",
+        "reading": "nē",
+        "gloss": "hey"
+      },
+      {
+        "text": "信じられる？",
+        "reading": "shinjirareru",
+        "gloss": "can you believe it"
+      },
+      {
+        "text": "わたしたち、",
+        "reading": "watashitachi",
+        "gloss": "we"
+      },
+      {
+        "text": "いっしょに暮らすんだよ。",
+        "reading": "issho ni kurasu n da yo",
+        "gloss": "are going to live together"
+      },
+      {
+        "text": "家族以外の人",
+        "reading": "kazoku igai no hito",
+        "gloss": "people other than family"
+      },
+      {
+        "text": "と暮らす",
+        "reading": "to kurasu",
+        "gloss": "to live with"
+      },
+      {
+        "text": "なんて、",
+        "reading": "nante",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "これがはじめて。#$e#",
+        "reading": "kore ga hajimete",
+        "gloss": "this is the first time"
+      },
+      {
+        "text": "なんだか…",
+        "reading": "nandaka",
+        "gloss": "somehow"
+      },
+      {
+        "text": "ワクワクするな。",
+        "reading": "wakuwaku suru na",
+        "gloss": "it's exciting"
+      }
+    ]
+  },
+  "Emily1": {
+    "japanese": "ずっと感じてたんだ、わたしたちのあいだには、なにか特別なことが起きるはずだって…まさか、こんなことが起きるなんて思わなかったけどね！$h#$e#ほら、オウムくんもワクワクしてるよ。",
+    "english": "I always felt something special was bound to happen between us... though I never imagined this!$h#$e#Look, the parrot is excited too.",
+    "segments": [
+      {
+        "text": "ずっと",
+        "reading": "zutto",
+        "gloss": "all along"
+      },
+      {
+        "text": "感じてたんだ、",
+        "reading": "kanjiteta n da",
+        "gloss": "I felt"
+      },
+      {
+        "text": "わたしたち",
+        "reading": "watashitachi",
+        "gloss": "we"
+      },
+      {
+        "text": "のあいだには、",
+        "reading": "no aida ni wa",
+        "gloss": "between"
+      },
+      {
+        "text": "なにか特別なこと",
+        "reading": "nanika tokubetsu na koto",
+        "gloss": "something special"
+      },
+      {
+        "text": "が起きるはずだって…",
+        "reading": "ga okiru hazu da tte",
+        "gloss": "was bound to happen"
+      },
+      {
+        "text": "まさか、",
+        "reading": "masaka",
+        "gloss": "surely not"
+      },
+      {
+        "text": "こんなこと",
+        "reading": "konna koto",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "が起きる",
+        "reading": "ga okiru",
+        "gloss": "would happen"
+      },
+      {
+        "text": "なんて思わなかったけどね！$h#$e#",
+        "reading": "nante omowanakatta kedo ne",
+        "gloss": "I never thought, though"
+      },
+      {
+        "text": "ほら、",
+        "reading": "hora",
+        "gloss": "look"
+      },
+      {
+        "text": "オウムくん",
+        "reading": "ōmu-kun",
+        "gloss": "the parrot"
+      },
+      {
+        "text": "もワクワクしてるよ。",
+        "reading": "mo wakuwaku shiteru yo",
+        "gloss": "is excited too"
+      }
+    ]
+  },
+  "Haley0": {
+    "japanese": "やったあ！$h#$e#ほんと、夢みたい。$l",
+    "english": "Yes!$h#$e#It's really just like a dream.$l",
+    "segments": [
+      {
+        "text": "やったあ！$h#$e#",
+        "reading": "yattā",
+        "gloss": "hooray"
+      },
+      {
+        "text": "ほんと、",
+        "reading": "honto",
+        "gloss": "really"
+      },
+      {
+        "text": "夢みたい。$l",
+        "reading": "yume mitai",
+        "gloss": "like a dream"
+      }
+    ]
+  },
+  "Haley1": {
+    "japanese": "ハネムーンにはいけないだろうけど、だいじょうぶ。気にしないよ。だって、牧場のめんどうを見なきゃいけないもんね。#$e#わたしも牧場に住むんだもの、手伝うよ！",
+    "english": "We probably can't have a honeymoon, but that's fine — I don't mind. The farm has to be looked after, after all.#$e#I'm going to live on the farm too, so I'll help!",
+    "segments": [
+      {
+        "text": "ハネムーン",
+        "reading": "hanemūn",
+        "gloss": "honeymoon"
+      },
+      {
+        "text": "にはいけないだろうけど、",
+        "reading": "ni wa ikenai darō kedo",
+        "gloss": "we probably can't go on, but"
+      },
+      {
+        "text": "だいじょうぶ。",
+        "reading": "daijōbu",
+        "gloss": "it's fine"
+      },
+      {
+        "text": "気にしないよ。",
+        "reading": "ki ni shinai yo",
+        "gloss": "I don't mind"
+      },
+      {
+        "text": "だって、",
+        "reading": "datte",
+        "gloss": "because"
+      },
+      {
+        "text": "牧場",
+        "reading": "bokujō",
+        "gloss": "farm"
+      },
+      {
+        "text": "のめんどう",
+        "reading": "no mendō",
+        "gloss": "'s care"
+      },
+      {
+        "text": "を見なきゃいけないもんね。#$e#",
+        "reading": "o minakya ikenai mon ne",
+        "gloss": "has to be taken"
+      },
+      {
+        "text": "わたし",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "も牧場",
+        "reading": "mo bokujō",
+        "gloss": "the farm too"
+      },
+      {
+        "text": "に住むんだもの、",
+        "reading": "ni sumu n da mono",
+        "gloss": "am going to live on"
+      },
+      {
+        "text": "手伝うよ！",
+        "reading": "tetsudau yo",
+        "gloss": "I'll help"
+      }
+    ]
+  },
+  "Harvey0": {
+    "japanese": "ああ、すごいなあ！結婚式の前に、やるべきことがたくさんあるぞ！ううっ、緊張するなあ。$l#$e#きみの牧場に落ちつくまで、安心できる気がしないよ。$h",
+    "english": "Oh, how wonderful! There's so much to do before the wedding! Ugh, I'm nervous.$l#$e#I won't feel settled until we're moved in on your farm.$h",
+    "segments": [
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "すごいなあ！",
+        "reading": "sugoi nā",
+        "gloss": "how amazing"
+      },
+      {
+        "text": "結婚式の前に、",
+        "reading": "kekkonshiki no mae ni",
+        "gloss": "before the wedding"
+      },
+      {
+        "text": "やるべきこと",
+        "reading": "yaru beki koto",
+        "gloss": "things to do"
+      },
+      {
+        "text": "がたくさんあるぞ！",
+        "reading": "ga takusan aru zo",
+        "gloss": "there are many"
+      },
+      {
+        "text": "ううっ、",
+        "reading": "ū",
+        "gloss": "ugh"
+      },
+      {
+        "text": "緊張するなあ。$l#$e#",
+        "reading": "kinchō suru nā",
+        "gloss": "I'm nervous"
+      },
+      {
+        "text": "きみの牧場",
+        "reading": "kimi no bokujō",
+        "gloss": "your farm"
+      },
+      {
+        "text": "に落ちつくまで、",
+        "reading": "ni ochitsuku made",
+        "gloss": "until we settle on"
+      },
+      {
+        "text": "安心できる気がしないよ。$h",
+        "reading": "anshin dekiru ki ga shinai yo",
+        "gloss": "I don't feel I can relax"
+      }
+    ]
+  },
+  "Harvey1": {
+    "japanese": "ああ、すっごくしあわせだよ。$h#$e#こうなったらいいなって、ずっと願ってたんだ。$l",
+    "english": "Ah, I'm so happy.$h#$e#I'd always been hoping it would turn out this way.$l",
+    "segments": [
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "すっごくしあわせだよ。$h#$e#",
+        "reading": "suggoku shiawase da yo",
+        "gloss": "I'm really happy"
+      },
+      {
+        "text": "こうなったらいいな",
+        "reading": "kō nattara ii na",
+        "gloss": "I hope it turns out this way"
+      },
+      {
+        "text": "って、",
+        "reading": "tte",
+        "gloss": "(quoting particle)"
+      },
+      {
+        "text": "ずっと願ってたんだ。$l",
+        "reading": "zutto negatteta n da",
+        "gloss": "I'd always wished"
+      }
+    ]
+  },
+  "Krobus0": {
+    "japanese": "@...僕たちはこれを秘密にしておかなければいけない...僕の仲間も君の仲間も、一緒に暮らす僕たちを受け入れないよ。",
+    "english": "@... we'll have to keep this secret... neither my people nor yours would accept us living together.",
+    "segments": [
+      {
+        "text": "@...",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "僕たち",
+        "reading": "bokutachi",
+        "gloss": "we"
+      },
+      {
+        "text": "はこれ",
+        "reading": "wa kore",
+        "gloss": "this"
+      },
+      {
+        "text": "を秘密にしておかなければいけない...",
+        "reading": "o himitsu ni shite okanakereba ikenai",
+        "gloss": "must keep secret"
+      },
+      {
+        "text": "僕の仲間",
+        "reading": "boku no nakama",
+        "gloss": "my people"
+      },
+      {
+        "text": "も君の仲間",
+        "reading": "mo kimi no nakama",
+        "gloss": "nor your people"
+      },
+      {
+        "text": "も、",
+        "reading": "mo",
+        "gloss": "either"
+      },
+      {
+        "text": "一緒に暮らす",
+        "reading": "issho ni kurasu",
+        "gloss": "living together"
+      },
+      {
+        "text": "僕たち",
+        "reading": "bokutachi",
+        "gloss": "us"
+      },
+      {
+        "text": "を受け入れないよ。",
+        "reading": "o ukeirenai yo",
+        "gloss": "would not accept"
+      }
+    ]
+  },
+  "Krobus1": {
+    "japanese": "同居するのはすごく変な人になるだろうね？僕は家を出ることができないだろう...",
+    "english": "You know I'll be a very odd person to live with, don't you? I won't be able to leave the house...",
+    "segments": [
+      {
+        "text": "同居する",
+        "reading": "dōkyo suru",
+        "gloss": "to live together"
+      },
+      {
+        "text": "のはすごく変な人",
+        "reading": "no wa sugoku hen na hito",
+        "gloss": "a very strange person"
+      },
+      {
+        "text": "になるだろうね？",
+        "reading": "ni naru darō ne",
+        "gloss": "I'll be, won't I"
+      },
+      {
+        "text": "僕",
+        "reading": "boku",
+        "gloss": "I"
+      },
+      {
+        "text": "は家",
+        "reading": "wa ie",
+        "gloss": "the house"
+      },
+      {
+        "text": "を出ることができないだろう...",
+        "reading": "o deru koto ga dekinai darō",
+        "gloss": "probably won't be able to leave"
+      }
+    ]
+  },
+  "Leah0": {
+    "japanese": "…$l#$e#ちょっと不安だけど、でもしあわせだよ。$h",
+    "english": "...$l#$e#I'm a little anxious, but happy.$h",
+    "segments": [
+      {
+        "text": "…$l#$e#",
+        "reading": "",
+        "gloss": "(pause)"
+      },
+      {
+        "text": "ちょっと",
+        "reading": "chotto",
+        "gloss": "a little"
+      },
+      {
+        "text": "不安だけど、",
+        "reading": "fuan da kedo",
+        "gloss": "anxious, but"
+      },
+      {
+        "text": "でもしあわせだよ。$h",
+        "reading": "demo shiawase da yo",
+        "gloss": "but I'm happy"
+      }
+    ]
+  },
+  "Leah1": {
+    "japanese": "ずっと、牧場で暮らすのが夢だったんだ。$h#$e#きっとたのしく暮らせるね。",
+    "english": "Living on a farm was always my dream.$h#$e#We're going to live happily, I'm sure.",
+    "segments": [
+      {
+        "text": "ずっと、",
+        "reading": "zutto",
+        "gloss": "all along"
+      },
+      {
+        "text": "牧場で暮らす",
+        "reading": "bokujō de kurasu",
+        "gloss": "living on a farm"
+      },
+      {
+        "text": "のが夢だったんだ。$h#$e#",
+        "reading": "no ga yume datta n da",
+        "gloss": "was my dream"
+      },
+      {
+        "text": "きっと",
+        "reading": "kitto",
+        "gloss": "surely"
+      },
+      {
+        "text": "たのしく暮らせるね。",
+        "reading": "tanoshiku kuraseru ne",
+        "gloss": "we can live happily"
+      }
+    ]
+  },
+  "Maru0": {
+    "japanese": "すっごくドキドキする。$h#$b#わたし、あなたのお嫁さんになるんだね。えへへ。$l",
+    "english": "My heart's really pounding.$h#$b#I'm going to be your wife. Hehe.$l",
+    "segments": [
+      {
+        "text": "すっごくドキドキする。$h#$b#",
+        "reading": "suggoku dokidoki suru",
+        "gloss": "my heart is really pounding"
+      },
+      {
+        "text": "わたし、",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "your"
+      },
+      {
+        "text": "のお嫁さん",
+        "reading": "no o-yomesan",
+        "gloss": "wife"
+      },
+      {
+        "text": "になるんだね。",
+        "reading": "ni naru n da ne",
+        "gloss": "am going to become"
+      },
+      {
+        "text": "えへへ。$l",
+        "reading": "ehehe",
+        "gloss": "hehe"
+      }
+    ]
+  },
+  "Maru1": {
+    "japanese": "牧場主のお嫁さんになるんだもん、心の準備をしなきゃね。",
+    "english": "I'm going to be a farmer's wife, so I'd better prepare myself.",
+    "segments": [
+      {
+        "text": "牧場主",
+        "reading": "bokujōnushi",
+        "gloss": "farm owner"
+      },
+      {
+        "text": "のお嫁さん",
+        "reading": "no o-yomesan",
+        "gloss": "'s wife"
+      },
+      {
+        "text": "になるんだもん、",
+        "reading": "ni naru n da mon",
+        "gloss": "since I'm going to be"
+      },
+      {
+        "text": "心の準備",
+        "reading": "kokoro no junbi",
+        "gloss": "mental preparation"
+      },
+      {
+        "text": "をしなきゃね。",
+        "reading": "o shinakya ne",
+        "gloss": "I have to do"
+      }
+    ]
+  },
+  "Penny0": {
+    "japanese": "@…少し、こわいの。だって、生活が一気に変わっちゃうでしょ！#$e#でも心配しないで。わたし、心からしあわせだから。$h",
+    "english": "@... I'm a little frightened. Life is going to change all at once!#$e#But don't worry. I'm truly happy.$h",
+    "segments": [
+      {
+        "text": "@…",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "少し、",
+        "reading": "sukoshi",
+        "gloss": "a little"
+      },
+      {
+        "text": "こわいの。",
+        "reading": "kowai no",
+        "gloss": "I'm scared"
+      },
+      {
+        "text": "だって、",
+        "reading": "datte",
+        "gloss": "because"
+      },
+      {
+        "text": "生活",
+        "reading": "seikatsu",
+        "gloss": "life"
+      },
+      {
+        "text": "が一気に",
+        "reading": "ga ikki ni",
+        "gloss": "all at once"
+      },
+      {
+        "text": "変わっちゃうでしょ！#$e#",
+        "reading": "kawatchau desho",
+        "gloss": "is going to change"
+      },
+      {
+        "text": "でも心配しないで。",
+        "reading": "demo shinpai shinaide",
+        "gloss": "but don't worry"
+      },
+      {
+        "text": "わたし、",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "心からしあわせだから。$h",
+        "reading": "kokoro kara shiawase da kara",
+        "gloss": "am happy from the heart"
+      }
+    ]
+  },
+  "Penny1": {
+    "japanese": "牧場に住んだら、きっと新しい家族もふえるね。$l#$e#わたしのことこんなふうに想ってくれるなんて、すごくうれしい。$h",
+    "english": "Once we live on the farm, our new family will surely grow.$l#$e#I'm so glad you feel this way about me.$h",
+    "segments": [
+      {
+        "text": "牧場に住んだら、",
+        "reading": "bokujō ni sundara",
+        "gloss": "once we live on the farm"
+      },
+      {
+        "text": "きっと",
+        "reading": "kitto",
+        "gloss": "surely"
+      },
+      {
+        "text": "新しい家族",
+        "reading": "atarashii kazoku",
+        "gloss": "new family"
+      },
+      {
+        "text": "もふえるね。$l#$e#",
+        "reading": "mo fueru ne",
+        "gloss": "will grow too"
+      },
+      {
+        "text": "わたしのこと",
+        "reading": "watashi no koto",
+        "gloss": "about me"
+      },
+      {
+        "text": "こんなふうに想ってくれる",
+        "reading": "konna fū ni omotte kureru",
+        "gloss": "that you feel this way"
+      },
+      {
+        "text": "なんて、",
+        "reading": "nante",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "すごくうれしい。$h",
+        "reading": "sugoku ureshii",
+        "gloss": "makes me so glad"
+      }
+    ]
+  },
+  "Sam0": {
+    "japanese": "@、お前の花婿になれるなんてめちゃくちゃしあわせだよ。$l#$e#ワクワクするぜ。",
+    "english": "@, I'm so happy I get to be your bridegroom.$l#$e#I'm excited.",
+    "segments": [
+      {
+        "text": "@、",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "お前",
+        "reading": "omae",
+        "gloss": "your"
+      },
+      {
+        "text": "の花婿",
+        "reading": "no hanamuko",
+        "gloss": "bridegroom"
+      },
+      {
+        "text": "になれる",
+        "reading": "ni nareru",
+        "gloss": "to be able to become"
+      },
+      {
+        "text": "なんて",
+        "reading": "nante",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "めちゃくちゃしあわせだよ。$l#$e#",
+        "reading": "mechakucha shiawase da yo",
+        "gloss": "makes me incredibly happy"
+      },
+      {
+        "text": "ワクワクするぜ。",
+        "reading": "wakuwaku suru ze",
+        "gloss": "I'm excited"
+      }
+    ]
+  },
+  "Sam1": {
+    "japanese": "まさかこんなことになるなんてな。オレってすごくツイてるよ。$l#$e#結婚式が待ちきれないぜ。$h",
+    "english": "I never dreamed this would happen. I'm so lucky.$l#$e#I can't wait for the wedding.$h",
+    "segments": [
+      {
+        "text": "まさか",
+        "reading": "masaka",
+        "gloss": "surely not"
+      },
+      {
+        "text": "こんなこと",
+        "reading": "konna koto",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "になる",
+        "reading": "ni naru",
+        "gloss": "would come about"
+      },
+      {
+        "text": "なんてな。",
+        "reading": "nante na",
+        "gloss": "to think"
+      },
+      {
+        "text": "オレ",
+        "reading": "ore",
+        "gloss": "I"
+      },
+      {
+        "text": "ってすごくツイてるよ。$l#$e#",
+        "reading": "tte sugoku tsuiteru yo",
+        "gloss": "am really lucky"
+      },
+      {
+        "text": "結婚式",
+        "reading": "kekkonshiki",
+        "gloss": "wedding"
+      },
+      {
+        "text": "が待ちきれないぜ。$h",
+        "reading": "ga machikirenai ze",
+        "gloss": "I can't wait for"
+      }
+    ]
+  },
+  "Sebastian0": {
+    "japanese": "あと3日もしたら、オレは牧場で暮らしてるんだな。信じられないよ。$h#$e#まあ、楽しみだけどな。$l",
+    "english": "In three days I'll be living on a farm. I can't believe it.$h#$e#I'm looking forward to it, though.$l",
+    "segments": [
+      {
+        "text": "あと3日も",
+        "reading": "ato mikka mo",
+        "gloss": "in just three days"
+      },
+      {
+        "text": "したら、",
+        "reading": "shitara",
+        "gloss": "once it's"
+      },
+      {
+        "text": "オレ",
+        "reading": "ore",
+        "gloss": "I"
+      },
+      {
+        "text": "は牧場で暮らしてるんだな。",
+        "reading": "wa bokujō de kurashiteru n da na",
+        "gloss": "will be living on a farm"
+      },
+      {
+        "text": "信じられないよ。$h#$e#",
+        "reading": "shinjirarenai yo",
+        "gloss": "I can't believe it"
+      },
+      {
+        "text": "まあ、",
+        "reading": "mā",
+        "gloss": "well"
+      },
+      {
+        "text": "楽しみだけどな。$l",
+        "reading": "tanoshimi da kedo na",
+        "gloss": "I'm looking forward to it though"
+      }
+    ]
+  },
+  "Sebastian1": {
+    "japanese": "お前が町にやってきたときは、まさかこうやって結婚することになるとは思ってなかったよ。$l#$e#人生って不思議だよな。$h",
+    "english": "When you turned up in town, I never thought I'd end up marrying you like this.$l#$e#Life is strange, isn't it?$h",
+    "segments": [
+      {
+        "text": "お前",
+        "reading": "omae",
+        "gloss": "you"
+      },
+      {
+        "text": "が町にやってきたとき",
+        "reading": "ga machi ni yatte kita toki",
+        "gloss": "when you came to town"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "まさか",
+        "reading": "masaka",
+        "gloss": "surely not"
+      },
+      {
+        "text": "こうやって",
+        "reading": "kō yatte",
+        "gloss": "like this"
+      },
+      {
+        "text": "結婚することになる",
+        "reading": "kekkon suru koto ni naru",
+        "gloss": "would end up marrying"
+      },
+      {
+        "text": "とは思ってなかったよ。$l#$e#",
+        "reading": "to wa omottenakatta yo",
+        "gloss": "I never thought"
+      },
+      {
+        "text": "人生",
+        "reading": "jinsei",
+        "gloss": "life"
+      },
+      {
+        "text": "って不思議だよな。$h",
+        "reading": "tte fushigi da yo na",
+        "gloss": "is strange, isn't it"
+      }
+    ]
+  },
+  "Shane0": {
+    "japanese": "頭のどこかじゃまだ疑ってるんだ。ほんとうはぜんぶ、手の込んだ悪ふざけなんじゃねえかってな。#$e#あんたがおれみたいなヤツと結婚したがるなんて、実際信じられねえよ。",
+    "english": "Part of me still doubts it. That the whole thing is some elaborate wind-up.#$e#I honestly can't believe you'd want to marry someone like me.",
+    "segments": [
+      {
+        "text": "頭のどこか",
+        "reading": "atama no dokoka",
+        "gloss": "somewhere in my head"
+      },
+      {
+        "text": "じゃまだ疑ってるんだ。",
+        "reading": "ja mada utagatteru n da",
+        "gloss": "I still doubt it"
+      },
+      {
+        "text": "ほんとうはぜんぶ、",
+        "reading": "hontō wa zenbu",
+        "gloss": "that really the whole thing"
+      },
+      {
+        "text": "手の込んだ悪ふざけ",
+        "reading": "te no konda warufuzake",
+        "gloss": "an elaborate prank"
+      },
+      {
+        "text": "なんじゃねえかってな。#$e#",
+        "reading": "na n ja nē ka tte na",
+        "gloss": "might be"
+      },
+      {
+        "text": "あんた",
+        "reading": "anta",
+        "gloss": "you"
+      },
+      {
+        "text": "がおれみたいなヤツ",
+        "reading": "ga ore mitai na yatsu",
+        "gloss": "a guy like me"
+      },
+      {
+        "text": "と結婚したがる",
+        "reading": "to kekkon shitagaru",
+        "gloss": "would want to marry"
+      },
+      {
+        "text": "なんて、",
+        "reading": "nante",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "実際信じられねえよ。",
+        "reading": "jissai shinjirarenē yo",
+        "gloss": "I honestly can't believe"
+      }
+    ]
+  },
+  "Shane1": {
+    "japanese": "@…きょうはまだ1杯も飲んでないってのに、頭がくらくらしてきたぜ。",
+    "english": "@... my head's spinning, and I haven't had a single drink today.",
+    "segments": [
+      {
+        "text": "@…",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "きょうはまだ1杯も",
+        "reading": "kyō wa mada ippai mo",
+        "gloss": "not even one drink today"
+      },
+      {
+        "text": "飲んでないってのに、",
+        "reading": "nondenai tte no ni",
+        "gloss": "even though I haven't had"
+      },
+      {
+        "text": "頭がくらくらしてきたぜ。",
+        "reading": "atama ga kurakura shite kita ze",
+        "gloss": "my head has started spinning"
+      }
+    ]
+  }
+}

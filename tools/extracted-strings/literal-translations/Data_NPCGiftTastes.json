@@ -1,0 +1,3842 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Data_NPCGiftTastes.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Abigail#0": {
+    "japanese": "わあ、これ超スキなんだ！@、あなたって最高！",
+    "english": "Wow, I absolutely love this! @, you're the best!",
+    "segments": [
+      {
+        "text": "わあ、",
+        "reading": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "これ",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "超スキなんだ！",
+        "reading": "chō suki na n da",
+        "gloss": "I super love it"
+      },
+      {
+        "text": "@、",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "って最高！",
+        "reading": "tte saikō",
+        "gloss": "are the best"
+      }
+    ]
+  },
+  "Abigail#2": {
+    "japanese": "ねえ、あたしがこれを欲しがってるってどうしてわかったの？ちょうどピッタリだね！",
+    "english": "Hey, how did you know I wanted this? It's just right!",
+    "segments": [
+      {
+        "text": "ねえ、",
+        "reading": "nē",
+        "gloss": "hey"
+      },
+      {
+        "text": "あたし",
+        "reading": "atashi",
+        "gloss": "I"
+      },
+      {
+        "text": "がこれ",
+        "reading": "ga kore",
+        "gloss": "this"
+      },
+      {
+        "text": "を欲しがってる",
+        "reading": "o hoshigatteru",
+        "gloss": "was wanting"
+      },
+      {
+        "text": "ってどうしてわかったの？",
+        "reading": "tte dōshite wakatta no",
+        "gloss": "how did you know"
+      },
+      {
+        "text": "ちょうどピッタリだね！",
+        "reading": "chōdo pittari da ne",
+        "gloss": "it's just right"
+      }
+    ]
+  },
+  "Abigail#4": {
+    "japanese": "こんなもんどうしろっての？",
+    "english": "What am I supposed to do with this?",
+    "segments": [
+      {
+        "text": "こんなもん",
+        "reading": "konna mon",
+        "gloss": "a thing like this"
+      },
+      {
+        "text": "どうしろっての？",
+        "reading": "dō shiro tte no",
+        "gloss": "what am I meant to do with"
+      }
+    ]
+  },
+  "Abigail#6": {
+    "japanese": "なに考えてんの？サイテー！",
+    "english": "What were you thinking? This is the worst!",
+    "segments": [
+      {
+        "text": "なに考えてんの？",
+        "reading": "nani kangaeten no",
+        "gloss": "what are you thinking"
+      },
+      {
+        "text": "サイテー！",
+        "reading": "saitē",
+        "gloss": "the worst"
+      }
+    ]
+  },
+  "Abigail#8": {
+    "japanese": "あたしにプレゼント？ありがと。",
+    "english": "A present for me? Thanks.",
+    "segments": [
+      {
+        "text": "あたし",
+        "reading": "atashi",
+        "gloss": "me"
+      },
+      {
+        "text": "にプレゼント？",
+        "reading": "ni purezento",
+        "gloss": "a present for"
+      },
+      {
+        "text": "ありがと。",
+        "reading": "arigato",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Alex#0": {
+    "japanese": "サイコーじゃんか！オレ、これすっげー好きなんだ！",
+    "english": "This is awesome! I really love this stuff!",
+    "segments": [
+      {
+        "text": "サイコーじゃんか！",
+        "reading": "saikō jan ka",
+        "gloss": "isn't this the best"
+      },
+      {
+        "text": "オレ、",
+        "reading": "ore",
+        "gloss": "I"
+      },
+      {
+        "text": "これ",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "すっげー好きなんだ！",
+        "reading": "suggē suki na n da",
+        "gloss": "really love it"
+      }
+    ]
+  },
+  "Alex#2": {
+    "japanese": "イカしてるじゃん！サンキューな。",
+    "english": "This is cool! Thanks.",
+    "segments": [
+      {
+        "text": "イカしてるじゃん！",
+        "reading": "ikashiteru jan",
+        "gloss": "that's cool"
+      },
+      {
+        "text": "サンキューな。",
+        "reading": "sankyū na",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Alex#4": {
+    "japanese": "あー…うん。ありがとう。",
+    "english": "Ah... right. Thanks.",
+    "segments": [
+      {
+        "text": "あー…",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "うん。",
+        "reading": "un",
+        "gloss": "yeah"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Alex#6": {
+    "japanese": "おい、マジかよ？ゴミじゃねーか、こんなの。",
+    "english": "Hey, seriously? This is rubbish.",
+    "segments": [
+      {
+        "text": "おい、",
+        "reading": "oi",
+        "gloss": "hey"
+      },
+      {
+        "text": "マジかよ？",
+        "reading": "maji ka yo",
+        "gloss": "are you serious"
+      },
+      {
+        "text": "ゴミじゃねーか、",
+        "reading": "gomi ja nē ka",
+        "gloss": "isn't this rubbish"
+      },
+      {
+        "text": "こんなの。",
+        "reading": "konna no",
+        "gloss": "a thing like this"
+      }
+    ]
+  },
+  "Alex#8": {
+    "japanese": "サンキューな。",
+    "english": "Thanks!",
+    "segments": [
+      {
+        "text": "サンキューな。",
+        "reading": "sankyū na",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Caroline#0": {
+    "japanese": "これを…わたしに？ああ、なんてお礼を言ったらいいか。",
+    "english": "This... for me? Oh, I don't know how to thank you.",
+    "segments": [
+      {
+        "text": "これを…",
+        "reading": "kore o",
+        "gloss": "this"
+      },
+      {
+        "text": "わたし",
+        "reading": "watashi",
+        "gloss": "me"
+      },
+      {
+        "text": "に？",
+        "reading": "ni",
+        "gloss": "for"
+      },
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "oh"
+      },
+      {
+        "text": "なんてお礼を言ったらいいか。",
+        "reading": "nante o-rei o ittara ii ka",
+        "gloss": "how should I thank you"
+      }
+    ]
+  },
+  "Caroline#2": {
+    "japanese": "あら、ありがとう！もらっていいの？",
+    "english": "Oh, thank you! May I really have it?",
+    "segments": [
+      {
+        "text": "あら、",
+        "reading": "ara",
+        "gloss": "oh"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "もらっていいの？",
+        "reading": "moratte ii no",
+        "gloss": "may I have it"
+      }
+    ]
+  },
+  "Caroline#4": {
+    "japanese": "いや、えっと、その…",
+    "english": "No, um, well...",
+    "segments": [
+      {
+        "text": "いや、",
+        "reading": "iya",
+        "gloss": "no"
+      },
+      {
+        "text": "えっと、",
+        "reading": "etto",
+        "gloss": "um"
+      },
+      {
+        "text": "その…",
+        "reading": "sono",
+        "gloss": "well"
+      }
+    ]
+  },
+  "Caroline#6": {
+    "japanese": "やだ、ゴミじゃない。怒るわよ。",
+    "english": "Ugh, that's rubbish. I'm rather cross.",
+    "segments": [
+      {
+        "text": "やだ、",
+        "reading": "yada",
+        "gloss": "ugh"
+      },
+      {
+        "text": "ゴミじゃない。",
+        "reading": "gomi ja nai",
+        "gloss": "isn't this rubbish"
+      },
+      {
+        "text": "怒るわよ。",
+        "reading": "okoru wa yo",
+        "gloss": "I'll get angry"
+      }
+    ]
+  },
+  "Caroline#8": {
+    "japanese": "まあ、ステキ。ありがとう。",
+    "english": "Oh, lovely. Thank you.",
+    "segments": [
+      {
+        "text": "まあ、",
+        "reading": "mā",
+        "gloss": "oh"
+      },
+      {
+        "text": "ステキ。",
+        "reading": "suteki",
+        "gloss": "lovely"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Clint#0": {
+    "japanese": "そうそう！まさにこんなやつが欲しかったんだ！",
+    "english": "Yes! This is exactly the sort of thing I wanted!",
+    "segments": [
+      {
+        "text": "そうそう！",
+        "reading": "sō sō",
+        "gloss": "yes, that's it"
+      },
+      {
+        "text": "まさに",
+        "reading": "masa ni",
+        "gloss": "exactly"
+      },
+      {
+        "text": "こんなやつ",
+        "reading": "konna yatsu",
+        "gloss": "this sort of thing"
+      },
+      {
+        "text": "が欲しかったんだ！",
+        "reading": "ga hoshikatta n da",
+        "gloss": "is what I wanted"
+      }
+    ]
+  },
+  "Clint#2": {
+    "japanese": "おもしろいプレゼントだな。ありがとう！",
+    "english": "That's a fun present. Thanks!",
+    "segments": [
+      {
+        "text": "おもしろいプレゼントだな。",
+        "reading": "omoshiroi purezento da na",
+        "gloss": "that's an interesting present"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Clint#4": {
+    "japanese": "はぁ…",
+    "english": "*Sigh*...",
+    "segments": [
+      {
+        "text": "はぁ…",
+        "reading": "hā",
+        "gloss": "*sigh*"
+      }
+    ]
+  },
+  "Clint#6": {
+    "japanese": "そんなもんもらってもヘコむなあ。",
+    "english": "Getting something like that just gets me down.",
+    "segments": [
+      {
+        "text": "そんなもん",
+        "reading": "sonna mon",
+        "gloss": "a thing like that"
+      },
+      {
+        "text": "もらっても",
+        "reading": "moratte mo",
+        "gloss": "even receiving"
+      },
+      {
+        "text": "ヘコむなあ。",
+        "reading": "hekomu nā",
+        "gloss": "it depresses me"
+      }
+    ]
+  },
+  "Clint#8": {
+    "japanese": "ありがとな。",
+    "english": "Thanks.",
+    "segments": [
+      {
+        "text": "ありがとな。",
+        "reading": "arigato na",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Demetrius#0": {
+    "japanese": "これ、くれるのかい？すばらしい！",
+    "english": "You're giving me this? Wonderful!",
+    "segments": [
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "くれるのかい？",
+        "reading": "kureru no kai",
+        "gloss": "are you giving me"
+      },
+      {
+        "text": "すばらしい！",
+        "reading": "subarashii",
+        "gloss": "wonderful"
+      }
+    ]
+  },
+  "Demetrius#2": {
+    "japanese": "ありがとう！とても興味深いサンプルだね。",
+    "english": "Thank you! A very interesting specimen.",
+    "segments": [
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "とても興味深いサンプルだね。",
+        "reading": "totemo kyōmibukai sanpuru da ne",
+        "gloss": "a very interesting specimen"
+      }
+    ]
+  },
+  "Demetrius#4": {
+    "japanese": "…これはなんだい？",
+    "english": "...What is this?",
+    "segments": [
+      {
+        "text": "…これはなんだい？",
+        "reading": "kore wa nan dai",
+        "gloss": "what is this"
+      }
+    ]
+  },
+  "Demetrius#6": {
+    "japanese": "これはひどいな。不愉快だ。",
+    "english": "This is awful. Most unpleasant.",
+    "segments": [
+      {
+        "text": "これはひどいな。",
+        "reading": "kore wa hidoi na",
+        "gloss": "this is terrible"
+      },
+      {
+        "text": "不愉快だ。",
+        "reading": "fuyukai da",
+        "gloss": "it's unpleasant"
+      }
+    ]
+  },
+  "Demetrius#8": {
+    "japanese": "お心づかいありがとう。",
+    "english": "Thank you for your thoughtfulness.",
+    "segments": [
+      {
+        "text": "お心づかい",
+        "reading": "o-kokorozukai",
+        "gloss": "your consideration"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you for"
+      }
+    ]
+  },
+  "Dwarf#0": {
+    "japanese": "ねえ、これすっごく気に入ったよ。あなたって、鉱山からいいもの見つけてくるよね。",
+    "english": "Hey, I really love this. You do find good things in the mines.",
+    "segments": [
+      {
+        "text": "ねえ、",
+        "reading": "nē",
+        "gloss": "hey"
+      },
+      {
+        "text": "これ",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "すっごく気に入ったよ。",
+        "reading": "suggoku ki ni itta yo",
+        "gloss": "I really liked"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "って、",
+        "reading": "tte",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "鉱山",
+        "reading": "kōzan",
+        "gloss": "mines"
+      },
+      {
+        "text": "からいいもの",
+        "reading": "kara ii mono",
+        "gloss": "good things from"
+      },
+      {
+        "text": "見つけてくるよね。",
+        "reading": "mitsukete kuru yo ne",
+        "gloss": "do go and find"
+      }
+    ]
+  },
+  "Dwarf#2": {
+    "japanese": "ああ、これを見てるとふるさとを思い出すよ。",
+    "english": "Ah, looking at this reminds me of home.",
+    "segments": [
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "これ",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "を見てると",
+        "reading": "o miteru to",
+        "gloss": "when I look at"
+      },
+      {
+        "text": "ふるさと",
+        "reading": "furusato",
+        "gloss": "homeland"
+      },
+      {
+        "text": "を思い出すよ。",
+        "reading": "o omoidasu yo",
+        "gloss": "I remember"
+      }
+    ]
+  },
+  "Dwarf#4": {
+    "japanese": "ふーん…人間ってこういうのが好きなの？",
+    "english": "Hmm... is this the sort of thing humans like?",
+    "segments": [
+      {
+        "text": "ふーん…",
+        "reading": "fūn",
+        "gloss": "hmm"
+      },
+      {
+        "text": "人間",
+        "reading": "ningen",
+        "gloss": "humans"
+      },
+      {
+        "text": "ってこういうの",
+        "reading": "tte kō iu no",
+        "gloss": "this sort of thing"
+      },
+      {
+        "text": "が好きなの？",
+        "reading": "ga suki na no",
+        "gloss": "do they like"
+      }
+    ]
+  },
+  "Dwarf#6": {
+    "japanese": "あなたたちの種族はどうか知らないけど、わたしからするとただのゴミだな。",
+    "english": "I don't know about your species, but to me this is just rubbish.",
+    "segments": [
+      {
+        "text": "あなたたち",
+        "reading": "anatatachi",
+        "gloss": "you lot"
+      },
+      {
+        "text": "の種族",
+        "reading": "no shuzoku",
+        "gloss": "'s species"
+      },
+      {
+        "text": "はどうか知らないけど、",
+        "reading": "wa dō ka shiranai kedo",
+        "gloss": "I don't know about, but"
+      },
+      {
+        "text": "わたし",
+        "reading": "watashi",
+        "gloss": "me"
+      },
+      {
+        "text": "からすると",
+        "reading": "kara suru to",
+        "gloss": "from the point of view of"
+      },
+      {
+        "text": "ただのゴミだな。",
+        "reading": "tada no gomi da na",
+        "gloss": "it's just rubbish"
+      }
+    ]
+  },
+  "Dwarf#8": {
+    "japanese": "おくりものだ！ありがとう。",
+    "english": "An offering! Thank you.",
+    "segments": [
+      {
+        "text": "おくりものだ！",
+        "reading": "okurimono da",
+        "gloss": "it's a gift"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Elliott#0": {
+    "japanese": "@、ほれぼれするようなプレゼントじゃないか！ありがとう！",
+    "english": "@, what a captivating gift! Thank you!",
+    "segments": [
+      {
+        "text": "@、",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "ほれぼれするような",
+        "reading": "horebore suru yō na",
+        "gloss": "captivating"
+      },
+      {
+        "text": "プレゼントじゃないか！",
+        "reading": "purezento ja nai ka",
+        "gloss": "what a present"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Elliott#2": {
+    "japanese": "僕がもらっていいのかい？すばらしい！",
+    "english": "Is this really for me? Marvellous!",
+    "segments": [
+      {
+        "text": "僕",
+        "reading": "boku",
+        "gloss": "I"
+      },
+      {
+        "text": "がもらっていいのかい？",
+        "reading": "ga moratte ii no kai",
+        "gloss": "may I have this"
+      },
+      {
+        "text": "すばらしい！",
+        "reading": "subarashii",
+        "gloss": "marvellous"
+      }
+    ]
+  },
+  "Elliott#4": {
+    "japanese": "うーん…あまり僕好みではないなあ。",
+    "english": "Hmm... this isn't much to my taste.",
+    "segments": [
+      {
+        "text": "うーん…",
+        "reading": "ūn",
+        "gloss": "hmm"
+      },
+      {
+        "text": "あまり",
+        "reading": "amari",
+        "gloss": "not much"
+      },
+      {
+        "text": "僕好み",
+        "reading": "boku konomi",
+        "gloss": "to my taste"
+      },
+      {
+        "text": "ではないなあ。",
+        "reading": "de wa nai nā",
+        "gloss": "it isn't"
+      }
+    ]
+  },
+  "Elliott#6": {
+    "japanese": "見てるだけでイヤな気分になるね。あとで処分すると思うな。",
+    "english": "Just looking at it makes me feel awful. I'll dispose of it later, I think.",
+    "segments": [
+      {
+        "text": "見てるだけで",
+        "reading": "miteru dake de",
+        "gloss": "just by looking"
+      },
+      {
+        "text": "イヤな気分になるね。",
+        "reading": "iya na kibun ni naru ne",
+        "gloss": "it makes me feel unpleasant"
+      },
+      {
+        "text": "あとで処分する",
+        "reading": "ato de shobun suru",
+        "gloss": "to dispose of it later"
+      },
+      {
+        "text": "と思うな。",
+        "reading": "to omou na",
+        "gloss": "I think"
+      }
+    ]
+  },
+  "Elliott#8": {
+    "japanese": "おや、プレゼントだって？ ありがとう！",
+    "english": "Oh, a present? Thank you!",
+    "segments": [
+      {
+        "text": "おや、",
+        "reading": "oya",
+        "gloss": "oh"
+      },
+      {
+        "text": "プレゼントだって？ ",
+        "reading": "purezento datte",
+        "gloss": "a present, you say"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Emily#0": {
+    "japanese": "こんなプレゼント、うっとりしちゃうよ！ほんとにありがとう！",
+    "english": "A present like this — I'm enchanted! Thank you so much!",
+    "segments": [
+      {
+        "text": "こんなプレゼント、",
+        "reading": "konna purezento",
+        "gloss": "a present like this"
+      },
+      {
+        "text": "うっとりしちゃうよ！",
+        "reading": "uttori shichau yo",
+        "gloss": "I'm enchanted"
+      },
+      {
+        "text": "ほんとにありがとう！",
+        "reading": "honto ni arigatō",
+        "gloss": "thank you so much"
+      }
+    ]
+  },
+  "Emily#2": {
+    "japanese": "ありがとう！このプレゼントからは、ポジティブなエネルギーを感じるよ。",
+    "english": "Thank you! I can feel positive energy from this gift.",
+    "segments": [
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "このプレゼント",
+        "reading": "kono purezento",
+        "gloss": "this present"
+      },
+      {
+        "text": "からは、",
+        "reading": "kara wa",
+        "gloss": "from"
+      },
+      {
+        "text": "ポジティブなエネルギー",
+        "reading": "pojitibu na enerugī",
+        "gloss": "positive energy"
+      },
+      {
+        "text": "を感じるよ。",
+        "reading": "o kanjiru yo",
+        "gloss": "I feel"
+      }
+    ]
+  },
+  "Emily#4": {
+    "japanese": "ごめん、@。これ、あんまり好きじゃないや。",
+    "english": "Sorry, @. I don't much like this.",
+    "segments": [
+      {
+        "text": "ごめん、",
+        "reading": "gomen",
+        "gloss": "sorry"
+      },
+      {
+        "text": "@。",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "あんまり好きじゃないや。",
+        "reading": "anmari suki ja nai ya",
+        "gloss": "I don't much like"
+      }
+    ]
+  },
+  "Emily#6": {
+    "japanese": "このプレゼント、強いネガティブなエネルギーを持ってる。ひどすぎて耐えられないよ。",
+    "english": "This gift carries strong negative energy. It's too awful to bear.",
+    "segments": [
+      {
+        "text": "このプレゼント、",
+        "reading": "kono purezento",
+        "gloss": "this present"
+      },
+      {
+        "text": "強いネガティブなエネルギー",
+        "reading": "tsuyoi negatibu na enerugī",
+        "gloss": "strong negative energy"
+      },
+      {
+        "text": "を持ってる。",
+        "reading": "o motteru",
+        "gloss": "carries"
+      },
+      {
+        "text": "ひどすぎて",
+        "reading": "hidosugite",
+        "gloss": "being too awful"
+      },
+      {
+        "text": "耐えられないよ。",
+        "reading": "taerarenai yo",
+        "gloss": "I can't bear it"
+      }
+    ]
+  },
+  "Emily#8": {
+    "japanese": "ありがとう！",
+    "english": "Thank you!",
+    "segments": [
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Evelyn#0": {
+    "japanese": "まあ…なんてステキなプレゼントなの！$u#$e#こんなおばあさんを喜ばせてくれてありがとうね。",
+    "english": "Oh my... what a lovely present!$u#$e#Thank you for making an old woman so happy.",
+    "segments": [
+      {
+        "text": "まあ…",
+        "reading": "mā",
+        "gloss": "oh my"
+      },
+      {
+        "text": "なんてステキなプレゼントなの！$u#$e#",
+        "reading": "nante suteki na purezento na no",
+        "gloss": "what a lovely present"
+      },
+      {
+        "text": "こんなおばあさん",
+        "reading": "konna obāsan",
+        "gloss": "an old woman like me"
+      },
+      {
+        "text": "を喜ばせてくれて",
+        "reading": "o yorokobasete kurete",
+        "gloss": "for making happy"
+      },
+      {
+        "text": "ありがとうね。",
+        "reading": "arigatō ne",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Evelyn#2": {
+    "japanese": "あらまあ、なんてステキなの！どうもご親切に。",
+    "english": "Oh my, how lovely! That's very kind of you.",
+    "segments": [
+      {
+        "text": "あらまあ、",
+        "reading": "ara mā",
+        "gloss": "oh my"
+      },
+      {
+        "text": "なんてステキなの！",
+        "reading": "nante suteki na no",
+        "gloss": "how lovely"
+      },
+      {
+        "text": "どうもご親切に。",
+        "reading": "dōmo go-shinsetsu ni",
+        "gloss": "how very kind"
+      }
+    ]
+  },
+  "Evelyn#4": {
+    "japanese": "えっと…どこにおいたらいいかしらね？",
+    "english": "Um... where shall I put this, I wonder?",
+    "segments": [
+      {
+        "text": "えっと…",
+        "reading": "etto",
+        "gloss": "um"
+      },
+      {
+        "text": "どこにおいたらいいかしらね？",
+        "reading": "doko ni oitara ii kashira ne",
+        "gloss": "where should I put it, I wonder"
+      }
+    ]
+  },
+  "Evelyn#6": {
+    "japanese": "…イヤなにおいですねえ。",
+    "english": "...It smells unpleasant.",
+    "segments": [
+      {
+        "text": "…イヤなにおいですねえ。",
+        "reading": "iya na nioi desu nē",
+        "gloss": "it's an unpleasant smell"
+      }
+    ]
+  },
+  "Evelyn#8": {
+    "japanese": "まあ、ステキ。ありがとうねえ。",
+    "english": "Oh, how nice. Thank you, dear.",
+    "segments": [
+      {
+        "text": "まあ、",
+        "reading": "mā",
+        "gloss": "oh"
+      },
+      {
+        "text": "ステキ。",
+        "reading": "suteki",
+        "gloss": "lovely"
+      },
+      {
+        "text": "ありがとうねえ。",
+        "reading": "arigatō nē",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "George#0": {
+    "japanese": "おお、わしの好物じゃないか！ありがとうな。",
+    "english": "Oh, that's my favourite! Thank you.",
+    "segments": [
+      {
+        "text": "おお、",
+        "reading": "ō",
+        "gloss": "oh"
+      },
+      {
+        "text": "わし",
+        "reading": "washi",
+        "gloss": "my (old man's speech)"
+      },
+      {
+        "text": "の好物じゃないか！",
+        "reading": "no kōbutsu ja nai ka",
+        "gloss": "isn't that my favourite"
+      },
+      {
+        "text": "ありがとうな。",
+        "reading": "arigatō na",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "George#2": {
+    "japanese": "ありがとう。",
+    "english": "Thanks.",
+    "segments": [
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "George#4": {
+    "japanese": "ひどいプレゼントもあったもんだ。",
+    "english": "What a terrible present that is.",
+    "segments": [
+      {
+        "text": "ひどいプレゼント",
+        "reading": "hidoi purezento",
+        "gloss": "a terrible present"
+      },
+      {
+        "text": "もあったもんだ。",
+        "reading": "mo atta mon da",
+        "gloss": "that certainly is"
+      }
+    ]
+  },
+  "George#6": {
+    "japanese": "今までもらったなかで最悪のプレゼントだな、こいつは。ありがとうよ。",
+    "english": "This is the worst present I've ever been given. Thanks a lot.",
+    "segments": [
+      {
+        "text": "今まで",
+        "reading": "ima made",
+        "gloss": "up to now"
+      },
+      {
+        "text": "もらったなか",
+        "reading": "moratta naka",
+        "gloss": "among what I've received"
+      },
+      {
+        "text": "で最悪のプレゼントだな、",
+        "reading": "de saiaku no purezento da na",
+        "gloss": "is the worst present"
+      },
+      {
+        "text": "こいつは。",
+        "reading": "koitsu wa",
+        "gloss": "this thing"
+      },
+      {
+        "text": "ありがとうよ。",
+        "reading": "arigatō yo",
+        "gloss": "thanks a lot"
+      }
+    ]
+  },
+  "George#8": {
+    "japanese": "プレゼントか？ふむ…#$e#わしにお返しでも期待してるのか？",
+    "english": "A present? Hmm...#$e#Do you expect something in return?",
+    "segments": [
+      {
+        "text": "プレゼントか？",
+        "reading": "purezento ka",
+        "gloss": "a present"
+      },
+      {
+        "text": "ふむ…#$e#",
+        "reading": "fumu",
+        "gloss": "hmm"
+      },
+      {
+        "text": "わし",
+        "reading": "washi",
+        "gloss": "me (old man's speech)"
+      },
+      {
+        "text": "にお返しでも",
+        "reading": "ni o-kaeshi demo",
+        "gloss": "something in return from"
+      },
+      {
+        "text": "期待してるのか？",
+        "reading": "kitai shiteru no ka",
+        "gloss": "are you expecting"
+      }
+    ]
+  },
+  "Gus#0": {
+    "japanese": "これを…私に？ああ、なんてお礼を言ったらいいか。",
+    "english": "This... for me? Oh, I don't know how to thank you.",
+    "segments": [
+      {
+        "text": "これを…",
+        "reading": "kore o",
+        "gloss": "this"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "me"
+      },
+      {
+        "text": "に？",
+        "reading": "ni",
+        "gloss": "for"
+      },
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "oh"
+      },
+      {
+        "text": "なんてお礼を言ったらいいか。",
+        "reading": "nante o-rei o ittara ii ka",
+        "gloss": "how should I thank you"
+      }
+    ]
+  },
+  "Gus#2": {
+    "japanese": "おお、ありがとう！もらっていいのかい？",
+    "english": "Oh, thank you! May I really have it?",
+    "segments": [
+      {
+        "text": "おお、",
+        "reading": "ō",
+        "gloss": "oh"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "もらっていいのかい？",
+        "reading": "moratte ii no kai",
+        "gloss": "may I have it"
+      }
+    ]
+  },
+  "Gus#4": {
+    "japanese": "いや、えっと、その…",
+    "english": "No, um, well...",
+    "segments": [
+      {
+        "text": "いや、",
+        "reading": "iya",
+        "gloss": "no"
+      },
+      {
+        "text": "えっと、",
+        "reading": "etto",
+        "gloss": "um"
+      },
+      {
+        "text": "その…",
+        "reading": "sono",
+        "gloss": "well"
+      }
+    ]
+  },
+  "Gus#6": {
+    "japanese": "うわ、ゴミじゃないか。怒るぞ。",
+    "english": "Ugh, that's rubbish. I'm getting cross.",
+    "segments": [
+      {
+        "text": "うわ、",
+        "reading": "uwa",
+        "gloss": "ugh"
+      },
+      {
+        "text": "ゴミじゃないか。",
+        "reading": "gomi ja nai ka",
+        "gloss": "isn't this rubbish"
+      },
+      {
+        "text": "怒るぞ。",
+        "reading": "okoru zo",
+        "gloss": "I'll get angry"
+      }
+    ]
+  },
+  "Gus#8": {
+    "japanese": "わお、ステキだね。ありがとう。",
+    "english": "Wow, that's lovely. Thank you.",
+    "segments": [
+      {
+        "text": "わお、",
+        "reading": "wao",
+        "gloss": "wow"
+      },
+      {
+        "text": "ステキだね。",
+        "reading": "suteki da ne",
+        "gloss": "that's lovely"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Haley#0": {
+    "japanese": "うそ、いいの？これほんと大好きなの！！",
+    "english": "No way, really? I absolutely love this!!",
+    "segments": [
+      {
+        "text": "うそ、",
+        "reading": "uso",
+        "gloss": "no way"
+      },
+      {
+        "text": "いいの？",
+        "reading": "ii no",
+        "gloss": "is it all right"
+      },
+      {
+        "text": "これ",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "ほんと大好きなの！！",
+        "reading": "honto daisuki na no",
+        "gloss": "I really love it"
+      }
+    ]
+  },
+  "Haley#2": {
+    "japanese": "わあ…これ、わたしに？ありがと！",
+    "english": "Wow... this, for me? Thanks!",
+    "segments": [
+      {
+        "text": "わあ…",
+        "reading": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "わたし",
+        "reading": "watashi",
+        "gloss": "me"
+      },
+      {
+        "text": "に？",
+        "reading": "ni",
+        "gloss": "for"
+      },
+      {
+        "text": "ありがと！",
+        "reading": "arigato",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Haley#4": {
+    "japanese": "うわっ…なに、このプレゼント。つまんない。",
+    "english": "Ugh... what kind of present is this? How dull.",
+    "segments": [
+      {
+        "text": "うわっ…",
+        "reading": "uwa",
+        "gloss": "ugh"
+      },
+      {
+        "text": "なに、",
+        "reading": "nani",
+        "gloss": "what"
+      },
+      {
+        "text": "このプレゼント。",
+        "reading": "kono purezento",
+        "gloss": "this present"
+      },
+      {
+        "text": "つまんない。",
+        "reading": "tsumannai",
+        "gloss": "boring"
+      }
+    ]
+  },
+  "Haley#6": {
+    "japanese": "うわ、キモっ！",
+    "english": "Ugh, that's disgusting!",
+    "segments": [
+      {
+        "text": "うわ、",
+        "reading": "uwa",
+        "gloss": "ugh"
+      },
+      {
+        "text": "キモっ！",
+        "reading": "kimo",
+        "gloss": "gross"
+      }
+    ]
+  },
+  "Haley#8": {
+    "japanese": "ありがと。プレゼントっていいよね。",
+    "english": "Thanks. Presents are lovely.",
+    "segments": [
+      {
+        "text": "ありがと。",
+        "reading": "arigato",
+        "gloss": "thanks"
+      },
+      {
+        "text": "プレゼント",
+        "reading": "purezento",
+        "gloss": "presents"
+      },
+      {
+        "text": "っていいよね。",
+        "reading": "tte ii yo ne",
+        "gloss": "are nice, aren't they"
+      }
+    ]
+  },
+  "Harvey#0": {
+    "japanese": "これ、僕に？わあ、これ大好きなんだよ！僕の心でも読んだのかい？",
+    "english": "This, for me? Wow, I love this stuff! Did you read my mind?",
+    "segments": [
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "僕",
+        "reading": "boku",
+        "gloss": "me"
+      },
+      {
+        "text": "に？",
+        "reading": "ni",
+        "gloss": "for"
+      },
+      {
+        "text": "わあ、",
+        "reading": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "これ大好きなんだよ！",
+        "reading": "kore daisuki na n da yo",
+        "gloss": "I love this"
+      },
+      {
+        "text": "僕の心でも",
+        "reading": "boku no kokoro demo",
+        "gloss": "even my mind"
+      },
+      {
+        "text": "読んだのかい？",
+        "reading": "yonda no kai",
+        "gloss": "did you read"
+      }
+    ]
+  },
+  "Harvey#2": {
+    "japanese": "ステキなプレゼントだね。ありがとう！",
+    "english": "What a lovely present. Thank you!",
+    "segments": [
+      {
+        "text": "ステキなプレゼントだね。",
+        "reading": "suteki na purezento da ne",
+        "gloss": "that's a lovely present"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Harvey#4": {
+    "japanese": "うーん…これって健康に悪いんじゃないかな？",
+    "english": "Hmm... is this really healthy, I wonder?",
+    "segments": [
+      {
+        "text": "うーん…",
+        "reading": "ūn",
+        "gloss": "hmm"
+      },
+      {
+        "text": "これって",
+        "reading": "kore tte",
+        "gloss": "this"
+      },
+      {
+        "text": "健康に悪いんじゃないかな？",
+        "reading": "kenkō ni warui n ja nai ka na",
+        "gloss": "isn't it bad for the health"
+      }
+    ]
+  },
+  "Harvey#6": {
+    "japanese": "…僕、これのアレルギーなんだよね。",
+    "english": "...I think I'm allergic to this.",
+    "segments": [
+      {
+        "text": "…僕、",
+        "reading": "boku",
+        "gloss": "I"
+      },
+      {
+        "text": "これのアレルギーなんだよね。",
+        "reading": "kore no arerugī na n da yo ne",
+        "gloss": "am allergic to this"
+      }
+    ]
+  },
+  "Harvey#8": {
+    "japanese": "親切にどうも。うれしいよ。",
+    "english": "How kind of you. I'm pleased.",
+    "segments": [
+      {
+        "text": "親切にどうも。",
+        "reading": "shinsetsu ni dōmo",
+        "gloss": "thanks for your kindness"
+      },
+      {
+        "text": "うれしいよ。",
+        "reading": "ureshii yo",
+        "gloss": "I'm glad"
+      }
+    ]
+  },
+  "Jas#0": {
+    "japanese": "わあ…やったぁ！！ありがとう！$h",
+    "english": "Wow... yay!! Thank you!$h",
+    "segments": [
+      {
+        "text": "わあ…",
+        "reading": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "やったぁ！！",
+        "reading": "yattā",
+        "gloss": "yay"
+      },
+      {
+        "text": "ありがとう！$h",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Jas#2": {
+    "japanese": "プレゼントだーいすき！ありがとー！",
+    "english": "I love presents! Thank you!",
+    "segments": [
+      {
+        "text": "プレゼント",
+        "reading": "purezento",
+        "gloss": "presents"
+      },
+      {
+        "text": "だーいすき！",
+        "reading": "dāisuki",
+        "gloss": "I love"
+      },
+      {
+        "text": "ありがとー！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Jas#4": {
+    "japanese": "これ、プレゼントなの？えーっ…$s",
+    "english": "Is this a present? Oh...$s",
+    "segments": [
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "プレゼントなの？",
+        "reading": "purezento na no",
+        "gloss": "is it a present"
+      },
+      {
+        "text": "えーっ…$s",
+        "reading": "ē",
+        "gloss": "oh"
+      }
+    ]
+  },
+  "Jas#6": {
+    "japanese": "うえっ。これ、やだぁ。$s",
+    "english": "Eww. I don't like this.$s",
+    "segments": [
+      {
+        "text": "うえっ。",
+        "reading": "ue",
+        "gloss": "eww"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "やだぁ。$s",
+        "reading": "yadā",
+        "gloss": "I don't like it"
+      }
+    ]
+  },
+  "Jas#8": {
+    "japanese": "ありがとう！",
+    "english": "Thank you!",
+    "segments": [
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Jodi#0": {
+    "japanese": "まあ、あなたってほんとに親切ね！これ、大好きなの！",
+    "english": "Oh, you really are kind! I love this!",
+    "segments": [
+      {
+        "text": "まあ、",
+        "reading": "mā",
+        "gloss": "oh"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "ってほんとに親切ね！",
+        "reading": "tte honto ni shinsetsu ne",
+        "gloss": "really are kind"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "大好きなの！",
+        "reading": "daisuki na no",
+        "gloss": "I love it"
+      }
+    ]
+  },
+  "Jodi#2": {
+    "japanese": "ありがとう！これ、すっごくステキね。",
+    "english": "Thank you! This is really lovely.",
+    "segments": [
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "すっごくステキね。",
+        "reading": "suggoku suteki ne",
+        "gloss": "is really lovely"
+      }
+    ]
+  },
+  "Jodi#4": {
+    "japanese": "えーっと、こういうのはいっつも肥料の材料にしてるんだけど…",
+    "english": "Um, I usually turn this sort of thing into compost...",
+    "segments": [
+      {
+        "text": "えーっと、",
+        "reading": "ētto",
+        "gloss": "um"
+      },
+      {
+        "text": "こういうの",
+        "reading": "kō iu no",
+        "gloss": "this sort of thing"
+      },
+      {
+        "text": "はいっつも",
+        "reading": "wa ittsumo",
+        "gloss": "always"
+      },
+      {
+        "text": "肥料の材料",
+        "reading": "hiryō no zairyō",
+        "gloss": "compost material"
+      },
+      {
+        "text": "にしてるんだけど…",
+        "reading": "ni shiteru n da kedo",
+        "gloss": "I make it into, but"
+      }
+    ]
+  },
+  "Jodi#6": {
+    "japanese": "おえっ…これ、大きらいなの…",
+    "english": "Bleh... I really hate this...",
+    "segments": [
+      {
+        "text": "おえっ…",
+        "reading": "oe",
+        "gloss": "bleh"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "大きらいなの…",
+        "reading": "daikirai na no",
+        "gloss": "I hate"
+      }
+    ]
+  },
+  "Jodi#8": {
+    "japanese": "まあ、どうもご親切に！ありがと。",
+    "english": "Oh, how kind of you! Thanks.",
+    "segments": [
+      {
+        "text": "まあ、",
+        "reading": "mā",
+        "gloss": "oh"
+      },
+      {
+        "text": "どうもご親切に！",
+        "reading": "dōmo go-shinsetsu ni",
+        "gloss": "how very kind"
+      },
+      {
+        "text": "ありがと。",
+        "reading": "arigato",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Kent#0": {
+    "japanese": "これは…！オレが小さかったころ、おふくろがよくつくってくれたもんだ。むかしを思い出すよ。ありがとう。",
+    "english": "This...! My mother used to make this for me when I was small. It brings back the old days. Thank you.",
+    "segments": [
+      {
+        "text": "これは…！",
+        "reading": "kore wa",
+        "gloss": "this is"
+      },
+      {
+        "text": "オレ",
+        "reading": "ore",
+        "gloss": "I"
+      },
+      {
+        "text": "が小さかったころ、",
+        "reading": "ga chiisakatta koro",
+        "gloss": "when I was small"
+      },
+      {
+        "text": "おふくろ",
+        "reading": "ofukuro",
+        "gloss": "my mother"
+      },
+      {
+        "text": "がよくつくってくれたもんだ。",
+        "reading": "ga yoku tsukutte kureta mon da",
+        "gloss": "used to make for me"
+      },
+      {
+        "text": "むかし",
+        "reading": "mukashi",
+        "gloss": "the old days"
+      },
+      {
+        "text": "を思い出すよ。",
+        "reading": "o omoidasu yo",
+        "gloss": "I remember"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Kent#2": {
+    "japanese": "へえ、こいつはうれしいプレゼントだ。ありがとう。",
+    "english": "Now that's a welcome present. Thank you.",
+    "segments": [
+      {
+        "text": "へえ、",
+        "reading": "hē",
+        "gloss": "oh"
+      },
+      {
+        "text": "こいつはうれしいプレゼントだ。",
+        "reading": "koitsu wa ureshii purezento da",
+        "gloss": "this is a welcome present"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Kent#4": {
+    "japanese": "あー…こいつはいったい…なんなんだ？うーん…",
+    "english": "Ah... what on earth is this? Hmm...",
+    "segments": [
+      {
+        "text": "あー…",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "こいつはいったい…",
+        "reading": "koitsu wa ittai",
+        "gloss": "what on earth is this"
+      },
+      {
+        "text": "なんなんだ？",
+        "reading": "nan na n da",
+        "gloss": "what is it"
+      },
+      {
+        "text": "うーん…",
+        "reading": "ūn",
+        "gloss": "hmm"
+      }
+    ]
+  },
+  "Kent#6": {
+    "japanese": "うっ…ゴトロの捕りょ収容所で、これと同じものをよこされたんだ。あそこのことは忘れたいんだがな。（ぶるるっ）",
+    "english": "Ugh... they gave me this same thing in the Gotoro prison camp. I'd rather forget that place. *shudder*",
+    "segments": [
+      {
+        "text": "うっ…",
+        "reading": "u",
+        "gloss": "ugh"
+      },
+      {
+        "text": "ゴトロ",
+        "reading": "Gotoro",
+        "gloss": "Gotoro"
+      },
+      {
+        "text": "の捕りょ収容所で、",
+        "reading": "no horyo shūyōjo de",
+        "gloss": "at the prison camp of"
+      },
+      {
+        "text": "これと同じもの",
+        "reading": "kore to onaji mono",
+        "gloss": "the same thing as this"
+      },
+      {
+        "text": "をよこされたんだ。",
+        "reading": "o yokosareta n da",
+        "gloss": "I was handed"
+      },
+      {
+        "text": "あそこのこと",
+        "reading": "asoko no koto",
+        "gloss": "about that place"
+      },
+      {
+        "text": "は忘れたいんだがな。",
+        "reading": "wa wasuretai n da ga na",
+        "gloss": "I'd like to forget"
+      },
+      {
+        "text": "（ぶるるっ）",
+        "reading": "bururu",
+        "gloss": "*shudder*"
+      }
+    ]
+  },
+  "Kent#8": {
+    "japanese": "親切にどうも。うちの家族が気にいるだろう。",
+    "english": "That's kind of you. My family will like it.",
+    "segments": [
+      {
+        "text": "親切にどうも。",
+        "reading": "shinsetsu ni dōmo",
+        "gloss": "thanks for your kindness"
+      },
+      {
+        "text": "うち",
+        "reading": "uchi",
+        "gloss": "my"
+      },
+      {
+        "text": "の家族",
+        "reading": "no kazoku",
+        "gloss": "family"
+      },
+      {
+        "text": "が気にいるだろう。",
+        "reading": "ga ki ni iru darō",
+        "gloss": "will probably like it"
+      }
+    ]
+  },
+  "Krobus#0": {
+    "japanese": "こいつはすんごいプレゼントだねえ。ぼくらの種族にとっては、こいつをもらうのはすごく名誉なことなのさ。",
+    "english": "This is a tremendous gift. Among my people, receiving something like this is a great honour.",
+    "segments": [
+      {
+        "text": "こいつはすんごいプレゼントだねえ。",
+        "reading": "koitsu wa sungoi purezento da nē",
+        "gloss": "this is an amazing present"
+      },
+      {
+        "text": "ぼくら",
+        "reading": "bokura",
+        "gloss": "we"
+      },
+      {
+        "text": "の種族",
+        "reading": "no shuzoku",
+        "gloss": "'s species"
+      },
+      {
+        "text": "にとっては、",
+        "reading": "ni totte wa",
+        "gloss": "for"
+      },
+      {
+        "text": "こいつをもらう",
+        "reading": "koitsu o morau",
+        "gloss": "receiving this"
+      },
+      {
+        "text": "のはすごく名誉なこと",
+        "reading": "no wa sugoku meiyo na koto",
+        "gloss": "is a great honour"
+      },
+      {
+        "text": "なのさ。",
+        "reading": "na no sa",
+        "gloss": "it is"
+      }
+    ]
+  },
+  "Krobus#2": {
+    "japanese": "やあ、どうもありがとう。",
+    "english": "Ah, thank you very much.",
+    "segments": [
+      {
+        "text": "やあ、",
+        "reading": "yā",
+        "gloss": "ah"
+      },
+      {
+        "text": "どうもありがとう。",
+        "reading": "dōmo arigatō",
+        "gloss": "thank you very much"
+      }
+    ]
+  },
+  "Krobus#4": {
+    "japanese": "人間ってのは…おもしろいセンスをしてるんだねえ。",
+    "english": "Humans have... interesting taste.",
+    "segments": [
+      {
+        "text": "人間",
+        "reading": "ningen",
+        "gloss": "humans"
+      },
+      {
+        "text": "ってのは…",
+        "reading": "tte no wa",
+        "gloss": "as for"
+      },
+      {
+        "text": "おもしろいセンス",
+        "reading": "omoshiroi sensu",
+        "gloss": "interesting taste"
+      },
+      {
+        "text": "をしてるんだねえ。",
+        "reading": "o shiteru n da nē",
+        "gloss": "they have"
+      }
+    ]
+  },
+  "Krobus#6": {
+    "japanese": "おっと…えーっと。まあ、いちおうもらっとくよ。",
+    "english": "Oh... um. Well, I'll accept it, I suppose.",
+    "segments": [
+      {
+        "text": "おっと…",
+        "reading": "otto",
+        "gloss": "oh"
+      },
+      {
+        "text": "えーっと。",
+        "reading": "ētto",
+        "gloss": "um"
+      },
+      {
+        "text": "まあ、",
+        "reading": "mā",
+        "gloss": "well"
+      },
+      {
+        "text": "いちおうもらっとくよ。",
+        "reading": "ichiō morattoku yo",
+        "gloss": "I'll take it anyway"
+      }
+    ]
+  },
+  "Krobus#8": {
+    "japanese": "やあ、ありがとう。",
+    "english": "Ah, thank you.",
+    "segments": [
+      {
+        "text": "やあ、",
+        "reading": "yā",
+        "gloss": "ah"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Leah#0": {
+    "japanese": "わあ！ちょうどこういうのが欲しかったんだ！ありがとう！",
+    "english": "Wow! This is exactly what I wanted! Thank you!",
+    "segments": [
+      {
+        "text": "わあ！",
+        "reading": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "ちょうどこういうの",
+        "reading": "chōdo kō iu no",
+        "gloss": "exactly this sort of thing"
+      },
+      {
+        "text": "が欲しかったんだ！",
+        "reading": "ga hoshikatta n da",
+        "gloss": "is what I wanted"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Leah#2": {
+    "japanese": "わあ、すっごく気に入っちゃった！ありがとう！",
+    "english": "Wow, I really love it! Thank you!",
+    "segments": [
+      {
+        "text": "わあ、",
+        "reading": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "すっごく気に入っちゃった！",
+        "reading": "suggoku ki ni itchatta",
+        "gloss": "I really took to it"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Leah#4": {
+    "japanese": "うーん…まあ、感性って人それぞれだよね。",
+    "english": "Hmm... well, everyone has their own taste.",
+    "segments": [
+      {
+        "text": "うーん…",
+        "reading": "ūn",
+        "gloss": "hmm"
+      },
+      {
+        "text": "まあ、",
+        "reading": "mā",
+        "gloss": "well"
+      },
+      {
+        "text": "感性",
+        "reading": "kansei",
+        "gloss": "sensibility / taste"
+      },
+      {
+        "text": "って人それぞれだよね。",
+        "reading": "tte hito sorezore da yo ne",
+        "gloss": "differs from person to person"
+      }
+    ]
+  },
+  "Leah#6": {
+    "japanese": "ねえ、これ、プレゼントとしては最悪じゃない？",
+    "english": "Hey, isn't this about the worst present going?",
+    "segments": [
+      {
+        "text": "ねえ、",
+        "reading": "nē",
+        "gloss": "hey"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "プレゼントとしては",
+        "reading": "purezento to shite wa",
+        "gloss": "as a present"
+      },
+      {
+        "text": "最悪じゃない？",
+        "reading": "saiaku ja nai",
+        "gloss": "isn't it the worst"
+      }
+    ]
+  },
+  "Leah#8": {
+    "japanese": "ありがとう。",
+    "english": "Thank you.",
+    "segments": [
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Leo#0": {
+    "japanese": "これ大好きなんだ。巣に持って帰るよ。",
+    "english": "I love this. I'll take it back to my nest.",
+    "segments": [
+      {
+        "text": "これ",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "大好きなんだ。",
+        "reading": "daisuki na n da",
+        "gloss": "I love"
+      },
+      {
+        "text": "巣",
+        "reading": "su",
+        "gloss": "nest"
+      },
+      {
+        "text": "に持って帰るよ。",
+        "reading": "ni motte kaeru yo",
+        "gloss": "I'll take it back to"
+      }
+    ]
+  },
+  "Leo#2": {
+    "japanese": "本当に？とってもいいものだね…",
+    "english": "Really? This is such a nice thing...",
+    "segments": [
+      {
+        "text": "本当に？",
+        "reading": "hontō ni",
+        "gloss": "really"
+      },
+      {
+        "text": "とってもいいものだね…",
+        "reading": "tottemo ii mono da ne",
+        "gloss": "it's such a nice thing"
+      }
+    ]
+  },
+  "Leo#4": {
+    "japanese": "うーん…これは食べられるのかな…",
+    "english": "Hmm... I wonder if I can eat this...",
+    "segments": [
+      {
+        "text": "うーん…",
+        "reading": "ūn",
+        "gloss": "hmm"
+      },
+      {
+        "text": "これは食べられるのかな…",
+        "reading": "kore wa taberareru no ka na",
+        "gloss": "can this be eaten, I wonder"
+      }
+    ]
+  },
+  "Leo#6": {
+    "japanese": "（クンクン）（クンクン）…何でこれをボクに？埋めておけばいいの？",
+    "english": "*Sniff* *sniff*... why are you giving me this? Should I bury it?",
+    "segments": [
+      {
+        "text": "（クンクン）",
+        "reading": "kunkun",
+        "gloss": "*sniff*"
+      },
+      {
+        "text": "（クンクン）…",
+        "reading": "kunkun",
+        "gloss": "*sniff*"
+      },
+      {
+        "text": "何でこれ",
+        "reading": "nande kore",
+        "gloss": "why this"
+      },
+      {
+        "text": "をボク",
+        "reading": "o boku",
+        "gloss": "to me"
+      },
+      {
+        "text": "に？",
+        "reading": "ni",
+        "gloss": "to"
+      },
+      {
+        "text": "埋めておけばいいの？",
+        "reading": "umete okeba ii no",
+        "gloss": "should I bury it"
+      }
+    ]
+  },
+  "Leo#8": {
+    "japanese": "贈り物は受け取ったよ。",
+    "english": "I accept your gift.",
+    "segments": [
+      {
+        "text": "贈り物",
+        "reading": "okurimono",
+        "gloss": "gift"
+      },
+      {
+        "text": "は受け取ったよ。",
+        "reading": "wa uketotta yo",
+        "gloss": "I have received"
+      }
+    ]
+  },
+  "Lewis#0": {
+    "japanese": "おお、こいつは好物なんだ！ありがとう！",
+    "english": "Oh, this is my favourite! Thank you!",
+    "segments": [
+      {
+        "text": "おお、",
+        "reading": "ō",
+        "gloss": "oh"
+      },
+      {
+        "text": "こいつは好物なんだ！",
+        "reading": "koitsu wa kōbutsu na n da",
+        "gloss": "this is my favourite"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Lewis#2": {
+    "japanese": "ありがとう、気に入ったよ！",
+    "english": "Thank you, I like it!",
+    "segments": [
+      {
+        "text": "ありがとう、",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "気に入ったよ！",
+        "reading": "ki ni itta yo",
+        "gloss": "I liked it"
+      }
+    ]
+  },
+  "Lewis#4": {
+    "japanese": "あー、気もちだけ受けとっておくよ…",
+    "english": "Ah, I'll take the thought, at least...",
+    "segments": [
+      {
+        "text": "あー、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "気もちだけ",
+        "reading": "kimochi dake",
+        "gloss": "just the sentiment"
+      },
+      {
+        "text": "受けとっておくよ…",
+        "reading": "uketotte oku yo",
+        "gloss": "I'll accept"
+      }
+    ]
+  },
+  "Lewis#6": {
+    "japanese": "気分が悪くなるな。なんてひどいプレゼントなんだ。",
+    "english": "This makes me feel ill. What a dreadful present.",
+    "segments": [
+      {
+        "text": "気分が悪くなるな。",
+        "reading": "kibun ga waruku naru na",
+        "gloss": "it makes me feel unwell"
+      },
+      {
+        "text": "なんてひどいプレゼントなんだ。",
+        "reading": "nante hidoi purezento na n da",
+        "gloss": "what a dreadful present"
+      }
+    ]
+  },
+  "Lewis#8": {
+    "japanese": "どうも、親切にありがと。",
+    "english": "Thanks, that's kind of you.",
+    "segments": [
+      {
+        "text": "どうも、",
+        "reading": "dōmo",
+        "gloss": "thanks"
+      },
+      {
+        "text": "親切にありがと。",
+        "reading": "shinsetsu ni arigato",
+        "gloss": "thank you for your kindness"
+      }
+    ]
+  },
+  "Linus#0": {
+    "japanese": "すばらしい！ああ、最高の気分だよ。きみのおかげだね。",
+    "english": "Wonderful! Ah, I feel marvellous. That's thanks to you.",
+    "segments": [
+      {
+        "text": "すばらしい！",
+        "reading": "subarashii",
+        "gloss": "wonderful"
+      },
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "最高の気分だよ。",
+        "reading": "saikō no kibun da yo",
+        "gloss": "I feel wonderful"
+      },
+      {
+        "text": "きみ",
+        "reading": "kimi",
+        "gloss": "you"
+      },
+      {
+        "text": "のおかげだね。",
+        "reading": "no okage da ne",
+        "gloss": "it's thanks to"
+      }
+    ]
+  },
+  "Linus#2": {
+    "japanese": "すばらしいプレゼントをありがとう！",
+    "english": "Thank you for such a wonderful present!",
+    "segments": [
+      {
+        "text": "すばらしいプレゼント",
+        "reading": "subarashii purezento",
+        "gloss": "a wonderful present"
+      },
+      {
+        "text": "をありがとう！",
+        "reading": "o arigatō",
+        "gloss": "thank you for"
+      }
+    ]
+  },
+  "Linus#4": {
+    "japanese": "うーん…悪いけど、どうもしっくりこないな。",
+    "english": "Hmm... sorry, but it doesn't quite sit right with me.",
+    "segments": [
+      {
+        "text": "うーん…",
+        "reading": "ūn",
+        "gloss": "hmm"
+      },
+      {
+        "text": "悪いけど、",
+        "reading": "warui kedo",
+        "gloss": "sorry, but"
+      },
+      {
+        "text": "どうもしっくりこないな。",
+        "reading": "dōmo shikkuri konai na",
+        "gloss": "it doesn't quite fit"
+      }
+    ]
+  },
+  "Linus#6": {
+    "japanese": "なんでこんなものを渡そうと？こんなテントに住んでるなら、ゴミが好きだろうとでも思ったのかい？最悪だよ。",
+    "english": "Why would you hand me this? Do you think I like rubbish just because I live in a tent? That's awful.",
+    "segments": [
+      {
+        "text": "なんでこんなもの",
+        "reading": "nande konna mono",
+        "gloss": "why such a thing"
+      },
+      {
+        "text": "を渡そうと？",
+        "reading": "o watasō to",
+        "gloss": "would you hand over"
+      },
+      {
+        "text": "こんなテント",
+        "reading": "konna tento",
+        "gloss": "a tent like this"
+      },
+      {
+        "text": "に住んでるなら、",
+        "reading": "ni sunderu nara",
+        "gloss": "if I live in"
+      },
+      {
+        "text": "ゴミ",
+        "reading": "gomi",
+        "gloss": "rubbish"
+      },
+      {
+        "text": "が好きだろう",
+        "reading": "ga suki darō",
+        "gloss": "I must like"
+      },
+      {
+        "text": "とでも思ったのかい？",
+        "reading": "to demo omotta no kai",
+        "gloss": "did you perhaps think"
+      },
+      {
+        "text": "最悪だよ。",
+        "reading": "saiaku da yo",
+        "gloss": "that's awful"
+      }
+    ]
+  },
+  "Linus#8": {
+    "japanese": "プレゼントかい？ステキなものをありがとう。",
+    "english": "A present? Thank you for something so lovely.",
+    "segments": [
+      {
+        "text": "プレゼントかい？",
+        "reading": "purezento kai",
+        "gloss": "a present"
+      },
+      {
+        "text": "ステキなもの",
+        "reading": "suteki na mono",
+        "gloss": "something lovely"
+      },
+      {
+        "text": "をありがとう。",
+        "reading": "o arigatō",
+        "gloss": "thank you for"
+      }
+    ]
+  },
+  "Marnie#0": {
+    "japanese": "わあ、このプレゼント最高！ありがとう！！",
+    "english": "Wow, what a great present! Thanks!!",
+    "segments": [
+      {
+        "text": "わあ、",
+        "reading": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "このプレゼント最高！",
+        "reading": "kono purezento saikō",
+        "gloss": "this present is the best"
+      },
+      {
+        "text": "ありがとう！！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Marnie#2": {
+    "japanese": "ありがとう！",
+    "english": "Thank you!",
+    "segments": [
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Marnie#4": {
+    "japanese": "えっ…いちおうもらっておくね。",
+    "english": "Oh... I'll take it, I suppose.",
+    "segments": [
+      {
+        "text": "えっ…",
+        "reading": "e",
+        "gloss": "oh"
+      },
+      {
+        "text": "いちおうもらっておくね。",
+        "reading": "ichiō moratte oku ne",
+        "gloss": "I'll take it anyway"
+      }
+    ]
+  },
+  "Marnie#6": {
+    "japanese": "これ、なんの役にも立たないよね。なんでくれたの？",
+    "english": "This is no use at all. Why give it to me?",
+    "segments": [
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "なんの役にも立たないよね。",
+        "reading": "nan no yaku ni mo tatanai yo ne",
+        "gloss": "is no use at all"
+      },
+      {
+        "text": "なんでくれたの？",
+        "reading": "nande kureta no",
+        "gloss": "why did you give it"
+      }
+    ]
+  },
+  "Marnie#8": {
+    "japanese": "ありがとう！すてきだね。",
+    "english": "Thank you! This looks lovely.",
+    "segments": [
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "すてきだね。",
+        "reading": "suteki da ne",
+        "gloss": "that's lovely"
+      }
+    ]
+  },
+  "Maru#0": {
+    "japanese": "これって…？えっ、いいの、@！すごい、奇跡みたい！",
+    "english": "Is this...? Oh, really, @! Amazing — it's like a miracle!",
+    "segments": [
+      {
+        "text": "これって…？",
+        "reading": "kore tte",
+        "gloss": "is this"
+      },
+      {
+        "text": "えっ、",
+        "reading": "e",
+        "gloss": "oh"
+      },
+      {
+        "text": "いいの、",
+        "reading": "ii no",
+        "gloss": "is it all right"
+      },
+      {
+        "text": "@！",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "すごい、",
+        "reading": "sugoi",
+        "gloss": "amazing"
+      },
+      {
+        "text": "奇跡みたい！",
+        "reading": "kiseki mitai",
+        "gloss": "like a miracle"
+      }
+    ]
+  },
+  "Maru#2": {
+    "japanese": "このプレゼント、すっごいね！ありがとう！",
+    "english": "What a fantastic present! Thank you!",
+    "segments": [
+      {
+        "text": "このプレゼント、",
+        "reading": "kono purezento",
+        "gloss": "this present"
+      },
+      {
+        "text": "すっごいね！",
+        "reading": "suggoi ne",
+        "gloss": "is amazing"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Maru#4": {
+    "japanese": "えっ…これ、わたしに？そう、じゃあそのへんにおいとくね…",
+    "english": "Oh... this, for me? Right, I'll put it over there then...",
+    "segments": [
+      {
+        "text": "えっ…",
+        "reading": "e",
+        "gloss": "oh"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "わたし",
+        "reading": "watashi",
+        "gloss": "me"
+      },
+      {
+        "text": "に？",
+        "reading": "ni",
+        "gloss": "for"
+      },
+      {
+        "text": "そう、",
+        "reading": "sō",
+        "gloss": "I see"
+      },
+      {
+        "text": "じゃあそのへんにおいとくね…",
+        "reading": "jā sono hen ni oitoku ne",
+        "gloss": "then I'll leave it around there"
+      }
+    ]
+  },
+  "Maru#6": {
+    "japanese": "うえっ！わたしがこんなの気にいると思ったの？",
+    "english": "Ugh! Did you think I'd like this?",
+    "segments": [
+      {
+        "text": "うえっ！",
+        "reading": "ue",
+        "gloss": "ugh"
+      },
+      {
+        "text": "わたし",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "がこんなの",
+        "reading": "ga konna no",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "気にいると思ったの？",
+        "reading": "ki ni iru to omotta no",
+        "gloss": "did you think I'd like"
+      }
+    ]
+  },
+  "Maru#8": {
+    "japanese": "ありがとう。",
+    "english": "Thanks.",
+    "segments": [
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Pam#0": {
+    "japanese": "おいおい！こいつは上モノじゃないか。まったく、ありがとよ、若いの！",
+    "english": "Hey, hey! Now that's the good stuff. Thanks a lot, kid!",
+    "segments": [
+      {
+        "text": "おいおい！",
+        "reading": "oi oi",
+        "gloss": "hey hey"
+      },
+      {
+        "text": "こいつは上モノじゃないか。",
+        "reading": "koitsu wa jōmono ja nai ka",
+        "gloss": "isn't this the good stuff"
+      },
+      {
+        "text": "まったく、",
+        "reading": "mattaku",
+        "gloss": "honestly"
+      },
+      {
+        "text": "ありがとよ、",
+        "reading": "arigato yo",
+        "gloss": "thanks"
+      },
+      {
+        "text": "若いの！",
+        "reading": "wakai no",
+        "gloss": "young one"
+      }
+    ]
+  },
+  "Pam#2": {
+    "japanese": "やるじゃないか、若いの。ありがとよ！",
+    "english": "You did well with this one, kid. Thanks!",
+    "segments": [
+      {
+        "text": "やるじゃないか、",
+        "reading": "yaru ja nai ka",
+        "gloss": "you've done well"
+      },
+      {
+        "text": "若いの。",
+        "reading": "wakai no",
+        "gloss": "young one"
+      },
+      {
+        "text": "ありがとよ！",
+        "reading": "arigato yo",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Pam#4": {
+    "japanese": "あたしにゃ合わんね。",
+    "english": "This isn't my thing.",
+    "segments": [
+      {
+        "text": "あたしにゃ",
+        "reading": "atashi nya",
+        "gloss": "for me"
+      },
+      {
+        "text": "合わんね。",
+        "reading": "awan ne",
+        "gloss": "it doesn't suit"
+      }
+    ]
+  },
+  "Pam#6": {
+    "japanese": "なんだい、このシロモノは？最低じゃないか。$u#$e#（ったく、なにかの冗談かい？）",
+    "english": "What is this thing? It's the worst.$u#$e#(Honestly, is this some kind of joke?)",
+    "segments": [
+      {
+        "text": "なんだい、",
+        "reading": "nan dai",
+        "gloss": "what is it"
+      },
+      {
+        "text": "このシロモノは？",
+        "reading": "kono shiromono wa",
+        "gloss": "this article"
+      },
+      {
+        "text": "最低じゃないか。$u#$e#",
+        "reading": "saitei ja nai ka",
+        "gloss": "isn't it the worst"
+      },
+      {
+        "text": "（ったく、",
+        "reading": "ttaku",
+        "gloss": "honestly"
+      },
+      {
+        "text": "なにかの冗談かい？）",
+        "reading": "nanika no jōdan kai",
+        "gloss": "is this some kind of joke"
+      }
+    ]
+  },
+  "Pam#8": {
+    "japanese": "ありがとよ、若いの。",
+    "english": "Thanks, kid.",
+    "segments": [
+      {
+        "text": "ありがとよ、",
+        "reading": "arigato yo",
+        "gloss": "thanks"
+      },
+      {
+        "text": "若いの。",
+        "reading": "wakai no",
+        "gloss": "young one"
+      }
+    ]
+  },
+  "Penny#0": {
+    "japanese": "ありがとう！これ、大好きなの！",
+    "english": "Thank you! I really love this!",
+    "segments": [
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "大好きなの！",
+        "reading": "daisuki na no",
+        "gloss": "I love"
+      }
+    ]
+  },
+  "Penny#2": {
+    "japanese": "ありがとう！このプレゼント、とってもステキ。",
+    "english": "Thank you! This present is really lovely.",
+    "segments": [
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "このプレゼント、",
+        "reading": "kono purezento",
+        "gloss": "this present"
+      },
+      {
+        "text": "とってもステキ。",
+        "reading": "tottemo suteki",
+        "gloss": "is really lovely"
+      }
+    ]
+  },
+  "Penny#4": {
+    "japanese": "えっと…これ、わたしに？…ありがとう。",
+    "english": "Um... this, for me? ...Thank you.",
+    "segments": [
+      {
+        "text": "えっと…",
+        "reading": "etto",
+        "gloss": "um"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "わたし",
+        "reading": "watashi",
+        "gloss": "me"
+      },
+      {
+        "text": "に？",
+        "reading": "ni",
+        "gloss": "for"
+      },
+      {
+        "text": "…ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Penny#6": {
+    "japanese": "うわ…ごめん、わたし、これ大キライなの。",
+    "english": "Ugh... sorry, but I really hate this.",
+    "segments": [
+      {
+        "text": "うわ…",
+        "reading": "uwa",
+        "gloss": "ugh"
+      },
+      {
+        "text": "ごめん、",
+        "reading": "gomen",
+        "gloss": "sorry"
+      },
+      {
+        "text": "わたし、",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "これ大キライなの。",
+        "reading": "kore daikirai na no",
+        "gloss": "hate this"
+      }
+    ]
+  },
+  "Penny#8": {
+    "japanese": "ありがとう。ステキなプレゼントだね。",
+    "english": "Thank you. That's a lovely present.",
+    "segments": [
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "ステキなプレゼントだね。",
+        "reading": "suteki na purezento da ne",
+        "gloss": "that's a lovely present"
+      }
+    ]
+  },
+  "Pierre#0": {
+    "japanese": "ああ、これ大好きなんですよ！ありがとうございます！",
+    "english": "Ah, I love this! Thank you very much!",
+    "segments": [
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "これ大好きなんですよ！",
+        "reading": "kore daisuki na n desu yo",
+        "gloss": "I love this"
+      },
+      {
+        "text": "ありがとうございます！",
+        "reading": "arigatō gozaimasu",
+        "gloss": "thank you very much"
+      }
+    ]
+  },
+  "Pierre#2": {
+    "japanese": "ご親切にありがとうございます。これ、好きなんですよ。",
+    "english": "Thank you for your kindness. I like this.",
+    "segments": [
+      {
+        "text": "ご親切にありがとうございます。",
+        "reading": "go-shinsetsu ni arigatō gozaimasu",
+        "gloss": "thank you for your kindness"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "好きなんですよ。",
+        "reading": "suki na n desu yo",
+        "gloss": "I like"
+      }
+    ]
+  },
+  "Pierre#4": {
+    "japanese": "これは…あまり好みじゃないですね…",
+    "english": "This... isn't quite to my taste...",
+    "segments": [
+      {
+        "text": "これは…",
+        "reading": "kore wa",
+        "gloss": "this"
+      },
+      {
+        "text": "あまり好みじゃないですね…",
+        "reading": "amari konomi ja nai desu ne",
+        "gloss": "isn't much to my taste"
+      }
+    ]
+  },
+  "Pierre#6": {
+    "japanese": "こいつはもう二度と持ってこないでください、頼みます。",
+    "english": "Please, never bring me this again.",
+    "segments": [
+      {
+        "text": "こいつはもう二度と",
+        "reading": "koitsu wa mō nido to",
+        "gloss": "this, never again"
+      },
+      {
+        "text": "持ってこないでください、",
+        "reading": "motte konaide kudasai",
+        "gloss": "please don't bring"
+      },
+      {
+        "text": "頼みます。",
+        "reading": "tanomimasu",
+        "gloss": "I beg you"
+      }
+    ]
+  },
+  "Pierre#8": {
+    "japanese": "プレゼントですか？ありがとうございます！",
+    "english": "A present? Thank you very much!",
+    "segments": [
+      {
+        "text": "プレゼントですか？",
+        "reading": "purezento desu ka",
+        "gloss": "is it a present"
+      },
+      {
+        "text": "ありがとうございます！",
+        "reading": "arigatō gozaimasu",
+        "gloss": "thank you very much"
+      }
+    ]
+  },
+  "Robin#0": {
+    "japanese": "えっ、もらっていいの？わあ、これほんと大好きなんだ！！",
+    "english": "Oh, may I really have it? Wow, I absolutely love this!!",
+    "segments": [
+      {
+        "text": "えっ、",
+        "reading": "e",
+        "gloss": "oh"
+      },
+      {
+        "text": "もらっていいの？",
+        "reading": "moratte ii no",
+        "gloss": "may I have it"
+      },
+      {
+        "text": "わあ、",
+        "reading": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "これ",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "ほんと大好きなんだ！！",
+        "reading": "honto daisuki na n da",
+        "gloss": "I really love"
+      }
+    ]
+  },
+  "Robin#2": {
+    "japanese": "ありがと！ステキなプレゼントだね！",
+    "english": "Thanks! What a lovely present!",
+    "segments": [
+      {
+        "text": "ありがと！",
+        "reading": "arigato",
+        "gloss": "thanks"
+      },
+      {
+        "text": "ステキなプレゼントだね！",
+        "reading": "suteki na purezento da ne",
+        "gloss": "what a lovely present"
+      }
+    ]
+  },
+  "Robin#4": {
+    "japanese": "えっと…なんでわたしに？",
+    "english": "Um... why give it to me?",
+    "segments": [
+      {
+        "text": "えっと…",
+        "reading": "etto",
+        "gloss": "um"
+      },
+      {
+        "text": "なんでわたし",
+        "reading": "nande watashi",
+        "gloss": "why me"
+      },
+      {
+        "text": "に？",
+        "reading": "ni",
+        "gloss": "to"
+      }
+    ]
+  },
+  "Robin#6": {
+    "japanese": "はあ？…うわっ、最悪！",
+    "english": "Huh? ...Ugh, that's the worst!",
+    "segments": [
+      {
+        "text": "はあ？…",
+        "reading": "hā",
+        "gloss": "huh"
+      },
+      {
+        "text": "うわっ、",
+        "reading": "uwa",
+        "gloss": "ugh"
+      },
+      {
+        "text": "最悪！",
+        "reading": "saiaku",
+        "gloss": "the worst"
+      }
+    ]
+  },
+  "Robin#8": {
+    "japanese": "ありがとう。なんだか役に立ちそうだね。",
+    "english": "Thank you. This might come in handy.",
+    "segments": [
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "なんだか",
+        "reading": "nandaka",
+        "gloss": "somehow"
+      },
+      {
+        "text": "役に立ちそうだね。",
+        "reading": "yaku ni tachisō da ne",
+        "gloss": "it looks useful"
+      }
+    ]
+  },
+  "Sam#0": {
+    "japanese": "よっしゃあ！これ、めっちゃ好きなんだよ！",
+    "english": "Yesss! I really love this stuff!",
+    "segments": [
+      {
+        "text": "よっしゃあ！",
+        "reading": "yosshā",
+        "gloss": "yesss"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "めっちゃ好きなんだよ！",
+        "reading": "metcha suki na n da yo",
+        "gloss": "I really love"
+      }
+    ]
+  },
+  "Sam#2": {
+    "japanese": "ありがとよ！すごく気に入ったぜ。",
+    "english": "Thanks! I really like it.",
+    "segments": [
+      {
+        "text": "ありがとよ！",
+        "reading": "arigato yo",
+        "gloss": "thanks"
+      },
+      {
+        "text": "すごく気に入ったぜ。",
+        "reading": "sugoku ki ni itta ze",
+        "gloss": "I really took to it"
+      }
+    ]
+  },
+  "Sam#4": {
+    "japanese": "へえ…こいつは…おもしろいな。",
+    "english": "Huh... this is... interesting.",
+    "segments": [
+      {
+        "text": "へえ…",
+        "reading": "hē",
+        "gloss": "huh"
+      },
+      {
+        "text": "こいつは…",
+        "reading": "koitsu wa",
+        "gloss": "this is"
+      },
+      {
+        "text": "おもしろいな。",
+        "reading": "omoshiroi na",
+        "gloss": "interesting"
+      }
+    ]
+  },
+  "Sam#6": {
+    "japanese": "おい、まさかイヤがらせじゃないよな？",
+    "english": "Hey, this isn't some kind of wind-up, is it?",
+    "segments": [
+      {
+        "text": "おい、",
+        "reading": "oi",
+        "gloss": "hey"
+      },
+      {
+        "text": "まさかイヤがらせじゃないよな？",
+        "reading": "masaka iyagarase ja nai yo na",
+        "gloss": "surely this isn't harassment"
+      }
+    ]
+  },
+  "Sam#8": {
+    "japanese": "オレにくれんの？ありがとうございます！",
+    "english": "You got that for me? Thank you!",
+    "segments": [
+      {
+        "text": "オレ",
+        "reading": "ore",
+        "gloss": "me"
+      },
+      {
+        "text": "にくれんの？",
+        "reading": "ni kuren no",
+        "gloss": "are you giving it to"
+      },
+      {
+        "text": "ありがとうございます！",
+        "reading": "arigatō gozaimasu",
+        "gloss": "thank you very much"
+      }
+    ]
+  },
+  "Sandy#0": {
+    "japanese": "ワァオ！あの谷のお土産、ほんとうに大好きなの。すっごくうれしい～！",
+    "english": "Wow! I absolutely love gifts from the valley. I'm so happy!",
+    "segments": [
+      {
+        "text": "ワァオ！",
+        "reading": "wāo",
+        "gloss": "wow"
+      },
+      {
+        "text": "あの谷",
+        "reading": "ano tani",
+        "gloss": "that valley"
+      },
+      {
+        "text": "のお土産、",
+        "reading": "no o-miyage",
+        "gloss": "'s souvenirs"
+      },
+      {
+        "text": "ほんとうに大好きなの。",
+        "reading": "hontō ni daisuki na no",
+        "gloss": "I really love"
+      },
+      {
+        "text": "すっごくうれしい～！",
+        "reading": "suggoku ureshii",
+        "gloss": "I'm so happy"
+      }
+    ]
+  },
+  "Sandy#2": {
+    "japanese": "わあ、ステキだね。ありがとう！",
+    "english": "Wow, lovely. Thank you!",
+    "segments": [
+      {
+        "text": "わあ、",
+        "reading": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "ステキだね。",
+        "reading": "suteki da ne",
+        "gloss": "that's lovely"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Sandy#4": {
+    "japanese": "えっ…えーっと。ありがと。",
+    "english": "Oh... um. Thanks.",
+    "segments": [
+      {
+        "text": "えっ…",
+        "reading": "e",
+        "gloss": "oh"
+      },
+      {
+        "text": "えーっと。",
+        "reading": "ētto",
+        "gloss": "um"
+      },
+      {
+        "text": "ありがと。",
+        "reading": "arigato",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Sandy#6": {
+    "japanese": "（クンクン）…なんなの、これ？",
+    "english": "*Sniff*... what is this?",
+    "segments": [
+      {
+        "text": "（クンクン）…",
+        "reading": "kunkun",
+        "gloss": "*sniff*"
+      },
+      {
+        "text": "なんなの、",
+        "reading": "nan na no",
+        "gloss": "what is it"
+      },
+      {
+        "text": "これ？",
+        "reading": "kore",
+        "gloss": "this"
+      }
+    ]
+  },
+  "Sandy#8": {
+    "japanese": "わたしにくれるの？ ありがとね！",
+    "english": "This is for me? Thank you!",
+    "segments": [
+      {
+        "text": "わたし",
+        "reading": "watashi",
+        "gloss": "me"
+      },
+      {
+        "text": "にくれるの？ ",
+        "reading": "ni kureru no",
+        "gloss": "are you giving it to"
+      },
+      {
+        "text": "ありがとね！",
+        "reading": "arigato ne",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Sebastian#0": {
+    "japanese": "これ、すごく好きなんだ。どうしてわかったんだ？",
+    "english": "I really love this. How did you know?",
+    "segments": [
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "すごく好きなんだ。",
+        "reading": "sugoku suki na n da",
+        "gloss": "I really love"
+      },
+      {
+        "text": "どうしてわかったんだ？",
+        "reading": "dōshite wakatta n da",
+        "gloss": "how did you know"
+      }
+    ]
+  },
+  "Sebastian#2": {
+    "japanese": "ありがとう、うれしいよ。",
+    "english": "Thanks, I'm pleased.",
+    "segments": [
+      {
+        "text": "ありがとう、",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "うれしいよ。",
+        "reading": "ureshii yo",
+        "gloss": "I'm glad"
+      }
+    ]
+  },
+  "Sebastian#6": {
+    "japanese": "…これ、キライなんだ。",
+    "english": "...I hate this.",
+    "segments": [
+      {
+        "text": "…これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "キライなんだ。",
+        "reading": "kirai na n da",
+        "gloss": "I hate"
+      }
+    ]
+  },
+  "Sebastian#8": {
+    "japanese": "…ありがとな。",
+    "english": "...Thanks.",
+    "segments": [
+      {
+        "text": "…ありがとな。",
+        "reading": "arigato na",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Shane#0": {
+    "japanese": "えっ、いいの、@！おれの好物がこれだって、どうしてわかったんだ？",
+    "english": "Oh, really, @! How did you know this is my favourite?",
+    "segments": [
+      {
+        "text": "えっ、",
+        "reading": "e",
+        "gloss": "oh"
+      },
+      {
+        "text": "いいの、",
+        "reading": "ii no",
+        "gloss": "is it all right"
+      },
+      {
+        "text": "@！",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "おれの好物",
+        "reading": "ore no kōbutsu",
+        "gloss": "my favourite"
+      },
+      {
+        "text": "がこれだ",
+        "reading": "ga kore da",
+        "gloss": "is this"
+      },
+      {
+        "text": "って、",
+        "reading": "tte",
+        "gloss": "(quoting particle)"
+      },
+      {
+        "text": "どうしてわかったんだ？",
+        "reading": "dōshite wakatta n da",
+        "gloss": "how did you know"
+      }
+    ]
+  },
+  "Shane#2": {
+    "japanese": "おっ、いいねえ！ありがとよ！",
+    "english": "Oh, nice! Thanks!",
+    "segments": [
+      {
+        "text": "おっ、",
+        "reading": "o",
+        "gloss": "oh"
+      },
+      {
+        "text": "いいねえ！",
+        "reading": "ii nē",
+        "gloss": "nice"
+      },
+      {
+        "text": "ありがとよ！",
+        "reading": "arigato yo",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Shane#4": {
+    "japanese": "これ、気に入らねえな。",
+    "english": "I don't like this.",
+    "segments": [
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "気に入らねえな。",
+        "reading": "ki ni iranē na",
+        "gloss": "I don't take to"
+      }
+    ]
+  },
+  "Shane#6": {
+    "japanese": "そんなゴミ、なんでおれによこすんだよ？",
+    "english": "Why are you handing me rubbish like that?",
+    "segments": [
+      {
+        "text": "そんなゴミ、",
+        "reading": "sonna gomi",
+        "gloss": "rubbish like that"
+      },
+      {
+        "text": "なんでおれ",
+        "reading": "nande ore",
+        "gloss": "why me"
+      },
+      {
+        "text": "によこすんだよ？",
+        "reading": "ni yokosu n da yo",
+        "gloss": "are you handing it to"
+      }
+    ]
+  },
+  "Shane#8": {
+    "japanese": "おっ、なんかくれるのか？ありがとうございます！",
+    "english": "Oh, you got me something? Thank you!",
+    "segments": [
+      {
+        "text": "おっ、",
+        "reading": "o",
+        "gloss": "oh"
+      },
+      {
+        "text": "なんかくれるのか？",
+        "reading": "nanka kureru no ka",
+        "gloss": "are you giving me something"
+      },
+      {
+        "text": "ありがとうございます！",
+        "reading": "arigatō gozaimasu",
+        "gloss": "thank you very much"
+      }
+    ]
+  },
+  "Vincent#0": {
+    "japanese": "うわぁ、ありがとう！これ、めちゃくちゃすごいや！",
+    "english": "Wow, thank you! This is absolutely amazing!",
+    "segments": [
+      {
+        "text": "うわぁ、",
+        "reading": "uwā",
+        "gloss": "wow"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "めちゃくちゃすごいや！",
+        "reading": "metchakucha sugoi ya",
+        "gloss": "is incredibly amazing"
+      }
+    ]
+  },
+  "Vincent#2": {
+    "japanese": "ぼくにくれるの？わあ、ありがとう！",
+    "english": "For me? Wow, thank you!",
+    "segments": [
+      {
+        "text": "ぼく",
+        "reading": "boku",
+        "gloss": "me"
+      },
+      {
+        "text": "にくれるの？",
+        "reading": "ni kureru no",
+        "gloss": "are you giving it to"
+      },
+      {
+        "text": "わあ、",
+        "reading": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Vincent#4": {
+    "japanese": "つまんないの…$s",
+    "english": "That's not fun...$s",
+    "segments": [
+      {
+        "text": "つまんないの…$s",
+        "reading": "tsumannai no",
+        "gloss": "it's boring"
+      }
+    ]
+  },
+  "Vincent#6": {
+    "japanese": "うえーっ、なにこれ？$s",
+    "english": "Eww, what is this?$s",
+    "segments": [
+      {
+        "text": "うえーっ、",
+        "reading": "uē",
+        "gloss": "eww"
+      },
+      {
+        "text": "なにこれ？$s",
+        "reading": "nani kore",
+        "gloss": "what is this"
+      }
+    ]
+  },
+  "Vincent#8": {
+    "japanese": "ありがとう！",
+    "english": "Thanks!",
+    "segments": [
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Willy#0": {
+    "japanese": "こいつはいい！ああ、親父がここにいたらなあ。親父もこいつに目がなかったんだ。",
+    "english": "This is good! Ah, if only my old man were here. He was mad about this too.",
+    "segments": [
+      {
+        "text": "こいつはいい！",
+        "reading": "koitsu wa ii",
+        "gloss": "this is good"
+      },
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "親父",
+        "reading": "oyaji",
+        "gloss": "my old man"
+      },
+      {
+        "text": "がここにいたらなあ。",
+        "reading": "ga koko ni itara nā",
+        "gloss": "if only he were here"
+      },
+      {
+        "text": "親父",
+        "reading": "oyaji",
+        "gloss": "my old man"
+      },
+      {
+        "text": "もこいつ",
+        "reading": "mo koitsu",
+        "gloss": "this too"
+      },
+      {
+        "text": "に目がなかったんだ。",
+        "reading": "ni me ga nakatta n da",
+        "gloss": "had no eyes for / was mad about"
+      }
+    ]
+  },
+  "Willy#2": {
+    "japanese": "こいつはいいな。ありがとよ！",
+    "english": "This looks good. Thanks!",
+    "segments": [
+      {
+        "text": "こいつはいいな。",
+        "reading": "koitsu wa ii na",
+        "gloss": "this is good"
+      },
+      {
+        "text": "ありがとよ！",
+        "reading": "arigato yo",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Willy#4": {
+    "japanese": "ふうむ…お前さんはこういうのが好きなのか、そうか。",
+    "english": "Hmm... so you like this sort of thing, do you.",
+    "segments": [
+      {
+        "text": "ふうむ…",
+        "reading": "fūmu",
+        "gloss": "hmm"
+      },
+      {
+        "text": "お前さん",
+        "reading": "omae-san",
+        "gloss": "you"
+      },
+      {
+        "text": "はこういうの",
+        "reading": "wa kō iu no",
+        "gloss": "this sort of thing"
+      },
+      {
+        "text": "が好きなのか、",
+        "reading": "ga suki na no ka",
+        "gloss": "do you like"
+      },
+      {
+        "text": "そうか。",
+        "reading": "sō ka",
+        "gloss": "I see"
+      }
+    ]
+  },
+  "Willy#6": {
+    "japanese": "…（クンクン）…ふん、撒きエサのバケツにでも入れとくとするかね。",
+    "english": "...*Sniff*... hmph, I suppose I could toss it in the chum bucket.",
+    "segments": [
+      {
+        "text": "…（クンクン）…",
+        "reading": "kunkun",
+        "gloss": "*sniff*"
+      },
+      {
+        "text": "ふん、",
+        "reading": "fun",
+        "gloss": "hmph"
+      },
+      {
+        "text": "撒きエサのバケツ",
+        "reading": "makiesa no baketsu",
+        "gloss": "chum bucket"
+      },
+      {
+        "text": "にでも入れとくとするかね。",
+        "reading": "ni demo iretoku to suru ka ne",
+        "gloss": "I suppose I'll put it in"
+      }
+    ]
+  },
+  "Willy#8": {
+    "japanese": "プレゼントか！ありがと。",
+    "english": "A present! Thanks.",
+    "segments": [
+      {
+        "text": "プレゼントか！",
+        "reading": "purezento ka",
+        "gloss": "a present"
+      },
+      {
+        "text": "ありがと。",
+        "reading": "arigato",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Wizard#0": {
+    "japanese": "おお、強力な神秘のエネルギーが染みこんでいるな…我が研究にとても役立ちそうだ。感謝するぞ！",
+    "english": "Ah, potent arcane energy is steeped in this... most useful for my studies. My thanks!",
+    "segments": [
+      {
+        "text": "おお、",
+        "reading": "ō",
+        "gloss": "ah"
+      },
+      {
+        "text": "強力な神秘のエネルギー",
+        "reading": "kyōryoku na shinpi no enerugī",
+        "gloss": "potent mystic energy"
+      },
+      {
+        "text": "が染みこんでいるな…",
+        "reading": "ga shimikonde iru na",
+        "gloss": "is steeped in it"
+      },
+      {
+        "text": "我が研究",
+        "reading": "waga kenkyū",
+        "gloss": "my research"
+      },
+      {
+        "text": "にとても役立ちそうだ。",
+        "reading": "ni totemo yakudachisō da",
+        "gloss": "looks very useful for"
+      },
+      {
+        "text": "感謝するぞ！",
+        "reading": "kansha suru zo",
+        "gloss": "I thank you"
+      }
+    ]
+  },
+  "Wizard#2": {
+    "japanese": "感謝する。この品が備えている特性は非常に興味ぶかいな。",
+    "english": "My thanks. The properties this item possesses are most interesting.",
+    "segments": [
+      {
+        "text": "感謝する。",
+        "reading": "kansha suru",
+        "gloss": "I thank you"
+      },
+      {
+        "text": "この品",
+        "reading": "kono shina",
+        "gloss": "this item"
+      },
+      {
+        "text": "が備えている特性",
+        "reading": "ga sonaete iru tokusei",
+        "gloss": "the properties it possesses"
+      },
+      {
+        "text": "は非常に興味ぶかいな。",
+        "reading": "wa hijō ni kyōmibukai na",
+        "gloss": "are extremely interesting"
+      }
+    ]
+  },
+  "Wizard#4": {
+    "japanese": "これは？…ふむ、炎のなかに投げ込んで、なにが起きるか見てみるか…",
+    "english": "This? ...Hmm, shall I cast it into the flames and see what happens...",
+    "segments": [
+      {
+        "text": "これは？…",
+        "reading": "kore wa",
+        "gloss": "this"
+      },
+      {
+        "text": "ふむ、",
+        "reading": "fumu",
+        "gloss": "hmm"
+      },
+      {
+        "text": "炎のなか",
+        "reading": "honō no naka",
+        "gloss": "into the flames"
+      },
+      {
+        "text": "に投げ込んで、",
+        "reading": "ni nagekonde",
+        "gloss": "casting it"
+      },
+      {
+        "text": "なにが起きるか",
+        "reading": "nani ga okiru ka",
+        "gloss": "what happens"
+      },
+      {
+        "text": "見てみるか…",
+        "reading": "mite miru ka",
+        "gloss": "shall I see"
+      }
+    ]
+  },
+  "Wizard#6": {
+    "japanese": "ぐぬぬ…つまらぬ俗世の品ではないか。今後は、このようなもので吾輩をわずらわせるのは遠慮してくれたまえ。",
+    "english": "Grr... this is a trifling, mundane thing. Kindly refrain from troubling me with such items in future.",
+    "segments": [
+      {
+        "text": "ぐぬぬ…",
+        "reading": "gununu",
+        "gloss": "grr"
+      },
+      {
+        "text": "つまらぬ俗世の品",
+        "reading": "tsumaranu zokuse no shina",
+        "gloss": "a trifling worldly item"
+      },
+      {
+        "text": "ではないか。",
+        "reading": "de wa nai ka",
+        "gloss": "is it not"
+      },
+      {
+        "text": "今後は、",
+        "reading": "kongo wa",
+        "gloss": "in future"
+      },
+      {
+        "text": "このようなもの",
+        "reading": "kono yō na mono",
+        "gloss": "things like this"
+      },
+      {
+        "text": "で吾輩",
+        "reading": "de wagahai",
+        "gloss": "me, with"
+      },
+      {
+        "text": "をわずらわせるのは",
+        "reading": "o wazurawaseru no wa",
+        "gloss": "troubling"
+      },
+      {
+        "text": "遠慮してくれたまえ。",
+        "reading": "enryo shite kure tamae",
+        "gloss": "kindly refrain from"
+      }
+    ]
+  },
+  "Wizard#8": {
+    "japanese": "感謝する。きっと役立つことだろう。",
+    "english": "My thanks. It will surely prove useful.",
+    "segments": [
+      {
+        "text": "感謝する。",
+        "reading": "kansha suru",
+        "gloss": "I thank you"
+      },
+      {
+        "text": "きっと役立つことだろう。",
+        "reading": "kitto yakudatsu koto darō",
+        "gloss": "it will surely prove useful"
+      }
+    ]
+  }
+}
