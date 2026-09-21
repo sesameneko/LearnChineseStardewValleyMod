@@ -1,0 +1,2893 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Data_Quests.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "1#1": {
+    "japanese": "魔術師のもとへ",
+    "english": "To the wizard",
+    "segments": [
+      {
+        "text": "魔術師",
+        "reading": "majutsushi",
+        "gloss": "wizard"
+      },
+      {
+        "text": "のもとへ",
+        "reading": "no moto e",
+        "gloss": "to the place of"
+      }
+    ]
+  },
+  "1#2": {
+    "japanese": "谷の魔術師から手紙がとどいた。どうやら彼は、公民館で見たものについてなにか知っているようだ。",
+    "english": "A letter arrived from the valley's wizard. He seems to know something about what you saw at the community centre.",
+    "segments": [
+      {
+        "text": "谷",
+        "reading": "tani",
+        "gloss": "valley"
+      },
+      {
+        "text": "の魔術師",
+        "reading": "no majutsushi",
+        "gloss": "'s wizard"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "手紙",
+        "reading": "tegami",
+        "gloss": "letter"
+      },
+      {
+        "text": "がとどいた。",
+        "reading": "ga todoita",
+        "gloss": "arrived"
+      },
+      {
+        "text": "どうやら",
+        "reading": "dōyara",
+        "gloss": "apparently"
+      },
+      {
+        "text": "彼",
+        "reading": "kare",
+        "gloss": "he"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "公民館",
+        "reading": "kōminkan",
+        "gloss": "community centre"
+      },
+      {
+        "text": "で見たもの",
+        "reading": "de mita mono",
+        "gloss": "what you saw at"
+      },
+      {
+        "text": "について",
+        "reading": "ni tsuite",
+        "gloss": "about"
+      },
+      {
+        "text": "なにか",
+        "reading": "nanika",
+        "gloss": "something"
+      },
+      {
+        "text": "知っているようだ。",
+        "reading": "shitte iru yō da",
+        "gloss": "seems to know"
+      }
+    ]
+  },
+  "1#3": {
+    "japanese": "魔術師の塔をおとずれる。",
+    "english": "Visit the wizard's tower.",
+    "segments": [
+      {
+        "text": "魔術師",
+        "reading": "majutsushi",
+        "gloss": "wizard"
+      },
+      {
+        "text": "の塔",
+        "reading": "no tō",
+        "gloss": "'s tower"
+      },
+      {
+        "text": "をおとずれる。",
+        "reading": "o otozureru",
+        "gloss": "visit"
+      }
+    ]
+  },
+  "10#1": {
+    "japanese": "銅の鉱石",
+    "english": "Copper ore",
+    "segments": [
+      {
+        "text": "銅",
+        "reading": "dō",
+        "gloss": "copper"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "鉱石",
+        "reading": "kōseki",
+        "gloss": "ore"
+      }
+    ]
+  },
+  "10#2": {
+    "japanese": "銅鉱石を手にいれた。つかい道はよくわからないが、町の鍛冶屋ならなにか教えてくれるかもしれない。",
+    "english": "You've got a piece of copper ore. You don't really know what it's for, but the town blacksmith might be able to tell you.",
+    "segments": [
+      {
+        "text": "銅鉱石",
+        "reading": "dō kōseki",
+        "gloss": "copper ore"
+      },
+      {
+        "text": "を手にいれた。",
+        "reading": "o te ni ireta",
+        "gloss": "you obtained"
+      },
+      {
+        "text": "つかい道",
+        "reading": "tsukaimichi",
+        "gloss": "use"
+      },
+      {
+        "text": "はよくわからないが、",
+        "reading": "wa yoku wakaranai ga",
+        "gloss": "you don't really know, but"
+      },
+      {
+        "text": "町の鍛冶屋",
+        "reading": "machi no kajiya",
+        "gloss": "the town blacksmith"
+      },
+      {
+        "text": "なら",
+        "reading": "nara",
+        "gloss": "if it's"
+      },
+      {
+        "text": "なにか",
+        "reading": "nanika",
+        "gloss": "something"
+      },
+      {
+        "text": "教えてくれるかもしれない。",
+        "reading": "oshiete kureru kamo shirenai",
+        "gloss": "might tell you"
+      }
+    ]
+  },
+  "10#3": {
+    "japanese": "銅鉱石をクリントの鍛冶屋に持っていく。",
+    "english": "Take the copper ore to Clint's smithy.",
+    "segments": [
+      {
+        "text": "銅鉱石",
+        "reading": "dō kōseki",
+        "gloss": "copper ore"
+      },
+      {
+        "text": "をクリント",
+        "reading": "o Kurinto",
+        "gloss": "to Clint"
+      },
+      {
+        "text": "の鍛冶屋",
+        "reading": "no kajiya",
+        "gloss": "'s smithy"
+      },
+      {
+        "text": "に持っていく。",
+        "reading": "ni motte iku",
+        "gloss": "take it"
+      }
+    ]
+  },
+  "100#1": {
+    "japanese": "ロビンの落としもの",
+    "english": "Robin's lost item",
+    "segments": [
+      {
+        "text": "ロビン",
+        "reading": "Robin",
+        "gloss": "Robin"
+      },
+      {
+        "text": "の落としもの",
+        "reading": "no otoshimono",
+        "gloss": "'s lost item"
+      }
+    ]
+  },
+  "100#2": {
+    "japanese": "ロビンがお気に入りのオノをなくしてしまった。彼女によると、さいごにオノをつかった場所は、マーニーの農園の南側らしい。",
+    "english": "Robin has lost her favourite axe. She says the last place she used it was south of Marnie's ranch.",
+    "segments": [
+      {
+        "text": "ロビン",
+        "reading": "Robin",
+        "gloss": "Robin"
+      },
+      {
+        "text": "がお気に入りのオノ",
+        "reading": "ga o-ki ni iri no ono",
+        "gloss": "her favourite axe"
+      },
+      {
+        "text": "をなくしてしまった。",
+        "reading": "o nakushite shimatta",
+        "gloss": "has lost"
+      },
+      {
+        "text": "彼女によると、",
+        "reading": "kanojo ni yoru to",
+        "gloss": "according to her"
+      },
+      {
+        "text": "さいごに",
+        "reading": "saigo ni",
+        "gloss": "last"
+      },
+      {
+        "text": "オノ",
+        "reading": "ono",
+        "gloss": "axe"
+      },
+      {
+        "text": "をつかった場所",
+        "reading": "o tsukatta basho",
+        "gloss": "the place she used it"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "マーニー",
+        "reading": "Mānī",
+        "gloss": "Marnie"
+      },
+      {
+        "text": "の農園",
+        "reading": "no nōen",
+        "gloss": "'s farm"
+      },
+      {
+        "text": "の南側",
+        "reading": "no minamigawa",
+        "gloss": "'s south side"
+      },
+      {
+        "text": "らしい。",
+        "reading": "rashii",
+        "gloss": "apparently"
+      }
+    ]
+  },
+  "100#3": {
+    "japanese": "ロビンがなくしたオノを見つける。",
+    "english": "Find the axe Robin lost.",
+    "segments": [
+      {
+        "text": "ロビン",
+        "reading": "Robin",
+        "gloss": "Robin"
+      },
+      {
+        "text": "がなくした",
+        "reading": "ga nakushita",
+        "gloss": "that she lost"
+      },
+      {
+        "text": "オノ",
+        "reading": "ono",
+        "gloss": "axe"
+      },
+      {
+        "text": "を見つける。",
+        "reading": "o mitsukeru",
+        "gloss": "find"
+      }
+    ]
+  },
+  "101#1": {
+    "japanese": "ジョディのお願い",
+    "english": "Jodi's request",
+    "segments": [
+      {
+        "text": "ジョディ",
+        "reading": "Jodi",
+        "gloss": "Jodi"
+      },
+      {
+        "text": "のお願い",
+        "reading": "no o-negai",
+        "gloss": "'s request"
+      }
+    ]
+  },
+  "101#2": {
+    "japanese": "ジョディからカリフラワーをたのまれた。あたらしいレシピをためすのに必要らしい。ひとつ持って行ってあげよう。",
+    "english": "Jodi has asked for a cauliflower. She needs it to try out a new recipe. Take her one.",
+    "segments": [
+      {
+        "text": "ジョディ",
+        "reading": "Jodi",
+        "gloss": "Jodi"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "カリフラワー",
+        "reading": "karifurawā",
+        "gloss": "cauliflower"
+      },
+      {
+        "text": "をたのまれた。",
+        "reading": "o tanomareta",
+        "gloss": "you were asked for"
+      },
+      {
+        "text": "あたらしいレシピ",
+        "reading": "atarashii reshipi",
+        "gloss": "a new recipe"
+      },
+      {
+        "text": "をためすのに",
+        "reading": "o tamesu no ni",
+        "gloss": "for trying out"
+      },
+      {
+        "text": "必要らしい。",
+        "reading": "hitsuyō rashii",
+        "gloss": "it's apparently needed"
+      },
+      {
+        "text": "ひとつ",
+        "reading": "hitotsu",
+        "gloss": "one"
+      },
+      {
+        "text": "持って行ってあげよう。",
+        "reading": "motte itte ageyou",
+        "gloss": "let's take her"
+      }
+    ]
+  },
+  "101#3": {
+    "japanese": "ジョディにカリフラワーを持っていく。",
+    "english": "Take Jodi a cauliflower.",
+    "segments": [
+      {
+        "text": "ジョディ",
+        "reading": "Jodi",
+        "gloss": "Jodi"
+      },
+      {
+        "text": "にカリフラワー",
+        "reading": "ni karifurawā",
+        "gloss": "a cauliflower to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "102#1": {
+    "japanese": "町長の「パンツ」",
+    "english": "The mayor's \"shorts\"",
+    "segments": [
+      {
+        "text": "町長",
+        "reading": "chōchō",
+        "gloss": "mayor"
+      },
+      {
+        "text": "の「パンツ」",
+        "reading": "no pantsu",
+        "gloss": "'s \"shorts\""
+      }
+    ]
+  },
+  "102#2": {
+    "japanese": "ルイス町長が彼の「むらさきパンツ」をなくしたらしい。パンツを見つけて、町長に返してあげよう…細心の注意をはらって。",
+    "english": "Mayor Lewis seems to have lost his \"purple shorts\". Find them and return them to him... with the utmost care.",
+    "segments": [
+      {
+        "text": "ルイス町長",
+        "reading": "Ruisu chōchō",
+        "gloss": "Mayor Lewis"
+      },
+      {
+        "text": "が彼の",
+        "reading": "ga kare no",
+        "gloss": "his"
+      },
+      {
+        "text": "「むらさきパンツ」",
+        "reading": "murasaki pantsu",
+        "gloss": "\"purple shorts\""
+      },
+      {
+        "text": "をなくしたらしい。",
+        "reading": "o nakushita rashii",
+        "gloss": "apparently lost"
+      },
+      {
+        "text": "パンツ",
+        "reading": "pantsu",
+        "gloss": "shorts"
+      },
+      {
+        "text": "を見つけて、",
+        "reading": "o mitsukete",
+        "gloss": "finding them"
+      },
+      {
+        "text": "町長",
+        "reading": "chōchō",
+        "gloss": "mayor"
+      },
+      {
+        "text": "に返してあげよう…",
+        "reading": "ni kaeshite ageyou",
+        "gloss": "let's return them to"
+      },
+      {
+        "text": "細心の注意",
+        "reading": "saishin no chūi",
+        "gloss": "the utmost care"
+      },
+      {
+        "text": "をはらって。",
+        "reading": "o haratte",
+        "gloss": "paying"
+      }
+    ]
+  },
+  "102#3": {
+    "japanese": "ルイス町長のむらさきパンツを見つける。",
+    "english": "Find Mayor Lewis's purple shorts.",
+    "segments": [
+      {
+        "text": "ルイス町長",
+        "reading": "Ruisu chōchō",
+        "gloss": "Mayor Lewis"
+      },
+      {
+        "text": "のむらさきパンツ",
+        "reading": "no murasaki pantsu",
+        "gloss": "'s purple shorts"
+      },
+      {
+        "text": "を見つける。",
+        "reading": "o mitsukeru",
+        "gloss": "find"
+      }
+    ]
+  },
+  "103#1": {
+    "japanese": "パムは呑みすけ",
+    "english": "Pam is thirsty",
+    "segments": [
+      {
+        "text": "パム",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "は呑みすけ",
+        "reading": "wa nomisuke",
+        "gloss": "is a drinker"
+      }
+    ]
+  },
+  "103#2": {
+    "japanese": "ペールエールが飲みたくてたまらないパム。いつものビールではダメらしい。醸造ダルでホップから自家製ペールエールをつくり、彼女にとどけてあげよう。",
+    "english": "Pam is desperate for a pale ale. Ordinary beer won't do. Brew a home-made pale ale from hops in a keg and take it to her.",
+    "segments": [
+      {
+        "text": "ペールエール",
+        "reading": "pēru ēru",
+        "gloss": "pale ale"
+      },
+      {
+        "text": "が飲みたくてたまらない",
+        "reading": "ga nomitakute tamaranai",
+        "gloss": "desperate to drink"
+      },
+      {
+        "text": "パム。",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "いつものビール",
+        "reading": "itsumo no bīru",
+        "gloss": "the usual beer"
+      },
+      {
+        "text": "ではダメらしい。",
+        "reading": "de wa dame rashii",
+        "gloss": "apparently won't do"
+      },
+      {
+        "text": "醸造ダル",
+        "reading": "jōzō daru",
+        "gloss": "brewing keg"
+      },
+      {
+        "text": "でホップ",
+        "reading": "de hoppu",
+        "gloss": "hops in"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "自家製",
+        "reading": "jikasei",
+        "gloss": "home-made"
+      },
+      {
+        "text": "ペールエール",
+        "reading": "pēru ēru",
+        "gloss": "pale ale"
+      },
+      {
+        "text": "をつくり、",
+        "reading": "o tsukuri",
+        "gloss": "making"
+      },
+      {
+        "text": "彼女",
+        "reading": "kanojo",
+        "gloss": "her"
+      },
+      {
+        "text": "にとどけてあげよう。",
+        "reading": "ni todokete ageyou",
+        "gloss": "let's deliver to"
+      }
+    ]
+  },
+  "103#3": {
+    "japanese": "パムにペールエールを持っていく。",
+    "english": "Take Pam a pale ale.",
+    "segments": [
+      {
+        "text": "パム",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "にペールエール",
+        "reading": "ni pēru ēru",
+        "gloss": "a pale ale to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "104#1": {
+    "japanese": "作物の調査",
+    "english": "Crop research",
+    "segments": [
+      {
+        "text": "作物",
+        "reading": "sakumotsu",
+        "gloss": "crop"
+      },
+      {
+        "text": "の調査",
+        "reading": "no chōsa",
+        "gloss": "'s research"
+      }
+    ]
+  },
+  "104#2": {
+    "japanese": "調査のために、ディメトリウスが新鮮なメロンを欲しがっている。",
+    "english": "Demetrius wants a fresh melon for his research.",
+    "segments": [
+      {
+        "text": "調査",
+        "reading": "chōsa",
+        "gloss": "research"
+      },
+      {
+        "text": "のために、",
+        "reading": "no tame ni",
+        "gloss": "for"
+      },
+      {
+        "text": "ディメトリウス",
+        "reading": "Dimetoriusu",
+        "gloss": "Demetrius"
+      },
+      {
+        "text": "が新鮮なメロン",
+        "reading": "ga shinsen na meron",
+        "gloss": "a fresh melon"
+      },
+      {
+        "text": "を欲しがっている。",
+        "reading": "o hoshigatte iru",
+        "gloss": "wants"
+      }
+    ]
+  },
+  "104#3": {
+    "japanese": "ディメトリウスにメロンを持っていく。",
+    "english": "Take Demetrius a melon.",
+    "segments": [
+      {
+        "text": "ディメトリウス",
+        "reading": "Dimetoriusu",
+        "gloss": "Demetrius"
+      },
+      {
+        "text": "にメロン",
+        "reading": "ni meron",
+        "gloss": "a melon to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "105#1": {
+    "japanese": "トウガラシ療法",
+    "english": "Hot pepper therapy",
+    "segments": [
+      {
+        "text": "トウガラシ",
+        "reading": "tōgarashi",
+        "gloss": "hot pepper"
+      },
+      {
+        "text": "療法",
+        "reading": "ryōhō",
+        "gloss": "therapy"
+      }
+    ]
+  },
+  "105#2": {
+    "japanese": "ジョージはひざの具合が悪いらしい。痛みをやわらげるにはトウガラシが必要だ。",
+    "english": "George's knee is in a bad way. He needs a hot pepper to ease the pain.",
+    "segments": [
+      {
+        "text": "ジョージ",
+        "reading": "Jōji",
+        "gloss": "George"
+      },
+      {
+        "text": "はひざの具合",
+        "reading": "wa hiza no guai",
+        "gloss": "his knee's condition"
+      },
+      {
+        "text": "が悪いらしい。",
+        "reading": "ga warui rashii",
+        "gloss": "is apparently bad"
+      },
+      {
+        "text": "痛み",
+        "reading": "itami",
+        "gloss": "pain"
+      },
+      {
+        "text": "をやわらげる",
+        "reading": "o yawarageru",
+        "gloss": "to ease"
+      },
+      {
+        "text": "には",
+        "reading": "ni wa",
+        "gloss": "in order to"
+      },
+      {
+        "text": "トウガラシ",
+        "reading": "tōgarashi",
+        "gloss": "hot pepper"
+      },
+      {
+        "text": "が必要だ。",
+        "reading": "ga hitsuyō da",
+        "gloss": "is needed"
+      }
+    ]
+  },
+  "105#3": {
+    "japanese": "ジョージにトウガラシを持っていく。",
+    "english": "Take George a hot pepper.",
+    "segments": [
+      {
+        "text": "ジョージ",
+        "reading": "Jōji",
+        "gloss": "George"
+      },
+      {
+        "text": "にトウガラシ",
+        "reading": "ni tōgarashi",
+        "gloss": "a hot pepper to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "106#1": {
+    "japanese": "ウシのごちそう",
+    "english": "A treat for the cows",
+    "segments": [
+      {
+        "text": "ウシ",
+        "reading": "ushi",
+        "gloss": "cows"
+      },
+      {
+        "text": "のごちそう",
+        "reading": "no gochisō",
+        "gloss": "'s feast / treat"
+      }
+    ]
+  },
+  "106#2": {
+    "japanese": "マーニーは自分のウシにごほうびをあげたいらしい。たのまれたアマランサスをとどけてあげよう。",
+    "english": "Marnie wants to give her cows a treat. Deliver the bunch of amaranth she asked for.",
+    "segments": [
+      {
+        "text": "マーニー",
+        "reading": "Mānī",
+        "gloss": "Marnie"
+      },
+      {
+        "text": "は自分のウシ",
+        "reading": "wa jibun no ushi",
+        "gloss": "her own cows"
+      },
+      {
+        "text": "にごほうび",
+        "reading": "ni gohōbi",
+        "gloss": "a reward to"
+      },
+      {
+        "text": "をあげたいらしい。",
+        "reading": "o agetai rashii",
+        "gloss": "apparently wants to give"
+      },
+      {
+        "text": "たのまれた",
+        "reading": "tanomareta",
+        "gloss": "that was requested"
+      },
+      {
+        "text": "アマランサス",
+        "reading": "amaransasu",
+        "gloss": "amaranth"
+      },
+      {
+        "text": "をとどけてあげよう。",
+        "reading": "o todokete ageyou",
+        "gloss": "let's deliver"
+      }
+    ]
+  },
+  "106#3": {
+    "japanese": "マーニーにアマランサスをひと束持っていく。",
+    "english": "Take Marnie a bunch of amaranth.",
+    "segments": [
+      {
+        "text": "マーニー",
+        "reading": "Mānī",
+        "gloss": "Marnie"
+      },
+      {
+        "text": "にアマランサス",
+        "reading": "ni amaransasu",
+        "gloss": "amaranth to"
+      },
+      {
+        "text": "をひと束",
+        "reading": "o hitotaba",
+        "gloss": "one bunch"
+      },
+      {
+        "text": "持っていく。",
+        "reading": "motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "107#1": {
+    "japanese": "ブラックベリーのかご",
+    "english": "The blackberry basket",
+    "segments": [
+      {
+        "text": "ブラックベリー",
+        "reading": "burakkuberī",
+        "gloss": "blackberry"
+      },
+      {
+        "text": "のかご",
+        "reading": "no kago",
+        "gloss": "'s basket"
+      }
+    ]
+  },
+  "107#2": {
+    "japanese": "ブラックベリーの季節がやってきた。だけど、ライナスはベリー摘みのかごをなくしてしまったらしい！どこに忘れたかも思い出せないようだ。彼のかごを見つけてあげよう。",
+    "english": "Blackberry season has come. But Linus has lost his berry-picking basket! He can't even remember where he left it. Find his basket for him.",
+    "segments": [
+      {
+        "text": "ブラックベリー",
+        "reading": "burakkuberī",
+        "gloss": "blackberry"
+      },
+      {
+        "text": "の季節",
+        "reading": "no kisetsu",
+        "gloss": "'s season"
+      },
+      {
+        "text": "がやってきた。",
+        "reading": "ga yatte kita",
+        "gloss": "has come"
+      },
+      {
+        "text": "だけど、",
+        "reading": "dakedo",
+        "gloss": "but"
+      },
+      {
+        "text": "ライナス",
+        "reading": "Rainasu",
+        "gloss": "Linus"
+      },
+      {
+        "text": "はベリー摘みのかご",
+        "reading": "wa berī tsumi no kago",
+        "gloss": "his berry-picking basket"
+      },
+      {
+        "text": "をなくしてしまったらしい！",
+        "reading": "o nakushite shimatta rashii",
+        "gloss": "has apparently lost"
+      },
+      {
+        "text": "どこに忘れたか",
+        "reading": "doko ni wasureta ka",
+        "gloss": "where he left it"
+      },
+      {
+        "text": "も思い出せないようだ。",
+        "reading": "mo omoidasenai yō da",
+        "gloss": "he can't even remember"
+      },
+      {
+        "text": "彼のかご",
+        "reading": "kare no kago",
+        "gloss": "his basket"
+      },
+      {
+        "text": "を見つけてあげよう。",
+        "reading": "o mitsukete ageyou",
+        "gloss": "let's find for him"
+      }
+    ]
+  },
+  "107#3": {
+    "japanese": "ライナスのかごを見つけ、彼にかえす。",
+    "english": "Find Linus's basket and return it to him.",
+    "segments": [
+      {
+        "text": "ライナス",
+        "reading": "Rainasu",
+        "gloss": "Linus"
+      },
+      {
+        "text": "のかご",
+        "reading": "no kago",
+        "gloss": "'s basket"
+      },
+      {
+        "text": "を見つけ、",
+        "reading": "o mitsuke",
+        "gloss": "finding"
+      },
+      {
+        "text": "彼",
+        "reading": "kare",
+        "gloss": "him"
+      },
+      {
+        "text": "にかえす。",
+        "reading": "ni kaesu",
+        "gloss": "return to"
+      }
+    ]
+  },
+  "108#1": {
+    "japanese": "飾り用のカボチャ",
+    "english": "A pumpkin to carve",
+    "segments": [
+      {
+        "text": "飾り用",
+        "reading": "kazari yō",
+        "gloss": "for decoration"
+      },
+      {
+        "text": "のカボチャ",
+        "reading": "no kabocha",
+        "gloss": "'s pumpkin"
+      }
+    ]
+  },
+  "108#2": {
+    "japanese": "キャロラインからカボチャをひとつたのまれた。アビゲイルとカボチャのランタンを彫るらしい。",
+    "english": "Caroline has asked for a pumpkin. She's going to carve a jack-o'-lantern with Abigail.",
+    "segments": [
+      {
+        "text": "キャロライン",
+        "reading": "Kyarorain",
+        "gloss": "Caroline"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "カボチャ",
+        "reading": "kabocha",
+        "gloss": "pumpkin"
+      },
+      {
+        "text": "をひとつ",
+        "reading": "o hitotsu",
+        "gloss": "one"
+      },
+      {
+        "text": "たのまれた。",
+        "reading": "tanomareta",
+        "gloss": "you were asked for"
+      },
+      {
+        "text": "アビゲイル",
+        "reading": "Abigeiru",
+        "gloss": "Abigail"
+      },
+      {
+        "text": "とカボチャのランタン",
+        "reading": "to kabocha no rantan",
+        "gloss": "with, a pumpkin lantern"
+      },
+      {
+        "text": "を彫るらしい。",
+        "reading": "o horu rashii",
+        "gloss": "she'll apparently carve"
+      }
+    ]
+  },
+  "108#3": {
+    "japanese": "キャロラインにカボチャを持っていく。",
+    "english": "Take Caroline a pumpkin.",
+    "segments": [
+      {
+        "text": "キャロライン",
+        "reading": "Kyarorain",
+        "gloss": "Caroline"
+      },
+      {
+        "text": "にカボチャ",
+        "reading": "ni kabocha",
+        "gloss": "a pumpkin to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "109#1": {
+    "japanese": "イカ釣り",
+    "english": "Squid fishing",
+    "segments": [
+      {
+        "text": "イカ釣り",
+        "reading": "ika tsuri",
+        "gloss": "squid fishing"
+      }
+    ]
+  },
+  "109#2": {
+    "japanese": "ウィリーからの挑戦状だ。イカを釣ってこよう。彼によると、イカは冬の夜に海で釣れるらしい。",
+    "english": "A challenge from Willy. Go and catch a squid. He says they can be caught in the sea on winter nights.",
+    "segments": [
+      {
+        "text": "ウィリー",
+        "reading": "Wirī",
+        "gloss": "Willy"
+      },
+      {
+        "text": "からの挑戦状だ。",
+        "reading": "kara no chōsenjō da",
+        "gloss": "is a letter of challenge from"
+      },
+      {
+        "text": "イカ",
+        "reading": "ika",
+        "gloss": "squid"
+      },
+      {
+        "text": "を釣ってこよう。",
+        "reading": "o tsutte koyou",
+        "gloss": "let's go and catch"
+      },
+      {
+        "text": "彼によると、",
+        "reading": "kare ni yoru to",
+        "gloss": "according to him"
+      },
+      {
+        "text": "イカ",
+        "reading": "ika",
+        "gloss": "squid"
+      },
+      {
+        "text": "は冬の夜",
+        "reading": "wa fuyu no yoru",
+        "gloss": "on winter nights"
+      },
+      {
+        "text": "に海",
+        "reading": "ni umi",
+        "gloss": "in the sea"
+      },
+      {
+        "text": "で釣れるらしい。",
+        "reading": "de tsureru rashii",
+        "gloss": "can apparently be caught"
+      }
+    ]
+  },
+  "109#3": {
+    "japanese": "ウィリーにイカを持っていく。",
+    "english": "Take Willy a squid.",
+    "segments": [
+      {
+        "text": "ウィリー",
+        "reading": "Wirī",
+        "gloss": "Willy"
+      },
+      {
+        "text": "にイカ",
+        "reading": "ni ika",
+        "gloss": "a squid to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "11#1": {
+    "japanese": "鍛冶にチャレンジ",
+    "english": "A go at smelting",
+    "segments": [
+      {
+        "text": "鍛冶",
+        "reading": "kaji",
+        "gloss": "smithing"
+      },
+      {
+        "text": "にチャレンジ",
+        "reading": "ni charenji",
+        "gloss": "a challenge at"
+      }
+    ]
+  },
+  "11#2": {
+    "japanese": "これからも鉱石を掘るつもりなら、溶鉱炉をつくっておくと便利だ。",
+    "english": "If you mean to keep mining ore, it's handy to build a furnace.",
+    "segments": [
+      {
+        "text": "これからも",
+        "reading": "kore kara mo",
+        "gloss": "from now on too"
+      },
+      {
+        "text": "鉱石",
+        "reading": "kōseki",
+        "gloss": "ore"
+      },
+      {
+        "text": "を掘るつもりなら、",
+        "reading": "o horu tsumori nara",
+        "gloss": "if you intend to dig"
+      },
+      {
+        "text": "溶鉱炉",
+        "reading": "yōkōro",
+        "gloss": "furnace"
+      },
+      {
+        "text": "をつくっておくと",
+        "reading": "o tsukutte oku to",
+        "gloss": "if you build one"
+      },
+      {
+        "text": "便利だ。",
+        "reading": "benri da",
+        "gloss": "it's handy"
+      }
+    ]
+  },
+  "11#3": {
+    "japanese": "溶鉱炉をつくる。",
+    "english": "Craft a furnace.",
+    "segments": [
+      {
+        "text": "溶鉱炉",
+        "reading": "yōkōro",
+        "gloss": "furnace"
+      },
+      {
+        "text": "をつくる。",
+        "reading": "o tsukuru",
+        "gloss": "make"
+      }
+    ]
+  },
+  "110#1": {
+    "japanese": "クリントの作戦",
+    "english": "Clint's attempt",
+    "segments": [
+      {
+        "text": "クリント",
+        "reading": "Kurinto",
+        "gloss": "Clint"
+      },
+      {
+        "text": "の作戦",
+        "reading": "no sakusen",
+        "gloss": "'s plan"
+      }
+    ]
+  },
+  "110#2": {
+    "japanese": "クリントから、エミリーにアメシストを渡してくれとたのまれた。彼からのプレゼントだと言って渡してほしいらしい。",
+    "english": "Clint has asked you to give Emily an amethyst. He wants you to say it's a present from him.",
+    "segments": [
+      {
+        "text": "クリント",
+        "reading": "Kurinto",
+        "gloss": "Clint"
+      },
+      {
+        "text": "から、",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "にアメシスト",
+        "reading": "ni ameshisuto",
+        "gloss": "an amethyst to"
+      },
+      {
+        "text": "を渡してくれ",
+        "reading": "o watashite kure",
+        "gloss": "please hand over"
+      },
+      {
+        "text": "とたのまれた。",
+        "reading": "to tanomareta",
+        "gloss": "you were asked"
+      },
+      {
+        "text": "彼からのプレゼントだ",
+        "reading": "kare kara no purezento da",
+        "gloss": "it's a present from him"
+      },
+      {
+        "text": "と言って",
+        "reading": "to itte",
+        "gloss": "saying"
+      },
+      {
+        "text": "渡してほしいらしい。",
+        "reading": "watashite hoshii rashii",
+        "gloss": "he apparently wants you to hand it over"
+      }
+    ]
+  },
+  "110#3": {
+    "japanese": "エミリーにアメシストを持っていく。",
+    "english": "Take Emily an amethyst.",
+    "segments": [
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "にアメシスト",
+        "reading": "ni ameshisuto",
+        "gloss": "an amethyst to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "111#1": {
+    "japanese": "闇の検体",
+    "english": "A dark reagent",
+    "segments": [
+      {
+        "text": "闇",
+        "reading": "yami",
+        "gloss": "darkness"
+      },
+      {
+        "text": "の検体",
+        "reading": "no kentai",
+        "gloss": "'s specimen"
+      }
+    ]
+  },
+  "111#2": {
+    "japanese": "魔術師から依頼の手紙がとどいた。鉱山で見つかる闇の結晶がひとつ欲しいらしい。なにかの黒魔術でつかうようだ。",
+    "english": "A letter of request arrived from the wizard. He wants one void essence, found in the mines. It seems to be for some kind of dark magic.",
+    "segments": [
+      {
+        "text": "魔術師",
+        "reading": "majutsushi",
+        "gloss": "wizard"
+      },
+      {
+        "text": "から依頼の手紙",
+        "reading": "kara irai no tegami",
+        "gloss": "a letter of request from"
+      },
+      {
+        "text": "がとどいた。",
+        "reading": "ga todoita",
+        "gloss": "arrived"
+      },
+      {
+        "text": "鉱山",
+        "reading": "kōzan",
+        "gloss": "mines"
+      },
+      {
+        "text": "で見つかる",
+        "reading": "de mitsukaru",
+        "gloss": "found in"
+      },
+      {
+        "text": "闇の結晶",
+        "reading": "yami no kesshō",
+        "gloss": "void / dark crystal"
+      },
+      {
+        "text": "がひとつ",
+        "reading": "ga hitotsu",
+        "gloss": "one"
+      },
+      {
+        "text": "欲しいらしい。",
+        "reading": "hoshii rashii",
+        "gloss": "he apparently wants"
+      },
+      {
+        "text": "なにかの黒魔術",
+        "reading": "nanika no kuro majutsu",
+        "gloss": "some kind of black magic"
+      },
+      {
+        "text": "でつかうようだ。",
+        "reading": "de tsukau yō da",
+        "gloss": "he seems to use it in"
+      }
+    ]
+  },
+  "111#3": {
+    "japanese": "魔術師に闇の結晶を持っていく。",
+    "english": "Take the wizard a void essence.",
+    "segments": [
+      {
+        "text": "魔術師",
+        "reading": "majutsushi",
+        "gloss": "wizard"
+      },
+      {
+        "text": "に闇の結晶",
+        "reading": "ni yami no kesshō",
+        "gloss": "a void essence to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "112#1": {
+    "japanese": "クリントのたのみごと",
+    "english": "A favour for Clint",
+    "segments": [
+      {
+        "text": "クリント",
+        "reading": "Kurinto",
+        "gloss": "Clint"
+      },
+      {
+        "text": "のたのみごと",
+        "reading": "no tanomigoto",
+        "gloss": "'s request"
+      }
+    ]
+  },
+  "112#2": {
+    "japanese": "あたらしくハンマーを手に入れたクリント。いろんな金属でつかい心地をためしたいらしい。",
+    "english": "Clint has got a new hammer and wants to try out how it handles on various metals.",
+    "segments": [
+      {
+        "text": "あたらしく",
+        "reading": "atarashiku",
+        "gloss": "newly"
+      },
+      {
+        "text": "ハンマー",
+        "reading": "hanmā",
+        "gloss": "hammer"
+      },
+      {
+        "text": "を手に入れた",
+        "reading": "o te ni ireta",
+        "gloss": "obtained"
+      },
+      {
+        "text": "クリント。",
+        "reading": "Kurinto",
+        "gloss": "Clint"
+      },
+      {
+        "text": "いろんな金属",
+        "reading": "ironna kinzoku",
+        "gloss": "various metals"
+      },
+      {
+        "text": "でつかい心地",
+        "reading": "de tsukai gokochi",
+        "gloss": "the feel of using it on"
+      },
+      {
+        "text": "をためしたいらしい。",
+        "reading": "o tameshitai rashii",
+        "gloss": "he apparently wants to test"
+      }
+    ]
+  },
+  "112#3": {
+    "japanese": "クリントに鉄ののべ棒を持っていく。",
+    "english": "Take Clint an iron bar.",
+    "segments": [
+      {
+        "text": "クリント",
+        "reading": "Kurinto",
+        "gloss": "Clint"
+      },
+      {
+        "text": "に鉄ののべ棒",
+        "reading": "ni tetsu no nobebō",
+        "gloss": "an iron bar to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "113#1": {
+    "japanese": "ロビンのお願い",
+    "english": "Robin's request",
+    "segments": [
+      {
+        "text": "ロビン",
+        "reading": "Robin",
+        "gloss": "Robin"
+      },
+      {
+        "text": "のお願い",
+        "reading": "no o-negai",
+        "gloss": "'s request"
+      }
+    ]
+  },
+  "113#2": {
+    "japanese": "堅い木を分けてもらえないか、ロビンが手紙でたのんできた。",
+    "english": "Robin wrote asking whether you could spare some hardwood.",
+    "segments": [
+      {
+        "text": "堅い木",
+        "reading": "katai ki",
+        "gloss": "hardwood"
+      },
+      {
+        "text": "を分けてもらえないか、",
+        "reading": "o wakete moraenai ka",
+        "gloss": "whether you could spare some"
+      },
+      {
+        "text": "ロビン",
+        "reading": "Robin",
+        "gloss": "Robin"
+      },
+      {
+        "text": "が手紙でたのんできた。",
+        "reading": "ga tegami de tanonde kita",
+        "gloss": "asked by letter"
+      }
+    ]
+  },
+  "113#3": {
+    "japanese": "ロビンに堅い木を10個持っていく。",
+    "english": "Take Robin 10 pieces of hardwood.",
+    "segments": [
+      {
+        "text": "ロビン",
+        "reading": "Robin",
+        "gloss": "Robin"
+      },
+      {
+        "text": "に堅い木",
+        "reading": "ni katai ki",
+        "gloss": "hardwood to"
+      },
+      {
+        "text": "を10個",
+        "reading": "o jukko",
+        "gloss": "10 pieces"
+      },
+      {
+        "text": "持っていく。",
+        "reading": "motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "114#1": {
+    "japanese": "魚のシチュー",
+    "english": "Fish stew",
+    "segments": [
+      {
+        "text": "魚",
+        "reading": "sakana",
+        "gloss": "fish"
+      },
+      {
+        "text": "のシチュー",
+        "reading": "no shichū",
+        "gloss": "'s stew"
+      }
+    ]
+  },
+  "114#2": {
+    "japanese": "魚のシチューをつくりたいガス。だが、ビンナガが足りないらしい。",
+    "english": "Gus wants to make fish stew, but he's short of albacore.",
+    "segments": [
+      {
+        "text": "魚のシチュー",
+        "reading": "sakana no shichū",
+        "gloss": "fish stew"
+      },
+      {
+        "text": "をつくりたい",
+        "reading": "o tsukuritai",
+        "gloss": "wants to make"
+      },
+      {
+        "text": "ガス。",
+        "reading": "Gasu",
+        "gloss": "Gus"
+      },
+      {
+        "text": "だが、",
+        "reading": "da ga",
+        "gloss": "but"
+      },
+      {
+        "text": "ビンナガ",
+        "reading": "binnaga",
+        "gloss": "albacore"
+      },
+      {
+        "text": "が足りないらしい。",
+        "reading": "ga tarinai rashii",
+        "gloss": "is apparently short"
+      }
+    ]
+  },
+  "114#3": {
+    "japanese": "ガスにビンナガを持っていく。",
+    "english": "Take Gus an albacore.",
+    "segments": [
+      {
+        "text": "ガス",
+        "reading": "Gasu",
+        "gloss": "Gus"
+      },
+      {
+        "text": "にビンナガ",
+        "reading": "ni binnaga",
+        "gloss": "an albacore to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "115#1": {
+    "japanese": "もぎたてフルーツ",
+    "english": "Freshly picked fruit",
+    "segments": [
+      {
+        "text": "もぎたて",
+        "reading": "mogitate",
+        "gloss": "freshly picked"
+      },
+      {
+        "text": "フルーツ",
+        "reading": "furūtsu",
+        "gloss": "fruit"
+      }
+    ]
+  },
+  "115#2": {
+    "japanese": "エミリーはもぎたてのアプリコットが食べたいらしい。春の味覚を彼女にとどけてあげよう。",
+    "english": "Emily wants to eat a freshly picked apricot. Deliver her a taste of spring.",
+    "segments": [
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "はもぎたての",
+        "reading": "wa mogitate no",
+        "gloss": "freshly picked"
+      },
+      {
+        "text": "アプリコット",
+        "reading": "apurikotto",
+        "gloss": "apricot"
+      },
+      {
+        "text": "が食べたいらしい。",
+        "reading": "ga tabetai rashii",
+        "gloss": "apparently wants to eat"
+      },
+      {
+        "text": "春の味覚",
+        "reading": "haru no mikaku",
+        "gloss": "the taste of spring"
+      },
+      {
+        "text": "を彼女",
+        "reading": "o kanojo",
+        "gloss": "her"
+      },
+      {
+        "text": "にとどけてあげよう。",
+        "reading": "ni todokete ageyou",
+        "gloss": "let's deliver to"
+      }
+    ]
+  },
+  "115#3": {
+    "japanese": "アプリコットをエミリーに持っていく。",
+    "english": "Take Emily an apricot.",
+    "segments": [
+      {
+        "text": "アプリコット",
+        "reading": "apurikotto",
+        "gloss": "apricot"
+      },
+      {
+        "text": "をエミリー",
+        "reading": "o Emirī",
+        "gloss": "to Emily"
+      },
+      {
+        "text": "に持っていく。",
+        "reading": "ni motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "116#1": {
+    "japanese": "おばあちゃんのプレゼント",
+    "english": "Granny's present",
+    "segments": [
+      {
+        "text": "おばあちゃん",
+        "reading": "obāchan",
+        "gloss": "granny"
+      },
+      {
+        "text": "のプレゼント",
+        "reading": "no purezento",
+        "gloss": "'s present"
+      }
+    ]
+  },
+  "116#2": {
+    "japanese": "エブリンが夫にプレゼントするのを手伝ってあげよう。",
+    "english": "Help Evelyn give her husband a present.",
+    "segments": [
+      {
+        "text": "エブリン",
+        "reading": "Eburin",
+        "gloss": "Evelyn"
+      },
+      {
+        "text": "が夫",
+        "reading": "ga otto",
+        "gloss": "her husband"
+      },
+      {
+        "text": "にプレゼントする",
+        "reading": "ni purezento suru",
+        "gloss": "to give a present to"
+      },
+      {
+        "text": "のを手伝ってあげよう。",
+        "reading": "no o tetsudatte ageyou",
+        "gloss": "let's help her"
+      }
+    ]
+  },
+  "116#3": {
+    "japanese": "エブリンにポロねぎを持っていく。",
+    "english": "Take Evelyn a leek.",
+    "segments": [
+      {
+        "text": "エブリン",
+        "reading": "Eburin",
+        "gloss": "Evelyn"
+      },
+      {
+        "text": "にポロねぎ",
+        "reading": "ni poronegi",
+        "gloss": "a leek to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "117#1": {
+    "japanese": "ピエールのたのみごと",
+    "english": "Pierre's request",
+    "segments": [
+      {
+        "text": "ピエール",
+        "reading": "Piēru",
+        "gloss": "Pierre"
+      },
+      {
+        "text": "のたのみごと",
+        "reading": "no tanomigoto",
+        "gloss": "'s request"
+      }
+    ]
+  },
+  "117#2": {
+    "japanese": "刺し身が食べたくてしかたないピエール。持ってきた人には報酬をはずんでくれるようだ。",
+    "english": "Pierre is desperate for sashimi. He'll pay well to whoever brings it.",
+    "segments": [
+      {
+        "text": "刺し身",
+        "reading": "sashimi",
+        "gloss": "sashimi"
+      },
+      {
+        "text": "が食べたくてしかたない",
+        "reading": "ga tabetakute shikata nai",
+        "gloss": "desperate to eat"
+      },
+      {
+        "text": "ピエール。",
+        "reading": "Piēru",
+        "gloss": "Pierre"
+      },
+      {
+        "text": "持ってきた人",
+        "reading": "motte kita hito",
+        "gloss": "whoever brings it"
+      },
+      {
+        "text": "には報酬",
+        "reading": "ni wa hōshū",
+        "gloss": "payment to"
+      },
+      {
+        "text": "をはずんでくれるようだ。",
+        "reading": "o hazunde kureru yō da",
+        "gloss": "he'll apparently be generous with"
+      }
+    ]
+  },
+  "117#3": {
+    "japanese": "ピエールに刺し身を持っていく。",
+    "english": "Take Pierre some sashimi.",
+    "segments": [
+      {
+        "text": "ピエール",
+        "reading": "Piēru",
+        "gloss": "Pierre"
+      },
+      {
+        "text": "に刺し身",
+        "reading": "ni sashimi",
+        "gloss": "sashimi to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "118#1": {
+    "japanese": "水産物の調査",
+    "english": "Aquatic research",
+    "segments": [
+      {
+        "text": "水産物",
+        "reading": "suisanbutsu",
+        "gloss": "marine products"
+      },
+      {
+        "text": "の調査",
+        "reading": "no chōsa",
+        "gloss": "'s research"
+      }
+    ]
+  },
+  "118#2": {
+    "japanese": "ディメトリウスは、地域に生息するハリセンボンの毒の強さを調査中らしい。1匹釣ってとどけてあげよう。",
+    "english": "Demetrius is studying the toxicity of the local pufferfish. Catch one and deliver it.",
+    "segments": [
+      {
+        "text": "ディメトリウス",
+        "reading": "Dimetoriusu",
+        "gloss": "Demetrius"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "地域に生息する",
+        "reading": "chiiki ni seisoku suru",
+        "gloss": "living in the area"
+      },
+      {
+        "text": "ハリセンボン",
+        "reading": "harisenbon",
+        "gloss": "pufferfish"
+      },
+      {
+        "text": "の毒の強さ",
+        "reading": "no doku no tsuyosa",
+        "gloss": "'s toxin strength"
+      },
+      {
+        "text": "を調査中らしい。",
+        "reading": "o chōsa chū rashii",
+        "gloss": "is apparently researching"
+      },
+      {
+        "text": "1匹",
+        "reading": "ippiki",
+        "gloss": "one"
+      },
+      {
+        "text": "釣ってとどけてあげよう。",
+        "reading": "tsutte todokete ageyou",
+        "gloss": "let's catch and deliver"
+      }
+    ]
+  },
+  "118#3": {
+    "japanese": "ディメトリウスにハリセンボンを持っていく。",
+    "english": "Take Demetrius a pufferfish.",
+    "segments": [
+      {
+        "text": "ディメトリウス",
+        "reading": "Dimetoriusu",
+        "gloss": "Demetrius"
+      },
+      {
+        "text": "にハリセンボン",
+        "reading": "ni harisenbon",
+        "gloss": "a pufferfish to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "119#1": {
+    "japanese": "兵士のスター",
+    "english": "A soldier's star",
+    "segments": [
+      {
+        "text": "兵士",
+        "reading": "heishi",
+        "gloss": "soldier"
+      },
+      {
+        "text": "のスター",
+        "reading": "no sutā",
+        "gloss": "'s star"
+      }
+    ]
+  },
+  "119#2": {
+    "japanese": "結婚記念日のお祝いを奥さんに贈りたいというケント。彼にスターフルーツをとどけてあげよう。",
+    "english": "Kent wants to give his wife an anniversary gift. Deliver him a starfruit.",
+    "segments": [
+      {
+        "text": "結婚記念日",
+        "reading": "kekkon kinenbi",
+        "gloss": "wedding anniversary"
+      },
+      {
+        "text": "のお祝い",
+        "reading": "no o-iwai",
+        "gloss": "'s celebration"
+      },
+      {
+        "text": "を奥さん",
+        "reading": "o okusan",
+        "gloss": "his wife"
+      },
+      {
+        "text": "に贈りたい",
+        "reading": "ni okuritai",
+        "gloss": "wants to give to"
+      },
+      {
+        "text": "というケント。",
+        "reading": "to iu Kento",
+        "gloss": "Kent, who says"
+      },
+      {
+        "text": "彼",
+        "reading": "kare",
+        "gloss": "him"
+      },
+      {
+        "text": "にスターフルーツ",
+        "reading": "ni sutāfurūtsu",
+        "gloss": "a starfruit to"
+      },
+      {
+        "text": "をとどけてあげよう。",
+        "reading": "o todokete ageyou",
+        "gloss": "let's deliver"
+      }
+    ]
+  },
+  "119#3": {
+    "japanese": "ケントにスターフルーツを持っていく。",
+    "english": "Take Kent a starfruit.",
+    "segments": [
+      {
+        "text": "ケント",
+        "reading": "Kento",
+        "gloss": "Kent"
+      },
+      {
+        "text": "にスターフルーツ",
+        "reading": "ni sutāfurūtsu",
+        "gloss": "a starfruit to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "12#1": {
+    "japanese": "精錬しよう",
+    "english": "Let's smelt",
+    "segments": [
+      {
+        "text": "精錬しよう",
+        "reading": "seiren shiyou",
+        "gloss": "let's refine / smelt"
+      }
+    ]
+  },
+  "12#2": {
+    "japanese": "溶鉱炉があれば、金属を精錬することができる。クリントに教わったとおり、銅鉱石を5つ、石炭を1つ溶鉱炉に入れれば、銅ののべ棒がつくれるはずだ。",
+    "english": "With a furnace you can smelt metal. As Clint taught you, putting 5 copper ore and 1 coal into the furnace should make a copper bar.",
+    "segments": [
+      {
+        "text": "溶鉱炉",
+        "reading": "yōkōro",
+        "gloss": "furnace"
+      },
+      {
+        "text": "があれば、",
+        "reading": "ga areba",
+        "gloss": "if you have"
+      },
+      {
+        "text": "金属",
+        "reading": "kinzoku",
+        "gloss": "metal"
+      },
+      {
+        "text": "を精錬する",
+        "reading": "o seiren suru",
+        "gloss": "to smelt"
+      },
+      {
+        "text": "ことができる。",
+        "reading": "koto ga dekiru",
+        "gloss": "is possible"
+      },
+      {
+        "text": "クリント",
+        "reading": "Kurinto",
+        "gloss": "Clint"
+      },
+      {
+        "text": "に教わったとおり、",
+        "reading": "ni osowatta tōri",
+        "gloss": "just as you were taught by"
+      },
+      {
+        "text": "銅鉱石",
+        "reading": "dō kōseki",
+        "gloss": "copper ore"
+      },
+      {
+        "text": "を5つ、",
+        "reading": "o itsutsu",
+        "gloss": "five of them"
+      },
+      {
+        "text": "石炭",
+        "reading": "sekitan",
+        "gloss": "coal"
+      },
+      {
+        "text": "を1つ",
+        "reading": "o hitotsu",
+        "gloss": "one"
+      },
+      {
+        "text": "溶鉱炉",
+        "reading": "yōkōro",
+        "gloss": "furnace"
+      },
+      {
+        "text": "に入れれば、",
+        "reading": "ni irereba",
+        "gloss": "if you put into"
+      },
+      {
+        "text": "銅ののべ棒",
+        "reading": "dō no nobebō",
+        "gloss": "copper bar"
+      },
+      {
+        "text": "がつくれるはずだ。",
+        "reading": "ga tsukureru hazu da",
+        "gloss": "should be makeable"
+      }
+    ]
+  },
+  "12#3": {
+    "japanese": "溶鉱炉をつかって銅ののべ棒をつくる。",
+    "english": "Use the furnace to make a copper bar.",
+    "segments": [
+      {
+        "text": "溶鉱炉",
+        "reading": "yōkōro",
+        "gloss": "furnace"
+      },
+      {
+        "text": "をつかって",
+        "reading": "o tsukatte",
+        "gloss": "using"
+      },
+      {
+        "text": "銅ののべ棒",
+        "reading": "dō no nobebō",
+        "gloss": "copper bar"
+      },
+      {
+        "text": "をつくる。",
+        "reading": "o tsukuru",
+        "gloss": "make"
+      }
+    ]
+  },
+  "120#1": {
+    "japanese": "町長の要請",
+    "english": "The mayor's request",
+    "segments": [
+      {
+        "text": "町長",
+        "reading": "chōchō",
+        "gloss": "mayor"
+      },
+      {
+        "text": "の要請",
+        "reading": "no yōsei",
+        "gloss": "'s request"
+      }
+    ]
+  },
+  "120#2": {
+    "japanese": "ルイス町長がトリュフオイルの調達をたのんできた。なににつかうのかは分からないが、どうやら理由は聞かないほうがよさそうだ。",
+    "english": "Mayor Lewis has asked you to procure truffle oil. You don't know what it's for, and it seems best not to ask.",
+    "segments": [
+      {
+        "text": "ルイス町長",
+        "reading": "Ruisu chōchō",
+        "gloss": "Mayor Lewis"
+      },
+      {
+        "text": "がトリュフオイル",
+        "reading": "ga toryufu oiru",
+        "gloss": "truffle oil"
+      },
+      {
+        "text": "の調達",
+        "reading": "no chōtatsu",
+        "gloss": "'s procurement"
+      },
+      {
+        "text": "をたのんできた。",
+        "reading": "o tanonde kita",
+        "gloss": "has asked for"
+      },
+      {
+        "text": "なににつかうのか",
+        "reading": "nani ni tsukau no ka",
+        "gloss": "what he'll use it for"
+      },
+      {
+        "text": "は分からないが、",
+        "reading": "wa wakaranai ga",
+        "gloss": "you don't know, but"
+      },
+      {
+        "text": "どうやら",
+        "reading": "dōyara",
+        "gloss": "apparently"
+      },
+      {
+        "text": "理由",
+        "reading": "riyū",
+        "gloss": "reason"
+      },
+      {
+        "text": "は聞かないほうがよさそうだ。",
+        "reading": "wa kikanai hō ga yosasō da",
+        "gloss": "it's better not to ask"
+      }
+    ]
+  },
+  "120#3": {
+    "japanese": "ルイスにトリュフオイルをひとつ持っていく。",
+    "english": "Take Lewis a bottle of truffle oil.",
+    "segments": [
+      {
+        "text": "ルイス",
+        "reading": "Ruisu",
+        "gloss": "Lewis"
+      },
+      {
+        "text": "にトリュフオイル",
+        "reading": "ni toryufu oiru",
+        "gloss": "truffle oil to"
+      },
+      {
+        "text": "をひとつ",
+        "reading": "o hitotsu",
+        "gloss": "one"
+      },
+      {
+        "text": "持っていく。",
+        "reading": "motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "121#1": {
+    "japanese": "ロブスター求む",
+    "english": "Lobster wanted",
+    "segments": [
+      {
+        "text": "ロブスター",
+        "reading": "robusutā",
+        "gloss": "lobster"
+      },
+      {
+        "text": "求む",
+        "reading": "motomu",
+        "gloss": "wanted"
+      }
+    ]
+  },
+  "121#2": {
+    "japanese": "ガスからお知らせがとどいた。新鮮なロブスターを探しているらしい。",
+    "english": "A notice has arrived from Gus. He's looking for a fresh lobster.",
+    "segments": [
+      {
+        "text": "ガス",
+        "reading": "Gasu",
+        "gloss": "Gus"
+      },
+      {
+        "text": "からお知らせ",
+        "reading": "kara o-shirase",
+        "gloss": "a notice from"
+      },
+      {
+        "text": "がとどいた。",
+        "reading": "ga todoita",
+        "gloss": "arrived"
+      },
+      {
+        "text": "新鮮な",
+        "reading": "shinsen na",
+        "gloss": "fresh"
+      },
+      {
+        "text": "ロブスター",
+        "reading": "robusutā",
+        "gloss": "lobster"
+      },
+      {
+        "text": "を探しているらしい。",
+        "reading": "o sagashite iru rashii",
+        "gloss": "he's apparently looking for"
+      }
+    ]
+  },
+  "121#3": {
+    "japanese": "ガスにロブスターを持っていく。",
+    "english": "Take Gus a lobster.",
+    "segments": [
+      {
+        "text": "ガス",
+        "reading": "Gasu",
+        "gloss": "Gus"
+      },
+      {
+        "text": "にロブスター",
+        "reading": "ni robusutā",
+        "gloss": "a lobster to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "122#1": {
+    "japanese": "パムはものぐさ",
+    "english": "Pam is idle",
+    "segments": [
+      {
+        "text": "パム",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "はものぐさ",
+        "reading": "wa monogusa",
+        "gloss": "is lazy"
+      }
+    ]
+  },
+  "122#2": {
+    "japanese": "パムのリモコンの電池が切れた。チャンネルを変えるたびにわざわざソファからTVまで行くのがめんどくさいらしい。電池をとどけてあげよう。",
+    "english": "The batteries in Pam's remote have died. Getting up from the sofa to the TV every time she changes channel is a bother. Deliver her a battery pack.",
+    "segments": [
+      {
+        "text": "パム",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "のリモコン",
+        "reading": "no rimokon",
+        "gloss": "'s remote"
+      },
+      {
+        "text": "の電池",
+        "reading": "no denchi",
+        "gloss": "'s battery"
+      },
+      {
+        "text": "が切れた。",
+        "reading": "ga kireta",
+        "gloss": "has run out"
+      },
+      {
+        "text": "チャンネル",
+        "reading": "channeru",
+        "gloss": "channel"
+      },
+      {
+        "text": "を変えるたびに",
+        "reading": "o kaeru tabi ni",
+        "gloss": "every time she changes"
+      },
+      {
+        "text": "わざわざ",
+        "reading": "wazawaza",
+        "gloss": "going to the trouble"
+      },
+      {
+        "text": "ソファ",
+        "reading": "sofa",
+        "gloss": "sofa"
+      },
+      {
+        "text": "からTV",
+        "reading": "kara TV",
+        "gloss": "from, to the TV"
+      },
+      {
+        "text": "まで行くのが",
+        "reading": "made iku no ga",
+        "gloss": "going all the way"
+      },
+      {
+        "text": "めんどくさいらしい。",
+        "reading": "mendokusai rashii",
+        "gloss": "is apparently a bother"
+      },
+      {
+        "text": "電池",
+        "reading": "denchi",
+        "gloss": "battery"
+      },
+      {
+        "text": "をとどけてあげよう。",
+        "reading": "o todokete ageyou",
+        "gloss": "let's deliver"
+      }
+    ]
+  },
+  "122#3": {
+    "japanese": "パムに電池を持っていく。",
+    "english": "Take Pam a battery pack.",
+    "segments": [
+      {
+        "text": "パム",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "に電池",
+        "reading": "ni denchi",
+        "gloss": "a battery to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "123#1": {
+    "japanese": "魔法の杖",
+    "english": "Staff of magic",
+    "segments": [
+      {
+        "text": "魔法",
+        "reading": "mahō",
+        "gloss": "magic"
+      },
+      {
+        "text": "の杖",
+        "reading": "no tsue",
+        "gloss": "'s staff"
+      }
+    ]
+  },
+  "123#2": {
+    "japanese": "つかい道は不明だが、魔術師は強力な魔法の杖をつくっているようだ。完成にはイリジウムののべ棒が必要だという。とどけてあげよう。",
+    "english": "What it's for is unclear, but the wizard seems to be making a powerful magic staff. He says he needs an iridium bar to finish it. Deliver one.",
+    "segments": [
+      {
+        "text": "つかい道",
+        "reading": "tsukaimichi",
+        "gloss": "use"
+      },
+      {
+        "text": "は不明だが、",
+        "reading": "wa fumei da ga",
+        "gloss": "is unclear, but"
+      },
+      {
+        "text": "魔術師",
+        "reading": "majutsushi",
+        "gloss": "wizard"
+      },
+      {
+        "text": "は強力な",
+        "reading": "wa kyōryoku na",
+        "gloss": "powerful"
+      },
+      {
+        "text": "魔法の杖",
+        "reading": "mahō no tsue",
+        "gloss": "magic staff"
+      },
+      {
+        "text": "をつくっているようだ。",
+        "reading": "o tsukutte iru yō da",
+        "gloss": "seems to be making"
+      },
+      {
+        "text": "完成",
+        "reading": "kansei",
+        "gloss": "completion"
+      },
+      {
+        "text": "にはイリジウムののべ棒",
+        "reading": "ni wa irijiumu no nobebō",
+        "gloss": "an iridium bar for"
+      },
+      {
+        "text": "が必要だという。",
+        "reading": "ga hitsuyō da to iu",
+        "gloss": "he says is needed"
+      },
+      {
+        "text": "とどけてあげよう。",
+        "reading": "todokete ageyou",
+        "gloss": "let's deliver"
+      }
+    ]
+  },
+  "123#3": {
+    "japanese": "魔術師にイリジウムののべ棒を持っていく。",
+    "english": "Take the wizard an iridium bar.",
+    "segments": [
+      {
+        "text": "魔術師",
+        "reading": "majutsushi",
+        "gloss": "wizard"
+      },
+      {
+        "text": "にイリジウムののべ棒",
+        "reading": "ni irijiumu no nobebō",
+        "gloss": "an iridium bar to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "124#1": {
+    "japanese": "リングコッド釣り",
+    "english": "Lingcod fishing",
+    "segments": [
+      {
+        "text": "リングコッド",
+        "reading": "ringu koddo",
+        "gloss": "lingcod"
+      },
+      {
+        "text": "釣り",
+        "reading": "tsuri",
+        "gloss": "fishing"
+      }
+    ]
+  },
+  "124#2": {
+    "japanese": "ウィリーからの挑戦状だ。リングコッドを釣ってこよう。",
+    "english": "A challenge from Willy. Go and catch a lingcod.",
+    "segments": [
+      {
+        "text": "ウィリー",
+        "reading": "Wirī",
+        "gloss": "Willy"
+      },
+      {
+        "text": "からの挑戦状だ。",
+        "reading": "kara no chōsenjō da",
+        "gloss": "is a letter of challenge from"
+      },
+      {
+        "text": "リングコッド",
+        "reading": "ringu koddo",
+        "gloss": "lingcod"
+      },
+      {
+        "text": "を釣ってこよう。",
+        "reading": "o tsutte koyou",
+        "gloss": "let's go and catch"
+      }
+    ]
+  },
+  "124#3": {
+    "japanese": "ウィリーにリングコッドを持っていく。",
+    "english": "Take Willy a lingcod.",
+    "segments": [
+      {
+        "text": "ウィリー",
+        "reading": "Wirī",
+        "gloss": "Willy"
+      },
+      {
+        "text": "にリングコッド",
+        "reading": "ni ringu koddo",
+        "gloss": "a lingcod to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "125#1": {
+    "japanese": "トロピカルなカクテル",
+    "english": "A tropical cocktail",
+    "segments": [
+      {
+        "text": "トロピカルな",
+        "reading": "toropikaru na",
+        "gloss": "tropical"
+      },
+      {
+        "text": "カクテル",
+        "reading": "kakuteru",
+        "gloss": "cocktail"
+      }
+    ]
+  },
+  "125#2": {
+    "japanese": "ココ・ノ・ノというカクテルをつくりたいガスだが、材料が手に入らず困っているらしい。",
+    "english": "Gus wants to make a cocktail called Coco-no-no, but he's stuck without the ingredient.",
+    "segments": [
+      {
+        "text": "ココ・ノ・ノ",
+        "reading": "koko no no",
+        "gloss": "Coco-no-no"
+      },
+      {
+        "text": "というカクテル",
+        "reading": "to iu kakuteru",
+        "gloss": "the cocktail called"
+      },
+      {
+        "text": "をつくりたい",
+        "reading": "o tsukuritai",
+        "gloss": "wants to make"
+      },
+      {
+        "text": "ガスだが、",
+        "reading": "Gasu da ga",
+        "gloss": "Gus, but"
+      },
+      {
+        "text": "材料",
+        "reading": "zairyō",
+        "gloss": "ingredient"
+      },
+      {
+        "text": "が手に入らず",
+        "reading": "ga te ni hairazu",
+        "gloss": "without getting hold of"
+      },
+      {
+        "text": "困っているらしい。",
+        "reading": "komatte iru rashii",
+        "gloss": "he's apparently stuck"
+      }
+    ]
+  },
+  "125#3": {
+    "japanese": "ガスにココナッツを持っていく。",
+    "english": "Take Gus a coconut.",
+    "segments": [
+      {
+        "text": "ガス",
+        "reading": "Gasu",
+        "gloss": "Gus"
+      },
+      {
+        "text": "にココナッツ",
+        "reading": "ni kokonattsu",
+        "gloss": "a coconut to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "126#1": {
+    "japanese": "君の妻の用事",
+    "english": "An errand for your wife",
+    "segments": [
+      {
+        "text": "君",
+        "reading": "kimi",
+        "gloss": "your"
+      },
+      {
+        "text": "の妻",
+        "reading": "no tsuma",
+        "gloss": "'s wife"
+      },
+      {
+        "text": "の用事",
+        "reading": "no yōji",
+        "gloss": "'s errand"
+      }
+    ]
+  },
+  "126#2": {
+    "japanese": "君の妻は秘密のプロジェクトのために、200本の繊維を持ってくるよう君に頼んだよ。",
+    "english": "Your wife has asked you to bring her 200 fibre for a secret project.",
+    "segments": [
+      {
+        "text": "君",
+        "reading": "kimi",
+        "gloss": "your"
+      },
+      {
+        "text": "の妻",
+        "reading": "no tsuma",
+        "gloss": "wife"
+      },
+      {
+        "text": "は秘密のプロジェクト",
+        "reading": "wa himitsu no purojekuto",
+        "gloss": "a secret project"
+      },
+      {
+        "text": "のために、",
+        "reading": "no tame ni",
+        "gloss": "for"
+      },
+      {
+        "text": "200本の繊維",
+        "reading": "nihyappon no sen'i",
+        "gloss": "200 fibre"
+      },
+      {
+        "text": "を持ってくるよう",
+        "reading": "o motte kuru yō",
+        "gloss": "to bring"
+      },
+      {
+        "text": "君",
+        "reading": "kimi",
+        "gloss": "you"
+      },
+      {
+        "text": "に頼んだよ。",
+        "reading": "ni tanonda yo",
+        "gloss": "asked"
+      }
+    ]
+  },
+  "126#3": {
+    "japanese": "エミリーに200本の繊維を持っていく。",
+    "english": "Take Emily 200 fibre.",
+    "segments": [
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "に200本の繊維",
+        "reading": "ni nihyappon no sen'i",
+        "gloss": "200 fibre to"
+      },
+      {
+        "text": "を持っていく。",
+        "reading": "o motte iku",
+        "gloss": "take"
+      }
+    ]
+  },
+  "127#1": {
+    "japanese": "ヘイリーのケーキウォーク",
+    "english": "Haley's cake-walk",
+    "segments": [
+      {
+        "text": "ヘイリー",
+        "reading": "Heirī",
+        "gloss": "Haley"
+      },
+      {
+        "text": "のケーキウォーク",
+        "reading": "no kēki wōku",
+        "gloss": "'s cake-walk"
+      }
+    ]
+  },
+  "127#2": {
+    "japanese": "あなたの妻は町の広場でチャリティーケーキウォークを企画しているよ。彼女は君にチョコレートケーキを持ってくるように頼んだよ。",
+    "english": "Your wife is organising a charity cake-walk in the town square. She's asked you to bring a chocolate cake.",
+    "segments": [
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "your"
+      },
+      {
+        "text": "の妻",
+        "reading": "no tsuma",
+        "gloss": "wife"
+      },
+      {
+        "text": "は町の広場",
+        "reading": "wa machi no hiroba",
+        "gloss": "in the town square"
+      },
+      {
+        "text": "でチャリティーケーキウォーク",
+        "reading": "de charitī kēki wōku",
+        "gloss": "a charity cake-walk"
+      },
+      {
+        "text": "を企画しているよ。",
+        "reading": "o kikaku shite iru yo",
+        "gloss": "is organising"
+      },
+      {
+        "text": "彼女",
+        "reading": "kanojo",
+        "gloss": "she"
+      },
+      {
+        "text": "は君",
+        "reading": "wa kimi",
+        "gloss": "you"
+      },
+      {
+        "text": "にチョコレートケーキ",
+        "reading": "ni chokorēto kēki",
+        "gloss": "a chocolate cake to"
+      },
+      {
+        "text": "を持ってくるように",
+        "reading": "o motte kuru yō ni",
+        "gloss": "to bring"
+      },
+      {
+        "text": "頼んだよ。",
+        "reading": "tanonda yo",
+        "gloss": "asked"
+      }
+    ]
+  },
+  "127#3": {
+    "japanese": "チョコレートケーキを持って、晴れた朝に町に入ってください。",
+    "english": "Enter town on a sunny morning with a chocolate cake.",
+    "segments": [
+      {
+        "text": "チョコレートケーキ",
+        "reading": "chokorēto kēki",
+        "gloss": "chocolate cake"
+      },
+      {
+        "text": "を持って、",
+        "reading": "o motte",
+        "gloss": "carrying"
+      },
+      {
+        "text": "晴れた朝",
+        "reading": "hareta asa",
+        "gloss": "on a sunny morning"
+      },
+      {
+        "text": "に町",
+        "reading": "ni machi",
+        "gloss": "the town"
+      },
+      {
+        "text": "に入ってください。",
+        "reading": "ni haitte kudasai",
+        "gloss": "please enter"
+      }
+    ]
+  },
+  "13#1": {
+    "japanese": "浜辺へ行こう",
+    "english": "Let's go to the beach",
+    "segments": [
+      {
+        "text": "浜辺",
+        "reading": "hamabe",
+        "gloss": "beach"
+      },
+      {
+        "text": "へ行こう",
+        "reading": "e ikou",
+        "gloss": "let's go to"
+      }
+    ]
+  },
+  "13#2": {
+    "japanese": "ウィリーという名のだれかに、町の南にある浜辺へ招待された。なにか渡したいものがあるらしい。",
+    "english": "Someone named Willy has invited you to the beach south of town. He seems to have something to give you.",
+    "segments": [
+      {
+        "text": "ウィリー",
+        "reading": "Wirī",
+        "gloss": "Willy"
+      },
+      {
+        "text": "という名の",
+        "reading": "to iu na no",
+        "gloss": "named"
+      },
+      {
+        "text": "だれか",
+        "reading": "dareka",
+        "gloss": "someone"
+      },
+      {
+        "text": "に、",
+        "reading": "ni",
+        "gloss": "by"
+      },
+      {
+        "text": "町の南",
+        "reading": "machi no minami",
+        "gloss": "south of town"
+      },
+      {
+        "text": "にある浜辺",
+        "reading": "ni aru hamabe",
+        "gloss": "the beach that is"
+      },
+      {
+        "text": "へ招待された。",
+        "reading": "e shōtai sareta",
+        "gloss": "you were invited to"
+      },
+      {
+        "text": "なにか",
+        "reading": "nanika",
+        "gloss": "something"
+      },
+      {
+        "text": "渡したいもの",
+        "reading": "watashitai mono",
+        "gloss": "that he wants to hand over"
+      },
+      {
+        "text": "があるらしい。",
+        "reading": "ga aru rashii",
+        "gloss": "there apparently is"
+      }
+    ]
+  },
+  "13#3": {
+    "japanese": "午後5時になるまえに、町の南の浜辺をおとずれる。",
+    "english": "Visit the beach south of town before 5pm.",
+    "segments": [
+      {
+        "text": "午後5時",
+        "reading": "gogo goji",
+        "gloss": "5 p.m."
+      },
+      {
+        "text": "になるまえに、",
+        "reading": "ni naru mae ni",
+        "gloss": "before it becomes"
+      },
+      {
+        "text": "町の南",
+        "reading": "machi no minami",
+        "gloss": "south of town"
+      },
+      {
+        "text": "の浜辺",
+        "reading": "no hamabe",
+        "gloss": "'s beach"
+      },
+      {
+        "text": "をおとずれる。",
+        "reading": "o otozureru",
+        "gloss": "visit"
+      }
+    ]
+  },
+  "130#1": {
+    "japanese": "海賊の妻",
+    "english": "The pirate's wife",
+    "segments": [
+      {
+        "text": "海賊",
+        "reading": "kaizoku",
+        "gloss": "pirate"
+      },
+      {
+        "text": "の妻",
+        "reading": "no tsuma",
+        "gloss": "'s wife"
+      }
+    ]
+  }
+}

@@ -63,5 +63,50 @@ namespace ModLogic.Tests
             // entries whose ja text is identical to the en text (deliberately not indexed).
             Assert.InRange(map.Count, 1200, 1600);
         }
+        /// <summary>Every table extracted for both locales, joined the way TranslationIndex does at runtime.</summary>
+        private static TranslationMap AllTablesMap()
+        {
+            var map = new TranslationMap();
+            string japaneseDir = Path.GetFullPath(Path.Combine(ExtractedDir, "ja"));
+
+            foreach (string path in Directory.GetFiles(japaneseDir, "*.json").OrderBy(p => p))
+            {
+                string table = Path.GetFileNameWithoutExtension(path);
+                if (!File.Exists(Path.GetFullPath(Path.Combine(ExtractedDir, "en", table + ".json"))))
+                    continue;
+
+                map.AddTable(LoadTable("ja", table), LoadTable("en", table));
+            }
+
+            return map;
+        }
+
+        [Fact]
+        public void Translates_the_real_journal_button_tooltip_with_its_keybind_substituted()
+        {
+            // the case that exposed the gap: UI/QuestButton_Hover is stored as a template and the
+            // game string.Formats the keybind in before it ever reaches a tooltip
+            Assert.True(AllTablesMap().TryLookup("日記 （F）", out string translation));
+            Assert.Equal("Journal (F)", translation);
+        }
+
+        [Fact]
+        public void Indexes_the_real_token_templates_across_every_table()
+        {
+            // Plan.md counted 761 shared ja/en entries whose two locales use the same token set;
+            // the registered count is a little lower because the all-token and adjacent-token ones
+            // are refused as unmatchable.
+            Assert.InRange(AllTablesMap().TemplateCount, 500, 900);
+        }
+
+        [Fact]
+        public void Template_matching_does_not_hijack_a_string_that_has_an_exact_translation()
+        {
+            var map = AllTablesMap();
+
+            Assert.True(map.TryLookup("ドングリ", out string translation));
+            Assert.Equal("Acorn", translation);
+        }
+
     }
 }

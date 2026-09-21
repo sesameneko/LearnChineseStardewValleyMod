@@ -19,6 +19,18 @@ import json, os, re, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 JA = os.path.join(ROOT, "tools", "extracted-strings", "ja")
 EN = os.path.join(ROOT, "tools", "extracted-strings", "en")
+DATA_JA = os.path.join(ROOT, "tools", "extracted-strings", "data-ja")
+DATA_EN = os.path.join(ROOT, "tools", "extracted-strings", "data-en")
+
+# Assets under Content/Data are not one string per key: each value is a
+# slash-delimited record, and only some of its fields are text the player ever
+# reads. These are expanded into one pseudo-entry per displayed field, keyed
+# "<record id>#<field index>", so the rest of the pipeline can treat them like
+# any other table. Field indices are 0-based into the split record.
+DATA_TABLES = {
+    # Quests: type/name/description/objective/...
+    "Data_Quests": {"asset": "Quests", "fields": [1, 2, 3]},
+}
 # tracked source of truth; assets/segments/ja is generated from it by the
 # csproj's CopySegmentData target and is gitignored
 OUT = os.path.join(ROOT, "tools", "extracted-strings", "literal-translations")
@@ -42,6 +54,9 @@ COMMENT = ("Word/phrase-level breakdown of Stardew Valley {table}.xnb strings, f
 
 
 def source(table):
+    if table in DATA_TABLES:
+        return data_source(table)
+
     with open(os.path.join(JA, table + ".json"), encoding="utf-8") as f:
         ja = json.load(f)["entries"]
     try:
@@ -49,6 +64,36 @@ def source(table):
             en = json.load(f)["entries"]
     except FileNotFoundError:
         en = {}
+    return ja, en
+
+
+def data_source(table):
+    """Expands a Content/Data asset's slash-delimited records into one entry per
+    displayed field. A field that is empty or a placeholder ('.', 'null') is
+    dropped, since the player never sees it."""
+    spec = DATA_TABLES[table]
+    with open(os.path.join(DATA_JA, spec["asset"] + ".json"), encoding="utf-8") as f:
+        ja_records = json.load(f)["entries"]
+    try:
+        with open(os.path.join(DATA_EN, spec["asset"] + ".json"), encoding="utf-8") as f:
+            en_records = json.load(f)["entries"]
+    except FileNotFoundError:
+        en_records = {}
+
+    ja, en = {}, {}
+    for record_id, record in ja_records.items():
+        parts = record.split("/")
+        en_parts = en_records.get(record_id, "").split("/")
+        for index in spec["fields"]:
+            if index >= len(parts):
+                continue
+            text = parts[index]
+            if not text or text in (".", "null"):
+                continue
+            key = f"{record_id}#{index}"
+            ja[key] = text
+            if index < len(en_parts):
+                en[key] = en_parts[index]
     return ja, en
 
 
@@ -91,7 +136,7 @@ def pending(table):
 
 
 def tables():
-    return sorted(f[:-5] for f in os.listdir(JA) if f.endswith(".json"))
+    return sorted([f[:-5] for f in os.listdir(JA) if f.endswith(".json")] + list(DATA_TABLES))
 
 
 def cmd_status(args):
@@ -209,7 +254,9 @@ def cmd_validate(args):
     for name in sorted(os.listdir(OUT)):
         if not name.endswith(".json"):
             continue
-        table = name[:-5].replace("_Description", "").replace("_Name", "")
+        table = name[:-5]
+        if table not in DATA_TABLES:
+            table = table.replace("_Description", "").replace("_Name", "")
         ja, _ = source(table)
         with open(os.path.join(OUT, name), encoding="utf-8") as f:
             doc = json.load(f)

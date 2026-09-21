@@ -171,5 +171,109 @@ namespace ModLogic.Tests
             Assert.Equal("a b c", TranslationMap.Normalize("  a \n\t b   c  "));
             Assert.Equal("", TranslationMap.Normalize(null));
         }
+        [Fact]
+        public void Matches_a_token_template_the_game_formatted_at_draw_time()
+        {
+            // the journal button: the table holds the template, the screen shows the keybind filled in
+            var map = MapOf(("QuestButton_Hover", "日記 （{0}）", "Journal ({0})"));
+
+            Assert.True(map.TryLookup("日記 （F）", out string translation));
+            Assert.Equal("Journal (F)", translation);
+        }
+
+        [Fact]
+        public void Substitutes_captured_values_by_token_index_not_by_position()
+        {
+            // the two locales order their tokens differently, so position-based filling would swap them
+            var map = MapOf(("Swapped", "{0}を{1}に渡した", "Gave {1} the {0}"));
+
+            Assert.True(map.TryLookup("パンをルイスに渡した", out string translation));
+            Assert.Equal("Gave ルイス the パン", translation);
+        }
+
+        [Fact]
+        public void Translates_a_captured_value_that_is_itself_a_known_string()
+        {
+            var map = MapOf(
+                ("Found", "{0}を見つけた。", "You found the {0}."),
+                ("Acorn_Name", "どんぐり", "Acorn"));
+
+            Assert.True(map.TryLookup("どんぐりを見つけた。", out string translation));
+            Assert.Equal("You found the Acorn.", translation);
+        }
+
+        [Fact]
+        public void Matches_a_token_template_across_the_newlines_word_wrapping_inserted()
+        {
+            var map = MapOf(("Wrapped", "こうげきりょくが{0}上がった。", "Attack increased by {0}."));
+
+            Assert.True(map.TryLookup("こうげきりょ\nくが5上がった。", out string translation));
+            Assert.Equal("Attack increased by 5.", translation);
+        }
+
+        [Fact]
+        public void Prefers_the_most_specific_template_over_a_looser_one()
+        {
+            var map = MapOf(
+                ("Loose", "{0}（{1}）", "{0} [{1}]"),
+                ("Specific", "日記 （{0}）", "Journal ({0})"));
+
+            Assert.True(map.TryLookup("日記 （F）", out string translation));
+            Assert.Equal("Journal (F)", translation);
+        }
+
+        [Fact]
+        public void Skips_a_template_whose_two_locales_disagree_on_their_tokens()
+        {
+            // nothing to fill {1} from, so filling it would emit a literal "{1}" into the tooltip
+            var map = MapOf(("Mismatched", "{0}を渡した", "Gave {1} the {0}"));
+
+            Assert.Equal(0, map.TemplateCount);
+            Assert.False(map.TryLookup("パンを渡した", out _));
+        }
+
+        [Fact]
+        public void Skips_a_template_that_is_all_token_and_would_match_anything()
+        {
+            var map = MapOf(("AllToken", "{0}", "{0}"), ("Adjacent", "{0}{1}", "{1}{0}"));
+
+            Assert.Equal(0, map.TemplateCount);
+            Assert.False(map.TryLookup("なんでもいい", out _));
+        }
+
+        [Fact]
+        public void Reports_no_translation_when_no_template_matches()
+        {
+            var map = MapOf(("QuestButton_Hover", "日記 （{0}）", "Journal ({0})"));
+
+            Assert.False(map.TryLookup("まったく別の文", out string translation));
+            Assert.Equal("", translation);
+        }
+
+        [Fact]
+        public void Repeated_lookups_of_the_same_template_text_agree()
+        {
+            // the cache is what makes a per-frame tooltip query cheap; it must not change the answer
+            var map = MapOf(("QuestButton_Hover", "日記 （{0}）", "Journal ({0})"));
+
+            Assert.True(map.TryLookup("日記 （F）", out string first));
+            Assert.True(map.TryLookup("日記 （F）", out string second));
+            Assert.False(map.TryLookup("別（X）", out _));
+            Assert.False(map.TryLookup("別（X）", out _));
+            Assert.Equal(first, second);
+        }
+
+        [Fact]
+        public void Paragraph_lookup_can_use_a_template_for_one_of_its_paragraphs()
+        {
+            var map = MapOf(
+                ("Desc", "あたたかいズボン。", "Warm pants."),
+                ("Buff", "こうげきりょくが{0}上がった。", "Attack increased by {0}."));
+
+            Assert.True(map.TryLookup("あたたかいズボン。\n\nこうげきりょくが5上がった。", out string translation));
+            Assert.Contains("Warm pants.", translation);
+            Assert.Contains("Attack increased by 5.", translation);
+        }
+
     }
 }
