@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using LanguageStudyStardewValleyMod.Patches;
@@ -20,6 +21,9 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>The word found under the cursor on the last draw, for logging.</summary>
         public static string? LastHitWord { get; private set; }
 
+        /// <summary>Whether the last hit's boundaries came from hand-segmented data rather than the fallback heuristic.</summary>
+        public static bool LastHitWasExact { get; private set; }
+
         public static void Draw(SpriteBatch spriteBatch)
         {
             if (!TextCapturePatches.Enabled)
@@ -31,16 +35,22 @@ namespace LanguageStudyStardewValleyMod
                 {
                     var hit = FindWordUnderCursor();
                     LastHitWord = hit?.Word;
+                    LastHitWasExact = hit?.Exact ?? false;
 
                     if (hit is null)
                         return;
 
+                    // green when the boundaries came from hand-segmented data, amber when they came
+                    // from the character-class fallback -- so a blobbed kanji/hiragana run is
+                    // recognisable on sight as missing data rather than a hit-testing bug
+                    Color wordColor = hit.Value.Exact ? Color.Lime : Color.Orange;
+
                     // the whole line, faintly, then the word itself -- makes a wrong line and a
                     // wrong word within the right line distinguishable at a glance
                     DrawOutline(spriteBatch, hit.Value.Line, Color.Cyan * 0.35f, thickness: 2);
-                    DrawOutline(spriteBatch, hit.Value.Word_Bounds, Color.Lime, thickness: 2);
+                    DrawOutline(spriteBatch, hit.Value.Word_Bounds, wordColor, thickness: 2);
 
-                    DrawLabel(spriteBatch, hit.Value.Word, hit.Value.Word_Bounds);
+                    DrawLabel(spriteBatch, hit.Value.Word, hit.Value.Word_Bounds, wordColor);
                 }
             }
             catch (Exception ex)
@@ -49,7 +59,7 @@ namespace LanguageStudyStardewValleyMod
             }
         }
 
-        private readonly record struct Hit(string Word, Rectangle Word_Bounds, Rectangle Line);
+        private readonly record struct Hit(string Word, Rectangle Word_Bounds, Rectangle Line, bool Exact);
 
         private static Hit? FindWordUnderCursor()
         {
@@ -71,7 +81,7 @@ namespace LanguageStudyStardewValleyMod
                     continue;
 
                 string line = lines[lineIndex.Value];
-                var segments = TextHitTest.SplitSegments(line);
+                var (segments, exact) = ResolveSegments(drawn.Text, lines, lineIndex.Value, line);
 
                 int? segmentIndex = TextHitTest.HitSegment(segments, drawn.MeasurePrefix, drawn.X, mouseX);
                 if (segmentIndex is null)
@@ -87,10 +97,31 @@ namespace LanguageStudyStardewValleyMod
                 var wordBounds = new Rectangle((int)(drawn.X + left), (int)lineTop, (int)Math.Ceiling(width), (int)Math.Ceiling(lineHeight));
                 var lineBounds = new Rectangle((int)drawn.X, (int)lineTop, (int)Math.Ceiling(drawn.MeasurePrefix(line)), (int)Math.Ceiling(lineHeight));
 
-                return new Hit(word, wordBounds, lineBounds);
+                return new Hit(word, wordBounds, lineBounds, exact);
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Prefers hand-segmented boundaries, falling back to the character-class heuristic.
+        ///
+        /// The data describes the unwrapped source string, so it also has to be mapped onto the
+        /// rendered line; if either step doesn't line up exactly, the fallback is used rather than
+        /// a box drawn in the wrong place.
+        /// </summary>
+        private static (IReadOnlyList<string> Segments, bool Exact) ResolveSegments(string drawnText, string[] lines, int lineIndex, string line)
+        {
+            var index = ModEntry.Instance?.Segments;
+
+            if (index != null
+                && index.TryGetSegments(drawnText, out var wholeString)
+                && SegmentIndex.TryGetSegmentsForLine(wholeString, lines, lineIndex, out var lineSegments))
+            {
+                return (lineSegments, true);
+            }
+
+            return (TextHitTest.SplitSegments(line), false);
         }
 
         private static void DrawOutline(SpriteBatch b, Rectangle rect, Color color, int thickness)
@@ -104,7 +135,7 @@ namespace LanguageStudyStardewValleyMod
         }
 
         /// <summary>Shows the matched word just above its outline, so a mis-split is obvious on screen.</summary>
-        private static void DrawLabel(SpriteBatch b, string word, Rectangle wordBounds)
+        private static void DrawLabel(SpriteBatch b, string word, Rectangle wordBounds, Color color)
         {
             var font = Game1.smallFont;
             Vector2 size = font.MeasureString(word);
@@ -115,7 +146,7 @@ namespace LanguageStudyStardewValleyMod
                 y = wordBounds.Bottom + 4;
 
             b.Draw(Game1.staminaRect, new Rectangle(x - 2, y - 2, (int)size.X + 4, (int)size.Y + 4), Color.Black * 0.75f);
-            b.DrawString(font, word, new Vector2(x, y), Color.Lime);
+            b.DrawString(font, word, new Vector2(x, y), color);
         }
     }
 }

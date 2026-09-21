@@ -41,6 +41,9 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>The source -> target text lookup the hover tooltips are translated through.</summary>
         public TranslationIndex TranslationIndex { get; private set; } = null!;
 
+        /// <summary>Hand-segmented word boundaries, used by word hover in preference to the character-class fallback.</summary>
+        public SegmentIndex Segments { get; private set; } = new();
+
         public override void Entry(IModHelper helper)
         {
             Instance = this;
@@ -59,6 +62,9 @@ namespace LanguageStudyStardewValleyMod
             this.TranslationIndex = new TranslationIndex(helper);
 
             ConfigureMod(helper.ReadConfig<ModConfig>());
+
+            // plain file IO, so it needs no game state and can happen before the game is up
+            this.Segments = SegmentDataLoader.Load(helper, currentConfig.SourceLanguage);
 
             ApplyPatches();
 

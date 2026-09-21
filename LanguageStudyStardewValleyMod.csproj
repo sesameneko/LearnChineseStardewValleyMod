@@ -23,6 +23,22 @@
       <None Include="assets/**/*.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
+
     </ItemGroup>
+
+    <!--
+      Hand-segmented word boundaries (see Plan.md's data task) live in tools/extracted-strings,
+      where they're generated and validated. Copy them into assets/ before the build rather than
+      committing a second copy: ModBuildConfig deploys files from the PROJECT folder (not the build
+      output), and tools/ is excluded there, so a None+Link into the output never reaches the
+      deployed mod. assets/segments/ is gitignored for the same reason: tools/ stays the source
+      of truth.
+    -->
+    <Target Name="CopySegmentData" BeforeTargets="BeforeBuild">
+      <ItemGroup>
+        <SegmentDataFiles Include="tools/extracted-strings/literal-translations/Objects_Description.json" />
+      </ItemGroup>
+      <Copy SourceFiles="@(SegmentDataFiles)" DestinationFolder="assets/segments/ja" SkipUnchangedFiles="true" />
+    </Target>
 
 </Project>
