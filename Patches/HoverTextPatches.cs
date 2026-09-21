@@ -1,5 +1,6 @@
 using System;
 using System.Text;
+using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
 
 namespace LanguageStudyStardewValleyMod.Patches
@@ -62,7 +63,7 @@ namespace LanguageStudyStardewValleyMod.Patches
             return true;
         }
 
-        public static void Postfix_DrawHoverText(StringBuilder text, string boldTitleText)
+        public static void Postfix_DrawHoverText(SpriteBatch b, StringBuilder text, string boldTitleText)
         {
             if (!capturing)
                 return; // the vanilla draw was suppressed, so there's nothing to capture
@@ -119,6 +120,12 @@ namespace LanguageStudyStardewValleyMod.Patches
             {
                 ModEntry.Log($"Error in drawHoverText postfix: {ex}", LogLevel.Error);
             }
+
+            // Draw the word overlay here rather than at RenderedHud: a toolbar tooltip is drawn
+            // *after* that event, so anything drawn there ends up beneath it whatever its layer
+            // depth. This postfix runs immediately after the tooltip, into the same sprite batch,
+            // and by now the tooltip's own text is recorded -- so it is both on top and complete.
+            WordHoverOverlay.Draw(b);
         }
 
         public static void Prefix_DrawTextureBox(int x, int y, int width, int height)

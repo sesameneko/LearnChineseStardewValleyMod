@@ -25,10 +25,19 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>Whether the last hit's boundaries came from hand-segmented data rather than the fallback heuristic.</summary>
         public static bool LastHitWasExact { get; private set; }
 
+        /// <summary>
+        /// Whether the overlay has already been drawn this frame. It gets one chance per frame, at
+        /// the latest point available: right after a tooltip is drawn when there is one, otherwise
+        /// the HUD/menu pass.
+        /// </summary>
+        public static bool DrawnThisFrame { get; set; }
+
         public static void Draw(SpriteBatch spriteBatch)
         {
-            if (!TextCapturePatches.Enabled)
+            if (!TextCapturePatches.Enabled || DrawnThisFrame)
                 return;
+
+            DrawnThisFrame = true;
 
             try
             {

@@ -32,9 +32,6 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>The live config, read by the Harmony patches.</summary>
         public ModConfig Config => this.currentConfig;
 
-        /// <summary>Guards the word-hover overlay to one draw per frame across the two UI-mode render events.</summary>
-        private bool wordHoverDrawnThisFrame;
-
         /// <summary>Whether to log the raw text of hover tooltips that couldn't be translated (see the ls_log_misses command).</summary>
         public bool LogTranslationMisses { get; private set; }
 
@@ -297,7 +294,7 @@ namespace LanguageStudyStardewValleyMod
         {
             TooltipOverlay.Clear();
             TextCapturePatches.BeginFrame();
-            this.wordHoverDrawnThisFrame = false;
+            WordHoverOverlay.DrawnThisFrame = false;
         }
 
         /// <summary>
@@ -340,10 +337,7 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         private void DrawWordHover(SpriteBatch spriteBatch)
         {
-            if (this.wordHoverDrawnThisFrame)
-                return;
-
-            this.wordHoverDrawnThisFrame = true;
+            // no-ops when a tooltip's postfix already drew it this frame
             WordHoverOverlay.Draw(spriteBatch);
 
             if (TextCapturePatches.DumpPending)
