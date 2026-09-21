@@ -6,10 +6,14 @@ namespace LanguageStudyStardewValleyMod
     {
         public bool TranslationEnabled { get; set; } = true;
 
-        public KeybindList ToggleTranslation { get; set; } = KeybindList.Parse("F2");
+        // letter keys rather than function keys: on macOS F-keys need Fn by default.
+        // Both are unbound in vanilla (which reserves WASD/C/X/V/Y/F/M/E/T/Tab/Escape/1-0) and
+        // avoid keys popular mods claim (F1 Lookup Anything, B Chests Anywhere, P CJB Cheats,
+        // I Item Spawner, U Automate). Left-hand keys, since the right hand is on the mouse.
+        public KeybindList ToggleTranslation { get; set; } = KeybindList.Parse("G");
 
         /// <summary>Pins the tooltip under the cursor so individual words in it can be hovered (Plan.md M2.1).</summary>
-        public KeybindList FreezeTooltip { get; set; } = KeybindList.Parse("F3");
+        public KeybindList FreezeTooltip { get; set; } = KeybindList.Parse("Z");
 
         /// <summary>The game's UI language to translate from, as a locale code (e.g. "ja"). Not yet exposed in the config UI.</summary>
         public string SourceLanguage { get; set; } = "ja";
