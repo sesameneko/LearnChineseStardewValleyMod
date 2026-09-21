@@ -87,7 +87,10 @@ namespace LanguageStudyStardewValleyMod
             string? reading = element.TryGetProperty("reading", out var readingElement) ? readingElement.GetString() : null;
             string? gloss = element.TryGetProperty("gloss", out var glossElement) ? glossElement.GetString() : null;
 
-            return new TextSegment(text, reading, gloss);
+            // the reading and gloss are shown in the game's font, which has no glyph for a macron
+            // and silently draws '*' instead; the Japanese text itself is left exactly as authored,
+            // since it has to keep matching what the game drew
+            return new TextSegment(text, FontSafeText.Apply(reading), FontSafeText.Apply(gloss));
         }
     }
 }

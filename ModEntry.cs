@@ -111,6 +111,14 @@ namespace LanguageStudyStardewValleyMod
             );
 
             helper.ConsoleCommands.Add(
+                "ls_font_check",
+                "Reports which characters of the given text the game's font can't draw -- those render as "
+                + "the font's substitute character rather than failing, so they're easy to mistake for a data "
+                + "bug. With no text, checks the loaded segment data. Usage: ls_font_check [text]",
+                this.OnFontCheckCommand
+            );
+
+            helper.ConsoleCommands.Add(
                 "ls_lookup",
                 "Looks a piece of source-language text up in the translation index, the same way a hover would. "
                 + "Usage: ls_lookup <text>",
@@ -461,6 +469,49 @@ namespace LanguageStudyStardewValleyMod
 
             // everything recorded has now been hit-tested against, so it's safe to drop
             TextCapturePatches.ConsumeFrame();
+        }
+
+        private void OnFontCheckCommand(string command, string[] args)
+        {
+            var font = Game1.smallFont;
+            if (font is null)
+            {
+                Log("The font isn't loaded yet.", LogLevel.Warn);
+                return;
+            }
+
+            Log($"smallFont knows {font.Characters.Count} characters; missing ones are drawn as '{font.DefaultCharacter}'.");
+
+            if (args.Length > 0)
+            {
+                string text = string.Join(" ", args);
+                var missing = text.Where(c => !font.Characters.Contains(c)).Distinct().ToList();
+
+                Log(missing.Count == 0
+                    ? $"All {text.Length} characters of '{text}' are drawable."
+                    : $"Not drawable: {string.Join(", ", missing.Select(c => $"'{c}' (U+{(int)c:X4})"))}");
+                return;
+            }
+
+            // no argument: check what the segment data would actually put on screen
+            var offenders = new Dictionary<char, int>();
+            foreach (var segment in this.Segments.AllSegments())
+            {
+                foreach (char c in (segment.Reading ?? "") + (segment.Gloss ?? ""))
+                {
+                    if (!font.Characters.Contains(c))
+                        offenders[c] = offenders.GetValueOrDefault(c) + 1;
+                }
+            }
+
+            if (offenders.Count == 0)
+                Log("Every reading and gloss in the loaded segment data is drawable.");
+            else
+            {
+                Log($"{offenders.Count} undrawable character(s) in the loaded segment data:", LogLevel.Warn);
+                foreach (var (c, n) in offenders.OrderByDescending(pair => pair.Value))
+                    Log($"  '{c}' (U+{(int)c:X4}) x{n}", LogLevel.Warn);
+            }
         }
 
         private void OnDrawTraceCommand(string command, string[] args)

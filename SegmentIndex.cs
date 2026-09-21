@@ -35,6 +35,16 @@ namespace LanguageStudyStardewValleyMod
 
         public int Count => this.byNormalized.Count;
 
+        /// <summary>Every segment in the index, for diagnostics that need to inspect the data as loaded.</summary>
+        public IEnumerable<TextSegment> AllSegments()
+        {
+            foreach (var segments in this.byNormalized.Values)
+            {
+                foreach (var segment in segments)
+                    yield return segment;
+            }
+        }
+
         /// <summary>
         /// Adds one source string's segmentation. Rejects data that violates the concatenation
         /// invariant (segments must reproduce the source exactly), since every position calculation
