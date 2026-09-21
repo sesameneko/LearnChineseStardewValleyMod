@@ -61,6 +61,27 @@ Files added/changed: `ModEntry.cs` (event wiring, `ApplyPatches`, three console 
 - Handle known edge cases surfaced in research (e.g. gendered-string delimiter-splitting bugs in some locales) defensively — fall back to "no translation available" rather than a garbled string.
 - Use `ls_log_misses` (added in M1) while play-testing to build the list of what's still uncovered — it logs the raw text of any tooltip that failed to translate, deduped per distinct tooltip.
 
+### M2.1 — Frozen tooltips: per-word hover inside a pinned tooltip
+A self-contained vertical slice, **not a dependency of M3 and not dependent on M2**. A hotkey "freezes" the tooltip currently under the cursor: it stays pinned in place with its content fixed, so the cursor is free to move across it and hover individual words, each showing its own small definition tooltip. Pressing the hotkey again unfreezes.
+
+This is worth doing before M3 because it reaches the same end goal (hovering a single word) while **sidestepping M3's hard problem entirely**. M3 has to reverse-engineer text geometry out of the game's draw calls; a frozen tooltip's text is static and its box rect is something M1's patch already captures, so the geometry is known up front instead of reconstructed per frame.
+
+**Research done (2026-09-21, against the installed 1.6.15 assembly):**
+- **Hover is polled, not evented, and nothing "consumes" it.** `Game1.updateActiveMenu` calls `activeClickableMenu.performHoverAction(mouseX, mouseY)` every frame; nesting is manual delegation (`GameMenu` forwards to its current page, and ~190 other call sites do likewise by hand). Both `performHoverAction` and `receiveLeftClick` return `void` — there is no `handled` flag anywhere. A handler's result is written to fields (`hoverText`, `hoverItem`, …) that `draw()` reads later in the same frame, and overlapping components are arbitrated purely by which assignment executes last.
+- **No consumption model does *not* mean a mod can't block hover.** A Harmony prefix sits above the whole dispatch: returning `false` from a prefix on `performHoverAction` stops the menu computing hover at all, and returning `false` from one on `drawHoverText` stops any vanilla tooltip drawing. The lack of consumption only matters to code that tries to compete with vanilla hover *without* patching it.
+- **`drawHoverText` can be re-issued at fixed coordinates.** It takes `overrideX`/`overrideY` parameters (both defaulting to `-1`, i.e. "position relative to the cursor"). Passing explicit values renders a *pixel-identical* vanilla tooltip — money line, buff icons, craft ingredients and all — pinned wherever we want. The frozen tooltip therefore needs no hand-built replica of vanilla's appearance.
+
+**Build order:**
+- Freeze state: on the hotkey, stop overwriting the text + box rect that `HoverTextPatches` already captures each frame. No-op the hotkey when nothing is currently hovered, so an empty box can't be frozen.
+- Suppress vanilla tooltips while frozen: prefix returning `false` on the **StringBuilder** overload of `IClickableMenu.drawHoverText` — the same single funnel M1 patches, so one prefix suppresses every tooltip in the game.
+- Re-issue the frozen tooltip ourselves via `drawHoverText` with `overrideX`/`overrideY` set to the frozen position.
+- Optionally also prefix `performHoverAction` to return `false` while frozen, so the menu underneath stops animating button scales and changing `hoverItem` as the cursor crosses the frozen box. Cosmetic, not required.
+- Word hit-testing: compute segment x-ranges **once** on freeze (not per frame) by measuring cumulative prefixes in the same font. No runtime tokenizer needed — `tools/extracted-strings/literal-translations` already guarantees that concatenating a segment's `text` values reproduces the source string character-for-character.
+- Per-word definition tooltip: reuse `TooltipOverlay`.
+- **First milestone deliverable is a debug rectangle per word**, before any definition lookup is wired up — that proves freeze + suppression + per-word hit-testing in isolation.
+
+**Known open question:** where the *text* origin sits inside the box. Vanilla computes it internally, so mapping a word to a rect needs that offset from the box corner. Plan A is to let vanilla draw the box and calibrate the constant once with the debug rectangles above; tooltips with an item icon or buff rows shift the origin, so this may need a case per tooltip shape. Plan B, if calibration gets fiddly, is to draw the replica ourselves — then the layout is ours and every word's rect is known by construction, at the cost of matching vanilla's appearance by hand.
+
 ### M3 — Arbitrary label hover (headers, counters, untooltipped buttons)
 - Design spike: patch core text-draw entry points (`SpriteText.drawString`, `Utility.drawTextWithShadow`, or targeted per-menu `draw()` overrides) to record `(string, screen rect)` per frame; hit-test mouse position each tick against recorded rects to decide what to show a tooltip for.
 - Scope to a prioritized subset of menus first (inventory, shop, dialogue) rather than attempting universal coverage in one pass — this is the most open-ended milestone and should be re-scoped once M1/M2 reveal how much vanilla tooltip coverage already handles.
