@@ -33,20 +33,55 @@ namespace LanguageStudyStardewValleyMod.Patches
         /// </summary>
         private static string? lastLoggedMiss;
 
-        public static void Prefix_DrawHoverText()
+        /// <summary>The last vanilla tooltip seen this frame, for FrozenTooltip to pin.</summary>
+        private static string? lastText;
+        private static string? lastTitle;
+        private static TooltipBox lastBox;
+        private static bool haveLastTooltip;
+
+        /// <summary>The most recent vanilla tooltip, if one was drawn.</summary>
+        public static bool TryGetLastTooltip(out string text, out string? title, out TooltipBox box)
         {
+            text = lastText ?? "";
+            title = lastTitle;
+            box = lastBox;
+            return haveLastTooltip;
+        }
+
+        /// <summary>Returns false to skip the vanilla draw, which is how tooltips are suppressed while one is frozen.</summary>
+        public static bool Prefix_DrawHoverText()
+        {
+            if (FrozenTooltip.ShouldSuppressVanilla)
+            {
+                capturing = false;
+                return false;
+            }
+
             capturing = true;
             haveBox = false;
+            return true;
         }
 
         public static void Postfix_DrawHoverText(StringBuilder text, string boldTitleText)
         {
+            if (!capturing)
+                return; // the vanilla draw was suppressed, so there's nothing to capture
+
             capturing = false;
 
             try
             {
                 if (!haveBox)
                     return;
+
+                // don't overwrite the pinned tooltip with the re-issue of itself
+                if (!FrozenTooltip.IsFrozen)
+                {
+                    lastText = text?.ToString() ?? "";
+                    lastTitle = boldTitleText;
+                    lastBox = capturedBox;
+                    haveLastTooltip = true;
+                }
 
                 var mod = ModEntry.Instance;
                 if (mod is null || !mod.Config.TranslationEnabled)

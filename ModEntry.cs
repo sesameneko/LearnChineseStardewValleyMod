@@ -241,6 +241,19 @@ namespace LanguageStudyStardewValleyMod
             if (!Context.IsWorldReady)
                 return;
 
+            if (currentConfig.FreezeTooltip.JustPressed())
+            {
+                if (FrozenTooltip.IsFrozen)
+                {
+                    FrozenTooltip.Unfreeze();
+                    Log("Tooltip unfrozen.");
+                }
+                else if (FrozenTooltip.Freeze())
+                    Log("Tooltip frozen -- move the cursor over it to hover individual words.");
+                else
+                    Log("Nothing to freeze: hover a tooltip first.", LogLevel.Warn);
+            }
+
             if (currentConfig.ToggleTranslation.JustPressed())
             {
                 currentConfig.TranslationEnabled = !currentConfig.TranslationEnabled;
@@ -300,6 +313,7 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         private void OnRenderedHud(object? sender, RenderedHudEventArgs e)
         {
+            FrozenTooltip.Draw(e.SpriteBatch);
             TooltipOverlay.Draw(e.SpriteBatch);
 
             // when a menu is open its text hasn't been drawn yet, so leave the overlay to the menu pass
@@ -310,6 +324,7 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>Draws the translation tooltip captured during the active menu's draw.</summary>
         private void OnRenderedActiveMenu(object? sender, RenderedActiveMenuEventArgs e)
         {
+            FrozenTooltip.Draw(e.SpriteBatch);
             TooltipOverlay.Draw(e.SpriteBatch);
             this.DrawWordHover(e.SpriteBatch);
         }
@@ -621,6 +636,14 @@ namespace LanguageStudyStardewValleyMod
                 tooltip: () => "Turns hover translations on/off.",
                 getValue: () => this.currentConfig.ToggleTranslation,
                 setValue: value => this.currentConfig.ToggleTranslation = value
+            );
+
+            configMenu.AddKeybindList(
+                mod: this.ModManifest,
+                name: () => "Freeze Tooltip",
+                tooltip: () => "Pins the tooltip under the cursor so you can move the mouse onto it and hover individual words.",
+                getValue: () => this.currentConfig.FreezeTooltip,
+                setValue: value => this.currentConfig.FreezeTooltip = value
             );
         }
         #endregion
