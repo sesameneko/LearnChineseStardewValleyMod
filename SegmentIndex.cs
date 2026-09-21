@@ -10,7 +10,13 @@ namespace LanguageStudyStardewValleyMod
     /// <param name="Text">The characters this segment covers on screen.</param>
     /// <param name="Reading">Romanised reading, e.g. "ueru".</param>
     /// <param name="Gloss">What the word means *in this sentence*, e.g. "to plant".</param>
-    public readonly record struct TextSegment(string Text, string? Reading, string? Gloss)
+    /// <param name="Kana">
+    /// Kana reading, e.g. "うえる". The lossless form: kana to romaji is deterministic, romaji to
+    /// kana is not (ō is おう in gakkō but おお in tōri), so this is what the data holds and what a
+    /// romaji/kana preference would be rendered from. It also renders, which romaji doesn't: the
+    /// game's font has no macron glyph and silently substitutes '*'.
+    /// </param>
+    public readonly record struct TextSegment(string Text, string? Reading, string? Gloss, string? Kana = null)
     {
         public static TextSegment Plain(string text) => new(text, null, null);
 

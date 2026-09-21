@@ -86,11 +86,14 @@ namespace LanguageStudyStardewValleyMod
             string text = element.TryGetProperty("text", out var textElement) ? textElement.GetString() ?? "" : "";
             string? reading = element.TryGetProperty("reading", out var readingElement) ? readingElement.GetString() : null;
             string? gloss = element.TryGetProperty("gloss", out var glossElement) ? glossElement.GetString() : null;
+            string? kana = element.TryGetProperty("kana", out var kanaElement) ? kanaElement.GetString() : null;
 
             // the reading and gloss are shown in the game's font, which has no glyph for a macron
             // and silently draws '*' instead; the Japanese text itself is left exactly as authored,
             // since it has to keep matching what the game drew
-            return new TextSegment(text, FontSafeText.Apply(reading), FontSafeText.Apply(gloss));
+            // the kana needs no font-safing: the game's font draws kana natively, which is half the
+            // reason the readings were migrated to it
+            return new TextSegment(text, FontSafeText.Apply(reading), FontSafeText.Apply(gloss), kana);
         }
     }
 }

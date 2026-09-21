@@ -140,6 +140,10 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>
         /// The label text: the gloss on the first line, the reading in brackets on the second.
         ///
+        /// Kana is preferred over romaji where the data has it -- the font draws kana natively,
+        /// while a macron comes out as '*' -- with romaji as the fallback for anything not yet
+        /// migrated. A reader-facing choice between the two is a line here once it's wanted.
+        ///
         /// The source word itself is deliberately left out -- it's already on screen directly under
         /// the outline, so repeating it just widened the label over the text being read. With no
         /// gloss (the amber fallback, where there's no segment data) the word is all there is.
@@ -149,9 +153,11 @@ namespace LanguageStudyStardewValleyMod
             if (string.IsNullOrWhiteSpace(segment.Gloss))
                 return segment.Text;
 
-            return string.IsNullOrWhiteSpace(segment.Reading)
+            string? reading = !string.IsNullOrWhiteSpace(segment.Kana) ? segment.Kana : segment.Reading;
+
+            return string.IsNullOrWhiteSpace(reading)
                 ? segment.Gloss
-                : $"{segment.Gloss}\n({segment.Reading})";
+                : $"{segment.Gloss}\n({reading})";
         }
 
         private static (IReadOnlyList<TextSegment> Segments, bool Exact) ResolveSegments(string drawnText, string[] lines, int lineIndex, string line)
