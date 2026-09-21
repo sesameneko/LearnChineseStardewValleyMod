@@ -1,2 +1,29 @@
 TODOs
 =====
+
+M2 segmentation data — do Tools and Weapons next
+------------------------------------------------
+Priority: Tools (54 entries) and Weapons (134) come BEFORE the tables listed
+in Plan.md's priority order (StringsFromCSFiles, 1_6_Strings, BigCraftables,
+Characters). They're small and they're item hover text, which is exactly what
+M1's tooltip already surfaces.
+
+How to do it (pipeline already built, see tools/segment-data/segtool.py):
+
+  python3 tools/segment-data/segtool.py status          # coverage per table
+  python3 tools/segment-data/segtool.py batch Tools 50  # next worklist, as TSV
+  ...author a .tsv...
+  python3 tools/segment-data/segtool.py merge Tools batch.tsv
+  python3 tools/segment-data/segtool.py validate
+
+Authoring format is one entry per line, tab-separated:
+  key <TAB> english <TAB> text¦reading¦gloss‖text¦reading¦gloss‖...
+merge rejects any line whose segment texts don't concatenate back to the
+source string exactly, so bad data can't reach the mod.
+
+Output goes to tools/extracted-strings/literal-translations/<Table>.json —
+that folder is the tracked source of truth; assets/segments/ is gitignored and
+generated from it by the csproj's CopySegmentData target.
+
+Status at the time of writing: Objects descriptions (744) and UI (865) done,
+6,375 entries still pending across the other tables.
