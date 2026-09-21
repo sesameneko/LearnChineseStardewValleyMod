@@ -19,7 +19,9 @@ import json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 JA = os.path.join(ROOT, "tools", "extracted-strings", "ja")
 EN = os.path.join(ROOT, "tools", "extracted-strings", "en")
-OUT = os.path.join(ROOT, "assets", "segments", "ja")
+# tracked source of truth; assets/segments/ja is generated from it by the
+# csproj's CopySegmentData target and is gitignored
+OUT = os.path.join(ROOT, "tools", "extracted-strings", "literal-translations")
 SKIPS = os.path.join(ROOT, "tools", "segment-data", "skipped")
 
 FIELD, SEG = "¦", "‖"
@@ -56,7 +58,10 @@ def authored(table):
     for name in sorted(os.listdir(OUT)):
         if name == table + ".json" or name.startswith(table + "_"):
             with open(os.path.join(OUT, name), encoding="utf-8") as f:
-                out.update({k: v for k, v in json.load(f).items() if k != "_comment"})
+                # Objects_Name.json is a flat key -> translation map with no segments,
+                # so it counts as translated but not as segmented
+                out.update({k: v for k, v in json.load(f).items()
+                            if k != "_comment" and isinstance(v, dict)})
     return out
 
 
@@ -203,7 +208,7 @@ def cmd_validate(args):
             doc = json.load(f)
         n = 0
         for key, entry in doc.items():
-            if key == "_comment":
+            if key == "_comment" or not isinstance(entry, dict):
                 continue
             n += 1
             joined = "".join(s.get("text", "") for s in entry.get("segments", []))

@@ -36,7 +36,7 @@
     -->
     <Target Name="CopySegmentData" BeforeTargets="BeforeBuild">
       <ItemGroup>
-        <SegmentDataFiles Include="tools/extracted-strings/literal-translations/Objects_Description.json" />
+        <SegmentDataFiles Include="tools/extracted-strings/literal-translations/*.json" />
       </ItemGroup>
       <Copy SourceFiles="@(SegmentDataFiles)" DestinationFolder="assets/segments/ja" SkipUnchangedFiles="true" />
     </Target>
