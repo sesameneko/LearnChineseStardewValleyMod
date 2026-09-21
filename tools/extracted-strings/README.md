@@ -17,15 +17,19 @@ UI/item translation.
 ## `literal-translations/`
 
 Hand-translated **from the Japanese source text** (not just a copy of the
-official English localization), for `Objects.xnb` only so far:
+official English localization).
 
-- `Objects_Name.json` -- all 756 item names. Simple `"key": "translation"`
-  format, with a romanized reading (and occasionally a short gloss) in
-  parentheses, e.g. `"Acorn_Name": "Acorn (donguri)"`.
+**Every file here uses one schema**, whatever the table: a JSON object keyed by
+the game's own string key, each entry a **word/phrase-level breakdown** rather
+than one translation per sentence. There is no second format -- item names used
+to be a flat `"key": "English (reading)"` map, and were migrated into this schema
+by `../segment-data/migrate_names.py`. Anything new must be written this way,
+because `SegmentDataLoader` silently skips entries whose value isn't an object.
 
-- `Objects_Description.json` -- all 744 item descriptions, as a
-  **word/phrase-level breakdown** rather than one translation per sentence.
-  Each entry is:
+Coverage is tracked by `../segment-data/segtool.py status`; that script is also
+how new entries get authored and merged (see `../segment-data/README.md`).
+
+An entry looks like:
 
   ```json
   "Acorn_Description": {
@@ -54,18 +58,30 @@ official English localization), for `Objects.xnb` only so far:
   `"(subject marker)"`, and trailing sentence punctuation is folded into
   the preceding word rather than given its own segment.
 
-  **Invariant, checked programmatically for all 744 entries**: concatenating
+  **Invariant, enforced on merge and re-checkable with
+  `../segment-data/segtool.py validate`**: concatenating
   every segment's `"text"` in order reproduces `"japanese"` character-for-
   character. That means the mod doesn't need its own tokenizer at
   runtime -- it can compute each segment's position by summing segment
   lengths against the already-known rendered string, then hit-test the
   mouse against each segment's range.
 
-`Objects.xnb` was chosen first because it's exactly what M1 (item/object
-hover tooltips) needs. The other 28 dictionary-shaped tables (`UI`,
-`StringsFromCSFiles`, `BigCraftables`, `Characters`, `Events`, etc. --
-~6,300 more entries across `en/`) are extracted to JSON but not yet
-translated at all.
+### Files
+
+- `Objects_Description.json` -- 744 item descriptions, hand-segmented.
+- `Objects_Name.json` -- 756 item names. Migrated from the old flat format, so
+  each name is currently a **single segment covering the whole string**. That is
+  right for a one-word name (木材) and wrong for a multi-word one (木の柵 should
+  be 木 / の / 柵); splitting those is a tracked pass in `TODOs.txt`.
+- `UI.json` -- all 865 Japanese-bearing entries of `Strings/UI`, hand-segmented.
+- `StringsFromCSFiles.json` -- in progress; the item category subtitles
+  (`Object.cs.12847`-`12869`, e.g. 素材 / Resource) are done because they appear
+  under the name on every item tooltip.
+
+`Objects.xnb` was done first because it's exactly what M1 (item/object hover
+tooltips) needs. The remaining dictionary-shaped tables (`1_6_Strings`,
+`BigCraftables`, `Characters`, `Furniture`, `Weapons`, `Tools`, etc.) are
+extracted to JSON under `en/` and `ja/` but not yet translated.
 
 ## Known data quirks (from real files, not tool bugs)
 
