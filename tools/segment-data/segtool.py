@@ -99,13 +99,29 @@ def cmd_status(args):
     print(f"\nTOTAL authored={tot_d} skipped={tot_s} pending={tot_p}")
 
 
+def esc(text):
+    """Newlines and tabs would break the one-entry-per-line TSV worklist."""
+    return text.replace("\\", "\\\\").replace("\n", "\\n").replace("\t", "\\t")
+
+
+def unesc(text):
+    out, i = [], 0
+    while i < len(text):
+        if text[i] == "\\" and i + 1 < len(text):
+            out.append({"n": "\n", "t": "\t", "\\": "\\"}.get(text[i + 1], text[i + 1]))
+            i += 2
+        else:
+            out.append(text[i]); i += 1
+    return "".join(out)
+
+
 def cmd_batch(args):
     table = args[0]
     n = int(args[1]) if len(args) > 1 and args[1].isdigit() else 40
     offset = int(args[args.index("--offset") + 1]) if "--offset" in args else 0
     items = pending(table)[offset:offset + n]
     for k, v, e in items:
-        print(f"{k}\t{v}\t{e}")
+        print(f"{k}\t{esc(v)}\t{esc(e)}")
     print(f"# {len(items)} entries; {len(pending(table)) - offset - len(items)} still pending after this batch",
           file=sys.stderr)
 
@@ -122,7 +138,7 @@ def parse_line(line):
         bits = chunk.split(FIELD)
         if len(bits) != 3:
             raise ValueError(f"segment {chunk!r} needs text{FIELD}reading{FIELD}gloss")
-        out.append({"text": bits[0], "reading": bits[1].strip(), "gloss": bits[2].strip()})
+        out.append({"text": unesc(bits[0]), "reading": bits[1].strip(), "gloss": bits[2].strip()})
     return key, english, out
 
 
