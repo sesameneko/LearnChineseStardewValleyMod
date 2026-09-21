@@ -327,26 +327,47 @@ namespace LanguageStudyStardewValleyMod
         private void OnRenderedHud(object? sender, RenderedHudEventArgs e)
         {
             // with a menu open the menu's own pass comes later and would draw straight over these
-            if (Game1.activeClickableMenu is null)
+            if (!this.CursorPatchIsDrawing && Game1.activeClickableMenu is null)
                 this.DrawOverlays(e.SpriteBatch);
         }
 
         /// <summary>Draws this mod's overlays once the open menu -- and any tooltip it raised -- is on screen.</summary>
         private void OnRenderedActiveMenu(object? sender, RenderedActiveMenuEventArgs e)
         {
-            this.DrawOverlays(e.SpriteBatch);
+            if (!this.CursorPatchIsDrawing)
+                this.DrawOverlays(e.SpriteBatch);
         }
+
+        /// <summary>The game tick the cursor patch last drew on.</summary>
+        private int lastCursorDrawTick = int.MinValue;
+
+        /// <summary>
+        /// Whether the cursor patch is the one doing the drawing, so the render events should keep
+        /// out of it.
+        ///
+        /// A recent tick rather than a flag set this frame: ls_draw_trace shows the render events
+        /// firing *before* drawMouseCursor, so a frame-scoped flag is always false when they check
+        /// it and gates nothing -- the first version of this was dead code that left three draws
+        /// per frame. Remembering that the cursor path is live yields to it instead, and the short
+        /// window re-arms these events within a couple of ticks if the game stops drawing a cursor
+        /// (a cutscene, pan mode, the title screen).
+        /// </summary>
+        private bool CursorPatchIsDrawing => Game1.ticks - this.lastCursorDrawTick <= 2;
 
         /// <summary>
         /// Draws the overlays from the cursor patch, i.e. underneath the mouse cursor.
         ///
-        /// The render events below draw as well, so the overlays are painted more than once per
-        /// frame. That is deliberate for now: gating the events behind this draw is what broke the
-        /// gloss overlay, so it was rolled back (the cursor draw is still the one that decides
-        /// z-order, since it is last).
+        /// This is the normal path; the render events above only draw when the game skipped its
+        /// cursor draw (cutscenes, pan mode, the title screen), because drawing from both would put
+        /// a second copy back on top of the cursor -- and paint the gloss label's translucent
+        /// background two or three times over, which is darker than it should be.
+        ///
+        /// This was once rolled back on the theory that it made the overlays disappear. It didn't:
+        /// word capture was simply switched off in those runs (see TextCapturePatches.Enabled).
         /// </summary>
         internal void DrawOverlaysBeforeCursor()
         {
+            this.lastCursorDrawTick = Game1.ticks;
             this.DrawOverlays(Game1.spriteBatch);
         }
 
