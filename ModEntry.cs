@@ -6,10 +6,12 @@ using System.Text;
 using GenericModConfigMenu;
 using HarmonyLib;
 using LanguageStudyStardewValleyMod.Patches;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
+using StardewValley.BellsAndWhistles;
 using StardewValley.Menus;
 
 namespace LanguageStudyStardewValleyMod
@@ -30,6 +32,9 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>The live config, read by the Harmony patches.</summary>
         public ModConfig Config => this.currentConfig;
 
+        /// <summary>Guards the word-hover overlay to one draw per frame across the two UI-mode render events.</summary>
+        private bool wordHoverDrawnThisFrame;
+
         /// <summary>Whether to log the raw text of hover tooltips that couldn't be translated (see the ls_log_misses command).</summary>
         public bool LogTranslationMisses { get; private set; }
 
@@ -49,6 +54,7 @@ namespace LanguageStudyStardewValleyMod
             helper.Events.Display.Rendering += this.OnRendering;
             helper.Events.Display.RenderedHud += this.OnRenderedHud;
             helper.Events.Display.RenderedActiveMenu += this.OnRenderedActiveMenu;
+            helper.Events.Display.Rendered += this.OnRenderedDiagnostic;
 
             this.TranslationIndex = new TranslationIndex(helper);
 
@@ -76,6 +82,28 @@ namespace LanguageStudyStardewValleyMod
                 "Toggles logging the raw text of every hover tooltip that couldn't be translated, so the "
                 + "gaps in the index can be found by playing rather than by guessing. Usage: ls_log_misses [on|off]",
                 this.OnLogMissesCommand
+            );
+
+            helper.ConsoleCommands.Add(
+                "ls_word_hover",
+                "Toggles the M3 proof of concept: outlines the individual word under the cursor in any "
+                + "UI text. Usage: ls_word_hover [on|off]",
+                this.OnWordHoverCommand
+            );
+
+            helper.ConsoleCommands.Add(
+                "ls_probe_questlog",
+                "Temporary diagnostic: reports when the journal's quest detail page opens and what text it holds "
+                + "(name, description, objectives, and how the game wraps them). Usage: ls_probe_questlog [on|off]",
+                this.OnProbeQuestLogCommand
+            );
+
+            helper.ConsoleCommands.Add(
+                "ls_dump_text",
+                "Logs every string the word-hover capture recorded for the frame currently on screen, "
+                + "with its position and font, plus what the hit-test last matched. Requires ls_word_hover on. "
+                + "Usage: ls_dump_text [substring filter]",
+                this.OnDumpTextCommand
             );
 
             helper.ConsoleCommands.Add(
@@ -117,11 +145,73 @@ namespace LanguageStudyStardewValleyMod
                     original: FindOverload(nameof(IClickableMenu.drawTextureBox), parameters => parameters.Length == 11),
                     prefix: new HarmonyMethod(typeof(HoverTextPatches), nameof(HoverTextPatches.Prefix_DrawTextureBox))
                 );
+
+                ApplyTextCapturePatches(harmony);
             }
             catch (Exception ex)
             {
                 Log($"Failed to apply Harmony patches -- hover translation will be inactive. {ex}", LogLevel.Error);
             }
+        }
+
+        /// <summary>
+        /// Patches the text-draw entry points for the M3 word-hover proof of concept.
+        ///
+        /// The game calls exactly four of MonoGame's DrawString overloads; patching those four
+        /// records each SpriteFont draw once (the overloads that delegate are ones the game never
+        /// calls directly, so nothing is double-counted). SpriteText is a separate bitmap-font
+        /// renderer that never touches DrawString, so it needs its own patch -- and it is what
+        /// DialogueBox, QuestLog and ShopMenu use.
+        /// </summary>
+        private void ApplyTextCapturePatches(Harmony harmony)
+        {
+            foreach (var (textType, scaled, patchName) in new[]
+                     {
+                         (typeof(string), false, nameof(TextCapturePatches.Prefix_DrawString)),
+                         (typeof(string), true, nameof(TextCapturePatches.Prefix_DrawStringScaledVector)),
+                         (typeof(StringBuilder), false, nameof(TextCapturePatches.Prefix_DrawStringBuilder)),
+                         (typeof(StringBuilder), true, nameof(TextCapturePatches.Prefix_DrawStringBuilderScaledVector)),
+                     })
+            {
+                var target = typeof(SpriteBatch)
+                    .GetMethods(BindingFlags.Public | BindingFlags.Instance)
+                    .FirstOrDefault(candidate =>
+                    {
+                        if (candidate.Name != nameof(SpriteBatch.DrawString))
+                            return false;
+
+                        var parameters = candidate.GetParameters();
+                        if (parameters.Length != (scaled ? 9 : 4) || parameters[1].ParameterType != textType)
+                            return false;
+
+                        // Match the Vector2-scale flavour, NOT the float-scale one the game calls
+                        // directly. The float overload is a thin wrapper that just widens the scale
+                        // and delegates here, so the JIT inlines it and a prefix on it never runs --
+                        // which silently lost every Utility.drawTextWithShadow draw (i.e. most menu
+                        // body text). This overload holds the real glyph loop, so it is both
+                        // un-inlinable and the single point every scaled draw passes through.
+                        return !scaled || parameters[6].ParameterType == typeof(Vector2);
+                    });
+
+                if (target is null)
+                {
+                    Log($"Couldn't find SpriteBatch.DrawString({textType.Name}, scaled: {scaled}) -- word hover will miss some text.", LogLevel.Warn);
+                    continue;
+                }
+
+                harmony.Patch(target, prefix: new HarmonyMethod(typeof(TextCapturePatches), patchName));
+            }
+
+            harmony.Patch(
+                original: AccessTools.Method(typeof(SpriteText), nameof(SpriteText.drawString)),
+                prefix: new HarmonyMethod(typeof(TextCapturePatches), nameof(TextCapturePatches.Prefix_SpriteTextDrawString))
+            );
+
+            // temporary: see QuestLogProbe. The 3-arg overload is the wrapping one menus use.
+            harmony.Patch(
+                original: AccessTools.Method(typeof(Game1), nameof(Game1.parseText), new[] { typeof(string), typeof(SpriteFont), typeof(int) }),
+                postfix: new HarmonyMethod(typeof(QuestLogProbe), nameof(QuestLogProbe.Postfix_ParseText))
+            );
         }
 
         /// <summary>
@@ -156,6 +246,7 @@ namespace LanguageStudyStardewValleyMod
 
         private void OnTick(object? sender, UpdateTickedEventArgs updateTickedEventArgs)
         {
+            QuestLogProbe.Poll(this.Helper);
         }
 
         private void OnDayStart(object? sender, DayStartedEventArgs e)
@@ -186,6 +277,8 @@ namespace LanguageStudyStardewValleyMod
         private void OnRendering(object? sender, RenderingEventArgs e)
         {
             TooltipOverlay.Clear();
+            TextCapturePatches.BeginFrame();
+            this.wordHoverDrawnThisFrame = false;
         }
 
         /// <summary>
@@ -202,12 +295,44 @@ namespace LanguageStudyStardewValleyMod
         private void OnRenderedHud(object? sender, RenderedHudEventArgs e)
         {
             TooltipOverlay.Draw(e.SpriteBatch);
+
+            // when a menu is open its text hasn't been drawn yet, so leave the overlay to the menu pass
+            if (Game1.activeClickableMenu is null)
+                this.DrawWordHover(e.SpriteBatch);
         }
 
         /// <summary>Draws the translation tooltip captured during the active menu's draw.</summary>
         private void OnRenderedActiveMenu(object? sender, RenderedActiveMenuEventArgs e)
         {
             TooltipOverlay.Draw(e.SpriteBatch);
+            this.DrawWordHover(e.SpriteBatch);
+        }
+
+        /// <summary>
+        /// Draws the word-hover debug overlay once per frame, at the latest UI-mode point available:
+        /// the active menu's pass when a menu is open (by then its text is recorded too), otherwise
+        /// the HUD's.
+        ///
+        /// It must NOT be drawn from Display.Rendered even though that would see every recorded
+        /// string: Rendered runs against the world render target, so UI-space rects come out
+        /// offset (world scales by zoomLevel, UI by uiScale) and composited underneath the UI.
+        /// </summary>
+        private void DrawWordHover(SpriteBatch spriteBatch)
+        {
+            if (this.wordHoverDrawnThisFrame)
+                return;
+
+            this.wordHoverDrawnThisFrame = true;
+            WordHoverOverlay.Draw(spriteBatch);
+
+            if (TextCapturePatches.DumpPending)
+            {
+                TextCapturePatches.DumpPending = false;
+                this.DumpRecordedText("menu pass (where hit-testing happens)");
+            }
+
+            // everything recorded has now been hit-tested against, so it's safe to drop
+            TextCapturePatches.ConsumeFrame();
         }
 
         private void OnBuildIndexCommand(string command, string[] args)
@@ -231,6 +356,92 @@ namespace LanguageStudyStardewValleyMod
                 : !this.LogTranslationMisses;
 
             Log($"Logging of untranslated hover text is {(this.LogTranslationMisses ? "on" : "off")}.");
+        }
+
+        private void OnProbeQuestLogCommand(string command, string[] args)
+        {
+            QuestLogProbe.Enabled = args.Length > 0
+                ? args[0].Equals("on", StringComparison.OrdinalIgnoreCase)
+                : !QuestLogProbe.Enabled;
+
+            QuestLogProbe.Reset();
+            Log($"Journal probe is {(QuestLogProbe.Enabled ? "on" : "off")}.");
+        }
+
+        private void OnWordHoverCommand(string command, string[] args)
+        {
+            TextCapturePatches.Enabled = args.Length > 0
+                ? args[0].Equals("on", StringComparison.OrdinalIgnoreCase)
+                : !TextCapturePatches.Enabled;
+
+            TextCapturePatches.ResetCounters();
+
+            Log($"Word-hover debug overlay is {(TextCapturePatches.Enabled ? "on" : "off")}.");
+        }
+
+        private void OnDumpTextCommand(string command, string[] args)
+        {
+            if (!TextCapturePatches.Enabled)
+            {
+                Log("Word-hover capture is off -- run 'ls_word_hover on' first.", LogLevel.Warn);
+                return;
+            }
+
+            this.dumpFilter = args.Length > 0 ? string.Join(" ", args) : null;
+            TextCapturePatches.DumpPending = true;
+            Log("[dump] armed -- will report from inside the next drawn frame.");
+        }
+
+        /// <summary>Filter for the armed dump, if one was given.</summary>
+        private string? dumpFilter;
+
+        /// <summary>Whether to dump again at the very end of the frame, to catch text drawn after the menu pass.</summary>
+        private bool dumpAtEndOfFrame;
+
+        /// <summary>
+        /// Diagnostic only -- never draws here (see the CLAUDE.md note on Display.Rendered). This is
+        /// the last point in the frame, so comparing its count against the menu pass's shows whether
+        /// text is being drawn after the point where hit-testing happens.
+        /// </summary>
+        private void OnRenderedDiagnostic(object? sender, RenderedEventArgs e)
+        {
+            if (!this.dumpAtEndOfFrame)
+                return;
+
+            this.dumpAtEndOfFrame = false;
+            this.DumpRecordedText("end of frame");
+        }
+
+        /// <summary>Reports the recorded text at the same point in the frame as the hit-test runs.</summary>
+        private void DumpRecordedText(string where)
+        {
+            string? filter = this.dumpFilter;
+            var recorded = TextCapturePatches.DrawnThisFrame;
+
+            Log($"[dump] counters since enable: SpriteFont prefix fired {TextCapturePatches.SpriteFontCalls}x, "
+                + $"SpriteText {TextCapturePatches.SpriteTextCalls}x; rejected not-uiMode {TextCapturePatches.RejectedNotUiMode}, "
+                + $"blank {TextCapturePatches.RejectedBlank}; recorded {TextCapturePatches.RecordedTotal}; "
+                + $"frame-start signals {TextCapturePatches.FrameStarts} vs consumes {TextCapturePatches.FrameConsumes}");
+
+            Log($"[dump@{where}] {recorded.Count} string(s) recorded so far this frame"
+                + (filter is null ? "" : $", filtered by '{filter}'")
+                + $"; last hit-test match: {WordHoverOverlay.LastHitWord ?? "(none)"}");
+
+            int shown = 0;
+            for (int i = 0; i < recorded.Count; i++)
+            {
+                var drawn = recorded[i];
+                if (filter != null && !drawn.Text.Contains(filter, StringComparison.Ordinal))
+                    continue;
+
+                string renderer = drawn.IsBitmapFont ? "SpriteText" : "SpriteFont";
+                Log($"[dump] #{i,-3} {renderer,-10} x={drawn.X,7:0.0} y={drawn.Y,7:0.0} scale={drawn.Scale:0.00} "
+                    + $"lineH={drawn.LineHeight,5:0.0} '{drawn.Text.Replace("\n", "\\n")}'");
+                shown++;
+            }
+
+            if (shown == 0)
+                Log("[dump] nothing matched -- is the text actually on screen right now?", LogLevel.Warn);
         }
 
         private void OnLookupCommand(string command, string[] args)
