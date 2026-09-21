@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using LanguageStudyStardewValleyMod.Patches;
@@ -34,7 +35,7 @@ namespace LanguageStudyStardewValleyMod
                 using (TextCapturePatches.SuppressRecording())
                 {
                     var hit = FindWordUnderCursor();
-                    LastHitWord = hit?.Word;
+                    LastHitWord = hit?.Segment.Text;
                     LastHitWasExact = hit?.Exact ?? false;
 
                     if (hit is null)
@@ -50,7 +51,7 @@ namespace LanguageStudyStardewValleyMod
                     DrawOutline(spriteBatch, hit.Value.Line, Color.Cyan * 0.35f, thickness: 2);
                     DrawOutline(spriteBatch, hit.Value.Word_Bounds, wordColor, thickness: 2);
 
-                    DrawLabel(spriteBatch, hit.Value.Word, hit.Value.Word_Bounds, wordColor);
+                    DrawLabel(spriteBatch, Describe(hit.Value.Segment), hit.Value.Word_Bounds, wordColor);
                 }
             }
             catch (Exception ex)
@@ -59,7 +60,7 @@ namespace LanguageStudyStardewValleyMod
             }
         }
 
-        private readonly record struct Hit(string Word, Rectangle Word_Bounds, Rectangle Line, bool Exact);
+        private readonly record struct Hit(TextSegment Segment, Rectangle Word_Bounds, Rectangle Line, bool Exact);
 
         private static Hit? FindWordUnderCursor()
         {
@@ -82,22 +83,23 @@ namespace LanguageStudyStardewValleyMod
 
                 string line = lines[lineIndex.Value];
                 var (segments, exact) = ResolveSegments(drawn.Text, lines, lineIndex.Value, line);
+                var texts = segments.Select(segment => segment.Text).ToList();
 
-                int? segmentIndex = TextHitTest.HitSegment(segments, drawn.MeasurePrefix, drawn.X, mouseX);
+                int? segmentIndex = TextHitTest.HitSegment(texts, drawn.MeasurePrefix, drawn.X, mouseX);
                 if (segmentIndex is null)
                     continue;
 
-                string word = segments[segmentIndex.Value];
-                if (string.IsNullOrWhiteSpace(word))
+                var segment = segments[segmentIndex.Value];
+                if (string.IsNullOrWhiteSpace(segment.Text))
                     continue; // the gap between two words, not a word
 
-                var (left, width) = TextHitTest.SegmentExtent(segments, drawn.MeasurePrefix, segmentIndex.Value);
+                var (left, width) = TextHitTest.SegmentExtent(texts, drawn.MeasurePrefix, segmentIndex.Value);
 
                 float lineTop = drawn.Y + (lineIndex.Value * lineHeight);
                 var wordBounds = new Rectangle((int)(drawn.X + left), (int)lineTop, (int)Math.Ceiling(width), (int)Math.Ceiling(lineHeight));
                 var lineBounds = new Rectangle((int)drawn.X, (int)lineTop, (int)Math.Ceiling(drawn.MeasurePrefix(line)), (int)Math.Ceiling(lineHeight));
 
-                return new Hit(word, wordBounds, lineBounds, exact);
+                return new Hit(segment, wordBounds, lineBounds, exact);
             }
 
             return null;
@@ -110,7 +112,18 @@ namespace LanguageStudyStardewValleyMod
         /// rendered line; if either step doesn't line up exactly, the fallback is used rather than
         /// a box drawn in the wrong place.
         /// </summary>
-        private static (IReadOnlyList<string> Segments, bool Exact) ResolveSegments(string drawnText, string[] lines, int lineIndex, string line)
+        /// <summary>The label text: the word plus its in-context gloss and reading where we have them.</summary>
+        private static string Describe(TextSegment segment)
+        {
+            if (string.IsNullOrWhiteSpace(segment.Gloss))
+                return segment.Text;
+
+            return string.IsNullOrWhiteSpace(segment.Reading)
+                ? $"{segment.Text}  —  {segment.Gloss}"
+                : $"{segment.Text} ({segment.Reading})  —  {segment.Gloss}";
+        }
+
+        private static (IReadOnlyList<TextSegment> Segments, bool Exact) ResolveSegments(string drawnText, string[] lines, int lineIndex, string line)
         {
             var index = ModEntry.Instance?.Segments;
 
@@ -121,17 +134,27 @@ namespace LanguageStudyStardewValleyMod
                 return (lineSegments, true);
             }
 
-            return (TextHitTest.SplitSegments(line), false);
+            return (TextHitTest.SplitSegments(line).Select(TextSegment.Plain).ToList(), false);
         }
+
+        /// <summary>
+        /// Tooltips are drawn at layerDepth 0.9-0.95, and some of the game's sprite batches sort by
+        /// depth rather than call order -- so an overlay left at the default 0 ends up *behind* the
+        /// tooltip it is annotating. Everything here draws at 1f to stay on top either way.
+        /// </summary>
+        private const float LayerDepth = 1f;
 
         private static void DrawOutline(SpriteBatch b, Rectangle rect, Color color, int thickness)
         {
-            var pixel = Game1.staminaRect;
+            DrawRect(b, new Rectangle(rect.X, rect.Y, rect.Width, thickness), color);
+            DrawRect(b, new Rectangle(rect.X, rect.Bottom - thickness, rect.Width, thickness), color);
+            DrawRect(b, new Rectangle(rect.X, rect.Y, thickness, rect.Height), color);
+            DrawRect(b, new Rectangle(rect.Right - thickness, rect.Y, thickness, rect.Height), color);
+        }
 
-            b.Draw(pixel, new Rectangle(rect.X, rect.Y, rect.Width, thickness), color);
-            b.Draw(pixel, new Rectangle(rect.X, rect.Bottom - thickness, rect.Width, thickness), color);
-            b.Draw(pixel, new Rectangle(rect.X, rect.Y, thickness, rect.Height), color);
-            b.Draw(pixel, new Rectangle(rect.Right - thickness, rect.Y, thickness, rect.Height), color);
+        private static void DrawRect(SpriteBatch b, Rectangle rect, Color color)
+        {
+            b.Draw(Game1.staminaRect, rect, null, color, 0f, Vector2.Zero, SpriteEffects.None, LayerDepth);
         }
 
         /// <summary>Shows the matched word just above its outline, so a mis-split is obvious on screen.</summary>
@@ -145,8 +168,8 @@ namespace LanguageStudyStardewValleyMod
             if (y < 0)
                 y = wordBounds.Bottom + 4;
 
-            b.Draw(Game1.staminaRect, new Rectangle(x - 2, y - 2, (int)size.X + 4, (int)size.Y + 4), Color.Black * 0.75f);
-            b.DrawString(font, word, new Vector2(x, y), color);
+            DrawRect(b, new Rectangle(x - 4, y - 2, (int)size.X + 8, (int)size.Y + 4), Color.Black * 0.85f);
+            b.DrawString(font, word, new Vector2(x, y), color, 0f, Vector2.Zero, 1f, SpriteEffects.None, LayerDepth);
         }
     }
 }

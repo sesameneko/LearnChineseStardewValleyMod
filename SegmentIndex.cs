@@ -4,6 +4,21 @@ using System.Collections.Generic;
 namespace LanguageStudyStardewValleyMod
 {
     /// <summary>
+    /// One hovering unit: the text as drawn, plus its reading and in-context gloss when the
+    /// hand-segmented data supplies them. The heuristic fallback produces text with no gloss.
+    /// </summary>
+    /// <param name="Text">The characters this segment covers on screen.</param>
+    /// <param name="Reading">Romanised reading, e.g. "ueru".</param>
+    /// <param name="Gloss">What the word means *in this sentence*, e.g. "to plant".</param>
+    public readonly record struct TextSegment(string Text, string? Reading, string? Gloss)
+    {
+        public static TextSegment Plain(string text) => new(text, null, null);
+
+        /// <summary>The same segment covering only part of its text, for one side of a line break.</summary>
+        public TextSegment Clip(int start, int length) => this with { Text = this.Text.Substring(start, length) };
+    }
+
+    /// <summary>
     /// Exact word boundaries for strings we have hand-segmented data for, keyed by the source text.
     ///
     /// Japanese word boundaries can't be derived by rule, so <see cref="TextHitTest.SplitSegments"/>'s
@@ -15,8 +30,8 @@ namespace LanguageStudyStardewValleyMod
     /// </summary>
     public sealed class SegmentIndex
     {
-        private readonly Dictionary<string, IReadOnlyList<string>> byNormalized = new(StringComparer.Ordinal);
-        private readonly Dictionary<string, IReadOnlyList<string>> bySpaceless = new(StringComparer.Ordinal);
+        private readonly Dictionary<string, IReadOnlyList<TextSegment>> byNormalized = new(StringComparer.Ordinal);
+        private readonly Dictionary<string, IReadOnlyList<TextSegment>> bySpaceless = new(StringComparer.Ordinal);
 
         public int Count => this.byNormalized.Count;
 
@@ -25,12 +40,12 @@ namespace LanguageStudyStardewValleyMod
         /// invariant (segments must reproduce the source exactly), since every position calculation
         /// downstream assumes it -- bad data would silently mis-place highlights.
         /// </summary>
-        public bool TryAdd(string? japanese, IReadOnlyList<string>? segments)
+        public bool TryAdd(string? japanese, IReadOnlyList<TextSegment>? segments)
         {
             if (string.IsNullOrWhiteSpace(japanese) || segments is null || segments.Count == 0)
                 return false;
 
-            if (!string.Equals(string.Concat(segments), japanese, StringComparison.Ordinal))
+            if (!string.Equals(Concat(segments), japanese, StringComparison.Ordinal))
                 return false;
 
             string normalized = TranslationMap.Normalize(japanese);
@@ -50,9 +65,9 @@ namespace LanguageStudyStardewValleyMod
         /// Looks up segments for a string as it was drawn -- which, like translation lookup, may
         /// carry newlines the game inserted when wrapping.
         /// </summary>
-        public bool TryGetSegments(string? displayedText, out IReadOnlyList<string> segments)
+        public bool TryGetSegments(string? displayedText, out IReadOnlyList<TextSegment> segments)
         {
-            segments = Array.Empty<string>();
+            segments = Array.Empty<TextSegment>();
 
             if (string.IsNullOrWhiteSpace(displayedText))
                 return false;
@@ -83,15 +98,15 @@ namespace LanguageStudyStardewValleyMod
         /// which is the caller's signal to fall back to the heuristic rather than draw a box in the
         /// wrong place.
         /// </summary>
-        public static bool TryGetSegmentsForLine(IReadOnlyList<string> segments, string[] lines, int lineIndex, out IReadOnlyList<string> lineSegments)
+        public static bool TryGetSegmentsForLine(IReadOnlyList<TextSegment> segments, string[] lines, int lineIndex, out IReadOnlyList<TextSegment> lineSegments)
         {
-            lineSegments = Array.Empty<string>();
+            lineSegments = Array.Empty<TextSegment>();
 
             if (segments is null || lines is null || lineIndex < 0 || lineIndex >= lines.Length)
                 return false;
 
             // the rendered lines, minus the break characters, must be exactly the segmented source
-            if (string.Concat(segments) != string.Concat(lines))
+            if (Concat(segments) != string.Concat(lines))
                 return false;
 
             int lineStart = 0;
@@ -100,13 +115,13 @@ namespace LanguageStudyStardewValleyMod
 
             int lineEnd = lineStart + lines[lineIndex].Length;
 
-            var result = new List<string>();
+            var result = new List<TextSegment>();
             int position = 0;
 
-            foreach (string segment in segments)
+            foreach (TextSegment segment in segments)
             {
                 int segmentStart = position;
-                int segmentEnd = position + segment.Length;
+                int segmentEnd = position + segment.Text.Length;
                 position = segmentEnd;
 
                 // clip the segment to this line; a segment straddling the break contributes to both
@@ -115,7 +130,7 @@ namespace LanguageStudyStardewValleyMod
                 if (to <= from)
                     continue;
 
-                result.Add(segment.Substring(from - segmentStart, to - from));
+                result.Add(segment.Clip(from - segmentStart, to - from));
             }
 
             if (result.Count == 0)
@@ -123,6 +138,15 @@ namespace LanguageStudyStardewValleyMod
 
             lineSegments = result;
             return true;
+        }
+
+        /// <summary>The text of every segment, joined -- what the segments must reproduce exactly.</summary>
+        public static string Concat(IReadOnlyList<TextSegment> segments)
+        {
+            var builder = new System.Text.StringBuilder();
+            foreach (var segment in segments)
+                builder.Append(segment.Text);
+            return builder.ToString();
         }
     }
 }

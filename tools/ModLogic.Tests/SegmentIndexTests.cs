@@ -8,8 +8,20 @@ namespace ModLogic.Tests
 {
     public class SegmentIndexTests
     {
-        private static readonly string[] AcornSegments = { "植える", "と", "オーク", "の", "木", "が", "育つ。" };
         private const string Acorn = "植えるとオークの木が育つ。";
+
+        private static readonly TextSegment[] AcornSegments =
+        {
+            new("植える", "ueru", "to plant"),
+            TextSegment.Plain("と"),
+            TextSegment.Plain("オーク"),
+            TextSegment.Plain("の"),
+            TextSegment.Plain("木"),
+            TextSegment.Plain("が"),
+            TextSegment.Plain("育つ。"),
+        };
+
+        private static string[] TextOf(IEnumerable<TextSegment> segments) => segments.Select(s => s.Text).ToArray();
 
         private static SegmentIndex IndexWithAcorn()
         {
@@ -22,14 +34,14 @@ namespace ModLogic.Tests
         public void Supplies_exact_boundaries_where_data_exists()
         {
             Assert.True(IndexWithAcorn().TryGetSegments(Acorn, out var segments));
-            Assert.Equal(AcornSegments, segments);
+            Assert.Equal(TextOf(AcornSegments), TextOf(segments));
         }
 
         [Fact]
         public void Finds_data_for_text_the_game_word_wrapped()
         {
             Assert.True(IndexWithAcorn().TryGetSegments("植えるとオーク\nの木が育つ。", out var segments));
-            Assert.Equal(AcornSegments, segments);
+            Assert.Equal(TextOf(AcornSegments), TextOf(segments));
         }
 
         [Fact]
@@ -45,7 +57,7 @@ namespace ModLogic.Tests
             // reproduce the source would silently mis-place highlights
             var index = new SegmentIndex();
 
-            Assert.False(index.TryAdd(Acorn, new[] { "植える", "と", "オーク" }));
+            Assert.False(index.TryAdd(Acorn, new[] { TextSegment.Plain("植える"), TextSegment.Plain("と"), TextSegment.Plain("オーク") }));
             Assert.Equal(0, index.Count);
         }
 
@@ -55,7 +67,7 @@ namespace ModLogic.Tests
             var lines = new[] { Acorn };
 
             Assert.True(SegmentIndex.TryGetSegmentsForLine(AcornSegments, lines, 0, out var lineSegments));
-            Assert.Equal(AcornSegments, lineSegments);
+            Assert.Equal(TextOf(AcornSegments), TextOf(lineSegments));
         }
 
         [Fact]
@@ -65,12 +77,15 @@ namespace ModLogic.Tests
             var lines = new[] { "植えるとオー", "クの木が育つ。" };
 
             Assert.True(SegmentIndex.TryGetSegmentsForLine(AcornSegments, lines, 0, out var first));
-            Assert.Equal(new[] { "植える", "と", "オー" }, first);
-            Assert.Equal("植えるとオー", string.Concat(first));
+            Assert.Equal(new[] { "植える", "と", "オー" }, TextOf(first));
+            Assert.Equal("植えるとオー", SegmentIndex.Concat(first));
 
             Assert.True(SegmentIndex.TryGetSegmentsForLine(AcornSegments, lines, 1, out var second));
-            Assert.Equal(new[] { "ク", "の", "木", "が", "育つ。" }, second);
-            Assert.Equal("クの木が育つ。", string.Concat(second));
+            Assert.Equal(new[] { "ク", "の", "木", "が", "育つ。" }, TextOf(second));
+            Assert.Equal("クの木が育つ。", SegmentIndex.Concat(second));
+
+            // a clipped segment keeps the gloss of the word it came from
+            Assert.Equal("to plant", first[0].Gloss);
         }
 
         [Fact]
@@ -81,7 +96,7 @@ namespace ModLogic.Tests
             for (int i = 0; i < lines.Length; i++)
             {
                 Assert.True(SegmentIndex.TryGetSegmentsForLine(AcornSegments, lines, i, out var lineSegments));
-                Assert.Equal(lines[i], string.Concat(lineSegments));
+                Assert.Equal(lines[i], SegmentIndex.Concat(lineSegments));
             }
         }
 
@@ -114,7 +129,10 @@ namespace ModLogic.Tests
                 string japanese = property.Value.GetProperty("japanese").GetString()!;
                 var segments = property.Value.GetProperty("segments")
                     .EnumerateArray()
-                    .Select(segment => segment.GetProperty("text").GetString()!)
+                    .Select(segment => new TextSegment(
+                        segment.GetProperty("text").GetString()!,
+                        segment.TryGetProperty("reading", out var reading) ? reading.GetString() : null,
+                        segment.TryGetProperty("gloss", out var gloss) ? gloss.GetString() : null))
                     .ToArray();
 
                 if (index.TryAdd(japanese, segments))
@@ -128,8 +146,11 @@ namespace ModLogic.Tests
             Assert.InRange(added, 700, 745);
 
             Assert.True(index.TryGetSegments(Acorn, out var acorn));
-            Assert.Equal(Acorn, string.Concat(acorn));
+            Assert.Equal(Acorn, SegmentIndex.Concat(acorn));
             Assert.True(acorn.Count > 1);
+
+            // the real data carries in-context glosses, which is the whole point of using it
+            Assert.All(acorn, segment => Assert.False(string.IsNullOrWhiteSpace(segment.Gloss)));
         }
     }
 }

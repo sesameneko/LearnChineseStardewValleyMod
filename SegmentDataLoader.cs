@@ -70,9 +70,8 @@ namespace LanguageStudyStardewValleyMod
 
                 var segments = segmentsElement
                     .EnumerateArray()
-                    .Select(segment => segment.TryGetProperty("text", out var text) ? text.GetString() : null)
-                    .Where(text => text != null)
-                    .Select(text => text!)
+                    .Select(ReadSegment)
+                    .Where(segment => segment.Text.Length > 0)
                     .ToArray();
 
                 if (!index.TryAdd(japaneseElement.GetString(), segments))
@@ -80,6 +79,15 @@ namespace LanguageStudyStardewValleyMod
             }
 
             return rejected;
+        }
+
+        private static TextSegment ReadSegment(JsonElement element)
+        {
+            string text = element.TryGetProperty("text", out var textElement) ? textElement.GetString() ?? "" : "";
+            string? reading = element.TryGetProperty("reading", out var readingElement) ? readingElement.GetString() : null;
+            string? gloss = element.TryGetProperty("gloss", out var glossElement) ? glossElement.GetString() : null;
+
+            return new TextSegment(text, reading, gloss);
         }
     }
 }
