@@ -39,6 +39,28 @@ There is no second format. Item names were once a flat
 `SegmentDataLoader` silently skips any entry whose value isn't an object, so
 anything written in another shape simply won't load.
 
+## Content/Data assets
+
+Most displayed text lives in `Content/Strings/*`, but some lives in
+`Content/Data/*`, where a value is not one string but a slash-delimited record --
+only some of whose fields the player ever reads:
+
+```
+"9": "Social/JP-name/JP-description/./null/25/0/-1/true"
+       type ^name    ^description   ^objective
+```
+
+`segtool.py`'s `DATA_TABLES` maps such a table to its asset and the indices of
+its displayed fields, and expands each record into one pseudo-entry per field,
+keyed `"<record id>#<field index>"` (e.g. `9#1`). Fields that are empty or a
+placeholder (`.`, `null`) are dropped. Everything downstream -- `batch`, `merge`,
+the invariant check, `validate` -- then treats them like any other entry, and the
+mod doesn't care either, because `SegmentIndex` is keyed by the source *text*
+rather than by the key.
+
+Source JSON for these lives in `../extracted-strings/data-ja` and `data-en`,
+extracted with `../XnbStringTool` the same way as the `Strings` tables.
+
 ## Where the files live
 
 `../extracted-strings/literal-translations/` is the **tracked source of truth**.
