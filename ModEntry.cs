@@ -110,6 +110,14 @@ namespace LanguageStudyStardewValleyMod
             );
 
             helper.ConsoleCommands.Add(
+                "ls_draw_trace",
+                "Logs the order in which the tooltip and this mod's overlays are drawn, for the next few frames. "
+                + "Use it to diagnose anything appearing behind anything else -- z-order here is call order, which "
+                + "no single log line shows. Usage: ls_draw_trace [frames]  (defaults to 5)",
+                this.OnDrawTraceCommand
+            );
+
+            helper.ConsoleCommands.Add(
                 "ls_lookup",
                 "Looks a piece of source-language text up in the translation index, the same way a hover would. "
                 + "Usage: ls_lookup <text>",
@@ -296,38 +304,52 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>Drops any tooltip captured last frame that was never drawn, so nothing goes stale.</summary>
         private void OnRendering(object? sender, RenderingEventArgs e)
         {
+            DrawTrace.BeginFrame();
             TooltipOverlay.Clear();
             TextCapturePatches.BeginFrame();
             WordHoverOverlay.DrawnThisFrame = false;
         }
 
         /// <summary>
-        /// Draws the translation tooltip captured during the HUD's draw (toolbar item hover, etc.).
+        /// Draws this mod's overlays when there's no menu open, i.e. for toolbar and world hovers.
         ///
-        /// These two events rather than the single, later Display.Rendered: Rendered runs against the
-        /// *world* render target, which the game composites *underneath* the UI one -- so the box was
-        /// drawn beneath every menu, and offset from the cursor by the ratio between the world's
-        /// zoomLevel and the UI's uiScale. RenderedHud/RenderedActiveMenu are the events SMAPI
+        /// This event and RenderedActiveMenu rather than the single, later Display.Rendered:
+        /// Rendered runs against the *world* render target, which the game composites *underneath*
+        /// the UI one -- so the box was drawn beneath every menu, and offset from the cursor by the
+        /// ratio between the world's zoomLevel and the UI's uiScale. These two are the events SMAPI
         /// guarantees run in UI mode, in the same sprite batch (and coordinate space) as the vanilla
-        /// tooltip we're stacking against. RenderedHud fires before menus draw, so a tooltip captured
-        /// during a menu's draw is still pending and gets drawn by OnRenderedActiveMenu below.
+        /// tooltip we're stacking against.
         /// </summary>
         private void OnRenderedHud(object? sender, RenderedHudEventArgs e)
         {
-            FrozenTooltip.Draw(e.SpriteBatch);
-            TooltipOverlay.Draw(e.SpriteBatch);
-
-            // when a menu is open its text hasn't been drawn yet, so leave the overlay to the menu pass
+            // with a menu open the menu's own pass comes later and would draw straight over these
             if (Game1.activeClickableMenu is null)
-                this.DrawWordHover(e.SpriteBatch);
+                this.DrawOverlays(e.SpriteBatch);
         }
 
-        /// <summary>Draws the translation tooltip captured during the active menu's draw.</summary>
+        /// <summary>Draws this mod's overlays once the open menu -- and any tooltip it raised -- is on screen.</summary>
         private void OnRenderedActiveMenu(object? sender, RenderedActiveMenuEventArgs e)
         {
-            FrozenTooltip.Draw(e.SpriteBatch);
-            TooltipOverlay.Draw(e.SpriteBatch);
-            this.DrawWordHover(e.SpriteBatch);
+            this.DrawOverlays(e.SpriteBatch);
+        }
+
+        /// <summary>
+        /// Everything this mod puts on screen, drawn at the latest UI-mode pass available: the
+        /// active menu's when a menu is open, the HUD's otherwise.
+        ///
+        /// Exactly one of those passes, never both. Calling this from both was what buried the word
+        /// overlay underneath the tooltip it annotates: the sequence per frame was pinned tooltip
+        /// (HUD pass) -> overlay drawn on top of it (from drawHoverText's postfix) -> pinned tooltip
+        /// *again* (menu pass), with the overlay's once-per-frame guard suppressing the second,
+        /// correctly-ordered attempt. That is a call-order bug, and no amount of layer depth fixes
+        /// one -- 0f, 1f and reading the batch's real sort mode were all tried first, and all failed.
+        /// </summary>
+        private void DrawOverlays(SpriteBatch spriteBatch)
+        {
+            DrawTrace.Note(Game1.activeClickableMenu is null ? "hudPass" : "menuPass");
+            FrozenTooltip.Draw(spriteBatch);
+            TooltipOverlay.Draw(spriteBatch);
+            this.DrawWordHover(spriteBatch);
         }
 
         /// <summary>
@@ -352,6 +374,15 @@ namespace LanguageStudyStardewValleyMod
 
             // everything recorded has now been hit-tested against, so it's safe to drop
             TextCapturePatches.ConsumeFrame();
+        }
+
+        private void OnDrawTraceCommand(string command, string[] args)
+        {
+            if (args.Length == 0 || !int.TryParse(args[0], out int frames) || frames <= 0)
+                frames = 5;
+
+            DrawTrace.Arm(frames);
+            Log($"Tracing the draw order for the next {frames} frames.");
         }
 
         private void OnBuildIndexCommand(string command, string[] args)

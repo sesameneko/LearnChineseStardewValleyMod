@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using LanguageStudyStardewValleyMod.Patches;
@@ -35,9 +34,16 @@ namespace LanguageStudyStardewValleyMod
 
         public static void Draw(SpriteBatch spriteBatch)
         {
-            if (!TextCapturePatches.Enabled || DrawnThisFrame)
+            if (!TextCapturePatches.Enabled)
                 return;
 
+            if (DrawnThisFrame)
+            {
+                DrawTrace.Note("wordOverlay(skipped, already drawn)");
+                return;
+            }
+
+            DrawTrace.Note("wordOverlay");
             DrawnThisFrame = true;
 
             try
@@ -154,33 +160,17 @@ namespace LanguageStudyStardewValleyMod
             return (TextHitTest.SplitSegments(line).Select(TextSegment.Plain).ToList(), false);
         }
 
-        /// <summary>MonoGame's private sort-mode field, read to decide which layer depth is "on top".</summary>
-        private static readonly FieldInfo? SortModeField =
-            typeof(SpriteBatch).GetField("_sortMode", BindingFlags.Instance | BindingFlags.NonPublic);
-
         /// <summary>
-        /// The layer depth that puts a sprite in front, for the batch we're actually drawing into.
+        /// The layer depth the overlay draws at. Tooltips themselves draw at 0.9-0.95.
         ///
-        /// Which end of the range is "front" depends on the sort mode, and the game uses several:
-        /// with FrontToBack the highest depth wins, with BackToFront the lowest does, and with
-        /// Deferred depth is ignored entirely and call order decides. Guessing a constant put the
-        /// overlay behind the very tooltip it annotates -- once as 0f, once as 1f -- so it's read
-        /// from the batch instead. Tooltips themselves draw at 0.9-0.95.
+        /// Depth is not what puts this overlay on top: the batch it draws into is Deferred, where
+        /// depth is ignored entirely and call order decides. 0f, 1f, and reading the batch's real
+        /// sort mode out of MonoGame's private field to pick between them were all tried, and all
+        /// three left the overlay behind the tooltip -- the cause was that the frozen tooltip was
+        /// drawn a second time *after* the overlay (see ModEntry.DrawOverlays). So this is a plain
+        /// constant, kept at the front end of the range for any batch that does sort.
         /// </summary>
-        private static float TopLayerDepth(SpriteBatch b)
-        {
-            try
-            {
-                if (SortModeField?.GetValue(b) is SpriteSortMode mode)
-                    return mode == SpriteSortMode.BackToFront ? 0f : 1f;
-            }
-            catch
-            {
-                // reflection blocked or the field renamed: fall through to the deferred-safe default
-            }
-
-            return 1f;
-        }
+        private const float LayerDepth = 1f;
 
         private static void DrawOutline(SpriteBatch b, Rectangle rect, Color color, int thickness)
         {
@@ -192,7 +182,7 @@ namespace LanguageStudyStardewValleyMod
 
         private static void DrawRect(SpriteBatch b, Rectangle rect, Color color)
         {
-            b.Draw(Game1.staminaRect, rect, null, color, 0f, Vector2.Zero, SpriteEffects.None, TopLayerDepth(b));
+            b.Draw(Game1.staminaRect, rect, null, color, 0f, Vector2.Zero, SpriteEffects.None, LayerDepth);
         }
 
         /// <summary>Shows the matched word just above its outline, so a mis-split is obvious on screen.</summary>
@@ -207,7 +197,7 @@ namespace LanguageStudyStardewValleyMod
                 y = wordBounds.Bottom + 4;
 
             DrawRect(b, new Rectangle(x - 4, y - 2, (int)size.X + 8, (int)size.Y + 4), Color.Black * 0.85f);
-            b.DrawString(font, word, new Vector2(x, y), color, 0f, Vector2.Zero, 1f, SpriteEffects.None, TopLayerDepth(b));
+            b.DrawString(font, word, new Vector2(x, y), color, 0f, Vector2.Zero, 1f, SpriteEffects.None, LayerDepth);
         }
     }
 }

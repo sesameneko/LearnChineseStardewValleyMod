@@ -84,6 +84,7 @@ namespace LanguageStudyStardewValleyMod
             try
             {
                 IsReissuing = true;
+                DrawTrace.Note("frozenTooltip");
 
                 // the captured arguments verbatim, with only the sprite batch and position replaced,
                 // so the pinned tooltip is drawn by the game exactly as it was

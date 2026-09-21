@@ -47,6 +47,7 @@ namespace LanguageStudyStardewValleyMod
 
             try
             {
+                DrawTrace.Note("translationTooltip");
                 using var _ = Patches.TextCapturePatches.SuppressRecording();
 
                 var font = Game1.smallFont;

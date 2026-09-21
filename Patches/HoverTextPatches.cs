@@ -80,10 +80,12 @@ namespace LanguageStudyStardewValleyMod.Patches
         {
             if (FrozenTooltip.ShouldSuppressVanilla)
             {
+                DrawTrace.Note("vanillaTooltip(suppressed)");
                 capturing = false;
                 return false;
             }
 
+            DrawTrace.Note(FrozenTooltip.IsReissuing ? "reissue" : "vanillaTooltip");
             capturing = true;
             haveBox = false;
             pendingArgs = __args;
