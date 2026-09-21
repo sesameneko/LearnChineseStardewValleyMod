@@ -5,7 +5,7 @@ Sub-commands:
   status                    coverage per string table
   batch <Table> [n] [--offset k]
                             print the next n un-authored entries as an authoring worklist
-  merge <Table> <file.tsv>  fold an authored batch into assets/segments/ja/<Table>.json
+  merge <Table> <file.tsv>  fold an authored batch into the literal-translations source
   skip  <Table> <file.txt>  record keys deliberately left unsegmented
   validate                  re-check every bundled segment file
 
