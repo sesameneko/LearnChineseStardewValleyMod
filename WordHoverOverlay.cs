@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework.Graphics;
 using LanguageStudyStardewValleyMod.Patches;
 using StardewModdingAPI;
 using StardewValley;
+using StardewValley.BellsAndWhistles;
 
 namespace LanguageStudyStardewValleyMod
 {
@@ -65,7 +66,7 @@ namespace LanguageStudyStardewValleyMod
                     DrawOutline(spriteBatch, hit.Value.Line, Color.Cyan * 0.35f, thickness: 2);
                     DrawOutline(spriteBatch, hit.Value.Word_Bounds, wordColor, thickness: 2);
 
-                    DrawLabel(spriteBatch, Describe(hit.Value.Segment), hit.Value.Word_Bounds, wordColor);
+                    DrawLabel(spriteBatch, Describe(hit.Value.Segment), hit.Value.Word_Bounds);
                 }
             }
             catch (Exception ex)
@@ -196,19 +197,45 @@ namespace LanguageStudyStardewValleyMod
             b.Draw(Game1.staminaRect, rect, null, color, 0f, Vector2.Zero, SpriteEffects.None, LayerDepth);
         }
 
-        /// <summary>Shows the matched word just above its outline, so a mis-split is obvious on screen.</summary>
-        private static void DrawLabel(SpriteBatch b, string word, Rectangle wordBounds, Color color)
+        /// <summary>Space between the word's outline and the bubble's pointer.</summary>
+        private const int LabelGap = 12;
+
+        /// <summary>
+        /// Shows the gloss in the game's own small speech bubble, pointing at the word.
+        ///
+        /// Vanilla art rather than a hand-drawn panel: this is what signs use, so it ships as-is.
+        /// The bubble anchors by the bottom-centre of its body with the pointer hanging below, so
+        /// sitting above the word is the natural case and going below just flips the pointer.
+        ///
+        /// Note the bubble paints its own text, so the exact-vs-fallback colour no longer shows
+        /// here -- the word outline still carries that signal.
+        /// </summary>
+        private static void DrawLabel(SpriteBatch b, string gloss, Rectangle wordBounds)
         {
-            var font = Game1.smallFont;
-            Vector2 size = font.MeasureString(word);
+            // SpriteText's line break is '^', not '\n' -- the 1.6.15 IL checks for it fifteen times
+            // against once for '\n'. Describe stays renderer-neutral and it's translated here.
+            string text = gloss.Replace("\n", "^");
 
-            int x = wordBounds.X;
-            int y = wordBounds.Y - (int)size.Y - 4;
-            if (y < 0)
-                y = wordBounds.Bottom + 4;
+            int width = SpriteText.getWidthOfString(text);
+            int height = SpriteText.getHeightOfString(text);
 
-            DrawRect(b, new Rectangle(x - 4, y - 2, (int)size.X + 8, (int)size.Y + 4), Color.Black * LabelBackgroundOpacity);
-            b.DrawString(font, word, new Vector2(x, y), color, 0f, Vector2.Zero, 1f, SpriteEffects.None, LayerDepth);
+            // keep the bubble on screen: it's centred on the word, which can sit near an edge
+            int half = (width / 2) + 8;
+            int centerX = Math.Clamp(wordBounds.Center.X, half, Math.Max(half, Game1.uiViewport.Width - half));
+
+            bool above = wordBounds.Y - LabelGap - height >= 0;
+            float bottomCenterY = above
+                ? wordBounds.Y - LabelGap
+                : wordBounds.Bottom + LabelGap + height;
+
+            SpriteText.drawSmallTextBubble(
+                b,
+                text,
+                new Vector2(centerX, bottomCenterY),
+                maxWidth: -1,
+                layerDepth: LayerDepth,
+                drawPointerOnTop: !above
+            );
         }
     }
 }
