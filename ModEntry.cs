@@ -266,6 +266,17 @@ namespace LanguageStudyStardewValleyMod
             if (!Context.IsWorldReady)
                 return;
 
+            // a click can change what the held tooltip describes -- the item may be picked up,
+            // consumed, or the menu replaced -- so it stops standing in for anything
+            foreach (var button in e.Pressed)
+            {
+                if (button.IsUseToolButton() || button.IsActionButton() || button == SButton.MouseLeft || button == SButton.MouseRight)
+                {
+                    TooltipLinger.Clear();
+                    break;
+                }
+            }
+
             if (currentConfig.HoldFreezeTooltip.JustPressed())
             {
                 if (!FrozenTooltip.IsFrozen && FrozenTooltip.Freeze(locked: false))
@@ -338,6 +349,7 @@ namespace LanguageStudyStardewValleyMod
         private void OnRendering(object? sender, RenderingEventArgs e)
         {
             DrawTrace.BeginFrame();
+            TooltipLinger.BeginFrame();
             TooltipOverlay.Clear();
             TextCapturePatches.BeginFrame();
         }
@@ -416,7 +428,12 @@ namespace LanguageStudyStardewValleyMod
         private void DrawOverlays(SpriteBatch spriteBatch)
         {
             DrawTrace.Note(Game1.activeClickableMenu is null ? "hudPass" : "menuPass");
+
+            // exactly one of these draws a tooltip: the pin takes precedence and the linger stands
+            // down for it, and the linger itself does nothing in a frame where the game drew its own
             FrozenTooltip.Draw(spriteBatch);
+            TooltipLinger.Draw(spriteBatch);
+
             TooltipOverlay.Draw(spriteBatch);
             this.DrawWordHover(spriteBatch);
         }

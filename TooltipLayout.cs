@@ -3,7 +3,19 @@ using System;
 namespace LanguageStudyStardewValleyMod
 {
     /// <summary>A screen-space rectangle, in pixels.</summary>
-    public readonly record struct TooltipBox(int X, int Y, int Width, int Height);
+    public readonly record struct TooltipBox(int X, int Y, int Width, int Height)
+    {
+        /// <summary>
+        /// Whether a point is inside the box. The point has to be in the same space the box was
+        /// captured in, i.e. UI pixels -- so hit-test with Game1.getMouseX(ui_scale: true), not the
+        /// no-arg overload, which picks its space from Game1.uiMode.
+        /// </summary>
+        public bool Contains(float x, float y)
+        {
+            return x >= this.X && x < this.X + this.Width
+                && y >= this.Y && y < this.Y + this.Height;
+        }
+    }
 
     /// <summary>
     /// Placement math for the translation tooltip that gets stacked alongside the vanilla one.

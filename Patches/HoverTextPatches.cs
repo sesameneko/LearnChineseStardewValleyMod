@@ -54,25 +54,8 @@ namespace LanguageStudyStardewValleyMod.Patches
                 return false;
             }
 
-            args = CopyArgs(lastArgs);
+            args = TooltipReissue.CopyArgs(lastArgs);
             return true;
-        }
-
-        /// <summary>
-        /// Copies an argument list for safekeeping. The StringBuilder is duplicated because the game
-        /// reuses and clears its own between frames, which would otherwise empty the pinned tooltip.
-        /// </summary>
-        private static object[] CopyArgs(object[] args)
-        {
-            var copy = (object[])args.Clone();
-
-            for (int i = 0; i < copy.Length; i++)
-            {
-                if (copy[i] is StringBuilder builder)
-                    copy[i] = new StringBuilder(builder.ToString());
-            }
-
-            return copy;
         }
 
         /// <summary>Returns false to skip the vanilla draw, which is how tooltips are suppressed while one is frozen.</summary>
@@ -80,12 +63,21 @@ namespace LanguageStudyStardewValleyMod.Patches
         {
             if (FrozenTooltip.ShouldSuppressVanilla)
             {
-                DrawTrace.Note("vanillaTooltip(suppressed)");
+                DrawTrace.Note("vanillaTooltip(suppressed by pin)");
                 capturing = false;
                 return false;
             }
 
-            DrawTrace.Note(FrozenTooltip.IsReissuing ? "reissue" : "vanillaTooltip");
+            // the cursor is inside a lingering tooltip, so it's also over whatever sits underneath,
+            // which would otherwise raise its own tooltip and replace the one being read
+            if (TooltipLinger.ShouldSuppressVanilla)
+            {
+                DrawTrace.Note("vanillaTooltip(suppressed by linger)");
+                capturing = false;
+                return false;
+            }
+
+            DrawTrace.Note(TooltipReissue.IsReissuing ? "reissue" : "vanillaTooltip");
             capturing = true;
             haveBox = false;
             pendingArgs = __args;
@@ -107,11 +99,16 @@ namespace LanguageStudyStardewValleyMod.Patches
                 if (!haveBox)
                     return;
 
-                // don't overwrite the pinned tooltip with the re-issue of itself
-                if (!FrozenTooltip.IsFrozen && pendingArgs != null)
+                // a re-issue of our own must not be mistaken for a fresh vanilla tooltip: it
+                // would overwrite the stash with itself and, worse, tell the linger that the game
+                // drew a tooltip this frame -- which is the one thing that stops it drawing
+                if (!TooltipReissue.IsReissuing && pendingArgs != null)
                 {
-                    lastArgs = CopyArgs(pendingArgs);
+                    lastArgs = TooltipReissue.CopyArgs(pendingArgs);
                     lastBox = capturedBox;
+
+                    TooltipLinger.VanillaDrewThisFrame = true;
+                    TooltipLinger.Notice(lastArgs, lastBox);
                 }
 
                 var mod = ModEntry.Instance;

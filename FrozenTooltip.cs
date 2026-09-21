@@ -1,10 +1,7 @@
-using System;
 using System.Reflection;
 using Microsoft.Xna.Framework.Graphics;
 using LanguageStudyStardewValleyMod.Patches;
 using StardewModdingAPI;
-using StardewValley;
-using StardewValley.Menus;
 
 namespace LanguageStudyStardewValleyMod
 {
@@ -12,10 +9,10 @@ namespace LanguageStudyStardewValleyMod
     /// Pins the tooltip currently under the cursor so it stops following the mouse, letting the
     /// cursor move across it to hover individual words (Plan.md M2.1).
     ///
-    /// Vanilla tooltips are suppressed while frozen by a prefix on drawHoverText, and the frozen one
-    /// is re-issued through that same vanilla method with explicit overrideX/overrideY -- so the box
-    /// is drawn by the game's own code rather than replicated, and its text goes through the normal
-    /// draw path, which means the word-hover capture picks it up like any other text.
+    /// This is the deliberate gesture: it suppresses every vanilla tooltip for as long as the pin
+    /// lasts, so nothing else can replace what you're reading. <see cref="TooltipLinger"/> is the
+    /// ambient counterpart and deliberately does the opposite -- see its notes on why it must never
+    /// suppress. The drawing itself belongs to <see cref="TooltipReissue"/>.
     /// </summary>
     public static class FrozenTooltip
     {
@@ -28,36 +25,16 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         public static bool IsLocked { get; private set; }
 
-        /// <summary>Set while we re-issue the frozen tooltip, so the suppression prefix lets ours through.</summary>
-        public static bool IsReissuing { get; private set; }
-
         /// <summary>Whether a vanilla tooltip draw should be skipped right now.</summary>
-        public static bool ShouldSuppressVanilla => IsFrozen && !IsReissuing;
+        public static bool ShouldSuppressVanilla => IsFrozen && !TooltipReissue.IsReissuing;
 
         private static object[]? frozenArgs;
         private static TooltipBox frozenBox;
 
-        /// <summary>Indices of drawHoverText's overrideX/overrideY parameters, resolved by name once.</summary>
-        private static int overrideXIndex = -1;
-        private static int overrideYIndex = -1;
-        private static MethodInfo? drawHoverText;
-
-        /// <summary>Tells the patches which method to re-issue through, and where its override args sit.</summary>
+        /// <summary>Tells the reissue helper which method to draw through.</summary>
         public static void Initialise(MethodInfo method)
         {
-            drawHoverText = method;
-
-            var parameters = method.GetParameters();
-            for (int i = 0; i < parameters.Length; i++)
-            {
-                if (parameters[i].Name == "overrideX")
-                    overrideXIndex = i;
-                else if (parameters[i].Name == "overrideY")
-                    overrideYIndex = i;
-            }
-
-            if (overrideXIndex < 0 || overrideYIndex < 0)
-                ModEntry.Log("drawHoverText has no overrideX/overrideY in this game version -- tooltips can't be frozen in place.", LogLevel.Warn);
+            TooltipReissue.Initialise(method);
         }
 
         /// <summary>Pins whatever tooltip was captured this frame. Returns false if there wasn't one.</summary>
@@ -65,7 +42,7 @@ namespace LanguageStudyStardewValleyMod
         /// lasting only as long as the hold key is down.</param>
         public static bool Freeze(bool locked)
         {
-            if (drawHoverText is null || overrideXIndex < 0 || overrideYIndex < 0)
+            if (!TooltipReissue.IsReady)
                 return false;
 
             if (!HoverTextPatches.TryGetLastTooltip(out object[] args, out TooltipBox box))
@@ -95,31 +72,15 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>Re-draws the pinned tooltip where it was when it got pinned.</summary>
         public static void Draw(SpriteBatch spriteBatch)
         {
-            if (!IsFrozen || frozenArgs is null || drawHoverText is null)
+            if (!IsFrozen || frozenArgs is null)
                 return;
 
-            try
-            {
-                IsReissuing = true;
-                DrawTrace.Note("frozenTooltip");
+            DrawTrace.Note("frozenTooltip");
 
-                // the captured arguments verbatim, with only the sprite batch and position replaced,
-                // so the pinned tooltip is drawn by the game exactly as it was
-                var args = (object[])frozenArgs.Clone();
-                args[0] = spriteBatch;
-                args[overrideXIndex] = frozenBox.X;
-                args[overrideYIndex] = frozenBox.Y;
-
-                drawHoverText.Invoke(null, args);
-            }
-            catch (Exception ex)
+            if (!TooltipReissue.Draw(spriteBatch, frozenArgs, frozenBox))
             {
-                ModEntry.Log($"Error drawing frozen tooltip, unfreezing: {ex}", LogLevel.Error);
+                ModEntry.Log("Couldn't re-draw the pinned tooltip, unfreezing.", LogLevel.Warn);
                 Unfreeze();
-            }
-            finally
-            {
-                IsReissuing = false;
             }
         }
     }

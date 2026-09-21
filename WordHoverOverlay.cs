@@ -86,16 +86,17 @@ namespace LanguageStudyStardewValleyMod
 
             var recorded = TextCapturePatches.DrawnThisFrame;
 
-            // while a tooltip is pinned, only its own text is hoverable -- otherwise the cursor
-            // moving across the pinned box matches whatever else happens to be underneath it
-            bool frozen = FrozenTooltip.IsFrozen;
+            // while we're drawing a tooltip of our own -- pinned or lingering -- only its text is
+            // hoverable, otherwise the cursor moving across that box matches whatever happens to be
+            // underneath it
+            bool ownTooltipUp = FrozenTooltip.IsFrozen || TooltipLinger.IsShowing;
 
             // in reverse: the last thing drawn is the thing on top, so it wins the hit
             for (int i = recorded.Count - 1; i >= 0; i--)
             {
                 var drawn = recorded[i];
 
-                if (frozen && !drawn.FromFrozenTooltip)
+                if (ownTooltipUp && !drawn.FromModTooltip)
                     continue;
 
                 string[] lines = TextHitTest.SplitLines(drawn.Text);
