@@ -1,0 +1,1737 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Tools.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Axe_Copper_Name": {
+    "japanese": "銅のオノ",
+    "english": "Copper axe",
+    "segments": [
+      {
+        "text": "銅",
+        "reading": "dō",
+        "gloss": "copper"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "オノ",
+        "reading": "ono",
+        "gloss": "axe"
+      }
+    ]
+  },
+  "Axe_Description": {
+    "japanese": "木を切るのに使います。",
+    "english": "Used for chopping wood.",
+    "segments": [
+      {
+        "text": "木",
+        "reading": "ki",
+        "gloss": "tree / wood"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "切る",
+        "reading": "kiru",
+        "gloss": "to cut"
+      },
+      {
+        "text": "のに",
+        "reading": "no ni",
+        "gloss": "for"
+      },
+      {
+        "text": "使います。",
+        "reading": "tsukaimasu",
+        "gloss": "is used"
+      }
+    ]
+  },
+  "Axe_Gold_Name": {
+    "japanese": "金のオノ",
+    "english": "Gold axe",
+    "segments": [
+      {
+        "text": "金",
+        "reading": "kin",
+        "gloss": "gold"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "オノ",
+        "reading": "ono",
+        "gloss": "axe"
+      }
+    ]
+  },
+  "Axe_Iridium_Name": {
+    "japanese": "イリジウムのオノ",
+    "english": "Iridium axe",
+    "segments": [
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "オノ",
+        "reading": "ono",
+        "gloss": "axe"
+      }
+    ]
+  },
+  "Axe_Name": {
+    "japanese": "オノ",
+    "english": "Axe",
+    "segments": [
+      {
+        "text": "オノ",
+        "reading": "ono",
+        "gloss": "axe"
+      }
+    ]
+  },
+  "Axe_Steel_Name": {
+    "japanese": "鋼のオノ",
+    "english": "Steel axe",
+    "segments": [
+      {
+        "text": "鋼",
+        "reading": "hagane",
+        "gloss": "steel"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "オノ",
+        "reading": "ono",
+        "gloss": "axe"
+      }
+    ]
+  },
+  "FishingRod_AdvancedIridium_Description": {
+    "japanese": "水辺で使って魚を釣ります。同時に2つのウキを使うことができます。",
+    "english": "Use it by the water to catch fish. It can use two bobbers at once.",
+    "segments": [
+      {
+        "text": "水辺",
+        "reading": "mizube",
+        "gloss": "waterside"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "at"
+      },
+      {
+        "text": "使って",
+        "reading": "tsukatte",
+        "gloss": "using"
+      },
+      {
+        "text": "魚",
+        "reading": "sakana",
+        "gloss": "fish"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣ります。",
+        "reading": "tsurimasu",
+        "gloss": "catches"
+      },
+      {
+        "text": "同時に",
+        "reading": "dōji ni",
+        "gloss": "at the same time"
+      },
+      {
+        "text": "2つ",
+        "reading": "futatsu",
+        "gloss": "two"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "of"
+      },
+      {
+        "text": "ウキ",
+        "reading": "uki",
+        "gloss": "bobbers"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "使う",
+        "reading": "tsukau",
+        "gloss": "to use"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "できます。",
+        "reading": "dekimasu",
+        "gloss": "can"
+      }
+    ]
+  },
+  "FishingRod_AdvancedIridium_Name": {
+    "japanese": "改良型イリジウムの釣竿",
+    "english": "Improved iridium fishing rod",
+    "segments": [
+      {
+        "text": "改良型",
+        "reading": "kairyōgata",
+        "gloss": "improved type"
+      },
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "釣竿",
+        "reading": "tsurizao",
+        "gloss": "fishing rod"
+      }
+    ]
+  },
+  "FishingRod_Bamboo_Name": {
+    "japanese": "竹の釣竿",
+    "english": "Bamboo fishing rod",
+    "segments": [
+      {
+        "text": "竹",
+        "reading": "take",
+        "gloss": "bamboo"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "釣竿",
+        "reading": "tsurizao",
+        "gloss": "fishing rod"
+      }
+    ]
+  },
+  "FishingRod_Description": {
+    "japanese": "水辺で使って魚を釣ります。",
+    "english": "Use it by the water to catch fish.",
+    "segments": [
+      {
+        "text": "水辺",
+        "reading": "mizube",
+        "gloss": "waterside"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "at"
+      },
+      {
+        "text": "使って",
+        "reading": "tsukatte",
+        "gloss": "using"
+      },
+      {
+        "text": "魚",
+        "reading": "sakana",
+        "gloss": "fish"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣ります。",
+        "reading": "tsurimasu",
+        "gloss": "catches"
+      }
+    ]
+  },
+  "FishingRod_Fiberglass_Name": {
+    "japanese": "ファイバーグラスの釣竿",
+    "english": "Fibreglass fishing rod",
+    "segments": [
+      {
+        "text": "ファイバーグラス",
+        "reading": "faibāgurasu",
+        "gloss": "fibreglass"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "釣竿",
+        "reading": "tsurizao",
+        "gloss": "fishing rod"
+      }
+    ]
+  },
+  "FishingRod_Iridium_Name": {
+    "japanese": "イリジウムの釣竿",
+    "english": "Iridium fishing rod",
+    "segments": [
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "釣竿",
+        "reading": "tsurizao",
+        "gloss": "fishing rod"
+      }
+    ]
+  },
+  "FishingRod_Training_Description": {
+    "japanese": "釣り竿よりも簡単に使えるが、普通の魚しか釣れない。",
+    "english": "Easier to use than a fishing rod, but it only catches ordinary fish.",
+    "segments": [
+      {
+        "text": "釣り竿",
+        "reading": "tsurizao",
+        "gloss": "fishing rod"
+      },
+      {
+        "text": "よりも",
+        "reading": "yori mo",
+        "gloss": "more than"
+      },
+      {
+        "text": "簡単に",
+        "reading": "kantan ni",
+        "gloss": "easily"
+      },
+      {
+        "text": "使える",
+        "reading": "tsukaeru",
+        "gloss": "can be used"
+      },
+      {
+        "text": "が、",
+        "reading": "ga",
+        "gloss": "but"
+      },
+      {
+        "text": "普通の",
+        "reading": "futsū no",
+        "gloss": "ordinary"
+      },
+      {
+        "text": "魚",
+        "reading": "sakana",
+        "gloss": "fish"
+      },
+      {
+        "text": "しか",
+        "reading": "shika",
+        "gloss": "only"
+      },
+      {
+        "text": "釣れない。",
+        "reading": "tsurenai",
+        "gloss": "cannot be caught"
+      }
+    ]
+  },
+  "FishingRod_Training_Name": {
+    "japanese": "練習用の釣竿",
+    "english": "Practice fishing rod",
+    "segments": [
+      {
+        "text": "練習用",
+        "reading": "renshū yō",
+        "gloss": "for practice"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "釣竿",
+        "reading": "tsurizao",
+        "gloss": "fishing rod"
+      }
+    ]
+  },
+  "Hoe_Copper_Name": {
+    "japanese": "銅のクワ",
+    "english": "Copper hoe",
+    "segments": [
+      {
+        "text": "銅",
+        "reading": "dō",
+        "gloss": "copper"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "クワ",
+        "reading": "kuwa",
+        "gloss": "hoe"
+      }
+    ]
+  },
+  "Hoe_Description": {
+    "japanese": "土を掘って耕すのに使う。",
+    "english": "Used to dig and till the soil.",
+    "segments": [
+      {
+        "text": "土",
+        "reading": "tsuchi",
+        "gloss": "soil"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "掘って",
+        "reading": "hotte",
+        "gloss": "digging"
+      },
+      {
+        "text": "耕す",
+        "reading": "tagayasu",
+        "gloss": "to till"
+      },
+      {
+        "text": "のに",
+        "reading": "no ni",
+        "gloss": "for"
+      },
+      {
+        "text": "使う。",
+        "reading": "tsukau",
+        "gloss": "is used"
+      }
+    ]
+  },
+  "Hoe_Gold_Name": {
+    "japanese": "金のクワ",
+    "english": "Gold hoe",
+    "segments": [
+      {
+        "text": "金",
+        "reading": "kin",
+        "gloss": "gold"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "クワ",
+        "reading": "kuwa",
+        "gloss": "hoe"
+      }
+    ]
+  },
+  "Hoe_Iridium_Name": {
+    "japanese": "イリジウムのクワ",
+    "english": "Iridium hoe",
+    "segments": [
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "クワ",
+        "reading": "kuwa",
+        "gloss": "hoe"
+      }
+    ]
+  },
+  "Hoe_Name": {
+    "japanese": "クワ",
+    "english": "Hoe",
+    "segments": [
+      {
+        "text": "クワ",
+        "reading": "kuwa",
+        "gloss": "hoe"
+      }
+    ]
+  },
+  "Hoe_Steel_Name": {
+    "japanese": "鋼のクワ",
+    "english": "Steel hoe",
+    "segments": [
+      {
+        "text": "鋼",
+        "reading": "hagane",
+        "gloss": "steel"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "クワ",
+        "reading": "kuwa",
+        "gloss": "hoe"
+      }
+    ]
+  },
+  "Lantern_Description": {
+    "japanese": "暗いところを照らす。",
+    "english": "Lights up dark places.",
+    "segments": [
+      {
+        "text": "暗いところ",
+        "reading": "kurai tokoro",
+        "gloss": "dark places"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "照らす。",
+        "reading": "terasu",
+        "gloss": "lights up"
+      }
+    ]
+  },
+  "Lantern_Name": {
+    "japanese": "ランタン",
+    "english": "Lantern",
+    "segments": [
+      {
+        "text": "ランタン",
+        "reading": "rantan",
+        "gloss": "lantern"
+      }
+    ]
+  },
+  "MilkPail_Description": {
+    "japanese": "動物からミルクを採取する。",
+    "english": "Collects milk from animals.",
+    "segments": [
+      {
+        "text": "動物",
+        "reading": "dōbutsu",
+        "gloss": "animals"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "ミルク",
+        "reading": "miruku",
+        "gloss": "milk"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "採取する。",
+        "reading": "saishu suru",
+        "gloss": "collects"
+      }
+    ]
+  },
+  "MilkPail_Name": {
+    "japanese": "ミルクいれ",
+    "english": "Milk pail",
+    "segments": [
+      {
+        "text": "ミルク",
+        "reading": "miruku",
+        "gloss": "milk"
+      },
+      {
+        "text": "いれ",
+        "reading": "ire",
+        "gloss": "container / holder"
+      }
+    ]
+  },
+  "Pan_Copper_Name": {
+    "japanese": "銅の砂金皿",
+    "english": "Copper panning dish",
+    "segments": [
+      {
+        "text": "銅",
+        "reading": "dō",
+        "gloss": "copper"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "砂金皿",
+        "reading": "sakin zara",
+        "gloss": "gold-panning dish"
+      }
+    ]
+  },
+  "Pan_Description": {
+    "japanese": "川から鉱石を採取するのに使う。",
+    "english": "Used to collect ore from rivers.",
+    "segments": [
+      {
+        "text": "川",
+        "reading": "kawa",
+        "gloss": "river"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "鉱石",
+        "reading": "kōseki",
+        "gloss": "ore"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "採取する",
+        "reading": "saishu suru",
+        "gloss": "to collect"
+      },
+      {
+        "text": "のに",
+        "reading": "no ni",
+        "gloss": "for"
+      },
+      {
+        "text": "使う。",
+        "reading": "tsukau",
+        "gloss": "is used"
+      }
+    ]
+  },
+  "Pan_Gold_Description": {
+    "japanese": "川から鉱石を採取するのに使う。鋼の砂金皿よりも大きいのでより多く集められる。まれに別のきらめく光がすぐに現れることがある。",
+    "english": "Used to collect ore from rivers. Bigger than the steel pan, so it gathers more. Rarely, another glimmering spot appears straight away.",
+    "segments": [
+      {
+        "text": "川",
+        "reading": "kawa",
+        "gloss": "river"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "鉱石",
+        "reading": "kōseki",
+        "gloss": "ore"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "採取する",
+        "reading": "saishu suru",
+        "gloss": "to collect"
+      },
+      {
+        "text": "のに",
+        "reading": "no ni",
+        "gloss": "for"
+      },
+      {
+        "text": "使う。",
+        "reading": "tsukau",
+        "gloss": "is used"
+      },
+      {
+        "text": "鋼",
+        "reading": "hagane",
+        "gloss": "steel"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "砂金皿",
+        "reading": "sakin zara",
+        "gloss": "panning dish"
+      },
+      {
+        "text": "よりも",
+        "reading": "yori mo",
+        "gloss": "than"
+      },
+      {
+        "text": "大きい",
+        "reading": "ōkii",
+        "gloss": "bigger"
+      },
+      {
+        "text": "ので",
+        "reading": "node",
+        "gloss": "so"
+      },
+      {
+        "text": "より",
+        "reading": "yori",
+        "gloss": "more"
+      },
+      {
+        "text": "多く",
+        "reading": "ōku",
+        "gloss": "a lot"
+      },
+      {
+        "text": "集められる。",
+        "reading": "atsumerareru",
+        "gloss": "can be gathered"
+      },
+      {
+        "text": "まれに",
+        "reading": "mare ni",
+        "gloss": "rarely"
+      },
+      {
+        "text": "別の",
+        "reading": "betsu no",
+        "gloss": "another"
+      },
+      {
+        "text": "きらめく",
+        "reading": "kirameku",
+        "gloss": "glimmering"
+      },
+      {
+        "text": "光",
+        "reading": "hikari",
+        "gloss": "light"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "すぐに",
+        "reading": "sugu ni",
+        "gloss": "straight away"
+      },
+      {
+        "text": "現れる",
+        "reading": "arawareru",
+        "gloss": "appears"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある。",
+        "reading": "aru",
+        "gloss": "there is"
+      }
+    ]
+  },
+  "Pan_Gold_Name": {
+    "japanese": "金の砂金皿",
+    "english": "Gold panning dish",
+    "segments": [
+      {
+        "text": "金",
+        "reading": "kin",
+        "gloss": "gold"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "砂金皿",
+        "reading": "sakin zara",
+        "gloss": "gold-panning dish"
+      }
+    ]
+  },
+  "Pan_Iridium_Description": {
+    "japanese": "川から鉱石を採取するのに使う。どの砂金皿よりも多く集められる。別のきらめく光がすぐに現れることがある。",
+    "english": "Used to collect ore from rivers. Gathers more than any other pan. Another glimmering spot may appear straight away.",
+    "segments": [
+      {
+        "text": "川",
+        "reading": "kawa",
+        "gloss": "river"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "鉱石",
+        "reading": "kōseki",
+        "gloss": "ore"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "採取する",
+        "reading": "saishu suru",
+        "gloss": "to collect"
+      },
+      {
+        "text": "のに",
+        "reading": "no ni",
+        "gloss": "for"
+      },
+      {
+        "text": "使う。",
+        "reading": "tsukau",
+        "gloss": "is used"
+      },
+      {
+        "text": "どの",
+        "reading": "dono",
+        "gloss": "any"
+      },
+      {
+        "text": "砂金皿",
+        "reading": "sakin zara",
+        "gloss": "panning dish"
+      },
+      {
+        "text": "よりも",
+        "reading": "yori mo",
+        "gloss": "than"
+      },
+      {
+        "text": "多く",
+        "reading": "ōku",
+        "gloss": "a lot"
+      },
+      {
+        "text": "集められる。",
+        "reading": "atsumerareru",
+        "gloss": "can be gathered"
+      },
+      {
+        "text": "別の",
+        "reading": "betsu no",
+        "gloss": "another"
+      },
+      {
+        "text": "きらめく",
+        "reading": "kirameku",
+        "gloss": "glimmering"
+      },
+      {
+        "text": "光",
+        "reading": "hikari",
+        "gloss": "light"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "すぐに",
+        "reading": "sugu ni",
+        "gloss": "straight away"
+      },
+      {
+        "text": "現れる",
+        "reading": "arawareru",
+        "gloss": "appears"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある。",
+        "reading": "aru",
+        "gloss": "there is"
+      }
+    ]
+  },
+  "Pan_Iridium_Name": {
+    "japanese": "イリジウムの砂金皿",
+    "english": "Iridium panning dish",
+    "segments": [
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "砂金皿",
+        "reading": "sakin zara",
+        "gloss": "gold-panning dish"
+      }
+    ]
+  },
+  "Pan_Steel_Description": {
+    "japanese": "川から鉱石を採取するのに使う。銅の砂金皿よりも大きいのでより多く集められる。まれに別のきらめく光がすぐに現れることがある。",
+    "english": "Used to collect ore from rivers. Bigger than the copper pan, so it gathers more. Rarely, another glimmering spot appears straight away.",
+    "segments": [
+      {
+        "text": "川",
+        "reading": "kawa",
+        "gloss": "river"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "鉱石",
+        "reading": "kōseki",
+        "gloss": "ore"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "採取する",
+        "reading": "saishu suru",
+        "gloss": "to collect"
+      },
+      {
+        "text": "のに",
+        "reading": "no ni",
+        "gloss": "for"
+      },
+      {
+        "text": "使う。",
+        "reading": "tsukau",
+        "gloss": "is used"
+      },
+      {
+        "text": "銅",
+        "reading": "dō",
+        "gloss": "copper"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "砂金皿",
+        "reading": "sakin zara",
+        "gloss": "panning dish"
+      },
+      {
+        "text": "よりも",
+        "reading": "yori mo",
+        "gloss": "than"
+      },
+      {
+        "text": "大きい",
+        "reading": "ōkii",
+        "gloss": "bigger"
+      },
+      {
+        "text": "ので",
+        "reading": "node",
+        "gloss": "so"
+      },
+      {
+        "text": "より",
+        "reading": "yori",
+        "gloss": "more"
+      },
+      {
+        "text": "多く",
+        "reading": "ōku",
+        "gloss": "a lot"
+      },
+      {
+        "text": "集められる。",
+        "reading": "atsumerareru",
+        "gloss": "can be gathered"
+      },
+      {
+        "text": "まれに",
+        "reading": "mare ni",
+        "gloss": "rarely"
+      },
+      {
+        "text": "別の",
+        "reading": "betsu no",
+        "gloss": "another"
+      },
+      {
+        "text": "きらめく",
+        "reading": "kirameku",
+        "gloss": "glimmering"
+      },
+      {
+        "text": "光",
+        "reading": "hikari",
+        "gloss": "light"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "すぐに",
+        "reading": "sugu ni",
+        "gloss": "straight away"
+      },
+      {
+        "text": "現れる",
+        "reading": "arawareru",
+        "gloss": "appears"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある。",
+        "reading": "aru",
+        "gloss": "there is"
+      }
+    ]
+  },
+  "Pan_Steel_Name": {
+    "japanese": "鋼の砂金皿",
+    "english": "Steel panning dish",
+    "segments": [
+      {
+        "text": "鋼",
+        "reading": "hagane",
+        "gloss": "steel"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "砂金皿",
+        "reading": "sakin zara",
+        "gloss": "gold-panning dish"
+      }
+    ]
+  },
+  "Pickaxe_Copper_Name": {
+    "japanese": "銅のツルハシ",
+    "english": "Copper pickaxe",
+    "segments": [
+      {
+        "text": "銅",
+        "reading": "dō",
+        "gloss": "copper"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ツルハシ",
+        "reading": "tsuruhashi",
+        "gloss": "pickaxe"
+      }
+    ]
+  },
+  "Pickaxe_Description": {
+    "japanese": "石を砕くのに使う。",
+    "english": "Used to break stones.",
+    "segments": [
+      {
+        "text": "石",
+        "reading": "ishi",
+        "gloss": "stone"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "砕く",
+        "reading": "kudaku",
+        "gloss": "to break up"
+      },
+      {
+        "text": "のに",
+        "reading": "no ni",
+        "gloss": "for"
+      },
+      {
+        "text": "使う。",
+        "reading": "tsukau",
+        "gloss": "is used"
+      }
+    ]
+  },
+  "Pickaxe_Gold_Name": {
+    "japanese": "金のツルハシ",
+    "english": "Gold pickaxe",
+    "segments": [
+      {
+        "text": "金",
+        "reading": "kin",
+        "gloss": "gold"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ツルハシ",
+        "reading": "tsuruhashi",
+        "gloss": "pickaxe"
+      }
+    ]
+  },
+  "Pickaxe_Iridium_Name": {
+    "japanese": "イリジウムのツルハシ",
+    "english": "Iridium pickaxe",
+    "segments": [
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ツルハシ",
+        "reading": "tsuruhashi",
+        "gloss": "pickaxe"
+      }
+    ]
+  },
+  "Pickaxe_Name": {
+    "japanese": "ツルハシ",
+    "english": "Pickaxe",
+    "segments": [
+      {
+        "text": "ツルハシ",
+        "reading": "tsuruhashi",
+        "gloss": "pickaxe"
+      }
+    ]
+  },
+  "Pickaxe_Steel_Name": {
+    "japanese": "鋼のツルハシ",
+    "english": "Steel pickaxe",
+    "segments": [
+      {
+        "text": "鋼",
+        "reading": "hagane",
+        "gloss": "steel"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ツルハシ",
+        "reading": "tsuruhashi",
+        "gloss": "pickaxe"
+      }
+    ]
+  },
+  "ReturnScepter_Description": {
+    "japanese": "黄金の柄が秘められた力によって震えている。空に向けて掲げれば意のままに住処へと帰還できる。",
+    "english": "The golden handle trembles with a hidden power. Hold it up to the sky and you can return home at will.",
+    "segments": [
+      {
+        "text": "黄金",
+        "reading": "ōgon",
+        "gloss": "gold"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "柄",
+        "reading": "e",
+        "gloss": "handle"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "秘められた",
+        "reading": "himerareta",
+        "gloss": "hidden"
+      },
+      {
+        "text": "力",
+        "reading": "chikara",
+        "gloss": "power"
+      },
+      {
+        "text": "によって",
+        "reading": "ni yotte",
+        "gloss": "by"
+      },
+      {
+        "text": "震えている。",
+        "reading": "furuete iru",
+        "gloss": "is trembling"
+      },
+      {
+        "text": "空",
+        "reading": "sora",
+        "gloss": "sky"
+      },
+      {
+        "text": "に向けて",
+        "reading": "ni mukete",
+        "gloss": "towards"
+      },
+      {
+        "text": "掲げれば",
+        "reading": "kakagereba",
+        "gloss": "if you hold it up"
+      },
+      {
+        "text": "意のままに",
+        "reading": "i no mama ni",
+        "gloss": "at will"
+      },
+      {
+        "text": "住処",
+        "reading": "sumika",
+        "gloss": "dwelling"
+      },
+      {
+        "text": "へと",
+        "reading": "e to",
+        "gloss": "to"
+      },
+      {
+        "text": "帰還できる。",
+        "reading": "kikan dekiru",
+        "gloss": "can return"
+      }
+    ]
+  },
+  "ReturnScepter_Name": {
+    "japanese": "帰還の杖",
+    "english": "Scepter of return",
+    "segments": [
+      {
+        "text": "帰還",
+        "reading": "kikan",
+        "gloss": "return"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "杖",
+        "reading": "tsue",
+        "gloss": "staff / scepter"
+      }
+    ]
+  },
+  "Shears_Description": {
+    "japanese": "ヒツジから毛を刈り取るのに使う。",
+    "english": "Used to shear wool from sheep.",
+    "segments": [
+      {
+        "text": "ヒツジ",
+        "reading": "hitsuji",
+        "gloss": "sheep"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "毛",
+        "reading": "ke",
+        "gloss": "wool / hair"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "刈り取る",
+        "reading": "karitoru",
+        "gloss": "to shear off"
+      },
+      {
+        "text": "のに",
+        "reading": "no ni",
+        "gloss": "for"
+      },
+      {
+        "text": "使う。",
+        "reading": "tsukau",
+        "gloss": "is used"
+      }
+    ]
+  },
+  "Shears_Name": {
+    "japanese": "大ハサミ",
+    "english": "Large shears",
+    "segments": [
+      {
+        "text": "大",
+        "reading": "dai",
+        "gloss": "large"
+      },
+      {
+        "text": "ハサミ",
+        "reading": "hasami",
+        "gloss": "scissors / shears"
+      }
+    ]
+  },
+  "TrashCan_Copper_Name": {
+    "japanese": "銅のゴミ箱",
+    "english": "Copper bin",
+    "segments": [
+      {
+        "text": "銅",
+        "reading": "dō",
+        "gloss": "copper"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ゴミ箱",
+        "reading": "gomibako",
+        "gloss": "rubbish bin"
+      }
+    ]
+  },
+  "TrashCan_Description": {
+    "japanese": "アイテムをゴミ箱に捨てると、{0}%の価値が還元されます。",
+    "english": "When you throw an item in the bin, {0}% of its value is returned to you.",
+    "segments": [
+      {
+        "text": "アイテム",
+        "reading": "aitemu",
+        "gloss": "item"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "ゴミ箱",
+        "reading": "gomibako",
+        "gloss": "rubbish bin"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "into"
+      },
+      {
+        "text": "捨てる",
+        "reading": "suteru",
+        "gloss": "to throw"
+      },
+      {
+        "text": "と、",
+        "reading": "to",
+        "gloss": "when"
+      },
+      {
+        "text": "{0}%",
+        "reading": "",
+        "gloss": "(percentage)"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "of"
+      },
+      {
+        "text": "価値",
+        "reading": "kachi",
+        "gloss": "value"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "還元されます。",
+        "reading": "kangen saremasu",
+        "gloss": "is returned"
+      }
+    ]
+  },
+  "TrashCan_Gold_Name": {
+    "japanese": "金のゴミ箱",
+    "english": "Gold bin",
+    "segments": [
+      {
+        "text": "金",
+        "reading": "kin",
+        "gloss": "gold"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ゴミ箱",
+        "reading": "gomibako",
+        "gloss": "rubbish bin"
+      }
+    ]
+  },
+  "TrashCan_Iridium_Name": {
+    "japanese": "イリジウムのゴミ箱",
+    "english": "Iridium bin",
+    "segments": [
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ゴミ箱",
+        "reading": "gomibako",
+        "gloss": "rubbish bin"
+      }
+    ]
+  },
+  "TrashCan_Name": {
+    "japanese": "ゴミ箱",
+    "english": "Rubbish bin",
+    "segments": [
+      {
+        "text": "ゴミ箱",
+        "reading": "gomibako",
+        "gloss": "rubbish bin"
+      }
+    ]
+  },
+  "TrashCan_Steel_Name": {
+    "japanese": "鋼のゴミ箱",
+    "english": "Steel bin",
+    "segments": [
+      {
+        "text": "鋼",
+        "reading": "hagane",
+        "gloss": "steel"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ゴミ箱",
+        "reading": "gomibako",
+        "gloss": "rubbish bin"
+      }
+    ]
+  },
+  "WateringCan_Copper_Name": {
+    "japanese": "銅のジョウロ",
+    "english": "Copper watering can",
+    "segments": [
+      {
+        "text": "銅",
+        "reading": "dō",
+        "gloss": "copper"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ジョウロ",
+        "reading": "jōro",
+        "gloss": "watering can"
+      }
+    ]
+  },
+  "WateringCan_Description": {
+    "japanese": "作物に水をやるのに使う。どの水源からでも水を補充できる。",
+    "english": "Used to water crops. It can be refilled at any water source.",
+    "segments": [
+      {
+        "text": "作物",
+        "reading": "sakumotsu",
+        "gloss": "crops"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "to"
+      },
+      {
+        "text": "水",
+        "reading": "mizu",
+        "gloss": "water"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "やる",
+        "reading": "yaru",
+        "gloss": "to give"
+      },
+      {
+        "text": "のに",
+        "reading": "no ni",
+        "gloss": "for"
+      },
+      {
+        "text": "使う。",
+        "reading": "tsukau",
+        "gloss": "is used"
+      },
+      {
+        "text": "どの",
+        "reading": "dono",
+        "gloss": "any"
+      },
+      {
+        "text": "水源",
+        "reading": "suigen",
+        "gloss": "water source"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "でも",
+        "reading": "demo",
+        "gloss": "even"
+      },
+      {
+        "text": "水",
+        "reading": "mizu",
+        "gloss": "water"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "補充できる。",
+        "reading": "hojū dekiru",
+        "gloss": "can be refilled"
+      }
+    ]
+  },
+  "WateringCan_Gold_Name": {
+    "japanese": "金のジョウロ",
+    "english": "Gold watering can",
+    "segments": [
+      {
+        "text": "金",
+        "reading": "kin",
+        "gloss": "gold"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ジョウロ",
+        "reading": "jōro",
+        "gloss": "watering can"
+      }
+    ]
+  },
+  "WateringCan_Iridium_Name": {
+    "japanese": "イリジウムのジョウロ",
+    "english": "Iridium watering can",
+    "segments": [
+      {
+        "text": "イリジウム",
+        "reading": "irijiumu",
+        "gloss": "iridium"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ジョウロ",
+        "reading": "jōro",
+        "gloss": "watering can"
+      }
+    ]
+  },
+  "WateringCan_Name": {
+    "japanese": "ジョウロ",
+    "english": "Watering can",
+    "segments": [
+      {
+        "text": "ジョウロ",
+        "reading": "jōro",
+        "gloss": "watering can"
+      }
+    ]
+  },
+  "WateringCan_Steel_Name": {
+    "japanese": "鋼のジョウロ",
+    "english": "Steel watering can",
+    "segments": [
+      {
+        "text": "鋼",
+        "reading": "hagane",
+        "gloss": "steel"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ジョウロ",
+        "reading": "jōro",
+        "gloss": "watering can"
+      }
+    ]
+  }
+}
