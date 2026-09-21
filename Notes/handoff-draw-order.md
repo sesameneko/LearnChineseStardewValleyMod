@@ -44,7 +44,9 @@ New console command `ls_draw_trace [frames]` (default 5) logs one line per frame
 order, e.g. `[trace] frame 3: menuPass -> frozenTooltip -> reissue -> wordOverlay`. Z-order here is
 call order, which no single log line and no screenshot can show.
 
-1. `ls_word_hover on`, hover an **Objects** item (wood, stone, a sapling) to get green outlines.
+1. Hover an **Objects** item (wood, stone, a sapling) to get green outlines. Word capture is
+   hardcoded on in `TextCapturePatches.Enabled`; it used to need `ls_word_hover on` every launch,
+   which twice made a working build look broken.
 2. `ls_draw_trace`. The trace must show `wordOverlay` **after** the last `frozenTooltip`/`reissue`
    of the frame, and exactly one of each per frame.
 3. Repeat with the tooltip frozen (`Z`) and unfrozen, with a menu open (inventory) and without.
@@ -88,12 +90,12 @@ If the fix above turns out to be incomplete, these were next in line and are sti
 
 ## Tooling
 
-- **Console commands**, all in `ModEntry.cs`: `ls_word_hover [on|off]`, `ls_draw_trace [frames]`,
+- **Console commands**, all in `ModEntry.cs`: `ls_draw_trace [frames]`,
   `ls_dump_text [filter]` (everything recorded this frame, dumped from *inside* the draw — a console
   command runs on the update tick and would read a half-filled frame), `ls_probe_questlog [on|off]`,
   `ls_build_index`, `ls_lookup`.
 - **Driving the console without a terminal.** `scripts/run.sh` with its stdin on a fifo:
-  `mkfifo f; sleep 86400 > f & scripts/run.sh < f > log`, then `echo "ls_word_hover on" > f`.
+  `mkfifo f; sleep 86400 > f & scripts/run.sh < f > log`, then `echo "ls_draw_trace 600" > f`.
   Without this the SMAPI console is unreachable, because the game starts as a background process.
 - **IL disassembly** for ground truth: `ikdasm "…/Contents/MacOS/Stardew Valley.dll" > sdv.il`
   (also `MonoGame.Framework.dll`). Prefer it over reasoning from memory — several wrong turns here

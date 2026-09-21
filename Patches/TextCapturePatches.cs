@@ -54,8 +54,17 @@ namespace LanguageStudyStardewValleyMod.Patches
         /// <summary>Set while the mod is drawing, so our own overlay text isn't recorded as game text.</summary>
         private static bool suppressed;
 
-        /// <summary>Whether to record at all. Off by default -- this runs on a very hot path.</summary>
-        public static bool Enabled { get; set; }
+        /// <summary>
+        /// Whether to record at all. This runs on a very hot path -- every text draw in the game --
+        /// so it stays a single flag that the prefixes check first.
+        ///
+        /// Hardcoded on while M3 word hover is the feature being built. It used to default to off
+        /// with an ls_word_hover console command to switch it on, and that cost real debugging time:
+        /// the flag isn't persisted, so every game launch came up with word hover silently off, and
+        /// a perfectly good build looks exactly like a broken one -- no highlighting, no glosses,
+        /// no error. Flip this line to turn the capture off.
+        /// </summary>
+        public static bool Enabled { get; set; } = true;
 
         /// <summary>
         /// Diagnostics for why text does or doesn't get recorded. Counted before any gating, so a
