@@ -64,7 +64,10 @@ key <TAB> english <TAB> text¦reading¦gloss‖text¦reading¦gloss‖...
 ```
 
 `¦` (U+00A6) separates the three fields of a segment, `‖` (U+2016) separates
-segments. `merge` refuses any line whose segments don't reproduce the source
+segments. The game itself uses `¦` as a dialogue-variant separator -- the
+`${male text¦female text}$` form in `ItemDeliveryQuest`, for instance -- so a
+literal `¦` or `‖` inside a segment's text is written `\¦` / `\‖`; `batch`
+already escapes them for you in the worklist it prints. `merge` refuses any line whose segments don't reproduce the source
 string and reports which, so a bad batch can't reach the mod; fix and re-merge —
 merging is idempotent per key.
 

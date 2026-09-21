@@ -14,7 +14,7 @@ Authoring format (TSV, one entry per line, no header):
 The concatenated segment texts must reproduce the source string exactly; merge
 refuses any line that doesn't, so bad data never reaches the mod.
 """
-import json, os, sys
+import json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 JA = os.path.join(ROOT, "tools", "extracted-strings", "ja")
@@ -25,6 +25,12 @@ OUT = os.path.join(ROOT, "tools", "extracted-strings", "literal-translations")
 SKIPS = os.path.join(ROOT, "tools", "segment-data", "skipped")
 
 FIELD, SEG = "¦", "‖"
+
+# The game itself uses ¦ (U+00A6) as a dialogue-variant separator -- e.g. the
+# ${male text¦female text}$ form in ItemDeliveryQuest -- so a literal ¦ or ‖
+# inside a segment's text is written \¦ / \‖ and split around here.
+SPLIT_SEG = re.compile(r"(?<!\\)" + SEG)
+SPLIT_FIELD = re.compile(r"(?<!\\)" + FIELD)
 
 COMMENT = ("Word/phrase-level breakdown of Stardew Valley {table}.xnb strings, for in-context "
            "mouse-over translation of individual pieces of a sentence (not a general Japanese-"
@@ -106,14 +112,15 @@ def cmd_status(args):
 
 def esc(text):
     """Newlines and tabs would break the one-entry-per-line TSV worklist."""
-    return text.replace("\\", "\\\\").replace("\n", "\\n").replace("\t", "\\t")
+    return (text.replace("\\", "\\\\").replace("\n", "\\n").replace("\t", "\\t")
+                .replace(FIELD, "\\" + FIELD).replace(SEG, "\\" + SEG))
 
 
 def unesc(text):
     out, i = [], 0
     while i < len(text):
         if text[i] == "\\" and i + 1 < len(text):
-            out.append({"n": "\n", "t": "\t", "\\": "\\"}.get(text[i + 1], text[i + 1]))
+            out.append({"n": "\n", "t": "\t", "\\": "\\", FIELD: FIELD, SEG: SEG}.get(text[i + 1], text[i + 1]))
             i += 2
         else:
             out.append(text[i]); i += 1
@@ -137,10 +144,10 @@ def parse_line(line):
         raise ValueError("expected 3 tab-separated columns")
     key, english, segs = parts[0].strip(), parts[1].strip(), parts[2]
     out = []
-    for chunk in segs.split(SEG):
+    for chunk in SPLIT_SEG.split(segs):
         if not chunk:
             continue
-        bits = chunk.split(FIELD)
+        bits = SPLIT_FIELD.split(chunk)
         if len(bits) != 3:
             raise ValueError(f"segment {chunk!r} needs text{FIELD}reading{FIELD}gloss")
         out.append({"text": unesc(bits[0]), "reading": bits[1].strip(), "gloss": bits[2].strip()})
