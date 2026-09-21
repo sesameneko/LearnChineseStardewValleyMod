@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # Builds the mod and launches Stardew Valley directly through SMAPI, bypassing Steam's
-# library UI. Steam itself still needs to be running in the background (it's a
-# Steamworks requirement), but you don't need to click through its UI each time --
-# just rerun this script.
+# library UI -- you don't need to click through it each time, just rerun this script.
 #
 # Usage: scripts/run.sh [extra `dotnet build` args...]
 

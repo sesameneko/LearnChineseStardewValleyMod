@@ -20,7 +20,7 @@ The build config resolves the Stardew Valley game path automatically on Windows/
 
 There's no test/lint/CI config for the mod itself — `dotnet build` (and manually launching the game via SMAPI) is the only verification available for it. The standalone tools under `tools/` (see Architecture below) do have real xunit test suites, run via `dotnet test` from within each tool's own directory.
 
-`scripts/run.sh` builds the mod and launches SMAPI directly (bypassing Steam's library UI) for faster manual restarts during live testing. Steam still needs to be running in the background.
+`scripts/run.sh` builds the mod and launches SMAPI directly (bypassing Steam's library UI) for faster manual restarts during live testing.
 
 ## Development workflow
 
