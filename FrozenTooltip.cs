@@ -22,12 +22,6 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>Whether a tooltip is currently pinned.</summary>
         public static bool IsFrozen { get; private set; }
 
-        /// <summary>
-        /// Whether the pin is a lock (toggled on, stays until toggled off) rather than a hold
-        /// (held with a key, released when that key comes up).
-        /// </summary>
-        public static bool IsLocked { get; private set; }
-
         /// <summary>Set while we re-issue the frozen tooltip, so the suppression prefix lets ours through.</summary>
         public static bool IsReissuing { get; private set; }
 
@@ -61,9 +55,7 @@ namespace LanguageStudyStardewValleyMod
         }
 
         /// <summary>Pins whatever tooltip was captured this frame. Returns false if there wasn't one.</summary>
-        /// <param name="locked">Whether the pin should persist until explicitly unpinned, rather than
-        /// lasting only as long as the hold key is down.</param>
-        public static bool Freeze(bool locked)
+        public static bool Freeze()
         {
             if (drawHoverText is null || overrideXIndex < 0 || overrideYIndex < 0)
                 return false;
@@ -74,21 +66,12 @@ namespace LanguageStudyStardewValleyMod
             frozenArgs = args;
             frozenBox = box;
             IsFrozen = true;
-            IsLocked = locked;
             return true;
-        }
-
-        /// <summary>Promotes a hold-pinned tooltip to a locked one, so releasing the hold key keeps it.</summary>
-        public static void Lock()
-        {
-            if (IsFrozen)
-                IsLocked = true;
         }
 
         public static void Unfreeze()
         {
             IsFrozen = false;
-            IsLocked = false;
             frozenArgs = null;
         }
 
