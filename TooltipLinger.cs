@@ -25,7 +25,7 @@ namespace LanguageStudyStardewValleyMod
     public static class TooltipLinger
     {
         /// <summary>How long the tooltip stays after the cursor leaves what raised it.</summary>
-        private const double LingerMs = 1500;
+        private const double LingerMs = 500;
 
         /// <summary>Whether the game drew a tooltip of its own this frame.</summary>
         public static bool VanillaDrewThisFrame { get; set; }
