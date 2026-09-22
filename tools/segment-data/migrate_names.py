@@ -21,12 +21,11 @@ in place rather than spending a re-translation pass:
       "segments": [{"text": "木材", "reading": "mokuzai", "gloss": "Timber"}]
     }
 
-LIMITATION, deliberate: every name becomes ONE segment covering the whole string.
-That is correct for a single-word name like 木材 and WRONG for a multi-word one
-like 木の柵 (木 / の / 柵), which still needs a hand pass to split. See TODOs.txt.
-Hovering a multi-word name shows the whole name with its full reading and gloss --
-the same granularity as before, but now with a real reading and gloss attached
-instead of the bare source text.
+HISTORY: this migration deliberately made every name ONE segment covering the whole
+string -- correct for a single-word name like 木材, wrong for a multi-word one like
+木の柵 (木 / の / 柵). A hand pass has since split the multi-word names directly in
+Objects_Name.json (526 of 756; the rest are single lexical items left whole), so
+re-running this script would undo that work. It is kept for reference only.
 """
 import json, os, re, sys
 
