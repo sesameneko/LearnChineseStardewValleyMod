@@ -1,0 +1,6286 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Shirts.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "80sShirt_Description": {
+    "japanese": "肩で落ち着くやばいTシャツ。",
+    "english": "A gnarly t-shirt that sits off the shoulder.",
+    "segments": [
+      {
+        "text": "肩で落ち着く",
+        "reading": "kata de ochitsuku",
+        "gloss": "sitting on the shoulder"
+      },
+      {
+        "text": "やばいTシャツ。",
+        "reading": "yabai tī shatsu",
+        "gloss": "a gnarly t-shirt"
+      }
+    ]
+  },
+  "80sShirt_Name_Female": {
+    "japanese": " 80年代のシャツ（女）",
+    "english": "80's Shirt (F)",
+    "segments": [
+      {
+        "text": " 80年代の",
+        "reading": "hachijūnendai no",
+        "gloss": "of the 80s"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      },
+      {
+        "text": "（女）",
+        "reading": "onna",
+        "gloss": "female"
+      }
+    ]
+  },
+  "80sShirt_Name_Male": {
+    "japanese": " 80年代のシャツ（男）",
+    "english": "80's Shirt (M)",
+    "segments": [
+      {
+        "text": " 80年代の",
+        "reading": "hachijūnendai no",
+        "gloss": "of the 80s"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      },
+      {
+        "text": "（男）",
+        "reading": "otoko",
+        "gloss": "male"
+      }
+    ]
+  },
+  "AntiquityShirt_Description": {
+    "japanese": "古代の模様のシャツ。",
+    "english": "A shirt with an ancient pattern.",
+    "segments": [
+      {
+        "text": "古代の模様の",
+        "reading": "kodai no moyō no",
+        "gloss": "with an ancient pattern"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "AntiquityShirt_Name": {
+    "japanese": "アンティークシャツ",
+    "english": "Antiquity Shirt",
+    "segments": [
+      {
+        "text": "アンティーク",
+        "reading": "antīku",
+        "gloss": "antique"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "AquamarineShirt_Description": {
+    "japanese": "アクアマリンのシャツ。",
+    "english": "An aquamarine shirt.",
+    "segments": [
+      {
+        "text": "アクアマリンの",
+        "reading": "akuamarin no",
+        "gloss": "aquamarine"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "AquamarineShirt_Name": {
+    "japanese": "アクアマリンシャツ",
+    "english": "Aquamarine Shirt",
+    "segments": [
+      {
+        "text": "アクアマリン",
+        "reading": "akuamarin",
+        "gloss": "aquamarine"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "ArcaneShirt_Description": {
+    "japanese": "服から何かの力を感じることができる。",
+    "english": "You can feel some kind of power from this garment.",
+    "segments": [
+      {
+        "text": "服から",
+        "reading": "fuku kara",
+        "gloss": "from the garment"
+      },
+      {
+        "text": "何かの力を感じることができる。",
+        "reading": "nanika no chikara o kanjiru koto ga dekiru",
+        "gloss": "you can feel some kind of power"
+      }
+    ]
+  },
+  "ArcaneShirt_Name": {
+    "japanese": "秘儀のシャツ",
+    "english": "Arcane Shirt",
+    "segments": [
+      {
+        "text": "秘儀の",
+        "reading": "higi no",
+        "gloss": "arcane"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "BackpackShirt_Description": {
+    "japanese": "キャンバスバックパックのある無地シャツ。",
+    "english": "A plain shirt with a canvas backpack.",
+    "segments": [
+      {
+        "text": "キャンバスバックパックのある",
+        "reading": "kyanbasu bakkupakku no aru",
+        "gloss": "with a canvas backpack"
+      },
+      {
+        "text": "無地シャツ。",
+        "reading": "muji shatsu",
+        "gloss": "plain shirt"
+      }
+    ]
+  },
+  "BackpackShirt_Name": {
+    "japanese": "バックパックシャツ",
+    "english": "Backpack Shirt",
+    "segments": [
+      {
+        "text": "バックパック",
+        "reading": "bakkupakku",
+        "gloss": "backpack"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "BananaShirt_Description": {
+    "japanese": "バナナが好きな人にはオススメ。",
+    "english": "Recommended if you love bananas.",
+    "segments": [
+      {
+        "text": "バナナが好きな人には",
+        "reading": "banana ga suki na hito ni wa",
+        "gloss": "for people who like bananas"
+      },
+      {
+        "text": "オススメ。",
+        "reading": "osusume",
+        "gloss": "recommended"
+      }
+    ]
+  },
+  "BananaShirt_Name": {
+    "japanese": "バナナシャツ",
+    "english": "Banana Shirt",
+    "segments": [
+      {
+        "text": "バナナ",
+        "reading": "banana",
+        "gloss": "banana"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "BandanaShirt_1195_Description": {
+    "japanese": "首を清潔に保つバンダナ付きシャツ。",
+    "english": "A shirt with a bandana that keeps your neck very clean.",
+    "segments": [
+      {
+        "text": "首を清潔に保つ",
+        "reading": "kubi o seiketsu ni tamotsu",
+        "gloss": "keeping the neck clean"
+      },
+      {
+        "text": "バンダナ付きシャツ。",
+        "reading": "bandana tsuki shatsu",
+        "gloss": "a shirt with a bandana"
+      }
+    ]
+  },
+  "BandanaShirt_1195_Name": {
+    "japanese": "バンダナシャツ",
+    "english": "Bandana Shirt",
+    "segments": [
+      {
+        "text": "バンダナ",
+        "reading": "bandana",
+        "gloss": "bandana"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "BandanaShirt_1203_Description": {
+    "japanese": "首を守るためのバンダナ付きシャツ。",
+    "english": "A shirt with a bandana to protect your neck.",
+    "segments": [
+      {
+        "text": "首を守るための",
+        "reading": "kubi o mamoru tame no",
+        "gloss": "to protect the neck"
+      },
+      {
+        "text": "バンダナ付きシャツ。",
+        "reading": "bandana tsuki shatsu",
+        "gloss": "a shirt with a bandana"
+      }
+    ]
+  },
+  "BandanaShirt_1203_Name": {
+    "japanese": "バンダナシャツ",
+    "english": "Bandana Shirt",
+    "segments": [
+      {
+        "text": "バンダナ",
+        "reading": "bandana",
+        "gloss": "bandana"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "BandanaShirt_Description": {
+    "japanese": "首を柔らかく保つためのバンダナ付きシャツ。",
+    "english": "A shirt with a bandana to keep your neck soft.",
+    "segments": [
+      {
+        "text": "首を柔らかく保つための",
+        "reading": "kubi o yawarakaku tamotsu tame no",
+        "gloss": "to keep the neck soft"
+      },
+      {
+        "text": "バンダナ付きシャツ。",
+        "reading": "bandana tsuki shatsu",
+        "gloss": "a shirt with a bandana"
+      }
+    ]
+  },
+  "BandanaShirt_Name": {
+    "japanese": "バンダナシャツ",
+    "english": "Bandana Shirt",
+    "segments": [
+      {
+        "text": "バンダナ",
+        "reading": "bandana",
+        "gloss": "bandana"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "BasicPullover_Description": {
+    "japanese": "無地のプルオーバーです。",
+    "english": "It's a plain pullover.",
+    "segments": [
+      {
+        "text": "無地の",
+        "reading": "muji no",
+        "gloss": "plain"
+      },
+      {
+        "text": "プルオーバーです。",
+        "reading": "puruōbā desu",
+        "gloss": "it's a pullover"
+      }
+    ]
+  },
+  "BasicPullover_Name_Female": {
+    "japanese": "ベーシックプルオーバー（女）",
+    "english": "Basic Pullover (F)",
+    "segments": [
+      {
+        "text": "ベーシックプルオーバー",
+        "reading": "bēshikku puruōbā",
+        "gloss": "basic pullover"
+      },
+      {
+        "text": "（女）",
+        "reading": "onna",
+        "gloss": "female"
+      }
+    ]
+  },
+  "BasicPullover_Name_Male": {
+    "japanese": "ベーシックプルオーバー（男）",
+    "english": "Basic Pullover (M)",
+    "segments": [
+      {
+        "text": "ベーシックプルオーバー",
+        "reading": "bēshikku puruōbā",
+        "gloss": "basic pullover"
+      },
+      {
+        "text": "（男）",
+        "reading": "otoko",
+        "gloss": "male"
+      }
+    ]
+  },
+  "BeltedCoat_Description": {
+    "japanese": "目立つベルトが付いたビロードのような黒コート。",
+    "english": "A velvety black coat with a prominent belt.",
+    "segments": [
+      {
+        "text": "目立つベルトが付いた",
+        "reading": "medatsu beruto ga tsuita",
+        "gloss": "with a prominent belt"
+      },
+      {
+        "text": "ビロードのような黒コート。",
+        "reading": "birōdo no yō na kuro kōto",
+        "gloss": "a velvety black coat"
+      }
+    ]
+  },
+  "BeltedCoat_Name": {
+    "japanese": "ベルト付きコート",
+    "english": "Belted Coat",
+    "segments": [
+      {
+        "text": "ベルト付き",
+        "reading": "beruto tsuki",
+        "gloss": "with a belt"
+      },
+      {
+        "text": "コート",
+        "reading": "kōto",
+        "gloss": "coat"
+      }
+    ]
+  },
+  "BikiniTop_Description": {
+    "japanese": "夏の定番。",
+    "english": "A summer staple.",
+    "segments": [
+      {
+        "text": "夏の定番。",
+        "reading": "natsu no teiban",
+        "gloss": "a summer staple"
+      }
+    ]
+  },
+  "BikiniTop_Name": {
+    "japanese": "ビキニトップ",
+    "english": "Bikini Top",
+    "segments": [
+      {
+        "text": "ビキニトップ",
+        "reading": "bikini toppu",
+        "gloss": "bikini top"
+      }
+    ]
+  },
+  "BlackLeatherJacket_Description": {
+    "japanese": "ダークブラックレザー製のクールなジャケット。",
+    "english": "A cool jacket made of dark black leather.",
+    "segments": [
+      {
+        "text": "ダークブラックレザー製の",
+        "reading": "dāku burakku rezā sei no",
+        "gloss": "made of dark black leather"
+      },
+      {
+        "text": "クールなジャケット。",
+        "reading": "kūru na jaketto",
+        "gloss": "a cool jacket"
+      }
+    ]
+  },
+  "BlackLeatherJacket_Name": {
+    "japanese": "ブラックレザージャケット",
+    "english": "Black Leather Jacket",
+    "segments": [
+      {
+        "text": "ブラックレザー",
+        "reading": "burakku rezā",
+        "gloss": "black leather"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "BlacksmithApron_Description": {
+    "japanese": "ある世代から次の世代へと受け継がれています。",
+    "english": "Handed down from one generation to the next.",
+    "segments": [
+      {
+        "text": "ある世代から次の世代へと",
+        "reading": "aru sedai kara tsugi no sedai e to",
+        "gloss": "from one generation to the next"
+      },
+      {
+        "text": "受け継がれています。",
+        "reading": "uketsugarete imasu",
+        "gloss": "it is handed down"
+      }
+    ]
+  },
+  "BlacksmithApron_Name": {
+    "japanese": "鍛冶屋のエプロン",
+    "english": "Blacksmith Apron",
+    "segments": [
+      {
+        "text": "鍛冶屋の",
+        "reading": "kajiya no",
+        "gloss": "blacksmith's"
+      },
+      {
+        "text": "エプロン",
+        "reading": "epuron",
+        "gloss": "apron"
+      }
+    ]
+  },
+  "BlueButtonedVest_Description": {
+    "japanese": "染色できる袖付きの青いシャツ。",
+    "english": "It's a blue shirt with dyeable sleeves.",
+    "segments": [
+      {
+        "text": "染色できる袖付きの",
+        "reading": "senshoku dekiru sode tsuki no",
+        "gloss": "with dyeable sleeves"
+      },
+      {
+        "text": "青いシャツ。",
+        "reading": "aoi shatsu",
+        "gloss": "a blue shirt"
+      }
+    ]
+  },
+  "BlueButtonedVest_Name": {
+    "japanese": "ブルーボタン付きベスト",
+    "english": "Blue Buttoned Vest",
+    "segments": [
+      {
+        "text": "ブルーボタン付き",
+        "reading": "burū botan tsuki",
+        "gloss": "with blue buttons"
+      },
+      {
+        "text": "ベスト",
+        "reading": "besuto",
+        "gloss": "vest"
+      }
+    ]
+  },
+  "BlueHoodie_Description": {
+    "japanese": "フード付きスポーティーブルーのプルオーバー。",
+    "english": "A sporty blue pullover with a hood.",
+    "segments": [
+      {
+        "text": "フード付き",
+        "reading": "fūdo tsuki",
+        "gloss": "with a hood"
+      },
+      {
+        "text": "スポーティーブルーのプルオーバー。",
+        "reading": "supōtī burū no puruōbā",
+        "gloss": "a sporty blue pullover"
+      }
+    ]
+  },
+  "BlueHoodie_Name": {
+    "japanese": "ブルーのパーカー",
+    "english": "Blue Hoodie",
+    "segments": [
+      {
+        "text": "ブルーの",
+        "reading": "burū no",
+        "gloss": "blue"
+      },
+      {
+        "text": "パーカー",
+        "reading": "pākā",
+        "gloss": "hoodie"
+      }
+    ]
+  },
+  "BlueLongVest_Description": {
+    "japanese": "グレーのシャツの上部が長いブルーのベスト。",
+    "english": "A long blue vest over a grey shirt.",
+    "segments": [
+      {
+        "text": "グレーのシャツの上部が長い",
+        "reading": "gurē no shatsu no jōbu ga nagai",
+        "gloss": "long over a grey shirt"
+      },
+      {
+        "text": "ブルーのベスト。",
+        "reading": "burū no besuto",
+        "gloss": "a blue vest"
+      }
+    ]
+  },
+  "BlueLongVest_Name": {
+    "japanese": "ブルーロングベスト",
+    "english": "Blue Long Vest",
+    "segments": [
+      {
+        "text": "ブルー",
+        "reading": "burū",
+        "gloss": "blue"
+      },
+      {
+        "text": "ロング",
+        "reading": "rongu",
+        "gloss": "long"
+      },
+      {
+        "text": "ベスト",
+        "reading": "besuto",
+        "gloss": "vest"
+      }
+    ]
+  },
+  "BoboShirt_Description": {
+    "japanese": "奇妙な男が写っているピンクのシャツ。",
+    "english": "A pink shirt with a strange-looking guy on it.",
+    "segments": [
+      {
+        "text": "奇妙な男が写っている",
+        "reading": "kimyō na otoko ga utsutte iru",
+        "gloss": "with a strange-looking man on it"
+      },
+      {
+        "text": "ピンクのシャツ。",
+        "reading": "pinku no shatsu",
+        "gloss": "a pink shirt"
+      }
+    ]
+  },
+  "BoboShirt_Name": {
+    "japanese": "ボボシャツ",
+    "english": "Bobo Shirt",
+    "segments": [
+      {
+        "text": "ボボ",
+        "reading": "bobo",
+        "gloss": "Bobo"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "BomberJacket_Description": {
+    "japanese": "戦闘機のパイロットたちが以前に着用していた厚くて丈夫なジャケット。",
+    "english": "A thick, sturdy jacket once worn by fighter pilots.",
+    "segments": [
+      {
+        "text": "戦闘機のパイロットたちが以前に着用していた",
+        "reading": "sentōki no pairotto-tachi ga izen ni chakuyō shite ita",
+        "gloss": "formerly worn by fighter pilots"
+      },
+      {
+        "text": "厚くて丈夫なジャケット。",
+        "reading": "atsukute jōbu na jaketto",
+        "gloss": "a thick, sturdy jacket"
+      }
+    ]
+  },
+  "BomberJacket_Name": {
+    "japanese": "ボンバージャケット",
+    "english": "Bomber Jacket",
+    "segments": [
+      {
+        "text": "ボンバー",
+        "reading": "bonbā",
+        "gloss": "bomber"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "BridalShirt_Description": {
+    "japanese": "花嫁のための完璧な美しい白いトップス。",
+    "english": "A beautiful white top, perfect for a bride.",
+    "segments": [
+      {
+        "text": "花嫁のための",
+        "reading": "hanayome no tame no",
+        "gloss": "for a bride"
+      },
+      {
+        "text": "完璧な美しい白いトップス。",
+        "reading": "kanpeki na utsukushii shiroi toppusu",
+        "gloss": "a perfect, beautiful white top"
+      }
+    ]
+  },
+  "BridalShirt_Name": {
+    "japanese": "ブライダルシャツ",
+    "english": "Bridal Shirt",
+    "segments": [
+      {
+        "text": "ブライダル",
+        "reading": "buraidaru",
+        "gloss": "bridal"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "BrownJacket_Description": {
+    "japanese": "茶色の素材でできた素敵で頑丈なジャケット。",
+    "english": "A nice, sturdy jacket made of brown material.",
+    "segments": [
+      {
+        "text": "茶色の素材でできた",
+        "reading": "chairo no sozai de dekita",
+        "gloss": "made of brown material"
+      },
+      {
+        "text": "素敵で頑丈なジャケット。",
+        "reading": "suteki de ganjō na jaketto",
+        "gloss": "a nice, sturdy jacket"
+      }
+    ]
+  },
+  "BrownJacket_Name": {
+    "japanese": "ブラウンジャケット",
+    "english": "Brown Jacket",
+    "segments": [
+      {
+        "text": "ブラウン",
+        "reading": "buraun",
+        "gloss": "brown"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "BrownOveralls_Description": {
+    "japanese": "汚れが染みにくいです。",
+    "english": "Dirt stains are hard to see on these.",
+    "segments": [
+      {
+        "text": "汚れが染みにくいです。",
+        "reading": "yogore ga shiminikui desu",
+        "gloss": "stains don't show easily"
+      }
+    ]
+  },
+  "BrownOveralls_Name": {
+    "japanese": "ブラウンオーバーオール",
+    "english": "Brown Overalls",
+    "segments": [
+      {
+        "text": "ブラウン",
+        "reading": "buraun",
+        "gloss": "brown"
+      },
+      {
+        "text": "オーバーオール",
+        "reading": "ōbāōru",
+        "gloss": "overalls"
+      }
+    ]
+  },
+  "BrownSuit_Description": {
+    "japanese": "標準的な茶色のビジネススーツ。",
+    "english": "It's a standard brown business suit.",
+    "segments": [
+      {
+        "text": "標準的な茶色のビジネススーツ。",
+        "reading": "hyōjunteki na chairo no bijinesu sūtsu",
+        "gloss": "a standard brown business suit"
+      }
+    ]
+  },
+  "BrownSuit_Name": {
+    "japanese": "ブラウンスーツ",
+    "english": "Brown Suit",
+    "segments": [
+      {
+        "text": "ブラウン",
+        "reading": "buraun",
+        "gloss": "brown"
+      },
+      {
+        "text": "スーツ",
+        "reading": "sūtsu",
+        "gloss": "suit"
+      }
+    ]
+  },
+  "BurgerShirt_Description": {
+    "japanese": "食べた物を着ますか？",
+    "english": "Wear what you eat!",
+    "segments": [
+      {
+        "text": "食べた物を着ますか？",
+        "reading": "tabeta mono o kimasu ka",
+        "gloss": "will you wear what you ate"
+      }
+    ]
+  },
+  "BurgerShirt_Name": {
+    "japanese": "バーガーシャツ",
+    "english": "Burger Shirt",
+    "segments": [
+      {
+        "text": "バーガー",
+        "reading": "bāgā",
+        "gloss": "burger"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "ButtonDownShirt_Description": {
+    "japanese": "シンプルできれいなシャツ。",
+    "english": "A simple, clean shirt.",
+    "segments": [
+      {
+        "text": "シンプルできれいなシャツ。",
+        "reading": "shinpuru de kirei na shatsu",
+        "gloss": "a simple, clean shirt"
+      }
+    ]
+  },
+  "ButtonDownShirt_Name": {
+    "japanese": "ボタンダウンシャツ",
+    "english": "Button Down Shirt",
+    "segments": [
+      {
+        "text": "ボタンダウン",
+        "reading": "botan daun",
+        "gloss": "button-down"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "CamoShirt_Description": {
+    "japanese": "周囲の環境に溶け込むのを助けます。",
+    "english": "Helps you blend into your surroundings.",
+    "segments": [
+      {
+        "text": "周囲の環境に溶け込むのを助けます。",
+        "reading": "shūi no kankyō ni tokekomu no o tasukemasu",
+        "gloss": "it helps you blend into your surroundings"
+      }
+    ]
+  },
+  "CamoShirt_Name": {
+    "japanese": "カモシャツ",
+    "english": "Camo Shirt",
+    "segments": [
+      {
+        "text": "カモ",
+        "reading": "kamo",
+        "gloss": "camo"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "CanvasJacket_Description": {
+    "japanese": "裏地付きの茶色のジャケット。",
+    "english": "A brown jacket with a fleece lining.",
+    "segments": [
+      {
+        "text": "裏地付きの",
+        "reading": "uraji tsuki no",
+        "gloss": "with lining"
+      },
+      {
+        "text": "茶色のジャケット。",
+        "reading": "chairo no jaketto",
+        "gloss": "a brown jacket"
+      }
+    ]
+  },
+  "CanvasJacket_Name": {
+    "japanese": "キャンバスジャケット",
+    "english": "Canvas Jacket",
+    "segments": [
+      {
+        "text": "キャンバス",
+        "reading": "kyanbasu",
+        "gloss": "canvas"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "CaptainsUniform_Description": {
+    "japanese": "船の船長の定番ユニフォーム。",
+    "english": "The classic uniform of a ship's captain.",
+    "segments": [
+      {
+        "text": "船の船長の",
+        "reading": "fune no senchō no",
+        "gloss": "a ship's captain's"
+      },
+      {
+        "text": "定番ユニフォーム。",
+        "reading": "teiban yunifōmu",
+        "gloss": "classic uniform"
+      }
+    ]
+  },
+  "CaptainsUniform_Name": {
+    "japanese": "船長のユニフォーム",
+    "english": "Captain's Uniform",
+    "segments": [
+      {
+        "text": "船長の",
+        "reading": "senchō no",
+        "gloss": "captain's"
+      },
+      {
+        "text": "ユニフォーム",
+        "reading": "yunifōmu",
+        "gloss": "uniform"
+      }
+    ]
+  },
+  "Cardigan_Description": {
+    "japanese": "ボタンアップ式のカーディガンセーター。",
+    "english": "A soft button-up cardigan sweater.",
+    "segments": [
+      {
+        "text": "ボタンアップ式の",
+        "reading": "botan appu shiki no",
+        "gloss": "button-up style"
+      },
+      {
+        "text": "カーディガンセーター。",
+        "reading": "kādigan sētā",
+        "gloss": "cardigan sweater"
+      }
+    ]
+  },
+  "Cardigan_Name": {
+    "japanese": "カーディガン",
+    "english": "Cardigan",
+    "segments": [
+      {
+        "text": "カーディガン",
+        "reading": "kādigan",
+        "gloss": "cardigan"
+      }
+    ]
+  },
+  "CarpShirt_Description": {
+    "japanese": "大きな鯉の頭がフロントを飾ります。",
+    "english": "A big carp head adorns the front.",
+    "segments": [
+      {
+        "text": "大きな鯉の頭が",
+        "reading": "ōkina koi no atama ga",
+        "gloss": "a big carp head"
+      },
+      {
+        "text": "フロントを飾ります。",
+        "reading": "furonto o kazarimasu",
+        "gloss": "adorns the front"
+      }
+    ]
+  },
+  "CarpShirt_Name": {
+    "japanese": "カープシャツ",
+    "english": "Carp Shirt",
+    "segments": [
+      {
+        "text": "カープ",
+        "reading": "kāpu",
+        "gloss": "carp"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "CavemanShirt_Description": {
+    "japanese": "石器時代の定番！",
+    "english": "A stone-age classic!",
+    "segments": [
+      {
+        "text": "石器時代の定番！",
+        "reading": "sekki jidai no teiban",
+        "gloss": "a stone-age classic"
+      }
+    ]
+  },
+  "CavemanShirt_Name": {
+    "japanese": "ケイヴマンシャツ",
+    "english": "Caveman Shirt",
+    "segments": [
+      {
+        "text": "ケイヴマン",
+        "reading": "keivuman",
+        "gloss": "caveman"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "ChefCoat_Description": {
+    "japanese": "ヘッドシェフの伝統的な制服",
+    "english": "The traditional uniform of a head chef",
+    "segments": [
+      {
+        "text": "ヘッドシェフの",
+        "reading": "heddo shefu no",
+        "gloss": "a head chef's"
+      },
+      {
+        "text": "伝統的な制服",
+        "reading": "dentōteki na seifuku",
+        "gloss": "traditional uniform"
+      }
+    ]
+  },
+  "ChefCoat_Name": {
+    "japanese": "シェフコート",
+    "english": "Chef Coat",
+    "segments": [
+      {
+        "text": "シェフ",
+        "reading": "shefu",
+        "gloss": "chef"
+      },
+      {
+        "text": "コート",
+        "reading": "kōto",
+        "gloss": "coat"
+      }
+    ]
+  },
+  "CircuitboardShirt_Description": {
+    "japanese": "シャツは電子回路ボードのように見えます。",
+    "english": "The shirt looks like an electronic circuit board.",
+    "segments": [
+      {
+        "text": "シャツは",
+        "reading": "shatsu wa",
+        "gloss": "the shirt"
+      },
+      {
+        "text": "電子回路ボードのように見えます。",
+        "reading": "denshi kairo bōdo no yō ni miemasu",
+        "gloss": "looks like an electronic circuit board"
+      }
+    ]
+  },
+  "CircuitboardShirt_Name": {
+    "japanese": "サーキットボードシャツ",
+    "english": "Circuitboard Shirt",
+    "segments": [
+      {
+        "text": "サーキットボード",
+        "reading": "sākitto bōdo",
+        "gloss": "circuit board"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "ClassicOveralls_Description": {
+    "japanese": "農場の定番。",
+    "english": "A farming classic.",
+    "segments": [
+      {
+        "text": "農場の定番。",
+        "reading": "nōjō no teiban",
+        "gloss": "a farm classic"
+      }
+    ]
+  },
+  "ClassicOveralls_Name": {
+    "japanese": "定番オーバーオール",
+    "english": "Classic Overalls",
+    "segments": [
+      {
+        "text": "定番",
+        "reading": "teiban",
+        "gloss": "classic"
+      },
+      {
+        "text": "オーバーオール",
+        "reading": "ōbāōru",
+        "gloss": "overalls"
+      }
+    ]
+  },
+  "ClassyTop_Description": {
+    "japanese": "柔らかいベルベットのような感じです。",
+    "english": "It feels like the softest velvet.",
+    "segments": [
+      {
+        "text": "柔らかいベルベットのような感じです。",
+        "reading": "yawarakai berubetto no yō na kanji desu",
+        "gloss": "it feels like soft velvet"
+      }
+    ]
+  },
+  "ClassyTop_Name_Female": {
+    "japanese": "上品なシャツ（女）",
+    "english": "Classy Top (F)",
+    "segments": [
+      {
+        "text": "上品な",
+        "reading": "jōhin na",
+        "gloss": "classy"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      },
+      {
+        "text": "（女）",
+        "reading": "onna",
+        "gloss": "female"
+      }
+    ]
+  },
+  "ClassyTop_Name_Male": {
+    "japanese": "上品なシャツ（男）",
+    "english": "Classy Top (M)",
+    "segments": [
+      {
+        "text": "上品な",
+        "reading": "jōhin na",
+        "gloss": "classy"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      },
+      {
+        "text": "（男）",
+        "reading": "otoko",
+        "gloss": "male"
+      }
+    ]
+  },
+  "CollaredShirt_Description": {
+    "japanese": "でんぷんのように白い襟のシャツ。",
+    "english": "A shirt with a starchy white collar.",
+    "segments": [
+      {
+        "text": "でんぷんのように白い襟の",
+        "reading": "denpun no yō ni shiroi eri no",
+        "gloss": "with a starch-white collar"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "CollaredShirt_Name": {
+    "japanese": "襟付きシャツ",
+    "english": "Collared Shirt",
+    "segments": [
+      {
+        "text": "襟付き",
+        "reading": "eri tsuki",
+        "gloss": "with a collar"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "CopperBreastplate_Description": {
+    "japanese": "銅製装飾装甲。",
+    "english": "Decorative armour made of copper.",
+    "segments": [
+      {
+        "text": "銅製",
+        "reading": "dōsei",
+        "gloss": "copper-made"
+      },
+      {
+        "text": "装飾装甲。",
+        "reading": "sōshoku sōkō",
+        "gloss": "decorative armour"
+      }
+    ]
+  },
+  "CopperBreastplate_Name": {
+    "japanese": "銅製ブレストプレート",
+    "english": "Copper Breastplate",
+    "segments": [
+      {
+        "text": "銅製",
+        "reading": "dōsei",
+        "gloss": "copper"
+      },
+      {
+        "text": "ブレストプレート",
+        "reading": "buresuto purēto",
+        "gloss": "breastplate"
+      }
+    ]
+  },
+  "CowboyPoncho_Description": {
+    "japanese": "昔の西部時代の伝説の衣装。",
+    "english": "A legendary outfit from the old west.",
+    "segments": [
+      {
+        "text": "昔の西部時代の",
+        "reading": "mukashi no seibu jidai no",
+        "gloss": "of the old west"
+      },
+      {
+        "text": "伝説の衣装。",
+        "reading": "densetsu no ishō",
+        "gloss": "a legendary outfit"
+      }
+    ]
+  },
+  "CowboyPoncho_Name": {
+    "japanese": "カウボーイポンチョ",
+    "english": "Cowboy Poncho",
+    "segments": [
+      {
+        "text": "カウボーイ",
+        "reading": "kaubōi",
+        "gloss": "cowboy"
+      },
+      {
+        "text": "ポンチョ",
+        "reading": "poncho",
+        "gloss": "poncho"
+      }
+    ]
+  },
+  "CrabCakeShirt_Description": {
+    "japanese": "あなたの楽しみのためにアイオリをたっぷりと。おまけだ！",
+    "english": "Slathered with aioli for your enjoyment. Bon appetit!",
+    "segments": [
+      {
+        "text": "あなたの楽しみのために",
+        "reading": "anata no tanoshimi no tame ni",
+        "gloss": "for your enjoyment"
+      },
+      {
+        "text": "アイオリをたっぷりと。",
+        "reading": "aiori o tappuri to",
+        "gloss": "plenty of aioli"
+      },
+      {
+        "text": "おまけだ！",
+        "reading": "omake da",
+        "gloss": "it's a bonus"
+      }
+    ]
+  },
+  "CrabCakeShirt_Name": {
+    "japanese": "カニケーキシャツ",
+    "english": "Crab Cake Shirt",
+    "segments": [
+      {
+        "text": "カニケーキ",
+        "reading": "kani kēki",
+        "gloss": "crab cake"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "CropTankTop_Description": {
+    "japanese": "底部で余分に短くカットされた袖なしのシャツ",
+    "english": "A sleeveless shirt cut extra short at the bottom",
+    "segments": [
+      {
+        "text": "底部で余分に短くカットされた",
+        "reading": "teibu de yobun ni mijikaku katto sareta",
+        "gloss": "cut extra short at the bottom"
+      },
+      {
+        "text": "袖なしのシャツ",
+        "reading": "sodenashi no shatsu",
+        "gloss": "a sleeveless shirt"
+      }
+    ]
+  },
+  "CropTankTop_Name_Female": {
+    "japanese": "クロップタンクトップ（女）",
+    "english": "Crop Tank Top (F)",
+    "segments": [
+      {
+        "text": "クロップタンクトップ",
+        "reading": "kuroppu tanku toppu",
+        "gloss": "crop tank top"
+      },
+      {
+        "text": "（女）",
+        "reading": "onna",
+        "gloss": "female"
+      }
+    ]
+  },
+  "CropTankTop_Name_Male": {
+    "japanese": "クロップタンクトップ（男）",
+    "english": "Crop Tank Top (M)",
+    "segments": [
+      {
+        "text": "クロップタンクトップ",
+        "reading": "kuroppu tanku toppu",
+        "gloss": "crop tank top"
+      },
+      {
+        "text": "（男）",
+        "reading": "otoko",
+        "gloss": "male"
+      }
+    ]
+  },
+  "CropTopShirt_Description": {
+    "japanese": "ボトムを特別にカットしたシャツ。",
+    "english": "A shirt cut extra short at the bottom.",
+    "segments": [
+      {
+        "text": "ボトムを特別にカットした",
+        "reading": "botomu o tokubetsu ni katto shita",
+        "gloss": "specially cut at the bottom"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "CropTopShirt_Name": {
+    "japanese": "クロップトップシャツ",
+    "english": "Crop Top Shirt",
+    "segments": [
+      {
+        "text": "クロップトップ",
+        "reading": "kuroppu toppu",
+        "gloss": "crop top"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "DarkBandanaShirt_Description": {
+    "japanese": "カラフルなバンダナ付きダークシャツ。",
+    "english": "A dark shirt with a colourful bandana.",
+    "segments": [
+      {
+        "text": "カラフルなバンダナ付き",
+        "reading": "karafuru na bandana tsuki",
+        "gloss": "with a colourful bandana"
+      },
+      {
+        "text": "ダークシャツ。",
+        "reading": "dāku shatsu",
+        "gloss": "a dark shirt"
+      }
+    ]
+  },
+  "DarkBandanaShirt_Name": {
+    "japanese": "ダークバンダナシャツ",
+    "english": "Dark Bandana Shirt",
+    "segments": [
+      {
+        "text": "ダーク",
+        "reading": "dāku",
+        "gloss": "dark"
+      },
+      {
+        "text": "バンダナ",
+        "reading": "bandana",
+        "gloss": "bandana"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "DarkHighlightShirt_Description": {
+    "japanese": "明るいハイライトのダークシャツ。",
+    "english": "A dark shirt with bright highlights.",
+    "segments": [
+      {
+        "text": "明るいハイライトの",
+        "reading": "akarui hairaito no",
+        "gloss": "with bright highlights"
+      },
+      {
+        "text": "ダークシャツ。",
+        "reading": "dāku shatsu",
+        "gloss": "a dark shirt"
+      }
+    ]
+  },
+  "DarkHighlightShirt_Name": {
+    "japanese": "ダークハイライトシャツ",
+    "english": "Dark Highlight Shirt",
+    "segments": [
+      {
+        "text": "ダーク",
+        "reading": "dāku",
+        "gloss": "dark"
+      },
+      {
+        "text": "ハイライト",
+        "reading": "hairaito",
+        "gloss": "highlight"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "DarkJacket_Description": {
+    "japanese": "フリースの裏地付きダークデニムジャケット。",
+    "english": "A dark denim jacket lined with fleece.",
+    "segments": [
+      {
+        "text": "フリースの裏地付き",
+        "reading": "furīsu no uraji tsuki",
+        "gloss": "lined with fleece"
+      },
+      {
+        "text": "ダークデニムジャケット。",
+        "reading": "dāku denimu jaketto",
+        "gloss": "a dark denim jacket"
+      }
+    ]
+  },
+  "DarkJacket_Name": {
+    "japanese": "ダークジャケット",
+    "english": "Dark Jacket",
+    "segments": [
+      {
+        "text": "ダーク",
+        "reading": "dāku",
+        "gloss": "dark"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "DarkShirt_Description": {
+    "japanese": "ダークな色のシャツ。",
+    "english": "A dark-coloured shirt.",
+    "segments": [
+      {
+        "text": "ダークな色の",
+        "reading": "dāku na iro no",
+        "gloss": "of a dark colour"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "DarkShirt_Name": {
+    "japanese": "ダークシャツ",
+    "english": "Dark Shirt",
+    "segments": [
+      {
+        "text": "ダーク",
+        "reading": "dāku",
+        "gloss": "dark"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "DarkStripedShirt_Description": {
+    "japanese": "カラフルなストライプのダークシャツ。",
+    "english": "A dark shirt with colourful stripes.",
+    "segments": [
+      {
+        "text": "カラフルなストライプの",
+        "reading": "karafuru na sutoraipu no",
+        "gloss": "with colourful stripes"
+      },
+      {
+        "text": "ダークシャツ。",
+        "reading": "dāku shatsu",
+        "gloss": "a dark shirt"
+      }
+    ]
+  },
+  "DarkStripedShirt_Name": {
+    "japanese": "ダークストライプシャツ",
+    "english": "Dark Striped Shirt",
+    "segments": [
+      {
+        "text": "ダーク",
+        "reading": "dāku",
+        "gloss": "dark"
+      },
+      {
+        "text": "ストライプ",
+        "reading": "sutoraipu",
+        "gloss": "striped"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "DarknessSuit_Description": {
+    "japanese": "色あせた正方形の赤いポケットが付いたブラックスーツのジャケット。",
+    "english": "A black suit jacket with a faded red pocket square.",
+    "segments": [
+      {
+        "text": "色あせた正方形の赤いポケットが付いた",
+        "reading": "iroaseta seihōkei no akai poketto ga tsuita",
+        "gloss": "with a faded square red pocket"
+      },
+      {
+        "text": "ブラックスーツのジャケット。",
+        "reading": "burakku sūtsu no jaketto",
+        "gloss": "a black suit jacket"
+      }
+    ]
+  },
+  "DarknessSuit_Name": {
+    "japanese": "ダークネススーツ",
+    "english": "Darkness Suit",
+    "segments": [
+      {
+        "text": "ダークネス",
+        "reading": "dākunesu",
+        "gloss": "darkness"
+      },
+      {
+        "text": "スーツ",
+        "reading": "sūtsu",
+        "gloss": "suit"
+      }
+    ]
+  },
+  "DenimJacket_Description": {
+    "japanese": "デニムから作られた頑丈なジャケット。",
+    "english": "A rugged jacket made from denim.",
+    "segments": [
+      {
+        "text": "デニムから作られた",
+        "reading": "denimu kara tsukurareta",
+        "gloss": "made from denim"
+      },
+      {
+        "text": "頑丈なジャケット。",
+        "reading": "ganjō na jaketto",
+        "gloss": "a rugged jacket"
+      }
+    ]
+  },
+  "DenimJacket_Name": {
+    "japanese": "デニムジャケット",
+    "english": "Denim Jacket",
+    "segments": [
+      {
+        "text": "デニム",
+        "reading": "denimu",
+        "gloss": "denim"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "DirtShirt_Description": {
+    "japanese": "農場でもぴったり！",
+    "english": "You'll fit right in on the farm!",
+    "segments": [
+      {
+        "text": "農場でもぴったり！",
+        "reading": "nōjō demo pittari",
+        "gloss": "perfect on the farm too"
+      }
+    ]
+  },
+  "DirtShirt_Name": {
+    "japanese": "ダートシャツ",
+    "english": "Dirt Shirt",
+    "segments": [
+      {
+        "text": "ダート",
+        "reading": "dāto",
+        "gloss": "dirt"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "DollShirt_Description": {
+    "japanese": "奇妙な古代の人形の顔が描かれたシャツ。.",
+    "english": "A shirt featuring a strange ancient doll's face.",
+    "segments": [
+      {
+        "text": "奇妙な古代の人形の顔が描かれた",
+        "reading": "kimyō na kodai no ningyō no kao ga egakareta",
+        "gloss": "with a strange ancient doll's face drawn on"
+      },
+      {
+        "text": "シャツ。.",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "DollShirt_Name": {
+    "japanese": "ドールシャツ",
+    "english": "Doll Shirt",
+    "segments": [
+      {
+        "text": "ドール",
+        "reading": "dōru",
+        "gloss": "doll"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "EmilysMagicShirt_Description": {
+    "japanese": "エミリーの愛を込めて作成。オール天然染料で着色！",
+    "english": "Made with love by Emily. Coloured with all-natural dye!",
+    "segments": [
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "の愛を込めて作成。",
+        "reading": "no ai o komete sakusei",
+        "gloss": "made with her love"
+      },
+      {
+        "text": "オール天然染料で着色！",
+        "reading": "ōru tennen senryō de chakushoku",
+        "gloss": "coloured with all-natural dye"
+      }
+    ]
+  },
+  "EmilysMagicShirt_Name": {
+    "japanese": "エミリーのマジックシャツ",
+    "english": "Emily's Magic Shirt",
+    "segments": [
+      {
+        "text": "エミリーの",
+        "reading": "Emirī no",
+        "gloss": "Emily's"
+      },
+      {
+        "text": "マジック",
+        "reading": "majikku",
+        "gloss": "magic"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "ExcavatorShirt_Description": {
+    "japanese": "化石を探しながら細身に見えます。",
+    "english": "Look sharp while digging for fossils.",
+    "segments": [
+      {
+        "text": "化石を探しながら",
+        "reading": "kaseki o sagashinagara",
+        "gloss": "while searching for fossils"
+      },
+      {
+        "text": "細身に見えます。",
+        "reading": "hosomi ni miemasu",
+        "gloss": "you'll look trim"
+      }
+    ]
+  },
+  "ExcavatorShirt_Name": {
+    "japanese": "ショベルシャツ",
+    "english": "Excavator Shirt",
+    "segments": [
+      {
+        "text": "ショベル",
+        "reading": "shoberu",
+        "gloss": "shovel"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "FadedDenimShirt_Description": {
+    "japanese": "ほこりっぽい色あせたデニムシャツ。",
+    "english": "A denim shirt with a dusty, faded look.",
+    "segments": [
+      {
+        "text": "ほこりっぽい色あせたデニムシャツ。",
+        "reading": "hokorippoi iroaseta denimu shatsu",
+        "gloss": "a dusty, faded denim shirt"
+      }
+    ]
+  },
+  "FadedDenimShirt_Name": {
+    "japanese": "色あせたデニムシャツ",
+    "english": "Faded Denim Shirt",
+    "segments": [
+      {
+        "text": "色あせた",
+        "reading": "iroaseta",
+        "gloss": "faded"
+      },
+      {
+        "text": "デニム",
+        "reading": "denimu",
+        "gloss": "denim"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "FakeMusclesShirt_Description": {
+    "japanese": "あなたはジムに到達することができる、または代わりにこれを着ることができます。",
+    "english": "You could hit the gym, or just wear this instead.",
+    "segments": [
+      {
+        "text": "あなたはジムに到達することができる、",
+        "reading": "anata wa jimu ni tōtatsu suru koto ga dekiru",
+        "gloss": "you could get to the gym"
+      },
+      {
+        "text": "または代わりにこれを着ることができます。",
+        "reading": "mata wa kawari ni kore o kiru koto ga dekimasu",
+        "gloss": "or you could wear this instead"
+      }
+    ]
+  },
+  "FakeMusclesShirt_Name": {
+    "japanese": "フェイクマッスルシャツ",
+    "english": "Fake Muscles Shirt",
+    "segments": [
+      {
+        "text": "フェイクマッスル",
+        "reading": "feiku massuru",
+        "gloss": "fake muscles"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "FancyRedBlouse_Description": {
+    "japanese": "光沢のある黄色のボタンで飾られた真っ赤なブラウス。",
+    "english": "A bright red blouse adorned with shiny yellow buttons.",
+    "segments": [
+      {
+        "text": "光沢のある黄色のボタンで飾られた",
+        "reading": "kōtaku no aru kiiro no botan de kazarareta",
+        "gloss": "adorned with shiny yellow buttons"
+      },
+      {
+        "text": "真っ赤なブラウス。",
+        "reading": "makka na burausu",
+        "gloss": "a bright red blouse"
+      }
+    ]
+  },
+  "FancyRedBlouse_Name": {
+    "japanese": "ファンシーレッドブラウス",
+    "english": "Fancy Red Blouse",
+    "segments": [
+      {
+        "text": "ファンシーレッド",
+        "reading": "fanshī reddo",
+        "gloss": "fancy red"
+      },
+      {
+        "text": "ブラウス",
+        "reading": "burausu",
+        "gloss": "blouse"
+      }
+    ]
+  },
+  "FishShirt_Description": {
+    "japanese": "魚のロゴ入りシャツ。",
+    "english": "A shirt with a fish logo.",
+    "segments": [
+      {
+        "text": "魚のロゴ入り",
+        "reading": "sakana no rogo iri",
+        "gloss": "with a fish logo"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "FishShirt_Name": {
+    "japanese": "フィッシュシャツ",
+    "english": "Fish Shirt",
+    "segments": [
+      {
+        "text": "フィッシュ",
+        "reading": "fisshu",
+        "gloss": "fish"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "FishingVest_Description": {
+    "japanese": "タックルを収納するためのポケットがたくさん。",
+    "english": "Lots of pockets for storing your tackle.",
+    "segments": [
+      {
+        "text": "タックルを収納するための",
+        "reading": "takkuru o shūnō suru tame no",
+        "gloss": "for storing tackle"
+      },
+      {
+        "text": "ポケットがたくさん。",
+        "reading": "poketto ga takusan",
+        "gloss": "lots of pockets"
+      }
+    ]
+  },
+  "FishingVest_Name": {
+    "japanese": "フィッシングベスト",
+    "english": "Fishing Vest",
+    "segments": [
+      {
+        "text": "フィッシング",
+        "reading": "fisshingu",
+        "gloss": "fishing"
+      },
+      {
+        "text": "ベスト",
+        "reading": "besuto",
+        "gloss": "vest"
+      }
+    ]
+  },
+  "FlamesShirt_Description": {
+    "japanese": "ホットな炎でクールに見えます。",
+    "english": "Look cool with hot flames.",
+    "segments": [
+      {
+        "text": "ホットな炎で",
+        "reading": "hotto na honō de",
+        "gloss": "with hot flames"
+      },
+      {
+        "text": "クールに見えます。",
+        "reading": "kūru ni miemasu",
+        "gloss": "you'll look cool"
+      }
+    ]
+  },
+  "FlamesShirt_Name": {
+    "japanese": "フレームシャツ",
+    "english": "Flames Shirt",
+    "segments": [
+      {
+        "text": "フレーム",
+        "reading": "furēmu",
+        "gloss": "flames"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "FlannelShirt_Description": {
+    "japanese": "クロスハッチ柄の素敵な太いボタンダウンシャツ。寒い冬に最適。",
+    "english": "A nice thick button-down shirt with a cross-hatch pattern. Perfect for cold winters.",
+    "segments": [
+      {
+        "text": "クロスハッチ柄の",
+        "reading": "kurosu hatchi gara no",
+        "gloss": "with a cross-hatch pattern"
+      },
+      {
+        "text": "素敵な太いボタンダウンシャツ。",
+        "reading": "suteki na futoi botan daun shatsu",
+        "gloss": "a nice thick button-down shirt"
+      },
+      {
+        "text": "寒い冬に最適。",
+        "reading": "samui fuyu ni saiteki",
+        "gloss": "perfect for cold winters"
+      }
+    ]
+  },
+  "FlannelShirt_Name": {
+    "japanese": "ネルシャツ",
+    "english": "Flannel Shirt",
+    "segments": [
+      {
+        "text": "ネルシャツ",
+        "reading": "neru shatsu",
+        "gloss": "flannel shirt"
+      }
+    ]
+  },
+  "FluffyShirt_Description": {
+    "japanese": "ファジィです。",
+    "english": "It's fuzzy.",
+    "segments": [
+      {
+        "text": "ファジィです。",
+        "reading": "fajii desu",
+        "gloss": "it's fuzzy"
+      }
+    ]
+  },
+  "FluffyShirt_Name": {
+    "japanese": "ふわふわシャツ",
+    "english": "Fluffy Shirt",
+    "segments": [
+      {
+        "text": "ふわふわ",
+        "reading": "fuwafuwa",
+        "gloss": "fluffy"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "FriedEggShirt_Description": {
+    "japanese": "目を覚ますのは卵のための時間。",
+    "english": "Wake up — it's time for eggs.",
+    "segments": [
+      {
+        "text": "目を覚ますのは",
+        "reading": "me o samasu no wa",
+        "gloss": "waking up"
+      },
+      {
+        "text": "卵のための時間。",
+        "reading": "tamago no tame no jikan",
+        "gloss": "it's time for eggs"
+      }
+    ]
+  },
+  "FriedEggShirt_Name": {
+    "japanese": "目玉焼きシャツ",
+    "english": "Fried Egg Shirt",
+    "segments": [
+      {
+        "text": "目玉焼き",
+        "reading": "medamayaki",
+        "gloss": "fried egg"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "FringedVest_Description": {
+    "japanese": "ノースリーブシャツの上にフリンジ付きベスト。",
+    "english": "A fringed vest over a sleeveless shirt.",
+    "segments": [
+      {
+        "text": "ノースリーブシャツの上に",
+        "reading": "nōsurību shatsu no ue ni",
+        "gloss": "over a sleeveless shirt"
+      },
+      {
+        "text": "フリンジ付きベスト。",
+        "reading": "furinji tsuki besuto",
+        "gloss": "a fringed vest"
+      }
+    ]
+  },
+  "FringedVest_Name": {
+    "japanese": "フリンジ付きベスト",
+    "english": "Fringed Vest",
+    "segments": [
+      {
+        "text": "フリンジ付き",
+        "reading": "furinji tsuki",
+        "gloss": "with fringe"
+      },
+      {
+        "text": "ベスト",
+        "reading": "besuto",
+        "gloss": "vest"
+      }
+    ]
+  },
+  "GaudyShirt_Description": {
+    "japanese": "癒されるブルー色...",
+    "english": "A soothing blue...",
+    "segments": [
+      {
+        "text": "癒されるブルー色...",
+        "reading": "iyasareru burū iro",
+        "gloss": "a soothing blue colour"
+      }
+    ]
+  },
+  "GaudyShirt_Name": {
+    "japanese": "ガウディシャツ",
+    "english": "Gaudy Shirt",
+    "segments": [
+      {
+        "text": "ガウディ",
+        "reading": "gaudi",
+        "gloss": "gaudy"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GingerOveralls_Description": {
+    "japanese": "ジンジャーエールをイメージした配色。",
+    "english": "The colour scheme is inspired by ginger ale.",
+    "segments": [
+      {
+        "text": "ジンジャーエールをイメージした",
+        "reading": "jinjā ēru o imēji shita",
+        "gloss": "inspired by ginger ale"
+      },
+      {
+        "text": "配色。",
+        "reading": "haishoku",
+        "gloss": "colour scheme"
+      }
+    ]
+  },
+  "GingerOveralls_Name": {
+    "japanese": "ジンジャーオーバーオール",
+    "english": "Ginger Overalls",
+    "segments": [
+      {
+        "text": "ジンジャー",
+        "reading": "jinjā",
+        "gloss": "ginger"
+      },
+      {
+        "text": "オーバーオール",
+        "reading": "ōbāōru",
+        "gloss": "overalls"
+      }
+    ]
+  },
+  "GlobbyShirt_Description": {
+    "japanese": "区別のないグローブの模様が。",
+    "english": "It has an indistinguishable glob pattern.",
+    "segments": [
+      {
+        "text": "区別のないグローブの模様が。",
+        "reading": "kubetsu no nai gurōbu no moyō ga",
+        "gloss": "an indistinguishable glob pattern"
+      }
+    ]
+  },
+  "GlobbyShirt_Name": {
+    "japanese": "グロビーシャツ",
+    "english": "Globby Shirt",
+    "segments": [
+      {
+        "text": "グロビー",
+        "reading": "gurobī",
+        "gloss": "globby"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GoldBreastplate_Description": {
+    "japanese": "ゴールド製装飾装甲。",
+    "english": "Decorative armour made of gold.",
+    "segments": [
+      {
+        "text": "ゴールド製",
+        "reading": "gōrudo sei",
+        "gloss": "gold-made"
+      },
+      {
+        "text": "装飾装甲。",
+        "reading": "sōshoku sōkō",
+        "gloss": "decorative armour"
+      }
+    ]
+  },
+  "GoldBreastplate_Name": {
+    "japanese": "ゴールド製ブレストプレート",
+    "english": "Gold Breastplate",
+    "segments": [
+      {
+        "text": "ゴールド製",
+        "reading": "gōrudo sei",
+        "gloss": "gold"
+      },
+      {
+        "text": "ブレストプレート",
+        "reading": "buresuto purēto",
+        "gloss": "breastplate"
+      }
+    ]
+  },
+  "GoldTrimmedShirt_Description": {
+    "japanese": "ゴールドトリムのあるシャツ。",
+    "english": "A shirt with gold trim.",
+    "segments": [
+      {
+        "text": "ゴールドトリムのある",
+        "reading": "gōrudo torimu no aru",
+        "gloss": "with gold trim"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GoldTrimmedShirt_Name": {
+    "japanese": "ゴールドトリムシャツ",
+    "english": "Gold Trimmed Shirt",
+    "segments": [
+      {
+        "text": "ゴールドトリム",
+        "reading": "gōrudo torimu",
+        "gloss": "gold trim"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GoldenShirt_Description": {
+    "japanese": "光沢のある金色のシャツ。",
+    "english": "It's a shiny golden shirt.",
+    "segments": [
+      {
+        "text": "光沢のある金色のシャツ。",
+        "reading": "kōtaku no aru kin'iro no shatsu",
+        "gloss": "a shiny golden shirt"
+      }
+    ]
+  },
+  "GoldenShirt_Name": {
+    "japanese": "ゴールデンシャツ",
+    "english": "Golden Shirt",
+    "segments": [
+      {
+        "text": "ゴールデン",
+        "reading": "gōruden",
+        "gloss": "golden"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GoodGriefShirt_Description": {
+    "japanese": "グッドオールのシャツ...",
+    "english": "A good ol' shirt...",
+    "segments": [
+      {
+        "text": "グッドオールのシャツ...",
+        "reading": "guddo ōru no shatsu",
+        "gloss": "a good ol' shirt"
+      }
+    ]
+  },
+  "GoodGriefShirt_Name": {
+    "japanese": "「やれやれ」シャツ",
+    "english": "\"Good Grief\" Shirt",
+    "segments": [
+      {
+        "text": "「やれやれ」",
+        "reading": "yare yare",
+        "gloss": "\"good grief\""
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GoodnightShirt_Description": {
+    "japanese": "月の細かなグラフィックが描かれた、だぶだぶの大きなナイトシャツ。",
+    "english": "A big baggy nightshirt with a detailed moon graphic.",
+    "segments": [
+      {
+        "text": "月の細かなグラフィックが描かれた、",
+        "reading": "tsuki no komaka na gurafikku ga egakareta",
+        "gloss": "with a detailed moon graphic on it"
+      },
+      {
+        "text": "だぶだぶの大きなナイトシャツ。",
+        "reading": "dabudabu no ōkina naito shatsu",
+        "gloss": "a big baggy nightshirt"
+      }
+    ]
+  },
+  "GoodnightShirt_Name": {
+    "japanese": "グッドナイトシャツ",
+    "english": "Goodnight Shirt",
+    "segments": [
+      {
+        "text": "グッドナイト",
+        "reading": "guddo naito",
+        "gloss": "goodnight"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GrayHoodie_Description": {
+    "japanese": "フード付きスポーティーグレーのプルオーバー。",
+    "english": "A sporty grey pullover with a hood.",
+    "segments": [
+      {
+        "text": "フード付き",
+        "reading": "fūdo tsuki",
+        "gloss": "with a hood"
+      },
+      {
+        "text": "スポーティーグレーのプルオーバー。",
+        "reading": "supōtī gurē no puruōbā",
+        "gloss": "a sporty grey pullover"
+      }
+    ]
+  },
+  "GrayHoodie_Name": {
+    "japanese": "グレーのパーカー",
+    "english": "Gray Hoodie",
+    "segments": [
+      {
+        "text": "グレーの",
+        "reading": "gurē no",
+        "gloss": "grey"
+      },
+      {
+        "text": "パーカー",
+        "reading": "pākā",
+        "gloss": "hoodie"
+      }
+    ]
+  },
+  "GraySuit_Description": {
+    "japanese": "オーダーメイドのグレーのスーツ。",
+    "english": "It's a custom-tailored grey suit.",
+    "segments": [
+      {
+        "text": "オーダーメイドのグレーのスーツ。",
+        "reading": "ōdā meido no gurē no sūtsu",
+        "gloss": "a custom-made grey suit"
+      }
+    ]
+  },
+  "GraySuit_Name": {
+    "japanese": "グレースーツ",
+    "english": "Gray Suit",
+    "segments": [
+      {
+        "text": "グレー",
+        "reading": "gurē",
+        "gloss": "grey"
+      },
+      {
+        "text": "スーツ",
+        "reading": "sūtsu",
+        "gloss": "suit"
+      }
+    ]
+  },
+  "GrayVest_Description": {
+    "japanese": "白いシャツの上のグレーのベスト。",
+    "english": "A grey vest over a white shirt.",
+    "segments": [
+      {
+        "text": "白いシャツの上の",
+        "reading": "shiroi shatsu no ue no",
+        "gloss": "over a white shirt"
+      },
+      {
+        "text": "グレーのベスト。",
+        "reading": "gurē no besuto",
+        "gloss": "a grey vest"
+      }
+    ]
+  },
+  "GrayVest_Name": {
+    "japanese": "グレーベスト",
+    "english": "Gray Vest",
+    "segments": [
+      {
+        "text": "グレー",
+        "reading": "gurē",
+        "gloss": "grey"
+      },
+      {
+        "text": "ベスト",
+        "reading": "besuto",
+        "gloss": "vest"
+      }
+    ]
+  },
+  "GreenBeltedShirt_1011_Description": {
+    "japanese": "グリーンのベルト付きシャツ。",
+    "english": "A green, belted shirt.",
+    "segments": [
+      {
+        "text": "グリーンのベルト付き",
+        "reading": "gurīn no beruto tsuki",
+        "gloss": "with a green belt"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GreenBeltedShirt_1011_Name": {
+    "japanese": "グリーンベルトシャツ",
+    "english": "Green Belted Shirt",
+    "segments": [
+      {
+        "text": "グリーン",
+        "reading": "gurīn",
+        "gloss": "green"
+      },
+      {
+        "text": "ベルト",
+        "reading": "beruto",
+        "gloss": "belted"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GreenBeltedShirt_1189_Description": {
+    "japanese": "ベルト付きグリーンシャツ。",
+    "english": "A green shirt with a belt.",
+    "segments": [
+      {
+        "text": "ベルト付き",
+        "reading": "beruto tsuki",
+        "gloss": "with a belt"
+      },
+      {
+        "text": "グリーンシャツ。",
+        "reading": "gurīn shatsu",
+        "gloss": "a green shirt"
+      }
+    ]
+  },
+  "GreenBeltedShirt_1189_Name": {
+    "japanese": "グリーンベルトシャツ",
+    "english": "Green Belted Shirt",
+    "segments": [
+      {
+        "text": "グリーン",
+        "reading": "gurīn",
+        "gloss": "green"
+      },
+      {
+        "text": "ベルト",
+        "reading": "beruto",
+        "gloss": "belted"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GreenButtonedVest_Description": {
+    "japanese": "染色できる袖付きの緑色のシャツ。",
+    "english": "It's a green shirt with dyeable sleeves.",
+    "segments": [
+      {
+        "text": "染色できる袖付きの",
+        "reading": "senshoku dekiru sode tsuki no",
+        "gloss": "with dyeable sleeves"
+      },
+      {
+        "text": "緑色のシャツ。",
+        "reading": "midoriiro no shatsu",
+        "gloss": "a green shirt"
+      }
+    ]
+  },
+  "GreenButtonedVest_Name": {
+    "japanese": "グリーンボタン付きベスト",
+    "english": "Green Buttoned Vest",
+    "segments": [
+      {
+        "text": "グリーンボタン付き",
+        "reading": "gurīn botan tsuki",
+        "gloss": "with green buttons"
+      },
+      {
+        "text": "ベスト",
+        "reading": "besuto",
+        "gloss": "vest"
+      }
+    ]
+  },
+  "GreenFlannelShirt_Description": {
+    "japanese": "緑と茶色の模様のネルシャツ。",
+    "english": "A flannel shirt with a green and brown pattern.",
+    "segments": [
+      {
+        "text": "緑と茶色の模様の",
+        "reading": "midori to chairo no moyō no",
+        "gloss": "with a green and brown pattern"
+      },
+      {
+        "text": "ネルシャツ。",
+        "reading": "neru shatsu",
+        "gloss": "a flannel shirt"
+      }
+    ]
+  },
+  "GreenFlannelShirt_Name": {
+    "japanese": "グリーンフランネルシャツ",
+    "english": "Green Flannel Shirt",
+    "segments": [
+      {
+        "text": "グリーン",
+        "reading": "gurīn",
+        "gloss": "green"
+      },
+      {
+        "text": "フランネル",
+        "reading": "furanneru",
+        "gloss": "flannel"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GreenJacketShirt_Description": {
+    "japanese": "マガモのコートにインスパイアされています。シャツは染められます。",
+    "english": "Inspired by the mallard's coat. The shirt can be dyed.",
+    "segments": [
+      {
+        "text": "マガモのコートにインスパイアされています。",
+        "reading": "magamo no kōto ni insupaia sarete imasu",
+        "gloss": "it's inspired by the mallard's coat"
+      },
+      {
+        "text": "シャツは染められます。",
+        "reading": "shatsu wa someraremasu",
+        "gloss": "the shirt can be dyed"
+      }
+    ]
+  },
+  "GreenJacketShirt_Name": {
+    "japanese": "グリーンジャケットシャツ",
+    "english": "Green Jacket Shirt",
+    "segments": [
+      {
+        "text": "グリーン",
+        "reading": "gurīn",
+        "gloss": "green"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GreenOveralls_Description": {
+    "japanese": "あまり人気がない農場の定番。",
+    "english": "A slightly less popular farming classic.",
+    "segments": [
+      {
+        "text": "あまり人気がない",
+        "reading": "amari ninki ga nai",
+        "gloss": "not very popular"
+      },
+      {
+        "text": "農場の定番。",
+        "reading": "nōjō no teiban",
+        "gloss": "a farm classic"
+      }
+    ]
+  },
+  "GreenOveralls_Name": {
+    "japanese": "グリーンオーバーオール",
+    "english": "Green Overalls",
+    "segments": [
+      {
+        "text": "グリーン",
+        "reading": "gurīn",
+        "gloss": "green"
+      },
+      {
+        "text": "オーバーオール",
+        "reading": "ōbāōru",
+        "gloss": "overalls"
+      }
+    ]
+  },
+  "GreenThumbShirt_Description": {
+    "japanese": "鉢植えの土をこすっています。",
+    "english": "It comes pre-rubbed with potting soil.",
+    "segments": [
+      {
+        "text": "鉢植えの土をこすっています。",
+        "reading": "hachiue no tsuchi o kosutte imasu",
+        "gloss": "it's rubbed with potting soil"
+      }
+    ]
+  },
+  "GreenThumbShirt_Name": {
+    "japanese": "グリーンサムシャツ",
+    "english": "Green Thumb Shirt",
+    "segments": [
+      {
+        "text": "グリーンサム",
+        "reading": "gurīn samu",
+        "gloss": "green thumb"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GreenTunic_Description": {
+    "japanese": "冒険にぴったりのシャツ。",
+    "english": "A shirt fit for an adventurer.",
+    "segments": [
+      {
+        "text": "冒険にぴったりの",
+        "reading": "bōken ni pittari no",
+        "gloss": "perfect for adventure"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "GreenTunic_Name": {
+    "japanese": "グリーンチュニック",
+    "english": "Green Tunic",
+    "segments": [
+      {
+        "text": "グリーン",
+        "reading": "gurīn",
+        "gloss": "green"
+      },
+      {
+        "text": "チュニック",
+        "reading": "chunikku",
+        "gloss": "tunic"
+      }
+    ]
+  },
+  "GreenVest_Description": {
+    "japanese": "シャツの上に着るきれいな緑色のベスト。",
+    "english": "A neat green vest worn over a shirt.",
+    "segments": [
+      {
+        "text": "シャツの上に着る",
+        "reading": "shatsu no ue ni kiru",
+        "gloss": "worn over a shirt"
+      },
+      {
+        "text": "きれいな緑色のベスト。",
+        "reading": "kirei na midoriiro no besuto",
+        "gloss": "a neat green vest"
+      }
+    ]
+  },
+  "GreenVest_Name": {
+    "japanese": "グリーンベスト",
+    "english": "Green Vest",
+    "segments": [
+      {
+        "text": "グリーン",
+        "reading": "gurīn",
+        "gloss": "green"
+      },
+      {
+        "text": "ベスト",
+        "reading": "besuto",
+        "gloss": "vest"
+      }
+    ]
+  },
+  "HappyShirt_Description": {
+    "japanese": "一番幸せを感じるシャツ。",
+    "english": "It's the happiest shirt.",
+    "segments": [
+      {
+        "text": "一番幸せを感じるシャツ。",
+        "reading": "ichiban shiawase o kanjiru shatsu",
+        "gloss": "the shirt that feels happiest"
+      }
+    ]
+  },
+  "HappyShirt_Name": {
+    "japanese": "ハッピーシャツ",
+    "english": "Happy Shirt",
+    "segments": [
+      {
+        "text": "ハッピー",
+        "reading": "happī",
+        "gloss": "happy"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "HeartShirt_Description": {
+    "japanese": "特別に柔らかい服を使って、袖にハートを刺しゅうしています。",
+    "english": "Wear your heart on your sleeve in this extra-soft garment.",
+    "segments": [
+      {
+        "text": "特別に柔らかい服を使って、",
+        "reading": "tokubetsu ni yawarakai fuku o tsukatte",
+        "gloss": "using an extra-soft garment"
+      },
+      {
+        "text": "袖にハートを刺しゅうしています。",
+        "reading": "sode ni hāto o shishū shite imasu",
+        "gloss": "a heart is embroidered on the sleeve"
+      }
+    ]
+  },
+  "HeartShirt_Name": {
+    "japanese": "ハートシャツ",
+    "english": "Heart Shirt",
+    "segments": [
+      {
+        "text": "ハート",
+        "reading": "hāto",
+        "gloss": "heart"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "HighHeatShirt_Description": {
+    "japanese": "ほぼ火のようなシャツ。",
+    "english": "The shirt almost looks like it's on fire.",
+    "segments": [
+      {
+        "text": "ほぼ火のようなシャツ。",
+        "reading": "hobo hi no yō na shatsu",
+        "gloss": "a shirt almost like fire"
+      }
+    ]
+  },
+  "HighHeatShirt_Name": {
+    "japanese": "ハイハートシャツ",
+    "english": "High Heat Shirt",
+    "segments": [
+      {
+        "text": "ハイハート",
+        "reading": "hai hāto",
+        "gloss": "high heat"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "HighWaistedShirt_DyeableBottom_Description": {
+    "japanese": "ボトムが染まるハイウエストパンツ。",
+    "english": "The high-waisted trousers look, with a dyeable bottom.",
+    "segments": [
+      {
+        "text": "ボトムが染まる",
+        "reading": "botomu ga somaru",
+        "gloss": "with a dyeable bottom"
+      },
+      {
+        "text": "ハイウエストパンツ。",
+        "reading": "hai uesuto pantsu",
+        "gloss": "high-waisted trousers"
+      }
+    ]
+  },
+  "HighWaistedShirt_DyeableBottom_Name": {
+    "japanese": "ハイウエストシャツ",
+    "english": "High-Waisted Shirt",
+    "segments": [
+      {
+        "text": "ハイウエスト",
+        "reading": "hai uesuto",
+        "gloss": "high-waisted"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "HighWaistedShirt_DyeableTop_Description": {
+    "japanese": "トップが染まるハイウエストジーンズ。",
+    "english": "The high-waisted jeans look, with a dyeable top.",
+    "segments": [
+      {
+        "text": "トップが染まる",
+        "reading": "toppu ga somaru",
+        "gloss": "with a dyeable top"
+      },
+      {
+        "text": "ハイウエストジーンズ。",
+        "reading": "hai uesuto jīnzu",
+        "gloss": "high-waisted jeans"
+      }
+    ]
+  },
+  "HighWaistedShirt_DyeableTop_Name": {
+    "japanese": "ハイウエストシャツ",
+    "english": "High-Waisted Shirt",
+    "segments": [
+      {
+        "text": "ハイウエスト",
+        "reading": "hai uesuto",
+        "gloss": "high-waisted"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "HolidayShirt_Description": {
+    "japanese": "冬のお祭りを祝います。",
+    "english": "Celebrate the winter festival.",
+    "segments": [
+      {
+        "text": "冬のお祭りを祝います。",
+        "reading": "fuyu no o-matsuri o iwaimasu",
+        "gloss": "celebrate the winter festival"
+      }
+    ]
+  },
+  "HolidayShirt_Name": {
+    "japanese": "ホリデーシャツ",
+    "english": "Holiday Shirt",
+    "segments": [
+      {
+        "text": "ホリデー",
+        "reading": "horidē",
+        "gloss": "holiday"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "HotPinkShirt_Description": {
+    "japanese": "肌触りが良いトロピカルピンクのシャツ。",
+    "english": "A silky shirt in tropical pink.",
+    "segments": [
+      {
+        "text": "肌触りが良い",
+        "reading": "hadazawari ga yoi",
+        "gloss": "nice to the touch"
+      },
+      {
+        "text": "トロピカルピンクのシャツ。",
+        "reading": "toropikaru pinku no shatsu",
+        "gloss": "a tropical pink shirt"
+      }
+    ]
+  },
+  "HotPinkShirt_Name": {
+    "japanese": "ホットなピンクシャツ",
+    "english": "Hot Pink Shirt",
+    "segments": [
+      {
+        "text": "ホットな",
+        "reading": "hotto na",
+        "gloss": "hot"
+      },
+      {
+        "text": "ピンク",
+        "reading": "pinku",
+        "gloss": "pink"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "IridiumBreastplate_Description": {
+    "japanese": "イリジウム製装飾装甲。",
+    "english": "Decorative armour made of iridium.",
+    "segments": [
+      {
+        "text": "イリジウム製",
+        "reading": "irijiumu sei",
+        "gloss": "iridium-made"
+      },
+      {
+        "text": "装飾装甲。",
+        "reading": "sōshoku sōkō",
+        "gloss": "decorative armour"
+      }
+    ]
+  },
+  "IridiumBreastplate_Name": {
+    "japanese": "イリジウム製ブレストプレート",
+    "english": "Iridium Breastplate",
+    "segments": [
+      {
+        "text": "イリジウム製",
+        "reading": "irijiumu sei",
+        "gloss": "iridium"
+      },
+      {
+        "text": "ブレストプレート",
+        "reading": "buresuto purēto",
+        "gloss": "breastplate"
+      }
+    ]
+  },
+  "IridiumEnergyShirt_Description": {
+    "japanese": "イリジウムエネルギーを自慢しましょう。",
+    "english": "Show off your iridium energy.",
+    "segments": [
+      {
+        "text": "イリジウムエネルギー",
+        "reading": "irijiumu enerugī",
+        "gloss": "iridium energy"
+      },
+      {
+        "text": "を自慢しましょう。",
+        "reading": "o jiman shimashō",
+        "gloss": "let's show off"
+      }
+    ]
+  },
+  "IridiumEnergyShirt_Name": {
+    "japanese": "イリジウムエネルギーシャツ",
+    "english": "Iridium Energy Shirt",
+    "segments": [
+      {
+        "text": "イリジウムエネルギー",
+        "reading": "irijiumu enerugī",
+        "gloss": "iridium energy"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "IslandBikini_Description": {
+    "japanese": "フェーン諸島の定番。",
+    "english": "A Fern Islands classic.",
+    "segments": [
+      {
+        "text": "フェーン諸島の定番。",
+        "reading": "Fēn shotō no teiban",
+        "gloss": "a Fern Islands classic"
+      }
+    ]
+  },
+  "IslandBikini_Name": {
+    "japanese": "アイランドビキニ",
+    "english": "Island Bikini",
+    "segments": [
+      {
+        "text": "アイランド",
+        "reading": "airando",
+        "gloss": "island"
+      },
+      {
+        "text": "ビキニ",
+        "reading": "bikini",
+        "gloss": "bikini"
+      }
+    ]
+  },
+  "JesterShirt_Description": {
+    "japanese": "露呈している部分にインナークラウンが置かれています。",
+    "english": "Put your inner clown on display.",
+    "segments": [
+      {
+        "text": "露呈している部分に",
+        "reading": "rotei shite iru bubun ni",
+        "gloss": "on the exposed part"
+      },
+      {
+        "text": "インナークラウンが置かれています。",
+        "reading": "innā kuraun ga okarete imasu",
+        "gloss": "your inner clown is put on display"
+      }
+    ]
+  },
+  "JesterShirt_Name": {
+    "japanese": "ジェスターシャツ",
+    "english": "Jester Shirt",
+    "segments": [
+      {
+        "text": "ジェスター",
+        "reading": "jesutā",
+        "gloss": "jester"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "JewelryShirt_Description": {
+    "japanese": "シンプルなゴールドの鎖が付いたシャツ。",
+    "english": "A shirt with a simple gold chain.",
+    "segments": [
+      {
+        "text": "シンプルなゴールドの鎖が付いた",
+        "reading": "shinpuru na gōrudo no kusari ga tsuita",
+        "gloss": "with a simple gold chain"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "JewelryShirt_Name": {
+    "japanese": "ジュエリーシャツ",
+    "english": "Jewelry Shirt",
+    "segments": [
+      {
+        "text": "ジュエリー",
+        "reading": "juerī",
+        "gloss": "jewelry"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "KelpShirt_Description": {
+    "japanese": "浜辺で洗い流されたようです。香りも良いです。",
+    "english": "It looks like you've just washed up on the beach. It smells like it too.",
+    "segments": [
+      {
+        "text": "浜辺で洗い流されたようです。",
+        "reading": "hamabe de arainagasareta yō desu",
+        "gloss": "it looks washed up on the beach"
+      },
+      {
+        "text": "香りも良いです。",
+        "reading": "kaori mo ii desu",
+        "gloss": "it smells like it too"
+      }
+    ]
+  },
+  "KelpShirt_Name": {
+    "japanese": "昆布シャツ",
+    "english": "Kelp Shirt",
+    "segments": [
+      {
+        "text": "昆布",
+        "reading": "konbu",
+        "gloss": "kelp"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "LeafyTop_Description": {
+    "japanese": "本物の葉で服を飾っています。",
+    "english": "Real leaves adorn this garment.",
+    "segments": [
+      {
+        "text": "本物の葉で",
+        "reading": "honmono no ha de",
+        "gloss": "with real leaves"
+      },
+      {
+        "text": "服を飾っています。",
+        "reading": "fuku o kazatte imasu",
+        "gloss": "the garment is adorned"
+      }
+    ]
+  },
+  "LeafyTop_Name": {
+    "japanese": "リーフィートップス",
+    "english": "Leafy Top",
+    "segments": [
+      {
+        "text": "リーフィー",
+        "reading": "rīfī",
+        "gloss": "leafy"
+      },
+      {
+        "text": "トップス",
+        "reading": "toppusu",
+        "gloss": "top"
+      }
+    ]
+  },
+  "LettermanJacket_Description": {
+    "japanese": "チームスピリットが染み出すジャケット。",
+    "english": "A jacket oozing with team spirit.",
+    "segments": [
+      {
+        "text": "チームスピリットが染み出す",
+        "reading": "chīmu supiritto ga shimidasu",
+        "gloss": "oozing team spirit"
+      },
+      {
+        "text": "ジャケット。",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "LettermanJacket_Name": {
+    "japanese": "レターマンジャケット",
+    "english": "Letterman Jacket",
+    "segments": [
+      {
+        "text": "レターマン",
+        "reading": "retāman",
+        "gloss": "letterman"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "LightBlueShirt_Description": {
+    "japanese": "ライトなブルーのシャツ",
+    "english": "A light blue shirt",
+    "segments": [
+      {
+        "text": "ライトなブルーのシャツ",
+        "reading": "raito na burū no shatsu",
+        "gloss": "a light blue shirt"
+      }
+    ]
+  },
+  "LightBlueShirt_Name": {
+    "japanese": "ライトブルーシャツ",
+    "english": "Light Blue Shirt",
+    "segments": [
+      {
+        "text": "ライトブルー",
+        "reading": "raito burū",
+        "gloss": "light blue"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "LightBlueStripedShirt_Description": {
+    "japanese": "白のストライプの水色のシャツ。",
+    "english": "A light blue shirt with white stripes.",
+    "segments": [
+      {
+        "text": "白のストライプの",
+        "reading": "shiro no sutoraipu no",
+        "gloss": "with white stripes"
+      },
+      {
+        "text": "水色のシャツ。",
+        "reading": "mizuiro no shatsu",
+        "gloss": "a light blue shirt"
+      }
+    ]
+  },
+  "LightBlueStripedShirt_Name": {
+    "japanese": "ライトブルーストライプシャツ",
+    "english": "Light Blue Striped Shirt",
+    "segments": [
+      {
+        "text": "ライトブルー",
+        "reading": "raito burū",
+        "gloss": "light blue"
+      },
+      {
+        "text": "ストライプ",
+        "reading": "sutoraipu",
+        "gloss": "striped"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "LimeGreenStripedShirt_Description": {
+    "japanese": "ホワイトストライプのライムグリーンのシャツ。",
+    "english": "A lime green shirt with white stripes.",
+    "segments": [
+      {
+        "text": "ホワイトストライプの",
+        "reading": "howaito sutoraipu no",
+        "gloss": "with white stripes"
+      },
+      {
+        "text": "ライムグリーンのシャツ。",
+        "reading": "raimu gurīn no shatsu",
+        "gloss": "a lime green shirt"
+      }
+    ]
+  },
+  "LimeGreenStripedShirt_Name": {
+    "japanese": "ライムグリーンストライプシャツ",
+    "english": "Lime Green Striped Shirt",
+    "segments": [
+      {
+        "text": "ライムグリーン",
+        "reading": "raimu gurīn",
+        "gloss": "lime green"
+      },
+      {
+        "text": "ストライプ",
+        "reading": "sutoraipu",
+        "gloss": "striped"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "LimeGreenTunic_Description": {
+    "japanese": "ベルト付きの鮮やかなグリーンのチュニック。",
+    "english": "A bright green tunic with a belt.",
+    "segments": [
+      {
+        "text": "ベルト付きの",
+        "reading": "beruto tsuki no",
+        "gloss": "with a belt"
+      },
+      {
+        "text": "鮮やかなグリーンのチュニック。",
+        "reading": "azayaka na gurīn no chunikku",
+        "gloss": "a bright green tunic"
+      }
+    ]
+  },
+  "LimeGreenTunic_Name": {
+    "japanese": "ライムグリーンチュニック",
+    "english": "Lime Green Tunic",
+    "segments": [
+      {
+        "text": "ライムグリーン",
+        "reading": "raimu gurīn",
+        "gloss": "lime green"
+      },
+      {
+        "text": "チュニック",
+        "reading": "chunikku",
+        "gloss": "tunic"
+      }
+    ]
+  },
+  "MagentaShirt_Description": {
+    "japanese": "この独特の色合いはマグマタケ特有のもの。",
+    "english": "This particular shade is unique to the magma cap mushroom.",
+    "segments": [
+      {
+        "text": "この独特の色合いは",
+        "reading": "kono dokutoku no iroai wa",
+        "gloss": "this distinctive shade"
+      },
+      {
+        "text": "マグマタケ特有のもの。",
+        "reading": "magumatake tokuyū no mono",
+        "gloss": "is unique to the magma cap"
+      }
+    ]
+  },
+  "MagentaShirt_Name": {
+    "japanese": "マゼンタシャツ",
+    "english": "Magenta Shirt",
+    "segments": [
+      {
+        "text": "マゼンタ",
+        "reading": "mazenta",
+        "gloss": "magenta"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "MagicSprinkleShirt_Description": {
+    "japanese": "プリズムスプリンクルのシャツ。",
+    "english": "A shirt with prismatic sprinkles.",
+    "segments": [
+      {
+        "text": "プリズムスプリンクルの",
+        "reading": "purizumu supurinkuru no",
+        "gloss": "with prismatic sprinkles"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "MagicSprinkleShirt_Name": {
+    "japanese": "魔法のスプリンクルシャツ",
+    "english": "Magic Sprinkle Shirt",
+    "segments": [
+      {
+        "text": "魔法の",
+        "reading": "mahō no",
+        "gloss": "magic"
+      },
+      {
+        "text": "スプリンクル",
+        "reading": "supurinkuru",
+        "gloss": "sprinkle"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "MayoralSuspenders_Description": {
+    "japanese": "悪い意味でおなじみのサスペンダーのペア...",
+    "english": "A pair of suspenders that looks awfully familiar...",
+    "segments": [
+      {
+        "text": "悪い意味でおなじみの",
+        "reading": "warui imi de onajimi no",
+        "gloss": "familiar in a bad way"
+      },
+      {
+        "text": "サスペンダーのペア...",
+        "reading": "sasupendā no pea",
+        "gloss": "a pair of suspenders"
+      }
+    ]
+  },
+  "MayoralSuspenders_Name": {
+    "japanese": "町長のサスペンダー",
+    "english": "Mayoral Suspenders",
+    "segments": [
+      {
+        "text": "町長の",
+        "reading": "chōchō no",
+        "gloss": "mayor's"
+      },
+      {
+        "text": "サスペンダー",
+        "reading": "sasupendā",
+        "gloss": "suspenders"
+      }
+    ]
+  },
+  "MidnightDogJacket_Description": {
+    "japanese": "イカのインクを使用して中心を深みのある青に染めています。",
+    "english": "It's dyed a deep midnight blue with squid ink.",
+    "segments": [
+      {
+        "text": "イカのインクを使用して",
+        "reading": "ika no inku o shiyō shite",
+        "gloss": "using squid ink"
+      },
+      {
+        "text": "中心を深みのある青に染めています。",
+        "reading": "chūshin o fukami no aru ao ni somete imasu",
+        "gloss": "the middle is dyed a deep blue"
+      }
+    ]
+  },
+  "MidnightDogJacket_Name": {
+    "japanese": "ミッドナイトドッグジャケット",
+    "english": "Midnight Dog Jacket",
+    "segments": [
+      {
+        "text": "ミッドナイトドッグ",
+        "reading": "middonaito doggu",
+        "gloss": "midnight dog"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "MineralDogJacket_Description": {
+    "japanese": "海からの微量ミネラルが注入されています。",
+    "english": "It's infused with trace minerals from the sea.",
+    "segments": [
+      {
+        "text": "海からの微量ミネラル",
+        "reading": "umi kara no biryō mineraru",
+        "gloss": "trace minerals from the sea"
+      },
+      {
+        "text": "が注入されています。",
+        "reading": "ga chūnyū sarete imasu",
+        "gloss": "are infused into it"
+      }
+    ]
+  },
+  "MineralDogJacket_Name": {
+    "japanese": "ミネラルドッグジャケット",
+    "english": "Mineral Dog Jacket",
+    "segments": [
+      {
+        "text": "ミネラルドッグ",
+        "reading": "mineraru doggu",
+        "gloss": "mineral dog"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "MintBlouse_Description": {
+    "japanese": "キュートで薄い緑色のブラウス。",
+    "english": "A cute, light green blouse.",
+    "segments": [
+      {
+        "text": "キュートで薄い緑色のブラウス。",
+        "reading": "kyūto de usui midoriiro no burausu",
+        "gloss": "a cute, light green blouse"
+      }
+    ]
+  },
+  "MintBlouse_Name": {
+    "japanese": "ミントブラウス",
+    "english": "Mint Blouse",
+    "segments": [
+      {
+        "text": "ミント",
+        "reading": "minto",
+        "gloss": "mint"
+      },
+      {
+        "text": "ブラウス",
+        "reading": "burausu",
+        "gloss": "blouse"
+      }
+    ]
+  },
+  "MorelShirt_Description": {
+    "japanese": "アイコニックな春のきのこを特徴としているシャツ。",
+    "english": "This shirt features the iconic spring mushroom.",
+    "segments": [
+      {
+        "text": "アイコニックな春のきのこを特徴としている",
+        "reading": "aikonikku na haru no kinoko o tokuchō to shite iru",
+        "gloss": "featuring the iconic spring mushroom"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "MorelShirt_Name": {
+    "japanese": "モレルシャツ",
+    "english": "Morel Shirt",
+    "segments": [
+      {
+        "text": "モレル",
+        "reading": "moreru",
+        "gloss": "morel"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "MysteryShirt_Description": {
+    "japanese": "ミステリーボックスのあまり物からつくられている。",
+    "english": "Made from the leftovers of a Mystery Box.",
+    "segments": [
+      {
+        "text": "ミステリーボックスのあまり物から",
+        "reading": "misuterī bokkusu no amarimono kara",
+        "gloss": "from the leftovers of a Mystery Box"
+      },
+      {
+        "text": "つくられている。",
+        "reading": "tsukurarete iru",
+        "gloss": "it's made"
+      }
+    ]
+  },
+  "MysteryShirt_Name": {
+    "japanese": "ミステリーシャツ",
+    "english": "Mystery Shirt",
+    "segments": [
+      {
+        "text": "ミステリー",
+        "reading": "misuterī",
+        "gloss": "mystery"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "NavyTuxedo_Description": {
+    "japanese": "フォーマルイベントに最適なトップス。",
+    "english": "An elegant top for formal events.",
+    "segments": [
+      {
+        "text": "フォーマルイベントに最適な",
+        "reading": "fōmaru ibento ni saiteki na",
+        "gloss": "ideal for formal events"
+      },
+      {
+        "text": "トップス。",
+        "reading": "toppusu",
+        "gloss": "a top"
+      }
+    ]
+  },
+  "NavyTuxedo_Name": {
+    "japanese": "ネイビータキシード",
+    "english": "Navy Tuxedo",
+    "segments": [
+      {
+        "text": "ネイビー",
+        "reading": "neibī",
+        "gloss": "navy"
+      },
+      {
+        "text": "タキシード",
+        "reading": "takishīdo",
+        "gloss": "tuxedo"
+      }
+    ]
+  },
+  "NeatBowShirt_Description": {
+    "japanese": "目立つ蝶ネクタイ付きのきちんとしたボタンダウンシャツ。",
+    "english": "A neat button-down shirt with a prominent bow tie.",
+    "segments": [
+      {
+        "text": "目立つ蝶ネクタイ付きの",
+        "reading": "medatsu chō nekutai tsuki no",
+        "gloss": "with a prominent bow tie"
+      },
+      {
+        "text": "きちんとしたボタンダウンシャツ。",
+        "reading": "kichinto shita botan daun shatsu",
+        "gloss": "a neat button-down shirt"
+      }
+    ]
+  },
+  "NeatBowShirt_Name": {
+    "japanese": "ニートボウシャツ",
+    "english": "Neat Bow Shirt",
+    "segments": [
+      {
+        "text": "ニートボウ",
+        "reading": "nīto bō",
+        "gloss": "neat bow"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "NecklaceShirt_Description": {
+    "japanese": "金のネックレスがついたシャツ。",
+    "english": "A shirt with a gold necklace.",
+    "segments": [
+      {
+        "text": "金のネックレスがついた",
+        "reading": "kin no nekkuresu ga tsuita",
+        "gloss": "with a gold necklace"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "NecklaceShirt_Name": {
+    "japanese": "ネックレスシャツ",
+    "english": "Necklace Shirt",
+    "segments": [
+      {
+        "text": "ネックレス",
+        "reading": "nekkuresu",
+        "gloss": "necklace"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "NightSkyShirt_Description": {
+    "japanese": "夜空を思い出させるシャツ。",
+    "english": "A shirt that reminds you of the night sky.",
+    "segments": [
+      {
+        "text": "夜空を思い出させる",
+        "reading": "yozora o omoidasaseru",
+        "gloss": "reminding you of the night sky"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "NightSkyShirt_Name": {
+    "japanese": "ナイトスカイシャツ",
+    "english": "Night Sky Shirt",
+    "segments": [
+      {
+        "text": "ナイトスカイ",
+        "reading": "naito sukai",
+        "gloss": "night sky"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "OasisGown_Description": {
+    "japanese": "砂漠の宝石。",
+    "english": "The jewel of the desert.",
+    "segments": [
+      {
+        "text": "砂漠の宝石。",
+        "reading": "sabaku no hōseki",
+        "gloss": "the jewel of the desert"
+      }
+    ]
+  },
+  "OasisGown_Name": {
+    "japanese": "オアシスガウン",
+    "english": "Oasis Gown",
+    "segments": [
+      {
+        "text": "オアシス",
+        "reading": "oashisu",
+        "gloss": "oasis"
+      },
+      {
+        "text": "ガウン",
+        "reading": "gaun",
+        "gloss": "gown"
+      }
+    ]
+  },
+  "OceanShirt_Description": {
+    "japanese": "水中の波紋のように見えるシャツ。",
+    "english": "A shirt that looks like underwater ripples.",
+    "segments": [
+      {
+        "text": "水中の波紋のように見える",
+        "reading": "suichū no hamon no yō ni mieru",
+        "gloss": "looking like underwater ripples"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "OceanShirt_Name": {
+    "japanese": "オーシャンシャツ",
+    "english": "Ocean Shirt",
+    "segments": [
+      {
+        "text": "オーシャン",
+        "reading": "ōshan",
+        "gloss": "ocean"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "OfficerUniform_Description": {
+    "japanese": "法律のオフィサーのための定番ユニフォーム。",
+    "english": "The classic uniform for an officer of the law.",
+    "segments": [
+      {
+        "text": "法律のオフィサーのための",
+        "reading": "hōritsu no ofisā no tame no",
+        "gloss": "for an officer of the law"
+      },
+      {
+        "text": "定番ユニフォーム。",
+        "reading": "teiban yunifōmu",
+        "gloss": "classic uniform"
+      }
+    ]
+  },
+  "OfficerUniform_Name": {
+    "japanese": "オフィスのユニフォーム",
+    "english": "Officer Uniform",
+    "segments": [
+      {
+        "text": "オフィスの",
+        "reading": "ofisu no",
+        "gloss": "office"
+      },
+      {
+        "text": "ユニフォーム",
+        "reading": "yunifōmu",
+        "gloss": "uniform"
+      }
+    ]
+  },
+  "OilStainedShirt_Description": {
+    "japanese": "最初から油を使って油っぽい表情に染められています。",
+    "english": "It's already dyed with oil for that greasy look.",
+    "segments": [
+      {
+        "text": "最初から油を使って",
+        "reading": "saisho kara abura o tsukatte",
+        "gloss": "using oil from the start"
+      },
+      {
+        "text": "油っぽい表情に染められています。",
+        "reading": "aburappoi hyōjō ni somerarete imasu",
+        "gloss": "it's dyed to a greasy look"
+      }
+    ]
+  },
+  "OilStainedShirt_Name": {
+    "japanese": "油汚れの付いたシャツ",
+    "english": "Oil Stained Shirt",
+    "segments": [
+      {
+        "text": "油汚れの付いた",
+        "reading": "abura yogore no tsuita",
+        "gloss": "oil-stained"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "OmniShirt_Description": {
+    "japanese": "虹の斑点付き！",
+    "english": "It's speckled with rainbow flecks!",
+    "segments": [
+      {
+        "text": "虹の斑点付き！",
+        "reading": "niji no hanten tsuki",
+        "gloss": "with rainbow flecks"
+      }
+    ]
+  },
+  "OmniShirt_Name": {
+    "japanese": "オムニシャツ",
+    "english": "Omni Shirt",
+    "segments": [
+      {
+        "text": "オムニ",
+        "reading": "omuni",
+        "gloss": "omni"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "OrangeBowShirt_Description": {
+    "japanese": "大きな白い弓の付いたオレンジストライプのシャツ。",
+    "english": "A striped orange shirt with a big white bow.",
+    "segments": [
+      {
+        "text": "大きな白い弓の付いた",
+        "reading": "ōkina shiroi yumi no tsuita",
+        "gloss": "with a big white bow"
+      },
+      {
+        "text": "オレンジストライプのシャツ。",
+        "reading": "orenji sutoraipu no shatsu",
+        "gloss": "an orange striped shirt"
+      }
+    ]
+  },
+  "OrangeBowShirt_Name": {
+    "japanese": "オレンジボウシャツ",
+    "english": "Orange Bow Shirt",
+    "segments": [
+      {
+        "text": "オレンジ",
+        "reading": "orenji",
+        "gloss": "orange"
+      },
+      {
+        "text": "ボウ",
+        "reading": "bō",
+        "gloss": "bow"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "OrangeGi_Description": {
+    "japanese": "総合格闘技のアーティストがよく着るゆったりとした服。",
+    "english": "A loose garment typically worn by martial artists.",
+    "segments": [
+      {
+        "text": "総合格闘技のアーティストがよく着る",
+        "reading": "sōgō kakutōgi no ātisuto ga yoku kiru",
+        "gloss": "often worn by martial artists"
+      },
+      {
+        "text": "ゆったりとした服。",
+        "reading": "yuttari to shita fuku",
+        "gloss": "a loose garment"
+      }
+    ]
+  },
+  "OrangeGi_Name": {
+    "japanese": " オレンジ着 ",
+    "english": "Orange Gi",
+    "segments": [
+      {
+        "text": " オレンジ",
+        "reading": "orenji",
+        "gloss": "orange"
+      },
+      {
+        "text": "着 ",
+        "reading": "gi",
+        "gloss": "gi"
+      }
+    ]
+  },
+  "OrangeShirt_Description": {
+    "japanese": "オレンジ色のシャツ。",
+    "english": "An orange shirt.",
+    "segments": [
+      {
+        "text": "オレンジ色のシャツ。",
+        "reading": "orenji iro no shatsu",
+        "gloss": "an orange shirt"
+      }
+    ]
+  },
+  "OrangeShirt_Name": {
+    "japanese": "オレンジシャツ",
+    "english": "Orange Shirt",
+    "segments": [
+      {
+        "text": "オレンジ",
+        "reading": "orenji",
+        "gloss": "orange"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "PendantShirt_Description": {
+    "japanese": "大きなペンダントのあるシャツ。",
+    "english": "A shirt with a big pendant.",
+    "segments": [
+      {
+        "text": "大きなペンダントのある",
+        "reading": "ōkina pendanto no aru",
+        "gloss": "with a big pendant"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "PendantShirt_Name": {
+    "japanese": "ペンダントシャツ",
+    "english": "Pendant Shirt",
+    "segments": [
+      {
+        "text": "ペンダント",
+        "reading": "pendanto",
+        "gloss": "pendant"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "PinkStripedShirt_Description": {
+    "japanese": "ストライプのピンクのシャツ。",
+    "english": "A pink shirt with stripes.",
+    "segments": [
+      {
+        "text": "ストライプのピンクのシャツ。",
+        "reading": "sutoraipu no pinku no shatsu",
+        "gloss": "a striped pink shirt"
+      }
+    ]
+  },
+  "PinkStripedShirt_Name": {
+    "japanese": "ピンクストライプシャツ",
+    "english": "Pink Striped Shirt",
+    "segments": [
+      {
+        "text": "ピンク",
+        "reading": "pinku",
+        "gloss": "pink"
+      },
+      {
+        "text": "ストライプ",
+        "reading": "sutoraipu",
+        "gloss": "striped"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "PlainOveralls_Description": {
+    "japanese": "染めることができる定番オーバーオール。",
+    "english": "Classic overalls with a shirt that can be dyed.",
+    "segments": [
+      {
+        "text": "染めることができる",
+        "reading": "someru koto ga dekiru",
+        "gloss": "that can be dyed"
+      },
+      {
+        "text": "定番オーバーオール。",
+        "reading": "teiban ōbāōru",
+        "gloss": "classic overalls"
+      }
+    ]
+  },
+  "PlainOveralls_Name": {
+    "japanese": "無地のオーバーオール",
+    "english": "Plain Overalls",
+    "segments": [
+      {
+        "text": "無地の",
+        "reading": "muji no",
+        "gloss": "plain"
+      },
+      {
+        "text": "オーバーオール",
+        "reading": "ōbāōru",
+        "gloss": "overalls"
+      }
+    ]
+  },
+  "PlainShirt_Description": {
+    "japanese": "シンプルシャツ。",
+    "english": "A simple shirt.",
+    "segments": [
+      {
+        "text": "シンプルシャツ。",
+        "reading": "shinpuru shatsu",
+        "gloss": "a simple shirt"
+      }
+    ]
+  },
+  "PlainShirt_Name_Female": {
+    "japanese": "無地のシャツ（女）",
+    "english": "Plain Shirt (F)",
+    "segments": [
+      {
+        "text": "無地の",
+        "reading": "muji no",
+        "gloss": "plain"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      },
+      {
+        "text": "（女）",
+        "reading": "onna",
+        "gloss": "female"
+      }
+    ]
+  },
+  "PlainShirt_Name_Male": {
+    "japanese": "無地のシャツ（男）",
+    "english": "Plain Shirt (M)",
+    "segments": [
+      {
+        "text": "無地の",
+        "reading": "muji no",
+        "gloss": "plain"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      },
+      {
+        "text": "（男）",
+        "reading": "otoko",
+        "gloss": "male"
+      }
+    ]
+  },
+  "PolkaDotShirt_Description": {
+    "japanese": "水玉模様の濃い色のシャツ。",
+    "english": "A dark shirt with dyeable polka dots.",
+    "segments": [
+      {
+        "text": "水玉模様の",
+        "reading": "mizutama moyō no",
+        "gloss": "with a polka-dot pattern"
+      },
+      {
+        "text": "濃い色のシャツ。",
+        "reading": "koi iro no shatsu",
+        "gloss": "a dark-coloured shirt"
+      }
+    ]
+  },
+  "PolkaDotShirt_Name": {
+    "japanese": "ポルカドットシャツ",
+    "english": "Polka Dot Shirt",
+    "segments": [
+      {
+        "text": "ポルカドット",
+        "reading": "poruka dotto",
+        "gloss": "polka dot"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "PourOverShirt_Description": {
+    "japanese": "おなじみのジグザグ模様がこのシャツを飾りつけています。ああ…あの香り。",
+    "english": "A familiar zig-zag pattern adorns this shirt. Ahh... that smell.",
+    "segments": [
+      {
+        "text": "おなじみのジグザグ模様が",
+        "reading": "onajimi no jiguzagu moyō ga",
+        "gloss": "a familiar zig-zag pattern"
+      },
+      {
+        "text": "このシャツを飾りつけています。",
+        "reading": "kono shatsu o kazaritsukete imasu",
+        "gloss": "adorns this shirt"
+      },
+      {
+        "text": "ああ…",
+        "reading": "ā",
+        "gloss": "ahh"
+      },
+      {
+        "text": "あの香り。",
+        "reading": "ano kaori",
+        "gloss": "that smell"
+      }
+    ]
+  },
+  "PourOverShirt_Name": {
+    "japanese": "ポアオーバーシャツ",
+    "english": "Pour-Over Shirt",
+    "segments": [
+      {
+        "text": "ポアオーバー",
+        "reading": "poa ōbā",
+        "gloss": "pour-over"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "PrismaticShirt_DarkSleeves_Description": {
+    "japanese": "プリズムエネルギーできらめきます。ダーク色の袖。",
+    "english": "It shimmers with prismatic energy. Dark sleeves.",
+    "segments": [
+      {
+        "text": "プリズムエネルギーで",
+        "reading": "purizumu enerugī de",
+        "gloss": "with prismatic energy"
+      },
+      {
+        "text": "きらめきます。",
+        "reading": "kiramekimasu",
+        "gloss": "it shimmers"
+      },
+      {
+        "text": "ダーク色の袖。",
+        "reading": "dāku iro no sode",
+        "gloss": "dark-coloured sleeves"
+      }
+    ]
+  },
+  "PrismaticShirt_DarkSleeves_Name": {
+    "japanese": "プリズムシャツ",
+    "english": "Prismatic Shirt",
+    "segments": [
+      {
+        "text": "プリズム",
+        "reading": "purizumu",
+        "gloss": "prismatic"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "PrismaticShirt_Description": {
+    "japanese": "プリズムのエネルギーできらめきます。",
+    "english": "It shimmers with prismatic energy.",
+    "segments": [
+      {
+        "text": "プリズムのエネルギーで",
+        "reading": "purizumu no enerugī de",
+        "gloss": "with prismatic energy"
+      },
+      {
+        "text": "きらめきます。",
+        "reading": "kiramekimasu",
+        "gloss": "it shimmers"
+      }
+    ]
+  },
+  "PrismaticShirt_LightSleeves_Description": {
+    "japanese": "プリズムエネルギーできらめきます。白い袖。",
+    "english": "It shimmers with prismatic energy. White sleeves.",
+    "segments": [
+      {
+        "text": "プリズムエネルギーで",
+        "reading": "purizumu enerugī de",
+        "gloss": "with prismatic energy"
+      },
+      {
+        "text": "きらめきます。",
+        "reading": "kiramekimasu",
+        "gloss": "it shimmers"
+      },
+      {
+        "text": "白い袖。",
+        "reading": "shiroi sode",
+        "gloss": "white sleeves"
+      }
+    ]
+  },
+  "PrismaticShirt_LightSleeves_Name": {
+    "japanese": "プリズムシャツ",
+    "english": "Prismatic Shirt",
+    "segments": [
+      {
+        "text": "プリズム",
+        "reading": "purizumu",
+        "gloss": "prismatic"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "PrismaticShirt_Name": {
+    "japanese": "プリズムシャツ",
+    "english": "Prismatic Shirt",
+    "segments": [
+      {
+        "text": "プリズム",
+        "reading": "purizumu",
+        "gloss": "prismatic"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "PurpleBlouse_Description": {
+    "japanese": "見事なパープルブラウス。",
+    "english": "A stunning purple blouse.",
+    "segments": [
+      {
+        "text": "見事なパープルブラウス。",
+        "reading": "migoto na pāpuru burausu",
+        "gloss": "a stunning purple blouse"
+      }
+    ]
+  },
+  "PurpleBlouse_Name": {
+    "japanese": "パープルブラウス",
+    "english": "Purple Blouse",
+    "segments": [
+      {
+        "text": "パープル",
+        "reading": "pāpuru",
+        "gloss": "purple"
+      },
+      {
+        "text": "ブラウス",
+        "reading": "burausu",
+        "gloss": "blouse"
+      }
+    ]
+  },
+  "RainCoat_Description": {
+    "japanese": "定番の黄色いレインコート。",
+    "english": "The classic yellow raincoat.",
+    "segments": [
+      {
+        "text": "定番の黄色いレインコート。",
+        "reading": "teiban no kiiroi reinkōto",
+        "gloss": "the classic yellow raincoat"
+      }
+    ]
+  },
+  "RainCoat_Name": {
+    "japanese": "レインコート",
+    "english": "Rain Coat",
+    "segments": [
+      {
+        "text": "レインコート",
+        "reading": "reinkōto",
+        "gloss": "raincoat"
+      }
+    ]
+  },
+  "RangerUniform_Description": {
+    "japanese": "パークレンジャーのための定番ユニフォーム。",
+    "english": "The classic uniform for a park ranger.",
+    "segments": [
+      {
+        "text": "パークレンジャーのための",
+        "reading": "pāku renjā no tame no",
+        "gloss": "for a park ranger"
+      },
+      {
+        "text": "定番ユニフォーム。",
+        "reading": "teiban yunifōmu",
+        "gloss": "classic uniform"
+      }
+    ]
+  },
+  "RangerUniform_Name": {
+    "japanese": "レンジャーユニフォーム",
+    "english": "Ranger Uniform",
+    "segments": [
+      {
+        "text": "レンジャー",
+        "reading": "renjā",
+        "gloss": "ranger"
+      },
+      {
+        "text": "ユニフォーム",
+        "reading": "yunifōmu",
+        "gloss": "uniform"
+      }
+    ]
+  },
+  "RedButtonedVest_Description": {
+    "japanese": "染色できる袖付きの赤いシャツ。",
+    "english": "It's a red shirt with dyeable sleeves.",
+    "segments": [
+      {
+        "text": "染色できる袖付きの",
+        "reading": "senshoku dekiru sode tsuki no",
+        "gloss": "with dyeable sleeves"
+      },
+      {
+        "text": "赤いシャツ。",
+        "reading": "akai shatsu",
+        "gloss": "a red shirt"
+      }
+    ]
+  },
+  "RedButtonedVest_Name": {
+    "japanese": "レッドボタン付きベスト",
+    "english": "Red Buttoned Vest",
+    "segments": [
+      {
+        "text": "レッドボタン付き",
+        "reading": "reddo botan tsuki",
+        "gloss": "with red buttons"
+      },
+      {
+        "text": "ベスト",
+        "reading": "besuto",
+        "gloss": "vest"
+      }
+    ]
+  },
+  "RedFlannelShirt_Description": {
+    "japanese": "赤と青の模様のフランネルシャツ。",
+    "english": "A flannel shirt with a red and blue pattern.",
+    "segments": [
+      {
+        "text": "赤と青の模様の",
+        "reading": "aka to ao no moyō no",
+        "gloss": "with a red and blue pattern"
+      },
+      {
+        "text": "フランネルシャツ。",
+        "reading": "furanneru shatsu",
+        "gloss": "a flannel shirt"
+      }
+    ]
+  },
+  "RedFlannelShirt_Name": {
+    "japanese": "レッドフランネルシャツ",
+    "english": "Red Flannel Shirt",
+    "segments": [
+      {
+        "text": "レッド",
+        "reading": "reddo",
+        "gloss": "red"
+      },
+      {
+        "text": "フランネル",
+        "reading": "furanneru",
+        "gloss": "flannel"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "RedHoodie_Description": {
+    "japanese": "フード付きスポーティーレッドのプルオーバー。",
+    "english": "A sporty red pullover with a hood.",
+    "segments": [
+      {
+        "text": "フード付き",
+        "reading": "fūdo tsuki",
+        "gloss": "with a hood"
+      },
+      {
+        "text": "スポーティーレッドのプルオーバー。",
+        "reading": "supōtī reddo no puruōbā",
+        "gloss": "a sporty red pullover"
+      }
+    ]
+  },
+  "RedHoodie_Name": {
+    "japanese": "レッドのパーカー",
+    "english": "Red Hoodie",
+    "segments": [
+      {
+        "text": "レッドの",
+        "reading": "reddo no",
+        "gloss": "red"
+      },
+      {
+        "text": "パーカー",
+        "reading": "pākā",
+        "gloss": "hoodie"
+      }
+    ]
+  },
+  "RedStripedShirt_Description": {
+    "japanese": "白いストライプの赤いシャツ。",
+    "english": "A red shirt with white stripes.",
+    "segments": [
+      {
+        "text": "白いストライプの",
+        "reading": "shiroi sutoraipu no",
+        "gloss": "with white stripes"
+      },
+      {
+        "text": "赤いシャツ。",
+        "reading": "akai shatsu",
+        "gloss": "a red shirt"
+      }
+    ]
+  },
+  "RedStripedShirt_Name": {
+    "japanese": "レッドストライプシャツ",
+    "english": "Red Striped Shirt",
+    "segments": [
+      {
+        "text": "レッド",
+        "reading": "reddo",
+        "gloss": "red"
+      },
+      {
+        "text": "ストライプ",
+        "reading": "sutoraipu",
+        "gloss": "striped"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "RedTuxedo_Description": {
+    "japanese": "フォーマルイベントに最適なトップス。",
+    "english": "An elegant top for formal events.",
+    "segments": [
+      {
+        "text": "フォーマルイベントに最適な",
+        "reading": "fōmaru ibento ni saiteki na",
+        "gloss": "ideal for formal events"
+      },
+      {
+        "text": "トップス。",
+        "reading": "toppusu",
+        "gloss": "a top"
+      }
+    ]
+  },
+  "RedTuxedo_Name": {
+    "japanese": "レッドタキシード",
+    "english": "Red Tuxedo",
+    "segments": [
+      {
+        "text": "レッド",
+        "reading": "reddo",
+        "gloss": "red"
+      },
+      {
+        "text": "タキシード",
+        "reading": "takishīdo",
+        "gloss": "tuxedo"
+      }
+    ]
+  },
+  "RegalMantle_Description": {
+    "japanese": "リーガルパープルの服",
+    "english": "A regal purple garment",
+    "segments": [
+      {
+        "text": "リーガルパープルの服",
+        "reading": "rīgaru pāpuru no fuku",
+        "gloss": "a regal purple garment"
+      }
+    ]
+  },
+  "RegalMantle_Name": {
+    "japanese": "リーガルマントル",
+    "english": "Regal Mantle",
+    "segments": [
+      {
+        "text": "リーガル",
+        "reading": "rīgaru",
+        "gloss": "regal"
+      },
+      {
+        "text": "マントル",
+        "reading": "mantoru",
+        "gloss": "mantle"
+      }
+    ]
+  },
+  "RelicShirt_Description": {
+    "japanese": "ゴールデンレリックを見つけて、それを証明するためのシャツを入手！",
+    "english": "I found a golden relic and got the shirt to prove it!",
+    "segments": [
+      {
+        "text": "ゴールデンレリックを見つけて、",
+        "reading": "gōruden rerikku o mitsukete",
+        "gloss": "I found a golden relic"
+      },
+      {
+        "text": "それを証明するためのシャツを入手！",
+        "reading": "sore o shōmei suru tame no shatsu o nyūshu",
+        "gloss": "and got the shirt to prove it"
+      }
+    ]
+  },
+  "RelicShirt_Name": {
+    "japanese": "レリックシャツ",
+    "english": "Relic Shirt",
+    "segments": [
+      {
+        "text": "レリック",
+        "reading": "rerikku",
+        "gloss": "relic"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "RetroRainbowShirt_Description": {
+    "japanese": "色あせたレインボー柄のシンプルなシャツ。",
+    "english": "A simple shirt with a faded rainbow pattern.",
+    "segments": [
+      {
+        "text": "色あせたレインボー柄の",
+        "reading": "iroaseta reinbō gara no",
+        "gloss": "with a faded rainbow pattern"
+      },
+      {
+        "text": "シンプルなシャツ。",
+        "reading": "shinpuru na shatsu",
+        "gloss": "a simple shirt"
+      }
+    ]
+  },
+  "RetroRainbowShirt_Name": {
+    "japanese": "レトロレインボーシャツ",
+    "english": "Retro Rainbow Shirt",
+    "segments": [
+      {
+        "text": "レトロ",
+        "reading": "retoro",
+        "gloss": "retro"
+      },
+      {
+        "text": "レインボー",
+        "reading": "reinbō",
+        "gloss": "rainbow"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "RustyShirt_Description": {
+    "japanese": "シャツがさびだらけに見えるように作られています。",
+    "english": "It's made to look like the shirt is covered in rust.",
+    "segments": [
+      {
+        "text": "シャツがさびだらけに見えるように作られています。",
+        "reading": "shatsu ga sabi darake ni mieru yō ni tsukurarete imasu",
+        "gloss": "it's made so the shirt looks covered in rust"
+      }
+    ]
+  },
+  "RustyShirt_Name": {
+    "japanese": "さびの付いたシャツ",
+    "english": "Rusty Shirt",
+    "segments": [
+      {
+        "text": "さびの付いた",
+        "reading": "sabi no tsuita",
+        "gloss": "rusted"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SailorShirt_1261_Description": {
+    "japanese": "ほとんどのセーラーシャツとは違って、これは染色できるボディと白地です。",
+    "english": "Unlike most sailor shirts, this one has a dyeable body and a white collar.",
+    "segments": [
+      {
+        "text": "ほとんどのセーラーシャツとは違って、",
+        "reading": "hotondo no sērā shatsu to wa chigatte",
+        "gloss": "unlike most sailor shirts"
+      },
+      {
+        "text": "これは染色できるボディと白地です。",
+        "reading": "kore wa senshoku dekiru bodi to shiroji desu",
+        "gloss": "this has a dyeable body and white ground"
+      }
+    ]
+  },
+  "SailorShirt_1261_Name": {
+    "japanese": "セーラーシャツ",
+    "english": "Sailor Shirt",
+    "segments": [
+      {
+        "text": "セーラー",
+        "reading": "sērā",
+        "gloss": "sailor"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SailorShirt_Description": {
+    "japanese": "あなたに外洋を思い出させます。",
+    "english": "It reminds you of the open sea.",
+    "segments": [
+      {
+        "text": "あなたに外洋を思い出させます。",
+        "reading": "anata ni gaiyō o omoidasasemasu",
+        "gloss": "it reminds you of the open sea"
+      }
+    ]
+  },
+  "SailorShirt_Name": {
+    "japanese": "セーラーシャツ",
+    "english": "Sailor Shirt",
+    "segments": [
+      {
+        "text": "セーラー",
+        "reading": "sērā",
+        "gloss": "sailor"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SauceStainedShirt_Description": {
+    "japanese": "スパゲッティソースで覆われているので罪悪感を感じる必要はありません！",
+    "english": "It's already covered in spaghetti sauce, so you needn't feel guilty!",
+    "segments": [
+      {
+        "text": "スパゲッティソースで覆われているので",
+        "reading": "supagetti sōsu de ōwarete iru node",
+        "gloss": "since it's covered in spaghetti sauce"
+      },
+      {
+        "text": "罪悪感を感じる必要はありません！",
+        "reading": "zaiakukan o kanjiru hitsuyō wa arimasen",
+        "gloss": "you needn't feel guilty"
+      }
+    ]
+  },
+  "SauceStainedShirt_Name": {
+    "japanese": "ソースステインシャツ",
+    "english": "Sauce-Stained Shirt",
+    "segments": [
+      {
+        "text": "ソースステイン",
+        "reading": "sōsu sutein",
+        "gloss": "sauce stain"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "ShirtAndBelt_Description": {
+    "japanese": "茶色のベルト付きの無地シャツ。",
+    "english": "A plain shirt with a brown belt.",
+    "segments": [
+      {
+        "text": "茶色のベルト付きの",
+        "reading": "chairo no beruto tsuki no",
+        "gloss": "with a brown belt"
+      },
+      {
+        "text": "無地シャツ。",
+        "reading": "muji shatsu",
+        "gloss": "a plain shirt"
+      }
+    ]
+  },
+  "ShirtAndBelt_Name": {
+    "japanese": "シャツとベルト",
+    "english": "Shirt and Belt",
+    "segments": [
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      },
+      {
+        "text": "と",
+        "reading": "to",
+        "gloss": "and"
+      },
+      {
+        "text": "ベルト",
+        "reading": "beruto",
+        "gloss": "belt"
+      }
+    ]
+  },
+  "ShirtAndTie_Description": {
+    "japanese": "白いドレスのシャツとネクタイ。",
+    "english": "A white dress shirt and a tie.",
+    "segments": [
+      {
+        "text": "白いドレスのシャツと",
+        "reading": "shiroi doresu no shatsu to",
+        "gloss": "a white dress shirt and"
+      },
+      {
+        "text": "ネクタイ。",
+        "reading": "nekutai",
+        "gloss": "a tie"
+      }
+    ]
+  },
+  "ShirtAndTie_Name": {
+    "japanese": "シャツとネクタイ",
+    "english": "Shirt and Tie",
+    "segments": [
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      },
+      {
+        "text": "と",
+        "reading": "to",
+        "gloss": "and"
+      },
+      {
+        "text": "ネクタイ",
+        "reading": "nekutai",
+        "gloss": "tie"
+      }
+    ]
+  },
+  "ShirtOTheSea_Description": {
+    "japanese": "海の塩水のような香りがします。",
+    "english": "It smells like the brine of the sea.",
+    "segments": [
+      {
+        "text": "海の塩水のような香りがします。",
+        "reading": "umi no shiomizu no yō na kaori ga shimasu",
+        "gloss": "it smells like sea brine"
+      }
+    ]
+  },
+  "ShirtOTheSea_Name": {
+    "japanese": "シャツ・オ・ザ・シー",
+    "english": "Shirt O' The Sea",
+    "segments": [
+      {
+        "text": "シャツ・オ・ザ・シー",
+        "reading": "shatsu o za shī",
+        "gloss": "Shirt O' The Sea"
+      }
+    ]
+  },
+  "Shirt_Description": {
+    "japanese": "ウェアラブルシャツ。",
+    "english": "A wearable shirt.",
+    "segments": [
+      {
+        "text": "ウェアラブルシャツ。",
+        "reading": "wearaburu shatsu",
+        "gloss": "a wearable shirt"
+      }
+    ]
+  },
+  "Shirt_Name": {
+    "japanese": "シャツ",
+    "english": "Shirt",
+    "segments": [
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "ShirtwithBow_Description": {
+    "japanese": "このシャツは首回りに小さな弓が付いています。",
+    "english": "This shirt comes with a little bow around the neck.",
+    "segments": [
+      {
+        "text": "このシャツは",
+        "reading": "kono shatsu wa",
+        "gloss": "this shirt"
+      },
+      {
+        "text": "首回りに小さな弓が付いています。",
+        "reading": "kubimawari ni chiisana yumi ga tsuite imasu",
+        "gloss": "has a little bow around the neck"
+      }
+    ]
+  },
+  "ShirtwithBow_Name": {
+    "japanese": "ボー付きシャツ",
+    "english": "Shirt with Bow",
+    "segments": [
+      {
+        "text": "ボー付き",
+        "reading": "bō tsuki",
+        "gloss": "with a bow"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "ShortJacket_Description": {
+    "japanese": "シャツの上部が短い染色ジャケット。",
+    "english": "A short dyeable jacket over a shirt.",
+    "segments": [
+      {
+        "text": "シャツの上部が短い",
+        "reading": "shatsu no jōbu ga mijikai",
+        "gloss": "short over a shirt"
+      },
+      {
+        "text": "染色ジャケット。",
+        "reading": "senshoku jaketto",
+        "gloss": "a dyeable jacket"
+      }
+    ]
+  },
+  "ShortJacket_Name": {
+    "japanese": "ショートジャケット",
+    "english": "Short Jacket",
+    "segments": [
+      {
+        "text": "ショート",
+        "reading": "shōto",
+        "gloss": "short"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "ShrimpEnthusiastShirt_Description": {
+    "japanese": "食欲を安定して供給したい人のためのものです。",
+    "english": "For those whose appetites demand a steady supply.",
+    "segments": [
+      {
+        "text": "食欲を安定して供給したい人のためのものです。",
+        "reading": "shokuyoku o antei shite kyōkyū shitai hito no tame no mono desu",
+        "gloss": "it's for those who want a steady supply for their appetite"
+      }
+    ]
+  },
+  "ShrimpEnthusiastShirt_Name": {
+    "japanese": "エビ愛好家のシャツ",
+    "english": "Shrimp Enthusiast Shirt",
+    "segments": [
+      {
+        "text": "エビ愛好家の",
+        "reading": "ebi aikōka no",
+        "gloss": "shrimp enthusiast's"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SilkyShirt_Description": {
+    "japanese": "滑らかで絹のような素材で作られています。",
+    "english": "It's made from a smooth, silky material.",
+    "segments": [
+      {
+        "text": "滑らかで絹のような素材で作られています。",
+        "reading": "nameraka de kinu no yō na sozai de tsukurarete imasu",
+        "gloss": "it's made of a smooth, silk-like material"
+      }
+    ]
+  },
+  "SilkyShirt_Name": {
+    "japanese": "シルクシャツ",
+    "english": "Silky Shirt",
+    "segments": [
+      {
+        "text": "シルク",
+        "reading": "shiruku",
+        "gloss": "silk"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SkeletonShirt_Description": {
+    "japanese": "骨格胸郭がプリントされたシャツ。",
+    "english": "A shirt with a skeletal rib cage printed on it.",
+    "segments": [
+      {
+        "text": "骨格胸郭がプリントされた",
+        "reading": "kokkaku kyōkaku ga purinto sareta",
+        "gloss": "with a skeletal rib cage printed on"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SkeletonShirt_Name": {
+    "japanese": "スケルトンシャツ",
+    "english": "Skeleton Shirt",
+    "segments": [
+      {
+        "text": "スケルトン",
+        "reading": "sukeruton",
+        "gloss": "skeleton"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SkullShirt_Description": {
+    "japanese": "威圧的なスカルがプリントされたシャツ。",
+    "english": "A shirt with a menacing skull printed on it.",
+    "segments": [
+      {
+        "text": "威圧的なスカルがプリントされた",
+        "reading": "iatsuteki na sukaru ga purinto sareta",
+        "gloss": "with a menacing skull printed on"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SkullShirt_Name": {
+    "japanese": "スカルシャツ",
+    "english": "Skull Shirt",
+    "segments": [
+      {
+        "text": "スカル",
+        "reading": "sukaru",
+        "gloss": "skull"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SleevelessOveralls_Description": {
+    "japanese": "染めることができるノースリーブシャツを持つ定番オーバーオール。",
+    "english": "Classic overalls with a dyeable sleeveless shirt.",
+    "segments": [
+      {
+        "text": "染めることができるノースリーブシャツを持つ",
+        "reading": "someru koto ga dekiru nōsurību shatsu o motsu",
+        "gloss": "with a dyeable sleeveless shirt"
+      },
+      {
+        "text": "定番オーバーオール。",
+        "reading": "teiban ōbāōru",
+        "gloss": "classic overalls"
+      }
+    ]
+  },
+  "SleevelessOveralls_Name": {
+    "japanese": "ノースリーブのオーバーオール",
+    "english": "Sleeveless Overalls",
+    "segments": [
+      {
+        "text": "ノースリーブの",
+        "reading": "nōsurību no",
+        "gloss": "sleeveless"
+      },
+      {
+        "text": "オーバーオール",
+        "reading": "ōbāōru",
+        "gloss": "overalls"
+      }
+    ]
+  },
+  "SlimeShirt_Description": {
+    "japanese": "大きなスライムのように見えるシャツ。",
+    "english": "A shirt that looks like a big slime.",
+    "segments": [
+      {
+        "text": "大きなスライムのように見える",
+        "reading": "ōkina suraimu no yō ni mieru",
+        "gloss": "looking like a big slime"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SlimeShirt_Name": {
+    "japanese": "スライムシャツ",
+    "english": "Slime Shirt",
+    "segments": [
+      {
+        "text": "スライム",
+        "reading": "suraimu",
+        "gloss": "slime"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SoftArrowShirt_Description": {
+    "japanese": "上向きの矢印パターンがある柔らかい色のシャツ。",
+    "english": "A soft-coloured shirt with an upward arrow pattern.",
+    "segments": [
+      {
+        "text": "上向きの矢印パターンがある",
+        "reading": "uwamuki no yajirushi patān ga aru",
+        "gloss": "with an upward arrow pattern"
+      },
+      {
+        "text": "柔らかい色のシャツ。",
+        "reading": "yawarakai iro no shatsu",
+        "gloss": "a soft-coloured shirt"
+      }
+    ]
+  },
+  "SoftArrowShirt_Name": {
+    "japanese": "ソフトアローシャツ",
+    "english": "Soft Arrow Shirt",
+    "segments": [
+      {
+        "text": "ソフトアロー",
+        "reading": "sofuto arō",
+        "gloss": "soft arrow"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SportsShirt_Description": {
+    "japanese": "この定番の見た目で公園の外からノックアウト。",
+    "english": "Knock it out of the park with this classic look.",
+    "segments": [
+      {
+        "text": "この定番の見た目で",
+        "reading": "kono teiban no mitame de",
+        "gloss": "with this classic look"
+      },
+      {
+        "text": "公園の外からノックアウト。",
+        "reading": "kōen no soto kara nokku auto",
+        "gloss": "knock it out of the park"
+      }
+    ]
+  },
+  "SportsShirt_Name": {
+    "japanese": "スポーツシャツ",
+    "english": "Sports Shirt",
+    "segments": [
+      {
+        "text": "スポーツ",
+        "reading": "supōtsu",
+        "gloss": "sports"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SpringShirt_Description": {
+    "japanese": "軽くて爽やか、そして春の色を特徴としています。",
+    "english": "It's light, it's fresh, and it features the colours of spring.",
+    "segments": [
+      {
+        "text": "軽くて爽やか、",
+        "reading": "karukute sawayaka",
+        "gloss": "light and fresh"
+      },
+      {
+        "text": "そして春の色を特徴としています。",
+        "reading": "soshite haru no iro o tokuchō to shite imasu",
+        "gloss": "and it features the colours of spring"
+      }
+    ]
+  },
+  "SpringShirt_Name": {
+    "japanese": "スプリングシャツ",
+    "english": "Spring Shirt",
+    "segments": [
+      {
+        "text": "スプリング",
+        "reading": "supuringu",
+        "gloss": "spring"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "StarShirt_Description": {
+    "japanese": "星は暗闇で光るがそうではない。",
+    "english": "The star is supposed to glow in the dark, but it doesn't.",
+    "segments": [
+      {
+        "text": "星は暗闇で光るがそうではない。",
+        "reading": "hoshi wa kurayami de hikaru ga sō de wa nai",
+        "gloss": "the star is meant to glow in the dark, but it doesn't"
+      }
+    ]
+  },
+  "StarShirt_Name": {
+    "japanese": "スターシャツ",
+    "english": "Star Shirt",
+    "segments": [
+      {
+        "text": "スター",
+        "reading": "sutā",
+        "gloss": "star"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SteelBreastplate_Description": {
+    "japanese": "スチール製装飾装甲。",
+    "english": "Decorative armour made of steel.",
+    "segments": [
+      {
+        "text": "スチール製",
+        "reading": "suchīru sei",
+        "gloss": "steel-made"
+      },
+      {
+        "text": "装飾装甲。",
+        "reading": "sōshoku sōkō",
+        "gloss": "decorative armour"
+      }
+    ]
+  },
+  "SteelBreastplate_Name": {
+    "japanese": "スチール製ブレストプレート",
+    "english": "Steel Breastplate",
+    "segments": [
+      {
+        "text": "スチール製",
+        "reading": "suchīru sei",
+        "gloss": "steel"
+      },
+      {
+        "text": "ブレストプレート",
+        "reading": "buresuto purēto",
+        "gloss": "breastplate"
+      }
+    ]
+  },
+  "StoreOwnersJacket_Description": {
+    "japanese": "小さな町の商人が着ているように見えるジャケット。",
+    "english": "A jacket that looks like it'd be worn by a small-town merchant.",
+    "segments": [
+      {
+        "text": "小さな町の商人が着ているように見える",
+        "reading": "chiisana machi no shōnin ga kite iru yō ni mieru",
+        "gloss": "looking like a small-town merchant wears it"
+      },
+      {
+        "text": "ジャケット。",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "StoreOwnersJacket_Name": {
+    "japanese": "店主のジャケット",
+    "english": "Store Owner's Jacket",
+    "segments": [
+      {
+        "text": "店主の",
+        "reading": "tenshu no",
+        "gloss": "store owner's"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "StrappedTop_Description": {
+    "japanese": "細いストラップ付きのトップス。",
+    "english": "A top with a thin strap.",
+    "segments": [
+      {
+        "text": "細いストラップ付きの",
+        "reading": "hosoi sutorappu tsuki no",
+        "gloss": "with a thin strap"
+      },
+      {
+        "text": "トップス。",
+        "reading": "toppusu",
+        "gloss": "top"
+      }
+    ]
+  },
+  "StrappedTop_Name": {
+    "japanese": "ストラップ付きトップス",
+    "english": "Strapped Top",
+    "segments": [
+      {
+        "text": "ストラップ付き",
+        "reading": "sutorappu tsuki",
+        "gloss": "with a strap"
+      },
+      {
+        "text": "トップス",
+        "reading": "toppusu",
+        "gloss": "top"
+      }
+    ]
+  },
+  "StripedShirt_Description": {
+    "japanese": "かすかなストライプのシャツ。",
+    "english": "It's a shirt with faint stripes on it.",
+    "segments": [
+      {
+        "text": "かすかなストライプのシャツ。",
+        "reading": "kasuka na sutoraipu no shatsu",
+        "gloss": "a shirt with faint stripes"
+      }
+    ]
+  },
+  "StripedShirt_Name": {
+    "japanese": "ストライプシャツ",
+    "english": "Striped Shirt",
+    "segments": [
+      {
+        "text": "ストライプ",
+        "reading": "sutoraipu",
+        "gloss": "striped"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "StuddedVest_Description": {
+    "japanese": "金属製のスパイクが散りばめられた黒いベスト。",
+    "english": "A black vest studded with metal spikes.",
+    "segments": [
+      {
+        "text": "金属製のスパイクが散りばめられた",
+        "reading": "kinzoku sei no supaiku ga chiribamerareta",
+        "gloss": "studded with metal spikes"
+      },
+      {
+        "text": "黒いベスト。",
+        "reading": "kuroi besuto",
+        "gloss": "a black vest"
+      }
+    ]
+  },
+  "StuddedVest_Name": {
+    "japanese": "スタッド付きベスト",
+    "english": "Studded Vest",
+    "segments": [
+      {
+        "text": "スタッド付き",
+        "reading": "sutaddo tsuki",
+        "gloss": "studded"
+      },
+      {
+        "text": "ベスト",
+        "reading": "besuto",
+        "gloss": "vest"
+      }
+    ]
+  },
+  "SugarShirt_Description": {
+    "japanese": "「甘いエネルギー」であふれています。",
+    "english": "It's bursting with \"sweet energy\".",
+    "segments": [
+      {
+        "text": "「甘いエネルギー」で",
+        "reading": "amai enerugī de",
+        "gloss": "with \"sweet energy\""
+      },
+      {
+        "text": "あふれています。",
+        "reading": "afurete imasu",
+        "gloss": "it's overflowing"
+      }
+    ]
+  },
+  "SugarShirt_Name": {
+    "japanese": "シュガーシャツ",
+    "english": "Sugar Shirt",
+    "segments": [
+      {
+        "text": "シュガー",
+        "reading": "shugā",
+        "gloss": "sugar"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SuitTop_Description": {
+    "japanese": "ファンシーなイベントやお祝いのためのフォーマルなトップス。",
+    "english": "A formal top for fancy events and celebrations.",
+    "segments": [
+      {
+        "text": "ファンシーなイベントやお祝いのための",
+        "reading": "fanshī na ibento ya o-iwai no tame no",
+        "gloss": "for fancy events and celebrations"
+      },
+      {
+        "text": "フォーマルなトップス。",
+        "reading": "fōmaru na toppusu",
+        "gloss": "a formal top"
+      }
+    ]
+  },
+  "SuitTop_Name": {
+    "japanese": "スーツトップス",
+    "english": "Suit Top",
+    "segments": [
+      {
+        "text": "スーツ",
+        "reading": "sūtsu",
+        "gloss": "suit"
+      },
+      {
+        "text": "トップス",
+        "reading": "toppusu",
+        "gloss": "top"
+      }
+    ]
+  },
+  "SunsetShirt_Description": {
+    "japanese": "その日の最も刺激的な時間に着想を得たシャツ。",
+    "english": "A shirt inspired by the most evocative time of day.",
+    "segments": [
+      {
+        "text": "その日の最も刺激的な時間に着想を得た",
+        "reading": "sono hi no mottomo shigekiteki na jikan ni chakusō o eta",
+        "gloss": "inspired by the most evocative time of day"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "SunsetShirt_Name": {
+    "japanese": "サンセットシャツ",
+    "english": "Sunset Shirt",
+    "segments": [
+      {
+        "text": "サンセット",
+        "reading": "sansetto",
+        "gloss": "sunset"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TanStripedShirt_Description": {
+    "japanese": "真ん中を通る白いストライプがある褐色のシャツ。",
+    "english": "A tan shirt with a white stripe running through the middle.",
+    "segments": [
+      {
+        "text": "真ん中を通る白いストライプがある",
+        "reading": "mannaka o tōru shiroi sutoraipu ga aru",
+        "gloss": "with a white stripe running through the middle"
+      },
+      {
+        "text": "褐色のシャツ。",
+        "reading": "kasshoku no shatsu",
+        "gloss": "a tan shirt"
+      }
+    ]
+  },
+  "TanStripedShirt_Name": {
+    "japanese": "褐色のストライプシャツ",
+    "english": "Tan Striped Shirt",
+    "segments": [
+      {
+        "text": "褐色の",
+        "reading": "kasshoku no",
+        "gloss": "tan"
+      },
+      {
+        "text": "ストライプ",
+        "reading": "sutoraipu",
+        "gloss": "striped"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TankTop_Description": {
+    "japanese": "ノースリーブシャツ",
+    "english": "A sleeveless shirt",
+    "segments": [
+      {
+        "text": "ノースリーブシャツ",
+        "reading": "nōsurību shatsu",
+        "gloss": "a sleeveless shirt"
+      }
+    ]
+  },
+  "TankTop_Name_Female": {
+    "japanese": "タンクトップ（女）",
+    "english": "Tank Top (F)",
+    "segments": [
+      {
+        "text": "タンクトップ",
+        "reading": "tanku toppu",
+        "gloss": "tank top"
+      },
+      {
+        "text": "（女）",
+        "reading": "onna",
+        "gloss": "female"
+      }
+    ]
+  },
+  "TankTop_Name_Male": {
+    "japanese": "タンクトップ（男）",
+    "english": "Tank Top (M)",
+    "segments": [
+      {
+        "text": "タンクトップ",
+        "reading": "tanku toppu",
+        "gloss": "tank top"
+      },
+      {
+        "text": "（男）",
+        "reading": "otoko",
+        "gloss": "male"
+      }
+    ]
+  },
+  "TeaShirt_Description": {
+    "japanese": "人気のある飲み物にインスパイアされたシャツ。",
+    "english": "A shirt inspired by the popular beverage.",
+    "segments": [
+      {
+        "text": "人気のある飲み物にインスパイアされた",
+        "reading": "ninki no aru nomimono ni insupaia sareta",
+        "gloss": "inspired by the popular beverage"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TeaShirt_Name": {
+    "japanese": "おチャツ",
+    "english": "Tea Shirt",
+    "segments": [
+      {
+        "text": "おチャツ",
+        "reading": "o-chatsu",
+        "gloss": "tea-shirt (pun)"
+      }
+    ]
+  },
+  "TieDyeShirt_Description": {
+    "japanese": "しばったあと、いくつかの色の染料に浸したシャツ。",
+    "english": "A shirt that was tied up and then dipped in several coloured dyes.",
+    "segments": [
+      {
+        "text": "しばったあと、",
+        "reading": "shibatta ato",
+        "gloss": "after being tied up"
+      },
+      {
+        "text": "いくつかの色の染料に浸したシャツ。",
+        "reading": "ikutsuka no iro no senryō ni hitashita shatsu",
+        "gloss": "a shirt dipped in several coloured dyes"
+      }
+    ]
+  },
+  "TieDyeShirt_Name": {
+    "japanese": "染め物のシャツ",
+    "english": "Tie Dye Shirt",
+    "segments": [
+      {
+        "text": "染め物の",
+        "reading": "somemono no",
+        "gloss": "dyed"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "ToastedShirt_Description": {
+    "japanese": "トーストのように見えます。",
+    "english": "It looks lightly toasted.",
+    "segments": [
+      {
+        "text": "トーストのように見えます。",
+        "reading": "tōsuto no yō ni miemasu",
+        "gloss": "it looks like toast"
+      }
+    ]
+  },
+  "ToastedShirt_Name": {
+    "japanese": "トーストシャツ",
+    "english": "Toasted Shirt",
+    "segments": [
+      {
+        "text": "トースト",
+        "reading": "tōsuto",
+        "gloss": "toast"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TogaShirt_Description": {
+    "japanese": "古いデザインですが通気性が抜群！",
+    "english": "It's an old design, but the airflow is excellent!",
+    "segments": [
+      {
+        "text": "古いデザインですが",
+        "reading": "furui dezain desu ga",
+        "gloss": "it's an old design, but"
+      },
+      {
+        "text": "通気性が抜群！",
+        "reading": "tsūkisei ga batsugun",
+        "gloss": "the airflow is excellent"
+      }
+    ]
+  },
+  "TogaShirt_Name": {
+    "japanese": "トーガシャツ",
+    "english": "Toga Shirt",
+    "segments": [
+      {
+        "text": "トーガ",
+        "reading": "tōga",
+        "gloss": "toga"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TomatoShirt_Description": {
+    "japanese": "大きな質問に答えるシャツ：「トマトは」...（しかし残りは汚れている）。",
+    "english": "A shirt that answers the big question: \"Tomatoes are\"... (but the rest is smudged).",
+    "segments": [
+      {
+        "text": "大きな質問に答えるシャツ：",
+        "reading": "ōkina shitsumon ni kotaeru shatsu",
+        "gloss": "a shirt answering the big question"
+      },
+      {
+        "text": "「トマトは」...",
+        "reading": "tomato wa",
+        "gloss": "\"tomatoes are\""
+      },
+      {
+        "text": "（しかし残りは汚れている）。",
+        "reading": "shikashi nokori wa yogorete iru",
+        "gloss": "but the rest is smudged"
+      }
+    ]
+  },
+  "TomatoShirt_Name": {
+    "japanese": "トマトシャツ",
+    "english": "Tomato Shirt",
+    "segments": [
+      {
+        "text": "トマト",
+        "reading": "tomato",
+        "gloss": "tomato"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TortillaShirt_Description": {
+    "japanese": "トルティーヤの表面のように見えるシャツ。",
+    "english": "A shirt that looks like the surface of a tortilla.",
+    "segments": [
+      {
+        "text": "トルティーヤの表面のように見える",
+        "reading": "torutīya no hyōmen no yō ni mieru",
+        "gloss": "looking like a tortilla's surface"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TortillaShirt_Name": {
+    "japanese": "トルティーヤシャツ",
+    "english": "Tortilla Shirt",
+    "segments": [
+      {
+        "text": "トルティーヤ",
+        "reading": "torutīya",
+        "gloss": "tortilla"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TrackJacket_Description": {
+    "japanese": "伸縮性のある素材で作られた軽いジャケット。",
+    "english": "A light jacket made from elastic material.",
+    "segments": [
+      {
+        "text": "伸縮性のある素材で作られた",
+        "reading": "shinshukusei no aru sozai de tsukurareta",
+        "gloss": "made of elastic material"
+      },
+      {
+        "text": "軽いジャケット。",
+        "reading": "karui jaketto",
+        "gloss": "a light jacket"
+      }
+    ]
+  },
+  "TrackJacket_Name": {
+    "japanese": "トラックジャケット",
+    "english": "Track Jacket",
+    "segments": [
+      {
+        "text": "トラック",
+        "reading": "torakku",
+        "gloss": "track"
+      },
+      {
+        "text": "ジャケット",
+        "reading": "jaketto",
+        "gloss": "jacket"
+      }
+    ]
+  },
+  "TrashCanShirt_Description": {
+    "japanese": "ゴミ箱をかぶっている感じです。",
+    "english": "You're wearing a trash can.",
+    "segments": [
+      {
+        "text": "ゴミ箱をかぶっている感じです。",
+        "reading": "gomibako o kabutte iru kanji desu",
+        "gloss": "it feels like wearing a trash can"
+      }
+    ]
+  },
+  "TrashCanShirt_Name": {
+    "japanese": "ゴミ箱シャツ",
+    "english": "Trash Can Shirt",
+    "segments": [
+      {
+        "text": "ゴミ箱",
+        "reading": "gomibako",
+        "gloss": "trash can"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TrinketShirt_Description": {
+    "japanese": "大きな色付きのガラス玉が付いたシャツ。",
+    "english": "A shirt with large coloured glass orbs attached.",
+    "segments": [
+      {
+        "text": "大きな色付きのガラス玉が付いた",
+        "reading": "ōkina irotsuki no garasudama ga tsuita",
+        "gloss": "with large coloured glass orbs attached"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TrinketShirt_Name": {
+    "japanese": "トリンケットシャツ",
+    "english": "Trinket Shirt",
+    "segments": [
+      {
+        "text": "トリンケット",
+        "reading": "torinketto",
+        "gloss": "trinket"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TropicalSunriseShirt_Description": {
+    "japanese": "このシャツからはココナッツの香りがする。",
+    "english": "This shirt smells of coconut.",
+    "segments": [
+      {
+        "text": "このシャツからは",
+        "reading": "kono shatsu kara wa",
+        "gloss": "from this shirt"
+      },
+      {
+        "text": "ココナッツの香りがする。",
+        "reading": "kokonattsu no kaori ga suru",
+        "gloss": "comes a coconut scent"
+      }
+    ]
+  },
+  "TropicalSunriseShirt_Name": {
+    "japanese": "トロピカルサンライズシャツ",
+    "english": "Tropical Sunrise Shirt",
+    "segments": [
+      {
+        "text": "トロピカルサンライズ",
+        "reading": "toropikaru sanraizu",
+        "gloss": "tropical sunrise"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "TubeTop_Description": {
+    "japanese": "体を包み込むストラップレスのトップ。",
+    "english": "A strapless top that wraps around the body.",
+    "segments": [
+      {
+        "text": "体を包み込む",
+        "reading": "karada o tsutsumikomu",
+        "gloss": "wrapping around the body"
+      },
+      {
+        "text": "ストラップレスのトップ。",
+        "reading": "sutorappuresu no toppu",
+        "gloss": "a strapless top"
+      }
+    ]
+  },
+  "TubeTop_Name": {
+    "japanese": "チューブトップ",
+    "english": "Tube Top",
+    "segments": [
+      {
+        "text": "チューブトップ",
+        "reading": "chūbu toppu",
+        "gloss": "tube top"
+      }
+    ]
+  },
+  "TunnelersJersey_Description": {
+    "japanese": "ズズシティのトンネル工事のためのジャージ。",
+    "english": "It's a jersey for the Zuzu City Tunnelers.",
+    "segments": [
+      {
+        "text": "ズズシティのトンネル工事のための",
+        "reading": "Zuzu Shiti no tonneru kōji no tame no",
+        "gloss": "for the Zuzu City tunnel works"
+      },
+      {
+        "text": "ジャージ。",
+        "reading": "jāji",
+        "gloss": "jersey"
+      }
+    ]
+  },
+  "TunnelersJersey_Name": {
+    "japanese": "トンネルジャージ",
+    "english": "Tunnelers Jersey",
+    "segments": [
+      {
+        "text": "トンネル",
+        "reading": "tonneru",
+        "gloss": "tunnel"
+      },
+      {
+        "text": "ジャージ",
+        "reading": "jāji",
+        "gloss": "jersey"
+      }
+    ]
+  },
+  "TurtleneckSweater_Description": {
+    "japanese": "首のパイピングを温めましょう。",
+    "english": "Keep that neck piping hot.",
+    "segments": [
+      {
+        "text": "首のパイピングを温めましょう。",
+        "reading": "kubi no paipingu o atatamemashō",
+        "gloss": "let's keep the neck piping warm"
+      }
+    ]
+  },
+  "TurtleneckSweater_Name": {
+    "japanese": "タートルネックセーター",
+    "english": "Turtleneck Sweater",
+    "segments": [
+      {
+        "text": "タートルネック",
+        "reading": "tātoru nekku",
+        "gloss": "turtleneck"
+      },
+      {
+        "text": "セーター",
+        "reading": "sētā",
+        "gloss": "sweater"
+      }
+    ]
+  },
+  "VacationShirt_Description": {
+    "japanese": "シダ諸島の観光用シャツ。",
+    "english": "It's a tourist shirt from the Fern Islands.",
+    "segments": [
+      {
+        "text": "シダ諸島の観光用シャツ。",
+        "reading": "Shida shotō no kankō yō shatsu",
+        "gloss": "a tourist shirt from the Fern Islands"
+      }
+    ]
+  },
+  "VacationShirt_Name": {
+    "japanese": "バケーションシャツ",
+    "english": "Vacation Shirt",
+    "segments": [
+      {
+        "text": "バケーション",
+        "reading": "bakēshon",
+        "gloss": "vacation"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "VintagePolo_Description": {
+    "japanese": "色あせて昔のクローゼットのような香りがします。",
+    "english": "It's faded with age and smells like an old closet.",
+    "segments": [
+      {
+        "text": "色あせて昔のクローゼットのような香りがします。",
+        "reading": "iroasete mukashi no kurōzetto no yō na kaori ga shimasu",
+        "gloss": "it's faded and smells like an old closet"
+      }
+    ]
+  },
+  "VintagePolo_Name": {
+    "japanese": "ビンテージポロ",
+    "english": "Vintage Polo",
+    "segments": [
+      {
+        "text": "ビンテージ",
+        "reading": "bintēji",
+        "gloss": "vintage"
+      },
+      {
+        "text": "ポロ",
+        "reading": "poro",
+        "gloss": "polo"
+      }
+    ]
+  },
+  "WarmFlannelShirt_Description": {
+    "japanese": "暖かな茶色とバラ色のフランネルシャツ。",
+    "english": "A flannel shirt in warm brown and rose.",
+    "segments": [
+      {
+        "text": "暖かな茶色とバラ色の",
+        "reading": "atataka na chairo to barairo no",
+        "gloss": "in warm brown and rose"
+      },
+      {
+        "text": "フランネルシャツ。",
+        "reading": "furanneru shatsu",
+        "gloss": "a flannel shirt"
+      }
+    ]
+  },
+  "WarmFlannelShirt_Name": {
+    "japanese": "ワームフランネルシャツ",
+    "english": "Warm Flannel Shirt",
+    "segments": [
+      {
+        "text": "ワーム",
+        "reading": "wāmu",
+        "gloss": "warm"
+      },
+      {
+        "text": "フランネル",
+        "reading": "furanneru",
+        "gloss": "flannel"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "WhiteDotShirt_Description": {
+    "japanese": "白い水玉模様で染色できるシャツ。",
+    "english": "A dyeable shirt with white polka dots.",
+    "segments": [
+      {
+        "text": "白い水玉模様で",
+        "reading": "shiroi mizutama moyō de",
+        "gloss": "with white polka dots"
+      },
+      {
+        "text": "染色できるシャツ。",
+        "reading": "senshoku dekiru shatsu",
+        "gloss": "a dyeable shirt"
+      }
+    ]
+  },
+  "WhiteDotShirt_Name": {
+    "japanese": "ホワイトドットシャツ",
+    "english": "White Dot Shirt",
+    "segments": [
+      {
+        "text": "ホワイトドット",
+        "reading": "howaito dotto",
+        "gloss": "white dot"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "WhiteGi_Description": {
+    "japanese": "総合格闘技のアーティストがよく着るゆったりとした服。",
+    "english": "A loose garment typically worn by martial artists.",
+    "segments": [
+      {
+        "text": "総合格闘技のアーティストがよく着る",
+        "reading": "sōgō kakutōgi no ātisuto ga yoku kiru",
+        "gloss": "often worn by martial artists"
+      },
+      {
+        "text": "ゆったりとした服。",
+        "reading": "yuttari to shita fuku",
+        "gloss": "a loose garment"
+      }
+    ]
+  },
+  "WhiteGi_Name": {
+    "japanese": " ホワイト着 ",
+    "english": "White Gi",
+    "segments": [
+      {
+        "text": " ホワイト",
+        "reading": "howaito",
+        "gloss": "white"
+      },
+      {
+        "text": "着 ",
+        "reading": "gi",
+        "gloss": "gi"
+      }
+    ]
+  },
+  "WhiteOverallsShirt_Description": {
+    "japanese": "白いシャツとベルト付きの定番オーバーオール。",
+    "english": "Classic overalls with a white shirt and belt.",
+    "segments": [
+      {
+        "text": "白いシャツとベルト付きの",
+        "reading": "shiroi shatsu to beruto tsuki no",
+        "gloss": "with a white shirt and belt"
+      },
+      {
+        "text": "定番オーバーオール。",
+        "reading": "teiban ōbāōru",
+        "gloss": "classic overalls"
+      }
+    ]
+  },
+  "WhiteOverallsShirt_Name": {
+    "japanese": "ホワイトオーバーオールシャツ",
+    "english": "White Overalls Shirt",
+    "segments": [
+      {
+        "text": "ホワイト",
+        "reading": "howaito",
+        "gloss": "white"
+      },
+      {
+        "text": "オーバーオール",
+        "reading": "ōbāōru",
+        "gloss": "overalls"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "WhiteOveralls_Description": {
+    "japanese": "定番の農場の雰囲気を醸し出す素晴らしくきれいな変わり種",
+    "english": "A nice clean variant on the classic farmer look",
+    "segments": [
+      {
+        "text": "定番の農場の雰囲気を醸し出す",
+        "reading": "teiban no nōjō no fun'iki o kamoshidasu",
+        "gloss": "giving off the classic farm feel"
+      },
+      {
+        "text": "素晴らしくきれいな変わり種",
+        "reading": "subarashiku kirei na kawaridane",
+        "gloss": "a wonderfully clean variant"
+      }
+    ]
+  },
+  "WhiteOveralls_Name": {
+    "japanese": "ホワイトオーバーオール",
+    "english": "White Overalls",
+    "segments": [
+      {
+        "text": "ホワイト",
+        "reading": "howaito",
+        "gloss": "white"
+      },
+      {
+        "text": "オーバーオール",
+        "reading": "ōbāōru",
+        "gloss": "overalls"
+      }
+    ]
+  },
+  "WorkShirt_Description": {
+    "japanese": "畑での長い日々のためのもの。",
+    "english": "For long days in the fields.",
+    "segments": [
+      {
+        "text": "畑での長い日々のためのもの。",
+        "reading": "hatake de no nagai hibi no tame no mono",
+        "gloss": "something for long days in the fields"
+      }
+    ]
+  },
+  "WorkShirt_Name": {
+    "japanese": "作業用シャツ",
+    "english": "Work Shirt",
+    "segments": [
+      {
+        "text": "作業用",
+        "reading": "sagyō yō",
+        "gloss": "for work"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "WumbusShirt_Description": {
+    "japanese": "奇妙な緑色の男のシャツ。",
+    "english": "A shirt featuring a strange green guy.",
+    "segments": [
+      {
+        "text": "奇妙な緑色の男の",
+        "reading": "kimyō na midoriiro no otoko no",
+        "gloss": "of a strange green man"
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "WumbusShirt_Name": {
+    "japanese": "ウンバスシャツ",
+    "english": "Wumbus Shirt",
+    "segments": [
+      {
+        "text": "ウンバス",
+        "reading": "Unbasu",
+        "gloss": "Wumbus"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "YellowSuit_Description": {
+    "japanese": "すごく大胆な人が着るスーツ。",
+    "english": "Wearing this suit is a bold statement.",
+    "segments": [
+      {
+        "text": "すごく大胆な人が着る",
+        "reading": "sugoku daitan na hito ga kiru",
+        "gloss": "worn by very bold people"
+      },
+      {
+        "text": "スーツ。",
+        "reading": "sūtsu",
+        "gloss": "a suit"
+      }
+    ]
+  },
+  "YellowSuit_Name": {
+    "japanese": "イエロースーツ",
+    "english": "Yellow Suit",
+    "segments": [
+      {
+        "text": "イエロー",
+        "reading": "ierō",
+        "gloss": "yellow"
+      },
+      {
+        "text": "スーツ",
+        "reading": "sūtsu",
+        "gloss": "suit"
+      }
+    ]
+  },
+  "YellowandGreenShirt_Description": {
+    "japanese": "緑色のストライプの黄色いシャツ。",
+    "english": "A yellow shirt with a green stripe.",
+    "segments": [
+      {
+        "text": "緑色のストライプの",
+        "reading": "midoriiro no sutoraipu no",
+        "gloss": "with a green stripe"
+      },
+      {
+        "text": "黄色いシャツ。",
+        "reading": "kiiroi shatsu",
+        "gloss": "a yellow shirt"
+      }
+    ]
+  },
+  "YellowandGreenShirt_Name": {
+    "japanese": "イエローアンドグリーンシャツ",
+    "english": "Yellow and Green Shirt",
+    "segments": [
+      {
+        "text": "イエローアンドグリーン",
+        "reading": "ierō ando gurīn",
+        "gloss": "yellow and green"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "YobaShirt_Description": {
+    "japanese": "著名な「船のサイン」が特徴のシャツ。",
+    "english": "A shirt featuring a prominent \"sign of the vessel\".",
+    "segments": [
+      {
+        "text": "著名な「船のサイン」が特徴の",
+        "reading": "chomei na fune no sain ga tokuchō no",
+        "gloss": "featuring a prominent \"sign of the vessel\""
+      },
+      {
+        "text": "シャツ。",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  },
+  "YobaShirt_Name": {
+    "japanese": "ヨーバシャツ",
+    "english": "Yoba Shirt",
+    "segments": [
+      {
+        "text": "ヨーバ",
+        "reading": "Yōba",
+        "gloss": "Yoba"
+      },
+      {
+        "text": "シャツ",
+        "reading": "shatsu",
+        "gloss": "shirt"
+      }
+    ]
+  }
+}
