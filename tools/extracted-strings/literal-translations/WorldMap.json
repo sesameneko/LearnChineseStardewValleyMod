@@ -1,0 +1,207 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley WorldMap.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "GingerIsland_East_JungleHut": {
+    "japanese": "ジャングルの小屋",
+    "english": "Jungle hut",
+    "segments": [
+      {
+        "text": "ジャングル",
+        "reading": "janguru",
+        "gloss": "jungle"
+      },
+      {
+        "text": "の小屋",
+        "reading": "no koya",
+        "gloss": "'s hut"
+      }
+    ]
+  },
+  "GingerIsland_North_DigSite": {
+    "japanese": "採掘場",
+    "english": "Dig site",
+    "segments": [
+      {
+        "text": "採掘場",
+        "reading": "saikutsujō",
+        "gloss": "excavation site"
+      }
+    ]
+  },
+  "GingerIsland_North_FieldOffice": {
+    "japanese": "フィールドオフィス",
+    "english": "Field office",
+    "segments": [
+      {
+        "text": "フィールドオフィス",
+        "reading": "fīrudo ofisu",
+        "gloss": "field office"
+      }
+    ]
+  },
+  "GingerIsland_North_Trader": {
+    "japanese": "島のトレーダー",
+    "english": "Island trader",
+    "segments": [
+      {
+        "text": "島の",
+        "reading": "shima no",
+        "gloss": "island's"
+      },
+      {
+        "text": "トレーダー",
+        "reading": "torēdā",
+        "gloss": "trader"
+      }
+    ]
+  },
+  "GingerIsland_North_Volcano": {
+    "japanese": "火山",
+    "english": "Volcano",
+    "segments": [
+      {
+        "text": "火山",
+        "reading": "kazan",
+        "gloss": "volcano"
+      }
+    ]
+  },
+  "GingerIsland_SouthEast_PirateCove": {
+    "japanese": "海賊の入り江",
+    "english": "Pirate cove",
+    "segments": [
+      {
+        "text": "海賊",
+        "reading": "kaizoku",
+        "gloss": "pirate"
+      },
+      {
+        "text": "の入り江",
+        "reading": "no irie",
+        "gloss": "'s cove"
+      }
+    ]
+  },
+  "GingerIsland_South_Dock": {
+    "japanese": "ウィリーのボート",
+    "english": "Willy's boat",
+    "segments": [
+      {
+        "text": "ウィリー",
+        "reading": "Wirī",
+        "gloss": "Willy"
+      },
+      {
+        "text": "のボート",
+        "reading": "no bōto",
+        "gloss": "'s boat"
+      }
+    ]
+  },
+  "GingerIsland_South_Resort": {
+    "japanese": "リゾート",
+    "english": "Resort",
+    "segments": [
+      {
+        "text": "リゾート",
+        "reading": "rizōto",
+        "gloss": "resort"
+      }
+    ]
+  },
+  "GingerIsland_West_BirdieShack": {
+    "japanese": "バーディーの小屋",
+    "english": "Birdie's shack",
+    "segments": [
+      {
+        "text": "バーディー",
+        "reading": "Bādī",
+        "gloss": "Birdie"
+      },
+      {
+        "text": "の小屋",
+        "reading": "no koya",
+        "gloss": "'s shack"
+      }
+    ]
+  },
+  "GingerIsland_West_GourmandCave": {
+    "japanese": "食いしん坊のカエル",
+    "english": "The glutton frog",
+    "segments": [
+      {
+        "text": "食いしん坊",
+        "reading": "kuishinbō",
+        "gloss": "glutton"
+      },
+      {
+        "text": "のカエル",
+        "reading": "no kaeru",
+        "gloss": "'s frog"
+      }
+    ]
+  },
+  "GingerIsland_West_House": {
+    "japanese": "島の農場",
+    "english": "Island farmhouse",
+    "segments": [
+      {
+        "text": "島の",
+        "reading": "shima no",
+        "gloss": "island's"
+      },
+      {
+        "text": "農場",
+        "reading": "nōjō",
+        "gloss": "farm"
+      }
+    ]
+  },
+  "GingerIsland_West_QiWalnutRoom": {
+    "japanese": "ミスターQiの秘密のクルミの部屋",
+    "english": "Mr. Qi's secret walnut room",
+    "segments": [
+      {
+        "text": "ミスターQi",
+        "reading": "misutā Qi",
+        "gloss": "Mr. Qi"
+      },
+      {
+        "text": "の秘密の",
+        "reading": "no himitsu no",
+        "gloss": "'s secret"
+      },
+      {
+        "text": "クルミの部屋",
+        "reading": "kurumi no heya",
+        "gloss": "walnut room"
+      }
+    ]
+  },
+  "GingerIsland_West_Shipwreck": {
+    "japanese": "難破船",
+    "english": "Shipwreck",
+    "segments": [
+      {
+        "text": "難破船",
+        "reading": "nanpasen",
+        "gloss": "wrecked ship"
+      }
+    ]
+  },
+  "GingerIsland_West_TigerSlimeGrove": {
+    "japanese": "タイガースライムの林",
+    "english": "Tiger slime grove",
+    "segments": [
+      {
+        "text": "タイガースライム",
+        "reading": "taigā suraimu",
+        "gloss": "tiger slime"
+      },
+      {
+        "text": "の林",
+        "reading": "no hayashi",
+        "gloss": "'s grove"
+      }
+    ]
+  }
+}

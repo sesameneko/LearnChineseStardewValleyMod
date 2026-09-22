@@ -1,0 +1,45 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Quests.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "MessageFoundLostItem": {
+    "japanese": "{0}を見つけた。{1}に返してあげよう。",
+    "english": "You found the {0}. Best return it to {1}.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(item)"
+      },
+      {
+        "text": "を見つけた。",
+        "reading": "o mitsuketa",
+        "gloss": "you found"
+      },
+      {
+        "text": "{1}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "に返してあげよう。",
+        "reading": "ni kaeshite ageyou",
+        "gloss": "let's return it to"
+      }
+    ]
+  },
+  "ObjectiveReturnToNPC": {
+    "japanese": "{0}に報告しよう。",
+    "english": "Report back to {0}.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "に報告しよう。",
+        "reading": "ni hōkoku shiyou",
+        "gloss": "let's report to"
+      }
+    ]
+  }
+}

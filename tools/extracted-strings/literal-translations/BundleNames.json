@@ -1,0 +1,287 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley BundleNames.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Aquatic Jelly": {
+    "japanese": "洞窟クラゲ",
+    "english": "Cave jelly",
+    "segments": [
+      {
+        "text": "洞窟",
+        "reading": "dōkutsu",
+        "gloss": "cave"
+      },
+      {
+        "text": "クラゲ",
+        "reading": "kurage",
+        "gloss": "jellyfish"
+      }
+    ]
+  },
+  "Bookworm's": {
+    "japanese": "読書家",
+    "english": "Bookworm's",
+    "segments": [
+      {
+        "text": "読書家",
+        "reading": "dokushoka",
+        "gloss": "avid reader"
+      }
+    ]
+  },
+  "Brewer's": {
+    "japanese": "醸造家の",
+    "english": "Brewer's",
+    "segments": [
+      {
+        "text": "醸造家",
+        "reading": "jōzōka",
+        "gloss": "brewer"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      }
+    ]
+  },
+  "Children's": {
+    "japanese": "子供の",
+    "english": "Children's",
+    "segments": [
+      {
+        "text": "子供",
+        "reading": "kodomo",
+        "gloss": "children"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      }
+    ]
+  },
+  "Engineer's": {
+    "japanese": "技術者の",
+    "english": "Engineer's",
+    "segments": [
+      {
+        "text": "技術者",
+        "reading": "gijutsusha",
+        "gloss": "engineer"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      }
+    ]
+  },
+  "Fish Farmer's": {
+    "japanese": "魚養殖者の",
+    "english": "Fish farmer's",
+    "segments": [
+      {
+        "text": "魚養殖者",
+        "reading": "sakana yōshokusha",
+        "gloss": "fish farmer"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      }
+    ]
+  },
+  "Forager's": {
+    "japanese": "採食者の",
+    "english": "Forager's",
+    "segments": [
+      {
+        "text": "採食者",
+        "reading": "saishokusha",
+        "gloss": "forager"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      }
+    ]
+  },
+  "Forest": {
+    "japanese": "森",
+    "english": "Forest",
+    "segments": [
+      {
+        "text": "森",
+        "reading": "mori",
+        "gloss": "forest"
+      }
+    ]
+  },
+  "Garden": {
+    "japanese": "庭園",
+    "english": "Garden",
+    "segments": [
+      {
+        "text": "庭園",
+        "reading": "teien",
+        "gloss": "garden"
+      }
+    ]
+  },
+  "Helper's": {
+    "japanese": "ヘルパー",
+    "english": "Helper's",
+    "segments": [
+      {
+        "text": "ヘルパー",
+        "reading": "herupā",
+        "gloss": "helper"
+      }
+    ]
+  },
+  "Home Cook's": {
+    "japanese": "家庭料理人の",
+    "english": "Home cook's",
+    "segments": [
+      {
+        "text": "家庭料理人",
+        "reading": "katei ryōrinin",
+        "gloss": "home cook"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      }
+    ]
+  },
+  "Master Fisher's": {
+    "japanese": "熟練漁師の",
+    "english": "Master fisherman's",
+    "segments": [
+      {
+        "text": "熟練",
+        "reading": "jukuren",
+        "gloss": "skilled"
+      },
+      {
+        "text": "漁師",
+        "reading": "ryōshi",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      }
+    ]
+  },
+  "Quality Fish": {
+    "japanese": "品質の良い魚",
+    "english": "Good-quality fish",
+    "segments": [
+      {
+        "text": "品質の良い",
+        "reading": "hinshitsu no yoi",
+        "gloss": "of good quality"
+      },
+      {
+        "text": "魚",
+        "reading": "sakana",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Rare Crops": {
+    "japanese": "希少な作物",
+    "english": "Rare crops",
+    "segments": [
+      {
+        "text": "希少な",
+        "reading": "kishō na",
+        "gloss": "rare"
+      },
+      {
+        "text": "作物",
+        "reading": "sakumotsu",
+        "gloss": "crops"
+      }
+    ]
+  },
+  "Spirit's Eve": {
+    "japanese": "スピリットイブ",
+    "english": "Spirit's Eve",
+    "segments": [
+      {
+        "text": "スピリットイブ",
+        "reading": "supiritto ibu",
+        "gloss": "Spirit's Eve"
+      }
+    ]
+  },
+  "Sticky": {
+    "japanese": "べたべた",
+    "english": "Sticky",
+    "segments": [
+      {
+        "text": "べたべた",
+        "reading": "betabeta",
+        "gloss": "sticky"
+      }
+    ]
+  },
+  "Treasure Hunter's": {
+    "japanese": "お宝ハンターの",
+    "english": "Treasure hunter's",
+    "segments": [
+      {
+        "text": "お宝",
+        "reading": "o-takara",
+        "gloss": "treasure"
+      },
+      {
+        "text": "ハンター",
+        "reading": "hantā",
+        "gloss": "hunter"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      }
+    ]
+  },
+  "Wild Medicine": {
+    "japanese": "野生医学",
+    "english": "Wild medicine",
+    "segments": [
+      {
+        "text": "野生",
+        "reading": "yasei",
+        "gloss": "wild"
+      },
+      {
+        "text": "医学",
+        "reading": "igaku",
+        "gloss": "medicine"
+      }
+    ]
+  },
+  "Winter Star": {
+    "japanese": "冬星",
+    "english": "Winter star",
+    "segments": [
+      {
+        "text": "冬",
+        "reading": "fuyu",
+        "gloss": "winter"
+      },
+      {
+        "text": "星",
+        "reading": "hoshi",
+        "gloss": "star"
+      }
+    ]
+  }
+}

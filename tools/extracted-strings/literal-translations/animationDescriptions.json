@@ -1,0 +1,459 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley animationDescriptions.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "abigail_videogames": {
+    "japanese": "ぐぬぬ…「プレーリーキング」のステージ1、まだクリアできないんだけど！$u",
+    "english": "Grr... I still can't clear stage 1 of \"Prairie King\"!$u",
+    "segments": [
+      {
+        "text": "ぐぬぬ…",
+        "reading": "gununu",
+        "gloss": "grr"
+      },
+      {
+        "text": "「プレーリーキング」のステージ1、",
+        "reading": "purērī kingu no sutēji ichi",
+        "gloss": "stage 1 of \"Prairie King\""
+      },
+      {
+        "text": "まだクリアできないんだけど！$u",
+        "reading": "mada kuria dekinai n da kedo",
+        "gloss": "I still can't clear it"
+      }
+    ]
+  },
+  "alex_lift_weights": {
+    "japanese": "ふっ…くっ…あとにしてくれ…$6",
+    "english": "Ungh... nngh... later, please...$6",
+    "segments": [
+      {
+        "text": "ふっ…",
+        "reading": "fu",
+        "gloss": "ungh"
+      },
+      {
+        "text": "くっ…",
+        "reading": "ku",
+        "gloss": "nngh"
+      },
+      {
+        "text": "あとにしてくれ…$6",
+        "reading": "ato ni shite kure",
+        "gloss": "make it later"
+      }
+    ]
+  },
+  "caroline_exercise": {
+    "japanese": "あっち向いて！わたし、真っ赤になってるし、汗もかいてるし…$s",
+    "english": "Look away! I'm all red and sweaty...$s",
+    "segments": [
+      {
+        "text": "あっち向いて！",
+        "reading": "atchi muite",
+        "gloss": "look the other way"
+      },
+      {
+        "text": "わたし、",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "真っ赤になってるし、",
+        "reading": "makka ni natteru shi",
+        "gloss": "am all red, and"
+      },
+      {
+        "text": "汗もかいてるし…$s",
+        "reading": "ase mo kaiteru shi",
+        "gloss": "sweating too"
+      }
+    ]
+  },
+  "demetrius_dance": {
+    "japanese": "%ディメトリウスは取り込み中だ。",
+    "english": "%Demetrius is busy.",
+    "segments": [
+      {
+        "text": "%ディメトリウス",
+        "reading": "Dimetoriusu",
+        "gloss": "Demetrius"
+      },
+      {
+        "text": "は取り込み中だ。",
+        "reading": "wa torikomi chū da",
+        "gloss": "is busy"
+      }
+    ]
+  },
+  "demetrius_read": {
+    "japanese": "スターデューバレーに住んでいると、外の世界からは遠ざかってしまうね。でも、それがいいのかもな。",
+    "english": "Living in Stardew Valley keeps you far from the outside world. Maybe that's a good thing.",
+    "segments": [
+      {
+        "text": "スターデューバレーに住んでいると、",
+        "reading": "Sutādyū Barē ni sunde iru to",
+        "gloss": "when you live in Stardew Valley"
+      },
+      {
+        "text": "外の世界からは遠ざかってしまうね。",
+        "reading": "soto no sekai kara wa tōzakatte shimau ne",
+        "gloss": "you end up far from the outside world"
+      },
+      {
+        "text": "でも、",
+        "reading": "demo",
+        "gloss": "but"
+      },
+      {
+        "text": "それがいいのかもな。",
+        "reading": "sore ga ii no kamo na",
+        "gloss": "maybe that's a good thing"
+      }
+    ]
+  },
+  "emily_exercise": {
+    "japanese": "エクササイズって、楽しいよ！",
+    "english": "Exercise can be fun!",
+    "segments": [
+      {
+        "text": "エクササイズって、",
+        "reading": "ekusasaizu tte",
+        "gloss": "exercise"
+      },
+      {
+        "text": "楽しいよ！",
+        "reading": "tanoshii yo",
+        "gloss": "is fun"
+      }
+    ]
+  },
+  "haley_photo": {
+    "japanese": "%ヘイリーは写真を撮るのに夢中で、あなたに気づいていない。",
+    "english": "%Haley is too absorbed in taking photos to notice you.",
+    "segments": [
+      {
+        "text": "%ヘイリー",
+        "reading": "Heirī",
+        "gloss": "Haley"
+      },
+      {
+        "text": "は写真を撮るのに夢中で、",
+        "reading": "wa shashin o toru no ni muchū de",
+        "gloss": "is absorbed in taking photos, and"
+      },
+      {
+        "text": "あなたに気づいていない。",
+        "reading": "anata ni kizuite inai",
+        "gloss": "hasn't noticed you"
+      }
+    ]
+  },
+  "harvey_examine_left": {
+    "japanese": "では、じっとして…おおきく深呼吸してください。$u",
+    "english": "Now hold still... take a deep breath for me.$u",
+    "segments": [
+      {
+        "text": "では、じっとして…",
+        "reading": "de wa jitto shite",
+        "gloss": "now, hold still"
+      },
+      {
+        "text": "おおきく深呼吸してください。$u",
+        "reading": "ōkiku shinkokyū shite kudasai",
+        "gloss": "please take a deep breath"
+      }
+    ]
+  },
+  "harvey_radio": {
+    "japanese": "%ハーヴィーは今いそがしそうだ。",
+    "english": "%Harvey looks busy right now.",
+    "segments": [
+      {
+        "text": "%ハーヴィー",
+        "reading": "Hāvī",
+        "gloss": "Harvey"
+      },
+      {
+        "text": "は今いそがしそうだ。",
+        "reading": "wa ima isogashisō da",
+        "gloss": "looks busy right now"
+      }
+    ]
+  },
+  "jodi_exercise": {
+    "japanese": "すって…スゥ…はいて…ハァ…$4",
+    "english": "Breathe in... hoo... breathe out... haah...$4",
+    "segments": [
+      {
+        "text": "すって…",
+        "reading": "sutte",
+        "gloss": "breathe in"
+      },
+      {
+        "text": "スゥ…",
+        "reading": "sū",
+        "gloss": "hoo"
+      },
+      {
+        "text": "はいて…",
+        "reading": "haite",
+        "gloss": "breathe out"
+      },
+      {
+        "text": "ハァ…$4",
+        "reading": "hā",
+        "gloss": "haah"
+      }
+    ]
+  },
+  "marnie_exercise": {
+    "japanese": "%霧になった汗の向こうから、マーニーはあなたにほほえみかけた。",
+    "english": "%Marnie smiles at you through a mist of sweat.",
+    "segments": [
+      {
+        "text": "%霧になった汗の向こうから、",
+        "reading": "kiri ni natta ase no mukō kara",
+        "gloss": "from beyond a mist of sweat"
+      },
+      {
+        "text": "マーニー",
+        "reading": "Mānī",
+        "gloss": "Marnie"
+      },
+      {
+        "text": "はあなたにほほえみかけた。",
+        "reading": "wa anata ni hohoemikaketa",
+        "gloss": "smiled at you"
+      }
+    ]
+  },
+  "penny_wave_left": {
+    "japanese": "この町は安全だけど、いちおう子供たちのことはいつも家まで送ることにしてるの。",
+    "english": "This town is safe, but I always walk the children home just in case.",
+    "segments": [
+      {
+        "text": "この町は安全だけど、",
+        "reading": "kono machi wa anzen da kedo",
+        "gloss": "this town is safe, but"
+      },
+      {
+        "text": "いちおう子供たち",
+        "reading": "ichiō kodomo tachi",
+        "gloss": "the children, just in case"
+      },
+      {
+        "text": "のことはいつも家まで送ることにしてるの。",
+        "reading": "no koto wa itsumo ie made okuru koto ni shiteru no",
+        "gloss": "I always see home"
+      }
+    ]
+  },
+  "robin_dance": {
+    "japanese": "%ロビンは取り込み中だ。",
+    "english": "%Robin is busy.",
+    "segments": [
+      {
+        "text": "%ロビン",
+        "reading": "Robin",
+        "gloss": "Robin"
+      },
+      {
+        "text": "は取り込み中だ。",
+        "reading": "wa torikomi chū da",
+        "gloss": "is busy"
+      }
+    ]
+  },
+  "robin_exercise": {
+    "japanese": "わたし、腕力はあるけど…ふぅ…足はまだまだきたえなきゃ…はぁっ。",
+    "english": "My arms are strong... *pant*... but my legs still need work... *gasp*",
+    "segments": [
+      {
+        "text": "わたし、",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "腕力はあるけど…",
+        "reading": "wanryoku wa aru kedo",
+        "gloss": "have arm strength, but"
+      },
+      {
+        "text": "ふぅ…",
+        "reading": "fū",
+        "gloss": "*pant*"
+      },
+      {
+        "text": "足はまだまだきたえなきゃ…",
+        "reading": "ashi wa mada mada kitaenakya",
+        "gloss": "my legs still need training"
+      },
+      {
+        "text": "はぁっ。",
+        "reading": "hā",
+        "gloss": "*gasp*"
+      }
+    ]
+  },
+  "sam_gameboy": {
+    "japanese": "ちょい待ち…これがおわったらな。$7",
+    "english": "Hang on... once I finish this.$7",
+    "segments": [
+      {
+        "text": "ちょい待ち…",
+        "reading": "choi machi",
+        "gloss": "hang on"
+      },
+      {
+        "text": "これがおわったらな。$7",
+        "reading": "kore ga owattara na",
+        "gloss": "once this is over"
+      }
+    ]
+  },
+  "sam_guitar": {
+    "japanese": "%サムはギターの練習に熱中している。",
+    "english": "%Sam is absorbed in practising the guitar.",
+    "segments": [
+      {
+        "text": "%サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "はギターの練習に熱中している。",
+        "reading": "wa gitā no renshū ni netchū shite iru",
+        "gloss": "is absorbed in guitar practice"
+      }
+    ]
+  },
+  "sam_pool": {
+    "japanese": "$c .5#うーん…キューボールにちょっとトップスピンをかければ、ひょっとすると…$7#$e#ハァ…ビリヤード、そんなにうまくないんだ。$s",
+    "english": "$c .5#Hmm... if I put a bit of top spin on the cue ball, maybe...$7#$e#*Sigh*... I'm not much good at billiards.$s",
+    "segments": [
+      {
+        "text": "$c .5#",
+        "reading": "",
+        "gloss": "(dialogue command)"
+      },
+      {
+        "text": "うーん…",
+        "reading": "ūn",
+        "gloss": "hmm"
+      },
+      {
+        "text": "キューボールにちょっとトップスピンをかければ、",
+        "reading": "kyū bōru ni chotto toppu supin o kakereba",
+        "gloss": "if I put a bit of top spin on the cue ball"
+      },
+      {
+        "text": "ひょっとすると…$7#$e#",
+        "reading": "hyotto suru to",
+        "gloss": "perhaps"
+      },
+      {
+        "text": "ハァ…",
+        "reading": "hā",
+        "gloss": "*sigh*"
+      },
+      {
+        "text": "ビリヤード、",
+        "reading": "biriyādo",
+        "gloss": "billiards"
+      },
+      {
+        "text": "そんなにうまくないんだ。$s",
+        "reading": "sonna ni umakunai n da",
+        "gloss": "I'm not that good at"
+      }
+    ]
+  },
+  "sam_skateboarding": {
+    "japanese": "%サムはキックフリップに挑戦している。",
+    "english": "%Sam is trying a kickflip.",
+    "segments": [
+      {
+        "text": "%サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "はキックフリップに挑戦している。",
+        "reading": "wa kikku furippu ni chōsen shite iru",
+        "gloss": "is attempting a kickflip"
+      }
+    ]
+  },
+  "sam_work": {
+    "japanese": "%サムは仕事中だ…ジャマしないほうがよさそうだ。",
+    "english": "%Sam is at work... best not to disturb him.",
+    "segments": [
+      {
+        "text": "%サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "は仕事中だ…",
+        "reading": "wa shigoto chū da",
+        "gloss": "is at work"
+      },
+      {
+        "text": "ジャマしないほうがよさそうだ。",
+        "reading": "jama shinai hō ga yosasō da",
+        "gloss": "it seems better not to disturb him"
+      }
+    ]
+  },
+  "shane_work": {
+    "japanese": "%シェーンはまじめにはたらいている。おしゃべりする気はなさそうだ。",
+    "english": "%Shane is working hard. He doesn't seem up for a chat.",
+    "segments": [
+      {
+        "text": "%シェーン",
+        "reading": "Shēn",
+        "gloss": "Shane"
+      },
+      {
+        "text": "はまじめにはたらいている。",
+        "reading": "wa majime ni hataraite iru",
+        "gloss": "is working seriously"
+      },
+      {
+        "text": "おしゃべりする気はなさそうだ。",
+        "reading": "oshaberi suru ki wa nasasō da",
+        "gloss": "he doesn't seem to feel like chatting"
+      }
+    ]
+  },
+  "vincent_read_right": {
+    "japanese": "ペニー先生が、あそびに行くならこの本を読んでからね、って。$s",
+    "english": "Miss Penny says I have to read this book before I can go and play.$s",
+    "segments": [
+      {
+        "text": "ペニー先生",
+        "reading": "Penī sensei",
+        "gloss": "Miss Penny"
+      },
+      {
+        "text": "が、",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あそびに行くなら",
+        "reading": "asobi ni iku nara",
+        "gloss": "if I'm going to play"
+      },
+      {
+        "text": "この本を読んでからね、",
+        "reading": "kono hon o yonde kara ne",
+        "gloss": "after reading this book"
+      },
+      {
+        "text": "って。$s",
+        "reading": "tte",
+        "gloss": "she says"
+      }
+    ]
+  }
+}
