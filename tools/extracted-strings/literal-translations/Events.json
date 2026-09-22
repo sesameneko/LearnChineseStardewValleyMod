@@ -1,0 +1,520 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Events.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AnimalBirth": {
+    "japanese": "夜のあいだに、{0}が赤ちゃん{1}を産んだ！",
+    "english": "During the night, {0} gave birth to a baby {1}!",
+    "segments": [
+      {
+        "text": "夜のあいだに、",
+        "reading": "yoru no aida ni",
+        "gloss": "during the night"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "が赤ちゃん",
+        "reading": "ga akachan",
+        "gloss": "a baby"
+      },
+      {
+        "text": "{1}",
+        "reading": "",
+        "gloss": "(animal)"
+      },
+      {
+        "text": "を産んだ！",
+        "reading": "o unda",
+        "gloss": "gave birth to"
+      }
+    ]
+  },
+  "AnimalNamingTitle": {
+    "japanese": "生まれた赤ちゃん{0}の名前：",
+    "english": "Name for the newborn {0}:",
+    "segments": [
+      {
+        "text": "生まれた",
+        "reading": "umareta",
+        "gloss": "newborn"
+      },
+      {
+        "text": "赤ちゃん",
+        "reading": "akachan",
+        "gloss": "baby"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(animal)"
+      },
+      {
+        "text": "の名前：",
+        "reading": "no namae",
+        "gloss": "'s name"
+      }
+    ]
+  },
+  "BabyNamingTitle_Female": {
+    "japanese": "この子、なんて名前がいいかな？",
+    "english": "What should we name her?",
+    "segments": [
+      {
+        "text": "この子、",
+        "reading": "kono ko",
+        "gloss": "this child"
+      },
+      {
+        "text": "なんて名前がいいかな？",
+        "reading": "nante namae ga ii ka na",
+        "gloss": "what name would be good"
+      }
+    ]
+  },
+  "BabyNamingTitle_Male": {
+    "japanese": "この子、なんて名前がいいかな？",
+    "english": "What should we name him?",
+    "segments": [
+      {
+        "text": "この子、",
+        "reading": "kono ko",
+        "gloss": "this child"
+      },
+      {
+        "text": "なんて名前がいいかな？",
+        "reading": "nante namae ga ii ka na",
+        "gloss": "what name would be good"
+      }
+    ]
+  },
+  "BeachNightMarket_NowOpen": {
+    "japanese": "夜の市は開催中です。",
+    "english": "The night market is now open.",
+    "segments": [
+      {
+        "text": "夜の市",
+        "reading": "yoru no ichi",
+        "gloss": "night market"
+      },
+      {
+        "text": "は開催中です。",
+        "reading": "wa kaisai chū desu",
+        "gloss": "is now being held"
+      }
+    ]
+  },
+  "BirthMessage_Adoption": {
+    "japanese": "夜のあいだに、養子縁組エージェンシーからかわいい{0}がやってきた！",
+    "english": "During the night, the adoption agency brought a lovely {0}!",
+    "segments": [
+      {
+        "text": "夜のあいだに、",
+        "reading": "yoru no aida ni",
+        "gloss": "during the night"
+      },
+      {
+        "text": "養子縁組エージェンシー",
+        "reading": "yōshi engumi ējenshī",
+        "gloss": "the adoption agency"
+      },
+      {
+        "text": "からかわいい",
+        "reading": "kara kawaii",
+        "gloss": "brought a lovely"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(child)"
+      },
+      {
+        "text": "がやってきた！",
+        "reading": "ga yatte kita",
+        "gloss": "came"
+      }
+    ]
+  },
+  "BirthMessage_PlayerMother": {
+    "japanese": "長い長い夜がすぎ、かわいい{0}がうまれてきた！",
+    "english": "After a long, long night, a lovely {0} was born!",
+    "segments": [
+      {
+        "text": "長い長い夜がすぎ、",
+        "reading": "nagai nagai yoru ga sugi",
+        "gloss": "after a long, long night"
+      },
+      {
+        "text": "かわいい",
+        "reading": "kawaii",
+        "gloss": "lovely"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(child)"
+      },
+      {
+        "text": "がうまれてきた！",
+        "reading": "ga umarete kita",
+        "gloss": "was born"
+      }
+    ]
+  },
+  "BirthMessage_SpouseMother": {
+    "japanese": "夜のあいだに、{1}が赤ちゃん{0}を産んだ！",
+    "english": "During the night, {1} gave birth to a baby {0}!",
+    "segments": [
+      {
+        "text": "夜のあいだに、",
+        "reading": "yoru no aida ni",
+        "gloss": "during the night"
+      },
+      {
+        "text": "{1}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "が赤ちゃん",
+        "reading": "ga akachan",
+        "gloss": "a baby"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(child)"
+      },
+      {
+        "text": "を産んだ！",
+        "reading": "o unda",
+        "gloss": "gave birth to"
+      }
+    ]
+  },
+  "BirthMessage_SpouseNaming_Female": {
+    "japanese": "{0}が赤ちゃん（女の子）の名前をつけています",
+    "english": "{0} is naming your baby girl",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "が赤ちゃん",
+        "reading": "ga akachan",
+        "gloss": "the baby"
+      },
+      {
+        "text": "（女の子）",
+        "reading": "onna no ko",
+        "gloss": "(girl)"
+      },
+      {
+        "text": "の名前をつけています",
+        "reading": "no namae o tsukete imasu",
+        "gloss": "is naming"
+      }
+    ]
+  },
+  "BirthMessage_SpouseNaming_Male": {
+    "japanese": "{0}が赤ちゃん（男の子）の名前をつけています",
+    "english": "{0} is naming your baby boy",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "が赤ちゃん",
+        "reading": "ga akachan",
+        "gloss": "the baby"
+      },
+      {
+        "text": "（男の子）",
+        "reading": "otoko no ko",
+        "gloss": "(boy)"
+      },
+      {
+        "text": "の名前をつけています",
+        "reading": "no namae o tsukete imasu",
+        "gloss": "is naming"
+      }
+    ]
+  },
+  "ElliottBook_default": {
+    "japanese": "惑星ヤッゾの興亡",
+    "english": "The rise and fall of planet Yazzo",
+    "segments": [
+      {
+        "text": "惑星ヤッゾ",
+        "reading": "wakusei Yazzo",
+        "gloss": "planet Yazzo"
+      },
+      {
+        "text": "の興亡",
+        "reading": "no kōbō",
+        "gloss": "'s rise and fall"
+      }
+    ]
+  },
+  "ElliottBook_mystery": {
+    "japanese": "青い塔",
+    "english": "Blue tower",
+    "segments": [
+      {
+        "text": "青い",
+        "reading": "aoi",
+        "gloss": "blue"
+      },
+      {
+        "text": "塔",
+        "reading": "tō",
+        "gloss": "tower"
+      }
+    ]
+  },
+  "ElliottBook_romance": {
+    "japanese": "カメリアステーション",
+    "english": "Camellia Station",
+    "segments": [
+      {
+        "text": "カメリアステーション",
+        "reading": "Kameria Sutēshon",
+        "gloss": "Camellia Station"
+      }
+    ]
+  },
+  "HaveBabyAnswer_No": {
+    "japanese": "今はちょっと・・・",
+    "english": "Not just now...",
+    "segments": [
+      {
+        "text": "今はちょっと・・・",
+        "reading": "ima wa chotto",
+        "gloss": "just now, a bit..."
+      }
+    ]
+  },
+  "HaveBabyAnswer_Yes": {
+    "japanese": "うん",
+    "english": "Yes",
+    "segments": [
+      {
+        "text": "うん",
+        "reading": "un",
+        "gloss": "yes"
+      }
+    ]
+  },
+  "HaveBabyQuestion": {
+    "japanese": "ねえ{0}、赤ちゃんがほしくない？",
+    "english": "Say, {0}, wouldn't you like a baby?",
+    "segments": [
+      {
+        "text": "ねえ",
+        "reading": "nē",
+        "gloss": "say"
+      },
+      {
+        "text": "{0}、",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "赤ちゃんがほしくない？",
+        "reading": "akachan ga hoshikunai",
+        "gloss": "don't you want a baby"
+      }
+    ]
+  },
+  "HaveBabyQuestion_Adoption": {
+    "japanese": "ねえ{0}、赤ちゃんがほしくない？",
+    "english": "Say, {0}, wouldn't you like a baby?",
+    "segments": [
+      {
+        "text": "ねえ",
+        "reading": "nē",
+        "gloss": "say"
+      },
+      {
+        "text": "{0}、",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "赤ちゃんがほしくない？",
+        "reading": "akachan ga hoshikunai",
+        "gloss": "don't you want a baby"
+      }
+    ]
+  },
+  "HavePlayerBabyQuestion": {
+    "japanese": "{0}との子供をさずかりたいですか？",
+    "english": "Do you want to have a child with {0}?",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "との子供をさずかりたいですか？",
+        "reading": "to no kodomo o sazukaritai desu ka",
+        "gloss": "do you wish to be blessed with a child by"
+      }
+    ]
+  },
+  "HavePlayerBabyQuestion_Adoption": {
+    "japanese": "{0}と一緒に養子をむかえたいですか？",
+    "english": "Do you want to adopt a child together with {0}?",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "と一緒に養子をむかえたいですか？",
+        "reading": "to issho ni yōshi o mukaetai desu ka",
+        "gloss": "do you want to take in an adopted child together with"
+      }
+    ]
+  },
+  "Maru_comet1": {
+    "japanese": "美しいでしょ？",
+    "english": "Beautiful, isn't it?",
+    "segments": [
+      {
+        "text": "美しいでしょ？",
+        "reading": "utsukushii desho",
+        "gloss": "beautiful, isn't it"
+      }
+    ]
+  },
+  "Maru_comet2": {
+    "japanese": "レアな奇跡のコスモス…",
+    "english": "A rare wonder of the cosmos...",
+    "segments": [
+      {
+        "text": "レアな",
+        "reading": "rea na",
+        "gloss": "rare"
+      },
+      {
+        "text": "奇跡の",
+        "reading": "kiseki no",
+        "gloss": "miraculous"
+      },
+      {
+        "text": "コスモス…",
+        "reading": "kosumosu",
+        "gloss": "cosmos"
+      }
+    ]
+  },
+  "Maru_comet3": {
+    "japanese": "その永遠の旅の一瞬がここにあるわ。",
+    "english": "Here is one moment of its eternal journey.",
+    "segments": [
+      {
+        "text": "その永遠の旅",
+        "reading": "sono eien no tabi",
+        "gloss": "that eternal journey"
+      },
+      {
+        "text": "の一瞬がここにあるわ。",
+        "reading": "no isshun ga koko ni aru wa",
+        "gloss": "one moment of it is here"
+      }
+    ]
+  },
+  "Maru_comet4": {
+    "japanese": "空っぽで、とても孤独…",
+    "english": "So empty, so lonely...",
+    "segments": [
+      {
+        "text": "空っぽで、",
+        "reading": "karappo de",
+        "gloss": "empty, and"
+      },
+      {
+        "text": "とても孤独…",
+        "reading": "totemo kodoku",
+        "gloss": "so lonely"
+      }
+    ]
+  },
+  "Maru_comet5": {
+    "japanese": "このスリリングな世界であなたと一緒にいることができてうれしいわ！",
+    "english": "I'm glad I get to be with you on this thrilling world!",
+    "segments": [
+      {
+        "text": "このスリリングな世界",
+        "reading": "kono suriringu na sekai",
+        "gloss": "this thrilling world"
+      },
+      {
+        "text": "であなたと一緒にいることができて",
+        "reading": "de anata to issho ni iru koto ga dekite",
+        "gloss": "being able to be with you on"
+      },
+      {
+        "text": "うれしいわ！",
+        "reading": "ureshii wa",
+        "gloss": "makes me glad"
+      }
+    ]
+  },
+  "SoundInTheNight_Earthquake": {
+    "japanese": "夜中、地震があった。",
+    "english": "There was an earthquake in the night.",
+    "segments": [
+      {
+        "text": "夜中、",
+        "reading": "yonaka",
+        "gloss": "in the middle of the night"
+      },
+      {
+        "text": "地震があった。",
+        "reading": "jishin ga atta",
+        "gloss": "there was an earthquake"
+      }
+    ]
+  },
+  "SoundInTheNight_Meteorite": {
+    "japanese": "夜中、爆発音が聞こえた…",
+    "english": "An explosion was heard in the night...",
+    "segments": [
+      {
+        "text": "夜中、",
+        "reading": "yonaka",
+        "gloss": "in the middle of the night"
+      },
+      {
+        "text": "爆発音が聞こえた…",
+        "reading": "bakuhatsu on ga kikoeta",
+        "gloss": "an explosion was heard"
+      }
+    ]
+  },
+  "SoundInTheNight_UFO": {
+    "japanese": "夜中、おかしな音が聞こえた…",
+    "english": "A strange sound was heard in the night...",
+    "segments": [
+      {
+        "text": "夜中、",
+        "reading": "yonaka",
+        "gloss": "in the middle of the night"
+      },
+      {
+        "text": "おかしな音が聞こえた…",
+        "reading": "okashi na oto ga kikoeta",
+        "gloss": "a strange sound was heard"
+      }
+    ]
+  }
+}

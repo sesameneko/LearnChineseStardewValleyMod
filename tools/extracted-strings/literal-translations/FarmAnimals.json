@@ -1,0 +1,533 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley FarmAnimals.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "DisplayType_Chicken_Blue": {
+    "japanese": "青ニワトリ",
+    "english": "Blue chicken",
+    "segments": [
+      {
+        "text": "青",
+        "reading": "ao",
+        "gloss": "blue"
+      },
+      {
+        "text": "ニワトリ",
+        "reading": "niwatori",
+        "gloss": "chicken"
+      }
+    ]
+  },
+  "DisplayType_Chicken_Brown": {
+    "japanese": "茶ニワトリ",
+    "english": "Brown chicken",
+    "segments": [
+      {
+        "text": "茶",
+        "reading": "cha",
+        "gloss": "brown"
+      },
+      {
+        "text": "ニワトリ",
+        "reading": "niwatori",
+        "gloss": "chicken"
+      }
+    ]
+  },
+  "DisplayType_Chicken_Golden": {
+    "japanese": "金のニワトリ",
+    "english": "Golden chicken",
+    "segments": [
+      {
+        "text": "金",
+        "reading": "kin",
+        "gloss": "gold"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "'s"
+      },
+      {
+        "text": "ニワトリ",
+        "reading": "niwatori",
+        "gloss": "chicken"
+      }
+    ]
+  },
+  "DisplayType_Chicken_Void": {
+    "japanese": "闇ニワトリ",
+    "english": "Void chicken",
+    "segments": [
+      {
+        "text": "闇",
+        "reading": "yami",
+        "gloss": "darkness / void"
+      },
+      {
+        "text": "ニワトリ",
+        "reading": "niwatori",
+        "gloss": "chicken"
+      }
+    ]
+  },
+  "DisplayType_Chicken_White": {
+    "japanese": "白ニワトリ",
+    "english": "White chicken",
+    "segments": [
+      {
+        "text": "白",
+        "reading": "shiro",
+        "gloss": "white"
+      },
+      {
+        "text": "ニワトリ",
+        "reading": "niwatori",
+        "gloss": "chicken"
+      }
+    ]
+  },
+  "DisplayType_Cow_Brown": {
+    "japanese": "B茶ウシ",
+    "english": "Brown cow",
+    "segments": [
+      {
+        "text": "B茶",
+        "reading": "cha",
+        "gloss": "brown (with a stray \"B\" in the game's text)"
+      },
+      {
+        "text": "ウシ",
+        "reading": "ushi",
+        "gloss": "cow"
+      }
+    ]
+  },
+  "DisplayType_Cow_White": {
+    "japanese": "白ウシ",
+    "english": "White cow",
+    "segments": [
+      {
+        "text": "白",
+        "reading": "shiro",
+        "gloss": "white"
+      },
+      {
+        "text": "ウシ",
+        "reading": "ushi",
+        "gloss": "cow"
+      }
+    ]
+  },
+  "DisplayType_Dinosaur": {
+    "japanese": "恐竜",
+    "english": "Dinosaur",
+    "segments": [
+      {
+        "text": "恐竜",
+        "reading": "kyōryū",
+        "gloss": "dinosaur"
+      }
+    ]
+  },
+  "DisplayType_Duck": {
+    "japanese": "アヒル",
+    "english": "Duck",
+    "segments": [
+      {
+        "text": "アヒル",
+        "reading": "ahiru",
+        "gloss": "duck"
+      }
+    ]
+  },
+  "DisplayType_Goat": {
+    "japanese": "ヤギ",
+    "english": "Goat",
+    "segments": [
+      {
+        "text": "ヤギ",
+        "reading": "yagi",
+        "gloss": "goat"
+      }
+    ]
+  },
+  "DisplayType_Ostrich": {
+    "japanese": "ダチョウ",
+    "english": "Ostrich",
+    "segments": [
+      {
+        "text": "ダチョウ",
+        "reading": "dachō",
+        "gloss": "ostrich"
+      }
+    ]
+  },
+  "DisplayType_Pig": {
+    "japanese": "子ブタ",
+    "english": "Piglet",
+    "segments": [
+      {
+        "text": "子ブタ",
+        "reading": "kobuta",
+        "gloss": "piglet"
+      }
+    ]
+  },
+  "DisplayType_Rabbit": {
+    "japanese": "ウサギ",
+    "english": "Rabbit",
+    "segments": [
+      {
+        "text": "ウサギ",
+        "reading": "usagi",
+        "gloss": "rabbit"
+      }
+    ]
+  },
+  "DisplayType_Sheep": {
+    "japanese": "ヒツジ",
+    "english": "Sheep",
+    "segments": [
+      {
+        "text": "ヒツジ",
+        "reading": "hitsuji",
+        "gloss": "sheep"
+      }
+    ]
+  },
+  "MoodMessage_DisturbedByDog_Female": {
+    "japanese": "{0}はビクビクしているみたい。きのうの夜、なにかイヤなことがおきたようだ…",
+    "english": "{0} seems jumpy. Something unpleasant seems to have happened last night...",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はビクビクしているみたい。",
+        "reading": "wa bikubiku shite iru mitai",
+        "gloss": "seems jumpy"
+      },
+      {
+        "text": "きのうの夜、",
+        "reading": "kinō no yoru",
+        "gloss": "last night"
+      },
+      {
+        "text": "なにかイヤなことがおきたようだ…",
+        "reading": "nanika iya na koto ga okita yō da",
+        "gloss": "something unpleasant seems to have happened"
+      }
+    ]
+  },
+  "MoodMessage_DisturbedByDog_Male": {
+    "japanese": "{0}はビクビクしているみたい。きのうの夜、なにかイヤなことがおきたようだ…",
+    "english": "{0} seems jumpy. Something unpleasant seems to have happened last night...",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はビクビクしているみたい。",
+        "reading": "wa bikubiku shite iru mitai",
+        "gloss": "seems jumpy"
+      },
+      {
+        "text": "きのうの夜、",
+        "reading": "kinō no yoru",
+        "gloss": "last night"
+      },
+      {
+        "text": "なにかイヤなことがおきたようだ…",
+        "reading": "nanika iya na koto ga okita yō da",
+        "gloss": "something unpleasant seems to have happened"
+      }
+    ]
+  },
+  "MoodMessage_Fine": {
+    "japanese": "{0}はげんきそう。",
+    "english": "{0} looks well.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はげんきそう。",
+        "reading": "wa genki sō",
+        "gloss": "looks well"
+      }
+    ]
+  },
+  "MoodMessage_Happy": {
+    "japanese": "{0}はとってもしあわせそう！",
+    "english": "{0} looks very happy!",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はとってもしあわせそう！",
+        "reading": "wa tottemo shiawase sō",
+        "gloss": "looks very happy"
+      }
+    ]
+  },
+  "MoodMessage_Hungry1": {
+    "japanese": "{0}はイライラしてるみたい。",
+    "english": "{0} seems irritable.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はイライラしてるみたい。",
+        "reading": "wa iraira shiteru mitai",
+        "gloss": "seems irritated"
+      }
+    ]
+  },
+  "MoodMessage_Hungry2": {
+    "japanese": "{0}はすこしやせたみたい。",
+    "english": "{0} looks a little thin.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はすこしやせたみたい。",
+        "reading": "wa sukoshi yaseta mitai",
+        "gloss": "seems to have got a little thin"
+      }
+    ]
+  },
+  "MoodMessage_LeftOutsideAtNight_Female": {
+    "japanese": "{0}はフキゲンだ。きのうの夜、外ですごしたようだ…",
+    "english": "{0} is in a bad mood. It seems to have spent last night outside...",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はフキゲンだ。",
+        "reading": "wa fukigen da",
+        "gloss": "is in a bad mood"
+      },
+      {
+        "text": "きのうの夜、",
+        "reading": "kinō no yoru",
+        "gloss": "last night"
+      },
+      {
+        "text": "外ですごしたようだ…",
+        "reading": "soto de sugoshita yō da",
+        "gloss": "it seems to have spent outside"
+      }
+    ]
+  },
+  "MoodMessage_LeftOutsideAtNight_Male": {
+    "japanese": "{0}はフキゲンだ。きのうの夜、外ですごしたようだ…",
+    "english": "{0} is in a bad mood. It seems to have spent last night outside...",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はフキゲンだ。",
+        "reading": "wa fukigen da",
+        "gloss": "is in a bad mood"
+      },
+      {
+        "text": "きのうの夜、",
+        "reading": "kinō no yoru",
+        "gloss": "last night"
+      },
+      {
+        "text": "外ですごしたようだ…",
+        "reading": "soto de sugoshita yō da",
+        "gloss": "it seems to have spent outside"
+      }
+    ]
+  },
+  "MoodMessage_NewHome_Adult_Female_1": {
+    "japanese": "{0} は注意ぶかくあちこち見まわっている。あたらしい家に少しずつなれているようだ。",
+    "english": "{0} is looking carefully all around. It seems to be settling into its new home.",
+    "segments": [
+      {
+        "text": "{0} ",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "は注意ぶかくあちこち見まわっている。",
+        "reading": "wa chūibukaku achikochi mimawatte iru",
+        "gloss": "is looking carefully all around"
+      },
+      {
+        "text": "あたらしい家に少しずつなれているようだ。",
+        "reading": "atarashii ie ni sukoshi zutsu narete iru yō da",
+        "gloss": "it seems to be getting used to the new home"
+      }
+    ]
+  },
+  "MoodMessage_NewHome_Adult_Female_2": {
+    "japanese": "{0}は注意ぶかくあちこち見まわっている。新しい世界は不思議なものだ。",
+    "english": "{0} is looking carefully all around. The new world is a strange thing.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "は注意ぶかくあちこち見まわっている。",
+        "reading": "wa chūibukaku achikochi mimawatte iru",
+        "gloss": "is looking carefully all around"
+      },
+      {
+        "text": "新しい世界は不思議なものだ。",
+        "reading": "atarashii sekai wa fushigi na mono da",
+        "gloss": "the new world is a strange thing"
+      }
+    ]
+  },
+  "MoodMessage_NewHome_Adult_Male_1": {
+    "japanese": "{0}は注意ぶかくあちこち見まわっている。あたらしい家に少しずつなれているようだ。",
+    "english": "{0} is looking carefully all around. It seems to be settling into its new home.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "は注意ぶかくあちこち見まわっている。",
+        "reading": "wa chūibukaku achikochi mimawatte iru",
+        "gloss": "is looking carefully all around"
+      },
+      {
+        "text": "あたらしい家に少しずつなれているようだ。",
+        "reading": "atarashii ie ni sukoshi zutsu narete iru yō da",
+        "gloss": "it seems to be getting used to the new home"
+      }
+    ]
+  },
+  "MoodMessage_NewHome_Adult_Male_2": {
+    "japanese": "{0}は注意ぶかくあちこち見まわっている。新しい世界は不思議なものだ。",
+    "english": "{0} is looking carefully all around. The new world is a strange thing.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "は注意ぶかくあちこち見まわっている。",
+        "reading": "wa chūibukaku achikochi mimawatte iru",
+        "gloss": "is looking carefully all around"
+      },
+      {
+        "text": "新しい世界は不思議なものだ。",
+        "reading": "atarashii sekai wa fushigi na mono da",
+        "gloss": "the new world is a strange thing"
+      }
+    ]
+  },
+  "MoodMessage_NewHome_Baby_Female": {
+    "japanese": "生まれたばかりの{0}はよちよちあるいている。あたらしい世界に興味しんしんだ。",
+    "english": "Newly born, {0} is toddling about. It's full of curiosity about its new world.",
+    "segments": [
+      {
+        "text": "生まれたばかりの",
+        "reading": "umareta bakari no",
+        "gloss": "newly born"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はよちよちあるいている。",
+        "reading": "wa yochiyochi aruite iru",
+        "gloss": "is toddling along"
+      },
+      {
+        "text": "あたらしい世界に興味しんしんだ。",
+        "reading": "atarashii sekai ni kyōmi shinshin da",
+        "gloss": "is full of curiosity about the new world"
+      }
+    ]
+  },
+  "MoodMessage_NewHome_Baby_Male": {
+    "japanese": "生まれたばかりの{0}はよちよちあるいている。あたらしい世界に興味しんしんだ。",
+    "english": "Newly born, {0} is toddling about. It's full of curiosity about its new world.",
+    "segments": [
+      {
+        "text": "生まれたばかりの",
+        "reading": "umareta bakari no",
+        "gloss": "newly born"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はよちよちあるいている。",
+        "reading": "wa yochiyochi aruite iru",
+        "gloss": "is toddling along"
+      },
+      {
+        "text": "あたらしい世界に興味しんしんだ。",
+        "reading": "atarashii sekai ni kyōmi shinshin da",
+        "gloss": "is full of curiosity about the new world"
+      }
+    ]
+  },
+  "MoodMessage_Sad": {
+    "japanese": "{0}はかなしそう。",
+    "english": "{0} looks sad.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はかなしそう。",
+        "reading": "wa kanashi sō",
+        "gloss": "looks sad"
+      }
+    ]
+  },
+  "TryingToSleep": {
+    "japanese": "{0}は寝ようとしている。",
+    "english": "{0} is trying to sleep.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "は寝ようとしている。",
+        "reading": "wa neyō to shite iru",
+        "gloss": "is trying to sleep"
+      }
+    ]
+  }
+}
