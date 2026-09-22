@@ -2,6 +2,7 @@ using System;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
+using StardewValley;
 
 namespace LanguageStudyStardewValleyMod.Patches
 {
@@ -136,6 +137,14 @@ namespace LanguageStudyStardewValleyMod.Patches
                             ModEntry.Log($"[miss] body:  '{rawBody!.Replace("\n", "\\n")}'");
                     }
                 }
+
+                // the translation is a second box the reader asks for by moving onto the tooltip,
+                // not something that pops up beside every tooltip the game happens to draw. The
+                // cursor can only *be* inside a tooltip because one is being held open for it --
+                // see TooltipLinger (ambient) and FrozenTooltip (pinned); a plain vanilla tooltip
+                // sits offset from the cursor, so this is false for it.
+                if (!capturedBox.Contains(Game1.getMouseX(ui_scale: true), Game1.getMouseY(ui_scale: true)))
+                    return;
 
                 string overlayText = TooltipLayout.ComposeOverlayText(translatedTitle, translatedBody);
                 if (overlayText.Length == 0)
