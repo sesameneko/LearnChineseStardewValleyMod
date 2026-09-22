@@ -1,0 +1,3314 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley SpecialOrderStrings.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Caroline_Name": {
+    "japanese": "島の食材",
+    "english": "Island Ingredients",
+    "segments": [
+      {
+        "text": "島の",
+        "reading": "shima no",
+        "gloss": "island"
+      },
+      {
+        "text": "食材",
+        "reading": "shokuzai",
+        "gloss": "ingredients"
+      }
+    ]
+  },
+  "Caroline_Objective_0_Text": {
+    "japanese": "{Crop:Text}を100個出荷する。",
+    "english": "Ship 100 {Crop:Text}.",
+    "segments": [
+      {
+        "text": "{Crop:Text}",
+        "reading": "",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "を100個",
+        "reading": "o hyakko",
+        "gloss": "100 of"
+      },
+      {
+        "text": "出荷する。",
+        "reading": "shukka suru",
+        "gloss": "ship"
+      }
+    ]
+  },
+  "Caroline_Text": {
+    "japanese": "南国の料理を作ってみたいけど、なかなかいい食材が見つからないの。100個の{Crop:TextPlural}を送ってくれたら、とっても助かるわ！ ",
+    "english": "I'd like to try tropical cooking, but good ingredients are hard to find. If you sent me 100 {Crop:TextPlural} it would be a great help!",
+    "segments": [
+      {
+        "text": "南国の料理",
+        "reading": "nangoku no ryōri",
+        "gloss": "tropical cooking"
+      },
+      {
+        "text": "を作ってみたいけど、",
+        "reading": "o tsukutte mitai kedo",
+        "gloss": "I'd like to try making, but"
+      },
+      {
+        "text": "なかなかいい食材が見つからないの。",
+        "reading": "nakanaka ii shokuzai ga mitsukaranai no",
+        "gloss": "good ingredients are hard to find"
+      },
+      {
+        "text": "100個の",
+        "reading": "hyakko no",
+        "gloss": "100 of"
+      },
+      {
+        "text": "{Crop:TextPlural}",
+        "reading": "",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "を送ってくれたら、",
+        "reading": "o okutte kuretara",
+        "gloss": "if you sent me"
+      },
+      {
+        "text": "とっても助かるわ！ ",
+        "reading": "tottemo tasukaru wa",
+        "gloss": "it would help enormously"
+      }
+    ]
+  },
+  "Clint_Name": {
+    "japanese": "洞窟のパトロール",
+    "english": "Cave Patrol",
+    "segments": [
+      {
+        "text": "洞窟の",
+        "reading": "dōkutsu no",
+        "gloss": "cave"
+      },
+      {
+        "text": "パトロール",
+        "reading": "patorōru",
+        "gloss": "patrol"
+      }
+    ]
+  },
+  "Clint_Objective_0_Text": {
+    "japanese": "{Monster:LocalizedName}を50体倒す。",
+    "english": "Slay 50 {Monster:LocalizedName}.",
+    "segments": [
+      {
+        "text": "{Monster:LocalizedName}",
+        "reading": "",
+        "gloss": "(monster)"
+      },
+      {
+        "text": "を50体",
+        "reading": "o gojittai",
+        "gloss": "50 of"
+      },
+      {
+        "text": "倒す。",
+        "reading": "taosu",
+        "gloss": "defeat"
+      }
+    ]
+  },
+  "Clint_RE_Monster_0_LocalizedName": {
+    "japanese": "コウモリ",
+    "english": "Bats",
+    "segments": [
+      {
+        "text": "コウモリ",
+        "reading": "kōmori",
+        "gloss": "bats"
+      }
+    ]
+  },
+  "Clint_RE_Monster_1_LocalizedName": {
+    "japanese": "ススおばけ",
+    "english": "Dust Sprites",
+    "segments": [
+      {
+        "text": "ススおばけ",
+        "reading": "susu obake",
+        "gloss": "soot ghosts"
+      }
+    ]
+  },
+  "Clint_RE_Monster_2_LocalizedName": {
+    "japanese": "スケルトン",
+    "english": "Skeletons",
+    "segments": [
+      {
+        "text": "スケルトン",
+        "reading": "sukeruton",
+        "gloss": "skeletons"
+      }
+    ]
+  },
+  "Clint_RE_Monster_3_LocalizedName": {
+    "japanese": "イモ虫",
+    "english": "Grubs",
+    "segments": [
+      {
+        "text": "イモ虫",
+        "reading": "imomushi",
+        "gloss": "grubs"
+      }
+    ]
+  },
+  "Clint_Text": {
+    "japanese": "この土地の洞窟の{Monster:LocalizedName}の数が多くて、採掘者が危険にさらされている…おれではなく、他の人々がだ！あいつらを50体倒してくれたら報酬をはずむよ。 -クリントより",
+    "english": "There are so many {Monster:LocalizedName} in the local caves that miners are in danger... other people, not me! Slay 50 of them and I'll pay well. -Clint",
+    "segments": [
+      {
+        "text": "この土地の洞窟の",
+        "reading": "kono tochi no dōkutsu no",
+        "gloss": "in this land's caves"
+      },
+      {
+        "text": "{Monster:LocalizedName}",
+        "reading": "",
+        "gloss": "(monster)"
+      },
+      {
+        "text": "の数が多くて、",
+        "reading": "no kazu ga ōkute",
+        "gloss": "are so numerous that"
+      },
+      {
+        "text": "採掘者が危険にさらされている…",
+        "reading": "saikutsusha ga kiken ni sarasarete iru",
+        "gloss": "miners are exposed to danger"
+      },
+      {
+        "text": "おれではなく、",
+        "reading": "ore de wa naku",
+        "gloss": "not me"
+      },
+      {
+        "text": "他の人々がだ！",
+        "reading": "hoka no hitobito ga da",
+        "gloss": "but other people"
+      },
+      {
+        "text": "あいつらを50体倒してくれたら",
+        "reading": "aitsura o gojittai taoshite kuretara",
+        "gloss": "if you slay 50 of them"
+      },
+      {
+        "text": "報酬をはずむよ。",
+        "reading": "hōshū o hazumu yo",
+        "gloss": "I'll pay generously"
+      },
+      {
+        "text": " -クリントより",
+        "reading": "Kurinto yori",
+        "gloss": "from Clint"
+      }
+    ]
+  },
+  "Demetrius2_Name": {
+    "japanese": "バイオームバランス",
+    "english": "Biome Balance",
+    "segments": [
+      {
+        "text": "バイオーム",
+        "reading": "baiōmu",
+        "gloss": "biome"
+      },
+      {
+        "text": "バランス",
+        "reading": "baransu",
+        "gloss": "balance"
+      }
+    ]
+  },
+  "Demetrius2_Objective_0_Text": {
+    "japanese": "{FishType:Text}を20匹捕まえる。",
+    "english": "Catch 20 {FishType:Text}.",
+    "segments": [
+      {
+        "text": "{FishType:Text}",
+        "reading": "",
+        "gloss": "(fish type)"
+      },
+      {
+        "text": "を20匹",
+        "reading": "o nijippiki",
+        "gloss": "20 of"
+      },
+      {
+        "text": "捕まえる。",
+        "reading": "tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "Demetrius2_RE_FishType_0_Text": {
+    "japanese": "川の魚",
+    "english": "river fish",
+    "segments": [
+      {
+        "text": "川の",
+        "reading": "kawa no",
+        "gloss": "river"
+      },
+      {
+        "text": "魚",
+        "reading": "sakana",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Demetrius2_RE_FishType_1_Text": {
+    "japanese": "海の魚",
+    "english": "ocean fish",
+    "segments": [
+      {
+        "text": "海の",
+        "reading": "umi no",
+        "gloss": "ocean"
+      },
+      {
+        "text": "魚",
+        "reading": "sakana",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Demetrius2_RE_FishType_2_Text": {
+    "japanese": "湖の魚",
+    "english": "lake fish",
+    "segments": [
+      {
+        "text": "湖の",
+        "reading": "mizuumi no",
+        "gloss": "lake"
+      },
+      {
+        "text": "魚",
+        "reading": "sakana",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Demetrius2_Text": {
+    "japanese": "原因は分からないけど、{FishType:Text}の数が異常なほど増えているんだ。数を減らすために、この土地の釣り人の助けを借りたいんだ。",
+    "english": "I don't know the cause, but the number of {FishType:Text} has grown abnormally. I'd like a local angler's help reducing them.",
+    "segments": [
+      {
+        "text": "原因は分からないけど、",
+        "reading": "gen'in wa wakaranai kedo",
+        "gloss": "I don't know the cause, but"
+      },
+      {
+        "text": "{FishType:Text}",
+        "reading": "",
+        "gloss": "(fish type)"
+      },
+      {
+        "text": "の数が異常なほど増えているんだ。",
+        "reading": "no kazu ga ijō na hodo fuete iru n da",
+        "gloss": "the numbers have grown abnormally"
+      },
+      {
+        "text": "数を減らすために、",
+        "reading": "kazu o herasu tame ni",
+        "gloss": "in order to reduce them"
+      },
+      {
+        "text": "この土地の釣り人の助けを借りたいんだ。",
+        "reading": "kono tochi no tsuribito no tasuke o karitai n da",
+        "gloss": "I want to borrow a local angler's help"
+      }
+    ]
+  },
+  "Demetrius_Name": {
+    "japanese": "水生生物の増加",
+    "english": "Aquatic Overpopulation",
+    "segments": [
+      {
+        "text": "水生生物の",
+        "reading": "suisei seibutsu no",
+        "gloss": "aquatic life"
+      },
+      {
+        "text": "増加",
+        "reading": "zōka",
+        "gloss": "increase"
+      }
+    ]
+  },
+  "Demetrius_Objective_0_Text": {
+    "japanese": "{FishType:Text}を10匹捕まえる。",
+    "english": "Catch 10 {FishType:Text}.",
+    "segments": [
+      {
+        "text": "{FishType:Text}",
+        "reading": "",
+        "gloss": "(fish type)"
+      },
+      {
+        "text": "を10匹",
+        "reading": "o jippiki",
+        "gloss": "10 of"
+      },
+      {
+        "text": "捕まえる。",
+        "reading": "tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "Demetrius_Text": {
+    "japanese": "原因は分からないけど、{FishType:Text}の数が異常なほど増えているんだ。数を減らすために、この土地の釣り人の助けを借りたいんだ。",
+    "english": "I don't know the cause, but the number of {FishType:Text} has grown abnormally. I'd like a local angler's help reducing them.",
+    "segments": [
+      {
+        "text": "原因は分からないけど、",
+        "reading": "gen'in wa wakaranai kedo",
+        "gloss": "I don't know the cause, but"
+      },
+      {
+        "text": "{FishType:Text}",
+        "reading": "",
+        "gloss": "(fish type)"
+      },
+      {
+        "text": "の数が異常なほど増えているんだ。",
+        "reading": "no kazu ga ijō na hodo fuete iru n da",
+        "gloss": "the numbers have grown abnormally"
+      },
+      {
+        "text": "数を減らすために、",
+        "reading": "kazu o herasu tame ni",
+        "gloss": "in order to reduce them"
+      },
+      {
+        "text": "この土地の釣り人の助けを借りたいんだ。",
+        "reading": "kono tochi no tsuribito no tasuke o karitai n da",
+        "gloss": "I want to borrow a local angler's help"
+      }
+    ]
+  },
+  "Emily_Name": {
+    "japanese": "岩で元気回復",
+    "english": "Rock Rejuvenation",
+    "segments": [
+      {
+        "text": "岩で",
+        "reading": "iwa de",
+        "gloss": "with rocks"
+      },
+      {
+        "text": "元気回復",
+        "reading": "genki kaifuku",
+        "gloss": "recovering vitality"
+      }
+    ]
+  },
+  "Emily_Objective_0_Text": {
+    "japanese": "ルビーをエミリーに渡す。",
+    "english": "Deliver a Ruby to Emily",
+    "segments": [
+      {
+        "text": "ルビー",
+        "reading": "rubī",
+        "gloss": "ruby"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "に渡す。",
+        "reading": "ni watasu",
+        "gloss": "hand to"
+      }
+    ]
+  },
+  "Emily_Objective_1_Text": {
+    "japanese": "トパーズをエミリーに渡す。",
+    "english": "Deliver a Topaz to Emily",
+    "segments": [
+      {
+        "text": "トパーズ",
+        "reading": "topāzu",
+        "gloss": "topaz"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "に渡す。",
+        "reading": "ni watasu",
+        "gloss": "hand to"
+      }
+    ]
+  },
+  "Emily_Objective_2_Text": {
+    "japanese": "エメラルドをエミリーに渡す",
+    "english": "Deliver an Emerald to Emily",
+    "segments": [
+      {
+        "text": "エメラルド",
+        "reading": "emerarudo",
+        "gloss": "emerald"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "に渡す",
+        "reading": "ni watasu",
+        "gloss": "hand to"
+      }
+    ]
+  },
+  "Emily_Objective_3_Text": {
+    "japanese": "ヒスイをエミリーに渡す。",
+    "english": "Deliver a Jade to Emily",
+    "segments": [
+      {
+        "text": "ヒスイ",
+        "reading": "hisui",
+        "gloss": "jade"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "に渡す。",
+        "reading": "ni watasu",
+        "gloss": "hand to"
+      }
+    ]
+  },
+  "Emily_Objective_4_Text": {
+    "japanese": "アメシストをエミリーに渡す。",
+    "english": "Deliver an Amethyst to Emily",
+    "segments": [
+      {
+        "text": "アメシスト",
+        "reading": "ameshisuto",
+        "gloss": "amethyst"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "に渡す。",
+        "reading": "ni watasu",
+        "gloss": "hand to"
+      }
+    ]
+  },
+  "Emily_Text": {
+    "japanese": "やあ！友達を招待して、「岩で元気回復」セレモニーをするつもりなんだけど、良いエネルギーとチャネリングするにはクリスタルがいくつか必要なんだ。手を貸してくれない？",
+    "english": "Hey! I'm inviting friends over for a \"rock rejuvenation\" ceremony, but I need some crystals to channel good energy. Could you lend a hand?",
+    "segments": [
+      {
+        "text": "やあ！",
+        "reading": "yā",
+        "gloss": "hey"
+      },
+      {
+        "text": "友達を招待して、",
+        "reading": "tomodachi o shōtai shite",
+        "gloss": "inviting friends over"
+      },
+      {
+        "text": "「岩で元気回復」セレモニー",
+        "reading": "iwa de genki kaifuku seremonī",
+        "gloss": "a \"rock rejuvenation\" ceremony"
+      },
+      {
+        "text": "をするつもりなんだけど、",
+        "reading": "o suru tsumori nan da kedo",
+        "gloss": "I intend to hold, but"
+      },
+      {
+        "text": "良いエネルギーとチャネリングするには",
+        "reading": "yoi enerugī to chaneringu suru ni wa",
+        "gloss": "to channel good energy"
+      },
+      {
+        "text": "クリスタルがいくつか必要なんだ。",
+        "reading": "kurisutaru ga ikutsuka hitsuyō nan da",
+        "gloss": "I need some crystals"
+      },
+      {
+        "text": "手を貸してくれない？",
+        "reading": "te o kashite kurenai",
+        "gloss": "won't you lend a hand"
+      }
+    ]
+  },
+  "Evelyn_Name": {
+    "japanese": "ジョージへの贈り物",
+    "english": "Gifts for George",
+    "segments": [
+      {
+        "text": "ジョージへの",
+        "reading": "Jōji e no",
+        "gloss": "for George"
+      },
+      {
+        "text": "贈り物",
+        "reading": "okurimono",
+        "gloss": "gifts"
+      }
+    ]
+  },
+  "Evelyn_Objective_0_Text": {
+    "japanese": "ポロネギを12個収穫する。",
+    "english": "Gather 12 leeks.",
+    "segments": [
+      {
+        "text": "ポロネギ",
+        "reading": "poronegi",
+        "gloss": "leeks"
+      },
+      {
+        "text": "を12個",
+        "reading": "o jūniko",
+        "gloss": "12 of"
+      },
+      {
+        "text": "収穫する。",
+        "reading": "shūkaku suru",
+        "gloss": "harvest"
+      }
+    ]
+  },
+  "Evelyn_Objective_1_Text": {
+    "japanese": "ポロネギをエブリンのキッチンに置く。",
+    "english": "Place the leeks in Evelyn's kitchen.",
+    "segments": [
+      {
+        "text": "ポロネギ",
+        "reading": "poronegi",
+        "gloss": "the leeks"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "エブリンのキッチン",
+        "reading": "Eburin no kitchin",
+        "gloss": "Evelyn's kitchen"
+      },
+      {
+        "text": "に置く。",
+        "reading": "ni oku",
+        "gloss": "place in"
+      }
+    ]
+  },
+  "Evelyn_Text": {
+    "japanese": "ジョージは、街の誰からも大切にされていないと思っているわ。そんなの間違いよって彼に伝えたいの！12個のポロネギが秘密のイタズラには必要よ…彼の大好物なの。 -エブリンより",
+    "english": "George thinks nobody in town cares about him. I want to prove him wrong! Twelve leeks are what this secret prank needs... they're his favorite. -Evelyn",
+    "segments": [
+      {
+        "text": "ジョージ",
+        "reading": "Jōji",
+        "gloss": "George"
+      },
+      {
+        "text": "は、街の誰からも大切にされていないと思っているわ。",
+        "reading": "wa machi no dare kara mo taisetsu ni sarete inai to omotte iru wa",
+        "gloss": "thinks nobody in town cares for him"
+      },
+      {
+        "text": "そんなの間違いよって彼に伝えたいの！",
+        "reading": "sonna no machigai yo tte kare ni tsutaetai no",
+        "gloss": "I want to tell him that's wrong"
+      },
+      {
+        "text": "12個のポロネギ",
+        "reading": "jūniko no poronegi",
+        "gloss": "twelve leeks"
+      },
+      {
+        "text": "が秘密のイタズラには必要よ…",
+        "reading": "ga himitsu no itazura ni wa hitsuyō yo",
+        "gloss": "are what the secret prank needs"
+      },
+      {
+        "text": "彼の大好物なの。",
+        "reading": "kare no daikōbutsu na no",
+        "gloss": "they're his favorite"
+      },
+      {
+        "text": " -エブリンより",
+        "reading": "Eburin yori",
+        "gloss": "from Evelyn"
+      }
+    ]
+  },
+  "Gunther_Name": {
+    "japanese": "過去の破片",
+    "english": "Fragments of the Past",
+    "segments": [
+      {
+        "text": "過去の",
+        "reading": "kako no",
+        "gloss": "past"
+      },
+      {
+        "text": "破片",
+        "reading": "hahen",
+        "gloss": "fragments"
+      }
+    ]
+  },
+  "Gunther_Objective_0_Text": {
+    "japanese": "骨を博物館のカウンターのドロップボックスの中に置く。",
+    "english": "Place the bones in the drop box at the museum counter.",
+    "segments": [
+      {
+        "text": "骨",
+        "reading": "hone",
+        "gloss": "the bones"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "博物館のカウンターのドロップボックス",
+        "reading": "hakubutsukan no kauntā no doroppu bokkusu",
+        "gloss": "the drop box at the museum counter"
+      },
+      {
+        "text": "の中に置く。",
+        "reading": "no naka ni oku",
+        "gloss": "place inside"
+      }
+    ]
+  },
+  "Gunther_Objective_1_Text": {
+    "japanese": "骨を100個集める。",
+    "english": "Gather 100 pieces of bone.",
+    "segments": [
+      {
+        "text": "骨",
+        "reading": "hone",
+        "gloss": "bone"
+      },
+      {
+        "text": "を100個",
+        "reading": "o hyakko",
+        "gloss": "100 pieces of"
+      },
+      {
+        "text": "集める。",
+        "reading": "atsumeru",
+        "gloss": "gather"
+      }
+    ]
+  },
+  "Gunther_Text": {
+    "japanese": "アマチュアの古生物学者を募集しています！研究のために100個の骨が必要なのです。博物館のカウンターまでお持ちください。 -ギュンターより",
+    "english": "Calling all amateur paleontologists! I need 100 pieces of bone for my research. Please bring them to the museum counter. -Gunther",
+    "segments": [
+      {
+        "text": "アマチュアの古生物学者",
+        "reading": "amachua no koseibutsu gakusha",
+        "gloss": "amateur paleontologists"
+      },
+      {
+        "text": "を募集しています！",
+        "reading": "o boshū shite imasu",
+        "gloss": "I am recruiting"
+      },
+      {
+        "text": "研究のために",
+        "reading": "kenkyū no tame ni",
+        "gloss": "for my research"
+      },
+      {
+        "text": "100個の骨",
+        "reading": "hyakko no hone",
+        "gloss": "100 pieces of bone"
+      },
+      {
+        "text": "が必要なのです。",
+        "reading": "ga hitsuyō na no desu",
+        "gloss": "are needed"
+      },
+      {
+        "text": "博物館のカウンター",
+        "reading": "hakubutsukan no kauntā",
+        "gloss": "the museum counter"
+      },
+      {
+        "text": "までお持ちください。",
+        "reading": "made o-mochi kudasai",
+        "gloss": "please bring them to"
+      },
+      {
+        "text": " -ギュンターより",
+        "reading": "Gyuntā yori",
+        "gloss": "from Gunther"
+      }
+    ]
+  },
+  "Gus_Name": {
+    "japanese": "ガスの名物オムレツ",
+    "english": "Gus' Famous Omelet",
+    "segments": [
+      {
+        "text": "ガスの",
+        "reading": "Gasu no",
+        "gloss": "Gus's"
+      },
+      {
+        "text": "名物",
+        "reading": "meibutsu",
+        "gloss": "famous"
+      },
+      {
+        "text": "オムレツ",
+        "reading": "omuretsu",
+        "gloss": "omelet"
+      }
+    ]
+  },
+  "Gus_Objective_0_Text": {
+    "japanese": "タマゴを24個集める。",
+    "english": "Gather 24 eggs.",
+    "segments": [
+      {
+        "text": "タマゴ",
+        "reading": "tamago",
+        "gloss": "eggs"
+      },
+      {
+        "text": "を24個",
+        "reading": "o nijūyonko",
+        "gloss": "24 of"
+      },
+      {
+        "text": "集める。",
+        "reading": "atsumeru",
+        "gloss": "gather"
+      }
+    ]
+  },
+  "Gus_Objective_1_Text": {
+    "japanese": "卵をガスの冷蔵庫に入れる。",
+    "english": "Put the eggs in Gus' fridge.",
+    "segments": [
+      {
+        "text": "卵",
+        "reading": "tamago",
+        "gloss": "the eggs"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "ガスの冷蔵庫",
+        "reading": "Gasu no reizōko",
+        "gloss": "Gus's fridge"
+      },
+      {
+        "text": "に入れる。",
+        "reading": "ni ireru",
+        "gloss": "put into"
+      }
+    ]
+  },
+  "Gus_RE_Greeting_0": {
+    "japanese": "どうしても名物の巨大オムレツを作りたいんだ",
+    "english": "I really want to make my famous giant omelet",
+    "segments": [
+      {
+        "text": "どうしても",
+        "reading": "dōshitemo",
+        "gloss": "no matter what"
+      },
+      {
+        "text": "名物の巨大オムレツ",
+        "reading": "meibutsu no kyodai omuretsu",
+        "gloss": "my famous giant omelet"
+      },
+      {
+        "text": "を作りたいんだ",
+        "reading": "o tsukuritai n da",
+        "gloss": "I want to make"
+      }
+    ]
+  },
+  "Gus_RE_Greeting_1": {
+    "japanese": "どうしてもまた巨大オムレツを作りたいんだ",
+    "english": "I really want to make another giant omelet",
+    "segments": [
+      {
+        "text": "どうしても",
+        "reading": "dōshitemo",
+        "gloss": "no matter what"
+      },
+      {
+        "text": "また",
+        "reading": "mata",
+        "gloss": "again"
+      },
+      {
+        "text": "巨大オムレツ",
+        "reading": "kyodai omuretsu",
+        "gloss": "a giant omelet"
+      },
+      {
+        "text": "を作りたいんだ",
+        "reading": "o tsukuritai n da",
+        "gloss": "I want to make"
+      }
+    ]
+  },
+  "Gus_Text": {
+    "japanese": "{Greeting}…でも卵が2ダース必要なんだ。誰か生産者さんはいませんか？ -ガスより",
+    "english": "{Greeting}... but I need two dozen eggs. Is there a producer out there? -Gus",
+    "segments": [
+      {
+        "text": "{Greeting}",
+        "reading": "",
+        "gloss": "(greeting)"
+      },
+      {
+        "text": "…でも",
+        "reading": "demo",
+        "gloss": "but"
+      },
+      {
+        "text": "卵が2ダース必要なんだ。",
+        "reading": "tamago ga ni dāsu hitsuyō nan da",
+        "gloss": "I need two dozen eggs"
+      },
+      {
+        "text": "誰か生産者さんはいませんか？",
+        "reading": "dareka seisansha-san wa imasen ka",
+        "gloss": "isn't there a producer somewhere"
+      },
+      {
+        "text": " -ガスより",
+        "reading": "Gasu yori",
+        "gloss": "from Gus"
+      }
+    ]
+  },
+  "Lewis_Name": {
+    "japanese": "作物の注文",
+    "english": "Crop Order",
+    "segments": [
+      {
+        "text": "作物の",
+        "reading": "sakumotsu no",
+        "gloss": "crop"
+      },
+      {
+        "text": "注文",
+        "reading": "chūmon",
+        "gloss": "order"
+      }
+    ]
+  },
+  "Lewis_Objective_0_Text": {
+    "japanese": "{Crop:Text}を100個出荷する。",
+    "english": "Ship 100 {Crop:Text}.",
+    "segments": [
+      {
+        "text": "{Crop:Text}",
+        "reading": "",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "を100個",
+        "reading": "o hyakko",
+        "gloss": "100 of"
+      },
+      {
+        "text": "出荷する。",
+        "reading": "shukka suru",
+        "gloss": "ship"
+      }
+    ]
+  },
+  "Lewis_Objective_1_Text": {
+    "japanese": "100個収穫する：{Crop:Text}.",
+    "english": "Harvest 100: {Crop:Text}.",
+    "segments": [
+      {
+        "text": "100個収穫する：",
+        "reading": "hyakko shūkaku suru",
+        "gloss": "harvest 100"
+      },
+      {
+        "text": "{Crop:Text}.",
+        "reading": "",
+        "gloss": "(crop)"
+      }
+    ]
+  },
+  "Lewis_RE_Text_0": {
+    "japanese": "今年は{Crop:TextPlural}の高い需要があります。 ",
+    "english": "There's high demand for {Crop:TextPlural} this year.",
+    "segments": [
+      {
+        "text": "今年は",
+        "reading": "kotoshi wa",
+        "gloss": "this year"
+      },
+      {
+        "text": "{Crop:TextPlural}",
+        "reading": "",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "の高い需要があります。 ",
+        "reading": "no takai juyō ga arimasu",
+        "gloss": "are in high demand"
+      }
+    ]
+  },
+  "Lewis_RE_Text_1": {
+    "japanese": "どうやらズズシティで、{Crop:TextPlural}が最新の「スーパーフード」だとされているようです。 ",
+    "english": "Apparently {Crop:TextPlural} are the latest \"superfood\" in Zuzu City.",
+    "segments": [
+      {
+        "text": "どうやら",
+        "reading": "dōyara",
+        "gloss": "apparently"
+      },
+      {
+        "text": "ズズシティ",
+        "reading": "Zuzu Shiti",
+        "gloss": "Zuzu City"
+      },
+      {
+        "text": "で、",
+        "reading": "de",
+        "gloss": "in"
+      },
+      {
+        "text": "{Crop:TextPlural}",
+        "reading": "",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "が最新の「スーパーフード」だとされているようです。 ",
+        "reading": "ga saishin no sūpāfūdo da to sarete iru yō desu",
+        "gloss": "seem to be regarded as the latest \"superfood\""
+      }
+    ]
+  },
+  "Lewis_RE_Text_2": {
+    "japanese": "新しい美容ブームがズズシティで起こっている…らしいのです{Crop:Text}から作られた化粧水にはシワを消す効果があるそうです。 ",
+    "english": "A new beauty craze has hit Zuzu City... apparently a lotion made from {Crop:Text} removes wrinkles.",
+    "segments": [
+      {
+        "text": "新しい美容ブーム",
+        "reading": "atarashii biyō būmu",
+        "gloss": "a new beauty craze"
+      },
+      {
+        "text": "がズズシティ",
+        "reading": "ga Zuzu Shiti",
+        "gloss": "in Zuzu City"
+      },
+      {
+        "text": "で起こっている…",
+        "reading": "de okotte iru",
+        "gloss": "is happening"
+      },
+      {
+        "text": "らしいのです",
+        "reading": "rashii no desu",
+        "gloss": "it seems"
+      },
+      {
+        "text": "{Crop:Text}",
+        "reading": "",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "から作られた化粧水",
+        "reading": "kara tsukurareta keshōsui",
+        "gloss": "lotion made from"
+      },
+      {
+        "text": "にはシワを消す効果があるそうです。 ",
+        "reading": "ni wa shiwa o kesu kōka ga aru sō desu",
+        "gloss": "is said to have a wrinkle-removing effect"
+      }
+    ]
+  },
+  "Lewis_RE_Text_3": {
+    "japanese": "先日はソースの女王が新鮮な{Crop:Text}を食べているのを見ました。今や、世界中のだれもが欲しがっているのです！",
+    "english": "The Queen of Sauce was seen eating fresh {Crop:Text} the other day. Now everyone in the world wants one!",
+    "segments": [
+      {
+        "text": "先日は",
+        "reading": "senjitsu wa",
+        "gloss": "the other day"
+      },
+      {
+        "text": "ソースの女王",
+        "reading": "sōsu no joō",
+        "gloss": "the Queen of Sauce"
+      },
+      {
+        "text": "が新鮮な",
+        "reading": "ga shinsen na",
+        "gloss": "fresh"
+      },
+      {
+        "text": "{Crop:Text}",
+        "reading": "",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "を食べているのを見ました。",
+        "reading": "o tabete iru no o mimashita",
+        "gloss": "was seen eating"
+      },
+      {
+        "text": "今や、",
+        "reading": "ima ya",
+        "gloss": "now"
+      },
+      {
+        "text": "世界中のだれもが欲しがっているのです！",
+        "reading": "sekaijū no dare mo ga hoshigatte iru no desu",
+        "gloss": "everyone in the world wants one"
+      }
+    ]
+  },
+  "Lewis_RE_Text_4": {
+    "japanese": "市長が食事会を開くので、料理人から{Crop:TextPlural}の大量注文が入っています。",
+    "english": "The Governor is holding a banquet, and his chefs have ordered huge numbers of {Crop:TextPlural}.",
+    "segments": [
+      {
+        "text": "市長が食事会を開くので、",
+        "reading": "shichō ga shokujikai o hiraku node",
+        "gloss": "because the Governor is holding a banquet"
+      },
+      {
+        "text": "料理人から",
+        "reading": "ryōrinin kara",
+        "gloss": "from the chefs"
+      },
+      {
+        "text": "{Crop:TextPlural}",
+        "reading": "",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "の大量注文が入っています。",
+        "reading": "no tairyō chūmon ga haitte imasu",
+        "gloss": "huge orders have come in"
+      }
+    ]
+  },
+  "Lewis_Text": {
+    "japanese": "{Text}季節の終わりまでに100個の{Crop:TextPlural}を出荷した人には、ペリカンタウン農業基金から報酬を受け取ることができます。",
+    "english": "{Text} Anyone who ships 100 {Crop:TextPlural} by the end of the season can claim a reward from the Pelican Town Agricultural Fund.",
+    "segments": [
+      {
+        "text": "{Text}",
+        "reading": "",
+        "gloss": "(text)"
+      },
+      {
+        "text": "季節の終わりまでに",
+        "reading": "kisetsu no owari made ni",
+        "gloss": "by the end of the season"
+      },
+      {
+        "text": "100個の",
+        "reading": "hyakko no",
+        "gloss": "100 of"
+      },
+      {
+        "text": "{Crop:TextPlural}",
+        "reading": "",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "を出荷した人には、",
+        "reading": "o shukka shita hito ni wa",
+        "gloss": "for the person who ships"
+      },
+      {
+        "text": "ペリカンタウン農業基金",
+        "reading": "Perikan Taun nōgyō kikin",
+        "gloss": "the Pelican Town Agricultural Fund"
+      },
+      {
+        "text": "から報酬を受け取ることができます。",
+        "reading": "kara hōshū o uketoru koto ga dekimasu",
+        "gloss": "a reward can be received from"
+      }
+    ]
+  },
+  "Linus_Name": {
+    "japanese": "コミュニティの清掃",
+    "english": "Community Cleanup",
+    "segments": [
+      {
+        "text": "コミュニティの",
+        "reading": "komyuniti no",
+        "gloss": "community"
+      },
+      {
+        "text": "清掃",
+        "reading": "seisō",
+        "gloss": "cleanup"
+      }
+    ]
+  },
+  "Linus_Objective_0_Text": {
+    "japanese": "ゴミを20個集める。",
+    "english": "Gather 20 pieces of trash.",
+    "segments": [
+      {
+        "text": "ゴミ",
+        "reading": "gomi",
+        "gloss": "trash"
+      },
+      {
+        "text": "を20個",
+        "reading": "o nijikko",
+        "gloss": "20 pieces of"
+      },
+      {
+        "text": "集める。",
+        "reading": "atsumeru",
+        "gloss": "gather"
+      }
+    ]
+  },
+  "Linus_Objective_1_Text": {
+    "japanese": "駅のホーム裏にあるリサイクル箱にゴミを捨てる。",
+    "english": "Dump the trash in the recycling bin behind the train platform.",
+    "segments": [
+      {
+        "text": "駅のホーム裏にあるリサイクル箱",
+        "reading": "eki no hōmu ura ni aru risaikuru bako",
+        "gloss": "the recycling bin behind the station platform"
+      },
+      {
+        "text": "にゴミを捨てる。",
+        "reading": "ni gomi o suteru",
+        "gloss": "dump the trash in"
+      }
+    ]
+  },
+  "Linus_Text": {
+    "japanese": "考えがあるんだ。水中にたくさんのゴミがあってな。谷をきれいにするために、それを掃除するというのはどうだろうか？ -ライナスより",
+    "english": "I have an idea. There's a lot of trash in the water. How about cleaning it up to make the valley beautiful? -Linus",
+    "segments": [
+      {
+        "text": "考えがあるんだ。",
+        "reading": "kangae ga aru n da",
+        "gloss": "I have an idea"
+      },
+      {
+        "text": "水中にたくさんのゴミがあってな。",
+        "reading": "suichū ni takusan no gomi ga atte na",
+        "gloss": "there's a lot of trash in the water"
+      },
+      {
+        "text": "谷をきれいにするために、",
+        "reading": "tani o kirei ni suru tame ni",
+        "gloss": "in order to make the valley beautiful"
+      },
+      {
+        "text": "それを掃除するというのはどうだろうか？",
+        "reading": "sore o sōji suru to iu no wa dō darō ka",
+        "gloss": "how about cleaning it up"
+      },
+      {
+        "text": " -ライナスより",
+        "reading": "Rainasu yori",
+        "gloss": "from Linus"
+      }
+    ]
+  },
+  "Marlon_DF_0_Name": {
+    "japanese": "モンスターハント",
+    "english": "Monster Hunt",
+    "segments": [
+      {
+        "text": "モンスター",
+        "reading": "monsutā",
+        "gloss": "monster"
+      },
+      {
+        "text": "ハント",
+        "reading": "hanto",
+        "gloss": "hunt"
+      }
+    ]
+  },
+  "Marlon_DF_0_Objective": {
+    "japanese": "{Monster:LocalizedName}を10体倒す。",
+    "english": "Slay 10 {Monster:LocalizedName}.",
+    "segments": [
+      {
+        "text": "{Monster:LocalizedName}",
+        "reading": "",
+        "gloss": "(monster)"
+      },
+      {
+        "text": "を10体",
+        "reading": "o jittai",
+        "gloss": "10 of"
+      },
+      {
+        "text": "倒す。",
+        "reading": "taosu",
+        "gloss": "defeat"
+      }
+    ]
+  },
+  "Marlon_DF_0_Text": {
+    "japanese": "ドクロの洞窟で{Monster:LocalizedName}を12体倒す。",
+    "english": "Descend into the Skull Cavern and slay 12 {Monster:LocalizedName}.",
+    "segments": [
+      {
+        "text": "ドクロの洞窟",
+        "reading": "Dokuro no dōkutsu",
+        "gloss": "the Skull Cavern"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "in"
+      },
+      {
+        "text": "{Monster:LocalizedName}",
+        "reading": "",
+        "gloss": "(monster)"
+      },
+      {
+        "text": "を12体",
+        "reading": "o jūnitai",
+        "gloss": "12 of"
+      },
+      {
+        "text": "倒す。",
+        "reading": "taosu",
+        "gloss": "defeat"
+      }
+    ]
+  },
+  "Marlon_DF_1_Name": {
+    "japanese": "ディープダイブ",
+    "english": "Deep Dive",
+    "segments": [
+      {
+        "text": "ディープ",
+        "reading": "dīpu",
+        "gloss": "deep"
+      },
+      {
+        "text": "ダイブ",
+        "reading": "daibu",
+        "gloss": "dive"
+      }
+    ]
+  },
+  "Marlon_DF_1_Objective": {
+    "japanese": "ドクロの洞窟の30階に到達する。",
+    "english": "Reach level 30 of the Skull Cavern.",
+    "segments": [
+      {
+        "text": "ドクロの洞窟",
+        "reading": "Dokuro no dōkutsu",
+        "gloss": "the Skull Cavern"
+      },
+      {
+        "text": "の30階に到達する。",
+        "reading": "no sanjikkai ni tōtatsu suru",
+        "gloss": "reach floor 30 of"
+      }
+    ]
+  },
+  "Marlon_DF_1_Text": {
+    "japanese": "ドクロの洞窟の30階に到達する。",
+    "english": "Reach level 30 of the Skull Cavern.",
+    "segments": [
+      {
+        "text": "ドクロの洞窟",
+        "reading": "Dokuro no dōkutsu",
+        "gloss": "the Skull Cavern"
+      },
+      {
+        "text": "の30階に到達する。",
+        "reading": "no sanjikkai ni tōtatsu suru",
+        "gloss": "reach floor 30 of"
+      }
+    ]
+  },
+  "Marlon_DF_2_Name": {
+    "japanese": "トレジャーハント",
+    "english": "Treasure Hunt",
+    "segments": [
+      {
+        "text": "トレジャー",
+        "reading": "torejā",
+        "gloss": "treasure"
+      },
+      {
+        "text": "ハント",
+        "reading": "hanto",
+        "gloss": "hunt"
+      }
+    ]
+  },
+  "Marlon_DF_2_Objective": {
+    "japanese": "{Treasure:LocalizedName}を{Treasure:Count}個集める。",
+    "english": "Collect {Treasure:Count} {Treasure:LocalizedName}.",
+    "segments": [
+      {
+        "text": "{Treasure:LocalizedName}",
+        "reading": "",
+        "gloss": "(treasure)"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "{Treasure:Count}個",
+        "reading": "ko",
+        "gloss": "(count) of"
+      },
+      {
+        "text": "集める。",
+        "reading": "atsumeru",
+        "gloss": "collect"
+      }
+    ]
+  },
+  "Marlon_DF_2_Text": {
+    "japanese": "ドクロの洞窟で{Treasure:LocalizedName}を{Treasure:Count}個集める。",
+    "english": "Collect {Treasure:Count} {Treasure:LocalizedName} from the Skull Cavern.",
+    "segments": [
+      {
+        "text": "ドクロの洞窟",
+        "reading": "Dokuro no dōkutsu",
+        "gloss": "the Skull Cavern"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "in"
+      },
+      {
+        "text": "{Treasure:LocalizedName}",
+        "reading": "",
+        "gloss": "(treasure)"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "{Treasure:Count}個",
+        "reading": "ko",
+        "gloss": "(count) of"
+      },
+      {
+        "text": "集める。",
+        "reading": "atsumeru",
+        "gloss": "collect"
+      }
+    ]
+  },
+  "Marlon_DF_Item_0_LocalizedName": {
+    "japanese": "オムニジオード",
+    "english": "Omni Geodes",
+    "segments": [
+      {
+        "text": "オムニジオード",
+        "reading": "omuni jiōdo",
+        "gloss": "omni geode"
+      }
+    ]
+  },
+  "Marlon_DF_Item_1_LocalizedName": {
+    "japanese": "イリジウム鉱石のかけら",
+    "english": "pieces of Iridium Ore",
+    "segments": [
+      {
+        "text": "イリジウム鉱石",
+        "reading": "irijiumu kōseki",
+        "gloss": "iridium ore"
+      },
+      {
+        "text": "のかけら",
+        "reading": "no kakera",
+        "gloss": "pieces of"
+      }
+    ]
+  },
+  "Marlon_DF_Item_2_LocalizedName": {
+    "japanese": "プリズムジェムを",
+    "english": "Prismatic Shards",
+    "segments": [
+      {
+        "text": "プリズムジェム",
+        "reading": "purizumu jemu",
+        "gloss": "prismatic gem"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      }
+    ]
+  },
+  "Marlon_DF_Monster_0_LocalizedName": {
+    "japanese": "サーペント",
+    "english": "Serpents",
+    "segments": [
+      {
+        "text": "サーペント",
+        "reading": "sāpento",
+        "gloss": "serpent"
+      }
+    ]
+  },
+  "Marlon_DF_Monster_1_LocalizedName": {
+    "japanese": "パープルスライム",
+    "english": "Purple Slimes",
+    "segments": [
+      {
+        "text": "パープル",
+        "reading": "pāpuru",
+        "gloss": "purple"
+      },
+      {
+        "text": "スライム",
+        "reading": "suraimu",
+        "gloss": "slime"
+      }
+    ]
+  },
+  "Marlon_DF_Monster_2_LocalizedName": {
+    "japanese": "ミイラ",
+    "english": "Mummies",
+    "segments": [
+      {
+        "text": "ミイラ",
+        "reading": "miira",
+        "gloss": "mummy"
+      }
+    ]
+  },
+  "Pam_Name": {
+    "japanese": "強力なやつ",
+    "english": "The Strong Stuff",
+    "segments": [
+      {
+        "text": "強力な",
+        "reading": "kyōryoku na",
+        "gloss": "strong"
+      },
+      {
+        "text": "やつ",
+        "reading": "yatsu",
+        "gloss": "stuff"
+      }
+    ]
+  },
+  "Pam_Objective_0_Text": {
+    "japanese": "ジャガイモを醸造して、12個集める。",
+    "english": "Keg some potatoes and collect 12 batches",
+    "segments": [
+      {
+        "text": "ジャガイモ",
+        "reading": "jagaimo",
+        "gloss": "potatoes"
+      },
+      {
+        "text": "を醸造して、",
+        "reading": "o jōzō shite",
+        "gloss": "brew and"
+      },
+      {
+        "text": "12個集める。",
+        "reading": "jūniko atsumeru",
+        "gloss": "collect 12"
+      }
+    ]
+  },
+  "Pam_Objective_1_Text": {
+    "japanese": "出来上がったものをパムのキッチンに置く。",
+    "english": "Place the product in Pam's kitchen.",
+    "segments": [
+      {
+        "text": "出来上がったもの",
+        "reading": "dekiagatta mono",
+        "gloss": "the finished product"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "パムのキッチン",
+        "reading": "Pamu no kitchin",
+        "gloss": "Pam's kitchen"
+      },
+      {
+        "text": "に置く。",
+        "reading": "ni oku",
+        "gloss": "place in"
+      }
+    ]
+  },
+  "Pam_Text": {
+    "japanese": "ジャガイモからつくる、パンチのきいた蒸留酒があるって聞いたんだ、あたしが何を言いたいかわかるかい？醸造ダルにジャガイモを放り込んでさ、あたしに少し持ってきてくれないかい？",
+    "english": "I hear there's a spirit made from potatoes that really packs a punch, if you know what I mean. Mind tossing some potatoes in a keg and bringing me a bit?",
+    "segments": [
+      {
+        "text": "ジャガイモからつくる、",
+        "reading": "jagaimo kara tsukuru",
+        "gloss": "made from potatoes"
+      },
+      {
+        "text": "パンチのきいた蒸留酒",
+        "reading": "panchi no kiita jōryūshu",
+        "gloss": "a spirit with a punch"
+      },
+      {
+        "text": "があるって聞いたんだ、",
+        "reading": "ga aru tte kiita n da",
+        "gloss": "I heard there is"
+      },
+      {
+        "text": "あたしが何を言いたいかわかるかい？",
+        "reading": "atashi ga nani o iitai ka wakaru kai",
+        "gloss": "do you know what I mean"
+      },
+      {
+        "text": "醸造ダル",
+        "reading": "jōzō daru",
+        "gloss": "a keg"
+      },
+      {
+        "text": "にジャガイモを放り込んでさ、",
+        "reading": "ni jagaimo o hōrikonde sa",
+        "gloss": "toss potatoes into it"
+      },
+      {
+        "text": "あたしに少し持ってきてくれないかい？",
+        "reading": "atashi ni sukoshi motte kite kurenai kai",
+        "gloss": "won't you bring me a bit"
+      }
+    ]
+  },
+  "Pierre_Name": {
+    "japanese": "ピエールの特選商品",
+    "english": "Pierre's Prime Produce",
+    "segments": [
+      {
+        "text": "ピエールの",
+        "reading": "Piēru no",
+        "gloss": "Pierre's"
+      },
+      {
+        "text": "特選商品",
+        "reading": "tokusen shōhin",
+        "gloss": "prime goods"
+      }
+    ]
+  },
+  "Pierre_Objective_0_Text": {
+    "japanese": "ゴールド品質の野菜を収穫する。",
+    "english": "Harvest gold-quality vegetables",
+    "segments": [
+      {
+        "text": "ゴールド品質の野菜",
+        "reading": "gōrudo hinshitsu no yasai",
+        "gloss": "gold-quality vegetables"
+      },
+      {
+        "text": "を収穫する。",
+        "reading": "o shūkaku suru",
+        "gloss": "harvest"
+      }
+    ]
+  },
+  "Pierre_Objective_1_Text": {
+    "japanese": "ピエール商店の空の青果箱に作物を入れる。",
+    "english": "Place the crops in the empty produce box in Pierre's shop.",
+    "segments": [
+      {
+        "text": "ピエール商店の空の青果箱",
+        "reading": "Piēru shōten no kara no seika bako",
+        "gloss": "the empty produce box in Pierre's shop"
+      },
+      {
+        "text": "に作物を入れる。",
+        "reading": "ni sakumotsu o ireru",
+        "gloss": "place the crops in"
+      }
+    ]
+  },
+  "Pierre_Text": {
+    "japanese": "ご機嫌いかがですか。今度の売り出しで、品質の良い野菜を販売しようと考えているんです。少しプレミアムな価格で…ゴールド品質の野菜を25個、安く仕入れさせてくれる方はいませんか？",
+    "english": "How do you do. For an upcoming sale I'm thinking of offering high-quality vegetables at a slight premium... anyone able to sell me 25 gold-quality vegetables cheap?",
+    "segments": [
+      {
+        "text": "ご機嫌いかがですか。",
+        "reading": "go-kigen ikaga desu ka",
+        "gloss": "how do you do"
+      },
+      {
+        "text": "今度の売り出しで、",
+        "reading": "kondo no uridashi de",
+        "gloss": "in the upcoming sale"
+      },
+      {
+        "text": "品質の良い野菜",
+        "reading": "hinshitsu no yoi yasai",
+        "gloss": "high-quality vegetables"
+      },
+      {
+        "text": "を販売しようと考えているんです。",
+        "reading": "o hanbai shiyō to kangaete iru n desu",
+        "gloss": "I'm thinking of selling"
+      },
+      {
+        "text": "少しプレミアムな価格で…",
+        "reading": "sukoshi puremiamu na kakaku de",
+        "gloss": "at a slightly premium price"
+      },
+      {
+        "text": "ゴールド品質の野菜を25個、",
+        "reading": "gōrudo hinshitsu no yasai o nijūgoko",
+        "gloss": "25 gold-quality vegetables"
+      },
+      {
+        "text": "安く仕入れさせてくれる方はいませんか？",
+        "reading": "yasuku shiiresasete kureru kata wa imasen ka",
+        "gloss": "is there anyone who'd let me buy cheaply"
+      }
+    ]
+  },
+  "QiChallenge10_Name": {
+    "japanese": "ドクロの洞窟への侵略",
+    "english": "Skull Cavern Invasion",
+    "segments": [
+      {
+        "text": "ドクロの洞窟",
+        "reading": "Dokuro no dōkutsu",
+        "gloss": "the Skull Cavern"
+      },
+      {
+        "text": "への侵略",
+        "reading": "e no shinryaku",
+        "gloss": "invasion of"
+      }
+    ]
+  },
+  "QiChallenge10_Objective_0_Text": {
+    "japanese": "ドクロの洞窟のレベル100に到達する。",
+    "english": "Make it to level 100 of the Skull Cavern.",
+    "segments": [
+      {
+        "text": "ドクロの洞窟",
+        "reading": "Dokuro no dōkutsu",
+        "gloss": "the Skull Cavern"
+      },
+      {
+        "text": "のレベル100に到達する。",
+        "reading": "no reberu hyaku ni tōtatsu suru",
+        "gloss": "reach level 100 of"
+      }
+    ]
+  },
+  "QiChallenge10_Text": {
+    "japanese": "ドクロの洞窟が強力なモンスターたちに侵略されている。無事にレベル100に到達するんだ。",
+    "english": "The Skull Cavern is being invaded by powerful monsters. Reach level 100 in one piece.",
+    "segments": [
+      {
+        "text": "ドクロの洞窟",
+        "reading": "Dokuro no dōkutsu",
+        "gloss": "the Skull Cavern"
+      },
+      {
+        "text": "が強力なモンスターたちに侵略されている。",
+        "reading": "ga kyōryoku na monsutā-tachi ni shinryaku sarete iru",
+        "gloss": "is being invaded by powerful monsters"
+      },
+      {
+        "text": "無事にレベル100に到達するんだ。",
+        "reading": "buji ni reberu hyaku ni tōtatsu suru n da",
+        "gloss": "reach level 100 safely"
+      }
+    ]
+  },
+  "QiChallenge11_Name": {
+    "japanese": "Qi'の生き写しの捜索",
+    "english": "Find Qi's Double",
+    "segments": [
+      {
+        "text": "Qi'の生き写し",
+        "reading": "no ikiutsushi",
+        "gloss": "Qi's double"
+      },
+      {
+        "text": "の捜索",
+        "reading": "no sōsaku",
+        "gloss": "the search for"
+      }
+    ]
+  },
+  "QiChallenge11_Objective_0_Text": {
+    "japanese": "Qi'の生き写しを捕まえる。",
+    "english": "Catch Qi's double.",
+    "segments": [
+      {
+        "text": "Qi'の生き写し",
+        "reading": "no ikiutsushi",
+        "gloss": "Qi's double"
+      },
+      {
+        "text": "を捕まえる。",
+        "reading": "o tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "QiChallenge11_Text": {
+    "japanese": "街のどこかに第2の私が隠れている。彼を捕まえられるかな？",
+    "english": "A second me is hiding somewhere in town. Can you catch him?",
+    "segments": [
+      {
+        "text": "街のどこかに",
+        "reading": "machi no dokoka ni",
+        "gloss": "somewhere in town"
+      },
+      {
+        "text": "第2の私",
+        "reading": "dai-ni no watashi",
+        "gloss": "a second me"
+      },
+      {
+        "text": "が隠れている。",
+        "reading": "ga kakurete iru",
+        "gloss": "is hiding"
+      },
+      {
+        "text": "彼を捕まえられるかな？",
+        "reading": "kare o tsukamaerareru ka na",
+        "gloss": "can you catch him"
+      }
+    ]
+  },
+  "QiChallenge12_Name": {
+    "japanese": "Qi'のプリズム屋敷",
+    "english": "Qi's Prismatic Grange",
+    "segments": [
+      {
+        "text": "Qi'の",
+        "reading": "no",
+        "gloss": "Qi's"
+      },
+      {
+        "text": "プリズム屋敷",
+        "reading": "purizumu yashiki",
+        "gloss": "prismatic manor"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_0_Text": {
+    "japanese": "赤色のアイテム100個をミスターQiのコレクションボックスに入れる。",
+    "english": "Place 100 red items into Qi's collection box.",
+    "segments": [
+      {
+        "text": "赤色のアイテム100個",
+        "reading": "akairo no aitemu hyakko",
+        "gloss": "100 red items"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "ミスターQiのコレクションボックス",
+        "reading": "Misutā Qi no korekushon bokkusu",
+        "gloss": "Mr. Qi's collection box"
+      },
+      {
+        "text": "に入れる。",
+        "reading": "ni ireru",
+        "gloss": "place into"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_1_Text": {
+    "japanese": "オレンジ色のアイテム100個をミスターQiのコレクションボックスに入れる。",
+    "english": "Place 100 orange items into Qi's collection box.",
+    "segments": [
+      {
+        "text": "オレンジ色のアイテム100個",
+        "reading": "orenjiiro no aitemu hyakko",
+        "gloss": "100 orange items"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "ミスターQiのコレクションボックス",
+        "reading": "Misutā Qi no korekushon bokkusu",
+        "gloss": "Mr. Qi's collection box"
+      },
+      {
+        "text": "に入れる。",
+        "reading": "ni ireru",
+        "gloss": "place into"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_2_Text": {
+    "japanese": "黄色のアイテム100個をミスターQiのコレクションボックスに入れる。",
+    "english": "Place 100 yellow items into Qi's collection box.",
+    "segments": [
+      {
+        "text": "黄色のアイテム100個",
+        "reading": "kiiro no aitemu hyakko",
+        "gloss": "100 yellow items"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "ミスターQiのコレクションボックス",
+        "reading": "Misutā Qi no korekushon bokkusu",
+        "gloss": "Mr. Qi's collection box"
+      },
+      {
+        "text": "に入れる。",
+        "reading": "ni ireru",
+        "gloss": "place into"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_3_Text": {
+    "japanese": "緑色のアイテム100個をミスターQiのコレクションボックスに入れる。",
+    "english": "Place 100 green items into Qi's collection box.",
+    "segments": [
+      {
+        "text": "緑色のアイテム100個",
+        "reading": "midoriiro no aitemu hyakko",
+        "gloss": "100 green items"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "ミスターQiのコレクションボックス",
+        "reading": "Misutā Qi no korekushon bokkusu",
+        "gloss": "Mr. Qi's collection box"
+      },
+      {
+        "text": "に入れる。",
+        "reading": "ni ireru",
+        "gloss": "place into"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_4_Text": {
+    "japanese": "青色のアイテム100個をミスターQiのコレクションボックスに入れる。",
+    "english": "Place 100 blue items into Qi's collection box.",
+    "segments": [
+      {
+        "text": "青色のアイテム100個",
+        "reading": "aoiro no aitemu hyakko",
+        "gloss": "100 blue items"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "ミスターQiのコレクションボックス",
+        "reading": "Misutā Qi no korekushon bokkusu",
+        "gloss": "Mr. Qi's collection box"
+      },
+      {
+        "text": "に入れる。",
+        "reading": "ni ireru",
+        "gloss": "place into"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_5_Text": {
+    "japanese": "紫色のアイテム100個をミスターQiのコレクションボックスに入れる。",
+    "english": "Place 100 purple items into Qi's collection box.",
+    "segments": [
+      {
+        "text": "紫色のアイテム100個",
+        "reading": "murasakiiro no aitemu hyakko",
+        "gloss": "100 purple items"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "ミスターQiのコレクションボックス",
+        "reading": "Misutā Qi no korekushon bokkusu",
+        "gloss": "Mr. Qi's collection box"
+      },
+      {
+        "text": "に入れる。",
+        "reading": "ni ireru",
+        "gloss": "place into"
+      }
+    ]
+  },
+  "QiChallenge12_Text": {
+    "japanese": "赤、オレンジ、黄、緑、青、紫のアイテムをそれぞれ100個見つけるんだ。それを私のコレクションボックスに入れてくれ。",
+    "english": "Find 100 each of red, orange, yellow, green, blue and purple items. Place them in my collection box.",
+    "segments": [
+      {
+        "text": "赤、",
+        "reading": "aka",
+        "gloss": "red"
+      },
+      {
+        "text": "オレンジ、",
+        "reading": "orenji",
+        "gloss": "orange"
+      },
+      {
+        "text": "黄、",
+        "reading": "ki",
+        "gloss": "yellow"
+      },
+      {
+        "text": "緑、",
+        "reading": "midori",
+        "gloss": "green"
+      },
+      {
+        "text": "青、",
+        "reading": "ao",
+        "gloss": "blue"
+      },
+      {
+        "text": "紫",
+        "reading": "murasaki",
+        "gloss": "purple"
+      },
+      {
+        "text": "のアイテムをそれぞれ100個見つけるんだ。",
+        "reading": "no aitemu o sorezore hyakko mitsukeru n da",
+        "gloss": "find 100 each of these items"
+      },
+      {
+        "text": "それを私のコレクションボックスに入れてくれ。",
+        "reading": "sore o watashi no korekushon bokkusu ni irete kure",
+        "gloss": "place them in my collection box"
+      }
+    ]
+  },
+  "QiChallenge2_Name": {
+    "japanese": "Qiの作物",
+    "english": "Qi's Crop",
+    "segments": [
+      {
+        "text": "Qiの",
+        "reading": "no",
+        "gloss": "Qi's"
+      },
+      {
+        "text": "作物",
+        "reading": "sakumotsu",
+        "gloss": "crop"
+      }
+    ]
+  },
+  "QiChallenge2_Objective_0_Text": {
+    "japanese": "Qiフルーツを500個出荷する。",
+    "english": "Ship 500 Qi Fruit",
+    "segments": [
+      {
+        "text": "Qiフルーツ",
+        "reading": "furūtsu",
+        "gloss": "Qi Fruit"
+      },
+      {
+        "text": "を500個",
+        "reading": "o gohyakko",
+        "gloss": "500 of"
+      },
+      {
+        "text": "出荷する。",
+        "reading": "shukka suru",
+        "gloss": "ship"
+      }
+    ]
+  },
+  "QiChallenge2_Text": {
+    "japanese": "私は世界中にQiビーンを隠してきた。それらを見つけて育て、期限内にQiフルーツを500個出荷するんだ。",
+    "english": "I've hidden Qi Beans throughout the world. Find them, grow them, and ship 500 Qi Fruit within the time limit.",
+    "segments": [
+      {
+        "text": "私は世界中に",
+        "reading": "watashi wa sekaijū ni",
+        "gloss": "I, throughout the world"
+      },
+      {
+        "text": "Qiビーン",
+        "reading": "bīn",
+        "gloss": "Qi Beans"
+      },
+      {
+        "text": "を隠してきた。",
+        "reading": "o kakushite kita",
+        "gloss": "have hidden"
+      },
+      {
+        "text": "それらを見つけて育て、",
+        "reading": "sorera o mitsukete sodate",
+        "gloss": "find and grow them"
+      },
+      {
+        "text": "期限内に",
+        "reading": "kigennai ni",
+        "gloss": "within the time limit"
+      },
+      {
+        "text": "Qiフルーツを500個出荷するんだ。",
+        "reading": "furūtsu o gohyakko shukka suru n da",
+        "gloss": "ship 500 Qi Fruit"
+      }
+    ]
+  },
+  "QiChallenge3_Name": {
+    "japanese": "ゲームをしよう",
+    "english": "Let's Play a Game",
+    "segments": [
+      {
+        "text": "ゲームをしよう",
+        "reading": "gēmu o shiyō",
+        "gloss": "let's play a game"
+      }
+    ]
+  },
+  "QiChallenge3_Objective_0_Text": {
+    "japanese": "ジュニモカートのエンドレスモードで50,000ポイントを獲得する。",
+    "english": "Score 50,000 points in Junimo Kart endless mode.",
+    "segments": [
+      {
+        "text": "ジュニモカート",
+        "reading": "Junimo Kāto",
+        "gloss": "Junimo Kart"
+      },
+      {
+        "text": "のエンドレスモード",
+        "reading": "no endoresu mōdo",
+        "gloss": "endless mode of"
+      },
+      {
+        "text": "で50,000ポイントを獲得する。",
+        "reading": "de gomanten o kakutoku suru",
+        "gloss": "score 50,000 points in"
+      }
+    ]
+  },
+  "QiChallenge3_Text": {
+    "japanese": "君はジュニモカートのエンドレスモードで50,000ポイントを獲得することができるか？証明してくれ。",
+    "english": "Can you score 50,000 points in Junimo Kart endless mode? Prove it.",
+    "segments": [
+      {
+        "text": "君は",
+        "reading": "kimi wa",
+        "gloss": "you"
+      },
+      {
+        "text": "ジュニモカートのエンドレスモード",
+        "reading": "Junimo Kāto no endoresu mōdo",
+        "gloss": "Junimo Kart endless mode"
+      },
+      {
+        "text": "で50,000ポイントを獲得することができるか？",
+        "reading": "de goman pointo o kakutoku suru koto ga dekiru ka",
+        "gloss": "can score 50,000 points in"
+      },
+      {
+        "text": "証明してくれ。",
+        "reading": "shōmei shite kure",
+        "gloss": "prove it"
+      }
+    ]
+  },
+  "QiChallenge4_Name": {
+    "japanese": "4つの貴重な石",
+    "english": "Four Precious Stones",
+    "segments": [
+      {
+        "text": "4つの",
+        "reading": "yottsu no",
+        "gloss": "four"
+      },
+      {
+        "text": "貴重な石",
+        "reading": "kichō na ishi",
+        "gloss": "precious stones"
+      }
+    ]
+  },
+  "QiChallenge4_Objective_0_Text": {
+    "japanese": "プリズムジェムを4個ミスターQiのコレクションボックスに入れる。",
+    "english": "Place 4 Prismatic Shards into Qi's collection box.",
+    "segments": [
+      {
+        "text": "プリズムジェムを4個",
+        "reading": "purizumu jemu o yonko",
+        "gloss": "4 prismatic gems"
+      },
+      {
+        "text": "ミスターQiのコレクションボックス",
+        "reading": "Misutā Qi no korekushon bokkusu",
+        "gloss": "Mr. Qi's collection box"
+      },
+      {
+        "text": "に入れる。",
+        "reading": "ni ireru",
+        "gloss": "place into"
+      }
+    ]
+  },
+  "QiChallenge4_Text": {
+    "japanese": "プリズムジェムを4個見つけるんだ。それを私のコレクションボックスに入れてくれ。",
+    "english": "Find 4 prismatic shards. Place them in my collection box.",
+    "segments": [
+      {
+        "text": "プリズムジェムを4個見つけるんだ。",
+        "reading": "purizumu jemu o yonko mitsukeru n da",
+        "gloss": "find 4 prismatic gems"
+      },
+      {
+        "text": "それを私のコレクションボックスに入れてくれ。",
+        "reading": "sore o watashi no korekushon bokkusu ni irete kure",
+        "gloss": "place them in my collection box"
+      }
+    ]
+  },
+  "QiChallenge5_Name": {
+    "japanese": "Qiのハングリーチャレンジ",
+    "english": "Qi's Hungry Challenge",
+    "segments": [
+      {
+        "text": "Qiの",
+        "reading": "no",
+        "gloss": "Qi's"
+      },
+      {
+        "text": "ハングリーチャレンジ",
+        "reading": "hangurī charenji",
+        "gloss": "hungry challenge"
+      }
+    ]
+  },
+  "QiChallenge5_Objective_0_Text": {
+    "japanese": "ドクロの洞窟のレベル100に到達する。",
+    "english": "Make it to level 100 in the Skull Cavern.",
+    "segments": [
+      {
+        "text": "ドクロの洞窟",
+        "reading": "Dokuro no dōkutsu",
+        "gloss": "the Skull Cavern"
+      },
+      {
+        "text": "のレベル100に到達する。",
+        "reading": "no reberu hyaku ni tōtatsu suru",
+        "gloss": "reach level 100 of"
+      }
+    ]
+  },
+  "QiChallenge5_Text": {
+    "japanese": "ドクロの洞窟のレベル100に到達するんだ。だだし、その途中では何も飲み食いしてはならない。",
+    "english": "Reach level 100 in the Skull Cavern. But you may not eat or drink anything on the way.",
+    "segments": [
+      {
+        "text": "ドクロの洞窟のレベル100に到達するんだ。",
+        "reading": "Dokuro no dōkutsu no reberu hyaku ni tōtatsu suru n da",
+        "gloss": "reach level 100 of the Skull Cavern"
+      },
+      {
+        "text": "だだし、",
+        "reading": "tadashi",
+        "gloss": "however"
+      },
+      {
+        "text": "その途中では何も飲み食いしてはならない。",
+        "reading": "sono tochū de wa nani mo nomikui shite wa naranai",
+        "gloss": "you must not eat or drink anything on the way"
+      }
+    ]
+  },
+  "QiChallenge6_Name": {
+    "japanese": "Qiの料理",
+    "english": "Qi's Cuisine",
+    "segments": [
+      {
+        "text": "Qiの",
+        "reading": "no",
+        "gloss": "Qi's"
+      },
+      {
+        "text": "料理",
+        "reading": "ryōri",
+        "gloss": "cuisine"
+      }
+    ]
+  },
+  "QiChallenge6_Objective_0_Text": {
+    "japanese": "100,000g分の出来立て料理を出荷する。",
+    "english": "Ship 100,000g worth of freshly cooked items.",
+    "segments": [
+      {
+        "text": "100,000g分の",
+        "reading": "hyaku-man... juman gōrudo bun no",
+        "gloss": "100,000g worth of"
+      },
+      {
+        "text": "出来立て料理",
+        "reading": "dekitate ryōri",
+        "gloss": "freshly cooked food"
+      },
+      {
+        "text": "を出荷する。",
+        "reading": "o shukka suru",
+        "gloss": "ship"
+      }
+    ]
+  },
+  "QiChallenge6_Text": {
+    "japanese": "100,000g分の出来立て料理を出荷するんだ。",
+    "english": "Ship 100,000g worth of freshly cooked items.",
+    "segments": [
+      {
+        "text": "100,000g分の",
+        "reading": "juman gōrudo bun no",
+        "gloss": "100,000g worth of"
+      },
+      {
+        "text": "出来立て料理を出荷するんだ。",
+        "reading": "dekitate ryōri o shukka suru n da",
+        "gloss": "ship freshly cooked food"
+      }
+    ]
+  },
+  "QiChallenge7_Name": {
+    "japanese": "Qiの親切心",
+    "english": "Qi's Kindness",
+    "segments": [
+      {
+        "text": "Qiの",
+        "reading": "no",
+        "gloss": "Qi's"
+      },
+      {
+        "text": "親切心",
+        "reading": "shinsetsushin",
+        "gloss": "kindness"
+      }
+    ]
+  },
+  "QiChallenge7_Objective_0_Text": {
+    "japanese": "1週間で50個、大好物の贈り物をする。",
+    "english": "Give 50 loved gifts in one week.",
+    "segments": [
+      {
+        "text": "1週間で50個、",
+        "reading": "isshūkan de gojikko",
+        "gloss": "50 in one week"
+      },
+      {
+        "text": "大好物の贈り物をする。",
+        "reading": "daikōbutsu no okurimono o suru",
+        "gloss": "give loved gifts"
+      }
+    ]
+  },
+  "QiChallenge7_Text": {
+    "japanese": "1週間で50個、大好物の贈り物をするんだ。",
+    "english": "Give 50 loved gifts in one week.",
+    "segments": [
+      {
+        "text": "1週間で50個、",
+        "reading": "isshūkan de gojikko",
+        "gloss": "50 in one week"
+      },
+      {
+        "text": "大好物の贈り物をするんだ。",
+        "reading": "daikōbutsu no okurimono o suru n da",
+        "gloss": "give loved gifts"
+      }
+    ]
+  },
+  "QiChallenge8_Name": {
+    "japanese": "大家族",
+    "english": "Extended Family",
+    "segments": [
+      {
+        "text": "大家族",
+        "reading": "daikazoku",
+        "gloss": "extended family"
+      }
+    ]
+  },
+  "QiChallenge8_Objective_0_Text": {
+    "japanese": "ミズ・ツリビトアンコウを捕まえる。",
+    "english": "Catch Ms. Angler.",
+    "segments": [
+      {
+        "text": "ミズ・ツリビトアンコウ",
+        "reading": "Mizu Tsuribito Ankō",
+        "gloss": "Ms. Angler"
+      },
+      {
+        "text": "を捕まえる。",
+        "reading": "o tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "QiChallenge8_Objective_1_Text": {
+    "japanese": "アイスフィッシュ・ジュニアを捕まえる。",
+    "english": "Catch Glacierfish Jr.",
+    "segments": [
+      {
+        "text": "アイスフィッシュ・ジュニア",
+        "reading": "Aisu Fisshu Junia",
+        "gloss": "Glacierfish Jr."
+      },
+      {
+        "text": "を捕まえる。",
+        "reading": "o tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "QiChallenge8_Objective_2_Text": {
+    "japanese": "クリムゾンフィッシュの息子を捕まえる。",
+    "english": "Catch Son of Crimsonfish.",
+    "segments": [
+      {
+        "text": "クリムゾンフィッシュの息子",
+        "reading": "Kurimuzon Fisshu no musuko",
+        "gloss": "Son of Crimsonfish"
+      },
+      {
+        "text": "を捕まえる。",
+        "reading": "o tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "QiChallenge8_Objective_3_Text": {
+    "japanese": "放射性コイを捕まえる。",
+    "english": "Catch Radioactive Carp.",
+    "segments": [
+      {
+        "text": "放射性コイ",
+        "reading": "hōshasei koi",
+        "gloss": "radioactive carp"
+      },
+      {
+        "text": "を捕まえる。",
+        "reading": "o tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "QiChallenge8_Objective_4_Text": {
+    "japanese": "レジェンド2世を捕まえる。",
+    "english": "Catch The Legend II.",
+    "segments": [
+      {
+        "text": "レジェンド2世",
+        "reading": "Rejendo nisei",
+        "gloss": "The Legend II"
+      },
+      {
+        "text": "を捕まえる。",
+        "reading": "o tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "QiChallenge8_Text": {
+    "japanese": "伝説級の魚たちの家族が谷に戻ってきた。3日間で、ミズ・ツリビトアンコウ、アイスフィッシュ・ジュニア、クリムゾンフィッシュの息子、放射性コイ、レジェンド2世を捕まえるんだ。",
+    "english": "The families of the legendary fish have returned to the valley. In three days, catch Ms. Angler, Glacierfish Jr., Son of Crimsonfish, Radioactive Carp and The Legend II.",
+    "segments": [
+      {
+        "text": "伝説級の魚たちの家族",
+        "reading": "densetsukyū no sakana-tachi no kazoku",
+        "gloss": "the families of the legendary fish"
+      },
+      {
+        "text": "が谷に戻ってきた。",
+        "reading": "ga tani ni modotte kita",
+        "gloss": "have returned to the valley"
+      },
+      {
+        "text": "3日間で、",
+        "reading": "mikkakan de",
+        "gloss": "in three days"
+      },
+      {
+        "text": "ミズ・ツリビトアンコウ、",
+        "reading": "Mizu Tsuribito Ankō",
+        "gloss": "Ms. Angler"
+      },
+      {
+        "text": "アイスフィッシュ・ジュニア、",
+        "reading": "Aisu Fisshu Junia",
+        "gloss": "Glacierfish Jr."
+      },
+      {
+        "text": "クリムゾンフィッシュの息子、",
+        "reading": "Kurimuzon Fisshu no musuko",
+        "gloss": "Son of Crimsonfish"
+      },
+      {
+        "text": "放射性コイ、",
+        "reading": "hōshasei koi",
+        "gloss": "Radioactive Carp"
+      },
+      {
+        "text": "レジェンド2世",
+        "reading": "Rejendo nisei",
+        "gloss": "The Legend II"
+      },
+      {
+        "text": "を捕まえるんだ。",
+        "reading": "o tsukamaeru n da",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "QiChallenge9_Name": {
+    "japanese": "奥底にある危険",
+    "english": "Danger in the Deep",
+    "segments": [
+      {
+        "text": "奥底にある",
+        "reading": "okusoko ni aru",
+        "gloss": "in the depths"
+      },
+      {
+        "text": "危険",
+        "reading": "kiken",
+        "gloss": "danger"
+      }
+    ]
+  },
+  "QiChallenge9_Objective_0_Text": {
+    "japanese": "再び鉱山の最深部に到達する。",
+    "english": "Reach the bottom of the mines, again.",
+    "segments": [
+      {
+        "text": "再び",
+        "reading": "futatabi",
+        "gloss": "again"
+      },
+      {
+        "text": "鉱山の最深部",
+        "reading": "kōzan no saishinbu",
+        "gloss": "the deepest part of the mines"
+      },
+      {
+        "text": "に到達する。",
+        "reading": "ni tōtatsu suru",
+        "gloss": "reach"
+      }
+    ]
+  },
+  "QiChallenge9_Text": {
+    "japanese": "鉱山のエレベーターシステムが再調整され、地下深くから新たな危険が噴出した。1週間以内に鉱山の最深部に到達するんだ。",
+    "english": "The mine elevator system has been reset, and new dangers have erupted from deep underground. Reach the bottom of the mines within one week.",
+    "segments": [
+      {
+        "text": "鉱山のエレベーターシステム",
+        "reading": "kōzan no erebētā shisutemu",
+        "gloss": "the mine elevator system"
+      },
+      {
+        "text": "が再調整され、",
+        "reading": "ga saichōsei sare",
+        "gloss": "has been readjusted"
+      },
+      {
+        "text": "地下深くから新たな危険が噴出した。",
+        "reading": "chika fukaku kara arata na kiken ga funshutsu shita",
+        "gloss": "new dangers erupted from deep underground"
+      },
+      {
+        "text": "1週間以内に鉱山の最深部に到達するんだ。",
+        "reading": "isshūkan inai ni kōzan no saishinbu ni tōtatsu suru n da",
+        "gloss": "reach the bottom of the mines within one week"
+      }
+    ]
+  },
+  "QiChallenge_Name": {
+    "japanese": "5つの災い",
+    "english": "Five Plagues",
+    "segments": [
+      {
+        "text": "5つの",
+        "reading": "itsutsu no",
+        "gloss": "five"
+      },
+      {
+        "text": "災い",
+        "reading": "wazawai",
+        "gloss": "plagues"
+      }
+    ]
+  },
+  "QiChallenge_Objective_0_Text": {
+    "japanese": "Qiフルーツを500個出荷する。",
+    "english": "Ship 500 Qi Fruit.",
+    "segments": [
+      {
+        "text": "Qiフルーツ",
+        "reading": "furūtsu",
+        "gloss": "Qi Fruit"
+      },
+      {
+        "text": "を500個",
+        "reading": "o gohyakko",
+        "gloss": "500 of"
+      },
+      {
+        "text": "出荷する。",
+        "reading": "shukka suru",
+        "gloss": "ship"
+      }
+    ]
+  },
+  "QiChallenge_Text": {
+    "japanese": "君に600個のQiビーンをやろう。これを育てて、1週間以内に最低でも500個を出荷するんだ。しかし注意することだ。5つの災いが君に降り注ぎ、作物を脅かすだろう…",
+    "english": "I'll give you 600 Qi Beans. Grow them and ship at least 500 within a week. But beware — five plagues will rain down on you and threaten your crop...",
+    "segments": [
+      {
+        "text": "君に600個のQiビーン",
+        "reading": "kimi ni roppyakko no Qi bīn",
+        "gloss": "600 Qi Beans to you"
+      },
+      {
+        "text": "をやろう。",
+        "reading": "o yarō",
+        "gloss": "I shall give"
+      },
+      {
+        "text": "これを育てて、",
+        "reading": "kore o sodatete",
+        "gloss": "grow these"
+      },
+      {
+        "text": "1週間以内に最低でも500個を出荷するんだ。",
+        "reading": "isshūkan inai ni saitei demo gohyakko o shukka suru n da",
+        "gloss": "and ship at least 500 within a week"
+      },
+      {
+        "text": "しかし注意することだ。",
+        "reading": "shikashi chūi suru koto da",
+        "gloss": "but be careful"
+      },
+      {
+        "text": "5つの災い",
+        "reading": "itsutsu no wazawai",
+        "gloss": "five plagues"
+      },
+      {
+        "text": "が君に降り注ぎ、",
+        "reading": "ga kimi ni furisosogi",
+        "gloss": "will rain down on you"
+      },
+      {
+        "text": "作物を脅かすだろう…",
+        "reading": "sakumotsu o obiyakasu darō",
+        "gloss": "and threaten your crop"
+      }
+    ]
+  },
+  "Robin2_Name": {
+    "japanese": "ロビンの資材大発注",
+    "english": "Robin's Resource Rush",
+    "segments": [
+      {
+        "text": "ロビンの",
+        "reading": "Robin no",
+        "gloss": "Robin's"
+      },
+      {
+        "text": "資材大発注",
+        "reading": "shizai daihatchū",
+        "gloss": "big materials order"
+      }
+    ]
+  },
+  "Robin2_Objective_0_Text": {
+    "japanese": "{Resource:Text}を1000個集める。",
+    "english": "Gather 1000 pieces of {Resource:Text}.",
+    "segments": [
+      {
+        "text": "{Resource:Text}",
+        "reading": "",
+        "gloss": "(resource)"
+      },
+      {
+        "text": "を1000個",
+        "reading": "o senko",
+        "gloss": "1000 of"
+      },
+      {
+        "text": "集める。",
+        "reading": "atsumeru",
+        "gloss": "gather"
+      }
+    ]
+  },
+  "Robin2_Text": {
+    "japanese": "ちょっとした楽しい宣伝を考えてるんだ。1週間で1000個の{Resource:Text}を集めてくれないかな。報酬は用意してるよ。{Resource:Text}は持ってていいよ！ -ロビンより",
+    "english": "I'm running a little promotion for fun. Could you gather 1000 {Resource:Text} in a week? I've got a reward ready. And you can keep the {Resource:Text}! -Robin",
+    "segments": [
+      {
+        "text": "ちょっとした楽しい宣伝",
+        "reading": "chotto shita tanoshii senden",
+        "gloss": "a little fun promotion"
+      },
+      {
+        "text": "を考えてるんだ。",
+        "reading": "o kangaeteru n da",
+        "gloss": "I'm thinking up"
+      },
+      {
+        "text": "1週間で1000個の",
+        "reading": "isshūkan de senko no",
+        "gloss": "1000 in a week"
+      },
+      {
+        "text": "{Resource:Text}",
+        "reading": "",
+        "gloss": "(resource)"
+      },
+      {
+        "text": "を集めてくれないかな。",
+        "reading": "o atsumete kurenai ka na",
+        "gloss": "won't you gather"
+      },
+      {
+        "text": "報酬は用意してるよ。",
+        "reading": "hōshū wa yōi shiteru yo",
+        "gloss": "I have a reward ready"
+      },
+      {
+        "text": "{Resource:Text}",
+        "reading": "",
+        "gloss": "(resource)"
+      },
+      {
+        "text": "は持ってていいよ！",
+        "reading": "wa mottete ii yo",
+        "gloss": "you can keep"
+      },
+      {
+        "text": " -ロビンより",
+        "reading": "Robin yori",
+        "gloss": "from Robin"
+      }
+    ]
+  },
+  "Robin_Name": {
+    "japanese": "ロビンの計画",
+    "english": "Robin's Project",
+    "segments": [
+      {
+        "text": "ロビンの",
+        "reading": "Robin no",
+        "gloss": "Robin's"
+      },
+      {
+        "text": "計画",
+        "reading": "keikaku",
+        "gloss": "project"
+      }
+    ]
+  },
+  "Robin_Objective_0_Text": {
+    "japanese": "堅い木を80個集める。",
+    "english": "Gather 80 pieces of hardwood.",
+    "segments": [
+      {
+        "text": "堅い木",
+        "reading": "katai ki",
+        "gloss": "hardwood"
+      },
+      {
+        "text": "を80個",
+        "reading": "o hachijikko",
+        "gloss": "80 pieces of"
+      },
+      {
+        "text": "集める。",
+        "reading": "atsumeru",
+        "gloss": "gather"
+      }
+    ]
+  },
+  "Robin_Objective_1_Text": {
+    "japanese": "ロビンの家の倉庫に堅い木を80個追加する。",
+    "english": "Add 80 hardwood to the stockpile in Robin's house.",
+    "segments": [
+      {
+        "text": "ロビンの家の倉庫",
+        "reading": "Robin no ie no sōko",
+        "gloss": "the storehouse in Robin's house"
+      },
+      {
+        "text": "に堅い木を80個追加する。",
+        "reading": "ni katai ki o hachijikko tsuika suru",
+        "gloss": "add 80 hardwood to"
+      }
+    ]
+  },
+  "Robin_Text": {
+    "japanese": "やあ！新しいベッドのアイディアがあるんだけど、作るには80個の堅い木が必要なの。誰か手伝ってくれない？ -ロビンより",
+    "english": "Hey! I've got an idea for a new bed, but I need 80 hardwood to make it. Can anyone help? -Robin",
+    "segments": [
+      {
+        "text": "やあ！",
+        "reading": "yā",
+        "gloss": "hey"
+      },
+      {
+        "text": "新しいベッドのアイディア",
+        "reading": "atarashii beddo no aidia",
+        "gloss": "an idea for a new bed"
+      },
+      {
+        "text": "があるんだけど、",
+        "reading": "ga aru n da kedo",
+        "gloss": "I have, but"
+      },
+      {
+        "text": "作るには80個の堅い木が必要なの。",
+        "reading": "tsukuru ni wa hachijikko no katai ki ga hitsuyō na no",
+        "gloss": "to make it I need 80 hardwood"
+      },
+      {
+        "text": "誰か手伝ってくれない？",
+        "reading": "dareka tetsudatte kurenai",
+        "gloss": "won't someone help"
+      },
+      {
+        "text": " -ロビンより",
+        "reading": "Robin yori",
+        "gloss": "from Robin"
+      }
+    ]
+  },
+  "Willy2_Name": {
+    "japanese": "トロピカルフィッシュ",
+    "english": "Tropical Fish",
+    "segments": [
+      {
+        "text": "トロピカルフィッシュ",
+        "reading": "toropikaru fisshu",
+        "gloss": "tropical fish"
+      }
+    ]
+  },
+  "Willy2_Objective_0_Text": {
+    "japanese": "ミノカサゴを5匹捕まえる。",
+    "english": "Catch 5 Lionfish.",
+    "segments": [
+      {
+        "text": "ミノカサゴ",
+        "reading": "minokasago",
+        "gloss": "lionfish"
+      },
+      {
+        "text": "を5匹",
+        "reading": "o gohiki",
+        "gloss": "5 of"
+      },
+      {
+        "text": "捕まえる。",
+        "reading": "tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "Willy2_Objective_1_Text": {
+    "japanese": "ブルーディスカスを5匹捕まえる。",
+    "english": "Catch 5 Blue Discus.",
+    "segments": [
+      {
+        "text": "ブルーディスカス",
+        "reading": "burū disukasu",
+        "gloss": "blue discus"
+      },
+      {
+        "text": "を5匹",
+        "reading": "o gohiki",
+        "gloss": "5 of"
+      },
+      {
+        "text": "捕まえる。",
+        "reading": "tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "Willy2_Objective_2_Text": {
+    "japanese": "エイを5匹捕まえる。",
+    "english": "Catch 5 Stingray.",
+    "segments": [
+      {
+        "text": "エイ",
+        "reading": "ei",
+        "gloss": "stingray"
+      },
+      {
+        "text": "を5匹",
+        "reading": "o gohiki",
+        "gloss": "5 of"
+      },
+      {
+        "text": "捕まえる。",
+        "reading": "tsukamaeru",
+        "gloss": "catch"
+      }
+    ]
+  },
+  "Willy2_Text": {
+    "japanese": "トロピカルフィッシュに代わるものなど何もない…絶滅させないためにも、島に運んできてくれたものには、報酬をあげるよ。",
+    "english": "There's nothing like tropical fish... to keep them from dying out, I'll reward anyone who brings in a haul from the island.",
+    "segments": [
+      {
+        "text": "トロピカルフィッシュ",
+        "reading": "toropikaru fisshu",
+        "gloss": "tropical fish"
+      },
+      {
+        "text": "に代わるものなど何もない…",
+        "reading": "ni kawaru mono nado nani mo nai",
+        "gloss": "there's nothing to replace"
+      },
+      {
+        "text": "絶滅させないためにも、",
+        "reading": "zetsumetsu sasenai tame ni mo",
+        "gloss": "so as not to let them die out"
+      },
+      {
+        "text": "島に運んできてくれたものには、",
+        "reading": "shima ni hakonde kite kureta mono ni wa",
+        "gloss": "for whoever brings a haul to the island"
+      },
+      {
+        "text": "報酬をあげるよ。",
+        "reading": "hōshū o ageru yo",
+        "gloss": "I'll give a reward"
+      }
+    ]
+  },
+  "Willy_Name": {
+    "japanese": "ジューシーな虫募集！",
+    "english": "Juicy Bugs Wanted!",
+    "segments": [
+      {
+        "text": "ジューシーな虫",
+        "reading": "jūshī na mushi",
+        "gloss": "juicy bugs"
+      },
+      {
+        "text": "募集！",
+        "reading": "boshū",
+        "gloss": "wanted"
+      }
+    ]
+  },
+  "Willy_Objective_0_Text": {
+    "japanese": "虫の肉をたくさんの集める。",
+    "english": "Collect a lot of bug meat",
+    "segments": [
+      {
+        "text": "虫の肉",
+        "reading": "mushi no niku",
+        "gloss": "bug meat"
+      },
+      {
+        "text": "をたくさんの集める。",
+        "reading": "o takusan no atsumeru",
+        "gloss": "collect a lot of"
+      }
+    ]
+  },
+  "Willy_Objective_1_Text": {
+    "japanese": "ウィリーの家の近くのタルに虫の肉を入れる。",
+    "english": "Place the bug meat in the barrel near Willy's house.",
+    "segments": [
+      {
+        "text": "ウィリーの家の近くのタル",
+        "reading": "Wirī no ie no chikaku no taru",
+        "gloss": "the barrel near Willy's house"
+      },
+      {
+        "text": "に虫の肉を入れる。",
+        "reading": "ni mushi no niku o ireru",
+        "gloss": "put the bug meat in"
+      }
+    ]
+  },
+  "Willy_Text": {
+    "japanese": "よお、虫の肉を探してるんだ。ジューシーな方がいい…それがカニの好みらしい…100個もあればいいだろう。",
+    "english": "Hey there, I'm after bug meat. Juicier is better... that's what the crabs seem to like... about 100 pieces should do.",
+    "segments": [
+      {
+        "text": "よお、",
+        "reading": "yō",
+        "gloss": "hey there"
+      },
+      {
+        "text": "虫の肉を探してるんだ。",
+        "reading": "mushi no niku o sagashiteru n da",
+        "gloss": "I'm looking for bug meat"
+      },
+      {
+        "text": "ジューシーな方がいい…",
+        "reading": "jūshī na hō ga ii",
+        "gloss": "juicier is better"
+      },
+      {
+        "text": "それがカニの好みらしい…",
+        "reading": "sore ga kani no konomi rashii",
+        "gloss": "that seems to be the crabs' taste"
+      },
+      {
+        "text": "100個もあればいいだろう。",
+        "reading": "hyakko mo areba ii darō",
+        "gloss": "100 pieces ought to do"
+      }
+    ]
+  },
+  "Wizard2_Name": {
+    "japanese": "プリズムゼリー",
+    "english": "Prismatic Jelly",
+    "segments": [
+      {
+        "text": "プリズムゼリー",
+        "reading": "purizumu zerī",
+        "gloss": "prismatic jelly"
+      }
+    ]
+  },
+  "Wizard2_Objective_0_Text": {
+    "japanese": "プリズムスライムを倒す。",
+    "english": "Slay a prismatic slime.",
+    "segments": [
+      {
+        "text": "プリズムスライム",
+        "reading": "purizumu suraimu",
+        "gloss": "prismatic slime"
+      },
+      {
+        "text": "を倒す。",
+        "reading": "o taosu",
+        "gloss": "slay"
+      }
+    ]
+  },
+  "Wizard2_Objective_1_Message": {
+    "japanese": "おお…狩りから戻ったのか。成功したのだな！$h#$b#では、そのゼリーをこちらに渡してくれ、そしてどこかに行ってくれ！重要な作業に取り掛からなければならないんだ。",
+    "english": "Ah... you've returned from the hunt. You succeeded!$h#$b#Now hand over that jelly and begone! I have important work to attend to.",
+    "segments": [
+      {
+        "text": "おお…",
+        "reading": "ō",
+        "gloss": "ah"
+      },
+      {
+        "text": "狩りから戻ったのか。",
+        "reading": "kari kara modotta no ka",
+        "gloss": "you've returned from the hunt"
+      },
+      {
+        "text": "成功したのだな！$h#$b#",
+        "reading": "seikō shita no da na",
+        "gloss": "you succeeded"
+      },
+      {
+        "text": "では、",
+        "reading": "dewa",
+        "gloss": "now then"
+      },
+      {
+        "text": "そのゼリーをこちらに渡してくれ、",
+        "reading": "sono zerī o kochira ni watashite kure",
+        "gloss": "hand that jelly over to me"
+      },
+      {
+        "text": "そしてどこかに行ってくれ！",
+        "reading": "soshite dokoka ni itte kure",
+        "gloss": "and begone"
+      },
+      {
+        "text": "重要な作業に取り掛からなければならないんだ。",
+        "reading": "jūyō na sagyō ni torikakaranakereba naranai n da",
+        "gloss": "I must set about important work"
+      }
+    ]
+  },
+  "Wizard2_Objective_1_Text": {
+    "japanese": "プリズムゼリーを魔術師に渡す。",
+    "english": "Deliver a prismatic jelly to the Wizard",
+    "segments": [
+      {
+        "text": "プリズムゼリー",
+        "reading": "purizumu zerī",
+        "gloss": "prismatic jelly"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object)"
+      },
+      {
+        "text": "魔術師",
+        "reading": "majutsushi",
+        "gloss": "the Wizard"
+      },
+      {
+        "text": "に渡す。",
+        "reading": "ni watasu",
+        "gloss": "deliver to"
+      }
+    ]
+  },
+  "Wizard2_Text": {
+    "japanese": "この地方の洞窟にいる、希少で危険なプリズムスライムを見つけ出す手助けをして欲しい。プリズムゼリーを持ってきてくれたら報酬を渡そう。 -M.ラズモディアス",
+    "english": "I want help tracking down the rare and dangerous prismatic slime in the local caves. Bring me prismatic jelly and you'll be rewarded. -M. Rasmodius",
+    "segments": [
+      {
+        "text": "この地方の洞窟にいる、",
+        "reading": "kono chihō no dōkutsu ni iru",
+        "gloss": "dwelling in this region's caves"
+      },
+      {
+        "text": "希少で危険なプリズムスライム",
+        "reading": "kishō de kiken na purizumu suraimu",
+        "gloss": "the rare and dangerous prismatic slime"
+      },
+      {
+        "text": "を見つけ出す手助けをして欲しい。",
+        "reading": "o mitsukedasu tedasuke o shite hoshii",
+        "gloss": "I want help finding"
+      },
+      {
+        "text": "プリズムゼリーを持ってきてくれたら報酬を渡そう。",
+        "reading": "purizumu zerī o motte kite kuretara hōshū o watasō",
+        "gloss": "bring me prismatic jelly and I'll give a reward"
+      },
+      {
+        "text": " -M.ラズモディアス",
+        "reading": "Razumodiasu",
+        "gloss": "M. Rasmodius"
+      }
+    ]
+  },
+  "Wizard_Name": {
+    "japanese": "好奇心をかき立てる物質",
+    "english": "A Curious Substance",
+    "segments": [
+      {
+        "text": "好奇心をかき立てる",
+        "reading": "kōkishin o kakitateru",
+        "gloss": "curiosity-provoking"
+      },
+      {
+        "text": "物質",
+        "reading": "busshitsu",
+        "gloss": "substance"
+      }
+    ]
+  },
+  "Wizard_Objective_0_Message": {
+    "japanese": "ああ、失われた魂のエネルギーに満ちている…完璧だ。$h#$b#さあ、どこかに行ってくれ！この物質の本質を見極めるためには、完全な沈黙を必要とするのだ。",
+    "english": "Ah, it brims with the energy of lost souls... perfect.$h#$b#Now begone! I require perfect silence to discern this substance's true nature.",
+    "segments": [
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "失われた魂のエネルギー",
+        "reading": "ushinawareta tamashii no enerugī",
+        "gloss": "the energy of lost souls"
+      },
+      {
+        "text": "に満ちている…",
+        "reading": "ni michite iru",
+        "gloss": "it is brimming with"
+      },
+      {
+        "text": "完璧だ。$h#$b#",
+        "reading": "kanpeki da",
+        "gloss": "perfect"
+      },
+      {
+        "text": "さあ、",
+        "reading": "sā",
+        "gloss": "now"
+      },
+      {
+        "text": "どこかに行ってくれ！",
+        "reading": "dokoka ni itte kure",
+        "gloss": "begone"
+      },
+      {
+        "text": "この物質の本質を見極めるためには、",
+        "reading": "kono busshitsu no honshitsu o mikiwameru tame ni wa",
+        "gloss": "to discern this substance's true nature"
+      },
+      {
+        "text": "完全な沈黙を必要とするのだ。",
+        "reading": "kanzen na chinmoku o hitsuyō to suru no da",
+        "gloss": "perfect silence is required"
+      }
+    ]
+  },
+  "Wizard_Objective_0_Text": {
+    "japanese": "魔術師にエクトプラズムを渡す。",
+    "english": "Deliver an ectoplasm to the Wizard",
+    "segments": [
+      {
+        "text": "魔術師",
+        "reading": "majutsushi",
+        "gloss": "the Wizard"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "to"
+      },
+      {
+        "text": "エクトプラズム",
+        "reading": "ekutopurazumu",
+        "gloss": "ectoplasm"
+      },
+      {
+        "text": "を渡す。",
+        "reading": "o watasu",
+        "gloss": "deliver"
+      }
+    ]
+  },
+  "Wizard_Text": {
+    "japanese": "我輩は「エクトプラズム」という、非常に希少でパワフルなネバネバを探している。それは倒したゴーストから見つかるかもしれない。 -M.ラズモディアス",
+    "english": "I seek an extremely rare and powerful goop known as \"ectoplasm\". It may be found in slain ghosts. -M. Rasmodius",
+    "segments": [
+      {
+        "text": "我輩は",
+        "reading": "wagahai wa",
+        "gloss": "I"
+      },
+      {
+        "text": "「エクトプラズム」という、",
+        "reading": "ekutopurazumu to iu",
+        "gloss": "called \"ectoplasm\""
+      },
+      {
+        "text": "非常に希少でパワフルなネバネバ",
+        "reading": "hijō ni kishō de pawafuru na nebaneba",
+        "gloss": "an extremely rare and powerful goop"
+      },
+      {
+        "text": "を探している。",
+        "reading": "o sagashite iru",
+        "gloss": "am seeking"
+      },
+      {
+        "text": "それは倒したゴーストから見つかるかもしれない。",
+        "reading": "sore wa taoshita gōsuto kara mitsukaru kamoshirenai",
+        "gloss": "it may be found in slain ghosts"
+      },
+      {
+        "text": " -M.ラズモディアス",
+        "reading": "Razumodiasu",
+        "gloss": "M. Rasmodius"
+      }
+    ]
+  }
+}
