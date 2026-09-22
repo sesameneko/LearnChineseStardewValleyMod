@@ -2105,5 +2105,1434 @@
         "gloss": "Leo's recipe"
       }
     ]
+  },
+  "Lewis": {
+    "japanese": "@、^きみが地元の一員になってくれてほんとうにうれしいよ！きみの仕事の助けになるよう、スターデューバレー農業基金から500Gぶんの小切手を同封しておく。^どうか、タネを買う足しにでもしてくれ。^ それでは。 -ルイス町長より%item money 500 501 %%[#]ルイス町長からの贈り物",
+    "english": "@,^I'm genuinely glad you've become part of the community! To help with your work, I enclose a cheque for 500g from the Stardew Valley Agricultural Fund.^Do put it towards buying seeds.^ Yours, Mayor Lewis%item money 500 501 %%[#]A gift from Mayor Lewis",
+    "segments": [
+      {
+        "text": "@、^",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "きみが地元の一員",
+        "reading": "kimi ga jimoto no ichiin",
+        "gloss": "you, a member of the community"
+      },
+      {
+        "text": "になってくれてほんとうにうれしいよ！",
+        "reading": "ni natte kurete hontō ni ureshii yo",
+        "gloss": "I'm truly glad you've become"
+      },
+      {
+        "text": "きみの仕事の助け",
+        "reading": "kimi no shigoto no tasuke",
+        "gloss": "a help to your work"
+      },
+      {
+        "text": "になるよう、",
+        "reading": "ni naru yō",
+        "gloss": "so as to be"
+      },
+      {
+        "text": "スターデューバレー農業基金",
+        "reading": "Sutādyū Barē nōgyō kikin",
+        "gloss": "the Stardew Valley Agricultural Fund"
+      },
+      {
+        "text": "から500Gぶんの小切手",
+        "reading": "kara gohyaku jī bun no kogitte",
+        "gloss": "a cheque for 500g from"
+      },
+      {
+        "text": "を同封しておく。^",
+        "reading": "o dōfū shite oku",
+        "gloss": "I enclose"
+      },
+      {
+        "text": "どうか、",
+        "reading": "dōka",
+        "gloss": "please"
+      },
+      {
+        "text": "タネを買う足しにでもしてくれ。^ ",
+        "reading": "tane o kau tashi ni demo shite kure",
+        "gloss": "put it towards buying seeds"
+      },
+      {
+        "text": "それでは。 -",
+        "reading": "sore de wa",
+        "gloss": "well then"
+      },
+      {
+        "text": "ルイス町長より%item money 500 501 %%[#]",
+        "reading": "Ruisu chōchō yori",
+        "gloss": "from Mayor Lewis"
+      },
+      {
+        "text": "ルイス町長からの贈り物",
+        "reading": "Ruisu chōchō kara no okurimono",
+        "gloss": "a gift from Mayor Lewis"
+      }
+    ]
+  },
+  "LewisCooking": {
+    "japanese": "@へ^きちんと食事をとるのを忘れんようにな。さもないと仕事の途中でエネルギーが足りなくなるぞ！栄養補給に、わたしが好きなレシピをひとつ教えよう。よく熟したトマトをつかうようにな！ ^ -ルイスより%item cookingRecipe %%[#]ルイスのレシピ",
+    "english": "@,^Mind you don't forget to eat properly, or you'll run out of energy mid-work! For nourishment, here's one of my favourite recipes. Be sure to use well-ripened tomatoes!^ -From Lewis%item cookingRecipe %%[#]Lewis's recipe",
+    "segments": [
+      {
+        "text": "@へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "きちんと食事をとるの",
+        "reading": "kichinto shokuji o toru no",
+        "gloss": "eating properly"
+      },
+      {
+        "text": "を忘れんようにな。",
+        "reading": "o wasuren yō ni na",
+        "gloss": "mind you don't forget"
+      },
+      {
+        "text": "さもないと",
+        "reading": "samonai to",
+        "gloss": "otherwise"
+      },
+      {
+        "text": "仕事の途中でエネルギーが足りなくなるぞ！",
+        "reading": "shigoto no tochū de enerugī ga tarinaku naru zo",
+        "gloss": "you'll run short of energy mid-work"
+      },
+      {
+        "text": "栄養補給に、",
+        "reading": "eiyō hokyū ni",
+        "gloss": "for nourishment"
+      },
+      {
+        "text": "わたしが好きなレシピ",
+        "reading": "watashi ga suki na reshipi",
+        "gloss": "a recipe I like"
+      },
+      {
+        "text": "をひとつ教えよう。",
+        "reading": "o hitotsu oshieyō",
+        "gloss": "let me teach you one"
+      },
+      {
+        "text": "よく熟したトマト",
+        "reading": "yoku jukushita tomato",
+        "gloss": "well-ripened tomatoes"
+      },
+      {
+        "text": "をつかうようにな！ ^ -",
+        "reading": "o tsukau yō ni na",
+        "gloss": "be sure to use"
+      },
+      {
+        "text": "ルイスより%item cookingRecipe %%[#]",
+        "reading": "Ruisu yori",
+        "gloss": "from Lewis"
+      },
+      {
+        "text": "ルイスのレシピ",
+        "reading": "Ruisu no reshipi",
+        "gloss": "Lewis's recipe"
+      }
+    ]
+  },
+  "Linus": {
+    "japanese": "やあ、元気かい。^ちかごろ、山の湖からの幸がたくさんとれるんだ。この山のめぐみを、きみにもおすそ分けさせてくれ。^ -ライナスより %item id (O)136 1 (O)143 1 (O)202 1 (O)227 1 (O)228 1 %%[#]ライナスからの贈り物",
+    "english": "Hello, how are you?^The mountain lake has been generous lately. Let me share the mountain's bounty with you.^ -From Linus %item id (O)136 1 (O)143 1 (O)202 1 (O)227 1 (O)228 1 %%[#]A gift from Linus",
+    "segments": [
+      {
+        "text": "やあ、元気かい。^",
+        "reading": "yā genki kai",
+        "gloss": "hello, how are you"
+      },
+      {
+        "text": "ちかごろ、",
+        "reading": "chikagoro",
+        "gloss": "lately"
+      },
+      {
+        "text": "山の湖からの幸",
+        "reading": "yama no mizuumi kara no sachi",
+        "gloss": "bounty from the mountain lake"
+      },
+      {
+        "text": "がたくさんとれるんだ。",
+        "reading": "ga takusan toreru n da",
+        "gloss": "I've been getting plenty of"
+      },
+      {
+        "text": "この山のめぐみ",
+        "reading": "kono yama no megumi",
+        "gloss": "this mountain's blessing"
+      },
+      {
+        "text": "を、",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "きみにもおすそ分けさせてくれ。^ -",
+        "reading": "kimi ni mo o-susowake sasete kure",
+        "gloss": "let me share with you too"
+      },
+      {
+        "text": "ライナスより %item id (O)136 1 (O)143 1 (O)202 1 (O)227 1 (O)228 1 %%[#]",
+        "reading": "Rainasu yori",
+        "gloss": "from Linus"
+      },
+      {
+        "text": "ライナスからの贈り物",
+        "reading": "Rainasu kara no okurimono",
+        "gloss": "a gift from Linus"
+      }
+    ]
+  },
+  "LinusCooking": {
+    "japanese": "@、^調子はどうだい？わたしが好きな魚料理のレシピを同封して送っておいたよ。 ^ -ライナスより%item cookingRecipe %%[#]ライナスのレシピ",
+    "english": "@,^How are you? I've enclosed a recipe for one of my favourite fish dishes.^ -From Linus%item cookingRecipe %%[#]Linus' recipe",
+    "segments": [
+      {
+        "text": "@、^",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "調子はどうだい？",
+        "reading": "chōshi wa dō dai",
+        "gloss": "how are things"
+      },
+      {
+        "text": "わたしが好きな魚料理のレシピ",
+        "reading": "watashi ga suki na sakana ryōri no reshipi",
+        "gloss": "a recipe for a fish dish I like"
+      },
+      {
+        "text": "を同封して送っておいたよ。 ^ -",
+        "reading": "o dōfū shite okutte oita yo",
+        "gloss": "I've enclosed and sent"
+      },
+      {
+        "text": "ライナスより%item cookingRecipe %%[#]",
+        "reading": "Rainasu yori",
+        "gloss": "from Linus"
+      },
+      {
+        "text": "ライナスのレシピ",
+        "reading": "Rainasu no reshipi",
+        "gloss": "Linus' recipe"
+      }
+    ]
+  },
+  "MSB_Lewis": {
+    "japanese": "@、^今回は私の特別注文に応えてくれてありがとう。きみのおかげで、ペリカンタウンの大幅なイメージアップができたよ。^これは「ミニ出荷箱」、私からの感謝の気持ちだ。^それをどこかに置いてくれたら、私が巡回している時に必ず立ち寄るようにするよ。^^-ルイスより%item id (BC)248 %%[#]ルイスの感謝",
+    "english": "@,^Thank you for answering my special order this time. Thanks to you, Pelican Town's image has improved a great deal.^This \"mini shipping bin\" is a token of my gratitude.^Put it somewhere and I'll be sure to call in on my rounds.^^-From Lewis%item id (BC)248 %%[#]Lewis's thanks",
+    "segments": [
+      {
+        "text": "@、^",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "今回は私の特別注文",
+        "reading": "konkai wa watashi no tokubetsu chūmon",
+        "gloss": "my special order this time"
+      },
+      {
+        "text": "に応えてくれてありがとう。",
+        "reading": "ni kotaete kurete arigatō",
+        "gloss": "thank you for answering"
+      },
+      {
+        "text": "きみのおかげで、",
+        "reading": "kimi no okage de",
+        "gloss": "thanks to you"
+      },
+      {
+        "text": "ペリカンタウンの大幅なイメージアップ",
+        "reading": "Perikan Taun no ōhaba na imēji appu",
+        "gloss": "a major image boost for Pelican Town"
+      },
+      {
+        "text": "ができたよ。^",
+        "reading": "ga dekita yo",
+        "gloss": "was achieved"
+      },
+      {
+        "text": "これは「ミニ出荷箱」、",
+        "reading": "kore wa mini shukka bako",
+        "gloss": "this is a mini shipping bin"
+      },
+      {
+        "text": "私からの感謝の気持ちだ。^",
+        "reading": "watashi kara no kansha no kimochi da",
+        "gloss": "a token of my gratitude"
+      },
+      {
+        "text": "それをどこかに置いてくれたら、",
+        "reading": "sore o dokoka ni oite kuretara",
+        "gloss": "if you put it somewhere"
+      },
+      {
+        "text": "私が巡回している時に",
+        "reading": "watashi ga junkai shite iru toki ni",
+        "gloss": "when I'm on my rounds"
+      },
+      {
+        "text": "必ず立ち寄るようにするよ。^^-",
+        "reading": "kanarazu tachiyoru yō ni suru yo",
+        "gloss": "I'll be sure to call in"
+      },
+      {
+        "text": "ルイスより%item id (BC)248 %%[#]",
+        "reading": "Ruisu yori",
+        "gloss": "from Lewis"
+      },
+      {
+        "text": "ルイスの感謝",
+        "reading": "Ruisu no kansha",
+        "gloss": "Lewis's gratitude"
+      }
+    ]
+  },
+  "MSB_Pierre": {
+    "japanese": "親愛なる@へ、^^「ピエールの特選商品」は、私が思っていたほどみなさんに興味を持ってもらえなかったようですね…^^それはさておき、ここに私の古い「ミニ出荷箱」があります。^次の「ピエール特選」の高級ブランドにふさわしい作物を手に入れたら、私のところに送ってもらえませんか？^^-ピエールより%item id (BC)248 %%[#]ピエールの特選商品",
+    "english": "Dear @,^^It seems \"Pierre's Prime Produce\" didn't catch people's interest as much as I'd hoped...^^Anyway, here's my old \"mini shipping bin\".^Next time you get hold of produce worthy of the \"Pierre's Prime\" luxury brand, could you send it my way?^^-From Pierre%item id (BC)248 %%[#]Pierre's prime produce",
+    "segments": [
+      {
+        "text": "親愛なる",
+        "reading": "shin'ai naru",
+        "gloss": "dear"
+      },
+      {
+        "text": "@へ、^^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "「ピエールの特選商品」",
+        "reading": "Piēru no tokusen shōhin",
+        "gloss": "Pierre's prime produce"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私が思っていたほど",
+        "reading": "watashi ga omotte ita hodo",
+        "gloss": "as much as I'd thought"
+      },
+      {
+        "text": "みなさんに興味を持ってもらえなかったようですね…^^",
+        "reading": "minasan ni kyōmi o motte moraenakatta yō desu ne",
+        "gloss": "didn't gain people's interest"
+      },
+      {
+        "text": "それはさておき、",
+        "reading": "sore wa sateoki",
+        "gloss": "setting that aside"
+      },
+      {
+        "text": "ここに私の古い「ミニ出荷箱」があります。^",
+        "reading": "koko ni watashi no furui mini shukka bako ga arimasu",
+        "gloss": "here is my old mini shipping bin"
+      },
+      {
+        "text": "次の「ピエール特選」の高級ブランド",
+        "reading": "tsugi no Piēru tokusen no kōkyū burando",
+        "gloss": "the next Pierre's Prime luxury brand"
+      },
+      {
+        "text": "にふさわしい作物",
+        "reading": "ni fusawashii sakumotsu",
+        "gloss": "produce worthy of"
+      },
+      {
+        "text": "を手に入れたら、",
+        "reading": "o te ni iretara",
+        "gloss": "if you get hold of"
+      },
+      {
+        "text": "私のところに送ってもらえませんか？^^-",
+        "reading": "watashi no tokoro ni okutte moraemasen ka",
+        "gloss": "could you send it to me"
+      },
+      {
+        "text": "ピエールより%item id (BC)248 %%[#]",
+        "reading": "Piēru yori",
+        "gloss": "from Pierre"
+      },
+      {
+        "text": "ピエールの特選商品",
+        "reading": "Piēru no tokusen shōhin",
+        "gloss": "Pierre's prime produce"
+      }
+    ]
+  },
+  "MarlonRecovery": {
+    "japanese": "@、^無くし物を見つけたよ。^^次からもっと気をつけなさい！^-マーロン%item itemRecovery %%[#]マーロンはあなたのアイテムを見つけました",
+    "english": "@,^I found your lost item.^^Be more careful next time!^-Marlon%item itemRecovery %%[#]Marlon found your item",
+    "segments": [
+      {
+        "text": "@、^",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "無くし物を見つけたよ。^^",
+        "reading": "nakushimono o mitsuketa yo",
+        "gloss": "I found your lost item"
+      },
+      {
+        "text": "次からもっと気をつけなさい！^-",
+        "reading": "tsugi kara motto ki o tsukenasai",
+        "gloss": "be more careful from next time"
+      },
+      {
+        "text": "マーロン%item itemRecovery %%[#]",
+        "reading": "Māron",
+        "gloss": "Marlon"
+      },
+      {
+        "text": "マーロンはあなたのアイテムを見つけました",
+        "reading": "Māron wa anata no aitemu o mitsukemashita",
+        "gloss": "Marlon found your item"
+      }
+    ]
+  },
+  "Marnie": {
+    "japanese": "@さんへ^いつも親切にしてくれてありがとう。お礼に、動物のエサをおすそ分けさせてください。お仕事が楽になりますように。どうか、がんばってね！ ^ -マーニーより %item id (O)178 30 %%[#]マーニーからの贈り物",
+    "english": "Dear @,^Thank you for always being so kind. As thanks, let me share some animal feed. May it make your work easier. Do keep at it!^ -From Marnie %item id (O)178 30 %%[#]A gift from Marnie",
+    "segments": [
+      {
+        "text": "@さん",
+        "reading": "san",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "いつも親切にしてくれてありがとう。",
+        "reading": "itsumo shinsetsu ni shite kurete arigatō",
+        "gloss": "thank you for always being kind"
+      },
+      {
+        "text": "お礼に、",
+        "reading": "o-rei ni",
+        "gloss": "as thanks"
+      },
+      {
+        "text": "動物のエサ",
+        "reading": "dōbutsu no esa",
+        "gloss": "animal feed"
+      },
+      {
+        "text": "をおすそ分けさせてください。",
+        "reading": "o o-susowake sasete kudasai",
+        "gloss": "please let me share"
+      },
+      {
+        "text": "お仕事が楽になりますように。",
+        "reading": "o-shigoto ga raku ni narimasu yō ni",
+        "gloss": "may your work become easier"
+      },
+      {
+        "text": "どうか、がんばってね！ ^ -",
+        "reading": "dōka ganbatte ne",
+        "gloss": "do keep at it"
+      },
+      {
+        "text": "マーニーより %item id (O)178 30 %%[#]",
+        "reading": "Mānī yori",
+        "gloss": "from Marnie"
+      },
+      {
+        "text": "マーニーからの贈り物",
+        "reading": "Mānī kara no okurimono",
+        "gloss": "a gift from Marnie"
+      }
+    ]
+  },
+  "MarnieCooking": {
+    "japanese": "親愛なるご近所さんへ^あたし、動物の世話をしてないときは、キッチンでちょっとした実験をするのが好きなの。せっかくお友達になれたんだから、その成果をあなたにおすそ分けいしようかなって思って。^どうかお気にめしますように！ ^ -マーニーより%item cookingRecipe %%[#]マーニーのレシピ",
+    "english": "Dear neighbour,^When I'm not looking after the animals, I like to do little experiments in the kitchen. Since we've become friends, I thought I'd share the results with you.^I do hope you like it!^ -From Marnie%item cookingRecipe %%[#]Marnie's recipe",
+    "segments": [
+      {
+        "text": "親愛なるご近所さん",
+        "reading": "shin'ai naru go-kinjo-san",
+        "gloss": "dear neighbour"
+      },
+      {
+        "text": "へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "あたし、",
+        "reading": "atashi",
+        "gloss": "I"
+      },
+      {
+        "text": "動物の世話をしてないとき",
+        "reading": "dōbutsu no sewa o shitenai toki",
+        "gloss": "when I'm not caring for animals"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "キッチンでちょっとした実験をするの",
+        "reading": "kitchin de chotto shita jikken o suru no",
+        "gloss": "doing little experiments in the kitchen"
+      },
+      {
+        "text": "が好きなの。",
+        "reading": "ga suki na no",
+        "gloss": "I like"
+      },
+      {
+        "text": "せっかくお友達になれたんだから、",
+        "reading": "sekkaku o-tomodachi ni nareta n da kara",
+        "gloss": "since we've become friends"
+      },
+      {
+        "text": "その成果",
+        "reading": "sono seika",
+        "gloss": "those results"
+      },
+      {
+        "text": "をあなたにおすそ分けいしようかなって思って。^",
+        "reading": "o anata ni o-susowake i shiyō ka na tte omotte",
+        "gloss": "I thought I'd share with you"
+      },
+      {
+        "text": "どうかお気にめしますように！ ^ -",
+        "reading": "dōka o-ki ni meshimasu yō ni",
+        "gloss": "may it please you"
+      },
+      {
+        "text": "マーニーより%item cookingRecipe %%[#]",
+        "reading": "Mānī yori",
+        "gloss": "from Marnie"
+      },
+      {
+        "text": "マーニーのレシピ",
+        "reading": "Mānī no reshipi",
+        "gloss": "Marnie's recipe"
+      }
+    ]
+  },
+  "MarniePetAdoption": {
+    "japanese": "@さんへ。^^あなたはペットをよく世話してくれているみたいね！とっても嬉しいわ！^^でも、里親が必要なかわいい動物たちはたくさんいるの…だから、私のお店でペットの里親募集を始めるつもりなの。^^ただ、手数料がかかることと、ペットたちが自分の屋外ペット用ボウルを欲しがること、そうでないと不機嫌になってしまうことに注意してね。追加のペット用ボウルは、お金を払えばロビンが喜んで作ってくれるわ。^^また会いましょうね！^-マーニーより[#]ペットの里親募集についての手紙",
+    "english": "Dear @,^^It looks as though you're taking very good care of your pet! That makes me so happy!^^But there are many lovely animals in need of a home... so I'm going to start offering pet adoptions at my shop.^^Do note that there's a fee, and that each pet will want its own outdoor pet bowl, or it'll be unhappy. Robin will gladly build extra pet bowls for a price.^^See you soon!^-From Marnie[#]A letter about pet adoption",
+    "segments": [
+      {
+        "text": "@さん",
+        "reading": "san",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "へ。^^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "はペットをよく世話してくれているみたいね！",
+        "reading": "wa petto o yoku sewa shite kurete iru mitai ne",
+        "gloss": "seem to be caring well for your pet"
+      },
+      {
+        "text": "とっても嬉しいわ！^^",
+        "reading": "tottemo ureshii wa",
+        "gloss": "I'm so glad"
+      },
+      {
+        "text": "でも、",
+        "reading": "demo",
+        "gloss": "but"
+      },
+      {
+        "text": "里親が必要なかわいい動物たち",
+        "reading": "satooya ga hitsuyō na kawaii dōbutsu tachi",
+        "gloss": "lovely animals needing adoptive homes"
+      },
+      {
+        "text": "はたくさんいるの…",
+        "reading": "wa takusan iru no",
+        "gloss": "there are many"
+      },
+      {
+        "text": "だから、",
+        "reading": "dakara",
+        "gloss": "so"
+      },
+      {
+        "text": "私のお店でペットの里親募集",
+        "reading": "watashi no o-mise de petto no satooya boshū",
+        "gloss": "pet adoption at my shop"
+      },
+      {
+        "text": "を始めるつもりなの。^^",
+        "reading": "o hajimeru tsumori na no",
+        "gloss": "I intend to start"
+      },
+      {
+        "text": "ただ、",
+        "reading": "tada",
+        "gloss": "however"
+      },
+      {
+        "text": "手数料がかかること",
+        "reading": "tesūryō ga kakaru koto",
+        "gloss": "that a fee applies"
+      },
+      {
+        "text": "と、",
+        "reading": "to",
+        "gloss": "and"
+      },
+      {
+        "text": "ペットたちが自分の屋外ペット用ボウル",
+        "reading": "petto tachi ga jibun no okugai petto yō bōru",
+        "gloss": "that pets, their own outdoor pet bowl"
+      },
+      {
+        "text": "を欲しがること、",
+        "reading": "o hoshigaru koto",
+        "gloss": "will want"
+      },
+      {
+        "text": "そうでないと不機嫌になってしまうこと",
+        "reading": "sō de nai to fukigen ni natte shimau koto",
+        "gloss": "that otherwise they'll become unhappy"
+      },
+      {
+        "text": "に注意してね。",
+        "reading": "ni chūi shite ne",
+        "gloss": "do note"
+      },
+      {
+        "text": "追加のペット用ボウル",
+        "reading": "tsuika no petto yō bōru",
+        "gloss": "additional pet bowls"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "お金を払えば",
+        "reading": "o-kane o haraeba",
+        "gloss": "if you pay"
+      },
+      {
+        "text": "ロビンが喜んで作ってくれるわ。^^",
+        "reading": "Robin ga yorokonde tsukutte kureru wa",
+        "gloss": "Robin will gladly build"
+      },
+      {
+        "text": "また会いましょうね！^-",
+        "reading": "mata aimashō ne",
+        "gloss": "let's meet again"
+      },
+      {
+        "text": "マーニーより[#]",
+        "reading": "Mānī yori",
+        "gloss": "from Marnie"
+      },
+      {
+        "text": "ペットの里親募集についての手紙",
+        "reading": "petto no satooya boshū ni tsuite no tegami",
+        "gloss": "a letter about pet adoption"
+      }
+    ]
+  },
+  "MarniePetRejectedAdoption": {
+    "japanese": "@さんへ。^^お元気でお過ごしですか？^^先日たずねたときに、あなたがペットを飼わないことに決めたのは知っているわ。でも、もし気が変わったときには私のお店に寄ってちょうだいね。ペットの里親募集を始めたのよ。^^また会いましょうね！^-マーニーより[#]ペットの里親募集についての手紙",
+    "english": "Dear @,^^I hope you're keeping well.^^I know you decided not to keep a pet when I last asked. But if you change your mind, do drop by my shop — I've started offering pet adoptions.^^See you soon!^-From Marnie[#]A letter about pet adoption",
+    "segments": [
+      {
+        "text": "@さん",
+        "reading": "san",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "へ。^^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "お元気でお過ごしですか？^^",
+        "reading": "o-genki de o-sugoshi desu ka",
+        "gloss": "are you keeping well"
+      },
+      {
+        "text": "先日たずねたとき",
+        "reading": "senjitsu tazuneta toki",
+        "gloss": "when I asked the other day"
+      },
+      {
+        "text": "に、",
+        "reading": "ni",
+        "gloss": "at"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "がペットを飼わないことに決めたの",
+        "reading": "ga petto o kawanai koto ni kimeta no",
+        "gloss": "decided not to keep a pet"
+      },
+      {
+        "text": "は知っているわ。",
+        "reading": "wa shitte iru wa",
+        "gloss": "I know"
+      },
+      {
+        "text": "でも、",
+        "reading": "demo",
+        "gloss": "but"
+      },
+      {
+        "text": "もし気が変わったとき",
+        "reading": "moshi ki ga kawatta toki",
+        "gloss": "if you change your mind"
+      },
+      {
+        "text": "には私のお店に寄ってちょうだいね。",
+        "reading": "ni wa watashi no o-mise ni yotte chōdai ne",
+        "gloss": "do drop by my shop"
+      },
+      {
+        "text": "ペットの里親募集を始めたのよ。^^",
+        "reading": "petto no satooya boshū o hajimeta no yo",
+        "gloss": "I've started pet adoptions"
+      },
+      {
+        "text": "また会いましょうね！^-",
+        "reading": "mata aimashō ne",
+        "gloss": "let's meet again"
+      },
+      {
+        "text": "マーニーより[#]",
+        "reading": "Mānī yori",
+        "gloss": "from Marnie"
+      },
+      {
+        "text": "ペットの里親募集についての手紙",
+        "reading": "petto no satooya boshū ni tsuite no tegami",
+        "gloss": "a letter about pet adoption"
+      }
+    ]
+  },
+  "Pam": {
+    "japanese": "よう。^タンスのなかに入ってたんだが、あんたがつかいそうだから送っとくよ。 ^ -パム %item id (O)346 1 (O)349 1 (O)787 1 %%[#]パムからの贈り物",
+    "english": "Hey.^I found this in a drawer, and it looks like something you'd use, so I'm sending it.^ -Pam %item id (O)346 1 (O)349 1 (O)787 1 %%[#]A gift from Pam",
+    "segments": [
+      {
+        "text": "よう。^",
+        "reading": "yō",
+        "gloss": "hey"
+      },
+      {
+        "text": "タンスのなかに入ってたんだが、",
+        "reading": "tansu no naka ni haitteta n da ga",
+        "gloss": "it was in a chest of drawers, and"
+      },
+      {
+        "text": "あんたがつかいそうだから",
+        "reading": "anta ga tsukaisō da kara",
+        "gloss": "since it looks like you'd use it"
+      },
+      {
+        "text": "送っとくよ。 ^ -",
+        "reading": "okutoku yo",
+        "gloss": "I'm sending it"
+      },
+      {
+        "text": "パム %item id (O)346 1 (O)349 1 (O)787 1 %%[#]",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "パムからの贈り物",
+        "reading": "Pamu kara no okurimono",
+        "gloss": "a gift from Pam"
+      }
+    ]
+  },
+  "PamCooking": {
+    "japanese": "よう、若いの。^こいつは、うちのじいさんがむかしつくってたレシピだよ。ちょいと根気はいるが、まあ試してみな。 ^ -パム%item cookingRecipe %%[#]パムのレシピ",
+    "english": "Hey, kid.^This is a recipe my old man used to make. It takes a bit of patience, but give it a go.^ -Pam%item cookingRecipe %%[#]Pam's recipe",
+    "segments": [
+      {
+        "text": "よう、若いの。^",
+        "reading": "yō wakai no",
+        "gloss": "hey, young one"
+      },
+      {
+        "text": "こいつは、",
+        "reading": "koitsu wa",
+        "gloss": "this is"
+      },
+      {
+        "text": "うちのじいさん",
+        "reading": "uchi no jiisan",
+        "gloss": "my old man"
+      },
+      {
+        "text": "がむかしつくってたレシピだよ。",
+        "reading": "ga mukashi tsukutteta reshipi da yo",
+        "gloss": "a recipe he used to make"
+      },
+      {
+        "text": "ちょいと根気はいるが、",
+        "reading": "choito konki wa iru ga",
+        "gloss": "it takes a bit of patience, but"
+      },
+      {
+        "text": "まあ試してみな。 ^ -",
+        "reading": "mā tameshite mina",
+        "gloss": "well, give it a try"
+      },
+      {
+        "text": "パム%item cookingRecipe %%[#]",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "パムのレシピ",
+        "reading": "Pamu no reshipi",
+        "gloss": "Pam's recipe"
+      }
+    ]
+  },
+  "PennyCleanTrailer": {
+    "japanese": "きのうはごめんね。せっかくうちに来てくれたのに…母さんはときどき、ああやって不機嫌になるの。^どうか、うちであったことは忘れてね。^ -ペニーより[#]ペニーのおわび",
+    "english": "Sorry about yesterday. You'd come all that way to our place... Mum gets into those moods sometimes.^Please forget what happened at ours.^ -From Penny[#]Penny's apology",
+    "segments": [
+      {
+        "text": "きのうはごめんね。",
+        "reading": "kinō wa gomen ne",
+        "gloss": "sorry about yesterday"
+      },
+      {
+        "text": "せっかくうちに来てくれたのに…",
+        "reading": "sekkaku uchi ni kite kureta no ni",
+        "gloss": "even though you kindly came to ours"
+      },
+      {
+        "text": "母さん",
+        "reading": "kāsan",
+        "gloss": "mum"
+      },
+      {
+        "text": "はときどき、",
+        "reading": "wa tokidoki",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "ああやって不機嫌になるの。^",
+        "reading": "ā yatte fukigen ni naru no",
+        "gloss": "gets into a mood like that"
+      },
+      {
+        "text": "どうか、",
+        "reading": "dōka",
+        "gloss": "please"
+      },
+      {
+        "text": "うちであったこと",
+        "reading": "uchi de atta koto",
+        "gloss": "what happened at ours"
+      },
+      {
+        "text": "は忘れてね。^ -",
+        "reading": "wa wasurete ne",
+        "gloss": "forget"
+      },
+      {
+        "text": "ペニーより[#]",
+        "reading": "Penī yori",
+        "gloss": "from Penny"
+      },
+      {
+        "text": "ペニーのおわび",
+        "reading": "Penī no owabi",
+        "gloss": "Penny's apology"
+      }
+    ]
+  },
+  "Pierre": {
+    "japanese": "親愛なるお客様へ^ピエール商店のご利用ありがとうございます！このたびは、「キャッシュバックプログラム」の払い戻しぶんをお送りいたします。毎度ありがとうございます！ ^ -ピエール^ 追伸： @さん、定型文ですみません。受けとってください！%item money 250 601 %%[#]ピエールからの贈り物",
+    "english": "Dear valued customer,^Thank you for shopping at Pierre's! Enclosed is your Cash-Back Rewards Programme rebate. Thank you as always!^ -Pierre^ P.S. Sorry for the form letter, @. Please accept it!%item money 250 601 %%[#]A gift from Pierre",
+    "segments": [
+      {
+        "text": "親愛なるお客様",
+        "reading": "shin'ai naru o-kyakusama",
+        "gloss": "dear valued customer"
+      },
+      {
+        "text": "へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "ピエール商店のご利用",
+        "reading": "Piēru shōten no go-riyō",
+        "gloss": "your patronage of Pierre's shop"
+      },
+      {
+        "text": "ありがとうございます！",
+        "reading": "arigatō gozaimasu",
+        "gloss": "thank you for"
+      },
+      {
+        "text": "このたびは、",
+        "reading": "kono tabi wa",
+        "gloss": "on this occasion"
+      },
+      {
+        "text": "「キャッシュバックプログラム」の払い戻しぶん",
+        "reading": "kyasshu bakku puroguramu no haraimodoshi bun",
+        "gloss": "the cash-back programme rebate"
+      },
+      {
+        "text": "をお送りいたします。",
+        "reading": "o o-okuri itashimasu",
+        "gloss": "we are sending"
+      },
+      {
+        "text": "毎度ありがとうございます！ ^ -",
+        "reading": "maido arigatō gozaimasu",
+        "gloss": "thank you as always"
+      },
+      {
+        "text": "ピエール^ ",
+        "reading": "Piēru",
+        "gloss": "Pierre"
+      },
+      {
+        "text": "追伸： ",
+        "reading": "tsuishin",
+        "gloss": "postscript"
+      },
+      {
+        "text": "@さん、",
+        "reading": "san",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "定型文ですみません。",
+        "reading": "teikeibun de sumimasen",
+        "gloss": "sorry for the form letter"
+      },
+      {
+        "text": "受けとってください！%item money 250 601 %%[#]",
+        "reading": "uketotte kudasai",
+        "gloss": "please accept it"
+      },
+      {
+        "text": "ピエールからの贈り物",
+        "reading": "Piēru kara no okurimono",
+        "gloss": "a gift from Pierre"
+      }
+    ]
+  },
+  "PierreCooking": {
+    "japanese": "！トップシークレット！^これぞ門外不出、絶品ブルーベリータルトのレシピです。^あなたを良き友人と見こんで教えます。ほかの誰にも教えないでくださいね！^ -ピエールより%item cookingRecipe %%[#]ピエールの有名なタルト",
+    "english": "TOP SECRET!^Here is the never-shared recipe for my superb blueberry tart.^I'm telling you because I count you a good friend. Don't tell another soul!^ -From Pierre%item cookingRecipe %%[#]Pierre's famous tart",
+    "segments": [
+      {
+        "text": "！トップシークレット！^",
+        "reading": "toppu shīkuretto",
+        "gloss": "top secret"
+      },
+      {
+        "text": "これぞ門外不出、",
+        "reading": "kore zo mongai fushutsu",
+        "gloss": "this is never let out of doors"
+      },
+      {
+        "text": "絶品ブルーベリータルトのレシピです。^",
+        "reading": "zeppin burūberī taruto no reshipi desu",
+        "gloss": "the recipe for a superb blueberry tart"
+      },
+      {
+        "text": "あなたを良き友人と見こんで",
+        "reading": "anata o yoki yūjin to mikonde",
+        "gloss": "counting you a good friend"
+      },
+      {
+        "text": "教えます。",
+        "reading": "oshiemasu",
+        "gloss": "I'm telling you"
+      },
+      {
+        "text": "ほかの誰にも教えないでくださいね！^ -",
+        "reading": "hoka no dare ni mo oshienaide kudasai ne",
+        "gloss": "please don't tell anyone else"
+      },
+      {
+        "text": "ピエールより%item cookingRecipe %%[#]",
+        "reading": "Piēru yori",
+        "gloss": "from Pierre"
+      },
+      {
+        "text": "ピエールの有名なタルト",
+        "reading": "Piēru no yūmei na taruto",
+        "gloss": "Pierre's famous tart"
+      }
+    ]
+  },
+  "Pigs": {
+    "japanese": "@さんへ^あなたがうちのお店に来るようになってから、もうずいぶんたったよね。なので、お店でブタの取りあつかいをはじめることにしました。ブタたちは特別な訓練を受けていて、おいしいトリュフを探してきてくれるの！ ^ -マーニーより[#]ブタの売り出し！",
+    "english": "Dear @,^It's been quite a while since you first started coming to my shop. So I've decided to start stocking pigs. They're specially trained to find delicious truffles!^ -From Marnie[#]Pigs on sale!",
+    "segments": [
+      {
+        "text": "@さん",
+        "reading": "san",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "がうちのお店に来るようになってから、",
+        "reading": "ga uchi no o-mise ni kuru yō ni natte kara",
+        "gloss": "since you started coming to my shop"
+      },
+      {
+        "text": "もうずいぶんたったよね。",
+        "reading": "mō zuibun tatta yo ne",
+        "gloss": "quite a while has passed"
+      },
+      {
+        "text": "なので、",
+        "reading": "na node",
+        "gloss": "so"
+      },
+      {
+        "text": "お店でブタの取りあつかい",
+        "reading": "o-mise de buta no toriatsukai",
+        "gloss": "dealing in pigs at the shop"
+      },
+      {
+        "text": "をはじめることにしました。",
+        "reading": "o hajimeru koto ni shimashita",
+        "gloss": "I've decided to start"
+      },
+      {
+        "text": "ブタたち",
+        "reading": "buta tachi",
+        "gloss": "the pigs"
+      },
+      {
+        "text": "は特別な訓練を受けていて、",
+        "reading": "wa tokubetsu na kunren o ukete ite",
+        "gloss": "have had special training, and"
+      },
+      {
+        "text": "おいしいトリュフ",
+        "reading": "oishii toryufu",
+        "gloss": "delicious truffles"
+      },
+      {
+        "text": "を探してきてくれるの！ ^ -",
+        "reading": "o sagashite kite kureru no",
+        "gloss": "they'll go and find"
+      },
+      {
+        "text": "マーニーより[#]",
+        "reading": "Mānī yori",
+        "gloss": "from Marnie"
+      },
+      {
+        "text": "ブタの売り出し！",
+        "reading": "buta no uridashi",
+        "gloss": "pigs on sale"
+      }
+    ]
+  },
+  "QiChallengeComplete": {
+    "japanese": "達成したようだな。^ 実にみごとだ。^ 報酬だ。受けとるといい。^ -ミスターQi. %item money 10000 %%[#] ミスターQiの挑戦が完了",
+    "english": "It seems you've done it.^ Truly splendid.^ Here is your reward. Do take it.^ -Mr. Qi. %item money 10000 %%[#] Mr. Qi's challenge complete",
+    "segments": [
+      {
+        "text": "達成したようだな。^ ",
+        "reading": "tassei shita yō da na",
+        "gloss": "you seem to have achieved it"
+      },
+      {
+        "text": "実にみごとだ。^ ",
+        "reading": "jitsu ni migoto da",
+        "gloss": "truly splendid"
+      },
+      {
+        "text": "報酬だ。",
+        "reading": "hōshū da",
+        "gloss": "it's your reward"
+      },
+      {
+        "text": "受けとるといい。^ -",
+        "reading": "uketoru to ii",
+        "gloss": "you should take it"
+      },
+      {
+        "text": "ミスターQi. %item money 10000 %%[#] ",
+        "reading": "misutā Qi",
+        "gloss": "Mr. Qi"
+      },
+      {
+        "text": "ミスターQiの挑戦が完了",
+        "reading": "misutā Qi no chōsen ga kanryō",
+        "gloss": "Mr. Qi's challenge complete"
+      }
+    ]
+  },
+  "Rabbits": {
+    "japanese": "@さんへ^お店でウサギの取りあつかいをはじめました！ウサギからはウールが取れるの…それに、ほかのものもね！ ^ -マーニーより[#]ウサギの売り出し！",
+    "english": "Dear @,^I've started stocking rabbits at the shop! Rabbits give you wool... and other things besides!^ -From Marnie[#]Rabbits on sale!",
+    "segments": [
+      {
+        "text": "@さん",
+        "reading": "san",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "お店でウサギの取りあつかい",
+        "reading": "o-mise de usagi no toriatsukai",
+        "gloss": "dealing in rabbits at the shop"
+      },
+      {
+        "text": "をはじめました！",
+        "reading": "o hajimemashita",
+        "gloss": "I've begun"
+      },
+      {
+        "text": "ウサギからはウールが取れるの…",
+        "reading": "usagi kara wa ūru ga toreru no",
+        "gloss": "you can get wool from rabbits"
+      },
+      {
+        "text": "それに、",
+        "reading": "sore ni",
+        "gloss": "moreover"
+      },
+      {
+        "text": "ほかのものもね！ ^ -",
+        "reading": "hoka no mono mo ne",
+        "gloss": "other things too"
+      },
+      {
+        "text": "マーニーより[#]",
+        "reading": "Mānī yori",
+        "gloss": "from Marnie"
+      },
+      {
+        "text": "ウサギの売り出し！",
+        "reading": "usagi no uridashi",
+        "gloss": "rabbits on sale"
+      }
+    ]
+  },
+  "RarecrowSociety": {
+    "japanese": "親愛なる@、^^献身的な姿は本当に印象的だ...^^ほんの一部の選択者だけが、完全なレアクロウ・コレクションを手に入れることができるんだ！^^あなたの業績を記念して、この青写真を受け取ってください。^ -  Z.C. レアクロウ協会%item craftingRecipe Deluxe_Scarecrow %%[#]レアクロウ協会より",
+    "english": "Dear @,^^Your dedication is truly impressive...^^Only a select few ever assemble the complete Rarecrow collection!^^Please accept this blueprint to commemorate your achievement.^ - The Z.C. Rarecrow Society%item craftingRecipe Deluxe_Scarecrow %%[#]From the Rarecrow Society",
+    "segments": [
+      {
+        "text": "親愛なる",
+        "reading": "shin'ai naru",
+        "gloss": "dear"
+      },
+      {
+        "text": "@、^^",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "献身的な姿",
+        "reading": "kenshinteki na sugata",
+        "gloss": "your dedicated figure"
+      },
+      {
+        "text": "は本当に印象的だ...^^",
+        "reading": "wa hontō ni inshōteki da",
+        "gloss": "is truly impressive"
+      },
+      {
+        "text": "ほんの一部の選択者",
+        "reading": "hon no ichibu no sentakusha",
+        "gloss": "only a select few"
+      },
+      {
+        "text": "だけが、",
+        "reading": "dake ga",
+        "gloss": "only"
+      },
+      {
+        "text": "完全なレアクロウ・コレクション",
+        "reading": "kanzen na reakurō korekushon",
+        "gloss": "the complete Rarecrow collection"
+      },
+      {
+        "text": "を手に入れることができるんだ！^^",
+        "reading": "o te ni ireru koto ga dekiru n da",
+        "gloss": "can obtain"
+      },
+      {
+        "text": "あなたの業績",
+        "reading": "anata no gyōseki",
+        "gloss": "your achievement"
+      },
+      {
+        "text": "を記念して、",
+        "reading": "o kinen shite",
+        "gloss": "to commemorate"
+      },
+      {
+        "text": "この青写真を受け取ってください。^ -  ",
+        "reading": "kono aojashin o uketotte kudasai",
+        "gloss": "please accept this blueprint"
+      },
+      {
+        "text": "Z.C. レアクロウ協会%item craftingRecipe Deluxe_Scarecrow %%[#]",
+        "reading": "Z.C. reakurō kyōkai",
+        "gloss": "the Z.C. Rarecrow Society"
+      },
+      {
+        "text": "レアクロウ協会より",
+        "reading": "reakurō kyōkai yori",
+        "gloss": "from the Rarecrow Society"
+      }
+    ]
+  },
+  "Robin": {
+    "japanese": "調子はどう？^ちょっと木材があまったんけど、よかったらつかってくれないかな？役に立ててね！ ^ -ロビンより %item id (O)388 50 %%[#]ロビンからの贈り物",
+    "english": "How are things?^I had a bit of timber left over — would you like it? Do put it to use!^ -From Robin %item id (O)388 50 %%[#]A gift from Robin",
+    "segments": [
+      {
+        "text": "調子はどう？^",
+        "reading": "chōshi wa dō",
+        "gloss": "how are things"
+      },
+      {
+        "text": "ちょっと木材があまったんけど、",
+        "reading": "chotto mokuzai ga amatta n kedo",
+        "gloss": "I had a bit of timber left over, and"
+      },
+      {
+        "text": "よかったらつかってくれないかな？",
+        "reading": "yokattara tsukatte kurenai ka na",
+        "gloss": "would you use it if you like"
+      },
+      {
+        "text": "役に立ててね！ ^ -",
+        "reading": "yaku ni tatete ne",
+        "gloss": "do put it to use"
+      },
+      {
+        "text": "ロビンより %item id (O)388 50 %%[#]",
+        "reading": "Robin yori",
+        "gloss": "from Robin"
+      },
+      {
+        "text": "ロビンからの贈り物",
+        "reading": "Robin kara no okurimono",
+        "gloss": "a gift from Robin"
+      }
+    ]
+  },
+  "RobinCooking": {
+    "japanese": "@へ^おばあちゃんから教わった、昔ながらのレシピを教えてあげるね。食べてみて！ ^ -ロビンより%item cookingRecipe %%[#]ロビンの家族のレシピ",
+    "english": "Dear @,^I'll share an old-fashioned recipe my grandmother taught me. Give it a taste!^ -From Robin%item cookingRecipe %%[#]Robin's family recipe",
+    "segments": [
+      {
+        "text": "@へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "おばあちゃんから教わった、",
+        "reading": "obāchan kara osowatta",
+        "gloss": "taught to me by my grandmother"
+      },
+      {
+        "text": "昔ながらのレシピ",
+        "reading": "mukashi nagara no reshipi",
+        "gloss": "an old-fashioned recipe"
+      },
+      {
+        "text": "を教えてあげるね。",
+        "reading": "o oshiete ageru ne",
+        "gloss": "I'll share with you"
+      },
+      {
+        "text": "食べてみて！ ^ -",
+        "reading": "tabete mite",
+        "gloss": "give it a taste"
+      },
+      {
+        "text": "ロビンより%item cookingRecipe %%[#]",
+        "reading": "Robin yori",
+        "gloss": "from Robin"
+      },
+      {
+        "text": "ロビンの家族のレシピ",
+        "reading": "Robin no kazoku no reshipi",
+        "gloss": "Robin's family recipe"
+      }
+    ]
+  },
+  "Sandy": {
+    "japanese": "こんにちは！この手紙、カリコさばくから書いてます。^ねえ、はやくまた会いに来てね。こっちはすごく退屈なの。 :(あ、さばくの特産品を入れておきました。お礼はこっちに来て直接言ってね！ ^ -サンディより %item id (O)88 1 (O)90 1 (O)218 1 %%[#]サンディからの贈り物",
+    "english": "Hello! I'm writing this from Calico Desert.^Do come and see me again soon. It's terribly dull here. :( Oh, I've put in a desert speciality. Come and thank me in person!^ -From Sandy %item id (O)88 1 (O)90 1 (O)218 1 %%[#]A gift from Sandy",
+    "segments": [
+      {
+        "text": "こんにちは！",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      },
+      {
+        "text": "この手紙、",
+        "reading": "kono tegami",
+        "gloss": "this letter"
+      },
+      {
+        "text": "カリコさばくから書いてます。^",
+        "reading": "Kariko sabaku kara kaitemasu",
+        "gloss": "I'm writing from Calico Desert"
+      },
+      {
+        "text": "ねえ、",
+        "reading": "nē",
+        "gloss": "hey"
+      },
+      {
+        "text": "はやくまた会いに来てね。",
+        "reading": "hayaku mata ai ni kite ne",
+        "gloss": "come and see me again soon"
+      },
+      {
+        "text": "こっちはすごく退屈なの。 :(",
+        "reading": "kotchi wa sugoku taikutsu na no",
+        "gloss": "it's very dull here"
+      },
+      {
+        "text": "あ、",
+        "reading": "a",
+        "gloss": "oh"
+      },
+      {
+        "text": "さばくの特産品",
+        "reading": "sabaku no tokusanhin",
+        "gloss": "a desert speciality"
+      },
+      {
+        "text": "を入れておきました。",
+        "reading": "o irete okimashita",
+        "gloss": "I've put in"
+      },
+      {
+        "text": "お礼はこっちに来て直接言ってね！ ^ -",
+        "reading": "o-rei wa kotchi ni kite chokusetsu itte ne",
+        "gloss": "come here and thank me in person"
+      },
+      {
+        "text": "サンディより %item id (O)88 1 (O)90 1 (O)218 1 %%[#]",
+        "reading": "Sandi yori",
+        "gloss": "from Sandy"
+      },
+      {
+        "text": "サンディからの贈り物",
+        "reading": "Sandi kara no okurimono",
+        "gloss": "a gift from Sandy"
+      }
+    ]
+  },
+  "SandyCooking": {
+    "japanese": "@へ^さばくでの暮らしに飽きちゃったから、あなたへ手紙を書くことにしました。おいしいスープのレシピをいっしょに送るね。近いうちにまたこっちへ来てね！ ^ -サンディより%item cookingRecipe %%[#]サンディのレシピ",
+    "english": "Dear @,^I got bored of life in the desert, so I decided to write to you. I'm sending a recipe for a delicious soup along with it. Come over again soon!^ -From Sandy%item cookingRecipe %%[#]Sandy's recipe",
+    "segments": [
+      {
+        "text": "@へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "さばくでの暮らし",
+        "reading": "sabaku de no kurashi",
+        "gloss": "life in the desert"
+      },
+      {
+        "text": "に飽きちゃったから、",
+        "reading": "ni akichatta kara",
+        "gloss": "since I got bored of"
+      },
+      {
+        "text": "あなたへ手紙を書くことにしました。",
+        "reading": "anata e tegami o kaku koto ni shimashita",
+        "gloss": "I decided to write to you"
+      },
+      {
+        "text": "おいしいスープのレシピ",
+        "reading": "oishii sūpu no reshipi",
+        "gloss": "a recipe for a delicious soup"
+      },
+      {
+        "text": "をいっしょに送るね。",
+        "reading": "o issho ni okuru ne",
+        "gloss": "I'm sending along"
+      },
+      {
+        "text": "近いうちにまたこっちへ来てね！ ^ -",
+        "reading": "chikai uchi ni mata kotchi e kite ne",
+        "gloss": "come over again soon"
+      },
+      {
+        "text": "サンディより%item cookingRecipe %%[#]",
+        "reading": "Sandi yori",
+        "gloss": "from Sandy"
+      },
+      {
+        "text": "サンディのレシピ",
+        "reading": "Sandi no reshipi",
+        "gloss": "Sandy's recipe"
+      }
+    ]
   }
 }
