@@ -6726,5 +6726,869 @@
         "gloss": "Joja quells the landslide"
       }
     ]
+  },
+  "lewisStatue": {
+    "japanese": "@,^^将来、私の「個人的な」物は町中に置かないでくれるとありがたい、みんなに見られたくないものでね！^^絶対にイヤなんだよ！^^このお金を受け取ってくれ、そして私の「プロジェクト」のことは一切人に話してはいけないよ。%item money 750 751 %%[#]ルイスの怒りの手紙",
+    "english": "@,^^In future I'd be grateful if you didn't leave my \"private\" belongings around town for everyone to see!^^I absolutely will not have it!^^Take this money, and never speak a word of my \"project\" to anyone.%item money 750 751 %%[#]Lewis's angry letter",
+    "segments": [
+      {
+        "text": "@,^^",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "将来、",
+        "reading": "shōrai",
+        "gloss": "in future"
+      },
+      {
+        "text": "私の「個人的な」物",
+        "reading": "watashi no kojinteki na mono",
+        "gloss": "my \"private\" belongings"
+      },
+      {
+        "text": "は町中に置かないでくれるとありがたい、",
+        "reading": "wa machijū ni okanaide kureru to arigatai",
+        "gloss": "I'd be grateful if you didn't leave around town"
+      },
+      {
+        "text": "みんなに見られたくないものでね！^^",
+        "reading": "minna ni miraretakunai mono de ne",
+        "gloss": "things I don't want everyone to see"
+      },
+      {
+        "text": "絶対にイヤなんだよ！^^",
+        "reading": "zettai ni iya na n da yo",
+        "gloss": "I absolutely won't have it"
+      },
+      {
+        "text": "このお金を受け取ってくれ、",
+        "reading": "kono o-kane o uketotte kure",
+        "gloss": "take this money"
+      },
+      {
+        "text": "そして私の「プロジェクト」のこと",
+        "reading": "soshite watashi no purojekuto no koto",
+        "gloss": "and about my \"project\""
+      },
+      {
+        "text": "は一切人に話してはいけないよ。%item money 750 751 %%[#]",
+        "reading": "wa issai hito ni hanashite wa ikenai yo",
+        "gloss": "you must not tell a soul"
+      },
+      {
+        "text": "ルイスの怒りの手紙",
+        "reading": "Ruisu no ikari no tegami",
+        "gloss": "Lewis's angry letter"
+      }
+    ]
+  },
+  "linusTrashCleanup": {
+    "japanese": "やあ@、^^谷の掃除を手伝ってくれてありがとう。^どうやら水も澄んできたようだ。みんなもきっと喜ぶだろう。もちろんわたしもだ。^せんいの育て方を君に教えるよ、わたしなりの感謝の気持ちだ。きみの役に立つといいんだが。^^-ライナスより%item craftingRecipe Fiber_Seeds %%[#]ライナスの感謝",
+    "english": "Hi @,^^Thank you for helping clean up the valley.^The water seems to have cleared too. Everyone will be pleased, I'm sure. I certainly am.^I'd like to teach you how to grow fibre, as my own way of saying thanks. I hope it's useful to you.^^-From Linus%item craftingRecipe Fiber_Seeds %%[#]Linus's thanks",
+    "segments": [
+      {
+        "text": "やあ",
+        "reading": "yā",
+        "gloss": "hi"
+      },
+      {
+        "text": "@、^^",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "谷の掃除を手伝ってくれてありがとう。^",
+        "reading": "tani no sōji o tetsudatte kurete arigatō",
+        "gloss": "thank you for helping clean the valley"
+      },
+      {
+        "text": "どうやら水も澄んできたようだ。",
+        "reading": "dōyara mizu mo sunde kita yō da",
+        "gloss": "the water seems to have cleared too"
+      },
+      {
+        "text": "みんなもきっと喜ぶだろう。",
+        "reading": "minna mo kitto yorokobu darō",
+        "gloss": "everyone will surely be pleased"
+      },
+      {
+        "text": "もちろんわたしもだ。^",
+        "reading": "mochiron watashi mo da",
+        "gloss": "I certainly am too"
+      },
+      {
+        "text": "せんいの育て方を君に教えるよ、",
+        "reading": "sen'i no sodatekata o kimi ni oshieru yo",
+        "gloss": "I'll teach you how to grow fibre"
+      },
+      {
+        "text": "わたしなりの感謝の気持ちだ。",
+        "reading": "watashi nari no kansha no kimochi da",
+        "gloss": "it's my own token of thanks"
+      },
+      {
+        "text": "きみの役に立つといいんだが。^^-",
+        "reading": "kimi no yaku ni tatsu to ii n da ga",
+        "gloss": "I hope it's useful to you"
+      },
+      {
+        "text": "ライナスより%item craftingRecipe Fiber_Seeds %%[#]",
+        "reading": "Rainasu yori",
+        "gloss": "from Linus"
+      },
+      {
+        "text": "ライナスの感謝",
+        "reading": "Rainasu no kansha",
+        "gloss": "Linus's gratitude"
+      }
+    ]
+  },
+  "marnieAutoGrabber": {
+    "japanese": "@、新しい品物が入荷したよ…その名も「自動収穫機」。^^これがあれば、ヤギやウシからミルクをしぼる、ヒツジの毛を刈る、卵を集める、うさぎの毛をむしり取る…全て全自動になるの！^^まあ「ぜいたく品」の類に入るから、お値段は25,000gってとこね。^^ -マーニー[#]自動収穫機の通知",
+    "english": "@, I've got a new item in stock... it's called the \"auto-grabber\".^^With this, milking goats and cows, shearing sheep, collecting eggs, plucking wool rabbits... it all happens automatically!^^It counts as a \"luxury item\", so the price is about 25,000g.^^ -Marnie[#]Auto-grabber notice",
+    "segments": [
+      {
+        "text": "@、",
+        "reading": "",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "新しい品物が入荷したよ…",
+        "reading": "atarashii shinamono ga nyūka shita yo",
+        "gloss": "a new item has come in"
+      },
+      {
+        "text": "その名も「自動収穫機」。^^",
+        "reading": "sono na mo jidō shūkakuki",
+        "gloss": "its name is the \"auto-harvester\""
+      },
+      {
+        "text": "これがあれば、",
+        "reading": "kore ga areba",
+        "gloss": "if you have this"
+      },
+      {
+        "text": "ヤギやウシからミルクをしぼる、",
+        "reading": "yagi ya ushi kara miruku o shiboru",
+        "gloss": "milking goats and cows"
+      },
+      {
+        "text": "ヒツジの毛を刈る、",
+        "reading": "hitsuji no ke o karu",
+        "gloss": "shearing sheep"
+      },
+      {
+        "text": "卵を集める、",
+        "reading": "tamago o atsumeru",
+        "gloss": "collecting eggs"
+      },
+      {
+        "text": "うさぎの毛をむしり取る…",
+        "reading": "usagi no ke o mushiritoru",
+        "gloss": "plucking rabbit wool"
+      },
+      {
+        "text": "全て全自動になるの！^^",
+        "reading": "subete zenjidō ni naru no",
+        "gloss": "all becomes fully automatic"
+      },
+      {
+        "text": "まあ「ぜいたく品」の類に入るから、",
+        "reading": "mā zeitakuhin no rui ni hairu kara",
+        "gloss": "well, since it counts as a luxury item"
+      },
+      {
+        "text": "お値段は25,000gってとこね。^^ -",
+        "reading": "o-nedan wa nimangosen jī tte toko ne",
+        "gloss": "the price is about 25,000g"
+      },
+      {
+        "text": "マーニー[#]",
+        "reading": "Mānī",
+        "gloss": "Marnie"
+      },
+      {
+        "text": "自動収穫機の通知",
+        "reading": "jidō shūkakuki no tsūchi",
+        "gloss": "auto-harvester notice"
+      }
+    ]
+  },
+  "mom1": {
+    "japanese": "@へ^ 調子はどう？あなたがそっちへ行ってしまってから、毎日さみしいです。牧場生活がうまくいくよう祈っています。^ 愛をこめて、母さんより^ 追伸：あなたの好きなクッキーをいっしょに送っておくね ? %item id (O)223 1 %%[#]母さんから",
+    "english": "Dear @,^How are you? I've missed you every day since you went away. I pray farm life goes well for you.^ With love, Mum^ P.S. I'm sending your favourite biscuits along %item id (O)223 1 %%[#]From Mum",
+    "segments": [
+      {
+        "text": "@へ^ ",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "調子はどう？",
+        "reading": "chōshi wa dō",
+        "gloss": "how are you"
+      },
+      {
+        "text": "あなたがそっちへ行ってしまってから、",
+        "reading": "anata ga sotchi e itte shimatte kara",
+        "gloss": "since you went off over there"
+      },
+      {
+        "text": "毎日さみしいです。",
+        "reading": "mainichi samishii desu",
+        "gloss": "I'm lonely every day"
+      },
+      {
+        "text": "牧場生活がうまくいくよう祈っています。^ ",
+        "reading": "bokujō seikatsu ga umaku iku yō inotte imasu",
+        "gloss": "I pray farm life goes well"
+      },
+      {
+        "text": "愛をこめて、",
+        "reading": "ai o komete",
+        "gloss": "with love"
+      },
+      {
+        "text": "母さんより^ ",
+        "reading": "kāsan yori",
+        "gloss": "from Mum"
+      },
+      {
+        "text": "追伸：",
+        "reading": "tsuishin",
+        "gloss": "postscript"
+      },
+      {
+        "text": "あなたの好きなクッキーをいっしょに送っておくね ? %item id (O)223 1 %%[#]",
+        "reading": "anata no suki na kukkī o issho ni okutte oku ne",
+        "gloss": "I'm sending your favourite biscuits along"
+      },
+      {
+        "text": "母さんから",
+        "reading": "kāsan kara",
+        "gloss": "from Mum"
+      }
+    ]
+  },
+  "mom2": {
+    "japanese": " @へ^ 最後に連絡をもらってからもうだいぶ経ちますね。家族はみんな相変わらずです。あなたのことはいつも想ってますからね。^ 愛をこめて、母さんより ^ 追伸：おじいちゃんがあなたに遺したお金が見つかったので、いっしょに送ります。 %item money 500 501 %%[#]母さんから#2",
+    "english": "Dear @,^It's been quite a while since I last heard from you. The family is all much the same. I think of you always.^ With love, Mum ^ P.S. I found some money Grandpa left for you, so I'm sending it along. %item money 500 501 %%[#]From Mum #2",
+    "segments": [
+      {
+        "text": " @へ^ ",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "最後に連絡をもらってからもうだいぶ経ちますね。",
+        "reading": "saigo ni renraku o moratte kara mō daibu tachimasu ne",
+        "gloss": "quite a while has passed since I last heard from you"
+      },
+      {
+        "text": "家族はみんな相変わらずです。",
+        "reading": "kazoku wa minna aikawarazu desu",
+        "gloss": "the family is all as ever"
+      },
+      {
+        "text": "あなたのことはいつも想ってますからね。^ ",
+        "reading": "anata no koto wa itsumo omottemasu kara ne",
+        "gloss": "I always think of you"
+      },
+      {
+        "text": "愛をこめて、",
+        "reading": "ai o komete",
+        "gloss": "with love"
+      },
+      {
+        "text": "母さんより ^ ",
+        "reading": "kāsan yori",
+        "gloss": "from Mum"
+      },
+      {
+        "text": "追伸：",
+        "reading": "tsuishin",
+        "gloss": "postscript"
+      },
+      {
+        "text": "おじいちゃんがあなたに遺したお金が見つかったので、",
+        "reading": "ojiichan ga anata ni nokoshita o-kane ga mitsukatta node",
+        "gloss": "since money Grandpa left you was found"
+      },
+      {
+        "text": "いっしょに送ります。 %item money 500 501 %%[#]",
+        "reading": "issho ni okurimasu",
+        "gloss": "I'm sending it along"
+      },
+      {
+        "text": "母さんから#2",
+        "reading": "kāsan kara",
+        "gloss": "from Mum #2"
+      }
+    ]
+  },
+  "mom3": {
+    "japanese": "@へ^ 地元新聞の記事に、あなたが載ってたのを読みました！田舎での暮らしはあなたに合ってるみたいね。とてもうれしいです。どうかからだには気をつけてね。愛をこめて、母さんより[#]母さんから#3",
+    "english": "Dear @,^I read the article about you in the local paper! Country life seems to suit you. I'm so pleased. Do take care of yourself. With love, Mum[#]From Mum #3",
+    "segments": [
+      {
+        "text": "@へ^ ",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "地元新聞の記事に、",
+        "reading": "jimoto shinbun no kiji ni",
+        "gloss": "in the local paper's article"
+      },
+      {
+        "text": "あなたが載ってたのを読みました！",
+        "reading": "anata ga notteta no o yomimashita",
+        "gloss": "I read that you appeared"
+      },
+      {
+        "text": "田舎での暮らしはあなたに合ってるみたいね。",
+        "reading": "inaka de no kurashi wa anata ni atteru mitai ne",
+        "gloss": "country life seems to suit you"
+      },
+      {
+        "text": "とてもうれしいです。",
+        "reading": "totemo ureshii desu",
+        "gloss": "I'm very pleased"
+      },
+      {
+        "text": "どうかからだには気をつけてね。",
+        "reading": "dōka karada ni wa ki o tsukete ne",
+        "gloss": "do take care of your health"
+      },
+      {
+        "text": "愛をこめて、",
+        "reading": "ai o komete",
+        "gloss": "with love"
+      },
+      {
+        "text": "母さんより[#]",
+        "reading": "kāsan yori",
+        "gloss": "from Mum"
+      },
+      {
+        "text": "母さんから#3",
+        "reading": "kāsan kara",
+        "gloss": "from Mum #3"
+      }
+    ]
+  },
+  "mom4": {
+    "japanese": "@へ^ 調子はどう？牧場の経営はとてもうまくいってるみたいね。あなたが億万長者になったときは、親孝行するのを忘れないでね！^ 愛をこめて、母さんより ^ 追伸：ケーキ、食べてね！%item id (O)221 1 %%[#]母さんから#4",
+    "english": "Dear @,^How are things? The farm seems to be doing very well. When you're a millionaire, don't forget your dear old mother!^ With love, Mum ^ P.S. Do enjoy the cake!%item id (O)221 1 %%[#]From Mum #4",
+    "segments": [
+      {
+        "text": "@へ^ ",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "調子はどう？",
+        "reading": "chōshi wa dō",
+        "gloss": "how are things"
+      },
+      {
+        "text": "牧場の経営はとてもうまくいってるみたいね。",
+        "reading": "bokujō no keiei wa totemo umaku itteru mitai ne",
+        "gloss": "running the farm seems to be going very well"
+      },
+      {
+        "text": "あなたが億万長者になったときは、",
+        "reading": "anata ga okumanchōja ni natta toki wa",
+        "gloss": "when you become a millionaire"
+      },
+      {
+        "text": "親孝行するのを忘れないでね！^ ",
+        "reading": "oyakōkō suru no o wasurenaide ne",
+        "gloss": "don't forget to be good to your parents"
+      },
+      {
+        "text": "愛をこめて、",
+        "reading": "ai o komete",
+        "gloss": "with love"
+      },
+      {
+        "text": "母さんより ^ ",
+        "reading": "kāsan yori",
+        "gloss": "from Mum"
+      },
+      {
+        "text": "追伸：",
+        "reading": "tsuishin",
+        "gloss": "postscript"
+      },
+      {
+        "text": "ケーキ、食べてね！%item id (O)221 1 %%[#]",
+        "reading": "kēki tabete ne",
+        "gloss": "do eat the cake"
+      },
+      {
+        "text": "母さんから#4",
+        "reading": "kāsan kara",
+        "gloss": "from Mum #4"
+      }
+    ]
+  },
+  "newsstory": {
+    "japanese": "@様、いかがおすごしでしょうか。^たいへんよろこばしいことに、わが「スターデューバレー・トリビューン」紙の『期待のスター』コラムで、来週はあなたの牧場を取り上げることになりました！おめでとうございます。あなたのめざましい躍進には目をみはるばかりです。 ^ -SVT[#]ニュース記事",
+    "english": "Dear @, how are you?^We are delighted to tell you that next week the \"Rising Stars\" column of the Stardew Valley Tribune will feature your farm! Congratulations. Your remarkable progress is quite something to behold.^ -SVT[#]News story",
+    "segments": [
+      {
+        "text": "@様、",
+        "reading": "sama",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "いかがおすごしでしょうか。^",
+        "reading": "ikaga o-sugoshi deshō ka",
+        "gloss": "how are you keeping"
+      },
+      {
+        "text": "たいへんよろこばしいことに、",
+        "reading": "taihen yorokobashii koto ni",
+        "gloss": "most delightfully"
+      },
+      {
+        "text": "わが「スターデューバレー・トリビューン」紙",
+        "reading": "waga Sutādyū Barē Toribyūn shi",
+        "gloss": "our Stardew Valley Tribune"
+      },
+      {
+        "text": "の『期待のスター』コラム",
+        "reading": "no kitai no sutā koramu",
+        "gloss": "'s \"rising star\" column"
+      },
+      {
+        "text": "で、",
+        "reading": "de",
+        "gloss": "in"
+      },
+      {
+        "text": "来週はあなたの牧場を取り上げることになりました！",
+        "reading": "raishū wa anata no bokujō o toriageru koto ni narimashita",
+        "gloss": "next week will feature your farm"
+      },
+      {
+        "text": "おめでとうございます。",
+        "reading": "omedetō gozaimasu",
+        "gloss": "congratulations"
+      },
+      {
+        "text": "あなたのめざましい躍進には目をみはるばかりです。 ^ -",
+        "reading": "anata no mezamashii yakushin ni wa me o miharu bakari desu",
+        "gloss": "your remarkable advance is simply eye-opening"
+      },
+      {
+        "text": "SVT[#]",
+        "reading": "",
+        "gloss": "(newspaper)"
+      },
+      {
+        "text": "ニュース記事",
+        "reading": "nyūsu kiji",
+        "gloss": "news story"
+      }
+    ]
+  },
+  "pamNewChannel": {
+    "japanese": "よう、若いの、^^「ジュース」をありがとよ。あれは確かに…言葉に表せないほどの…風味だったよ。^^ところで、チャンネル736を聞いたことがあるかい？あんたが気に入りそうな、季節の釣り番組をやってるよ。^^元気でやりなよ、^-パムより[#]パムのオススメ",
+    "english": "Hey, kid,^^Thanks for the \"juice\". That was certainly... a flavour beyond words.^^By the way, have you ever listened to channel 736? There's a seasonal fishing programme you might like.^^Take care,^-From Pam[#]Pam's tip",
+    "segments": [
+      {
+        "text": "よう、若いの、^^",
+        "reading": "yō wakai no",
+        "gloss": "hey, young one"
+      },
+      {
+        "text": "「ジュース」をありがとよ。",
+        "reading": "jūsu o arigato yo",
+        "gloss": "thanks for the \"juice\""
+      },
+      {
+        "text": "あれは確かに…",
+        "reading": "are wa tashika ni",
+        "gloss": "that was certainly"
+      },
+      {
+        "text": "言葉に表せないほどの…",
+        "reading": "kotoba ni arawasenai hodo no",
+        "gloss": "beyond words"
+      },
+      {
+        "text": "風味だったよ。^^",
+        "reading": "fūmi datta yo",
+        "gloss": "a flavour"
+      },
+      {
+        "text": "ところで、",
+        "reading": "tokoro de",
+        "gloss": "by the way"
+      },
+      {
+        "text": "チャンネル736を聞いたことがあるかい？",
+        "reading": "channeru nanasanroku o kiita koto ga aru kai",
+        "gloss": "have you ever listened to channel 736"
+      },
+      {
+        "text": "あんたが気に入りそうな、",
+        "reading": "anta ga ki ni irisō na",
+        "gloss": "that you might like"
+      },
+      {
+        "text": "季節の釣り番組をやってるよ。^^",
+        "reading": "kisetsu no tsuri bangumi o yatteru yo",
+        "gloss": "there's a seasonal fishing programme"
+      },
+      {
+        "text": "元気でやりなよ、^-",
+        "reading": "genki de yari na yo",
+        "gloss": "take care"
+      },
+      {
+        "text": "パムより[#]",
+        "reading": "Pamu yori",
+        "gloss": "from Pam"
+      },
+      {
+        "text": "パムのオススメ",
+        "reading": "Pamu no osusume",
+        "gloss": "Pam's recommendation"
+      }
+    ]
+  },
+  "passedOut1_Billed_Female": {
+    "japanese": "@様へ^昨夜、Jojaチームのメンバーが意識をなくしたあなた様を発見し、医療チームを派遣してご自宅へ安全にお送りしました。^あなた様がご無事でなによりです！^^（なお、サービス料として{0}Gをいただきました）^^-Joja社 お客様満足推進担当^モーリス[#]Jojaの送り状",
+    "english": "Dear @,^Last night a Joja team member found you unconscious, and a medical team was dispatched to take you safely home.^We're glad you are all right!^^(A service charge of {0}g has been taken.)^^-Joja Customer Satisfaction Representative^Morris[#]Joja invoice",
+    "segments": [
+      {
+        "text": "@様",
+        "reading": "sama",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "昨夜、",
+        "reading": "sakuya",
+        "gloss": "last night"
+      },
+      {
+        "text": "Jojaチームのメンバー",
+        "reading": "Joja chīmu no menbā",
+        "gloss": "a Joja team member"
+      },
+      {
+        "text": "が意識をなくしたあなた様を発見し、",
+        "reading": "ga ishiki o nakushita anata-sama o hakken shi",
+        "gloss": "found you unconscious"
+      },
+      {
+        "text": "医療チームを派遣してご自宅へ安全にお送りしました。^",
+        "reading": "iryō chīmu o haken shite go-jitaku e anzen ni o-okuri shimashita",
+        "gloss": "dispatched a medical team and took you safely home"
+      },
+      {
+        "text": "あなた様がご無事でなによりです！^^",
+        "reading": "anata-sama ga go-buji de nani yori desu",
+        "gloss": "nothing matters more than your being safe"
+      },
+      {
+        "text": "（なお、",
+        "reading": "nao",
+        "gloss": "furthermore"
+      },
+      {
+        "text": "サービス料として{0}Gをいただきました）^^-",
+        "reading": "sābisu ryō to shite o itadakimashita",
+        "gloss": "we have taken {0}g as a service charge"
+      },
+      {
+        "text": "Joja社 お客様満足推進担当^",
+        "reading": "Joja sha o-kyakusama manzoku suishin tantō",
+        "gloss": "Joja customer satisfaction representative"
+      },
+      {
+        "text": "モーリス[#]",
+        "reading": "Mōrisu",
+        "gloss": "Morris"
+      },
+      {
+        "text": "Jojaの送り状",
+        "reading": "Joja no okurijō",
+        "gloss": "Joja invoice"
+      }
+    ]
+  },
+  "passedOut1_Billed_Male": {
+    "japanese": "@様へ^昨夜、Jojaチームのメンバーが意識をなくしたあなた様を発見し、医療チームを派遣してご自宅へ安全にお送りしました。^あなた様がご無事でなによりです！^^（なお、サービス料として{0}Gをいただきました）^^-Joja社 お客様満足推進担当^モーリス[#]Jojaの送り状",
+    "english": "Dear @,^Last night a Joja team member found you unconscious, and a medical team was dispatched to take you safely home.^We're glad you are all right!^^(A service charge of {0}g has been taken.)^^-Joja Customer Satisfaction Representative^Morris[#]Joja invoice",
+    "segments": [
+      {
+        "text": "@様",
+        "reading": "sama",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "昨夜、",
+        "reading": "sakuya",
+        "gloss": "last night"
+      },
+      {
+        "text": "Jojaチームのメンバー",
+        "reading": "Joja chīmu no menbā",
+        "gloss": "a Joja team member"
+      },
+      {
+        "text": "が意識をなくしたあなた様を発見し、",
+        "reading": "ga ishiki o nakushita anata-sama o hakken shi",
+        "gloss": "found you unconscious"
+      },
+      {
+        "text": "医療チームを派遣してご自宅へ安全にお送りしました。^",
+        "reading": "iryō chīmu o haken shite go-jitaku e anzen ni o-okuri shimashita",
+        "gloss": "dispatched a medical team and took you safely home"
+      },
+      {
+        "text": "あなた様がご無事でなによりです！^^",
+        "reading": "anata-sama ga go-buji de nani yori desu",
+        "gloss": "nothing matters more than your being safe"
+      },
+      {
+        "text": "（なお、",
+        "reading": "nao",
+        "gloss": "furthermore"
+      },
+      {
+        "text": "サービス料として{0}Gをいただきました）^^-",
+        "reading": "sābisu ryō to shite o itadakimashita",
+        "gloss": "we have taken {0}g as a service charge"
+      },
+      {
+        "text": "Joja社 お客様満足推進担当^",
+        "reading": "Joja sha o-kyakusama manzoku suishin tantō",
+        "gloss": "Joja customer satisfaction representative"
+      },
+      {
+        "text": "モーリス[#]",
+        "reading": "Mōrisu",
+        "gloss": "Morris"
+      },
+      {
+        "text": "Jojaの送り状",
+        "reading": "Joja no okurijō",
+        "gloss": "Joja invoice"
+      }
+    ]
+  },
+  "passedOut1_NotBilled_Female": {
+    "japanese": "@様へ^昨夜、Jojaチームのメンバーが意識をなくしたあなた様を発見し、医療チームを派遣してご自宅へ安全にお送りしました。^あなた様がご無事でなによりです！^^持ちあわせがないご様子でしたので、法律に基づき、サービスは無料でご提供させていただきました。^^-Joja社 お客様満足推進担当^モーリス[#]法的に必要な通知",
+    "english": "Dear @,^Last night a Joja team member found you unconscious, and a medical team was dispatched to take you safely home.^We're glad you are all right!^^As you appeared to have no money on you, the law obliged us to provide the service free of charge.^^-Joja Customer Satisfaction Representative^Morris[#]Legally required notice",
+    "segments": [
+      {
+        "text": "@様",
+        "reading": "sama",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "昨夜、",
+        "reading": "sakuya",
+        "gloss": "last night"
+      },
+      {
+        "text": "Jojaチームのメンバー",
+        "reading": "Joja chīmu no menbā",
+        "gloss": "a Joja team member"
+      },
+      {
+        "text": "が意識をなくしたあなた様を発見し、",
+        "reading": "ga ishiki o nakushita anata-sama o hakken shi",
+        "gloss": "found you unconscious"
+      },
+      {
+        "text": "医療チームを派遣してご自宅へ安全にお送りしました。^",
+        "reading": "iryō chīmu o haken shite go-jitaku e anzen ni o-okuri shimashita",
+        "gloss": "dispatched a medical team and took you safely home"
+      },
+      {
+        "text": "あなた様がご無事でなによりです！^^",
+        "reading": "anata-sama ga go-buji de nani yori desu",
+        "gloss": "nothing matters more than your being safe"
+      },
+      {
+        "text": "持ちあわせがないご様子でしたので、",
+        "reading": "mochiawase ga nai go-yōsu deshita node",
+        "gloss": "as you appeared to have nothing on you"
+      },
+      {
+        "text": "法律に基づき、",
+        "reading": "hōritsu ni motozuki",
+        "gloss": "in accordance with the law"
+      },
+      {
+        "text": "サービスは無料でご提供させていただきました。^^-",
+        "reading": "sābisu wa muryō de go-teikyō sasete itadakimashita",
+        "gloss": "we provided the service free of charge"
+      },
+      {
+        "text": "Joja社 お客様満足推進担当^",
+        "reading": "Joja sha o-kyakusama manzoku suishin tantō",
+        "gloss": "Joja customer satisfaction representative"
+      },
+      {
+        "text": "モーリス[#]",
+        "reading": "Mōrisu",
+        "gloss": "Morris"
+      },
+      {
+        "text": "法的に必要な通知",
+        "reading": "hōteki ni hitsuyō na tsūchi",
+        "gloss": "legally required notice"
+      }
+    ]
+  },
+  "passedOut1_NotBilled_Male": {
+    "japanese": "@様へ^昨夜、Jojaチームのメンバーが意識をなくしたあなた様を発見し、医療チームを派遣してご自宅へ安全にお送りしました。^あなた様がご無事でなによりです！^^持ちあわせがないご様子でしたので、法律に基づき、サービスは無料でご提供させていただきました。^^-Joja社 お客様満足推進担当^モーリス[#]法的に必要な通知",
+    "english": "Dear @,^Last night a Joja team member found you unconscious, and a medical team was dispatched to take you safely home.^We're glad you are all right!^^As you appeared to have no money on you, the law obliged us to provide the service free of charge.^^-Joja Customer Satisfaction Representative^Morris[#]Legally required notice",
+    "segments": [
+      {
+        "text": "@様",
+        "reading": "sama",
+        "gloss": "(player name)"
+      },
+      {
+        "text": "へ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "昨夜、",
+        "reading": "sakuya",
+        "gloss": "last night"
+      },
+      {
+        "text": "Jojaチームのメンバー",
+        "reading": "Joja chīmu no menbā",
+        "gloss": "a Joja team member"
+      },
+      {
+        "text": "が意識をなくしたあなた様を発見し、",
+        "reading": "ga ishiki o nakushita anata-sama o hakken shi",
+        "gloss": "found you unconscious"
+      },
+      {
+        "text": "医療チームを派遣してご自宅へ安全にお送りしました。^",
+        "reading": "iryō chīmu o haken shite go-jitaku e anzen ni o-okuri shimashita",
+        "gloss": "dispatched a medical team and took you safely home"
+      },
+      {
+        "text": "あなた様がご無事でなによりです！^^",
+        "reading": "anata-sama ga go-buji de nani yori desu",
+        "gloss": "nothing matters more than your being safe"
+      },
+      {
+        "text": "持ちあわせがないご様子でしたので、",
+        "reading": "mochiawase ga nai go-yōsu deshita node",
+        "gloss": "as you appeared to have nothing on you"
+      },
+      {
+        "text": "法律に基づき、",
+        "reading": "hōritsu ni motozuki",
+        "gloss": "in accordance with the law"
+      },
+      {
+        "text": "サービスは無料でご提供させていただきました。^^-",
+        "reading": "sābisu wa muryō de go-teikyō sasete itadakimashita",
+        "gloss": "we provided the service free of charge"
+      },
+      {
+        "text": "Joja社 お客様満足推進担当^",
+        "reading": "Joja sha o-kyakusama manzoku suishin tantō",
+        "gloss": "Joja customer satisfaction representative"
+      },
+      {
+        "text": "モーリス[#]",
+        "reading": "Mōrisu",
+        "gloss": "Morris"
+      },
+      {
+        "text": "法的に必要な通知",
+        "reading": "hōteki ni hitsuyō na tsūchi",
+        "gloss": "legally required notice"
+      }
+    ]
+  },
+  "passedOut2": {
+    "japanese": "@へ ^昨夜はわたしが通りがかって運がよかったね！意識をうしなったきみのふところを、だれかがまさぐっていたんだよ。いくら盗んでいったかのかはわからない…わたしが近づいたら、すぐ逃げられてしまったんだ。これからは気を付けてくれよ！^^-ライナスより[#]ライナスからの手紙",
+    "english": "@,^You were lucky I passed by last night! Someone was rummaging through the pockets of your unconscious body. I've no idea how much they took... they fled the moment I came near. Do be more careful from now on!^^-From Linus[#]A letter from Linus",
+    "segments": [
+      {
+        "text": "@へ ^",
+        "reading": "e",
+        "gloss": "to"
+      },
+      {
+        "text": "昨夜はわたしが通りがかって運がよかったね！",
+        "reading": "sakuya wa watashi ga tōrigakatte un ga yokatta ne",
+        "gloss": "you were lucky I passed by last night"
+      },
+      {
+        "text": "意識をうしなったきみのふところを、",
+        "reading": "ishiki o ushinatta kimi no futokoro o",
+        "gloss": "your pockets while unconscious"
+      },
+      {
+        "text": "だれかがまさぐっていたんだよ。",
+        "reading": "dareka ga masagutte ita n da yo",
+        "gloss": "someone was rummaging through"
+      },
+      {
+        "text": "いくら盗んでいったかのかはわからない…",
+        "reading": "ikura nusunde itta no ka wa wakaranai",
+        "gloss": "I don't know how much they took"
+      },
+      {
+        "text": "わたしが近づいたら、",
+        "reading": "watashi ga chikazuitara",
+        "gloss": "when I approached"
+      },
+      {
+        "text": "すぐ逃げられてしまったんだ。",
+        "reading": "sugu nigerarete shimatta n da",
+        "gloss": "they immediately got away"
+      },
+      {
+        "text": "これからは気を付けてくれよ！^^-",
+        "reading": "kore kara wa ki o tsukete kure yo",
+        "gloss": "do be careful from now on"
+      },
+      {
+        "text": "ライナスより[#]",
+        "reading": "Rainasu yori",
+        "gloss": "from Linus"
+      },
+      {
+        "text": "ライナスからの手紙",
+        "reading": "Rainasu kara no tegami",
+        "gloss": "a letter from Linus"
+      }
+    ]
   }
 }
