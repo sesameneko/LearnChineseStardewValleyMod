@@ -1,5 +1,11 @@
-#!/usr/bin/env python3
-"""Migrate Objects_Name.json from the flat reference format to the segment format.
+"""RETIRED -- do not run. Kept as a record of how Objects_Name.json got its shape.
+
+This file is named .py.retired rather than .py on purpose: it is a one-off migration
+that has already been applied, and re-running it would overwrite the hand-authored
+word segments in Objects_Name.json with one whole-string segment per name (see the
+HISTORY note below). The shebang and the executable bit are gone for the same reason.
+
+Migrate Objects_Name.json from the flat reference format to the segment format.
 
 The names file predates the segment schema (see Plan.md's data task): it holds one
 prose string per key --

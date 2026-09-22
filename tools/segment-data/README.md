@@ -35,9 +35,12 @@ an object:
 - The gloss is what the word means **in this sentence**, not a dictionary entry.
 
 There is no second format. Item names were once a flat
-`"key": "English (reading)"` map; `migrate_names.py` converted them, and
+`"key": "English (reading)"` map; `migrate_names.py.retired` converted them, and
 `SegmentDataLoader` silently skips any entry whose value isn't an object, so
-anything written in another shape simply won't load.
+anything written in another shape simply won't load. That script is retired --
+kept for the record, renamed off `.py` and stripped of its shebang, because it
+has already been applied and re-running it would overwrite `Objects_Name.json`'s
+hand-authored word segments with one whole-string segment per name.
 
 ## Content/Data assets
 

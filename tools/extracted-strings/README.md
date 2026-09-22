@@ -23,7 +23,9 @@ official English localization).
 the game's own string key, each entry a **word/phrase-level breakdown** rather
 than one translation per sentence. There is no second format -- item names used
 to be a flat `"key": "English (reading)"` map, and were migrated into this schema
-by `../segment-data/migrate_names.py`. Anything new must be written this way,
+by `../segment-data/migrate_names.py.retired` (retired: that one-off migration has
+been applied, and re-running it would flatten the hand-authored word segments in
+`literal-translations/Objects_Name.json`). Anything new must be written this way,
 because `SegmentDataLoader` silently skips entries whose value isn't an object.
 
 Coverage is tracked by `../segment-data/segtool.py status`; that script is also
