@@ -1,0 +1,755 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley SimpleNonVillagerDialogues.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "derby_contestent0": {
+    "japanese": "釣り人：このためにわざわざグランプルトンから来たんだ。||釣り人：バッグいっぱいのマスを持たずに帰るわけにはいかない！",
+    "english": "Fisherman: I came all the way from Grampleton for this.||Fisherman: I'm not going home without a bag full of trout!",
+    "segments": [
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "このためにわざわざグランプルトンから来たんだ。||",
+        "reading": "kono tame ni wazawaza Guranpuruton kara kita n da",
+        "gloss": "I came all the way from Grampleton for this"
+      },
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "バッグいっぱいのマスを持たずに帰るわけにはいかない！",
+        "reading": "baggu ippai no masu o motazu ni kaeru wake ni wa ikanai",
+        "gloss": "I can't go home without a bag full of trout"
+      }
+    ]
+  },
+  "derby_contestent1": {
+    "japanese": "船乗り：このイベントにこの服はちょっと大げさかな？",
+    "english": "Mariner: Am I a bit overdressed for this event?",
+    "segments": [
+      {
+        "text": "船乗り：",
+        "reading": "funanori",
+        "gloss": "mariner"
+      },
+      {
+        "text": "このイベントにこの服はちょっと大げさかな？",
+        "reading": "kono ibento ni kono fuku wa chotto ōgesa ka na",
+        "gloss": "are these clothes a bit much for this event"
+      }
+    ]
+  },
+  "derby_contestent2": {
+    "japanese": "船乗り：きっと私と同じ服装の人も来るだろうけどね。恥ずかしい人たちだ！",
+    "english": "Mariner: Of course someone turns up in the same outfit as me. How embarrassing!",
+    "segments": [
+      {
+        "text": "船乗り：",
+        "reading": "funanori",
+        "gloss": "mariner"
+      },
+      {
+        "text": "きっと私と同じ服装の人も来るだろうけどね。",
+        "reading": "kitto watashi to onaji fukusō no hito mo kuru darō kedo ne",
+        "gloss": "someone in the same outfit as me is sure to come"
+      },
+      {
+        "text": "恥ずかしい人たちだ！",
+        "reading": "hazukashii hitotachi da",
+        "gloss": "what embarrassing people"
+      }
+    ]
+  },
+  "derby_contestent3": {
+    "japanese": "釣り人：すまないが、私は静かに過ごしたいんだ。||Fisherman： …||Fisherman： …||Fisherman： …||Fisherman：なにかコツを教えてくれないか？||Fisherman： …||Fisherman： …||Fisherman： …||Fisherman：そろそろ我慢の限界だけど、それはマスに対してじゃない。||Fisherman： …                                                                                                                                                                                                                                                                                                                                                                                   ",
+    "english": "Fisherman: Excuse me, I'm trying to enjoy the quiet.||Fisherman: ...||Fisherman: ...||Fisherman: ...||Fisherman: Could you give me a tip?||Fisherman: ...||Fisherman: ...||Fisherman: ...||Fisherman: I'm nearly at the end of my patience, and it isn't with the trout.||Fisherman: ...",
+    "segments": [
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "すまないが、",
+        "reading": "sumanai ga",
+        "gloss": "excuse me, but"
+      },
+      {
+        "text": "私は静かに過ごしたいんだ。||",
+        "reading": "watashi wa shizuka ni sugoshitai n da",
+        "gloss": "I want to pass the time quietly"
+      },
+      {
+        "text": "Fisherman： …||",
+        "reading": "",
+        "gloss": "(silence)"
+      },
+      {
+        "text": "Fisherman： …||",
+        "reading": "",
+        "gloss": "(silence)"
+      },
+      {
+        "text": "Fisherman： …||",
+        "reading": "",
+        "gloss": "(silence)"
+      },
+      {
+        "text": "Fisherman：",
+        "reading": "",
+        "gloss": "(speaker)"
+      },
+      {
+        "text": "なにかコツを教えてくれないか？||",
+        "reading": "nanika kotsu o oshiete kurenai ka",
+        "gloss": "won't you tell me some trick"
+      },
+      {
+        "text": "Fisherman： …||",
+        "reading": "",
+        "gloss": "(silence)"
+      },
+      {
+        "text": "Fisherman： …||",
+        "reading": "",
+        "gloss": "(silence)"
+      },
+      {
+        "text": "Fisherman： …||",
+        "reading": "",
+        "gloss": "(silence)"
+      },
+      {
+        "text": "Fisherman：",
+        "reading": "",
+        "gloss": "(speaker)"
+      },
+      {
+        "text": "そろそろ我慢の限界だけど、",
+        "reading": "sorosoro gaman no genkai da kedo",
+        "gloss": "I'm near the limit of my patience, but"
+      },
+      {
+        "text": "それはマスに対してじゃない。||",
+        "reading": "sore wa masu ni taishite ja nai",
+        "gloss": "it's not with the trout"
+      },
+      {
+        "text": "Fisherman： …                                                                                                                                                                                                                                                                                                                                                                                   ",
+        "reading": "",
+        "gloss": "(silence)"
+      }
+    ]
+  },
+  "derby_contestent4": {
+    "japanese": "釣り姉妹：||私たちはちょっと名の知れた釣り姉妹なのよ！釣り姉妹：釣りたいと思っただけ魚が釣れるの！私たちには構わないで！",
+    "english": "Fishing sisters:||We're the somewhat famous fishing sisters! Fishing sisters: We'll catch as many fish as we wish! Don't mind us!",
+    "segments": [
+      {
+        "text": "釣り姉妹：||",
+        "reading": "tsuri shimai",
+        "gloss": "fishing sisters"
+      },
+      {
+        "text": "私たちはちょっと名の知れた釣り姉妹なのよ！",
+        "reading": "watashitachi wa chotto na no shireta tsuri shimai na no yo",
+        "gloss": "we're the somewhat famous fishing sisters"
+      },
+      {
+        "text": "釣り姉妹：",
+        "reading": "tsuri shimai",
+        "gloss": "fishing sisters"
+      },
+      {
+        "text": "釣りたいと思っただけ魚が釣れるの！",
+        "reading": "tsuritai to omotta dake sakana ga tsureru no",
+        "gloss": "we catch as many fish as we wish"
+      },
+      {
+        "text": "私たちには構わないで！",
+        "reading": "watashitachi ni wa kamawanaide",
+        "gloss": "don't mind us"
+      }
+    ]
+  },
+  "derby_contestent5": {
+    "japanese": "釣り師：釣りの調子？魚には相手にされずに、蚊に刺されてばかりだよ…",
+    "english": "Angler: How's the fishing? The fish ignore me and the mosquitoes keep biting...",
+    "segments": [
+      {
+        "text": "釣り師：",
+        "reading": "tsurishi",
+        "gloss": "angler"
+      },
+      {
+        "text": "釣りの調子？",
+        "reading": "tsuri no chōshi",
+        "gloss": "how's the fishing"
+      },
+      {
+        "text": "魚には相手にされずに、",
+        "reading": "sakana ni wa aite ni sarezu ni",
+        "gloss": "being ignored by the fish"
+      },
+      {
+        "text": "蚊に刺されてばかりだよ…",
+        "reading": "ka ni sasarete bakari da yo",
+        "gloss": "I just keep getting bitten by mosquitoes"
+      }
+    ]
+  },
+  "derby_contestent6": {
+    "japanese": "トラウトマン：私は周りから「トラウトマン」と呼ばれているんだ。||トラウトマン：私は5年間、マスになったつもりで生活しているんだ。食べる、食べる、食べる、タマゴを産む、また食べる。||トラウトマン：食べるのは得意なんだ。タマゴを産むのはうまくいかないけどね。",
+    "english": "Trout Man: People around here call me \"Trout Man\".||Trout Man: For five years I've lived as though I were a trout. Eat, eat, eat, lay eggs, eat again.||Trout Man: I'm good at the eating. The egg-laying doesn't go so well.",
+    "segments": [
+      {
+        "text": "トラウトマン：",
+        "reading": "Torauto Man",
+        "gloss": "Trout Man"
+      },
+      {
+        "text": "私は周りから「トラウトマン」と呼ばれているんだ。||",
+        "reading": "watashi wa mawari kara Torauto Man to yobarete iru n da",
+        "gloss": "those around me call me \"Trout Man\""
+      },
+      {
+        "text": "トラウトマン：",
+        "reading": "Torauto Man",
+        "gloss": "Trout Man"
+      },
+      {
+        "text": "私は5年間、",
+        "reading": "watashi wa gonenkan",
+        "gloss": "for five years I"
+      },
+      {
+        "text": "マスになったつもりで生活しているんだ。",
+        "reading": "masu ni natta tsumori de seikatsu shite iru n da",
+        "gloss": "have lived as if I were a trout"
+      },
+      {
+        "text": "食べる、食べる、食べる、",
+        "reading": "taberu taberu taberu",
+        "gloss": "eat, eat, eat"
+      },
+      {
+        "text": "タマゴを産む、",
+        "reading": "tamago o umu",
+        "gloss": "lay eggs"
+      },
+      {
+        "text": "また食べる。||",
+        "reading": "mata taberu",
+        "gloss": "eat again"
+      },
+      {
+        "text": "トラウトマン：",
+        "reading": "Torauto Man",
+        "gloss": "Trout Man"
+      },
+      {
+        "text": "食べるのは得意なんだ。",
+        "reading": "taberu no wa tokui na n da",
+        "gloss": "I'm good at eating"
+      },
+      {
+        "text": "タマゴを産むのはうまくいかないけどね。",
+        "reading": "tamago o umu no wa umaku ikanai kedo ne",
+        "gloss": "the egg-laying doesn't go well though"
+      }
+    ]
+  },
+  "derby_contestent7": {
+    "japanese": "釣り人：人込みから離れたいって？私も同じ気持ちだよ。",
+    "english": "Fisherman: Trying to get away from the crowds? I feel the same.",
+    "segments": [
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "人込みから離れたいって？",
+        "reading": "hitogomi kara hanaretai tte",
+        "gloss": "you want to get away from the crowds"
+      },
+      {
+        "text": "私も同じ気持ちだよ。",
+        "reading": "watashi mo onaji kimochi da yo",
+        "gloss": "I feel the same"
+      }
+    ]
+  },
+  "derby_contestent8": {
+    "japanese": "釣りのプロ：これは競争ではないが… タグを一番多く手に入れたら、一年間自慢して暮らせるんだ！||釣りのプロ：冬になったらイカ釣りまつりにも来るよ…あれは真の挑戦だ！||釣りのプロ：マスを釣る秘訣は、エサをおいしく見せるテクニックを身につけて、マスが思わず食いつくようにすることだよ…",
+    "english": "Fishing Pro: It isn't a competition, but... whoever gets the most tags gets a year of bragging rights!||Fishing Pro: I'll come back for SquidFest in winter... now that's a real challenge!||Fishing Pro: The secret to catching trout is mastering the technique of making your bait look so delicious the trout can't help but bite...",
+    "segments": [
+      {
+        "text": "釣りのプロ：",
+        "reading": "tsuri no puro",
+        "gloss": "fishing pro"
+      },
+      {
+        "text": "これは競争ではないが… ",
+        "reading": "kore wa kyōsō de wa nai ga",
+        "gloss": "this isn't a competition, but"
+      },
+      {
+        "text": "タグを一番多く手に入れたら、",
+        "reading": "tagu o ichiban ōku te ni iretara",
+        "gloss": "whoever gets the most tags"
+      },
+      {
+        "text": "一年間自慢して暮らせるんだ！||",
+        "reading": "ichinenkan jiman shite kuraseru n da",
+        "gloss": "can boast for a year"
+      },
+      {
+        "text": "釣りのプロ：",
+        "reading": "tsuri no puro",
+        "gloss": "fishing pro"
+      },
+      {
+        "text": "冬になったらイカ釣りまつりにも来るよ…",
+        "reading": "fuyu ni nattara ika tsuri matsuri ni mo kuru yo",
+        "gloss": "come winter I'll come to SquidFest too"
+      },
+      {
+        "text": "あれは真の挑戦だ！||",
+        "reading": "are wa shin no chōsen da",
+        "gloss": "that's a real challenge"
+      },
+      {
+        "text": "釣りのプロ：",
+        "reading": "tsuri no puro",
+        "gloss": "fishing pro"
+      },
+      {
+        "text": "マスを釣る秘訣は、",
+        "reading": "masu o tsuru hiketsu wa",
+        "gloss": "the secret to catching trout"
+      },
+      {
+        "text": "エサをおいしく見せるテクニックを身につけて、",
+        "reading": "esa o oishiku miseru tekunikku o mi ni tsukete",
+        "gloss": "is mastering the technique of making bait look delicious"
+      },
+      {
+        "text": "マスが思わず食いつくようにすることだよ…",
+        "reading": "masu ga omowazu kuitsuku yō ni suru koto da yo",
+        "gloss": "so the trout can't help but bite"
+      }
+    ]
+  },
+  "derby_contestent9": {
+    "japanese": "釣り人：ああ、これこそが人生だよ。マス釣りよりも落ち着けるものは他にないね。",
+    "english": "Fisherman: Ah, this is the life. Nothing is more peaceful than trout fishing.",
+    "segments": [
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "これこそが人生だよ。",
+        "reading": "kore koso ga jinsei da yo",
+        "gloss": "this is what life is"
+      },
+      {
+        "text": "マス釣りよりも落ち着けるものは他にないね。",
+        "reading": "masu tsuri yori mo ochitsukeru mono wa hoka ni nai ne",
+        "gloss": "nothing is more calming than trout fishing"
+      }
+    ]
+  },
+  "winter_derby_contestent0": {
+    "japanese": "釣り人：イカはたいてい夜にしか姿を見せない。しかし、今日は特別なエサがまかれているから一日中イカが釣れるんだ。",
+    "english": "Fisherman: Squid usually only show at night. But today they've put special bait in the water, so you can catch them all day.",
+    "segments": [
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "イカはたいてい夜にしか姿を見せない。",
+        "reading": "ika wa taitei yoru ni shika sugata o misenai",
+        "gloss": "squid usually only appear at night"
+      },
+      {
+        "text": "しかし、",
+        "reading": "shikashi",
+        "gloss": "however"
+      },
+      {
+        "text": "今日は特別なエサがまかれているから",
+        "reading": "kyō wa tokubetsu na esa ga makarete iru kara",
+        "gloss": "since special bait has been scattered today"
+      },
+      {
+        "text": "一日中イカが釣れるんだ。",
+        "reading": "ichinichi jū ika ga tsureru n da",
+        "gloss": "squid can be caught all day"
+      }
+    ]
+  },
+  "winter_derby_contestent1": {
+    "japanese": "船乗り：冷えた空気は私の体をジャーキーのように引きしめてくれる。||船乗り：暖かすぎる空気は私の体をプリンのようにしてしまう。",
+    "english": "Mariner: The cold air firms me up like jerky.||Mariner: Air that's too warm turns me into a pudding.",
+    "segments": [
+      {
+        "text": "船乗り：",
+        "reading": "funanori",
+        "gloss": "mariner"
+      },
+      {
+        "text": "冷えた空気は私の体をジャーキーのように引きしめてくれる。||",
+        "reading": "hieta kūki wa watashi no karada o jākī no yō ni hikishimete kureru",
+        "gloss": "the cold air firms my body up like jerky"
+      },
+      {
+        "text": "船乗り：",
+        "reading": "funanori",
+        "gloss": "mariner"
+      },
+      {
+        "text": "暖かすぎる空気は私の体をプリンのようにしてしまう。",
+        "reading": "atatakasugiru kūki wa watashi no karada o purin no yō ni shite shimau",
+        "gloss": "air that's too warm turns my body into a pudding"
+      }
+    ]
+  },
+  "winter_derby_contestent10": {
+    "japanese": "釣り人：手が凍えそうだから、こっちでホットサイダーを飲んでるんだ。幸運を！",
+    "english": "Fisherman: My fingers are freezing, so I'm over here with a hot cider. Good luck!",
+    "segments": [
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "手が凍えそうだから、",
+        "reading": "te ga kogoesō da kara",
+        "gloss": "since my hands are about to freeze"
+      },
+      {
+        "text": "こっちでホットサイダーを飲んでるんだ。",
+        "reading": "kotchi de hotto saidā o nonderu n da",
+        "gloss": "I'm drinking hot cider over here"
+      },
+      {
+        "text": "幸運を！",
+        "reading": "kōun o",
+        "gloss": "good luck"
+      }
+    ]
+  },
+  "winter_derby_contestent11": {
+    "japanese": "イカの料理人：ああ、私のことは気にしないで…イカの値段を見に来たんだ。||イカの料理人：ここで何をしているんだい？イカは向こうからはやってこないよ！",
+    "english": "Squid chef: Oh, don't mind me... I've come to see the price of squid.||Squid chef: What are you doing here? The squid won't come to you!",
+    "segments": [
+      {
+        "text": "イカの料理人：",
+        "reading": "ika no ryōrinin",
+        "gloss": "squid chef"
+      },
+      {
+        "text": "ああ、",
+        "reading": "ā",
+        "gloss": "oh"
+      },
+      {
+        "text": "私のことは気にしないで…",
+        "reading": "watashi no koto wa ki ni shinaide",
+        "gloss": "don't mind me"
+      },
+      {
+        "text": "イカの値段を見に来たんだ。||",
+        "reading": "ika no nedan o mi ni kita n da",
+        "gloss": "I came to see the price of squid"
+      },
+      {
+        "text": "イカの料理人：",
+        "reading": "ika no ryōrinin",
+        "gloss": "squid chef"
+      },
+      {
+        "text": "ここで何をしているんだい？",
+        "reading": "koko de nani o shite iru n dai",
+        "gloss": "what are you doing here"
+      },
+      {
+        "text": "イカは向こうからはやってこないよ！",
+        "reading": "ika wa mukō kara wa yatte konai yo",
+        "gloss": "squid won't come to you"
+      }
+    ]
+  },
+  "winter_derby_contestent2": {
+    "japanese": "船乗り：おいでおいで、イカちゃん…",
+    "english": "Mariner: Come here, squiddy squiddy...",
+    "segments": [
+      {
+        "text": "船乗り：",
+        "reading": "funanori",
+        "gloss": "mariner"
+      },
+      {
+        "text": "おいでおいで、",
+        "reading": "oide oide",
+        "gloss": "come here, come here"
+      },
+      {
+        "text": "イカちゃん…",
+        "reading": "ika-chan",
+        "gloss": "little squid"
+      }
+    ]
+  },
+  "winter_derby_contestent3": {
+    "japanese": "釣り人：地元の人かい？きみのイカを少しわけてもらえないかな…",
+    "english": "Fisherman: You're a local, then? Mind if I take a few of your squid...",
+    "segments": [
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "地元の人かい？",
+        "reading": "jimoto no hito kai",
+        "gloss": "are you a local"
+      },
+      {
+        "text": "きみのイカを少しわけてもらえないかな…",
+        "reading": "kimi no ika o sukoshi wakete moraenai ka na",
+        "gloss": "might I have a few of your squid"
+      }
+    ]
+  },
+  "winter_derby_contestent4": {
+    "japanese": "釣り姉妹：私たちはちょっと名の知れた釣り姉妹なのよ。||釣り姉妹：小さなころからイカを釣ってきたわ。私たちには構わないで！",
+    "english": "Fishing sisters: We're the somewhat famous fishing sisters.||Fishing sisters: We've been catching squid since we were small. Don't mind us!",
+    "segments": [
+      {
+        "text": "釣り姉妹：",
+        "reading": "tsuri shimai",
+        "gloss": "fishing sisters"
+      },
+      {
+        "text": "私たちはちょっと名の知れた釣り姉妹なのよ。||",
+        "reading": "watashitachi wa chotto na no shireta tsuri shimai na no yo",
+        "gloss": "we're the somewhat famous fishing sisters"
+      },
+      {
+        "text": "釣り姉妹：",
+        "reading": "tsuri shimai",
+        "gloss": "fishing sisters"
+      },
+      {
+        "text": "小さなころからイカを釣ってきたわ。",
+        "reading": "chiisa na koro kara ika o tsutte kita wa",
+        "gloss": "we've caught squid since we were small"
+      },
+      {
+        "text": "私たちには構わないで！",
+        "reading": "watashitachi ni wa kamawanaide",
+        "gloss": "don't mind us"
+      }
+    ]
+  },
+  "winter_derby_contestent5": {
+    "japanese": "釣り師：（ブルブル）…寒い！私は冬の海釣りには向いていないのかもしれない。||釣り師：コイ釣りまつりもあればいのに…",
+    "english": "Angler: *Shiver*... it's cold! Maybe I'm not cut out for winter sea fishing.||Angler: I wish there were a CarpFest too...",
+    "segments": [
+      {
+        "text": "釣り師：",
+        "reading": "tsurishi",
+        "gloss": "angler"
+      },
+      {
+        "text": "（ブルブル）…",
+        "reading": "buruburu",
+        "gloss": "*shiver*"
+      },
+      {
+        "text": "寒い！",
+        "reading": "samui",
+        "gloss": "it's cold"
+      },
+      {
+        "text": "私は冬の海釣りには向いていないのかもしれない。||",
+        "reading": "watashi wa fuyu no umizuri ni wa muite inai no kamo shirenai",
+        "gloss": "maybe I'm not suited to winter sea fishing"
+      },
+      {
+        "text": "釣り師：",
+        "reading": "tsurishi",
+        "gloss": "angler"
+      },
+      {
+        "text": "コイ釣りまつりもあればいのに…",
+        "reading": "koi tsuri matsuri mo areba i no ni",
+        "gloss": "if only there were a carp-fishing festival too"
+      }
+    ]
+  },
+  "winter_derby_contestent6": {
+    "japanese": "トラウトマン：イカはマスとは違うけど、同じように釣れるよ。||トラウトマン：賞品をねらっているなら、釣りに行った方がいいよ！",
+    "english": "Trout Man: Squid are different from trout, but I catch them just the same.||Trout Man: If you're after the prize, you'd better get fishing!",
+    "segments": [
+      {
+        "text": "トラウトマン：",
+        "reading": "Torauto Man",
+        "gloss": "Trout Man"
+      },
+      {
+        "text": "イカはマスとは違うけど、",
+        "reading": "ika wa masu to wa chigau kedo",
+        "gloss": "squid differ from trout, but"
+      },
+      {
+        "text": "同じように釣れるよ。||",
+        "reading": "onaji yō ni tsureru yo",
+        "gloss": "I catch them the same way"
+      },
+      {
+        "text": "トラウトマン：",
+        "reading": "Torauto Man",
+        "gloss": "Trout Man"
+      },
+      {
+        "text": "賞品をねらっているなら、",
+        "reading": "shōhin o neratte iru nara",
+        "gloss": "if you're after the prize"
+      },
+      {
+        "text": "釣りに行った方がいいよ！",
+        "reading": "tsuri ni itta hō ga ii yo",
+        "gloss": "you'd better go fishing"
+      }
+    ]
+  },
+  "winter_derby_contestent7": {
+    "japanese": "釣り人：出かけるときに妻が保温ポットに熱いコーヒーを入れてくれたんだ。最高の女性だよ！",
+    "english": "Fisherman: My wife filled a flask with hot coffee when I set off. What a woman!",
+    "segments": [
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "出かけるときに妻が保温ポットに熱いコーヒーを入れてくれたんだ。",
+        "reading": "dekakeru toki ni tsuma ga hoon potto ni atsui kōhī o irete kureta n da",
+        "gloss": "my wife filled a flask with hot coffee when I set off"
+      },
+      {
+        "text": "最高の女性だよ！",
+        "reading": "saikō no josei da yo",
+        "gloss": "what a wonderful woman"
+      }
+    ]
+  },
+  "winter_derby_contestent8": {
+    "japanese": "釣りのプロ：しーっ…イカを刺激したくないんだ。||釣りのプロ：人込みから離れたくってこっちに来たんだ。イカには引っ込み思案なところがあるからね。||釣りのプロ：お望みならここで釣ってもいいよ。でも静かにね。",
+    "english": "Fishing Pro: Shh... I don't want to startle the squid.||Fishing Pro: I came over here to get away from the crowd. Squid can be shy.||Fishing Pro: You can fish here if you like. Just be quiet.",
+    "segments": [
+      {
+        "text": "釣りのプロ：",
+        "reading": "tsuri no puro",
+        "gloss": "fishing pro"
+      },
+      {
+        "text": "しーっ…",
+        "reading": "shī",
+        "gloss": "shh"
+      },
+      {
+        "text": "イカを刺激したくないんだ。||",
+        "reading": "ika o shigeki shitakunai n da",
+        "gloss": "I don't want to startle the squid"
+      },
+      {
+        "text": "釣りのプロ：",
+        "reading": "tsuri no puro",
+        "gloss": "fishing pro"
+      },
+      {
+        "text": "人込みから離れたくってこっちに来たんだ。",
+        "reading": "hitogomi kara hanaretakutte kotchi ni kita n da",
+        "gloss": "I came here wanting to get away from the crowd"
+      },
+      {
+        "text": "イカには引っ込み思案なところがあるからね。||",
+        "reading": "ika ni wa hikkomijian na tokoro ga aru kara ne",
+        "gloss": "squid have a shy side"
+      },
+      {
+        "text": "釣りのプロ：",
+        "reading": "tsuri no puro",
+        "gloss": "fishing pro"
+      },
+      {
+        "text": "お望みならここで釣ってもいいよ。",
+        "reading": "o-nozomi nara koko de tsutte mo ii yo",
+        "gloss": "you may fish here if you wish"
+      },
+      {
+        "text": "でも静かにね。",
+        "reading": "demo shizuka ni ne",
+        "gloss": "but quietly"
+      }
+    ]
+  },
+  "winter_derby_contestent9": {
+    "japanese": "釣り人：勝ち負けはあまり気にしてないよ。雰囲気を楽しめればそれでいいんだ。||釣り人：夏もいいけど、冬のきびしい寒さも好きなんだ。人生にだって対照的なことはたくさんあるだろう？",
+    "english": "Fisherman: I'm not much bothered about winning. Enjoying the atmosphere is enough.||Fisherman: Summer is fine, but I like the harsh cold of winter too. Life is full of contrasts, isn't it?",
+    "segments": [
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "勝ち負けはあまり気にしてないよ。",
+        "reading": "kachimake wa amari ki ni shitenai yo",
+        "gloss": "I'm not much bothered about winning or losing"
+      },
+      {
+        "text": "雰囲気を楽しめればそれでいいんだ。||",
+        "reading": "fun'iki o tanoshimereba sore de ii n da",
+        "gloss": "enjoying the atmosphere is enough"
+      },
+      {
+        "text": "釣り人：",
+        "reading": "tsuribito",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "夏もいいけど、",
+        "reading": "natsu mo ii kedo",
+        "gloss": "summer is good too, but"
+      },
+      {
+        "text": "冬のきびしい寒さも好きなんだ。",
+        "reading": "fuyu no kibishii samusa mo suki na n da",
+        "gloss": "I also like the harsh cold of winter"
+      },
+      {
+        "text": "人生にだって対照的なことはたくさんあるだろう？",
+        "reading": "jinsei ni datte taishōteki na koto wa takusan aru darō",
+        "gloss": "life too is full of contrasts, isn't it"
+      }
+    ]
+  }
+}
