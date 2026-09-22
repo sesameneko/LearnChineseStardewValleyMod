@@ -3,14 +3,17 @@ TODOs
 
 Some recent change broke the proof of concept translation demo (probably this "shift toggle" change)
 
-M2 segmentation data — do Tools and Weapons next
-------------------------------------------------
-Priority: Tools (54 entries) and Weapons (134) come BEFORE the tables listed
-in Plan.md's priority order (StringsFromCSFiles, 1_6_Strings, BigCraftables,
-Characters). They're small and they're item hover text, which is exactly what
-M1's tooltip already surfaces.
+M2 segmentation data — every table is now authored
+--------------------------------------------------
+All 9,039 in-game strings across every Strings/* and Content/Data table have
+hand-authored segment data; 11 keys are deliberately skipped (event command
+scripts, which the game never draws as a single string). `segtool.py status`
+shows pending=0 everywhere and `segtool.py validate` passes.
 
-How to do it (pipeline already built, see tools/segment-data/segtool.py):
+Still open here: the Objects item-name split below, and Achievements /
+SecretNotes, which tools/XnbStringTool still can't read.
+
+The pipeline, for future re-passes (tools/segment-data/segtool.py):
 
   python3 tools/segment-data/segtool.py status          # coverage per table
   python3 tools/segment-data/segtool.py batch Tools 50  # next worklist, as TSV
@@ -27,8 +30,7 @@ Output goes to tools/extracted-strings/literal-translations/<Table>.json —
 that folder is the tracked source of truth; assets/segments/ is gitignored and
 generated from it by the csproj's CopySegmentData target.
 
-Status at the time of writing: Objects descriptions (744) and UI (865) done,
-6,375 entries still pending across the other tables.
+Status: all tables complete (9,039 authored, 11 skipped, 0 pending).
 
 Objects item names — split the multi-word ones
 ----------------------------------------------
@@ -49,4 +51,4 @@ the same way as any other table -- the entries are already in the right shape, s
 it is editing segments arrays rather than translating from scratch, and
 segtool.py validate still enforces that the segments reproduce the source string.
 
-Priority: after Tools and Weapons above.
+Priority: this is the main remaining segmentation work.
