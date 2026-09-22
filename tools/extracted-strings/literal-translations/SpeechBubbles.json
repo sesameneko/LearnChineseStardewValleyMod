@@ -1,0 +1,968 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley SpeechBubbles.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AdventureGuild_Marlon_Greeting1": {
+    "japanese": "あたらしい剣はいらないか？",
+    "english": "Need a new sword?",
+    "segments": [
+      {
+        "text": "あたらしい剣",
+        "reading": "atarashii ken",
+        "gloss": "a new sword"
+      },
+      {
+        "text": "はいらないか？",
+        "reading": "wa iranai ka",
+        "gloss": "don't you need"
+      }
+    ]
+  },
+  "AdventureGuild_Marlon_Greeting2": {
+    "japanese": "よく来たな。",
+    "english": "Welcome.",
+    "segments": [
+      {
+        "text": "よく来たな。",
+        "reading": "yoku kita na",
+        "gloss": "welcome"
+      }
+    ]
+  },
+  "AdventureGuild_Marlon_Greeting3": {
+    "japanese": "ギル、おきろ！客人だぞ。",
+    "english": "Gil, wake up! We have a visitor.",
+    "segments": [
+      {
+        "text": "ギル、",
+        "reading": "Giru",
+        "gloss": "Gil"
+      },
+      {
+        "text": "おきろ！",
+        "reading": "okiro",
+        "gloss": "wake up"
+      },
+      {
+        "text": "客人だぞ。",
+        "reading": "kyakujin da zo",
+        "gloss": "we have a visitor"
+      }
+    ]
+  },
+  "AdventureGuild_Marlon_Greeting4": {
+    "japanese": "こんばんは。",
+    "english": "Good evening.",
+    "segments": [
+      {
+        "text": "こんばんは。",
+        "reading": "konbanwa",
+        "gloss": "good evening"
+      }
+    ]
+  },
+  "AdventureGuild_Marlon_Greeting_Female": {
+    "japanese": "もどったか！",
+    "english": "She's back!",
+    "segments": [
+      {
+        "text": "もどったか！",
+        "reading": "modotta ka",
+        "gloss": "back, are you"
+      }
+    ]
+  },
+  "AdventureGuild_Marlon_Greeting_Male": {
+    "japanese": "もどったか！",
+    "english": "He's back!",
+    "segments": [
+      {
+        "text": "もどったか！",
+        "reading": "modotta ka",
+        "gloss": "back, are you"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_CloseFriends": {
+    "japanese": "こんにちは、{0}",
+    "english": "Hello, {0}",
+    "segments": [
+      {
+        "text": "こんにちは、",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_Greeting1": {
+    "japanese": "こんにちは！",
+    "english": "Hello!",
+    "segments": [
+      {
+        "text": "こんにちは！",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_Greeting2": {
+    "japanese": "あら、どうも！",
+    "english": "Oh, hello!",
+    "segments": [
+      {
+        "text": "あら、",
+        "reading": "ara",
+        "gloss": "oh"
+      },
+      {
+        "text": "どうも！",
+        "reading": "dōmo",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_Greeting3": {
+    "japanese": "どうも！{1}牧場のちょうしはどう？",
+    "english": "Hello! How's {1} Farm doing?",
+    "segments": [
+      {
+        "text": "どうも！",
+        "reading": "dōmo",
+        "gloss": "hello"
+      },
+      {
+        "text": "{1}",
+        "reading": "",
+        "gloss": "(farm name)"
+      },
+      {
+        "text": "牧場のちょうしはどう？",
+        "reading": "bokujō no chōshi wa dō",
+        "gloss": "how is the farm doing"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_NotCloseFriends": {
+    "japanese": "なにかお探し？",
+    "english": "Looking for something?",
+    "segments": [
+      {
+        "text": "なにかお探し？",
+        "reading": "nanika o-sagashi",
+        "gloss": "looking for something"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_NotRaining": {
+    "japanese": "どうも！外のお天気はどう？",
+    "english": "Hello! How's the weather outside?",
+    "segments": [
+      {
+        "text": "どうも！",
+        "reading": "dōmo",
+        "gloss": "hello"
+      },
+      {
+        "text": "外のお天気はどう？",
+        "reading": "soto no o-tenki wa dō",
+        "gloss": "how's the weather outside"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_Raining": {
+    "japanese": "クツはふいて入ってね！",
+    "english": "Wipe your shoes before you come in!",
+    "segments": [
+      {
+        "text": "クツは",
+        "reading": "kutsu wa",
+        "gloss": "shoes"
+      },
+      {
+        "text": "ふいて",
+        "reading": "fuite",
+        "gloss": "wipe"
+      },
+      {
+        "text": "入ってね！",
+        "reading": "haitte ne",
+        "gloss": "and come in"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_RareGreeting": {
+    "japanese": "ルイス…？まあ…",
+    "english": "Lew...? Oh...",
+    "segments": [
+      {
+        "text": "ルイス…？",
+        "reading": "Ruisu",
+        "gloss": "Lewis"
+      },
+      {
+        "text": "まあ…",
+        "reading": "mā",
+        "gloss": "oh"
+      }
+    ]
+  },
+  "ArchaeologyHouse_Gunther_Greeting1": {
+    "japanese": "なにか見つかったかい？",
+    "english": "Found anything?",
+    "segments": [
+      {
+        "text": "なにか見つかったかい？",
+        "reading": "nanika mitsukatta kai",
+        "gloss": "did you find anything"
+      }
+    ]
+  },
+  "ArchaeologyHouse_Gunther_Greeting2": {
+    "japanese": "なにか堀りだせたかい？",
+    "english": "Dug anything up?",
+    "segments": [
+      {
+        "text": "なにか堀りだせたかい？",
+        "reading": "nanika horidaseta kai",
+        "gloss": "did you dig anything up"
+      }
+    ]
+  },
+  "ArchaeologyHouse_Gunther_Greeting3": {
+    "japanese": "調べてほしいものはあるかい？",
+    "english": "Anything you'd like examined?",
+    "segments": [
+      {
+        "text": "調べてほしいものはあるかい？",
+        "reading": "shirabete hoshii mono wa aru kai",
+        "gloss": "is there anything you want examined"
+      }
+    ]
+  },
+  "ArchaeologyHouse_Gunther_Greeting4": {
+    "japanese": "やあ、こんにちは。",
+    "english": "Hello there.",
+    "segments": [
+      {
+        "text": "やあ、",
+        "reading": "yā",
+        "gloss": "hello"
+      },
+      {
+        "text": "こんにちは。",
+        "reading": "konnichiwa",
+        "gloss": "good day"
+      }
+    ]
+  },
+  "ArchaeologyHouse_Gunther_Greeting5": {
+    "japanese": "なにか持ってきたのかい？",
+    "english": "Brought me something?",
+    "segments": [
+      {
+        "text": "なにか持ってきたのかい？",
+        "reading": "nanika motte kita no kai",
+        "gloss": "did you bring something"
+      }
+    ]
+  },
+  "ArchaeologyHouse_Gunther_RareGreeting": {
+    "japanese": "おや、土のにおいがするな…いいね！",
+    "english": "Oh, you smell of earth... good!",
+    "segments": [
+      {
+        "text": "おや、",
+        "reading": "oya",
+        "gloss": "oh"
+      },
+      {
+        "text": "土のにおいがするな…",
+        "reading": "tsuchi no nioi ga suru na",
+        "gloss": "you smell of earth"
+      },
+      {
+        "text": "いいね！",
+        "reading": "ii ne",
+        "gloss": "that's good"
+      }
+    ]
+  },
+  "ElliottHouse_Elliott_Greeting1": {
+    "japanese": "来てくれてうれしいよ。",
+    "english": "I'm glad you came.",
+    "segments": [
+      {
+        "text": "来てくれてうれしいよ。",
+        "reading": "kite kurete ureshii yo",
+        "gloss": "I'm glad you came"
+      }
+    ]
+  },
+  "ElliottHouse_Elliott_Greeting2": {
+    "japanese": "こんにちは。",
+    "english": "Hello.",
+    "segments": [
+      {
+        "text": "こんにちは。",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "ElliottHouse_Elliott_Greeting3": {
+    "japanese": "こんにちは、{0}",
+    "english": "Hello, {0}",
+    "segments": [
+      {
+        "text": "こんにちは、",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      }
+    ]
+  },
+  "Hospital_Maru_Greeting1": {
+    "japanese": "ご予約ですか？",
+    "english": "Do you have an appointment?",
+    "segments": [
+      {
+        "text": "ご予約ですか？",
+        "reading": "go-yoyaku desu ka",
+        "gloss": "do you have a booking"
+      }
+    ]
+  },
+  "Hospital_Maru_Greeting2": {
+    "japanese": "どうしましたか？",
+    "english": "Can I help you?",
+    "segments": [
+      {
+        "text": "どうしましたか？",
+        "reading": "dō shimashita ka",
+        "gloss": "what's the matter"
+      }
+    ]
+  },
+  "Hospital_Maru_Greeting3": {
+    "japanese": "おくすりはいかがですか？",
+    "english": "Would you like some medicine?",
+    "segments": [
+      {
+        "text": "おくすりはいかがですか？",
+        "reading": "o-kusuri wa ikaga desu ka",
+        "gloss": "how about some medicine"
+      }
+    ]
+  },
+  "Hospital_Maru_Greeting4": {
+    "japanese": "緊急のご用件でしょうか？",
+    "english": "Is it an emergency?",
+    "segments": [
+      {
+        "text": "緊急のご用件でしょうか？",
+        "reading": "kinkyū no go-yōken deshō ka",
+        "gloss": "is your business urgent"
+      }
+    ]
+  },
+  "Hospital_Maru_Greeting5": {
+    "japanese": "先生にご用ですか？",
+    "english": "Here to see the doctor?",
+    "segments": [
+      {
+        "text": "先生にご用ですか？",
+        "reading": "sensei ni go-yō desu ka",
+        "gloss": "do you have business with the doctor"
+      }
+    ]
+  },
+  "Hospital_Maru_Spouse": {
+    "japanese": "あら、あなた ♡",
+    "english": "Oh, hello dear ♡",
+    "segments": [
+      {
+        "text": "あら、",
+        "reading": "ara",
+        "gloss": "oh"
+      },
+      {
+        "text": "あなた ♡",
+        "reading": "anata",
+        "gloss": "dear"
+      }
+    ]
+  },
+  "JojaMart_Morris_Greeting": {
+    "japanese": "Jojaマートへようこそ！",
+    "english": "Welcome to JojaMart!",
+    "segments": [
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "へようこそ！",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      }
+    ]
+  },
+  "LeahHouse_Leah_Greeting1": {
+    "japanese": "あら、どうも！",
+    "english": "Oh, hello!",
+    "segments": [
+      {
+        "text": "あら、",
+        "reading": "ara",
+        "gloss": "oh"
+      },
+      {
+        "text": "どうも！",
+        "reading": "dōmo",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "LeahHouse_Leah_Greeting2": {
+    "japanese": "こんにちは。",
+    "english": "Hello.",
+    "segments": [
+      {
+        "text": "こんにちは。",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "LeahHouse_Leah_Greeting3": {
+    "japanese": "こんにちは、{0}",
+    "english": "Hello, {0}",
+    "segments": [
+      {
+        "text": "こんにちは、",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      }
+    ]
+  },
+  "ManorHouse_Lewis_Afternoon": {
+    "japanese": "こんにちは。",
+    "english": "Good afternoon.",
+    "segments": [
+      {
+        "text": "こんにちは。",
+        "reading": "konnichiwa",
+        "gloss": "good afternoon"
+      }
+    ]
+  },
+  "ManorHouse_Lewis_Evening": {
+    "japanese": "こんばんは。",
+    "english": "Good evening.",
+    "segments": [
+      {
+        "text": "こんばんは。",
+        "reading": "konbanwa",
+        "gloss": "good evening"
+      }
+    ]
+  },
+  "ManorHouse_Lewis_Morning": {
+    "japanese": "おはよう！",
+    "english": "Good morning!",
+    "segments": [
+      {
+        "text": "おはよう！",
+        "reading": "ohayō",
+        "gloss": "good morning"
+      }
+    ]
+  },
+  "Saloon_Gus_Greeting": {
+    "japanese": "やあ、よく来たね！",
+    "english": "Hello, do come in!",
+    "segments": [
+      {
+        "text": "やあ、",
+        "reading": "yā",
+        "gloss": "hello"
+      },
+      {
+        "text": "よく来たね！",
+        "reading": "yoku kita ne",
+        "gloss": "good of you to come"
+      }
+    ]
+  },
+  "Saloon_Gus_NotRaining": {
+    "japanese": "なにか飲むかい？",
+    "english": "Fancy a drink?",
+    "segments": [
+      {
+        "text": "なにか飲むかい？",
+        "reading": "nanika nomu kai",
+        "gloss": "will you have something to drink"
+      }
+    ]
+  },
+  "Saloon_Gus_NotSnowing1": {
+    "japanese": "あったかいものでも食べていきなよ！",
+    "english": "How about something hot to eat?",
+    "segments": [
+      {
+        "text": "あったかいものでも食べていきなよ！",
+        "reading": "attakai mono demo tabete iki na yo",
+        "gloss": "have something warm to eat"
+      }
+    ]
+  },
+  "Saloon_Gus_NotSnowing2": {
+    "japanese": "いらっしゃいませ！",
+    "english": "Welcome!",
+    "segments": [
+      {
+        "text": "いらっしゃいませ！",
+        "reading": "irasshaimase",
+        "gloss": "welcome"
+      }
+    ]
+  },
+  "Saloon_Gus_NotSummer": {
+    "japanese": "いらっしゃい、なにかどうだい？",
+    "english": "Welcome, what can I get you?",
+    "segments": [
+      {
+        "text": "いらっしゃい、",
+        "reading": "irasshai",
+        "gloss": "welcome"
+      },
+      {
+        "text": "なにかどうだい？",
+        "reading": "nanika dō dai",
+        "gloss": "how about something"
+      }
+    ]
+  },
+  "Saloon_Gus_Raining": {
+    "japanese": "あったかいものでも飲むかい？",
+    "english": "Fancy something hot to drink?",
+    "segments": [
+      {
+        "text": "あったかいものでも飲むかい？",
+        "reading": "attakai mono demo nomu kai",
+        "gloss": "will you have something warm to drink"
+      }
+    ]
+  },
+  "Saloon_Gus_RareGreeting": {
+    "japanese": "なにか飲んだほうがいいんじゃないか。",
+    "english": "Looks like you could use a drink.",
+    "segments": [
+      {
+        "text": "なにか飲んだほうがいいんじゃないか。",
+        "reading": "nanika nonda hō ga ii n ja nai ka",
+        "gloss": "wouldn't it be good to have a drink"
+      }
+    ]
+  },
+  "Saloon_Gus_Snowing1": {
+    "japanese": "外はさむいだろ、コーヒーでもどうだい！",
+    "english": "It's cold out — how about a coffee?",
+    "segments": [
+      {
+        "text": "外はさむいだろ、",
+        "reading": "soto wa samui daro",
+        "gloss": "it's cold outside, right"
+      },
+      {
+        "text": "コーヒーでもどうだい！",
+        "reading": "kōhī demo dō dai",
+        "gloss": "how about a coffee"
+      }
+    ]
+  },
+  "Saloon_Gus_Snowing2": {
+    "japanese": "外はさむいだろ、こっちにおいでよ！",
+    "english": "It's cold out — come in here!",
+    "segments": [
+      {
+        "text": "外はさむいだろ、",
+        "reading": "soto wa samui daro",
+        "gloss": "it's cold outside, right"
+      },
+      {
+        "text": "こっちにおいでよ！",
+        "reading": "kotchi ni oide yo",
+        "gloss": "come over here"
+      }
+    ]
+  },
+  "Saloon_Gus_Summer": {
+    "japanese": "冷たいものでも飲むかい？",
+    "english": "Fancy something cold to drink?",
+    "segments": [
+      {
+        "text": "冷たいものでも飲むかい？",
+        "reading": "tsumetai mono demo nomu kai",
+        "gloss": "will you have something cold to drink"
+      }
+    ]
+  },
+  "SandyHouse_Sandy_Greeting1": {
+    "japanese": "気のどくに、暑かったでしょ！",
+    "english": "Poor thing, it must have been hot!",
+    "segments": [
+      {
+        "text": "気のどくに、",
+        "reading": "ki no doku ni",
+        "gloss": "poor thing"
+      },
+      {
+        "text": "暑かったでしょ！",
+        "reading": "atsukatta desho",
+        "gloss": "it must have been hot"
+      }
+    ]
+  },
+  "SandyHouse_Sandy_Greeting2": {
+    "japanese": "まあ、お客さんね！",
+    "english": "Oh, a visitor!",
+    "segments": [
+      {
+        "text": "まあ、",
+        "reading": "mā",
+        "gloss": "oh"
+      },
+      {
+        "text": "お客さんね！",
+        "reading": "o-kyaku-san ne",
+        "gloss": "a visitor"
+      }
+    ]
+  },
+  "SandyHouse_Sandy_Greeting3": {
+    "japanese": "まあ、そんなにひからびちゃって！",
+    "english": "Goodness, you look parched!",
+    "segments": [
+      {
+        "text": "まあ、",
+        "reading": "mā",
+        "gloss": "goodness"
+      },
+      {
+        "text": "そんなにひからびちゃって！",
+        "reading": "sonna ni hikarabichatte",
+        "gloss": "so parched"
+      }
+    ]
+  },
+  "SandyHouse_Sandy_Greeting4": {
+    "japanese": "めずらしいタネが入ってるよ！",
+    "english": "I've got rare seeds in!",
+    "segments": [
+      {
+        "text": "めずらしいタネ",
+        "reading": "mezurashii tane",
+        "gloss": "rare seeds"
+      },
+      {
+        "text": "が入ってるよ！",
+        "reading": "ga haitteru yo",
+        "gloss": "are in stock"
+      }
+    ]
+  },
+  "SandyHouse_Sandy_Greeting5": {
+    "japanese": "ねえあなた、なにか買ってかない？",
+    "english": "Sweetie, won't you buy something?",
+    "segments": [
+      {
+        "text": "ねえあなた、",
+        "reading": "nē anata",
+        "gloss": "hey, you"
+      },
+      {
+        "text": "なにか買ってかない？",
+        "reading": "nanika katte kanai",
+        "gloss": "won't you buy something"
+      }
+    ]
+  },
+  "ScienceHouse_Robin_CloseFriends": {
+    "japanese": "よく来たわね、{0}！",
+    "english": "Good to see you, {0}!",
+    "segments": [
+      {
+        "text": "よく来たわね、",
+        "reading": "yoku kita wa ne",
+        "gloss": "good of you to come"
+      },
+      {
+        "text": "{0}！",
+        "reading": "",
+        "gloss": "(name)"
+      }
+    ]
+  },
+  "ScienceHouse_Robin_Greeting": {
+    "japanese": "いらっしゃいませ！",
+    "english": "Welcome!",
+    "segments": [
+      {
+        "text": "いらっしゃいませ！",
+        "reading": "irasshaimase",
+        "gloss": "welcome"
+      }
+    ]
+  },
+  "ScienceHouse_Robin_NotCloseFriends": {
+    "japanese": "なにを建てましょうか？",
+    "english": "What shall I build for you?",
+    "segments": [
+      {
+        "text": "なにを建てましょうか？",
+        "reading": "nani o tatemashō ka",
+        "gloss": "what shall I build"
+      }
+    ]
+  },
+  "ScienceHouse_Robin_NotRaining1": {
+    "japanese": "あら、さんぽしてたの？",
+    "english": "Oh, been out for a walk?",
+    "segments": [
+      {
+        "text": "あら、",
+        "reading": "ara",
+        "gloss": "oh"
+      },
+      {
+        "text": "さんぽしてたの？",
+        "reading": "sanpo shiteta no",
+        "gloss": "were you out walking"
+      }
+    ]
+  },
+  "ScienceHouse_Robin_NotRaining2": {
+    "japanese": "どうも！",
+    "english": "Hello!",
+    "segments": [
+      {
+        "text": "どうも！",
+        "reading": "dōmo",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "ScienceHouse_Robin_NotSnowing": {
+    "japanese": "やあ、こんにちは！",
+    "english": "Hi there!",
+    "segments": [
+      {
+        "text": "やあ、",
+        "reading": "yā",
+        "gloss": "hi"
+      },
+      {
+        "text": "こんにちは！",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "ScienceHouse_Robin_Raining1": {
+    "japanese": "まったく、ひどい天気ね。",
+    "english": "Honestly, what dreadful weather.",
+    "segments": [
+      {
+        "text": "まったく、",
+        "reading": "mattaku",
+        "gloss": "honestly"
+      },
+      {
+        "text": "ひどい天気ね。",
+        "reading": "hidoi tenki ne",
+        "gloss": "what dreadful weather"
+      }
+    ]
+  },
+  "ScienceHouse_Robin_Raining2": {
+    "japanese": "あらら、ずぶぬれじゃない！",
+    "english": "Oh dear, you're soaked!",
+    "segments": [
+      {
+        "text": "あらら、",
+        "reading": "arara",
+        "gloss": "oh dear"
+      },
+      {
+        "text": "ずぶぬれじゃない！",
+        "reading": "zubunure ja nai",
+        "gloss": "you're soaked"
+      }
+    ]
+  },
+  "ScienceHouse_Robin_RareGreeting": {
+    "japanese": "ルイス…？まあ…",
+    "english": "Lew...? Oh...",
+    "segments": [
+      {
+        "text": "ルイス…？",
+        "reading": "Ruisu",
+        "gloss": "Lewis"
+      },
+      {
+        "text": "まあ…",
+        "reading": "mā",
+        "gloss": "oh"
+      }
+    ]
+  },
+  "ScienceHouse_Robin_Snowing": {
+    "japanese": "なかはあったかいよ、入って！",
+    "english": "It's warm inside — come in!",
+    "segments": [
+      {
+        "text": "なかはあったかいよ、",
+        "reading": "naka wa attakai yo",
+        "gloss": "it's warm inside"
+      },
+      {
+        "text": "入って！",
+        "reading": "haitte",
+        "gloss": "come in"
+      }
+    ]
+  },
+  "SeedShop_Pierre_Greeting1": {
+    "japanese": "こんにちは！",
+    "english": "Hello!",
+    "segments": [
+      {
+        "text": "こんにちは！",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "SeedShop_Pierre_Greeting2": {
+    "japanese": "どうも、{0}さん！",
+    "english": "Hello, {0}!",
+    "segments": [
+      {
+        "text": "どうも、",
+        "reading": "dōmo",
+        "gloss": "hello"
+      },
+      {
+        "text": "{0}さん！",
+        "reading": "san",
+        "gloss": "(name)"
+      }
+    ]
+  },
+  "SeedShop_Pierre_NotRaining": {
+    "japanese": "いらっしゃいませ！",
+    "english": "Welcome!",
+    "segments": [
+      {
+        "text": "いらっしゃいませ！",
+        "reading": "irasshaimase",
+        "gloss": "welcome"
+      }
+    ]
+  },
+  "SeedShop_Pierre_NotSummer": {
+    "japanese": "タネはいかがですか！",
+    "english": "Seeds for sale!",
+    "segments": [
+      {
+        "text": "タネはいかがですか！",
+        "reading": "tane wa ikaga desu ka",
+        "gloss": "how about some seeds"
+      }
+    ]
+  },
+  "SeedShop_Pierre_NotWinter": {
+    "japanese": "ピエール商店へようこそ！",
+    "english": "Welcome to Pierre's!",
+    "segments": [
+      {
+        "text": "ピエール商店",
+        "reading": "Piēru shōten",
+        "gloss": "Pierre's shop"
+      },
+      {
+        "text": "へようこそ！",
+        "reading": "e yōkoso",
+        "gloss": "welcome to"
+      }
+    ]
+  },
+  "SeedShop_Pierre_Raining": {
+    "japanese": "きょうはお買いもの日和ですよ！",
+    "english": "Today's a good day for shopping!",
+    "segments": [
+      {
+        "text": "きょうはお買いもの日和ですよ！",
+        "reading": "kyō wa o-kaimono biyori desu yo",
+        "gloss": "today is fine weather for shopping"
+      }
+    ]
+  },
+  "SeedShop_Pierre_RareGreeting": {
+    "japanese": "サイフはもってますよね？",
+    "english": "You did bring your wallet, didn't you?",
+    "segments": [
+      {
+        "text": "サイフはもってますよね？",
+        "reading": "saifu wa mottemasu yo ne",
+        "gloss": "you have your wallet, don't you"
+      }
+    ]
+  },
+  "SeedShop_Pierre_Summer": {
+    "japanese": "夏のタネが入ってますよ！",
+    "english": "Summer seeds are in!",
+    "segments": [
+      {
+        "text": "夏のタネ",
+        "reading": "natsu no tane",
+        "gloss": "summer seeds"
+      },
+      {
+        "text": "が入ってますよ！",
+        "reading": "ga haittemasu yo",
+        "gloss": "are in stock"
+      }
+    ]
+  },
+  "SeedShop_Pierre_Winter": {
+    "japanese": "きょうは冷えますね。店の中へどうぞ！",
+    "english": "It's chilly today. Do come inside!",
+    "segments": [
+      {
+        "text": "きょうは冷えますね。",
+        "reading": "kyō wa hiemasu ne",
+        "gloss": "it's chilly today"
+      },
+      {
+        "text": "店の中へどうぞ！",
+        "reading": "mise no naka e dōzo",
+        "gloss": "please come inside the shop"
+      }
+    ]
+  }
+}
