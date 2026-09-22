@@ -3,15 +3,35 @@ TODOs
 
 Some recent change broke the proof of concept translation demo (probably this "shift toggle" change)
 
-M2 segmentation data — every table is now authored
---------------------------------------------------
-All 9,039 in-game strings across every Strings/* and Content/Data table have
-hand-authored segment data; 11 keys are deliberately skipped (event command
-scripts, which the game never draws as a single string). `segtool.py status`
-shows pending=0 everywhere and `segtool.py validate` passes.
+M2 segmentation data — every *imported* table is authored; five families were never imported
+--------------------------------------------------------------------------------------------
+All 9,039 entries across every Strings/* table and the nine Content/Data
+assets in segtool.py's DATA_TABLES have hand-authored segment data; 11 keys are
+deliberately skipped (event command scripts, which the game never draws as a
+single string). `segtool.py status` shows pending=0 everywhere and
+`segtool.py validate` passes.
 
-Still open here: the Objects item-name split below, and Achievements /
-SecretNotes, which tools/XnbStringTool still can't read.
+That is NOT the same as "all game text" — a distinction this file previously
+got wrong. Found 2026-09-22, when villager dialogue turned up untranslated in
+play: five asset families were never in scope at all, ~8,900 drawn pages /
+~291k JA characters, roughly 1.5x everything authored to date (199,699).
+
+  Characters/Dialogue/*   52 files   3,301 keys   4,874 pages   161,892 chars
+  Data/Events/*           44 files   2,064 spoken lines in 258 scripts   80,793
+  Data/Festivals/*         9 files     743 keys   1,025 pages    30,996
+  Data/TV/*                2 files      96 keys                  10,827
+  Strings/schedules/*     30 files     191 keys                   6,139
+
+Run `segtool.py audit` for the live version of that list. It walks the game's
+Content folder and fails on any localized asset the pipeline can't account for,
+which is the check that was missing — `status` only ever measured coverage
+against the files somebody had already chosen to extract. See Plan.md's data
+task for the full post-mortem.
+
+Still open beyond those five: Achievements / SecretNotes, which
+tools/XnbStringTool still can't read (Dictionary<int,string>), and the
+TranslationIndex.StringTables array in the mod itself, which has the same
+Strings/*-only blind spot for whole-sentence lookup.
 
 The pipeline, for future re-passes (tools/segment-data/segtool.py):
 
@@ -30,7 +50,8 @@ Output goes to tools/extracted-strings/literal-translations/<Table>.json —
 that folder is the tracked source of truth; assets/segments/ is gitignored and
 generated from it by the csproj's CopySegmentData target.
 
-Status: all tables complete (9,039 authored, 11 skipped, 0 pending).
+Status: all imported tables complete (9,039 authored, 11 skipped, 0 pending);
+five un-imported families outstanding, see above.
 
 Objects item names — done
 -------------------------

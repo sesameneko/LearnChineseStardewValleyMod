@@ -8,6 +8,7 @@ Sub-commands:
   merge <Table> <file.tsv>  fold an authored batch into the literal-translations source
   skip  <Table> <file.txt>  record keys deliberately left unsegmented
   validate                  re-check every bundled segment file
+  audit [contentDir]        check the pipeline's coverage against the game install
 
 Authoring format (TSV, one entry per line, no header):
   key <TAB> english <TAB> text¦reading¦gloss‖text¦reading¦gloss‖...
@@ -301,7 +302,144 @@ def cmd_validate(args):
     return 1 if bad else 0
 
 
-CMDS = {"status": cmd_status, "batch": cmd_batch, "merge": cmd_merge, "skip": cmd_skip, "validate": cmd_validate}
+# ---------------------------------------------------------------------------
+# audit: is the pipeline's idea of "every table" still the game's?
+#
+# Everything above measures coverage against tools/extracted-strings/ -- i.e.
+# against the set of assets somebody already chose to extract. That denominator
+# is self-referential: `status` can report pending=0 while whole families of
+# player-facing text (villager dialogue, events, festivals) have never been
+# looked at, which is exactly what happened. `audit` re-derives the denominator
+# from the game install instead, and fails on anything it can't account for, so
+# an unconsidered asset family is a loud error rather than silence.
+# ---------------------------------------------------------------------------
+
+CONTENT_ENV = "STARDEW_CONTENT"
+CONTENT_GUESSES = [
+    "~/Library/Application Support/Steam/steamapps/common/Stardew Valley/Contents/Resources/Content",
+    "~/.steam/steam/steamapps/common/Stardew Valley/Content",
+    "~/.local/share/Steam/steamapps/common/Stardew Valley/Content",
+    "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Content",
+]
+
+# Every localized asset carries a .ja-JP variant, textures included. These are
+# the ones that hold no author-able text; each needs a reason on record, so that
+# leaving something out is a decision rather than an omission.
+EXCLUDED = {
+    "Fonts/": "localized font, not text",
+    "LooseSprites/": "localized texture (any text is baked into the image)",
+    "Maps/": "localized tilesheet texture",
+    "Minigames/": "localized texture",
+    "TileSheets/": "localized texture",
+    "Strings/credits": "List<string>, not a dictionary; scrolling credits have no hover target",
+}
+
+# Text the player does read, which the pipeline does not cover yet. Listed so
+# audit stays green on what is already known while still failing on anything
+# new -- and so the size of the gap is written down somewhere that is checked.
+KNOWN_GAPS = {
+    "Characters/Dialogue/": "villager dialogue, 3,301 keys / 4,874 drawn pages -- flat tables, drop straight into `batch`",
+    "Data/Events/": "cutscene scripts, 2,064 spoken lines in 258 scripts -- needs a speak/message extractor first",
+    "Data/Festivals/": "festival dialogue, 743 keys / 1,025 pages (25 of them scripts)",
+    "Data/TV/": "TV channels, 96 keys",
+    "Strings/schedules/": "on-the-clock NPC chatter, 191 keys",
+    "Data/Achievements": "Dictionary<int,string> -- XnbStringTool can't read it yet",
+    "Data/SecretNotes": "Dictionary<int,string> -- XnbStringTool can't read it yet",
+}
+
+
+def content_dir(override=None):
+    for candidate in [override, os.environ.get(CONTENT_ENV)] + CONTENT_GUESSES:
+        if candidate and os.path.isdir(os.path.expanduser(candidate)):
+            return os.path.expanduser(candidate)
+    return None
+
+
+def covered_assets():
+    """Game asset paths (relative to Content/, no locale suffix) the pipeline covers.
+
+    Derived from what is actually extracted into the repo, not from a hand-kept
+    list -- a table that was dropped from tools/extracted-strings/ must show up
+    here as uncovered."""
+    out = {}
+    for name in sorted(os.listdir(JA)):
+        if name.endswith(".json"):
+            out["Strings/" + name[:-5]] = name[:-5]
+    for table, spec in DATA_TABLES.items():
+        out["Data/" + spec["asset"]] = table
+    return out
+
+
+def localized_assets(content):
+    """Every asset the game ships a Japanese variant of, as paths under Content/."""
+    found = []
+    for dirpath, _, filenames in os.walk(content):
+        for name in filenames:
+            if name.endswith(".ja-JP.xnb"):
+                rel = os.path.relpath(os.path.join(dirpath, name), content)
+                found.append(rel.replace(os.sep, "/")[: -len(".ja-JP.xnb")])
+    return sorted(found)
+
+
+def classify(asset, covered):
+    if asset in covered:
+        return "covered", covered[asset]
+    for table in (EXCLUDED, KNOWN_GAPS):
+        for prefix, reason in table.items():
+            if asset == prefix or (prefix.endswith("/") and asset.startswith(prefix)):
+                return ("excluded" if table is EXCLUDED else "gap"), (prefix, reason)
+    return "unclassified", ("", "")
+
+
+def cmd_audit(args):
+    content = content_dir(args[0] if args else None)
+    if not content:
+        print(f"can't find the game's Content folder -- pass it as an argument or set ${CONTENT_ENV}")
+        return 2
+    print(f"game content: {content}\n")
+
+    covered = covered_assets()
+    assets = localized_assets(content)
+    buckets = {"covered": [], "excluded": [], "gap": [], "unclassified": []}
+    for asset in assets:
+        verdict, note = classify(asset, covered)
+        buckets[verdict].append((asset, note))
+
+    print(f"covered   {len(buckets['covered']):3} asset(s) authored via this pipeline")
+    print(f"excluded  {len(buckets['excluded']):3} asset(s) with no author-able text")
+
+    # group the gaps by the prefix they matched, so 52 dialogue files read as one line
+    if buckets["gap"]:
+        grouped = {}
+        for _, (prefix, reason) in buckets["gap"]:
+            count, _ = grouped.get(prefix, (0, reason))
+            grouped[prefix] = (count + 1, reason)
+        print(f"\nKNOWN GAPS -- player-facing text this pipeline does not cover ({len(buckets['gap'])} assets):")
+        for prefix, (count, reason) in sorted(grouped.items(), key=lambda kv: -kv[1][0]):
+            label = prefix if count == 1 else f"{prefix} ({count} files)"
+            print(f"  {label}\n      {reason}")
+
+    # a covered table that the install no longer has -- stale extraction, worth saying
+    missing = sorted(set(covered) - set(assets))
+    if missing:
+        print("\nWARNING -- extracted but not in this install (stale or renamed):")
+        for asset in missing:
+            print(f"  {asset}")
+
+    if buckets["unclassified"]:
+        print(f"\nFAILED -- {len(buckets['unclassified'])} localized asset(s) are accounted for nowhere:")
+        for asset, _ in buckets["unclassified"]:
+            print(f"  {asset}")
+        print("\nEach must be either extracted and authored, or added to EXCLUDED/KNOWN_GAPS\n"
+              "in segtool.py with the reason. Silence is what let the dialogue gap sit unnoticed.")
+        return 1
+
+    print(f"\nall {len(assets)} localized assets accounted for"
+          + (f" ({len(buckets['gap'])} as known gaps)" if buckets["gap"] else ""))
+    return 0
+
+
+CMDS = {"status": cmd_status, "batch": cmd_batch, "merge": cmd_merge, "skip": cmd_skip, "validate": cmd_validate, "audit": cmd_audit}
 
 if __name__ == "__main__":
     if len(sys.argv) < 2 or sys.argv[1] not in CMDS:

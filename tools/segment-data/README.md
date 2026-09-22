@@ -78,6 +78,7 @@ python3 tools/segment-data/segtool.py batch Tools 50    # next worklist, as TSV
 #   ...author into a .tsv...
 python3 tools/segment-data/segtool.py merge Tools batch.tsv
 python3 tools/segment-data/segtool.py validate
+python3 tools/segment-data/segtool.py audit       # coverage vs. the game install
 ```
 
 `batch` prints `key <TAB> japanese <TAB> official-English` for entries not yet
