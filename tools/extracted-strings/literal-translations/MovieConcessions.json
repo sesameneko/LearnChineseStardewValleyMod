@@ -1,0 +1,726 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley MovieConcessions.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AppleSlices_Description": {
+    "japanese": "シャリシャリとした歯ごたえの小さなスライス。",
+    "english": "Small slices with a crisp bite.",
+    "segments": [
+      {
+        "text": "シャリシャリとした",
+        "reading": "sharishari to shita",
+        "gloss": "crisp"
+      },
+      {
+        "text": "歯ごたえの",
+        "reading": "hagotae no",
+        "gloss": "with a bite"
+      },
+      {
+        "text": "小さなスライス。",
+        "reading": "chiisa na suraisu",
+        "gloss": "small slices"
+      }
+    ]
+  },
+  "AppleSlices_Name": {
+    "japanese": "リンゴのスライス",
+    "english": "Apple slices",
+    "segments": [
+      {
+        "text": "リンゴ",
+        "reading": "ringo",
+        "gloss": "apple"
+      },
+      {
+        "text": "のスライス",
+        "reading": "no suraisu",
+        "gloss": "'s slices"
+      }
+    ]
+  },
+  "BlackLicorice_Description": {
+    "japanese": "グミの様な歯ごたえがあり、強く刺激のある味がする。",
+    "english": "A chewy sweet with a strong, pungent flavour.",
+    "segments": [
+      {
+        "text": "グミの様な",
+        "reading": "gumi no yō na",
+        "gloss": "gummy-like"
+      },
+      {
+        "text": "歯ごたえがあり、",
+        "reading": "hagotae ga ari",
+        "gloss": "it has a chewiness, and"
+      },
+      {
+        "text": "強く刺激のある味がする。",
+        "reading": "tsuyoku shigeki no aru aji ga suru",
+        "gloss": "it tastes strongly pungent"
+      }
+    ]
+  },
+  "BlackLicorice_Name": {
+    "japanese": "ブラック・リコリッシュ",
+    "english": "Black liquorice",
+    "segments": [
+      {
+        "text": "ブラック・リコリッシュ",
+        "reading": "burakku rikorisshu",
+        "gloss": "black liquorice"
+      }
+    ]
+  },
+  "CappuccinoMousseCake_Description": {
+    "japanese": "小さなチョコレートケーキの上にカプチーノムースがのったもの。",
+    "english": "A small chocolate cake topped with cappuccino mousse.",
+    "segments": [
+      {
+        "text": "小さなチョコレートケーキ",
+        "reading": "chiisa na chokorēto kēki",
+        "gloss": "small chocolate cake"
+      },
+      {
+        "text": "の上にカプチーノムースがのったもの。",
+        "reading": "no ue ni kapuchīno mūsu ga notta mono",
+        "gloss": "with cappuccino mousse on top"
+      }
+    ]
+  },
+  "CappuccinoMousseCake_Name": {
+    "japanese": "カプチーノムースケーキ",
+    "english": "Cappuccino mousse cake",
+    "segments": [
+      {
+        "text": "カプチーノムースケーキ",
+        "reading": "kapuchīno mūsu kēki",
+        "gloss": "cappuccino mousse cake"
+      }
+    ]
+  },
+  "ChocolatePopcorn_Description": {
+    "japanese": "普通のポップコーン…でもチョコレートがコーティングされている。",
+    "english": "Ordinary popcorn... but coated in chocolate.",
+    "segments": [
+      {
+        "text": "普通のポップコーン…",
+        "reading": "futsū no poppukōn",
+        "gloss": "ordinary popcorn"
+      },
+      {
+        "text": "でもチョコレートがコーティングされている。",
+        "reading": "demo chokorēto ga kōtingu sarete iru",
+        "gloss": "but coated in chocolate"
+      }
+    ]
+  },
+  "ChocolatePopcorn_Name": {
+    "japanese": "チョコレートポップコーン",
+    "english": "Chocolate popcorn",
+    "segments": [
+      {
+        "text": "チョコレートポップコーン",
+        "reading": "chokorēto poppukōn",
+        "gloss": "chocolate popcorn"
+      }
+    ]
+  },
+  "CottonCandy_Description": {
+    "japanese": "ピンクの砂糖を綿状にした大きくフワフワな菓子。",
+    "english": "A big, fluffy sweet of pink sugar spun into floss.",
+    "segments": [
+      {
+        "text": "ピンクの砂糖",
+        "reading": "pinku no satō",
+        "gloss": "pink sugar"
+      },
+      {
+        "text": "を綿状にした",
+        "reading": "o watajō ni shita",
+        "gloss": "spun into floss"
+      },
+      {
+        "text": "大きくフワフワな菓子。",
+        "reading": "ōkiku fuwafuwa na kashi",
+        "gloss": "a big, fluffy sweet"
+      }
+    ]
+  },
+  "CottonCandy_Name": {
+    "japanese": "わたあめ",
+    "english": "Candy floss",
+    "segments": [
+      {
+        "text": "わたあめ",
+        "reading": "wataame",
+        "gloss": "cotton candy"
+      }
+    ]
+  },
+  "Fries_Description": {
+    "japanese": "細切りのポテトを油で揚げて、軽く塩をかけたもの。",
+    "english": "Thin slices of potato deep-fried and lightly salted.",
+    "segments": [
+      {
+        "text": "細切りのポテト",
+        "reading": "hosogiri no poteto",
+        "gloss": "thinly cut potato"
+      },
+      {
+        "text": "を油で揚げて、",
+        "reading": "o abura de agete",
+        "gloss": "deep-fried in oil"
+      },
+      {
+        "text": "軽く塩をかけたもの。",
+        "reading": "karuku shio o kaketa mono",
+        "gloss": "and lightly salted"
+      }
+    ]
+  },
+  "Fries_Name": {
+    "japanese": "フライドポテト",
+    "english": "Chips",
+    "segments": [
+      {
+        "text": "フライドポテト",
+        "reading": "furaido poteto",
+        "gloss": "fried potato / chips"
+      }
+    ]
+  },
+  "HummusSnackPack_Description": {
+    "japanese": "歯ごたえがあるヘルシーなスナック。",
+    "english": "A crunchy, healthy snack.",
+    "segments": [
+      {
+        "text": "歯ごたえがある",
+        "reading": "hagotae ga aru",
+        "gloss": "with a crunch"
+      },
+      {
+        "text": "ヘルシーなスナック。",
+        "reading": "herushī na sunakku",
+        "gloss": "healthy snack"
+      }
+    ]
+  },
+  "HummusSnackPack_Name": {
+    "japanese": "フムス・スナックパック",
+    "english": "Hummus snack pack",
+    "segments": [
+      {
+        "text": "フムス・スナックパック",
+        "reading": "fumusu sunakku pakku",
+        "gloss": "hummus snack pack"
+      }
+    ]
+  },
+  "IceCreamSandwich_Description": {
+    "japanese": "2枚のチョコレートクッキーにバニラアイスクリームが挟まったアイスクリームサンド。",
+    "english": "Vanilla ice cream sandwiched between two chocolate biscuits.",
+    "segments": [
+      {
+        "text": "2枚のチョコレートクッキー",
+        "reading": "nimai no chokorēto kukkī",
+        "gloss": "two chocolate biscuits"
+      },
+      {
+        "text": "にバニラアイスクリームが挟まった",
+        "reading": "ni banira aisukurīmu ga hasamatta",
+        "gloss": "with vanilla ice cream between"
+      },
+      {
+        "text": "アイスクリームサンド。",
+        "reading": "aisukurīmu sando",
+        "gloss": "ice cream sandwich"
+      }
+    ]
+  },
+  "IceCreamSandwich_Name": {
+    "japanese": "アイスクリームサンド",
+    "english": "Ice cream sandwich",
+    "segments": [
+      {
+        "text": "アイスクリームサンド",
+        "reading": "aisukurīmu sando",
+        "gloss": "ice cream sandwich"
+      }
+    ]
+  },
+  "JasmineTea_Description": {
+    "japanese": "緑茶にジャスミンの花の香りを吸着させたお茶。",
+    "english": "Green tea scented with jasmine flowers.",
+    "segments": [
+      {
+        "text": "緑茶",
+        "reading": "ryokucha",
+        "gloss": "green tea"
+      },
+      {
+        "text": "にジャスミンの花の香りを吸着させた",
+        "reading": "ni jasumin no hana no kaori o kyūchaku saseta",
+        "gloss": "infused with jasmine flower scent"
+      },
+      {
+        "text": "お茶。",
+        "reading": "o-cha",
+        "gloss": "tea"
+      }
+    ]
+  },
+  "JasmineTea_Name": {
+    "japanese": "ジャスミン茶",
+    "english": "Jasmine tea",
+    "segments": [
+      {
+        "text": "ジャスミン茶",
+        "reading": "jasumin cha",
+        "gloss": "jasmine tea"
+      }
+    ]
+  },
+  "Jawbreaker_Description": {
+    "japanese": "大きく、かたいキャンディー。映画を1本見終えるくらい長く舐めていられる！",
+    "english": "A big, hard sweet. It lasts long enough to watch a whole film!",
+    "segments": [
+      {
+        "text": "大きく、",
+        "reading": "ōkiku",
+        "gloss": "big and"
+      },
+      {
+        "text": "かたいキャンディー。",
+        "reading": "katai kyandī",
+        "gloss": "hard sweet"
+      },
+      {
+        "text": "映画を1本見終えるくらい長く舐めていられる！",
+        "reading": "eiga o ippon mioeru kurai nagaku namete irareru",
+        "gloss": "you can suck it long enough to finish a film"
+      }
+    ]
+  },
+  "Jawbreaker_Name": {
+    "japanese": "ジョーブレイカー",
+    "english": "Jawbreaker",
+    "segments": [
+      {
+        "text": "ジョーブレイカー",
+        "reading": "jō bureikā",
+        "gloss": "jawbreaker"
+      }
+    ]
+  },
+  "JojaCola_Description": {
+    "japanese": "特大カップのジョージャの有名なソーダ。",
+    "english": "An extra-large cup of Joja's famous soda.",
+    "segments": [
+      {
+        "text": "特大カップ",
+        "reading": "tokudai kappu",
+        "gloss": "extra-large cup"
+      },
+      {
+        "text": "のジョージャの有名なソーダ。",
+        "reading": "no Jōja no yūmei na sōda",
+        "gloss": "of Joja's famous soda"
+      }
+    ]
+  },
+  "JojaCola_Name": {
+    "japanese": "ジョージャ・コーラ",
+    "english": "Joja Cola",
+    "segments": [
+      {
+        "text": "ジョージャ・コーラ",
+        "reading": "Jōja kōra",
+        "gloss": "Joja Cola"
+      }
+    ]
+  },
+  "JojaCorn_Description": {
+    "japanese": "ジョージャ特許製品、大量の「バターソース」がかかったコーン食品。",
+    "english": "Joja's patented corn food, slathered in \"butter sauce\".",
+    "segments": [
+      {
+        "text": "ジョージャ特許製品、",
+        "reading": "Jōja tokkyo seihin",
+        "gloss": "Joja's patented product"
+      },
+      {
+        "text": "大量の「バターソース」がかかったコーン食品。",
+        "reading": "tairyō no batā sōsu ga kakatta kōn shokuhin",
+        "gloss": "corn food slathered in \"butter sauce\""
+      }
+    ]
+  },
+  "JojaCorn_Name": {
+    "japanese": "ジョージャコーン",
+    "english": "JojaCorn",
+    "segments": [
+      {
+        "text": "ジョージャコーン",
+        "reading": "Jōja kōn",
+        "gloss": "JojaCorn"
+      }
+    ]
+  },
+  "KaleSmoothie_Description": {
+    "japanese": "ビタミンと食物繊維が豊富。",
+    "english": "Rich in vitamins and fibre.",
+    "segments": [
+      {
+        "text": "ビタミン",
+        "reading": "bitamin",
+        "gloss": "vitamins"
+      },
+      {
+        "text": "と食物繊維",
+        "reading": "to shokumotsu sen'i",
+        "gloss": "and dietary fibre"
+      },
+      {
+        "text": "が豊富。",
+        "reading": "ga hōfu",
+        "gloss": "are abundant"
+      }
+    ]
+  },
+  "KaleSmoothie_Name": {
+    "japanese": "ケール・スムージー",
+    "english": "Kale smoothie",
+    "segments": [
+      {
+        "text": "ケール・スムージー",
+        "reading": "kēru sumūjī",
+        "gloss": "kale smoothie"
+      }
+    ]
+  },
+  "Nachos_Description": {
+    "japanese": "焼きたてのトルティーヤ・チップスの上にとろけるスパイシーチーズがのっている料理。",
+    "english": "Melting, spicy cheese on freshly fried tortilla chips.",
+    "segments": [
+      {
+        "text": "焼きたてのトルティーヤ・チップス",
+        "reading": "yakitate no torutīya chippusu",
+        "gloss": "freshly made tortilla chips"
+      },
+      {
+        "text": "の上にとろけるスパイシーチーズがのっている料理。",
+        "reading": "no ue ni torokeru supaishī chīzu ga notte iru ryōri",
+        "gloss": "a dish with melting spicy cheese on top"
+      }
+    ]
+  },
+  "Nachos_Name": {
+    "japanese": "ナチョス",
+    "english": "Nachos",
+    "segments": [
+      {
+        "text": "ナチョス",
+        "reading": "nachosu",
+        "gloss": "nachos"
+      }
+    ]
+  },
+  "PanzanellaSalad_Description": {
+    "japanese": "パンとトマトを使った夏のサラダ。",
+    "english": "A summer salad of bread and tomatoes.",
+    "segments": [
+      {
+        "text": "パン",
+        "reading": "pan",
+        "gloss": "bread"
+      },
+      {
+        "text": "とトマト",
+        "reading": "to tomato",
+        "gloss": "and tomatoes"
+      },
+      {
+        "text": "を使った夏のサラダ。",
+        "reading": "o tsukatta natsu no sarada",
+        "gloss": "a summer salad using"
+      }
+    ]
+  },
+  "PanzanellaSalad_Name": {
+    "japanese": "パンツァネッラ・サラダ",
+    "english": "Panzanella salad",
+    "segments": [
+      {
+        "text": "パンツァネッラ・サラダ",
+        "reading": "pantsanerra sarada",
+        "gloss": "panzanella salad"
+      }
+    ]
+  },
+  "PersonalPizza_Description": {
+    "japanese": "オヤツとして楽しめるサイズの小さなピザ。",
+    "english": "A pizza small enough to enjoy as a snack.",
+    "segments": [
+      {
+        "text": "オヤツとして楽しめるサイズの",
+        "reading": "oyatsu to shite tanoshimeru saizu no",
+        "gloss": "of a size to enjoy as a snack"
+      },
+      {
+        "text": "小さなピザ。",
+        "reading": "chiisa na piza",
+        "gloss": "small pizza"
+      }
+    ]
+  },
+  "PersonalPizza_Name": {
+    "japanese": "一口ピザ",
+    "english": "Personal pizza",
+    "segments": [
+      {
+        "text": "一口ピザ",
+        "reading": "hitokuchi piza",
+        "gloss": "bite-sized pizza"
+      }
+    ]
+  },
+  "Popcorn_Description": {
+    "japanese": "トウモロコシを炒って、軽く塩をかけ、バターをからませたもの。",
+    "english": "Popped corn, lightly salted and drizzled with butter.",
+    "segments": [
+      {
+        "text": "トウモロコシを炒って、",
+        "reading": "tōmorokoshi o itte",
+        "gloss": "roasting corn"
+      },
+      {
+        "text": "軽く塩をかけ、",
+        "reading": "karuku shio o kake",
+        "gloss": "lightly salting"
+      },
+      {
+        "text": "バターをからませたもの。",
+        "reading": "batā o karamaseta mono",
+        "gloss": "and coating in butter"
+      }
+    ]
+  },
+  "Popcorn_Name": {
+    "japanese": "ポップコーン",
+    "english": "Popcorn",
+    "segments": [
+      {
+        "text": "ポップコーン",
+        "reading": "poppukōn",
+        "gloss": "popcorn"
+      }
+    ]
+  },
+  "RockCandy_Description": {
+    "japanese": "棒についた味付き氷砂糖。",
+    "english": "Flavoured rock sugar on a stick.",
+    "segments": [
+      {
+        "text": "棒についた",
+        "reading": "bō ni tsuita",
+        "gloss": "attached to a stick"
+      },
+      {
+        "text": "味付き氷砂糖。",
+        "reading": "ajitsuki kōrizatō",
+        "gloss": "flavoured rock sugar"
+      }
+    ]
+  },
+  "RockCandy_Name": {
+    "japanese": "ロックキャンディ",
+    "english": "Rock candy",
+    "segments": [
+      {
+        "text": "ロックキャンディ",
+        "reading": "rokku kyandi",
+        "gloss": "rock candy"
+      }
+    ]
+  },
+  "SalmonBurger_Description": {
+    "japanese": "軽くトーストされたごまパンと分厚い鮭でできたバーガー。",
+    "english": "A burger of thick salmon on a lightly toasted sesame bun.",
+    "segments": [
+      {
+        "text": "軽くトーストされたごまパン",
+        "reading": "karuku tōsuto sareta goma pan",
+        "gloss": "lightly toasted sesame bun"
+      },
+      {
+        "text": "と分厚い鮭",
+        "reading": "to buatsui sake",
+        "gloss": "and thick salmon"
+      },
+      {
+        "text": "でできたバーガー。",
+        "reading": "de dekita bāgā",
+        "gloss": "a burger made of"
+      }
+    ]
+  },
+  "SalmonBurger_Name": {
+    "japanese": "鮭バーガー",
+    "english": "Salmon burger",
+    "segments": [
+      {
+        "text": "鮭",
+        "reading": "sake",
+        "gloss": "salmon"
+      },
+      {
+        "text": "バーガー",
+        "reading": "bāgā",
+        "gloss": "burger"
+      }
+    ]
+  },
+  "SaltedPeanuts_Description": {
+    "japanese": "定番の塩味。",
+    "english": "The classic salty treat.",
+    "segments": [
+      {
+        "text": "定番の塩味。",
+        "reading": "teiban no shioaji",
+        "gloss": "the standard salty flavour"
+      }
+    ]
+  },
+  "SaltedPeanuts_Name": {
+    "japanese": "塩味ピーナッツ",
+    "english": "Salted peanuts",
+    "segments": [
+      {
+        "text": "塩味",
+        "reading": "shioaji",
+        "gloss": "salted"
+      },
+      {
+        "text": "ピーナッツ",
+        "reading": "pīnattsu",
+        "gloss": "peanuts"
+      }
+    ]
+  },
+  "SourSlimes_Description": {
+    "japanese": "様々な色の極小スライムグミ。とても強い酸味のあるパウダーがふりかかっている。",
+    "english": "Tiny gummy slimes in assorted colours. They're dusted with an extremely sour powder.",
+    "segments": [
+      {
+        "text": "様々な色の",
+        "reading": "samazama na iro no",
+        "gloss": "of various colours"
+      },
+      {
+        "text": "極小スライムグミ。",
+        "reading": "gokushō suraimu gumi",
+        "gloss": "tiny slime gummies"
+      },
+      {
+        "text": "とても強い酸味のあるパウダーがふりかかっている。",
+        "reading": "totemo tsuyoi sanmi no aru paudā ga furikakatte iru",
+        "gloss": "dusted with a very sour powder"
+      }
+    ]
+  },
+  "SourSlimes_Name": {
+    "japanese": "サワースライム",
+    "english": "Sour slimes",
+    "segments": [
+      {
+        "text": "サワースライム",
+        "reading": "sawā suraimu",
+        "gloss": "sour slime"
+      }
+    ]
+  },
+  "StarCookie_Description": {
+    "japanese": "レインボースプリンクルがかかった、星の形をしたショートブレッド・クッキー。",
+    "english": "A star-shaped shortbread biscuit with rainbow sprinkles.",
+    "segments": [
+      {
+        "text": "レインボースプリンクルがかかった、",
+        "reading": "reinbō supurinkuru ga kakatta",
+        "gloss": "covered in rainbow sprinkles"
+      },
+      {
+        "text": "星の形をしたショートブレッド・クッキー。",
+        "reading": "hoshi no katachi o shita shōtoburreddo kukkī",
+        "gloss": "star-shaped shortbread biscuit"
+      }
+    ]
+  },
+  "StarCookie_Name": {
+    "japanese": "スタークッキー",
+    "english": "Star biscuit",
+    "segments": [
+      {
+        "text": "スタークッキー",
+        "reading": "sutā kukkī",
+        "gloss": "star cookie"
+      }
+    ]
+  },
+  "StardropSorbet_Description": {
+    "japanese": "スタードロップのエキスを一滴入れた極上のシャーベット。",
+    "english": "A superb sorbet with a single drop of stardrop essence.",
+    "segments": [
+      {
+        "text": "スタードロップのエキス",
+        "reading": "sutādoroppu no ekisu",
+        "gloss": "stardrop essence"
+      },
+      {
+        "text": "を一滴入れた",
+        "reading": "o itteki ireta",
+        "gloss": "with one drop added"
+      },
+      {
+        "text": "極上のシャーベット。",
+        "reading": "gokujō no shābetto",
+        "gloss": "superb sorbet"
+      }
+    ]
+  },
+  "StardropSorbet_Name": {
+    "japanese": "スタードロップ・シャーベット",
+    "english": "Stardrop sorbet",
+    "segments": [
+      {
+        "text": "スタードロップ・シャーベット",
+        "reading": "sutādoroppu shābetto",
+        "gloss": "stardrop sorbet"
+      }
+    ]
+  },
+  "TrufflePopcorn_Description": {
+    "japanese": "トリュフ塩がふりかかった高級ポップコーン。",
+    "english": "Fine popcorn dusted with truffle salt.",
+    "segments": [
+      {
+        "text": "トリュフ塩がふりかかった",
+        "reading": "toryufu shio ga furikakatta",
+        "gloss": "dusted with truffle salt"
+      },
+      {
+        "text": "高級ポップコーン。",
+        "reading": "kōkyū poppukōn",
+        "gloss": "high-class popcorn"
+      }
+    ]
+  },
+  "TrufflePopcorn_Name": {
+    "japanese": "トリュフポップコーン",
+    "english": "Truffle popcorn",
+    "segments": [
+      {
+        "text": "トリュフポップコーン",
+        "reading": "toryufu poppukōn",
+        "gloss": "truffle popcorn"
+      }
+    ]
+  }
+}
