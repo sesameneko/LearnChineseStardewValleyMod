@@ -1,0 +1,6957 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Locations.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AdventureGuild_Greeting": {
+    "japanese": "何か必要ですか？",
+    "english": "Need something?",
+    "segments": [
+      {
+        "text": "何か必要ですか？",
+        "reading": "nanika hitsuyō desu ka",
+        "gloss": "do you need something"
+      }
+    ]
+  },
+  "AdventureGuild_ItemRecovery": {
+    "japanese": "アイテム回収のサービス",
+    "english": "Item Recovery Service",
+    "segments": [
+      {
+        "text": "アイテム回収",
+        "reading": "aitemu kaishū",
+        "gloss": "item recovery"
+      },
+      {
+        "text": "のサービス",
+        "reading": "no sābisu",
+        "gloss": "service"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_Bats": {
+    "japanese": "コウモリ",
+    "english": "Bats",
+    "segments": [
+      {
+        "text": "コウモリ",
+        "reading": "kōmori",
+        "gloss": "bats"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_CaveInsects": {
+    "japanese": "どうくつ昆虫",
+    "english": "Cave Insects",
+    "segments": [
+      {
+        "text": "どうくつ",
+        "reading": "dōkutsu",
+        "gloss": "cave"
+      },
+      {
+        "text": "昆虫",
+        "reading": "konchū",
+        "gloss": "insects"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_Duggies": {
+    "japanese": "ダギー",
+    "english": "Duggies",
+    "segments": [
+      {
+        "text": "ダギー",
+        "reading": "dagī",
+        "gloss": "duggies"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_DustSprites": {
+    "japanese": "ススおばけ",
+    "english": "Dust Sprites",
+    "segments": [
+      {
+        "text": "ススおばけ",
+        "reading": "susu obake",
+        "gloss": "soot ghosts"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_Footer": {
+    "japanese": " - 達成したら、ギルから賞品をもらうように。",
+    "english": "- See Gil to claim your rewards.",
+    "segments": [
+      {
+        "text": " - 達成したら、",
+        "reading": "tassei shitara",
+        "gloss": "once achieved"
+      },
+      {
+        "text": "ギル",
+        "reading": "Giru",
+        "gloss": "Gil"
+      },
+      {
+        "text": "から賞品をもらうように。",
+        "reading": "kara shōhin o morau yō ni",
+        "gloss": "be sure to collect your prize from"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_Header": {
+    "japanese": "------------------------------\n--モンスター討伐目標--\n「谷の平和を守ろう」\n------------------------------",
+    "english": "------------------------------\\n--Monster Eradication Goals--\\n\"Help us keep the valley safe.\"\\n------------------------------",
+    "segments": [
+      {
+        "text": "------------------------------\n",
+        "reading": "",
+        "gloss": "(rule)"
+      },
+      {
+        "text": "--モンスター討伐目標--\n",
+        "reading": "monsutā tōbatsu mokuhyō",
+        "gloss": "monster eradication goals"
+      },
+      {
+        "text": "「谷の平和を守ろう」\n",
+        "reading": "tani no heiwa o mamorō",
+        "gloss": "let's keep the valley at peace"
+      },
+      {
+        "text": "------------------------------",
+        "reading": "",
+        "gloss": "(rule)"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_MagmaSprite": {
+    "japanese": "マグマおばけ",
+    "english": "Magma Sprites",
+    "segments": [
+      {
+        "text": "マグマおばけ",
+        "reading": "maguma obake",
+        "gloss": "magma ghosts"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_Mummies": {
+    "japanese": "ミイラ",
+    "english": "Mummies",
+    "segments": [
+      {
+        "text": "ミイラ",
+        "reading": "miira",
+        "gloss": "mummies"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_PepperRex": {
+    "japanese": "ペッパーレックス",
+    "english": "Pepper Rex",
+    "segments": [
+      {
+        "text": "ペッパーレックス",
+        "reading": "peppā rekkusu",
+        "gloss": "Pepper Rex"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_RockCrabs": {
+    "japanese": "イワガニ",
+    "english": "Rock Crabs",
+    "segments": [
+      {
+        "text": "イワガニ",
+        "reading": "iwagani",
+        "gloss": "rock crabs"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_Serpent": {
+    "japanese": "蛇",
+    "english": "Serpents",
+    "segments": [
+      {
+        "text": "蛇",
+        "reading": "hebi",
+        "gloss": "serpents"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_Skeletons": {
+    "japanese": "スケルトン",
+    "english": "Skeletons",
+    "segments": [
+      {
+        "text": "スケルトン",
+        "reading": "sukeruton",
+        "gloss": "skeletons"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_Slimes": {
+    "japanese": "スライム",
+    "english": "Slimes",
+    "segments": [
+      {
+        "text": "スライム",
+        "reading": "suraimu",
+        "gloss": "slimes"
+      }
+    ]
+  },
+  "AdventureGuild_KillList_VoidSpirits": {
+    "japanese": "うつろの精",
+    "english": "Void Spirits",
+    "segments": [
+      {
+        "text": "うつろの精",
+        "reading": "utsuro no sei",
+        "gloss": "void spirits"
+      }
+    ]
+  },
+  "AnimalHouse_Incubator_Hatch_DinosaurEgg": {
+    "japanese": "トカゲ？のあかちゃんがかえった。",
+    "english": "A baby... lizard? ...hatched.",
+    "segments": [
+      {
+        "text": "トカゲ？のあかちゃん",
+        "reading": "tokage no akachan",
+        "gloss": "a baby lizard?"
+      },
+      {
+        "text": "がかえった。",
+        "reading": "ga kaetta",
+        "gloss": "hatched"
+      }
+    ]
+  },
+  "AnimalHouse_Incubator_Hatch_DuckEgg": {
+    "japanese": "アヒルのひながかえった！",
+    "english": "A baby duckling hatched!",
+    "segments": [
+      {
+        "text": "アヒルのひな",
+        "reading": "ahiru no hina",
+        "gloss": "a duckling"
+      },
+      {
+        "text": "がかえった！",
+        "reading": "ga kaetta",
+        "gloss": "hatched"
+      }
+    ]
+  },
+  "AnimalHouse_Incubator_Hatch_GoldenEgg": {
+    "japanese": "キラキラの金色のヒヨコがふ化しました！",
+    "english": "A sparkling golden chick hatched!",
+    "segments": [
+      {
+        "text": "キラキラの金色のヒヨコ",
+        "reading": "kirakira no kin'iro no hiyoko",
+        "gloss": "a sparkling golden chick"
+      },
+      {
+        "text": "がふ化しました！",
+        "reading": "ga fuka shimashita",
+        "gloss": "hatched"
+      }
+    ]
+  },
+  "AnimalHouse_Incubator_Hatch_Ostrich": {
+    "japanese": "ダチョウのヒナがふ化しました…大きいですね！",
+    "english": "An ostrich chick hatched... it's a big one!",
+    "segments": [
+      {
+        "text": "ダチョウのヒナ",
+        "reading": "dachō no hina",
+        "gloss": "an ostrich chick"
+      },
+      {
+        "text": "がふ化しました…",
+        "reading": "ga fuka shimashita",
+        "gloss": "hatched"
+      },
+      {
+        "text": "大きいですね！",
+        "reading": "ōkii desu ne",
+        "gloss": "it's a big one"
+      }
+    ]
+  },
+  "AnimalHouse_Incubator_Hatch_RegularEgg": {
+    "japanese": "ニワトリのひながかえった！",
+    "english": "A baby chick hatched!",
+    "segments": [
+      {
+        "text": "ニワトリのひな",
+        "reading": "niwatori no hina",
+        "gloss": "a chick"
+      },
+      {
+        "text": "がかえった！",
+        "reading": "ga kaetta",
+        "gloss": "hatched"
+      }
+    ]
+  },
+  "AnimalHouse_Incubator_Hatch_VoidEgg": {
+    "japanese": "ニワトリのひながかえった…でも、ちょっとヘンかも？",
+    "english": "A chick hatched... but it looks a bit odd?",
+    "segments": [
+      {
+        "text": "ニワトリのひな",
+        "reading": "niwatori no hina",
+        "gloss": "a chick"
+      },
+      {
+        "text": "がかえった…",
+        "reading": "ga kaetta",
+        "gloss": "hatched"
+      },
+      {
+        "text": "でも、ちょっとヘンかも？",
+        "reading": "demo chotto hen kamo",
+        "gloss": "but it may be a bit odd"
+      }
+    ]
+  },
+  "AnimalHouse_Incubator_HouseFull": {
+    "japanese": "タマゴがふ化しそうですが、小屋が満杯です。",
+    "english": "An egg is ready to hatch, but the building is full.",
+    "segments": [
+      {
+        "text": "タマゴがふ化しそうですが、",
+        "reading": "tamago ga fuka shisō desu ga",
+        "gloss": "an egg looks ready to hatch, but"
+      },
+      {
+        "text": "小屋が満杯です。",
+        "reading": "koya ga manpai desu",
+        "gloss": "the coop is full"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_Absent": {
+    "japanese": "本日は閉店しました。\n\n-マーニー",
+    "english": "Closed for the day.\\n\\n-Marnie",
+    "segments": [
+      {
+        "text": "本日は閉店しました。\n\n",
+        "reading": "honjitsu wa heiten shimashita",
+        "gloss": "closed for the day"
+      },
+      {
+        "text": "-マーニー",
+        "reading": "Mānī",
+        "gloss": "-Marnie"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_Animals": {
+    "japanese": "動物を買う",
+    "english": "Purchase Animals",
+    "segments": [
+      {
+        "text": "動物を買う",
+        "reading": "dōbutsu o kau",
+        "gloss": "buy animals"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_Leave": {
+    "japanese": "去る",
+    "english": "Leave",
+    "segments": [
+      {
+        "text": "去る",
+        "reading": "saru",
+        "gloss": "leave"
+      }
+    ]
+  },
+  "AnimalShop_Marnie_Supplies": {
+    "japanese": "物資を 買う",
+    "english": "Supplies Shop",
+    "segments": [
+      {
+        "text": "物資を ",
+        "reading": "busshi o",
+        "gloss": "supplies"
+      },
+      {
+        "text": "買う",
+        "reading": "kau",
+        "gloss": "buy"
+      }
+    ]
+  },
+  "AnimalShop_MoneyBox": {
+    "japanese": "今日は島にいっているの。欲しいものがあったら、箱に代金を入れておいてね！^ -マーニー",
+    "english": "I'm visiting the island today. If you need anything, just leave the money in this box!^ -Marnie",
+    "segments": [
+      {
+        "text": "今日は島にいっているの。",
+        "reading": "kyō wa shima ni itte iru no",
+        "gloss": "I'm off to the island today"
+      },
+      {
+        "text": "欲しいものがあったら、",
+        "reading": "hoshii mono ga attara",
+        "gloss": "if there's something you want"
+      },
+      {
+        "text": "箱に代金を入れておいてね！^ ",
+        "reading": "hako ni daikin o irete oite ne",
+        "gloss": "leave the money in the box"
+      },
+      {
+        "text": "-マーニー",
+        "reading": "Mānī",
+        "gloss": "-Marnie"
+      }
+    ]
+  },
+  "ArchaeologyHouse_Gunther_Collect": {
+    "japanese": "報酬を 受け取る",
+    "english": "Collect Rewards",
+    "segments": [
+      {
+        "text": "報酬を ",
+        "reading": "hōshū o",
+        "gloss": "rewards"
+      },
+      {
+        "text": "受け取る",
+        "reading": "uketoru",
+        "gloss": "collect"
+      }
+    ]
+  },
+  "ArchaeologyHouse_Gunther_Donate": {
+    "japanese": "博物館へ 寄贈する",
+    "english": "Donate to Museum",
+    "segments": [
+      {
+        "text": "博物館へ ",
+        "reading": "hakubutsukan e",
+        "gloss": "to the museum"
+      },
+      {
+        "text": "寄贈する",
+        "reading": "kizō suru",
+        "gloss": "donate"
+      }
+    ]
+  },
+  "ArchaeologyHouse_Gunther_Leave": {
+    "japanese": "去る",
+    "english": "Leave",
+    "segments": [
+      {
+        "text": "去る",
+        "reading": "saru",
+        "gloss": "leave"
+      }
+    ]
+  },
+  "ArchaeologyHouse_Rearrange": {
+    "japanese": "博物館にあるコレクションを並べ替えたいですか？",
+    "english": "Would you like to rearrange the museum's collection?",
+    "segments": [
+      {
+        "text": "博物館にあるコレクション",
+        "reading": "hakubutsukan ni aru korekushon",
+        "gloss": "the collection in the museum"
+      },
+      {
+        "text": "を並べ替えたいですか？",
+        "reading": "o narabekaetai desu ka",
+        "gloss": "would you like to rearrange"
+      }
+    ]
+  },
+  "Backwoods_MonsterGrave": {
+    "japanese": "アビゲイルは他の命を奪ってまでこの命を救ってくれた…#そのことは決して忘れない",
+    "english": "Abigail took another life to save mine...#I'll never forget that.",
+    "segments": [
+      {
+        "text": "アビゲイル",
+        "reading": "Abigeiru",
+        "gloss": "Abigail"
+      },
+      {
+        "text": "は他の命を奪ってまでこの命を救ってくれた…#",
+        "reading": "wa hoka no inochi o ubatte made kono inochi o sukutte kureta",
+        "gloss": "saved this life even at the cost of another"
+      },
+      {
+        "text": "そのことは決して忘れない",
+        "reading": "sono koto wa kesshite wasurenai",
+        "gloss": "I'll never forget that"
+      }
+    ]
+  },
+  "BeachNightMarket_Closed": {
+    "japanese": "開始は午後5時から",
+    "english": "Opens at 5pm.",
+    "segments": [
+      {
+        "text": "開始は午後5時から",
+        "reading": "kaishi wa gogo goji kara",
+        "gloss": "it starts from 5pm"
+      }
+    ]
+  },
+  "BeachNightMarket_GiftGiverClosed": {
+    "japanese": "行商人: 夜の市は 午後5時から 始まるよ… 来てくれたら コーヒーを ごちそう するよ！",
+    "english": "Merchant: The night market starts at 5pm... come by then and I'll treat you to a coffee!",
+    "segments": [
+      {
+        "text": "行商人: ",
+        "reading": "gyōshōnin",
+        "gloss": "merchant"
+      },
+      {
+        "text": "夜の市は ",
+        "reading": "yoru no ichi wa",
+        "gloss": "the night market"
+      },
+      {
+        "text": "午後5時から ",
+        "reading": "gogo goji kara",
+        "gloss": "from 5pm"
+      },
+      {
+        "text": "始まるよ… ",
+        "reading": "hajimaru yo",
+        "gloss": "begins"
+      },
+      {
+        "text": "来てくれたら ",
+        "reading": "kite kuretara",
+        "gloss": "if you come"
+      },
+      {
+        "text": "コーヒーを ",
+        "reading": "kōhī o",
+        "gloss": "coffee"
+      },
+      {
+        "text": "ごちそう するよ！",
+        "reading": "gochisō suru yo",
+        "gloss": "I'll treat you to"
+      }
+    ]
+  },
+  "BeachNightMarket_GiftGiverEnjoy": {
+    "japanese": "行商人: うーん… いい匂い でしょ？",
+    "english": "Merchant: Mmm... smells great, doesn't it?",
+    "segments": [
+      {
+        "text": "行商人: ",
+        "reading": "gyōshōnin",
+        "gloss": "merchant"
+      },
+      {
+        "text": "うーん… ",
+        "reading": "ūn",
+        "gloss": "mmm"
+      },
+      {
+        "text": "いい匂い ",
+        "reading": "ii nioi",
+        "gloss": "a good smell"
+      },
+      {
+        "text": "でしょ？",
+        "reading": "desho",
+        "gloss": "isn't it"
+      }
+    ]
+  },
+  "BeachNightMarket_GiftGiverQuestion": {
+    "japanese": "行商人: あら こんにちは！無料の コーヒーでも いかが？",
+    "english": "Merchant: Oh, hello! How about a free coffee?",
+    "segments": [
+      {
+        "text": "行商人: ",
+        "reading": "gyōshōnin",
+        "gloss": "merchant"
+      },
+      {
+        "text": "あら ",
+        "reading": "ara",
+        "gloss": "oh"
+      },
+      {
+        "text": "こんにちは！",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      },
+      {
+        "text": "無料の ",
+        "reading": "muryō no",
+        "gloss": "free"
+      },
+      {
+        "text": "コーヒーでも ",
+        "reading": "kōhī demo",
+        "gloss": "a coffee"
+      },
+      {
+        "text": "いかが？",
+        "reading": "ikaga",
+        "gloss": "how about"
+      }
+    ]
+  },
+  "BeachNightMarket_PainterClosed": {
+    "japanese": "有名画家のルピニ: 私の アートを 買いたいなら、 夜の市が 始まってから また来てね。",
+    "english": "Famous Painter Lupini: Come back once the market opens if you wish to buy my art.",
+    "segments": [
+      {
+        "text": "有名画家のルピニ: ",
+        "reading": "yūmei gaka no Rupīni",
+        "gloss": "famous painter Lupini"
+      },
+      {
+        "text": "私の ",
+        "reading": "watashi no",
+        "gloss": "my"
+      },
+      {
+        "text": "アートを ",
+        "reading": "āto o",
+        "gloss": "art"
+      },
+      {
+        "text": "買いたいなら、 ",
+        "reading": "kaitai nara",
+        "gloss": "if you want to buy"
+      },
+      {
+        "text": "夜の市が ",
+        "reading": "yoru no ichi ga",
+        "gloss": "the night market"
+      },
+      {
+        "text": "始まってから ",
+        "reading": "hajimatte kara",
+        "gloss": "once it begins"
+      },
+      {
+        "text": "また来てね。",
+        "reading": "mata kite ne",
+        "gloss": "come back again"
+      }
+    ]
+  },
+  "BeachNightMarket_PainterQuestion": {
+    "japanese": "有名画家のルピニ: この絵には 1200gの 値を つけているんだ。どうかな？",
+    "english": "Famous Painter Lupini: I'm selling this painting for 1200g. What do you say?",
+    "segments": [
+      {
+        "text": "有名画家のルピニ: ",
+        "reading": "yūmei gaka no Rupīni",
+        "gloss": "famous painter Lupini"
+      },
+      {
+        "text": "この絵には ",
+        "reading": "kono e ni wa",
+        "gloss": "on this painting"
+      },
+      {
+        "text": "1200gの ",
+        "reading": "sen nihyaku gōrudo no",
+        "gloss": "1200g"
+      },
+      {
+        "text": "値を ",
+        "reading": "atai o",
+        "gloss": "a price"
+      },
+      {
+        "text": "つけているんだ。",
+        "reading": "tsukete iru n da",
+        "gloss": "I'm putting"
+      },
+      {
+        "text": "どうかな？",
+        "reading": "dō ka na",
+        "gloss": "what do you say"
+      }
+    ]
+  },
+  "BeachNightMarket_PainterSold": {
+    "japanese": "有名画家のルピニ: 申し訳ない… 今日は もう 売る絵が ないんだ。",
+    "english": "Famous Painter Lupini: My apologies... I have no more paintings to sell today.",
+    "segments": [
+      {
+        "text": "有名画家のルピニ: ",
+        "reading": "yūmei gaka no Rupīni",
+        "gloss": "famous painter Lupini"
+      },
+      {
+        "text": "申し訳ない… ",
+        "reading": "mōshiwake nai",
+        "gloss": "my apologies"
+      },
+      {
+        "text": "今日は ",
+        "reading": "kyō wa",
+        "gloss": "today"
+      },
+      {
+        "text": "もう ",
+        "reading": "mō",
+        "gloss": "any more"
+      },
+      {
+        "text": "売る絵が ",
+        "reading": "uru e ga",
+        "gloss": "paintings to sell"
+      },
+      {
+        "text": "ないんだ。",
+        "reading": "nai n da",
+        "gloss": "I have none"
+      }
+    ]
+  },
+  "BeachNightMarket_SubmarineInUse": {
+    "japanese": "潜水艦は誰かが使用中です。また後にしましょう",
+    "english": "The submarine is in use by someone. Come back later",
+    "segments": [
+      {
+        "text": "潜水艦",
+        "reading": "sensuikan",
+        "gloss": "the submarine"
+      },
+      {
+        "text": "は誰かが使用中です。",
+        "reading": "wa dareka ga shiyōchū desu",
+        "gloss": "is in use by someone"
+      },
+      {
+        "text": "また後にしましょう",
+        "reading": "mata ato ni shimashō",
+        "gloss": "let's come back later"
+      }
+    ]
+  },
+  "BeachNightMarket_WarperQuestion": {
+    "japanese": "なぞのひと: 250gで 家に帰して あげるよ。",
+    "english": "Shrouded Figure: I can send you home for 250g.",
+    "segments": [
+      {
+        "text": "なぞのひと: ",
+        "reading": "nazo no hito",
+        "gloss": "mysterious person"
+      },
+      {
+        "text": "250gで ",
+        "reading": "nihyaku gojū gōrudo de",
+        "gloss": "for 250g"
+      },
+      {
+        "text": "家に帰して ",
+        "reading": "ie ni kaeshite",
+        "gloss": "send you home"
+      },
+      {
+        "text": "あげるよ。",
+        "reading": "ageru yo",
+        "gloss": "I will"
+      }
+    ]
+  },
+  "Beach_FixBridge_Hint": {
+    "japanese": "見たところ、木が300個あれば修理できそうだ。",
+    "english": "Looks like 300 pieces of wood could fix this.",
+    "segments": [
+      {
+        "text": "見たところ、",
+        "reading": "mita tokoro",
+        "gloss": "by the look of it"
+      },
+      {
+        "text": "木が300個あれば",
+        "reading": "ki ga sanbyakko areba",
+        "gloss": "if there were 300 pieces of wood"
+      },
+      {
+        "text": "修理できそうだ。",
+        "reading": "shūri dekisō da",
+        "gloss": "it could be repaired"
+      }
+    ]
+  },
+  "Beach_FixBridge_Question": {
+    "japanese": "木300個で橋を修理しますか？",
+    "english": "Fix the bridge with 300 wood?",
+    "segments": [
+      {
+        "text": "木300個で",
+        "reading": "ki sanbyakko de",
+        "gloss": "with 300 wood"
+      },
+      {
+        "text": "橋を修理しますか？",
+        "reading": "hashi o shūri shimasu ka",
+        "gloss": "will you repair the bridge"
+      }
+    ]
+  },
+  "Beach_GoneFishingMessage": {
+    "japanese": "釣りで外出中。明日にはもどります。",
+    "english": "Gone fishing. I'll be back tomorrow.",
+    "segments": [
+      {
+        "text": "釣りで外出中。",
+        "reading": "tsuri de gaishutsuchū",
+        "gloss": "out fishing"
+      },
+      {
+        "text": "明日にはもどります。",
+        "reading": "asu ni wa modorimasu",
+        "gloss": "I'll be back tomorrow"
+      }
+    ]
+  },
+  "Beach_Mariner_PlayerBuyItem_AnswerNo": {
+    "japanese": "またこんど…",
+    "english": "Not now...",
+    "segments": [
+      {
+        "text": "またこんど…",
+        "reading": "mata kondo",
+        "gloss": "another time"
+      }
+    ]
+  },
+  "Beach_Mariner_PlayerBuyItem_AnswerYes": {
+    "japanese": "買う（5000G）",
+    "english": "Buy (5000g)",
+    "segments": [
+      {
+        "text": "買う",
+        "reading": "kau",
+        "gloss": "buy"
+      },
+      {
+        "text": "（5000G）",
+        "reading": "gosen gōrudo",
+        "gloss": "5000g"
+      }
+    ]
+  },
+  "Beach_Mariner_PlayerBuyItem_Question": {
+    "japanese": "年老いた水夫：おう、目を見りゃわかる…お前さん、心にきめただいじな人がいるんだな。ぐうぜんだな。おれは「人魚のペンダント」を売ってるんだ。こいつをわたしてやれば、向こうにはお前さんの言いたいことがわかるはずだ。",
+    "english": "Old Mariner: Ah, I can see it in yer eyes... there be a special someone in yer heart. As it happens, I'm sellin' a \"Mermaid's Pendant\". Give it to 'em and they'll know just what ye mean.",
+    "segments": [
+      {
+        "text": "年老いた水夫：",
+        "reading": "toshioita suifu",
+        "gloss": "old mariner"
+      },
+      {
+        "text": "おう、目を見りゃわかる…",
+        "reading": "ō me o mirya wakaru",
+        "gloss": "ah, I can tell by yer eyes"
+      },
+      {
+        "text": "お前さん、心にきめただいじな人がいるんだな。",
+        "reading": "omae-san kokoro ni kimeta daiji na hito ga iru n da na",
+        "gloss": "there's a special someone set in yer heart"
+      },
+      {
+        "text": "ぐうぜんだな。",
+        "reading": "gūzen da na",
+        "gloss": "as it happens"
+      },
+      {
+        "text": "おれは「人魚のペンダント」を売ってるんだ。",
+        "reading": "ore wa ningyo no pendanto o utteru n da",
+        "gloss": "I'm selling a \"Mermaid's Pendant\""
+      },
+      {
+        "text": "こいつをわたしてやれば、",
+        "reading": "koitsu o watashite yareba",
+        "gloss": "if you give it to them"
+      },
+      {
+        "text": "向こうにはお前さんの言いたいことがわかるはずだ。",
+        "reading": "mukō ni wa omae-san no iitai koto ga wakaru hazu da",
+        "gloss": "they'll understand just what you mean"
+      }
+    ]
+  },
+  "Beach_Mariner_PlayerHasItem": {
+    "japanese": "年老いた水夫：はずかしがらんでもいいさ。結婚したい相手にこの首かざりをわたしてやるといい。",
+    "english": "Old Mariner: No need to be shy. Show that amulet to the one you mean to marry.",
+    "segments": [
+      {
+        "text": "年老いた水夫：",
+        "reading": "toshioita suifu",
+        "gloss": "old mariner"
+      },
+      {
+        "text": "はずかしがらんでもいいさ。",
+        "reading": "hazukashigaran demo ii sa",
+        "gloss": "no need to be shy"
+      },
+      {
+        "text": "結婚したい相手にこの首かざりをわたしてやるといい。",
+        "reading": "kekkon shitai aite ni kono kubikazari o watashite yaru to ii",
+        "gloss": "give this amulet to the one you want to marry"
+      }
+    ]
+  },
+  "Beach_Mariner_PlayerMarried": {
+    "japanese": "年老いた水夫：よかった、{0}。この首かざりが役に立ったんだな。",
+    "english": "Old Mariner: Glad the amulet worked out for ye, {0}.",
+    "segments": [
+      {
+        "text": "年老いた水夫：",
+        "reading": "toshioita suifu",
+        "gloss": "old mariner"
+      },
+      {
+        "text": "よかった、",
+        "reading": "yokatta",
+        "gloss": "I'm glad"
+      },
+      {
+        "text": "{0}。",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "この首かざりが役に立ったんだな。",
+        "reading": "kono kubikazari ga yaku ni tatta n da na",
+        "gloss": "this amulet came in useful"
+      }
+    ]
+  },
+  "Beach_Mariner_PlayerNoRelationship": {
+    "japanese": "年老いた水夫：おれはここで古い首かざりを売ってるんだが…あんたにゃまだ早いみたいだな。おれのカンがそういってるぜ。 {0}.",
+    "english": "Old Mariner: I've an old amulet for sale here... but somethin' tells me yer not ready for it, {0}.",
+    "segments": [
+      {
+        "text": "年老いた水夫：",
+        "reading": "toshioita suifu",
+        "gloss": "old mariner"
+      },
+      {
+        "text": "おれはここで古い首かざりを売ってるんだが…",
+        "reading": "ore wa koko de furui kubikazari o utteru n da ga",
+        "gloss": "I'm selling an old amulet here, but"
+      },
+      {
+        "text": "あんたにゃまだ早いみたいだな。",
+        "reading": "anta nya mada hayai mitai da na",
+        "gloss": "it seems too soon for you"
+      },
+      {
+        "text": "おれのカンがそういってるぜ。 ",
+        "reading": "ore no kan ga sō itteru ze",
+        "gloss": "my instinct says so"
+      },
+      {
+        "text": "{0}.",
+        "reading": "",
+        "gloss": "(name)"
+      }
+    ]
+  },
+  "Beach_Mariner_PlayerNotUpgradedHouse": {
+    "japanese": "年老いた水夫：目がキラキラしてるぜ、{0}。心のそこからほれこんでるんだな。だがな、結婚してしあわせにくらしたいなら、いまより大きい家じゃないとな。",
+    "english": "Old Mariner: There's a sparkle in yer eye, {0}. Ye must be head over heels. But if ye want to marry and live happy, ye'll need a bigger house than that.",
+    "segments": [
+      {
+        "text": "年老いた水夫：",
+        "reading": "toshioita suifu",
+        "gloss": "old mariner"
+      },
+      {
+        "text": "目がキラキラしてるぜ、",
+        "reading": "me ga kirakira shiteru ze",
+        "gloss": "there's a sparkle in yer eye"
+      },
+      {
+        "text": "{0}。",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "心のそこからほれこんでるんだな。",
+        "reading": "kokoro no soko kara horekonderu n da na",
+        "gloss": "yer head over heels"
+      },
+      {
+        "text": "だがな、結婚してしあわせにくらしたいなら、",
+        "reading": "daga na kekkon shite shiawase ni kurashitai nara",
+        "gloss": "but if ye want to marry and live happily"
+      },
+      {
+        "text": "いまより大きい家じゃないとな。",
+        "reading": "ima yori ōkii ie ja nai to na",
+        "gloss": "ye'll need a bigger house than now"
+      }
+    ]
+  },
+  "Beach_Mariner_Player_Female": {
+    "japanese": "嬢ちゃん",
+    "english": "miss",
+    "segments": [
+      {
+        "text": "嬢ちゃん",
+        "reading": "jōchan",
+        "gloss": "miss"
+      }
+    ]
+  },
+  "Beach_Mariner_Player_Male": {
+    "japanese": "兄ちゃん",
+    "english": "lad",
+    "segments": [
+      {
+        "text": "兄ちゃん",
+        "reading": "niichan",
+        "gloss": "lad"
+      }
+    ]
+  },
+  "Blacksmith_Clint_Geodes": {
+    "japanese": "ジオードを 加工",
+    "english": "Process Geodes",
+    "segments": [
+      {
+        "text": "ジオードを ",
+        "reading": "jiōdo o",
+        "gloss": "geodes"
+      },
+      {
+        "text": "加工",
+        "reading": "kakō",
+        "gloss": "process"
+      }
+    ]
+  },
+  "Blacksmith_Clint_Leave": {
+    "japanese": "去る",
+    "english": "Leave",
+    "segments": [
+      {
+        "text": "去る",
+        "reading": "saru",
+        "gloss": "leave"
+      }
+    ]
+  },
+  "Blacksmith_Clint_Shop": {
+    "japanese": "店",
+    "english": "Shop",
+    "segments": [
+      {
+        "text": "店",
+        "reading": "mise",
+        "gloss": "shop"
+      }
+    ]
+  },
+  "Blacksmith_Clint_Upgrade": {
+    "japanese": "どうぐを アップグレード",
+    "english": "Upgrade Tools",
+    "segments": [
+      {
+        "text": "どうぐを ",
+        "reading": "dōgu o",
+        "gloss": "tools"
+      },
+      {
+        "text": "アップグレード",
+        "reading": "appugurēdo",
+        "gloss": "upgrade"
+      }
+    ]
+  },
+  "BoatTunnel_DonateBatteries": {
+    "japanese": "発券機の修理に、電池を5個寄付しますか？",
+    "english": "Donate 5 battery packs to repair the ticket machine?",
+    "segments": [
+      {
+        "text": "発券機の修理に、",
+        "reading": "hakkenki no shūri ni",
+        "gloss": "for repairing the ticket machine"
+      },
+      {
+        "text": "電池を5個寄付しますか？",
+        "reading": "denchi o goko kifu shimasu ka",
+        "gloss": "will you donate 5 batteries"
+      }
+    ]
+  },
+  "BoatTunnel_DonateBatteriesHint": {
+    "japanese": "この機械は、5個の電池で修理することができます。",
+    "english": "This machine could be repaired with 5 battery packs.",
+    "segments": [
+      {
+        "text": "この機械は、",
+        "reading": "kono kikai wa",
+        "gloss": "this machine"
+      },
+      {
+        "text": "5個の電池で修理することができます。",
+        "reading": "goko no denchi de shūri suru koto ga dekimasu",
+        "gloss": "can be repaired with 5 batteries"
+      }
+    ]
+  },
+  "BoatTunnel_DonateHardwood": {
+    "japanese": "船体の修理に、堅い木を200個寄付しますか？",
+    "english": "Donate 200 hardwood for hull repairs?",
+    "segments": [
+      {
+        "text": "船体の修理に、",
+        "reading": "sentai no shūri ni",
+        "gloss": "for hull repairs"
+      },
+      {
+        "text": "堅い木を200個寄付しますか？",
+        "reading": "katai ki o nihyakko kifu shimasu ka",
+        "gloss": "will you donate 200 hardwood"
+      }
+    ]
+  },
+  "BoatTunnel_DonateHardwoodHint": {
+    "japanese": "船体は、200個の堅い木で修理することができます。",
+    "english": "The hull could be repaired with 200 pieces of hardwood.",
+    "segments": [
+      {
+        "text": "船体は、",
+        "reading": "sentai wa",
+        "gloss": "the hull"
+      },
+      {
+        "text": "200個の堅い木で修理することができます。",
+        "reading": "nihyakko no katai ki de shūri suru koto ga dekimasu",
+        "gloss": "can be repaired with 200 hardwood"
+      }
+    ]
+  },
+  "BoatTunnel_DonateIridium": {
+    "japanese": "イカリの修理に、イリジウムののべ棒を5個寄付しますか？",
+    "english": "Donate 5 iridium bars to repair the anchor?",
+    "segments": [
+      {
+        "text": "イカリの修理に、",
+        "reading": "ikari no shūri ni",
+        "gloss": "for repairing the anchor"
+      },
+      {
+        "text": "イリジウムののべ棒を5個寄付しますか？",
+        "reading": "irijiumu no nobebō o goko kifu shimasu ka",
+        "gloss": "will you donate 5 iridium bars"
+      }
+    ]
+  },
+  "BoatTunnel_DonateIridiumHint": {
+    "japanese": "イカリは、5個のイリジウムののべ棒で修理することができます。",
+    "english": "The anchor could be repaired with 5 iridium bars.",
+    "segments": [
+      {
+        "text": "イカリは、",
+        "reading": "ikari wa",
+        "gloss": "the anchor"
+      },
+      {
+        "text": "5個のイリジウムののべ棒で修理することができます。",
+        "reading": "goko no irijiumu no nobebō de shūri suru koto ga dekimasu",
+        "gloss": "can be repaired with 5 iridium bars"
+      }
+    ]
+  },
+  "BoatTunnel_boatcomplete": {
+    "japanese": "全ての材料がそろいました！#ボートは一晩かけて修理されます。",
+    "english": "All materials have been gathered!#The boat will be repaired overnight.",
+    "segments": [
+      {
+        "text": "全ての材料がそろいました！#",
+        "reading": "subete no zairyō ga soroimashita",
+        "gloss": "all materials are gathered"
+      },
+      {
+        "text": "ボートは一晩かけて修理されます。",
+        "reading": "bōto wa hitoban kakete shūri saremasu",
+        "gloss": "the boat will be repaired overnight"
+      }
+    ]
+  },
+  "BoatTunnel_willyText_firstRide": {
+    "japanese": "まるで新造船だ！",
+    "english": "She looks good as new!",
+    "segments": [
+      {
+        "text": "まるで新造船だ！",
+        "reading": "marude shinzōsen da",
+        "gloss": "she's just like a newly built ship"
+      }
+    ]
+  },
+  "BoatTunnel_willyText_random0": {
+    "japanese": "魚臭かったらごめんな、へへっ！",
+    "english": "Sorry if I smell of fish, heh!",
+    "segments": [
+      {
+        "text": "魚臭かったらごめんな、",
+        "reading": "sakanakusakattara gomen na",
+        "gloss": "sorry if I smell of fish"
+      },
+      {
+        "text": "へへっ！",
+        "reading": "hehe",
+        "gloss": "heh"
+      }
+    ]
+  },
+  "BoatTunnel_willyText_random1": {
+    "japanese": "よお！",
+    "english": "Ahoy!",
+    "segments": [
+      {
+        "text": "よお！",
+        "reading": "yō",
+        "gloss": "ahoy"
+      }
+    ]
+  },
+  "BusStop_BuyTicketToDesert": {
+    "japanese": "カリコさばく行きチケット：{0}G",
+    "english": "Ticket to Calico Desert: {0}g",
+    "segments": [
+      {
+        "text": "カリコさばく行きチケット：",
+        "reading": "Kariko sabaku yuki chiketto",
+        "gloss": "ticket to Calico Desert"
+      },
+      {
+        "text": "{0}G",
+        "reading": "gōrudo",
+        "gloss": "{0}g"
+      }
+    ]
+  },
+  "BusStop_DesertOutOfService": {
+    "japanese": "カリコさばく行きバスは休止中です。",
+    "english": "The bus to Calico Desert is out of service.",
+    "segments": [
+      {
+        "text": "カリコさばく行きバス",
+        "reading": "Kariko sabaku yuki basu",
+        "gloss": "the bus to Calico Desert"
+      },
+      {
+        "text": "は休止中です。",
+        "reading": "wa kyūshichū desu",
+        "gloss": "is out of service"
+      }
+    ]
+  },
+  "BusStop_NoDriver": {
+    "japanese": "バスの運転手がいるときにお乗りください。",
+    "english": "Please come back when a bus driver is present.",
+    "segments": [
+      {
+        "text": "バスの運転手がいるときに",
+        "reading": "basu no untenshu ga iru toki ni",
+        "gloss": "when a bus driver is here"
+      },
+      {
+        "text": "お乗りください。",
+        "reading": "o-nori kudasai",
+        "gloss": "please board"
+      }
+    ]
+  },
+  "BusStop_NotEnoughMoneyForTicket": {
+    "japanese": "お金がたりません。",
+    "english": "You don't have enough money.",
+    "segments": [
+      {
+        "text": "お金がたりません。",
+        "reading": "o-kane ga tarimasen",
+        "gloss": "you don't have enough money"
+      }
+    ]
+  },
+  "BusStop_ReturnToHorse1": {
+    "japanese": "{0}はあなたがいつ帰るのか気にしている。",
+    "english": "{0} is wondering when you'll be back.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(horse)"
+      },
+      {
+        "text": "はあなたがいつ帰るのか気にしている。",
+        "reading": "wa anata ga itsu kaeru no ka ki ni shite iru",
+        "gloss": "is wondering when you'll return"
+      }
+    ]
+  },
+  "BusStop_ReturnToHorse2": {
+    "japanese": "ウマはあなたを思いながら、帰りをしんぼうづよく待っている。",
+    "english": "Your horse waits patiently, thinking of you.",
+    "segments": [
+      {
+        "text": "ウマ",
+        "reading": "uma",
+        "gloss": "your horse"
+      },
+      {
+        "text": "はあなたを思いながら、",
+        "reading": "wa anata o omoinagara",
+        "gloss": "while thinking of you"
+      },
+      {
+        "text": "帰りをしんぼうづよく待っている。",
+        "reading": "kaeri o shinbōzuyoku matte iru",
+        "gloss": "waits patiently for your return"
+      }
+    ]
+  },
+  "BuyTicket": {
+    "japanese": "{0}gでチケットを買いますか？",
+    "english": "Buy a ticket for {0}g?",
+    "segments": [
+      {
+        "text": "{0}gで",
+        "reading": "gōrudo de",
+        "gloss": "for {0}g"
+      },
+      {
+        "text": "チケットを買いますか？",
+        "reading": "chiketto o kaimasu ka",
+        "gloss": "will you buy a ticket"
+      }
+    ]
+  },
+  "Caroline_Sunroom_Door": {
+    "japanese": "キャロラインだけが彼女の友達をここに入れることができます...",
+    "english": "Caroline only lets her friends in here...",
+    "segments": [
+      {
+        "text": "キャロライン",
+        "reading": "Kyarorain",
+        "gloss": "Caroline"
+      },
+      {
+        "text": "だけが彼女の友達をここに入れることができます...",
+        "reading": "dake ga kanojo no tomodachi o koko ni ireru koto ga dekimasu",
+        "gloss": "alone can let her friends in here"
+      }
+    ]
+  },
+  "Caroline_Tea_Event1": {
+    "japanese": "お茶を飲みながらリラックスしているときは...",
+    "english": "When I'm relaxing over a cup of tea...",
+    "segments": [
+      {
+        "text": "お茶を飲みながら",
+        "reading": "o-cha o nominagara",
+        "gloss": "while drinking tea"
+      },
+      {
+        "text": "リラックスしているときは...",
+        "reading": "rirakkusu shite iru toki wa",
+        "gloss": "when I'm relaxing"
+      }
+    ]
+  },
+  "Caroline_Tea_Event2": {
+    "japanese": "私の心は空っぽで自由に歩き回ることができます...",
+    "english": "My mind is empty and free to wander...",
+    "segments": [
+      {
+        "text": "私の心は空っぽで",
+        "reading": "watashi no kokoro wa karappo de",
+        "gloss": "my mind is empty"
+      },
+      {
+        "text": "自由に歩き回ることができます...",
+        "reading": "jiyū ni arukimawaru koto ga dekimasu",
+        "gloss": "and free to wander"
+      }
+    ]
+  },
+  "Caroline_Tea_Event3": {
+    "japanese": "何が現れるか、それを知っているのは誰ですか？",
+    "english": "Who knows what might appear?",
+    "segments": [
+      {
+        "text": "何が現れるか、",
+        "reading": "nani ga arawareru ka",
+        "gloss": "what might appear"
+      },
+      {
+        "text": "それを知っているのは誰ですか？",
+        "reading": "sore o shitte iru no wa dare desu ka",
+        "gloss": "who knows that"
+      }
+    ]
+  },
+  "ChallengeShrine_Activated": {
+    "japanese": "あなたの望みは今夜中にかなえられるでしょう。",
+    "english": "Your wish will be granted overnight.",
+    "segments": [
+      {
+        "text": "あなたの望み",
+        "reading": "anata no nozomi",
+        "gloss": "your wish"
+      },
+      {
+        "text": "は今夜中にかなえられるでしょう。",
+        "reading": "wa kon'yajū ni kanaerareru deshō",
+        "gloss": "will be granted overnight"
+      }
+    ]
+  },
+  "ChallengeShrine_AlreadyActive": {
+    "japanese": "あなたの望みはもう受け入れられました。",
+    "english": "Your request has already been accepted.",
+    "segments": [
+      {
+        "text": "あなたの望み",
+        "reading": "anata no nozomi",
+        "gloss": "your wish"
+      },
+      {
+        "text": "はもう受け入れられました。",
+        "reading": "wa mō ukeiraremashita",
+        "gloss": "has already been accepted"
+      }
+    ]
+  },
+  "ChallengeShrine_AlreadyHard": {
+    "japanese": "         --チャレンジのやしろ--^古代の魔法の封印を使って、鉱山を元の状態に戻しますか？",
+    "english": "--Shrine of Challenge--^Use the ancient magic seal to return the mines to their original state?",
+    "segments": [
+      {
+        "text": "         --チャレンジのやしろ--^",
+        "reading": "charenji no yashiro",
+        "gloss": "Shrine of Challenge"
+      },
+      {
+        "text": "古代の魔法の封印を使って、",
+        "reading": "kodai no mahō no fūin o tsukatte",
+        "gloss": "using the ancient magic seal"
+      },
+      {
+        "text": "鉱山を元の状態に戻しますか？",
+        "reading": "kōzan o moto no jōtai ni modoshimasu ka",
+        "gloss": "will you return the mines to their original state"
+      }
+    ]
+  },
+  "ChallengeShrine_NotYetHard": {
+    "japanese": "         --チャレンジのやしろ--^古代の魔法の封印を解いて、強力なモンスター達が深部から上がって来られるようにしますか？",
+    "english": "--Shrine of Challenge--^Break the ancient magic seal, letting powerful monsters ascend from the depths?",
+    "segments": [
+      {
+        "text": "         --チャレンジのやしろ--^",
+        "reading": "charenji no yashiro",
+        "gloss": "Shrine of Challenge"
+      },
+      {
+        "text": "古代の魔法の封印を解いて、",
+        "reading": "kodai no mahō no fūin o toite",
+        "gloss": "breaking the ancient magic seal"
+      },
+      {
+        "text": "強力なモンスター達が深部から上がって来られるようにしますか？",
+        "reading": "kyōryoku na monsutā-tachi ga shinbu kara agatte korareru yō ni shimasu ka",
+        "gloss": "will you let powerful monsters ascend from the depths"
+      }
+    ]
+  },
+  "ChallengeShrine_OnQiChallenge": {
+    "japanese": "ミスターQiのメモがある：^このやしろを一時的に封鎖した。また明日来るがいい！",
+    "english": "There's a note from Mr. Qi:^I've temporarily sealed this shrine. Come back tomorrow!",
+    "segments": [
+      {
+        "text": "ミスターQiのメモがある：^",
+        "reading": "Misutā Qi no memo ga aru",
+        "gloss": "there's a note from Mr. Qi"
+      },
+      {
+        "text": "このやしろを一時的に封鎖した。",
+        "reading": "kono yashiro o ichijiteki ni fūsa shita",
+        "gloss": "I've temporarily sealed this shrine"
+      },
+      {
+        "text": "また明日来るがいい！",
+        "reading": "mata asu kuru ga ii",
+        "gloss": "come again tomorrow"
+      }
+    ]
+  },
+  "Club_Bouncer_PlayerClubMember": {
+    "japanese": "それなら 入っていいぞ。",
+    "english": "In that case, you may enter.",
+    "segments": [
+      {
+        "text": "それなら ",
+        "reading": "sore nara",
+        "gloss": "in that case"
+      },
+      {
+        "text": "入っていいぞ。",
+        "reading": "haitte ii zo",
+        "gloss": "you may enter"
+      }
+    ]
+  },
+  "Club_Bouncer_TextAboveHead1": {
+    "japanese": "もうおこったぞ！",
+    "english": "Now I'm angry!",
+    "segments": [
+      {
+        "text": "もうおこったぞ！",
+        "reading": "mō okotta zo",
+        "gloss": "now I'm angry"
+      }
+    ]
+  },
+  "Club_Bouncer_TextAboveHead2": {
+    "japanese": "このワルガキめ…",
+    "english": "You little punk...",
+    "segments": [
+      {
+        "text": "このワルガキめ…",
+        "reading": "kono warugaki me",
+        "gloss": "you little punk"
+      }
+    ]
+  },
+  "Club_Buy100Coins": {
+    "japanese": "Qiコイン100枚、1000Gで買いますか？",
+    "english": "Buy 100 Qi Coins for 1,000g?",
+    "segments": [
+      {
+        "text": "Qiコイン100枚、",
+        "reading": "Qi koin hyakumai",
+        "gloss": "100 Qi coins"
+      },
+      {
+        "text": "1000Gで買いますか？",
+        "reading": "sen gōrudo de kaimasu ka",
+        "gloss": "will you buy for 1000g"
+      }
+    ]
+  },
+  "Club_CalicoJack": {
+    "japanese": "カリコジャックであそびますか？このテーブルでは100コインからプレイできます。",
+    "english": "Want to play CalicoJack? This is the 100-coin table.",
+    "segments": [
+      {
+        "text": "カリコジャック",
+        "reading": "Kariko Jakku",
+        "gloss": "CalicoJack"
+      },
+      {
+        "text": "であそびますか？",
+        "reading": "de asobimasu ka",
+        "gloss": "will you play"
+      },
+      {
+        "text": "このテーブルでは100コインからプレイできます。",
+        "reading": "kono tēburu de wa hyaku koin kara purei dekimasu",
+        "gloss": "at this table you can play from 100 coins"
+      }
+    ]
+  },
+  "Club_CalicoJackHS_NotEnoughCoins": {
+    "japanese": "遊ぶには 少なくとも 1000コイン 以上 必要だ。",
+    "english": "You need at least 1000 coins to play here.",
+    "segments": [
+      {
+        "text": "遊ぶには ",
+        "reading": "asobu ni wa",
+        "gloss": "to play"
+      },
+      {
+        "text": "少なくとも ",
+        "reading": "sukunaku tomo",
+        "gloss": "at least"
+      },
+      {
+        "text": "1000コイン ",
+        "reading": "sen koin",
+        "gloss": "1000 coins"
+      },
+      {
+        "text": "以上 ",
+        "reading": "ijō",
+        "gloss": "or more"
+      },
+      {
+        "text": "必要だ。",
+        "reading": "hitsuyō da",
+        "gloss": "are needed"
+      }
+    ]
+  },
+  "Club_CalicoJack_HS": {
+    "japanese": "ここはレートが高いテーブルです。かけ金は1000コインからになります。",
+    "english": "This table is for high rollers. The bet starts at 1000 coins.",
+    "segments": [
+      {
+        "text": "ここはレートが高いテーブルです。",
+        "reading": "koko wa rēto ga takai tēburu desu",
+        "gloss": "this is a high-stakes table"
+      },
+      {
+        "text": "かけ金は1000コインからになります。",
+        "reading": "kakekin wa sen koin kara ni narimasu",
+        "gloss": "the bet starts from 1000 coins"
+      }
+    ]
+  },
+  "Club_CalicoJack_Leave": {
+    "japanese": "やめる",
+    "english": "Leave",
+    "segments": [
+      {
+        "text": "やめる",
+        "reading": "yameru",
+        "gloss": "quit"
+      }
+    ]
+  },
+  "Club_CalicoJack_NotEnoughCoins": {
+    "japanese": "おい、 レートは 100で 固定だが、 足りないようだな。 遊びたければ、 両替機から コインを 買ってくるんだ。",
+    "english": "Hey, the bet's fixed at 100, and you're short. Buy coins from the exchange machine if you want to play.",
+    "segments": [
+      {
+        "text": "おい、 ",
+        "reading": "oi",
+        "gloss": "hey"
+      },
+      {
+        "text": "レートは ",
+        "reading": "rēto wa",
+        "gloss": "the rate"
+      },
+      {
+        "text": "100で ",
+        "reading": "hyaku de",
+        "gloss": "at 100"
+      },
+      {
+        "text": "固定だが、 ",
+        "reading": "kotei da ga",
+        "gloss": "is fixed, but"
+      },
+      {
+        "text": "足りないようだな。 ",
+        "reading": "tarinai yō da na",
+        "gloss": "you seem short"
+      },
+      {
+        "text": "遊びたければ、 ",
+        "reading": "asobitakereba",
+        "gloss": "if you want to play"
+      },
+      {
+        "text": "両替機から ",
+        "reading": "ryōgaeki kara",
+        "gloss": "from the exchange machine"
+      },
+      {
+        "text": "コインを ",
+        "reading": "koin o",
+        "gloss": "coins"
+      },
+      {
+        "text": "買ってくるんだ。",
+        "reading": "katte kuru n da",
+        "gloss": "go and buy"
+      }
+    ]
+  },
+  "Club_CalicoJack_Play": {
+    "japanese": "プレイ",
+    "english": "Play",
+    "segments": [
+      {
+        "text": "プレイ",
+        "reading": "purei",
+        "gloss": "play"
+      }
+    ]
+  },
+  "Club_CalicoJack_Rules": {
+    "japanese": "ルール説明",
+    "english": "Rules",
+    "segments": [
+      {
+        "text": "ルール説明",
+        "reading": "rūru setsumei",
+        "gloss": "rules explanation"
+      }
+    ]
+  },
+  "Club_CalicoJack_Rules1": {
+    "japanese": "目的は、手札の 数字の 合計(スコア)を 21に 近づける ことです。カードの 数字は 1から9まで ありますが、 「1」は 「11」としても 扱われます。プレイヤーと ディーラーは 2枚ずつ カードを 受け取りますが、 ディーラー側の 2枚は 数字が見えません。 ターンごとに ランダムな カードを 1枚 引くか、 パスするか 選べます。",
+    "english": "The goal is to bring your hand's total as close to 21 as possible. Cards run from 1 to 9, but a \"1\" also counts as \"11\". Player and dealer each get two cards, but the dealer's two are face down. Each turn you may draw one random card or pass.",
+    "segments": [
+      {
+        "text": "目的は、",
+        "reading": "mokuteki wa",
+        "gloss": "the goal is"
+      },
+      {
+        "text": "手札の 数字の 合計(スコア)を ",
+        "reading": "tefuda no sūji no gōkei sukoa o",
+        "gloss": "the total of your hand's numbers (score)"
+      },
+      {
+        "text": "21に 近づける ことです。",
+        "reading": "nijūichi ni chikazukeru koto desu",
+        "gloss": "to bring close to 21"
+      },
+      {
+        "text": "カードの 数字は 1から9まで ありますが、 ",
+        "reading": "kādo no sūji wa ichi kara kyū made arimasu ga",
+        "gloss": "cards run from 1 to 9, but"
+      },
+      {
+        "text": "「1」は 「11」としても 扱われます。",
+        "reading": "ichi wa jūichi to shite mo atsukawaremasu",
+        "gloss": "a \"1\" is also treated as \"11\""
+      },
+      {
+        "text": "プレイヤーと ディーラーは 2枚ずつ カードを 受け取りますが、 ",
+        "reading": "pureiyā to dīrā wa nimai zutsu kādo o uketorimasu ga",
+        "gloss": "player and dealer each receive two cards, but"
+      },
+      {
+        "text": "ディーラー側の 2枚は 数字が見えません。 ",
+        "reading": "dīrā gawa no nimai wa sūji ga miemasen",
+        "gloss": "the dealer's two have their numbers hidden"
+      },
+      {
+        "text": "ターンごとに ランダムな カードを 1枚 引くか、 ",
+        "reading": "tān goto ni randamu na kādo o ichimai hiku ka",
+        "gloss": "each turn, draw one random card"
+      },
+      {
+        "text": "パスするか 選べます。",
+        "reading": "pasu suru ka erabemasu",
+        "gloss": "or pass, as you choose"
+      }
+    ]
+  },
+  "Club_CalicoJack_Rules2": {
+    "japanese": "パスした場合、 ディーラーの 手札が 全て 明かされ、 スコアが 18以上に なるまで ディーラーは カードを 引きます。 どちらかの プレイヤーの スコアが 21を超えた場合、 その人の負けです。 ディーラーが パスした場合、 全ての手札が 明らかになり、 スコアの高いほうが 勝ちます。",
+    "english": "If you pass, the dealer's hand is revealed and she draws until her score reaches 18 or more. If either player's score exceeds 21, that player loses. If the dealer passes, all cards are revealed and the higher score wins.",
+    "segments": [
+      {
+        "text": "パスした場合、 ",
+        "reading": "pasu shita baai",
+        "gloss": "if you pass"
+      },
+      {
+        "text": "ディーラーの 手札が 全て 明かされ、 ",
+        "reading": "dīrā no tefuda ga subete akasare",
+        "gloss": "the dealer's whole hand is revealed"
+      },
+      {
+        "text": "スコアが 18以上に なるまで ディーラーは カードを 引きます。 ",
+        "reading": "sukoa ga jūhachi ijō ni naru made dīrā wa kādo o hikimasu",
+        "gloss": "the dealer draws until her score reaches 18 or more"
+      },
+      {
+        "text": "どちらかの プレイヤーの スコアが 21を超えた場合、 ",
+        "reading": "dochira ka no pureiyā no sukoa ga nijūichi o koeta baai",
+        "gloss": "if either player's score exceeds 21"
+      },
+      {
+        "text": "その人の負けです。 ",
+        "reading": "sono hito no make desu",
+        "gloss": "that person loses"
+      },
+      {
+        "text": "ディーラーが パスした場合、 ",
+        "reading": "dīrā ga pasu shita baai",
+        "gloss": "if the dealer passes"
+      },
+      {
+        "text": "全ての手札が 明らかになり、 ",
+        "reading": "subete no tefuda ga akiraka ni nari",
+        "gloss": "all hands are revealed"
+      },
+      {
+        "text": "スコアの高いほうが 勝ちます。",
+        "reading": "sukoa no takai hō ga kachimasu",
+        "gloss": "the higher score wins"
+      }
+    ]
+  },
+  "Club_ClubSeller": {
+    "japanese": "よう…なあ、この「おわりなき幸運の像」…こいつをたったの1000000Gで売ってるんだけど。どうだい、買わないか？",
+    "english": "Psst... I've got a \"Statue of Endless Fortune\" here... selling for just 1,000,000g. What do you say — want it?",
+    "segments": [
+      {
+        "text": "よう…",
+        "reading": "yō",
+        "gloss": "psst"
+      },
+      {
+        "text": "なあ、この「おわりなき幸運の像」…",
+        "reading": "nā kono owarinaki kōun no zō",
+        "gloss": "hey, this \"Statue of Endless Fortune\""
+      },
+      {
+        "text": "こいつをたったの1000000Gで売ってるんだけど。",
+        "reading": "koitsu o tatta no hyakuman gōrudo de utteru n da kedo",
+        "gloss": "I'm selling it for just 1,000,000g"
+      },
+      {
+        "text": "どうだい、買わないか？",
+        "reading": "dō dai kawanai ka",
+        "gloss": "what do you say, won't you buy"
+      }
+    ]
+  },
+  "Club_ClubSeller_No": {
+    "japanese": "おことわり！",
+    "english": "No way!",
+    "segments": [
+      {
+        "text": "おことわり！",
+        "reading": "o-kotowari",
+        "gloss": "no thanks"
+      }
+    ]
+  },
+  "Club_ClubSeller_NotEnoughMoney": {
+    "japanese": "1,000,000gと 言ったはずだ！ まけるつもりは ないぞ。",
+    "english": "Hey, I said 1,000,000g! I'm not knocking anything off.",
+    "segments": [
+      {
+        "text": "1,000,000gと ",
+        "reading": "hyakuman gōrudo to",
+        "gloss": "1,000,000g"
+      },
+      {
+        "text": "言ったはずだ！ ",
+        "reading": "itta hazu da",
+        "gloss": "I said"
+      },
+      {
+        "text": "まけるつもりは ",
+        "reading": "makeru tsumori wa",
+        "gloss": "intention to discount"
+      },
+      {
+        "text": "ないぞ。",
+        "reading": "nai zo",
+        "gloss": "I have none"
+      }
+    ]
+  },
+  "Club_ClubSeller_Yes": {
+    "japanese": "その話、乗った",
+    "english": "I'll take it.",
+    "segments": [
+      {
+        "text": "その話、乗った",
+        "reading": "sono hanashi notta",
+        "gloss": "I'm in on that deal"
+      }
+    ]
+  },
+  "Club_QiCoins": {
+    "japanese": "もっているクラブコイン： {0}枚",
+    "english": "Club Coins held: {0}",
+    "segments": [
+      {
+        "text": "もっているクラブコイン： ",
+        "reading": "motte iru kurabu koin",
+        "gloss": "club coins held"
+      },
+      {
+        "text": "{0}枚",
+        "reading": "mai",
+        "gloss": "{0}"
+      }
+    ]
+  },
+  "Club_QiCoins_BuyStarter": {
+    "japanese": "もっているクラブコイン： 0枚1000Gでスタートパックを買いますか？",
+    "english": "You have 0 Club Coins. Buy a starter pack for 1000g?",
+    "segments": [
+      {
+        "text": "もっているクラブコイン： ",
+        "reading": "motte iru kurabu koin",
+        "gloss": "club coins held"
+      },
+      {
+        "text": "0枚",
+        "reading": "reimai",
+        "gloss": "0"
+      },
+      {
+        "text": "1000Gでスタートパックを買いますか？",
+        "reading": "sen gōrudo de sutāto pakku o kaimasu ka",
+        "gloss": "buy a starter pack for 1000g"
+      }
+    ]
+  },
+  "CommunityCenter_AreaCompletion1": {
+    "japanese": "ぼくらはジュニモ…森をまもるのが役目だよ。",
+    "english": "We are the Junimos... keepers of the forest.",
+    "segments": [
+      {
+        "text": "ぼくらはジュニモ…",
+        "reading": "bokura wa Junimo",
+        "gloss": "we are the Junimos"
+      },
+      {
+        "text": "森をまもるのが役目だよ。",
+        "reading": "mori o mamoru no ga yakume da yo",
+        "gloss": "our duty is to guard the forest"
+      }
+    ]
+  },
+  "CommunityCenter_AreaCompletion2": {
+    "japanese": "この建てものはもう何十年もからっぽで…木がはえて森みたいになったからやってきたんだ。",
+    "english": "This building stood empty for decades... trees grew in and made it a forest, so we came.",
+    "segments": [
+      {
+        "text": "この建てものはもう何十年もからっぽで…",
+        "reading": "kono tatemono wa mō nanjūnen mo karappo de",
+        "gloss": "this building has been empty for decades"
+      },
+      {
+        "text": "木がはえて森みたいになったからやってきたんだ。",
+        "reading": "ki ga haete mori mitai ni natta kara yatte kita n da",
+        "gloss": "trees grew and it became like a forest, so we came"
+      }
+    ]
+  },
+  "CommunityCenter_AreaCompletion3": {
+    "japanese": "お手つだいできてうれしいな…だって、ここはキミたちの場所だもの。",
+    "english": "We're glad to help... this is your place, after all.",
+    "segments": [
+      {
+        "text": "お手つだいできてうれしいな…",
+        "reading": "o-tetsudai dekite ureshii na",
+        "gloss": "we're glad we could help"
+      },
+      {
+        "text": "だって、ここはキミたちの場所だもの。",
+        "reading": "datte koko wa kimi-tachi no basho da mono",
+        "gloss": "after all, this is your place"
+      }
+    ]
+  },
+  "CommunityCenter_AreaCompletion4": {
+    "japanese": "こんなに贈りものをいっぱい…ありがとう！",
+    "english": "So many gifts... thank you!",
+    "segments": [
+      {
+        "text": "こんなに贈りものをいっぱい…",
+        "reading": "konna ni okurimono o ippai",
+        "gloss": "so very many gifts"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "CommunityCenter_AreaCompletion5": {
+    "japanese": "ここを直しおわったら、ぼくらはもとの世界にもどるね。",
+    "english": "Once we finish mending this place, we'll return to our own world.",
+    "segments": [
+      {
+        "text": "ここを直しおわったら、",
+        "reading": "koko o naoshiowattara",
+        "gloss": "once we've finished mending this place"
+      },
+      {
+        "text": "ぼくらはもとの世界にもどるね。",
+        "reading": "bokura wa moto no sekai ni modoru ne",
+        "gloss": "we'll return to our own world"
+      }
+    ]
+  },
+  "CommunityCenter_AreaCompletion6": {
+    "japanese": "これがさいごの贈りものだね…さよなら、{0}。",
+    "english": "This is the last gift... farewell, {0}.",
+    "segments": [
+      {
+        "text": "これがさいごの贈りものだね…",
+        "reading": "kore ga saigo no okurimono da ne",
+        "gloss": "this is the last gift"
+      },
+      {
+        "text": "さよなら、",
+        "reading": "sayonara",
+        "gloss": "farewell"
+      },
+      {
+        "text": "{0}。",
+        "reading": "",
+        "gloss": "(name)"
+      }
+    ]
+  },
+  "CommunityCenter_AreaName_AbandonedJojaMart": {
+    "japanese": "放棄されたJojaマート",
+    "english": "Abandoned JojaMart",
+    "segments": [
+      {
+        "text": "放棄された",
+        "reading": "hōki sareta",
+        "gloss": "abandoned"
+      },
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      }
+    ]
+  },
+  "CommunityCenter_AreaName_BoilerRoom": {
+    "japanese": "ボイラールーム",
+    "english": "Boiler Room",
+    "segments": [
+      {
+        "text": "ボイラールーム",
+        "reading": "boirā rūmu",
+        "gloss": "boiler room"
+      }
+    ]
+  },
+  "CommunityCenter_AreaName_BulletinBoard": {
+    "japanese": "けいじばん",
+    "english": "Bulletin Board",
+    "segments": [
+      {
+        "text": "けいじばん",
+        "reading": "keijiban",
+        "gloss": "bulletin board"
+      }
+    ]
+  },
+  "CommunityCenter_AreaName_CraftsRoom": {
+    "japanese": "クラフトルーム",
+    "english": "Crafts Room",
+    "segments": [
+      {
+        "text": "クラフトルーム",
+        "reading": "kurafuto rūmu",
+        "gloss": "crafts room"
+      }
+    ]
+  },
+  "CommunityCenter_AreaName_FishTank": {
+    "japanese": "水そう",
+    "english": "Fish Tank",
+    "segments": [
+      {
+        "text": "水そう",
+        "reading": "suisō",
+        "gloss": "fish tank"
+      }
+    ]
+  },
+  "CommunityCenter_AreaName_Pantry": {
+    "japanese": "食料室",
+    "english": "Pantry",
+    "segments": [
+      {
+        "text": "食料室",
+        "reading": "shokuryōshitsu",
+        "gloss": "pantry"
+      }
+    ]
+  },
+  "CommunityCenter_AreaName_Vault": {
+    "japanese": "金庫室",
+    "english": "Vault",
+    "segments": [
+      {
+        "text": "金庫室",
+        "reading": "kinkoshitsu",
+        "gloss": "vault"
+      }
+    ]
+  },
+  "CommunityCenter_JunimosReturned": {
+    "japanese": "ジュニモたちは精霊の世界にもどっていった。",
+    "english": "The Junimos have returned to the spirit world.",
+    "segments": [
+      {
+        "text": "ジュニモたち",
+        "reading": "Junimo-tachi",
+        "gloss": "the Junimos"
+      },
+      {
+        "text": "は精霊の世界にもどっていった。",
+        "reading": "wa seirei no sekai ni modotte itta",
+        "gloss": "have returned to the spirit world"
+      }
+    ]
+  },
+  "Desert_Return_No": {
+    "japanese": "あとで",
+    "english": "Not yet",
+    "segments": [
+      {
+        "text": "あとで",
+        "reading": "ato de",
+        "gloss": "later"
+      }
+    ]
+  },
+  "Desert_Return_Question": {
+    "japanese": "スターデューバレーにもどりますか？",
+    "english": "Return to Stardew Valley?",
+    "segments": [
+      {
+        "text": "スターデューバレー",
+        "reading": "Sutādyū Barē",
+        "gloss": "Stardew Valley"
+      },
+      {
+        "text": "にもどりますか？",
+        "reading": "ni modorimasu ka",
+        "gloss": "will you return to"
+      }
+    ]
+  },
+  "Desert_Return_Yes": {
+    "japanese": "はい",
+    "english": "Yes",
+    "segments": [
+      {
+        "text": "はい",
+        "reading": "hai",
+        "gloss": "yes"
+      }
+    ]
+  },
+  "Desert_SandDragon_ConsumeEssence": {
+    "japanese": "ドラゴンのあぎとのなかに結晶をおいた。目の穴のところにメモがかくされている。",
+    "english": "You place the crystal in the dragon's maw. Only then do you notice a note hidden in the eye socket.",
+    "segments": [
+      {
+        "text": "ドラゴンのあぎとのなかに結晶をおいた。",
+        "reading": "doragon no agito no naka ni kesshō o oita",
+        "gloss": "you placed the crystal in the dragon's maw"
+      },
+      {
+        "text": "目の穴のところにメモがかくされている。",
+        "reading": "me no ana no tokoro ni memo ga kakusarete iru",
+        "gloss": "a note is hidden in the eye socket"
+      }
+    ]
+  },
+  "Desert_SandDragon_Initial": {
+    "japanese": "さばくの太陽に向かって、おおきくあぎとが開いている。死んでなお、食べたくてしかたないようだ。",
+    "english": "Its maw gapes wide at the desert sun. Even in death it seems to hunger.",
+    "segments": [
+      {
+        "text": "さばくの太陽に向かって、",
+        "reading": "sabaku no taiyō ni mukatte",
+        "gloss": "facing the desert sun"
+      },
+      {
+        "text": "おおきくあぎとが開いている。",
+        "reading": "ōkiku agito ga hiraite iru",
+        "gloss": "its maw gapes wide"
+      },
+      {
+        "text": "死んでなお、食べたくてしかたないようだ。",
+        "reading": "shinde nao tabetakute shikata nai yō da",
+        "gloss": "even in death it seems desperate to eat"
+      }
+    ]
+  },
+  "Desert_SandDragon_MrQiNote": {
+    "japanese": "『キミはどうやら信用できそうだ。帰ったら、キミの家にある材木おき場をしらべてみたまえ。 - ミスターQi 』",
+    "english": "\"You've proven yourself, kid. When you get home, check the lumber pile by your house. — Mr. Qi\"",
+    "segments": [
+      {
+        "text": "『キミはどうやら信用できそうだ。",
+        "reading": "kimi wa dōyara shin'yō dekisō da",
+        "gloss": "it seems you can be trusted"
+      },
+      {
+        "text": "帰ったら、キミの家にある材木おき場をしらべてみたまえ。",
+        "reading": "kaettara kimi no ie ni aru zaimoku okiba o shirabete mitamae",
+        "gloss": "when you get home, check the lumber pile by your house"
+      },
+      {
+        "text": " - ミスターQi 』",
+        "reading": "Misutā Qi",
+        "gloss": "- Mr. Qi"
+      }
+    ]
+  },
+  "Desert_Trader_Closed": {
+    "japanese": "ペリカンタウンのナイトマーケットは18日までお休みです。",
+    "english": "Closed until the 18th for the Pelican Town night market.",
+    "segments": [
+      {
+        "text": "ペリカンタウンのナイトマーケット",
+        "reading": "Perikan Taun no naito māketto",
+        "gloss": "the Pelican Town night market"
+      },
+      {
+        "text": "は18日までお休みです。",
+        "reading": "wa jūhachinichi made o-yasumi desu",
+        "gloss": "closed until the 18th"
+      }
+    ]
+  },
+  "DoorUnlock_NotFriend_Couple": {
+    "japanese": "まだ友だちでもないのに、{0}と{1}の寝室に入るわけにはいかない。",
+    "english": "You aren't friends enough with {0} and {1} to enter their bedroom.",
+    "segments": [
+      {
+        "text": "まだ友だちでもないのに、",
+        "reading": "mada tomodachi demo nai no ni",
+        "gloss": "when you aren't even friends yet"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "と",
+        "reading": "to",
+        "gloss": "and"
+      },
+      {
+        "text": "{1}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "の寝室に入るわけにはいかない。",
+        "reading": "no shinshitsu ni hairu wake ni wa ikanai",
+        "gloss": "you can't enter their bedroom"
+      }
+    ]
+  },
+  "DoorUnlock_NotFriend_Female": {
+    "japanese": "まだ友だちでもないのに、{0}の寝室に入るわけにはいかない。",
+    "english": "You aren't friends enough with {0} to enter her bedroom.",
+    "segments": [
+      {
+        "text": "まだ友だちでもないのに、",
+        "reading": "mada tomodachi demo nai no ni",
+        "gloss": "when you aren't even friends yet"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "の寝室に入るわけにはいかない。",
+        "reading": "no shinshitsu ni hairu wake ni wa ikanai",
+        "gloss": "you can't enter her bedroom"
+      }
+    ]
+  },
+  "DoorUnlock_NotFriend_Male": {
+    "japanese": "まだ友だちでもないのに、{0}の寝室に入るわけにはいかない。",
+    "english": "You aren't friends enough with {0} to enter his bedroom.",
+    "segments": [
+      {
+        "text": "まだ友だちでもないのに、",
+        "reading": "mada tomodachi demo nai no ni",
+        "gloss": "when you aren't even friends yet"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "の寝室に入るわけにはいかない。",
+        "reading": "no shinshitsu ni hairu wake ni wa ikanai",
+        "gloss": "you can't enter his bedroom"
+      }
+    ]
+  },
+  "ElliottHouse_ElliottBook_Blank": {
+    "japanese": "白紙の本だ。",
+    "english": "It's a blank book.",
+    "segments": [
+      {
+        "text": "白紙の本",
+        "reading": "hakushi no hon",
+        "gloss": "a blank book"
+      },
+      {
+        "text": "だ。",
+        "reading": "da",
+        "gloss": "it is"
+      }
+    ]
+  },
+  "FarmHouse_Bed_GoToSleep": {
+    "japanese": "きょうはもう寝ますか？",
+    "english": "Go to sleep for the night?",
+    "segments": [
+      {
+        "text": "きょうはもう寝ますか？",
+        "reading": "kyō wa mō nemasu ka",
+        "gloss": "will you sleep now for today"
+      }
+    ]
+  },
+  "FarmHouse_Crib_NewbornSleeping": {
+    "japanese": "{0}はねむっている。",
+    "english": "{0} is sleeping.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "はねむっている。",
+        "reading": "wa nemutte iru",
+        "gloss": "is sleeping"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked1": {
+    "japanese": "これは…？",
+    "english": "What the...?",
+    "segments": [
+      {
+        "text": "これは…？",
+        "reading": "kore wa",
+        "gloss": "what is this"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked10": {
+    "japanese": "剣を！はやく！",
+    "english": "Get your sword! Quick!",
+    "segments": [
+      {
+        "text": "剣を！",
+        "reading": "ken o",
+        "gloss": "your sword"
+      },
+      {
+        "text": "はやく！",
+        "reading": "hayaku",
+        "gloss": "quick"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked11": {
+    "japanese": "うわっ！",
+    "english": "Agh!",
+    "segments": [
+      {
+        "text": "うわっ！",
+        "reading": "uwa",
+        "gloss": "agh"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked12": {
+    "japanese": "ぎゃっ！",
+    "english": "Gahh!",
+    "segments": [
+      {
+        "text": "ぎゃっ！",
+        "reading": "gya",
+        "gloss": "gahh"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked2": {
+    "japanese": "わーっ！！",
+    "english": "Ahh!!",
+    "segments": [
+      {
+        "text": "わーっ！！",
+        "reading": "wā",
+        "gloss": "ahh"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked4": {
+    "japanese": "ひえっ！",
+    "english": "Aiii!",
+    "segments": [
+      {
+        "text": "ひえっ！",
+        "reading": "hie",
+        "gloss": "aiii"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked5": {
+    "japanese": "しねっ！",
+    "english": "Die!",
+    "segments": [
+      {
+        "text": "しねっ！",
+        "reading": "shine",
+        "gloss": "die"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked6": {
+    "japanese": "あっちいけ！",
+    "english": "Get out!",
+    "segments": [
+      {
+        "text": "あっちいけ！",
+        "reading": "atchi ike",
+        "gloss": "get out"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked7": {
+    "japanese": "うえっ！",
+    "english": "Yuck!",
+    "segments": [
+      {
+        "text": "うえっ！",
+        "reading": "ue",
+        "gloss": "yuck"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked8": {
+    "japanese": "これでもくらえっ！",
+    "english": "Take that!",
+    "segments": [
+      {
+        "text": "これでもくらえっ！",
+        "reading": "kore demo kurae",
+        "gloss": "take that"
+      }
+    ]
+  },
+  "FarmHouse_SpouseAttacked9": {
+    "japanese": "助けて！",
+    "english": "Help!",
+    "segments": [
+      {
+        "text": "助けて！",
+        "reading": "tasukete",
+        "gloss": "help"
+      }
+    ]
+  },
+  "Farm_1SlimeEscaped": {
+    "japanese": "夜のあいだに、スライムが1匹にげた。",
+    "english": "A slime escaped during the night.",
+    "segments": [
+      {
+        "text": "夜のあいだに、",
+        "reading": "yoru no aida ni",
+        "gloss": "during the night"
+      },
+      {
+        "text": "スライムが1匹にげた。",
+        "reading": "suraimu ga ippiki nigeta",
+        "gloss": "one slime escaped"
+      }
+    ]
+  },
+  "Farm_GrandpaNote": {
+    "japanese": "{0}へ - 3年目がはじまるころにようすを見にくるよ。 - おじいちゃんより",
+    "english": "{0} — I'll come to check on you around the dawn of your third year. — Grandpa",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "へ - 3年目がはじまるころにようすを見にくるよ。",
+        "reading": "e sannenme ga hajimaru koro ni yōsu o mi ni kuru yo",
+        "gloss": "to you - I'll come to see how you are around the start of your third year"
+      },
+      {
+        "text": " - おじいちゃんより",
+        "reading": "ojīchan yori",
+        "gloss": "- from Grandpa"
+      }
+    ]
+  },
+  "Farm_GrandpaShrine_DiamondSlot": {
+    "japanese": "お墓の台に、ダイヤモンドのかたちをしたくぼみがある。以前にはなかったような…？",
+    "english": "There's a diamond-shaped slot in the shrine's base. Was that there before...?",
+    "segments": [
+      {
+        "text": "お墓の台に、",
+        "reading": "o-haka no dai ni",
+        "gloss": "in the shrine's base"
+      },
+      {
+        "text": "ダイヤモンドのかたちをしたくぼみがある。",
+        "reading": "daiyamondo no katachi o shita kubomi ga aru",
+        "gloss": "there's a diamond-shaped hollow"
+      },
+      {
+        "text": "以前にはなかったような…？",
+        "reading": "izen ni wa nakatta yō na",
+        "gloss": "it doesn't seem to have been there before"
+      }
+    ]
+  },
+  "Farm_GrandpaShrine_PlaceDiamond": {
+    "japanese": "ダイヤモンドをおじいちゃんのお墓にそなえた。",
+    "english": "You place the diamond on Grandpa's shrine.",
+    "segments": [
+      {
+        "text": "ダイヤモンド",
+        "reading": "daiyamondo",
+        "gloss": "the diamond"
+      },
+      {
+        "text": "をおじいちゃんのお墓にそなえた。",
+        "reading": "o ojīchan no o-haka ni sonaeta",
+        "gloss": "you offered at Grandpa's grave"
+      }
+    ]
+  },
+  "Farm_GreenhouseRuins": {
+    "japanese": "昔はりっぱだったのだろうが、いまはあとかたもない。",
+    "english": "It must have been splendid once, but there's no trace of that now.",
+    "segments": [
+      {
+        "text": "昔はりっぱだったのだろうが、",
+        "reading": "mukashi wa rippa datta no darō ga",
+        "gloss": "it was probably splendid once, but"
+      },
+      {
+        "text": "いまはあとかたもない。",
+        "reading": "ima wa atokata mo nai",
+        "gloss": "now there's no trace of it"
+      }
+    ]
+  },
+  "Farm_NSlimesEscaped": {
+    "japanese": "夜のあいだに、スライムが{0}匹にげた。",
+    "english": "{0} slimes escaped during the night.",
+    "segments": [
+      {
+        "text": "夜のあいだに、",
+        "reading": "yoru no aida ni",
+        "gloss": "during the night"
+      },
+      {
+        "text": "スライムが{0}匹にげた。",
+        "reading": "suraimu ga hiki nigeta",
+        "gloss": "{0} slimes escaped"
+      }
+    ]
+  },
+  "Farm_OtherPlayerMailbox": {
+    "japanese": "それはあなたのメールボックスではありません。",
+    "english": "That's not your mailbox.",
+    "segments": [
+      {
+        "text": "それはあなたのメールボックスではありません。",
+        "reading": "sore wa anata no mērubokkusu de wa arimasen",
+        "gloss": "that isn't your mailbox"
+      }
+    ]
+  },
+  "Farm_WeedsDestruction": {
+    "japanese": "あなたの 牧場が、 広がった 雑草による 被害を 受けました。",
+    "english": "Your farm has taken damage from the spreading weeds.",
+    "segments": [
+      {
+        "text": "あなたの ",
+        "reading": "anata no",
+        "gloss": "your"
+      },
+      {
+        "text": "牧場が、 ",
+        "reading": "bokujō ga",
+        "gloss": "farm"
+      },
+      {
+        "text": "広がった ",
+        "reading": "hirogatta",
+        "gloss": "spreading"
+      },
+      {
+        "text": "雑草による ",
+        "reading": "zassō ni yoru",
+        "gloss": "from the weeds"
+      },
+      {
+        "text": "被害を ",
+        "reading": "higai o",
+        "gloss": "damage"
+      },
+      {
+        "text": "受けました。",
+        "reading": "ukemashita",
+        "gloss": "has taken"
+      }
+    ]
+  },
+  "FestivalDay_DoorLocked": {
+    "japanese": "カギがかかっている…",
+    "english": "It's locked...",
+    "segments": [
+      {
+        "text": "カギがかかっている…",
+        "reading": "kagi ga kakatte iru",
+        "gloss": "it's locked"
+      }
+    ]
+  },
+  "FieldOfficeDonated_0": {
+    "japanese": "ああ…これは自然史の上で非常に重要なものだ！ありがとう。",
+    "english": "Ah... this is a truly important piece of natural history! Thank you.",
+    "segments": [
+      {
+        "text": "ああ…",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "これは自然史の上で非常に重要なものだ！",
+        "reading": "kore wa shizenshi no ue de hijō ni jūyō na mono da",
+        "gloss": "this is a hugely important piece of natural history"
+      },
+      {
+        "text": "ありがとう。",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "FieldOfficeDonated_1": {
+    "japanese": "美しい！この骨はまさに私が探していたものだ。さあ、拡大鏡を掃除しなくては…",
+    "english": "Beautiful! These bones are exactly what I was looking for. Now, let me clean my magnifying lens...",
+    "segments": [
+      {
+        "text": "美しい！",
+        "reading": "utsukushii",
+        "gloss": "beautiful"
+      },
+      {
+        "text": "この骨はまさに私が探していたものだ。",
+        "reading": "kono hone wa masa ni watashi ga sagashite ita mono da",
+        "gloss": "these bones are exactly what I was looking for"
+      },
+      {
+        "text": "さあ、拡大鏡を掃除しなくては…",
+        "reading": "sā kakudaikyō o sōji shinakute wa",
+        "gloss": "now, I must clean my magnifying lens"
+      }
+    ]
+  },
+  "FieldOfficeDonated_2": {
+    "japanese": "最高の仕事だよ、@。今まで見た中で、もっとも原始的な標本の一つだ。ありがとう！$h",
+    "english": "You've outdone yourself, @. One of the most pristine specimens I've ever seen. Thank you!$h",
+    "segments": [
+      {
+        "text": "最高の仕事だよ、",
+        "reading": "saikō no shigoto da yo",
+        "gloss": "that's fine work"
+      },
+      {
+        "text": "@。",
+        "reading": "",
+        "gloss": "(player)"
+      },
+      {
+        "text": "今まで見た中で、",
+        "reading": "ima made mita naka de",
+        "gloss": "of all I've seen"
+      },
+      {
+        "text": "もっとも原始的な標本の一つだ。",
+        "reading": "mottomo genshiteki na hyōhon no hitotsu da",
+        "gloss": "it's one of the most pristine specimens"
+      },
+      {
+        "text": "ありがとう！$h",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "FieldOfficeDonated_3": {
+    "japanese": "考えてみれば…この小さな骨が土に埋まっている間に、何世代にも及ぶ時間が経ったのか。それが今では私のものだ！",
+    "english": "To think... generations passed while this little bone lay buried in the soil. And now it's mine!",
+    "segments": [
+      {
+        "text": "考えてみれば…",
+        "reading": "kangaete mireba",
+        "gloss": "to think of it"
+      },
+      {
+        "text": "この小さな骨が土に埋まっている間に、",
+        "reading": "kono chiisana hone ga tsuchi ni umatte iru aida ni",
+        "gloss": "while this little bone lay buried in the soil"
+      },
+      {
+        "text": "何世代にも及ぶ時間が経ったのか。",
+        "reading": "nan sedai ni mo oyobu jikan ga tatta no ka",
+        "gloss": "generations' worth of time passed"
+      },
+      {
+        "text": "それが今では私のものだ！",
+        "reading": "sore ga ima de wa watashi no mono da",
+        "gloss": "and now it's mine"
+      }
+    ]
+  },
+  "FieldOfficeDonated_Reward": {
+    "japanese": "あれを見てくれ！今回の寄付で、我々は完全な作品を作り上げることができた。$h#$b#あのカウンターの後ろに、君のために用意しておいたものがあるんだ。君が待ちに待っていたものだ！",
+    "english": "And look at that! With this donation we've completed another full set piece.$h#$b#There's something waiting for you behind that counter — something you've been waiting for!",
+    "segments": [
+      {
+        "text": "あれを見てくれ！",
+        "reading": "are o mite kure",
+        "gloss": "look at that"
+      },
+      {
+        "text": "今回の寄付で、",
+        "reading": "konkai no kifu de",
+        "gloss": "with this donation"
+      },
+      {
+        "text": "我々は完全な作品を作り上げることができた。$h#$b#",
+        "reading": "wareware wa kanzen na sakuhin o tsukuriageru koto ga dekita",
+        "gloss": "we've managed to complete a whole piece"
+      },
+      {
+        "text": "あのカウンターの後ろに、",
+        "reading": "ano kauntā no ushiro ni",
+        "gloss": "behind that counter"
+      },
+      {
+        "text": "君のために用意しておいたものがあるんだ。",
+        "reading": "kimi no tame ni yōi shite oita mono ga aru n da",
+        "gloss": "there's something I've set aside for you"
+      },
+      {
+        "text": "君が待ちに待っていたものだ！",
+        "reading": "kimi ga machi ni matte ita mono da",
+        "gloss": "something you've long been waiting for"
+      }
+    ]
+  },
+  "Forest_HatMouseStore_Abandoned": {
+    "japanese": "だれも住んでいないようだ…",
+    "english": "It looks like nobody lives here...",
+    "segments": [
+      {
+        "text": "だれも住んでいないようだ…",
+        "reading": "dare mo sunde inai yō da",
+        "gloss": "it seems nobody lives here"
+      }
+    ]
+  },
+  "Forest_OpenedSewer": {
+    "japanese": "さびたカギで下水道のとびらを開けた！",
+    "english": "You opened the sewer hatch with the rusty key!",
+    "segments": [
+      {
+        "text": "さびたカギで",
+        "reading": "sabita kagi de",
+        "gloss": "with the rusty key"
+      },
+      {
+        "text": "下水道のとびらを開けた！",
+        "reading": "gesuidō no tobira o aketa",
+        "gloss": "you opened the sewer door"
+      }
+    ]
+  },
+  "Forest_WizardTower_Locked": {
+    "japanese": "カギがかかっているが、なかから音がする。だれかいるようだ。",
+    "english": "It's locked, but there's a sound inside. Someone seems to be there.",
+    "segments": [
+      {
+        "text": "カギがかかっているが、",
+        "reading": "kagi ga kakatte iru ga",
+        "gloss": "it's locked, but"
+      },
+      {
+        "text": "なかから音がする。",
+        "reading": "naka kara oto ga suru",
+        "gloss": "there's a sound from inside"
+      },
+      {
+        "text": "だれかいるようだ。",
+        "reading": "dareka iru yō da",
+        "gloss": "someone seems to be there"
+      }
+    ]
+  },
+  "Gil_Telephone": {
+    "japanese": "よう。150体のマグマおばけを倒したのか？大したもんだ。#$b#それなら…マーロンの電話番号を教えてやろう。あいつは教えたがらないが、おまえさんは知っておいた方がいい。#$b#アイテム回収サービスを使いたいが、わざわざここまで来たくないと思った時は…わしらに電話するといい。いい話じゃろう？",
+    "english": "Hey. Killed 150 Magma Sprites, did you? Impressive.#$b#Tell you what... I'll give you Marlon's phone number. He doesn't like handing it out, but you ought to have it.#$b#If you want the Item Recovery Service but don't fancy the trip out here... just give us a ring. Sound good?",
+    "segments": [
+      {
+        "text": "よう。",
+        "reading": "yō",
+        "gloss": "hey"
+      },
+      {
+        "text": "150体のマグマおばけを倒したのか？",
+        "reading": "hyakugojittai no maguma obake o taoshita no ka",
+        "gloss": "you killed 150 magma sprites"
+      },
+      {
+        "text": "大したもんだ。#$b#",
+        "reading": "taishita mon da",
+        "gloss": "impressive"
+      },
+      {
+        "text": "それなら…",
+        "reading": "sore nara",
+        "gloss": "in that case"
+      },
+      {
+        "text": "マーロンの電話番号を教えてやろう。",
+        "reading": "Māron no denwa bangō o oshiete yarō",
+        "gloss": "I'll give you Marlon's phone number"
+      },
+      {
+        "text": "あいつは教えたがらないが、",
+        "reading": "aitsu wa oshietagaranai ga",
+        "gloss": "he doesn't like giving it out, but"
+      },
+      {
+        "text": "おまえさんは知っておいた方がいい。#$b#",
+        "reading": "omaesan wa shitte oita hō ga ii",
+        "gloss": "you'd do well to know it"
+      },
+      {
+        "text": "アイテム回収サービスを使いたいが、",
+        "reading": "aitemu kaishū sābisu o tsukaitai ga",
+        "gloss": "if you want the item recovery service, but"
+      },
+      {
+        "text": "わざわざここまで来たくないと思った時は…",
+        "reading": "wazawaza koko made kitakunai to omotta toki wa",
+        "gloss": "don't feel like coming all the way out here"
+      },
+      {
+        "text": "わしらに電話するといい。",
+        "reading": "washira ni denwa suru to ii",
+        "gloss": "just ring us"
+      },
+      {
+        "text": "いい話じゃろう？",
+        "reading": "ii hanashi jarō",
+        "gloss": "sounds good, doesn't it"
+      }
+    ]
+  },
+  "Gourmand_Finished": {
+    "japanese": "ケロケロ… 友人よ、また会えてうれしいよ。|この畑をたがやしてくれてありがとう。 おまえさんにしあわせの雨がふりそそぐことを願うよ！",
+    "english": "*Kribbit*... Good to see you again, my friend.|Thank you for cultivating these fields. May the rains of happiness fall upon you!",
+    "segments": [
+      {
+        "text": "ケロケロ… ",
+        "reading": "kerokero",
+        "gloss": "*kribbit*"
+      },
+      {
+        "text": "友人よ、また会えてうれしいよ。|",
+        "reading": "yūjin yo mata aete ureshii yo",
+        "gloss": "my friend, I'm glad to see you again"
+      },
+      {
+        "text": "この畑をたがやしてくれてありがとう。 ",
+        "reading": "kono hatake o tagayashite kurete arigatō",
+        "gloss": "thank you for cultivating these fields"
+      },
+      {
+        "text": "おまえさんにしあわせの雨がふりそそぐことを願うよ！",
+        "reading": "omaesan ni shiawase no ame ga furisosogu koto o negau yo",
+        "gloss": "may the rains of happiness pour down on you"
+      }
+    ]
+  },
+  "Gourmand_InProgress": {
+    "japanese": "ああ… わたしのほしいものが育っているようだ。 しかしまだ若い。大きく育ったころにまた来るといい…",
+    "english": "Ah... I see the thing I seek is growing. But it is still young. Come back when it has matured...",
+    "segments": [
+      {
+        "text": "ああ… ",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "わたしのほしいものが育っているようだ。 ",
+        "reading": "watashi no hoshii mono ga sodatte iru yō da",
+        "gloss": "the thing I want seems to be growing"
+      },
+      {
+        "text": "しかしまだ若い。",
+        "reading": "shikashi mada wakai",
+        "gloss": "but it is still young"
+      },
+      {
+        "text": "大きく育ったころにまた来るといい…",
+        "reading": "ōkiku sodatta koro ni mata kuru to ii",
+        "gloss": "come again when it has grown large"
+      }
+    ]
+  },
+  "Gourmand_Intro": {
+    "japanese": "ケロケロ… いったいだれだ？|わたしの土地にはたらきに来た… 牧場主だな？ これはありがたい！|雨がしあわせを運んできたんだ！",
+    "english": "*Kribbit*... Who on earth is this?|Come to work my land... a farmer, is it? How fortunate!|The rains have brought me happiness!",
+    "segments": [
+      {
+        "text": "ケロケロ… ",
+        "reading": "kerokero",
+        "gloss": "*kribbit*"
+      },
+      {
+        "text": "いったいだれだ？|",
+        "reading": "ittai dare da",
+        "gloss": "who on earth is this"
+      },
+      {
+        "text": "わたしの土地にはたらきに来た… ",
+        "reading": "watashi no tochi ni hataraki ni kita",
+        "gloss": "come to work my land"
+      },
+      {
+        "text": "牧場主だな？ ",
+        "reading": "bokujōnushi da na",
+        "gloss": "a farmer, is it"
+      },
+      {
+        "text": "これはありがたい！|",
+        "reading": "kore wa arigatai",
+        "gloss": "how fortunate"
+      },
+      {
+        "text": "雨がしあわせを運んできたんだ！",
+        "reading": "ame ga shiawase o hakonde kita n da",
+        "gloss": "the rains have brought happiness"
+      }
+    ]
+  },
+  "Gourmand_LastReward": {
+    "japanese": "ケロケロ… これでいい… おまえさんには本当に感謝してるよ。 この年寄りのヒキガエルに、思い出をたどる最後の旅をさせてくれた。|友人よ、ごほうびもこれでおしまいだ。",
+    "english": "*Kribbit*... This will do... I'm truly grateful to you. You've given this old toad one last trip down memory lane.|Friend, this is the last of the rewards.",
+    "segments": [
+      {
+        "text": "ケロケロ… ",
+        "reading": "kerokero",
+        "gloss": "*kribbit*"
+      },
+      {
+        "text": "これでいい… ",
+        "reading": "kore de ii",
+        "gloss": "this will do"
+      },
+      {
+        "text": "おまえさんには本当に感謝してるよ。 ",
+        "reading": "omaesan ni wa hontō ni kansha shiteru yo",
+        "gloss": "I'm truly grateful to you"
+      },
+      {
+        "text": "この年寄りのヒキガエルに、",
+        "reading": "kono toshiyori no hikigaeru ni",
+        "gloss": "for this old toad"
+      },
+      {
+        "text": "思い出をたどる最後の旅をさせてくれた。|",
+        "reading": "omoide o tadoru saigo no tabi o sasete kureta",
+        "gloss": "you gave one last journey through memory"
+      },
+      {
+        "text": "友人よ、ごほうびもこれでおしまいだ。",
+        "reading": "yūjin yo gohōbi mo kore de o-shimai da",
+        "gloss": "my friend, the rewards end here"
+      }
+    ]
+  },
+  "Gourmand_RequestFailed": {
+    "japanese": "ケロケロ… これはどういうことだ？！ わたしのほしいものが育ってないじゃないか… からかわないでくれ！",
+    "english": "*Kribbit*... What is the meaning of this?! The thing I seek isn't growing... don't toy with me!",
+    "segments": [
+      {
+        "text": "ケロケロ… ",
+        "reading": "kerokero",
+        "gloss": "*kribbit*"
+      },
+      {
+        "text": "これはどういうことだ？！ ",
+        "reading": "kore wa dō iu koto da",
+        "gloss": "what is the meaning of this"
+      },
+      {
+        "text": "わたしのほしいものが育ってないじゃないか… ",
+        "reading": "watashi no hoshii mono ga sodattenai ja nai ka",
+        "gloss": "the thing I want isn't growing"
+      },
+      {
+        "text": "からかわないでくれ！",
+        "reading": "karakawanaide kure",
+        "gloss": "don't toy with me"
+      }
+    ]
+  },
+  "Gourmand_RequestIntro": {
+    "japanese": "ゲロゲロ… むかしは… わたしの畑ではおいしい野菜や果物がたくさんとれたんだ…|今は、わたしは年をとりすぎて、はたらく元気もない… おかげで畑は荒れほうだいになってしまった…|はぁ… にぎやかでしあわせだった、あの頃がなつかしい…|おまえさんはいいところに来てくれた。",
+    "english": "*Gurrp*... You see... my fields once yielded plenty of fine vegetables and fruit...|Now I've grown too old, without the vigour to work... and so my fields have run to ruin...|*sigh*... I miss those lively, happy days...|You've come at a good time.",
+    "segments": [
+      {
+        "text": "ゲロゲロ… ",
+        "reading": "gerogero",
+        "gloss": "*gurrp*"
+      },
+      {
+        "text": "むかしは… ",
+        "reading": "mukashi wa",
+        "gloss": "long ago"
+      },
+      {
+        "text": "わたしの畑ではおいしい野菜や果物がたくさんとれたんだ…|",
+        "reading": "watashi no hatake de wa oishii yasai ya kudamono ga takusan toreta n da",
+        "gloss": "my fields yielded plenty of fine vegetables and fruit"
+      },
+      {
+        "text": "今は、わたしは年をとりすぎて、",
+        "reading": "ima wa watashi wa toshi o torisugite",
+        "gloss": "now I've grown too old"
+      },
+      {
+        "text": "はたらく元気もない… ",
+        "reading": "hataraku genki mo nai",
+        "gloss": "without even the vigour to work"
+      },
+      {
+        "text": "おかげで畑は荒れほうだいになってしまった…|",
+        "reading": "okage de hatake wa arehōdai ni natte shimatta",
+        "gloss": "so my fields have run wild"
+      },
+      {
+        "text": "はぁ… ",
+        "reading": "hā",
+        "gloss": "*sigh*"
+      },
+      {
+        "text": "にぎやかでしあわせだった、あの頃がなつかしい…|",
+        "reading": "nigiyaka de shiawase datta ano koro ga natsukashii",
+        "gloss": "I miss those lively, happy days"
+      },
+      {
+        "text": "おまえさんはいいところに来てくれた。",
+        "reading": "omaesan wa ii tokoro ni kite kureta",
+        "gloss": "you've come at just the right time"
+      }
+    ]
+  },
+  "Gourmand_RequestQuestion": {
+    "japanese": "ああ… おまえさん、なにか見せたいものがあるのかい？",
+    "english": "Ah... have you something to show me?",
+    "segments": [
+      {
+        "text": "ああ… ",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "おまえさん、なにか見せたいものがあるのかい？",
+        "reading": "omaesan nanika misetai mono ga aru no kai",
+        "gloss": "do you have something to show me"
+      }
+    ]
+  },
+  "Gourmand_Request_0": {
+    "japanese": "おまえさんに育ててほしいものがあるんだ… ピンク色でジューシーな甘いよろこび…|収穫はしないでいい！ そのままのすがたを見たいんだ…",
+    "english": "There's something I want you to grow... a pink, juicy, sweet delight...|Don't harvest it! I want to see it as it is...",
+    "segments": [
+      {
+        "text": "おまえさんに育ててほしいものがあるんだ… ",
+        "reading": "omaesan ni sodatete hoshii mono ga aru n da",
+        "gloss": "there's something I want you to grow"
+      },
+      {
+        "text": "ピンク色でジューシーな甘いよろこび…|",
+        "reading": "pinku iro de jūshī na amai yorokobi",
+        "gloss": "a pink, juicy, sweet delight"
+      },
+      {
+        "text": "収穫はしないでいい！ ",
+        "reading": "shūkaku wa shinaide ii",
+        "gloss": "don't harvest it"
+      },
+      {
+        "text": "そのままのすがたを見たいんだ…",
+        "reading": "sono mama no sugata o mitai n da",
+        "gloss": "I want to see it as it is"
+      }
+    ]
+  },
+  "Gourmand_Request_0_Success": {
+    "japanese": "ゲロゲロ… そう… これだ！|…昔のことを思い出したよ… 晴れた日はとても気持ちよかった…|（ジュルリ）… ああ… あのジューシーな実をガブリと…|…いや、やめておこう。",
+    "english": "*Gurrp*... Yes... this is it!|...It brings back the old days... sunny days felt so good...|*slurp*... ah... one big bite of that juicy fruit...|...No, I'd better not.",
+    "segments": [
+      {
+        "text": "ゲロゲロ… ",
+        "reading": "gerogero",
+        "gloss": "*gurrp*"
+      },
+      {
+        "text": "そう… ",
+        "reading": "sō",
+        "gloss": "yes"
+      },
+      {
+        "text": "これだ！|",
+        "reading": "kore da",
+        "gloss": "this is it"
+      },
+      {
+        "text": "…昔のことを思い出したよ… ",
+        "reading": "mukashi no koto o omoidashita yo",
+        "gloss": "it brought back the old days"
+      },
+      {
+        "text": "晴れた日はとても気持ちよかった…|",
+        "reading": "hareta hi wa totemo kimochi yokatta",
+        "gloss": "sunny days felt so good"
+      },
+      {
+        "text": "（ジュルリ）… ",
+        "reading": "jururi",
+        "gloss": "*slurp*"
+      },
+      {
+        "text": "ああ… ",
+        "reading": "ā",
+        "gloss": "ah"
+      },
+      {
+        "text": "あのジューシーな実をガブリと…|",
+        "reading": "ano jūshī na mi o gaburi to",
+        "gloss": "one big bite of that juicy fruit"
+      },
+      {
+        "text": "…いや、やめておこう。",
+        "reading": "iya yamete okō",
+        "gloss": "no, I'd better not"
+      }
+    ]
+  },
+  "Gourmand_Request_1": {
+    "japanese": "風にゆられて肌をくすぐる、黄色くて細長いものを見てみたい…",
+    "english": "I want to see the long yellow thing that sways in the wind and tickles the skin...",
+    "segments": [
+      {
+        "text": "風にゆられて肌をくすぐる、",
+        "reading": "kaze ni yurarete hada o kusuguru",
+        "gloss": "swaying in the wind and tickling the skin"
+      },
+      {
+        "text": "黄色くて細長いものを見てみたい…",
+        "reading": "kiiroku te hosonagai mono o mite mitai",
+        "gloss": "I want to see the long yellow thing"
+      }
+    ]
+  },
+  "Gourmand_Request_1_Success": {
+    "japanese": "ゲロゲロ… そう… これだ！|ハハハ… むかしのガールフレンドのことを思い出したよ… ゲロゲロ…|ほら… これでおまえさんをくすぐって…！|…いや、やめておこう。",
+    "english": "*Gurrp*... Yes... this is it!|Haha... it reminds me of an old girlfriend... *gurrp*...|Look here... I could tickle you with this!|...No, I'd better not.",
+    "segments": [
+      {
+        "text": "ゲロゲロ… ",
+        "reading": "gerogero",
+        "gloss": "*gurrp*"
+      },
+      {
+        "text": "そう… ",
+        "reading": "sō",
+        "gloss": "yes"
+      },
+      {
+        "text": "これだ！|",
+        "reading": "kore da",
+        "gloss": "this is it"
+      },
+      {
+        "text": "ハハハ… ",
+        "reading": "hahaha",
+        "gloss": "haha"
+      },
+      {
+        "text": "むかしのガールフレンドのことを思い出したよ… ",
+        "reading": "mukashi no gārufurendo no koto o omoidashita yo",
+        "gloss": "it reminds me of an old girlfriend"
+      },
+      {
+        "text": "ゲロゲロ…|",
+        "reading": "gerogero",
+        "gloss": "*gurrp*"
+      },
+      {
+        "text": "ほら… ",
+        "reading": "hora",
+        "gloss": "look here"
+      },
+      {
+        "text": "これでおまえさんをくすぐって…！|",
+        "reading": "kore de omaesan o kusugutte",
+        "gloss": "I could tickle you with this"
+      },
+      {
+        "text": "…いや、やめておこう。",
+        "reading": "iya yamete okō",
+        "gloss": "no, I'd better not"
+      }
+    ]
+  },
+  "Gourmand_Request_2": {
+    "japanese": "口がくさくなる、スパイシーな球根を見てみたい…",
+    "english": "I want to see the spicy bulb that makes the breath stink...",
+    "segments": [
+      {
+        "text": "口がくさくなる、",
+        "reading": "kuchi ga kusaku naru",
+        "gloss": "that makes the breath stink"
+      },
+      {
+        "text": "スパイシーな球根を見てみたい…",
+        "reading": "supaishī na kyūkon o mite mitai",
+        "gloss": "I want to see the spicy bulb"
+      }
+    ]
+  },
+  "Gourmand_Request_2_Success": {
+    "japanese": "ゲロゲロ… そう… むかし一度だけ食べたことがある。 しばらくにおいがとれなかったんだ…|…父のことを思い出したよ… わたしはまだオタマジャクシだった…|ヘヘ… もう一度食べたら、口からまたあのにおいを出せる…|…いや、やめておこう。",
+    "english": "*Gurrp*... Yes... I ate this once, long ago. The smell stayed with me for days...|...It reminds me of my father... I was still a tadpole then...|Heh... another bite and I could make that smell again...|...No, I'd better not.",
+    "segments": [
+      {
+        "text": "ゲロゲロ… ",
+        "reading": "gerogero",
+        "gloss": "*gurrp*"
+      },
+      {
+        "text": "そう… ",
+        "reading": "sō",
+        "gloss": "yes"
+      },
+      {
+        "text": "むかし一度だけ食べたことがある。 ",
+        "reading": "mukashi ichido dake tabeta koto ga aru",
+        "gloss": "I ate this once, long ago"
+      },
+      {
+        "text": "しばらくにおいがとれなかったんだ…|",
+        "reading": "shibaraku nioi ga torenakatta n da",
+        "gloss": "the smell wouldn't leave for a while"
+      },
+      {
+        "text": "…父のことを思い出したよ… ",
+        "reading": "chichi no koto o omoidashita yo",
+        "gloss": "it reminds me of my father"
+      },
+      {
+        "text": "わたしはまだオタマジャクシだった…|",
+        "reading": "watashi wa mada otamajakushi datta",
+        "gloss": "I was still a tadpole"
+      },
+      {
+        "text": "ヘヘ… ",
+        "reading": "hehe",
+        "gloss": "heh"
+      },
+      {
+        "text": "もう一度食べたら、口からまたあのにおいを出せる…|",
+        "reading": "mō ichido tabetara kuchi kara mata ano nioi o daseru",
+        "gloss": "one more bite and I could make that smell again"
+      },
+      {
+        "text": "…いや、やめておこう。",
+        "reading": "iya yamete okō",
+        "gloss": "no, I'd better not"
+      }
+    ]
+  },
+  "Gourmand_Reward": {
+    "japanese": "ケロケロ… これでいい… ありがとう。|ほら… これを持っていくといい。",
+    "english": "*Kribbit*... This will do... thank you.|Here... take this.",
+    "segments": [
+      {
+        "text": "ケロケロ… ",
+        "reading": "kerokero",
+        "gloss": "*kribbit*"
+      },
+      {
+        "text": "これでいい… ",
+        "reading": "kore de ii",
+        "gloss": "this will do"
+      },
+      {
+        "text": "ありがとう。|",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "ほら… ",
+        "reading": "hora",
+        "gloss": "here"
+      },
+      {
+        "text": "これを持っていくといい。",
+        "reading": "kore o motte iku to ii",
+        "gloss": "take this with you"
+      }
+    ]
+  },
+  "HaleyHouse_DyePot": {
+    "japanese": "鮮やかな染料の色の配列。",
+    "english": "An array of brightly coloured dyes.",
+    "segments": [
+      {
+        "text": "鮮やかな染料の色の配列。",
+        "reading": "azayaka na senryō no iro no hairetsu",
+        "gloss": "an array of vivid dye colours"
+      }
+    ]
+  },
+  "HaleyHouse_EmilyRoomObject": {
+    "japanese": "中にテープが入っている。“フリーダンスのリズム集”",
+    "english": "There's a tape inside: \"Freeform Dance Rhythms\"",
+    "segments": [
+      {
+        "text": "中にテープが入っている。",
+        "reading": "naka ni tēpu ga haitte iru",
+        "gloss": "there's a tape inside"
+      },
+      {
+        "text": "“フリーダンスのリズム集”",
+        "reading": "furī dansu no rizumu shū",
+        "gloss": "a collection of freeform dance rhythms"
+      }
+    ]
+  },
+  "HaleyHouse_SewingMachine": {
+    "japanese": "それはミシンです...でも、使い方は分かりません。",
+    "english": "It's a sewing machine... but you don't know how to use it.",
+    "segments": [
+      {
+        "text": "それはミシンです...",
+        "reading": "sore wa mishin desu",
+        "gloss": "it's a sewing machine"
+      },
+      {
+        "text": "でも、使い方は分かりません。",
+        "reading": "demo tsukaikata wa wakarimasen",
+        "gloss": "but you don't know how to use it"
+      }
+    ]
+  },
+  "Hint": {
+    "japanese": "ヒント",
+    "english": "Hint",
+    "segments": [
+      {
+        "text": "ヒント",
+        "reading": "hinto",
+        "gloss": "hint"
+      }
+    ]
+  },
+  "IceCreamStand_ComeBackLater": {
+    "japanese": " - ただいま店員不在　あとでもどります - ",
+    "english": "- No one on duty right now. Back later -",
+    "segments": [
+      {
+        "text": " - ただいま店員不在　",
+        "reading": "tadaima ten'in fuzai",
+        "gloss": "no shop staff at present"
+      },
+      {
+        "text": "あとでもどります - ",
+        "reading": "ato de modorimasu",
+        "gloss": "I'll be back later"
+      }
+    ]
+  },
+  "IceCreamStand_NotSummer": {
+    "japanese": "- 夏まで休業 -",
+    "english": "- Closed until summer -",
+    "segments": [
+      {
+        "text": "- 夏まで休業 -",
+        "reading": "natsu made kyūgyō",
+        "gloss": "closed until summer"
+      }
+    ]
+  },
+  "IslandFieldOffice_Survey_Failed": {
+    "japanese": "うーむ…一休みして、また明日調査した方が良さそうだな…",
+    "english": "Hmm... you'd better take a break and survey again tomorrow...",
+    "segments": [
+      {
+        "text": "うーむ…",
+        "reading": "ūmu",
+        "gloss": "hmm"
+      },
+      {
+        "text": "一休みして、",
+        "reading": "hitoyasumi shite",
+        "gloss": "take a break"
+      },
+      {
+        "text": "また明日調査した方が良さそうだな…",
+        "reading": "mata ashita chōsa shita hō ga yosasō da na",
+        "gloss": "and you'd best survey again tomorrow"
+      }
+    ]
+  },
+  "IslandFieldOffice_Survey_Notyet": {
+    "japanese": "まだ準備できていない",
+    "english": "Not ready yet",
+    "segments": [
+      {
+        "text": "まだ準備できていない",
+        "reading": "mada junbi dekite inai",
+        "gloss": "not ready yet"
+      }
+    ]
+  },
+  "IslandFieldOffice_Survey_Prompt_LeftPlant": {
+    "japanese": "島の調査 -- 島に咲いている紫の花の数を報告してください。",
+    "english": "Island Survey — please report the number of purple flowers blooming on the island.",
+    "segments": [
+      {
+        "text": "島の調査 ",
+        "reading": "shima no chōsa",
+        "gloss": "island survey"
+      },
+      {
+        "text": "-- 島に咲いている紫の花の数を報告してください。",
+        "reading": "shima ni saite iru murasaki no hana no kazu o hōkoku shite kudasai",
+        "gloss": "please report the number of purple flowers blooming on the island"
+      }
+    ]
+  },
+  "IslandFieldOffice_Survey_Prompt_RightPlant": {
+    "japanese": "島の調査 -- 島にいる紫のヒトデの数を報告してください。",
+    "english": "Island Survey — please report the number of purple starfish on the island.",
+    "segments": [
+      {
+        "text": "島の調査 ",
+        "reading": "shima no chōsa",
+        "gloss": "island survey"
+      },
+      {
+        "text": "-- 島にいる紫のヒトデの数を報告してください。",
+        "reading": "shima ni iru murasaki no hitode no kazu o hōkoku shite kudasai",
+        "gloss": "please report the number of purple starfish on the island"
+      }
+    ]
+  },
+  "IslandFieldOffice_Survey_PurpleFlower_Correct": {
+    "japanese": "うむ、うむ…確かにそのようだ。ありがとう！$h",
+    "english": "Yes, yes... that does seem right. Thank you!$h",
+    "segments": [
+      {
+        "text": "うむ、うむ…",
+        "reading": "umu umu",
+        "gloss": "yes, yes"
+      },
+      {
+        "text": "確かにそのようだ。",
+        "reading": "tashika ni sono yō da",
+        "gloss": "that does seem right"
+      },
+      {
+        "text": "ありがとう！$h",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "IslandFieldOffice_Survey_PurpleFlower_Question": {
+    "japanese": "島に咲いている紫の花の数？",
+    "english": "The number of purple flowers blooming on the island?",
+    "segments": [
+      {
+        "text": "島に咲いている紫の花の数？",
+        "reading": "shima ni saite iru murasaki no hana no kazu",
+        "gloss": "the number of purple flowers blooming on the island"
+      }
+    ]
+  },
+  "IslandFieldOffice_Survey_PurpleFlower_Wrong": {
+    "japanese": "うーむ…その数は私の研究モデルに、まったく当てはまらない…もう一度やり直してみてくれないか。$s",
+    "english": "Hmm... that number doesn't fit my research models at all... try again another time.$s",
+    "segments": [
+      {
+        "text": "うーむ…",
+        "reading": "ūmu",
+        "gloss": "hmm"
+      },
+      {
+        "text": "その数は私の研究モデルに、まったく当てはまらない…",
+        "reading": "sono kazu wa watashi no kenkyū moderu ni mattaku atehamaranai",
+        "gloss": "that number doesn't fit my research models at all"
+      },
+      {
+        "text": "もう一度やり直してみてくれないか。$s",
+        "reading": "mō ichido yarinaoshite mite kurenai ka",
+        "gloss": "would you try again"
+      }
+    ]
+  },
+  "IslandFieldOffice_Survey_PurpleStarfish_Question": {
+    "japanese": "島にいる紫のヒトデの数？",
+    "english": "The number of purple starfish on the island?",
+    "segments": [
+      {
+        "text": "島にいる紫のヒトデの数？",
+        "reading": "shima ni iru murasaki no hitode no kazu",
+        "gloss": "the number of purple starfish on the island"
+      }
+    ]
+  },
+  "IslandFieldOffice_Survey_Yes": {
+    "japanese": "報告する準備ができている",
+    "english": "Ready to report",
+    "segments": [
+      {
+        "text": "報告する準備ができている",
+        "reading": "hōkoku suru junbi ga dekite iru",
+        "gloss": "ready to report"
+      }
+    ]
+  },
+  "IslandFieldOffice_Welcome_0": {
+    "japanese": "どうもこんにちは！",
+    "english": "Greetings!",
+    "segments": [
+      {
+        "text": "どうもこんにちは！",
+        "reading": "dōmo konnichiwa",
+        "gloss": "greetings"
+      }
+    ]
+  },
+  "IslandFieldOffice_Welcome_1": {
+    "japanese": "こんにちは！",
+    "english": "Hello!",
+    "segments": [
+      {
+        "text": "こんにちは！",
+        "reading": "konnichiwa",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "IslandFieldOffice_Welcome_2": {
+    "japanese": "やあ！",
+    "english": "Hey!",
+    "segments": [
+      {
+        "text": "やあ！",
+        "reading": "yā",
+        "gloss": "hey"
+      }
+    ]
+  },
+  "IslandFieldOffice_Welcome_3": {
+    "japanese": "ようこそ！",
+    "english": "Welcome!",
+    "segments": [
+      {
+        "text": "ようこそ！",
+        "reading": "yōkoso",
+        "gloss": "welcome"
+      }
+    ]
+  },
+  "IslandNorth_CaveHelp_0": {
+    "japanese": "助けてくれ！",
+    "english": "Help!",
+    "segments": [
+      {
+        "text": "助けてくれ！",
+        "reading": "tasukete kure",
+        "gloss": "help me"
+      }
+    ]
+  },
+  "IslandNorth_CaveHelp_1": {
+    "japanese": "そこに誰かいるのか？",
+    "english": "Is anyone there?",
+    "segments": [
+      {
+        "text": "そこに誰かいるのか？",
+        "reading": "soko ni dareka iru no ka",
+        "gloss": "is anyone there"
+      }
+    ]
+  },
+  "IslandNorth_CaveHelp_2": {
+    "japanese": "身動きがとれないんだ！",
+    "english": "I'm stuck!",
+    "segments": [
+      {
+        "text": "身動きがとれないんだ！",
+        "reading": "miugoki ga torenai n da",
+        "gloss": "I can't move"
+      }
+    ]
+  },
+  "IslandNorth_CaveHelp_3": {
+    "japanese": "こっちだ！",
+    "english": "Over here!",
+    "segments": [
+      {
+        "text": "こっちだ！",
+        "reading": "kotchi da",
+        "gloss": "over here"
+      }
+    ]
+  },
+  "IslandNorth_CaveTool_0": {
+    "japanese": "それじゃダメだ。",
+    "english": "That won't work.",
+    "segments": [
+      {
+        "text": "それじゃダメだ。",
+        "reading": "sore ja dame da",
+        "gloss": "that won't do"
+      }
+    ]
+  },
+  "IslandNorth_CaveTool_1": {
+    "japanese": "これじゃ弱ぎする。",
+    "english": "It's too weak.",
+    "segments": [
+      {
+        "text": "これじゃ弱ぎする。",
+        "reading": "kore ja yowagi suru",
+        "gloss": "this is too weak"
+      }
+    ]
+  },
+  "IslandNorth_CaveTool_2": {
+    "japanese": "うーむ…",
+    "english": "Hmm...",
+    "segments": [
+      {
+        "text": "うーむ…",
+        "reading": "ūmu",
+        "gloss": "hmm"
+      }
+    ]
+  },
+  "IslandNorth_CaveTool_3": {
+    "japanese": "なにか別のことを試してくれ。",
+    "english": "Try something else.",
+    "segments": [
+      {
+        "text": "なにか別のことを試してくれ。",
+        "reading": "nanika betsu no koto o tameshite kure",
+        "gloss": "try something else"
+      }
+    ]
+  },
+  "IslandSouth_ResortClosedSign": {
+    "japanese": "ビーチリゾートは臨時休業中です。明日は営業再開しますか？",
+    "english": "The beach resort is temporarily closed. Open it again tomorrow?",
+    "segments": [
+      {
+        "text": "ビーチリゾート",
+        "reading": "bīchi rizōto",
+        "gloss": "the beach resort"
+      },
+      {
+        "text": "は臨時休業中です。",
+        "reading": "wa rinji kyūgyōchū desu",
+        "gloss": "is temporarily closed"
+      },
+      {
+        "text": "明日は営業再開しますか？",
+        "reading": "asu wa eigyō saikai shimasu ka",
+        "gloss": "will you reopen it tomorrow"
+      }
+    ]
+  },
+  "IslandSouth_ResortClosedWillOpenSign": {
+    "japanese": "ビーチリゾートは明日は営業再開します。休業中にしますか？",
+    "english": "The beach resort will reopen tomorrow. Keep it closed?",
+    "segments": [
+      {
+        "text": "ビーチリゾート",
+        "reading": "bīchi rizōto",
+        "gloss": "the beach resort"
+      },
+      {
+        "text": "は明日は営業再開します。",
+        "reading": "wa asu wa eigyō saikai shimasu",
+        "gloss": "will reopen tomorrow"
+      },
+      {
+        "text": "休業中にしますか？",
+        "reading": "kyūgyōchū ni shimasu ka",
+        "gloss": "will you keep it closed"
+      }
+    ]
+  },
+  "IslandSouth_ResortOpenSign": {
+    "japanese": "ビーチリゾートは営業中です。明日は臨時休業しますか？",
+    "english": "The beach resort is open. Temporarily close it tomorrow?",
+    "segments": [
+      {
+        "text": "ビーチリゾート",
+        "reading": "bīchi rizōto",
+        "gloss": "the beach resort"
+      },
+      {
+        "text": "は営業中です。",
+        "reading": "wa eigyōchū desu",
+        "gloss": "is open"
+      },
+      {
+        "text": "明日は臨時休業しますか？",
+        "reading": "asu wa rinji kyūgyō shimasu ka",
+        "gloss": "will you close it temporarily tomorrow"
+      }
+    ]
+  },
+  "IslandSouth_ResortOpenWillCloseSign": {
+    "japanese": "ビーチリゾートは明日は臨時休業します。営業中にしますか？",
+    "english": "The beach resort will close tomorrow. Keep it open?",
+    "segments": [
+      {
+        "text": "ビーチリゾート",
+        "reading": "bīchi rizōto",
+        "gloss": "the beach resort"
+      },
+      {
+        "text": "は明日は臨時休業します。",
+        "reading": "wa asu wa rinji kyūgyō shimasu",
+        "gloss": "will close temporarily tomorrow"
+      },
+      {
+        "text": "営業中にしますか？",
+        "reading": "eigyōchū ni shimasu ka",
+        "gloss": "will you keep it open"
+      }
+    ]
+  },
+  "IslandSouth_ResortWillCloseSign": {
+    "japanese": "ビーチリゾートは明日は休業します。",
+    "english": "The beach resort will be closed tomorrow.",
+    "segments": [
+      {
+        "text": "ビーチリゾート",
+        "reading": "bīchi rizōto",
+        "gloss": "the beach resort"
+      },
+      {
+        "text": "は明日は休業します。",
+        "reading": "wa asu wa kyūgyō shimasu",
+        "gloss": "will be closed tomorrow"
+      }
+    ]
+  },
+  "IslandSouth_ResortWillOpenSign": {
+    "japanese": "ビーチリゾートは明日は営業します。",
+    "english": "The beach resort will be open tomorrow.",
+    "segments": [
+      {
+        "text": "ビーチリゾート",
+        "reading": "bīchi rizōto",
+        "gloss": "the beach resort"
+      },
+      {
+        "text": "は明日は営業します。",
+        "reading": "wa asu wa eigyō shimasu",
+        "gloss": "will be open tomorrow"
+      }
+    ]
+  },
+  "JojaMart_SignUp": {
+    "japanese": "Jojaの メンバーに なると、 公民館は Jojaの 倉庫に なり、 公民館を 再建することが できなくなります。 ただし、 Jojaが 町を 改善する 別の方法を 提供してくれます。 本当に Jojaの メンバーに なりますか？",
+    "english": "If you become a Joja Member, the community center becomes a Joja warehouse and can no longer be refurbished. However, Joja will provide another way to improve the town. Are you sure you want to become a Joja Member?",
+    "segments": [
+      {
+        "text": "Jojaの ",
+        "reading": "Joja no",
+        "gloss": "Joja's"
+      },
+      {
+        "text": "メンバーに ",
+        "reading": "menbā ni",
+        "gloss": "a member"
+      },
+      {
+        "text": "なると、 ",
+        "reading": "naru to",
+        "gloss": "if you become"
+      },
+      {
+        "text": "公民館は ",
+        "reading": "kōminkan wa",
+        "gloss": "the community center"
+      },
+      {
+        "text": "Jojaの ",
+        "reading": "Joja no",
+        "gloss": "Joja's"
+      },
+      {
+        "text": "倉庫に ",
+        "reading": "sōko ni",
+        "gloss": "a warehouse"
+      },
+      {
+        "text": "なり、 ",
+        "reading": "nari",
+        "gloss": "becomes, and"
+      },
+      {
+        "text": "公民館を ",
+        "reading": "kōminkan o",
+        "gloss": "the community center"
+      },
+      {
+        "text": "再建することが ",
+        "reading": "saiken suru koto ga",
+        "gloss": "rebuilding it"
+      },
+      {
+        "text": "できなくなります。 ",
+        "reading": "dekinaku narimasu",
+        "gloss": "becomes impossible"
+      },
+      {
+        "text": "ただし、 ",
+        "reading": "tadashi",
+        "gloss": "however"
+      },
+      {
+        "text": "Jojaが ",
+        "reading": "Joja ga",
+        "gloss": "Joja"
+      },
+      {
+        "text": "町を ",
+        "reading": "machi o",
+        "gloss": "the town"
+      },
+      {
+        "text": "改善する ",
+        "reading": "kaizen suru",
+        "gloss": "to improve"
+      },
+      {
+        "text": "別の方法を ",
+        "reading": "betsu no hōhō o",
+        "gloss": "another way"
+      },
+      {
+        "text": "提供してくれます。 ",
+        "reading": "teikyō shite kuremasu",
+        "gloss": "will provide"
+      },
+      {
+        "text": "本当に ",
+        "reading": "hontō ni",
+        "gloss": "really"
+      },
+      {
+        "text": "Jojaの ",
+        "reading": "Joja no",
+        "gloss": "Joja's"
+      },
+      {
+        "text": "メンバーに ",
+        "reading": "menbā ni",
+        "gloss": "a member"
+      },
+      {
+        "text": "なりますか？",
+        "reading": "narimasu ka",
+        "gloss": "will you become"
+      }
+    ]
+  },
+  "JoshHouse_Alex_Trash": {
+    "japanese": "プロテインバーのつつみ紙でいっぱいだ。",
+    "english": "It's full of protein bar wrappers.",
+    "segments": [
+      {
+        "text": "プロテインバーのつつみ紙",
+        "reading": "purotein bā no tsutsumigami",
+        "gloss": "protein bar wrappers"
+      },
+      {
+        "text": "でいっぱいだ。",
+        "reading": "de ippai da",
+        "gloss": "it's full of"
+      }
+    ]
+  },
+  "Journal_Name": {
+    "japanese": "日記の切れ端",
+    "english": "Journal Scrap",
+    "segments": [
+      {
+        "text": "日記の",
+        "reading": "nikki no",
+        "gloss": "journal"
+      },
+      {
+        "text": "切れ端",
+        "reading": "kirehashi",
+        "gloss": "scrap"
+      }
+    ]
+  },
+  "LockedDoor": {
+    "japanese": "カギがかかっている…",
+    "english": "It's locked...",
+    "segments": [
+      {
+        "text": "カギがかかっている…",
+        "reading": "kagi ga kakatte iru",
+        "gloss": "it's locked"
+      }
+    ]
+  },
+  "LockedDoor_FriendsOnly": {
+    "japanese": "カギがかかっている…入れるのは{0}の友だちだけだ。",
+    "english": "It's locked... only {0}'s friends may enter.",
+    "segments": [
+      {
+        "text": "カギがかかっている…",
+        "reading": "kagi ga kakatte iru",
+        "gloss": "it's locked"
+      },
+      {
+        "text": "入れるのは",
+        "reading": "haireru no wa",
+        "gloss": "those who may enter"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "の友だちだけだ。",
+        "reading": "no tomodachi dake da",
+        "gloss": "are only their friends"
+      }
+    ]
+  },
+  "LockedDoor_OpenRange": {
+    "japanese": "カギがかかっている…（オープン {0} ～ {1}）",
+    "english": "It's locked... (Open {0} – {1})",
+    "segments": [
+      {
+        "text": "カギがかかっている…",
+        "reading": "kagi ga kakatte iru",
+        "gloss": "it's locked"
+      },
+      {
+        "text": "（オープン {0} ～ {1}）",
+        "reading": "ōpun",
+        "gloss": "open {0} - {1}"
+      }
+    ]
+  },
+  "ManorHouse_DivorceBook_CancelQuestion": {
+    "japanese": "離婚をキャンセルしますか？",
+    "english": "Cancel your divorce?",
+    "segments": [
+      {
+        "text": "離婚をキャンセルしますか？",
+        "reading": "rikon o kyanseru shimasu ka",
+        "gloss": "will you cancel the divorce"
+      }
+    ]
+  },
+  "ManorHouse_DivorceBook_CancelQuestion_Krobus": {
+    "japanese": "立ち退きをキャンセルしますか？",
+    "english": "Cancel your eviction?",
+    "segments": [
+      {
+        "text": "立ち退きをキャンセルしますか？",
+        "reading": "tachinoki o kyanseru shimasu ka",
+        "gloss": "will you cancel the eviction"
+      }
+    ]
+  },
+  "ManorHouse_DivorceBook_Cancelled": {
+    "japanese": "離婚の届け出はキャンセルされました。",
+    "english": "Your divorce filing has been cancelled.",
+    "segments": [
+      {
+        "text": "離婚の届け出",
+        "reading": "rikon no todokede",
+        "gloss": "the divorce filing"
+      },
+      {
+        "text": "はキャンセルされました。",
+        "reading": "wa kyanseru saremashita",
+        "gloss": "has been cancelled"
+      }
+    ]
+  },
+  "ManorHouse_DivorceBook_Cancelled_Krobus": {
+    "japanese": "{0}を追い出すという考えを変更しました。",
+    "english": "You've changed your mind about turning {0} out.",
+    "segments": [
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "を追い出すという考えを変更しました。",
+        "reading": "o oidasu to iu kangae o henkō shimashita",
+        "gloss": "you changed your mind about turning them out"
+      }
+    ]
+  },
+  "ManorHouse_DivorceBook_Filed": {
+    "japanese": "離婚の届け出が受理されました。離婚の知らせは、明日の朝まで結婚相手には伝わりません。途中で気が変わった場合は、夜が終わるまでにここへ来てキャンセルしてください。",
+    "english": "Your divorce papers have been accepted. Your spouse won't hear of it until tomorrow morning. If you change your mind, come back here before the night ends.",
+    "segments": [
+      {
+        "text": "離婚の届け出が受理されました。",
+        "reading": "rikon no todokede ga juri saremashita",
+        "gloss": "the divorce filing has been accepted"
+      },
+      {
+        "text": "離婚の知らせは、明日の朝まで結婚相手には伝わりません。",
+        "reading": "rikon no shirase wa asu no asa made kekkon aite ni wa tsutawarimasen",
+        "gloss": "your spouse won't hear of it until tomorrow morning"
+      },
+      {
+        "text": "途中で気が変わった場合は、",
+        "reading": "tochū de ki ga kawatta baai wa",
+        "gloss": "if you change your mind in the meantime"
+      },
+      {
+        "text": "夜が終わるまでにここへ来てキャンセルしてください。",
+        "reading": "yoru ga owaru made ni koko e kite kyanseru shite kudasai",
+        "gloss": "come here and cancel before the night ends"
+      }
+    ]
+  },
+  "ManorHouse_DivorceBook_Filed_Krobus": {
+    "japanese": "家から{0}を追い出すことに決めました。気持ちに変化があれば、夜が終わるまでにここに戻ってきてください。",
+    "english": "You've decided to turn {0} out of the house. If you change your mind, come back here before the night ends.",
+    "segments": [
+      {
+        "text": "家から",
+        "reading": "ie kara",
+        "gloss": "from the house"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "を追い出すことに決めました。",
+        "reading": "o oidasu koto ni kimemashita",
+        "gloss": "you decided to turn them out"
+      },
+      {
+        "text": "気持ちに変化があれば、",
+        "reading": "kimochi ni henka ga areba",
+        "gloss": "if your feelings change"
+      },
+      {
+        "text": "夜が終わるまでにここに戻ってきてください。",
+        "reading": "yoru ga owaru made ni koko ni modotte kite kudasai",
+        "gloss": "come back here before the night ends"
+      }
+    ]
+  },
+  "ManorHouse_DivorceBook_NoSpouse": {
+    "japanese": "ペリカンタウンの結婚記録だ…結婚したあとは、ここに届け出を出せば離婚できる。その機会がこないことを祈ろう！",
+    "english": "Pelican Town's marriage register... after marrying, you can file for divorce here. Let's hope it never comes to that!",
+    "segments": [
+      {
+        "text": "ペリカンタウンの結婚記録",
+        "reading": "Perikan Taun no kekkon kiroku",
+        "gloss": "Pelican Town's marriage record"
+      },
+      {
+        "text": "だ…",
+        "reading": "da",
+        "gloss": "it is"
+      },
+      {
+        "text": "結婚したあとは、",
+        "reading": "kekkon shita ato wa",
+        "gloss": "after marrying"
+      },
+      {
+        "text": "ここに届け出を出せば離婚できる。",
+        "reading": "koko ni todokede o daseba rikon dekiru",
+        "gloss": "you can divorce by filing here"
+      },
+      {
+        "text": "その機会がこないことを祈ろう！",
+        "reading": "sono kikai ga konai koto o inorō",
+        "gloss": "let's pray the occasion never comes"
+      }
+    ]
+  },
+  "ManorHouse_DivorceBook_Question": {
+    "japanese": "離婚の届け出をしますか？手数料は50000Gです。",
+    "english": "File for divorce? There is a 50,000g fee.",
+    "segments": [
+      {
+        "text": "離婚の届け出をしますか？",
+        "reading": "rikon no todokede o shimasu ka",
+        "gloss": "will you file for divorce"
+      },
+      {
+        "text": "手数料は50000Gです。",
+        "reading": "tesūryō wa goman gōrudo desu",
+        "gloss": "the fee is 50,000g"
+      }
+    ]
+  },
+  "ManorHouse_DivorceBook_Question_Krobus": {
+    "japanese": "あなたの家から{0}を追い出しますか？",
+    "english": "Turn {0} out of your house?",
+    "segments": [
+      {
+        "text": "あなたの家から",
+        "reading": "anata no ie kara",
+        "gloss": "from your house"
+      },
+      {
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "を追い出しますか？",
+        "reading": "o oidashimasu ka",
+        "gloss": "will you turn them out"
+      }
+    ]
+  },
+  "ManorHouse_LAF_Check": {
+    "japanese": "街の「落とし物」箱。",
+    "english": "The town's \"Lost and Found\" box.",
+    "segments": [
+      {
+        "text": "街の「落とし物」箱。",
+        "reading": "machi no otoshimono bako",
+        "gloss": "the town's lost-property box"
+      }
+    ]
+  },
+  "ManorHouse_LAF_Check_OrdersUnlocked": {
+    "japanese": "街の「落とし物」箱。過去の特別注文品のうち、完了できなかった納品物を回収できる。",
+    "english": "The town's \"Lost and Found\" box. You can collect undelivered items from past special orders here.",
+    "segments": [
+      {
+        "text": "街の「落とし物」箱。",
+        "reading": "machi no otoshimono bako",
+        "gloss": "the town's lost-property box"
+      },
+      {
+        "text": "過去の特別注文品のうち、完了できなかった納品物を回収できる。",
+        "reading": "kako no tokubetsu chūmonhin no uchi kanryō dekinakatta nōhinbutsu o kaishū dekiru",
+        "gloss": "you can recover undelivered goods from past special orders"
+      }
+    ]
+  },
+  "ManorHouse_LAF_DonationItems": {
+    "japanese": "なくしたアイテムや完了できなかった納品物を回収する",
+    "english": "Collect lost items and incomplete deliveries",
+    "segments": [
+      {
+        "text": "なくしたアイテムや完了できなかった納品物を回収する",
+        "reading": "nakushita aitemu ya kanryō dekinakatta nōhinbutsu o kaishū suru",
+        "gloss": "collect lost items and incomplete deliveries"
+      }
+    ]
+  },
+  "ManorHouse_LAF_FarmhandItems": {
+    "japanese": "オフラインの農場主からアイテムを回収する",
+    "english": "Retrieve items from offline farmhands",
+    "segments": [
+      {
+        "text": "オフラインの農場主からアイテムを回収する",
+        "reading": "ofurain no nōjōnushi kara aitemu o kaishū suru",
+        "gloss": "retrieve items from offline farmers"
+      }
+    ]
+  },
+  "ManorHouse_LAF_FarmhandItemsQuestion": {
+    "japanese": "誰からアイテムを改修しますか？",
+    "english": "Who would you like to retrieve items from?",
+    "segments": [
+      {
+        "text": "誰からアイテムを改修しますか？",
+        "reading": "dare kara aitemu o kaishū shimasu ka",
+        "gloss": "from whom will you retrieve items"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_CancelMerge": {
+    "japanese": "資金のマージをキャンセルする",
+    "english": "Cancel merging funds",
+    "segments": [
+      {
+        "text": "資金のマージをキャンセルする",
+        "reading": "shikin no mājisu o kyanseru suru",
+        "gloss": "cancel merging funds"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_Leave": {
+    "japanese": "立ち去る",
+    "english": "Leave",
+    "segments": [
+      {
+        "text": "立ち去る",
+        "reading": "tachisaru",
+        "gloss": "leave"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_MergeWallets": {
+    "japanese": "資金をマージする",
+    "english": "Merge funds",
+    "segments": [
+      {
+        "text": "資金をマージする",
+        "reading": "shikin o māji suru",
+        "gloss": "merge funds"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_NoFarmhands": {
+    "japanese": "農場主があなたの農場に参加した場合、お互いにお金を転送することができます。",
+    "english": "If farmhands join your farm, you can transfer money to each other.",
+    "segments": [
+      {
+        "text": "農場主があなたの農場に参加した場合、",
+        "reading": "nōjōnushi ga anata no nōjō ni sanka shita baai",
+        "gloss": "if farmhands join your farm"
+      },
+      {
+        "text": "お互いにお金を転送することができます。",
+        "reading": "otagai ni o-kane o tensō suru koto ga dekimasu",
+        "gloss": "you can transfer money to each other"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_SendMoney": {
+    "japanese": "送金する",
+    "english": "Send money",
+    "segments": [
+      {
+        "text": "送金する",
+        "reading": "sōkin suru",
+        "gloss": "send money"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_SeparateWallets_CancelQuestion": {
+    "japanese": "資金のマージをキャンセルしますか？",
+    "english": "Cancel merging funds?",
+    "segments": [
+      {
+        "text": "資金のマージをキャンセルしますか？",
+        "reading": "shikin no māji o kyanseru shimasu ka",
+        "gloss": "will you cancel merging funds"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_SeparateWallets_HostQuestion": {
+    "japanese": "町長の台帳です。何をしたいですか？",
+    "english": "It's the mayor's ledger book. What would you like to do?",
+    "segments": [
+      {
+        "text": "町長の台帳です。",
+        "reading": "chōchō no daichō desu",
+        "gloss": "it's the mayor's ledger"
+      },
+      {
+        "text": "何をしたいですか？",
+        "reading": "nani o shitai desu ka",
+        "gloss": "what would you like to do"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_SeparateWallets_HowMuchQuestion": {
+    "japanese": "いくら送金したいですか？",
+    "english": "How much would you like to send?",
+    "segments": [
+      {
+        "text": "いくら送金したいですか？",
+        "reading": "ikura sōkin shitai desu ka",
+        "gloss": "how much would you like to send"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_SeparateWallets_MergeQuestion": {
+    "japanese": "それぞれの農家の資金をマージしますか？今夜、みんなのお金が結合されています。気持ちに変化があれば、夜が終わるまでにここに戻ってきてください。",
+    "english": "Merge each farmer's funds? Tonight everyone's money will be combined. If you change your mind, come back here before the night ends.",
+    "segments": [
+      {
+        "text": "それぞれの農家の資金をマージしますか？",
+        "reading": "sorezore no nōka no shikin o māji shimasu ka",
+        "gloss": "will you merge each farmer's funds"
+      },
+      {
+        "text": "今夜、みんなのお金が結合されています。",
+        "reading": "kon'ya minna no o-kane ga ketsugō sarete imasu",
+        "gloss": "tonight everyone's money will be combined"
+      },
+      {
+        "text": "気持ちに変化があれば、",
+        "reading": "kimochi ni henka ga areba",
+        "gloss": "if your feelings change"
+      },
+      {
+        "text": "夜が終わるまでにここに戻ってきてください。",
+        "reading": "yoru ga owaru made ni koko ni modotte kite kudasai",
+        "gloss": "come back here before the night ends"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_SeparateWallets_TransferQuestion": {
+    "japanese": "誰に送金したいですか？",
+    "english": "Who would you like to send money to?",
+    "segments": [
+      {
+        "text": "誰に送金したいですか？",
+        "reading": "dare ni sōkin shitai desu ka",
+        "gloss": "to whom would you like to send money"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_SharedWallets_CancelQuestion": {
+    "japanese": "分割することをキャンセルしますか？",
+    "english": "Cancel splitting the funds?",
+    "segments": [
+      {
+        "text": "分割することをキャンセルしますか？",
+        "reading": "bunkatsu suru koto o kyanseru shimasu ka",
+        "gloss": "will you cancel the splitting"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_SharedWallets_Client": {
+    "japanese": "ペリカンタウンの台帳...農場主は、農家の資金分割を町長に要求することができます。",
+    "english": "Pelican Town Ledger... the farm's owner can ask the mayor to split the farmhands' funds.",
+    "segments": [
+      {
+        "text": "ペリカンタウンの台帳...",
+        "reading": "Perikan Taun no daichō",
+        "gloss": "Pelican Town's ledger"
+      },
+      {
+        "text": "農場主は、農家の資金分割を町長に要求することができます。",
+        "reading": "nōjōnushi wa nōka no shikin bunkatsu o chōchō ni yōkyū suru koto ga dekimasu",
+        "gloss": "the farm owner can request the mayor to split the farmers' funds"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_SharedWallets_SeparateQuestion": {
+    "japanese": "それぞれの農家の資金分割をしますか？今夜、均等に資金分割されます。気持ちに変化があれば、夜が終わるまでにここに戻ってきてください。",
+    "english": "Split each farmer's funds? Tonight the money will be divided evenly. If you change your mind, come back here before the night ends.",
+    "segments": [
+      {
+        "text": "それぞれの農家の資金分割をしますか？",
+        "reading": "sorezore no nōka no shikin bunkatsu o shimasu ka",
+        "gloss": "will you split each farmer's funds"
+      },
+      {
+        "text": "今夜、均等に資金分割されます。",
+        "reading": "kon'ya kintō ni shikin bunkatsu saremasu",
+        "gloss": "tonight the funds will be divided evenly"
+      },
+      {
+        "text": "気持ちに変化があれば、",
+        "reading": "kimochi ni henka ga areba",
+        "gloss": "if your feelings change"
+      },
+      {
+        "text": "夜が終わるまでにここに戻ってきてください。",
+        "reading": "yoru ga owaru made ni koko ni modotte kite kudasai",
+        "gloss": "come back here before the night ends"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_Singleplayer": {
+    "japanese": "ペリカンタウンの台帳...町長がこれを利用して財政を把握しているみたいです。",
+    "english": "Pelican Town Ledger... it seems the mayor uses this to keep track of finances.",
+    "segments": [
+      {
+        "text": "ペリカンタウンの台帳...",
+        "reading": "Perikan Taun no daichō",
+        "gloss": "Pelican Town's ledger"
+      },
+      {
+        "text": "町長がこれを利用して財政を把握しているみたいです。",
+        "reading": "chōchō ga kore o riyō shite zaisei o haaku shite iru mitai desu",
+        "gloss": "it seems the mayor uses it to keep track of finances"
+      }
+    ]
+  },
+  "ManorHouse_LedgerBook_TransferCancel": {
+    "japanese": "キャンセル",
+    "english": "Cancel",
+    "segments": [
+      {
+        "text": "キャンセル",
+        "reading": "kyanseru",
+        "gloss": "cancel"
+      }
+    ]
+  },
+  "ManorHouse_MayorFridge_ConsumeBeets": {
+    "japanese": "れいぞうこにすばやくビートを入れた。おや…ミルクのびんにメモが貼ってある。どうやらあなたあてのようだ。",
+    "english": "You quickly put the beets in the fridge. Wait... there's a note taped to the milk bottle. It seems to be addressed to you.",
+    "segments": [
+      {
+        "text": "れいぞうこにすばやくビートを入れた。",
+        "reading": "reizōko ni subayaku bīto o ireta",
+        "gloss": "you quickly put the beets in the fridge"
+      },
+      {
+        "text": "おや…ミルクのびんにメモが貼ってある。",
+        "reading": "oya miruku no bin ni memo ga hatte aru",
+        "gloss": "oh, there's a note stuck to the milk bottle"
+      },
+      {
+        "text": "どうやらあなたあてのようだ。",
+        "reading": "dōyara anata ate no yō da",
+        "gloss": "it seems to be addressed to you"
+      }
+    ]
+  },
+  "ManorHouse_MayorFridge_Initial": {
+    "japanese": "町長のれいぞうこだ。ミルクとアイスティーばかり入っている。",
+    "english": "It's the mayor's fridge. Mostly milk and iced tea.",
+    "segments": [
+      {
+        "text": "町長のれいぞうこ",
+        "reading": "chōchō no reizōko",
+        "gloss": "the mayor's fridge"
+      },
+      {
+        "text": "だ。",
+        "reading": "da",
+        "gloss": "it is"
+      },
+      {
+        "text": "ミルクとアイスティーばかり入っている。",
+        "reading": "miruku to aisu tī bakari haitte iru",
+        "gloss": "it's full of nothing but milk and iced tea"
+      }
+    ]
+  },
+  "ManorHouse_MayorFridge_MrQiNote": {
+    "japanese": "『上出来だ。これがさいごの指令だ。砂のドラゴンに、最後の晩さんを食べさせろ。 - ミスターQi 』",
+    "english": "\"Good job, kid. Your final task: give the sand dragon his last supper. — Mr. Qi\"",
+    "segments": [
+      {
+        "text": "『上出来だ。",
+        "reading": "jōdeki da",
+        "gloss": "good job"
+      },
+      {
+        "text": "これがさいごの指令だ。",
+        "reading": "kore ga saigo no shirei da",
+        "gloss": "this is the final order"
+      },
+      {
+        "text": "砂のドラゴンに、最後の晩さんを食べさせろ。",
+        "reading": "suna no doragon ni saigo no bansan o tabesasero",
+        "gloss": "feed the sand dragon his last supper"
+      },
+      {
+        "text": " - ミスターQi 』",
+        "reading": "Misutā Qi",
+        "gloss": "- Mr. Qi"
+      }
+    ]
+  },
+  "MensLocker_WrongGender": {
+    "japanese": "こっちは男子更衣室だ…入るわけにはいかない！",
+    "english": "That's the men's locker room... you can't go in there!",
+    "segments": [
+      {
+        "text": "こっちは男子更衣室だ…",
+        "reading": "kotchi wa danshi kōishitsu da",
+        "gloss": "this is the men's locker room"
+      },
+      {
+        "text": "入るわけにはいかない！",
+        "reading": "hairu wake ni wa ikanai",
+        "gloss": "you can't go in"
+      }
+    ]
+  },
+  "MineCart_ChooseDestination": {
+    "japanese": "行き先をえらんでください：",
+    "english": "Choose a destination:",
+    "segments": [
+      {
+        "text": "行き先をえらんでください：",
+        "reading": "ikisaki o erande kudasai",
+        "gloss": "please choose a destination"
+      }
+    ]
+  },
+  "MineCart_Destination_BusStop": {
+    "japanese": "バス停",
+    "english": "Bus Stop",
+    "segments": [
+      {
+        "text": "バス停",
+        "reading": "basutei",
+        "gloss": "bus stop"
+      }
+    ]
+  },
+  "MineCart_Destination_Cancel": {
+    "japanese": "キャンセル",
+    "english": "Cancel",
+    "segments": [
+      {
+        "text": "キャンセル",
+        "reading": "kyanseru",
+        "gloss": "cancel"
+      }
+    ]
+  },
+  "MineCart_Destination_Mines": {
+    "japanese": "鉱山",
+    "english": "Mines",
+    "segments": [
+      {
+        "text": "鉱山",
+        "reading": "kōzan",
+        "gloss": "mines"
+      }
+    ]
+  },
+  "MineCart_Destination_Quarry": {
+    "japanese": "石切り場",
+    "english": "Quarry",
+    "segments": [
+      {
+        "text": "石切り場",
+        "reading": "ishikiriba",
+        "gloss": "quarry"
+      }
+    ]
+  },
+  "MineCart_Destination_Town": {
+    "japanese": "ペリカンタウン",
+    "english": "Pelican Town",
+    "segments": [
+      {
+        "text": "ペリカンタウン",
+        "reading": "Perikan Taun",
+        "gloss": "Pelican Town"
+      }
+    ]
+  },
+  "MineCart_OutOfOrder": {
+    "japanese": "うごいていないようだ。",
+    "english": "It doesn't seem to be running.",
+    "segments": [
+      {
+        "text": "うごいていないようだ。",
+        "reading": "ugoite inai yō da",
+        "gloss": "it doesn't seem to be running"
+      }
+    ]
+  },
+  "Mines_DoNothing": {
+    "japanese": "なにもしない",
+    "english": "Do nothing",
+    "segments": [
+      {
+        "text": "なにもしない",
+        "reading": "nani mo shinai",
+        "gloss": "do nothing"
+      }
+    ]
+  },
+  "Mines_Fallen": {
+    "japanese": "{0}階ぶん落下した。",
+    "english": "You fell {0} levels.",
+    "segments": [
+      {
+        "text": "{0}階ぶん落下した。",
+        "reading": "kai bun rakka shita",
+        "gloss": "you fell {0} levels"
+      }
+    ]
+  },
+  "Mines_FallenFar": {
+    "japanese": "痛っ！{0}階ぶん落下した。",
+    "english": "Ouch! You fell {0} levels.",
+    "segments": [
+      {
+        "text": "痛っ！",
+        "reading": "ita",
+        "gloss": "ouch"
+      },
+      {
+        "text": "{0}階ぶん落下した。",
+        "reading": "kai bun rakka shita",
+        "gloss": "you fell {0} levels"
+      }
+    ]
+  },
+  "Mines_GoUp": {
+    "japanese": "ひとつ上にもどる",
+    "english": "Go up one level",
+    "segments": [
+      {
+        "text": "ひとつ上にもどる",
+        "reading": "hitotsu ue ni modoru",
+        "gloss": "go back up one level"
+      }
+    ]
+  },
+  "Mines_Infested": {
+    "japanese": "この 場所は モンスター だらけだ…",
+    "english": "This area is infested with monsters...",
+    "segments": [
+      {
+        "text": "この 場所は ",
+        "reading": "kono basho wa",
+        "gloss": "this area"
+      },
+      {
+        "text": "モンスター ",
+        "reading": "monsutā",
+        "gloss": "monsters"
+      },
+      {
+        "text": "だらけだ…",
+        "reading": "darake da",
+        "gloss": "is full of"
+      }
+    ]
+  },
+  "Mines_LeaveMine": {
+    "japanese": "鉱山を出る",
+    "english": "Leave the mine",
+    "segments": [
+      {
+        "text": "鉱山を出る",
+        "reading": "kōzan o deru",
+        "gloss": "leave the mine"
+      }
+    ]
+  },
+  "Mines_MineElevator_NotWorking": {
+    "japanese": "どうやら動いていないようだ…",
+    "english": "It doesn't seem to be working...",
+    "segments": [
+      {
+        "text": "どうやら動いていないようだ…",
+        "reading": "dōyara ugoite inai yō da",
+        "gloss": "it doesn't seem to be working"
+      }
+    ]
+  },
+  "Mines_Overrun": {
+    "japanese": "この 場所は モンスターで 埋め尽くされている。",
+    "english": "This area is overrun with monsters.",
+    "segments": [
+      {
+        "text": "この 場所は ",
+        "reading": "kono basho wa",
+        "gloss": "this area"
+      },
+      {
+        "text": "モンスターで ",
+        "reading": "monsutā de",
+        "gloss": "with monsters"
+      },
+      {
+        "text": "埋め尽くされている。",
+        "reading": "umetsukusarete iru",
+        "gloss": "is completely overrun"
+      }
+    ]
+  },
+  "Mines_ResetMine": {
+    "japanese": "鉱山の進行状況をリセットしますか？\n（鉱山レベル1に戻ります）",
+    "english": "Reset your progress in the mine?\\n(You'll be back at mine level 1.)",
+    "segments": [
+      {
+        "text": "鉱山の進行状況をリセットしますか？\n",
+        "reading": "kōzan no shinkō jōkyō o risetto shimasu ka",
+        "gloss": "will you reset your progress in the mine"
+      },
+      {
+        "text": "（鉱山レベル1に戻ります）",
+        "reading": "kōzan reberu ichi ni modorimasu",
+        "gloss": "you'll return to mine level 1"
+      }
+    ]
+  },
+  "Mines_Shaft": {
+    "japanese": "下層へ つながる シャフトが ある。",
+    "english": "There's a shaft leading down to a lower level.",
+    "segments": [
+      {
+        "text": "下層へ ",
+        "reading": "kasō e",
+        "gloss": "to a lower level"
+      },
+      {
+        "text": "つながる ",
+        "reading": "tsunagaru",
+        "gloss": "leading"
+      },
+      {
+        "text": "シャフトが ",
+        "reading": "shafuto ga",
+        "gloss": "a shaft"
+      },
+      {
+        "text": "ある。",
+        "reading": "aru",
+        "gloss": "there is"
+      }
+    ]
+  },
+  "Mines_ShaftJumpIn": {
+    "japanese": "飛び込む",
+    "english": "Jump in",
+    "segments": [
+      {
+        "text": "飛び込む",
+        "reading": "tobikomu",
+        "gloss": "jump in"
+      }
+    ]
+  },
+  "Mountain_AdventurersGuildNote": {
+    "japanese": "      * 冒険家のギルド*\n\n    実績のある冒険家のみ。",
+    "english": "* Adventurer's Guild *\\n\\n    Proven adventurers only.",
+    "segments": [
+      {
+        "text": "      * 冒険家のギルド*\n\n",
+        "reading": "bōkenka no girudo",
+        "gloss": "Adventurer's Guild"
+      },
+      {
+        "text": "    実績のある冒険家のみ。",
+        "reading": "jisseki no aru bōkenka nomi",
+        "gloss": "proven adventurers only"
+      }
+    ]
+  },
+  "NutHint_Arch": {
+    "japanese": "テントの男を助ける…",
+    "english": "Help the man in the tent...",
+    "segments": [
+      {
+        "text": "テントの男を助ける…",
+        "reading": "tento no otoko o tasukeru",
+        "gloss": "help the man in the tent"
+      }
+    ]
+  },
+  "NutHint_BuriedArch": {
+    "japanese": "骨の近くに埋まってる…",
+    "english": "Buried near the bones...",
+    "segments": [
+      {
+        "text": "骨の近くに埋まってる…",
+        "reading": "hone no chikaku ni umatteru",
+        "gloss": "buried near the bones"
+      }
+    ]
+  },
+  "NutHint_Caldera": {
+    "japanese": "火の山の頂上…",
+    "english": "Atop the fire mountain...",
+    "segments": [
+      {
+        "text": "火の山の頂上…",
+        "reading": "hi no yama no chōjō",
+        "gloss": "the summit of the fire mountain"
+      }
+    ]
+  },
+  "NutHint_GoldenCoconut": {
+    "japanese": "金色の硬いものの中…",
+    "english": "Inside a hard golden thing...",
+    "segments": [
+      {
+        "text": "金色の硬いものの中…",
+        "reading": "kin'iro no katai mono no naka",
+        "gloss": "inside a hard golden thing"
+      }
+    ]
+  },
+  "NutHint_Gourmand": {
+    "japanese": "ケロケロ…ゲロゲロ…",
+    "english": "Kribbit... gurrp...",
+    "segments": [
+      {
+        "text": "ケロケロ…",
+        "reading": "kerokero",
+        "gloss": "kribbit"
+      },
+      {
+        "text": "ゲロゲロ…",
+        "reading": "gerogero",
+        "gloss": "gurrp"
+      }
+    ]
+  },
+  "NutHint_HutTree": {
+    "japanese": "すぐ近くでふくらんでる…",
+    "english": "Bulging very close by...",
+    "segments": [
+      {
+        "text": "すぐ近くでふくらんでる…",
+        "reading": "sugu chikaku de fukurandeI ru",
+        "gloss": "bulging very close by"
+      }
+    ]
+  },
+  "NutHint_IslandFarming": {
+    "japanese": "{0}個、西の農場で育ってる…",
+    "english": "{0} growing on the farm to the west...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "西の農場で育ってる…",
+        "reading": "nishi no nōjō de sodatteru",
+        "gloss": "growing on the farm to the west"
+      }
+    ]
+  },
+  "NutHint_IslandFishing": {
+    "japanese": "{0}個、水の底に…",
+    "english": "{0} deep in the water...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "水の底に…",
+        "reading": "mizu no soko ni",
+        "gloss": "at the bottom of the water"
+      }
+    ]
+  },
+  "NutHint_IslandShrine": {
+    "japanese": "雨の森に隠れたやしろ…",
+    "english": "A shrine hidden in the rain forest...",
+    "segments": [
+      {
+        "text": "雨の森に隠れたやしろ…",
+        "reading": "ame no mori ni kakureta yashiro",
+        "gloss": "a shrine hidden in the rain forest"
+      }
+    ]
+  },
+  "NutHint_Journal": {
+    "japanese": "日記の中に隠れてる…",
+    "english": "Hidden in the journal...",
+    "segments": [
+      {
+        "text": "日記の中に隠れてる…",
+        "reading": "nikki no naka ni kakureteru",
+        "gloss": "hidden inside the journal"
+      }
+    ]
+  },
+  "NutHint_MusselStone": {
+    "japanese": "{0}個、浜辺の石に挟まってる…",
+    "english": "{0} stuck in the shelly stones by the shore...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "浜辺の石に挟まってる…",
+        "reading": "hamabe no ishi ni hasamatteru",
+        "gloss": "wedged in the stones on the shore"
+      }
+    ]
+  },
+  "NutHint_NorthBuried": {
+    "japanese": "{0}個、北に埋まってる…",
+    "english": "{0} buried in the north...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "北に埋まってる…",
+        "reading": "kita ni umatteru",
+        "gloss": "buried in the north"
+      }
+    ]
+  },
+  "NutHint_NorthHidden": {
+    "japanese": "{0}個、北に隠されてる…",
+    "english": "{0} hidden in the north...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "北に隠されてる…",
+        "reading": "kita ni kakusareteru",
+        "gloss": "hidden in the north"
+      }
+    ]
+  },
+  "NutHint_SouthEastBuried": {
+    "japanese": "{0}個、埋まってる…海賊の入り江…",
+    "english": "{0} buried... Pirate's Cove...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "埋まってる…",
+        "reading": "umatteru",
+        "gloss": "buried"
+      },
+      {
+        "text": "海賊の入り江…",
+        "reading": "kaizoku no irie",
+        "gloss": "Pirate's Cove"
+      }
+    ]
+  },
+  "NutHint_Squawk": {
+    "japanese": "（オウ）",
+    "english": "*Awk*",
+    "segments": [
+      {
+        "text": "（オウ）",
+        "reading": "ō",
+        "gloss": "*awk*"
+      }
+    ]
+  },
+  "NutHint_StardropPool": {
+    "japanese": "星の中に浸かってる…",
+    "english": "Bathing in the heart of the star...",
+    "segments": [
+      {
+        "text": "星の中に浸かってる…",
+        "reading": "hoshi no naka ni tsukatteru",
+        "gloss": "bathing inside the star"
+      }
+    ]
+  },
+  "NutHint_TigerSlime": {
+    "japanese": "西のシマシマのスライム…",
+    "english": "Stripey slimes to the west...",
+    "segments": [
+      {
+        "text": "西のシマシマのスライム…",
+        "reading": "nishi no shimashima no suraimu",
+        "gloss": "striped slimes to the west"
+      }
+    ]
+  },
+  "NutHint_VolcanoBarrel": {
+    "japanese": "{0}個、火の山の道具の中…",
+    "english": "{0} inside fire mountain gadgets...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "火の山の道具の中…",
+        "reading": "hi no yama no dōgu no naka",
+        "gloss": "inside the fire mountain's gadgets"
+      }
+    ]
+  },
+  "NutHint_VolcanoLava": {
+    "japanese": "火の山…火の川の下に隠れてる…",
+    "english": "Fire mountain... hidden beneath the river of fire...",
+    "segments": [
+      {
+        "text": "火の山…",
+        "reading": "hi no yama",
+        "gloss": "fire mountain"
+      },
+      {
+        "text": "火の川の下に隠れてる…",
+        "reading": "hi no kawa no shita ni kakureteru",
+        "gloss": "hidden beneath the river of fire"
+      }
+    ]
+  },
+  "NutHint_VolcanoMining": {
+    "japanese": "{0}個、火の山の木の実の石…",
+    "english": "{0} in nutty stone in the fire mountain...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "火の山の木の実の石…",
+        "reading": "hi no yama no ki no mi no ishi",
+        "gloss": "nutty stone in the fire mountain"
+      }
+    ]
+  },
+  "NutHint_VolcanoMonsters": {
+    "japanese": "{0}個、火の山のモンスターが持って行った…",
+    "english": "{0} taken by monsters in the fire mountain...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "火の山のモンスターが持って行った…",
+        "reading": "hi no yama no monsutā ga motte itta",
+        "gloss": "taken by monsters in the fire mountain"
+      }
+    ]
+  },
+  "NutHint_VolcanoTreasure": {
+    "japanese": "{0}個、火の山の宝物に隠れてる…",
+    "english": "{0} hidden in the fire mountain's treasures...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "火の山の宝物に隠れてる…",
+        "reading": "hi no yama no takaramono ni kakureteru",
+        "gloss": "hidden in the fire mountain's treasures"
+      }
+    ]
+  },
+  "NutHint_WestBuried": {
+    "japanese": "{0}個、西に埋まってる…",
+    "english": "{0} buried in the west...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "西に埋まってる…",
+        "reading": "nishi ni umatteru",
+        "gloss": "buried in the west"
+      }
+    ]
+  },
+  "NutHint_WestHidden": {
+    "japanese": "{0}個、西に隠されてる…",
+    "english": "{0} hidden in the west...",
+    "segments": [
+      {
+        "text": "{0}個、",
+        "reading": "ko",
+        "gloss": "{0} of them"
+      },
+      {
+        "text": "西に隠されてる…",
+        "reading": "nishi ni kakusareteru",
+        "gloss": "hidden in the west"
+      }
+    ]
+  },
+  "Railroad_Box_ConsumeShell": {
+    "japanese": "箱のなかに貝がらをおいた。とたんに、屋根のたる木からメモがひらりとおちてきた。",
+    "english": "You place the shell in the box. At once, a note flutters down from the rafters.",
+    "segments": [
+      {
+        "text": "箱のなかに貝がらをおいた。",
+        "reading": "hako no naka ni kaigara o oita",
+        "gloss": "you placed the shell in the box"
+      },
+      {
+        "text": "とたんに、屋根のたる木からメモがひらりとおちてきた。",
+        "reading": "totan ni yane no taruki kara memo ga hirari to ochite kita",
+        "gloss": "at once a note fluttered down from the roof rafters"
+      }
+    ]
+  },
+  "Railroad_Box_Initial": {
+    "japanese": "箱はからっぽだ。",
+    "english": "The box is empty.",
+    "segments": [
+      {
+        "text": "箱はからっぽだ。",
+        "reading": "hako wa karappo da",
+        "gloss": "the box is empty"
+      }
+    ]
+  },
+  "Railroad_Box_MrQiNote": {
+    "japanese": "『よくやった。次の指令だ。町長の家のれいぞうこにビートを10個入れろ。 - ミスターQi 』",
+    "english": "\"Well done. Your next task: put 10 beets in the mayor's fridge. — Mr. Qi\"",
+    "segments": [
+      {
+        "text": "『よくやった。",
+        "reading": "yoku yatta",
+        "gloss": "well done"
+      },
+      {
+        "text": "次の指令だ。",
+        "reading": "tsugi no shirei da",
+        "gloss": "here's the next order"
+      },
+      {
+        "text": "町長の家のれいぞうこにビートを10個入れろ。",
+        "reading": "chōchō no ie no reizōko ni bīto o jikko irero",
+        "gloss": "put 10 beets in the fridge at the mayor's house"
+      },
+      {
+        "text": " - ミスターQi 』",
+        "reading": "Misutā Qi",
+        "gloss": "- Mr. Qi"
+      }
+    ]
+  },
+  "Railroad_TrainComing": {
+    "japanese": "列車が スターデュー バレーを 通過 しています。",
+    "english": "A train is passing through Stardew Valley.",
+    "segments": [
+      {
+        "text": "列車が ",
+        "reading": "ressha ga",
+        "gloss": "a train"
+      },
+      {
+        "text": "スターデュー バレーを ",
+        "reading": "Sutādyū Barē o",
+        "gloss": "through Stardew Valley"
+      },
+      {
+        "text": "通過 しています。",
+        "reading": "tsūka shite imasu",
+        "gloss": "is passing"
+      }
+    ]
+  },
+  "Saloon_Arcade_Cowboy_Continue": {
+    "japanese": "旅を続ける",
+    "english": "Continue Journey",
+    "segments": [
+      {
+        "text": "旅を続ける",
+        "reading": "tabi o tsuzukeru",
+        "gloss": "continue the journey"
+      }
+    ]
+  },
+  "Saloon_Arcade_Cowboy_Menu": {
+    "japanese": "= プレーリーキングの旅 =",
+    "english": "= Journey of the Prairie King =",
+    "segments": [
+      {
+        "text": "= プレーリーキングの旅 =",
+        "reading": "Purērī Kingu no tabi",
+        "gloss": "Journey of the Prairie King"
+      }
+    ]
+  },
+  "Saloon_Arcade_Cowboy_NewGame": {
+    "japanese": "新しい旅を始める",
+    "english": "Start New Journey",
+    "segments": [
+      {
+        "text": "新しい旅を始める",
+        "reading": "atarashii tabi o hajimeru",
+        "gloss": "start a new journey"
+      }
+    ]
+  },
+  "Saloon_Arcade_Minecart_EndlessMode": {
+    "japanese": "エンドレスモード",
+    "english": "Endless Mode",
+    "segments": [
+      {
+        "text": "エンドレスモード",
+        "reading": "endoresu mōdo",
+        "gloss": "endless mode"
+      }
+    ]
+  },
+  "Saloon_Arcade_Minecart_Exit": {
+    "japanese": "やめる",
+    "english": "Exit",
+    "segments": [
+      {
+        "text": "やめる",
+        "reading": "yameru",
+        "gloss": "quit"
+      }
+    ]
+  },
+  "Saloon_Arcade_Minecart_Inactive": {
+    "japanese": "ガイコツのかたちをしたカギ穴がある…",
+    "english": "There's a skull-shaped keyhole...",
+    "segments": [
+      {
+        "text": "ガイコツのかたちをしたカギ穴がある…",
+        "reading": "gaikotsu no katachi o shita kagiana ga aru",
+        "gloss": "there's a skull-shaped keyhole"
+      }
+    ]
+  },
+  "Saloon_Arcade_Minecart_Menu": {
+    "japanese": "= ジュニモカート =",
+    "english": "= Junimo Kart =",
+    "segments": [
+      {
+        "text": "= ジュニモカート =",
+        "reading": "Junimo Kāto",
+        "gloss": "Junimo Kart"
+      }
+    ]
+  },
+  "Saloon_Arcade_Minecart_ProgressMode": {
+    "japanese": "ステージモード",
+    "english": "Progress Mode",
+    "segments": [
+      {
+        "text": "ステージモード",
+        "reading": "sutēji mōdo",
+        "gloss": "stage mode"
+      }
+    ]
+  },
+  "Saloon_Arcade_PK_NewGame+": {
+    "japanese": "辛い道を歩む覚悟があるなら、ボタンを押してください…",
+    "english": "Press a button if you're ready for a harder road...",
+    "segments": [
+      {
+        "text": "辛い道を歩む覚悟があるなら、",
+        "reading": "tsurai michi o ayumu kakugo ga aru nara",
+        "gloss": "if you're prepared to walk a hard road"
+      },
+      {
+        "text": "ボタンを押してください…",
+        "reading": "botan o oshite kudasai",
+        "gloss": "please press a button"
+      }
+    ]
+  },
+  "Saloon_ColaMachine_Question": {
+    "japanese": "Jojaコーラを75Gで買いますか？",
+    "english": "Buy a Joja Cola for 75g?",
+    "segments": [
+      {
+        "text": "Jojaコーラ",
+        "reading": "Joja kōra",
+        "gloss": "Joja Cola"
+      },
+      {
+        "text": "を75Gで買いますか？",
+        "reading": "o nanajūgo gōrudo de kaimasu ka",
+        "gloss": "will you buy for 75g"
+      }
+    ]
+  },
+  "Saloon_MoneyBox": {
+    "japanese": "今日はジンジャーアイランドでバーテンダーをしています。でも買い物はできますよ！^ -ガス",
+    "english": "I'm tending bar on Ginger Island today. But you can still shop!^ -Gus",
+    "segments": [
+      {
+        "text": "今日はジンジャーアイランドでバーテンダーをしています。",
+        "reading": "kyō wa Jinjā Airando de bātendā o shite imasu",
+        "gloss": "today I'm tending bar on Ginger Island"
+      },
+      {
+        "text": "でも買い物はできますよ！^ ",
+        "reading": "demo kaimono wa dekimasu yo",
+        "gloss": "but you can still shop"
+      },
+      {
+        "text": "-ガス",
+        "reading": "Gasu",
+        "gloss": "-Gus"
+      }
+    ]
+  },
+  "SamHouse_Sam_Trash": {
+    "japanese": "サムはゴミ箱をいつもきれいにしているようだ。",
+    "english": "Looks like Sam keeps his bin clean.",
+    "segments": [
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "はゴミ箱をいつもきれいにしているようだ。",
+        "reading": "wa gomibako o itsumo kirei ni shite iru yō da",
+        "gloss": "seems to keep his bin clean"
+      }
+    ]
+  },
+  "ScienceHouse_CarpenterMenu": {
+    "japanese": "何か ご用かしら？",
+    "english": "What can I do for you?",
+    "segments": [
+      {
+        "text": "何か ",
+        "reading": "nanika",
+        "gloss": "something"
+      },
+      {
+        "text": "ご用かしら？",
+        "reading": "go-yō kashira",
+        "gloss": "do you need"
+      }
+    ]
+  },
+  "ScienceHouse_CarpenterMenu_CommunityUpgrade": {
+    "japanese": "コミュニティの拡充",
+    "english": "Community Upgrade",
+    "segments": [
+      {
+        "text": "コミュニティの",
+        "reading": "komyuniti no",
+        "gloss": "community"
+      },
+      {
+        "text": "拡充",
+        "reading": "kakujū",
+        "gloss": "expansion"
+      }
+    ]
+  },
+  "ScienceHouse_CarpenterMenu_Construct": {
+    "japanese": "牧場施設を 建設",
+    "english": "Construct Farm Buildings",
+    "segments": [
+      {
+        "text": "牧場施設を ",
+        "reading": "bokujō shisetsu o",
+        "gloss": "farm buildings"
+      },
+      {
+        "text": "建設",
+        "reading": "kensetsu",
+        "gloss": "construct"
+      }
+    ]
+  },
+  "ScienceHouse_CarpenterMenu_Leave": {
+    "japanese": "去る",
+    "english": "Leave",
+    "segments": [
+      {
+        "text": "去る",
+        "reading": "saru",
+        "gloss": "leave"
+      }
+    ]
+  },
+  "ScienceHouse_CarpenterMenu_RenovateCabin": {
+    "japanese": "小屋のリノベーションをする",
+    "english": "Make Cabin Renovations",
+    "segments": [
+      {
+        "text": "小屋のリノベーションをする",
+        "reading": "koya no rinobēshon o suru",
+        "gloss": "renovate the cabin"
+      }
+    ]
+  },
+  "ScienceHouse_CarpenterMenu_RenovateHouse": {
+    "japanese": "家のリノベーションをする",
+    "english": "Make House Renovations",
+    "segments": [
+      {
+        "text": "家のリノベーションをする",
+        "reading": "ie no rinobēshon o suru",
+        "gloss": "renovate the house"
+      }
+    ]
+  },
+  "ScienceHouse_CarpenterMenu_Shop": {
+    "japanese": "店",
+    "english": "Shop",
+    "segments": [
+      {
+        "text": "店",
+        "reading": "mise",
+        "gloss": "shop"
+      }
+    ]
+  },
+  "ScienceHouse_CarpenterMenu_UpgradeCabin": {
+    "japanese": "小屋の改築",
+    "english": "Upgrade Cabin",
+    "segments": [
+      {
+        "text": "小屋の改築",
+        "reading": "koya no kaichiku",
+        "gloss": "cabin rebuilding"
+      }
+    ]
+  },
+  "ScienceHouse_CarpenterMenu_UpgradeHouse": {
+    "japanese": "家を アップグレード",
+    "english": "Upgrade House",
+    "segments": [
+      {
+        "text": "家を ",
+        "reading": "ie o",
+        "gloss": "the house"
+      },
+      {
+        "text": "アップグレード",
+        "reading": "appugurēdo",
+        "gloss": "upgrade"
+      }
+    ]
+  },
+  "ScienceHouse_Carpenter_CommunityUpgrade1": {
+    "japanese": "えっ、 なになに？パムに 家を 建てて あげたいの？それ いいわね！^それじゃあ 木材が 950個と 費用は 500,000g ってとこかな",
+    "english": "...What's that? You want to build Pam a house? That's a great idea!^I'd need 950 wood and about 500,000g",
+    "segments": [
+      {
+        "text": "えっ、 ",
+        "reading": "e",
+        "gloss": "what"
+      },
+      {
+        "text": "なになに？",
+        "reading": "nani nani",
+        "gloss": "what's that"
+      },
+      {
+        "text": "パムに ",
+        "reading": "Pamu ni",
+        "gloss": "for Pam"
+      },
+      {
+        "text": "家を ",
+        "reading": "ie o",
+        "gloss": "a house"
+      },
+      {
+        "text": "建てて ",
+        "reading": "tatete",
+        "gloss": "to build"
+      },
+      {
+        "text": "あげたいの？",
+        "reading": "agetai no",
+        "gloss": "you want"
+      },
+      {
+        "text": "それ いいわね！^",
+        "reading": "sore ii wa ne",
+        "gloss": "that's a great idea"
+      },
+      {
+        "text": "それじゃあ ",
+        "reading": "sore jā",
+        "gloss": "in that case"
+      },
+      {
+        "text": "木材が 950個と ",
+        "reading": "mokuzai ga kyūhyakugojikko to",
+        "gloss": "950 wood and"
+      },
+      {
+        "text": "費用は 500,000g ",
+        "reading": "hiyō wa gojūman gōrudo",
+        "gloss": "a cost of 500,000g"
+      },
+      {
+        "text": "ってとこかな",
+        "reading": "tte toko ka na",
+        "gloss": "is about what it'd take"
+      }
+    ]
+  },
+  "ScienceHouse_Carpenter_CommunityUpgrade2": {
+    "japanese": "…どうしたの？谷の周りにいくつか近道を作って欲しいですって？もちろん、私ならできるよ！^300,000gは必要かな…",
+    "english": "...What's that? You want me to add some shortcuts around the valley? Of course I can!^I'll need 300,000g...",
+    "segments": [
+      {
+        "text": "…どうしたの？",
+        "reading": "dō shita no",
+        "gloss": "what's that"
+      },
+      {
+        "text": "谷の周りにいくつか近道を作って欲しいですって？",
+        "reading": "tani no mawari ni ikutsuka chikamichi o tsukutte hoshii desu tte",
+        "gloss": "you want me to make some shortcuts around the valley"
+      },
+      {
+        "text": "もちろん、私ならできるよ！^",
+        "reading": "mochiron watashi nara dekiru yo",
+        "gloss": "of course I can do it"
+      },
+      {
+        "text": "300,000gは必要かな…",
+        "reading": "sanjūman gōrudo wa hitsuyō ka na",
+        "gloss": "I'd need 300,000g"
+      }
+    ]
+  },
+  "ScienceHouse_Carpenter_NotEnoughHardwood": {
+    "japanese": "ごめんなさい… お金は あるみたいだけど、 硬木が {0}個 いるのよ。",
+    "english": "Sorry... you have the money, but I also need {0} pieces of hardwood.",
+    "segments": [
+      {
+        "text": "ごめんなさい… ",
+        "reading": "gomen nasai",
+        "gloss": "sorry"
+      },
+      {
+        "text": "お金は ",
+        "reading": "o-kane wa",
+        "gloss": "the money"
+      },
+      {
+        "text": "あるみたいだけど、 ",
+        "reading": "aru mitai da kedo",
+        "gloss": "you seem to have, but"
+      },
+      {
+        "text": "硬木が {0}個 ",
+        "reading": "kōboku ga ko",
+        "gloss": "{0} pieces of hardwood"
+      },
+      {
+        "text": "いるのよ。",
+        "reading": "iru no yo",
+        "gloss": "are needed"
+      }
+    ]
+  },
+  "ScienceHouse_Carpenter_NotEnoughWood": {
+    "japanese": "ごめんなさい… お金は あるみたいだけど、 木材が {0}個 いるのよ。",
+    "english": "Sorry... you have the money, but I also need {0} pieces of wood.",
+    "segments": [
+      {
+        "text": "ごめんなさい… ",
+        "reading": "gomen nasai",
+        "gloss": "sorry"
+      },
+      {
+        "text": "お金は ",
+        "reading": "o-kane wa",
+        "gloss": "the money"
+      },
+      {
+        "text": "あるみたいだけど、 ",
+        "reading": "aru mitai da kedo",
+        "gloss": "you seem to have, but"
+      },
+      {
+        "text": "木材が {0}個 ",
+        "reading": "mokuzai ga ko",
+        "gloss": "{0} pieces of wood"
+      },
+      {
+        "text": "いるのよ。",
+        "reading": "iru no yo",
+        "gloss": "are needed"
+      }
+    ]
+  },
+  "ScienceHouse_Carpenter_UpgradeHouse1": {
+    "japanese": "あなたの 家を 拡張して、 キッチンを 追加することが できるわよ。 お値段は 10,000g、 それと 木を 450個 もってきてちょうだい。 どうする？",
+    "english": "I can expand your house and add a kitchen. It costs 10,000g, and you'll need to bring me 450 wood. Interested?",
+    "segments": [
+      {
+        "text": "あなたの 家を ",
+        "reading": "anata no ie o",
+        "gloss": "your house"
+      },
+      {
+        "text": "拡張して、 ",
+        "reading": "kakuchō shite",
+        "gloss": "expand and"
+      },
+      {
+        "text": "キッチンを ",
+        "reading": "kitchin o",
+        "gloss": "a kitchen"
+      },
+      {
+        "text": "追加することが ",
+        "reading": "tsuika suru koto ga",
+        "gloss": "add"
+      },
+      {
+        "text": "できるわよ。 ",
+        "reading": "dekiru wa yo",
+        "gloss": "I can"
+      },
+      {
+        "text": "お値段は 10,000g、 ",
+        "reading": "o-nedan wa ichiman gōrudo",
+        "gloss": "the price is 10,000g"
+      },
+      {
+        "text": "それと 木を 450個 ",
+        "reading": "sore to ki o yonhyakugojikko",
+        "gloss": "and 450 pieces of wood"
+      },
+      {
+        "text": "もってきてちょうだい。 ",
+        "reading": "motte kite chōdai",
+        "gloss": "please bring me"
+      },
+      {
+        "text": "どうする？",
+        "reading": "dō suru",
+        "gloss": "what do you say"
+      }
+    ]
+  },
+  "ScienceHouse_Carpenter_UpgradeHouse2": {
+    "japanese": "あなたの 家を 拡張して、 子ども部屋を 追加することが できるわよ。 お値段は 65,000g、 それと 硬木を 100個 もってきてちょうだい。 どうする？",
+    "english": "I can expand your house and add a nursery. It costs 65,000g, and you'll need to bring me 100 hardwood. Interested?",
+    "segments": [
+      {
+        "text": "あなたの 家を ",
+        "reading": "anata no ie o",
+        "gloss": "your house"
+      },
+      {
+        "text": "拡張して、 ",
+        "reading": "kakuchō shite",
+        "gloss": "expand and"
+      },
+      {
+        "text": "子ども部屋を ",
+        "reading": "kodomo beya o",
+        "gloss": "a nursery"
+      },
+      {
+        "text": "追加することが ",
+        "reading": "tsuika suru koto ga",
+        "gloss": "add"
+      },
+      {
+        "text": "できるわよ。 ",
+        "reading": "dekiru wa yo",
+        "gloss": "I can"
+      },
+      {
+        "text": "お値段は 65,000g、 ",
+        "reading": "o-nedan wa rokuman gosen gōrudo",
+        "gloss": "the price is 65,000g"
+      },
+      {
+        "text": "それと 硬木を 100個 ",
+        "reading": "sore to kōboku o hyakko",
+        "gloss": "and 100 pieces of hardwood"
+      },
+      {
+        "text": "もってきてちょうだい。 ",
+        "reading": "motte kite chōdai",
+        "gloss": "please bring me"
+      },
+      {
+        "text": "どうする？",
+        "reading": "dō suru",
+        "gloss": "what do you say"
+      }
+    ]
+  },
+  "ScienceHouse_Carpenter_UpgradeHouse3": {
+    "japanese": "家に地下室を増築できるよ。地下室があれば、チーズやワインみたいな加工品を熟成できるんだ。増築には100000G必要だけど、興味ある？",
+    "english": "I can add a cellar to your house. With a cellar you can age products like cheese and wine. It costs 100,000g — interested?",
+    "segments": [
+      {
+        "text": "家に地下室を増築できるよ。",
+        "reading": "ie ni chikashitsu o zōchiku dekiru yo",
+        "gloss": "I can add a cellar to the house"
+      },
+      {
+        "text": "地下室があれば、",
+        "reading": "chikashitsu ga areba",
+        "gloss": "if you have a cellar"
+      },
+      {
+        "text": "チーズやワインみたいな加工品を熟成できるんだ。",
+        "reading": "chīzu ya wain mitai na kakōhin o jukusei dekiru n da",
+        "gloss": "you can age products like cheese and wine"
+      },
+      {
+        "text": "増築には100000G必要だけど、",
+        "reading": "zōchiku ni wa jūman gōrudo hitsuyō da kedo",
+        "gloss": "the extension needs 100,000g, but"
+      },
+      {
+        "text": "興味ある？",
+        "reading": "kyōmi aru",
+        "gloss": "are you interested"
+      }
+    ]
+  },
+  "ScienceHouse_MoneyBox": {
+    "japanese": "今日は島にいるけど、何でも買うことができるよ。無人販売なんだ！^ -ロビン",
+    "english": "I'm on the island today, but you can still buy whatever you like. It's unattended!^ -Robin",
+    "segments": [
+      {
+        "text": "今日は島にいるけど、",
+        "reading": "kyō wa shima ni iru kedo",
+        "gloss": "I'm on the island today, but"
+      },
+      {
+        "text": "何でも買うことができるよ。",
+        "reading": "nan demo kau koto ga dekiru yo",
+        "gloss": "you can still buy anything"
+      },
+      {
+        "text": "無人販売なんだ！^ ",
+        "reading": "mujin hanbai nan da",
+        "gloss": "it's unattended sales"
+      },
+      {
+        "text": "-ロビン",
+        "reading": "Robin",
+        "gloss": "-Robin"
+      }
+    ]
+  },
+  "ScienceHouse_Renovation_AddCornerRoom": {
+    "japanese": "角部屋を追加/家の北東に角部屋を追加します。/リノベーションする場所を選択してください。",
+    "english": "Add Corner Room/Adds a room in the northeast corner of the house./Select an area for the renovation.",
+    "segments": [
+      {
+        "text": "角部屋を追加/",
+        "reading": "kadobeya o tsuika",
+        "gloss": "add a corner room"
+      },
+      {
+        "text": "家の北東に角部屋を追加します。/",
+        "reading": "ie no hokutō ni kadobeya o tsuika shimasu",
+        "gloss": "adds a corner room to the northeast of the house"
+      },
+      {
+        "text": "リノベーションする場所を選択してください。",
+        "reading": "rinobēshon suru basho o sentaku shite kudasai",
+        "gloss": "please select a place to renovate"
+      }
+    ]
+  },
+  "ScienceHouse_Renovation_AddSouthernRoom": {
+    "japanese": "南側の部屋を追加/寝室の南側に部屋を追加します。/リノベーションする場所を選択してください。",
+    "english": "Add Southern Room/Adds a room south of your bedroom./Select an area for the renovation.",
+    "segments": [
+      {
+        "text": "南側の部屋を追加/",
+        "reading": "minamigawa no heya o tsuika",
+        "gloss": "add a southern room"
+      },
+      {
+        "text": "寝室の南側に部屋を追加します。/",
+        "reading": "shinshitsu no minamigawa ni heya o tsuika shimasu",
+        "gloss": "adds a room south of the bedroom"
+      },
+      {
+        "text": "リノベーションする場所を選択してください。",
+        "reading": "rinobēshon suru basho o sentaku shite kudasai",
+        "gloss": "please select a place to renovate"
+      }
+    ]
+  },
+  "ScienceHouse_Renovation_BuildCrib": {
+    "japanese": "ベビーベッドを作る/あなたの家にベビーベッドを作ります。/ベビーベッドを置く場所を選択してください。",
+    "english": "Build Crib/Builds a crib in your home./Select a location for the crib.",
+    "segments": [
+      {
+        "text": "ベビーベッドを作る/",
+        "reading": "bebī beddo o tsukuru",
+        "gloss": "build a crib"
+      },
+      {
+        "text": "あなたの家にベビーベッドを作ります。/",
+        "reading": "anata no ie ni bebī beddo o tsukurimasu",
+        "gloss": "builds a crib in your house"
+      },
+      {
+        "text": "ベビーベッドを置く場所を選択してください。",
+        "reading": "bebī beddo o oku basho o sentaku shite kudasai",
+        "gloss": "please select a place for the crib"
+      }
+    ]
+  },
+  "ScienceHouse_Renovation_CloseBedroom": {
+    "japanese": "ベッドルームを区切る/壁を作ってベッドルームと玄関を区切ります。/リノベーションする場所を選択してください。",
+    "english": "Close Bedroom/Builds a wall separating your bedroom and the entrance./Select an area for the renovation.",
+    "segments": [
+      {
+        "text": "ベッドルームを区切る/",
+        "reading": "beddo rūmu o kugiru",
+        "gloss": "partition the bedroom"
+      },
+      {
+        "text": "壁を作ってベッドルームと玄関を区切ります。/",
+        "reading": "kabe o tsukutte beddo rūmu to genkan o kugirimasu",
+        "gloss": "builds a wall separating bedroom and entrance"
+      },
+      {
+        "text": "リノベーションする場所を選択してください。",
+        "reading": "rinobēshon suru basho o sentaku shite kudasai",
+        "gloss": "please select a place to renovate"
+      }
+    ]
+  },
+  "ScienceHouse_Renovation_OpenBedroom": {
+    "japanese": "ベッドルームを開放する/ベッドルームと玄関を区切っている壁を取り除きます。/リノベーションする場所を選択してください。",
+    "english": "Open Bedroom/Removes the wall separating your bedroom and the entrance./Select an area for the renovation.",
+    "segments": [
+      {
+        "text": "ベッドルームを開放する/",
+        "reading": "beddo rūmu o kaihō suru",
+        "gloss": "open up the bedroom"
+      },
+      {
+        "text": "ベッドルームと玄関を区切っている壁を取り除きます。/",
+        "reading": "beddo rūmu to genkan o kugitte iru kabe o torinozokimasu",
+        "gloss": "removes the wall separating bedroom and entrance"
+      },
+      {
+        "text": "リノベーションする場所を選択してください。",
+        "reading": "rinobēshon suru basho o sentaku shite kudasai",
+        "gloss": "please select a place to renovate"
+      }
+    ]
+  },
+  "ScienceHouse_Renovation_RemoveCornerRoom": {
+    "japanese": "角部屋を撤去/家の北東の角部屋を撤去します。/リノベーションする場所を選択してください。",
+    "english": "Remove Corner Room/Removes the room in the northeast corner of the house./Select an area for the renovation.",
+    "segments": [
+      {
+        "text": "角部屋を撤去/",
+        "reading": "kadobeya o tekkyo",
+        "gloss": "remove the corner room"
+      },
+      {
+        "text": "家の北東の角部屋を撤去します。/",
+        "reading": "ie no hokutō no kadobeya o tekkyo shimasu",
+        "gloss": "removes the corner room in the northeast of the house"
+      },
+      {
+        "text": "リノベーションする場所を選択してください。",
+        "reading": "rinobēshon suru basho o sentaku shite kudasai",
+        "gloss": "please select a place to renovate"
+      }
+    ]
+  },
+  "ScienceHouse_Renovation_RemoveCrib": {
+    "japanese": "ベビーベッドを取り外す/家からベビーベッドを取り外します。/ベビーベッドを選択して取り外してください。",
+    "english": "Remove Crib/Removes the crib from your home./Select a crib to remove.",
+    "segments": [
+      {
+        "text": "ベビーベッドを取り外す/",
+        "reading": "bebī beddo o torihazusu",
+        "gloss": "remove the crib"
+      },
+      {
+        "text": "家からベビーベッドを取り外します。/",
+        "reading": "ie kara bebī beddo o torihazushimasu",
+        "gloss": "removes the crib from the house"
+      },
+      {
+        "text": "ベビーベッドを選択して取り外してください。",
+        "reading": "bebī beddo o sentaku shite torihazushite kudasai",
+        "gloss": "please select a crib to remove"
+      }
+    ]
+  },
+  "ScienceHouse_Renovation_RemoveSouthernRoom": {
+    "japanese": "南側の部屋を撤去/寝室の南側の部屋を撤去します。/リノベーションする場所を選択してください。",
+    "english": "Remove Southern Room/Removes the room south of your bedroom./Select an area for the renovation.",
+    "segments": [
+      {
+        "text": "南側の部屋を撤去/",
+        "reading": "minamigawa no heya o tekkyo",
+        "gloss": "remove the southern room"
+      },
+      {
+        "text": "寝室の南側の部屋を撤去します。/",
+        "reading": "shinshitsu no minamigawa no heya o tekkyo shimasu",
+        "gloss": "removes the room south of the bedroom"
+      },
+      {
+        "text": "リノベーションする場所を選択してください。",
+        "reading": "rinobēshon suru basho o sentaku shite kudasai",
+        "gloss": "please select a place to renovate"
+      }
+    ]
+  },
+  "ScienceHouse_RobinAbsent": {
+    "japanese": "ごめんなさい！本日は閉店しました…キャロラインのところでエアロビクスクラブに参加しています。\n\n-ロビン",
+    "english": "Sorry! The shop's closed for the day... I'm at Caroline's for aerobics club.\\n\\n-Robin",
+    "segments": [
+      {
+        "text": "ごめんなさい！",
+        "reading": "gomen nasai",
+        "gloss": "sorry"
+      },
+      {
+        "text": "本日は閉店しました…",
+        "reading": "honjitsu wa heiten shimashita",
+        "gloss": "we're closed for the day"
+      },
+      {
+        "text": "キャロラインのところでエアロビクスクラブに参加しています。\n\n",
+        "reading": "Kyarorain no tokoro de earobikusu kurabu ni sanka shite imasu",
+        "gloss": "I'm at Caroline's taking part in aerobics club"
+      },
+      {
+        "text": "-ロビン",
+        "reading": "Robin",
+        "gloss": "-Robin"
+      }
+    ]
+  },
+  "Secret_Note_Name": {
+    "japanese": "ひみつのメモ",
+    "english": "Secret Note",
+    "segments": [
+      {
+        "text": "ひみつの",
+        "reading": "himitsu no",
+        "gloss": "secret"
+      },
+      {
+        "text": "メモ",
+        "reading": "memo",
+        "gloss": "note"
+      }
+    ]
+  },
+  "SeedShop_Abigail_Drawers": {
+    "japanese": "なかは服でいっぱい…おや？服の下に剣がかくしてある…",
+    "english": "It's full of clothes... wait? There's a sword hidden under the clothes...",
+    "segments": [
+      {
+        "text": "なかは服でいっぱい…",
+        "reading": "naka wa fuku de ippai",
+        "gloss": "it's full of clothes inside"
+      },
+      {
+        "text": "おや？",
+        "reading": "oya",
+        "gloss": "wait"
+      },
+      {
+        "text": "服の下に剣がかくしてある…",
+        "reading": "fuku no shita ni ken ga kakushite aru",
+        "gloss": "a sword is hidden under the clothes"
+      }
+    ]
+  },
+  "SeedShop_BuyBackpack_Question24": {
+    "japanese": "大きなバックパック -- 24スロット",
+    "english": "Large Backpack — 24 slots",
+    "segments": [
+      {
+        "text": "大きなバックパック ",
+        "reading": "ōkina bakkupakku",
+        "gloss": "large backpack"
+      },
+      {
+        "text": "-- 24スロット",
+        "reading": "nijūyon surotto",
+        "gloss": "24 slots"
+      }
+    ]
+  },
+  "SeedShop_BuyBackpack_Question36": {
+    "japanese": "特大バックパック -- 36スロット",
+    "english": "Deluxe Backpack — 36 slots",
+    "segments": [
+      {
+        "text": "特大バックパック ",
+        "reading": "tokudai bakkupakku",
+        "gloss": "extra-large backpack"
+      },
+      {
+        "text": "-- 36スロット",
+        "reading": "sanjūroku surotto",
+        "gloss": "36 slots"
+      }
+    ]
+  },
+  "SeedShop_BuyBackpack_Response10000": {
+    "japanese": "買う （10000G）",
+    "english": "Purchase (10,000g)",
+    "segments": [
+      {
+        "text": "買う ",
+        "reading": "kau",
+        "gloss": "buy"
+      },
+      {
+        "text": "（10000G）",
+        "reading": "ichiman gōrudo",
+        "gloss": "10,000g"
+      }
+    ]
+  },
+  "SeedShop_BuyBackpack_Response2000": {
+    "japanese": "買う （2000G）",
+    "english": "Purchase (2,000g)",
+    "segments": [
+      {
+        "text": "買う ",
+        "reading": "kau",
+        "gloss": "buy"
+      },
+      {
+        "text": "（2000G）",
+        "reading": "nisen gōrudo",
+        "gloss": "2,000g"
+      }
+    ]
+  },
+  "SeedShop_BuyBackpack_ResponseNo": {
+    "japanese": "あとにする",
+    "english": "Not now",
+    "segments": [
+      {
+        "text": "あとにする",
+        "reading": "ato ni suru",
+        "gloss": "leave it for later"
+      }
+    ]
+  },
+  "SeedShop_LockedWed": {
+    "japanese": "水曜日定休",
+    "english": "Closed on Wednesdays",
+    "segments": [
+      {
+        "text": "水曜日定休",
+        "reading": "suiyōbi teikyū",
+        "gloss": "closed Wednesdays"
+      }
+    ]
+  },
+  "SeedShop_MoneyBox": {
+    "japanese": "今日は休みを取って島に行ってきます。代金は箱の中に入れてください。不正はいけませんよ！^ -ピエール",
+    "english": "I'm taking the day off to visit the island. Please put your money in the box. No cheating!^ -Pierre",
+    "segments": [
+      {
+        "text": "今日は休みを取って島に行ってきます。",
+        "reading": "kyō wa yasumi o totte shima ni itte kimasu",
+        "gloss": "I'm taking the day off to visit the island"
+      },
+      {
+        "text": "代金は箱の中に入れてください。",
+        "reading": "daikin wa hako no naka ni irete kudasai",
+        "gloss": "please put the payment in the box"
+      },
+      {
+        "text": "不正はいけませんよ！^ ",
+        "reading": "fusei wa ikemasen yo",
+        "gloss": "no cheating"
+      },
+      {
+        "text": "-ピエール",
+        "reading": "Piēru",
+        "gloss": "-Pierre"
+      }
+    ]
+  },
+  "SeedShop_Yoba": {
+    "japanese": "ヨバ神のほこら",
+    "english": "Altar of Yoba",
+    "segments": [
+      {
+        "text": "ヨバ神の",
+        "reading": "Yoba-shin no",
+        "gloss": "the god Yoba's"
+      },
+      {
+        "text": "ほこら",
+        "reading": "hokora",
+        "gloss": "shrine"
+      }
+    ]
+  },
+  "Sewer_DogStatue": {
+    "japanese": "-不確実性の像-^この像の 助けがあると、職業を 変えることが できる。^10,000gを ささげますか？",
+    "english": "-Statue of Uncertainty-^With this statue's help, you can change professions.^Make an offering of 10,000g?",
+    "segments": [
+      {
+        "text": "-不確実性の像-^",
+        "reading": "fukakujitsusei no zō",
+        "gloss": "Statue of Uncertainty"
+      },
+      {
+        "text": "この像の ",
+        "reading": "kono zō no",
+        "gloss": "this statue's"
+      },
+      {
+        "text": "助けがあると、",
+        "reading": "tasuke ga aru to",
+        "gloss": "with the help of"
+      },
+      {
+        "text": "職業を ",
+        "reading": "shokugyō o",
+        "gloss": "your profession"
+      },
+      {
+        "text": "変えることが ",
+        "reading": "kaeru koto ga",
+        "gloss": "changing"
+      },
+      {
+        "text": "できる。^",
+        "reading": "dekiru",
+        "gloss": "is possible"
+      },
+      {
+        "text": "10,000gを ",
+        "reading": "ichiman gōrudo o",
+        "gloss": "10,000g"
+      },
+      {
+        "text": "ささげますか？",
+        "reading": "sasagemasu ka",
+        "gloss": "will you offer"
+      }
+    ]
+  },
+  "Sewer_DogStatueAlready": {
+    "japanese": "このスキルは今夜変えたばかりです。また明日にしましょうね…",
+    "english": "This skill is already being changed tonight. Come back tomorrow...",
+    "segments": [
+      {
+        "text": "このスキルは今夜変えたばかりです。",
+        "reading": "kono sukiru wa kon'ya kaeta bakari desu",
+        "gloss": "this skill has only just been changed tonight"
+      },
+      {
+        "text": "また明日にしましょうね…",
+        "reading": "mata ashita ni shimashō ne",
+        "gloss": "let's leave it until tomorrow"
+      }
+    ]
+  },
+  "Sewer_DogStatueCancel": {
+    "japanese": "いや、やっぱりやめておく…",
+    "english": "No, I've changed my mind...",
+    "segments": [
+      {
+        "text": "いや、やっぱりやめておく…",
+        "reading": "iya yappari yamete oku",
+        "gloss": "no, I'll leave it after all"
+      }
+    ]
+  },
+  "Sewer_DogStatueFinished": {
+    "japanese": "*ワン* *ワン* (できたよ…今日はもう寝てね…)",
+    "english": "*woof* *woof* (It's done... now go to sleep...)",
+    "segments": [
+      {
+        "text": "*ワン* *ワン* ",
+        "reading": "wan wan",
+        "gloss": "*woof* *woof*"
+      },
+      {
+        "text": "(できたよ…",
+        "reading": "dekita yo",
+        "gloss": "it's done"
+      },
+      {
+        "text": "今日はもう寝てね…)",
+        "reading": "kyō wa mō nete ne",
+        "gloss": "now go to sleep for today"
+      }
+    ]
+  },
+  "Sewer_DogStatueQuestion": {
+    "japanese": "どのスキル/職業に変更しますか？",
+    "english": "Which skill's professions would you like to change?",
+    "segments": [
+      {
+        "text": "どのスキル/職業に変更しますか？",
+        "reading": "dono sukiru shokugyō ni henkō shimasu ka",
+        "gloss": "which skill/profession will you change to"
+      }
+    ]
+  },
+  "Sewer_MagicSeal": {
+    "japanese": "バリアが行く手をはばんでいる。",
+    "english": "Some kind of barrier blocks your path.",
+    "segments": [
+      {
+        "text": "バリアが行く手をはばんでいる。",
+        "reading": "baria ga yukute o habande iru",
+        "gloss": "a barrier blocks your path"
+      }
+    ]
+  },
+  "SkullCave_SkullDoor_Locked": {
+    "japanese": "ドアにはカギがかかっている。",
+    "english": "The door is locked.",
+    "segments": [
+      {
+        "text": "ドアにはカギがかかっている。",
+        "reading": "doa ni wa kagi ga kakatte iru",
+        "gloss": "the door is locked"
+      }
+    ]
+  },
+  "SkullCave_SkullDoor_Unlock": {
+    "japanese": "カギ穴にガイコツのカギをさしこんでみた。ピッタリだ！",
+    "english": "You slip the skull key into the keyhole. A perfect fit!",
+    "segments": [
+      {
+        "text": "カギ穴にガイコツのカギをさしこんでみた。",
+        "reading": "kagiana ni gaikotsu no kagi o sashikonde mita",
+        "gloss": "you slipped the skull key into the keyhole"
+      },
+      {
+        "text": "ピッタリだ！",
+        "reading": "pittari da",
+        "gloss": "a perfect fit"
+      }
+    ]
+  },
+  "Submarine_AscendQuestion": {
+    "japanese": "船長: そろそろ 水面に 上がろうか？",
+    "english": "Captain: Shall we head back up to the surface?",
+    "segments": [
+      {
+        "text": "船長: ",
+        "reading": "senchō",
+        "gloss": "captain"
+      },
+      {
+        "text": "そろそろ ",
+        "reading": "sorosoro",
+        "gloss": "about now"
+      },
+      {
+        "text": "水面に ",
+        "reading": "suimen ni",
+        "gloss": "to the surface"
+      },
+      {
+        "text": "上がろうか？",
+        "reading": "agarō ka",
+        "gloss": "shall we go up"
+      }
+    ]
+  },
+  "Submarine_Done": {
+    "japanese": "船長:戻ったよ！取った魚をそのままにしないでくれよ。",
+    "english": "Captain: We're back! Don't leave any of your catch lying around.",
+    "segments": [
+      {
+        "text": "船長:",
+        "reading": "senchō",
+        "gloss": "captain"
+      },
+      {
+        "text": "戻ったよ！",
+        "reading": "modotta yo",
+        "gloss": "we're back"
+      },
+      {
+        "text": "取った魚をそのままにしないでくれよ。",
+        "reading": "totta sakana o sono mama ni shinaide kure yo",
+        "gloss": "don't leave the fish you caught lying about"
+      }
+    ]
+  },
+  "Submarine_SubmergeQuestion": {
+    "japanese": "船長: やあやあ！深海 フィッシング ツアーでも いかがかな？1,000gで いいよ。",
+    "english": "Captain: Ahoy there! How about a deep-sea fishing tour? It'll be 1,000g.",
+    "segments": [
+      {
+        "text": "船長: ",
+        "reading": "senchō",
+        "gloss": "captain"
+      },
+      {
+        "text": "やあやあ！",
+        "reading": "yā yā",
+        "gloss": "ahoy there"
+      },
+      {
+        "text": "深海 フィッシング ツアーでも ",
+        "reading": "shinkai fisshingu tsuā demo",
+        "gloss": "a deep-sea fishing tour"
+      },
+      {
+        "text": "いかがかな？",
+        "reading": "ikaga ka na",
+        "gloss": "how about it"
+      },
+      {
+        "text": "1,000gで ",
+        "reading": "sen gōrudo de",
+        "gloss": "for 1,000g"
+      },
+      {
+        "text": "いいよ。",
+        "reading": "ii yo",
+        "gloss": "that'll do"
+      }
+    ]
+  },
+  "SummitBoulder": {
+    "japanese": "動かすことはできなさそうだ…",
+    "english": "It seems impossible to budge...",
+    "segments": [
+      {
+        "text": "動かすことはできなさそうだ…",
+        "reading": "ugokasu koto wa dekinasasō da",
+        "gloss": "it seems impossible to move"
+      }
+    ]
+  },
+  "Theater_MovieEnd": {
+    "japanese": "その映画は今夜終了しました。あなたがショーを楽しんだことを願ってる！",
+    "english": "The movie has finished for tonight. We hope you enjoyed the show!",
+    "segments": [
+      {
+        "text": "その映画は今夜終了しました。",
+        "reading": "sono eiga wa kon'ya shūryō shimashita",
+        "gloss": "that movie has finished for tonight"
+      },
+      {
+        "text": "あなたがショーを楽しんだことを願ってる！",
+        "reading": "anata ga shō o tanoshinda koto o negatteru",
+        "gloss": "we hope you enjoyed the show"
+      }
+    ]
+  },
+  "Theater_MovieEndReEntry": {
+    "japanese": "映画は終了しました。",
+    "english": "The movie has finished.",
+    "segments": [
+      {
+        "text": "映画は終了しました。",
+        "reading": "eiga wa shūryō shimashita",
+        "gloss": "the movie has finished"
+      }
+    ]
+  },
+  "Theater_Poster_0": {
+    "japanese": "再生中：「{0}」。",
+    "english": "Now Playing: \"{0}.\"",
+    "segments": [
+      {
+        "text": "再生中：",
+        "reading": "saiseichū",
+        "gloss": "now playing"
+      },
+      {
+        "text": "「{0}」。",
+        "reading": "",
+        "gloss": "\"{0}\""
+      }
+    ]
+  },
+  "Theater_Poster_Coming_Soon": {
+    "japanese": "近日公開予定：「{0}」",
+    "english": "Coming soon: \"{0}.\"",
+    "segments": [
+      {
+        "text": "近日公開予定：",
+        "reading": "kinjitsu kōkai yotei",
+        "gloss": "scheduled for release soon"
+      },
+      {
+        "text": "「{0}」",
+        "reading": "",
+        "gloss": "\"{0}\""
+      }
+    ]
+  },
+  "Town_DwarfGrave_Translated": {
+    "japanese": "ドワーフ語を読んでみた。\n\n3柱のあいだに立つがよい\n空にもひとしい至高の宝\n大地より出でた虹をたずさえて\nさすれば宇宙は汝の嘆きを聞くだろう\n",
+    "english": "You translate the dwarvish:\\n\\nStand between the pillars three\\nWith a gift as precious as the sky:\\nA rainbow drawn from the land\\nThen the galaxies will heed your cry\\n",
+    "segments": [
+      {
+        "text": "ドワーフ語を読んでみた。\n\n",
+        "reading": "dowāfugo o yonde mita",
+        "gloss": "you translated the dwarvish"
+      },
+      {
+        "text": "3柱のあいだに立つがよい\n",
+        "reading": "mihashira no aida ni tatsu ga yoi",
+        "gloss": "stand between the three pillars"
+      },
+      {
+        "text": "空にもひとしい至高の宝\n",
+        "reading": "sora ni mo hitoshii shikō no takara",
+        "gloss": "a supreme treasure equal to the sky"
+      },
+      {
+        "text": "大地より出でた虹をたずさえて\n",
+        "reading": "daichi yori ideta niji o tazusaete",
+        "gloss": "bearing a rainbow come forth from the earth"
+      },
+      {
+        "text": "さすれば宇宙は汝の嘆きを聞くだろう\n",
+        "reading": "sasureba uchū wa nanji no nageki o kiku darō",
+        "gloss": "then the cosmos will hear your lament"
+      }
+    ]
+  },
+  "Town_JojaSign_Destroyed": {
+    "japanese": "廃業しました。",
+    "english": "Out of business.",
+    "segments": [
+      {
+        "text": "廃業しました。",
+        "reading": "haigyō shimashita",
+        "gloss": "went out of business"
+      }
+    ]
+  },
+  "Town_PickupTruck": {
+    "japanese": "ルイスの 古トラックの 後ろ側 みたいだ…",
+    "english": "It's just the back of Lewis' old pickup truck...",
+    "segments": [
+      {
+        "text": "ルイスの ",
+        "reading": "Ruisu no",
+        "gloss": "Lewis's"
+      },
+      {
+        "text": "古トラックの ",
+        "reading": "furu torakku no",
+        "gloss": "old truck's"
+      },
+      {
+        "text": "後ろ側 ",
+        "reading": "ushirogawa",
+        "gloss": "back side"
+      },
+      {
+        "text": "みたいだ…",
+        "reading": "mitai da",
+        "gloss": "it seems to be"
+      }
+    ]
+  },
+  "Town_SeedShopSign": {
+    "japanese": "- ピエールの雑貨店 -\n年中無休、午前9時から午後5時まで営業します！",
+    "english": "- Pierre's General Store -\\nOpen 7 days a week, 9am to 5pm!",
+    "segments": [
+      {
+        "text": "- ピエールの雑貨店 -\n",
+        "reading": "Piēru no zakkaten",
+        "gloss": "Pierre's General Store"
+      },
+      {
+        "text": "年中無休、",
+        "reading": "nenjū mukyū",
+        "gloss": "open all year round"
+      },
+      {
+        "text": "午前9時から午後5時まで営業します！",
+        "reading": "gozen kuji kara gogo goji made eigyō shimasu",
+        "gloss": "open from 9am to 5pm"
+      }
+    ]
+  },
+  "Town_SpecialCharmQuestion": {
+    "japanese": "運転手: なあ… やっぱり 運って 大事だよな …あのさ、「ウサギの足」を 探して 持ってきて くれないか？礼は はずむからさ。",
+    "english": "Driver: Hey... luck really does matter, doesn't it... say, why don't you find me a \"rabbit's foot\"? I'll make it worth your while.",
+    "segments": [
+      {
+        "text": "運転手: ",
+        "reading": "untenshu",
+        "gloss": "driver"
+      },
+      {
+        "text": "なあ… ",
+        "reading": "nā",
+        "gloss": "hey"
+      },
+      {
+        "text": "やっぱり 運って 大事だよな ",
+        "reading": "yappari un tte daiji da yo na",
+        "gloss": "luck really does matter, doesn't it"
+      },
+      {
+        "text": "…あのさ、",
+        "reading": "ano sa",
+        "gloss": "say"
+      },
+      {
+        "text": "「ウサギの足」を ",
+        "reading": "usagi no ashi o",
+        "gloss": "a \"rabbit's foot\""
+      },
+      {
+        "text": "探して 持ってきて ",
+        "reading": "sagashite motte kite",
+        "gloss": "find and bring me"
+      },
+      {
+        "text": "くれないか？",
+        "reading": "kurenai ka",
+        "gloss": "won't you"
+      },
+      {
+        "text": "礼は はずむからさ。",
+        "reading": "rei wa hazumu kara sa",
+        "gloss": "I'll pay well"
+      }
+    ]
+  },
+  "Town_mgThiefMessage": {
+    "japanese": "シャドーマン: うわあああ！ 捕まった～！ ごめんなさい！ これどうぞ！ どうぞ！ なんか高そうに 見えたんんで、 つい出来心で…",
+    "english": "Shadow Guy: Eeeek! You caught me! I'm sorry! Take it! Take it! It just looked so valuable, I couldn't help myself...",
+    "segments": [
+      {
+        "text": "シャドーマン: ",
+        "reading": "shadō man",
+        "gloss": "Shadow Guy"
+      },
+      {
+        "text": "うわあああ！ ",
+        "reading": "uwāā",
+        "gloss": "eeeek"
+      },
+      {
+        "text": "捕まった～！ ",
+        "reading": "tsukamatta",
+        "gloss": "you caught me"
+      },
+      {
+        "text": "ごめんなさい！ ",
+        "reading": "gomen nasai",
+        "gloss": "I'm sorry"
+      },
+      {
+        "text": "これどうぞ！ ",
+        "reading": "kore dōzo",
+        "gloss": "take it"
+      },
+      {
+        "text": "どうぞ！ ",
+        "reading": "dōzo",
+        "gloss": "take it"
+      },
+      {
+        "text": "なんか高そうに ",
+        "reading": "nanka takasō ni",
+        "gloss": "somehow so valuable-looking"
+      },
+      {
+        "text": "見えたんんで、 ",
+        "reading": "mieta n n de",
+        "gloss": "it looked, so"
+      },
+      {
+        "text": "つい出来心で…",
+        "reading": "tsui dekigokoro de",
+        "gloss": "I acted on impulse"
+      }
+    ]
+  },
+  "Town_specialCharmNoFoot": {
+    "japanese": "運転手:「ウサギの足」を手に入れたらまた来てくれ。",
+    "english": "Driver: Come back when you've got a \"rabbit's foot\".",
+    "segments": [
+      {
+        "text": "運転手:",
+        "reading": "untenshu",
+        "gloss": "driver"
+      },
+      {
+        "text": "「ウサギの足」を手に入れたらまた来てくれ。",
+        "reading": "usagi no ashi o te ni iretara mata kite kure",
+        "gloss": "come back once you've got a \"rabbit's foot\""
+      }
+    ]
+  },
+  "Tunnel_TunnelSafe_ConsumeBattery": {
+    "japanese": "電源が入った！ロックボックスは開いた。なかにはメモが入っている。",
+    "english": "It worked! The lock-box swings open. There's a note inside.",
+    "segments": [
+      {
+        "text": "電源が入った！",
+        "reading": "dengen ga haitta",
+        "gloss": "the power came on"
+      },
+      {
+        "text": "ロックボックスは開いた。",
+        "reading": "rokku bokkusu wa hiraita",
+        "gloss": "the lock-box opened"
+      },
+      {
+        "text": "なかにはメモが入っている。",
+        "reading": "naka ni wa memo ga haitte iru",
+        "gloss": "there's a note inside"
+      }
+    ]
+  },
+  "Tunnel_TunnelSafe_Initial": {
+    "japanese": "電池式のロックボックスだ。残念ながら、電池は入っていない。",
+    "english": "It's a battery-powered lock-box. Unfortunately, there's no battery in it.",
+    "segments": [
+      {
+        "text": "電池式のロックボックス",
+        "reading": "denchishiki no rokku bokkusu",
+        "gloss": "a battery-powered lock-box"
+      },
+      {
+        "text": "だ。",
+        "reading": "da",
+        "gloss": "it is"
+      },
+      {
+        "text": "残念ながら、電池は入っていない。",
+        "reading": "zannen nagara denchi wa haitte inai",
+        "gloss": "unfortunately there's no battery in it"
+      }
+    ]
+  },
+  "Tunnel_TunnelSafe_MrQiNote": {
+    "japanese": "『さいしょの指令だ。電車の駅までレインボーシェルをはこび、箱のなかに入れろ。- ミスターQi 』",
+    "english": "\"Your first task: bring a rainbow shell to the train platform and leave it in the box. — Mr. Qi\"",
+    "segments": [
+      {
+        "text": "『さいしょの指令だ。",
+        "reading": "saisho no shirei da",
+        "gloss": "this is the first order"
+      },
+      {
+        "text": "電車の駅までレインボーシェルをはこび、",
+        "reading": "densha no eki made reinbō sheru o hakobi",
+        "gloss": "carry a rainbow shell to the train station"
+      },
+      {
+        "text": "箱のなかに入れろ。",
+        "reading": "hako no naka ni irero",
+        "gloss": "and put it in the box"
+      },
+      {
+        "text": "- ミスターQi 』",
+        "reading": "Misutā Qi",
+        "gloss": "- Mr. Qi"
+      }
+    ]
+  },
+  "Volcano_ShortcutOut": {
+    "japanese": "火山からの近道を通りますか？",
+    "english": "Take the shortcut out of the volcano?",
+    "segments": [
+      {
+        "text": "火山からの近道を通りますか？",
+        "reading": "kazan kara no chikamichi o tōrimasu ka",
+        "gloss": "will you take the shortcut out of the volcano"
+      }
+    ]
+  },
+  "WitchHut_EvilShrineCenter": {
+    "japanese": "-記憶の闇のほこら- ^あなたと別れた伴侶との関係が記憶から消されてしまいます。まるで一度も会ったことさえないように。^30,000gをささげてみましょう。",
+    "english": "-Dark Shrine of Memory-^The relationship between you and your ex-spouse will be wiped from memory — as if you had never met.^Offer 30,000g?",
+    "segments": [
+      {
+        "text": "-記憶の闇のほこら- ^",
+        "reading": "kioku no yami no hokora",
+        "gloss": "Dark Shrine of Memory"
+      },
+      {
+        "text": "あなたと別れた伴侶との関係が記憶から消されてしまいます。",
+        "reading": "anata to wakareta hanryo to no kankei ga kioku kara kesarete shimaimasu",
+        "gloss": "your relationship with your former spouse will be erased from memory"
+      },
+      {
+        "text": "まるで一度も会ったことさえないように。^",
+        "reading": "marude ichido mo atta koto sae nai yō ni",
+        "gloss": "as if you had never once met"
+      },
+      {
+        "text": "30,000gをささげてみましょう。",
+        "reading": "sanman gōrudo o sasagete mimashō",
+        "gloss": "let's offer 30,000g"
+      }
+    ]
+  },
+  "WitchHut_EvilShrineCenterInactive": {
+    "japanese": "-記憶の闇のほこら- ^像があなたを見つめています…",
+    "english": "-Dark Shrine of Memory-^The statue stares through you...",
+    "segments": [
+      {
+        "text": "-記憶の闇のほこら- ^",
+        "reading": "kioku no yami no hokora",
+        "gloss": "Dark Shrine of Memory"
+      },
+      {
+        "text": "像があなたを見つめています…",
+        "reading": "zō ga anata o mitsumete imasu",
+        "gloss": "the statue is staring at you"
+      }
+    ]
+  },
+  "WitchHut_EvilShrineLeft": {
+    "japanese": "-身勝手の闇のほこら- ^このやしろに身勝手な願いをかければ、子どもたちはハトにすがたを変え、飛び立っていってしまうだろう…^レインボージェムをやしろにお供えしますか？",
+    "english": "-Dark Shrine of Selfishness-^Make a selfish wish at this shrine and your children will turn into doves and fly away...^Offer a prismatic shard to the shrine?",
+    "segments": [
+      {
+        "text": "-身勝手の闇のほこら- ^",
+        "reading": "migatte no yami no hokora",
+        "gloss": "Dark Shrine of Selfishness"
+      },
+      {
+        "text": "このやしろに身勝手な願いをかければ、",
+        "reading": "kono yashiro ni migatte na negai o kakereba",
+        "gloss": "if you make a selfish wish at this shrine"
+      },
+      {
+        "text": "子どもたちはハトにすがたを変え、飛び立っていってしまうだろう…^",
+        "reading": "kodomo-tachi wa hato ni sugata o kae tobitatte itte shimau darō",
+        "gloss": "your children will turn into doves and fly away"
+      },
+      {
+        "text": "レインボージェムをやしろにお供えしますか？",
+        "reading": "reinbō jemu o yashiro ni o-sonae shimasu ka",
+        "gloss": "will you offer a prismatic gem at the shrine"
+      }
+    ]
+  },
+  "WitchHut_EvilShrineLeftInactive": {
+    "japanese": "-身勝手の闇のほこら- ^像はあなたの心を見透かしています…",
+    "english": "-Dark Shrine of Selfishness-^The statue sees straight through you...",
+    "segments": [
+      {
+        "text": "-身勝手の闇のほこら- ^",
+        "reading": "migatte no yami no hokora",
+        "gloss": "Dark Shrine of Selfishness"
+      },
+      {
+        "text": "像はあなたの心を見透かしています…",
+        "reading": "zō wa anata no kokoro o misukashite imasu",
+        "gloss": "the statue sees straight through your heart"
+      }
+    ]
+  },
+  "WitchHut_EvilShrineRightActivate": {
+    "japanese": "-夜の恐怖の闇のほこら- ^古代の魔法による防御が解かれます。モンスターが夜の農場に出てきてしまいます。^おかしなパンをささげてみましょう。",
+    "english": "-Dark Shrine of Night Terrors-^The ancient magic seal of protection will be lifted, letting monsters appear on your farm at night.^Offer a strange bun?",
+    "segments": [
+      {
+        "text": "-夜の恐怖の闇のほこら- ^",
+        "reading": "yoru no kyōfu no yami no hokora",
+        "gloss": "Dark Shrine of Night Terrors"
+      },
+      {
+        "text": "古代の魔法による防御が解かれます。",
+        "reading": "kodai no mahō ni yoru bōgyo ga tokaremasu",
+        "gloss": "the protection of ancient magic will be undone"
+      },
+      {
+        "text": "モンスターが夜の農場に出てきてしまいます。^",
+        "reading": "monsutā ga yoru no nōjō ni dete kite shimaimasu",
+        "gloss": "monsters will appear on the farm at night"
+      },
+      {
+        "text": "おかしなパンをささげてみましょう。",
+        "reading": "okashi na pan o sasagete mimashō",
+        "gloss": "let's offer a strange bun"
+      }
+    ]
+  },
+  "WitchHut_EvilShrineRightDeActivate": {
+    "japanese": "\n        -夜の恐怖の闇のほこら- ^古代の魔法による防御が復活します。モンスターが夜の農場に出てこないようにしてくれます。^おかしなパンをささげてみましょう。",
+    "english": "\\n        -Dark Shrine of Night Terrors-^The ancient magic seal of protection will be restored, keeping monsters from appearing on your farm at night.^Offer a strange bun?",
+    "segments": [
+      {
+        "text": "\n        -夜の恐怖の闇のほこら- ^",
+        "reading": "yoru no kyōfu no yami no hokora",
+        "gloss": "Dark Shrine of Night Terrors"
+      },
+      {
+        "text": "古代の魔法による防御が復活します。",
+        "reading": "kodai no mahō ni yoru bōgyo ga fukkatsu shimasu",
+        "gloss": "the protection of ancient magic will be restored"
+      },
+      {
+        "text": "モンスターが夜の農場に出てこないようにしてくれます。^",
+        "reading": "monsutā ga yoru no nōjō ni dete konai yō ni shite kuremasu",
+        "gloss": "it will keep monsters from appearing on the farm at night"
+      },
+      {
+        "text": "おかしなパンをささげてみましょう。",
+        "reading": "okashi na pan o sasagete mimashō",
+        "gloss": "let's offer a strange bun"
+      }
+    ]
+  },
+  "WitchHut_Goodbye": {
+    "japanese": "さよなら、{0}。",
+    "english": "Goodbye, {0}.",
+    "segments": [
+      {
+        "text": "さよなら、",
+        "reading": "sayonara",
+        "gloss": "goodbye"
+      },
+      {
+        "text": "{0}。",
+        "reading": "",
+        "gloss": "(name)"
+      }
+    ]
+  },
+  "WitchHut_NoOffering": {
+    "japanese": "必要なお供えがありません。",
+    "english": "You don't have the necessary offering.",
+    "segments": [
+      {
+        "text": "必要なお供えがありません。",
+        "reading": "hitsuyō na o-sonae ga arimasen",
+        "gloss": "you don't have the required offering"
+      }
+    ]
+  },
+  "WizardTower_WizardShrine": {
+    "japanese": "500Gをはらって、幻惑の祭壇で外見を変えますか？",
+    "english": "Pay 500g to change your appearance at the Shrine of Illusions?",
+    "segments": [
+      {
+        "text": "500Gをはらって、",
+        "reading": "gohyaku gōrudo o haratte",
+        "gloss": "paying 500g"
+      },
+      {
+        "text": "幻惑の祭壇で外見を変えますか？",
+        "reading": "genwaku no saidan de gaiken o kaemasu ka",
+        "gloss": "will you change your appearance at the shrine of illusions"
+      }
+    ]
+  },
+  "WomensLocker_WrongGender": {
+    "japanese": "こっちは女子更衣室だ…入るわけにはいかない！",
+    "english": "That's the women's locker room... you can't go in there!",
+    "segments": [
+      {
+        "text": "こっちは女子更衣室だ…",
+        "reading": "kotchi wa joshi kōishitsu da",
+        "gloss": "this is the women's locker room"
+      },
+      {
+        "text": "入るわけにはいかない！",
+        "reading": "hairu wake ni wa ikanai",
+        "gloss": "you can't go in"
+      }
+    ]
+  },
+  "Woods_Statue": {
+    "japanese": "--巨匠カノーリ--\n最高の甘さをずっと追及しています…",
+    "english": "--Old Master Cannoli--\\nStill in search of the sweetest taste...",
+    "segments": [
+      {
+        "text": "--巨匠カノーリ--\n",
+        "reading": "kyoshō Kanōri",
+        "gloss": "Old Master Cannoli"
+      },
+      {
+        "text": "最高の甘さをずっと追及しています…",
+        "reading": "saikō no amasa o zutto tsuikyū shite imasu",
+        "gloss": "still forever pursuing the finest sweetness"
+      }
+    ]
+  },
+  "qiNutDoor": {
+    "japanese": "ドアの向こうから奇妙な声が聞こえてきます…#「クルミ採りの名人だけがここに入れる」^あなたの現在の状態：{0}/100",
+    "english": "You hear a strange voice from behind the door...#\"Only the greatest walnut hunters may enter here.\"^Your current status: {0}/100",
+    "segments": [
+      {
+        "text": "ドアの向こうから奇妙な声が聞こえてきます…#",
+        "reading": "doa no mukō kara kimyō na koe ga kikoete kimasu",
+        "gloss": "a strange voice comes from beyond the door"
+      },
+      {
+        "text": "「クルミ採りの名人だけがここに入れる」^",
+        "reading": "kurumi tori no meijin dake ga koko ni haireru",
+        "gloss": "\"only master walnut-gatherers may enter here\""
+      },
+      {
+        "text": "あなたの現在の状態：{0}/100",
+        "reading": "anata no genzai no jōtai",
+        "gloss": "your current status: {0}/100"
+      }
+    ]
+  }
+}
