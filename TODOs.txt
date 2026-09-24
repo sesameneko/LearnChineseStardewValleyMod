@@ -48,7 +48,9 @@ The pipeline, for future re-passes (tools/segment-data/segtool.py):
   python3 tools/segment-data/segtool.py validate
 
 Authoring format is one entry per line, tab-separated:
-  key <TAB> english <TAB> text¦reading¦gloss‖text¦reading¦gloss‖...
+  key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
+(kana is the source of truth; kana_to_romaji.py write generates the romaji -- see
+tools/segment-data/README.md)
 merge rejects any line whose segment texts don't concatenate back to the
 source string exactly, so bad data can't reach the mod.
 

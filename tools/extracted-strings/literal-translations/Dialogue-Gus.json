@@ -1,0 +1,104 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Dialogue-Gus.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AcceptGift_(O)StardropTea": {
+    "japanese": "おお、ありがとう！ぜんぶ飲みたいけど、サルーンのために少し取っておくよ。これがあれば味わい深いカクテルが作れるに違いない！",
+    "english": "Oh, thanks! I want to drink it all, but I will save some for the saloon. With this I can surely make a deep-flavoured cocktail!",
+    "segments": [
+      {
+        "text": "おお、",
+        "kana": "おお",
+        "gloss": "oh"
+      },
+      {
+        "text": "ありがとう！",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      },
+      {
+        "text": "ぜんぶ",
+        "kana": "ぜんぶ",
+        "gloss": "all of it"
+      },
+      {
+        "text": "飲みたい",
+        "kana": "のみたい",
+        "gloss": "want to drink"
+      },
+      {
+        "text": "けど、",
+        "kana": "けど",
+        "gloss": "but"
+      },
+      {
+        "text": "サルーン",
+        "kana": "サルーン",
+        "gloss": "the saloon"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "ために",
+        "kana": "ために",
+        "gloss": "for the sake of"
+      },
+      {
+        "text": "少し",
+        "kana": "すこし",
+        "gloss": "a little"
+      },
+      {
+        "text": "取っておく",
+        "kana": "とっておく",
+        "gloss": "set aside"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あれば",
+        "kana": "あれば",
+        "gloss": "if (I) have"
+      },
+      {
+        "text": "味わい深い",
+        "kana": "あじわいぶかい",
+        "gloss": "deeply flavourful"
+      },
+      {
+        "text": "カクテル",
+        "kana": "カクテル",
+        "gloss": "cocktail"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(object of ability)"
+      },
+      {
+        "text": "作れる",
+        "kana": "つくれる",
+        "gloss": "can make"
+      },
+      {
+        "text": "に違いない！",
+        "kana": "に ちがいない",
+        "gloss": "surely"
+      }
+    ]
+  }
+}

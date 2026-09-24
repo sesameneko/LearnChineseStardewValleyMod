@@ -11,9 +11,10 @@ Sub-commands:
   audit [contentDir]        check the pipeline's coverage against the game install
 
 Authoring format (TSV, one entry per line, no header):
-  key <TAB> english <TAB> text¦reading¦gloss‖text¦reading¦gloss‖...
+  key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
 The concatenated segment texts must reproduce the source string exactly; merge
-refuses any line that doesn't, so bad data never reaches the mod.
+refuses any line that doesn't, so bad data never reaches the mod. Kana is the
+source of truth for readings; kana_to_romaji.py derives the romaji "reading".
 """
 import json, os, re, sys
 
@@ -299,6 +300,9 @@ def cmd_batch(args):
           file=sys.stderr)
 
 
+KANJI = re.compile(r"[一-鿿々〆]")
+
+
 def parse_line(line):
     parts = line.rstrip("\n").split("\t")
     if len(parts) < 3:
@@ -310,8 +314,15 @@ def parse_line(line):
             continue
         bits = SPLIT_FIELD.split(chunk)
         if len(bits) != 3:
-            raise ValueError(f"segment {chunk!r} needs text{FIELD}reading{FIELD}gloss")
-        out.append({"text": unesc(bits[0]), "reading": bits[1].strip(), "gloss": bits[2].strip()})
+            raise ValueError(f"segment {chunk!r} needs text{FIELD}kana{FIELD}gloss")
+        text, kana = unesc(bits[0]), " ".join(bits[1].split())
+        # the kana is a reading: a kanji in it means the field was filled with the text, or
+        # with romaji-era habits; and a kanji segment with no kana would show no reading at all
+        if KANJI.search(kana):
+            raise ValueError(f"segment {text!r}: kana {kana!r} contains kanji")
+        if KANJI.search(text) and not kana:
+            raise ValueError(f"segment {text!r} has kanji but no kana")
+        out.append({"text": text, "kana": kana, "gloss": bits[2].strip()})
     return key, english, out
 
 

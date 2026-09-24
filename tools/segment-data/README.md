@@ -15,9 +15,9 @@ an object:
   "japanese": "植えるとオークの木が育つ。",
   "english": "If you plant it, an oak tree grows.",
   "segments": [
-    { "text": "植える", "reading": "ueru",    "gloss": "to plant" },
-    { "text": "と",     "reading": "to",      "gloss": "if / when" },
-    { "text": "育つ。", "reading": "sodatsu", "gloss": "grows" }
+    { "text": "植える", "kana": "うえる",   "gloss": "to plant", "reading": "ueru" },
+    { "text": "と",     "kana": "と",       "gloss": "if / when", "reading": "to" },
+    { "text": "育つ。", "kana": "そだつ",   "gloss": "grows",    "reading": "sodatsu" }
   ]
 }
 ```
@@ -31,8 +31,54 @@ an object:
 - Particles (は/が/を/に/の/と …) are their own segment with a bracketed
   functional gloss like `(subject marker)`. Trailing punctuation is folded into
   the preceding word. `{0}`-style tokens are their own segment with an empty
-  reading and a gloss naming what the game substitutes, e.g. `(name)`.
+  kana and a gloss naming what the game substitutes, e.g. `(name)`.
 - The gloss is what the word means **in this sentence**, not a dictionary entry.
+
+## Readings: kana is the source of truth, romaji is generated
+
+Each segment's reading is **authored as `kana`**. The romaji `reading` is derived
+from it by `kana_to_romaji.py`. The direction matters. Kana -> romaji is
+deterministic. Romaji -> kana is not: ō is おう in gakkō but おお in tōri, and
+romaji has thrown that away. The game's font also draws kana natively but has
+no macron glyph, so kana is what the mod shows (`WordHoverOverlay` prefers
+`kana` and falls back to `reading`).
+
+The kana field follows these conventions, which the converter relies on:
+
+- the reading of the segment's Japanese only; no punctuation or dialogue markup
+- words separated by single spaces: `かんがえこんで しまう`, `に ちがいない`
+- hiragana for kanji and hiragana; katakana words stay katakana (`カクテル`); `ー`
+  as written
+- particles as spelled, not as pronounced: `は` / `へ` / `を` (the converter reads
+  a standalone one as wa / e / o)
+- long vowels spelled the way the word is actually spelled (`がっこう`, `とおり`,
+  `おねえさん`); getting this right is the whole point of authoring kana
+- latin and digits the on-screen text keeps (`Joja`, `2.0`) copied as they are;
+  empty for a segment that is only markup, symbols, a `{0}` token or `@`
+
+`merge` rejects kana containing kanji, and a segment whose text has kanji but no
+kana.
+
+Then run:
+
+```
+python3 tools/segment-data/kana_to_romaji.py write    # fill "reading" where missing
+python3 tools/segment-data/kana_to_romaji.py report   # round-trip vs readings already in the data
+python3 tools/segment-data/kana_to_romaji.py check "がっこう"
+```
+
+Kana can't say where a vowel pair straddles a morpheme boundary (思う is omou,
+湖 みずうみ is mizuumi), so the converter lengthens by default. A short
+`NOT_LONG` word list handles the common exceptions. The romaji is a secondary
+view, so a rare wrong macron there is tolerable in a way a wrong kana is not.
+
+**Data authored before this switch** has a hand-written romaji `reading` and a
+`kana` generated from it by `romaji_to_kana.py`. That script guessed at every
+long vowel and logged each guess in `kana-review.tsv`. For those segments the
+romaji is the original and the kana may be wrong (e.g. ēto -> えいと). Review
+that file before regenerating any of their readings with
+`kana_to_romaji.py write --overwrite`, which would overwrite hand-written romaji
+with romaji derived from possibly-wrong kana.
 
 There is no second format. Item names were once a flat
 `"key": "English (reading)"` map; `migrate_names.py.retired` converted them, and
@@ -100,6 +146,7 @@ python3 tools/segment-data/segtool.py status            # coverage per table
 python3 tools/segment-data/segtool.py batch Tools 50    # next worklist, as TSV
 #   ...author into a .tsv...
 python3 tools/segment-data/segtool.py merge Tools batch.tsv
+python3 tools/segment-data/kana_to_romaji.py write      # generate the romaji readings
 python3 tools/segment-data/segtool.py validate
 python3 tools/segment-data/segtool.py audit       # coverage vs. the game install
 ```
@@ -109,7 +156,7 @@ authored (entries with no Japanese characters are skipped automatically; newline
 and tabs are escaped as `\n` / `\t`). Author one line per entry:
 
 ```
-key <TAB> english <TAB> text¦reading¦gloss‖text¦reading¦gloss‖...
+key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
 ```
 
 `¦` (U+00A6) separates the three fields of a segment, `‖` (U+2016) separates
