@@ -90,9 +90,15 @@ def syllables(word):
     return out
 
 
+# greetings that end in the particle は, fossilised into one word
+FIXED = {"こんにちは": "konnichiwa", "こんばんは": "konbanwa"}
+
+
 def convert_word(word):
     if word in PARTICLES:
         return PARTICLES[word]
+    if word in FIXED:
+        return FIXED[word]
 
     hira = to_hiragana(word)
     long_ok = hira not in NOT_LONG
