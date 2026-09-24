@@ -163,8 +163,31 @@ key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
 segments. The game itself uses `¦` as a dialogue-variant separator -- the
 `${male text¦female text}$` form in `ItemDeliveryQuest`, for instance -- so a
 literal `¦` or `‖` inside a segment's text is written `\¦` / `\‖`; `batch`
-already escapes them for you in the worklist it prints. `merge` refuses any line whose segments don't reproduce the source
-string and reports which, so a bad batch can't reach the mod; fix and re-merge —
+already escapes them for you in the worklist it prints.
+
+### What merge fills in for you
+
+Write the words; `merge` supplies the rest.
+
+- **Punctuation, whitespace and dialogue markup may be left out.** `merge` lines
+  the segments up against the source. Each skipped run (`。`, `…`, `、`, spaces,
+  `$h`, `#$e#`, `%noturn`) goes to the end of the previous segment, except
+  opening brackets and quotes (`（`, `「`), which go to the start of the next.
+  So `絶品だ¦ぜっぴん だ¦is superb` becomes `絶品だ。`. A page break therefore always lands
+  on a segment boundary, and a segment that is only punctuation is folded into
+  its neighbour even if you wrote one.
+- **Kana may be left empty for a segment with no kanji.** `merge` takes the
+  segment's own kana, minus punctuation and markup: `ありがとう¦¦thank you`. The
+  one exception is a segment of several words that includes the particle は, へ
+  or を. Write its kana out spaced (`には¦に は¦…`), or the generated romaji
+  reads "niha".
+- **Every word must still be written, in order.** Letters, digits, Japanese, `@`
+  and `{0}` tokens are never filled in. They are words, or stand for one, so
+  they need their own segment. A page break written *inside* a segment
+  (`…！$h#$e#パースニップ`) is rejected: split it there.
+
+`merge` refuses any line it can't line up with the source and reports which
+segment failed, so a bad batch can't reach the mod. Fix it and re-merge;
 merging is idempotent per key.
 
 `skip <Table> <file.txt>` records keys deliberately left unsegmented so `status`

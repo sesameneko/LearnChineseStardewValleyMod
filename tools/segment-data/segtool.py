@@ -12,8 +12,10 @@ Sub-commands:
 
 Authoring format (TSV, one entry per line, no header):
   key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
-The concatenated segment texts must reproduce the source string exactly; merge
-refuses any line that doesn't, so bad data never reaches the mod. Kana is the
+Punctuation, whitespace and dialogue markup may be left out of the segments --
+merge attaches them to a neighbour -- and kana may be left empty for a segment
+with no kanji. Every word must still be there, in order; merge refuses a line
+it can't line up with the source, so bad data never reaches the mod. Kana is the
 source of truth for readings; kana_to_romaji.py derives the romaji "reading".
 """
 import json, os, re, sys
@@ -326,6 +328,89 @@ def parse_line(line):
     return key, english, out
 
 
+# --- alignment: what merge fills in so the author doesn't have to type it ----------------
+#
+# Punctuation, whitespace and dialogue markup carry no meaning of their own, but every one
+# of them has to land in some segment for the concatenation invariant to hold. Retyping them
+# exactly was the main source of rejected lines, and put page breaks and lone "。" segments
+# in the wrong places. So an author may leave them out: merge lines the segments up against
+# the source and gives each skipped run to a neighbouring segment.
+
+# dialogue markup: $h $s $1 $q..., %noturn / %fork, and the #...# of a page break
+MARKUP = re.compile(r"\$[A-Za-z0-9]+|%[A-Za-z]+")
+# opening brackets and quotes belong to the word they open, not the one before
+OPENERS = "（(「『【〈《[{“‘"
+# a page break (#$b# / #$e#) followed by more Japanese inside one segment
+BREAK_INSIDE = re.compile(r"#\$[be]#.*[぀-ヿ一-鿿]", re.DOTALL)
+
+
+def japanese(text):
+    return any("぀" <= c <= "ヿ" or "一" <= c <= "鿿" or c == "々" for c in text)
+
+
+def attachable(gap):
+    """True if a run of source text holds nothing a reader would hover: only punctuation,
+    whitespace and markup. Letters, digits, Japanese, @ and {0}-style tokens don't qualify --
+    those are words (or stand for one) and need a segment of their own."""
+    rest = MARKUP.sub("", gap)
+    return not any(c.isalnum() or c in "@{}" or japanese(c) for c in rest)
+
+
+def align(source_text, segments):
+    """Fits segments onto the source, attaching every skipped run of punctuation/markup to a
+    neighbour. Returns the segments with their text extended, or raises ValueError naming
+    the first segment that can't be placed."""
+    out, pos = [], 0
+    for seg in segments:
+        text = seg["text"]
+        at = source_text.find(text, pos) if text else -1
+        if at < 0 or not attachable(source_text[pos:at]):
+            raise ValueError(f"can't place segment {text!r} after {source_text[:pos]!r}")
+        gap = source_text[pos:at]
+        # an opening bracket starts the next word; everything else ends the previous one
+        split = len(gap)
+        while split > 0 and gap[split - 1] in OPENERS:
+            split -= 1
+        trailing, leading = gap[:split], gap[split:]
+        if out:
+            out[-1]["text"] += trailing
+        else:
+            leading = gap
+        out.append(dict(seg, text=leading + text))
+        pos = at + len(text)
+
+    tail = source_text[pos:]
+    if tail:
+        if not out or not attachable(tail):
+            raise ValueError(f"source continues past the last segment: {tail!r}")
+        out[-1]["text"] += tail
+
+    # a segment that is itself only punctuation/markup gets folded into its neighbour too,
+    # so authors can't produce a lone "。" by including it either
+    folded = []
+    for seg in out:
+        if folded and not japanese(seg["text"]) and attachable(seg["text"]):
+            folded[-1]["text"] += seg["text"]
+        else:
+            folded.append(seg)
+    if len(folded) > 1 and not japanese(folded[0]["text"]) and attachable(folded[0]["text"]):
+        folded[1]["text"] = folded[0]["text"] + folded[1]["text"]
+        folded = folded[1:]
+
+    for seg in folded:
+        if BREAK_INSIDE.search(seg["text"]):
+            raise ValueError(f"segment {seg['text']!r} has a page break inside it -- split it there")
+    return folded
+
+
+def kana_of(text):
+    """The reading of a segment with no kanji: its own kana, minus punctuation and markup.
+    Latin and digits the text keeps pass through, per the kana conventions."""
+    rest = MARKUP.sub("", re.sub(r"\{\d+\}", "", text))  # a {0} token is substituted, not read
+    kept = "".join(c if (japanese(c) or c == "ー" or c.isalnum() or c.isspace()) else " " for c in rest)
+    return " ".join(kept.split())
+
+
 def cmd_merge(args):
     table, path = args[0], args[1]
     ja, _ = source(table)
@@ -341,8 +426,16 @@ def cmd_merge(args):
                 print(f"  line {lineno}: {ex}", file=sys.stderr); rejected += 1; continue
             if key not in ja:
                 print(f"  line {lineno}: no such key {key!r} in {table}", file=sys.stderr); rejected += 1; continue
+            try:
+                segs = align(ja[key], segs)
+            except ValueError as ex:
+                print(f"  line {lineno}: {key}: {ex}\n    source: {ja[key]!r}", file=sys.stderr)
+                rejected += 1; continue
+            for seg in segs:
+                if not seg["kana"] and not KANJI.search(seg["text"]):
+                    seg["kana"] = kana_of(seg["text"])
             joined = "".join(s["text"] for s in segs)
-            if joined != ja[key]:
+            if joined != ja[key]:  # align() guarantees this; kept as the last line of defence
                 print(f"  line {lineno}: {key}: segments don't reproduce source\n"
                       f"    source: {ja[key]!r}\n    joined: {joined!r}", file=sys.stderr)
                 rejected += 1; continue
