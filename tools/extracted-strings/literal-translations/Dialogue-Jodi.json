@@ -1,0 +1,4856 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Dialogue-Jodi.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "2_1": {
+    "japanese": "夫の ケントは 兵士で、 海外で 働いているの。だから 今 ここにいないのよ。#$b#遠征を 無事に 終えて 帰ってくるって 信じてる！#$e#何か 入用かしら？",
+    "english": "My husband Kent is a soldier, working overseas. That's why he isn't here now. I believe he'll finish his expedition safely and come back! Do you need something?",
+    "segments": [
+      {
+        "text": "夫",
+        "reading": "otto",
+        "gloss": "(my) husband"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "(apposition: \"my husband, Kent\")"
+      },
+      {
+        "text": "ケント",
+        "reading": "Kento",
+        "gloss": "Kent"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "兵士で、 ",
+        "reading": "heishi de",
+        "gloss": "is a soldier, and"
+      },
+      {
+        "text": "海外で ",
+        "reading": "kaigai de",
+        "gloss": "overseas"
+      },
+      {
+        "text": "働いているの。",
+        "reading": "hataraite iru no",
+        "gloss": "is working"
+      },
+      {
+        "text": "だから ",
+        "reading": "dakara",
+        "gloss": "so / that's why"
+      },
+      {
+        "text": "今 ",
+        "reading": "ima",
+        "gloss": "now"
+      },
+      {
+        "text": "ここに",
+        "reading": "koko ni",
+        "gloss": "here"
+      },
+      {
+        "text": "いないのよ。#$b#",
+        "reading": "inai no yo",
+        "gloss": "isn't (here)"
+      },
+      {
+        "text": "遠征",
+        "reading": "ensei",
+        "gloss": "tour of duty / expedition"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "無事に ",
+        "reading": "buji ni",
+        "gloss": "safely"
+      },
+      {
+        "text": "終えて ",
+        "reading": "oete",
+        "gloss": "finishing, and"
+      },
+      {
+        "text": "帰ってくるって ",
+        "reading": "kaette kuru tte",
+        "gloss": "(that he'll) come back"
+      },
+      {
+        "text": "信じてる！#$e#",
+        "reading": "shinjiteru",
+        "gloss": "I believe"
+      },
+      {
+        "text": "何か ",
+        "reading": "nanika",
+        "gloss": "something"
+      },
+      {
+        "text": "入用かしら？",
+        "reading": "iriyō kashira",
+        "gloss": "I wonder if you need"
+      }
+    ]
+  },
+  "AcceptGift_(O)StardropTea": {
+    "japanese": "まあ…そんなに貴重なものをもらっていいの？本当にありがとう！",
+    "english": "Oh my... is it okay for me to receive something so precious? Thank you so much!",
+    "segments": [
+      {
+        "text": "まあ…",
+        "reading": "mā",
+        "gloss": "oh my..."
+      },
+      {
+        "text": "そんなに",
+        "reading": "sonna ni",
+        "gloss": "so / that"
+      },
+      {
+        "text": "貴重な",
+        "reading": "kichō na",
+        "gloss": "precious"
+      },
+      {
+        "text": "もの",
+        "reading": "mono",
+        "gloss": "thing"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "もらっていいの？",
+        "reading": "moratte ii no",
+        "gloss": "is it okay to receive?"
+      },
+      {
+        "text": "本当に",
+        "reading": "hontō ni",
+        "gloss": "really"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Fri": {
+    "japanese": "$d Joja#Jojaマートの 食品は 家族にとって 健康とは 言えないけど、 あの 値段なら 他のところで 買う気も 起きなくなるわ！|ピエールの店の 食品は Jojaマートで 買えたものよりも ずっと 新鮮で ヘルシーね。でも、Jojaマートの あの 安さが 恋しいわ。",
+    "english": "[if Joja] JojaMart's food can't be called healthy for a family, but at those prices you don't even feel like buying anywhere else! | [otherwise] Pierre's store's food is much fresher and healthier than what I could buy at JojaMart. But I miss JojaMart's cheapness.",
+    "segments": [
+      {
+        "text": "$d Joja#Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart (after dialogue condition: Joja route)"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "食品",
+        "reading": "shokuhin",
+        "gloss": "food"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "家族",
+        "reading": "kazoku",
+        "gloss": "family"
+      },
+      {
+        "text": "にとって ",
+        "reading": "ni totte",
+        "gloss": "for"
+      },
+      {
+        "text": "健康",
+        "reading": "kenkō",
+        "gloss": "healthy"
+      },
+      {
+        "text": "とは ",
+        "reading": "to wa",
+        "gloss": "(quoting: as \"...\")"
+      },
+      {
+        "text": "言えないけど、 ",
+        "reading": "ienai kedo",
+        "gloss": "can't be called, but"
+      },
+      {
+        "text": "あの ",
+        "reading": "ano",
+        "gloss": "those"
+      },
+      {
+        "text": "値段",
+        "reading": "nedan",
+        "gloss": "prices"
+      },
+      {
+        "text": "なら ",
+        "reading": "nara",
+        "gloss": "at / given"
+      },
+      {
+        "text": "他の",
+        "reading": "hoka no",
+        "gloss": "other"
+      },
+      {
+        "text": "ところ",
+        "reading": "tokoro",
+        "gloss": "places"
+      },
+      {
+        "text": "で ",
+        "reading": "de",
+        "gloss": "(location: at)"
+      },
+      {
+        "text": "買う",
+        "reading": "kau",
+        "gloss": "to buy"
+      },
+      {
+        "text": "気",
+        "reading": "ki",
+        "gloss": "the feeling / inclination"
+      },
+      {
+        "text": "も ",
+        "reading": "mo",
+        "gloss": "(even)"
+      },
+      {
+        "text": "起きなくなるわ！|",
+        "reading": "okinaku naru wa",
+        "gloss": "stops arising / you don't feel like it"
+      },
+      {
+        "text": "ピエール",
+        "reading": "Piēru",
+        "gloss": "Pierre"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "店",
+        "reading": "mise",
+        "gloss": "store"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "食品",
+        "reading": "shokuhin",
+        "gloss": "food"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "で ",
+        "reading": "de",
+        "gloss": "(location: at)"
+      },
+      {
+        "text": "買えた",
+        "reading": "kaeta",
+        "gloss": "could buy"
+      },
+      {
+        "text": "もの",
+        "reading": "mono",
+        "gloss": "things"
+      },
+      {
+        "text": "よりも ",
+        "reading": "yori mo",
+        "gloss": "than"
+      },
+      {
+        "text": "ずっと ",
+        "reading": "zutto",
+        "gloss": "much / far"
+      },
+      {
+        "text": "新鮮で ",
+        "reading": "shinsen de",
+        "gloss": "fresh and"
+      },
+      {
+        "text": "ヘルシーね。",
+        "reading": "herushī ne",
+        "gloss": "healthy, you know"
+      },
+      {
+        "text": "でも、",
+        "reading": "demo",
+        "gloss": "but"
+      },
+      {
+        "text": "Jojaマート",
+        "reading": "Joja māto",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "あの ",
+        "reading": "ano",
+        "gloss": "that"
+      },
+      {
+        "text": "安さ",
+        "reading": "yasusa",
+        "gloss": "cheapness"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "恋しいわ。",
+        "reading": "koishii wa",
+        "gloss": "I miss"
+      }
+    ]
+  },
+  "GreenRain": {
+    "japanese": "あなたは大丈夫？こんなことは初めてだわ…$s#$e#夫がここにいてくれたらよかったのだけど。彼なら、どうすればいいか適切に判断できるはずだもの。$s",
+    "english": "Are you okay? This is the first time something like this has happened... I wish my husband were here. He'd surely be able to judge properly what to do.",
+    "segments": [
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "大丈夫？",
+        "reading": "daijōbu",
+        "gloss": "okay?"
+      },
+      {
+        "text": "こんな",
+        "reading": "konna",
+        "gloss": "this kind of"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "thing"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "初めてだわ…$s#$e#",
+        "reading": "hajimete da wa",
+        "gloss": "is the first time"
+      },
+      {
+        "text": "夫",
+        "reading": "otto",
+        "gloss": "my husband"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ここに",
+        "reading": "koko ni",
+        "gloss": "here"
+      },
+      {
+        "text": "いてくれたら",
+        "reading": "ite kuretara",
+        "gloss": "if (he) were (for me)"
+      },
+      {
+        "text": "よかったのだけど。",
+        "reading": "yokatta no da kedo",
+        "gloss": "it would have been good, but..."
+      },
+      {
+        "text": "彼",
+        "reading": "kare",
+        "gloss": "he"
+      },
+      {
+        "text": "なら、",
+        "reading": "nara",
+        "gloss": "if it were"
+      },
+      {
+        "text": "どう",
+        "reading": "dō",
+        "gloss": "how"
+      },
+      {
+        "text": "すれば",
+        "reading": "sureba",
+        "gloss": "if (one) does"
+      },
+      {
+        "text": "いいか",
+        "reading": "ii ka",
+        "gloss": "whether good / what's best"
+      },
+      {
+        "text": "適切に",
+        "reading": "tekisetsu ni",
+        "gloss": "properly"
+      },
+      {
+        "text": "判断できる",
+        "reading": "handan dekiru",
+        "gloss": "can judge"
+      },
+      {
+        "text": "はずだもの。$s",
+        "reading": "hazu da mono",
+        "gloss": "should surely (be able), after all"
+      }
+    ]
+  },
+  "GreenRain_2": {
+    "japanese": "ヴィンセントったら、雨の中を外で遊ぶために早起きしたのよ。この雨に本当に害がないことを願ってるわ！",
+    "english": "Vincent got up early to play outside in the rain. I hope this rain really is harmless!",
+    "segments": [
+      {
+        "text": "ヴィンセント",
+        "reading": "Vinsento",
+        "gloss": "Vincent"
+      },
+      {
+        "text": "ったら、",
+        "reading": "ttara",
+        "gloss": "(exasperated topic: that Vincent...)"
+      },
+      {
+        "text": "雨",
+        "reading": "ame",
+        "gloss": "rain"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "中",
+        "reading": "naka",
+        "gloss": "inside / in the midst"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(through)"
+      },
+      {
+        "text": "外",
+        "reading": "soto",
+        "gloss": "outside"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "(location: at)"
+      },
+      {
+        "text": "遊ぶ",
+        "reading": "asobu",
+        "gloss": "to play"
+      },
+      {
+        "text": "ために",
+        "reading": "tame ni",
+        "gloss": "in order to"
+      },
+      {
+        "text": "早起きしたのよ。",
+        "reading": "hayaoki shita no yo",
+        "gloss": "got up early"
+      },
+      {
+        "text": "この",
+        "reading": "kono",
+        "gloss": "this"
+      },
+      {
+        "text": "雨",
+        "reading": "ame",
+        "gloss": "rain"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(in)"
+      },
+      {
+        "text": "本当に",
+        "reading": "hontō ni",
+        "gloss": "really"
+      },
+      {
+        "text": "害",
+        "reading": "gai",
+        "gloss": "harm"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ない",
+        "reading": "nai",
+        "gloss": "there is no"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "(the fact) that"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "願ってるわ！",
+        "reading": "negatteru wa",
+        "gloss": "I'm hoping"
+      }
+    ]
+  },
+  "Introduction": {
+    "japanese": "あっ！想像とは 違う タイプね… まぁ、 いいかな！私はジョディ。#$e#ここは 小さくて 静かな 町だから、 新しい 人が 来るのが 楽しみ なのよ！牧場主が 来たことで 何かが 変わるんじゃ ないかしらね。",
+    "english": "Oh! You're a different type than I imagined... well, that's fine! I'm Jodi. This is a small, quiet town, so I look forward to new people coming! I wonder if something will change with a farmer having come.",
+    "segments": [
+      {
+        "text": "あっ！",
+        "reading": "a'",
+        "gloss": "oh!"
+      },
+      {
+        "text": "想像",
+        "reading": "sōzō",
+        "gloss": "imagination"
+      },
+      {
+        "text": "とは ",
+        "reading": "to wa",
+        "gloss": "(compared with)"
+      },
+      {
+        "text": "違う ",
+        "reading": "chigau",
+        "gloss": "different"
+      },
+      {
+        "text": "タイプね… ",
+        "reading": "taipu ne",
+        "gloss": "type, huh..."
+      },
+      {
+        "text": "まぁ、 ",
+        "reading": "mā",
+        "gloss": "well,"
+      },
+      {
+        "text": "いいかな！",
+        "reading": "ii ka na",
+        "gloss": "I guess that's fine!"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ジョディ。#$e#",
+        "reading": "Jodi",
+        "gloss": "(am) Jodi"
+      },
+      {
+        "text": "ここ",
+        "reading": "koko",
+        "gloss": "here"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "小さくて ",
+        "reading": "chiisakute",
+        "gloss": "small and"
+      },
+      {
+        "text": "静かな ",
+        "reading": "shizuka na",
+        "gloss": "quiet"
+      },
+      {
+        "text": "町だから、 ",
+        "reading": "machi da kara",
+        "gloss": "is a town, so"
+      },
+      {
+        "text": "新しい ",
+        "reading": "atarashii",
+        "gloss": "new"
+      },
+      {
+        "text": "人",
+        "reading": "hito",
+        "gloss": "people"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "来る",
+        "reading": "kuru",
+        "gloss": "coming"
+      },
+      {
+        "text": "のが ",
+        "reading": "no ga",
+        "gloss": "(nominalizer + subject)"
+      },
+      {
+        "text": "楽しみ ",
+        "reading": "tanoshimi",
+        "gloss": "something to look forward to"
+      },
+      {
+        "text": "なのよ！",
+        "reading": "na no yo",
+        "gloss": "is!"
+      },
+      {
+        "text": "牧場主",
+        "reading": "bokujōnushi",
+        "gloss": "farmer (ranch owner)"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "来た",
+        "reading": "kita",
+        "gloss": "came"
+      },
+      {
+        "text": "ことで ",
+        "reading": "koto de",
+        "gloss": "by the fact that"
+      },
+      {
+        "text": "何か",
+        "reading": "nanika",
+        "gloss": "something"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "変わるんじゃ ",
+        "reading": "kawarun ja",
+        "gloss": "will change, perhaps"
+      },
+      {
+        "text": "ないかしらね。",
+        "reading": "nai kashira ne",
+        "gloss": "I wonder, don't you think"
+      }
+    ]
+  },
+  "Mon": {
+    "japanese": "家庭を 維持するのって 難しいけど… 誰かが やらなくちゃ ならないのよね。#$e#そうでしょう？",
+    "english": "Maintaining a household is hard... but somebody has to do it. Isn't that right?",
+    "segments": [
+      {
+        "text": "家庭",
+        "reading": "katei",
+        "gloss": "household"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "維持する",
+        "reading": "iji suru",
+        "gloss": "to maintain"
+      },
+      {
+        "text": "のって ",
+        "reading": "notte",
+        "gloss": "(as for) doing"
+      },
+      {
+        "text": "難しいけど… ",
+        "reading": "muzukashii kedo",
+        "gloss": "is difficult, but..."
+      },
+      {
+        "text": "誰か",
+        "reading": "dareka",
+        "gloss": "somebody"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "やらなくちゃ ",
+        "reading": "yaranakucha",
+        "gloss": "must do (it)"
+      },
+      {
+        "text": "ならないのよね。#$e#",
+        "reading": "naranai no yo ne",
+        "gloss": "(it has to be), you know"
+      },
+      {
+        "text": "そうでしょう？",
+        "reading": "sō deshō",
+        "gloss": "isn't that so?"
+      }
+    ]
+  },
+  "Mon2": {
+    "japanese": "$d kent#昨日、夫が無事に帰ったことへの感謝のためにヨバ神の祭壇に行って来たわ。|昨日、夫が無事に帰って来るようにヨバ神の祭壇でお祈りして来たわ。#$e#前向きでいようとがんばってるけど、時々つらくなるのよね。$s",
+    "english": "[if Kent is back] Yesterday I went to Yoba's altar to give thanks that my husband came home safe. | [otherwise] Yesterday I prayed at Yoba's altar for my husband to come home safe. I'm trying hard to stay positive, but sometimes it gets hard.",
+    "segments": [
+      {
+        "text": "$d kent#昨日、",
+        "reading": "kinō",
+        "gloss": "yesterday (after dialogue condition: Kent is home)"
+      },
+      {
+        "text": "夫",
+        "reading": "otto",
+        "gloss": "my husband"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "無事に",
+        "reading": "buji ni",
+        "gloss": "safely"
+      },
+      {
+        "text": "帰った",
+        "reading": "kaetta",
+        "gloss": "came home"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "(the fact)"
+      },
+      {
+        "text": "へ",
+        "reading": "e",
+        "gloss": "(toward / for)"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "感謝",
+        "reading": "kansha",
+        "gloss": "gratitude"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "ために",
+        "reading": "tame ni",
+        "gloss": "for the sake of"
+      },
+      {
+        "text": "ヨバ神",
+        "reading": "Yoba-shin",
+        "gloss": "the god Yoba"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "祭壇",
+        "reading": "saidan",
+        "gloss": "altar"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(to)"
+      },
+      {
+        "text": "行って来たわ。|",
+        "reading": "itte kita wa",
+        "gloss": "I went (and came back)"
+      },
+      {
+        "text": "昨日、",
+        "reading": "kinō",
+        "gloss": "yesterday"
+      },
+      {
+        "text": "夫",
+        "reading": "otto",
+        "gloss": "my husband"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "無事に",
+        "reading": "buji ni",
+        "gloss": "safely"
+      },
+      {
+        "text": "帰って来る",
+        "reading": "kaette kuru",
+        "gloss": "come home"
+      },
+      {
+        "text": "ように",
+        "reading": "yō ni",
+        "gloss": "so that"
+      },
+      {
+        "text": "ヨバ神",
+        "reading": "Yoba-shin",
+        "gloss": "the god Yoba"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "祭壇",
+        "reading": "saidan",
+        "gloss": "altar"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "(location: at)"
+      },
+      {
+        "text": "お祈りして来たわ。#$e#",
+        "reading": "oinori shite kita wa",
+        "gloss": "I went and prayed"
+      },
+      {
+        "text": "前向き",
+        "reading": "maemuki",
+        "gloss": "positive"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "(being)"
+      },
+      {
+        "text": "いようと",
+        "reading": "iyō to",
+        "gloss": "trying to stay"
+      },
+      {
+        "text": "がんばってるけど、",
+        "reading": "ganbatteru kedo",
+        "gloss": "I'm doing my best, but"
+      },
+      {
+        "text": "時々",
+        "reading": "tokidoki",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "つらくなるのよね。$s",
+        "reading": "tsuraku naru no yo ne",
+        "gloss": "it becomes painful"
+      }
+    ]
+  },
+  "Mon6": {
+    "japanese": "家族を 持てて 幸せだわ… 若かった頃の自由さが 恋しくなることは あるけどね…$s",
+    "english": "I'm happy to have a family... though there are times I miss the freedom of when I was young...",
+    "segments": [
+      {
+        "text": "家族",
+        "reading": "kazoku",
+        "gloss": "a family"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "持てて ",
+        "reading": "motete",
+        "gloss": "being able to have"
+      },
+      {
+        "text": "幸せだわ… ",
+        "reading": "shiawase da wa",
+        "gloss": "I'm happy..."
+      },
+      {
+        "text": "若かった",
+        "reading": "wakakatta",
+        "gloss": "was young"
+      },
+      {
+        "text": "頃",
+        "reading": "koro",
+        "gloss": "time / days"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "自由さ",
+        "reading": "jiyūsa",
+        "gloss": "freedom"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "恋しくなる",
+        "reading": "koishiku naru",
+        "gloss": "come to miss"
+      },
+      {
+        "text": "ことは ",
+        "reading": "koto wa",
+        "gloss": "(the times)"
+      },
+      {
+        "text": "あるけどね…$s",
+        "reading": "aru kedo ne",
+        "gloss": "there are, though..."
+      }
+    ]
+  },
+  "Resort": {
+    "japanese": "息を飲むような景色ね！見渡す限りの深い青…",
+    "english": "A breathtaking view! Deep blue as far as you can see...",
+    "segments": [
+      {
+        "text": "息",
+        "reading": "iki",
+        "gloss": "breath"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "飲む",
+        "reading": "nomu",
+        "gloss": "to swallow (息を飲む: take one's breath away)"
+      },
+      {
+        "text": "ような",
+        "reading": "yō na",
+        "gloss": "like / such that"
+      },
+      {
+        "text": "景色ね！",
+        "reading": "keshiki ne",
+        "gloss": "view!"
+      },
+      {
+        "text": "見渡す",
+        "reading": "miwatasu",
+        "gloss": "to look out over"
+      },
+      {
+        "text": "限り",
+        "reading": "kagiri",
+        "gloss": "as far as"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "深い",
+        "reading": "fukai",
+        "gloss": "deep"
+      },
+      {
+        "text": "青…",
+        "reading": "ao",
+        "gloss": "blue..."
+      }
+    ]
+  },
+  "Resort_Bar": {
+    "japanese": "ガスの活躍、みんなはそれが大好きなの。",
+    "english": "Gus in action — everyone loves that.",
+    "segments": [
+      {
+        "text": "ガス",
+        "reading": "Gasu",
+        "gloss": "Gus"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "活躍、",
+        "reading": "katsuyaku",
+        "gloss": "being in action / doing his thing"
+      },
+      {
+        "text": "みんな",
+        "reading": "minna",
+        "gloss": "everyone"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "それ",
+        "reading": "sore",
+        "gloss": "that"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(object of liking)"
+      },
+      {
+        "text": "大好きなの。",
+        "reading": "daisuki na no",
+        "gloss": "love"
+      }
+    ]
+  },
+  "Resort_Entering": {
+    "japanese": "なんて素敵なの！",
+    "english": "How lovely!",
+    "segments": [
+      {
+        "text": "なんて",
+        "reading": "nante",
+        "gloss": "how"
+      },
+      {
+        "text": "素敵なの！",
+        "reading": "suteki na no",
+        "gloss": "lovely!"
+      }
+    ]
+  },
+  "Resort_Leaving": {
+    "japanese": "今夜はシーフードにしようかしら。$h",
+    "english": "Maybe I'll make seafood tonight.",
+    "segments": [
+      {
+        "text": "今夜",
+        "reading": "kon'ya",
+        "gloss": "tonight"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "シーフード",
+        "reading": "shīfūdo",
+        "gloss": "seafood"
+      },
+      {
+        "text": "にしようかしら。$h",
+        "reading": "ni shiyō kashira",
+        "gloss": "maybe I'll go with"
+      }
+    ]
+  },
+  "Sat": {
+    "japanese": "こんにちは。#$e#何か 用かしら？",
+    "english": "Hello. Do you need something?",
+    "segments": [
+      {
+        "text": "こんにちは。#$e#",
+        "reading": "kon'nichiwa",
+        "gloss": "hello"
+      },
+      {
+        "text": "何か ",
+        "reading": "nanika",
+        "gloss": "some"
+      },
+      {
+        "text": "用かしら？",
+        "reading": "yō kashira",
+        "gloss": "business, I wonder? (need something?)"
+      }
+    ]
+  },
+  "Sat4": {
+    "japanese": "あの 古い牧場を 良くしてくれている みたいで うれしいわ。#$e#全て 順調に なったら、 コミュニティに 大きく 貢献 できそうね！$h#$e#あなたは、 沢山の仕事を こなすことに なるけど。#$e#じゃあね。",
+    "english": "I'm happy that you seem to be improving that old farm. Once everything is going well, it looks like you'll contribute greatly to the community! You'll end up handling a lot of work, though. See you.",
+    "segments": [
+      {
+        "text": "あの ",
+        "reading": "ano",
+        "gloss": "that"
+      },
+      {
+        "text": "古い",
+        "reading": "furui",
+        "gloss": "old"
+      },
+      {
+        "text": "牧場",
+        "reading": "bokujō",
+        "gloss": "farm"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "良くしてくれている ",
+        "reading": "yoku shite kurete iru",
+        "gloss": "are making better (for us)"
+      },
+      {
+        "text": "みたいで ",
+        "reading": "mitai de",
+        "gloss": "seems, so"
+      },
+      {
+        "text": "うれしいわ。#$e#",
+        "reading": "ureshii wa",
+        "gloss": "I'm glad"
+      },
+      {
+        "text": "全て ",
+        "reading": "subete",
+        "gloss": "everything"
+      },
+      {
+        "text": "順調に ",
+        "reading": "junchō ni",
+        "gloss": "going smoothly"
+      },
+      {
+        "text": "なったら、 ",
+        "reading": "nattara",
+        "gloss": "once (it) becomes"
+      },
+      {
+        "text": "コミュニティ",
+        "reading": "komyuniti",
+        "gloss": "community"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(to)"
+      },
+      {
+        "text": "大きく ",
+        "reading": "ōkiku",
+        "gloss": "greatly"
+      },
+      {
+        "text": "貢献 ",
+        "reading": "kōken",
+        "gloss": "contribution"
+      },
+      {
+        "text": "できそうね！$h#$e#",
+        "reading": "dekisō ne",
+        "gloss": "looks like you'll be able to (make)"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "は、 ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "沢山",
+        "reading": "takusan",
+        "gloss": "lots"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "仕事",
+        "reading": "shigoto",
+        "gloss": "work"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "こなす",
+        "reading": "konasu",
+        "gloss": "to handle / get through"
+      },
+      {
+        "text": "ことに ",
+        "reading": "koto ni",
+        "gloss": "(will end up)"
+      },
+      {
+        "text": "なるけど。#$e#",
+        "reading": "naru kedo",
+        "gloss": "becoming, though"
+      },
+      {
+        "text": "じゃあね。",
+        "reading": "jā ne",
+        "gloss": "see you"
+      }
+    ]
+  },
+  "Sun": {
+    "japanese": "#$c .5#今日の 家事は これぐらいにするわ。$h#$e#今日は これで お休みよ。$h#$e#これ以上 家に 閉じこもってたら、 気が変になっちゃう！#$e#足が太くなるのも イヤだし。",
+    "english": "I'll stop the housework at this much for today. I'm taking the rest of today off. If I stay shut up in the house any longer, I'll go crazy! And I don't want my legs getting thick either.",
+    "segments": [
+      {
+        "text": "#$c .5#今日",
+        "reading": "kyō",
+        "gloss": "today (after 50% chance markup)"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "家事",
+        "reading": "kaji",
+        "gloss": "housework"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "これぐらいにするわ。$h#$e#",
+        "reading": "kore gurai ni suru wa",
+        "gloss": "I'll leave it at this much"
+      },
+      {
+        "text": "今日",
+        "reading": "kyō",
+        "gloss": "today"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "これで ",
+        "reading": "kore de",
+        "gloss": "with this / at this point"
+      },
+      {
+        "text": "お休みよ。$h#$e#",
+        "reading": "oyasumi yo",
+        "gloss": "(I'm) off"
+      },
+      {
+        "text": "これ以上 ",
+        "reading": "kore ijō",
+        "gloss": "any more than this"
+      },
+      {
+        "text": "家",
+        "reading": "ie",
+        "gloss": "the house"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(in)"
+      },
+      {
+        "text": "閉じこもってたら、 ",
+        "reading": "tojikomottetara",
+        "gloss": "if I stay shut in"
+      },
+      {
+        "text": "気が変になっちゃう！#$e#",
+        "reading": "ki ga hen ni natchau",
+        "gloss": "I'll go crazy!"
+      },
+      {
+        "text": "足",
+        "reading": "ashi",
+        "gloss": "legs"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "太くなる",
+        "reading": "futoku naru",
+        "gloss": "get thick"
+      },
+      {
+        "text": "のも ",
+        "reading": "no mo",
+        "gloss": "(that) also"
+      },
+      {
+        "text": "イヤだし。",
+        "reading": "iya da shi",
+        "gloss": "I don't want, and besides"
+      }
+    ]
+  },
+  "Sun8": {
+    "japanese": "自分以外の誰かに尽くす必要のない、完全に自由だった夢を見てたわ。#$b#…でも目を覚ますと、一日中家事に 付きっ切りっていう現実が待っているのよね…$s#$e#でも家族を持つことに後悔はないわ、@...。サムそしてビンセントは私にとってすべてだもの！",
+    "english": "I was dreaming that I was completely free, with no need to devote myself to anyone besides me. ...But when I wake up, the reality of being stuck with housework all day awaits me... But I have no regrets about having a family, @... Sam and Vincent are everything to me!",
+    "segments": [
+      {
+        "text": "自分",
+        "reading": "jibun",
+        "gloss": "myself"
+      },
+      {
+        "text": "以外",
+        "reading": "igai",
+        "gloss": "other than"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "誰か",
+        "reading": "dareka",
+        "gloss": "anyone"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(to)"
+      },
+      {
+        "text": "尽くす",
+        "reading": "tsukusu",
+        "gloss": "to devote oneself"
+      },
+      {
+        "text": "必要",
+        "reading": "hitsuyō",
+        "gloss": "need"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(subject marker in relative clause)"
+      },
+      {
+        "text": "ない、",
+        "reading": "nai",
+        "gloss": "without"
+      },
+      {
+        "text": "完全に",
+        "reading": "kanzen ni",
+        "gloss": "completely"
+      },
+      {
+        "text": "自由だった",
+        "reading": "jiyū datta",
+        "gloss": "was free"
+      },
+      {
+        "text": "夢",
+        "reading": "yume",
+        "gloss": "dream"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見てたわ。#$b#",
+        "reading": "miteta wa",
+        "gloss": "I was seeing (dreaming)"
+      },
+      {
+        "text": "…でも",
+        "reading": "demo",
+        "gloss": "...but"
+      },
+      {
+        "text": "目",
+        "reading": "me",
+        "gloss": "eyes"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "覚ますと、",
+        "reading": "samasu to",
+        "gloss": "when (I) wake"
+      },
+      {
+        "text": "一日中",
+        "reading": "ichinichijū",
+        "gloss": "all day long"
+      },
+      {
+        "text": "家事",
+        "reading": "kaji",
+        "gloss": "housework"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(to)"
+      },
+      {
+        "text": "付きっ切りっていう",
+        "reading": "tsukikkiri tte iu",
+        "gloss": "being tied up with, as they say"
+      },
+      {
+        "text": "現実",
+        "reading": "genjitsu",
+        "gloss": "reality"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "待っているのよね…$s#$e#",
+        "reading": "matte iru no yo ne",
+        "gloss": "is waiting..."
+      },
+      {
+        "text": "でも",
+        "reading": "demo",
+        "gloss": "but"
+      },
+      {
+        "text": "家族",
+        "reading": "kazoku",
+        "gloss": "a family"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "持つ",
+        "reading": "motsu",
+        "gloss": "having"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "(the fact of)"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(about)"
+      },
+      {
+        "text": "後悔",
+        "reading": "kōkai",
+        "gloss": "regret"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ないわ、",
+        "reading": "nai wa",
+        "gloss": "there is none"
+      },
+      {
+        "text": "@...。",
+        "reading": "",
+        "gloss": "(your name)..."
+      },
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "そして",
+        "reading": "soshite",
+        "gloss": "and"
+      },
+      {
+        "text": "ビンセント",
+        "reading": "Binsento",
+        "gloss": "Vincent"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "me"
+      },
+      {
+        "text": "にとって",
+        "reading": "ni totte",
+        "gloss": "to"
+      },
+      {
+        "text": "すべて",
+        "reading": "subete",
+        "gloss": "everything"
+      },
+      {
+        "text": "だもの！",
+        "reading": "da mono",
+        "gloss": "are, after all!"
+      }
+    ]
+  },
+  "Thu": {
+    "japanese": "あなた、牧場主なんでしょ？　面白いわね。#$e#牧場主に 会ったことが なかったの。#$e#野菜の 育て方を いつか 教えてくれるかしら。$h",
+    "english": "You're a farmer, right? How interesting. I'd never met a farmer. I wonder if you'll teach me how to grow vegetables someday.",
+    "segments": [
+      {
+        "text": "あなた、",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "牧場主",
+        "reading": "bokujōnushi",
+        "gloss": "farmer"
+      },
+      {
+        "text": "なんでしょ？　",
+        "reading": "nan desho",
+        "gloss": "are, right?"
+      },
+      {
+        "text": "面白いわね。#$e#",
+        "reading": "omoshiroi wa ne",
+        "gloss": "interesting"
+      },
+      {
+        "text": "牧場主",
+        "reading": "bokujōnushi",
+        "gloss": "a farmer"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(to — meet)"
+      },
+      {
+        "text": "会ったことが ",
+        "reading": "atta koto ga",
+        "gloss": "the experience of meeting"
+      },
+      {
+        "text": "なかったの。#$e#",
+        "reading": "nakatta no",
+        "gloss": "I didn't have"
+      },
+      {
+        "text": "野菜",
+        "reading": "yasai",
+        "gloss": "vegetables"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "育て方",
+        "reading": "sodatekata",
+        "gloss": "how to grow"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "いつか ",
+        "reading": "itsuka",
+        "gloss": "someday"
+      },
+      {
+        "text": "教えてくれるかしら。$h",
+        "reading": "oshiete kureru kashira",
+        "gloss": "I wonder if you'll teach me"
+      }
+    ]
+  },
+  "Thu6": {
+    "japanese": "時が過ぎるのって あっという間ね。はぁ…#$e#サムが オムツを つけていた 頃のことも 覚えてるわ。あの頃の サムは 本当に かわいかった。$s#$e#これ、あの子には 内緒よ。$h#$e#私と お話するのが 本当に 好きなのね。",
+    "english": "Time passes in no time, doesn't it. Sigh... I still remember when Sam was wearing diapers. Sam back then was really cute. Keep this a secret from him. You really like chatting with me, don't you.",
+    "segments": [
+      {
+        "text": "時",
+        "reading": "toki",
+        "gloss": "time"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "過ぎる",
+        "reading": "sugiru",
+        "gloss": "passing"
+      },
+      {
+        "text": "のって ",
+        "reading": "notte",
+        "gloss": "(as for)"
+      },
+      {
+        "text": "あっという間ね。",
+        "reading": "atto iu ma ne",
+        "gloss": "is over in an instant"
+      },
+      {
+        "text": "はぁ…#$e#",
+        "reading": "hā",
+        "gloss": "sigh..."
+      },
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "オムツ",
+        "reading": "omutsu",
+        "gloss": "diapers"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "つけていた ",
+        "reading": "tsukete ita",
+        "gloss": "was wearing"
+      },
+      {
+        "text": "頃",
+        "reading": "koro",
+        "gloss": "time when"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "things"
+      },
+      {
+        "text": "も ",
+        "reading": "mo",
+        "gloss": "(even)"
+      },
+      {
+        "text": "覚えてるわ。",
+        "reading": "oboeteru wa",
+        "gloss": "I remember"
+      },
+      {
+        "text": "あの頃",
+        "reading": "ano koro",
+        "gloss": "back then"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "本当に ",
+        "reading": "hontō ni",
+        "gloss": "really"
+      },
+      {
+        "text": "かわいかった。$s#$e#",
+        "reading": "kawaikatta",
+        "gloss": "was cute"
+      },
+      {
+        "text": "これ、",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "あの子",
+        "reading": "ano ko",
+        "gloss": "that kid (him)"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(to)"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(contrast: as for)"
+      },
+      {
+        "text": "内緒よ。$h#$e#",
+        "reading": "naisho yo",
+        "gloss": "(is) a secret"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "me"
+      },
+      {
+        "text": "と ",
+        "reading": "to",
+        "gloss": "(with)"
+      },
+      {
+        "text": "お話する",
+        "reading": "ohanashi suru",
+        "gloss": "talking"
+      },
+      {
+        "text": "のが ",
+        "reading": "no ga",
+        "gloss": "(nominalizer + object of liking)"
+      },
+      {
+        "text": "本当に ",
+        "reading": "hontō ni",
+        "gloss": "really"
+      },
+      {
+        "text": "好きなのね。",
+        "reading": "suki na no ne",
+        "gloss": "you like, huh"
+      }
+    ]
+  },
+  "Tue": {
+    "japanese": "運動は 健康を 保つのに 重要よ。私は 運動の時間を ちゃんと 取るように しているわ。#$e#親だから、 自身に 費やせる時間が あんまりないけどね。だから 時間は 有効に 使いたいの。",
+    "english": "Exercise is important for keeping healthy. I make sure to properly take time for exercise. Being a parent, I don't have much time I can spend on myself, though. So I want to use my time effectively.",
+    "segments": [
+      {
+        "text": "運動",
+        "reading": "undō",
+        "gloss": "exercise"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "健康",
+        "reading": "kenkō",
+        "gloss": "health"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "保つ",
+        "reading": "tamotsu",
+        "gloss": "to keep"
+      },
+      {
+        "text": "のに ",
+        "reading": "no ni",
+        "gloss": "for"
+      },
+      {
+        "text": "重要よ。",
+        "reading": "jūyō yo",
+        "gloss": "is important"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "運動",
+        "reading": "undō",
+        "gloss": "exercise"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(for)"
+      },
+      {
+        "text": "時間",
+        "reading": "jikan",
+        "gloss": "time"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "ちゃんと ",
+        "reading": "chanto",
+        "gloss": "properly"
+      },
+      {
+        "text": "取るように ",
+        "reading": "toru yō ni",
+        "gloss": "(so as) to take"
+      },
+      {
+        "text": "しているわ。#$e#",
+        "reading": "shite iru wa",
+        "gloss": "I make sure"
+      },
+      {
+        "text": "親だから、 ",
+        "reading": "oya da kara",
+        "gloss": "because I'm a parent"
+      },
+      {
+        "text": "自身",
+        "reading": "jishin",
+        "gloss": "myself"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(on)"
+      },
+      {
+        "text": "費やせる",
+        "reading": "tsuiyaseru",
+        "gloss": "can spend"
+      },
+      {
+        "text": "時間",
+        "reading": "jikan",
+        "gloss": "time"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あんまりないけどね。",
+        "reading": "anmari nai kedo ne",
+        "gloss": "there isn't much, though"
+      },
+      {
+        "text": "だから ",
+        "reading": "dakara",
+        "gloss": "so"
+      },
+      {
+        "text": "時間",
+        "reading": "jikan",
+        "gloss": "time"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "有効に ",
+        "reading": "yūkō ni",
+        "gloss": "effectively"
+      },
+      {
+        "text": "使いたいの。",
+        "reading": "tsukaitai no",
+        "gloss": "I want to use"
+      }
+    ]
+  },
+  "Wed": {
+    "japanese": "なんて言ったの？もう %time なの？ああ！#$e#まだやることが 沢山 あるのに！$s",
+    "english": "What did you say? It's already %time? Oh! I still have lots to do!",
+    "segments": [
+      {
+        "text": "なんて",
+        "reading": "nante",
+        "gloss": "what"
+      },
+      {
+        "text": "言ったの？",
+        "reading": "itta no",
+        "gloss": "did you say?"
+      },
+      {
+        "text": "もう ",
+        "reading": "mō",
+        "gloss": "already"
+      },
+      {
+        "text": "%time",
+        "reading": "",
+        "gloss": "(the current time)"
+      },
+      {
+        "text": " なの？",
+        "reading": "na no",
+        "gloss": "is it?"
+      },
+      {
+        "text": "ああ！#$e#",
+        "reading": "ā",
+        "gloss": "oh!"
+      },
+      {
+        "text": "まだ",
+        "reading": "mada",
+        "gloss": "still"
+      },
+      {
+        "text": "やること",
+        "reading": "yaru koto",
+        "gloss": "things to do"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "沢山 ",
+        "reading": "takusan",
+        "gloss": "lots"
+      },
+      {
+        "text": "あるのに！$s",
+        "reading": "aru no ni",
+        "gloss": "there are, and yet!"
+      }
+    ]
+  },
+  "Wed4": {
+    "japanese": "もっと 外に 出たいけど、 やることが あまりにも 多すぎるわ。#$e#手が 硬くならないよう、 ゴム手袋を つけるように したわ。#$e#年を取るにつれて、 健康を保つために しなきゃ いけないことが 増えるのよね。$s#$e#またね！",
+    "english": "I want to go outside more, but there's way too much to do. I've started wearing rubber gloves so my hands don't get rough. As you get older, the things you have to do to keep healthy increase, don't they. See you!",
+    "segments": [
+      {
+        "text": "もっと ",
+        "reading": "motto",
+        "gloss": "more"
+      },
+      {
+        "text": "外",
+        "reading": "soto",
+        "gloss": "outside"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(to)"
+      },
+      {
+        "text": "出たいけど、 ",
+        "reading": "detai kedo",
+        "gloss": "I want to go out, but"
+      },
+      {
+        "text": "やること",
+        "reading": "yaru koto",
+        "gloss": "things to do"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あまりにも ",
+        "reading": "amari ni mo",
+        "gloss": "far too"
+      },
+      {
+        "text": "多すぎるわ。#$e#",
+        "reading": "ōsugiru wa",
+        "gloss": "too many"
+      },
+      {
+        "text": "手",
+        "reading": "te",
+        "gloss": "hands"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "硬くならないよう、 ",
+        "reading": "kataku naranai yō",
+        "gloss": "so as not to become hard"
+      },
+      {
+        "text": "ゴム手袋",
+        "reading": "gomu tebukuro",
+        "gloss": "rubber gloves"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "つけるように ",
+        "reading": "tsukeru yō ni",
+        "gloss": "to wear (as a habit)"
+      },
+      {
+        "text": "したわ。#$e#",
+        "reading": "shita wa",
+        "gloss": "I started"
+      },
+      {
+        "text": "年を取る",
+        "reading": "toshi o toru",
+        "gloss": "getting older"
+      },
+      {
+        "text": "につれて、 ",
+        "reading": "ni tsurete",
+        "gloss": "as"
+      },
+      {
+        "text": "健康",
+        "reading": "kenkō",
+        "gloss": "health"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "保つ",
+        "reading": "tamotsu",
+        "gloss": "to keep"
+      },
+      {
+        "text": "ために ",
+        "reading": "tame ni",
+        "gloss": "in order to"
+      },
+      {
+        "text": "しなきゃ ",
+        "reading": "shinakya",
+        "gloss": "have to do"
+      },
+      {
+        "text": "いけない",
+        "reading": "ikenai",
+        "gloss": "must"
+      },
+      {
+        "text": "ことが ",
+        "reading": "koto ga",
+        "gloss": "things"
+      },
+      {
+        "text": "増えるのよね。$s#$e#",
+        "reading": "fueru no yo ne",
+        "gloss": "increase, you know"
+      },
+      {
+        "text": "またね！",
+        "reading": "mata ne",
+        "gloss": "see you!"
+      }
+    ]
+  },
+  "cc_Bus": {
+    "japanese": "バスが修理されたんですって。パムはきっと喜んでるわ…#$b#仕事がなくなってからお酒の量が増えたって聞いたから… これがいいきっかけになると思うの。",
+    "english": "I heard the bus was repaired. I'm sure Pam is happy... I heard she's been drinking more since she lost her job... so I think this will be a good turning point.",
+    "segments": [
+      {
+        "text": "バス",
+        "reading": "basu",
+        "gloss": "the bus"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "修理されたんですって。",
+        "reading": "shūri saretan desu tte",
+        "gloss": "was repaired, I hear"
+      },
+      {
+        "text": "パム",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "きっと",
+        "reading": "kitto",
+        "gloss": "surely"
+      },
+      {
+        "text": "喜んでるわ…#$b#",
+        "reading": "yorokonderu wa",
+        "gloss": "is happy..."
+      },
+      {
+        "text": "仕事",
+        "reading": "shigoto",
+        "gloss": "job"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "なくなって",
+        "reading": "nakunatte",
+        "gloss": "was lost"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "since"
+      },
+      {
+        "text": "お酒",
+        "reading": "osake",
+        "gloss": "alcohol"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "量",
+        "reading": "ryō",
+        "gloss": "amount"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "増えたって",
+        "reading": "fueta tte",
+        "gloss": "increased, (that)"
+      },
+      {
+        "text": "聞いたから… ",
+        "reading": "kiita kara",
+        "gloss": "I heard, so..."
+      },
+      {
+        "text": "これ",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いい",
+        "reading": "ii",
+        "gloss": "good"
+      },
+      {
+        "text": "きっかけ",
+        "reading": "kikkake",
+        "gloss": "turning point / trigger"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(to become)"
+      },
+      {
+        "text": "なる",
+        "reading": "naru",
+        "gloss": "will become"
+      },
+      {
+        "text": "と",
+        "reading": "to",
+        "gloss": "(quote: that)"
+      },
+      {
+        "text": "思うの。",
+        "reading": "omou no",
+        "gloss": "I think"
+      }
+    ]
+  },
+  "dating_Sam_memory_oneday": {
+    "japanese": "あなたとサムのことを聞いたの。あの子があなたに迷惑をかけないか心配だわ！$h",
+    "english": "I heard about you and Sam. I'm worried that kid might cause you trouble!",
+    "segments": [
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "と",
+        "reading": "to",
+        "gloss": "and"
+      },
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "matter / about"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "聞いたの。",
+        "reading": "kiita no",
+        "gloss": "I heard"
+      },
+      {
+        "text": "あの子",
+        "reading": "ano ko",
+        "gloss": "that kid (Sam)"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(to)"
+      },
+      {
+        "text": "迷惑",
+        "reading": "meiwaku",
+        "gloss": "trouble"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "かけないか",
+        "reading": "kakenai ka",
+        "gloss": "whether (he) might cause"
+      },
+      {
+        "text": "心配だわ！$h",
+        "reading": "shinpai da wa",
+        "gloss": "I'm worried!"
+      }
+    ]
+  },
+  "eventSeen_101": {
+    "japanese": "かわいそうなクリント… 彼はエミリーのことが好きらしいの。でもエミリーは彼を友達としか思ってないって聞いたわ…",
+    "english": "Poor Clint... apparently he likes Emily. But I heard Emily thinks of him only as a friend...",
+    "segments": [
+      {
+        "text": "かわいそうな",
+        "reading": "kawaisō na",
+        "gloss": "poor"
+      },
+      {
+        "text": "クリント… ",
+        "reading": "Kurinto",
+        "gloss": "Clint..."
+      },
+      {
+        "text": "彼",
+        "reading": "kare",
+        "gloss": "he"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "(about her)"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(object of liking)"
+      },
+      {
+        "text": "好きらしいの。",
+        "reading": "suki rashii no",
+        "gloss": "apparently likes"
+      },
+      {
+        "text": "でも",
+        "reading": "demo",
+        "gloss": "but"
+      },
+      {
+        "text": "エミリー",
+        "reading": "Emirī",
+        "gloss": "Emily"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "彼",
+        "reading": "kare",
+        "gloss": "him"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "友達",
+        "reading": "tomodachi",
+        "gloss": "a friend"
+      },
+      {
+        "text": "と",
+        "reading": "to",
+        "gloss": "(as)"
+      },
+      {
+        "text": "しか",
+        "reading": "shika",
+        "gloss": "only"
+      },
+      {
+        "text": "思ってないって",
+        "reading": "omottenai tte",
+        "gloss": "doesn't think of (him), (that)"
+      },
+      {
+        "text": "聞いたわ…",
+        "reading": "kiita wa",
+        "gloss": "I heard..."
+      }
+    ]
+  },
+  "eventSeen_3102768": {
+    "japanese": "ペニーは優しい子よ。ヴィンセントの面倒をよく見てくれるし、ヴィンセントはペニーが大好きなの。",
+    "english": "Penny is a kind girl. She looks after Vincent well, and Vincent loves Penny.",
+    "segments": [
+      {
+        "text": "ペニー",
+        "reading": "Penī",
+        "gloss": "Penny"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "優しい",
+        "reading": "yasashii",
+        "gloss": "kind"
+      },
+      {
+        "text": "子よ。",
+        "reading": "ko yo",
+        "gloss": "girl / kid"
+      },
+      {
+        "text": "ヴィンセント",
+        "reading": "Vinsento",
+        "gloss": "Vincent"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "面倒",
+        "reading": "mendō",
+        "gloss": "care"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "よく",
+        "reading": "yoku",
+        "gloss": "well"
+      },
+      {
+        "text": "見てくれるし、",
+        "reading": "mite kureru shi",
+        "gloss": "looks after (for us), and"
+      },
+      {
+        "text": "ヴィンセント",
+        "reading": "Vinsento",
+        "gloss": "Vincent"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ペニー",
+        "reading": "Penī",
+        "gloss": "Penny"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(object of liking)"
+      },
+      {
+        "text": "大好きなの。",
+        "reading": "daisuki na no",
+        "gloss": "loves"
+      }
+    ]
+  },
+  "eventSeen_3910975": {
+    "japanese": "（ささやき）シェーンのことは聞いた？とても心配だわ…大丈夫だといいのだけど。$s",
+    "english": "(whispering) Did you hear about Shane? I'm so worried... I hope he's alright.",
+    "segments": [
+      {
+        "text": "（ささやき）",
+        "reading": "(sasayaki)",
+        "gloss": "(whispering)"
+      },
+      {
+        "text": "シェーン",
+        "reading": "Shēn",
+        "gloss": "Shane"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "matter / about"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "聞いた？",
+        "reading": "kiita",
+        "gloss": "did you hear?"
+      },
+      {
+        "text": "とても",
+        "reading": "totemo",
+        "gloss": "very"
+      },
+      {
+        "text": "心配だわ…",
+        "reading": "shinpai da wa",
+        "gloss": "I'm worried..."
+      },
+      {
+        "text": "大丈夫だと",
+        "reading": "daijōbu da to",
+        "gloss": "that (he) is okay"
+      },
+      {
+        "text": "いいのだけど。$s",
+        "reading": "ii no da kedo",
+        "gloss": "it would be good, but (I hope)"
+      }
+    ]
+  },
+  "eventSeen_58": {
+    "japanese": "毎週、女性を集めてエアロビクス教室をやっているの…#$b#最近新しい人が入ったんだけど、彼ったら自分のことは絶対に秘密にしてくれって言うのよ！",
+    "english": "Every week I gather the women and do an aerobics class... Recently a new person joined, but he told us to absolutely keep who he is a secret!",
+    "segments": [
+      {
+        "text": "毎週、",
+        "reading": "maishū",
+        "gloss": "every week"
+      },
+      {
+        "text": "女性",
+        "reading": "josei",
+        "gloss": "women"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "集めて",
+        "reading": "atsumete",
+        "gloss": "gathering"
+      },
+      {
+        "text": "エアロビクス",
+        "reading": "earobikusu",
+        "gloss": "aerobics"
+      },
+      {
+        "text": "教室",
+        "reading": "kyōshitsu",
+        "gloss": "class"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "やっているの…#$b#",
+        "reading": "yatte iru no",
+        "gloss": "I'm doing..."
+      },
+      {
+        "text": "最近",
+        "reading": "saikin",
+        "gloss": "recently"
+      },
+      {
+        "text": "新しい",
+        "reading": "atarashii",
+        "gloss": "new"
+      },
+      {
+        "text": "人",
+        "reading": "hito",
+        "gloss": "person"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "入ったんだけど、",
+        "reading": "haittan da kedo",
+        "gloss": "joined, but"
+      },
+      {
+        "text": "彼",
+        "reading": "kare",
+        "gloss": "he"
+      },
+      {
+        "text": "ったら",
+        "reading": "ttara",
+        "gloss": "(exasperated topic: that guy...)"
+      },
+      {
+        "text": "自分",
+        "reading": "jibun",
+        "gloss": "himself"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "matters / about"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "絶対に",
+        "reading": "zettai ni",
+        "gloss": "absolutely"
+      },
+      {
+        "text": "秘密に",
+        "reading": "himitsu ni",
+        "gloss": "secret"
+      },
+      {
+        "text": "してくれって",
+        "reading": "shite kure tte",
+        "gloss": "\"please keep (it)\""
+      },
+      {
+        "text": "言うのよ！",
+        "reading": "iu no yo",
+        "gloss": "he says!"
+      }
+    ]
+  },
+  "eventSeen_94": {
+    "japanese": "あの魚を持ってきてくれてありがとう！あんなに素晴らしい食材は久しぶりだったわ。",
+    "english": "Thanks for bringing that fish! It had been a long time since we had such a wonderful ingredient.",
+    "segments": [
+      {
+        "text": "あの",
+        "reading": "ano",
+        "gloss": "that"
+      },
+      {
+        "text": "魚",
+        "reading": "sakana",
+        "gloss": "fish"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "持ってきてくれて",
+        "reading": "motte kite kurete",
+        "gloss": "bringing (for us)"
+      },
+      {
+        "text": "ありがとう！",
+        "reading": "arigatō",
+        "gloss": "thank you"
+      },
+      {
+        "text": "あんなに",
+        "reading": "anna ni",
+        "gloss": "so"
+      },
+      {
+        "text": "素晴らしい",
+        "reading": "subarashii",
+        "gloss": "wonderful"
+      },
+      {
+        "text": "食材",
+        "reading": "shokuzai",
+        "gloss": "ingredient"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "久しぶりだったわ。",
+        "reading": "hisashiburi datta wa",
+        "gloss": "was the first in a long time"
+      }
+    ]
+  },
+  "fall_Mon6": {
+    "japanese": "私は自分がどんなに恵まれているかを自覚しなくちゃいけないわ。私たちはここで幸せに暮らしている。世界には十分な食べ物が手に入らない人もいるのよ。$s",
+    "english": "I have to be aware of how blessed I am. We live happily here. In the world there are people who can't get enough food.",
+    "segments": [
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "自分",
+        "reading": "jibun",
+        "gloss": "myself"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "どんなに",
+        "reading": "donna ni",
+        "gloss": "how much"
+      },
+      {
+        "text": "恵まれている",
+        "reading": "megumarete iru",
+        "gloss": "am blessed"
+      },
+      {
+        "text": "か",
+        "reading": "ka",
+        "gloss": "(whether / question)"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "自覚しなくちゃいけないわ。",
+        "reading": "jikaku shinakucha ikenai wa",
+        "gloss": "must be aware of"
+      },
+      {
+        "text": "私たち",
+        "reading": "watashitachi",
+        "gloss": "we"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ここ",
+        "reading": "koko",
+        "gloss": "here"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "(location: at)"
+      },
+      {
+        "text": "幸せに",
+        "reading": "shiawase ni",
+        "gloss": "happily"
+      },
+      {
+        "text": "暮らしている。",
+        "reading": "kurashite iru",
+        "gloss": "are living"
+      },
+      {
+        "text": "世界",
+        "reading": "sekai",
+        "gloss": "the world"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(in)"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(contrast: as for)"
+      },
+      {
+        "text": "十分な",
+        "reading": "jūbun na",
+        "gloss": "enough"
+      },
+      {
+        "text": "食べ物",
+        "reading": "tabemono",
+        "gloss": "food"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "手に入らない",
+        "reading": "te ni hairanai",
+        "gloss": "can't obtain"
+      },
+      {
+        "text": "人",
+        "reading": "hito",
+        "gloss": "people"
+      },
+      {
+        "text": "も",
+        "reading": "mo",
+        "gloss": "(also)"
+      },
+      {
+        "text": "いるのよ。$s",
+        "reading": "iru no yo",
+        "gloss": "there are"
+      }
+    ]
+  },
+  "fall_Sun": {
+    "japanese": "私、 キャロラインとは 仲がいいのよ。彼女には 何でも 話せるの。",
+    "english": "Me, I'm on good terms with Caroline. I can talk to her about anything.",
+    "segments": [
+      {
+        "text": "私、 ",
+        "reading": "watashi",
+        "gloss": "me"
+      },
+      {
+        "text": "キャロライン",
+        "reading": "Kyarorain",
+        "gloss": "Caroline"
+      },
+      {
+        "text": "とは ",
+        "reading": "to wa",
+        "gloss": "(with — as for)"
+      },
+      {
+        "text": "仲がいいのよ。",
+        "reading": "naka ga ii no yo",
+        "gloss": "am close / get along well"
+      },
+      {
+        "text": "彼女",
+        "reading": "kanojo",
+        "gloss": "her"
+      },
+      {
+        "text": "には ",
+        "reading": "ni wa",
+        "gloss": "(to — as for)"
+      },
+      {
+        "text": "何でも ",
+        "reading": "nandemo",
+        "gloss": "anything"
+      },
+      {
+        "text": "話せるの。",
+        "reading": "hanaseru no",
+        "gloss": "I can talk about"
+      }
+    ]
+  },
+  "fall_Sun2": {
+    "japanese": "あなたも 親に なったら、 昔の 生活を 捨てることに なるわよ。#$e#絶対捨てなきゃ いけないわけじゃ ないけど… 気をつけないと そうなるわ。",
+    "english": "When you become a parent too, you'll end up throwing away your old life. It's not that you absolutely have to throw it away... but if you're not careful, that's how it'll go.",
+    "segments": [
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "も ",
+        "reading": "mo",
+        "gloss": "(too)"
+      },
+      {
+        "text": "親",
+        "reading": "oya",
+        "gloss": "a parent"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(to become)"
+      },
+      {
+        "text": "なったら、 ",
+        "reading": "nattara",
+        "gloss": "when (you) become"
+      },
+      {
+        "text": "昔",
+        "reading": "mukashi",
+        "gloss": "former / old days"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "生活",
+        "reading": "seikatsu",
+        "gloss": "lifestyle"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "捨てる",
+        "reading": "suteru",
+        "gloss": "to throw away"
+      },
+      {
+        "text": "ことに ",
+        "reading": "koto ni",
+        "gloss": "(end up)"
+      },
+      {
+        "text": "なるわよ。#$e#",
+        "reading": "naru wa yo",
+        "gloss": "will, you'll see"
+      },
+      {
+        "text": "絶対",
+        "reading": "zettai",
+        "gloss": "absolutely"
+      },
+      {
+        "text": "捨てなきゃ ",
+        "reading": "sutenakya",
+        "gloss": "have to throw away"
+      },
+      {
+        "text": "いけないわけじゃ ",
+        "reading": "ikenai wake ja",
+        "gloss": "it isn't that you must"
+      },
+      {
+        "text": "ないけど… ",
+        "reading": "nai kedo",
+        "gloss": "(not), but..."
+      },
+      {
+        "text": "気をつけないと ",
+        "reading": "ki o tsukenai to",
+        "gloss": "if you're not careful"
+      },
+      {
+        "text": "そうなるわ。",
+        "reading": "sō naru wa",
+        "gloss": "it'll turn out that way"
+      }
+    ]
+  },
+  "fall_Thu": {
+    "japanese": "たぶん、 子ども達を 甘やかしすぎたのかも。彼らに 家事を させてなかったから。#$e#子ども達には、 若い間に 色々と 楽しんでほしいと 思ってるのよ。まあ、 サムは 十分 大人に なったけどね。#$b#怠け者に なってなかったら いいけど…そうは 行かないわよね。$s#$e#親になるのって 難しいわ。",
+    "english": "Maybe I spoiled the kids too much. Because I didn't make them do housework. I want the kids to enjoy lots of things while they're young. Well, Sam has become plenty grown up, though. I hope he hasn't become lazy... but it won't go that way, will it. Being a parent is hard.",
+    "segments": [
+      {
+        "text": "たぶん、 ",
+        "reading": "tabun",
+        "gloss": "maybe"
+      },
+      {
+        "text": "子ども達",
+        "reading": "kodomotachi",
+        "gloss": "the kids"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "甘やかしすぎたのかも。",
+        "reading": "amayakashisugita no kamo",
+        "gloss": "(I) might have spoiled too much"
+      },
+      {
+        "text": "彼ら",
+        "reading": "karera",
+        "gloss": "them"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(to — causee)"
+      },
+      {
+        "text": "家事",
+        "reading": "kaji",
+        "gloss": "housework"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "させてなかったから。#$e#",
+        "reading": "sasete nakatta kara",
+        "gloss": "because (I) didn't make (them) do"
+      },
+      {
+        "text": "子ども達",
+        "reading": "kodomotachi",
+        "gloss": "the kids"
+      },
+      {
+        "text": "には、 ",
+        "reading": "ni wa",
+        "gloss": "(as for — from)"
+      },
+      {
+        "text": "若い",
+        "reading": "wakai",
+        "gloss": "young"
+      },
+      {
+        "text": "間に ",
+        "reading": "aida ni",
+        "gloss": "while"
+      },
+      {
+        "text": "色々と ",
+        "reading": "iroiro to",
+        "gloss": "various things"
+      },
+      {
+        "text": "楽しんでほしいと ",
+        "reading": "tanoshinde hoshii to",
+        "gloss": "(that) I want them to enjoy"
+      },
+      {
+        "text": "思ってるのよ。",
+        "reading": "omotteru no yo",
+        "gloss": "I think"
+      },
+      {
+        "text": "まあ、 ",
+        "reading": "mā",
+        "gloss": "well,"
+      },
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "十分 ",
+        "reading": "jūbun",
+        "gloss": "plenty"
+      },
+      {
+        "text": "大人",
+        "reading": "otona",
+        "gloss": "an adult"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(to become)"
+      },
+      {
+        "text": "なったけどね。#$b#",
+        "reading": "natta kedo ne",
+        "gloss": "has become, though"
+      },
+      {
+        "text": "怠け者",
+        "reading": "namakemono",
+        "gloss": "a lazy person"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(to become)"
+      },
+      {
+        "text": "なってなかったら ",
+        "reading": "natte nakattara",
+        "gloss": "if (he) hasn't become"
+      },
+      {
+        "text": "いいけど…",
+        "reading": "ii kedo",
+        "gloss": "it'd be good, but..."
+      },
+      {
+        "text": "そうは ",
+        "reading": "sō wa",
+        "gloss": "that way"
+      },
+      {
+        "text": "行かないわよね。$s#$e#",
+        "reading": "ikanai wa yo ne",
+        "gloss": "it won't go, will it"
+      },
+      {
+        "text": "親",
+        "reading": "oya",
+        "gloss": "a parent"
+      },
+      {
+        "text": "になる",
+        "reading": "ni naru",
+        "gloss": "becoming"
+      },
+      {
+        "text": "のって ",
+        "reading": "notte",
+        "gloss": "(as for)"
+      },
+      {
+        "text": "難しいわ。",
+        "reading": "muzukashii wa",
+        "gloss": "is hard"
+      }
+    ]
+  },
+  "fall_Thu_inlaw_Sam": {
+    "japanese": "サムは農場でただブラブラしているだけなのか、それとも貢献しているのか？",
+    "english": "Is Sam just loafing around on the farm, or is he contributing?",
+    "segments": [
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "農場",
+        "reading": "nōjō",
+        "gloss": "the farm"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "(location: at)"
+      },
+      {
+        "text": "ただ",
+        "reading": "tada",
+        "gloss": "just"
+      },
+      {
+        "text": "ブラブラしている",
+        "reading": "burabura shite iru",
+        "gloss": "loafing around"
+      },
+      {
+        "text": "だけなのか、",
+        "reading": "dake na no ka",
+        "gloss": "only (that), or"
+      },
+      {
+        "text": "それとも",
+        "reading": "soretomo",
+        "gloss": "or else"
+      },
+      {
+        "text": "貢献しているのか？",
+        "reading": "kōken shite iru no ka",
+        "gloss": "is he contributing?"
+      }
+    ]
+  },
+  "married_Sam": {
+    "japanese": "あなたとサムがしあわせそうで私もうれしいわ！本当にお似合いの夫婦ね！#$e#サムの部屋からうるさいギターの音が聞こえなくなるのをさびしく思う日が来るなんて思わなかったわ…$s",
+    "english": "I'm happy too that you and Sam seem happy! You really are a well-suited couple! I never thought the day would come when I'd miss not hearing the noisy guitar from Sam's room...",
+    "segments": [
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "と",
+        "reading": "to",
+        "gloss": "and"
+      },
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "しあわせそうで",
+        "reading": "shiawase sō de",
+        "gloss": "seem happy, so"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "も",
+        "reading": "mo",
+        "gloss": "(too)"
+      },
+      {
+        "text": "うれしいわ！",
+        "reading": "ureshii wa",
+        "gloss": "am glad!"
+      },
+      {
+        "text": "本当に",
+        "reading": "hontō ni",
+        "gloss": "really"
+      },
+      {
+        "text": "お似合い",
+        "reading": "oniai",
+        "gloss": "well-matched"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(linking)"
+      },
+      {
+        "text": "夫婦ね！#$e#",
+        "reading": "fūfu ne",
+        "gloss": "couple!"
+      },
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "部屋",
+        "reading": "heya",
+        "gloss": "room"
+      },
+      {
+        "text": "から",
+        "reading": "kara",
+        "gloss": "from"
+      },
+      {
+        "text": "うるさい",
+        "reading": "urusai",
+        "gloss": "noisy"
+      },
+      {
+        "text": "ギター",
+        "reading": "gitā",
+        "gloss": "guitar"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "音",
+        "reading": "oto",
+        "gloss": "sound"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "聞こえなくなる",
+        "reading": "kikoenaku naru",
+        "gloss": "stop being heard"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "さびしく",
+        "reading": "sabishiku",
+        "gloss": "lonely / missing"
+      },
+      {
+        "text": "思う",
+        "reading": "omou",
+        "gloss": "feel"
+      },
+      {
+        "text": "日",
+        "reading": "hi",
+        "gloss": "day"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "来る",
+        "reading": "kuru",
+        "gloss": "will come"
+      },
+      {
+        "text": "なんて",
+        "reading": "nante",
+        "gloss": "(something like) that"
+      },
+      {
+        "text": "思わなかったわ…$s",
+        "reading": "omowanakatta wa",
+        "gloss": "I never thought..."
+      }
+    ]
+  },
+  "pamHouseUpgrade": {
+    "japanese": "まあ…パムのことは聞いたわ…どうして彼女はこんなに親切にしてもらえるのかしら。$s#$e#…私もそんな大金を持ってみたいわ…$s",
+    "english": "Oh my... I heard about Pam... I wonder why she gets treated so kindly. ...I'd like to have that kind of money too...",
+    "segments": [
+      {
+        "text": "まあ…",
+        "reading": "mā",
+        "gloss": "oh my..."
+      },
+      {
+        "text": "パム",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "matter / about"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "聞いたわ…",
+        "reading": "kiita wa",
+        "gloss": "I heard..."
+      },
+      {
+        "text": "どうして",
+        "reading": "dōshite",
+        "gloss": "why"
+      },
+      {
+        "text": "彼女",
+        "reading": "kanojo",
+        "gloss": "she"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "こんなに",
+        "reading": "konna ni",
+        "gloss": "so"
+      },
+      {
+        "text": "親切に",
+        "reading": "shinsetsu ni",
+        "gloss": "kindly"
+      },
+      {
+        "text": "してもらえるのかしら。$s#$e#",
+        "reading": "shite moraeru no kashira",
+        "gloss": "I wonder, gets treated"
+      },
+      {
+        "text": "…私",
+        "reading": "watashi",
+        "gloss": "...I"
+      },
+      {
+        "text": "も",
+        "reading": "mo",
+        "gloss": "(too)"
+      },
+      {
+        "text": "そんな",
+        "reading": "sonna",
+        "gloss": "that kind of"
+      },
+      {
+        "text": "大金",
+        "reading": "taikin",
+        "gloss": "large sum of money"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "持ってみたいわ…$s",
+        "reading": "motte mitai wa",
+        "gloss": "would like to try having..."
+      }
+    ]
+  },
+  "pamHouseUpgradeAnonymous": {
+    "japanese": "パムの新しい家を見た？はぁ…私もそんな大金を持ってみたいわ…せめてキッチンだけはリフォームしたいの…$s",
+    "english": "Did you see Pam's new house? Sigh... I'd like to have that kind of money too... I want to remodel at least the kitchen...",
+    "segments": [
+      {
+        "text": "パム",
+        "reading": "Pamu",
+        "gloss": "Pam"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "新しい",
+        "reading": "atarashii",
+        "gloss": "new"
+      },
+      {
+        "text": "家",
+        "reading": "ie",
+        "gloss": "house"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見た？",
+        "reading": "mita",
+        "gloss": "did you see?"
+      },
+      {
+        "text": "はぁ…",
+        "reading": "hā",
+        "gloss": "sigh..."
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "も",
+        "reading": "mo",
+        "gloss": "(too)"
+      },
+      {
+        "text": "そんな",
+        "reading": "sonna",
+        "gloss": "that kind of"
+      },
+      {
+        "text": "大金",
+        "reading": "taikin",
+        "gloss": "large sum of money"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "持ってみたいわ…",
+        "reading": "motte mitai wa",
+        "gloss": "would like to try having..."
+      },
+      {
+        "text": "せめて",
+        "reading": "semete",
+        "gloss": "at least"
+      },
+      {
+        "text": "キッチン",
+        "reading": "kitchin",
+        "gloss": "the kitchen"
+      },
+      {
+        "text": "だけ",
+        "reading": "dake",
+        "gloss": "just"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(contrast: as for)"
+      },
+      {
+        "text": "リフォームしたいの…$s",
+        "reading": "rifōmu shitai no",
+        "gloss": "I want to remodel..."
+      }
+    ]
+  },
+  "reject_864": {
+    "japanese": "これは？ケントの戦友の1人みたいね。彼に見せた方が良いんじゃないかしら？",
+    "english": "This is? It looks like one of Kent's war buddies. Wouldn't it be better to show it to him?",
+    "segments": [
+      {
+        "text": "これ",
+        "reading": "kore",
+        "gloss": "this"
+      },
+      {
+        "text": "は？",
+        "reading": "wa",
+        "gloss": "(topic marker: is...?)"
+      },
+      {
+        "text": "ケント",
+        "reading": "Kento",
+        "gloss": "Kent"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "戦友",
+        "reading": "sen'yū",
+        "gloss": "war comrade"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "1人",
+        "reading": "hitori",
+        "gloss": "one person"
+      },
+      {
+        "text": "みたいね。",
+        "reading": "mitai ne",
+        "gloss": "looks like"
+      },
+      {
+        "text": "彼",
+        "reading": "kare",
+        "gloss": "him"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(to)"
+      },
+      {
+        "text": "見せた",
+        "reading": "miseta",
+        "gloss": "showing"
+      },
+      {
+        "text": "方が",
+        "reading": "hō ga",
+        "gloss": "(it would be) better"
+      },
+      {
+        "text": "良いんじゃないかしら？",
+        "reading": "iin ja nai kashira",
+        "gloss": "wouldn't it be good, I wonder?"
+      }
+    ]
+  },
+  "summer_Mon": {
+    "japanese": "夏は良い季節だけど、 仕事も増えるのよね。#$e#家のことは もちろん、 お庭も ちゃんと 手入れ しなきゃ！",
+    "english": "Summer is a good season, but the work increases too. Not just the house, of course — I have to properly take care of the garden too!",
+    "segments": [
+      {
+        "text": "夏",
+        "reading": "natsu",
+        "gloss": "summer"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "良い",
+        "reading": "yoi",
+        "gloss": "good"
+      },
+      {
+        "text": "季節だけど、 ",
+        "reading": "kisetsu da kedo",
+        "gloss": "season, but"
+      },
+      {
+        "text": "仕事",
+        "reading": "shigoto",
+        "gloss": "work"
+      },
+      {
+        "text": "も",
+        "reading": "mo",
+        "gloss": "(also)"
+      },
+      {
+        "text": "増えるのよね。#$e#",
+        "reading": "fueru no yo ne",
+        "gloss": "increases, you know"
+      },
+      {
+        "text": "家",
+        "reading": "ie",
+        "gloss": "the house"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "reading": "koto",
+        "gloss": "matters"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もちろん、 ",
+        "reading": "mochiron",
+        "gloss": "of course"
+      },
+      {
+        "text": "お庭",
+        "reading": "oniwa",
+        "gloss": "the garden"
+      },
+      {
+        "text": "も ",
+        "reading": "mo",
+        "gloss": "(also)"
+      },
+      {
+        "text": "ちゃんと ",
+        "reading": "chanto",
+        "gloss": "properly"
+      },
+      {
+        "text": "手入れ ",
+        "reading": "teire",
+        "gloss": "upkeep"
+      },
+      {
+        "text": "しなきゃ！",
+        "reading": "shinakya",
+        "gloss": "have to do!"
+      }
+    ]
+  },
+  "summer_Sun": {
+    "japanese": "今日は いったいどんな 夕食を 作ろうかしら？#$e#はぁ…",
+    "english": "What on earth kind of dinner should I make today? Sigh...",
+    "segments": [
+      {
+        "text": "今日",
+        "reading": "kyō",
+        "gloss": "today"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いったい",
+        "reading": "ittai",
+        "gloss": "on earth"
+      },
+      {
+        "text": "どんな ",
+        "reading": "donna",
+        "gloss": "what kind of"
+      },
+      {
+        "text": "夕食",
+        "reading": "yūshoku",
+        "gloss": "dinner"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "作ろうかしら？#$e#",
+        "reading": "tsukurō kashira",
+        "gloss": "should I make, I wonder?"
+      },
+      {
+        "text": "はぁ…",
+        "reading": "hā",
+        "gloss": "sigh..."
+      }
+    ]
+  },
+  "summer_Thu": {
+    "japanese": "家事って、 いつまでたっても 終わらないから ストレスが 溜まるのよね。#$e#床を 掃除しても、 次の日には もう汚れてる。",
+    "english": "Housework never ends no matter how long you go, so the stress builds up. Even if I clean the floor, by the next day it's already dirty.",
+    "segments": [
+      {
+        "text": "家事って、 ",
+        "reading": "kaji tte",
+        "gloss": "housework (as for)"
+      },
+      {
+        "text": "いつまでたっても ",
+        "reading": "itsumade tatte mo",
+        "gloss": "no matter how much time passes"
+      },
+      {
+        "text": "終わらないから ",
+        "reading": "owaranai kara",
+        "gloss": "doesn't end, so"
+      },
+      {
+        "text": "ストレス",
+        "reading": "sutoresu",
+        "gloss": "stress"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "溜まるのよね。#$e#",
+        "reading": "tamaru no yo ne",
+        "gloss": "builds up, you know"
+      },
+      {
+        "text": "床",
+        "reading": "yuka",
+        "gloss": "the floor"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "掃除しても、 ",
+        "reading": "sōji shite mo",
+        "gloss": "even if I clean"
+      },
+      {
+        "text": "次",
+        "reading": "tsugi",
+        "gloss": "next"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "日",
+        "reading": "hi",
+        "gloss": "day"
+      },
+      {
+        "text": "には ",
+        "reading": "ni wa",
+        "gloss": "(by — as for)"
+      },
+      {
+        "text": "もう",
+        "reading": "mō",
+        "gloss": "already"
+      },
+      {
+        "text": "汚れてる。",
+        "reading": "yogoreteru",
+        "gloss": "is dirty"
+      }
+    ]
+  },
+  "summer_Tue": {
+    "japanese": "こんにちは。#$e#何か 用かしら？今は 少し 忙しいの。",
+    "english": "Hello. Do you need something? I'm a little busy now.",
+    "segments": [
+      {
+        "text": "こんにちは。#$e#",
+        "reading": "kon'nichiwa",
+        "gloss": "hello"
+      },
+      {
+        "text": "何か ",
+        "reading": "nanika",
+        "gloss": "some"
+      },
+      {
+        "text": "用かしら？",
+        "reading": "yō kashira",
+        "gloss": "business, I wonder? (need something?)"
+      },
+      {
+        "text": "今",
+        "reading": "ima",
+        "gloss": "now"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "少し ",
+        "reading": "sukoshi",
+        "gloss": "a little"
+      },
+      {
+        "text": "忙しいの。",
+        "reading": "isogashii no",
+        "gloss": "busy"
+      }
+    ]
+  },
+  "summer_Tue_inlaw_Sam": {
+    "japanese": "私の小さなサミーは、古い農場でどうしてますか？$h",
+    "english": "How is my little Sammy doing on the old farm?",
+    "segments": [
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "小さな",
+        "reading": "chiisa na",
+        "gloss": "little"
+      },
+      {
+        "text": "サミー",
+        "reading": "Samī",
+        "gloss": "Sammy"
+      },
+      {
+        "text": "は、",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "古い",
+        "reading": "furui",
+        "gloss": "old"
+      },
+      {
+        "text": "農場",
+        "reading": "nōjō",
+        "gloss": "farm"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "(location: at)"
+      },
+      {
+        "text": "どうしてますか？$h",
+        "reading": "dō shite masu ka",
+        "gloss": "how is (he) doing?"
+      }
+    ]
+  },
+  "winter_Fri": {
+    "japanese": "たまにでも いいから 休暇を 取れたら うれしいなぁ…$s",
+    "english": "Even just once in a while is fine — I'd be happy if I could take a vacation...",
+    "segments": [
+      {
+        "text": "たまに",
+        "reading": "tamani",
+        "gloss": "once in a while"
+      },
+      {
+        "text": "でも ",
+        "reading": "demo",
+        "gloss": "even"
+      },
+      {
+        "text": "いいから ",
+        "reading": "ii kara",
+        "gloss": "is fine, so"
+      },
+      {
+        "text": "休暇",
+        "reading": "kyūka",
+        "gloss": "vacation"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "取れたら ",
+        "reading": "toretara",
+        "gloss": "if (I) could take"
+      },
+      {
+        "text": "うれしいなぁ…$s",
+        "reading": "ureshii nā",
+        "gloss": "I'd be happy..."
+      }
+    ]
+  },
+  "winter_Mon": {
+    "japanese": "子どもの頃、 雪で 遊ぶのが 好きだったわ。母親になって 良かったことと いえば、 また 雪で 楽しめるように なったことかしら。$h",
+    "english": "When I was a child, I liked playing in the snow. If I talk about good things about becoming a mother, maybe it's that I can enjoy the snow again.",
+    "segments": [
+      {
+        "text": "子ども",
+        "reading": "kodomo",
+        "gloss": "child"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "頃、 ",
+        "reading": "koro",
+        "gloss": "time when"
+      },
+      {
+        "text": "雪",
+        "reading": "yuki",
+        "gloss": "snow"
+      },
+      {
+        "text": "で ",
+        "reading": "de",
+        "gloss": "(in / with)"
+      },
+      {
+        "text": "遊ぶ",
+        "reading": "asobu",
+        "gloss": "playing"
+      },
+      {
+        "text": "のが ",
+        "reading": "no ga",
+        "gloss": "(nominalizer + object of liking)"
+      },
+      {
+        "text": "好きだったわ。",
+        "reading": "suki datta wa",
+        "gloss": "I liked"
+      },
+      {
+        "text": "母親",
+        "reading": "hahaoya",
+        "gloss": "a mother"
+      },
+      {
+        "text": "になって ",
+        "reading": "ni natte",
+        "gloss": "becoming"
+      },
+      {
+        "text": "良かった",
+        "reading": "yokatta",
+        "gloss": "was good"
+      },
+      {
+        "text": "ことと ",
+        "reading": "koto to",
+        "gloss": "thing (quoting)"
+      },
+      {
+        "text": "いえば、 ",
+        "reading": "ieba",
+        "gloss": "speaking of"
+      },
+      {
+        "text": "また ",
+        "reading": "mata",
+        "gloss": "again"
+      },
+      {
+        "text": "雪",
+        "reading": "yuki",
+        "gloss": "snow"
+      },
+      {
+        "text": "で ",
+        "reading": "de",
+        "gloss": "(in / with)"
+      },
+      {
+        "text": "楽しめるように ",
+        "reading": "tanoshimeru yō ni",
+        "gloss": "able to enjoy"
+      },
+      {
+        "text": "なったことかしら。$h",
+        "reading": "natta koto kashira",
+        "gloss": "that it became (so), perhaps"
+      }
+    ]
+  },
+  "winter_Sun": {
+    "japanese": "私が お金持ち だったら、 まず メイドと シェフを 雇うわ。#$e#ええ、 そういうのって 本当に ステキよね！$h",
+    "english": "If I were rich, first I'd hire a maid and a chef. Yes, that kind of thing is really lovely, isn't it!",
+    "segments": [
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "お金持ち ",
+        "reading": "okanemochi",
+        "gloss": "rich"
+      },
+      {
+        "text": "だったら、 ",
+        "reading": "dattara",
+        "gloss": "if (I) were"
+      },
+      {
+        "text": "まず ",
+        "reading": "mazu",
+        "gloss": "first"
+      },
+      {
+        "text": "メイド",
+        "reading": "meido",
+        "gloss": "a maid"
+      },
+      {
+        "text": "と ",
+        "reading": "to",
+        "gloss": "and"
+      },
+      {
+        "text": "シェフ",
+        "reading": "shefu",
+        "gloss": "a chef"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "雇うわ。#$e#",
+        "reading": "yatou wa",
+        "gloss": "I'd hire"
+      },
+      {
+        "text": "ええ、 ",
+        "reading": "ē",
+        "gloss": "yes"
+      },
+      {
+        "text": "そういうのって ",
+        "reading": "sō iu no tte",
+        "gloss": "that kind of thing"
+      },
+      {
+        "text": "本当に ",
+        "reading": "hontō ni",
+        "gloss": "really"
+      },
+      {
+        "text": "ステキよね！$h",
+        "reading": "suteki yo ne",
+        "gloss": "is lovely, isn't it!"
+      }
+    ]
+  },
+  "winter_Thu": {
+    "japanese": "サムの 音楽が とても うるさいの。お隣さんの 迷惑に ならなきゃ いいけど。",
+    "english": "Sam's music is really loud. I hope it doesn't bother the neighbors.",
+    "segments": [
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "音楽",
+        "reading": "ongaku",
+        "gloss": "music"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "とても ",
+        "reading": "totemo",
+        "gloss": "very"
+      },
+      {
+        "text": "うるさいの。",
+        "reading": "urusai no",
+        "gloss": "is loud"
+      },
+      {
+        "text": "お隣さん",
+        "reading": "otonari-san",
+        "gloss": "the neighbors"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "(of / to)"
+      },
+      {
+        "text": "迷惑",
+        "reading": "meiwaku",
+        "gloss": "nuisance"
+      },
+      {
+        "text": "に ",
+        "reading": "ni",
+        "gloss": "(to become)"
+      },
+      {
+        "text": "ならなきゃ ",
+        "reading": "naranakya",
+        "gloss": "if (it) doesn't become"
+      },
+      {
+        "text": "いいけど。",
+        "reading": "ii kedo",
+        "gloss": "it'd be good (I hope)"
+      }
+    ]
+  },
+  "winter_Thu8": {
+    "japanese": "ケントが兵士になるから、私達は急いで結婚したのよ…若さと自由をあまり味わえなかったし、振り返るにはもう遅すぎる。$s#$e#それをあなたに言うなんて信じられない。$4",
+    "english": "Because Kent was becoming a soldier, we hurried to get married... I couldn't taste much youth and freedom, and it's already too late to look back. I can't believe I'm saying that to you.",
+    "segments": [
+      {
+        "text": "ケント",
+        "reading": "Kento",
+        "gloss": "Kent"
+      },
+      {
+        "text": "が",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "兵士",
+        "reading": "heishi",
+        "gloss": "a soldier"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(to become)"
+      },
+      {
+        "text": "なるから、",
+        "reading": "naru kara",
+        "gloss": "was becoming, so"
+      },
+      {
+        "text": "私達",
+        "reading": "watashitachi",
+        "gloss": "we"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "急いで",
+        "reading": "isoide",
+        "gloss": "hurriedly"
+      },
+      {
+        "text": "結婚したのよ…",
+        "reading": "kekkon shita no yo",
+        "gloss": "got married..."
+      },
+      {
+        "text": "若さ",
+        "reading": "wakasa",
+        "gloss": "youth"
+      },
+      {
+        "text": "と",
+        "reading": "to",
+        "gloss": "and"
+      },
+      {
+        "text": "自由",
+        "reading": "jiyū",
+        "gloss": "freedom"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "あまり",
+        "reading": "amari",
+        "gloss": "(not) much"
+      },
+      {
+        "text": "味わえなかったし、",
+        "reading": "ajiwaenakatta shi",
+        "gloss": "couldn't taste, and"
+      },
+      {
+        "text": "振り返る",
+        "reading": "furikaeru",
+        "gloss": "to look back"
+      },
+      {
+        "text": "には",
+        "reading": "ni wa",
+        "gloss": "for"
+      },
+      {
+        "text": "もう",
+        "reading": "mō",
+        "gloss": "already"
+      },
+      {
+        "text": "遅すぎる。$s#$e#",
+        "reading": "ososugiru",
+        "gloss": "too late"
+      },
+      {
+        "text": "それ",
+        "reading": "sore",
+        "gloss": "that"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "you"
+      },
+      {
+        "text": "に",
+        "reading": "ni",
+        "gloss": "(to)"
+      },
+      {
+        "text": "言う",
+        "reading": "iu",
+        "gloss": "saying"
+      },
+      {
+        "text": "なんて",
+        "reading": "nante",
+        "gloss": "(something like)"
+      },
+      {
+        "text": "信じられない。$4",
+        "reading": "shinjirarenai",
+        "gloss": "I can't believe"
+      }
+    ]
+  },
+  "winter_Thu_inlaw_Sam": {
+    "japanese": "サムとの 暮らしは どう？あの子が 家を 出て以来、 料理と 掃除が 少し楽になったのよ。",
+    "english": "How's life with Sam? Since that kid left home, cooking and cleaning have gotten a little easier.",
+    "segments": [
+      {
+        "text": "サム",
+        "reading": "Samu",
+        "gloss": "Sam"
+      },
+      {
+        "text": "との ",
+        "reading": "to no",
+        "gloss": "with"
+      },
+      {
+        "text": "暮らし",
+        "reading": "kurashi",
+        "gloss": "life / living"
+      },
+      {
+        "text": "は ",
+        "reading": "wa",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "どう？",
+        "reading": "dō",
+        "gloss": "how is it?"
+      },
+      {
+        "text": "あの子",
+        "reading": "ano ko",
+        "gloss": "that kid (Sam)"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "家",
+        "reading": "ie",
+        "gloss": "home"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "出て以来、 ",
+        "reading": "dete irai",
+        "gloss": "since leaving"
+      },
+      {
+        "text": "料理",
+        "reading": "ryōri",
+        "gloss": "cooking"
+      },
+      {
+        "text": "と ",
+        "reading": "to",
+        "gloss": "and"
+      },
+      {
+        "text": "掃除",
+        "reading": "sōji",
+        "gloss": "cleaning"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "少し楽になったのよ。",
+        "reading": "sukoshi raku ni natta no yo",
+        "gloss": "got a little easier"
+      }
+    ]
+  },
+  "winter_Tue": {
+    "japanese": "ねぇ。みんなが あなたの 牧場について 聞いてくるの、 飽きてこないかしら？#$e#私なら ウンザリしそう。",
+    "english": "Hey. Don't you get tired of everyone asking about your farm? If it were me, I'd probably get fed up.",
+    "segments": [
+      {
+        "text": "ねぇ。",
+        "reading": "nē",
+        "gloss": "hey"
+      },
+      {
+        "text": "みんな",
+        "reading": "minna",
+        "gloss": "everyone"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あなた",
+        "reading": "anata",
+        "gloss": "your"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "('s)"
+      },
+      {
+        "text": "牧場",
+        "reading": "bokujō",
+        "gloss": "farm"
+      },
+      {
+        "text": "について ",
+        "reading": "ni tsuite",
+        "gloss": "about"
+      },
+      {
+        "text": "聞いてくるの、 ",
+        "reading": "kiite kuru no",
+        "gloss": "coming to ask"
+      },
+      {
+        "text": "飽きてこないかしら？#$e#",
+        "reading": "akite konai kashira",
+        "gloss": "don't you get tired of, I wonder?"
+      },
+      {
+        "text": "私",
+        "reading": "watashi",
+        "gloss": "I"
+      },
+      {
+        "text": "なら ",
+        "reading": "nara",
+        "gloss": "if it were"
+      },
+      {
+        "text": "ウンザリしそう。",
+        "reading": "unzari shisō",
+        "gloss": "would likely get fed up"
+      }
+    ]
+  },
+  "winter_Tue6": {
+    "japanese": "はぁ… 時々、 家族の世話を しなくてもいい　独り身の 生活をする 夢を 見るの…それって 恐ろしい 夢かしら。$s#$e#誰にも 言わないでよ。$4",
+    "english": "Sigh... Sometimes I dream of living single, not needing to look after a family... I wonder if that's a terrible dream. Don't tell anyone.",
+    "segments": [
+      {
+        "text": "はぁ… ",
+        "reading": "hā",
+        "gloss": "sigh..."
+      },
+      {
+        "text": "時々、 ",
+        "reading": "tokidoki",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "家族",
+        "reading": "kazoku",
+        "gloss": "family"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "世話",
+        "reading": "sewa",
+        "gloss": "care"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "しなくてもいい　",
+        "reading": "shinakute mo ii",
+        "gloss": "don't have to do"
+      },
+      {
+        "text": "独り身",
+        "reading": "hitorimi",
+        "gloss": "single person"
+      },
+      {
+        "text": "の ",
+        "reading": "no",
+        "gloss": "(of)"
+      },
+      {
+        "text": "生活",
+        "reading": "seikatsu",
+        "gloss": "life"
+      },
+      {
+        "text": "をする ",
+        "reading": "o suru",
+        "gloss": "living"
+      },
+      {
+        "text": "夢",
+        "reading": "yume",
+        "gloss": "dream"
+      },
+      {
+        "text": "を ",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見るの…",
+        "reading": "miru no",
+        "gloss": "I see (dream)..."
+      },
+      {
+        "text": "それって ",
+        "reading": "sore tte",
+        "gloss": "that (as for)"
+      },
+      {
+        "text": "恐ろしい ",
+        "reading": "osoroshii",
+        "gloss": "terrible"
+      },
+      {
+        "text": "夢かしら。$s#$e#",
+        "reading": "yume kashira",
+        "gloss": "a dream, I wonder"
+      },
+      {
+        "text": "誰にも ",
+        "reading": "dare ni mo",
+        "gloss": "to anyone"
+      },
+      {
+        "text": "言わないでよ。$4",
+        "reading": "iwanaide yo",
+        "gloss": "don't tell"
+      }
+    ]
+  },
+  "winter_Wed2": {
+    "japanese": "何をするのが 好きかって？うーん…いい 質問ね。#$e#寝るのが 好きよ。$s",
+    "english": "What do I like to do? Hmm... good question. I like sleeping.",
+    "segments": [
+      {
+        "text": "何",
+        "reading": "nani",
+        "gloss": "what"
+      },
+      {
+        "text": "を",
+        "reading": "o",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "する",
+        "reading": "suru",
+        "gloss": "doing"
+      },
+      {
+        "text": "のが ",
+        "reading": "no ga",
+        "gloss": "(nominalizer + object of liking)"
+      },
+      {
+        "text": "好きかって？",
+        "reading": "suki ka tte",
+        "gloss": "(you ask) do I like?"
+      },
+      {
+        "text": "うーん…",
+        "reading": "ūn",
+        "gloss": "hmm..."
+      },
+      {
+        "text": "いい ",
+        "reading": "ii",
+        "gloss": "good"
+      },
+      {
+        "text": "質問ね。#$e#",
+        "reading": "shitsumon ne",
+        "gloss": "question"
+      },
+      {
+        "text": "寝る",
+        "reading": "neru",
+        "gloss": "sleeping"
+      },
+      {
+        "text": "のが ",
+        "reading": "no ga",
+        "gloss": "(nominalizer + object of liking)"
+      },
+      {
+        "text": "好きよ。$s",
+        "reading": "suki yo",
+        "gloss": "I like"
+      }
+    ]
+  },
+  "winter_Wed4_2": {
+    "japanese": "ケントが 帰ってきてから しばらく たったけど、 まだ 落ち着かない みたいね。$s",
+    "english": "It's been a while since Kent came back, but he still doesn't seem settled.",
+    "segments": [
+      {
+        "text": "ケント",
+        "reading": "Kento",
+        "gloss": "Kent"
+      },
+      {
+        "text": "が ",
+        "reading": "ga",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "帰ってきてから ",
+        "reading": "kaette kite kara",
+        "gloss": "since coming back"
+      },
+      {
+        "text": "しばらく ",
+        "reading": "shibaraku",
+        "gloss": "a while"
+      },
+      {
+        "text": "たったけど、 ",
+        "reading": "tatta kedo",
+        "gloss": "has passed, but"
+      },
+      {
+        "text": "まだ ",
+        "reading": "mada",
+        "gloss": "still"
+      },
+      {
+        "text": "落ち着かない ",
+        "reading": "ochitsukanai",
+        "gloss": "unsettled"
+      },
+      {
+        "text": "みたいね。$s",
+        "reading": "mitai ne",
+        "gloss": "seems"
+      }
+    ]
+  }
+}
