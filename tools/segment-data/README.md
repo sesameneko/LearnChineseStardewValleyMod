@@ -64,6 +64,29 @@ rather than by the key.
 Source JSON for these lives in `../extracted-strings/data-ja` and `data-en`,
 extracted with `../XnbStringTool` the same way as the `Strings` tables.
 
+## Content families (dialogue, events, festivals, TV, schedules)
+
+Five asset families live outside `Strings/` as one file per NPC / location /
+festival. They are extracted to `../extracted-strings/content-ja` and
+`content-en`, mirroring their path under `Content/`, and each file is its own
+table named `<Family>-<file>`: `Dialogue-Abigail`, `Schedules-Emily`,
+`TV-TipChannel`, `Festivals-spring13`, `Events-Town`. (A hyphen, not an
+underscore: `authored()` reads `<Table>_*.json` as split files of `<Table>`, and
+`Characters_Dialogue_*` would have been swallowed by the `Characters` table.)
+
+`CONTENT_FAMILIES` says what shape each family's values are. Dialogue,
+schedules and TV are plain text. Events are command scripts, and festivals are
+mostly dialogue with a few scripts mixed in (told apart by `is_script`). A script
+is expanded like a `DATA_TABLES` record: one pseudo-entry per line the game draws,
+keyed `<event id>#<n>`. Those lines are the double-quoted arguments (`speak`,
+`message`, `question`, `textAboveHead`, ...) plus the bare `#`-separated prompt and
+answers of a `quickQuestion`. English is paired by position only when both
+locales' scripts yield the same number of lines.
+
+Dialogue markup (`$h`, `#$b#`, `#$e#`, `@`, `%`...) stays in the source string,
+so it has to stay in the segments. Fold it into the end of the segment before it,
+like punctuation. That way a page break always falls on a segment boundary.
+
 ## Where the files live
 
 `../extracted-strings/literal-translations/` is the **tracked source of truth**.

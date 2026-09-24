@@ -1,0 +1,17 @@
+{
+  "typeReaders": [
+    {
+      "Name": "Microsoft.Xna.Framework.Content.DictionaryReader\u00602[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+      "Version": 0
+    },
+    {
+      "Name": "Microsoft.Xna.Framework.Content.StringReader",
+      "Version": 0
+    }
+  ],
+  "wasCompressed": true,
+  "entries": {
+    "503180/f Pam 2250/A pamHouseUpgrade/A pamHouseUpgradeAnonymous/Hn pamHouseUpgrade": "shaneTheme/-1000 -1000/farmer 18 11 1 Pam 25 9 1/skippable/specificTemporarySprite pamYobaStatue/viewport 25 9 true/move farmer 6 0 1/move farmer 0 -1 1/faceDirection Pam 2/pause 300/speak Pam \u0022Hey, kid...\u0022/faceDirection Pam 1/pause 500/speak Pam \u0022You caught me prayin\u0027...\u0022/pause 500/move farmer 3 0 0/move farmer 0 -1 3/pause 500/speak Pam \u0022This here\u0027s my new \u0027Sign Of The Vessel\u0027 statue.#$b#...Ordered it from Joja.com with free 2-day shipping. Don\u0027t tell Pierre.\u0022/pause 1000/faceDirection Pam 2/pause 400/faceDirection Pam 3/pause 500/faceDirection Pam 2/pause 500/faceDirection Pam 1/speak Pam \u0022...I\u0027ve been settling in to the new house. It\u0027s really a great place. Feels like home already. I really do appreciate this new comfort.$h\u0022/pause 500/faceDirection Pam 2/pause 1000/showFrame Pam 25/pause 1000/animate Pam false true 250 26 27/pause 400/emote farmer 8/pause 500/textAboveHead Pam \u0022Oh, Sorry...\u0022/pause 1000/stopAnimation Pam/pause 950/speak Pam \u0022*sniff*... It\u0027s just...$s#$b#...I should be so happy...$s\u0022/showFrame Pam 0/faceDirection Pam 1/speak Pam \u0022...But I haven\u0027t been able to cut back on the beer... I haven\u0027t changed at all...$s\u0022/pause 500/emote farmer 28/pause 500/speak Pam \u0022For a long time, now... I\u0027ve felt like there\u0027s something missing from my life, @... $s#$b#I always thought it was about money... Just bein\u0027 poor... ya know? So I figured gettin\u0027 this house would solve everything. But ...it didn\u0027t.$s#$b#So that\u0027s... That\u0027s why I ordered this statue.\u0022/pause 1000/question fork0 \u0022Say something to Pam:#I\u0027m glad you\u0027re feeling hopeful#Sorry Pam, but Yoba isn\u0027t real...\u0022/fork positive/friendship Pam -1000/pause 500/speak Pam \u0022That ain\u0027t funny! ...I pour my heart out to you and that\u0027s how you respond? What in the void is wrong with you?$u\u0022/faceDirection Pam 3/shake Pam 10000/emote Pam 12/pause 1000/speak Pam \u0022I don\u0027t care what you say... I have faith in Yoba! Plenty of us do! Now get out.$4\u0022/pause 1000/move farmer 0 1 3/move farmer -6 0 3 true/end",
+    "positive": "pause 100/emote farmer 56/pause 500/speak Pam \u0022Hah! Well, look at me! I\u0027m gettin\u0027 real sappy in my old age, aren\u0027t I?  ...hehehe.$h\u0022/pause 1000/move Pam 0 1 1/move Pam 2 0 0/faceDirection farmer 2/viewport move 1 0 7000/textAboveHead Pam \u0022Thanks for lendin\u0027 an ear, kid\u0022/pause 5000/end"
+  }
+}

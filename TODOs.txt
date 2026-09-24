@@ -22,6 +22,12 @@ play: five asset families were never in scope at all, ~8,900 drawn pages /
   Data/TV/*                2 files      96 keys                  10,827
   Strings/schedules/*     30 files     191 keys                   6,139
 
+Update 2026-09-23: all five are now extracted (tools/extracted-strings/content-ja,
+content-en) and wired into segtool.py as <Family>-<file> tables, so `status` counts
+them. That makes 6,519 entries (~301k chars) pending. The flat ones (dialogue,
+schedules, festivals, TV) are also in TranslationIndex.StringTables for
+whole-sentence lookup.
+
 Run `segtool.py audit` for the live version of that list. It walks the game's
 Content folder and fails on any localized asset the pipeline can't account for,
 which is the check that was missing — `status` only ever measured coverage

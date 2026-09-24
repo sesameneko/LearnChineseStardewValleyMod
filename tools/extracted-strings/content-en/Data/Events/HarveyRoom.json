@@ -1,0 +1,16 @@
+{
+  "typeReaders": [
+    {
+      "Name": "Microsoft.Xna.Framework.Content.DictionaryReader\u00602[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
+      "Version": 0
+    },
+    {
+      "Name": "Microsoft.Xna.Framework.Content.StringReader",
+      "Version": 0
+    }
+  ],
+  "wasCompressed": true,
+  "entries": {
+    "normal": "pause 400/speak Harvey \u0022Sorry I\u0027m all disheveled... I didn\u0027t know you were coming over.$h\u0022/move farmer 0 -2 0/pause 600/speak Harvey \u0022Hey, I think I hear a plane overhead...\u0022/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \u0022@, get over here!\u0022/move farmer 0 -1 3/move farmer -4 0 0/move farmer 0 -2 0/speak Harvey \u0022Look!\u0022/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \u0022As a kid, my dream was always to be a pilot.\u0022/pause 1000/speak Harvey \u0022...But with my bad eyesight and a crippling fear of heights, that dream started to fade away.$s\u0022/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1000/emote farmer 28/speak Harvey \u0022It\u0027s okay... don\u0027t be sad.#$b#I\u0027ve grown to accept my station in life. Not everyone can achieve their dreams... that\u0027s just the way the world is.\u0022/pause 1600/speak Harvey \u0022Hey, let me show you my model airplanes. I just finished the new TR-Starbird deluxe set.$h\u0022/advancedMove Harvey false 0 2 4 0/faceDirection farmer 2/end"
+  }
+}

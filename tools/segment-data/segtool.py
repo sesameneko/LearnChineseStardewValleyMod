@@ -49,6 +49,25 @@ DATA_TABLES = {
     "Data_ExtraDialogue": {"asset": "ExtraDialogue", "fields": None},
     "Data_EngagementDialogue": {"asset": "EngagementDialogue", "fields": None},
 }
+# Whole asset families outside Strings/ and the flat Data/ records above, extracted
+# with XnbStringTool into content-ja/ and content-en/, mirroring their path under
+# Content/. Each file becomes one table named "<Family>-<file>" (Dialogue-Abigail);
+# the hyphen matters, since authored() treats "<Table>_" as a split file of <Table>
+# and there is already a Strings/Characters table.
+#   "text"   -- every value is one string the game draws (after dialogue markup)
+#   "script" -- every value is an event command script; the spoken text is lifted
+#               out of it (see script_lines)
+#   "mixed"  -- a festival file: most values are dialogue, a few are scripts
+CONTENT_JA = os.path.join(ROOT, "tools", "extracted-strings", "content-ja")
+CONTENT_EN = os.path.join(ROOT, "tools", "extracted-strings", "content-en")
+CONTENT_FAMILIES = {
+    "Dialogue": ("Characters/Dialogue", "text"),
+    "Schedules": ("Strings/schedules", "text"),
+    "TV": ("Data/TV", "text"),
+    "Festivals": ("Data/Festivals", "mixed"),
+    "Events": ("Data/Events", "script"),
+}
+
 # tracked source of truth; assets/segments/ja is generated from it by the
 # csproj's CopySegmentData target and is gitignored
 OUT = os.path.join(ROOT, "tools", "extracted-strings", "literal-translations")
@@ -71,9 +90,25 @@ COMMENT = ("Word/phrase-level breakdown of Stardew Valley {table}.xnb strings, f
            "\"japanese\" (validated by tools/segment-data/segtool.py).")
 
 
+def content_tables():
+    """table name -> (asset path under Content/, kind), for every extracted content-family file."""
+    out = {}
+    for family, (folder, kind) in CONTENT_FAMILIES.items():
+        directory = os.path.join(CONTENT_JA, folder)
+        if not os.path.isdir(directory):
+            continue
+        for name in sorted(os.listdir(directory)):
+            if name.endswith(".json"):
+                out[f"{family}-{name[:-5]}"] = (f"{folder}/{name[:-5]}", kind)
+    return out
+
+
 def source(table):
     if table in DATA_TABLES:
         return data_source(table)
+    content = content_tables()
+    if table in content:
+        return content_source(*content[table])
 
     with open(os.path.join(JA, table + ".json"), encoding="utf-8") as f:
         ja = json.load(f)["entries"]
@@ -122,6 +157,62 @@ def data_source(table):
     return ja, en
 
 
+# A script is '/'-separated commands; spoken text is a double-quoted argument
+# (speak Abigail "...", message "...", question fork1 "...#...#...", end dialogue
+# ... "...", textAboveHead ...) -- except quickQuestion, whose prompt and answers
+# are the bare text up to the first (break), '#'-separated, each drawn on its own.
+QUOTED = re.compile(r'"([^"]*)"')
+QUICK_QUESTION = re.compile(r"quickQuestion ([^/]*?)\(break\)")
+SCRIPT_COMMAND = re.compile(r"(^|/)(pause|speak|move|faceDirection|viewport|playMusic|globalFade|end)\b")
+
+
+def script_lines(script):
+    """Every piece of text a script draws, in script order."""
+    found = []
+    for match in QUICK_QUESTION.finditer(script):
+        found.append((match.start(), [part for part in match.group(1).split("#") if part]))
+    for match in QUOTED.finditer(script):
+        found.append((match.start(), [match.group(1)]))
+    return [line for _, lines in sorted(found, key=lambda f: f[0]) for line in lines if line]
+
+
+def is_script(value):
+    return bool(SCRIPT_COMMAND.search(value))
+
+
+def content_source(asset, kind):
+    def load(root):
+        try:
+            with open(os.path.join(root, asset + ".json"), encoding="utf-8") as f:
+                return json.load(f)["entries"]
+        except FileNotFoundError:
+            return {}
+
+    ja_all, en_all = load(CONTENT_JA), load(CONTENT_EN)
+    ja, en = {}, {}
+    for key, value in ja_all.items():
+        if kind == "text" or (kind == "mixed" and not is_script(value)):
+            ja[key] = value
+            if key in en_all:
+                en[key] = en_all[key]
+            continue
+
+        # a script: one pseudo-entry per spoken line, keyed "<event id>#<n>". The id is
+        # the key up to its first precondition, which is what the game itself calls it.
+        lines = script_lines(value)
+        en_lines = script_lines(en_all.get(key, ""))
+        script_id = key.split("/")[0]
+        if any(k.startswith(script_id + "#") for k in ja):
+            script_id = key
+        for n, line in enumerate(lines):
+            ja[f"{script_id}#{n}"] = line
+            # locales can disagree on how a script's lines are split; only pair the
+            # English when the shapes match, rather than offset every line after a mismatch
+            if len(en_lines) == len(lines):
+                en[f"{script_id}#{n}"] = en_lines[n]
+    return ja, en
+
+
 def authored(table):
     """Every entry already authored for a table, across all of its files.
 
@@ -161,7 +252,7 @@ def pending(table):
 
 
 def tables():
-    return sorted([f[:-5] for f in os.listdir(JA) if f.endswith(".json")] + list(DATA_TABLES))
+    return sorted([f[:-5] for f in os.listdir(JA) if f.endswith(".json")] + list(DATA_TABLES) + list(content_tables()))
 
 
 def cmd_status(args):
@@ -280,7 +371,7 @@ def cmd_validate(args):
         if not name.endswith(".json"):
             continue
         table = name[:-5]
-        if table not in DATA_TABLES:
+        if table not in DATA_TABLES and "-" not in table:
             table = table.replace("_Description", "").replace("_Name", "")
         ja, _ = source(table)
         with open(os.path.join(OUT, name), encoding="utf-8") as f:
@@ -338,11 +429,6 @@ EXCLUDED = {
 # audit stays green on what is already known while still failing on anything
 # new -- and so the size of the gap is written down somewhere that is checked.
 KNOWN_GAPS = {
-    "Characters/Dialogue/": "villager dialogue, 3,301 keys / 4,874 drawn pages -- flat tables, drop straight into `batch`",
-    "Data/Events/": "cutscene scripts, 2,064 spoken lines in 258 scripts -- needs a speak/message extractor first",
-    "Data/Festivals/": "festival dialogue, 743 keys / 1,025 pages (25 of them scripts)",
-    "Data/TV/": "TV channels, 96 keys",
-    "Strings/schedules/": "on-the-clock NPC chatter, 191 keys",
     "Data/Achievements": "Dictionary<int,string> -- XnbStringTool can't read it yet",
     "Data/SecretNotes": "Dictionary<int,string> -- XnbStringTool can't read it yet",
 }
@@ -367,6 +453,8 @@ def covered_assets():
             out["Strings/" + name[:-5]] = name[:-5]
     for table, spec in DATA_TABLES.items():
         out["Data/" + spec["asset"]] = table
+    for table, (asset, _) in content_tables().items():
+        out[asset] = table
     return out
 
 

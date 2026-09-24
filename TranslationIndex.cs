@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using StardewModdingAPI;
 using StardewValley;
 
@@ -44,8 +45,10 @@ namespace LanguageStudyStardewValleyMod
         /// (the list is the one extracted by tools/XnbStringTool -- see tools/extracted-strings).
         /// Item names/descriptions, the ones M1 actually targets, live in Objects/BigCraftables/
         /// Tools/Weapons/Furniture/Shirts/Pants; the rest are included because they're free.
+        /// Followed by the per-NPC/per-festival asset families outside Strings/ (the lists mirror
+        /// what tools/extracted-strings/content-ja holds; `segtool.py audit` names any the game adds).
         /// </summary>
-        private static readonly string[] StringTables =
+        private static readonly string[] StringTables = new[]
         {
             // item-ish tables first: on a duplicate source string, the first table added wins
             "Strings/Objects",
@@ -78,7 +81,35 @@ namespace LanguageStudyStardewValleyMod
             "Strings/StringsFromMaps",
             "Strings/WorldMap",
             "Strings/animationDescriptions",
-        };
+        }
+        // villager dialogue, festival chatter, TV and schedule lines -- flat tables that join on
+        // shared keys like any other. Data/Events is left out: every value is a command script,
+        // which never matches drawn text as a whole (its spoken lines are covered by the
+        // segment data instead, where tools/segment-data lifts them out of the scripts).
+        .Concat(Family("Characters/Dialogue",
+                "Abigail", "Alex", "Caroline", "Clint", "Demetrius", "Dwarf", "Elliott", "Emily", "Evelyn",
+                "George", "Gil", "Gus", "Haley", "Harvey", "Jas", "Jodi", "Kent", "Krobus", "Leah", "Leo",
+                "LeoMainland", "Lewis", "Linus", "Marnie", "MarriageDialogue", "MarriageDialogueAbigail",
+                "MarriageDialogueAlex", "MarriageDialogueElliott", "MarriageDialogueEmily",
+                "MarriageDialogueHaley", "MarriageDialogueHarvey", "MarriageDialogueKrobus",
+                "MarriageDialogueLeah", "MarriageDialogueMaru", "MarriageDialoguePenny",
+                "MarriageDialogueSam", "MarriageDialogueSebastian", "MarriageDialogueShane", "Maru",
+                "Mister Qi", "Pam", "Penny", "Pierre", "Robin", "Sam", "Sandy", "Sebastian", "Shane",
+                "Vincent", "Willy", "Wizard", "rainy"))
+        .Concat(Family("Strings/schedules",
+                "Abigail", "Alex", "Caroline", "Clint", "Demetrius", "Elliott", "Emily", "Evelyn", "George",
+                "Gus", "Haley", "Harvey", "Jas", "Jodi", "Leah", "Leo", "Lewis", "Linus", "Marnie", "Maru",
+                "Pam", "Penny", "Pierre", "Robin", "Sam", "Sandy", "Sebastian", "Shane", "Vincent", "Willy"))
+        .Concat(Family("Data/Festivals",
+                "FestivalDates", "fall16", "fall27", "spring13", "spring24", "summer11", "summer28",
+                "winter25", "winter8"))
+        .Concat(Family("Data/TV", "CookingChannel", "TipChannel"))
+        .ToArray();
+
+        private static IEnumerable<string> Family(string folder, params string[] names)
+        {
+            return names.Select(name => $"{folder}/{name}");
+        }
 
         private readonly IModHelper helper;
 
