@@ -64,7 +64,7 @@ The kana field follows these conventions, which the converter relies on:
 `merge` rejects kana containing kanji, and a segment whose text has kanji but no
 kana. It does **not** yet check the script rule above, and roughly 2,900
 existing segments break it, most with all-katakana kana (`サイロに入れた。` ->
-`サイロニイレタ`). Normalising them is a `TODOs.txt` item.
+`サイロニイレタ`). Normalising them is a `TODOs.md` item.
 
 Then run:
 
@@ -211,4 +211,4 @@ stops counting them as pending.
 
 ## Priority
 
-See `TODOs.txt` at the repo root, which overrides `Plan.md`'s ordering.
+See `TODOs.md` at the repo root, which overrides `Plan.md`'s ordering.

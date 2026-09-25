@@ -74,7 +74,7 @@ An entry looks like:
 - `Objects_Name.json` -- 756 item names. Migrated from the old flat format, so
   each name is currently a **single segment covering the whole string**. That is
   right for a one-word name (木材) and wrong for a multi-word one (木の柵 should
-  be 木 / の / 柵); splitting those is a tracked pass in `TODOs.txt`.
+  be 木 / の / 柵); splitting those is a tracked pass in `TODOs.md`.
 - `UI.json` -- all 865 Japanese-bearing entries of `Strings/UI`, hand-segmented.
 - `StringsFromCSFiles.json` -- in progress; the item category subtitles
   (`Object.cs.12847`-`12869`, e.g. 素材 / Resource) are done because they appear
