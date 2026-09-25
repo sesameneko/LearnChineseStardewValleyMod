@@ -342,7 +342,7 @@ def parse_line(line):
 
 # dialogue markup: $h $s $1 $q..., %noturn / %fork, and the #...# of a page break; plus the
 # item references a gift line carries ([166], [90 88 86 535]), which draw an icon, not a word
-MARKUP = re.compile(r"\$[A-Za-z0-9]+|%[A-Za-z]+|\[[0-9 ]+\]")
+MARKUP = re.compile(r"\$[A-Za-z0-9]+|%[A-Za-z]+[0-9]*|\[[0-9 ]+\]")  # %kid1 is one token
 # opening brackets and quotes belong to the word they open, not the one before
 OPENERS = "（(「『【〈《[{“‘"
 # a page break (#$b# / #$e#) followed by more Japanese inside one segment
@@ -392,9 +392,12 @@ def align(source_text, segments):
 
     # a segment that is itself only punctuation/markup gets folded into its neighbour too,
     # so authors can't produce a lone "。" by including it either
+    # -- except right after a page break: then it is a whole page of its own ("…！！！") and
+    # needs its own hover, not the previous page's
     folded = []
     for seg in out:
-        if folded and not japanese(seg["text"]) and attachable(seg["text"]):
+        if (folded and not japanese(seg["text"]) and attachable(seg["text"])
+                and not re.search(r"#\$[be]#\s*$", folded[-1]["text"])):
             folded[-1]["text"] += seg["text"]
         else:
             folded.append(seg)

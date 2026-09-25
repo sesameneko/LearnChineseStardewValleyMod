@@ -305,15 +305,10 @@
         "kana": "ゆめ を"
       },
       {
-        "text": "見ていたの。",
+        "text": "見ていたの。%noun ",
         "reading": "mite ita no",
         "gloss": "I was having",
         "kana": "みて いた の"
-      },
-      {
-        "text": "%noun ",
-        "reading": "",
-        "gloss": "(random noun)"
       },
       {
         "text": "星雲で ",
@@ -952,15 +947,10 @@
     "english": "Were you able to be with %kid1 today? Kids need playtime to reach their potential.",
     "segments": [
       {
-        "text": "今日は ",
+        "text": "今日は %kid1",
         "reading": "kyō wa",
         "gloss": "today",
         "kana": "きょう は"
-      },
-      {
-        "text": "%kid1",
-        "reading": "",
-        "gloss": "(your first child's name)"
       },
       {
         "text": "と ",
@@ -1029,12 +1019,7 @@
     "english": "When %kid1 grows up... will they be a farmer like you? Or an engineer like me?",
     "segments": [
       {
-        "text": "%kid1",
-        "reading": "",
-        "gloss": "(your first child's name)"
-      },
-      {
-        "text": "が ",
+        "text": "%kid1が ",
         "reading": "ga",
         "gloss": "(subject marker)",
         "kana": "が "
@@ -1274,15 +1259,10 @@
         "kana": "よる に"
       },
       {
-        "text": "なりそうね…",
+        "text": "なりそうね…%noun ",
         "reading": "nari sō ne",
         "gloss": "looks like it'll be...",
         "kana": "なり そう ね"
-      },
-      {
-        "text": "%noun ",
-        "reading": "",
-        "gloss": "(random noun)"
       },
       {
         "text": "座が ",
@@ -1377,92 +1357,110 @@
       {
         "text": "牧場",
         "kana": "ぼくじょう",
-        "gloss": "farm"
+        "gloss": "farm",
+        "reading": "bokujō"
       },
       {
         "text": "を ",
         "kana": "を",
-        "gloss": "(object marker)"
+        "gloss": "(object marker)",
+        "reading": "o"
       },
       {
         "text": "経営する",
         "kana": "けいえい する",
-        "gloss": "to run / manage"
+        "gloss": "to run / manage",
+        "reading": "keiei suru"
       },
       {
         "text": "のに、 ",
         "kana": "のに",
-        "gloss": "for (doing)"
+        "gloss": "for (doing)",
+        "reading": "noni"
       },
       {
         "text": "これだけ ",
         "kana": "これだけ",
-        "gloss": "this much"
+        "gloss": "this much",
+        "reading": "koredake"
       },
       {
         "text": "計画",
         "kana": "けいかく",
-        "gloss": "planning"
+        "gloss": "planning",
+        "reading": "keikaku"
       },
       {
         "text": "と ",
         "kana": "と",
-        "gloss": "and"
+        "gloss": "and",
+        "reading": "to"
       },
       {
         "text": "配慮",
         "kana": "はいりょ",
-        "gloss": "care / consideration"
+        "gloss": "care / consideration",
+        "reading": "hairyo"
       },
       {
         "text": "が ",
         "kana": "が",
-        "gloss": "(subject marker)"
+        "gloss": "(subject marker)",
+        "reading": "ga"
       },
       {
         "text": "いるなんて ",
         "kana": "いるなんて",
-        "gloss": "that (it) is needed"
+        "gloss": "that (it) is needed",
+        "reading": "irunante"
       },
       {
         "text": "思わなかったわ！",
         "kana": "おもわなかったわ",
-        "gloss": "(I) didn't think"
+        "gloss": "(I) didn't think",
+        "reading": "omowanakattawa"
       },
       {
         "text": "研究所",
         "kana": "けんきゅうじょ",
-        "gloss": "research lab"
+        "gloss": "research lab",
+        "reading": "kenkyūjo"
       },
       {
         "text": "で",
         "kana": "で",
-        "gloss": "(at)"
+        "gloss": "(at)",
+        "reading": "de"
       },
       {
         "text": "の ",
         "kana": "の",
-        "gloss": "(of)"
+        "gloss": "(of)",
+        "reading": "no"
       },
       {
         "text": "作業",
         "kana": "さぎょう",
-        "gloss": "work"
+        "gloss": "work",
+        "reading": "sagyō"
       },
       {
         "text": "に ",
         "kana": "に",
-        "gloss": "(to)"
+        "gloss": "(to)",
+        "reading": "ni"
       },
       {
         "text": "すごく ",
         "kana": "すごく",
-        "gloss": "very"
+        "gloss": "very",
+        "reading": "sugoku"
       },
       {
         "text": "近いわね。",
         "kana": "ちかいわね",
-        "gloss": "is close"
+        "gloss": "is close",
+        "reading": "chikaiwane"
       }
     ]
   },
@@ -2951,14 +2949,9 @@
     "english": "@, I'm really looking forward to the first work of the new year!",
     "segments": [
       {
-        "text": "@",
+        "text": "@、 ",
         "reading": "",
         "gloss": "(your name)"
-      },
-      {
-        "text": "、 ",
-        "reading": "",
-        "gloss": "(comma)"
       },
       {
         "text": "新年の ",

@@ -1771,15 +1771,10 @@
     "english": "No... it's thanks to @ of %farm Farm!",
     "segments": [
       {
-        "text": "いえ…",
+        "text": "いえ…%farm",
         "reading": "ie",
         "gloss": "no",
         "kana": "いえ"
-      },
-      {
-        "text": "%farm",
-        "reading": "",
-        "gloss": "(farm name)"
       },
       {
         "text": "農場",
@@ -1817,15 +1812,10 @@
     "english": "Mmm... %farm eggs.",
     "segments": [
       {
-        "text": "うーん…",
+        "text": "うーん…%farm",
         "reading": "ūn",
         "gloss": "mmm",
         "kana": "ウーン"
-      },
-      {
-        "text": "%farm",
-        "reading": "",
-        "gloss": "(farm name)"
       },
       {
         "text": "タマゴ。",
@@ -4140,8 +4130,8 @@
     "segments": [
       {
         "text": "…$l#$b#",
-        "reading": "",
-        "gloss": "(pause)"
+        "kana": "",
+        "gloss": "(page break)"
       },
       {
         "text": "お互い",
@@ -4830,7 +4820,12 @@
     "english": "... Sigh... well, it seems I'd better pay my tab.",
     "segments": [
       {
-        "text": "…$u#$b#ハァ…",
+        "text": "…$u#$b#",
+        "kana": "",
+        "gloss": "(page break)"
+      },
+      {
+        "text": "ハァ…",
         "reading": "hā",
         "gloss": "sigh",
         "kana": "ハー"

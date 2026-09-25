@@ -3951,20 +3951,10 @@
     "english": "I already had %kid1 and %kid2 eat chocolate cereal. They were making a fuss about being hungry!",
     "segments": [
       {
-        "text": "%kid1",
-        "reading": "",
-        "gloss": "(first child's name)"
-      },
-      {
-        "text": "と",
+        "text": "%kid1と%kid2",
         "reading": "to",
         "gloss": "and",
         "kana": "と"
-      },
-      {
-        "text": "%kid2",
-        "reading": "",
-        "gloss": "(second child's name)"
       },
       {
         "text": "には ",
@@ -4021,12 +4011,7 @@
     "english": "I dreamed that %kid2 grew up and became a famous monster hunter. I'm thinking of giving them a full set of armor.",
     "segments": [
       {
-        "text": "%kid2",
-        "reading": "",
-        "gloss": "(second child's name)"
-      },
-      {
-        "text": "が ",
+        "text": "%kid2が ",
         "reading": "ga",
         "gloss": "(subject marker)",
         "kana": "が "

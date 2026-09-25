@@ -4748,12 +4748,7 @@
     "english": "%Alex squeezed your arm tight and grinned.",
     "segments": [
       {
-        "text": "%",
-        "reading": "",
-        "gloss": "(narration markup)"
-      },
-      {
-        "text": "アレックス",
+        "text": "%アレックス",
         "reading": "arekkusu",
         "gloss": "Alex",
         "kana": "アレックス"
@@ -4819,15 +4814,10 @@
     "english": "Looks like it'll be an unforgettable %season!$l",
     "segments": [
       {
-        "text": "忘れられない",
+        "text": "忘れられない%season",
         "reading": "wasurerarenai",
         "gloss": "unforgettable",
         "kana": "わすれられない"
-      },
-      {
-        "text": "%season",
-        "reading": "",
-        "gloss": "(season name)"
       },
       {
         "text": "になりそうだ！$l",
@@ -6130,20 +6120,10 @@
         "kana": "なまえ"
       },
       {
-        "text": "確か ",
+        "text": "確か %firstnameletter%name",
         "reading": "tashika",
         "gloss": "if I recall",
         "kana": "たしか"
-      },
-      {
-        "text": "%firstnameletter",
-        "reading": "",
-        "gloss": "(first letter of your name)"
-      },
-      {
-        "text": "%name",
-        "reading": "",
-        "gloss": "(a random name)"
       },
       {
         "text": " か、",

@@ -175,7 +175,10 @@ Write the words; `merge` supplies the rest.
   opening brackets and quotes (`（`, `「`), which go to the start of the next.
   So `絶品だ¦ぜっぴん だ¦is superb` becomes `絶品だ。`. A page break therefore always lands
   on a segment boundary, and a segment that is only punctuation is folded into
-  its neighbour even if you wrote one.
+  its neighbour even if you wrote one. The exception is a segment right after a
+  page break: that one is a whole page of its own (`…！！！`) and keeps its own
+  hover. A source that *opens* with a page break gets a markup-only first
+  segment.
 - **Kana may be left empty for a segment with no kanji.** `merge` takes the
   segment's own kana, minus punctuation and markup: `ありがとう¦¦thank you`. The
   one exception is a segment of several words that includes the particle は, へ

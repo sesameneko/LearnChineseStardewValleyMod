@@ -1509,20 +1509,10 @@
         "kana": "は "
       },
       {
-        "text": "見たけど、 ",
+        "text": "見たけど、 %adj%noun",
         "reading": "mita kedo",
         "gloss": "saw (one), but",
         "kana": "みた けど"
-      },
-      {
-        "text": "%adj",
-        "reading": "",
-        "gloss": "(random adjective)"
-      },
-      {
-        "text": "%noun",
-        "reading": "",
-        "gloss": "(random noun)"
       },
       {
         "text": "に ",
@@ -5246,15 +5236,10 @@
         "kana": "きょう"
       },
       {
-        "text": "は ",
+        "text": "は %kid1",
         "reading": "wa",
         "gloss": "(topic marker)",
         "kana": "は "
-      },
-      {
-        "text": "%kid1",
-        "reading": "",
-        "gloss": "(your child's name)"
       },
       {
         "text": "と ",
@@ -5281,12 +5266,7 @@
     "english": "When %kid1 grows up, I wonder if they'll become an adult like you?",
     "segments": [
       {
-        "text": "%kid1",
-        "reading": "",
-        "gloss": "(your child's name)"
-      },
-      {
-        "text": "は ",
+        "text": "%kid1は ",
         "reading": "wa",
         "gloss": "(topic marker)",
         "kana": "は "
@@ -5334,15 +5314,10 @@
     "english": "It's okay, I'll look after %kid1. You can focus on running the farm.",
     "segments": [
       {
-        "text": "大丈夫、 ",
+        "text": "大丈夫、 %kid1",
         "reading": "daijōbu",
         "gloss": "it's okay",
         "kana": "だいじょうぶ"
-      },
-      {
-        "text": "%kid1",
-        "reading": "",
-        "gloss": "(your child's name)"
       },
       {
         "text": "の ",
@@ -10224,20 +10199,10 @@
     "english": "I already had %kid1 and %kid2 eat breakfast. Because they were hungry!",
     "segments": [
       {
-        "text": "%kid1",
-        "reading": "",
-        "gloss": "(first child's name)"
-      },
-      {
-        "text": "と",
+        "text": "%kid1と%kid2",
         "reading": "to",
         "gloss": "and",
         "kana": "と"
-      },
-      {
-        "text": "%kid2",
-        "reading": "",
-        "gloss": "(second child's name)"
       },
       {
         "text": "に",
@@ -10330,26 +10295,16 @@
         "kana": "できた"
       },
       {
-        "text": "から、 ",
+        "text": "から、 %kid2",
         "reading": "kara",
         "gloss": "since",
         "kana": "から"
       },
       {
-        "text": "%kid2",
-        "reading": "",
-        "gloss": "(second child's name)"
-      },
-      {
-        "text": "だけでなく ",
+        "text": "だけでなく %kid1",
         "reading": "dake de naku",
         "gloss": "not only",
         "kana": "だけでなく "
-      },
-      {
-        "text": "%kid1",
-        "reading": "",
-        "gloss": "(first child's name)"
       },
       {
         "text": "に",
@@ -10430,15 +10385,10 @@
     "english": "Hey, %kid2's nose looks like yours.",
     "segments": [
       {
-        "text": "ねぇ、",
+        "text": "ねぇ、%kid2",
         "reading": "nē",
         "gloss": "hey",
         "kana": "ねい"
-      },
-      {
-        "text": "%kid2",
-        "reading": "",
-        "gloss": "(second child's name)"
       },
       {
         "text": "の",
@@ -14250,12 +14200,7 @@
     "english": "I'm looking forward to a wonderful year at %farm Farm.",
     "segments": [
       {
-        "text": "%farm ",
-        "reading": "",
-        "gloss": "(farm name)"
-      },
-      {
-        "text": "牧場",
+        "text": "%farm 牧場",
         "reading": "bokujō",
         "gloss": "farm",
         "kana": "ぼくじょう"
