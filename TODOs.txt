@@ -3,78 +3,70 @@ TODOs
 
 Some recent change broke the proof of concept translation demo (probably this "shift toggle" change)
 
-M2 segmentation data — every *imported* table is authored; five families were never imported
---------------------------------------------------------------------------------------------
-All 9,039 entries across every Strings/* table and the nine Content/Data
-assets in segtool.py's DATA_TABLES have hand-authored segment data; 11 keys are
-deliberately skipped (event command scripts, which the game never draws as a
-single string). `segtool.py status` shows pending=0 everywhere and
-`segtool.py validate` passes.
+M2 segmentation data — complete (2026-09-25)
+--------------------------------------------
+Every piece of Japanese text the game ships has hand-authored segment data:
+15,768 entries, 10 keys deliberately skipped, 0 pending. The live checks:
 
-That is NOT the same as "all game text" — a distinction this file previously
-got wrong. Found 2026-09-22, when villager dialogue turned up untranslated in
-play: five asset families were never in scope at all, ~8,900 drawn pages /
-~291k JA characters, roughly 1.5x everything authored to date (199,699).
+  python3 tools/segment-data/segtool.py status     # pending=0 everywhere
+  python3 tools/segment-data/segtool.py validate   # the invariant holds
+  python3 tools/segment-data/segtool.py audit      # coverage vs the game install
 
-  Characters/Dialogue/*   52 files   3,301 keys   4,874 pages   161,892 chars
-  Data/Events/*           44 files   2,064 spoken lines in 258 scripts   80,793
-  Data/Festivals/*         9 files     743 keys   1,025 pages    30,996
-  Data/TV/*                2 files      96 keys                  10,827
-  Strings/schedules/*     30 files     191 keys                   6,139
+audit checks two things. First, assets: all 207 Japanese-localized assets are
+covered or excluded with a reason, with no known gaps left. Second, text: every
+Japanese character in a covered asset is held by an entry. Run it after any
+game update. It fails loudly on anything new, which is what status could
+never do. status only measures against files somebody already chose to
+extract; that blind spot is how dialogue, events, festivals, TV and schedules
+sat unnoticed while everything read pending=0 (post-mortem in Plan.md's data
+task).
 
-Update 2026-09-23: all five are now extracted (tools/extracted-strings/content-ja,
-content-en) and wired into segtool.py as <Family>-<file> tables, so `status` counts
-them. That makes 6,519 entries (~301k chars) pending. The flat ones (dialogue,
-schedules, festivals, TV) are also in TranslationIndex.StringTables for
-whole-sentence lookup.
+How it got here, for the record:
+  - 9,039 entries: every Strings/* table + the Data/ record tables
+  - 6,519 entries: the five families that were never imported (dialogue,
+    events, festivals, TV, schedules), by a multi-agent run
+  - 92 entries found by audit's text check: Quests completion lines (field 9),
+    dialogue inside skipped event scripts, Lewis's phone call
+  - 105 entries: Achievements + SecretNotes, once XnbStringTool learned to read
+    Dictionary<int,string>
+The 10 skipped keys are event scripts the game never draws whole; their
+spoken lines are extracted and authored as <key>#<n> entries.
 
-Run `segtool.py audit` for the live version of that list. It walks the game's
-Content folder and fails on any localized asset the pipeline can't account for,
-which is the check that was missing — `status` only ever measured coverage
-against the files somebody had already chosen to extract. See Plan.md's data
-task for the full post-mortem.
+Still open
+----------
+  - IN-GAME CHECK, dialogue: segment data (and sentence translation) is keyed
+    by the whole raw string, markup and all ($h, #$b#...). The game draws one
+    page at a time with the markup removed. Check whether SegmentIndex /
+    TranslationMap find these on screen. If not, split entries at #$b# / #$e#
+    on load and strip the markup. Page breaks always fall on a segment
+    boundary (merge enforces it), so that split is clean.
+  - IN-GAME CHECK, achievements and secret notes: sentence translation is
+    wired up and unit-tested against the real data (ModLogic.Tests), but not
+    tried live. Hover them in the Collections tab, including a long journal
+    scrap for the "(...)" path, or run ls_lookup 新人牧場主 -> Greenhorn (15k).
+  - kana-review.tsv: ~15k long-vowel guesses in the OLDER data, which was
+    authored romaji-first; romaji_to_kana.py guessed each long vowel (ō is
+    おう or おお). They have never been reviewed, and some are known wrong
+    (ēto came out えいと). Newer data is authored in kana and isn't affected.
+  - SegmentIndex has no template matching: a string the game fills in with
+    string.Format ({0}) at draw time falls back to the character-class
+    heuristic for word hover. TranslationMap handles these; SegmentIndex doesn't.
 
-Still open beyond those five: the
-TranslationIndex.StringTables array in the mod itself, which has the same
-Strings/*-only blind spot for whole-sentence lookup.
-
-The pipeline, for future re-passes (tools/segment-data/segtool.py):
-
-  python3 tools/segment-data/segtool.py status          # coverage per table
-  python3 tools/segment-data/segtool.py batch Tools 50  # next worklist, as TSV
+The pipeline (tools/segment-data/README.md has the details)
+------------------------------------------------------------
+  python3 tools/segment-data/segtool.py batch <Table> 40      # worklist, TSV
   ...author a .tsv...
-  python3 tools/segment-data/segtool.py merge Tools batch.tsv
+  python3 tools/segment-data/segtool.py merge <Table> <file>  # align + validate
+  python3 tools/segment-data/kana_to_romaji.py write          # generate romaji
   python3 tools/segment-data/segtool.py validate
 
-Authoring format is one entry per line, tab-separated:
+Authoring format, one entry per line, tab-separated:
   key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
-(kana is the source of truth; kana_to_romaji.py write generates the romaji -- see
-tools/segment-data/README.md)
-merge rejects any line whose segment texts don't concatenate back to the
-source string exactly, so bad data can't reach the mod.
-
-Output goes to tools/extracted-strings/literal-translations/<Table>.json —
-that folder is the tracked source of truth; assets/segments/ is gitignored and
-generated from it by the csproj's CopySegmentData target.
-
-Status (2026-09-25): everything is authored. 15,768 entries, 10 skipped, 0 pending.
-Achievements and SecretNotes are done too: XnbStringTool now reads
-Dictionary<int,string>. audit reports all 207 localized assets covered, with
-no known gaps left.
-`segtool.py audit` now also checks text coverage: every Japanese character in
-every covered asset must be held by an entry. Adding it found 92 more entries
-nobody had offered for authoring, now done: the Quests completion line
-(field 9), the dialogue inside skipped event scripts, and Lewis's phone call.
-The five families (6,519 entries) were finished by a multi-agent run. Their
-segments are authored in kana, with romaji generated by kana_to_romaji.py.
-Still open:
-  - kana-review.tsv: about 15k long-vowel guesses in the OLDER, romaji-first
-    data, from romaji_to_kana.py, never reviewed
-  - dialogue pages: segment data is keyed by the whole raw string, markup
-    included, but the game draws one page at a time with its markup stripped.
-    Check in game that SegmentIndex actually finds these; splitting entries
-    at #$b#/#$e# on load is probably needed (page breaks always fall on a
-    segment boundary, so that split is clean)
+Kana is the source of truth; romaji is generated. Write only the words.
+merge attaches punctuation and dialogue markup to a neighbouring segment,
+fills in kana for kanji-free segments, and rejects any line it can't line up
+with the source. Output goes to tools/extracted-strings/literal-translations/,
+the tracked source of truth. assets/segments/ is generated from it at build time.
 
 Objects item names — done
 -------------------------
