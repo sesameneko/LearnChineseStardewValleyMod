@@ -287,8 +287,8 @@ namespace LanguageStudyStardewValleyMod
 
             if (currentConfig.HoldFreezeTooltip.JustPressed())
             {
-                if (!FrozenTooltip.IsFrozen && FrozenTooltip.Freeze(locked: false))
-                    Log("Tooltip frozen while held -- move the cursor over it to hover individual words.");
+                if (!FrozenTooltip.IsFrozen)
+                    FrozenTooltip.Freeze(locked: false);
             }
 
             if (currentConfig.FreezeTooltip.JustPressed())

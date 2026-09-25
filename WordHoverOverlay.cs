@@ -68,13 +68,32 @@ namespace LanguageStudyStardewValleyMod
                     else
                         DrawUnderline(spriteBatch, hit.Value.Word_Bounds);
 
-                    DrawLabel(spriteBatch, Describe(hit.Value.Segment), hit.Value.Word_Bounds);
+                    string label = Describe(hit.Value.Segment);
+                    LogIfNewlyHovered(hit.Value.Segment.Text, label);
+                    DrawLabel(spriteBatch, label, hit.Value.Word_Bounds);
                 }
             }
             catch (Exception ex)
             {
                 ModEntry.Log($"Error in word-hover overlay: {ex}", LogLevel.Error);
             }
+        }
+
+        /// <summary>The word and label last written to the log, so a word held under the cursor logs once rather than every frame.</summary>
+        private static (string Word, string Label)? LastLogged;
+
+        /// <summary>
+        /// Logs the hovered word and the label shown for it, once each time the cursor lands on a
+        /// different word. Draw runs several times a frame and a word stays hovered for many
+        /// frames, so this compares against the last thing logged rather than logging per call.
+        /// </summary>
+        private static void LogIfNewlyHovered(string word, string label)
+        {
+            if (LastLogged == (word, label))
+                return;
+
+            LastLogged = (word, label);
+            ModEntry.Log($"Hovered '{word}' -> {label.Replace("\n", " ")}");
         }
 
         private readonly record struct Hit(TextSegment Segment, Rectangle Word_Bounds, Rectangle Line, bool Exact);
