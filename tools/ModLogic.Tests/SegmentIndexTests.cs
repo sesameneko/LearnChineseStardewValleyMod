@@ -290,7 +290,75 @@ namespace ModLogic.Tests
             Assert.False(index.TryGetSegments("稼いだ利益：579,858G", out _));
         }
 
+        [Fact]
+        public void Covers_text_joined_from_several_entries()
+        {
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("この分野では丈夫。", new[] { new TextSegment("この分野では", null, "in this field"), new TextSegment("丈夫。", null, "sturdy") }));
+            Assert.True(index.TryAdd("可染性。", new[] { new TextSegment("可染性。", null, "dyeable") }));
+
+            // the segments tile the drawn text with its line breaks removed, as TryGetSegmentsForLine expects
+            Assert.True(index.TryGetSegments("この分野では丈夫。\n\n可染性。", out var segments));
+            Assert.Equal(new[] { "この分野では", "丈夫。", "可染性。" }, TextOf(segments));
+        }
+
+        [Fact]
+        public void Covers_a_dialogue_page_from_the_middle_of_its_entry()
+        {
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("どうだったかね？#$e#君の おじいさんは 愛してたんじゃ。", new[]
+            {
+                new TextSegment("どうだったかね？#$e#", null, "how was it?"),
+                new TextSegment("君", null, "you"),
+                new TextSegment("の ", null, "'s"),
+                new TextSegment("おじいさん", null, "grandfather"),
+                new TextSegment("は ", null, "(topic)"),
+                new TextSegment("愛してたんじゃ。", null, "loved"),
+            }));
+
+            Assert.True(index.TryGetSegments("君の おじいさんは 愛して\nたんじゃ。", out var segments));
+            Assert.Equal(new[] { "君", "の ", "おじいさん", "は ", "愛してたんじゃ。" }, TextOf(segments));
+            Assert.Equal("grandfather", segments[2].Gloss);
+        }
+
+        [Fact]
+        public void Leaves_uncovered_characters_to_the_heuristic()
+        {
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("ルイス", new[] { new TextSegment("ルイス", null, "Lewis") }));
+            Assert.True(index.TryAdd("どうしても欲しいのは", new[] { new TextSegment("どうしても", null, "no matter what"), new TextSegment("欲しいのは", null, "what I want is") }));
+
+            Assert.True(index.TryGetSegments("どうしても欲しいのは - ルイス", out var segments));
+            Assert.Equal(new[] { "どうしても", "欲しいのは ", "- ", "ルイス" }, TextOf(segments));
+            Assert.Null(segments[2].Gloss);
+            Assert.Equal("Lewis", segments[3].Gloss);
+        }
+
+        [Fact]
+        public void Refuses_a_composite_that_covers_too_little()
+        {
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("ルイス", new[] { new TextSegment("ルイス", null, "Lewis") }));
+
+            Assert.False(index.TryGetSegments("ルイスさんは今日もとても元気そうだ", out _));
+        }
+
+        [Fact]
+        public void Ignores_one_character_entries_in_a_composite()
+        {
+            // 日 is stored as "Sunday"; it must not be what labels the 日 in a date
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("日", new[] { new TextSegment("日", null, "Sunday") }));
+            Assert.True(index.TryAdd("ようこそ", new[] { new TextSegment("ようこそ", null, "welcome") }));
+
+            Assert.True(index.TryGetSegments("ようこそようこそ8日", out var segments));
+            Assert.DoesNotContain(segments, s => s.Gloss == "Sunday");
+        }
+
         [Theory]
+        [InlineData("どうしても欲しいのは 完熟のパースニップで\nす。地元の 牧場主なら 届けてくれると 思いま\nす。\n                - ルイス\n\n\n- 105g を 受け取り時に 支払\n- ルイスが 喜ぶ")]
+        [InlineData("この分野では長時間快適\nで丈夫。\n\n可染性。")]
+        [InlineData("君の おじいさんは ガタガタの ベッ\nドに よく 文句を 言ってたよ。でも\n、 彼は あの家を 心の底から 愛して\nたんじゃ。")]
         [InlineData("2年目、8日、秋")]
         [InlineData("手持ちのお金： 29,560G")]
         [InlineData("稼いだ利益：579,858G")]
@@ -300,7 +368,7 @@ namespace ModLogic.Tests
         {
             // each of these fell back to the heuristic split in a live session
             var index = new SegmentIndex();
-            foreach (string table in new[] { "StringsFromCSFiles", "UI", "Data_mail" })
+            foreach (string table in new[] { "StringsFromCSFiles", "UI", "Data_mail", "Pants", "NPCNames", "Objects_Name", "Dialogue-Lewis" })
                 LoadRealTable(index, table);
 
             Assert.True(index.TryGetSegments(drawn, out var segments), index.ExplainMiss(drawn));
@@ -308,7 +376,31 @@ namespace ModLogic.Tests
 
             string[] lines = TextHitTest.SplitLines(drawn);
             for (int i = 0; i < lines.Length; i++)
+            {
+                // a blank line between paragraphs holds no segment, and can't be hovered anyway
+                if (string.IsNullOrWhiteSpace(lines[i]))
+                    continue;
+
                 Assert.True(SegmentIndex.TryGetSegmentsForLine(segments, lines, i, out _), SegmentIndex.ExplainLineMismatch(segments, lines, i));
+            }
+        }
+
+        [Fact]
+        public void A_template_opening_with_a_token_does_not_swallow_the_text_before_its_literal()
+        {
+            // "{0} 牧場" placed at the start once captured everything up to 牧場主 and won,
+            // labelling half the quest "(farm name)"
+            var index = new SegmentIndex();
+            foreach (string table in new[] { "StringsFromCSFiles", "UI", "NPCNames", "Objects_Name" })
+                LoadRealTable(index, table);
+
+            Assert.True(index.TryGetSegments("どうしても欲しいのは 完熟のパースニップで\nす。地元の 牧場主なら 届けてくれると 思いま\nす。\n                - ルイス\n\n\n- 105g を 受け取り時に 支払\n- ルイスが 喜ぶ", out var segments));
+
+            Assert.Equal("どうしても", segments[0].Text);
+            Assert.Contains(segments, s => s.Text == "パースニップ");
+            Assert.Contains(segments, s => s.Text == "牧場主");
+            // trimmed: a segment carries the whitespace drawn after it, here the signature's indent
+            Assert.All(segments, s => Assert.True(s.Text.Trim().Length <= 12, $"segment {SegmentIndex.Quote(s.Text)} swallowed too much"));
         }
 
         private static void LoadRealTable(SegmentIndex index, string table)

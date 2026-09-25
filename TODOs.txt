@@ -48,9 +48,25 @@ Still open
     authored romaji-first; romaji_to_kana.py guessed each long vowel (ō is
     おう or おお). They have never been reviewed, and some are known wrong
     (ēto came out えいと). Newer data is authored in kana and isn't affected.
-  - SegmentIndex has no template matching: a string the game fills in with
-    string.Format ({0}) at draw time falls back to the character-class
-    heuristic for word hover. TranslationMap handles these; SegmentIndex doesn't.
+  - OPTIMIZE SegmentIndex.MatchComposite (word hover for text the game joins
+    from several entries: quest descriptions, clothing + "可染性。", dialogue
+    pages). It runs only after every other lookup misses, and is memoised per
+    drawn string, but the first frame a new string is hovered pays for it:
+    ~40ms for the 67-char Lewis parsnip quest and ~20ms for a string that
+    matches nothing, against the full 15k-entry index -- a visible hitch, and
+    it grows with text length. Costs, biggest first:
+      - LongestRunFrom scans every key with IndexOf at each run start
+        (O(positions x entries)). Replace with an n-gram (e.g. 3-gram ->
+        entry list) index built at load, or a suffix array over the keys.
+      - Every position tries every length as a whole-entry lookup, allocating
+        a substring each time (O(n^2) allocations). Walk a trie of the
+        spaceless keys instead; it gives every entry starting at a position
+        in one pass.
+      - Each position runs every template whose anchor appears in the text.
+        Only try one where its first literal actually starts at that position.
+    Alternatives: precompute dialogue pages at load by splitting entries at
+    #$b# / #$e# (see the IN-GAME CHECK above), which moves the commonest case
+    to an exact lookup; or run the composite off the draw thread.
 
 The pipeline (tools/segment-data/README.md has the details)
 ------------------------------------------------------------

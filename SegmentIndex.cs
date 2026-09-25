@@ -73,6 +73,24 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         private const int MinimumPrefixLength = 6;
 
+        /// <summary>
+        /// The shortest whole entry the composite matcher will place as a piece. Guards against a
+        /// one-character entry landing by coincidence and bringing the wrong gloss: 日 is stored as
+        /// "Sunday", but in 8日 it means "day".
+        /// </summary>
+        private const int MinimumPieceLength = 2;
+
+        /// <summary>
+        /// The shortest run the composite matcher will take from the *middle* of a longer entry (a
+        /// dialogue page). Longer than <see cref="MinimumPieceLength"/> because a short run of
+        /// characters appears somewhere in the 17k entries by chance far more often than a short
+        /// entry equals the text outright.
+        /// </summary>
+        private const int MinimumSubstringLength = 6;
+
+        /// <summary>How much of the drawn text a composite match must cover with known pieces; below this it's likely coincidence.</summary>
+        private const double MinimumCompositeCoverage = 0.7;
+
         public int Count => this.byNormalized.Count;
 
         /// <summary>The number of token templates that can be matched.</summary>
@@ -143,7 +161,15 @@ namespace LanguageStudyStardewValleyMod
             if (matcher is null)
                 return;
 
-            this.templates.Add(new SegmentTemplate(matcher, TranslationMap.LongestLiteralOf(spaceless), TranslationMap.LiteralLengthOf(spaceless), segments));
+            // the composite matcher places templates mid-text, so it needs the same pattern
+            // unanchored at the end and pinned to a start position; a trailing token would then
+            // capture a single character, so such templates are left out of composites
+            Regex? pieceMatcher = null;
+            string whole = matcher.ToString();
+            if (!spaceless.EndsWith("}", StringComparison.Ordinal) && whole.StartsWith("^", StringComparison.Ordinal) && whole.EndsWith("$", StringComparison.Ordinal))
+                pieceMatcher = new Regex(@"\G" + whole.Substring(1, whole.Length - 2), matcher.Options, matcher.MatchTimeout);
+
+            this.templates.Add(new SegmentTemplate(matcher, pieceMatcher, TranslationMap.LongestLiteralOf(spaceless), TranslationMap.LiteralLengthOf(spaceless), segments));
             this.templatesNeedSorting = true;
         }
 
@@ -153,7 +179,8 @@ namespace LanguageStudyStardewValleyMod
         ///
         /// Tries, in order: the exact string; the string ignoring whitespace; a token template the
         /// game filled in; and a longer indexed string the drawn text is the start of (mail, whose
-        /// stored text carries a trailing <c>%item ... %%[#]title</c> the game strips before drawing).
+        /// stored text carries a trailing <c>%item ... %%[#]title</c> the game strips before drawing);
+        /// and last, a composite of several known pieces (see <see cref="MatchComposite"/>).
         /// Whatever is found is then re-laid over the drawn text, so the returned segments always
         /// reproduce the drawn lines exactly -- whitespace the game added or dropped included --
         /// which is what <see cref="TryGetSegmentsForLine"/> requires.
@@ -183,7 +210,7 @@ namespace LanguageStudyStardewValleyMod
                 if (found is null && spaceless.Length > 0)
                 {
                     if (!this.bySpaceless.TryGetValue(spaceless, out found))
-                        found = this.MatchTemplate(spaceless) ?? this.MatchPrefix(spaceless);
+                        found = this.MatchTemplate(spaceless) ?? this.MatchPrefix(spaceless) ?? this.MatchComposite(spaceless);
                 }
 
                 loose = found is null ? null : Retile(found, drawn);
@@ -302,6 +329,232 @@ namespace LanguageStudyStardewValleyMod
         }
 
         /// <summary>
+        /// Covers text the game assembled from several entries -- a quest's description built from
+        /// four table strings plus an item and an NPC name, a clothing description followed by
+        /// "可染性。", the second page of a dialogue -- with known pieces laid end to end.
+        ///
+        /// A piece is a whole entry (at least <see cref="MinimumPieceLength"/> characters), a token
+        /// template filled in mid-text, or a run of at least <see cref="MinimumSubstringLength"/>
+        /// characters from inside a longer entry. Among every way of tiling the text, the one that
+        /// covers the most characters wins, then the one using fewest pieces, since a long piece is
+        /// likelier to be the real source than several short ones. Characters no piece covers keep
+        /// the character-class split. The result is rejected unless pieces cover
+        /// <see cref="MinimumCompositeCoverage"/> of the text.
+        ///
+        /// Expensive -- a substring scan over every entry per run start -- but only reached after
+        /// every other lookup failed, and memoised by the caller.
+        /// </summary>
+        private IReadOnlyList<TextSegment>? MatchComposite(string drawn)
+        {
+            int length = drawn.Length;
+            if (length < MinimumPieceLength)
+                return null;
+
+            // only templates whose longest literal appears somewhere in the text can be placed
+            var usableTemplates = new List<SegmentTemplate>();
+            foreach (SegmentTemplate template in this.templates)
+            {
+                if (template.PieceMatcher is not null && drawn.Contains(template.Anchor, StringComparison.Ordinal))
+                    usableTemplates.Add(template);
+            }
+
+            var candidates = new List<Piece>[length];
+            SubstringRun previousRun = default;
+
+            for (int start = 0; start < length; start++)
+            {
+                var here = candidates[start] = new List<Piece>();
+
+                // whole entries starting here, every length
+                for (int end = start + MinimumPieceLength; end <= length; end++)
+                {
+                    if (this.bySpaceless.TryGetValue(drawn.Substring(start, end - start), out var entry))
+                        here.Add(new Piece(end - start, end - start, entry));
+                }
+
+                // templates filled in from here
+                foreach (SegmentTemplate template in usableTemplates)
+                {
+                    Match match;
+                    try
+                    {
+                        match = template.PieceMatcher!.Match(drawn, start);
+                    }
+                    catch (RegexMatchTimeoutException)
+                    {
+                        continue;
+                    }
+
+                    if (match.Success && match.Index == start && match.Length >= MinimumPieceLength)
+                        here.Add(new Piece(match.Length, this.CoveredBy(template.PieceMatcher!, match), this.Fill(template.Segments, match)));
+                }
+
+                // the longest run from inside some entry; a run continuing from the previous
+                // position is just that run one character shorter, so it isn't searched again
+                SubstringRun run = previousRun.Length > MinimumSubstringLength
+                    ? previousRun with { Offset = previousRun.Offset + 1, Length = previousRun.Length - 1 }
+                    : this.LongestRunFrom(drawn, start);
+                if (run.Length >= MinimumSubstringLength)
+                    here.Add(new Piece(run.Length, run.Length, null, run.Key, run.Offset));
+                previousRun = run;
+            }
+
+            // best[i]: the best tiling of drawn[i..], by (covered characters desc, pieces asc)
+            var covered = new int[length + 1];
+            var pieces = new int[length + 1];
+            var choice = new Piece?[length + 1];
+
+            for (int start = length - 1; start >= 0; start--)
+            {
+                // leaving this character uncovered
+                covered[start] = covered[start + 1];
+                pieces[start] = pieces[start + 1];
+                choice[start] = null;
+
+                foreach (Piece piece in candidates[start])
+                {
+                    int end = start + piece.Length;
+                    int total = covered[end] + piece.Covered;
+                    int count = pieces[end] + 1;
+                    if (total > covered[start] || (total == covered[start] && count < pieces[start]))
+                    {
+                        covered[start] = total;
+                        pieces[start] = count;
+                        choice[start] = piece;
+                    }
+                }
+            }
+
+            if (covered[0] < length * MinimumCompositeCoverage)
+                return null;
+
+            var result = new List<TextSegment>();
+            var gap = new System.Text.StringBuilder();
+            for (int position = 0; position < length;)
+            {
+                if (choice[position] is not Piece piece)
+                {
+                    gap.Append(drawn[position]);
+                    position++;
+                    continue;
+                }
+
+                FlushGap(gap, result);
+                result.AddRange(piece.Segments ?? SliceVisible(this.bySpaceless[piece.SourceKey!], piece.SourceOffset, piece.Length));
+                position += piece.Length;
+            }
+
+            FlushGap(gap, result);
+            return result;
+        }
+
+        /// <summary>
+        /// How many characters a placed template really accounts for: its literal text, plus any
+        /// captured value that is itself a known entry. An unknown value (a number, a player's name)
+        /// counts for nothing -- otherwise a template opening with a token ("{0} 牧場") could swallow
+        /// a whole sentence up to its literal and outscore the entries that sentence is really made of.
+        /// </summary>
+        private int CoveredBy(Regex matcher, Match match)
+        {
+            int covered = match.Length;
+            foreach (string name in matcher.GetGroupNames())
+            {
+                if (name.Length < 2 || name[0] != 't')
+                    continue;
+
+                Group value = match.Groups[name];
+                if (value.Success && !this.bySpaceless.ContainsKey(value.Value))
+                    covered -= value.Length;
+            }
+
+            return covered;
+        }
+
+        /// <summary>Uncovered characters keep the character-class split, as they would with no data at all.</summary>
+        private static void FlushGap(System.Text.StringBuilder gap, List<TextSegment> result)
+        {
+            if (gap.Length == 0)
+                return;
+
+            foreach (string part in TextHitTest.SplitSegments(gap.ToString()))
+                result.Add(TextSegment.Plain(part));
+            gap.Clear();
+        }
+
+        /// <summary>
+        /// The longest run of <paramref name="drawn"/> from <paramref name="start"/> found inside any
+        /// entry, by scanning every entry for its first <see cref="MinimumSubstringLength"/> characters.
+        /// </summary>
+        private SubstringRun LongestRunFrom(string drawn, int start)
+        {
+            if (drawn.Length - start < MinimumSubstringLength)
+                return default;
+
+            string probe = drawn.Substring(start, MinimumSubstringLength);
+            SubstringRun best = default;
+
+            foreach (string key in this.bySpaceless.Keys)
+            {
+                int offset = key.IndexOf(probe, StringComparison.Ordinal);
+                if (offset < 0)
+                    continue;
+
+                int run = MinimumSubstringLength;
+                while (start + run < drawn.Length && offset + run < key.Length && drawn[start + run] == key[offset + run])
+                    run++;
+
+                if (run > best.Length)
+                    best = new SubstringRun(key, offset, run);
+            }
+
+            return best;
+        }
+
+        /// <summary>
+        /// The segments covering visible (non-whitespace) characters <paramref name="from"/> to
+        /// <paramref name="from"/> + <paramref name="count"/> of an entry, clipping the segments at
+        /// either end. Whitespace inside the range is kept; <see cref="Retile"/> re-lays it anyway.
+        /// </summary>
+        private static IReadOnlyList<TextSegment> SliceVisible(IReadOnlyList<TextSegment> segments, int from, int count)
+        {
+            int to = from + count;
+            var result = new List<TextSegment>();
+            int visible = 0;
+
+            foreach (TextSegment segment in segments)
+            {
+                int first = -1, last = -1;
+                for (int i = 0; i < segment.Text.Length; i++)
+                {
+                    if (char.IsWhiteSpace(segment.Text[i]))
+                        continue;
+                    if (visible >= from && visible < to)
+                    {
+                        if (first < 0)
+                            first = i;
+                        last = i;
+                    }
+                    visible++;
+                }
+
+                if (first >= 0)
+                    result.Add(segment.Clip(first, last - first + 1));
+                if (visible >= to)
+                    break;
+            }
+
+            return result;
+        }
+
+        /// <summary>A candidate piece of a composite: a known length of the drawn text and where its segments come from.</summary>
+        /// <param name="Covered">How many of its characters count towards the tiling's score; see <see cref="CoveredBy"/>.</param>
+        /// <param name="Segments">The segments, for a whole entry or a filled-in template.</param>
+        /// <param name="SourceKey">For a run from inside a longer entry: that entry, sliced only if the piece is chosen.</param>
+        private readonly record struct Piece(int Length, int Covered, IReadOnlyList<TextSegment>? Segments, string? SourceKey = null, int SourceOffset = 0);
+
+        private readonly record struct SubstringRun(string Key, int Offset, int Length);
+
+        /// <summary>
         /// Re-lays segments over the drawn text, matching them character for character but ignoring
         /// whitespace on both sides: each segment takes the drawn characters it covers plus any
         /// whitespace that follows them. Segments past the end of the drawn text are dropped (and
@@ -380,7 +633,8 @@ namespace LanguageStudyStardewValleyMod
         }
 
         /// <param name="Anchor">The longest literal run, which any matching text must contain; far cheaper to rule out than the regex.</param>
-        private readonly record struct SegmentTemplate(Regex Matcher, string Anchor, int LiteralLength, IReadOnlyList<TextSegment> Segments);
+        /// <param name="PieceMatcher">The same pattern for use mid-text by the composite matcher (<c>\G</c>-anchored, open-ended); null when unusable there.</param>
+        private readonly record struct SegmentTemplate(Regex Matcher, Regex? PieceMatcher, string Anchor, int LiteralLength, IReadOnlyList<TextSegment> Segments);
 
         /// <summary>
         /// Says why <see cref="TryGetSegments"/> found nothing for a drawn string, for the hover log:
