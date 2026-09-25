@@ -72,6 +72,30 @@ Still open
         kana-review.tsv. Do the two together.
     Romaji is generated from kana: regenerate only for segments whose kana
     was authored (not the older romaji-first data; see the README).
+  - REVIEW redundancy in the segment data, and consider pointing repeats at a
+    shared glossary instead of storing a copy in every sentence.
+    Two kinds:
+      - Exact repeats. Measured 2026-09-25: 126,307 glossed segments hold only
+        54,761 distinct (text, kana, gloss) triples, so ~71,500 (57%) are
+        copies. Top: を "(object marker)" x3,418, は "(topic marker)" x2,801,
+        が "(subject marker)" x2,789, の "(possessive)" x1,113.
+      - Compounds. A sentence glosses a b c d as one segment, while elsewhere
+        ab and cd each have their own gloss. That's only truly redundant when
+        gloss(abcd) == gloss(ab) + gloss(cd); otherwise the grouping carries
+        meaning (an idiom, a set phrase) and must stay. Unmeasured.
+    Caveat: glosses are deliberately *in context*, so a shared entry must be
+    keyed by sense, never by text alone. を alone has 14 distinct glosses,
+    e.g. "(object marker)", "(along)", "(from, off)", "(path marker)", and
+    each is correct somewhere. Some of those are the same sense spelled
+    differently ("(object)" vs "(object marker)"). Merging those first would
+    both shrink the data and make hover labels consistent.
+    Possible shape: a glossary file of senses {id, text, kana, gloss}, with
+    segments holding a sense id where they match one and inline fields where
+    they don't. The loader expands ids on load, so SegmentIndex and the
+    concatenation invariant are unaffected. Weigh the gain first: the
+    bundled JSON size, load time and memory versus a more complex authoring
+    format (segtool merge/validate/batch and the TSV worklists all assume
+    inline fields). The consistency gain may matter more than the size.
   - OPTIMIZE SegmentIndex.MatchComposite (word hover for text the game joins
     from several entries: quest descriptions, clothing + "可染性。", dialogue
     pages). It runs only after every other lookup misses, and is memoised per
