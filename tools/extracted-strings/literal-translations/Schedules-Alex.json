@@ -1,0 +1,354 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Alex.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Sun.000": {
+    "japanese": "%アレックスはゲームに熱中しすぎて、あなたの存在に気づいていません。",
+    "english": "Alex is too absorbed in the game and doesn't notice your presence.",
+    "segments": [
+      {
+        "text": "%アレックス",
+        "kana": "アレックス",
+        "gloss": "Alex"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ゲーム",
+        "kana": "ゲーム",
+        "gloss": "game"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(in)"
+      },
+      {
+        "text": "熱中しすぎて、",
+        "kana": "ねっちゅう しすぎて",
+        "gloss": "too absorbed"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "存在",
+        "kana": "そんざい",
+        "gloss": "presence"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(object of noticing)"
+      },
+      {
+        "text": "気づいていません。",
+        "kana": "きづいて いません",
+        "gloss": "doesn't notice"
+      }
+    ]
+  },
+  "Sun.000_married": {
+    "japanese": "おーい、@！もしよかったらゲームを一緒に見ることができるよ。でも忙しかったら、また今度でもいいよ！",
+    "english": "Hey, @! If you like, you can watch the game together. But if you're busy, another time is fine too!",
+    "segments": [
+      {
+        "text": "おーい、",
+        "kana": "おーい",
+        "gloss": "hey"
+      },
+      {
+        "text": "@！",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "もし",
+        "kana": "もし",
+        "gloss": "if"
+      },
+      {
+        "text": "よかったら",
+        "kana": "よかったら",
+        "gloss": "(it's) good / you'd like"
+      },
+      {
+        "text": "ゲーム",
+        "kana": "ゲーム",
+        "gloss": "game"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "一緒に",
+        "kana": "いっしょに",
+        "gloss": "together"
+      },
+      {
+        "text": "見る",
+        "kana": "みる",
+        "gloss": "to watch"
+      },
+      {
+        "text": "ことができるよ。",
+        "kana": "ことができるよ",
+        "gloss": "can"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "忙しかったら、",
+        "kana": "いそがしかったら",
+        "gloss": "if (you're) busy"
+      },
+      {
+        "text": "また",
+        "kana": "また",
+        "gloss": "again"
+      },
+      {
+        "text": "今度",
+        "kana": "こんど",
+        "gloss": "next time"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "even"
+      },
+      {
+        "text": "いいよ！",
+        "kana": "いいよ",
+        "gloss": "is fine"
+      }
+    ]
+  },
+  "marriage_Mon.000": {
+    "japanese": "きょうはずっとここにいるよ。じいちゃんもばあちゃんも、もうトシだからな…",
+    "english": "I'll be here all day today. Grandpa and Grandma are both getting old now...",
+    "segments": [
+      {
+        "text": "きょう",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ずっと",
+        "kana": "ずっと",
+        "gloss": "the whole time"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(at)"
+      },
+      {
+        "text": "いるよ。",
+        "kana": "いるよ",
+        "gloss": "(I'll) be"
+      },
+      {
+        "text": "じいちゃん",
+        "kana": "じいちゃん",
+        "gloss": "grandpa"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "also / both"
+      },
+      {
+        "text": "ばあちゃん",
+        "kana": "ばあちゃん",
+        "gloss": "grandma"
+      },
+      {
+        "text": "も、",
+        "kana": "も",
+        "gloss": "also / both"
+      },
+      {
+        "text": "もう",
+        "kana": "もう",
+        "gloss": "already"
+      },
+      {
+        "text": "トシ",
+        "kana": "トシ",
+        "gloss": "old age"
+      },
+      {
+        "text": "だからな…",
+        "kana": "だからな",
+        "gloss": "since (they're)"
+      }
+    ]
+  },
+  "summer_16.000": {
+    "japanese": "どうも。いや、ちょっと足首をひねったっぽくてさ。テーピングがいるかどうか診てくれよ。",
+    "english": "Hey. Well, I think I kinda twisted my ankle. Check whether I need taping.",
+    "segments": [
+      {
+        "text": "どうも。",
+        "kana": "どうも",
+        "gloss": "hey / hi"
+      },
+      {
+        "text": "いや、",
+        "kana": "いや",
+        "gloss": "well / no"
+      },
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a bit"
+      },
+      {
+        "text": "足首",
+        "kana": "あしくび",
+        "gloss": "ankle"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "ひねったっぽくてさ。",
+        "kana": "ひねったっぽくてさ",
+        "gloss": "seems I twisted, you see"
+      },
+      {
+        "text": "テーピング",
+        "kana": "テーピング",
+        "gloss": "taping"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いるかどうか",
+        "kana": "いるかどうか",
+        "gloss": "whether (it's) needed"
+      },
+      {
+        "text": "診てくれよ。",
+        "kana": "みて くれよ",
+        "gloss": "examine (it) for me"
+      }
+    ]
+  },
+  "summer_16.001": {
+    "japanese": "ああ、うん…大丈夫だよ、センセ。テーピングしてくれるだけでいいからさ、な？",
+    "english": "Ah, yeah... I'm fine, doc. Just taping it up is enough, okay?",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "ah"
+      },
+      {
+        "text": "うん…",
+        "kana": "うん",
+        "gloss": "yeah"
+      },
+      {
+        "text": "大丈夫",
+        "kana": "だいじょうぶ",
+        "gloss": "fine"
+      },
+      {
+        "text": "だよ、",
+        "kana": "だよ",
+        "gloss": "(I) am"
+      },
+      {
+        "text": "センセ。",
+        "kana": "センセ",
+        "gloss": "doc"
+      },
+      {
+        "text": "テーピングしてくれる",
+        "kana": "テーピングしてくれる",
+        "gloss": "(you) tape (it) for me"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "just"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(with)"
+      },
+      {
+        "text": "いいからさ、",
+        "kana": "いいからさ",
+        "gloss": "is fine, so"
+      },
+      {
+        "text": "な？",
+        "kana": "な",
+        "gloss": "okay?"
+      }
+    ]
+  },
+  "winter_17.000": {
+    "japanese": "マーメイドショーは 見たことある？大好き なんだよね…",
+    "english": "Have you ever seen the mermaid show? I really love it...",
+    "segments": [
+      {
+        "text": "マーメイドショー",
+        "kana": "マーメイドショー",
+        "gloss": "mermaid show"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "見たことある？",
+        "kana": "みた こと ある",
+        "gloss": "have (you) ever seen"
+      },
+      {
+        "text": "大好き ",
+        "kana": "だいすき",
+        "gloss": "love"
+      },
+      {
+        "text": "なんだよね…",
+        "kana": "なんだよね",
+        "gloss": "(I) do, you know"
+      }
+    ]
+  }
+}

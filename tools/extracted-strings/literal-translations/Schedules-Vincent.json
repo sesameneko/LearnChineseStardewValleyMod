@@ -1,0 +1,127 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Vincent.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "spring_11.000": {
+    "japanese": "グスッ…きょうはお注射の日なんだ。$s",
+    "english": "*sniff*... Today is shot day.",
+    "segments": [
+      {
+        "text": "グスッ…",
+        "kana": "グスッ",
+        "gloss": "*sniff*"
+      },
+      {
+        "text": "きょう",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "お注射",
+        "kana": "おちゅうしゃ",
+        "gloss": "shot / injection"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "日",
+        "kana": "ひ",
+        "gloss": "day"
+      },
+      {
+        "text": "なんだ。$s",
+        "kana": "なんだ",
+        "gloss": "it is"
+      }
+    ]
+  },
+  "spring_11.001": {
+    "japanese": "（ゴクリ）…おかあさん、やだよう。$s",
+    "english": "(*gulp*)... Mom, I don't wanna.",
+    "segments": [
+      {
+        "text": "（ゴクリ）…",
+        "kana": "ゴクリ",
+        "gloss": "*gulp*"
+      },
+      {
+        "text": "おかあさん、",
+        "kana": "おかあさん",
+        "gloss": "mom"
+      },
+      {
+        "text": "やだよう。$s",
+        "kana": "やだよう",
+        "gloss": "I don't wanna"
+      }
+    ]
+  },
+  "spring_11.002": {
+    "japanese": "ねえ、ボクとっても勇気出したから、ペロペロキャンディもらっていい？",
+    "english": "Hey, I was really brave, so can I have a lollipop?",
+    "segments": [
+      {
+        "text": "ねえ、",
+        "kana": "ねえ",
+        "gloss": "hey"
+      },
+      {
+        "text": "ボク",
+        "kana": "ボク",
+        "gloss": "I / me"
+      },
+      {
+        "text": "とっても",
+        "kana": "とっても",
+        "gloss": "really"
+      },
+      {
+        "text": "勇気出したから、",
+        "kana": "ゆうき だしたから",
+        "gloss": "showed courage, so"
+      },
+      {
+        "text": "ペロペロキャンディ",
+        "kana": "ペロペロキャンディ",
+        "gloss": "lollipop"
+      },
+      {
+        "text": "もらっていい？",
+        "kana": "もらっていい",
+        "gloss": "can I have"
+      }
+    ]
+  },
+  "winter_16.000": {
+    "japanese": "あの船に 乗りたい！",
+    "english": "I want to ride that boat!",
+    "segments": [
+      {
+        "text": "あの",
+        "kana": "あの",
+        "gloss": "that"
+      },
+      {
+        "text": "船",
+        "kana": "ふね",
+        "gloss": "boat"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(onto)"
+      },
+      {
+        "text": "乗りたい！",
+        "kana": "のりたい",
+        "gloss": "want to ride"
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Pam.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "spring_25.000": {
+    "japanese": "ブツブツ…センセはなんでもお見とおし、ってか…ブツブツ…$4",
+    "english": "Grumble... the doc sees through everything, huh... grumble...",
+    "segments": [
+      {
+        "text": "ブツブツ…",
+        "kana": "ブツブツ",
+        "gloss": "grumble"
+      },
+      {
+        "text": "センセ",
+        "kana": "センセ",
+        "gloss": "doc"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "なんでも",
+        "kana": "なんでも",
+        "gloss": "everything"
+      },
+      {
+        "text": "お見とおし、",
+        "kana": "おみとおし",
+        "gloss": "sees through"
+      },
+      {
+        "text": "ってか…",
+        "kana": "ってか",
+        "gloss": "huh"
+      },
+      {
+        "text": "ブツブツ…$4",
+        "kana": "ブツブツ",
+        "gloss": "grumble"
+      }
+    ]
+  },
+  "spring_25.001": {
+    "japanese": "あたしが1日どれだけ飲んでるか、わかるかい？そもそもこれってなんの質問なんだい？$u",
+    "english": "Do you know how much I drink in a day? What kind of question is this, anyway?",
+    "segments": [
+      {
+        "text": "あたし",
+        "kana": "あたし",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "1日",
+        "kana": "いちにち",
+        "gloss": "a day"
+      },
+      {
+        "text": "どれだけ",
+        "kana": "どれだけ",
+        "gloss": "how much"
+      },
+      {
+        "text": "飲んでる",
+        "kana": "のんでる",
+        "gloss": "drink"
+      },
+      {
+        "text": "か、",
+        "kana": "か",
+        "gloss": "(whether)"
+      },
+      {
+        "text": "わかるかい？",
+        "kana": "わかるかい",
+        "gloss": "do you know?"
+      },
+      {
+        "text": "そもそも",
+        "kana": "そもそも",
+        "gloss": "anyway"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "って",
+        "kana": "って",
+        "gloss": "(topic)"
+      },
+      {
+        "text": "なんの",
+        "kana": "なんの",
+        "gloss": "what kind of"
+      },
+      {
+        "text": "質問",
+        "kana": "しつもん",
+        "gloss": "question"
+      },
+      {
+        "text": "なんだい？$u",
+        "kana": "なんだい",
+        "gloss": "is it?"
+      }
+    ]
+  }
+}

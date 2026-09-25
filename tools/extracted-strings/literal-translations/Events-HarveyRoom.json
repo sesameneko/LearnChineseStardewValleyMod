@@ -1,0 +1,496 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Events-HarveyRoom.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "normal#0": {
+    "japanese": "ああ、いや、バタバタしててごめん…きみが来てるとは気づかなくて。$h",
+    "english": "Ah, no, sorry things are so hectic... I didn't notice you'd come.",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "ah"
+      },
+      {
+        "text": "いや、",
+        "kana": "いや",
+        "gloss": "no"
+      },
+      {
+        "text": "バタバタしてて",
+        "kana": "バタバタしてて",
+        "gloss": "being all hectic"
+      },
+      {
+        "text": "ごめん…",
+        "kana": "ごめん",
+        "gloss": "sorry"
+      },
+      {
+        "text": "きみ",
+        "kana": "きみ",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "来てる",
+        "kana": "きてる",
+        "gloss": "had come"
+      },
+      {
+        "text": "とは",
+        "kana": "と は",
+        "gloss": "(that)"
+      },
+      {
+        "text": "気づかなくて。$h",
+        "kana": "きづかなくて",
+        "gloss": "didn't notice"
+      }
+    ]
+  },
+  "normal#1": {
+    "japanese": "ところで、飛行機の音が聞こえないかい…",
+    "english": "By the way, can't you hear the sound of an airplane...",
+    "segments": [
+      {
+        "text": "ところで、",
+        "kana": "ところで",
+        "gloss": "by the way"
+      },
+      {
+        "text": "飛行機",
+        "kana": "ひこうき",
+        "gloss": "airplane"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "音",
+        "kana": "おと",
+        "gloss": "sound"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "聞こえないかい…",
+        "kana": "きこえないかい",
+        "gloss": "can't you hear?"
+      }
+    ]
+  },
+  "normal#2": {
+    "japanese": "@、こっちにおいで！",
+    "english": "@, come over here!",
+    "segments": [
+      {
+        "text": "@、",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "こっち",
+        "kana": "こっち",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "おいで！",
+        "kana": "おいで",
+        "gloss": "come"
+      }
+    ]
+  },
+  "normal#3": {
+    "japanese": "ほら、見て！",
+    "english": "Look, see!",
+    "segments": [
+      {
+        "text": "ほら、",
+        "kana": "ほら",
+        "gloss": "look"
+      },
+      {
+        "text": "見て！",
+        "kana": "みて",
+        "gloss": "see"
+      }
+    ]
+  },
+  "normal#4": {
+    "japanese": "子どものころずっと、パイロットになるのが夢だったんだ。",
+    "english": "All through my childhood, my dream was to become a pilot.",
+    "segments": [
+      {
+        "text": "子ども",
+        "kana": "こども",
+        "gloss": "child"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "ころ",
+        "kana": "ころ",
+        "gloss": "time"
+      },
+      {
+        "text": "ずっと、",
+        "kana": "ずっと",
+        "gloss": "all along"
+      },
+      {
+        "text": "パイロット",
+        "kana": "パイロット",
+        "gloss": "pilot"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)"
+      },
+      {
+        "text": "なる",
+        "kana": "なる",
+        "gloss": "become"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(the act of)"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "夢",
+        "kana": "ゆめ",
+        "gloss": "dream"
+      },
+      {
+        "text": "だった",
+        "kana": "だった",
+        "gloss": "was"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(you see)"
+      }
+    ]
+  },
+  "normal#5": {
+    "japanese": "…でも僕は目が悪いし、どうしようもない高所恐怖症だから、夢はあきらめるしかなかった。$s",
+    "english": "...But my eyes are bad, and I have a hopeless fear of heights, so I had no choice but to give up the dream.",
+    "segments": [
+      {
+        "text": "…でも",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "僕",
+        "kana": "ぼく",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "目",
+        "kana": "め",
+        "gloss": "eyes"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "悪い",
+        "kana": "わるい",
+        "gloss": "bad"
+      },
+      {
+        "text": "し、",
+        "kana": "し",
+        "gloss": "and"
+      },
+      {
+        "text": "どうしようもない",
+        "kana": "どうしようもない",
+        "gloss": "hopeless"
+      },
+      {
+        "text": "高所恐怖症",
+        "kana": "こうしょ きょうふしょう",
+        "gloss": "fear of heights"
+      },
+      {
+        "text": "だから、",
+        "kana": "だから",
+        "gloss": "so"
+      },
+      {
+        "text": "夢",
+        "kana": "ゆめ",
+        "gloss": "dream"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あきらめる",
+        "kana": "あきらめる",
+        "gloss": "give up"
+      },
+      {
+        "text": "しかなかった。$s",
+        "kana": "しかなかった",
+        "gloss": "had no choice but"
+      }
+    ]
+  },
+  "normal#6": {
+    "japanese": "いいんだ…大丈夫だよ。#$b#いまはもう、そんな自分でもいいんだって思ってる。だれもが夢をかなえられるわけじゃない…世のなか、そんなものさ。",
+    "english": "It's fine... I'm okay. Now I think I'm fine being that kind of self. Not everyone can make their dream come true... that's how the world is.",
+    "segments": [
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "fine"
+      },
+      {
+        "text": "んだ…",
+        "kana": "んだ",
+        "gloss": "(you see)"
+      },
+      {
+        "text": "大丈夫",
+        "kana": "だいじょうぶ",
+        "gloss": "okay"
+      },
+      {
+        "text": "だよ。#$b#",
+        "kana": "だよ",
+        "gloss": "(it is)"
+      },
+      {
+        "text": "いま",
+        "kana": "いま",
+        "gloss": "now"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もう、",
+        "kana": "もう",
+        "gloss": "already"
+      },
+      {
+        "text": "そんな",
+        "kana": "そんな",
+        "gloss": "that kind of"
+      },
+      {
+        "text": "自分",
+        "kana": "じぶん",
+        "gloss": "self"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "even"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "fine"
+      },
+      {
+        "text": "んだって",
+        "kana": "んだって",
+        "gloss": "(that it's)"
+      },
+      {
+        "text": "思ってる。",
+        "kana": "おもってる",
+        "gloss": "I think"
+      },
+      {
+        "text": "だれも",
+        "kana": "だれも",
+        "gloss": "everyone"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "夢",
+        "kana": "ゆめ",
+        "gloss": "dream"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "かなえられる",
+        "kana": "かなえられる",
+        "gloss": "can fulfill"
+      },
+      {
+        "text": "わけじゃない…",
+        "kana": "わけじゃない",
+        "gloss": "it's not that"
+      },
+      {
+        "text": "世のなか、",
+        "kana": "よのなか",
+        "gloss": "the world"
+      },
+      {
+        "text": "そんなもの",
+        "kana": "そんなもの",
+        "gloss": "that's how it is"
+      },
+      {
+        "text": "さ。",
+        "kana": "さ",
+        "gloss": "(casual emphasis)"
+      }
+    ]
+  },
+  "normal#7": {
+    "japanese": "そうだ、僕がつくったプラモの飛行機を見ていかないかい？ちょうどこのあいだ、TRスターバードのデラックスキットを完成させたところなんだ。$h",
+    "english": "Oh right, won't you look at the model airplanes I made? I just finished the TR Starbird deluxe kit the other day.",
+    "segments": [
+      {
+        "text": "そうだ、",
+        "kana": "そうだ",
+        "gloss": "oh right"
+      },
+      {
+        "text": "僕",
+        "kana": "ぼく",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "つくった",
+        "kana": "つくった",
+        "gloss": "made"
+      },
+      {
+        "text": "プラモ",
+        "kana": "プラモ",
+        "gloss": "plastic model"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "飛行機",
+        "kana": "ひこうき",
+        "gloss": "airplane"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見ていかないかい？",
+        "kana": "みていかないかい",
+        "gloss": "won't you take a look?"
+      },
+      {
+        "text": "ちょうど",
+        "kana": "ちょうど",
+        "gloss": "just"
+      },
+      {
+        "text": "このあいだ、",
+        "kana": "このあいだ",
+        "gloss": "the other day"
+      },
+      {
+        "text": "TR",
+        "kana": "TR",
+        "gloss": "TR"
+      },
+      {
+        "text": "スターバード",
+        "kana": "スターバード",
+        "gloss": "Starbird"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "デラックス",
+        "kana": "デラックス",
+        "gloss": "deluxe"
+      },
+      {
+        "text": "キット",
+        "kana": "キット",
+        "gloss": "kit"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "完成させた",
+        "kana": "かんせい させた",
+        "gloss": "completed"
+      },
+      {
+        "text": "ところ",
+        "kana": "ところ",
+        "gloss": "just now"
+      },
+      {
+        "text": "なんだ。$h",
+        "kana": "なんだ",
+        "gloss": "(you see)"
+      }
+    ]
+  }
+}

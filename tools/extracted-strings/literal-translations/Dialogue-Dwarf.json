@@ -1,0 +1,1911 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Dialogue-Dwarf.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AcceptBirthdayGift_Negative": {
+    "japanese": "おお！この習慣について読んだことがある… 「誕生日プレゼント」だろう？#$b#しかし、こんなゴミをわたすのが伝統なのか？",
+    "english": "Oh! I've read about this custom... it's a \"birthday present\", right? But is it tradition to hand over garbage like this?",
+    "segments": [
+      {
+        "text": "おお！",
+        "kana": "おお",
+        "gloss": "oh"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "習慣",
+        "kana": "しゅうかん",
+        "gloss": "custom"
+      },
+      {
+        "text": "について",
+        "kana": "について",
+        "gloss": "about"
+      },
+      {
+        "text": "読んだことがある… ",
+        "kana": "よんだ こと が ある",
+        "gloss": "I have read"
+      },
+      {
+        "text": "「誕生日",
+        "kana": "たんじょうび",
+        "gloss": "birthday"
+      },
+      {
+        "text": "プレゼント」",
+        "kana": "プレゼント",
+        "gloss": "present"
+      },
+      {
+        "text": "だろう？#$b#",
+        "kana": "だろう",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "しかし、",
+        "kana": "しかし",
+        "gloss": "but"
+      },
+      {
+        "text": "こんな",
+        "kana": "こんな",
+        "gloss": "this kind of"
+      },
+      {
+        "text": "ゴミ",
+        "kana": "ゴミ",
+        "gloss": "garbage"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "わたす",
+        "kana": "わたす",
+        "gloss": "to hand over"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "伝統",
+        "kana": "でんとう",
+        "gloss": "tradition"
+      },
+      {
+        "text": "なのか？",
+        "kana": "なのか",
+        "gloss": "is it?"
+      }
+    ]
+  },
+  "AcceptBirthdayGift_Positive": {
+    "japanese": "おお！この習慣について読んだことがある… 「誕生日プレゼント」だろう？ふむ、興味深い…",
+    "english": "Oh! I've read about this custom... it's a \"birthday present\", right? Hmm, interesting...",
+    "segments": [
+      {
+        "text": "おお！",
+        "kana": "おお",
+        "gloss": "oh"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "習慣",
+        "kana": "しゅうかん",
+        "gloss": "custom"
+      },
+      {
+        "text": "について",
+        "kana": "について",
+        "gloss": "about"
+      },
+      {
+        "text": "読んだことがある… ",
+        "kana": "よんだ こと が ある",
+        "gloss": "I have read"
+      },
+      {
+        "text": "「誕生日",
+        "kana": "たんじょうび",
+        "gloss": "birthday"
+      },
+      {
+        "text": "プレゼント」",
+        "kana": "プレゼント",
+        "gloss": "present"
+      },
+      {
+        "text": "だろう？",
+        "kana": "だろう",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "ふむ、",
+        "kana": "ふむ",
+        "gloss": "hmm"
+      },
+      {
+        "text": "興味深い…",
+        "kana": "きょうみぶかい",
+        "gloss": "interesting"
+      }
+    ]
+  },
+  "AcceptGift_(O)StardropTea": {
+    "japanese": "（クンクン）… これはミルクか？ （ゴクン） ああ… うまい。",
+    "english": "(sniff sniff)... Is this milk? (gulp) Ah... tasty.",
+    "segments": [
+      {
+        "text": "（クンクン）… ",
+        "kana": "クンクン",
+        "gloss": "sniff sniff"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ミルク",
+        "kana": "ミルク",
+        "gloss": "milk"
+      },
+      {
+        "text": "か？ ",
+        "kana": "か",
+        "gloss": "(question)"
+      },
+      {
+        "text": "（ゴクン） ",
+        "kana": "ゴクン",
+        "gloss": "gulp"
+      },
+      {
+        "text": "ああ… ",
+        "kana": "ああ",
+        "gloss": "ah"
+      },
+      {
+        "text": "うまい。",
+        "kana": "うまい",
+        "gloss": "tasty"
+      }
+    ]
+  },
+  "AcceptGift_Neutral_milk_item": {
+    "japanese": "ああ… ミルク… （ゴクン）…実に興味深い。この飲み物は… どうやったら手に入るんだ？ #$b#…！！ （ゴホッ）",
+    "english": "Ah... milk... (gulp)... truly interesting. This drink... how do you get it? ...!! (cough)",
+    "segments": [
+      {
+        "text": "ああ… ",
+        "kana": "ああ",
+        "gloss": "ah"
+      },
+      {
+        "text": "ミルク… ",
+        "kana": "ミルク",
+        "gloss": "milk"
+      },
+      {
+        "text": "（ゴクン）…",
+        "kana": "ゴクン",
+        "gloss": "gulp"
+      },
+      {
+        "text": "実に",
+        "kana": "じつに",
+        "gloss": "truly"
+      },
+      {
+        "text": "興味深い。",
+        "kana": "きょうみぶかい",
+        "gloss": "interesting"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "飲み物",
+        "kana": "のみもの",
+        "gloss": "drink"
+      },
+      {
+        "text": "は… ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "どうやったら",
+        "kana": "どうやったら",
+        "gloss": "how (would one)"
+      },
+      {
+        "text": "手に入る",
+        "kana": "て に はいる",
+        "gloss": "to obtain"
+      },
+      {
+        "text": "んだ？ #$b#…！！ ",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "（ゴホッ）",
+        "kana": "ゴホッ",
+        "gloss": "cough"
+      }
+    ]
+  },
+  "Fri": {
+    "japanese": "お前、 ドワーフを見るのは 初めてか？",
+    "english": "You, is this your first time seeing a dwarf?",
+    "segments": [
+      {
+        "text": "お前、 ",
+        "kana": "おまえ",
+        "gloss": "you"
+      },
+      {
+        "text": "ドワーフ",
+        "kana": "ドワーフ",
+        "gloss": "dwarf"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見る",
+        "kana": "みる",
+        "gloss": "to see"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "初めて",
+        "kana": "はじめて",
+        "gloss": "first time"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question)"
+      }
+    ]
+  },
+  "Fri_2": {
+    "japanese": "人間の多くは 知らないものを 恐れる… だからオレの店を ここに隠した。#$e#お前は 信頼できるだけの 採掘技術を 持っている。",
+    "english": "Many humans fear what they don't know... so I hid my shop here. You have enough mining skill to be trusted.",
+    "segments": [
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "humans"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "多く",
+        "kana": "おおく",
+        "gloss": "many"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "知らない",
+        "kana": "しらない",
+        "gloss": "don't know"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "恐れる… ",
+        "kana": "おそれる",
+        "gloss": "fear"
+      },
+      {
+        "text": "だから",
+        "kana": "だから",
+        "gloss": "so"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "I (rough)"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "店",
+        "kana": "みせ",
+        "gloss": "shop"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location)"
+      },
+      {
+        "text": "隠した。#$e#",
+        "kana": "かくした",
+        "gloss": "hid"
+      },
+      {
+        "text": "お前",
+        "kana": "おまえ",
+        "gloss": "you"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "信頼できる",
+        "kana": "しんらい できる",
+        "gloss": "can be trusted"
+      },
+      {
+        "text": "だけの ",
+        "kana": "だけの",
+        "gloss": "enough"
+      },
+      {
+        "text": "採掘",
+        "kana": "さいくつ",
+        "gloss": "mining"
+      },
+      {
+        "text": "技術",
+        "kana": "ぎじゅつ",
+        "gloss": "skill"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "持っている。",
+        "kana": "もって いる",
+        "gloss": "have"
+      }
+    ]
+  },
+  "GreenRain": {
+    "japanese": "緑色のものはよく見えないんだ。#$b#長いこと地下で暮らしてきたせいかもしれないな。",
+    "english": "I can't see green things very well. Maybe it's because I've lived underground a long time.",
+    "segments": [
+      {
+        "text": "緑色",
+        "kana": "みどりいろ",
+        "gloss": "green"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "well"
+      },
+      {
+        "text": "見えない",
+        "kana": "みえない",
+        "gloss": "can't see"
+      },
+      {
+        "text": "んだ。#$b#",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "長いこと",
+        "kana": "ながい こと",
+        "gloss": "a long time"
+      },
+      {
+        "text": "地下",
+        "kana": "ちか",
+        "gloss": "underground"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location)"
+      },
+      {
+        "text": "暮らしてきた",
+        "kana": "くらして きた",
+        "gloss": "have lived"
+      },
+      {
+        "text": "せい",
+        "kana": "せい",
+        "gloss": "because of"
+      },
+      {
+        "text": "かもしれないな。",
+        "kana": "かも しれない な",
+        "gloss": "maybe"
+      }
+    ]
+  },
+  "Introduction": {
+    "japanese": "人間にしちゃ、 採掘が結構うめぇな。",
+    "english": "For a human, you're pretty good at mining.",
+    "segments": [
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "human"
+      },
+      {
+        "text": "にしちゃ、 ",
+        "kana": "にしちゃ",
+        "gloss": "for a"
+      },
+      {
+        "text": "採掘",
+        "kana": "さいくつ",
+        "gloss": "mining"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "結構",
+        "kana": "けっこう",
+        "gloss": "pretty"
+      },
+      {
+        "text": "うめぇな。",
+        "kana": "うめぇな",
+        "gloss": "good (slang)"
+      }
+    ]
+  },
+  "Mon": {
+    "japanese": "全部、地上で見つけたもんだ。夜の間に、あんたら人間から頂いたものさ。#$e#ん？「しゆうざいさん」って何のことだ？",
+    "english": "I found all of it on the surface. Stuff I got from you humans during the night. Hm? What's this \"private property\"?",
+    "segments": [
+      {
+        "text": "全部、",
+        "kana": "ぜんぶ",
+        "gloss": "all of it"
+      },
+      {
+        "text": "地上",
+        "kana": "ちじょう",
+        "gloss": "surface"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location)"
+      },
+      {
+        "text": "見つけた",
+        "kana": "みつけた",
+        "gloss": "found"
+      },
+      {
+        "text": "もんだ。",
+        "kana": "もんだ",
+        "gloss": "(it's) stuff"
+      },
+      {
+        "text": "夜",
+        "kana": "よる",
+        "gloss": "night"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "間",
+        "kana": "あいだ",
+        "gloss": "during"
+      },
+      {
+        "text": "に、",
+        "kana": "に",
+        "gloss": "(time)"
+      },
+      {
+        "text": "あんたら",
+        "kana": "あんたら",
+        "gloss": "you (plural)"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "humans"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "頂いた",
+        "kana": "いただいた",
+        "gloss": "received / took"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things"
+      },
+      {
+        "text": "さ。#$e#",
+        "kana": "さ",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "ん？",
+        "kana": "ん",
+        "gloss": "hm"
+      },
+      {
+        "text": "「しゆうざいさん」",
+        "kana": "しゆうざいさん",
+        "gloss": "private property"
+      },
+      {
+        "text": "って",
+        "kana": "って",
+        "gloss": "(quote)"
+      },
+      {
+        "text": "何",
+        "kana": "なん",
+        "gloss": "what"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "thing"
+      },
+      {
+        "text": "だ？",
+        "kana": "だ",
+        "gloss": "is"
+      }
+    ]
+  },
+  "Sat": {
+    "japanese": "鉱山の中は 危険だ。オレの店で 何か買っていったほうが、 身のためになるぞ。",
+    "english": "The mines are dangerous. Buying something at my shop would be for your own good.",
+    "segments": [
+      {
+        "text": "鉱山",
+        "kana": "こうざん",
+        "gloss": "mines"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "中",
+        "kana": "なか",
+        "gloss": "inside"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "危険だ。",
+        "kana": "きけん だ",
+        "gloss": "dangerous"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "店",
+        "kana": "みせ",
+        "gloss": "shop"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(at)"
+      },
+      {
+        "text": "何か",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "買っていった",
+        "kana": "かって いった",
+        "gloss": "buying and going"
+      },
+      {
+        "text": "ほうが、 ",
+        "kana": "ほうが",
+        "gloss": "(it's better to)"
+      },
+      {
+        "text": "身のため",
+        "kana": "み の ため",
+        "gloss": "for your own good"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)"
+      },
+      {
+        "text": "なるぞ。",
+        "kana": "なるぞ",
+        "gloss": "will be"
+      }
+    ]
+  },
+  "Sat_8": {
+    "japanese": "鉱山は 危険を伴う場所だ。気をつけるんだな。",
+    "english": "The mines are a place that comes with danger. Be careful.",
+    "segments": [
+      {
+        "text": "鉱山",
+        "kana": "こうざん",
+        "gloss": "mines"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "危険",
+        "kana": "きけん",
+        "gloss": "danger"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "伴う",
+        "kana": "ともなう",
+        "gloss": "accompanying"
+      },
+      {
+        "text": "場所だ。",
+        "kana": "ばしょ だ",
+        "gloss": "is a place"
+      },
+      {
+        "text": "気をつけるんだな。",
+        "kana": "き を つける ん だ な",
+        "gloss": "be careful"
+      }
+    ]
+  },
+  "Sun": {
+    "japanese": "いつか、「ぎゅうにゅう」ってお前が呼ぶ飲み物について教えてくれよな。",
+    "english": "Someday, teach me about that drink you call \"gyuunyuu\".",
+    "segments": [
+      {
+        "text": "いつか、",
+        "kana": "いつか",
+        "gloss": "someday"
+      },
+      {
+        "text": "「ぎゅうにゅう」",
+        "kana": "ぎゅうにゅう",
+        "gloss": "milk"
+      },
+      {
+        "text": "って",
+        "kana": "って",
+        "gloss": "(quote)"
+      },
+      {
+        "text": "お前",
+        "kana": "おまえ",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "呼ぶ",
+        "kana": "よぶ",
+        "gloss": "call"
+      },
+      {
+        "text": "飲み物",
+        "kana": "のみもの",
+        "gloss": "drink"
+      },
+      {
+        "text": "について",
+        "kana": "について",
+        "gloss": "about"
+      },
+      {
+        "text": "教えてくれよな。",
+        "kana": "おしえて くれよ な",
+        "gloss": "teach me"
+      }
+    ]
+  },
+  "Thu": {
+    "japanese": "影の人々から 送られた スパイじゃないよな？#$e#お前のこと、 目を離さず 見ているからな。",
+    "english": "You're not a spy sent by the Shadow People, are you? I'm watching you without taking my eyes off.",
+    "segments": [
+      {
+        "text": "影",
+        "kana": "かげ",
+        "gloss": "shadow"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "人々",
+        "kana": "ひとびと",
+        "gloss": "people"
+      },
+      {
+        "text": "から ",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "送られた ",
+        "kana": "おくられた",
+        "gloss": "sent"
+      },
+      {
+        "text": "スパイ",
+        "kana": "スパイ",
+        "gloss": "spy"
+      },
+      {
+        "text": "じゃないよな？#$e#",
+        "kana": "じゃないよな",
+        "gloss": "aren't you?"
+      },
+      {
+        "text": "お前",
+        "kana": "おまえ",
+        "gloss": "you"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと、 ",
+        "kana": "こと",
+        "gloss": "(about)"
+      },
+      {
+        "text": "目を離さず ",
+        "kana": "め を はなさず",
+        "gloss": "without taking eyes off"
+      },
+      {
+        "text": "見ている",
+        "kana": "みて いる",
+        "gloss": "am watching"
+      },
+      {
+        "text": "からな。",
+        "kana": "からな",
+        "gloss": "(so be aware)"
+      }
+    ]
+  },
+  "Thu_4": {
+    "japanese": "地下のほうが 落ち着く。#$e#深ければ 深いほど いい。",
+    "english": "It's calmer underground. The deeper the better.",
+    "segments": [
+      {
+        "text": "地下",
+        "kana": "ちか",
+        "gloss": "underground"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "ほうが ",
+        "kana": "ほうが",
+        "gloss": "(more)"
+      },
+      {
+        "text": "落ち着く。#$e#",
+        "kana": "おちつく",
+        "gloss": "calm"
+      },
+      {
+        "text": "深ければ ",
+        "kana": "ふかければ",
+        "gloss": "if deep"
+      },
+      {
+        "text": "深いほど ",
+        "kana": "ふかい ほど",
+        "gloss": "the deeper"
+      },
+      {
+        "text": "いい。",
+        "kana": "いい",
+        "gloss": "the better"
+      }
+    ]
+  },
+  "Tue": {
+    "japanese": "ああ…洞窟ニンジンの シチュー、 ロースト 洞窟ニンジン、洞窟ニンジンの スープ、洞窟ニンジンの グラタン。#$e#…そして一晩寝かせた 洞窟ニンジンブリュレのラムカン。#$e#何だ？",
+    "english": "Ah... cave carrot stew, roast cave carrot, cave carrot soup, cave carrot gratin. ...And a ramekin of cave carrot brulee left overnight. What?",
+    "segments": [
+      {
+        "text": "ああ…",
+        "kana": "ああ",
+        "gloss": "ah"
+      },
+      {
+        "text": "洞窟",
+        "kana": "どうくつ",
+        "gloss": "cave"
+      },
+      {
+        "text": "ニンジン",
+        "kana": "ニンジン",
+        "gloss": "carrot"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "シチュー、 ",
+        "kana": "シチュー",
+        "gloss": "stew"
+      },
+      {
+        "text": "ロースト ",
+        "kana": "ロースト",
+        "gloss": "roast"
+      },
+      {
+        "text": "洞窟",
+        "kana": "どうくつ",
+        "gloss": "cave"
+      },
+      {
+        "text": "ニンジン、",
+        "kana": "ニンジン",
+        "gloss": "carrot"
+      },
+      {
+        "text": "洞窟",
+        "kana": "どうくつ",
+        "gloss": "cave"
+      },
+      {
+        "text": "ニンジン",
+        "kana": "ニンジン",
+        "gloss": "carrot"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "スープ、",
+        "kana": "スープ",
+        "gloss": "soup"
+      },
+      {
+        "text": "洞窟",
+        "kana": "どうくつ",
+        "gloss": "cave"
+      },
+      {
+        "text": "ニンジン",
+        "kana": "ニンジン",
+        "gloss": "carrot"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "グラタン。#$e#…",
+        "kana": "グラタン",
+        "gloss": "gratin"
+      },
+      {
+        "text": "そして",
+        "kana": "そして",
+        "gloss": "and"
+      },
+      {
+        "text": "一晩",
+        "kana": "ひとばん",
+        "gloss": "one night"
+      },
+      {
+        "text": "寝かせた ",
+        "kana": "ねかせた",
+        "gloss": "left to rest"
+      },
+      {
+        "text": "洞窟",
+        "kana": "どうくつ",
+        "gloss": "cave"
+      },
+      {
+        "text": "ニンジン",
+        "kana": "ニンジン",
+        "gloss": "carrot"
+      },
+      {
+        "text": "ブリュレ",
+        "kana": "ブリュレ",
+        "gloss": "brulee"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "ラムカン。#$e#",
+        "kana": "ラムカン",
+        "gloss": "ramekin"
+      },
+      {
+        "text": "何だ？",
+        "kana": "なんだ",
+        "gloss": "what?"
+      }
+    ]
+  },
+  "Wed": {
+    "japanese": "よう、何か買わねえか？",
+    "english": "Hey, wanna buy something?",
+    "segments": [
+      {
+        "text": "よう、",
+        "kana": "よう",
+        "gloss": "hey"
+      },
+      {
+        "text": "何か",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "買わねえか？",
+        "kana": "かわねえ か",
+        "gloss": "won't you buy?"
+      }
+    ]
+  },
+  "Wed_6": {
+    "japanese": "はるか昔、オレ達は 古代技術の秘密を 知っていた。発掘されたものが それを 物語っている。#$e#だが、 その技術は どこから来た？そして どこへ行った？その答えは 分かりそうに ないかもしれんな…",
+    "english": "Long ago, we knew the secrets of ancient technology. The excavated things tell of it. But where did that tech come from? And where did it go? We may never know the answer...",
+    "segments": [
+      {
+        "text": "はるか昔、",
+        "kana": "はるか むかし",
+        "gloss": "long ago"
+      },
+      {
+        "text": "オレ達",
+        "kana": "オレたち",
+        "gloss": "we"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "古代",
+        "kana": "こだい",
+        "gloss": "ancient"
+      },
+      {
+        "text": "技術",
+        "kana": "ぎじゅつ",
+        "gloss": "technology"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "秘密",
+        "kana": "ひみつ",
+        "gloss": "secrets"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "知っていた。",
+        "kana": "しって いた",
+        "gloss": "knew"
+      },
+      {
+        "text": "発掘された",
+        "kana": "はっくつ された",
+        "gloss": "excavated"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "物語っている。#$e#",
+        "kana": "ものがたって いる",
+        "gloss": "tell of"
+      },
+      {
+        "text": "だが、 ",
+        "kana": "だが",
+        "gloss": "but"
+      },
+      {
+        "text": "その",
+        "kana": "その",
+        "gloss": "that"
+      },
+      {
+        "text": "技術",
+        "kana": "ぎじゅつ",
+        "gloss": "technology"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "どこ",
+        "kana": "どこ",
+        "gloss": "where"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "来た？",
+        "kana": "きた",
+        "gloss": "came"
+      },
+      {
+        "text": "そして ",
+        "kana": "そして",
+        "gloss": "and"
+      },
+      {
+        "text": "どこ",
+        "kana": "どこ",
+        "gloss": "where"
+      },
+      {
+        "text": "へ",
+        "kana": "へ",
+        "gloss": "(direction)"
+      },
+      {
+        "text": "行った？",
+        "kana": "いった",
+        "gloss": "went"
+      },
+      {
+        "text": "その",
+        "kana": "その",
+        "gloss": "that"
+      },
+      {
+        "text": "答え",
+        "kana": "こたえ",
+        "gloss": "answer"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "分かりそうに ",
+        "kana": "わかりそう に",
+        "gloss": "likely to be known"
+      },
+      {
+        "text": "ないかもしれんな…",
+        "kana": "ない かも しれん な",
+        "gloss": "might not be"
+      }
+    ]
+  },
+  "firstVisit_Caldera": {
+    "japanese": "伝説のドワーフの鍛冶場を見つけたのか？信じられない…私は見たことがない。#$e#機械が古すぎて、私の仲間は誰もその仕組みを理解していない。しかし、ドワーフの技術であることは間違いない。",
+    "english": "You found the legendary dwarf forge? Unbelievable... I've never seen it. The machines are so old that none of my kin understand how they work. But it's surely dwarf technology.",
+    "segments": [
+      {
+        "text": "伝説",
+        "kana": "でんせつ",
+        "gloss": "legendary"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "ドワーフ",
+        "kana": "ドワーフ",
+        "gloss": "dwarf"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "鍛冶場",
+        "kana": "かじば",
+        "gloss": "forge"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見つけた",
+        "kana": "みつけた",
+        "gloss": "found"
+      },
+      {
+        "text": "のか？",
+        "kana": "のか",
+        "gloss": "(question)"
+      },
+      {
+        "text": "信じられない…",
+        "kana": "しんじられない",
+        "gloss": "unbelievable"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "見たことがない。#$e#",
+        "kana": "みた こと が ない",
+        "gloss": "have never seen"
+      },
+      {
+        "text": "機械",
+        "kana": "きかい",
+        "gloss": "machines"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "古すぎて、",
+        "kana": "ふるすぎて",
+        "gloss": "too old"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "仲間",
+        "kana": "なかま",
+        "gloss": "kin"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "誰も",
+        "kana": "だれも",
+        "gloss": "no one"
+      },
+      {
+        "text": "その",
+        "kana": "その",
+        "gloss": "its"
+      },
+      {
+        "text": "仕組み",
+        "kana": "しくみ",
+        "gloss": "mechanism"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "理解していない。",
+        "kana": "りかい して いない",
+        "gloss": "understands"
+      },
+      {
+        "text": "しかし、",
+        "kana": "しかし",
+        "gloss": "but"
+      },
+      {
+        "text": "ドワーフ",
+        "kana": "ドワーフ",
+        "gloss": "dwarf"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "技術",
+        "kana": "ぎじゅつ",
+        "gloss": "technology"
+      },
+      {
+        "text": "である",
+        "kana": "である",
+        "gloss": "being"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(the fact)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "間違いない。",
+        "kana": "まちがいない",
+        "gloss": "is certain"
+      }
+    ]
+  },
+  "firstVisit_IslandNorth": {
+    "japanese": "ジンジャーアイランドの火山に入ったら、私のような者に会うかもしれない。安心してくれ！私たちは人間とは平和な関係だ。",
+    "english": "If you go into the volcano on Ginger Island, you may meet people like me. Relax! We're at peace with humans.",
+    "segments": [
+      {
+        "text": "ジンジャーアイランド",
+        "kana": "ジンジャーアイランド",
+        "gloss": "Ginger Island"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "火山",
+        "kana": "かざん",
+        "gloss": "volcano"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)"
+      },
+      {
+        "text": "入ったら、",
+        "kana": "はいったら",
+        "gloss": "if you enter"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "ような",
+        "kana": "ような",
+        "gloss": "like"
+      },
+      {
+        "text": "者",
+        "kana": "もの",
+        "gloss": "people"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target)"
+      },
+      {
+        "text": "会うかもしれない。",
+        "kana": "あう かも しれない",
+        "gloss": "might meet"
+      },
+      {
+        "text": "安心してくれ！",
+        "kana": "あんしん して くれ",
+        "gloss": "be at ease"
+      },
+      {
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "we"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "humans"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "with"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(contrast)"
+      },
+      {
+        "text": "平和な",
+        "kana": "へいわ な",
+        "gloss": "peaceful"
+      },
+      {
+        "text": "関係だ。",
+        "kana": "かんけい だ",
+        "gloss": "relationship"
+      }
+    ]
+  },
+  "fishCaught_158": {
+    "japanese": "おお、ダルマオコゼを釣ったのか？ダルマオコゼのことはよく知っている。ペットとして飼うこともあるんだ。",
+    "english": "Oh, you caught a stonefish? I know stonefish well. We sometimes keep them as pets.",
+    "segments": [
+      {
+        "text": "おお、",
+        "kana": "おお",
+        "gloss": "oh"
+      },
+      {
+        "text": "ダルマオコゼ",
+        "kana": "ダルマオコゼ",
+        "gloss": "stonefish"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣った",
+        "kana": "つった",
+        "gloss": "caught"
+      },
+      {
+        "text": "のか？",
+        "kana": "のか",
+        "gloss": "(question)"
+      },
+      {
+        "text": "ダルマオコゼ",
+        "kana": "ダルマオコゼ",
+        "gloss": "stonefish"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(about)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "well"
+      },
+      {
+        "text": "知っている。",
+        "kana": "しって いる",
+        "gloss": "know"
+      },
+      {
+        "text": "ペット",
+        "kana": "ペット",
+        "gloss": "pets"
+      },
+      {
+        "text": "として",
+        "kana": "として",
+        "gloss": "as"
+      },
+      {
+        "text": "飼う",
+        "kana": "かう",
+        "gloss": "to keep"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(occasion)"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "there are"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "fishCaught_161": {
+    "japanese": "おお、アイスピップを釣ったのか？極寒の環境で暮らしているが、活きがいい小魚だ。私の仲間は凍えた場所をさけるようにしている… 寒すぎるからだ！",
+    "english": "Oh, you caught an ice pip? It lives in extreme cold, but it's a lively little fish. My kin try to avoid frozen places... too cold!",
+    "segments": [
+      {
+        "text": "おお、",
+        "kana": "おお",
+        "gloss": "oh"
+      },
+      {
+        "text": "アイスピップ",
+        "kana": "アイスピップ",
+        "gloss": "Ice Pip"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣った",
+        "kana": "つった",
+        "gloss": "caught"
+      },
+      {
+        "text": "のか？",
+        "kana": "のか",
+        "gloss": "(question)"
+      },
+      {
+        "text": "極寒",
+        "kana": "ごっかん",
+        "gloss": "extreme cold"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "環境",
+        "kana": "かんきょう",
+        "gloss": "environment"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(in)"
+      },
+      {
+        "text": "暮らしている",
+        "kana": "くらして いる",
+        "gloss": "lives"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "but"
+      },
+      {
+        "text": "活きがいい",
+        "kana": "いき が いい",
+        "gloss": "lively"
+      },
+      {
+        "text": "小魚",
+        "kana": "こざかな",
+        "gloss": "little fish"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "仲間",
+        "kana": "なかま",
+        "gloss": "kin"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "凍えた",
+        "kana": "こごえた",
+        "gloss": "frozen"
+      },
+      {
+        "text": "場所",
+        "kana": "ばしょ",
+        "gloss": "places"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "さけるようにしている… ",
+        "kana": "さける よう に して いる",
+        "gloss": "try to avoid"
+      },
+      {
+        "text": "寒すぎる",
+        "kana": "さむすぎる",
+        "gloss": "too cold"
+      },
+      {
+        "text": "からだ！",
+        "kana": "からだ",
+        "gloss": "because"
+      }
+    ]
+  },
+  "fishCaught_162": {
+    "japanese": "おお、溶岩ウナギを釣ったのか？やるじゃないか！溶岩ウナギの漁は、私たちの文化では大きな意味がある。珍味として扱われてるんだ！",
+    "english": "Oh, you caught a lava eel? Nice going! Lava eel fishing has big meaning in our culture. It's treated as a delicacy!",
+    "segments": [
+      {
+        "text": "おお、",
+        "kana": "おお",
+        "gloss": "oh"
+      },
+      {
+        "text": "溶岩",
+        "kana": "ようがん",
+        "gloss": "lava"
+      },
+      {
+        "text": "ウナギ",
+        "kana": "ウナギ",
+        "gloss": "eel"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣った",
+        "kana": "つった",
+        "gloss": "caught"
+      },
+      {
+        "text": "のか？",
+        "kana": "のか",
+        "gloss": "(question)"
+      },
+      {
+        "text": "やるじゃないか！",
+        "kana": "やるじゃないか",
+        "gloss": "nice going"
+      },
+      {
+        "text": "溶岩",
+        "kana": "ようがん",
+        "gloss": "lava"
+      },
+      {
+        "text": "ウナギ",
+        "kana": "ウナギ",
+        "gloss": "eel"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "漁",
+        "kana": "りょう",
+        "gloss": "fishing"
+      },
+      {
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "our"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "文化",
+        "kana": "ぶんか",
+        "gloss": "culture"
+      },
+      {
+        "text": "では",
+        "kana": "で は",
+        "gloss": "in"
+      },
+      {
+        "text": "大きな",
+        "kana": "おおきな",
+        "gloss": "big"
+      },
+      {
+        "text": "意味",
+        "kana": "いみ",
+        "gloss": "meaning"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある。",
+        "kana": "ある",
+        "gloss": "has"
+      },
+      {
+        "text": "珍味",
+        "kana": "ちんみ",
+        "gloss": "delicacy"
+      },
+      {
+        "text": "として",
+        "kana": "として",
+        "gloss": "as"
+      },
+      {
+        "text": "扱われてる",
+        "kana": "あつかわれてる",
+        "gloss": "is treated"
+      },
+      {
+        "text": "んだ！",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "mineArea_121": {
+    "japanese": "きみは人間にしては採掘がうまいね。",
+    "english": "You're good at mining for a human.",
+    "segments": [
+      {
+        "text": "きみ",
+        "kana": "きみ",
+        "gloss": "you"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "human"
+      },
+      {
+        "text": "にしては",
+        "kana": "に して は",
+        "gloss": "for a"
+      },
+      {
+        "text": "採掘",
+        "kana": "さいくつ",
+        "gloss": "mining"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "うまいね。",
+        "kana": "うまいね",
+        "gloss": "are good"
+      }
+    ]
+  }
+}

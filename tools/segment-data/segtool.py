@@ -411,6 +411,14 @@ def align(source_text, segments):
             folded[i - 1]["text"] += text[:cut]
             folded[i]["text"] = text[cut:]
 
+    # a source that *opens* with a page break ("…$u#$b#…キミは") has no previous segment to own
+    # it, so it becomes a markup-only segment of its own -- the page before is just "…"
+    head = folded[0]["text"]
+    cut = max((m.end() for m in re.finditer(r"#\$[be]#", head)), default=0)
+    if cut and cut < len(head) and attachable(head[:cut]):
+        folded[0] = dict(folded[0], text=head[cut:])
+        folded.insert(0, {"text": head[:cut], "kana": "", "gloss": "(page break)"})
+
     for seg in folded:
         if BREAK_INSIDE.search(seg["text"]):
             raise ValueError(f"segment {seg['text']!r} has a page break inside it -- split it there")

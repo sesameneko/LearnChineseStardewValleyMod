@@ -1,0 +1,399 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Sandy.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Sandy_Birthday_Bones": {
+    "japanese": "不思議でしょう？",
+    "english": "Mysterious, isn't it?",
+    "segments": [
+      {
+        "text": "不思議",
+        "kana": "ふしぎ",
+        "gloss": "mysterious"
+      },
+      {
+        "text": "でしょう？",
+        "kana": "でしょう",
+        "gloss": "isn't it"
+      }
+    ]
+  },
+  "Sandy_Birthday_Bye": {
+    "japanese": "すごくステキな時間だったわ。$h#$b#友達でいてくれてありがとう。$h#$e#またいつでも来てね！$h",
+    "english": "It was a really lovely time. / Thank you for being my friend. / Come again any time!",
+    "segments": [
+      {
+        "text": "すごく",
+        "kana": "すごく",
+        "gloss": "really"
+      },
+      {
+        "text": "ステキな",
+        "kana": "ステキな",
+        "gloss": "lovely"
+      },
+      {
+        "text": "時間",
+        "kana": "じかん",
+        "gloss": "time"
+      },
+      {
+        "text": "だった",
+        "kana": "だった",
+        "gloss": "was"
+      },
+      {
+        "text": "わ。$h#$b#",
+        "kana": "わ",
+        "gloss": "(soft emphasis)"
+      },
+      {
+        "text": "友達",
+        "kana": "ともだち",
+        "gloss": "friend"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(as)"
+      },
+      {
+        "text": "いてくれて",
+        "kana": "いてくれて",
+        "gloss": "for being"
+      },
+      {
+        "text": "ありがとう。$h#$e#",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      },
+      {
+        "text": "また",
+        "kana": "また",
+        "gloss": "again"
+      },
+      {
+        "text": "いつでも",
+        "kana": "いつでも",
+        "gloss": "any time"
+      },
+      {
+        "text": "来てね！$h",
+        "kana": "きてね",
+        "gloss": "come, okay"
+      }
+    ]
+  },
+  "Sandy_Birthday_Camel": {
+    "japanese": "彼女はとても珍しいモノを売っているはずよ。",
+    "english": "She should be selling very rare things.",
+    "segments": [
+      {
+        "text": "彼女",
+        "kana": "かのじょ",
+        "gloss": "she"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very"
+      },
+      {
+        "text": "珍しい",
+        "kana": "めずらしい",
+        "gloss": "rare"
+      },
+      {
+        "text": "モノ",
+        "kana": "モノ",
+        "gloss": "things"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "売っている",
+        "kana": "うっている",
+        "gloss": "is selling"
+      },
+      {
+        "text": "はず",
+        "kana": "はず",
+        "gloss": "should be"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  },
+  "Sandy_Birthday_Greeting": {
+    "japanese": "まあ、エミリー！あなたが来てくれるのを楽しみにしてたのよ！$h#$b#今朝は少しさびしい気分だったの。#$e#だから、会えて本当にうれしいわ！$h",
+    "english": "Oh, Emily! I was looking forward to you coming! / This morning I was feeling a little lonely. / So I'm really happy to see you!",
+    "segments": [
+      {
+        "text": "まあ、",
+        "kana": "まあ",
+        "gloss": "oh"
+      },
+      {
+        "text": "エミリー！",
+        "kana": "エミリー",
+        "gloss": "Emily"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "来てくれる",
+        "kana": "きてくれる",
+        "gloss": "coming (for me)"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(the act of)"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "楽しみにしてた",
+        "kana": "たのしみに してた",
+        "gloss": "was looking forward to"
+      },
+      {
+        "text": "のよ！$h#$b#",
+        "kana": "のよ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "今朝",
+        "kana": "けさ",
+        "gloss": "this morning"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "少し",
+        "kana": "すこし",
+        "gloss": "a little"
+      },
+      {
+        "text": "さびしい",
+        "kana": "さびしい",
+        "gloss": "lonely"
+      },
+      {
+        "text": "気分だった",
+        "kana": "きぶん だった",
+        "gloss": "was feeling"
+      },
+      {
+        "text": "の。#$e#",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "だから、",
+        "kana": "だから",
+        "gloss": "so"
+      },
+      {
+        "text": "会えて",
+        "kana": "あえて",
+        "gloss": "being able to see (you)"
+      },
+      {
+        "text": "本当に",
+        "kana": "ほんとうに",
+        "gloss": "really"
+      },
+      {
+        "text": "うれしい",
+        "kana": "うれしい",
+        "gloss": "happy"
+      },
+      {
+        "text": "わ！$h",
+        "kana": "わ",
+        "gloss": "(soft emphasis)"
+      }
+    ]
+  },
+  "Sandy_Birthday_Hangout": {
+    "japanese": "今の谷の気候はどうかしら？#$e#あそこのお花はとっても素敵な香りなのよ。$h",
+    "english": "How's the climate in the valley now? / The flowers over there have a really lovely scent.",
+    "segments": [
+      {
+        "text": "今",
+        "kana": "いま",
+        "gloss": "now"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "谷",
+        "kana": "たに",
+        "gloss": "valley"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "気候",
+        "kana": "きこう",
+        "gloss": "climate"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "どうかしら？#$e#",
+        "kana": "どうかしら",
+        "gloss": "how is it, I wonder"
+      },
+      {
+        "text": "あそこ",
+        "kana": "あそこ",
+        "gloss": "over there"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "お花",
+        "kana": "おはな",
+        "gloss": "flowers"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "とっても",
+        "kana": "とっても",
+        "gloss": "really"
+      },
+      {
+        "text": "素敵な",
+        "kana": "すてきな",
+        "gloss": "lovely"
+      },
+      {
+        "text": "香り",
+        "kana": "かおり",
+        "gloss": "scent"
+      },
+      {
+        "text": "なのよ。$h",
+        "kana": "なのよ",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "Sandy_Birthday_Lake": {
+    "japanese": "池の近くはちょっとだけ涼しいの。#$e#たまには出かけてみるのもいいわね！$h",
+    "english": "It's just a little cooler near the pond. / It's nice to go out once in a while!",
+    "segments": [
+      {
+        "text": "池",
+        "kana": "いけ",
+        "gloss": "pond"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "近く",
+        "kana": "ちかく",
+        "gloss": "near"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a little"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "just"
+      },
+      {
+        "text": "涼しい",
+        "kana": "すずしい",
+        "gloss": "cool"
+      },
+      {
+        "text": "の。#$e#",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "たまには",
+        "kana": "たまに は",
+        "gloss": "once in a while"
+      },
+      {
+        "text": "出かけてみる",
+        "kana": "でかけてみる",
+        "gloss": "going out"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(the act of)"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "too"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "わね！$h",
+        "kana": "わね",
+        "gloss": "(soft emphasis)"
+      }
+    ]
+  }
+}

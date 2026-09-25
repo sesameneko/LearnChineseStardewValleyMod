@@ -1,0 +1,547 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Shane.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "marriage_Fri.000": {
+    "japanese": "心配すんな、ただのJojaコーラだよ。",
+    "english": "Don't worry, it's just Joja Cola.",
+    "segments": [
+      {
+        "text": "心配すんな、",
+        "kana": "しんぱい すんな",
+        "gloss": "don't worry"
+      },
+      {
+        "text": "ただの",
+        "kana": "ただの",
+        "gloss": "just"
+      },
+      {
+        "text": "Jojaコーラ",
+        "kana": "Jojaコーラ",
+        "gloss": "Joja Cola"
+      },
+      {
+        "text": "だよ。",
+        "kana": "だよ",
+        "gloss": "(it is)"
+      }
+    ]
+  },
+  "marriage_Fri.001": {
+    "japanese": "うーん…正直、冷凍食品のレパートリーはJojaマートのほうが豊富なんだよな。",
+    "english": "Hmm... honestly, JojaMart has a richer frozen food repertoire.",
+    "segments": [
+      {
+        "text": "うーん…",
+        "kana": "うーん",
+        "gloss": "hmm"
+      },
+      {
+        "text": "正直、",
+        "kana": "しょうじき",
+        "gloss": "honestly"
+      },
+      {
+        "text": "冷凍食品",
+        "kana": "れいとう しょくひん",
+        "gloss": "frozen food"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "レパートリー",
+        "kana": "レパートリー",
+        "gloss": "repertoire"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "Jojaマート",
+        "kana": "Jojaマート",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(one)"
+      },
+      {
+        "text": "ほうが",
+        "kana": "ほうが",
+        "gloss": "(is more)"
+      },
+      {
+        "text": "豊富なんだよな。",
+        "kana": "ほうふ なんだよな",
+        "gloss": "is abundant, you know"
+      }
+    ]
+  },
+  "marriage_Fri.002": {
+    "japanese": "おれがときどき飲みものを注文してやらなきゃ、ガスは商売あがったりだろ。おれは町民としての義務をはたしてんのさ。10時ごろには帰るよ。",
+    "english": "If I didn't order drinks now and then, Gus would go out of business. I'm fulfilling my duty as a townsperson. I'll be back around 10.",
+    "segments": [
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ときどき",
+        "kana": "ときどき",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "飲みもの",
+        "kana": "のみもの",
+        "gloss": "drinks"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "注文してやらなきゃ、",
+        "kana": "ちゅうもん してやらなきゃ",
+        "gloss": "if (I) don't order (for him)"
+      },
+      {
+        "text": "ガス",
+        "kana": "ガス",
+        "gloss": "Gus"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "商売あがったり",
+        "kana": "しょうばい あがったり",
+        "gloss": "out of business"
+      },
+      {
+        "text": "だろ。",
+        "kana": "だろ",
+        "gloss": "right?"
+      },
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "町民",
+        "kana": "ちょうみん",
+        "gloss": "townsperson"
+      },
+      {
+        "text": "として",
+        "kana": "として",
+        "gloss": "as"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "義務",
+        "kana": "ぎむ",
+        "gloss": "duty"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "はたしてん",
+        "kana": "はたしてん",
+        "gloss": "am fulfilling"
+      },
+      {
+        "text": "のさ。",
+        "kana": "のさ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "10時",
+        "kana": "10じ",
+        "gloss": "10 o'clock"
+      },
+      {
+        "text": "ごろ",
+        "kana": "ごろ",
+        "gloss": "around"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "帰るよ。",
+        "kana": "かえるよ",
+        "gloss": "will go home"
+      }
+    ]
+  },
+  "marriage_Fri.003": {
+    "japanese": "もう1回プレイするよ...$h",
+    "english": "I'll play one more time...",
+    "segments": [
+      {
+        "text": "もう",
+        "kana": "もう",
+        "gloss": "more"
+      },
+      {
+        "text": "1回",
+        "kana": "1かい",
+        "gloss": "one time"
+      },
+      {
+        "text": "プレイする",
+        "kana": "プレイする",
+        "gloss": "play"
+      },
+      {
+        "text": "よ...$h",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  },
+  "marriage_Mon.000": {
+    "japanese": "ああなんだ、@か。もうおれが恋しくなったのか？$6",
+    "english": "Oh, it's you, @. Missing me already?",
+    "segments": [
+      {
+        "text": "ああ",
+        "kana": "ああ",
+        "gloss": "ah"
+      },
+      {
+        "text": "なんだ、",
+        "kana": "なんだ",
+        "gloss": "oh, it's"
+      },
+      {
+        "text": "@",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "か。",
+        "kana": "か",
+        "gloss": "(it's you)"
+      },
+      {
+        "text": "もう",
+        "kana": "もう",
+        "gloss": "already"
+      },
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "me"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(object of feeling)"
+      },
+      {
+        "text": "恋しくなった",
+        "kana": "こいしく なった",
+        "gloss": "came to miss"
+      },
+      {
+        "text": "のか？$6",
+        "kana": "のか",
+        "gloss": "(question)"
+      }
+    ]
+  },
+  "marriage_Mon.001": {
+    "japanese": "この森には愛着があるのさ…いろいろ、思い出があるからな…",
+    "english": "I'm attached to this forest... because I have various memories...",
+    "segments": [
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "森",
+        "kana": "もり",
+        "gloss": "forest"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "愛着",
+        "kana": "あいちゃく",
+        "gloss": "attachment"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "have"
+      },
+      {
+        "text": "のさ…",
+        "kana": "のさ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "いろいろ、",
+        "kana": "いろいろ",
+        "gloss": "various"
+      },
+      {
+        "text": "思い出",
+        "kana": "おもいで",
+        "gloss": "memories"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "have"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "because"
+      },
+      {
+        "text": "な…",
+        "kana": "な",
+        "gloss": "(you know)"
+      }
+    ]
+  },
+  "marriage_Sun.000": {
+    "japanese": "ここは臭いなぁ。",
+    "english": "It stinks here.",
+    "segments": [
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "臭い",
+        "kana": "くさい",
+        "gloss": "smelly"
+      },
+      {
+        "text": "なぁ。",
+        "kana": "なぁ",
+        "gloss": "(man)"
+      }
+    ]
+  },
+  "marriage_Sun.001": {
+    "japanese": "コーラのことで悩んでるんだ… JojaクラシックとJojaブルー、どっちを選べばいい？ しばらくここを動けないかも…",
+    "english": "I'm torn over the cola... Joja Classic or Joja Blue, which should I choose? I might not be able to move from here for a while...",
+    "segments": [
+      {
+        "text": "コーラ",
+        "kana": "コーラ",
+        "gloss": "cola"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "matter"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(about)"
+      },
+      {
+        "text": "悩んでる",
+        "kana": "なやんでる",
+        "gloss": "am troubled"
+      },
+      {
+        "text": "んだ… ",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "Jojaクラシック",
+        "kana": "Jojaクラシック",
+        "gloss": "Joja Classic"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "and"
+      },
+      {
+        "text": "Jojaブルー、",
+        "kana": "Jojaブルー",
+        "gloss": "Joja Bluu"
+      },
+      {
+        "text": "どっち",
+        "kana": "どっち",
+        "gloss": "which"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "選べば",
+        "kana": "えらべば",
+        "gloss": "if (I) choose"
+      },
+      {
+        "text": "いい？ ",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "しばらく",
+        "kana": "しばらく",
+        "gloss": "for a while"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(from)"
+      },
+      {
+        "text": "動けない",
+        "kana": "うごけない",
+        "gloss": "can't move"
+      },
+      {
+        "text": "かも…",
+        "kana": "かも",
+        "gloss": "maybe"
+      }
+    ]
+  },
+  "winter_15.000": {
+    "japanese": "ジャスのためさ。今日はサルーンには行かないよ。",
+    "english": "It's for Jas. I'm not going to the saloon today.",
+    "segments": [
+      {
+        "text": "ジャス",
+        "kana": "ジャス",
+        "gloss": "Jas"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "ため",
+        "kana": "ため",
+        "gloss": "sake"
+      },
+      {
+        "text": "さ。",
+        "kana": "さ",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "今日",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "サルーン",
+        "kana": "サルーン",
+        "gloss": "saloon"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "行かない",
+        "kana": "いかない",
+        "gloss": "won't go"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  }
+}

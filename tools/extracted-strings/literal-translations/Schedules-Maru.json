@@ -1,0 +1,351 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Maru.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "marriageJob.000": {
+    "japanese": "ねえハニー、わたし仕事中だよ！こんなとこドクターに見られたらやだからね。",
+    "english": "Hey honey, I'm at work! I'd hate for the doctor to see us in a place like this.",
+    "segments": [
+      {
+        "text": "ねえ",
+        "kana": "ねえ",
+        "gloss": "hey"
+      },
+      {
+        "text": "ハニー、",
+        "kana": "ハニー",
+        "gloss": "honey"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "仕事中",
+        "kana": "しごと ちゅう",
+        "gloss": "in the middle of work"
+      },
+      {
+        "text": "だよ！",
+        "kana": "だよ",
+        "gloss": "(it is)"
+      },
+      {
+        "text": "こんな",
+        "kana": "こんな",
+        "gloss": "this kind of"
+      },
+      {
+        "text": "とこ",
+        "kana": "とこ",
+        "gloss": "place"
+      },
+      {
+        "text": "ドクター",
+        "kana": "ドクター",
+        "gloss": "the doctor"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(by)"
+      },
+      {
+        "text": "見られたら",
+        "kana": "みられたら",
+        "gloss": "if (we're) seen"
+      },
+      {
+        "text": "やだ",
+        "kana": "やだ",
+        "gloss": "I'd hate it"
+      },
+      {
+        "text": "からね。",
+        "kana": "からね",
+        "gloss": "(you know)"
+      }
+    ]
+  },
+  "marriageJob.001": {
+    "japanese": "会いにきてくれたの？うれしいな。$h",
+    "english": "You came to see me? I'm happy.",
+    "segments": [
+      {
+        "text": "会いに",
+        "kana": "あいに",
+        "gloss": "to see"
+      },
+      {
+        "text": "きてくれたの？",
+        "kana": "きてくれたの",
+        "gloss": "you came (for me)?"
+      },
+      {
+        "text": "うれしい",
+        "kana": "うれしい",
+        "gloss": "happy"
+      },
+      {
+        "text": "な。$h",
+        "kana": "な",
+        "gloss": "(I feel)"
+      }
+    ]
+  },
+  "marriageJob.002": {
+    "japanese": "仕事、あと少しでおわるから…",
+    "english": "Work will be over in just a little bit...",
+    "segments": [
+      {
+        "text": "仕事、",
+        "kana": "しごと",
+        "gloss": "work"
+      },
+      {
+        "text": "あと",
+        "kana": "あと",
+        "gloss": "remaining"
+      },
+      {
+        "text": "少し",
+        "kana": "すこし",
+        "gloss": "a little"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(in)"
+      },
+      {
+        "text": "おわる",
+        "kana": "おわる",
+        "gloss": "will end"
+      },
+      {
+        "text": "から…",
+        "kana": "から",
+        "gloss": "so"
+      }
+    ]
+  },
+  "marriage_Mon.000": {
+    "japanese": "ちょっと！ママはわたしが手伝わなくても大丈夫そう。さすが、タフだよね。",
+    "english": "Hey! Mom seems fine even without me helping. As expected, she's tough.",
+    "segments": [
+      {
+        "text": "ちょっと！",
+        "kana": "ちょっと",
+        "gloss": "hey"
+      },
+      {
+        "text": "ママ",
+        "kana": "ママ",
+        "gloss": "mom"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "手伝わなくても",
+        "kana": "てつだわなくても",
+        "gloss": "even without helping"
+      },
+      {
+        "text": "大丈夫そう。",
+        "kana": "だいじょうぶ そう",
+        "gloss": "seems fine"
+      },
+      {
+        "text": "さすが、",
+        "kana": "さすが",
+        "gloss": "as expected"
+      },
+      {
+        "text": "タフ",
+        "kana": "タフ",
+        "gloss": "tough"
+      },
+      {
+        "text": "だよね。",
+        "kana": "だよね",
+        "gloss": "she is, right"
+      }
+    ]
+  },
+  "marriage_Mon.001": {
+    "japanese": "パパの実験はうまく進んでるみたい。",
+    "english": "Dad's experiment seems to be going well.",
+    "segments": [
+      {
+        "text": "パパ",
+        "kana": "パパ",
+        "gloss": "dad"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "実験",
+        "kana": "じっけん",
+        "gloss": "experiment"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "うまく",
+        "kana": "うまく",
+        "gloss": "well"
+      },
+      {
+        "text": "進んでる",
+        "kana": "すすんでる",
+        "gloss": "is progressing"
+      },
+      {
+        "text": "みたい。",
+        "kana": "みたい",
+        "gloss": "seems"
+      }
+    ]
+  },
+  "marriage_Mon.002": {
+    "japanese": "ペニーもいつか、だれかと結婚してくれたらいいのにな。",
+    "english": "I wish Penny would marry someone someday too.",
+    "segments": [
+      {
+        "text": "ペニー",
+        "kana": "ペニー",
+        "gloss": "Penny"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "too"
+      },
+      {
+        "text": "いつか、",
+        "kana": "いつか",
+        "gloss": "someday"
+      },
+      {
+        "text": "だれか",
+        "kana": "だれか",
+        "gloss": "someone"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(with)"
+      },
+      {
+        "text": "結婚してくれたら",
+        "kana": "けっこん してくれたら",
+        "gloss": "if (she) would marry"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "のにな。",
+        "kana": "のにな",
+        "gloss": "I wish"
+      }
+    ]
+  },
+  "summer.000": {
+    "japanese": "宇宙のスケールを把握するのってむずかしいな。$8",
+    "english": "It's hard to grasp the scale of the universe.",
+    "segments": [
+      {
+        "text": "宇宙",
+        "kana": "うちゅう",
+        "gloss": "universe"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "スケール",
+        "kana": "スケール",
+        "gloss": "scale"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "把握する",
+        "kana": "はあく する",
+        "gloss": "to grasp"
+      },
+      {
+        "text": "のって",
+        "kana": "のって",
+        "gloss": "(the act of)"
+      },
+      {
+        "text": "むずかしい",
+        "kana": "むずかしい",
+        "gloss": "hard"
+      },
+      {
+        "text": "な。$8",
+        "kana": "な",
+        "gloss": "(I feel)"
+      }
+    ]
+  },
+  "winter_16.000": {
+    "japanese": "わー、これすごく ハイテクだね！",
+    "english": "Wow, this is really high-tech!",
+    "segments": [
+      {
+        "text": "わー、",
+        "kana": "わー",
+        "gloss": "wow"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "すごく ",
+        "kana": "すごく",
+        "gloss": "really"
+      },
+      {
+        "text": "ハイテク",
+        "kana": "ハイテク",
+        "gloss": "high-tech"
+      },
+      {
+        "text": "だね！",
+        "kana": "だね",
+        "gloss": "is, huh"
+      }
+    ]
+  }
+}

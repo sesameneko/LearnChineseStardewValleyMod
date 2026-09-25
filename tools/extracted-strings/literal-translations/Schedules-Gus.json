@@ -1,0 +1,312 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Gus.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Mon.000": {
+    "japanese": "店にいるものを買いにきたんだ。ピエール商店の商品はモノがいいからね。$h",
+    "english": "I came to buy things the shop needs. Pierre's General Store's goods are good quality, you know.",
+    "segments": [
+      {
+        "text": "店",
+        "kana": "みせ",
+        "gloss": "(my) shop"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)"
+      },
+      {
+        "text": "いる",
+        "kana": "いる",
+        "gloss": "needed"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "買いにきたんだ。",
+        "kana": "かいに きたんだ",
+        "gloss": "(I) came to buy"
+      },
+      {
+        "text": "ピエール商店",
+        "kana": "ピエール しょうてん",
+        "gloss": "Pierre's General Store"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "商品",
+        "kana": "しょうひん",
+        "gloss": "goods"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "モノ",
+        "kana": "モノ",
+        "gloss": "quality / stuff"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いいからね。$h",
+        "kana": "いいからね",
+        "gloss": "is good, you know"
+      }
+    ]
+  },
+  "Sun.000": {
+    "japanese": "やぁ、@。申し訳ない...バーはゲームが終わるまで閉まってるんだ。",
+    "english": "Hey, @. Sorry... the bar is closed until the game is over.",
+    "segments": [
+      {
+        "text": "やぁ、",
+        "kana": "やぁ",
+        "gloss": "hey"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "申し訳ない...",
+        "kana": "もうしわけない",
+        "gloss": "sorry"
+      },
+      {
+        "text": "バー",
+        "kana": "バー",
+        "gloss": "bar"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ゲーム",
+        "kana": "ゲーム",
+        "gloss": "game"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "終わるまで",
+        "kana": "おわるまで",
+        "gloss": "until (it) ends"
+      },
+      {
+        "text": "閉まってるんだ。",
+        "kana": "しまってるんだ",
+        "gloss": "is closed"
+      }
+    ]
+  },
+  "fall_4.000": {
+    "japanese": "医者に行くときはいつもびくびくするんだ。もし、あと数年の命だったらどうしよう？ああ、不安でしかたないよ！",
+    "english": "I always get jittery when I go to the doctor. What if I only have a few more years to live? Ah, I can't help being anxious!",
+    "segments": [
+      {
+        "text": "医者",
+        "kana": "いしゃ",
+        "gloss": "doctor"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "行く",
+        "kana": "いく",
+        "gloss": "go"
+      },
+      {
+        "text": "とき",
+        "kana": "とき",
+        "gloss": "when"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いつも",
+        "kana": "いつも",
+        "gloss": "always"
+      },
+      {
+        "text": "びくびくするんだ。",
+        "kana": "びくびくするんだ",
+        "gloss": "(I) get jittery"
+      },
+      {
+        "text": "もし、",
+        "kana": "もし",
+        "gloss": "if"
+      },
+      {
+        "text": "あと",
+        "kana": "あと",
+        "gloss": "remaining"
+      },
+      {
+        "text": "数年",
+        "kana": "すうねん",
+        "gloss": "a few years"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "命",
+        "kana": "いのち",
+        "gloss": "life"
+      },
+      {
+        "text": "だったら",
+        "kana": "だったら",
+        "gloss": "if (it) were"
+      },
+      {
+        "text": "どうしよう？",
+        "kana": "どうしよう",
+        "gloss": "what should I do"
+      },
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "ah"
+      },
+      {
+        "text": "不安",
+        "kana": "ふあん",
+        "gloss": "anxious"
+      },
+      {
+        "text": "でしかたないよ！",
+        "kana": "で しかたないよ",
+        "gloss": "can't help being"
+      }
+    ]
+  },
+  "fall_4.001": {
+    "japanese": "肝臓でしょう、先生？顔を見れば分かりますよ。ハァ…あのあまい美味、スターデューバレーワイン…もっと飲むのを減らさなきゃ。$s",
+    "english": "It's my liver, isn't it, doctor? I can tell by looking at your face. Sigh... that sweet delicacy, Stardew Valley wine... I have to cut down on drinking.",
+    "segments": [
+      {
+        "text": "肝臓",
+        "kana": "かんぞう",
+        "gloss": "liver"
+      },
+      {
+        "text": "でしょう、",
+        "kana": "でしょう",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "先生？",
+        "kana": "せんせい",
+        "gloss": "doctor"
+      },
+      {
+        "text": "顔",
+        "kana": "かお",
+        "gloss": "face"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見れば",
+        "kana": "みれば",
+        "gloss": "if (I) look at"
+      },
+      {
+        "text": "分かりますよ。",
+        "kana": "わかりますよ",
+        "gloss": "(I) can tell"
+      },
+      {
+        "text": "ハァ…",
+        "kana": "ハァ",
+        "gloss": "sigh"
+      },
+      {
+        "text": "あの",
+        "kana": "あの",
+        "gloss": "that"
+      },
+      {
+        "text": "あまい",
+        "kana": "あまい",
+        "gloss": "sweet"
+      },
+      {
+        "text": "美味、",
+        "kana": "びみ",
+        "gloss": "delicacy"
+      },
+      {
+        "text": "スターデューバレー",
+        "kana": "スターデューバレー",
+        "gloss": "Stardew Valley"
+      },
+      {
+        "text": "ワイン…",
+        "kana": "ワイン",
+        "gloss": "wine"
+      },
+      {
+        "text": "もっと",
+        "kana": "もっと",
+        "gloss": "more"
+      },
+      {
+        "text": "飲む",
+        "kana": "のむ",
+        "gloss": "drinking"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "減らさなきゃ。$s",
+        "kana": "へらさなきゃ",
+        "gloss": "(I) have to reduce"
+      }
+    ]
+  }
+}

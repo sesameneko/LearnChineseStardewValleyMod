@@ -1,0 +1,646 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Events-CommunityCenter.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Punch#0": {
+    "japanese": "ははん！",
+    "english": "Ha-hah!",
+    "segments": [
+      {
+        "text": "ははん！",
+        "kana": "ははん",
+        "gloss": "hah"
+      }
+    ]
+  },
+  "Punch#1": {
+    "japanese": "それがなんです。75%オフセールを開催すればお客様は全員もどってきてひれふし、ウチに許しを請いますとも。今に見てなさい！$h",
+    "english": "So what? If I hold a 75%-off sale, every customer will come back, bow down, and beg us for forgiveness. Just you watch!",
+    "segments": [
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "なんです。",
+        "kana": "なんです",
+        "gloss": "what of it"
+      },
+      {
+        "text": "75%",
+        "kana": "ななじゅうご パーセント",
+        "gloss": "75 percent"
+      },
+      {
+        "text": "オフ",
+        "kana": "オフ",
+        "gloss": "off"
+      },
+      {
+        "text": "セール",
+        "kana": "セール",
+        "gloss": "sale"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "開催すれば",
+        "kana": "かいさいすれば",
+        "gloss": "if I hold"
+      },
+      {
+        "text": "お客様",
+        "kana": "おきゃくさま",
+        "gloss": "customers"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "全員",
+        "kana": "ぜんいん",
+        "gloss": "all"
+      },
+      {
+        "text": "もどってきて",
+        "kana": "もどってきて",
+        "gloss": "come back and"
+      },
+      {
+        "text": "ひれふし、",
+        "kana": "ひれふし",
+        "gloss": "prostrate themselves"
+      },
+      {
+        "text": "ウチ",
+        "kana": "ウチ",
+        "gloss": "us / my store"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "許し",
+        "kana": "ゆるし",
+        "gloss": "forgiveness"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "請います",
+        "kana": "こいます",
+        "gloss": "will beg"
+      },
+      {
+        "text": "とも。",
+        "kana": "とも",
+        "gloss": "certainly"
+      },
+      {
+        "text": "今に",
+        "kana": "いまに",
+        "gloss": "before long"
+      },
+      {
+        "text": "見てなさい！$h",
+        "kana": "みてなさい",
+        "gloss": "just watch"
+      }
+    ]
+  },
+  "Punch#2": {
+    "japanese": "いいや…そうはさせないさ、モーリス。$u#$b#どうやら、白黒つけるときが来たようだね。$u",
+    "english": "No... I won't let that happen, Morris. It seems the time has come to settle this in black and white.",
+    "segments": [
+      {
+        "text": "いいや…",
+        "kana": "いいや",
+        "gloss": "no"
+      },
+      {
+        "text": "そうは",
+        "kana": "そう は",
+        "gloss": "that way (topic)"
+      },
+      {
+        "text": "させない",
+        "kana": "させない",
+        "gloss": "won't let (happen)"
+      },
+      {
+        "text": "さ、",
+        "kana": "さ",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "モーリス。$u#$b#",
+        "kana": "モーリス",
+        "gloss": "Morris"
+      },
+      {
+        "text": "どうやら、",
+        "kana": "どうやら",
+        "gloss": "it seems"
+      },
+      {
+        "text": "白黒つける",
+        "kana": "しろくろ つける",
+        "gloss": "settle things"
+      },
+      {
+        "text": "とき",
+        "kana": "とき",
+        "gloss": "time"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "来た",
+        "kana": "きた",
+        "gloss": "has come"
+      },
+      {
+        "text": "ようだね。$u",
+        "kana": "ようだね",
+        "gloss": "it seems"
+      }
+    ]
+  },
+  "Punch#3": {
+    "japanese": "ほほう？では、どうやって白黒つけるっていうんです？$u",
+    "english": "Oho? Then how exactly do you propose to settle it?",
+    "segments": [
+      {
+        "text": "ほほう？",
+        "kana": "ほほう",
+        "gloss": "oho"
+      },
+      {
+        "text": "では、",
+        "kana": "で は",
+        "gloss": "then"
+      },
+      {
+        "text": "どうやって",
+        "kana": "どうやって",
+        "gloss": "how"
+      },
+      {
+        "text": "白黒つける",
+        "kana": "しろくろ つける",
+        "gloss": "settle things"
+      },
+      {
+        "text": "っていうんです？$u",
+        "kana": "っていうんです",
+        "gloss": "are you saying"
+      }
+    ]
+  },
+  "Punch#4": {
+    "japanese": "ハッ！原始的な…",
+    "english": "Hah! How primitive...",
+    "segments": [
+      {
+        "text": "ハッ！",
+        "kana": "ハッ",
+        "gloss": "hah"
+      },
+      {
+        "text": "原始的な…",
+        "kana": "げんしてきな",
+        "gloss": "primitive"
+      }
+    ]
+  },
+  "Punch#5": {
+    "japanese": "こわいなら、おたくの従業員をだれかつれてきたってかまわないぞ！それとも、Jojaの社員はみんなそんなに臆病者なのかい？$u",
+    "english": "If you're scared, I don't mind if you bring along one of your employees! Or are Joja's employees all such cowards?",
+    "segments": [
+      {
+        "text": "こわい",
+        "kana": "こわい",
+        "gloss": "scared"
+      },
+      {
+        "text": "なら、",
+        "kana": "なら",
+        "gloss": "if"
+      },
+      {
+        "text": "おたく",
+        "kana": "おたく",
+        "gloss": "your"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "従業員",
+        "kana": "じゅうぎょういん",
+        "gloss": "employees"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "だれか",
+        "kana": "だれか",
+        "gloss": "someone"
+      },
+      {
+        "text": "つれてきた",
+        "kana": "つれてきた",
+        "gloss": "brought along"
+      },
+      {
+        "text": "って",
+        "kana": "って",
+        "gloss": "even if"
+      },
+      {
+        "text": "かまわない",
+        "kana": "かまわない",
+        "gloss": "I don't mind"
+      },
+      {
+        "text": "ぞ！",
+        "kana": "ぞ",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "それとも、",
+        "kana": "それとも",
+        "gloss": "or else"
+      },
+      {
+        "text": "Joja",
+        "kana": "Joja",
+        "gloss": "Joja"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "社員",
+        "kana": "しゃいん",
+        "gloss": "employees"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "みんな",
+        "kana": "みんな",
+        "gloss": "all"
+      },
+      {
+        "text": "そんなに",
+        "kana": "そんなに",
+        "gloss": "so"
+      },
+      {
+        "text": "臆病者",
+        "kana": "おくびょうもの",
+        "gloss": "cowards"
+      },
+      {
+        "text": "なのかい？$u",
+        "kana": "なのかい",
+        "gloss": "are they?"
+      }
+    ]
+  },
+  "Punch#6": {
+    "japanese": "わたしのことならいくらでも侮辱したまえ…だけど、Jojaの名を侮蔑するのは許さない！$u",
+    "english": "Insult me as much as you like... but I won't forgive scorning the name of Joja!",
+    "segments": [
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "matter"
+      },
+      {
+        "text": "なら",
+        "kana": "なら",
+        "gloss": "if it's"
+      },
+      {
+        "text": "いくらでも",
+        "kana": "いくらでも",
+        "gloss": "as much as you like"
+      },
+      {
+        "text": "侮辱したまえ…",
+        "kana": "ぶじょくしたまえ",
+        "gloss": "insult"
+      },
+      {
+        "text": "だけど、",
+        "kana": "だけど",
+        "gloss": "but"
+      },
+      {
+        "text": "Joja",
+        "kana": "Joja",
+        "gloss": "Joja"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "名",
+        "kana": "な",
+        "gloss": "name"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "侮蔑する",
+        "kana": "ぶべつする",
+        "gloss": "to scorn"
+      },
+      {
+        "text": "のは",
+        "kana": "の は",
+        "gloss": "(doing that, topic)"
+      },
+      {
+        "text": "許さない！$u",
+        "kana": "ゆるさない",
+        "gloss": "won't forgive"
+      }
+    ]
+  },
+  "Punch#7": {
+    "japanese": "ピエール！",
+    "english": "Pierre!",
+    "segments": [
+      {
+        "text": "ピエール！",
+        "kana": "ピエール",
+        "gloss": "Pierre"
+      }
+    ]
+  },
+  "Punch#8": {
+    "japanese": "いいぞ！やれ！",
+    "english": "Good! Do it!",
+    "segments": [
+      {
+        "text": "いいぞ！",
+        "kana": "いいぞ",
+        "gloss": "good"
+      },
+      {
+        "text": "やれ！",
+        "kana": "やれ",
+        "gloss": "do it"
+      }
+    ]
+  },
+  "Punch#9": {
+    "japanese": "お店の生鮮食品のほうが、あなたより強いんじゃないですか！$u",
+    "english": "Your shop's fresh produce is stronger than you, isn't it!",
+    "segments": [
+      {
+        "text": "お店",
+        "kana": "おみせ",
+        "gloss": "shop"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "生鮮食品",
+        "kana": "せいせん しょくひん",
+        "gloss": "fresh produce"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "ほう",
+        "kana": "ほう",
+        "gloss": "side"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "より",
+        "kana": "より",
+        "gloss": "than"
+      },
+      {
+        "text": "強い",
+        "kana": "つよい",
+        "gloss": "strong"
+      },
+      {
+        "text": "んじゃないですか！$u",
+        "kana": "んじゃないですか",
+        "gloss": "isn't it"
+      }
+    ]
+  },
+  "Punch#10": {
+    "japanese": "そっちこそ、おたくのパンチはまるでJoja社みたいじゃないか…$u#$b#質より量ってね！",
+    "english": "You're one to talk, your punches are just like the Joja company... quantity over quality, as they say!",
+    "segments": [
+      {
+        "text": "そっちこそ、",
+        "kana": "そっちこそ",
+        "gloss": "you're the one"
+      },
+      {
+        "text": "おたく",
+        "kana": "おたく",
+        "gloss": "your"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "パンチ",
+        "kana": "パンチ",
+        "gloss": "punches"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "まるで",
+        "kana": "まるで",
+        "gloss": "just like"
+      },
+      {
+        "text": "Joja社",
+        "kana": "Joja しゃ",
+        "gloss": "Joja Corp."
+      },
+      {
+        "text": "みたい",
+        "kana": "みたい",
+        "gloss": "like"
+      },
+      {
+        "text": "じゃないか…$u#$b#",
+        "kana": "じゃないか",
+        "gloss": "aren't they"
+      },
+      {
+        "text": "質",
+        "kana": "しつ",
+        "gloss": "quality"
+      },
+      {
+        "text": "より",
+        "kana": "より",
+        "gloss": "over"
+      },
+      {
+        "text": "量",
+        "kana": "りょう",
+        "gloss": "quantity"
+      },
+      {
+        "text": "ってね！",
+        "kana": "ってね",
+        "gloss": "as they say"
+      }
+    ]
+  },
+  "Punch#11": {
+    "japanese": "やっちまえ！",
+    "english": "Get him!",
+    "segments": [
+      {
+        "text": "やっちまえ！",
+        "kana": "やっちまえ",
+        "gloss": "get him"
+      }
+    ]
+  },
+  "Punch#12": {
+    "japanese": "それ以来、モーリスとJojaマートの社員たちからは、さっぱり音沙汰がなくなった。",
+    "english": "Since then, there was no word at all from Morris and the JojaMart employees.",
+    "segments": [
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "以来、",
+        "kana": "いらい",
+        "gloss": "since"
+      },
+      {
+        "text": "モーリス",
+        "kana": "モーリス",
+        "gloss": "Morris"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "and"
+      },
+      {
+        "text": "Jojaマート",
+        "kana": "Joja マート",
+        "gloss": "JojaMart"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "社員たち",
+        "kana": "しゃいんたち",
+        "gloss": "employees"
+      },
+      {
+        "text": "からは、",
+        "kana": "から は",
+        "gloss": "from (topic)"
+      },
+      {
+        "text": "さっぱり",
+        "kana": "さっぱり",
+        "gloss": "completely"
+      },
+      {
+        "text": "音沙汰",
+        "kana": "おとさた",
+        "gloss": "news"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "なくなった。",
+        "kana": "なくなった",
+        "gloss": "ceased"
+      }
+    ]
+  }
+}

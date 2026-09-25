@@ -1,0 +1,803 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Events-IslandHut.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "1039573#0": {
+    "japanese": "…$u#$b#…キ…キミは…鳥の友達？$u",
+    "english": "...Y...You are... a friend of the birds?",
+    "segments": [
+      {
+        "text": "…$u#$b#",
+        "kana": "",
+        "gloss": "(page break)"
+      },
+      {
+        "text": "…キ…",
+        "kana": "キ",
+        "gloss": "(stutter)"
+      },
+      {
+        "text": "キミ",
+        "kana": "キミ",
+        "gloss": "you"
+      },
+      {
+        "text": "は…",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "鳥",
+        "kana": "とり",
+        "gloss": "bird(s)"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "友達？$u",
+        "kana": "ともだち",
+        "gloss": "friend"
+      }
+    ]
+  },
+  "1039573#1": {
+    "japanese": "…大丈夫みたいだね。",
+    "english": "...Looks like it's okay.",
+    "segments": [
+      {
+        "text": "…大丈夫",
+        "kana": "だいじょうぶ",
+        "gloss": "okay / fine"
+      },
+      {
+        "text": "みたいだね。",
+        "kana": "みたいだね",
+        "gloss": "seems, doesn't it"
+      }
+    ]
+  },
+  "1039573#2": {
+    "japanese": ".…彼女は、キミが鳥の友達かどうか尋ねてる。#$b#彼女には…うん、って言った。$h",
+    "english": "...She's asking whether you're a bird's friend. I told her... yeah.",
+    "segments": [
+      {
+        "text": ".…彼女",
+        "kana": "かのじょ",
+        "gloss": "she"
+      },
+      {
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "キミ",
+        "kana": "キミ",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "鳥",
+        "kana": "とり",
+        "gloss": "bird"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "友達",
+        "kana": "ともだち",
+        "gloss": "friend"
+      },
+      {
+        "text": "かどうか",
+        "kana": "かどうか",
+        "gloss": "whether or not"
+      },
+      {
+        "text": "尋ねてる。#$b#",
+        "kana": "たずねてる",
+        "gloss": "is asking"
+      },
+      {
+        "text": "彼女",
+        "kana": "かのじょ",
+        "gloss": "her"
+      },
+      {
+        "text": "には…",
+        "kana": "に は",
+        "gloss": "(to)"
+      },
+      {
+        "text": "うん、",
+        "kana": "うん",
+        "gloss": "yeah"
+      },
+      {
+        "text": "って",
+        "kana": "って",
+        "gloss": "(quoting)"
+      },
+      {
+        "text": "言った。$h",
+        "kana": "いった",
+        "gloss": "said"
+      }
+    ]
+  },
+  "1039573#3": {
+    "japanese": "どうやってここに来たの？",
+    "english": "How did you come here?",
+    "segments": [
+      {
+        "text": "どうやって",
+        "kana": "どうやって",
+        "gloss": "how"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "来た",
+        "kana": "きた",
+        "gloss": "came"
+      },
+      {
+        "text": "の？",
+        "kana": "の",
+        "gloss": "(question)"
+      }
+    ]
+  },
+  "1039573#4": {
+    "japanese": "お父さんとお母さんは？",
+    "english": "What about your father and mother?",
+    "segments": [
+      {
+        "text": "お父さん",
+        "kana": "おとうさん",
+        "gloss": "father"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "and"
+      },
+      {
+        "text": "お母さん",
+        "kana": "おかあさん",
+        "gloss": "mother"
+      },
+      {
+        "text": "は？",
+        "kana": "は",
+        "gloss": "(what about...?)"
+      }
+    ]
+  },
+  "1039573#5": {
+    "japanese": "…大きな嵐…波…雷…$s#$b#お母さん…お父さん…海に流されて…$s#$b#ボクは…海岸に流れ着いていた…$s",
+    "english": "...Big storm... waves... thunder... Mother... Father... swept away by the sea... I... had washed up on the shore...",
+    "segments": [
+      {
+        "text": "…大きな",
+        "kana": "おおきな",
+        "gloss": "big"
+      },
+      {
+        "text": "嵐…",
+        "kana": "あらし",
+        "gloss": "storm"
+      },
+      {
+        "text": "波…",
+        "kana": "なみ",
+        "gloss": "waves"
+      },
+      {
+        "text": "雷…$s#$b#",
+        "kana": "かみなり",
+        "gloss": "thunder"
+      },
+      {
+        "text": "お母さん…",
+        "kana": "おかあさん",
+        "gloss": "mother"
+      },
+      {
+        "text": "お父さん…",
+        "kana": "おとうさん",
+        "gloss": "father"
+      },
+      {
+        "text": "海",
+        "kana": "うみ",
+        "gloss": "sea"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(by)"
+      },
+      {
+        "text": "流されて…$s#$b#",
+        "kana": "ながされて",
+        "gloss": "swept away"
+      },
+      {
+        "text": "ボク",
+        "kana": "ボク",
+        "gloss": "I"
+      },
+      {
+        "text": "は…",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "海岸",
+        "kana": "かいがん",
+        "gloss": "shore"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(onto)"
+      },
+      {
+        "text": "流れ着いていた…$s",
+        "kana": "ながれついて いた",
+        "gloss": "had washed up"
+      }
+    ]
+  },
+  "1039573#6": {
+    "japanese": "…いや、いや、いやだ…あ…あれはただの夢…そうだよね？$s",
+    "english": "...No, no, I don't want... th... that was just a dream... right?",
+    "segments": [
+      {
+        "text": "…いや、",
+        "kana": "いや",
+        "gloss": "no"
+      },
+      {
+        "text": "いや、",
+        "kana": "いや",
+        "gloss": "no"
+      },
+      {
+        "text": "いやだ…",
+        "kana": "いやだ",
+        "gloss": "I don't want it"
+      },
+      {
+        "text": "あ…",
+        "kana": "あ",
+        "gloss": "(stammer)"
+      },
+      {
+        "text": "あれ",
+        "kana": "あれ",
+        "gloss": "that"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ただの",
+        "kana": "ただの",
+        "gloss": "just a"
+      },
+      {
+        "text": "夢…",
+        "kana": "ゆめ",
+        "gloss": "dream"
+      },
+      {
+        "text": "そうだよね？$s",
+        "kana": "そうだよね",
+        "gloss": "right?"
+      }
+    ]
+  },
+  "1039573#7": {
+    "japanese": "…いや…ボクはここで生まれたんだ、他の鳥の友達と同じように。わかる？",
+    "english": "...No... I was born here, same as the other bird friends. You understand?",
+    "segments": [
+      {
+        "text": "…いや…",
+        "kana": "いや",
+        "gloss": "no"
+      },
+      {
+        "text": "ボク",
+        "kana": "ボク",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(at)"
+      },
+      {
+        "text": "生まれた",
+        "kana": "うまれた",
+        "gloss": "was born"
+      },
+      {
+        "text": "んだ、",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "他の",
+        "kana": "ほかの",
+        "gloss": "other"
+      },
+      {
+        "text": "鳥",
+        "kana": "とり",
+        "gloss": "bird"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "友達",
+        "kana": "ともだち",
+        "gloss": "friends"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(as)"
+      },
+      {
+        "text": "同じように。",
+        "kana": "おなじ ように",
+        "gloss": "same as"
+      },
+      {
+        "text": "わかる？",
+        "kana": "わかる",
+        "gloss": "do you understand"
+      }
+    ]
+  },
+  "1039573#8": {
+    "japanese": "君が鳥なら、どう話すの？",
+    "english": "If you're a bird, how do you talk?",
+    "segments": [
+      {
+        "text": "君",
+        "kana": "きみ",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "鳥",
+        "kana": "とり",
+        "gloss": "bird"
+      },
+      {
+        "text": "なら、",
+        "kana": "なら",
+        "gloss": "if (you) are"
+      },
+      {
+        "text": "どう",
+        "kana": "どう",
+        "gloss": "how"
+      },
+      {
+        "text": "話す",
+        "kana": "はなす",
+        "gloss": "talk"
+      },
+      {
+        "text": "の？",
+        "kana": "の",
+        "gloss": "(question)"
+      }
+    ]
+  },
+  "1039573#9": {
+    "japanese": "君はいくつ？",
+    "english": "How old are you?",
+    "segments": [
+      {
+        "text": "君",
+        "kana": "きみ",
+        "gloss": "you"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いくつ？",
+        "kana": "いくつ",
+        "gloss": "how old"
+      }
+    ]
+  },
+  "1039573#10": {
+    "japanese": "（オウ）",
+    "english": "(Awk)",
+    "segments": [
+      {
+        "text": "（オウ）",
+        "kana": "オウ",
+        "gloss": "awk (bird sound)"
+      }
+    ]
+  },
+  "1039573#11": {
+    "japanese": "君が鳥なら",
+    "english": "If you're a bird",
+    "segments": [
+      {
+        "text": "君",
+        "kana": "きみ",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "鳥",
+        "kana": "とり",
+        "gloss": "bird"
+      },
+      {
+        "text": "なら",
+        "kana": "なら",
+        "gloss": "if (you) are"
+      }
+    ]
+  },
+  "1039573#12": {
+    "japanese": "（オウ）",
+    "english": "(Awk)",
+    "segments": [
+      {
+        "text": "（オウ）",
+        "kana": "オウ",
+        "gloss": "awk (bird sound)"
+      }
+    ]
+  },
+  "1039573#13": {
+    "japanese": "どう話すの？",
+    "english": "How do you talk?",
+    "segments": [
+      {
+        "text": "どう",
+        "kana": "どう",
+        "gloss": "how"
+      },
+      {
+        "text": "話す",
+        "kana": "はなす",
+        "gloss": "talk"
+      },
+      {
+        "text": "の？",
+        "kana": "の",
+        "gloss": "(question)"
+      }
+    ]
+  },
+  "1039573#14": {
+    "japanese": "はははっ！わかる？話す！話す！$h",
+    "english": "Hahaha! Understand? Talk! Talk!",
+    "segments": [
+      {
+        "text": "はははっ！",
+        "kana": "はははっ",
+        "gloss": "hahaha"
+      },
+      {
+        "text": "わかる？",
+        "kana": "わかる",
+        "gloss": "understand?"
+      },
+      {
+        "text": "話す！",
+        "kana": "はなす",
+        "gloss": "talk"
+      },
+      {
+        "text": "話す！$h",
+        "kana": "はなす",
+        "gloss": "talk"
+      }
+    ]
+  },
+  "1039573#15": {
+    "japanese": "いくつ？$s#$b#…考えたことも無かった#$b#ボクらが言うなら…「これまでに金のクルミをいくつ食べた？」$h#$b#…3,729個の金のクルミを食べたよ。#$b#…でも、10,000個食べないと長老にはなれないんだ。$s#$b#いつかなってみせるよ！$h",
+    "english": "How old? ...I've never even thought about it. If we were to say it... \"How many golden walnuts have you eaten so far?\" ...I've eaten 3,729 golden walnuts. ...But you can't become an elder unless you eat 10,000. I'll become one someday!",
+    "segments": [
+      {
+        "text": "いくつ？$s#$b#…",
+        "kana": "いくつ",
+        "gloss": "how old"
+      },
+      {
+        "text": "考えた",
+        "kana": "かんがえた",
+        "gloss": "thought"
+      },
+      {
+        "text": "ことも",
+        "kana": "ことも",
+        "gloss": "even (the fact of)"
+      },
+      {
+        "text": "無かった#$b#",
+        "kana": "なかった",
+        "gloss": "never did"
+      },
+      {
+        "text": "ボクら",
+        "kana": "ボクら",
+        "gloss": "we"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "言うなら…",
+        "kana": "いう なら",
+        "gloss": "if (we) say it"
+      },
+      {
+        "text": "「これまでに",
+        "kana": "これまでに",
+        "gloss": "so far"
+      },
+      {
+        "text": "金",
+        "kana": "きん",
+        "gloss": "golden"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "クルミ",
+        "kana": "クルミ",
+        "gloss": "walnuts"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "いくつ",
+        "kana": "いくつ",
+        "gloss": "how many"
+      },
+      {
+        "text": "食べた？」$h#$b#…",
+        "kana": "たべた",
+        "gloss": "have eaten"
+      },
+      {
+        "text": "3,729",
+        "kana": "3,729",
+        "gloss": "3,729"
+      },
+      {
+        "text": "個",
+        "kana": "こ",
+        "gloss": "(counter)"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "金",
+        "kana": "きん",
+        "gloss": "golden"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "クルミ",
+        "kana": "クルミ",
+        "gloss": "walnuts"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "食べたよ。#$b#…",
+        "kana": "たべたよ",
+        "gloss": "have eaten"
+      },
+      {
+        "text": "でも、",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "10,000",
+        "kana": "10,000",
+        "gloss": "10,000"
+      },
+      {
+        "text": "個",
+        "kana": "こ",
+        "gloss": "(counter)"
+      },
+      {
+        "text": "食べないと",
+        "kana": "たべないと",
+        "gloss": "unless (you) eat"
+      },
+      {
+        "text": "長老",
+        "kana": "ちょうろう",
+        "gloss": "elder"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(contrast)"
+      },
+      {
+        "text": "なれない",
+        "kana": "なれない",
+        "gloss": "can't become"
+      },
+      {
+        "text": "んだ。$s#$b#",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "いつか",
+        "kana": "いつか",
+        "gloss": "someday"
+      },
+      {
+        "text": "なってみせる",
+        "kana": "なって みせる",
+        "gloss": "will become (you'll see)"
+      },
+      {
+        "text": "よ！$h",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  },
+  "1039573#16": {
+    "japanese": "ねえ。",
+    "english": "Hey.",
+    "segments": [
+      {
+        "text": "ねえ。",
+        "kana": "ねえ",
+        "gloss": "hey"
+      }
+    ]
+  },
+  "1039573#17": {
+    "japanese": "…思い出したよ。$s",
+    "english": "...I remembered.",
+    "segments": [
+      {
+        "text": "…思い出した",
+        "kana": "おもいだした",
+        "gloss": "remembered"
+      },
+      {
+        "text": "よ。$s",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  },
+  "1039573#18": {
+    "japanese": "ボクの名前は…$s",
+    "english": "My name is...",
+    "segments": [
+      {
+        "text": "ボク",
+        "kana": "ボク",
+        "gloss": "I"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "名前",
+        "kana": "なまえ",
+        "gloss": "name"
+      },
+      {
+        "text": "は…$s",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      }
+    ]
+  },
+  "1039573#19": {
+    "japanese": "…ボクは、レオ。",
+    "english": "...I'm Leo.",
+    "segments": [
+      {
+        "text": "…ボク",
+        "kana": "ボク",
+        "gloss": "I"
+      },
+      {
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "レオ。",
+        "kana": "レオ",
+        "gloss": "Leo"
+      }
+    ]
+  }
+}

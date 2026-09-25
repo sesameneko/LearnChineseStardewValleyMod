@@ -1,0 +1,908 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Events-Backwoods.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "6963327#0": {
+    "japanese": "（ハっと息を飲んだ）…！$7",
+    "english": "(gasps)...!",
+    "segments": [
+      {
+        "text": "（ハっと",
+        "kana": "ハっと",
+        "gloss": "with a start"
+      },
+      {
+        "text": "息を飲んだ）…！$7",
+        "kana": "いき を のんだ",
+        "gloss": "gasped"
+      }
+    ]
+  },
+  "6963327#2": {
+    "japanese": "@… 大丈夫？$6",
+    "english": "@... are you okay?",
+    "segments": [
+      {
+        "text": "@… ",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "大丈夫？$6",
+        "kana": "だいじょうぶ",
+        "gloss": "okay?"
+      }
+    ]
+  },
+  "6963327#3": {
+    "japanese": "ちょっと擦りむいただけみたいね… .心配したよ！！",
+    "english": "Looks like you just scraped yourself a little... I was worried!!",
+    "segments": [
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a little"
+      },
+      {
+        "text": "擦りむいた",
+        "kana": "すりむいた",
+        "gloss": "scraped"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "just"
+      },
+      {
+        "text": "みたいね… .",
+        "kana": "みたいね",
+        "gloss": "it seems"
+      },
+      {
+        "text": "心配した",
+        "kana": "しんぱい した",
+        "gloss": "was worried"
+      },
+      {
+        "text": "よ！！",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  },
+  "6963327#4": {
+    "japanese": "私… 私は今まで命をうばったことはないの…$s",
+    "english": "I... I've never taken a life before...",
+    "segments": [
+      {
+        "text": "私… ",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "今まで",
+        "kana": "いままで",
+        "gloss": "until now"
+      },
+      {
+        "text": "命",
+        "kana": "いのち",
+        "gloss": "a life"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "うばったことはない",
+        "kana": "うばった こと は ない",
+        "gloss": "have never taken"
+      },
+      {
+        "text": "の…$s",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "6963327#5": {
+    "japanese": "悲しいけど、他には選択肢がなかった。",
+    "english": "It's sad, but there was no other choice.",
+    "segments": [
+      {
+        "text": "悲しい",
+        "kana": "かなしい",
+        "gloss": "sad"
+      },
+      {
+        "text": "けど、",
+        "kana": "けど",
+        "gloss": "but"
+      },
+      {
+        "text": "他",
+        "kana": "ほか",
+        "gloss": "other"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(in)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(contrast)"
+      },
+      {
+        "text": "選択肢",
+        "kana": "せんたくし",
+        "gloss": "options"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "なかった。",
+        "kana": "なかった",
+        "gloss": "there weren't"
+      }
+    ]
+  },
+  "6963327#6": {
+    "japanese": "モンスターは同情に値しない！",
+    "english": "Monsters don't deserve sympathy!",
+    "segments": [
+      {
+        "text": "モンスター",
+        "kana": "モンスター",
+        "gloss": "monsters"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "同情",
+        "kana": "どうじょう",
+        "gloss": "sympathy"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target)"
+      },
+      {
+        "text": "値しない！",
+        "kana": "あたいしない",
+        "gloss": "don't deserve"
+      }
+    ]
+  },
+  "6963327#7": {
+    "japanese": "世界は厳しいんだよ。",
+    "english": "The world is harsh.",
+    "segments": [
+      {
+        "text": "世界",
+        "kana": "せかい",
+        "gloss": "world"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "厳しい",
+        "kana": "きびしい",
+        "gloss": "harsh"
+      },
+      {
+        "text": "んだよ。",
+        "kana": "んだよ",
+        "gloss": "(you know)"
+      }
+    ]
+  },
+  "6963327#8": {
+    "japanese": "殺す必要があったの？",
+    "english": "Did you need to kill it?",
+    "segments": [
+      {
+        "text": "殺す",
+        "kana": "ころす",
+        "gloss": "to kill"
+      },
+      {
+        "text": "必要",
+        "kana": "ひつよう",
+        "gloss": "need"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あった",
+        "kana": "あった",
+        "gloss": "was there"
+      },
+      {
+        "text": "の？",
+        "kana": "の",
+        "gloss": "(question)"
+      }
+    ]
+  },
+  "6963327#9": {
+    "japanese": "そう… やらなきゃいけないことをやったわ。$s#$b#世界はとても厳しいところだと思うの。それはあなたにとっても、彼にとっても。そうでしょ？$6",
+    "english": "Yeah... I did what I had to do. I think the world is a very harsh place. For you, and for him too. Right?",
+    "segments": [
+      {
+        "text": "そう… ",
+        "kana": "そう",
+        "gloss": "yeah"
+      },
+      {
+        "text": "やらなきゃいけない",
+        "kana": "やらなきゃ いけない",
+        "gloss": "had to do"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "thing"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "やった",
+        "kana": "やった",
+        "gloss": "did"
+      },
+      {
+        "text": "わ。$s#$b#",
+        "kana": "わ",
+        "gloss": "(feminine)"
+      },
+      {
+        "text": "世界",
+        "kana": "せかい",
+        "gloss": "world"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very"
+      },
+      {
+        "text": "厳しい",
+        "kana": "きびしい",
+        "gloss": "harsh"
+      },
+      {
+        "text": "ところ",
+        "kana": "ところ",
+        "gloss": "place"
+      },
+      {
+        "text": "だ",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quote)"
+      },
+      {
+        "text": "思う",
+        "kana": "おもう",
+        "gloss": "think"
+      },
+      {
+        "text": "の。",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "にとっても、",
+        "kana": "に とって も",
+        "gloss": "for, too"
+      },
+      {
+        "text": "彼",
+        "kana": "かれ",
+        "gloss": "him"
+      },
+      {
+        "text": "にとっても。",
+        "kana": "に とって も",
+        "gloss": "for, too"
+      },
+      {
+        "text": "そうでしょ？$6",
+        "kana": "そう でしょ",
+        "gloss": "right?"
+      }
+    ]
+  },
+  "6963327#10": {
+    "japanese": "…彼らはただ生き残ろうとしているんじゃないの？ 私たちのように。$s#$b#彼らは私たちの敵かもしれないけど、それでも同情に値すると思う。$6#$b#それでも… 私はやらなきゃいけないことをしたの。$6",
+    "english": "...Aren't they just trying to survive? Like us. They may be our enemies, but I still think they deserve sympathy. Even so... I did what I had to.",
+    "segments": [
+      {
+        "text": "…彼ら",
+        "kana": "かれら",
+        "gloss": "they"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ただ",
+        "kana": "ただ",
+        "gloss": "just"
+      },
+      {
+        "text": "生き残ろうとしている",
+        "kana": "いきのころう と して いる",
+        "gloss": "trying to survive"
+      },
+      {
+        "text": "んじゃないの？ ",
+        "kana": "んじゃないの",
+        "gloss": "isn't it?"
+      },
+      {
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "us"
+      },
+      {
+        "text": "のように。$s#$b#",
+        "kana": "の ように",
+        "gloss": "like"
+      },
+      {
+        "text": "彼ら",
+        "kana": "かれら",
+        "gloss": "they"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "our"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "敵",
+        "kana": "てき",
+        "gloss": "enemies"
+      },
+      {
+        "text": "かもしれないけど、",
+        "kana": "かも しれない けど",
+        "gloss": "may be, but"
+      },
+      {
+        "text": "それでも",
+        "kana": "それでも",
+        "gloss": "still"
+      },
+      {
+        "text": "同情",
+        "kana": "どうじょう",
+        "gloss": "sympathy"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target)"
+      },
+      {
+        "text": "値する",
+        "kana": "あたいする",
+        "gloss": "deserve"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quote)"
+      },
+      {
+        "text": "思う。$6#$b#",
+        "kana": "おもう",
+        "gloss": "I think"
+      },
+      {
+        "text": "それでも… ",
+        "kana": "それでも",
+        "gloss": "even so"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "やらなきゃいけない",
+        "kana": "やらなきゃ いけない",
+        "gloss": "had to do"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "thing"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "した",
+        "kana": "した",
+        "gloss": "did"
+      },
+      {
+        "text": "の。$6",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "6963327#11": {
+    "japanese": "え？ 救助されたばかりの人が言うのはおかしな話ね…$h#$b#でも… そうね… それには気付き始めているわ… 現実は時々、私たちがやりたくないことをやれって強制する… 飲み込むのは簡単じゃないわ。$6",
+    "english": "Huh? That's a strange thing for someone who was just rescued to say... But... yeah... I'm starting to realize... reality sometimes forces us to do things we don't want to... It isn't easy to swallow.",
+    "segments": [
+      {
+        "text": "え？ ",
+        "kana": "え",
+        "gloss": "huh"
+      },
+      {
+        "text": "救助された",
+        "kana": "きゅうじょ された",
+        "gloss": "rescued"
+      },
+      {
+        "text": "ばかり",
+        "kana": "ばかり",
+        "gloss": "just"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "人",
+        "kana": "ひと",
+        "gloss": "person"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "言う",
+        "kana": "いう",
+        "gloss": "to say"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "おかしな",
+        "kana": "おかしな",
+        "gloss": "strange"
+      },
+      {
+        "text": "話",
+        "kana": "はなし",
+        "gloss": "story"
+      },
+      {
+        "text": "ね…$h#$b#",
+        "kana": "ね",
+        "gloss": "(isn't it)"
+      },
+      {
+        "text": "でも… ",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "そうね… ",
+        "kana": "そう ね",
+        "gloss": "yeah"
+      },
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(contrast)"
+      },
+      {
+        "text": "気付き始めている",
+        "kana": "きづきはじめて いる",
+        "gloss": "starting to notice"
+      },
+      {
+        "text": "わ… ",
+        "kana": "わ",
+        "gloss": "(feminine)"
+      },
+      {
+        "text": "現実",
+        "kana": "げんじつ",
+        "gloss": "reality"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "時々、",
+        "kana": "ときどき",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "us"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "やりたくない",
+        "kana": "やりたくない",
+        "gloss": "don't want to do"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "things"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "やれって",
+        "kana": "やれ って",
+        "gloss": "\"do it\""
+      },
+      {
+        "text": "強制する… ",
+        "kana": "きょうせい する",
+        "gloss": "forces"
+      },
+      {
+        "text": "飲み込む",
+        "kana": "のみこむ",
+        "gloss": "to swallow"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "簡単じゃない",
+        "kana": "かんたん じゃない",
+        "gloss": "isn't easy"
+      },
+      {
+        "text": "わ。$6",
+        "kana": "わ",
+        "gloss": "(feminine)"
+      }
+    ]
+  },
+  "6963327#12": {
+    "japanese": "ねえ！ 私はあなたを助けたのよ？ 罪悪感を抱くよりも、そっちの方を考えた方がいいんじゃない？$a",
+    "english": "Hey! I saved you, didn't I? Shouldn't you think about that rather than feeling guilty?",
+    "segments": [
+      {
+        "text": "ねえ！ ",
+        "kana": "ねえ",
+        "gloss": "hey"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "助けた",
+        "kana": "たすけた",
+        "gloss": "saved"
+      },
+      {
+        "text": "のよ？ ",
+        "kana": "のよ",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "罪悪感",
+        "kana": "ざいあくかん",
+        "gloss": "guilt"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "抱く",
+        "kana": "いだく",
+        "gloss": "to hold"
+      },
+      {
+        "text": "よりも、",
+        "kana": "よりも",
+        "gloss": "rather than"
+      },
+      {
+        "text": "そっち",
+        "kana": "そっち",
+        "gloss": "that"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "方",
+        "kana": "ほう",
+        "gloss": "side"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "考えた",
+        "kana": "かんがえた",
+        "gloss": "thinking"
+      },
+      {
+        "text": "方がいい",
+        "kana": "ほう が いい",
+        "gloss": "would be better"
+      },
+      {
+        "text": "んじゃない？$a",
+        "kana": "んじゃない",
+        "gloss": "isn't it?"
+      }
+    ]
+  },
+  "6963327#13": {
+    "japanese": "お願い… これからはもっと気をつけてね。あなたを失いたくないの。",
+    "english": "Please... be more careful from now on. I don't want to lose you.",
+    "segments": [
+      {
+        "text": "お願い… ",
+        "kana": "おねがい",
+        "gloss": "please"
+      },
+      {
+        "text": "これから",
+        "kana": "これから",
+        "gloss": "from now"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もっと",
+        "kana": "もっと",
+        "gloss": "more"
+      },
+      {
+        "text": "気をつけてね。",
+        "kana": "き を つけて ね",
+        "gloss": "be careful"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "失いたくない",
+        "kana": "うしないたくない",
+        "gloss": "don't want to lose"
+      },
+      {
+        "text": "の。",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "6963327#14": {
+    "japanese": "近くで安らかに眠らせてあげましょう…$6",
+    "english": "Let's let him rest in peace nearby...",
+    "segments": [
+      {
+        "text": "近く",
+        "kana": "ちかく",
+        "gloss": "nearby"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(at)"
+      },
+      {
+        "text": "安らかに",
+        "kana": "やすらかに",
+        "gloss": "peacefully"
+      },
+      {
+        "text": "眠らせてあげましょう…$6",
+        "kana": "ねむらせて あげましょう",
+        "gloss": "let's let him sleep"
+      }
+    ]
+  },
+  "6963327#15": {
+    "japanese": "今日は自分の剣を持ってきて良かったよ！$6",
+    "english": "Good thing I brought my sword today!",
+    "segments": [
+      {
+        "text": "今日",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "自分",
+        "kana": "じぶん",
+        "gloss": "my own"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "剣",
+        "kana": "けん",
+        "gloss": "sword"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "持ってきて",
+        "kana": "もって きて",
+        "gloss": "brought"
+      },
+      {
+        "text": "良かった",
+        "kana": "よかった",
+        "gloss": "was good"
+      },
+      {
+        "text": "よ！$6",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Festivals-FestivalDates.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "fall16": {
+    "japanese": "スターデューバレーまつり",
+    "english": "Stardew Valley Festival",
+    "segments": [
+      {
+        "text": "スターデューバレー",
+        "kana": "スターデューバレー",
+        "gloss": "Stardew Valley"
+      },
+      {
+        "text": "まつり",
+        "kana": "まつり",
+        "gloss": "festival"
+      }
+    ]
+  },
+  "fall27": {
+    "japanese": "スピリットイブ",
+    "english": "Spirit Eve",
+    "segments": [
+      {
+        "text": "スピリット",
+        "kana": "スピリット",
+        "gloss": "spirit"
+      },
+      {
+        "text": "イブ",
+        "kana": "イブ",
+        "gloss": "eve"
+      }
+    ]
+  },
+  "spring13": {
+    "japanese": "エッグフェスティバル",
+    "english": "Egg Festival",
+    "segments": [
+      {
+        "text": "エッグ",
+        "kana": "エッグ",
+        "gloss": "egg"
+      },
+      {
+        "text": "フェスティバル",
+        "kana": "フェスティバル",
+        "gloss": "festival"
+      }
+    ]
+  },
+  "spring24": {
+    "japanese": "フラワーダンス",
+    "english": "Flower Dance",
+    "segments": [
+      {
+        "text": "フラワー",
+        "kana": "フラワー",
+        "gloss": "flower"
+      },
+      {
+        "text": "ダンス",
+        "kana": "ダンス",
+        "gloss": "dance"
+      }
+    ]
+  },
+  "summer11": {
+    "japanese": "ルアウパーティー",
+    "english": "Luau Party",
+    "segments": [
+      {
+        "text": "ルアウ",
+        "kana": "ルアウ",
+        "gloss": "luau"
+      },
+      {
+        "text": "パーティー",
+        "kana": "パーティー",
+        "gloss": "party"
+      }
+    ]
+  },
+  "summer28": {
+    "japanese": "ゲッコウクラゲのダンス",
+    "english": "Dance of the Moonlight Jellyfish",
+    "segments": [
+      {
+        "text": "ゲッコウ",
+        "kana": "ゲッコウ",
+        "gloss": "moonlight"
+      },
+      {
+        "text": "クラゲ",
+        "kana": "クラゲ",
+        "gloss": "jellyfish"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "ダンス",
+        "kana": "ダンス",
+        "gloss": "dance"
+      }
+    ]
+  },
+  "winter25": {
+    "japanese": "冬星祭",
+    "english": "Winter Star Festival",
+    "segments": [
+      {
+        "text": "冬星祭",
+        "kana": "ふゆぼしまつり",
+        "gloss": "Feast of the Winter Star"
+      }
+    ]
+  },
+  "winter8": {
+    "japanese": "氷まつり",
+    "english": "Ice Festival",
+    "segments": [
+      {
+        "text": "氷",
+        "kana": "こおり",
+        "gloss": "ice"
+      },
+      {
+        "text": "まつり",
+        "kana": "まつり",
+        "gloss": "festival"
+      }
+    ]
+  }
+}

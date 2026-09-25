@@ -1,0 +1,74 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Pierre.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Fri.000": {
+    "japanese": "今週も、いっしょうけんめいはたらいたからね。金曜の夜くらいはくつろいだっていいでしょう。",
+    "english": "I worked hard again this week, after all. It's fine to relax at least on Friday night, right?",
+    "segments": [
+      {
+        "text": "今週",
+        "kana": "こんしゅう",
+        "gloss": "this week"
+      },
+      {
+        "text": "も、",
+        "kana": "も",
+        "gloss": "also"
+      },
+      {
+        "text": "いっしょうけんめい",
+        "kana": "いっしょうけんめい",
+        "gloss": "with all my might"
+      },
+      {
+        "text": "はたらいた",
+        "kana": "はたらいた",
+        "gloss": "worked"
+      },
+      {
+        "text": "からね。",
+        "kana": "からね",
+        "gloss": "after all"
+      },
+      {
+        "text": "金曜",
+        "kana": "きんよう",
+        "gloss": "Friday"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "of"
+      },
+      {
+        "text": "夜",
+        "kana": "よる",
+        "gloss": "night"
+      },
+      {
+        "text": "くらい",
+        "kana": "くらい",
+        "gloss": "at least"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "くつろいだって",
+        "kana": "くつろいだって",
+        "gloss": "relaxing"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "is fine"
+      },
+      {
+        "text": "でしょう。",
+        "kana": "でしょう",
+        "gloss": "right"
+      }
+    ]
+  }
+}

@@ -1,0 +1,668 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Willy.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Fri.000": {
+    "japanese": "海の塩っぽい魚どもを一日じゅうあつかってるとな、まったくのどがかわくのさ。",
+    "english": "When you handle salty sea fish all day, you sure get thirsty.",
+    "segments": [
+      {
+        "text": "海",
+        "kana": "うみ",
+        "gloss": "sea"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "塩っぽい",
+        "kana": "しおっぽい",
+        "gloss": "salty"
+      },
+      {
+        "text": "魚ども",
+        "kana": "さかなども",
+        "gloss": "fish (the lot of them)"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "一日じゅう",
+        "kana": "いちにちじゅう",
+        "gloss": "all day"
+      },
+      {
+        "text": "あつかってる",
+        "kana": "あつかってる",
+        "gloss": "handling"
+      },
+      {
+        "text": "とな、",
+        "kana": "とな",
+        "gloss": "when (you know)"
+      },
+      {
+        "text": "まったく",
+        "kana": "まったく",
+        "gloss": "really"
+      },
+      {
+        "text": "のど",
+        "kana": "のど",
+        "gloss": "throat"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "かわく",
+        "kana": "かわく",
+        "gloss": "gets dry (thirsty)"
+      },
+      {
+        "text": "のさ。",
+        "kana": "のさ",
+        "gloss": "(you see)"
+      }
+    ]
+  },
+  "Sat.000": {
+    "japanese": "ああ…ゆったりした昼釣りのあとにやる冷たい一杯ほど、いいもんはないねえ。$h",
+    "english": "Ah... nothing beats a cold one after a relaxing afternoon of fishing.",
+    "segments": [
+      {
+        "text": "ああ…",
+        "kana": "ああ",
+        "gloss": "ah"
+      },
+      {
+        "text": "ゆったりした",
+        "kana": "ゆったりした",
+        "gloss": "relaxed"
+      },
+      {
+        "text": "昼",
+        "kana": "ひる",
+        "gloss": "daytime"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "あと",
+        "kana": "あと",
+        "gloss": "after"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(at)"
+      },
+      {
+        "text": "やる",
+        "kana": "やる",
+        "gloss": "drink (have)"
+      },
+      {
+        "text": "冷たい",
+        "kana": "つめたい",
+        "gloss": "cold"
+      },
+      {
+        "text": "一杯",
+        "kana": "いっぱい",
+        "gloss": "a drink"
+      },
+      {
+        "text": "ほど、",
+        "kana": "ほど",
+        "gloss": "as much as"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "もん",
+        "kana": "もん",
+        "gloss": "thing"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ないねえ。$h",
+        "kana": "ないねえ",
+        "gloss": "there isn't, huh"
+      }
+    ]
+  },
+  "spring_9.000": {
+    "japanese": "きょうは医者の予約があるんでな、なにかほしいもんがあるんなら早く買ってったほうがいいぞ。",
+    "english": "I've got a doctor's appointment today, so if there's anything you want, you'd better buy it quick.",
+    "segments": [
+      {
+        "text": "きょう",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "医者",
+        "kana": "いしゃ",
+        "gloss": "doctor"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "予約",
+        "kana": "よやく",
+        "gloss": "appointment"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "have"
+      },
+      {
+        "text": "んでな、",
+        "kana": "んでな",
+        "gloss": "so, you see"
+      },
+      {
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "ほしい",
+        "kana": "ほしい",
+        "gloss": "want"
+      },
+      {
+        "text": "もん",
+        "kana": "もん",
+        "gloss": "thing"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "there is"
+      },
+      {
+        "text": "んなら",
+        "kana": "んなら",
+        "gloss": "if"
+      },
+      {
+        "text": "早く",
+        "kana": "はやく",
+        "gloss": "quickly"
+      },
+      {
+        "text": "買ってった",
+        "kana": "かってった",
+        "gloss": "buy and go"
+      },
+      {
+        "text": "ほうがいい",
+        "kana": "ほう が いい",
+        "gloss": "had better"
+      },
+      {
+        "text": "ぞ。",
+        "kana": "ぞ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  },
+  "spring_9.001": {
+    "japanese": "あー、親指に釣り針を刺しちまってな…これから先生にとってもらうんだ。",
+    "english": "Uh, I stuck a fish hook in my thumb... I'm about to have the doctor take it out.",
+    "segments": [
+      {
+        "text": "あー、",
+        "kana": "あー",
+        "gloss": "uh"
+      },
+      {
+        "text": "親指",
+        "kana": "おやゆび",
+        "gloss": "thumb"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)"
+      },
+      {
+        "text": "釣り針",
+        "kana": "つりばり",
+        "gloss": "fish hook"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "刺しちまってな…",
+        "kana": "さしちまってな",
+        "gloss": "went and stuck"
+      },
+      {
+        "text": "これから",
+        "kana": "これから",
+        "gloss": "from now"
+      },
+      {
+        "text": "先生",
+        "kana": "せんせい",
+        "gloss": "the doctor"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(by)"
+      },
+      {
+        "text": "とってもらう",
+        "kana": "とって もらう",
+        "gloss": "have (it) taken out"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "spring_9.002": {
+    "japanese": "うわっちい！痛いぜ、先生！$s",
+    "english": "Yowch! That hurts, doc!",
+    "segments": [
+      {
+        "text": "うわっちい！",
+        "kana": "うわっちい",
+        "gloss": "yowch"
+      },
+      {
+        "text": "痛い",
+        "kana": "いたい",
+        "gloss": "hurts"
+      },
+      {
+        "text": "ぜ、",
+        "kana": "ぜ",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "先生！$s",
+        "kana": "せんせい",
+        "gloss": "doc"
+      }
+    ]
+  },
+  "spring_9.003": {
+    "japanese": "海の寒い夜にそなえて、こうやってからだをあっためとかにゃあな。$h",
+    "english": "Gotta warm up my body like this to get ready for cold nights at sea.",
+    "segments": [
+      {
+        "text": "海",
+        "kana": "うみ",
+        "gloss": "sea"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "寒い",
+        "kana": "さむい",
+        "gloss": "cold"
+      },
+      {
+        "text": "夜",
+        "kana": "よる",
+        "gloss": "nights"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)"
+      },
+      {
+        "text": "そなえて、",
+        "kana": "そなえて",
+        "gloss": "preparing"
+      },
+      {
+        "text": "こうやって",
+        "kana": "こうやって",
+        "gloss": "like this"
+      },
+      {
+        "text": "からだ",
+        "kana": "からだ",
+        "gloss": "body"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "あっためとかにゃあな。$h",
+        "kana": "あっためとかにゃあな",
+        "gloss": "gotta warm up"
+      }
+    ]
+  },
+  "winter.000": {
+    "japanese": "海の寒い夜にそなえて、こうやってからだをあっためとかにゃあな。$h",
+    "english": "Gotta warm up my body like this to get ready for cold nights at sea.",
+    "segments": [
+      {
+        "text": "海",
+        "kana": "うみ",
+        "gloss": "sea"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "寒い",
+        "kana": "さむい",
+        "gloss": "cold"
+      },
+      {
+        "text": "夜",
+        "kana": "よる",
+        "gloss": "nights"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)"
+      },
+      {
+        "text": "そなえて、",
+        "kana": "そなえて",
+        "gloss": "preparing"
+      },
+      {
+        "text": "こうやって",
+        "kana": "こうやって",
+        "gloss": "like this"
+      },
+      {
+        "text": "からだ",
+        "kana": "からだ",
+        "gloss": "body"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "あっためとかにゃあな。$h",
+        "kana": "あっためとかにゃあな",
+        "gloss": "gotta warm up"
+      }
+    ]
+  },
+  "winter_15.000": {
+    "japanese": "あの 夜の市が やってるせいで 良く 眠れなくてね…まあ、 いいんだけどさ。オレは 適応力は あるから ",
+    "english": "I can't sleep well because that night market is going on... well, it's fine. I'm adaptable.",
+    "segments": [
+      {
+        "text": "あの ",
+        "kana": "あの",
+        "gloss": "that"
+      },
+      {
+        "text": "夜",
+        "kana": "よる",
+        "gloss": "night"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "市",
+        "kana": "いち",
+        "gloss": "market"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "やってる",
+        "kana": "やってる",
+        "gloss": "is going on"
+      },
+      {
+        "text": "せいで ",
+        "kana": "せいで",
+        "gloss": "because of"
+      },
+      {
+        "text": "良く ",
+        "kana": "よく",
+        "gloss": "well"
+      },
+      {
+        "text": "眠れなくてね…",
+        "kana": "ねむれなくてね",
+        "gloss": "can't sleep"
+      },
+      {
+        "text": "まあ、 ",
+        "kana": "まあ",
+        "gloss": "well"
+      },
+      {
+        "text": "いいんだけどさ。",
+        "kana": "いい んだ けど さ",
+        "gloss": "it's fine, though"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "I"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "適応力",
+        "kana": "てきおうりょく",
+        "gloss": "adaptability"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(contrast)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "have"
+      },
+      {
+        "text": "から ",
+        "kana": "から",
+        "gloss": "because"
+      }
+    ]
+  },
+  "winter_16.000": {
+    "japanese": "深海を行く 潜水艦に 乗ったことはあるかい？船長が 古くからの 知り合い なんだよ",
+    "english": "Have you ever ridden the submarine that goes to the deep sea? The captain is an old acquaintance.",
+    "segments": [
+      {
+        "text": "深海",
+        "kana": "しんかい",
+        "gloss": "deep sea"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(through)"
+      },
+      {
+        "text": "行く ",
+        "kana": "いく",
+        "gloss": "going"
+      },
+      {
+        "text": "潜水艦",
+        "kana": "せんすいかん",
+        "gloss": "submarine"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(on)"
+      },
+      {
+        "text": "乗ったこと",
+        "kana": "のった こと",
+        "gloss": "(the experience of) riding"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あるかい？",
+        "kana": "あるかい",
+        "gloss": "have you ever"
+      },
+      {
+        "text": "船長",
+        "kana": "せんちょう",
+        "gloss": "captain"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "古くから",
+        "kana": "ふるく から",
+        "gloss": "from long ago"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(linking)"
+      },
+      {
+        "text": "知り合い ",
+        "kana": "しりあい",
+        "gloss": "acquaintance"
+      },
+      {
+        "text": "なんだよ",
+        "kana": "なんだよ",
+        "gloss": "is"
+      }
+    ]
+  },
+  "winter_17.000": {
+    "japanese": "寒くて 暗い日に 飲む 温かい 飲み物は 最高だね…",
+    "english": "A warm drink on a cold, dark day is the best...",
+    "segments": [
+      {
+        "text": "寒くて ",
+        "kana": "さむくて",
+        "gloss": "cold and"
+      },
+      {
+        "text": "暗い",
+        "kana": "くらい",
+        "gloss": "dark"
+      },
+      {
+        "text": "日",
+        "kana": "ひ",
+        "gloss": "day"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(on)"
+      },
+      {
+        "text": "飲む ",
+        "kana": "のむ",
+        "gloss": "drink (to)"
+      },
+      {
+        "text": "温かい ",
+        "kana": "あたたかい",
+        "gloss": "warm"
+      },
+      {
+        "text": "飲み物",
+        "kana": "のみもの",
+        "gloss": "drink"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "最高だね…",
+        "kana": "さいこう だね",
+        "gloss": "is the best"
+      }
+    ]
+  }
+}

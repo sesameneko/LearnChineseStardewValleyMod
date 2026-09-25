@@ -1,0 +1,313 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Leo.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "dinner": {
+    "japanese": "お腹がすいたの？ボクはもう全部食べ終わったよ…$u",
+    "english": "Are you hungry? I already finished eating everything...",
+    "segments": [
+      {
+        "text": "お腹",
+        "kana": "おなか",
+        "gloss": "stomach"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "すいたの？",
+        "kana": "すいたの",
+        "gloss": "is empty? (hungry?)"
+      },
+      {
+        "text": "ボク",
+        "kana": "ボク",
+        "gloss": "I / me"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もう",
+        "kana": "もう",
+        "gloss": "already"
+      },
+      {
+        "text": "全部",
+        "kana": "ぜんぶ",
+        "gloss": "everything"
+      },
+      {
+        "text": "食べ終わったよ…$u",
+        "kana": "たべおわったよ",
+        "gloss": "finished eating"
+      }
+    ]
+  },
+  "school": {
+    "japanese": "今はお喋りできないよ、@。集中したいんだ…",
+    "english": "I can't chat right now, @. I want to concentrate...",
+    "segments": [
+      {
+        "text": "今",
+        "kana": "いま",
+        "gloss": "now"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "お喋りできないよ、",
+        "kana": "おしゃべり できないよ",
+        "gloss": "can't chat"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "集中したいんだ…",
+        "kana": "しゅうちゅう したいんだ",
+        "gloss": "(I) want to concentrate"
+      }
+    ]
+  },
+  "tent": {
+    "japanese": "ボクらはあまり雨を気にしないんだけど、たまにはここで乾かすのもいいね。",
+    "english": "We don't really mind the rain, but drying off here once in a while is nice too.",
+    "segments": [
+      {
+        "text": "ボクら",
+        "kana": "ボクら",
+        "gloss": "we"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あまり",
+        "kana": "あまり",
+        "gloss": "not much"
+      },
+      {
+        "text": "雨",
+        "kana": "あめ",
+        "gloss": "rain"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "気にしないんだけど、",
+        "kana": "きに しないんだけど",
+        "gloss": "don't mind, but"
+      },
+      {
+        "text": "たまに",
+        "kana": "たまに",
+        "gloss": "once in a while"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(at)"
+      },
+      {
+        "text": "乾かす",
+        "kana": "かわかす",
+        "gloss": "to dry off"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "also"
+      },
+      {
+        "text": "いいね。",
+        "kana": "いいね",
+        "gloss": "is nice"
+      }
+    ]
+  },
+  "winter.000": {
+    "japanese": "時間がかかりそうだけど、図書館の本をぜんぶ読もうと思ってるんだ。#$b#ボクはもっと色んなことを知らなきゃいけない…$s",
+    "english": "It looks like it'll take time, but I'm thinking of reading all the library's books. I have to know more about all kinds of things...",
+    "segments": [
+      {
+        "text": "時間",
+        "kana": "じかん",
+        "gloss": "time"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "かかりそうだけど、",
+        "kana": "かかりそうだけど",
+        "gloss": "seems it'll take, but"
+      },
+      {
+        "text": "図書館",
+        "kana": "としょかん",
+        "gloss": "library"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "本",
+        "kana": "ほん",
+        "gloss": "books"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "ぜんぶ",
+        "kana": "ぜんぶ",
+        "gloss": "all"
+      },
+      {
+        "text": "読もうと思ってるんだ。#$b#",
+        "kana": "よもう と おもってるんだ",
+        "gloss": "(I'm) thinking of reading"
+      },
+      {
+        "text": "ボク",
+        "kana": "ボク",
+        "gloss": "I / me"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もっと",
+        "kana": "もっと",
+        "gloss": "more"
+      },
+      {
+        "text": "色んな",
+        "kana": "いろんな",
+        "gloss": "all kinds of"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "things"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "知らなきゃいけない…$s",
+        "kana": "しらなきゃ いけない",
+        "gloss": "have to know"
+      }
+    ]
+  },
+  "winter_15.000": {
+    "japanese": "明かりを見るのが好きなんだ。#$b#思い出すんだ、とても、とても昔の何かを…$s",
+    "english": "I like looking at the lights. It reminds me of something from very, very long ago...",
+    "segments": [
+      {
+        "text": "明かり",
+        "kana": "あかり",
+        "gloss": "lights"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見る",
+        "kana": "みる",
+        "gloss": "to look at"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "好きなんだ。#$b#",
+        "kana": "すきなんだ",
+        "gloss": "(I) like"
+      },
+      {
+        "text": "思い出すんだ、",
+        "kana": "おもいだすんだ",
+        "gloss": "(it) reminds me"
+      },
+      {
+        "text": "とても、",
+        "kana": "とても",
+        "gloss": "very"
+      },
+      {
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very"
+      },
+      {
+        "text": "昔",
+        "kana": "むかし",
+        "gloss": "long ago"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of / from)"
+      },
+      {
+        "text": "何か",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "を…$s",
+        "kana": "を",
+        "gloss": "(object marker)"
+      }
+    ]
+  }
+}

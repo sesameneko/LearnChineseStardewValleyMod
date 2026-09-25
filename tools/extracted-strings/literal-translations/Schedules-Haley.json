@@ -1,0 +1,320 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Haley.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "marriage_Mon.000": {
+    "japanese": "ハーイ、ハニー！ちょうどエミリーに会いにきてたの。",
+    "english": "Hi, honey! I just came to see Emily.",
+    "segments": [
+      {
+        "text": "ハーイ、",
+        "kana": "ハーイ",
+        "gloss": "hi"
+      },
+      {
+        "text": "ハニー！",
+        "kana": "ハニー",
+        "gloss": "honey"
+      },
+      {
+        "text": "ちょうど",
+        "kana": "ちょうど",
+        "gloss": "just"
+      },
+      {
+        "text": "エミリー",
+        "kana": "エミリー",
+        "gloss": "Emily"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "会いに",
+        "kana": "あいに",
+        "gloss": "to see"
+      },
+      {
+        "text": "きてたの。",
+        "kana": "きてたの",
+        "gloss": "had come"
+      }
+    ]
+  },
+  "rain.000": {
+    "japanese": "ベッドから出るような天気じゃないでしょ、これ。",
+    "english": "This isn't the kind of weather to get out of bed in, is it.",
+    "segments": [
+      {
+        "text": "ベッド",
+        "kana": "ベッド",
+        "gloss": "bed"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "出る",
+        "kana": "でる",
+        "gloss": "get out"
+      },
+      {
+        "text": "ような",
+        "kana": "ような",
+        "gloss": "the kind of"
+      },
+      {
+        "text": "天気",
+        "kana": "てんき",
+        "gloss": "weather"
+      },
+      {
+        "text": "じゃないでしょ、",
+        "kana": "じゃないでしょ",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "これ。",
+        "kana": "これ",
+        "gloss": "this"
+      }
+    ]
+  },
+  "winter.000": {
+    "japanese": "ベッドから出るような温度じゃないでしょ、これ。",
+    "english": "This isn't the kind of temperature to get out of bed in, is it.",
+    "segments": [
+      {
+        "text": "ベッド",
+        "kana": "ベッド",
+        "gloss": "bed"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "出る",
+        "kana": "でる",
+        "gloss": "get out"
+      },
+      {
+        "text": "ような",
+        "kana": "ような",
+        "gloss": "the kind of"
+      },
+      {
+        "text": "温度",
+        "kana": "おんど",
+        "gloss": "temperature"
+      },
+      {
+        "text": "じゃないでしょ、",
+        "kana": "じゃないでしょ",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "これ。",
+        "kana": "これ",
+        "gloss": "this"
+      }
+    ]
+  },
+  "winter_16.000": {
+    "japanese": "寒すぎて ベッドから 出れない",
+    "english": "It's too cold, I can't get out of bed",
+    "segments": [
+      {
+        "text": "寒すぎて ",
+        "kana": "さむすぎて",
+        "gloss": "it's too cold, so"
+      },
+      {
+        "text": "ベッド",
+        "kana": "ベッド",
+        "gloss": "bed"
+      },
+      {
+        "text": "から ",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "出れない",
+        "kana": "でれない",
+        "gloss": "can't get out"
+      }
+    ]
+  },
+  "winter_16.001": {
+    "japanese": "たくさん着込んであったかくしておけば、寒い日も悪くないわね！$h",
+    "english": "If you bundle up in lots of layers and keep warm, cold days aren't bad either!",
+    "segments": [
+      {
+        "text": "たくさん",
+        "kana": "たくさん",
+        "gloss": "lots"
+      },
+      {
+        "text": "着込んで",
+        "kana": "きこんで",
+        "gloss": "bundle up and"
+      },
+      {
+        "text": "あったかくしておけば、",
+        "kana": "あったかくしておけば",
+        "gloss": "if you keep warm"
+      },
+      {
+        "text": "寒い",
+        "kana": "さむい",
+        "gloss": "cold"
+      },
+      {
+        "text": "日",
+        "kana": "ひ",
+        "gloss": "days"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "too"
+      },
+      {
+        "text": "悪くない",
+        "kana": "わるくない",
+        "gloss": "aren't bad"
+      },
+      {
+        "text": "わね！$h",
+        "kana": "わね",
+        "gloss": "(soft emphasis)"
+      }
+    ]
+  },
+  "winter_9.000": {
+    "japanese": "たいしたことじゃないよ…年に一度の健康診断。",
+    "english": "It's nothing serious... my once-a-year health checkup.",
+    "segments": [
+      {
+        "text": "たいした",
+        "kana": "たいした",
+        "gloss": "serious"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "thing"
+      },
+      {
+        "text": "じゃない",
+        "kana": "じゃない",
+        "gloss": "isn't"
+      },
+      {
+        "text": "よ…",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "年",
+        "kana": "ねん",
+        "gloss": "year"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(per)"
+      },
+      {
+        "text": "一度",
+        "kana": "いちど",
+        "gloss": "once"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "健康診断。",
+        "kana": "けんこう しんだん",
+        "gloss": "health checkup"
+      }
+    ]
+  },
+  "winter_9.001": {
+    "japanese": "えっと…鼻がちょっとずるずるいうんです、先生。でもそれ以外はなんともないです！",
+    "english": "Um... my nose is a little runny, doctor. But other than that, nothing's wrong!",
+    "segments": [
+      {
+        "text": "えっと…",
+        "kana": "えっと",
+        "gloss": "um"
+      },
+      {
+        "text": "鼻",
+        "kana": "はな",
+        "gloss": "nose"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a little"
+      },
+      {
+        "text": "ずるずるいう",
+        "kana": "ずるずるいう",
+        "gloss": "is runny"
+      },
+      {
+        "text": "んです、",
+        "kana": "んです",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "先生。",
+        "kana": "せんせい",
+        "gloss": "doctor"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "以外",
+        "kana": "いがい",
+        "gloss": "other than"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "なんともない",
+        "kana": "なんともない",
+        "gloss": "nothing wrong"
+      },
+      {
+        "text": "です！",
+        "kana": "です",
+        "gloss": "(polite)"
+      }
+    ]
+  }
+}

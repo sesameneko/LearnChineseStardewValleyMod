@@ -1,0 +1,302 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Clint.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "winter_15.000": {
+    "japanese": "明日 医者に 行かなくちゃ いけなくてね…マーメイドショーを 見たら 少しは 気分が おちつくかな？でも やらしい男かと思われたら…",
+    "english": "I have to go to the doctor tomorrow... maybe if I watch the mermaid show I'll calm down a little? But if they think I'm a pervert...",
+    "segments": [
+      {
+        "text": "明日 ",
+        "kana": "あした",
+        "gloss": "tomorrow"
+      },
+      {
+        "text": "医者",
+        "kana": "いしゃ",
+        "gloss": "doctor"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "行かなくちゃ いけなくてね…",
+        "kana": "いかなくちゃ いけなくてね",
+        "gloss": "(I) have to go, you see"
+      },
+      {
+        "text": "マーメイドショー",
+        "kana": "マーメイドショー",
+        "gloss": "mermaid show"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見たら ",
+        "kana": "みたら",
+        "gloss": "if (I) watch"
+      },
+      {
+        "text": "少し",
+        "kana": "すこし",
+        "gloss": "a little"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "気分",
+        "kana": "きぶん",
+        "gloss": "mood / feelings"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "おちつくかな？",
+        "kana": "おちつくかな",
+        "gloss": "will (it) calm down, I wonder"
+      },
+      {
+        "text": "でも ",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "やらしい",
+        "kana": "やらしい",
+        "gloss": "lecherous"
+      },
+      {
+        "text": "男",
+        "kana": "おとこ",
+        "gloss": "man"
+      },
+      {
+        "text": "かと思われたら…",
+        "kana": "か と おもわれたら",
+        "gloss": "if (I'm) thought to be"
+      }
+    ]
+  },
+  "winter_16.000": {
+    "japanese": "きょうは医者の予約があるからな、なにか買うならはやくしたほうがいいぞ。",
+    "english": "I have a doctor's appointment today, so if you're buying anything, you'd better be quick.",
+    "segments": [
+      {
+        "text": "きょう",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "医者",
+        "kana": "いしゃ",
+        "gloss": "doctor"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "予約",
+        "kana": "よやく",
+        "gloss": "appointment"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あるからな、",
+        "kana": "あるからな",
+        "gloss": "there is, so"
+      },
+      {
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "買うなら",
+        "kana": "かうなら",
+        "gloss": "if (you) buy"
+      },
+      {
+        "text": "はやく",
+        "kana": "はやく",
+        "gloss": "quickly"
+      },
+      {
+        "text": "したほうがいいぞ。",
+        "kana": "した ほう が いいぞ",
+        "gloss": "you'd better do"
+      }
+    ]
+  },
+  "winter_16.001": {
+    "japanese": "先生には肺を診てもらってるんだ…石炭のススを吸うのはからだによくないからな。",
+    "english": "I'm having the doctor examine my lungs... breathing coal soot isn't good for the body.",
+    "segments": [
+      {
+        "text": "先生",
+        "kana": "せんせい",
+        "gloss": "doctor"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(by)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "肺",
+        "kana": "はい",
+        "gloss": "lungs"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "診てもらってるんだ…",
+        "kana": "みて もらってるんだ",
+        "gloss": "(I'm) having examined"
+      },
+      {
+        "text": "石炭",
+        "kana": "せきたん",
+        "gloss": "coal"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "スス",
+        "kana": "スス",
+        "gloss": "soot"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "吸う",
+        "kana": "すう",
+        "gloss": "breathing in"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "からだ",
+        "kana": "からだ",
+        "gloss": "body"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)"
+      },
+      {
+        "text": "よくないからな。",
+        "kana": "よくないからな",
+        "gloss": "isn't good, you know"
+      }
+    ]
+  },
+  "winter_16.002": {
+    "japanese": "おれの肺どうですか、先生？息をはくとき、ときどきガラガラいうんですよ。",
+    "english": "How are my lungs, doctor? When I breathe out, they sometimes rattle.",
+    "segments": [
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "I / me"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "肺",
+        "kana": "はい",
+        "gloss": "lungs"
+      },
+      {
+        "text": "どうですか、",
+        "kana": "どうですか",
+        "gloss": "how are (they)"
+      },
+      {
+        "text": "先生？",
+        "kana": "せんせい",
+        "gloss": "doctor"
+      },
+      {
+        "text": "息",
+        "kana": "いき",
+        "gloss": "breath"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "はく",
+        "kana": "はく",
+        "gloss": "breathe out"
+      },
+      {
+        "text": "とき、",
+        "kana": "とき",
+        "gloss": "when"
+      },
+      {
+        "text": "ときどき",
+        "kana": "ときどき",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "ガラガラ",
+        "kana": "ガラガラ",
+        "gloss": "rattle (sound)"
+      },
+      {
+        "text": "いうんですよ。",
+        "kana": "いうんですよ",
+        "gloss": "(they) go"
+      }
+    ]
+  }
+}

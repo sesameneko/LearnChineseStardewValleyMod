@@ -1,0 +1,426 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Jodi.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Tue.000": {
+    "japanese": "うううっ…もう腕がふにゃふにゃ…ゼラチンみたい…$s",
+    "english": "Uuugh... my arms are already all floppy... like gelatin...",
+    "segments": [
+      {
+        "text": "うううっ…",
+        "kana": "うううっ",
+        "gloss": "uuugh"
+      },
+      {
+        "text": "もう",
+        "kana": "もう",
+        "gloss": "already"
+      },
+      {
+        "text": "腕",
+        "kana": "うで",
+        "gloss": "arms"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ふにゃふにゃ…",
+        "kana": "ふにゃふにゃ",
+        "gloss": "floppy"
+      },
+      {
+        "text": "ゼラチン",
+        "kana": "ゼラチン",
+        "gloss": "gelatin"
+      },
+      {
+        "text": "みたい…$s",
+        "kana": "みたい",
+        "gloss": "like"
+      }
+    ]
+  },
+  "spring.000": {
+    "japanese": "しーっ…寝てる。",
+    "english": "Shh... he's sleeping.",
+    "segments": [
+      {
+        "text": "しーっ…",
+        "kana": "しーっ",
+        "gloss": "shh"
+      },
+      {
+        "text": "寝てる。",
+        "kana": "ねてる",
+        "gloss": "is sleeping"
+      }
+    ]
+  },
+  "spring_11.000": {
+    "japanese": "ヴィンセントはお医者にいくのがなによりキライなの。 でも、ちゃんといかなきゃダメよ。",
+    "english": "Vincent hates going to the doctor more than anything. But he has to go properly.",
+    "segments": [
+      {
+        "text": "ヴィンセント",
+        "kana": "ヴィンセント",
+        "gloss": "Vincent"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "お医者",
+        "kana": "おいしゃ",
+        "gloss": "the doctor"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "いく",
+        "kana": "いく",
+        "gloss": "going"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(the act of)"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "なにより",
+        "kana": "なにより",
+        "gloss": "more than anything"
+      },
+      {
+        "text": "キライ",
+        "kana": "キライ",
+        "gloss": "dislikes"
+      },
+      {
+        "text": "なの。 ",
+        "kana": "なの",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "でも、",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "ちゃんと",
+        "kana": "ちゃんと",
+        "gloss": "properly"
+      },
+      {
+        "text": "いかなきゃダメ",
+        "kana": "いかなきゃダメ",
+        "gloss": "has to go"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  },
+  "spring_11.001": {
+    "japanese": "勇気を出して、ヴィンセント。お父さんのことを考えて。",
+    "english": "Be brave, Vincent. Think about your father.",
+    "segments": [
+      {
+        "text": "勇気",
+        "kana": "ゆうき",
+        "gloss": "courage"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "出して、",
+        "kana": "だして",
+        "gloss": "put forth"
+      },
+      {
+        "text": "ヴィンセント。",
+        "kana": "ヴィンセント",
+        "gloss": "Vincent"
+      },
+      {
+        "text": "お父さん",
+        "kana": "おとうさん",
+        "gloss": "father"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(about)"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "考えて。",
+        "kana": "かんがえて",
+        "gloss": "think"
+      }
+    ]
+  },
+  "spring_11.002": {
+    "japanese": "ハーヴィー先生？ヴィンセントの身長が気にかかるんです。この年にしては小さすぎませんか？",
+    "english": "Doctor Harvey? I'm worried about Vincent's height. Isn't he too small for his age?",
+    "segments": [
+      {
+        "text": "ハーヴィー",
+        "kana": "ハーヴィー",
+        "gloss": "Harvey"
+      },
+      {
+        "text": "先生？",
+        "kana": "せんせい",
+        "gloss": "doctor"
+      },
+      {
+        "text": "ヴィンセント",
+        "kana": "ヴィンセント",
+        "gloss": "Vincent"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "身長",
+        "kana": "しんちょう",
+        "gloss": "height"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "気にかかる",
+        "kana": "きに かかる",
+        "gloss": "weighs on my mind"
+      },
+      {
+        "text": "んです。",
+        "kana": "んです",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "年",
+        "kana": "とし",
+        "gloss": "age"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)"
+      },
+      {
+        "text": "しては",
+        "kana": "しては",
+        "gloss": "considering"
+      },
+      {
+        "text": "小さすぎませんか？",
+        "kana": "ちいさすぎませんか",
+        "gloss": "isn't (he) too small?"
+      }
+    ]
+  },
+  "spring_11.003": {
+    "japanese": "ヴィンセントはきょう、お医者さんでとても勇敢だったわ。わたしの自慢の子ね。",
+    "english": "Vincent was very brave at the doctor's today. He's my pride and joy.",
+    "segments": [
+      {
+        "text": "ヴィンセント",
+        "kana": "ヴィンセント",
+        "gloss": "Vincent"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "きょう、",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "お医者さん",
+        "kana": "おいしゃさん",
+        "gloss": "the doctor's"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(at)"
+      },
+      {
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very"
+      },
+      {
+        "text": "勇敢だった",
+        "kana": "ゆうかん だった",
+        "gloss": "was brave"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(soft emphasis)"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "自慢の",
+        "kana": "じまん の",
+        "gloss": "proud"
+      },
+      {
+        "text": "子",
+        "kana": "こ",
+        "gloss": "child"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(you know)"
+      }
+    ]
+  },
+  "spring_18.000": {
+    "japanese": "ちょっと！こっちは個別予約してあるの、割り込まないでよ！$u",
+    "english": "Hey! We have a private appointment here, don't cut in!",
+    "segments": [
+      {
+        "text": "ちょっと！",
+        "kana": "ちょっと",
+        "gloss": "hey"
+      },
+      {
+        "text": "こっち",
+        "kana": "こっち",
+        "gloss": "we (this side)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "個別",
+        "kana": "こべつ",
+        "gloss": "individual"
+      },
+      {
+        "text": "予約してある",
+        "kana": "よやく してある",
+        "gloss": "have booked"
+      },
+      {
+        "text": "の、",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "割り込まないで",
+        "kana": "わりこまないで",
+        "gloss": "don't cut in"
+      },
+      {
+        "text": "よ！$u",
+        "kana": "よ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  },
+  "winter_17.000": {
+    "japanese": "彼らのように 世界を 旅することが できたなら…はあ…",
+    "english": "If only I could travel the world like them... sigh...",
+    "segments": [
+      {
+        "text": "彼ら",
+        "kana": "かれら",
+        "gloss": "them"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "ように ",
+        "kana": "ように",
+        "gloss": "like"
+      },
+      {
+        "text": "世界",
+        "kana": "せかい",
+        "gloss": "world"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "旅する",
+        "kana": "たびする",
+        "gloss": "to travel"
+      },
+      {
+        "text": "ことが ",
+        "kana": "ことが",
+        "gloss": "(the act)"
+      },
+      {
+        "text": "できたなら…",
+        "kana": "できたなら",
+        "gloss": "if (I) could"
+      },
+      {
+        "text": "はあ…",
+        "kana": "はあ",
+        "gloss": "sigh"
+      }
+    ]
+  }
+}

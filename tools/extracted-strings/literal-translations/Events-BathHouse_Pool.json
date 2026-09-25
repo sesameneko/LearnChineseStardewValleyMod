@@ -1,0 +1,505 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Events-BathHouse_Pool.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "38#0": {
+    "japanese": "来てくれたんだ…手紙、届いたかどうか心配だったの。$6",
+    "english": "You came... I was worried whether my letter reached you.",
+    "segments": [
+      {
+        "text": "来てくれた",
+        "kana": "きてくれた",
+        "gloss": "you came"
+      },
+      {
+        "text": "んだ…",
+        "kana": "んだ",
+        "gloss": "(so)"
+      },
+      {
+        "text": "手紙、",
+        "kana": "てがみ",
+        "gloss": "letter"
+      },
+      {
+        "text": "届いたか",
+        "kana": "とどいたか",
+        "gloss": "whether (it) arrived"
+      },
+      {
+        "text": "どうか",
+        "kana": "どうか",
+        "gloss": "or not"
+      },
+      {
+        "text": "心配だった",
+        "kana": "しんぱい だった",
+        "gloss": "was worried"
+      },
+      {
+        "text": "の。$6",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "38#1": {
+    "japanese": "わたしたち2人だけみたいだね。$8",
+    "english": "Looks like it's just the two of us.",
+    "segments": [
+      {
+        "text": "わたしたち",
+        "kana": "わたしたち",
+        "gloss": "we"
+      },
+      {
+        "text": "2人",
+        "kana": "ふたり",
+        "gloss": "two people"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "only"
+      },
+      {
+        "text": "みたい",
+        "kana": "みたい",
+        "gloss": "seems"
+      },
+      {
+        "text": "だね。$8",
+        "kana": "だね",
+        "gloss": "(huh)"
+      }
+    ]
+  },
+  "38#2": {
+    "japanese": "冷たい夜風にあたったあとのお風呂って、きもちいいよね。$6",
+    "english": "A bath after being out in the cold night wind feels good, doesn't it.",
+    "segments": [
+      {
+        "text": "冷たい",
+        "kana": "つめたい",
+        "gloss": "cold"
+      },
+      {
+        "text": "夜風",
+        "kana": "よかぜ",
+        "gloss": "night wind"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "あたった",
+        "kana": "あたった",
+        "gloss": "being exposed"
+      },
+      {
+        "text": "あと",
+        "kana": "あと",
+        "gloss": "after"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "お風呂",
+        "kana": "おふろ",
+        "gloss": "bath"
+      },
+      {
+        "text": "って、",
+        "kana": "って",
+        "gloss": "(topic)"
+      },
+      {
+        "text": "きもちいい",
+        "kana": "きもちいい",
+        "gloss": "feels good"
+      },
+      {
+        "text": "よね。$6",
+        "kana": "よね",
+        "gloss": "doesn't it"
+      }
+    ]
+  },
+  "38#3": {
+    "japanese": "$q -1 null#なんで今夜呼び出したか、わかる？$8#$r -1 0 event_pool1#なにか、言いたいことがあるんだよね？#$r -1 0 event_pool2#正直、いまいちわかってない。#$r -1 0 event_pool3#水着すがたが見たかったんでしょ？",
+    "english": "Do you know why I called you out tonight? / You have something you want to say, right? / Honestly, I don't really get it. / You wanted to see me in a swimsuit, right?",
+    "segments": [
+      {
+        "text": "$q -1 null#",
+        "kana": "1 null",
+        "gloss": "(question trigger)"
+      },
+      {
+        "text": "なんで",
+        "kana": "なんで",
+        "gloss": "why"
+      },
+      {
+        "text": "今夜",
+        "kana": "こんや",
+        "gloss": "tonight"
+      },
+      {
+        "text": "呼び出したか、",
+        "kana": "よびだしたか",
+        "gloss": "(I) called (you) out"
+      },
+      {
+        "text": "わかる？$8#",
+        "kana": "わかる",
+        "gloss": "do you know"
+      },
+      {
+        "text": "$r -1 0 event_pool1#",
+        "kana": "1 0 event pool1",
+        "gloss": "(response option)"
+      },
+      {
+        "text": "なにか、",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "言いたい",
+        "kana": "いいたい",
+        "gloss": "want to say"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "thing"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "have"
+      },
+      {
+        "text": "んだよね？#",
+        "kana": "んだよね",
+        "gloss": "right?"
+      },
+      {
+        "text": "$r -1 0 event_pool2#",
+        "kana": "1 0 event pool2",
+        "gloss": "(response option)"
+      },
+      {
+        "text": "正直、",
+        "kana": "しょうじき",
+        "gloss": "honestly"
+      },
+      {
+        "text": "いまいち",
+        "kana": "いまいち",
+        "gloss": "not quite"
+      },
+      {
+        "text": "わかってない。#",
+        "kana": "わかってない",
+        "gloss": "don't understand"
+      },
+      {
+        "text": "$r -1 0 event_pool3#",
+        "kana": "1 0 event pool3",
+        "gloss": "(response option)"
+      },
+      {
+        "text": "水着",
+        "kana": "みずぎ",
+        "gloss": "swimsuit"
+      },
+      {
+        "text": "すがた",
+        "kana": "すがた",
+        "gloss": "figure (in)"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見たかった",
+        "kana": "みたかった",
+        "gloss": "wanted to see"
+      },
+      {
+        "text": "んでしょ？",
+        "kana": "んでしょ",
+        "gloss": "right?"
+      }
+    ]
+  },
+  "38#4": {
+    "japanese": "えっと、なんて言ったらいいのかな…$8",
+    "english": "Um, how should I put it...",
+    "segments": [
+      {
+        "text": "えっと、",
+        "kana": "えっと",
+        "gloss": "um"
+      },
+      {
+        "text": "なんて",
+        "kana": "なんて",
+        "gloss": "how"
+      },
+      {
+        "text": "言ったら",
+        "kana": "いったら",
+        "gloss": "if (I) say"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "のかな…$8",
+        "kana": "のかな",
+        "gloss": "I wonder"
+      }
+    ]
+  },
+  "38#5": {
+    "japanese": "あなたにうちあけるつもりだったの…わたしの気持ち。$8#$b#ずっと、あなたのことで頭がいっぱいなの…$8#$b#こんな気持ちになるの、あなたがはじめて。$8",
+    "english": "I was meaning to confide in you... my feelings. / My head has been full of you all this time... / You're the first to make me feel like this.",
+    "segments": [
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "うちあける",
+        "kana": "うちあける",
+        "gloss": "confide"
+      },
+      {
+        "text": "つもりだった",
+        "kana": "つもりだった",
+        "gloss": "was meaning to"
+      },
+      {
+        "text": "の…",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "('s)"
+      },
+      {
+        "text": "気持ち。$8#$b#",
+        "kana": "きもち",
+        "gloss": "feelings"
+      },
+      {
+        "text": "ずっと、",
+        "kana": "ずっと",
+        "gloss": "all this time"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(about)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(matters)"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(with)"
+      },
+      {
+        "text": "頭",
+        "kana": "あたま",
+        "gloss": "head"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いっぱい",
+        "kana": "いっぱい",
+        "gloss": "full"
+      },
+      {
+        "text": "なの…$8#$b#",
+        "kana": "なの",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "こんな",
+        "kana": "こんな",
+        "gloss": "this kind of"
+      },
+      {
+        "text": "気持ち",
+        "kana": "きもち",
+        "gloss": "feeling"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)"
+      },
+      {
+        "text": "なる",
+        "kana": "なる",
+        "gloss": "come to have"
+      },
+      {
+        "text": "の、",
+        "kana": "の",
+        "gloss": "(the act of)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "はじめて。$8",
+        "kana": "はじめて",
+        "gloss": "the first time"
+      }
+    ]
+  },
+  "38#6": {
+    "japanese": "$q -1 null#…$8#$r -1 0 event_pool4#ありがとう。きみとおなじ気持ちだよ。#$r -1 -1500 event_pool5#ごめん、君のことはそういうふうには想ってないんだ…",
+    "english": "... / Thank you. I feel the same as you. / Sorry, I don't think of you that way...",
+    "segments": [
+      {
+        "text": "$q -1 null#…$8#",
+        "kana": "1 null",
+        "gloss": "(question trigger)"
+      },
+      {
+        "text": "$r -1 0 event_pool4#",
+        "kana": "1 0 event pool4",
+        "gloss": "(response option)"
+      },
+      {
+        "text": "ありがとう。",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      },
+      {
+        "text": "きみ",
+        "kana": "きみ",
+        "gloss": "you"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(as)"
+      },
+      {
+        "text": "おなじ",
+        "kana": "おなじ",
+        "gloss": "same"
+      },
+      {
+        "text": "気持ち",
+        "kana": "きもち",
+        "gloss": "feelings"
+      },
+      {
+        "text": "だよ。#",
+        "kana": "だよ",
+        "gloss": "(it is)"
+      },
+      {
+        "text": "$r -1 -1500 event_pool5#",
+        "kana": "1 1500 event pool5",
+        "gloss": "(response option)"
+      },
+      {
+        "text": "ごめん、",
+        "kana": "ごめん",
+        "gloss": "sorry"
+      },
+      {
+        "text": "君",
+        "kana": "きみ",
+        "gloss": "you"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(about)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(matters)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "そういうふうに",
+        "kana": "そういうふうに",
+        "gloss": "in that way"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "想ってない",
+        "kana": "おもってない",
+        "gloss": "don't feel"
+      },
+      {
+        "text": "んだ…",
+        "kana": "んだ",
+        "gloss": "(you see)"
+      }
+    ]
+  }
+}

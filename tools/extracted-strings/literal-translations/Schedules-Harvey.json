@@ -1,0 +1,400 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Harvey.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "Fri.000": {
+    "japanese": "この食材なら健康的な食生活に組み込んでも問題ないな。",
+    "english": "With these ingredients, there's no problem incorporating them into a healthy diet.",
+    "segments": [
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "these"
+      },
+      {
+        "text": "食材",
+        "kana": "しょくざい",
+        "gloss": "ingredients"
+      },
+      {
+        "text": "なら",
+        "kana": "なら",
+        "gloss": "if (it's)"
+      },
+      {
+        "text": "健康的な",
+        "kana": "けんこうてきな",
+        "gloss": "healthy"
+      },
+      {
+        "text": "食生活",
+        "kana": "しょくせいかつ",
+        "gloss": "diet"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)"
+      },
+      {
+        "text": "組み込んでも",
+        "kana": "くみこんでも",
+        "gloss": "even if incorporated"
+      },
+      {
+        "text": "問題",
+        "kana": "もんだい",
+        "gloss": "problem"
+      },
+      {
+        "text": "ない",
+        "kana": "ない",
+        "gloss": "there isn't"
+      },
+      {
+        "text": "な。",
+        "kana": "な",
+        "gloss": "(huh)"
+      }
+    ]
+  },
+  "Fri.001": {
+    "japanese": "買ってきたものを片づけてるんだ。",
+    "english": "I'm putting away the things I bought.",
+    "segments": [
+      {
+        "text": "買ってきた",
+        "kana": "かってきた",
+        "gloss": "bought (and brought)"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "片づけてる",
+        "kana": "かたづけてる",
+        "gloss": "am putting away"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "Sat.000": {
+    "japanese": "買ってきたものを片づけてるんだ。",
+    "english": "I'm putting away the things I bought.",
+    "segments": [
+      {
+        "text": "買ってきた",
+        "kana": "かってきた",
+        "gloss": "bought (and brought)"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "片づけてる",
+        "kana": "かたづけてる",
+        "gloss": "am putting away"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "marriageJob.000": {
+    "japanese": "やあ、ハニー。診療所でなにしてるんだい？#$e#なあんだ、僕に会いにきただけか。なんだかいいね。$h",
+    "english": "Hi, honey. What are you doing at the clinic? Oh, you just came to see me. That's kind of nice.",
+    "segments": [
+      {
+        "text": "やあ、",
+        "kana": "やあ",
+        "gloss": "hi"
+      },
+      {
+        "text": "ハニー。",
+        "kana": "ハニー",
+        "gloss": "honey"
+      },
+      {
+        "text": "診療所",
+        "kana": "しんりょうじょ",
+        "gloss": "clinic"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "なに",
+        "kana": "なに",
+        "gloss": "what"
+      },
+      {
+        "text": "してるんだい？#$e#",
+        "kana": "してるんだい",
+        "gloss": "are you doing"
+      },
+      {
+        "text": "なあんだ、",
+        "kana": "なあんだ",
+        "gloss": "oh, so that's it"
+      },
+      {
+        "text": "僕",
+        "kana": "ぼく",
+        "gloss": "me"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "会い",
+        "kana": "あい",
+        "gloss": "see"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(in order to)"
+      },
+      {
+        "text": "きた",
+        "kana": "きた",
+        "gloss": "came"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "just"
+      },
+      {
+        "text": "か。",
+        "kana": "か",
+        "gloss": "(I see)"
+      },
+      {
+        "text": "なんだか",
+        "kana": "なんだか",
+        "gloss": "somehow"
+      },
+      {
+        "text": "いいね。$h",
+        "kana": "いいね",
+        "gloss": "nice"
+      }
+    ]
+  },
+  "marriage_Mon.000": {
+    "japanese": "やあ！必需品をいくつか買いに来てたんだよ。健康的な料理がつくれるようにね。",
+    "english": "Hi! I came to buy some necessities. So I can make healthy meals.",
+    "segments": [
+      {
+        "text": "やあ！",
+        "kana": "やあ",
+        "gloss": "hi"
+      },
+      {
+        "text": "必需品",
+        "kana": "ひつじゅひん",
+        "gloss": "necessities"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "いくつか",
+        "kana": "いくつか",
+        "gloss": "some"
+      },
+      {
+        "text": "買い",
+        "kana": "かい",
+        "gloss": "buy"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(in order to)"
+      },
+      {
+        "text": "来てたんだよ。",
+        "kana": "きてたんだよ",
+        "gloss": "had come"
+      },
+      {
+        "text": "健康的な",
+        "kana": "けんこうてきな",
+        "gloss": "healthy"
+      },
+      {
+        "text": "料理",
+        "kana": "りょうり",
+        "gloss": "meals"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "つくれる",
+        "kana": "つくれる",
+        "gloss": "can make"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(you see)"
+      }
+    ]
+  },
+  "marriage_Mon.001": {
+    "japanese": "水が流れる音を聞いてるとほっとするんだ。",
+    "english": "Listening to the sound of flowing water relaxes me.",
+    "segments": [
+      {
+        "text": "水",
+        "kana": "みず",
+        "gloss": "water"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "流れる",
+        "kana": "ながれる",
+        "gloss": "flowing"
+      },
+      {
+        "text": "音",
+        "kana": "おと",
+        "gloss": "sound"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "聞いてる",
+        "kana": "きいてる",
+        "gloss": "listening"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "when"
+      },
+      {
+        "text": "ほっとする",
+        "kana": "ほっとする",
+        "gloss": "feel relieved"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "winter_15.000": {
+    "japanese": "冬って どんよりしがちな 季節だけど、こうした イベントが あると 少し 明るくなるよね！",
+    "english": "Winter tends to be a gloomy season, but having events like this brightens it a bit!",
+    "segments": [
+      {
+        "text": "冬",
+        "kana": "ふゆ",
+        "gloss": "winter"
+      },
+      {
+        "text": "って ",
+        "kana": "って",
+        "gloss": "(topic)"
+      },
+      {
+        "text": "どんよりしがちな ",
+        "kana": "どんよりしがちな",
+        "gloss": "tending to be gloomy"
+      },
+      {
+        "text": "季節",
+        "kana": "きせつ",
+        "gloss": "season"
+      },
+      {
+        "text": "だけど、",
+        "kana": "だけど",
+        "gloss": "but"
+      },
+      {
+        "text": "こうした ",
+        "kana": "こうした",
+        "gloss": "this kind of"
+      },
+      {
+        "text": "イベント",
+        "kana": "イベント",
+        "gloss": "event"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "there is"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "when"
+      },
+      {
+        "text": "少し ",
+        "kana": "すこし",
+        "gloss": "a little"
+      },
+      {
+        "text": "明るくなる",
+        "kana": "あかるく なる",
+        "gloss": "becomes brighter"
+      },
+      {
+        "text": "よね！",
+        "kana": "よね",
+        "gloss": "(right)"
+      }
+    ]
+  }
+}

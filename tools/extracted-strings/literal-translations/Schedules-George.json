@@ -1,0 +1,329 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-George.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "23.000": {
+    "japanese": "はあああぁぁ…きょうは家内に病院へつれてこられた。",
+    "english": "Haaah... today my wife dragged me to the clinic.",
+    "segments": [
+      {
+        "text": "はあああぁぁ…",
+        "kana": "はあああぁぁ",
+        "gloss": "haaah"
+      },
+      {
+        "text": "きょう",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "家内",
+        "kana": "かない",
+        "gloss": "my wife"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(by)"
+      },
+      {
+        "text": "病院",
+        "kana": "びょういん",
+        "gloss": "clinic"
+      },
+      {
+        "text": "へ",
+        "kana": "へ",
+        "gloss": "(to)"
+      },
+      {
+        "text": "つれてこられた。",
+        "kana": "つれてこられた",
+        "gloss": "was brought"
+      }
+    ]
+  },
+  "23.001": {
+    "japanese": "ブツブツ…医者なんぞなんにもならん…ブツブツ…",
+    "english": "Grumble... doctors are good for nothing... grumble...",
+    "segments": [
+      {
+        "text": "ブツブツ…",
+        "kana": "ブツブツ",
+        "gloss": "grumble"
+      },
+      {
+        "text": "医者",
+        "kana": "いしゃ",
+        "gloss": "doctors"
+      },
+      {
+        "text": "なんぞ",
+        "kana": "なんぞ",
+        "gloss": "the likes of"
+      },
+      {
+        "text": "なんにもならん…",
+        "kana": "なんにもならん",
+        "gloss": "are good for nothing"
+      },
+      {
+        "text": "ブツブツ…",
+        "kana": "ブツブツ",
+        "gloss": "grumble"
+      }
+    ]
+  },
+  "23.002": {
+    "japanese": "それで、あとどれくらいかかるんだね、先生？",
+    "english": "So, how much longer will it take, doctor?",
+    "segments": [
+      {
+        "text": "それで、",
+        "kana": "それで",
+        "gloss": "so"
+      },
+      {
+        "text": "あと",
+        "kana": "あと",
+        "gloss": "remaining"
+      },
+      {
+        "text": "どれくらい",
+        "kana": "どれくらい",
+        "gloss": "how much"
+      },
+      {
+        "text": "かかる",
+        "kana": "かかる",
+        "gloss": "will take"
+      },
+      {
+        "text": "んだね、",
+        "kana": "んだね",
+        "gloss": "(is it)"
+      },
+      {
+        "text": "先生？",
+        "kana": "せんせい",
+        "gloss": "doctor"
+      }
+    ]
+  },
+  "Sun.000": {
+    "japanese": "信心なぞもったことはないさ、だがな…わしも年をとったな。",
+    "english": "I've never had faith, but y'know... I've gotten old too.",
+    "segments": [
+      {
+        "text": "信心",
+        "kana": "しんじん",
+        "gloss": "faith"
+      },
+      {
+        "text": "なぞ",
+        "kana": "なぞ",
+        "gloss": "the likes of"
+      },
+      {
+        "text": "もった",
+        "kana": "もった",
+        "gloss": "had"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(experience)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ない",
+        "kana": "ない",
+        "gloss": "never"
+      },
+      {
+        "text": "さ、",
+        "kana": "さ",
+        "gloss": "(casual emphasis)"
+      },
+      {
+        "text": "だがな…",
+        "kana": "だがな",
+        "gloss": "but y'know"
+      },
+      {
+        "text": "わし",
+        "kana": "わし",
+        "gloss": "I"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "too"
+      },
+      {
+        "text": "年",
+        "kana": "とし",
+        "gloss": "age"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "とった",
+        "kana": "とった",
+        "gloss": "have gotten"
+      },
+      {
+        "text": "な。",
+        "kana": "な",
+        "gloss": "(huh)"
+      }
+    ]
+  },
+  "Sun.001": {
+    "japanese": "ヘへへ...ここに来るために教会をスキップしてきた！ヨーバが腹を立てすぎないことを願ってる。$h",
+    "english": "Heheh... I skipped church to come here! I hope Yoba doesn't get too angry.",
+    "segments": [
+      {
+        "text": "ヘへへ...",
+        "kana": "ヘへへ",
+        "gloss": "heheh"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "来る",
+        "kana": "くる",
+        "gloss": "come"
+      },
+      {
+        "text": "ために",
+        "kana": "ために",
+        "gloss": "in order to"
+      },
+      {
+        "text": "教会",
+        "kana": "きょうかい",
+        "gloss": "church"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "スキップしてきた！",
+        "kana": "スキップしてきた",
+        "gloss": "skipped (and came)"
+      },
+      {
+        "text": "ヨーバ",
+        "kana": "ヨーバ",
+        "gloss": "Yoba"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "腹を立てすぎない",
+        "kana": "はらを たてすぎない",
+        "gloss": "doesn't get too angry"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(that)"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "願ってる。$h",
+        "kana": "ねがってる",
+        "gloss": "I hope"
+      }
+    ]
+  },
+  "winter_17.000": {
+    "japanese": "ここには 無料の コーヒー目当てで 来てるだけじゃ。",
+    "english": "I only come here for the free coffee.",
+    "segments": [
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "無料",
+        "kana": "むりょう",
+        "gloss": "free"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "コーヒー",
+        "kana": "コーヒー",
+        "gloss": "coffee"
+      },
+      {
+        "text": "目当て",
+        "kana": "めあて",
+        "gloss": "aim"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(for)"
+      },
+      {
+        "text": "来てる",
+        "kana": "きてる",
+        "gloss": "come"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "only"
+      },
+      {
+        "text": "じゃ。",
+        "kana": "じゃ",
+        "gloss": "(it is)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Dialogue-Gil.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "ComeBackLater": {
+    "japanese": "…何か 見せたいものが ある時に 戻ってきなされ。",
+    "english": "...Come back when you have something you want to show me.",
+    "segments": [
+      {
+        "text": "…何か ",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "見せたい",
+        "kana": "みせたい",
+        "gloss": "want to show"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "there is"
+      },
+      {
+        "text": "時",
+        "kana": "とき",
+        "gloss": "when"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(at)"
+      },
+      {
+        "text": "戻ってきなされ。",
+        "kana": "もどってきなされ",
+        "gloss": "come back (old-fashioned)"
+      }
+    ]
+  },
+  "Snoring": {
+    "japanese": "…グーッ…",
+    "english": "...Zzz...",
+    "segments": [
+      {
+        "text": "…グーッ…",
+        "kana": "グーッ",
+        "gloss": "*snore*"
+      }
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Schedules-Leah.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "marriage_Mon.000": {
+    "japanese": "こんにちは、@。ちょっと外の空気にふれようかと思って。家にこもりっぱなしで、ちょっとヘンになりそうだったからさ。",
+    "english": "Hello, @. I thought I'd get a bit of outside air. I'd been shut up in the house nonstop and was about to go a little crazy.",
+    "segments": [
+      {
+        "text": "こんにちは、",
+        "kana": "こんにちは",
+        "gloss": "hello"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a bit"
+      },
+      {
+        "text": "外",
+        "kana": "そと",
+        "gloss": "outside"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)"
+      },
+      {
+        "text": "空気",
+        "kana": "くうき",
+        "gloss": "air"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "ふれようかと思って。",
+        "kana": "ふれようか と おもって",
+        "gloss": "thought I'd get / touch"
+      },
+      {
+        "text": "家",
+        "kana": "いえ",
+        "gloss": "house"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(in)"
+      },
+      {
+        "text": "こもりっぱなしで、",
+        "kana": "こもりっぱなしで",
+        "gloss": "shut in the whole time"
+      },
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a bit"
+      },
+      {
+        "text": "ヘン",
+        "kana": "ヘン",
+        "gloss": "strange / crazy"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to become)"
+      },
+      {
+        "text": "なりそうだったからさ。",
+        "kana": "なりそうだったからさ",
+        "gloss": "was about to become, so"
+      }
+    ]
+  },
+  "spring_16.000": {
+    "japanese": "どうも。先生に会いにきたの？",
+    "english": "Hi. Did you come to see the doctor?",
+    "segments": [
+      {
+        "text": "どうも。",
+        "kana": "どうも",
+        "gloss": "hi"
+      },
+      {
+        "text": "先生",
+        "kana": "せんせい",
+        "gloss": "doctor"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "会いにきたの？",
+        "kana": "あいに きたの",
+        "gloss": "did (you) come to see"
+      }
+    ]
+  },
+  "spring_16.001": {
+    "japanese": "とくに悪いところはないでしょ、ハーヴィー先生？",
+    "english": "There's nothing particularly wrong, right, Doctor Harvey?",
+    "segments": [
+      {
+        "text": "とくに",
+        "kana": "とくに",
+        "gloss": "particularly"
+      },
+      {
+        "text": "悪い",
+        "kana": "わるい",
+        "gloss": "bad"
+      },
+      {
+        "text": "ところ",
+        "kana": "ところ",
+        "gloss": "spot / part"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ないでしょ、",
+        "kana": "ないでしょ",
+        "gloss": "there isn't, right"
+      },
+      {
+        "text": "ハーヴィー",
+        "kana": "ハーヴィー",
+        "gloss": "Harvey"
+      },
+      {
+        "text": "先生？",
+        "kana": "せんせい",
+        "gloss": "doctor"
+      }
+    ]
+  },
+  "winter_15.000": {
+    "japanese": "へえ…ルピニの オリジナル？ 悪くないわね…",
+    "english": "Huh... a Lupini original? Not bad...",
+    "segments": [
+      {
+        "text": "へえ…",
+        "kana": "へえ",
+        "gloss": "huh"
+      },
+      {
+        "text": "ルピニ",
+        "kana": "ルピニ",
+        "gloss": "Lupini"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "オリジナル？ ",
+        "kana": "オリジナル",
+        "gloss": "original"
+      },
+      {
+        "text": "悪くないわね…",
+        "kana": "わるくないわね",
+        "gloss": "not bad"
+      }
+    ]
+  }
+}
