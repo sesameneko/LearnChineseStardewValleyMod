@@ -10,6 +10,14 @@ decompression (`LzxDecoder.cs`) so this tool has no runtime dependency on
 the game's own assemblies (which are x64-only and won't load into this
 Mac's arm64 .NET SDK).
 
+It also reads the two `Dictionary<int,string>` assets, `Data/Achievements` and
+`Data/SecretNotes`. MonoGame's `DictionaryReader` writes a value-type key raw,
+as an int32 with no reader index in front of it, so those entries have a
+different shape. Their keys are returned as decimal text, so every table comes
+out string-keyed; `IntKeys` records which kind the file was. Writing int-keyed
+files isn't supported: `Write` refuses rather than produce a string-keyed file
+the game would reject.
+
 Writing intentionally only ever produces **uncompressed** XNB output --
 compression is optional in the format (a header flag bit), so an
 uncompressed file loads identically. That avoids needing an LZX *encoder*,

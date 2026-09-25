@@ -51,6 +51,11 @@ DATA_TABLES = {
     "Data_mail": {"asset": "mail", "fields": None},
     "Data_ExtraDialogue": {"asset": "ExtraDialogue", "fields": None},
     "Data_EngagementDialogue": {"asset": "EngagementDialogue", "fields": None},
+    # Dictionary<int,string>, readable since XnbStringTool learned int keys.
+    # name^description^isVisible^prerequisite^iconIndex
+    "Data_Achievements": {"asset": "Achievements", "fields": [0, 1], "sep": "^"},
+    # a whole note; ^ is a line break when drawn
+    "Data_SecretNotes": {"asset": "SecretNotes", "fields": None},
 }
 # Whole asset families outside Strings/ and the flat Data/ records above, extracted
 # with XnbStringTool into content-ja/ and content-en/, mirroring their path under
@@ -159,9 +164,10 @@ def data_source(table):
                 en[record_id] = en_records[record_id]
         return ja, en
 
+    sep = spec.get("sep", "/")
     for record_id, record in ja_records.items():
-        parts = record.split("/")
-        en_parts = en_records.get(record_id, "").split("/")
+        parts = record.split(sep)
+        en_parts = en_records.get(record_id, "").split(sep)
         for index in spec["fields"]:
             if index >= len(parts):
                 continue
@@ -357,7 +363,8 @@ def parse_line(line):
 
 # dialogue markup: $h $s $1 $q..., %noturn / %fork, and the #...# of a page break; plus the
 # item references a gift line carries ([166], [90 88 86 535]), which draw an icon, not a word
-MARKUP = re.compile(r"\$[A-Za-z0-9]+|%[A-Za-z]+[0-9]*|\[[0-9 ]+\]")  # %kid1 is one token
+# %revealtaste:Haley:221 (a secret note revealing a gift taste) is one token too
+MARKUP = re.compile(r"%revealtaste(:[A-Za-z]+:[0-9A-Za-z()]+)?|\$[A-Za-z0-9]+|%[A-Za-z]+[0-9]*|\[[0-9 ]+\]")  # %kid1 is one token
 # opening brackets and quotes belong to the word they open, not the one before
 OPENERS = "（(「『【〈《[{“‘"
 # a page break (#$b# / #$e#) followed by more Japanese inside one segment
@@ -573,8 +580,6 @@ EXCLUDED = {
 # audit stays green on what is already known while still failing on anything
 # new -- and so the size of the gap is written down somewhere that is checked.
 KNOWN_GAPS = {
-    "Data/Achievements": "Dictionary<int,string> -- XnbStringTool can't read it yet",
-    "Data/SecretNotes": "Dictionary<int,string> -- XnbStringTool can't read it yet",
 }
 
 

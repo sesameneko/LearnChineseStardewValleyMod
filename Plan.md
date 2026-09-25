@@ -104,7 +104,7 @@ This is worth doing before M3 because it reaches the same end goal (hovering a s
   | `Data/TV/*` | 2 | 96 | 96 | 10,827 |
   | `Strings/schedules/*` | 30 | 191 | 207 | 6,139 |
 
-  Plus `Data/Achievements` and `Data/SecretNotes`, which are `Dictionary<int,string>` and still unreadable by `XnbStringTool` (this one *was* tracked). Everything else the game ships a `.ja-JP` variant of is a texture or font.
+  Plus `Data/Achievements` and `Data/SecretNotes`, which are `Dictionary<int,string>`. Those were unreadable by `XnbStringTool` until 2026-09-25 and are now extracted and authored. Everything else the game ships a `.ja-JP` variant of is a texture or font.
 
   These split into two shapes of work. `Characters/Dialogue`, `Strings/schedules` and `Data/TV` are flat `key -> text` dictionaries — the same shape as every table already done, so they feed `segtool.py batch` directly with no new tooling. `Data/Events` and the 25 script-valued `Data/Festivals` keys are not: each value is a `/`-separated command script with dialogue embedded as `speak <npc> "..."` / `message "..."` arguments, so they need an extractor that lifts the quoted spoken strings out and keys them by the *spoken* text (what the game actually draws) rather than by the script key.
 

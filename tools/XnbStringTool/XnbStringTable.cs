@@ -20,6 +20,12 @@ public sealed class XnbStringTableFile
     public required byte PlatformByte { get; init; }
     public required byte FormatVersion { get; init; }
     public required byte Flags { get; init; }
+
+    /// <summary>
+    /// True for a <c>Dictionary&lt;int,string&gt;</c> asset, whose keys <see cref="Entries"/>
+    /// holds as decimal text. <see cref="XnbStringTable.Write"/> only produces string-keyed files.
+    /// </summary>
+    public bool IntKeys { get; init; }
 }
 
 /// <summary>
@@ -42,6 +48,12 @@ public sealed class XnbStringTableFile
 ///            count:int32
 ///            count * (keyReaderIndex:7BitEncodedInt, key:string,
 ///                      valueReaderIndex:7BitEncodedInt, value:string)
+///
+/// Two Data assets (Achievements, SecretNotes) are <c>Dictionary&lt;int,string&gt;</c>
+/// instead. DictionaryReader reads a value-type key raw, with no reader index in
+/// front of it, so each entry there is (key:int32, valueReaderIndex, value:string).
+/// Those keys come back as their decimal text, so every table reads as the same
+/// string-keyed shape; <see cref="XnbStringTableFile.IntKeys"/> records which it was.
 /// </summary>
 public static class XnbStringTable
 {
@@ -102,11 +114,18 @@ public static class XnbStringTable
         if (!primaryReader.Name.Contains("DictionaryReader") || !primaryReader.Name.Contains("String"))
             throw new NotSupportedException($"Unsupported top-level asset type: {primaryReader.Name}. This tool only reads Dictionary<string,string> string tables.");
 
+        // the dictionary's generic arguments name its key type: [[System.Int32, ...],[System.String, ...]]
+        bool intKeys = primaryReader.Name.Contains("[[System.Int32,");
+        if (!intKeys && !primaryReader.Name.Contains("[[System.String,"))
+            throw new NotSupportedException($"Unsupported dictionary key type in {primaryReader.Name}. This tool reads string- or int-keyed string tables.");
+
         int count = reader.ReadInt32();
         var entries = new Dictionary<string, string>(count);
         for (int i = 0; i < count; i++)
         {
-            string key = ReadIndexedString(reader, typeReaders, "key");
+            string key = intKeys
+                ? reader.ReadInt32().ToString(System.Globalization.CultureInfo.InvariantCulture)
+                : ReadIndexedString(reader, typeReaders, "key");
             string value = ReadIndexedString(reader, typeReaders, "value");
             entries[key] = value;
         }
@@ -116,6 +135,7 @@ public static class XnbStringTable
             Entries = entries,
             TypeReaders = typeReaders,
             WasCompressed = compressedLzx,
+            IntKeys = intKeys,
             PlatformByte = platform,
             FormatVersion = version,
             Flags = flags,
@@ -145,6 +165,8 @@ public static class XnbStringTable
     public static void Write(Stream output, Dictionary<string, string> entries, IReadOnlyList<XnbTypeReaderInfo>? typeReaders = null)
     {
         typeReaders ??= DefaultTypeReaders;
+        if (typeReaders.Count > 0 && typeReaders[0].Name.Contains("[[System.Int32,"))
+            throw new NotSupportedException("Writing int-keyed tables isn't supported; the game would reject a string-keyed replacement.");
         if (typeReaders.Count < 2 ||
             !typeReaders[0].Name.Contains("DictionaryReader") ||
             !typeReaders[1].Name.Contains("StringReader"))

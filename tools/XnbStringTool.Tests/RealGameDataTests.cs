@@ -107,4 +107,40 @@ public class RealGameDataTests
 
         Assert.Equal(original.Entries, reread.Entries);
     }
+
+    private static string DataDir => Path.Combine(Path.GetDirectoryName(StringsDir)!, "Data");
+
+    [Theory]
+    [InlineData("Achievements")]
+    [InlineData("SecretNotes")]
+    public void Reads_the_int_keyed_data_tables_in_both_locales(string asset)
+    {
+        RequireGameInstalled();
+
+        using var en = File.OpenRead(Path.Combine(DataDir, asset + ".xnb"));
+        using var ja = File.OpenRead(Path.Combine(DataDir, asset + ".ja-JP.xnb"));
+        var english = XnbStringTable.Read(en);
+        var japanese = XnbStringTable.Read(ja);
+
+        Assert.True(english.IntKeys);
+        Assert.True(japanese.IntKeys);
+        Assert.NotEmpty(english.Entries);
+        Assert.All(english.Entries.Keys, key => Assert.True(int.TryParse(key, out _), $"key {key} isn't an int"));
+        // same records in both locales, and the Japanese one really is Japanese -- a misaligned read
+        // would produce garbage keys or text, not a clean match
+        Assert.Equal(english.Entries.Keys.OrderBy(k => k), japanese.Entries.Keys.OrderBy(k => k));
+        Assert.Contains(japanese.Entries.Values, value => value.Any(c => c >= '\u3040' && c <= '\u9fff'));
+    }
+
+    [Fact]
+    public void Refuses_to_write_an_int_keyed_table()
+    {
+        RequireGameInstalled();
+
+        using var stream = File.OpenRead(Path.Combine(DataDir, "Achievements.xnb"));
+        var original = XnbStringTable.Read(stream);
+
+        Assert.Throws<NotSupportedException>(() =>
+            XnbStringTable.Write(new MemoryStream(), original.Entries, original.TypeReaders));
+    }
 }
