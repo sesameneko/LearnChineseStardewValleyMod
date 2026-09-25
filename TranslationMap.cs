@@ -109,9 +109,14 @@ namespace LanguageStudyStardewValleyMod
             if (normalizedSource.Length == 0 || normalizedTarget.Length == 0)
                 return;
 
-            // an untranslated entry (the locale variant just repeats the source) is noise, not a translation
+            // an untranslated entry (the locale variant just repeats the source) is noise, not a
+            // translation -- but it is still a known paragraph, which the paragraph pass needs (a
+            // secret note signed "-Qi" in both locales would otherwise fail the whole note)
             if (string.Equals(normalizedSource, normalizedTarget, StringComparison.Ordinal))
+            {
+                this.sameInBothLocales.Add(normalizedSource);
                 return;
+            }
 
             // first table wins on collision, so index construction order is what decides ambiguities
             if (!this.byNormalized.ContainsKey(normalizedSource))
@@ -270,10 +275,17 @@ namespace LanguageStudyStardewValleyMod
             if (string.IsNullOrWhiteSpace(displayedText))
                 return false;
 
-            if (this.TryLookupOne(displayedText!, out translation))
+            // exact first, then paragraph by paragraph, and only then the loose matchers on the
+            // whole text: a template's {N} capture will happily swallow a blank line and every
+            // paragraph after it (the secret-note header "ひみつのメモ #{0}" matched an entire note
+            // that way), so a multi-paragraph tooltip must get its per-paragraph chance first
+            if (this.TryLookupExact(displayedText!, out translation))
                 return true;
 
-            return this.TryLookupByParagraph(displayedText!, out translation);
+            if (this.TryLookupByParagraph(displayedText!, out translation))
+                return true;
+
+            return this.TryLookupLoose(displayedText!, out translation);
         }
 
         /// <summary>
@@ -283,27 +295,87 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         private bool TryLookupOne(string text, out string translation)
         {
+            return this.TryLookupExact(text, out translation) || this.TryLookupLoose(text, out translation);
+        }
+
+        /// <summary>Token-template and cut-short ("(...)") matching of one whole piece of text.</summary>
+        private bool TryLookupLoose(string text, out string translation)
+        {
             translation = "";
 
             string normalized = Normalize(text);
             if (normalized.Length == 0)
                 return false;
 
-            if (this.byNormalized.TryGetValue(normalized, out string? direct))
-            {
-                translation = direct;
+            if (this.TryLookupByTemplate(normalized, RemoveWhitespace(normalized), out translation))
                 return true;
-            }
 
-            string spaceless = RemoveWhitespace(normalized);
-            if (spaceless.Length > 0 && this.bySpaceless.TryGetValue(spaceless, out string? unwrapped))
-            {
-                translation = unwrapped;
-                return true;
-            }
-
-            return this.TryLookupByTemplate(normalized, spaceless, out translation);
+            return this.TryLookupTruncated(normalized, out translation);
         }
+
+        /// <summary>
+        /// Matches text the game cut short and marked with "(...)": the Collections page shows a
+        /// secret note's first 15 wrapped lines, then a newline and a literal "(...)". What's left
+        /// is a prefix of a known source string, so this finds the one source that starts with it and
+        /// returns that full translation, re-marked. It is ambiguous if two sources share the prefix
+        /// and translate differently; then it matches nothing rather than guess.
+        /// </summary>
+        private bool TryLookupTruncated(string normalized, out string translation)
+        {
+            translation = "";
+
+            if (!normalized.EndsWith(TruncationMarker, StringComparison.Ordinal))
+                return false;
+
+            string prefix = RemoveWhitespace(normalized.Substring(0, normalized.Length - TruncationMarker.Length));
+            if (prefix.Length < MinTruncatedPrefix)
+                return false;
+
+            // a hovered tooltip re-queries every frame; the scan below is over every source string
+            if (!this.truncatedCache.TryGetValue(prefix, out string? found))
+            {
+                foreach (var pair in this.bySpaceless)
+                {
+                    // a prefix equal to a whole source is fine: the cut can land exactly at a paragraph end
+                    if (!pair.Key.StartsWith(prefix, StringComparison.Ordinal))
+                        continue;
+
+                    if (found != null && found != pair.Value)
+                    {
+                        found = null;
+                        break;
+                    }
+
+                    found = pair.Value;
+                }
+
+                if (this.truncatedCache.Count >= TemplateCacheLimit)
+                    this.truncatedCache.Clear();
+                this.truncatedCache[prefix] = found;
+            }
+
+            if (found is null)
+                return false;
+
+            translation = found + " " + TruncationMarker;
+            return true;
+        }
+
+        /// <summary>What the game appends to a tooltip it cut short (a literal, in every locale).</summary>
+        private const string TruncationMarker = "(...)";
+
+        /// <summary>A prefix shorter than this is too unspecific to pin one source string down.</summary>
+        private const int MinTruncatedPrefix = 8;
+
+        /// <summary>
+        /// Source strings whose target is identical (untranslated). Never a whole-text result, since
+        /// a tooltip repeating the source adds nothing -- only a paragraph carried through inside a
+        /// larger translated tooltip.
+        /// </summary>
+        private readonly HashSet<string> sameInBothLocales = new(StringComparer.Ordinal);
+
+        /// <summary>Memoises <see cref="TryLookupTruncated"/>, misses included, by spaceless prefix.</summary>
+        private readonly Dictionary<string, string?> truncatedCache = new(StringComparer.Ordinal);
 
         /// <summary>
         /// Matches text the game produced by <c>string.Format</c>-ing a template, e.g. the journal
@@ -429,7 +501,12 @@ namespace LanguageStudyStardewValleyMod
                 // deliberately not recursive into another paragraph split: a paragraph that is
                 // itself unmatched stops the whole lookup
                 if (!this.TryLookupOne(paragraph, out string paragraphTranslation))
-                    return false;
+                {
+                    // text both locales write identically ("-Qi") carries over as-is
+                    if (!this.sameInBothLocales.Contains(Normalize(paragraph)))
+                        return false;
+                    paragraphTranslation = Normalize(paragraph);
+                }
 
                 translated.Add(paragraphTranslation);
             }

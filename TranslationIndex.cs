@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using StardewModdingAPI;
 using StardewValley;
@@ -106,6 +107,16 @@ namespace LanguageStudyStardewValleyMod
         .Concat(Family("Data/TV", "CookingChannel", "TipChannel"))
         .ToArray();
 
+        /// <summary>
+        /// The two <c>Dictionary&lt;int,string&gt;</c> assets. Their raw values are records and notes
+        /// that are never drawn as-is, so <see cref="Build"/> reshapes them with
+        /// <see cref="DataTextShapes"/> into the Collections-page tooltip text before joining.
+        /// </summary>
+        private static readonly string[] IntKeyedTables = { Achievements, SecretNotes };
+
+        private const string Achievements = "Data/Achievements";
+        private const string SecretNotes = "Data/SecretNotes";
+
         private static IEnumerable<string> Family(string folder, params string[] names)
         {
             return names.Select(name => $"{folder}/{name}");
@@ -156,11 +167,34 @@ namespace LanguageStudyStardewValleyMod
                     map.AddTable(source, target);
             }
 
+            this.AddShapedDataTables(map, sourceTables, targetTables);
+
             this.Map = map;
             this.BuiltSourceLanguage = sourceLanguage;
             this.BuiltTargetLanguage = targetLanguage;
 
             ModEntry.Log($"Translation index built: {map.Count} '{sourceLanguage}' -> '{targetLanguage}' strings from {sourceTables.Count} tables.");
+        }
+
+        /// <summary>Joins Achievements and SecretNotes in the shape their tooltips are drawn in.</summary>
+        private void AddShapedDataTables(TranslationMap map, Dictionary<string, Dictionary<string, string>> sourceTables, Dictionary<string, Dictionary<string, string>> targetTables)
+        {
+            if (sourceTables.TryGetValue(Achievements, out var sourceAchievements) && targetTables.TryGetValue(Achievements, out var targetAchievements))
+                map.AddTable(DataTextShapes.AchievementTexts(sourceAchievements), DataTextShapes.AchievementTexts(targetAchievements));
+
+            if (sourceTables.TryGetValue(SecretNotes, out var sourceNotes) && targetTables.TryGetValue(SecretNotes, out var targetNotes))
+            {
+                var (source, target) = DataTextShapes.SecretNoteParagraphs(sourceNotes, targetNotes, out int skipped);
+                map.AddTable(source, target);
+                if (skipped > 0)
+                    ModEntry.Log($"{skipped} secret note(s) left out of the translation index: their two locales split into different numbers of paragraphs.", LogLevel.Trace);
+            }
+
+            if (sourceTables.TryGetValue("Strings/Locations", out var sourceLocations) && targetTables.TryGetValue("Strings/Locations", out var targetLocations))
+            {
+                foreach (var (sourceTemplate, targetTemplate) in DataTextShapes.NoteHeaderTemplates(sourceLocations, targetLocations))
+                    map.AddPair(sourceTemplate, targetTemplate);
+            }
         }
 
         /// <summary>
@@ -180,13 +214,7 @@ namespace LanguageStudyStardewValleyMod
 
             if (!string.IsNullOrEmpty(suffix))
             {
-                foreach (string assetName in StringTables)
-                {
-                    var table = this.TryLoad(() => this.helper.GameContent.Load<Dictionary<string, string>>($"{assetName}.{suffix}"), assetName, localeCode);
-                    if (table != null)
-                        result[assetName] = table;
-                }
-
+                this.LoadEach(result, localeCode, assetName => $"{assetName}.{suffix}", this.helper.GameContent.Load<Dictionary<string, string>>, this.helper.GameContent.Load<Dictionary<int, string>>);
                 return result;
             }
 
@@ -200,12 +228,7 @@ namespace LanguageStudyStardewValleyMod
             try
             {
                 LocalizedContentManager.CurrentLanguageCode = language;
-                foreach (string assetName in StringTables)
-                {
-                    var table = this.TryLoad(() => Game1.content.Load<Dictionary<string, string>>(assetName), assetName, localeCode);
-                    if (table != null)
-                        result[assetName] = table;
-                }
+                this.LoadEach(result, localeCode, assetName => assetName, Game1.content.Load<Dictionary<string, string>>, Game1.content.Load<Dictionary<int, string>>);
             }
             finally
             {
@@ -213,6 +236,31 @@ namespace LanguageStudyStardewValleyMod
             }
 
             return result;
+        }
+
+        /// <summary>
+        /// Loads every string- and int-keyed table through one locale's loaders. Int keys become their
+        /// decimal text, so everything downstream deals in one shape.
+        /// </summary>
+        private void LoadEach(
+            Dictionary<string, Dictionary<string, string>> result, string localeCode, Func<string, string> localized,
+            Func<string, Dictionary<string, string>> loadStringKeyed, Func<string, Dictionary<int, string>> loadIntKeyed)
+        {
+            foreach (string assetName in StringTables)
+            {
+                var table = this.TryLoad(() => loadStringKeyed(localized(assetName)), assetName, localeCode);
+                if (table != null)
+                    result[assetName] = table;
+            }
+
+            foreach (string assetName in IntKeyedTables)
+            {
+                var table = this.TryLoad(
+                    () => loadIntKeyed(localized(assetName)).ToDictionary(pair => pair.Key.ToString(CultureInfo.InvariantCulture), pair => pair.Value),
+                    assetName, localeCode);
+                if (table != null)
+                    result[assetName] = table;
+            }
         }
 
         private Dictionary<string, string>? TryLoad(Func<Dictionary<string, string>> load, string assetName, string localeCode)

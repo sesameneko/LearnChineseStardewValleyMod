@@ -28,6 +28,7 @@
       dependency precisely so they can be tested here (see CLAUDE.md's "Development workflow").
     -->
     <Compile Include="../../TranslationMap.cs" Link="TranslationMap.cs" />
+    <Compile Include="../../DataTextShapes.cs" Link="DataTextShapes.cs" />
     <Compile Include="../../TooltipLayout.cs" Link="TooltipLayout.cs" />
     <Compile Include="../../TextHitTest.cs" Link="TextHitTest.cs" />
     <Compile Include="../../SegmentIndex.cs" Link="SegmentIndex.cs" />
