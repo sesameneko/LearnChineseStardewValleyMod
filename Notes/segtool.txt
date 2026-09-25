@@ -1,0 +1,49 @@
+tools/segment-data/segtool.py is the authoring CLI for this mod's hand-segmented Japanese word data — the per-word boundaries, readings, and glosses that power the word-level hover translation.
+
+What it manages: the JSON files in tools/extracted-strings/literal-translations/, one per game string table. Each entry is {japanese, english, segments[{text, reading, gloss}]}, keyed by the game's own string key. Those files are the tracked source of truth; the csproj copies them into the gitignored assets/segments/ja/ at build time.
+
+Subcommands:
+- status — coverage per table (authored vs. pending)
+- batch <Table> <n> — prints the next n unauthored entries as TSV (key ⇥ japanese ⇥ official English) for you to author into
+- merge <Table> <file.tsv> — merges an authored worklist back into the JSON. Idempotent per key, and it rejects any line whose segments don't concatenate back to the source string character-for-character (the mod positions highlights by measuring segment prefixes, so a violation would silently mis-place every one)
+- skip <Table> <file.txt> — records keys deliberately left unsegmented so status stops counting them
+- validate — re-checks the invariant across everything
+
+Batch line format: key ⇥ english ⇥ text¦reading¦gloss‖text¦reading¦gloss‖…, where ¦ (U+00A6) splits a segment's fields and ‖ (U+2016) splits segments; literals of either are escaped \¦ / \‖.
+
+It also knows about Content/Data/* assets, where a value is a slash-delimited record rather than a plain string. Its DATA_TABLES map names which field indices the player actually reads, and expands each record into pseudo-entries keyed <record id>#<field index> (e.g. 9#1) so everything downstream treats them like normal entries.
+
+Typical loop:
+python3 tools/segment-data/segtool.py status
+python3 tools/segment-data/segtool.py batch Tools 50
+# author into a .tsv...
+python3 tools/segment-data/segtool.py merge Tools batch.tsv
+python3 tools/segment-data/segtool.py validate
+
+Table priority comes from TODOs.txt, not Plan.md. Its sibling migrate_names.py.retired is deliberately named off .py — it's already been applied, and re-running it would flatten Objects_Name.json's hand-authored segments.
+
+✻ Churned for 18s · done 11:22 AM
+
+❯ What is the difference between assets/segments, and tools/extracted-strings/literal-translations ?
+
+  Ran 2 shell commands
+
+They hold the same bytes — I diffed them just now and they're identical. The difference is entirely one of role:
+
+┌───────────┬───────────────────────────────────────────────┬────────────────────────────────────────┐
+│           │ tools/extracted-strings/literal-translations/ │          assets/segments/ja/           │
+├───────────┼───────────────────────────────────────────────┼────────────────────────────────────────┤
+│ Role      │ Source of truth                               │ Generated build copy                   │
+├───────────┼───────────────────────────────────────────────┼────────────────────────────────────────┤
+│ Git       │ Tracked                                       │ Gitignored (.gitignore:51)             │
+├───────────┼───────────────────────────────────────────────┼────────────────────────────────────────┤
+│ Edited by │ You / segtool.py                              │ Nothing — overwritten each build       │
+├───────────┼───────────────────────────────────────────────┼────────────────────────────────────────┤
+│ Read by   │ segtool.py (status/batch/merge/validate)      │ The mod at runtime (SegmentDataLoader) │
+└───────────┴───────────────────────────────────────────────┴────────────────────────────────────────┘
+
+The copy happens in LanguageStudyStardewValleyMod.csproj:37-42 — a CopySegmentData target on BeforeTargets="BeforeBuild" that globs tools/extracted-strings/literal-translations/*.json into assets/segments/ja with SkipUnchangedFiles. Then the ordinary <None Include="assets/**/*.json"> item (line 23) carries them into the deployed mod.
+
+Why the duplication exists (the comment at .csproj:29-36 spells it out): ModBuildConfig deploys files from the project folder, not the build output, and tools/ is excluded from the project — so a None+Link pointing straight at tools/ would land in bin/ but never reach the SMAPI Mods folder. Copying into assets/ first is the workaround, and assetprecisely so there's no second committed copy to drift.
+
+Practical upshot: always edit under tools/extracted-strings/literal-translations/. Anything you write into ently clobbered on the next build, and never committed.
