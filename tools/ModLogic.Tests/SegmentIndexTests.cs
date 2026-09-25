@@ -101,6 +101,56 @@ namespace ModLogic.Tests
         }
 
         [Fact]
+        public void Explains_a_miss_by_naming_where_the_nearest_string_diverges()
+        {
+            // the typical runtime-assembled miss: same sentence, different noun filled in
+            string why = IndexWithAcorn().ExplainMiss("植えるとリンゴの木が育つ。");
+
+            Assert.Contains("shares the first 4 of 13", why);
+            Assert.Contains("「オークの木が育つ…」", why); // what the data has at the divergence
+            Assert.Contains("「リンゴの木が育つ…」", why); // what was drawn
+        }
+
+        [Fact]
+        public void Explains_a_miss_on_a_truncation_of_an_indexed_string()
+        {
+            // one page of a longer dialogue, or a note the game cut short
+            string why = IndexWithAcorn().ExplainMiss("植えると\nオーク");
+
+            Assert.Contains("is a prefix of the indexed", why);
+        }
+
+        [Fact]
+        public void Explains_a_miss_with_nothing_similar_indexed()
+        {
+            Assert.Contains("no indexed string starts with the same character", IndexWithAcorn().ExplainMiss("知らない文章。"));
+        }
+
+        [Fact]
+        public void Explains_a_miss_on_data_that_was_rejected_at_load()
+        {
+            var index = new SegmentIndex();
+            index.TryAdd(Acorn, new[] { TextSegment.Plain("植える"), TextSegment.Plain("と") });
+
+            string why = index.ExplainMiss(Acorn);
+
+            Assert.Contains("rejected at load", why);
+            Assert.Contains("「植えると」", why);
+        }
+
+        [Fact]
+        public void Explains_a_line_mismatch_with_the_first_differing_character()
+        {
+            // a space the game kept at the wrap that the source doesn't have
+            var lines = new[] { "植えると ", "オークの木が育つ。" };
+
+            string why = SegmentIndex.ExplainLineMismatch(AcornSegments, lines, 1);
+
+            Assert.Contains("differ at character 4", why);
+            Assert.Contains("「 オークの木が育…」", why);
+        }
+
+        [Fact]
         public void Refuses_to_map_when_the_lines_do_not_match_the_data()
         {
             // stale data against different on-screen text: better to fall back than to box the wrong word

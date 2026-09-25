@@ -69,7 +69,7 @@ namespace LanguageStudyStardewValleyMod
                         DrawUnderline(spriteBatch, hit.Value.Word_Bounds);
 
                     string label = Describe(hit.Value.Segment);
-                    LogIfNewlyHovered(hit.Value.Segment.Text, label);
+                    LogIfNewlyHovered(hit.Value, label);
                     DrawLabel(spriteBatch, label, hit.Value.Word_Bounds);
                 }
             }
@@ -86,17 +86,40 @@ namespace LanguageStudyStardewValleyMod
         /// Logs the hovered word and the label shown for it, once each time the cursor lands on a
         /// different word. Draw runs several times a frame and a word stays hovered for many
         /// frames, so this compares against the last thing logged rather than logging per call.
+        ///
+        /// When the word came from the character-class fallback rather than segment data, the
+        /// drawn string and the stage its lookup failed at are logged too -- that's the case this
+        /// log exists to debug.
         /// </summary>
-        private static void LogIfNewlyHovered(string word, string label)
+        private static void LogIfNewlyHovered(Hit hit, string label)
         {
+            string word = hit.Segment.Text;
             if (LastLogged == (word, label))
                 return;
 
             LastLogged = (word, label);
-            ModEntry.Log($"Hovered '{word}' -> {label.Replace("\n", " ")}");
+
+            string message = $"Hovered '{word}' -> {label.Replace("\n", " ")}";
+            if (!hit.Exact)
+                message += $"\n    fallback split -- {ExplainFallback(hit)}\n    drawn text: {SegmentIndex.Quote(hit.DrawnText)}";
+
+            ModEntry.Log(message);
         }
 
-        private readonly record struct Hit(TextSegment Segment, Rectangle Word_Bounds, Rectangle Line, bool Exact);
+        /// <summary>Which stage of <see cref="ResolveSegments"/> gave up on a hit, and why.</summary>
+        private static string ExplainFallback(Hit hit)
+        {
+            var index = ModEntry.Instance?.Segments;
+            if (index is null)
+                return "segment data isn't loaded";
+
+            if (!index.TryGetSegments(hit.DrawnText, out var wholeString))
+                return index.ExplainMiss(hit.DrawnText);
+
+            return SegmentIndex.ExplainLineMismatch(wholeString, hit.Lines, hit.LineIndex);
+        }
+
+        private readonly record struct Hit(TextSegment Segment, Rectangle Word_Bounds, Rectangle Line, bool Exact, string DrawnText, string[] Lines, int LineIndex);
 
         private static Hit? FindWordUnderCursor()
         {
@@ -143,7 +166,7 @@ namespace LanguageStudyStardewValleyMod
                 var wordBounds = new Rectangle((int)(drawn.X + left), (int)lineTop, (int)Math.Ceiling(width), (int)Math.Ceiling(lineHeight));
                 var lineBounds = new Rectangle((int)drawn.X, (int)lineTop, (int)Math.Ceiling(drawn.MeasurePrefix(line)), (int)Math.Ceiling(lineHeight));
 
-                return new Hit(segment, wordBounds, lineBounds, exact);
+                return new Hit(segment, wordBounds, lineBounds, exact, drawn.Text, lines, lineIndex.Value);
             }
 
             return null;
