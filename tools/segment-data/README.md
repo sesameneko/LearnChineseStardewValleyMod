@@ -47,8 +47,13 @@ The kana field follows these conventions, which the converter relies on:
 
 - the reading of the segment's Japanese only; no punctuation or dialogue markup
 - words separated by single spaces: `かんがえこんで しまう`, `に ちがいない`
-- hiragana for kanji and hiragana; katakana words stay katakana (`カクテル`); `ー`
-  as written
+- **each part in its own script**: the reading of kanji and hiragana is written
+  in hiragana, and katakana stays katakana (`カクテル`), including within one
+  word (`バス停` -> `バスてい`, `トリ小屋` -> `トリごや`). That is how dictionaries
+  such as Jisho show readings, and what a learner expects. Never all-katakana
+  (`バステイ`, the style of フリガナ form fields) or all-hiragana (`ばすてい`).
+  `ー` appears only where the text itself has it: a hiragana reading spells its
+  long vowels out (`どうぶつ`, never `どーぶつ` or `ドーブツ`)
 - particles as spelled, not as pronounced: `は` / `へ` / `を` (the converter reads
   a standalone one as wa / e / o)
 - long vowels spelled the way the word is actually spelled (`がっこう`, `とおり`,
@@ -57,7 +62,9 @@ The kana field follows these conventions, which the converter relies on:
   empty for a segment that is only markup, symbols, a `{0}` token or `@`
 
 `merge` rejects kana containing kanji, and a segment whose text has kanji but no
-kana.
+kana. It does **not** yet check the script rule above, and roughly 2,900
+existing segments break it, most with all-katakana kana (`サイロに入れた。` ->
+`サイロニイレタ`). Normalising them is a `TODOs.txt` item.
 
 Then run:
 

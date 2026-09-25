@@ -52,27 +52,26 @@ Still open
     authored romaji-first; romaji_to_kana.py guessed each long vowel (ō is
     おう or おお). They have never been reviewed, and some are known wrong
     (ēto came out えいと). Newer data is authored in kana and isn't affected.
-  - DECISION NEEDED, which script the kana readings use. The data has no
-    single convention. Of the segments mixing katakana and kanji, ~2,030 have
+  - NORMALISE kana to "each part in its own script" (decided 2026-09-25;
+    rule in tools/segment-data/README.md): kanji and hiragana read in
+    hiragana, katakana stays katakana, so バス停 -> バスてい. The data breaks
+    it widely. Of the segments mixing katakana and kanji, ~2,030 have
     all-katakana kana (サイロに入れた。 -> サイロニイレタ), ~850 mixed and ~50
-    all-hiragana (クリスタルの木の -> くりすたるのきの). Some of the mixed ones
-    are inconsistent within the same segment (インテリアを飾ることができます。 ->
-    インテリアをカザルコトガデキマス: only the particle is hiragana). Survey counted
-    only katakana+kanji segments; kanji-only segments haven't been checked.
-    The options:
-      - Script as written: katakana stays katakana, kanji and kana become
-        hiragana (バス停 -> バスてい). What dictionaries like Jisho show and what
-        learners expect; the recommended choice.
-      - All hiragana (ばすてい): simplest rule, but writing loanwords in
-        hiragana is unusual outside children's text.
-      - All katakana (バステイ): the style of フリガナ form fields and of the
-        readings that text-analysis tools output. Legitimate, but reads as
-        technical data rather than a learner aid.
-    Once decided: write the rule into tools/segment-data/README.md, have
-    validate/merge flag violations, and normalise the existing data by script
-    (mechanical for "script as written": convert each kana run by the script
-    of the text it reads). Romaji is generated from kana, so it's unaffected.
-    Overlaps with the kana-review.tsv item above; do them together.
+    all-hiragana (クリスタルの木の -> くりすたるのきの). Some mixed ones are
+    wrong within one segment (インテリアを飾ることができます。 ->
+    インテリアをカザルコトガデキマス: only the particle is hiragana). The survey
+    counted only katakana+kanji segments; kanji-only ones are unchecked.
+    Steps:
+      - survey every segment, not just katakana+kanji ones
+      - add the check to validate and merge
+      - convert: each kana run takes the script of the text it reads.
+        NOT fully mechanical: the all-katakana readings write long vowels
+        with ー (ヤギガカエルヨーニナル, ドーブツ), and in a hiragana reading
+        ヨー must become よう, not よー. Whether ー is う or お can't be
+        derived (どう vs とお), so those need a word list or review, like
+        kana-review.tsv. Do the two together.
+    Romaji is generated from kana: regenerate only for segments whose kana
+    was authored (not the older romaji-first data; see the README).
   - OPTIMIZE SegmentIndex.MatchComposite (word hover for text the game joins
     from several entries: quest descriptions, clothing + "可染性。", dialogue
     pages). It runs only after every other lookup misses, and is memoised per
@@ -97,8 +96,8 @@ Still open
     line break. merge attached them to the neighbouring words, so hovering
     the sign outlines "` バス停^" and "> ペリカンタウン", arrows included. Split
     the markup into its own gloss-less segments (check other StringsFromMaps
-    signs for the same thing). Its kana (バステイ) is all-katakana; see the
-    kana-script DECISION item below.
+    signs for the same thing). Its kana (バステイ) should be バスてい; see
+    the NORMALISE kana item above.
   - The "fallback split" hover log fires on any text, and most of what it
     logged in the third session was English (GMCM labels, save names) and bare
     numbers ("25%"). Skip text with no Japanese characters, so every line it
