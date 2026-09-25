@@ -34,12 +34,16 @@ spoken lines are extracted and authored as <key>#<n> entries.
 
 Still open
 ----------
-  - IN-GAME CHECK, dialogue: segment data (and sentence translation) is keyed
-    by the whole raw string, markup and all ($h, #$b#...). The game draws one
-    page at a time with the markup removed. Check whether SegmentIndex /
-    TranslationMap find these on screen. If not, split entries at #$b# / #$e#
-    on load and strip the markup. Page breaks always fall on a segment
-    boundary (merge enforces it), so that split is clean.
+  - IN-GAME CHECK, dialogue SENTENCE translation: entries are keyed by the
+    whole raw string, markup and all ($h, #$b#...), and the game draws one
+    page at a time with the markup removed. Word hover handles this now
+    (SegmentIndex's composite lookup; page 2 of Lewis's Introduction verified
+    live 2026-09-25), but TranslationMap has no equivalent, so a non-first page
+    likely gets no sentence translation. Check live; if it misses, split
+    entries at #$b# / #$e# on load and strip the markup. Page breaks always
+    fall on a segment boundary (merge enforces it), so that split is clean,
+    and doing it for SegmentIndex too would make pages exact lookups (see
+    the OPTIMIZE item below).
   - IN-GAME CHECK, achievements and secret notes: sentence translation is
     wired up and unit-tested against the real data (ModLogic.Tests), but not
     tried live. Hover them in the Collections tab, including a long journal
@@ -67,6 +71,16 @@ Still open
     Alternatives: precompute dialogue pages at load by splitting entries at
     #$b# / #$e# (see the IN-GAME CHECK above), which moves the commonest case
     to an exact lookup; or run the composite off the draw thread.
+  - SpriteText markup inside segments: StringsFromMaps BusStop.1 is
+    "` バス停^> ペリカンタウン", where ` and > draw as arrow glyphs and ^ is a
+    line break. merge attached them to the neighbouring words, so hovering
+    the sign outlines "` バス停^" and "> ペリカンタウン", arrows included. Split
+    the markup into its own gloss-less segments (check other StringsFromMaps
+    signs for the same thing). Its kana is also wrong: バステイ, should be ばすてい.
+  - The "fallback split" hover log fires on any text, and most of what it
+    logged in the third session was English (GMCM labels, save names) and bare
+    numbers ("25%"). Skip text with no Japanese characters, so every line it
+    logs is a real gap.
 
 The pipeline (tools/segment-data/README.md has the details)
 ------------------------------------------------------------
