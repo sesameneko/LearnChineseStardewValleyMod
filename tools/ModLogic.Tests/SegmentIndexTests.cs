@@ -202,5 +202,135 @@ namespace ModLogic.Tests
             // the real data carries in-context glosses, which is the whole point of using it
             Assert.All(acorn, segment => Assert.False(string.IsNullOrWhiteSpace(segment.Gloss)));
         }
+
+        private static readonly TextSegment[] MoneySegments =
+        {
+            new("手持ち", "temochi", "on hand"),
+            TextSegment.Plain("の"),
+            new("お金", "okane", "money"),
+            TextSegment.Plain("："),
+            new("{0}G", null, "{0}g"),
+        };
+
+        [Fact]
+        public void Fills_in_a_token_template_and_follows_the_drawn_whitespace()
+        {
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("手持ちのお金：{0}G", MoneySegments));
+
+            // the game draws a space the stored template doesn't have
+            Assert.True(index.TryGetSegments("手持ちのお金： 29,560G", out var segments));
+            Assert.Equal(new[] { "手持ち", "の", "お金", "： ", "29,560G" }, TextOf(segments));
+            Assert.Equal("29,560g", segments[^1].Gloss);
+        }
+
+        [Fact]
+        public void Fills_in_a_template_the_game_word_wrapped()
+        {
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("手持ちのお金：{0}G", MoneySegments));
+
+            string drawn = "手持ちのお\n金：29,560G";
+            Assert.True(index.TryGetSegments(drawn, out var segments));
+
+            string[] lines = TextHitTest.SplitLines(drawn);
+            Assert.True(SegmentIndex.TryGetSegmentsForLine(segments, lines, 1, out var second));
+            Assert.Equal(new[] { "金", "：", "29,560G" }, TextOf(second));
+        }
+
+        [Fact]
+        public void A_token_whose_value_is_segmented_data_takes_that_data()
+        {
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("秋", new[] { new TextSegment("秋", "aki", "fall") }));
+            Assert.True(index.TryAdd("{2}年目、{0}日、{1}", new[]
+            {
+                new TextSegment("{2}年目、", "nenme", "year {2}"),
+                new TextSegment("{0}日、", "nichi", "day {0}"),
+                new TextSegment("{1}", "", "(season)"),
+            }));
+
+            Assert.True(index.TryGetSegments("2年目、8日、秋", out var segments));
+            Assert.Equal(new[] { "2年目、", "8日、", "秋" }, TextOf(segments));
+            Assert.Equal(new[] { "year 2", "day 8", "fall" }, segments.Select(s => s.Gloss).ToArray());
+        }
+
+        [Fact]
+        public void Matches_the_drawn_start_of_a_longer_string()
+        {
+            // mail: the stored text ends in commands the game strips before drawing
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("やあ、どうも。^-ウィリーより%item quest 13 true %%[#]招待状", new[]
+            {
+                new TextSegment("やあ、", "yaa", "hey"),
+                new TextSegment("どうも。^", "doumo", "hello"),
+                new TextSegment("-ウィリーより", "wirii yori", "from Willy"),
+                TextSegment.Plain("%item quest 13 true %%[#]招待状"),
+            }));
+
+            Assert.True(index.TryGetSegments("やあ、どうも。^-ウィリーより ", out var segments));
+            Assert.Equal(new[] { "やあ、", "どうも。^", "-ウィリーより " }, TextOf(segments));
+        }
+
+        [Fact]
+        public void Does_not_prefix_match_short_text()
+        {
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("50000Gをかせぐ", new[] { TextSegment.Plain("50000G"), TextSegment.Plain("をかせぐ") }));
+
+            Assert.False(index.TryGetSegments("500", out _));
+        }
+
+        [Fact]
+        public void Does_not_match_text_that_only_resembles_a_template()
+        {
+            var index = new SegmentIndex();
+            Assert.True(index.TryAdd("手持ちのお金：{0}G", MoneySegments));
+
+            Assert.False(index.TryGetSegments("稼いだ利益：579,858G", out _));
+        }
+
+        [Theory]
+        [InlineData("2年目、8日、秋")]
+        [InlineData("手持ちのお金： 29,560G")]
+        [InlineData("稼いだ利益：579,858G")]
+        [InlineData("Goatland 牧場")]
+        [InlineData("やあ、どうも。^釣りの旅からちょうど帰ってきたところだ。気が向いたら海岸\nへ来てくれよ。^お前さんにわたしたいもんがあるんだ。^-ウィリーより ")]
+        public void Finds_real_data_for_text_the_game_assembled_at_draw_time(string drawn)
+        {
+            // each of these fell back to the heuristic split in a live session
+            var index = new SegmentIndex();
+            foreach (string table in new[] { "StringsFromCSFiles", "UI", "Data_mail" })
+                LoadRealTable(index, table);
+
+            Assert.True(index.TryGetSegments(drawn, out var segments), index.ExplainMiss(drawn));
+            Assert.True(segments.Count > 1);
+
+            string[] lines = TextHitTest.SplitLines(drawn);
+            for (int i = 0; i < lines.Length; i++)
+                Assert.True(SegmentIndex.TryGetSegmentsForLine(segments, lines, i, out _), SegmentIndex.ExplainLineMismatch(segments, lines, i));
+        }
+
+        private static void LoadRealTable(SegmentIndex index, string table)
+        {
+            string path = Path.GetFullPath(Path.Combine(
+                AppContext.BaseDirectory, "..", "..", "..", "..",
+                "extracted-strings", "literal-translations", table + ".json"));
+
+            using var document = JsonDocument.Parse(File.ReadAllText(path));
+            foreach (var property in document.RootElement.EnumerateObject())
+            {
+                if (property.Value.ValueKind != JsonValueKind.Object || !property.Value.TryGetProperty("segments", out var segments))
+                    continue;
+
+                index.TryAdd(property.Value.GetProperty("japanese").GetString(), segments
+                    .EnumerateArray()
+                    .Select(segment => new TextSegment(
+                        segment.GetProperty("text").GetString()!,
+                        segment.TryGetProperty("reading", out var reading) ? reading.GetString() : null,
+                        segment.TryGetProperty("gloss", out var gloss) ? gloss.GetString() : null))
+                    .ToArray());
+            }
+        }
     }
 }

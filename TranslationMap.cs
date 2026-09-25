@@ -178,7 +178,7 @@ namespace LanguageStudyStardewValleyMod
         /// template must contain it verbatim, so a substring check rules most templates out without
         /// touching their regex -- which matters because a lookup miss tries every one of them.
         /// </summary>
-        private static string LongestLiteralOf(string template)
+        internal static string LongestLiteralOf(string template)
         {
             string longest = "";
             int position = 0;
@@ -196,7 +196,7 @@ namespace LanguageStudyStardewValleyMod
         }
 
         /// <summary>How much of a template is fixed text rather than tokens or whitespace.</summary>
-        private static int LiteralLengthOf(string template)
+        internal static int LiteralLengthOf(string template)
         {
             int length = 0;
             int position = 0;
@@ -227,7 +227,7 @@ namespace LanguageStudyStardewValleyMod
         /// named capture group (<c>t0</c>, <c>t1</c>, ...), a repeated token a back-reference to its
         /// own first capture. Returns null for a template too loose to match safely.
         /// </summary>
-        private static Regex? BuildMatcher(string template)
+        internal static Regex? BuildMatcher(string template)
         {
             var pattern = new StringBuilder("^");
             var captured = new HashSet<int>();
@@ -522,7 +522,7 @@ namespace LanguageStudyStardewValleyMod
         private static readonly Regex ParagraphBreak = new(@"\n[ \t]*\r?\n", RegexOptions.Compiled);
 
         /// <summary>A <c>string.Format</c> placeholder. Only bare <c>{N}</c> counts; any other brace is literal text.</summary>
-        private static readonly Regex TokenPattern = new(@"\{(\d+)\}", RegexOptions.Compiled | RegexOptions.CultureInvariant);
+        internal static readonly Regex TokenPattern =new(@"\{(\d+)\}", RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
         /// <summary>Backstop against a pathological template regex stalling a draw.</summary>
         private static readonly TimeSpan MatchTimeout = TimeSpan.FromMilliseconds(50);
