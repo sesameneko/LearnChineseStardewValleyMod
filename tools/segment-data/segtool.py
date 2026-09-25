@@ -35,8 +35,8 @@ DATA_EN = os.path.join(ROOT, "tools", "extracted-strings", "data-en")
 # on nothing. Several Data assets (letters, dialogue) are like that, and some of
 # them contain slashes inside the prose, so splitting would truncate them.
 DATA_TABLES = {
-    # type/name/description/objective/...
-    "Data_Quests": {"asset": "Quests", "fields": [1, 2, 3]},
+    # type/name/description/objective/.../reaction: field 9 is what the NPC says on completion
+    "Data_Quests": {"asset": "Quests", "fields": [1, 2, 3, 9]},
     # englishName/description/price/defense/immunity/colorIndex/displayName
     "Data_Boots": {"asset": "Boots", "fields": [1, 6]},
     # englishName/reward/items/color/count/?/displayName
@@ -107,6 +107,21 @@ def content_tables():
 
 
 def source(table):
+    """(ja, en) entries for a table. A key deliberately skipped because its value is an event
+    script (Strings/Locations has a few) still has spoken lines the player reads, so those are
+    lifted out into "<key>#<n>" pseudo-entries exactly as for Data/Events."""
+    ja, en = raw_source(table)
+    for key in skipped(table):
+        if key in ja and is_script(ja[key]):
+            lines, en_lines = script_lines(ja[key]), script_lines(en.get(key, ""))
+            for n, line in enumerate(lines):
+                ja[f"{key}#{n}"] = line
+                if len(en_lines) == len(lines):
+                    en[f"{key}#{n}"] = en_lines[n]
+    return ja, en
+
+
+def raw_source(table):
     if table in DATA_TABLES:
         return data_source(table)
     content = content_tables()
@@ -608,6 +623,41 @@ def classify(asset, covered):
     return "unclassified", ("", "")
 
 
+def raw_text(table):
+    """A table's Japanese exactly as extracted, before any field selection or script expansion."""
+    if table in DATA_TABLES:
+        path = os.path.join(DATA_JA, DATA_TABLES[table]["asset"] + ".json")
+    elif table in content_tables():
+        path = os.path.join(CONTENT_JA, content_tables()[table][0] + ".json")
+    else:
+        path = os.path.join(JA, table + ".json")
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)["entries"]
+
+
+def text_gaps():
+    """(table, key, text) for Japanese that no authored entry covers.
+
+    Compares character counts per table between the raw asset and what source() hands to
+    authoring, then checks that everything source() hands over is authored or deliberately
+    skipped."""
+    ja_char = re.compile(r"[぀-ヿ一-鿿]")
+    gaps = []
+    for table in tables():
+        ja, _ = source(table)
+        done, skip = authored(table), skipped(table)
+        raw = sum(len(ja_char.findall(v)) for v in raw_text(table).values())
+        # skipped scripts appear in source() both whole and as extracted lines; count them once
+        offered = sum(len(ja_char.findall(v)) for k, v in ja.items()
+                      if not (k in skip and is_script(v)))
+        if offered < raw:
+            gaps.append((table, "(extraction)", f"{raw - offered} Japanese chars never offered for authoring"))
+        for key, text in ja.items():
+            if key not in done and key not in skip and ja_char.search(text):
+                gaps.append((table, key, text))
+    return gaps
+
+
 def cmd_audit(args):
     content = content_dir(args[0] if args else None)
     if not content:
@@ -642,6 +692,20 @@ def cmd_audit(args):
         print("\nWARNING -- extracted but not in this install (stale or renamed):")
         for asset in missing:
             print(f"  {asset}")
+
+    # asset coverage isn't text coverage: a Data record field nobody listed in DATA_TABLES
+    # (Quests' completion line) or the dialogue inside a skipped event script is text in a
+    # "covered" asset that no entry holds. Every Japanese character of every covered table must
+    # sit in an authored entry, or in a skipped script whose spoken lines were extracted.
+    uncovered = text_gaps()
+    if uncovered:
+        print(f"\nFAILED -- Japanese text in covered assets that no entry holds ({len(uncovered)}):")
+        for table, key, text in uncovered[:40]:
+            print(f"  {table} {key}: {text[:60]!r}")
+        print("\nExtend the table's extraction (DATA_TABLES fields, script expansion), author it,\n"
+              "or skip it with a reason.")
+        return 1
+    print("text: every Japanese character in covered assets is held by an entry")
 
     if buckets["unclassified"]:
         print(f"\nFAILED -- {len(buckets['unclassified'])} localized asset(s) are accounted for nowhere:")
