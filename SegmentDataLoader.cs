@@ -21,6 +21,12 @@ namespace LanguageStudyStardewValleyMod
         public static SegmentIndex Load(IModHelper helper, string sourceLanguage)
         {
             var index = new SegmentIndex();
+
+            // the HUD clock's frames are built in code rather than read from a table, so their
+            // segments are too
+            if (sourceLanguage == "ja")
+                ClockSegments.AddTo(index);
+
             string directory = Path.Combine(helper.DirectoryPath, "assets", "segments", sourceLanguage);
 
             if (!Directory.Exists(directory))
