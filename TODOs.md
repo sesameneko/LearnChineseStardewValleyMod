@@ -2,7 +2,6 @@
 
 ## Open
 
-- [ ] [Fix broken translation demo](#fix-broken-translation-demo)
 - [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
 - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
 - [ ] [Review kana long vowels](#review-kana-long-vowels)
@@ -15,10 +14,6 @@
 - [ ] [Remove debug logs](#remove-debug-logs)
 
 ## Details
-
-### Fix broken translation demo
-
-Some recent change broke the proof-of-concept translation demo, probably the "shift toggle" change.
 
 ### Verify dialogue sentence translation
 
