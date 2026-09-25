@@ -2,16 +2,29 @@
 
 ## Open
 
-- [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
-- [ ] [Verify achievements and notes](#verify-achievements-and-notes)
-- [ ] [Review kana long vowels](#review-kana-long-vowels)
-- [ ] [Normalise kana script](#normalise-kana-script)
-- [ ] [Consolidate redundant glosses](#consolidate-redundant-glosses)
-- [ ] [Split sign markup segments](#split-sign-markup-segments)
-- [ ] [Optimize composite lookup](#optimize-composite-lookup)
-- [ ] [Quiet fallback log](#quiet-fallback-log)
-- [ ] [Fix line-wrap hit-testing](#fix-line-wrap-hit-testing)
-- [ ] [Remove debug logs](#remove-debug-logs)
+- [ ] In-game checks
+  - [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
+  - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
+- [ ] Kana readings
+  - [ ] [Review kana long vowels](#review-kana-long-vowels)
+  - [ ] [Normalise kana script](#normalise-kana-script)
+    - [ ] Survey every segment
+    - [ ] Enforce in validate and merge
+    - [ ] Convert existing data
+- [ ] Segment data
+  - [ ] [Consolidate redundant glosses](#consolidate-redundant-glosses)
+    - [ ] Merge same-sense glosses
+    - [ ] Measure compound redundancy
+    - [ ] Decide on shared glossary
+  - [ ] [Split sign markup segments](#split-sign-markup-segments)
+- [ ] Code
+  - [ ] [Optimize composite lookup](#optimize-composite-lookup)
+    - [ ] N-gram index for substrings
+    - [ ] Trie for whole entries
+    - [ ] Narrow template attempts
+  - [ ] [Quiet fallback log](#quiet-fallback-log)
+  - [ ] [Fix line-wrap hit-testing](#fix-line-wrap-hit-testing)
+  - [ ] [Remove debug logs](#remove-debug-logs)
 
 ## Details
 
