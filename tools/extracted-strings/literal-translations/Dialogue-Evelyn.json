@@ -1,0 +1,4857 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Dialogue-Evelyn.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AcceptGift_(O)170": {
+    "japanese": "ありがとうね。老眼鏡を探していたところなの….#$b#あらあら！よごれてしまったわ…",
+    "english": "Thank you, dear. I've been looking for my reading glasses... My, my! It's gotten dirty.",
+    "segments": [
+      {
+        "text": "ありがとう",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "老眼鏡",
+        "kana": "ろうがんきょう",
+        "gloss": "reading glasses"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "探していた",
+        "kana": "さがしていた",
+        "gloss": "was looking for"
+      },
+      {
+        "text": "ところ",
+        "kana": "ところ",
+        "gloss": "(the moment)"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(explanatory tone)"
+      },
+      {
+        "text": "の….#$b#",
+        "kana": "の",
+        "gloss": "(explanatory tone)"
+      },
+      {
+        "text": "あらあら！",
+        "kana": "あらあら",
+        "gloss": "oh my"
+      },
+      {
+        "text": "よごれてしまった",
+        "kana": "よごれてしまった",
+        "gloss": "got dirty"
+      },
+      {
+        "text": "わ…",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "AcceptGift_(O)StardropTea": {
+    "japanese": "あら、それを私に？本当にありがとう。なんてすばらしい贈り物なのかしら！",
+    "english": "Oh, giving that to me? Thank you so much. What a wonderful gift!",
+    "segments": [
+      {
+        "text": "あら、",
+        "kana": "あら",
+        "gloss": "oh"
+      },
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "に？",
+        "kana": "に",
+        "gloss": "(indirect object marker)"
+      },
+      {
+        "text": "本当に",
+        "kana": "ほんとうに",
+        "gloss": "really"
+      },
+      {
+        "text": "ありがとう。",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      },
+      {
+        "text": "なんて",
+        "kana": "なんて",
+        "gloss": "what a"
+      },
+      {
+        "text": "すばらしい",
+        "kana": "すばらしい",
+        "gloss": "wonderful"
+      },
+      {
+        "text": "贈り物",
+        "kana": "おくりもの",
+        "gloss": "gift"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "かしら！",
+        "kana": "かしら",
+        "gloss": "(wondering particle)"
+      }
+    ]
+  },
+  "AcceptGift_Positive_forage_item_beach": {
+    "japanese": "ありがとう。あの頃を思い出すわ…",
+    "english": "Thank you. It reminds me of those days...",
+    "segments": [
+      {
+        "text": "ありがとう。",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      },
+      {
+        "text": "あの頃",
+        "kana": "あのころ",
+        "gloss": "those days"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "思い出す",
+        "kana": "おもいだす",
+        "gloss": "reminds me of"
+      },
+      {
+        "text": "わ…",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "Event_cookies1": {
+    "japanese": "ありがとう！$h",
+    "english": "Thank you!",
+    "segments": [
+      {
+        "text": "ありがとう！$h",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Event_cookies2": {
+    "japanese": "おや、何だって？「ホッケーの パック」と 聞こえたような。 はぁ… 耳も遠くなってしまったのね。$s",
+    "english": "Oh my, what was that? It sounded like you said 'hockey puck'. Sigh... my ears have gotten weak, haven't they.",
+    "segments": [
+      {
+        "text": "おや、",
+        "kana": "おや",
+        "gloss": "oh my"
+      },
+      {
+        "text": "何",
+        "kana": "なに",
+        "gloss": "what"
+      },
+      {
+        "text": "だって？",
+        "kana": "だって",
+        "gloss": "(you said)"
+      },
+      {
+        "text": "「ホッケー",
+        "kana": "ホッケー",
+        "gloss": "hockey"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "パック」",
+        "kana": "パック",
+        "gloss": "puck"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "(quotation marker)"
+      },
+      {
+        "text": "聞こえた",
+        "kana": "きこえた",
+        "gloss": "sounded like"
+      },
+      {
+        "text": "ような。 ",
+        "kana": "ような",
+        "gloss": "(it seemed)"
+      },
+      {
+        "text": "はぁ… ",
+        "kana": "はぁ",
+        "gloss": "sigh"
+      },
+      {
+        "text": "耳",
+        "kana": "みみ",
+        "gloss": "ears"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "遠くなってしまった",
+        "kana": "とおくなってしまった",
+        "gloss": "have become weak"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "ね。$s",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "Fri": {
+    "japanese": "ジョージは いつも あのテレビの前で 一日を 過ごすのよ。#$e#もう少し 外へ 出てくれればいいのに。新鮮な 空気のほうが 彼のためになるわ。",
+    "english": "George always spends the whole day in front of that TV.#He could stand to go outside more. Fresh air would be good for him.",
+    "segments": [
+      {
+        "text": "ジョージ",
+        "kana": "ジョージ",
+        "gloss": "George"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いつも ",
+        "kana": "いつも",
+        "gloss": "always"
+      },
+      {
+        "text": "あの",
+        "kana": "あの",
+        "gloss": "that"
+      },
+      {
+        "text": "テレビ",
+        "kana": "テレビ",
+        "gloss": "television"
+      },
+      {
+        "text": "の前で ",
+        "kana": "の まえで",
+        "gloss": "in front of"
+      },
+      {
+        "text": "一日",
+        "kana": "いちにち",
+        "gloss": "the whole day"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "過ごす",
+        "kana": "すごす",
+        "gloss": "spends"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。#$e#",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "もう少し ",
+        "kana": "もうすこし",
+        "gloss": "a little more"
+      },
+      {
+        "text": "外へ ",
+        "kana": "そとへ",
+        "gloss": "outside"
+      },
+      {
+        "text": "出てくれれば",
+        "kana": "でてくれれば",
+        "gloss": "if he would go out"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "would be good"
+      },
+      {
+        "text": "のに。",
+        "kana": "のに",
+        "gloss": "(if only)"
+      },
+      {
+        "text": "新鮮な ",
+        "kana": "しんせんな",
+        "gloss": "fresh"
+      },
+      {
+        "text": "空気",
+        "kana": "くうき",
+        "gloss": "air"
+      },
+      {
+        "text": "のほうが ",
+        "kana": "の ほうが",
+        "gloss": "would be better"
+      },
+      {
+        "text": "彼",
+        "kana": "かれ",
+        "gloss": "him"
+      },
+      {
+        "text": "のため",
+        "kana": "の ため",
+        "gloss": "for the sake of"
+      },
+      {
+        "text": "になる",
+        "kana": "に なる",
+        "gloss": "would be"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "GreenRain": {
+    "japanese": "ああ、ジョージ…これで終わりなのかしら？いい人生だったけれど、旅立つ前にアレックスが自分の道を歩む姿が見たかったわ…$s%noturn",
+    "english": "Oh, George... is this the end, I wonder? It's been a good life, but I wanted to see Alex walk his own path before he departs...",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "oh"
+      },
+      {
+        "text": "ジョージ…",
+        "kana": "ジョージ",
+        "gloss": "George"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(means marker)"
+      },
+      {
+        "text": "終わり",
+        "kana": "おわり",
+        "gloss": "the end"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "かしら？",
+        "kana": "かしら",
+        "gloss": "(wondering particle)"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "人生",
+        "kana": "じんせい",
+        "gloss": "life"
+      },
+      {
+        "text": "だった",
+        "kana": "だった",
+        "gloss": "was"
+      },
+      {
+        "text": "けれど、",
+        "kana": "けれど",
+        "gloss": "but"
+      },
+      {
+        "text": "旅立つ",
+        "kana": "たびだつ",
+        "gloss": "depart"
+      },
+      {
+        "text": "前に",
+        "kana": "まえに",
+        "gloss": "before"
+      },
+      {
+        "text": "アレックス",
+        "kana": "アレックス",
+        "gloss": "Alex"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "自分の道",
+        "kana": "じぶんの みち",
+        "gloss": "his own path"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "歩む",
+        "kana": "あゆむ",
+        "gloss": "walk"
+      },
+      {
+        "text": "姿",
+        "kana": "すがた",
+        "gloss": "figure"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "見たかった",
+        "kana": "みたかった",
+        "gloss": "wanted to see"
+      },
+      {
+        "text": "わ…$s%noturn",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "GreenRainFinished": {
+    "japanese": "ああ…何事もなくて本当によかったわ。どうしてかしら、私の花たちがいつもより元気そうなの！",
+    "english": "Oh... I'm so glad nothing happened. I wonder why, but my flowers seem more lively than usual!",
+    "segments": [
+      {
+        "text": "ああ…",
+        "kana": "ああ",
+        "gloss": "oh"
+      },
+      {
+        "text": "何事もなくて",
+        "kana": "なにごともなくて",
+        "gloss": "nothing happened, and"
+      },
+      {
+        "text": "本当に",
+        "kana": "ほんとうに",
+        "gloss": "really"
+      },
+      {
+        "text": "よかった",
+        "kana": "よかった",
+        "gloss": "good/glad"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "どうしてかしら、",
+        "kana": "どうしてかしら",
+        "gloss": "I wonder why"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "花たち",
+        "kana": "はなたち",
+        "gloss": "flowers"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いつもより",
+        "kana": "いつもより",
+        "gloss": "more than usual"
+      },
+      {
+        "text": "元気そう",
+        "kana": "げんきそう",
+        "gloss": "looking lively"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "の！",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "GreenRain_2": {
+    "japanese": "花たちはこの雨が好きみたいね…",
+    "english": "The flowers seem to like this rain...",
+    "segments": [
+      {
+        "text": "花たち",
+        "kana": "はなたち",
+        "gloss": "the flowers"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "雨",
+        "kana": "あめ",
+        "gloss": "rain"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "好き",
+        "kana": "すき",
+        "gloss": "like"
+      },
+      {
+        "text": "みたい",
+        "kana": "みたい",
+        "gloss": "seems"
+      },
+      {
+        "text": "ね…",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "Introduction": {
+    "japanese": "あら、こんにちは。この小さな町に よく来てくれたわね！#$b#良かったら 「おばあちゃん」って 呼んでね。$h",
+    "english": "Oh, hello. Welcome to this little town! If you like, call me 'Granny'.",
+    "segments": [
+      {
+        "text": "あら、",
+        "kana": "あら",
+        "gloss": "oh"
+      },
+      {
+        "text": "こんにちは。",
+        "kana": "こんにちは",
+        "gloss": "hello"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "小さな",
+        "kana": "ちいさな",
+        "gloss": "little"
+      },
+      {
+        "text": "町",
+        "kana": "まち",
+        "gloss": "town"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "well"
+      },
+      {
+        "text": "来てくれた",
+        "kana": "きてくれた",
+        "gloss": "came (for me)"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ね！#$b#",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "良かったら ",
+        "kana": "よかったら",
+        "gloss": "if you like"
+      },
+      {
+        "text": "「おばあちゃん」",
+        "kana": "おばあちゃん",
+        "gloss": "Granny"
+      },
+      {
+        "text": "って ",
+        "kana": "って",
+        "gloss": "(quotation marker)"
+      },
+      {
+        "text": "呼んで",
+        "kana": "よんで",
+        "gloss": "call me"
+      },
+      {
+        "text": "ね。$h",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "Mon": {
+    "japanese": "おや、なんてステキな一日かしら。$u",
+    "english": "Oh my, what a lovely day.",
+    "segments": [
+      {
+        "text": "おや、",
+        "kana": "おや",
+        "gloss": "oh"
+      },
+      {
+        "text": "なんて",
+        "kana": "なんて",
+        "gloss": "what a"
+      },
+      {
+        "text": "ステキな",
+        "kana": "ステキな",
+        "gloss": "lovely"
+      },
+      {
+        "text": "一日",
+        "kana": "いちにち",
+        "gloss": "day"
+      },
+      {
+        "text": "かしら。$u",
+        "kana": "かしら",
+        "gloss": "(wondering particle)"
+      }
+    ]
+  },
+  "MovieInvitation": {
+    "japanese": "あらまあ! そんなこと言われると嬉しいわ。ええ… 喜んで映画に行きますよ!$h#$b#あなたは先に行っててちょうだい。映画館で会いましょう。",
+    "english": "Oh my! I'm happy to hear something like that. Yes... I'll gladly go to the movies! You go on ahead. Let's meet at the theater.",
+    "segments": [
+      {
+        "text": "あらまあ! ",
+        "kana": "あらまあ",
+        "gloss": "oh my"
+      },
+      {
+        "text": "そんなこと",
+        "kana": "そんなこと",
+        "gloss": "something like that"
+      },
+      {
+        "text": "言われる",
+        "kana": "いわれる",
+        "gloss": "being told"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(conditional marker)"
+      },
+      {
+        "text": "嬉しい",
+        "kana": "うれしい",
+        "gloss": "happy"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ええ… ",
+        "kana": "ええ",
+        "gloss": "yes"
+      },
+      {
+        "text": "喜んで",
+        "kana": "よろこんで",
+        "gloss": "gladly"
+      },
+      {
+        "text": "映画",
+        "kana": "えいが",
+        "gloss": "movie"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "行きます",
+        "kana": "いきます",
+        "gloss": "will go"
+      },
+      {
+        "text": "よ!$h#$b#",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "先に",
+        "kana": "さきに",
+        "gloss": "first"
+      },
+      {
+        "text": "行ってて",
+        "kana": "いってて",
+        "gloss": "go on"
+      },
+      {
+        "text": "ちょうだい。",
+        "kana": "ちょうだい",
+        "gloss": "please"
+      },
+      {
+        "text": "映画館",
+        "kana": "えいがかん",
+        "gloss": "theater"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "会いましょう。",
+        "kana": "あいましょう",
+        "gloss": "let's meet"
+      }
+    ]
+  },
+  "Sat": {
+    "japanese": "空を見上げて 雲を眺めるのが 好きだったけど、 最近は目がよく見えなくてね。#$e#昔と比べて 視力が 落ちてきたのかしら。$s",
+    "english": "I used to like looking up at the sky and gazing at clouds, but lately my eyes can't see well. Compared to the past, I wonder if my eyesight has declined.",
+    "segments": [
+      {
+        "text": "空",
+        "kana": "そら",
+        "gloss": "sky"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見上げて ",
+        "kana": "みあげて",
+        "gloss": "looking up"
+      },
+      {
+        "text": "雲",
+        "kana": "くも",
+        "gloss": "clouds"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "眺める",
+        "kana": "ながめる",
+        "gloss": "gazing at"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "好きだった",
+        "kana": "すきだった",
+        "gloss": "used to like"
+      },
+      {
+        "text": "けど、 ",
+        "kana": "けど",
+        "gloss": "but"
+      },
+      {
+        "text": "最近",
+        "kana": "さいきん",
+        "gloss": "lately"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "目",
+        "kana": "め",
+        "gloss": "eyes"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "well"
+      },
+      {
+        "text": "見えなくて",
+        "kana": "みえなくて",
+        "gloss": "can't see, and"
+      },
+      {
+        "text": "ね。#$e#",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "昔と比べて ",
+        "kana": "むかしと くらべて",
+        "gloss": "compared to the past"
+      },
+      {
+        "text": "視力",
+        "kana": "しりょく",
+        "gloss": "eyesight"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "落ちてきた",
+        "kana": "おちてきた",
+        "gloss": "has declined"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "かしら。$s",
+        "kana": "かしら",
+        "gloss": "(wondering particle)"
+      }
+    ]
+  },
+  "Sun": {
+    "japanese": "海の近くに 住むのって ステキね。波打つ音で、 心地よく 眠れるのよ。#$e#子どもの 頃は、 潮が引いた時に 貝殻を 探しに行ってたわ。あの頃はよかった…",
+    "english": "It's nice to live near the sea. The sound of the waves lets me sleep comfortably. When I was a child, I used to go looking for seashells when the tide went out. Those were the days...",
+    "segments": [
+      {
+        "text": "海",
+        "kana": "うみ",
+        "gloss": "sea"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "近く",
+        "kana": "ちかく",
+        "gloss": "near"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "住む",
+        "kana": "すむ",
+        "gloss": "living"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "って ",
+        "kana": "って",
+        "gloss": "(topic-like marker)"
+      },
+      {
+        "text": "ステキ",
+        "kana": "ステキ",
+        "gloss": "lovely"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "波打つ音",
+        "kana": "なみうつおと",
+        "gloss": "sound of waves"
+      },
+      {
+        "text": "で、 ",
+        "kana": "で",
+        "gloss": "(means marker)"
+      },
+      {
+        "text": "心地よく ",
+        "kana": "ここちよく",
+        "gloss": "comfortably"
+      },
+      {
+        "text": "眠れる",
+        "kana": "ねむれる",
+        "gloss": "can sleep"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。#$e#",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "子ども",
+        "kana": "こども",
+        "gloss": "child"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "頃",
+        "kana": "ころ",
+        "gloss": "time"
+      },
+      {
+        "text": "は、 ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "潮",
+        "kana": "しお",
+        "gloss": "tide"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "引いた",
+        "kana": "ひいた",
+        "gloss": "went out"
+      },
+      {
+        "text": "時",
+        "kana": "とき",
+        "gloss": "when"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(time marker)"
+      },
+      {
+        "text": "貝殻",
+        "kana": "かいがら",
+        "gloss": "seashells"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "探しに行ってた",
+        "kana": "さがしに いってた",
+        "gloss": "used to go looking for"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "あの頃",
+        "kana": "あのころ",
+        "gloss": "those days"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "よかった…",
+        "kana": "よかった",
+        "gloss": "were good"
+      }
+    ]
+  },
+  "Thu": {
+    "japanese": "今日は クッキーを 焼こうと 思ってるの。春だから、 花の形がいいかなって。$h#$e#近いうちに、 作り方を 教えてあげるわね。",
+    "english": "I'm thinking of baking cookies today. Since it's spring, flower shapes might be nice. I'll teach you the recipe soon.",
+    "segments": [
+      {
+        "text": "今日",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "クッキー",
+        "kana": "クッキー",
+        "gloss": "cookies"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "焼こう",
+        "kana": "やこう",
+        "gloss": "bake"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "(quotation marker)"
+      },
+      {
+        "text": "思ってる",
+        "kana": "おもってる",
+        "gloss": "am thinking"
+      },
+      {
+        "text": "の。",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "春",
+        "kana": "はる",
+        "gloss": "spring"
+      },
+      {
+        "text": "だから、 ",
+        "kana": "だから",
+        "gloss": "because it's"
+      },
+      {
+        "text": "花",
+        "kana": "はな",
+        "gloss": "flower"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "形",
+        "kana": "かたち",
+        "gloss": "shape"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いいかな",
+        "kana": "いいかな",
+        "gloss": "might be good"
+      },
+      {
+        "text": "って。$h#$e#",
+        "kana": "って",
+        "gloss": "(quotation marker)"
+      },
+      {
+        "text": "近いうちに、 ",
+        "kana": "ちかいうちに",
+        "gloss": "soon"
+      },
+      {
+        "text": "作り方",
+        "kana": "つくりかた",
+        "gloss": "how to make"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "教えてあげる",
+        "kana": "おしえてあげる",
+        "gloss": "I'll teach you"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "Tue": {
+    "japanese": "夫のジョージのこと、 あまり気にしないでちょうだい。見知らぬ人に 好意をもてないタイプなのよ。#$e#でも知り合ったら 打ち解けてくれるはず。#$e#きっと あなた達二人は いい お友達に なれるわ！$h#$e#夫に 興味を 持ってくれる あなたには 秘密を 教えてあげる。 あの人、ポロねぎが 大好きなの！ポロねぎは、 この季節に山へ行けば 見つかるはずよ。",
+    "english": "Please don't mind my husband George too much. He's the type who can't be friendly to strangers.#But once you get to know him, he should open up.#I'm sure you two will become good friends!#Since you're interested in my husband, I'll tell you a secret. He loves leeks! You can find leeks if you go to the mountain this season.",
+    "segments": [
+      {
+        "text": "夫",
+        "kana": "おっと",
+        "gloss": "husband"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "ジョージ",
+        "kana": "ジョージ",
+        "gloss": "George"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "こと、 ",
+        "kana": "こと",
+        "gloss": "(about)"
+      },
+      {
+        "text": "あまり",
+        "kana": "あまり",
+        "gloss": "not too much"
+      },
+      {
+        "text": "気にしないで",
+        "kana": "きにしないで",
+        "gloss": "don't mind"
+      },
+      {
+        "text": "ちょうだい。",
+        "kana": "ちょうだい",
+        "gloss": "please"
+      },
+      {
+        "text": "見知らぬ人",
+        "kana": "みしらぬひと",
+        "gloss": "stranger"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "好意",
+        "kana": "こうい",
+        "gloss": "goodwill"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "もてない",
+        "kana": "もてない",
+        "gloss": "can't have"
+      },
+      {
+        "text": "タイプ",
+        "kana": "タイプ",
+        "gloss": "type"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。#$e#",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "知り合ったら ",
+        "kana": "しりあったら",
+        "gloss": "once you get to know him"
+      },
+      {
+        "text": "打ち解けてくれる",
+        "kana": "うちとけてくれる",
+        "gloss": "he'll open up"
+      },
+      {
+        "text": "はず。#$e#",
+        "kana": "はず",
+        "gloss": "should"
+      },
+      {
+        "text": "きっと ",
+        "kana": "きっと",
+        "gloss": "surely"
+      },
+      {
+        "text": "あなた達二人",
+        "kana": "あなたたちふたり",
+        "gloss": "the two of you"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いい ",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "お友達",
+        "kana": "おともだち",
+        "gloss": "friends"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(result marker)"
+      },
+      {
+        "text": "なれる",
+        "kana": "なれる",
+        "gloss": "can become"
+      },
+      {
+        "text": "わ！$h#$e#",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "夫",
+        "kana": "おっと",
+        "gloss": "husband"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "興味",
+        "kana": "きょうみ",
+        "gloss": "interest"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "持ってくれる ",
+        "kana": "もってくれる",
+        "gloss": "who has (for me)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(indirect object marker)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "秘密",
+        "kana": "ひみつ",
+        "gloss": "secret"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "教えてあげる。 ",
+        "kana": "おしえてあげる",
+        "gloss": "I'll tell you"
+      },
+      {
+        "text": "あの人、",
+        "kana": "あのひと",
+        "gloss": "that man"
+      },
+      {
+        "text": "ポロねぎ",
+        "kana": "ポロねぎ",
+        "gloss": "leeks"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "大好きな",
+        "kana": "だいすきな",
+        "gloss": "loves"
+      },
+      {
+        "text": "の！",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "ポロねぎ",
+        "kana": "ポロねぎ",
+        "gloss": "leeks"
+      },
+      {
+        "text": "は、 ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "この季節",
+        "kana": "このきせつ",
+        "gloss": "this season"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time marker)"
+      },
+      {
+        "text": "山",
+        "kana": "やま",
+        "gloss": "mountain"
+      },
+      {
+        "text": "へ",
+        "kana": "へ",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "行けば ",
+        "kana": "いけば",
+        "gloss": "if you go"
+      },
+      {
+        "text": "見つかる",
+        "kana": "みつかる",
+        "gloss": "can be found"
+      },
+      {
+        "text": "はず",
+        "kana": "はず",
+        "gloss": "should"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "Tue6": {
+    "japanese": "わざわざ 私とジョージに 会いに きてくれるなんて うれしいわ。#$e#若い子が そばに いないと、年を取るのが 早く感じるのよ。$h",
+    "english": "I'm happy that you'd specially come to visit George and me.#Without young people nearby, aging feels faster.",
+    "segments": [
+      {
+        "text": "わざわざ ",
+        "kana": "わざわざ",
+        "gloss": "specially"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(and marker)"
+      },
+      {
+        "text": "ジョージ",
+        "kana": "ジョージ",
+        "gloss": "George"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "会いに ",
+        "kana": "あいに",
+        "gloss": "to meet"
+      },
+      {
+        "text": "きてくれる",
+        "kana": "きてくれる",
+        "gloss": "come (for us)"
+      },
+      {
+        "text": "なんて ",
+        "kana": "なんて",
+        "gloss": "(such a thing as)"
+      },
+      {
+        "text": "うれしい",
+        "kana": "うれしい",
+        "gloss": "happy"
+      },
+      {
+        "text": "わ。#$e#",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "若い子",
+        "kana": "わかいこ",
+        "gloss": "young people"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "そば",
+        "kana": "そば",
+        "gloss": "nearby"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "いない",
+        "kana": "いない",
+        "gloss": "aren't"
+      },
+      {
+        "text": "と、",
+        "kana": "と",
+        "gloss": "(conditional marker)"
+      },
+      {
+        "text": "年",
+        "kana": "とし",
+        "gloss": "age"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "取る",
+        "kana": "とる",
+        "gloss": "growing"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "早く",
+        "kana": "はやく",
+        "gloss": "quickly"
+      },
+      {
+        "text": "感じる",
+        "kana": "かんじる",
+        "gloss": "feel"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。$h",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "Wed": {
+    "japanese": "#$1 evelynGarden1#昨日、 町の公園で とても美しい 蝶の つがいが 日向ぼっこを しているのを 見たわ。$k#$e#町長さんが、 この公園を 私に 任せてくださっているの。#$e#何週間もかけて、 花壇のお手入れをしているから、 踏まないようにしてちょうだい！",
+    "english": "Yesterday, I saw a beautiful pair of butterflies sunning themselves in the town park. The mayor has entrusted this park to me. I've spent weeks tending the flower beds, so please don't step on them!",
+    "segments": [
+      {
+        "text": "#$1 evelynGarden1#昨日、 ",
+        "kana": "きのう",
+        "gloss": "yesterday"
+      },
+      {
+        "text": "町",
+        "kana": "まち",
+        "gloss": "town"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "公園",
+        "kana": "こうえん",
+        "gloss": "park"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very"
+      },
+      {
+        "text": "美しい ",
+        "kana": "うつくしい",
+        "gloss": "beautiful"
+      },
+      {
+        "text": "蝶",
+        "kana": "ちょう",
+        "gloss": "butterflies"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "つがい",
+        "kana": "つがい",
+        "gloss": "pair"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "日向ぼっこ",
+        "kana": "ひなたぼっこ",
+        "gloss": "sunbathing"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "している",
+        "kana": "している",
+        "gloss": "doing"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見た",
+        "kana": "みた",
+        "gloss": "saw"
+      },
+      {
+        "text": "わ。$k#$e#",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "町長さん",
+        "kana": "ちょうちょうさん",
+        "gloss": "the mayor"
+      },
+      {
+        "text": "が、 ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "この公園",
+        "kana": "このこうえん",
+        "gloss": "this park"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(indirect object marker)"
+      },
+      {
+        "text": "任せてくださっている",
+        "kana": "まかせてくださっている",
+        "gloss": "has entrusted"
+      },
+      {
+        "text": "の。#$e#",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "何週間も",
+        "kana": "なんしゅうかんも",
+        "gloss": "for weeks"
+      },
+      {
+        "text": "かけて、 ",
+        "kana": "かけて",
+        "gloss": "spending"
+      },
+      {
+        "text": "花壇",
+        "kana": "かだん",
+        "gloss": "flower beds"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "お手入れ",
+        "kana": "おていれ",
+        "gloss": "upkeep"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "している",
+        "kana": "している",
+        "gloss": "doing"
+      },
+      {
+        "text": "から、 ",
+        "kana": "から",
+        "gloss": "because"
+      },
+      {
+        "text": "踏まない",
+        "kana": "ふまない",
+        "gloss": "not step"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that"
+      },
+      {
+        "text": "して",
+        "kana": "して",
+        "gloss": "do (please)"
+      },
+      {
+        "text": "ちょうだい！",
+        "kana": "ちょうだい",
+        "gloss": "please"
+      }
+    ]
+  },
+  "cc_Complete": {
+    "japanese": "公民館が元通りになってとってもうれしいわ。あそこにはたくさんの思い出がつまっているの…特別な場所なのよ。",
+    "english": "I'm so happy the community center has been restored. So many memories are packed into that place... It's a special place.",
+    "segments": [
+      {
+        "text": "公民館",
+        "kana": "こうみんかん",
+        "gloss": "community center"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "元通りになって",
+        "kana": "もとどおりになって",
+        "gloss": "being restored"
+      },
+      {
+        "text": "とっても",
+        "kana": "とっても",
+        "gloss": "very"
+      },
+      {
+        "text": "うれしい",
+        "kana": "うれしい",
+        "gloss": "happy"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "あそこ",
+        "kana": "あそこ",
+        "gloss": "that place"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "たくさん",
+        "kana": "たくさん",
+        "gloss": "many"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "思い出",
+        "kana": "おもいで",
+        "gloss": "memories"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "つまっている",
+        "kana": "つまっている",
+        "gloss": "are packed"
+      },
+      {
+        "text": "の…",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "特別な",
+        "kana": "とくべつな",
+        "gloss": "special"
+      },
+      {
+        "text": "場所",
+        "kana": "ばしょ",
+        "gloss": "place"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "cropMatured_591": {
+    "japanese": "自分で育てたチューリップは春の素敵な贈り物になるのよ。",
+    "english": "Tulips you grew yourself make a lovely spring gift.",
+    "segments": [
+      {
+        "text": "自分で",
+        "kana": "じぶんで",
+        "gloss": "by oneself"
+      },
+      {
+        "text": "育てた",
+        "kana": "そだてた",
+        "gloss": "grew"
+      },
+      {
+        "text": "チューリップ",
+        "kana": "チューリップ",
+        "gloss": "tulips"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "春",
+        "kana": "はる",
+        "gloss": "spring"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "素敵な",
+        "kana": "すてきな",
+        "gloss": "lovely"
+      },
+      {
+        "text": "贈り物",
+        "kana": "おくりもの",
+        "gloss": "gift"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(result marker)"
+      },
+      {
+        "text": "なる",
+        "kana": "なる",
+        "gloss": "become"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "divorce": {
+    "japanese": "こんど結婚するときは、ちゃんと考えてから相手を決めてちょうだいね…$s",
+    "english": "Next time you get married, please think it through properly before deciding on a partner...",
+    "segments": [
+      {
+        "text": "こんど",
+        "kana": "こんど",
+        "gloss": "next time"
+      },
+      {
+        "text": "結婚する",
+        "kana": "けっこんする",
+        "gloss": "marry"
+      },
+      {
+        "text": "とき",
+        "kana": "とき",
+        "gloss": "when"
+      },
+      {
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ちゃんと",
+        "kana": "ちゃんと",
+        "gloss": "properly"
+      },
+      {
+        "text": "考えてから",
+        "kana": "かんがえてから",
+        "gloss": "after thinking"
+      },
+      {
+        "text": "相手",
+        "kana": "あいて",
+        "gloss": "partner"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "決めて",
+        "kana": "きめて",
+        "gloss": "decide"
+      },
+      {
+        "text": "ちょうだい",
+        "kana": "ちょうだい",
+        "gloss": "please"
+      },
+      {
+        "text": "ね…$s",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "fall_Mon": {
+    "japanese": "年が過ぎるにつれて、 季節を前よりも 楽しむように しているの。若い人にとって、 年月は あっという間 でしょうけど。",
+    "english": "As the years pass, I've come to enjoy the seasons more than before. For young people, though, the years probably fly by in the blink of an eye.",
+    "segments": [
+      {
+        "text": "年",
+        "kana": "とし",
+        "gloss": "years"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "過ぎる",
+        "kana": "すぎる",
+        "gloss": "pass"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(as marker)"
+      },
+      {
+        "text": "つれて、 ",
+        "kana": "つれて",
+        "gloss": "as"
+      },
+      {
+        "text": "季節",
+        "kana": "きせつ",
+        "gloss": "seasons"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "前よりも ",
+        "kana": "まえよりも",
+        "gloss": "more than before"
+      },
+      {
+        "text": "楽しむ",
+        "kana": "たのしむ",
+        "gloss": "enjoy"
+      },
+      {
+        "text": "ように ",
+        "kana": "ように",
+        "gloss": "so as to"
+      },
+      {
+        "text": "している",
+        "kana": "している",
+        "gloss": "am doing"
+      },
+      {
+        "text": "の。",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "若い人",
+        "kana": "わかいひと",
+        "gloss": "young people"
+      },
+      {
+        "text": "にとって、 ",
+        "kana": "にとって",
+        "gloss": "for"
+      },
+      {
+        "text": "年月",
+        "kana": "としつき",
+        "gloss": "years"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あっという間 ",
+        "kana": "あっというま",
+        "gloss": "in the blink of an eye"
+      },
+      {
+        "text": "でしょう",
+        "kana": "でしょう",
+        "gloss": "probably"
+      },
+      {
+        "text": "けど。",
+        "kana": "けど",
+        "gloss": "but"
+      }
+    ]
+  },
+  "fall_Sat": {
+    "japanese": "アレックスとは お友達？ #$e#時々、 あの子の ことで 心配になるのよ。",
+    "english": "Are you friends with Alex?#Sometimes I worry about that boy.",
+    "segments": [
+      {
+        "text": "アレックス",
+        "kana": "アレックス",
+        "gloss": "Alex"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(with marker)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "お友達？ #$e#",
+        "kana": "おともだち",
+        "gloss": "friends"
+      },
+      {
+        "text": "時々、 ",
+        "kana": "ときどき",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "あの子",
+        "kana": "あのこ",
+        "gloss": "that child"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(regarding)"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(cause marker)"
+      },
+      {
+        "text": "心配になる",
+        "kana": "しんぱいになる",
+        "gloss": "become worried"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "fall_Sat_inlaw_Alex": {
+    "japanese": "あら、よくきてくれたわね。今じゃ、あなたのことを${孫^孫娘}$だと思ってるわ。$h",
+    "english": "Oh, it's nice of you to come by. These days, I think of you as my ${grandson^granddaughter}$.",
+    "segments": [
+      {
+        "text": "あら、",
+        "kana": "あら",
+        "gloss": "oh"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "often/nicely"
+      },
+      {
+        "text": "きてくれた",
+        "kana": "きてくれた",
+        "gloss": "came (for me)"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "今じゃ、",
+        "kana": "いまじゃ",
+        "gloss": "now"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(regarding)"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "${孫^孫娘}$",
+        "kana": "まご まごむすめ",
+        "gloss": "(grandson/granddaughter, gender variant)"
+      },
+      {
+        "text": "だ",
+        "kana": "だ",
+        "gloss": "(copula)"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quotation marker)"
+      },
+      {
+        "text": "思ってる",
+        "kana": "おもってる",
+        "gloss": "think"
+      },
+      {
+        "text": "わ。$h",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "fall_Sun": {
+    "japanese": "私の視力は 落ちてるでしょうけど、 鼻はまだまだ しっかりしてるわ！#$e#落ち葉と キノコの 匂いを嗅ぐと、若い頃に 遊んだ 森のことを 思い出すわ。",
+    "english": "My eyesight has probably declined, but my nose is still sharp!#When I smell fallen leaves and mushrooms, it reminds me of the forest I played in when I was young.",
+    "segments": [
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "視力",
+        "kana": "しりょく",
+        "gloss": "eyesight"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "落ちてる",
+        "kana": "おちてる",
+        "gloss": "has declined"
+      },
+      {
+        "text": "でしょう",
+        "kana": "でしょう",
+        "gloss": "probably"
+      },
+      {
+        "text": "けど、 ",
+        "kana": "けど",
+        "gloss": "but"
+      },
+      {
+        "text": "鼻",
+        "kana": "はな",
+        "gloss": "nose"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "まだまだ ",
+        "kana": "まだまだ",
+        "gloss": "still"
+      },
+      {
+        "text": "しっかりしてる",
+        "kana": "しっかりしてる",
+        "gloss": "is sharp"
+      },
+      {
+        "text": "わ！#$e#",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "落ち葉",
+        "kana": "おちば",
+        "gloss": "fallen leaves"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "(and marker)"
+      },
+      {
+        "text": "キノコ",
+        "kana": "キノコ",
+        "gloss": "mushrooms"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "匂い",
+        "kana": "におい",
+        "gloss": "smell"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "嗅ぐ",
+        "kana": "かぐ",
+        "gloss": "smell"
+      },
+      {
+        "text": "と、",
+        "kana": "と",
+        "gloss": "(conditional marker)"
+      },
+      {
+        "text": "若い頃",
+        "kana": "わかいころ",
+        "gloss": "my younger days"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(time marker)"
+      },
+      {
+        "text": "遊んだ ",
+        "kana": "あそんだ",
+        "gloss": "played"
+      },
+      {
+        "text": "森",
+        "kana": "もり",
+        "gloss": "forest"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(regarding)"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "思い出す",
+        "kana": "おもいだす",
+        "gloss": "remember"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "fall_Thu": {
+    "japanese": "今日は クッキーを 焼いてるの。今回は 小さな カボチャの形に したわ。$h#$e#近いうちに、 作り方を 教えてあげるわね。",
+    "english": "I'm baking cookies today. This time I made them shaped like little pumpkins.#I'll teach you the recipe sometime soon.",
+    "segments": [
+      {
+        "text": "今日",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "クッキー",
+        "kana": "クッキー",
+        "gloss": "cookies"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "焼いてる",
+        "kana": "やいてる",
+        "gloss": "am baking"
+      },
+      {
+        "text": "の。",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "今回",
+        "kana": "こんかい",
+        "gloss": "this time"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "小さな ",
+        "kana": "ちいさな",
+        "gloss": "small"
+      },
+      {
+        "text": "カボチャ",
+        "kana": "カボチャ",
+        "gloss": "pumpkin"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "形",
+        "kana": "かたち",
+        "gloss": "shape"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(result marker)"
+      },
+      {
+        "text": "した",
+        "kana": "した",
+        "gloss": "made"
+      },
+      {
+        "text": "わ。$h#$e#",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "近いうちに、 ",
+        "kana": "ちかいうちに",
+        "gloss": "soon"
+      },
+      {
+        "text": "作り方",
+        "kana": "つくりかた",
+        "gloss": "how to make"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "教えてあげる",
+        "kana": "おしえてあげる",
+        "gloss": "I'll teach you"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "fall_Tue": {
+    "japanese": "ジョージの オートミールに レーズンを 入れてるんだけど… 彼は 何も言わなかったわ。レーズンが 入ってるのに 気づいてないのかしら？",
+    "english": "I've been putting raisins in George's oatmeal... but he hasn't said anything. I wonder if he hasn't noticed the raisins are in there?",
+    "segments": [
+      {
+        "text": "ジョージ",
+        "kana": "ジョージ",
+        "gloss": "George"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "オートミール",
+        "kana": "オートミール",
+        "gloss": "oatmeal"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "レーズン",
+        "kana": "レーズン",
+        "gloss": "raisins"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "入れてるんだけど… ",
+        "kana": "いれてるんだけど",
+        "gloss": "I've been putting in, but"
+      },
+      {
+        "text": "彼",
+        "kana": "かれ",
+        "gloss": "he"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "何も",
+        "kana": "なにも",
+        "gloss": "nothing"
+      },
+      {
+        "text": "言わなかった",
+        "kana": "いわなかった",
+        "gloss": "didn't say"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "レーズン",
+        "kana": "レーズン",
+        "gloss": "raisins"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "入ってる",
+        "kana": "はいってる",
+        "gloss": "are in there"
+      },
+      {
+        "text": "のに ",
+        "kana": "のに",
+        "gloss": "even though"
+      },
+      {
+        "text": "気づいてない",
+        "kana": "きづいてない",
+        "gloss": "hasn't noticed"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "かしら？",
+        "kana": "かしら",
+        "gloss": "(wondering particle)"
+      }
+    ]
+  },
+  "fall_Wed": {
+    "japanese": "町長さんが、 この公園を 私に 任せてくださっているの。#$e#秋の花は デリケートだから、 踏まないようにしてちょうだい！子ども達が どうしたいかは お見通しよ。",
+    "english": "The mayor has entrusted this park to me.#The autumn flowers are delicate, so please don't step on them! I know full well what you kids want to do.",
+    "segments": [
+      {
+        "text": "町長さん",
+        "kana": "ちょうちょうさん",
+        "gloss": "the mayor"
+      },
+      {
+        "text": "が、 ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "この公園",
+        "kana": "このこうえん",
+        "gloss": "this park"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(indirect object marker)"
+      },
+      {
+        "text": "任せてくださっている",
+        "kana": "まかせてくださっている",
+        "gloss": "has entrusted"
+      },
+      {
+        "text": "の。#$e#",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "秋",
+        "kana": "あき",
+        "gloss": "autumn"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "花",
+        "kana": "はな",
+        "gloss": "flowers"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "デリケート",
+        "kana": "デリケート",
+        "gloss": "delicate"
+      },
+      {
+        "text": "だから、 ",
+        "kana": "だから",
+        "gloss": "because"
+      },
+      {
+        "text": "踏まない",
+        "kana": "ふまない",
+        "gloss": "not step"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that"
+      },
+      {
+        "text": "してちょうだい！",
+        "kana": "してちょうだい",
+        "gloss": "please"
+      },
+      {
+        "text": "子ども達",
+        "kana": "こどもたち",
+        "gloss": "children"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "どうしたいか",
+        "kana": "どうしたいか",
+        "gloss": "what they want to do"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "お見通し",
+        "kana": "おみとおし",
+        "gloss": "I can see through"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "married": {
+    "japanese": "私もとってもうれしいわ。$h#$e#私みたいなおばあちゃんは、恋をしている若い子たちを見ると心が温かくなるのよ。",
+    "english": "I'm very happy too.#Seeing young people in love warms the heart of a granny like me.",
+    "segments": [
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "とっても",
+        "kana": "とっても",
+        "gloss": "very"
+      },
+      {
+        "text": "うれしい",
+        "kana": "うれしい",
+        "gloss": "happy"
+      },
+      {
+        "text": "わ。$h#$e#",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "私みたいな",
+        "kana": "わたしみたいな",
+        "gloss": "like me"
+      },
+      {
+        "text": "おばあちゃん",
+        "kana": "おばあちゃん",
+        "gloss": "granny"
+      },
+      {
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "恋をしている",
+        "kana": "こいをしている",
+        "gloss": "are in love"
+      },
+      {
+        "text": "若い子たち",
+        "kana": "わかいこたち",
+        "gloss": "young people"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見る",
+        "kana": "みる",
+        "gloss": "seeing"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(conditional marker)"
+      },
+      {
+        "text": "心",
+        "kana": "こころ",
+        "gloss": "heart"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "温かくなる",
+        "kana": "あたたかくなる",
+        "gloss": "becomes warm"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "pamHouseUpgrade": {
+    "japanese": "ああもう…パムに あんな 素敵な家を プレゼント するなんて 本当に すばらしいわ！$h#$e#人が人を お互いに 思いやる、心がほんわか してくるねえ…",
+    "english": "Oh my... giving Pam such a lovely house as a gift is truly wonderful!#When people care for each other like that, it warms the heart...",
+    "segments": [
+      {
+        "text": "ああもう…",
+        "kana": "ああもう",
+        "gloss": "oh my"
+      },
+      {
+        "text": "パム",
+        "kana": "パム",
+        "gloss": "Pam"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "あんな ",
+        "kana": "あんな",
+        "gloss": "that kind of"
+      },
+      {
+        "text": "素敵な",
+        "kana": "すてきな",
+        "gloss": "lovely"
+      },
+      {
+        "text": "家",
+        "kana": "いえ",
+        "gloss": "house"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "プレゼント ",
+        "kana": "プレゼント",
+        "gloss": "gift"
+      },
+      {
+        "text": "する",
+        "kana": "する",
+        "gloss": "to give"
+      },
+      {
+        "text": "なんて ",
+        "kana": "なんて",
+        "gloss": "(such a thing as)"
+      },
+      {
+        "text": "本当に ",
+        "kana": "ほんとうに",
+        "gloss": "truly"
+      },
+      {
+        "text": "すばらしい",
+        "kana": "すばらしい",
+        "gloss": "wonderful"
+      },
+      {
+        "text": "わ！$h#$e#",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "人",
+        "kana": "ひと",
+        "gloss": "people"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "人",
+        "kana": "ひと",
+        "gloss": "people"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "お互いに ",
+        "kana": "おたがいに",
+        "gloss": "mutually"
+      },
+      {
+        "text": "思いやる、",
+        "kana": "おもいやる",
+        "gloss": "care for"
+      },
+      {
+        "text": "心",
+        "kana": "こころ",
+        "gloss": "heart"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ほんわか ",
+        "kana": "ほんわか",
+        "gloss": "warmly"
+      },
+      {
+        "text": "してくる",
+        "kana": "してくる",
+        "gloss": "becomes"
+      },
+      {
+        "text": "ねえ…",
+        "kana": "ねえ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "pamHouseUpgradeAnonymous": {
+    "japanese": "老婆心とは こういうことかしら… パムの 家の お金を 払ったのは 誰か、 私には 検討がついてるのよ… (ウィンク)",
+    "english": "I wonder if this is what they call an old woman's meddling... I have a good idea who paid for Pam's house... (wink)",
+    "segments": [
+      {
+        "text": "老婆心",
+        "kana": "ろうばしん",
+        "gloss": "an old woman's meddling"
+      },
+      {
+        "text": "とは ",
+        "kana": "とは",
+        "gloss": "(as for)"
+      },
+      {
+        "text": "こういうこと",
+        "kana": "こういうこと",
+        "gloss": "this sort of thing"
+      },
+      {
+        "text": "かしら… ",
+        "kana": "かしら",
+        "gloss": "(wondering particle)"
+      },
+      {
+        "text": "パム",
+        "kana": "パム",
+        "gloss": "Pam"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "家",
+        "kana": "いえ",
+        "gloss": "house"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "お金",
+        "kana": "おかね",
+        "gloss": "money"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "払った",
+        "kana": "はらった",
+        "gloss": "paid"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "誰",
+        "kana": "だれ",
+        "gloss": "who"
+      },
+      {
+        "text": "か、 ",
+        "kana": "か",
+        "gloss": "(question marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "検討がついてる",
+        "kana": "けんとうがついてる",
+        "gloss": "have a good idea"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ… ",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "(ウィンク)",
+        "kana": "ウィンク",
+        "gloss": "wink"
+      }
+    ]
+  },
+  "reject_866": {
+    "japanese": "なんて可愛らしいバラだこと。エミリーにもこれを見せた？なんだか彼女を思わせるわ。",
+    "english": "What a pretty rose. Have you shown this to Emily too? Somehow it makes me think of her.",
+    "segments": [
+      {
+        "text": "なんて",
+        "kana": "なんて",
+        "gloss": "what a"
+      },
+      {
+        "text": "可愛らしい",
+        "kana": "かわいらしい",
+        "gloss": "pretty"
+      },
+      {
+        "text": "バラ",
+        "kana": "バラ",
+        "gloss": "rose"
+      },
+      {
+        "text": "だ",
+        "kana": "だ",
+        "gloss": "(copula)"
+      },
+      {
+        "text": "こと。",
+        "kana": "こと",
+        "gloss": "(exclamatory)"
+      },
+      {
+        "text": "エミリー",
+        "kana": "エミリー",
+        "gloss": "Emily"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(indirect object marker)"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見せた？",
+        "kana": "みせた",
+        "gloss": "showed"
+      },
+      {
+        "text": "なんだか",
+        "kana": "なんだか",
+        "gloss": "somehow"
+      },
+      {
+        "text": "彼女",
+        "kana": "かのじょ",
+        "gloss": "her"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "思わせる",
+        "kana": "おもわせる",
+        "gloss": "makes me think of"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "reject_867": {
+    "japanese": "まあ、ジョージもきっと興味を持つはずよ！",
+    "english": "Oh, I'm sure George would be interested too!",
+    "segments": [
+      {
+        "text": "まあ、",
+        "kana": "まあ",
+        "gloss": "oh"
+      },
+      {
+        "text": "ジョージ",
+        "kana": "ジョージ",
+        "gloss": "George"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "きっと",
+        "kana": "きっと",
+        "gloss": "surely"
+      },
+      {
+        "text": "興味",
+        "kana": "きょうみ",
+        "gloss": "interest"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "持つ",
+        "kana": "もつ",
+        "gloss": "have"
+      },
+      {
+        "text": "はず",
+        "kana": "はず",
+        "gloss": "should"
+      },
+      {
+        "text": "よ！",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "summer_Mon": {
+    "japanese": "こんな良い天気だと 活き活きした 気分に なるわ。$u",
+    "english": "In weather this nice, I feel lively.",
+    "segments": [
+      {
+        "text": "こんな",
+        "kana": "こんな",
+        "gloss": "such"
+      },
+      {
+        "text": "良い",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "天気",
+        "kana": "てんき",
+        "gloss": "weather"
+      },
+      {
+        "text": "だと ",
+        "kana": "だと",
+        "gloss": "when it's"
+      },
+      {
+        "text": "活き活きした ",
+        "kana": "いきいきした",
+        "gloss": "lively"
+      },
+      {
+        "text": "気分",
+        "kana": "きぶん",
+        "gloss": "mood"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(result marker)"
+      },
+      {
+        "text": "なる",
+        "kana": "なる",
+        "gloss": "become"
+      },
+      {
+        "text": "わ。$u",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "summer_Mon_inlaw_Alex": {
+    "japanese": "孫とは うまく やっていけてるかしら？牧場で 幸せに 暮らしている姿を 想像できるわ。#$e#彼は いい子だから… 幸せで いてほしいのよ。",
+    "english": "I wonder how my grandson is doing? I can imagine him living happily on the farm.#Since he's a good boy... I want him to be happy.",
+    "segments": [
+      {
+        "text": "孫",
+        "kana": "まご",
+        "gloss": "grandson"
+      },
+      {
+        "text": "とは ",
+        "kana": "とは",
+        "gloss": "(as for)"
+      },
+      {
+        "text": "うまく ",
+        "kana": "うまく",
+        "gloss": "well"
+      },
+      {
+        "text": "やっていけてる",
+        "kana": "やっていけてる",
+        "gloss": "getting along"
+      },
+      {
+        "text": "かしら？",
+        "kana": "かしら",
+        "gloss": "(wondering particle)"
+      },
+      {
+        "text": "牧場",
+        "kana": "ぼくじょう",
+        "gloss": "farm"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "幸せに ",
+        "kana": "しあわせに",
+        "gloss": "happily"
+      },
+      {
+        "text": "暮らしている",
+        "kana": "くらしている",
+        "gloss": "living"
+      },
+      {
+        "text": "姿",
+        "kana": "すがた",
+        "gloss": "figure"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "想像できる",
+        "kana": "そうぞうできる",
+        "gloss": "can imagine"
+      },
+      {
+        "text": "わ。#$e#",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "彼",
+        "kana": "かれ",
+        "gloss": "he"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いい子",
+        "kana": "いいこ",
+        "gloss": "good kid"
+      },
+      {
+        "text": "だから… ",
+        "kana": "だから",
+        "gloss": "because"
+      },
+      {
+        "text": "幸せで ",
+        "kana": "しあわせで",
+        "gloss": "happy"
+      },
+      {
+        "text": "いてほしい",
+        "kana": "いてほしい",
+        "gloss": "want him to be"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "summer_Sat": {
+    "japanese": "外では 気をつけるのよ。日焼けしちゃうから。",
+    "english": "Be careful outside. You'll get sunburnt.",
+    "segments": [
+      {
+        "text": "外",
+        "kana": "そと",
+        "gloss": "outside"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "気をつける",
+        "kana": "きをつける",
+        "gloss": "be careful"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "日焼けしちゃう",
+        "kana": "ひやけしちゃう",
+        "gloss": "will get sunburnt"
+      },
+      {
+        "text": "から。",
+        "kana": "から",
+        "gloss": "because"
+      }
+    ]
+  },
+  "summer_Sun": {
+    "japanese": "スイートピーが咲く季節ね。#$e#すばらしい 香りだと 思わない？",
+    "english": "It's the season sweet peas bloom.#Don't you think it's a wonderful fragrance?",
+    "segments": [
+      {
+        "text": "スイートピー",
+        "kana": "スイートピー",
+        "gloss": "sweet peas"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "咲く",
+        "kana": "さく",
+        "gloss": "bloom"
+      },
+      {
+        "text": "季節",
+        "kana": "きせつ",
+        "gloss": "season"
+      },
+      {
+        "text": "ね。#$e#",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "すばらしい ",
+        "kana": "すばらしい",
+        "gloss": "wonderful"
+      },
+      {
+        "text": "香り",
+        "kana": "かおり",
+        "gloss": "fragrance"
+      },
+      {
+        "text": "だと ",
+        "kana": "だと",
+        "gloss": "(that it is)"
+      },
+      {
+        "text": "思わない？",
+        "kana": "おもわない",
+        "gloss": "don't you think"
+      }
+    ]
+  },
+  "summer_Thu": {
+    "japanese": "今日は クッキーを 焼こうと 思ってるの。小さな ヤシの木みたいな 形の ココナッツクッキーよ！ふふふ。$h#$e#近いうちに、 作り方を 教えてあげるわね。",
+    "english": "I'm thinking of baking cookies today. They're coconut cookies shaped like little palm trees! Heehee.#I'll teach you how to make them sometime soon.",
+    "segments": [
+      {
+        "text": "今日",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "クッキー",
+        "kana": "クッキー",
+        "gloss": "cookies"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "焼こう",
+        "kana": "やこう",
+        "gloss": "bake"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "(quotation marker)"
+      },
+      {
+        "text": "思ってる",
+        "kana": "おもってる",
+        "gloss": "am thinking"
+      },
+      {
+        "text": "の。",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "小さな ",
+        "kana": "ちいさな",
+        "gloss": "little"
+      },
+      {
+        "text": "ヤシの木",
+        "kana": "ヤシのき",
+        "gloss": "palm tree"
+      },
+      {
+        "text": "みたいな ",
+        "kana": "みたいな",
+        "gloss": "like"
+      },
+      {
+        "text": "形",
+        "kana": "かたち",
+        "gloss": "shape"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "ココナッツクッキー",
+        "kana": "ココナッツクッキー",
+        "gloss": "coconut cookies"
+      },
+      {
+        "text": "よ！",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "ふふふ。$h#$e#",
+        "kana": "ふふふ",
+        "gloss": "heehee"
+      },
+      {
+        "text": "近いうちに、 ",
+        "kana": "ちかいうちに",
+        "gloss": "soon"
+      },
+      {
+        "text": "作り方",
+        "kana": "つくりかた",
+        "gloss": "how to make"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "教えてあげる",
+        "kana": "おしえてあげる",
+        "gloss": "I'll teach you"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "summer_Thu4": {
+    "japanese": "クッキーを 焼き始めると、 いつも お客様が 増えるような 気がするわね。#$e#母から 作り方を 教わったのよ。",
+    "english": "I feel like we always get more visitors when I start baking cookies.#My mother taught me the recipe.",
+    "segments": [
+      {
+        "text": "クッキー",
+        "kana": "クッキー",
+        "gloss": "cookies"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "焼き始める",
+        "kana": "やきはじめる",
+        "gloss": "start baking"
+      },
+      {
+        "text": "と、 ",
+        "kana": "と",
+        "gloss": "(conditional marker)"
+      },
+      {
+        "text": "いつも ",
+        "kana": "いつも",
+        "gloss": "always"
+      },
+      {
+        "text": "お客様",
+        "kana": "おきゃくさま",
+        "gloss": "guests"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "増える",
+        "kana": "ふえる",
+        "gloss": "increase"
+      },
+      {
+        "text": "ような ",
+        "kana": "ような",
+        "gloss": "it seems"
+      },
+      {
+        "text": "気がする",
+        "kana": "きがする",
+        "gloss": "feel"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ね。#$e#",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "母",
+        "kana": "はは",
+        "gloss": "mother"
+      },
+      {
+        "text": "から ",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "作り方",
+        "kana": "つくりかた",
+        "gloss": "how to make"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "教わった",
+        "kana": "おそわった",
+        "gloss": "was taught"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "summer_Tue": {
+    "japanese": "夏はいつも、 ジョージの 機嫌が 少し 良くなるのよ。夏の暑さで 気が 緩むのでしょうね。#$e#あなたには 分からないでしょうけど、 私には分かる。あの人とは 60年も 付き合ってるからね！",
+    "english": "George is always a little better tempered in summer. The summer heat probably loosens him up.#You might not understand, but I do. I've known him for sixty years!",
+    "segments": [
+      {
+        "text": "夏",
+        "kana": "なつ",
+        "gloss": "summer"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いつも、 ",
+        "kana": "いつも",
+        "gloss": "always"
+      },
+      {
+        "text": "ジョージ",
+        "kana": "ジョージ",
+        "gloss": "George"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "機嫌",
+        "kana": "きげん",
+        "gloss": "mood"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "少し ",
+        "kana": "すこし",
+        "gloss": "a little"
+      },
+      {
+        "text": "良くなる",
+        "kana": "よくなる",
+        "gloss": "improves"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "夏",
+        "kana": "なつ",
+        "gloss": "summer"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "暑さ",
+        "kana": "あつさ",
+        "gloss": "heat"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(cause marker)"
+      },
+      {
+        "text": "気",
+        "kana": "き",
+        "gloss": "spirit"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "緩む",
+        "kana": "ゆるむ",
+        "gloss": "loosens"
+      },
+      {
+        "text": "のでしょう",
+        "kana": "のでしょう",
+        "gloss": "probably"
+      },
+      {
+        "text": "ね。#$e#",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(indirect object marker)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "分からない",
+        "kana": "わからない",
+        "gloss": "won't understand"
+      },
+      {
+        "text": "でしょう",
+        "kana": "でしょう",
+        "gloss": "probably"
+      },
+      {
+        "text": "けど、 ",
+        "kana": "けど",
+        "gloss": "but"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "分かる。",
+        "kana": "わかる",
+        "gloss": "understand"
+      },
+      {
+        "text": "あの人",
+        "kana": "あのひと",
+        "gloss": "that person"
+      },
+      {
+        "text": "とは ",
+        "kana": "とは",
+        "gloss": "(with, as for)"
+      },
+      {
+        "text": "60年",
+        "kana": "ろくじゅうねん",
+        "gloss": "sixty years"
+      },
+      {
+        "text": "も ",
+        "kana": "も",
+        "gloss": "(emphasis marker)"
+      },
+      {
+        "text": "付き合ってる",
+        "kana": "つきあってる",
+        "gloss": "have been together"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "because"
+      },
+      {
+        "text": "ね！",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "summer_Wed": {
+    "japanese": "町長さんが、 この公園を 私に 任せてくださっているの。#$e#何ヶ月もかけて、 花壇のお手入れをしているから、 踏まないようにしてちょうだい！",
+    "english": "The mayor has entrusted this park to me.#I've spent months tending the flower beds, so please don't step on them!",
+    "segments": [
+      {
+        "text": "町長さん",
+        "kana": "ちょうちょうさん",
+        "gloss": "the mayor"
+      },
+      {
+        "text": "が、 ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "この公園",
+        "kana": "このこうえん",
+        "gloss": "this park"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(indirect object marker)"
+      },
+      {
+        "text": "任せてくださっている",
+        "kana": "まかせてくださっている",
+        "gloss": "has entrusted"
+      },
+      {
+        "text": "の。#$e#",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "何ヶ月も",
+        "kana": "なんかげつも",
+        "gloss": "for months"
+      },
+      {
+        "text": "かけて、 ",
+        "kana": "かけて",
+        "gloss": "spending"
+      },
+      {
+        "text": "花壇",
+        "kana": "かだん",
+        "gloss": "flower beds"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "お手入れ",
+        "kana": "おていれ",
+        "gloss": "upkeep"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "している",
+        "kana": "している",
+        "gloss": "doing"
+      },
+      {
+        "text": "から、 ",
+        "kana": "から",
+        "gloss": "because"
+      },
+      {
+        "text": "踏まない",
+        "kana": "ふまない",
+        "gloss": "not step"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that"
+      },
+      {
+        "text": "して",
+        "kana": "して",
+        "gloss": "do (please)"
+      },
+      {
+        "text": "ちょうだい！",
+        "kana": "ちょうだい",
+        "gloss": "please"
+      }
+    ]
+  },
+  "winter_Mon": {
+    "japanese": "氷で滑らないよう、 気をつけるのよ。",
+    "english": "Be careful not to slip on the ice.",
+    "segments": [
+      {
+        "text": "氷",
+        "kana": "こおり",
+        "gloss": "ice"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(means marker)"
+      },
+      {
+        "text": "滑らない",
+        "kana": "すべらない",
+        "gloss": "not slip"
+      },
+      {
+        "text": "よう、 ",
+        "kana": "よう",
+        "gloss": "so that"
+      },
+      {
+        "text": "気をつける",
+        "kana": "きをつける",
+        "gloss": "be careful"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "winter_Sat": {
+    "japanese": "私達は 30年以上 ここに 住んでるの。#$e#いろんな人との 出会いと 別れを 見てきたわ。あなたの おじいさんもね。あの頃が懐かしいわ… ふぅ…",
+    "english": "We've lived here for more than 30 years.#We've seen the meetings and partings of many people. Your grandfather too. Those days are dear to me... sigh...",
+    "segments": [
+      {
+        "text": "私達",
+        "kana": "わたしたち",
+        "gloss": "we"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "30年",
+        "kana": "さんじゅうねん",
+        "gloss": "30 years"
+      },
+      {
+        "text": "以上 ",
+        "kana": "いじょう",
+        "gloss": "more than"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "住んでる",
+        "kana": "すんでる",
+        "gloss": "have lived"
+      },
+      {
+        "text": "の。#$e#",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "いろんな人",
+        "kana": "いろんなひと",
+        "gloss": "various people"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(with marker)"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "出会い",
+        "kana": "であい",
+        "gloss": "meetings"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "(and marker)"
+      },
+      {
+        "text": "別れ",
+        "kana": "わかれ",
+        "gloss": "partings"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見てきた",
+        "kana": "みてきた",
+        "gloss": "have seen"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "your"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "おじいさん",
+        "kana": "おじいさん",
+        "gloss": "grandfather"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "あの頃",
+        "kana": "あのころ",
+        "gloss": "those days"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "懐かしい",
+        "kana": "なつかしい",
+        "gloss": "nostalgic"
+      },
+      {
+        "text": "わ… ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ふぅ…",
+        "kana": "ふぅ",
+        "gloss": "sigh"
+      }
+    ]
+  },
+  "winter_Sat6": {
+    "japanese": "あら、よくきてくれたわね。あなた、おじいさんと 同じ目を してるのね…$s#$e#ええ…あの人のことは よく知ってたわ。",
+    "english": "Oh, it's nice of you to come. You... you have the same eyes as your grandfather...#Yes... I knew him well.",
+    "segments": [
+      {
+        "text": "あら、",
+        "kana": "あら",
+        "gloss": "oh"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "nicely"
+      },
+      {
+        "text": "きてくれた",
+        "kana": "きてくれた",
+        "gloss": "came (for me)"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "あなた、",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "おじいさん",
+        "kana": "おじいさん",
+        "gloss": "grandfather"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "(comparison marker)"
+      },
+      {
+        "text": "同じ",
+        "kana": "おなじ",
+        "gloss": "same"
+      },
+      {
+        "text": "目",
+        "kana": "め",
+        "gloss": "eyes"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "してる",
+        "kana": "してる",
+        "gloss": "have"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "ね…$s#$e#",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ええ…",
+        "kana": "ええ",
+        "gloss": "yes"
+      },
+      {
+        "text": "あの人",
+        "kana": "あのひと",
+        "gloss": "that man"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(about)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "well"
+      },
+      {
+        "text": "知ってた",
+        "kana": "しってた",
+        "gloss": "knew"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "winter_Sat8": {
+    "japanese": "@、ジョージと一緒にここで30年暮らしたことは 話したかしら？#$e#あなたも、 この町に 長居してくれると いいわね。$h",
+    "english": "@, have I told you that George and I have lived here together for 30 years?#I hope you stay in this town for a while too.",
+    "segments": [
+      {
+        "text": "@、",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "ジョージ",
+        "kana": "ジョージ",
+        "gloss": "George"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(with marker)"
+      },
+      {
+        "text": "一緒に",
+        "kana": "いっしょに",
+        "gloss": "together"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "30年",
+        "kana": "さんじゅうねん",
+        "gloss": "30 years"
+      },
+      {
+        "text": "暮らした",
+        "kana": "くらした",
+        "gloss": "lived"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(the fact that)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "話した",
+        "kana": "はなした",
+        "gloss": "told"
+      },
+      {
+        "text": "かしら？#$e#",
+        "kana": "かしら",
+        "gloss": "(wondering particle)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "も、 ",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "この町",
+        "kana": "このまち",
+        "gloss": "this town"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "長居してくれる",
+        "kana": "ながいしてくれる",
+        "gloss": "stay a while (for me)"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "(conditional marker)"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ね。$h",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "winter_Sun": {
+    "japanese": "体を 冷やさないよう、 スープを 作ったほうが いいわよ。#$e#あと、 ジャケットも 忘れないでね！",
+    "english": "You'd better make soup so you don't get cold.#Also, don't forget your jacket!",
+    "segments": [
+      {
+        "text": "体",
+        "kana": "からだ",
+        "gloss": "body"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "冷やさない",
+        "kana": "ひやさない",
+        "gloss": "not get cold"
+      },
+      {
+        "text": "よう、 ",
+        "kana": "よう",
+        "gloss": "so that"
+      },
+      {
+        "text": "スープ",
+        "kana": "スープ",
+        "gloss": "soup"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "作った",
+        "kana": "つくった",
+        "gloss": "made"
+      },
+      {
+        "text": "ほうが ",
+        "kana": "ほうが",
+        "gloss": "(would be better)"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "よ。#$e#",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "あと、 ",
+        "kana": "あと",
+        "gloss": "also"
+      },
+      {
+        "text": "ジャケット",
+        "kana": "ジャケット",
+        "gloss": "jacket"
+      },
+      {
+        "text": "も ",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "忘れないで",
+        "kana": "わすれないで",
+        "gloss": "don't forget"
+      },
+      {
+        "text": "ね！",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "winter_Thu": {
+    "japanese": "今日はクッキーを焼いているのよ。小さな冬星の形なのよ。$h#$e#いつかレシピを教えてあげるわね。",
+    "english": "I'm baking cookies today. They're shaped like little winter stars.#I'll teach you the recipe sometime.",
+    "segments": [
+      {
+        "text": "今日",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "クッキー",
+        "kana": "クッキー",
+        "gloss": "cookies"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "焼いている",
+        "kana": "やいている",
+        "gloss": "am baking"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "小さな",
+        "kana": "ちいさな",
+        "gloss": "small"
+      },
+      {
+        "text": "冬星",
+        "kana": "ふゆぼし",
+        "gloss": "winter star"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "形",
+        "kana": "かたち",
+        "gloss": "shape"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "よ。$h#$e#",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "いつか",
+        "kana": "いつか",
+        "gloss": "someday"
+      },
+      {
+        "text": "レシピ",
+        "kana": "レシピ",
+        "gloss": "recipe"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "教えてあげる",
+        "kana": "おしえてあげる",
+        "gloss": "I'll teach you"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "winter_Tue": {
+    "japanese": "寒くない？もっと 厚手の ジャケットを 着たほうがいいわよ！#$e#この寒さは 私の 体にも 良くないわ…$s",
+    "english": "Aren't you cold? You should wear a thicker jacket!#This cold isn't good for my body either...",
+    "segments": [
+      {
+        "text": "寒くない？",
+        "kana": "さむくない",
+        "gloss": "aren't you cold"
+      },
+      {
+        "text": "もっと ",
+        "kana": "もっと",
+        "gloss": "more"
+      },
+      {
+        "text": "厚手の ",
+        "kana": "あつでの",
+        "gloss": "thick"
+      },
+      {
+        "text": "ジャケット",
+        "kana": "ジャケット",
+        "gloss": "jacket"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "着た",
+        "kana": "きた",
+        "gloss": "wear"
+      },
+      {
+        "text": "ほうがいい",
+        "kana": "ほうがいい",
+        "gloss": "should"
+      },
+      {
+        "text": "わ",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "よ！#$e#",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "この寒さ",
+        "kana": "このさむさ",
+        "gloss": "this cold"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "体",
+        "kana": "からだ",
+        "gloss": "body"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "も ",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "良くない",
+        "kana": "よくない",
+        "gloss": "not good"
+      },
+      {
+        "text": "わ…$s",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      }
+    ]
+  },
+  "winter_Wed": {
+    "japanese": "いつも 花壇の世話を してるけど、 今は 雪で 覆われてしまってるわ。#$e#でも、 様子を見に行くのは 好きよ。",
+    "english": "I always take care of the flower beds, but right now they're covered in snow.#Still, I like going to check on them.",
+    "segments": [
+      {
+        "text": "いつも ",
+        "kana": "いつも",
+        "gloss": "always"
+      },
+      {
+        "text": "花壇",
+        "kana": "かだん",
+        "gloss": "flower beds"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "世話",
+        "kana": "せわ",
+        "gloss": "care"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "してる",
+        "kana": "してる",
+        "gloss": "am doing"
+      },
+      {
+        "text": "けど、 ",
+        "kana": "けど",
+        "gloss": "but"
+      },
+      {
+        "text": "今",
+        "kana": "いま",
+        "gloss": "now"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "雪",
+        "kana": "ゆき",
+        "gloss": "snow"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(means marker)"
+      },
+      {
+        "text": "覆われてしまってる",
+        "kana": "おおわれてしまってる",
+        "gloss": "have become covered"
+      },
+      {
+        "text": "わ。#$e#",
+        "kana": "わ",
+        "gloss": "(sentence-final particle)"
+      },
+      {
+        "text": "でも、 ",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "様子を見に行く",
+        "kana": "ようすをみにいく",
+        "gloss": "go check on them"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "好き",
+        "kana": "すき",
+        "gloss": "like"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  }
+}

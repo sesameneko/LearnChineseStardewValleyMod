@@ -1,0 +1,4430 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Dialogue-Willy.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AcceptGift_(O)336": {
+    "japanese": "（カリッ）…本物の金か。ハハハ！これはとんでもない贈り物だ！$h",
+    "english": "*Crunch*... Real gold, huh? Hahaha! What an incredible gift!",
+    "segments": [
+      {
+        "text": "（カリッ）…",
+        "kana": "カリッ",
+        "gloss": "(crunch sound)"
+      },
+      {
+        "text": "本物",
+        "kana": "ほんもの",
+        "gloss": "real thing"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "金",
+        "kana": "かね",
+        "gloss": "gold"
+      },
+      {
+        "text": "か。",
+        "kana": "か",
+        "gloss": "(question marker)"
+      },
+      {
+        "text": "ハハハ！",
+        "kana": "ハハハ",
+        "gloss": "(laughter)"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "とんでもない",
+        "kana": "とんでもない",
+        "gloss": "incredible"
+      },
+      {
+        "text": "贈り物",
+        "kana": "おくりもの",
+        "gloss": "gift"
+      },
+      {
+        "text": "だ！$h",
+        "kana": "だ",
+        "gloss": "is"
+      }
+    ]
+  },
+  "AcceptGift_(O)682": {
+    "japanese": "うおっ！ …これはどういうモンスターなんだ？",
+    "english": "Whoa! ...What kind of monster is this?",
+    "segments": [
+      {
+        "text": "うおっ！ …",
+        "kana": "うおっ",
+        "gloss": "(interjection - whoa)"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "どういう",
+        "kana": "どういう",
+        "gloss": "what kind of"
+      },
+      {
+        "text": "モンスター",
+        "kana": "モンスター",
+        "gloss": "monster"
+      },
+      {
+        "text": "なんだ？",
+        "kana": "なんだ",
+        "gloss": "is it"
+      }
+    ]
+  },
+  "AcceptGift_(O)Book_Crabbing": {
+    "japanese": "ああ…不朽の名作だ。読むたびに涙が出る。漁師の必読書だ。何冊あっても困りはしない！ありがとよ。$h",
+    "english": "Ah... a timeless masterpiece. It brings tears every time I read it. Required reading for fishermen. It's no trouble having however many copies! Thanks.",
+    "segments": [
+      {
+        "text": "ああ…",
+        "kana": "ああ",
+        "gloss": "(interjection - ah)"
+      },
+      {
+        "text": "不朽",
+        "kana": "ふきゅう",
+        "gloss": "timeless"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "名作",
+        "kana": "めいさく",
+        "gloss": "masterpiece"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "読む",
+        "kana": "よむ",
+        "gloss": "to read"
+      },
+      {
+        "text": "たびに",
+        "kana": "たびに",
+        "gloss": "every time"
+      },
+      {
+        "text": "涙",
+        "kana": "なみだ",
+        "gloss": "tears"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "出る。",
+        "kana": "でる",
+        "gloss": "come out"
+      },
+      {
+        "text": "漁師",
+        "kana": "りょうし",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "必読書",
+        "kana": "ひつどくしょ",
+        "gloss": "required reading"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "何冊",
+        "kana": "なんさつ",
+        "gloss": "how many copies"
+      },
+      {
+        "text": "あっても",
+        "kana": "あっても",
+        "gloss": "even if there are"
+      },
+      {
+        "text": "困りはしない！",
+        "kana": "こまりはしない",
+        "gloss": "it's no trouble"
+      },
+      {
+        "text": "ありがとよ。$h",
+        "kana": "ありがとよ",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "AcceptGift_(O)Book_Roe": {
+    "japanese": "ありがとよ！冬に読むにはぴったりだ。それに、そいつからは海の香りもする…$h",
+    "english": "Thanks! This'll be perfect reading for winter. Plus, it smells of the sea too...",
+    "segments": [
+      {
+        "text": "ありがとよ！",
+        "kana": "ありがとよ",
+        "gloss": "thanks"
+      },
+      {
+        "text": "冬",
+        "kana": "ふゆ",
+        "gloss": "winter"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time marker)"
+      },
+      {
+        "text": "読む",
+        "kana": "よむ",
+        "gloss": "to read"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(purpose marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ぴったり",
+        "kana": "ぴったり",
+        "gloss": "perfect"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "それに、",
+        "kana": "それに",
+        "gloss": "besides"
+      },
+      {
+        "text": "そいつ",
+        "kana": "そいつ",
+        "gloss": "that thing"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "(source marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "海",
+        "kana": "うみ",
+        "gloss": "sea"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "香り",
+        "kana": "かおり",
+        "gloss": "scent"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "する…$h",
+        "kana": "する",
+        "gloss": "has"
+      }
+    ]
+  },
+  "AcceptGift_(O)SkillBook_1": {
+    "japanese": "ああ、「エサとウキ」か…釣り人ならみんな毎号読んでいるはずだが、それなりの出費になる。長いことそいつから釣りのコツを教わってきたんだ。ありがとよ！$h",
+    "english": "Ah, 'Bait And Bobber', huh... Every angler should read every issue, but it costs a fair amount. I've learned fishing tips from it for a long time. Thanks!",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "(interjection - ah)"
+      },
+      {
+        "text": "「エサとウキ」",
+        "kana": "エサとウキ",
+        "gloss": "\"Bait And Bobber\" (title)"
+      },
+      {
+        "text": "か…",
+        "kana": "か",
+        "gloss": "(question marker)"
+      },
+      {
+        "text": "釣り人",
+        "kana": "つりびと",
+        "gloss": "angler"
+      },
+      {
+        "text": "なら",
+        "kana": "なら",
+        "gloss": "if"
+      },
+      {
+        "text": "みんな",
+        "kana": "みんな",
+        "gloss": "everyone"
+      },
+      {
+        "text": "毎号",
+        "kana": "まいごう",
+        "gloss": "every issue"
+      },
+      {
+        "text": "読んでいる",
+        "kana": "よんでいる",
+        "gloss": "reads"
+      },
+      {
+        "text": "はず",
+        "kana": "はず",
+        "gloss": "should"
+      },
+      {
+        "text": "だが、",
+        "kana": "だが",
+        "gloss": "but"
+      },
+      {
+        "text": "それなり",
+        "kana": "それなり",
+        "gloss": "considerable"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "出費",
+        "kana": "しゅっぴ",
+        "gloss": "expense"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(result marker)"
+      },
+      {
+        "text": "なる。",
+        "kana": "なる",
+        "gloss": "becomes"
+      },
+      {
+        "text": "長いこと",
+        "kana": "ながいこと",
+        "gloss": "for a long time"
+      },
+      {
+        "text": "そいつ",
+        "kana": "そいつ",
+        "gloss": "that thing"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "(source marker)"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "コツ",
+        "kana": "コツ",
+        "gloss": "tips"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "教わってきた",
+        "kana": "おそわってきた",
+        "gloss": "have been taught"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "ありがとよ！$h",
+        "kana": "ありがとよ",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "AcceptGift_(O)StardropTea": {
+    "japanese": "こいつは… スタードロップティーか！人魚伝説にだけ出てくるもんだと思ってたよ。ありがとよ！",
+    "english": "This is... Stardrop Tea?! I thought it only appeared in mermaid legends. Thanks!",
+    "segments": [
+      {
+        "text": "こいつ",
+        "kana": "こいつ",
+        "gloss": "this thing"
+      },
+      {
+        "text": "は… ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "スタードロップティー",
+        "kana": "スタードロップティー",
+        "gloss": "Stardrop Tea"
+      },
+      {
+        "text": "か！",
+        "kana": "か",
+        "gloss": "(exclamation marker)"
+      },
+      {
+        "text": "人魚伝説",
+        "kana": "にんぎょでんせつ",
+        "gloss": "mermaid legend"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "only"
+      },
+      {
+        "text": "出てくる",
+        "kana": "でてくる",
+        "gloss": "appears"
+      },
+      {
+        "text": "もん",
+        "kana": "もん",
+        "gloss": "thing"
+      },
+      {
+        "text": "だ",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quote marker)"
+      },
+      {
+        "text": "思ってた",
+        "kana": "おもってた",
+        "gloss": "thought"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis marker)"
+      },
+      {
+        "text": "ありがとよ！",
+        "kana": "ありがとよ",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "AcceptGift_Positive_coffee_item": {
+    "japanese": "ああ、体にしみわたる。ありがとよ。",
+    "english": "Ah, this warms me up all over. Thanks.",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "(interjection - ah)"
+      },
+      {
+        "text": "体",
+        "kana": "からだ",
+        "gloss": "body"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "しみわたる。",
+        "kana": "しみわたる",
+        "gloss": "spreads through/warms"
+      },
+      {
+        "text": "ありがとよ。",
+        "kana": "ありがとよ",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "Fair_Judged": {
+    "japanese": "おや、 低い点数 じゃねえか。 たぶん、 ルイス町長は あんまり 魚好きじゃない かもな…$s",
+    "english": "Oh, that's a low score, isn't it. I guess Mayor Lewis isn't much of a fish lover, maybe...",
+    "segments": [
+      {
+        "text": "おや、 ",
+        "kana": "おや",
+        "gloss": "(interjection - oh)"
+      },
+      {
+        "text": "低い",
+        "kana": "ひくい",
+        "gloss": "low"
+      },
+      {
+        "text": "点数 ",
+        "kana": "てんすう",
+        "gloss": "score"
+      },
+      {
+        "text": "じゃねえか。 ",
+        "kana": "じゃねえか",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "たぶん、 ",
+        "kana": "たぶん",
+        "gloss": "probably"
+      },
+      {
+        "text": "ルイス町長",
+        "kana": "るいすちょうちょう",
+        "gloss": "Mayor Lewis"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あんまり ",
+        "kana": "あんまり",
+        "gloss": "not very"
+      },
+      {
+        "text": "魚好き",
+        "kana": "さかなずき",
+        "gloss": "fish lover"
+      },
+      {
+        "text": "じゃない ",
+        "kana": "じゃない",
+        "gloss": "isn't"
+      },
+      {
+        "text": "かもな…$s",
+        "kana": "かもな",
+        "gloss": "maybe"
+      }
+    ]
+  },
+  "Fair_Judging": {
+    "japanese": "これは 勝ち目が なさそうだな… 見た目は いいんだが、 匂いが きついぜ…$s",
+    "english": "This doesn't look like it has much chance of winning... It looks good, but the smell is harsh...",
+    "segments": [
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "勝ち目",
+        "kana": "かちめ",
+        "gloss": "chance of winning"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "なさそう",
+        "kana": "なさそう",
+        "gloss": "seems nonexistent"
+      },
+      {
+        "text": "だな… ",
+        "kana": "だな",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "見た目",
+        "kana": "みため",
+        "gloss": "appearance"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "んだが、 ",
+        "kana": "んだが",
+        "gloss": "but"
+      },
+      {
+        "text": "匂い",
+        "kana": "におい",
+        "gloss": "smell"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "きつい",
+        "kana": "きつい",
+        "gloss": "harsh"
+      },
+      {
+        "text": "ぜ…$s",
+        "kana": "ぜ",
+        "gloss": "(emphasis marker)"
+      }
+    ]
+  },
+  "Fri": {
+    "japanese": "魚の 食いつきを 本当に 良くしたいなら、 釣り針に エサを つけておくんだな。",
+    "english": "If you really want to improve the fish's bite rate, you should put bait on your hook.",
+    "segments": [
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "食いつき",
+        "kana": "くいつき",
+        "gloss": "bite rate"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "本当に ",
+        "kana": "ほんとうに",
+        "gloss": "really"
+      },
+      {
+        "text": "良くしたい",
+        "kana": "よくしたい",
+        "gloss": "want to improve"
+      },
+      {
+        "text": "なら、 ",
+        "kana": "なら",
+        "gloss": "if"
+      },
+      {
+        "text": "釣り針",
+        "kana": "つりばり",
+        "gloss": "fishing hook"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "エサ",
+        "kana": "エサ",
+        "gloss": "bait"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "つけておく",
+        "kana": "つけておく",
+        "gloss": "put on/attach"
+      },
+      {
+        "text": "んだな。",
+        "kana": "んだな",
+        "gloss": "you should"
+      }
+    ]
+  },
+  "Fri4": {
+    "japanese": "おれはぜいたく者じゃない… パイプにたばこ葉がつまっていればしあわせなんだ。パイプが空になったら… またつめるのさ。$u",
+    "english": "I'm not an extravagant man... I'm happy as long as my pipe is packed with tobacco leaf. Once my pipe's empty... I just fill it again.",
+    "segments": [
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ぜいたく者",
+        "kana": "ぜいたくもの",
+        "gloss": "extravagant person"
+      },
+      {
+        "text": "じゃない… ",
+        "kana": "じゃない",
+        "gloss": "am not"
+      },
+      {
+        "text": "パイプ",
+        "kana": "パイプ",
+        "gloss": "pipe"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "たばこ葉",
+        "kana": "たばこば",
+        "gloss": "tobacco leaf"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "つまっていれば",
+        "kana": "つまっていれば",
+        "gloss": "if it's packed full"
+      },
+      {
+        "text": "しあわせ",
+        "kana": "しあわせ",
+        "gloss": "happy"
+      },
+      {
+        "text": "なんだ。",
+        "kana": "なんだ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "パイプ",
+        "kana": "パイプ",
+        "gloss": "pipe"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "空になったら… ",
+        "kana": "からになったら",
+        "gloss": "once it's empty"
+      },
+      {
+        "text": "また",
+        "kana": "また",
+        "gloss": "again"
+      },
+      {
+        "text": "つめる",
+        "kana": "つめる",
+        "gloss": "fill it"
+      },
+      {
+        "text": "のさ。$u",
+        "kana": "のさ",
+        "gloss": "(emphasis)"
+      }
+    ]
+  },
+  "FullCrabPond": {
+    "japanese": "（クンクン）...あぁ...あの古いおなじみの香りだ。レーズンのカニだよね？#$b#心の後ろにはあの${男^女}$、@。ハー！$h#$b#ここだよ、持って行って。それをビーチで見つけた...特別な日のために取っておくよ。毎日仲間のカニオタクを見つけるわけじゃないよ！[797]",
+    "english": "*sniff*... Ah... that's an old familiar scent. That's raisin crab, isn't it? You're a ${man^woman}$ after my own heart, @. Ha! Here, take this. I found it on the beach... I was saving it for a special day. It's not every day I find a fellow crab enthusiast!",
+    "segments": [
+      {
+        "text": "（クンクン）...",
+        "kana": "クンクン",
+        "gloss": "(sniffing sound)"
+      },
+      {
+        "text": "あぁ...",
+        "kana": "あぁ",
+        "gloss": "(sigh)"
+      },
+      {
+        "text": "あの",
+        "kana": "あの",
+        "gloss": "that"
+      },
+      {
+        "text": "古い",
+        "kana": "ふるい",
+        "gloss": "old"
+      },
+      {
+        "text": "おなじみ",
+        "kana": "おなじみ",
+        "gloss": "familiar"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "香り",
+        "kana": "かおり",
+        "gloss": "scent"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "レーズン",
+        "kana": "レーズン",
+        "gloss": "raisins"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "カニ",
+        "kana": "カニ",
+        "gloss": "crab"
+      },
+      {
+        "text": "だよね？#$b#",
+        "kana": "だよね",
+        "gloss": "right?"
+      },
+      {
+        "text": "心",
+        "kana": "こころ",
+        "gloss": "heart"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "後ろ",
+        "kana": "うしろ",
+        "gloss": "depths"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あの",
+        "kana": "あの",
+        "gloss": "that"
+      },
+      {
+        "text": "${男^女}$、",
+        "kana": "おとこ おんな",
+        "gloss": "(man/woman variant)"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "ハー！$h#$b#",
+        "kana": "ハー",
+        "gloss": "(sigh/exclamation)"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "だよ、",
+        "kana": "だよ",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "持って行って。",
+        "kana": "もっていって",
+        "gloss": "take it"
+      },
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "ビーチ",
+        "kana": "ビーチ",
+        "gloss": "beach"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "見つけた...",
+        "kana": "みつけた",
+        "gloss": "found"
+      },
+      {
+        "text": "特別な",
+        "kana": "とくべつな",
+        "gloss": "special"
+      },
+      {
+        "text": "日",
+        "kana": "ひ",
+        "gloss": "day"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "ため",
+        "kana": "ため",
+        "gloss": "for the sake of"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(purpose marker)"
+      },
+      {
+        "text": "取っておく",
+        "kana": "とっておく",
+        "gloss": "save/keep"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis marker)"
+      },
+      {
+        "text": "毎日",
+        "kana": "まいにち",
+        "gloss": "every day"
+      },
+      {
+        "text": "仲間",
+        "kana": "なかま",
+        "gloss": "fellow"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "カニオタク",
+        "kana": "かにおたく",
+        "gloss": "crab enthusiast"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見つける",
+        "kana": "みつける",
+        "gloss": "find"
+      },
+      {
+        "text": "わけじゃない",
+        "kana": "わけじゃない",
+        "gloss": "it's not like"
+      },
+      {
+        "text": "よ！",
+        "kana": "よ",
+        "gloss": "(emphasis marker)"
+      },
+      {
+        "text": "[797]",
+        "kana": "797",
+        "gloss": "(item ID marker)"
+      }
+    ]
+  },
+  "GreenRain": {
+    "japanese": "ああ…この変な雨で魚たちに悪影響がでなけりゃいいが…魚たちになにかあれば、おれの人生にかかわる！",
+    "english": "Ah... I hope this strange rain doesn't have a bad effect on the fish... If something happens to the fish, it'll affect my whole life!",
+    "segments": [
+      {
+        "text": "ああ…",
+        "kana": "ああ",
+        "gloss": "(interjection - ah)"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "変な",
+        "kana": "へんな",
+        "gloss": "strange"
+      },
+      {
+        "text": "雨",
+        "kana": "あめ",
+        "gloss": "rain"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(cause marker)"
+      },
+      {
+        "text": "魚たち",
+        "kana": "さかなたち",
+        "gloss": "fish"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "悪影響",
+        "kana": "あくえいきょう",
+        "gloss": "bad effect"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "でなけりゃ",
+        "kana": "でなけりゃ",
+        "gloss": "if it doesn't cause"
+      },
+      {
+        "text": "いいが…",
+        "kana": "いいが",
+        "gloss": "I hope"
+      },
+      {
+        "text": "魚たち",
+        "kana": "さかなたち",
+        "gloss": "fish"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "あれば、",
+        "kana": "あれば",
+        "gloss": "if there is"
+      },
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "人生",
+        "kana": "じんせい",
+        "gloss": "life"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "かかわる！",
+        "kana": "かかわる",
+        "gloss": "would be affected"
+      }
+    ]
+  },
+  "GreenRainFinished": {
+    "japanese": "どうやら魚たちに変わりはないようだ。よくエサに食いついてたからな！",
+    "english": "It seems the fish are unaffected after all. They were biting the bait really well!",
+    "segments": [
+      {
+        "text": "どうやら",
+        "kana": "どうやら",
+        "gloss": "it seems"
+      },
+      {
+        "text": "魚たち",
+        "kana": "さかなたち",
+        "gloss": "fish"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "変わり",
+        "kana": "かわり",
+        "gloss": "change"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ない",
+        "kana": "ない",
+        "gloss": "there isn't"
+      },
+      {
+        "text": "ようだ。",
+        "kana": "ようだ",
+        "gloss": "it seems"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "well"
+      },
+      {
+        "text": "エサ",
+        "kana": "エサ",
+        "gloss": "bait"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "食いついてた",
+        "kana": "くいついてた",
+        "gloss": "were biting"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "(reason marker)"
+      },
+      {
+        "text": "な！",
+        "kana": "な",
+        "gloss": "(emphasis marker)"
+      }
+    ]
+  },
+  "GreenRain_2": {
+    "japanese": "魚たちがこの雨を気に入っているなら、おれも同じだ。",
+    "english": "If the fish like this rain, then I feel the same.",
+    "segments": [
+      {
+        "text": "魚たち",
+        "kana": "さかなたち",
+        "gloss": "fish"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "雨",
+        "kana": "あめ",
+        "gloss": "rain"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "気に入っている",
+        "kana": "きにいっている",
+        "gloss": "like"
+      },
+      {
+        "text": "なら、",
+        "kana": "なら",
+        "gloss": "if"
+      },
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "I"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "同じ",
+        "kana": "おなじ",
+        "gloss": "same"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "am"
+      }
+    ]
+  },
+  "Introduction": {
+    "japanese": "やぁ！若いもんが 谷に やってくるとは いいことだ。めったに 起こるような もんじゃねえからな。",
+    "english": "Hey! It's a good thing that young folk are coming to the valley. It's not something that happens often.",
+    "segments": [
+      {
+        "text": "やぁ！",
+        "kana": "やぁ",
+        "gloss": "(greeting - hey)"
+      },
+      {
+        "text": "若いもん",
+        "kana": "わかいもん",
+        "gloss": "young folk"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "谷",
+        "kana": "たに",
+        "gloss": "valley"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "やってくる",
+        "kana": "やってくる",
+        "gloss": "come"
+      },
+      {
+        "text": "とは ",
+        "kana": "とは",
+        "gloss": "(as for the fact that)"
+      },
+      {
+        "text": "いいこと",
+        "kana": "いいこと",
+        "gloss": "a good thing"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "めったに ",
+        "kana": "めったに",
+        "gloss": "rarely"
+      },
+      {
+        "text": "起こる",
+        "kana": "おこる",
+        "gloss": "happens"
+      },
+      {
+        "text": "ような ",
+        "kana": "ような",
+        "gloss": "like"
+      },
+      {
+        "text": "もん",
+        "kana": "もん",
+        "gloss": "thing"
+      },
+      {
+        "text": "じゃねえ",
+        "kana": "じゃねえ",
+        "gloss": "isn't"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "(reason marker)"
+      },
+      {
+        "text": "な。",
+        "kana": "な",
+        "gloss": "(emphasis marker)"
+      }
+    ]
+  },
+  "Mon": {
+    "japanese": "よぉ、坊主。^よぉ、嬢ちゃん。#$b#今日は 釣り日和じゃねえか？",
+    "english": "Yo, lad.^Yo, lass.#$b#Isn't today good fishing weather?",
+    "segments": [
+      {
+        "text": "よぉ、",
+        "kana": "よぉ",
+        "gloss": "(greeting - yo)"
+      },
+      {
+        "text": "坊主。^",
+        "kana": "ぼうず",
+        "gloss": "lad"
+      },
+      {
+        "text": "よぉ、",
+        "kana": "よぉ",
+        "gloss": "(greeting - yo)"
+      },
+      {
+        "text": "嬢ちゃん。#$b#",
+        "kana": "じょうちゃん",
+        "gloss": "lass"
+      },
+      {
+        "text": "今日",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "釣り日和",
+        "kana": "つりびより",
+        "gloss": "good fishing weather"
+      },
+      {
+        "text": "じゃねえか？",
+        "kana": "じゃねえか",
+        "gloss": "isn't it"
+      }
+    ]
+  },
+  "Mon4": {
+    "japanese": "この辺で いいものは つれたか？コツを つかんで 本気で やれば、 あんたは 優れた 釣り人に なれそうだな。",
+    "english": "Have you caught anything good around here? If you get the knack of it and put your mind to it, you seem like you could become an excellent angler.",
+    "segments": [
+      {
+        "text": "この辺",
+        "kana": "このへん",
+        "gloss": "around here"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "いいもの",
+        "kana": "いいもの",
+        "gloss": "good stuff"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "つれた",
+        "kana": "つれた",
+        "gloss": "did you catch"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question marker)"
+      },
+      {
+        "text": "コツ",
+        "kana": "コツ",
+        "gloss": "knack"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "つかんで ",
+        "kana": "つかんで",
+        "gloss": "grasp"
+      },
+      {
+        "text": "本気で ",
+        "kana": "ほんきで",
+        "gloss": "seriously"
+      },
+      {
+        "text": "やれば、 ",
+        "kana": "やれば",
+        "gloss": "if you do"
+      },
+      {
+        "text": "あんた",
+        "kana": "あんた",
+        "gloss": "you"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "優れた ",
+        "kana": "すぐれた",
+        "gloss": "excellent"
+      },
+      {
+        "text": "釣り人",
+        "kana": "つりびと",
+        "gloss": "angler"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(result marker)"
+      },
+      {
+        "text": "なれそう",
+        "kana": "なれそう",
+        "gloss": "seem able to become"
+      },
+      {
+        "text": "だな。",
+        "kana": "だな",
+        "gloss": "isn't it"
+      }
+    ]
+  },
+  "MovieInvitation": {
+    "japanese": "ああ… 映画か。そいつはいいね、坊主。^ああ… 映画か。そいつはいいね、嬢ちゃん。#$b#パイプを吸い終わったら、すぐに行くよ。",
+    "english": "Ah... a movie, huh. That sounds nice, lad.^Ah... a movie, huh. That sounds nice, lass.#$b#Once I finish my pipe, I'll head right over.",
+    "segments": [
+      {
+        "text": "ああ… ",
+        "kana": "ああ",
+        "gloss": "(interjection - ah)"
+      },
+      {
+        "text": "映画",
+        "kana": "えいが",
+        "gloss": "movie"
+      },
+      {
+        "text": "か。",
+        "kana": "か",
+        "gloss": "(exclamation marker)"
+      },
+      {
+        "text": "そいつ",
+        "kana": "そいつ",
+        "gloss": "that"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いいね、",
+        "kana": "いいね",
+        "gloss": "sounds good"
+      },
+      {
+        "text": "坊主。^",
+        "kana": "ぼうず",
+        "gloss": "lad"
+      },
+      {
+        "text": "ああ… ",
+        "kana": "ああ",
+        "gloss": "(interjection - ah)"
+      },
+      {
+        "text": "映画",
+        "kana": "えいが",
+        "gloss": "movie"
+      },
+      {
+        "text": "か。",
+        "kana": "か",
+        "gloss": "(exclamation marker)"
+      },
+      {
+        "text": "そいつ",
+        "kana": "そいつ",
+        "gloss": "that"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いいね、",
+        "kana": "いいね",
+        "gloss": "sounds good"
+      },
+      {
+        "text": "嬢ちゃん。#$b#",
+        "kana": "じょうちゃん",
+        "gloss": "lass"
+      },
+      {
+        "text": "パイプ",
+        "kana": "パイプ",
+        "gloss": "pipe"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "吸い終わったら、",
+        "kana": "すいおわったら",
+        "gloss": "once I finish smoking"
+      },
+      {
+        "text": "すぐに",
+        "kana": "すぐに",
+        "gloss": "right away"
+      },
+      {
+        "text": "行くよ。",
+        "kana": "いくよ",
+        "gloss": "I'll go"
+      }
+    ]
+  },
+  "Sat": {
+    "japanese": "もし 地元の 釣り場が もっと 活発になれば、 店の 品揃えも 充実 させられるんだがな。",
+    "english": "If the local fishing spot became livelier, I could enrich the shop's stock, I suppose.",
+    "segments": [
+      {
+        "text": "もし ",
+        "kana": "もし",
+        "gloss": "if"
+      },
+      {
+        "text": "地元",
+        "kana": "じもと",
+        "gloss": "local"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "釣り場",
+        "kana": "つりば",
+        "gloss": "fishing spot"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "もっと ",
+        "kana": "もっと",
+        "gloss": "more"
+      },
+      {
+        "text": "活発になれば、 ",
+        "kana": "かっぱつになれば",
+        "gloss": "if it becomes livelier"
+      },
+      {
+        "text": "店",
+        "kana": "みせ",
+        "gloss": "shop"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "品揃え",
+        "kana": "しなぞろえ",
+        "gloss": "stock"
+      },
+      {
+        "text": "も ",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "充実 ",
+        "kana": "じゅうじつ",
+        "gloss": "enrich"
+      },
+      {
+        "text": "させられる",
+        "kana": "させられる",
+        "gloss": "could be made"
+      },
+      {
+        "text": "んだがな。",
+        "kana": "んだがな",
+        "gloss": "I suppose"
+      }
+    ]
+  },
+  "Sat8": {
+    "japanese": "最近の 釣りの 調子は どうだ？#$e#オレも できるだけ 釣りを しようとは してるが、 店を やってるから そう 簡単には いかんな。",
+    "english": "How's fishing been lately?#$e#I try to fish as much as I can too, but running a shop means it's not that easy.",
+    "segments": [
+      {
+        "text": "最近",
+        "kana": "さいきん",
+        "gloss": "recently"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "調子",
+        "kana": "ちょうし",
+        "gloss": "condition"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "どうだ？#$e#",
+        "kana": "どうだ",
+        "gloss": "how is it"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "I"
+      },
+      {
+        "text": "も ",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "できるだけ ",
+        "kana": "できるだけ",
+        "gloss": "as much as possible"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "しようとは ",
+        "kana": "しようとは",
+        "gloss": "try to"
+      },
+      {
+        "text": "してる",
+        "kana": "してる",
+        "gloss": "am doing"
+      },
+      {
+        "text": "が、 ",
+        "kana": "が",
+        "gloss": "(contrast marker)"
+      },
+      {
+        "text": "店",
+        "kana": "みせ",
+        "gloss": "shop"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "やってる",
+        "kana": "やってる",
+        "gloss": "am running"
+      },
+      {
+        "text": "から ",
+        "kana": "から",
+        "gloss": "(reason marker)"
+      },
+      {
+        "text": "そう ",
+        "kana": "そう",
+        "gloss": "that"
+      },
+      {
+        "text": "簡単に",
+        "kana": "かんたんに",
+        "gloss": "easily"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いかん",
+        "kana": "いかん",
+        "gloss": "doesn't go"
+      },
+      {
+        "text": "な。",
+        "kana": "な",
+        "gloss": "(emphasis marker)"
+      }
+    ]
+  },
+  "Sun": {
+    "japanese": "高品質な 釣竿を 買えば、 釣りエサと 釣具を つけられるようになるぞ。#$b#釣りエサは 魚が 早く 針に 食いつくようになる。釣具は 魚を 簡単に 引き上げられるように なるぞ。#$e#釣具によって、 異なる 効果を 持っているが、大体の 釣具は もろいから、 使っている間に 壊れても 驚くんじゃ ねえぞ。",
+    "english": "If you buy a high-quality fishing rod, you'll be able to attach fishing bait and tackle to it.#$b#Fishing bait makes fish bite the hook faster. Tackle makes it easier to reel fish in.#$e#Tackle has different effects depending on the type, but most tackle is fragile, so don't be surprised if it breaks while you're using it.",
+    "segments": [
+      {
+        "text": "高品質な ",
+        "kana": "こうひんしつな",
+        "gloss": "high quality"
+      },
+      {
+        "text": "釣竿",
+        "kana": "つりざお",
+        "gloss": "fishing rod"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "買えば、 ",
+        "kana": "かえば",
+        "gloss": "if you buy"
+      },
+      {
+        "text": "釣りエサ",
+        "kana": "つりえさ",
+        "gloss": "fishing bait"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "(and marker)"
+      },
+      {
+        "text": "釣具",
+        "kana": "つりぐ",
+        "gloss": "tackle"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "つけられる",
+        "kana": "つけられる",
+        "gloss": "can attach"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that"
+      },
+      {
+        "text": "なるぞ。#$b#",
+        "kana": "なるぞ",
+        "gloss": "will be able to"
+      },
+      {
+        "text": "釣りエサ",
+        "kana": "つりえさ",
+        "gloss": "fishing bait"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "早く ",
+        "kana": "はやく",
+        "gloss": "quickly"
+      },
+      {
+        "text": "針",
+        "kana": "はり",
+        "gloss": "hook"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "食いつくように",
+        "kana": "くいつくように",
+        "gloss": "to start biting"
+      },
+      {
+        "text": "なる。",
+        "kana": "なる",
+        "gloss": "becomes"
+      },
+      {
+        "text": "釣具",
+        "kana": "つりぐ",
+        "gloss": "tackle"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "簡単に ",
+        "kana": "かんたんに",
+        "gloss": "easily"
+      },
+      {
+        "text": "引き上げられる",
+        "kana": "ひきあげられる",
+        "gloss": "can reel in"
+      },
+      {
+        "text": "ように ",
+        "kana": "ように",
+        "gloss": "so that"
+      },
+      {
+        "text": "なるぞ。#$e#",
+        "kana": "なるぞ",
+        "gloss": "will be able to"
+      },
+      {
+        "text": "釣具",
+        "kana": "つりぐ",
+        "gloss": "tackle"
+      },
+      {
+        "text": "によって、 ",
+        "kana": "によって",
+        "gloss": "depending on"
+      },
+      {
+        "text": "異なる ",
+        "kana": "ことなる",
+        "gloss": "different"
+      },
+      {
+        "text": "効果",
+        "kana": "こうか",
+        "gloss": "effect"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "持っている",
+        "kana": "もっている",
+        "gloss": "has"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "(contrast marker)"
+      },
+      {
+        "text": "大体",
+        "kana": "だいたい",
+        "gloss": "mostly"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "釣具",
+        "kana": "つりぐ",
+        "gloss": "tackle"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もろい",
+        "kana": "もろい",
+        "gloss": "fragile"
+      },
+      {
+        "text": "から、 ",
+        "kana": "から",
+        "gloss": "(reason marker)"
+      },
+      {
+        "text": "使っている間に ",
+        "kana": "つかっているあいだに",
+        "gloss": "while using it"
+      },
+      {
+        "text": "壊れても ",
+        "kana": "こわれても",
+        "gloss": "even if it breaks"
+      },
+      {
+        "text": "驚くんじゃ ",
+        "kana": "おどろくんじゃ",
+        "gloss": "don't be"
+      },
+      {
+        "text": "ねえぞ。",
+        "kana": "ねえぞ",
+        "gloss": "surprised"
+      }
+    ]
+  },
+  "Sun10": {
+    "japanese": "よお、@船長じゃないか！$h#$e#余裕が あったら、 釣りエサの 割引でも してやれたんだがな。$s",
+    "english": "Hey, it's Captain @, isn't it!#$e#If I had some extra money, I could've given you a discount on fishing bait.",
+    "segments": [
+      {
+        "text": "よお、",
+        "kana": "よお",
+        "gloss": "(greeting - hey)"
+      },
+      {
+        "text": "@",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "船長",
+        "kana": "せんちょう",
+        "gloss": "captain"
+      },
+      {
+        "text": "じゃないか！$h#$e#",
+        "kana": "じゃないか",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "余裕",
+        "kana": "よゆう",
+        "gloss": "extra funds"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あったら、 ",
+        "kana": "あったら",
+        "gloss": "if there were"
+      },
+      {
+        "text": "釣りエサ",
+        "kana": "つりえさ",
+        "gloss": "fishing bait"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "割引",
+        "kana": "わりびき",
+        "gloss": "discount"
+      },
+      {
+        "text": "でも ",
+        "kana": "でも",
+        "gloss": "or something"
+      },
+      {
+        "text": "してやれた",
+        "kana": "してやれた",
+        "gloss": "could have given"
+      },
+      {
+        "text": "んだがな。$s",
+        "kana": "んだがな",
+        "gloss": "I suppose"
+      }
+    ]
+  },
+  "Thu": {
+    "japanese": "ぶつぶつ…ん？オレが 何を 考えていたかって？ 教えたいが、 漁師の 秘密さ。",
+    "english": "*mumble mumble*... Hm? You're asking what I was thinking? I'd like to tell you, but it's a fisherman's secret.",
+    "segments": [
+      {
+        "text": "ぶつぶつ…",
+        "kana": "ぶつぶつ",
+        "gloss": "(mumbling)"
+      },
+      {
+        "text": "ん？",
+        "kana": "ん",
+        "gloss": "(interjection - hm)"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "I"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "何",
+        "kana": "なに",
+        "gloss": "what"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "考えていた",
+        "kana": "かんがえていた",
+        "gloss": "was thinking"
+      },
+      {
+        "text": "かって？ ",
+        "kana": "かって",
+        "gloss": "you ask"
+      },
+      {
+        "text": "教えたい",
+        "kana": "おしえたい",
+        "gloss": "want to tell"
+      },
+      {
+        "text": "が、 ",
+        "kana": "が",
+        "gloss": "(contrast marker)"
+      },
+      {
+        "text": "漁師",
+        "kana": "りょうし",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "秘密",
+        "kana": "ひみつ",
+        "gloss": "secret"
+      },
+      {
+        "text": "さ。",
+        "kana": "さ",
+        "gloss": "(emphasis marker)"
+      }
+    ]
+  },
+  "Thu2": {
+    "japanese": "この辺には とても 珍しい魚が いるって ウワサだが… 熟練の 釣り人じゃなければ 勝負に ならない らしいぞ。#$e#珍しい 魚を 釣りたいなら、 最高級の エサを 用意するんだな。",
+    "english": "There's a rumor that there's a very rare fish around here... but apparently only a skilled angler stands a chance.#$e#If you want to catch the rare fish, you should prepare the finest bait.",
+    "segments": [
+      {
+        "text": "この辺",
+        "kana": "このへん",
+        "gloss": "around here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "とても ",
+        "kana": "とても",
+        "gloss": "very"
+      },
+      {
+        "text": "珍しい魚",
+        "kana": "めずらしいさかな",
+        "gloss": "rare fish"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いる",
+        "kana": "いる",
+        "gloss": "there is"
+      },
+      {
+        "text": "って ",
+        "kana": "って",
+        "gloss": "(quote marker)"
+      },
+      {
+        "text": "ウワサ",
+        "kana": "ウワサ",
+        "gloss": "rumor"
+      },
+      {
+        "text": "だが… ",
+        "kana": "だが",
+        "gloss": "but"
+      },
+      {
+        "text": "熟練",
+        "kana": "じゅくれん",
+        "gloss": "skilled"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "釣り人",
+        "kana": "つりびと",
+        "gloss": "angler"
+      },
+      {
+        "text": "じゃなければ ",
+        "kana": "じゃなければ",
+        "gloss": "unless one is"
+      },
+      {
+        "text": "勝負",
+        "kana": "しょうぶ",
+        "gloss": "contest"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(result marker)"
+      },
+      {
+        "text": "ならない ",
+        "kana": "ならない",
+        "gloss": "won't become"
+      },
+      {
+        "text": "らしいぞ。#$e#",
+        "kana": "らしいぞ",
+        "gloss": "apparently"
+      },
+      {
+        "text": "珍しい ",
+        "kana": "めずらしい",
+        "gloss": "rare"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣りたい",
+        "kana": "つりたい",
+        "gloss": "want to catch"
+      },
+      {
+        "text": "なら、 ",
+        "kana": "なら",
+        "gloss": "if"
+      },
+      {
+        "text": "最高級",
+        "kana": "さいこうきゅう",
+        "gloss": "finest"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "エサ",
+        "kana": "エサ",
+        "gloss": "bait"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "用意する",
+        "kana": "よういする",
+        "gloss": "prepare"
+      },
+      {
+        "text": "んだな。",
+        "kana": "んだな",
+        "gloss": "you should"
+      }
+    ]
+  },
+  "Tue": {
+    "japanese": "本物の 釣り人は 釣り場に 敬意を 払うんだ… 忘れんなよ。",
+    "english": "A true angler pays respect to the fishing spot... don't forget that.",
+    "segments": [
+      {
+        "text": "本物",
+        "kana": "ほんもの",
+        "gloss": "true"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "釣り人",
+        "kana": "つりびと",
+        "gloss": "angler"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "釣り場",
+        "kana": "つりば",
+        "gloss": "fishing spot"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "敬意",
+        "kana": "けいい",
+        "gloss": "respect"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "払うんだ… ",
+        "kana": "はらうんだ",
+        "gloss": "pays"
+      },
+      {
+        "text": "忘れんなよ。",
+        "kana": "わすれんなよ",
+        "gloss": "don't forget"
+      }
+    ]
+  },
+  "Tue6": {
+    "japanese": "オレも 昔は 釣りをやってたんだ。フェーン諸島へ 船を 出し、 毎日 魚を 捕って 育った。#$e#釣り人の 生活は 簡単じゃねえが、 続けさせてくれる 何かが そこに あるんだよ。",
+    "english": "I used to fish, too, back in the day. I set sail for the Fern Islands and grew up catching fish every day.#$e#An angler's life isn't easy, but there's something there that keeps you going.",
+    "segments": [
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "I"
+      },
+      {
+        "text": "も ",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "昔",
+        "kana": "むかし",
+        "gloss": "in the past"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "やってたんだ。",
+        "kana": "やってたんだ",
+        "gloss": "used to do"
+      },
+      {
+        "text": "フェーン諸島",
+        "kana": "ふぇーんしょとう",
+        "gloss": "Fern Islands"
+      },
+      {
+        "text": "へ ",
+        "kana": "へ",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "船",
+        "kana": "ふね",
+        "gloss": "boat"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "出し、 ",
+        "kana": "だし",
+        "gloss": "set out"
+      },
+      {
+        "text": "毎日 ",
+        "kana": "まいにち",
+        "gloss": "every day"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "捕って ",
+        "kana": "とって",
+        "gloss": "catching"
+      },
+      {
+        "text": "育った。#$e#",
+        "kana": "そだった",
+        "gloss": "grew up"
+      },
+      {
+        "text": "釣り人",
+        "kana": "つりびと",
+        "gloss": "angler"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "生活",
+        "kana": "せいかつ",
+        "gloss": "life"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "簡単じゃねえ",
+        "kana": "かんたんじゃねえ",
+        "gloss": "isn't easy"
+      },
+      {
+        "text": "が、 ",
+        "kana": "が",
+        "gloss": "(contrast marker)"
+      },
+      {
+        "text": "続けさせてくれる ",
+        "kana": "つづけさせてくれる",
+        "gloss": "lets one keep doing it"
+      },
+      {
+        "text": "何か",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "そこ",
+        "kana": "そこ",
+        "gloss": "there"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "あるんだよ。",
+        "kana": "あるんだよ",
+        "gloss": "there is"
+      }
+    ]
+  },
+  "Wed": {
+    "japanese": "季節によって 場所を 変える 魚がいる。一部の魚は、 夜間か 雨の時にしか 釣れないぞ。",
+    "english": "Some fish change their location depending on the season. Some fish can only be caught at night or when it's raining.",
+    "segments": [
+      {
+        "text": "季節",
+        "kana": "きせつ",
+        "gloss": "season"
+      },
+      {
+        "text": "によって ",
+        "kana": "によって",
+        "gloss": "depending on"
+      },
+      {
+        "text": "場所",
+        "kana": "ばしょ",
+        "gloss": "place"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "変える ",
+        "kana": "かえる",
+        "gloss": "change"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いる。",
+        "kana": "いる",
+        "gloss": "there are"
+      },
+      {
+        "text": "一部",
+        "kana": "いちぶ",
+        "gloss": "some"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "は、 ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "夜間",
+        "kana": "やかん",
+        "gloss": "nighttime"
+      },
+      {
+        "text": "か ",
+        "kana": "か",
+        "gloss": "(or marker)"
+      },
+      {
+        "text": "雨",
+        "kana": "あめ",
+        "gloss": "rain"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "時",
+        "kana": "とき",
+        "gloss": "time"
+      },
+      {
+        "text": "にしか ",
+        "kana": "にしか",
+        "gloss": "only when"
+      },
+      {
+        "text": "釣れない",
+        "kana": "つれない",
+        "gloss": "can't be caught"
+      },
+      {
+        "text": "ぞ。",
+        "kana": "ぞ",
+        "gloss": "(emphasis marker)"
+      }
+    ]
+  },
+  "Wed6": {
+    "japanese": "滝の間にある淵には、変わった魚が一匹いると聞いたことがある…#$b#おまえさんの釣竿が届けばの話だが…",
+    "english": "I've heard there's an unusual fish in the pool between the waterfalls...#$b#That is, if your fishing rod can reach it...",
+    "segments": [
+      {
+        "text": "滝",
+        "kana": "たき",
+        "gloss": "waterfall"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "間",
+        "kana": "あいだ",
+        "gloss": "between"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "that is"
+      },
+      {
+        "text": "淵",
+        "kana": "ふち",
+        "gloss": "pool"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "変わった",
+        "kana": "かわった",
+        "gloss": "unusual"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "一匹",
+        "kana": "いっぴき",
+        "gloss": "one"
+      },
+      {
+        "text": "いる",
+        "kana": "いる",
+        "gloss": "there is"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quote marker)"
+      },
+      {
+        "text": "聞いたことがある…#$b#",
+        "kana": "きいたことがある",
+        "gloss": "I've heard"
+      },
+      {
+        "text": "おまえさん",
+        "kana": "おまえさん",
+        "gloss": "you"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "釣竿",
+        "kana": "つりざお",
+        "gloss": "fishing rod"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "届けば",
+        "kana": "とどけば",
+        "gloss": "if it reaches"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "話",
+        "kana": "はなし",
+        "gloss": "story"
+      },
+      {
+        "text": "だが…",
+        "kana": "だが",
+        "gloss": "but"
+      }
+    ]
+  },
+  "accept_869": {
+    "japanese": "ああ…私が狙っていたナマズにぴったりなエサだな！#$b#これと交換してくれないか。これが何なのかはわからないが、少し前に浜辺に流れ着いていたんだ。#$b#お前さんなら使えそうな気がするんだよ、坊主。^お前さんなら使えそうな気がするんだよ、嬢ちゃん。",
+    "english": "Ah... that's the perfect bait for the catfish I've been after!#$b#Won't you trade this for it? I don't know what this is, but it washed up on the beach a while ago.#$b#I have a feeling you could use it, lad.^I have a feeling you could use it, lass.",
+    "segments": [
+      {
+        "text": "ああ…",
+        "kana": "ああ",
+        "gloss": "(interjection - ah)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "狙っていた",
+        "kana": "ねらっていた",
+        "gloss": "was after"
+      },
+      {
+        "text": "ナマズ",
+        "kana": "ナマズ",
+        "gloss": "catfish"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "ぴったりな",
+        "kana": "ぴったりな",
+        "gloss": "perfect"
+      },
+      {
+        "text": "エサ",
+        "kana": "エサ",
+        "gloss": "bait"
+      },
+      {
+        "text": "だな！#$b#",
+        "kana": "だな",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(with marker)"
+      },
+      {
+        "text": "交換してくれない",
+        "kana": "こうかんしてくれない",
+        "gloss": "won't you trade"
+      },
+      {
+        "text": "か。",
+        "kana": "か",
+        "gloss": "(question marker)"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "何なのか",
+        "kana": "なんなのか",
+        "gloss": "what it is"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "わからない",
+        "kana": "わからない",
+        "gloss": "I don't know"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "(contrast marker)"
+      },
+      {
+        "text": "少し前",
+        "kana": "すこしまえ",
+        "gloss": "a while ago"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time marker)"
+      },
+      {
+        "text": "浜辺",
+        "kana": "はまべ",
+        "gloss": "beach"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "流れ着いていた",
+        "kana": "ながれついていた",
+        "gloss": "had washed up"
+      },
+      {
+        "text": "んだ。#$b#",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "お前さん",
+        "kana": "おまえさん",
+        "gloss": "you"
+      },
+      {
+        "text": "なら",
+        "kana": "なら",
+        "gloss": "if it's you"
+      },
+      {
+        "text": "使えそうな",
+        "kana": "つかえそうな",
+        "gloss": "seems usable"
+      },
+      {
+        "text": "気がする",
+        "kana": "きがする",
+        "gloss": "I feel"
+      },
+      {
+        "text": "んだよ、",
+        "kana": "んだよ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "坊主。^",
+        "kana": "ぼうず",
+        "gloss": "lad"
+      },
+      {
+        "text": "お前さん",
+        "kana": "おまえさん",
+        "gloss": "you"
+      },
+      {
+        "text": "なら",
+        "kana": "なら",
+        "gloss": "if it's you"
+      },
+      {
+        "text": "使えそうな",
+        "kana": "つかえそうな",
+        "gloss": "seems usable"
+      },
+      {
+        "text": "気がする",
+        "kana": "きがする",
+        "gloss": "I feel"
+      },
+      {
+        "text": "んだよ、",
+        "kana": "んだよ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "嬢ちゃん。",
+        "kana": "じょうちゃん",
+        "gloss": "lass"
+      }
+    ]
+  },
+  "fishCaught_159": {
+    "japanese": "クリムゾンフィッシュを釣ったのか！あの魚には何年も困ってたんだ。おれの家の土台の木をかじろうとするんだ！",
+    "english": "You caught the Crimsonfish?! That fish has been troubling me for many years. It keeps trying to gnaw at the wood under my house's foundation!",
+    "segments": [
+      {
+        "text": "クリムゾンフィッシュ",
+        "kana": "クリムゾンフィッシュ",
+        "gloss": "Crimsonfish"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣った",
+        "kana": "つった",
+        "gloss": "caught"
+      },
+      {
+        "text": "のか！",
+        "kana": "のか",
+        "gloss": "did you"
+      },
+      {
+        "text": "あの",
+        "kana": "あの",
+        "gloss": "that"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "何年も",
+        "kana": "なんねんも",
+        "gloss": "for many years"
+      },
+      {
+        "text": "困ってたんだ。",
+        "kana": "こまってたんだ",
+        "gloss": "has been troubling me"
+      },
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "家",
+        "kana": "いえ",
+        "gloss": "house"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "土台",
+        "kana": "どだい",
+        "gloss": "foundation"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "木",
+        "kana": "き",
+        "gloss": "wood"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "かじろうとする",
+        "kana": "かじろうとする",
+        "gloss": "tries to gnaw"
+      },
+      {
+        "text": "んだ！",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "fishCaught_160": {
+    "japanese": "ああ、ツリビトアンコウを釣ったのか？希少な魚の世界にふみだす第一歩としては上出来だ。",
+    "english": "Ah, you caught the Angler? As a first step into the world of rare fish, that's well done.",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "(interjection - ah)"
+      },
+      {
+        "text": "ツリビトアンコウ",
+        "kana": "ツリビトアンコウ",
+        "gloss": "Angler (fish name)"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣った",
+        "kana": "つった",
+        "gloss": "caught"
+      },
+      {
+        "text": "のか？",
+        "kana": "のか",
+        "gloss": "did you"
+      },
+      {
+        "text": "希少な",
+        "kana": "きしょうな",
+        "gloss": "rare"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "世界",
+        "kana": "せかい",
+        "gloss": "world"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "ふみだす",
+        "kana": "ふみだす",
+        "gloss": "step into"
+      },
+      {
+        "text": "第一歩",
+        "kana": "だいいっぽ",
+        "gloss": "first step"
+      },
+      {
+        "text": "として",
+        "kana": "として",
+        "gloss": "as"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "上出来",
+        "kana": "じょうでき",
+        "gloss": "well done"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "is"
+      }
+    ]
+  },
+  "fishCaught_163": {
+    "japanese": "そうか…おまえさん、本当に「レジェンド」を釣り上げたんだな。まさかこんな日が来るとは…$h#$b#坊主、よくやったな…おまえさんはこの谷はじまって一番の漁師だ…$h^嬢ちゃん、よくやったな…おまえさんはこの谷はじまって一番の漁師だ…$h",
+    "english": "I see... you really caught \"the Legend,\" huh. I can't believe such a day would come...#$b#Lad, well done... you're the best fisherman this valley's ever seen...^Lass, well done... you're the best fisherman this valley's ever seen...",
+    "segments": [
+      {
+        "text": "そうか…",
+        "kana": "そうか",
+        "gloss": "I see"
+      },
+      {
+        "text": "おまえさん、",
+        "kana": "おまえさん",
+        "gloss": "you"
+      },
+      {
+        "text": "本当に",
+        "kana": "ほんとうに",
+        "gloss": "really"
+      },
+      {
+        "text": "「レジェンド」",
+        "kana": "レジェンド",
+        "gloss": "\"the Legend\""
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣り上げた",
+        "kana": "つりあげた",
+        "gloss": "caught"
+      },
+      {
+        "text": "んだな。",
+        "kana": "んだな",
+        "gloss": "didn't you"
+      },
+      {
+        "text": "まさか",
+        "kana": "まさか",
+        "gloss": "I can't believe"
+      },
+      {
+        "text": "こんな",
+        "kana": "こんな",
+        "gloss": "such"
+      },
+      {
+        "text": "日",
+        "kana": "ひ",
+        "gloss": "day"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "来るとは…$h#$b#",
+        "kana": "くるとは",
+        "gloss": "would come"
+      },
+      {
+        "text": "坊主、",
+        "kana": "ぼうず",
+        "gloss": "lad"
+      },
+      {
+        "text": "よくやったな…",
+        "kana": "よくやったな",
+        "gloss": "well done"
+      },
+      {
+        "text": "おまえさん",
+        "kana": "おまえさん",
+        "gloss": "you"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "谷",
+        "kana": "たに",
+        "gloss": "valley"
+      },
+      {
+        "text": "はじまって",
+        "kana": "はじまって",
+        "gloss": "since the beginning"
+      },
+      {
+        "text": "一番",
+        "kana": "いちばん",
+        "gloss": "best"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "漁師",
+        "kana": "りょうし",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "だ…$h^",
+        "kana": "だ",
+        "gloss": "are"
+      },
+      {
+        "text": "嬢ちゃん、",
+        "kana": "じょうちゃん",
+        "gloss": "lass"
+      },
+      {
+        "text": "よくやったな…",
+        "kana": "よくやったな",
+        "gloss": "well done"
+      },
+      {
+        "text": "おまえさん",
+        "kana": "おまえさん",
+        "gloss": "you"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "谷",
+        "kana": "たに",
+        "gloss": "valley"
+      },
+      {
+        "text": "はじまって",
+        "kana": "はじまって",
+        "gloss": "since the beginning"
+      },
+      {
+        "text": "一番",
+        "kana": "いちばん",
+        "gloss": "best"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "漁師",
+        "kana": "りょうし",
+        "gloss": "fisherman"
+      },
+      {
+        "text": "だ…$h",
+        "kana": "だ",
+        "gloss": "are"
+      }
+    ]
+  },
+  "fishCaught_682": {
+    "japanese": "（クンクン）…下水道で釣りをしていたようだな、坊主。^（クンクン）…下水道で釣りをしていたようだな、嬢ちゃん。#$b#よくそんな型破りなことを思いついたもんだ。あそこにはな、有毒なヘドロで怪物に変わった巨大なコイの伝説があるんだ…",
+    "english": "*sniff sniff*... Seems like you've been fishing in the sewers, lad.^*sniff sniff*... Seems like you've been fishing in the sewers, lass.#$b#That's quite an unconventional idea you came up with. There's a legend of a giant carp that transformed into a monster from toxic sludge over there...",
+    "segments": [
+      {
+        "text": "（クンクン）…",
+        "kana": "クンクン",
+        "gloss": "(sniffing sound)"
+      },
+      {
+        "text": "下水道",
+        "kana": "げすいどう",
+        "gloss": "sewer"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "していた",
+        "kana": "していた",
+        "gloss": "were doing"
+      },
+      {
+        "text": "ようだな、",
+        "kana": "ようだな",
+        "gloss": "it seems"
+      },
+      {
+        "text": "坊主。^",
+        "kana": "ぼうず",
+        "gloss": "lad"
+      },
+      {
+        "text": "（クンクン）…",
+        "kana": "クンクン",
+        "gloss": "(sniffing sound)"
+      },
+      {
+        "text": "下水道",
+        "kana": "げすいどう",
+        "gloss": "sewer"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "していた",
+        "kana": "していた",
+        "gloss": "were doing"
+      },
+      {
+        "text": "ようだな、",
+        "kana": "ようだな",
+        "gloss": "it seems"
+      },
+      {
+        "text": "嬢ちゃん。#$b#",
+        "kana": "じょうちゃん",
+        "gloss": "lass"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "(intensifier)"
+      },
+      {
+        "text": "そんな",
+        "kana": "そんな",
+        "gloss": "such"
+      },
+      {
+        "text": "型破りな",
+        "kana": "かたやぶりな",
+        "gloss": "unconventional"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "thing"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "思いついた",
+        "kana": "おもいついた",
+        "gloss": "came up with"
+      },
+      {
+        "text": "もんだ。",
+        "kana": "もんだ",
+        "gloss": "(admiration)"
+      },
+      {
+        "text": "あそこ",
+        "kana": "あそこ",
+        "gloss": "over there"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "な、",
+        "kana": "な",
+        "gloss": "(emphasis marker)"
+      },
+      {
+        "text": "有毒な",
+        "kana": "ゆうどくな",
+        "gloss": "toxic"
+      },
+      {
+        "text": "ヘドロ",
+        "kana": "ヘドロ",
+        "gloss": "sludge"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(cause marker)"
+      },
+      {
+        "text": "怪物",
+        "kana": "かいぶつ",
+        "gloss": "monster"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(result marker)"
+      },
+      {
+        "text": "変わった",
+        "kana": "かわった",
+        "gloss": "transformed"
+      },
+      {
+        "text": "巨大な",
+        "kana": "きょだいな",
+        "gloss": "giant"
+      },
+      {
+        "text": "コイ",
+        "kana": "コイ",
+        "gloss": "carp"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "伝説",
+        "kana": "でんせつ",
+        "gloss": "legend"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あるんだ…",
+        "kana": "あるんだ",
+        "gloss": "there is"
+      }
+    ]
+  },
+  "fishCaught_775": {
+    "japanese": "ああ、ついにアイスフィッシュを釣り上げたのか…おれも挑んだが、とんでもなくすべりやすい魚だ！#$e#どのくらい挑戦したんだ？",
+    "english": "Ah, you finally caught the Glacierfish... I tried too, but that's an incredibly slippery fish!#$e#How many times did you try?",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "(interjection - ah)"
+      },
+      {
+        "text": "ついに",
+        "kana": "ついに",
+        "gloss": "finally"
+      },
+      {
+        "text": "アイスフィッシュ",
+        "kana": "アイスフィッシュ",
+        "gloss": "Glacierfish"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣り上げた",
+        "kana": "つりあげた",
+        "gloss": "caught"
+      },
+      {
+        "text": "のか…",
+        "kana": "のか",
+        "gloss": "did you"
+      },
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "I"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "挑んだ",
+        "kana": "いどんだ",
+        "gloss": "tried"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "(contrast marker)"
+      },
+      {
+        "text": "とんでもなく",
+        "kana": "とんでもなく",
+        "gloss": "incredibly"
+      },
+      {
+        "text": "すべりやすい",
+        "kana": "すべりやすい",
+        "gloss": "slippery"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "だ！#$e#",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "どのくらい",
+        "kana": "どのくらい",
+        "gloss": "how much"
+      },
+      {
+        "text": "挑戦した",
+        "kana": "ちょうせんした",
+        "gloss": "did you try"
+      },
+      {
+        "text": "んだ？",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      }
+    ]
+  },
+  "married": {
+    "japanese": "独身生活に見切りをつけたのか？#$b#だが、釣りはやめるんじゃないぞ…",
+    "english": "Did you give up on the single life?#$b#But don't give up fishing...",
+    "segments": [
+      {
+        "text": "独身生活",
+        "kana": "どくしんせいかつ",
+        "gloss": "single life"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "見切りをつけた",
+        "kana": "みきりをつけた",
+        "gloss": "gave up on"
+      },
+      {
+        "text": "のか？#$b#",
+        "kana": "のか",
+        "gloss": "did you"
+      },
+      {
+        "text": "だが、",
+        "kana": "だが",
+        "gloss": "but"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "やめるんじゃないぞ…",
+        "kana": "やめるんじゃないぞ",
+        "gloss": "don't quit"
+      }
+    ]
+  },
+  "summer_19": {
+    "japanese": "明日は恒例のマス釣り大会だ…淡水釣り好きには夢みたいなイベントだ！#$e#世界中の釣り人が美しいニジマスを釣りにやってくる…#$e#会えるのを楽しみにしてるぞ、坊主！$h^興味があれば来るといい！$h#$e#これから2日間は、朝9時から1時間だけ店を開けるからな。必要なものがあればその間に来てくれ。",
+    "english": "Tomorrow's the annual Trout Derby... it's a dream event for freshwater fishing lovers!#$e#Anglers from all over the world come to fish for the beautiful Rainbow Trout...#$e#I'm looking forward to seeing you there, lad!^Come along if you're interested!#$e#For the next two days, I'll only open the shop for one hour starting at 9am. Come by then if you need anything.",
+    "segments": [
+      {
+        "text": "明日",
+        "kana": "あした",
+        "gloss": "tomorrow"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "恒例",
+        "kana": "こうれい",
+        "gloss": "annual"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "マス釣り大会",
+        "kana": "ますつりたいかい",
+        "gloss": "Trout Derby"
+      },
+      {
+        "text": "だ…",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "淡水釣り好き",
+        "kana": "たんすいつりずき",
+        "gloss": "freshwater fishing enthusiast"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "夢みたいな",
+        "kana": "ゆめみたいな",
+        "gloss": "dreamlike"
+      },
+      {
+        "text": "イベント",
+        "kana": "イベント",
+        "gloss": "event"
+      },
+      {
+        "text": "だ！#$e#",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "世界中",
+        "kana": "せかいじゅう",
+        "gloss": "all over the world"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "釣り人",
+        "kana": "つりびと",
+        "gloss": "anglers"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "美しい",
+        "kana": "うつくしい",
+        "gloss": "beautiful"
+      },
+      {
+        "text": "ニジマス",
+        "kana": "ニジマス",
+        "gloss": "rainbow trout"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(purpose marker)"
+      },
+      {
+        "text": "やってくる…#$e#",
+        "kana": "やってくる",
+        "gloss": "come"
+      },
+      {
+        "text": "会える",
+        "kana": "あえる",
+        "gloss": "being able to meet"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "楽しみにしてる",
+        "kana": "たのしみにしてる",
+        "gloss": "looking forward to"
+      },
+      {
+        "text": "ぞ、",
+        "kana": "ぞ",
+        "gloss": "(emphasis marker)"
+      },
+      {
+        "text": "坊主！$h^",
+        "kana": "ぼうず",
+        "gloss": "lad"
+      },
+      {
+        "text": "興味",
+        "kana": "きょうみ",
+        "gloss": "interest"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あれば",
+        "kana": "あれば",
+        "gloss": "if you have"
+      },
+      {
+        "text": "来るといい！$h#$e#",
+        "kana": "くるといい",
+        "gloss": "you should come"
+      },
+      {
+        "text": "これから",
+        "kana": "これから",
+        "gloss": "from now"
+      },
+      {
+        "text": "2日間",
+        "kana": "ふつかかん",
+        "gloss": "two days"
+      },
+      {
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "朝",
+        "kana": "あさ",
+        "gloss": "morning"
+      },
+      {
+        "text": "9時",
+        "kana": "くじ",
+        "gloss": "9 o'clock"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "(starting marker)"
+      },
+      {
+        "text": "1時間",
+        "kana": "いちじかん",
+        "gloss": "one hour"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "only"
+      },
+      {
+        "text": "店",
+        "kana": "みせ",
+        "gloss": "shop"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "開ける",
+        "kana": "あける",
+        "gloss": "open"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "(reason marker)"
+      },
+      {
+        "text": "な。",
+        "kana": "な",
+        "gloss": "(emphasis marker)"
+      },
+      {
+        "text": "必要な",
+        "kana": "ひつような",
+        "gloss": "necessary"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あれば",
+        "kana": "あれば",
+        "gloss": "if there are"
+      },
+      {
+        "text": "その間",
+        "kana": "そのあいだ",
+        "gloss": "during that time"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time marker)"
+      },
+      {
+        "text": "来てくれ。",
+        "kana": "きてくれ",
+        "gloss": "come"
+      }
+    ]
+  },
+  "summer_20": {
+    "japanese": "ついに今日だな！釣り具をぜんぶマス釣り用に調整したんだ…#$e#おまえさんもがんばれよ！",
+    "english": "It's finally today! I've adjusted all my tackle for trout fishing...#$e#You do your best too!",
+    "segments": [
+      {
+        "text": "ついに",
+        "kana": "ついに",
+        "gloss": "finally"
+      },
+      {
+        "text": "今日",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "だな！",
+        "kana": "だな",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "釣り具",
+        "kana": "つりぐ",
+        "gloss": "tackle"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "ぜんぶ",
+        "kana": "ぜんぶ",
+        "gloss": "all"
+      },
+      {
+        "text": "マス釣り",
+        "kana": "ますつり",
+        "gloss": "trout fishing"
+      },
+      {
+        "text": "用",
+        "kana": "よう",
+        "gloss": "for"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(purpose marker)"
+      },
+      {
+        "text": "調整した",
+        "kana": "ちょうせいした",
+        "gloss": "adjusted"
+      },
+      {
+        "text": "んだ…#$e#",
+        "kana": "んだ",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "おまえさん",
+        "kana": "おまえさん",
+        "gloss": "you"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "がんばれよ！",
+        "kana": "がんばれよ",
+        "gloss": "do your best"
+      }
+    ]
+  },
+  "summer_21": {
+    "japanese": "釣り大会の調子はどうだ？#$b#おれはかなりの数の金色のタグを見つけたが… まだまだ終わりじゃない！",
+    "english": "How's the fishing derby going?#$b#I've found quite a number of golden tags, but... it's far from over!",
+    "segments": [
+      {
+        "text": "釣り大会",
+        "kana": "つりたいかい",
+        "gloss": "fishing derby"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "調子",
+        "kana": "ちょうし",
+        "gloss": "condition"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "どうだ？#$b#",
+        "kana": "どうだ",
+        "gloss": "how is it"
+      },
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "かなりの数",
+        "kana": "かなりのかず",
+        "gloss": "quite a number"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "金色",
+        "kana": "きんいろ",
+        "gloss": "golden"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "タグ",
+        "kana": "タグ",
+        "gloss": "tags"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見つけた",
+        "kana": "みつけた",
+        "gloss": "found"
+      },
+      {
+        "text": "が… ",
+        "kana": "が",
+        "gloss": "(contrast marker)"
+      },
+      {
+        "text": "まだまだ",
+        "kana": "まだまだ",
+        "gloss": "still"
+      },
+      {
+        "text": "終わり",
+        "kana": "おわり",
+        "gloss": "end"
+      },
+      {
+        "text": "じゃない！",
+        "kana": "じゃない",
+        "gloss": "isn't"
+      }
+    ]
+  },
+  "winter_11": {
+    "japanese": "明日はビーチでちょっとしたイベントがある… 「イカ釣りまつり」だ。#$e#イカは手ごわい相手だ。とはいえ、おまえさんはもう釣りのコツをつかんでいるはずだ。 そうだろう？",
+    "english": "Tomorrow there's a little event at the beach... It's the \"Squid Fest.\"#$e#Squid are a formidable opponent. That said, you should have gotten the hang of fishing by now. Right?",
+    "segments": [
+      {
+        "text": "明日",
+        "kana": "あした",
+        "gloss": "tomorrow"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ビーチ",
+        "kana": "ビーチ",
+        "gloss": "beach"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "ちょっとした",
+        "kana": "ちょっとした",
+        "gloss": "little"
+      },
+      {
+        "text": "イベント",
+        "kana": "イベント",
+        "gloss": "event"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある… ",
+        "kana": "ある",
+        "gloss": "there is"
+      },
+      {
+        "text": "「イカ釣りまつり」",
+        "kana": "いかつりまつり",
+        "gloss": "Squid Fest"
+      },
+      {
+        "text": "だ。#$e#",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "手ごわい",
+        "kana": "てごわい",
+        "gloss": "formidable"
+      },
+      {
+        "text": "相手",
+        "kana": "あいて",
+        "gloss": "opponent"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "とはいえ、",
+        "kana": "とはいえ",
+        "gloss": "that said"
+      },
+      {
+        "text": "おまえさん",
+        "kana": "おまえさん",
+        "gloss": "you"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もう",
+        "kana": "もう",
+        "gloss": "already"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "コツ",
+        "kana": "コツ",
+        "gloss": "knack"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "つかんでいる",
+        "kana": "つかんでいる",
+        "gloss": "have grasped"
+      },
+      {
+        "text": "はずだ。 ",
+        "kana": "はずだ",
+        "gloss": "should"
+      },
+      {
+        "text": "そうだろう？",
+        "kana": "そうだろう",
+        "gloss": "right?"
+      }
+    ]
+  },
+  "winter_12": {
+    "japanese": "まだあきらめるな！この海にはもっとイカがいるはずだ…",
+    "english": "Don't give up yet! There should be more squid in this sea...",
+    "segments": [
+      {
+        "text": "まだ",
+        "kana": "まだ",
+        "gloss": "not yet"
+      },
+      {
+        "text": "あきらめるな！",
+        "kana": "あきらめるな",
+        "gloss": "don't give up"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "海",
+        "kana": "うみ",
+        "gloss": "sea"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もっと",
+        "kana": "もっと",
+        "gloss": "more"
+      },
+      {
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いる",
+        "kana": "いる",
+        "gloss": "there are"
+      },
+      {
+        "text": "はずだ…",
+        "kana": "はずだ",
+        "gloss": "should be"
+      }
+    ]
+  },
+  "winter_13": {
+    "japanese": "ここに集まった釣り人たちを見ると、冬のこごえた心も温かくなる。 みんな釣りを愛しているのがわかるからな…$h",
+    "english": "Seeing the anglers gathered here warms even my frozen winter heart. I can tell everyone loves fishing...",
+    "segments": [
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "集まった",
+        "kana": "あつまった",
+        "gloss": "gathered"
+      },
+      {
+        "text": "釣り人たち",
+        "kana": "つりびとたち",
+        "gloss": "anglers"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見ると、",
+        "kana": "みると",
+        "gloss": "when I see"
+      },
+      {
+        "text": "冬",
+        "kana": "ふゆ",
+        "gloss": "winter"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "こごえた",
+        "kana": "こごえた",
+        "gloss": "frozen"
+      },
+      {
+        "text": "心",
+        "kana": "こころ",
+        "gloss": "heart"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "温かくなる。 ",
+        "kana": "あたたかくなる",
+        "gloss": "warms up"
+      },
+      {
+        "text": "みんな",
+        "kana": "みんな",
+        "gloss": "everyone"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "愛している",
+        "kana": "あいしている",
+        "gloss": "loves"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "わかる",
+        "kana": "わかる",
+        "gloss": "I can tell"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "(reason marker)"
+      },
+      {
+        "text": "な…$h",
+        "kana": "な",
+        "gloss": "(emphasis marker)"
+      }
+    ]
+  }
+}

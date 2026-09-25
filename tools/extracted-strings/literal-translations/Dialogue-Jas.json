@@ -1,0 +1,1892 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Dialogue-Jas.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AcceptBirthdayGift_Negative": {
+    "japanese": "誕生日プレゼント？うーん…これキライなんだ。$s",
+    "english": "A birthday present? Hmm... I don't like this.",
+    "segments": [
+      {
+        "text": "誕生日プレゼント？",
+        "kana": "たんじょうびプレゼント",
+        "gloss": "birthday present"
+      },
+      {
+        "text": "うーん…",
+        "kana": "うーん",
+        "gloss": "hmm"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "キライなんだ。$s",
+        "kana": "きらいなんだ",
+        "gloss": "don't like it"
+      }
+    ]
+  },
+  "AcceptBirthdayGift_Positive": {
+    "japanese": "わーい、誕生日プレゼントだ！これだーい好き！$h",
+    "english": "Yay, it's a birthday present! I love this so much!",
+    "segments": [
+      {
+        "text": "わーい、",
+        "kana": "わーい",
+        "gloss": "yay"
+      },
+      {
+        "text": "誕生日プレゼントだ！",
+        "kana": "たんじょうびプレゼントだ",
+        "gloss": "it's a birthday present"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "だーい好き！$h",
+        "kana": "だーいすき",
+        "gloss": "love it so much"
+      }
+    ]
+  },
+  "AcceptGift_(O)103": {
+    "japanese": "わぁ、ちいさなお人形！汚れちゃってるね、お風呂に入れてあげくちゃ。ありがとう！$h",
+    "english": "Wow, a small doll! She's gotten dirty, I'll have to give her a bath. Thank you!",
+    "segments": [
+      {
+        "text": "わぁ、",
+        "kana": "わぁ",
+        "gloss": "wow"
+      },
+      {
+        "text": "ちいさな",
+        "kana": "ちいさな",
+        "gloss": "small"
+      },
+      {
+        "text": "お人形！",
+        "kana": "おにんぎょう",
+        "gloss": "doll"
+      },
+      {
+        "text": "汚れちゃってる",
+        "kana": "よごれちゃってる",
+        "gloss": "she's gotten dirty"
+      },
+      {
+        "text": "ね、",
+        "kana": "ね",
+        "gloss": "(sentence particle)"
+      },
+      {
+        "text": "お風呂",
+        "kana": "おふろ",
+        "gloss": "bath"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)"
+      },
+      {
+        "text": "入れてあげくちゃ。",
+        "kana": "いれてあげくちゃ",
+        "gloss": "I'll have to give her (a bath)"
+      },
+      {
+        "text": "ありがとう！$h",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "AcceptGift_(O)StardropTea": {
+    "japanese": "いいの？とってもいい香りね！毎日ほんのちょっとずつ飲むわ。$h",
+    "english": "Is that okay? It smells so good! I'll drink just a little bit every day.",
+    "segments": [
+      {
+        "text": "いいの？",
+        "kana": "いいの",
+        "gloss": "is that okay"
+      },
+      {
+        "text": "とっても",
+        "kana": "とっても",
+        "gloss": "very"
+      },
+      {
+        "text": "いい香り",
+        "kana": "いいかおり",
+        "gloss": "good smell"
+      },
+      {
+        "text": "ね！",
+        "kana": "ね",
+        "gloss": "(sentence particle)"
+      },
+      {
+        "text": "毎日",
+        "kana": "まいにち",
+        "gloss": "every day"
+      },
+      {
+        "text": "ほんの",
+        "kana": "ほんの",
+        "gloss": "just a"
+      },
+      {
+        "text": "ちょっとずつ",
+        "kana": "ちょっとずつ",
+        "gloss": "little by little"
+      },
+      {
+        "text": "飲むわ。$h",
+        "kana": "のむわ",
+        "gloss": "I'll drink"
+      }
+    ]
+  },
+  "AcceptGift_(TR)FairyBox": {
+    "japanese": "わぁ、とってもかわいいね！妖精さんが中にいるの？ うふふ…歌声が聞こえるわ。秘密の友だちができちゃった。$h",
+    "english": "Wow, so cute! Is there a fairy inside? *giggle*... I can hear her singing. I've made a secret friend.",
+    "segments": [
+      {
+        "text": "わぁ、",
+        "kana": "わぁ",
+        "gloss": "wow"
+      },
+      {
+        "text": "とっても",
+        "kana": "とっても",
+        "gloss": "very"
+      },
+      {
+        "text": "かわいい",
+        "kana": "かわいい",
+        "gloss": "cute"
+      },
+      {
+        "text": "ね！",
+        "kana": "ね",
+        "gloss": "(sentence particle)"
+      },
+      {
+        "text": "妖精さん",
+        "kana": "ようせいさん",
+        "gloss": "fairy"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "中に",
+        "kana": "なかに",
+        "gloss": "inside"
+      },
+      {
+        "text": "いるの？ ",
+        "kana": "いるの",
+        "gloss": "is there"
+      },
+      {
+        "text": "うふふ…",
+        "kana": "うふふ",
+        "gloss": "*giggle*"
+      },
+      {
+        "text": "歌声",
+        "kana": "うたごえ",
+        "gloss": "singing voice"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "聞こえるわ。",
+        "kana": "きこえるわ",
+        "gloss": "I can hear"
+      },
+      {
+        "text": "秘密",
+        "kana": "ひみつ",
+        "gloss": "secret"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "友だち",
+        "kana": "ともだち",
+        "gloss": "friend"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "できちゃった。$h",
+        "kana": "できちゃった",
+        "gloss": "became"
+      }
+    ]
+  },
+  "AcceptGift_Negative_alcohol_item": {
+    "japanese": "うぅ…これは飲んじゃいけないんだよ。おとなの人のものでしょ？$s",
+    "english": "Ugh... I'm not supposed to drink this. Isn't it an adult's thing?",
+    "segments": [
+      {
+        "text": "うぅ…",
+        "kana": "うぅ",
+        "gloss": "ugh"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "飲んじゃいけないんだよ。",
+        "kana": "のんじゃいけないんだよ",
+        "gloss": "I'm not supposed to drink (this)"
+      },
+      {
+        "text": "おとな",
+        "kana": "おとな",
+        "gloss": "adult"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "人",
+        "kana": "ひと",
+        "gloss": "person"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "ものでしょ？$s",
+        "kana": "ものでしょ",
+        "gloss": "isn't it"
+      }
+    ]
+  },
+  "AcceptGift_Negative_coffee_item": {
+    "japanese": "えっと…マーニーおばさんから、まだコーヒーは飲んじゃだめって言われてるの…$s",
+    "english": "Um... Aunt Marnie told me I'm still not allowed to drink coffee...",
+    "segments": [
+      {
+        "text": "えっと…",
+        "kana": "えっと",
+        "gloss": "um"
+      },
+      {
+        "text": "マーニーおばさん",
+        "kana": "マーニーおばさん",
+        "gloss": "Aunt Marnie"
+      },
+      {
+        "text": "から、",
+        "kana": "から",
+        "gloss": "(from)"
+      },
+      {
+        "text": "まだ",
+        "kana": "まだ",
+        "gloss": "still"
+      },
+      {
+        "text": "コーヒー",
+        "kana": "コーヒー",
+        "gloss": "coffee"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "飲んじゃだめ",
+        "kana": "のんじゃだめ",
+        "gloss": "mustn't drink"
+      },
+      {
+        "text": "って",
+        "kana": "って",
+        "gloss": "(quote marker)"
+      },
+      {
+        "text": "言われてるの…$s",
+        "kana": "いわれてるの",
+        "gloss": "I've been told"
+      }
+    ]
+  },
+  "AcceptGift_Positive_doll_item": {
+    "japanese": "まぁ！すてき！きっと私のほかのお友だちともすぐに仲良しになれるわ！$h",
+    "english": "Oh! Lovely! I'm sure he'll soon become friends with my other friends too!",
+    "segments": [
+      {
+        "text": "まぁ！",
+        "kana": "まぁ",
+        "gloss": "oh"
+      },
+      {
+        "text": "すてき！",
+        "kana": "すてき",
+        "gloss": "lovely"
+      },
+      {
+        "text": "きっと",
+        "kana": "きっと",
+        "gloss": "surely"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "ほかの",
+        "kana": "ほかの",
+        "gloss": "other"
+      },
+      {
+        "text": "お友だち",
+        "kana": "おともだち",
+        "gloss": "friends"
+      },
+      {
+        "text": "とも",
+        "kana": "とも",
+        "gloss": "(with, too)"
+      },
+      {
+        "text": "すぐに",
+        "kana": "すぐに",
+        "gloss": "soon"
+      },
+      {
+        "text": "仲良しになれるわ！$h",
+        "kana": "なかよしになれるわ",
+        "gloss": "can become friends"
+      }
+    ]
+  },
+  "Fri": {
+    "japanese": "…あなたのこと、 よく知らない。$u",
+    "english": "...I don't know much about you.",
+    "segments": [
+      {
+        "text": "…あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "こと、 ",
+        "kana": "こと",
+        "gloss": "(about)"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "well"
+      },
+      {
+        "text": "知らない。$u",
+        "kana": "しらない",
+        "gloss": "don't know"
+      }
+    ]
+  },
+  "Fri2": {
+    "japanese": "この リボン、 どうかな？",
+    "english": "This ribbon, what do you think?",
+    "segments": [
+      {
+        "text": "この ",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "リボン、 ",
+        "kana": "リボン",
+        "gloss": "ribbon"
+      },
+      {
+        "text": "どうかな？",
+        "kana": "どうかな",
+        "gloss": "what do you think?"
+      }
+    ]
+  },
+  "Fri4": {
+    "japanese": "牧場は 好きなんだ…  牛のミルクから 作った 新鮮な アイスクリームが 一番お気に入りなの。",
+    "english": "I like the farm... The fresh ice cream made from cow's milk is my favorite.",
+    "segments": [
+      {
+        "text": "牧場",
+        "kana": "ぼくじょう",
+        "gloss": "farm"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "好きなんだ…  ",
+        "kana": "すきなんだ",
+        "gloss": "I like (it)"
+      },
+      {
+        "text": "牛",
+        "kana": "うし",
+        "gloss": "cow"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "ミルク",
+        "kana": "ミルク",
+        "gloss": "milk"
+      },
+      {
+        "text": "から ",
+        "kana": "から",
+        "gloss": "(from)"
+      },
+      {
+        "text": "作った ",
+        "kana": "つくった",
+        "gloss": "made"
+      },
+      {
+        "text": "新鮮な ",
+        "kana": "しんせんな",
+        "gloss": "fresh"
+      },
+      {
+        "text": "アイスクリーム",
+        "kana": "アイスクリーム",
+        "gloss": "ice cream"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "一番",
+        "kana": "いちばん",
+        "gloss": "most"
+      },
+      {
+        "text": "お気に入りなの。",
+        "kana": "おきにいりなの",
+        "gloss": "(my) favorite"
+      }
+    ]
+  },
+  "GreenRain": {
+    "japanese": "こわいよう…$s",
+    "english": "I'm scared...",
+    "segments": [
+      {
+        "text": "こわいよう…$s",
+        "kana": "こわいよう",
+        "gloss": "I'm scared"
+      }
+    ]
+  },
+  "GreenRain_2": {
+    "japanese": "雨でドレスが緑色になっちゃたらいやだな…$s",
+    "english": "I don't want my dress to turn green from the rain...",
+    "segments": [
+      {
+        "text": "雨",
+        "kana": "あめ",
+        "gloss": "rain"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(because of)"
+      },
+      {
+        "text": "ドレス",
+        "kana": "ドレス",
+        "gloss": "dress"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "緑色",
+        "kana": "みどりいろ",
+        "gloss": "green"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "なっちゃたら",
+        "kana": "なっちゃたら",
+        "gloss": "if it becomes"
+      },
+      {
+        "text": "いやだな…$s",
+        "kana": "いやだな",
+        "gloss": "I don't want that"
+      }
+    ]
+  },
+  "Mon": {
+    "japanese": "えっと…マーニーおばさんを 探してるの？$u",
+    "english": "Um... Are you looking for Aunt Marnie?",
+    "segments": [
+      {
+        "text": "えっと…",
+        "kana": "えっと",
+        "gloss": "um"
+      },
+      {
+        "text": "マーニーおばさん",
+        "kana": "マーニーおばさん",
+        "gloss": "Aunt Marnie"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "探してるの？$u",
+        "kana": "さがしてるの",
+        "gloss": "are you looking for"
+      }
+    ]
+  },
+  "Mon4": {
+    "japanese": "こんにちは、@さん。#$e#農場生活って 楽しいね。$h",
+    "english": "Hi, Mr./Ms. @. Living on a farm is fun.",
+    "segments": [
+      {
+        "text": "こんにちは、",
+        "kana": "こんにちは",
+        "gloss": "hello"
+      },
+      {
+        "text": "@",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "さん。#$e#",
+        "kana": "さん",
+        "gloss": "(honorific)"
+      },
+      {
+        "text": "農場生活",
+        "kana": "のうじょうせいかつ",
+        "gloss": "farm life"
+      },
+      {
+        "text": "って ",
+        "kana": "って",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "楽しいね。$h",
+        "kana": "たのしいね",
+        "gloss": "is fun, isn't it"
+      }
+    ]
+  },
+  "Resort": {
+    "japanese": "マーニーおばさんが日焼けしちゃダメって言うの…でも早歩きすると涼しいから、わたしはきっと大丈夫。$h",
+    "english": "Aunt Marnie says I shouldn't get sunburned... but if I walk fast it feels cool, so I'm sure I'll be fine.",
+    "segments": [
+      {
+        "text": "マーニーおばさん",
+        "kana": "マーニーおばさん",
+        "gloss": "Aunt Marnie"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "日焼けしちゃダメ",
+        "kana": "ひやけしちゃダメ",
+        "gloss": "mustn't get sunburned"
+      },
+      {
+        "text": "って",
+        "kana": "って",
+        "gloss": "(quote marker)"
+      },
+      {
+        "text": "言うの…",
+        "kana": "いうの",
+        "gloss": "says"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "早歩き",
+        "kana": "はやあるき",
+        "gloss": "walking fast"
+      },
+      {
+        "text": "すると",
+        "kana": "すると",
+        "gloss": "if (I) do"
+      },
+      {
+        "text": "涼しいから、",
+        "kana": "すずしいから",
+        "gloss": "because it's cool"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "きっと",
+        "kana": "きっと",
+        "gloss": "surely"
+      },
+      {
+        "text": "大丈夫。$h",
+        "kana": "だいじょうぶ",
+        "gloss": "fine"
+      }
+    ]
+  },
+  "Resort_Entering": {
+    "japanese": "カニさんを見たわ！",
+    "english": "I saw a crab!",
+    "segments": [
+      {
+        "text": "カニさん",
+        "kana": "カニさん",
+        "gloss": "crab"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見たわ！",
+        "kana": "みたわ",
+        "gloss": "I saw (it)"
+      }
+    ]
+  },
+  "Resort_Leaving": {
+    "japanese": "靴に砂が入っちゃった…$s",
+    "english": "Sand got into my shoe...",
+    "segments": [
+      {
+        "text": "靴",
+        "kana": "くつ",
+        "gloss": "shoe"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)"
+      },
+      {
+        "text": "砂",
+        "kana": "すな",
+        "gloss": "sand"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "入っちゃった…$s",
+        "kana": "はいっちゃった",
+        "gloss": "got in"
+      }
+    ]
+  },
+  "Resort_Shore": {
+    "japanese": "貝殻を集めて…ネックレスを作りたいの！",
+    "english": "I'm collecting shells... I want to make a necklace!",
+    "segments": [
+      {
+        "text": "貝殻",
+        "kana": "かいがら",
+        "gloss": "shells"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "集めて…",
+        "kana": "あつめて",
+        "gloss": "collecting"
+      },
+      {
+        "text": "ネックレス",
+        "kana": "ネックレス",
+        "gloss": "necklace"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "作りたいの！",
+        "kana": "つくりたいの",
+        "gloss": "I want to make"
+      }
+    ]
+  },
+  "Sat": {
+    "japanese": "あなたから 草の 匂いが するね。$u",
+    "english": "You smell like grass.",
+    "segments": [
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "から ",
+        "kana": "から",
+        "gloss": "(from)"
+      },
+      {
+        "text": "草",
+        "kana": "くさ",
+        "gloss": "grass"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "匂い",
+        "kana": "におい",
+        "gloss": "smell"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "するね。$u",
+        "kana": "するね",
+        "gloss": "smells, doesn't it"
+      }
+    ]
+  },
+  "Sat2": {
+    "japanese": "時々 川に行って ザリガニを 探すの。一度だけ、 牛に 食べさせたこと… マーニー おばさんには 言わないでね。#$e#牛さん、 その味を 気に入っちゃったから。",
+    "english": "Sometimes I go to the river and look for crawdads. Once, I fed one to a cow... don't tell Aunt Marnie. The cow really liked the taste.",
+    "segments": [
+      {
+        "text": "時々 ",
+        "kana": "ときどき",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "川",
+        "kana": "かわ",
+        "gloss": "river"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "行って ",
+        "kana": "いって",
+        "gloss": "go"
+      },
+      {
+        "text": "ザリガニ",
+        "kana": "ザリガニ",
+        "gloss": "crawdads"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "探すの。",
+        "kana": "さがすの",
+        "gloss": "look for"
+      },
+      {
+        "text": "一度だけ、 ",
+        "kana": "いちどだけ",
+        "gloss": "just once"
+      },
+      {
+        "text": "牛",
+        "kana": "うし",
+        "gloss": "cow"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "食べさせたこと… ",
+        "kana": "たべさせたこと",
+        "gloss": "(the fact that I) fed it"
+      },
+      {
+        "text": "マーニー ",
+        "kana": "マーニー",
+        "gloss": "Aunt"
+      },
+      {
+        "text": "おばさん",
+        "kana": "おばさん",
+        "gloss": "Marnie"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "言わないでね。#$e#",
+        "kana": "いわないでね",
+        "gloss": "please don't tell"
+      },
+      {
+        "text": "牛さん、 ",
+        "kana": "うしさん",
+        "gloss": "the cow"
+      },
+      {
+        "text": "その",
+        "kana": "その",
+        "gloss": "that"
+      },
+      {
+        "text": "味",
+        "kana": "あじ",
+        "gloss": "taste"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "気に入っちゃったから。",
+        "kana": "きにいっちゃったから",
+        "gloss": "because (she) came to like it"
+      }
+    ]
+  },
+  "Sat8": {
+    "japanese": "@さんって、 いつも あたしに やさしいんだね。$h#$e#大人って いつも イジワルで つまんないけど、 あなたは そうじゃない。",
+    "english": "Mr./Ms. @, you're always so kind to me. Adults are always mean and boring, but you're not like that.",
+    "segments": [
+      {
+        "text": "@",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "さん",
+        "kana": "さん",
+        "gloss": "(honorific)"
+      },
+      {
+        "text": "って、 ",
+        "kana": "って",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いつも ",
+        "kana": "いつも",
+        "gloss": "always"
+      },
+      {
+        "text": "あたし",
+        "kana": "あたし",
+        "gloss": "me"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "やさしいんだね。$h#$e#",
+        "kana": "やさしいんだね",
+        "gloss": "you're kind"
+      },
+      {
+        "text": "大人",
+        "kana": "おとな",
+        "gloss": "adults"
+      },
+      {
+        "text": "って ",
+        "kana": "って",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いつも ",
+        "kana": "いつも",
+        "gloss": "always"
+      },
+      {
+        "text": "イジワルで ",
+        "kana": "イジワルで",
+        "gloss": "mean and"
+      },
+      {
+        "text": "つまんないけど、 ",
+        "kana": "つまんないけど",
+        "gloss": "boring, but"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "そうじゃない。",
+        "kana": "そうじゃない",
+        "gloss": "aren't like that"
+      }
+    ]
+  },
+  "Sun": {
+    "japanese": "えっと…な、何か 用なの？$u#$e#知らない人と 話しちゃ いけないんだ…$u",
+    "english": "Um... d-do you need something? I'm not supposed to talk to strangers...",
+    "segments": [
+      {
+        "text": "えっと…",
+        "kana": "えっと",
+        "gloss": "um"
+      },
+      {
+        "text": "な、",
+        "kana": "な",
+        "gloss": "(stammer)"
+      },
+      {
+        "text": "何か ",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "用なの？$u#$e#",
+        "kana": "ようなの",
+        "gloss": "do you need"
+      },
+      {
+        "text": "知らない人",
+        "kana": "しらないひと",
+        "gloss": "stranger"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "(with)"
+      },
+      {
+        "text": "話しちゃ ",
+        "kana": "はなしちゃ",
+        "gloss": "talk"
+      },
+      {
+        "text": "いけないんだ…$u",
+        "kana": "いけないんだ",
+        "gloss": "mustn't"
+      }
+    ]
+  },
+  "Sun10": {
+    "japanese": "シェーンは あたしの 後見人だって 知ってる？パパとママの 友達 だったんだ。$s#$e#…パパとママは もういないけど…グスッ…$s",
+    "english": "Did you know Shane's my guardian? He used to be friends with mom and dad. ...Mom and dad aren't here anymore though... *sniff*",
+    "segments": [
+      {
+        "text": "シェーン",
+        "kana": "シェーン",
+        "gloss": "Shane"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あたし",
+        "kana": "あたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "後見人",
+        "kana": "こうけんにん",
+        "gloss": "guardian"
+      },
+      {
+        "text": "だって ",
+        "kana": "だって",
+        "gloss": "(they say/emphasis)"
+      },
+      {
+        "text": "知ってる？",
+        "kana": "しってる",
+        "gloss": "did you know"
+      },
+      {
+        "text": "パパ",
+        "kana": "パパ",
+        "gloss": "dad"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(and)"
+      },
+      {
+        "text": "ママ",
+        "kana": "ママ",
+        "gloss": "mom"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "友達 ",
+        "kana": "ともだち",
+        "gloss": "friend"
+      },
+      {
+        "text": "だったんだ。$s#$e#…",
+        "kana": "だったんだ",
+        "gloss": "was"
+      },
+      {
+        "text": "パパ",
+        "kana": "パパ",
+        "gloss": "dad"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(and)"
+      },
+      {
+        "text": "ママ",
+        "kana": "ママ",
+        "gloss": "mom"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もういないけど…",
+        "kana": "もういないけど",
+        "gloss": "aren't here anymore, but"
+      },
+      {
+        "text": "グスッ…$s",
+        "kana": "グスッ",
+        "gloss": "*sniff*"
+      }
+    ]
+  },
+  "Sun2": {
+    "japanese": "シェーンは よく いなくなるし、 マーニー おばさんは いつも 忙しいから… 自分で 遊びを 考えなくちゃ いけないんだ。#$e#だから オモチャに ありがとうって 思ってるの。$h",
+    "english": "Shane's gone a lot, and Aunt Marnie is always busy, so... I have to think up games myself. So I feel thankful for my toys.",
+    "segments": [
+      {
+        "text": "シェーン",
+        "kana": "シェーン",
+        "gloss": "Shane"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "よく ",
+        "kana": "よく",
+        "gloss": "often"
+      },
+      {
+        "text": "いなくなるし、 ",
+        "kana": "いなくなるし",
+        "gloss": "is gone, and"
+      },
+      {
+        "text": "マーニー ",
+        "kana": "マーニー",
+        "gloss": "Aunt"
+      },
+      {
+        "text": "おばさん",
+        "kana": "おばさん",
+        "gloss": "Marnie"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いつも ",
+        "kana": "いつも",
+        "gloss": "always"
+      },
+      {
+        "text": "忙しいから… ",
+        "kana": "いそがしいから",
+        "gloss": "because (she's) busy"
+      },
+      {
+        "text": "自分で ",
+        "kana": "じぶんで",
+        "gloss": "by myself"
+      },
+      {
+        "text": "遊び",
+        "kana": "あそび",
+        "gloss": "games"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "考えなくちゃ ",
+        "kana": "かんがえなくちゃ",
+        "gloss": "have to think up"
+      },
+      {
+        "text": "いけないんだ。#$e#",
+        "kana": "いけないんだ",
+        "gloss": "(have to)"
+      },
+      {
+        "text": "だから ",
+        "kana": "だから",
+        "gloss": "so"
+      },
+      {
+        "text": "オモチャ",
+        "kana": "オモチャ",
+        "gloss": "toys"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(for)"
+      },
+      {
+        "text": "ありがとうって ",
+        "kana": "ありがとうって",
+        "gloss": "\"thank you\" (quote)"
+      },
+      {
+        "text": "思ってるの。$h",
+        "kana": "おもってるの",
+        "gloss": "I feel"
+      }
+    ]
+  },
+  "Thu": {
+    "japanese": "知らない人と 話しちゃ いけないんだ…$u",
+    "english": "I'm not supposed to talk to strangers...",
+    "segments": [
+      {
+        "text": "知らない人",
+        "kana": "しらないひと",
+        "gloss": "stranger"
+      },
+      {
+        "text": "と ",
+        "kana": "と",
+        "gloss": "(with)"
+      },
+      {
+        "text": "話しちゃ ",
+        "kana": "はなしちゃ",
+        "gloss": "talk"
+      },
+      {
+        "text": "いけないんだ…$u",
+        "kana": "いけないんだ",
+        "gloss": "mustn't"
+      }
+    ]
+  },
+  "Thu2": {
+    "japanese": "ペニー先生が 筆記体の 書き方を 教えてくれてるの。$h#$e#先生の 書く字は かわいいんだよ。",
+    "english": "Miss Penny is teaching me cursive writing. Her handwriting is cute.",
+    "segments": [
+      {
+        "text": "ペニー先生",
+        "kana": "ペニーせんせい",
+        "gloss": "Miss Penny"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "筆記体",
+        "kana": "ひっきたい",
+        "gloss": "cursive"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "書き方",
+        "kana": "かきかた",
+        "gloss": "way of writing"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "教えてくれてるの。$h#$e#",
+        "kana": "おしえてくれてるの",
+        "gloss": "is teaching me"
+      },
+      {
+        "text": "先生",
+        "kana": "せんせい",
+        "gloss": "teacher"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "書く字",
+        "kana": "かくじ",
+        "gloss": "handwriting"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "かわいいんだよ。",
+        "kana": "かわいいんだよ",
+        "gloss": "is cute"
+      }
+    ]
+  },
+  "Tue": {
+    "japanese": "なぁに？フフッ。$h#$e#…こんにちは。",
+    "english": "What? *giggle* ...hi.",
+    "segments": [
+      {
+        "text": "なぁに？",
+        "kana": "なぁに",
+        "gloss": "what?"
+      },
+      {
+        "text": "フフッ。$h#$e#…",
+        "kana": "フフッ",
+        "gloss": "*giggle*"
+      },
+      {
+        "text": "こんにちは。",
+        "kana": "こんにちは",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "Tue6": {
+    "japanese": "良かったら、 あたしの お人形さんで 遊んでもいいよ。終わったら、 ちゃんと お人形さんの 髪を といてね。",
+    "english": "If you like, you can play with my dolls. When you're done, make sure to brush the doll's hair properly.",
+    "segments": [
+      {
+        "text": "良かったら、 ",
+        "kana": "よかったら",
+        "gloss": "if you like"
+      },
+      {
+        "text": "あたし",
+        "kana": "あたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "お人形さん",
+        "kana": "おにんぎょうさん",
+        "gloss": "dolls"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(with)"
+      },
+      {
+        "text": "遊んでもいいよ。",
+        "kana": "あそんでもいいよ",
+        "gloss": "you can play"
+      },
+      {
+        "text": "終わったら、 ",
+        "kana": "おわったら",
+        "gloss": "when you're done"
+      },
+      {
+        "text": "ちゃんと ",
+        "kana": "ちゃんと",
+        "gloss": "properly"
+      },
+      {
+        "text": "お人形さん",
+        "kana": "おにんぎょうさん",
+        "gloss": "doll's"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "髪",
+        "kana": "かみ",
+        "gloss": "hair"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "といてね。",
+        "kana": "といてね",
+        "gloss": "please brush"
+      }
+    ]
+  },
+  "Wed2": {
+    "japanese": "…こんにちは。$u",
+    "english": "...Hi.",
+    "segments": [
+      {
+        "text": "…こんにちは。$u",
+        "kana": "こんにちは",
+        "gloss": "hello"
+      }
+    ]
+  },
+  "Wed4": {
+    "japanese": "マーニーおばさんがね、 6時以降は 外へ 出ちゃ ダメだって。ずるいよ！$s#$e#もう 暗いのは 怖くないのに！",
+    "english": "Aunt Marnie says I'm not allowed to go outside after 6 o'clock. That's not fair! I'm not scared of the dark anymore!",
+    "segments": [
+      {
+        "text": "マーニーおばさん",
+        "kana": "マーニーおばさん",
+        "gloss": "Aunt Marnie"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ね、 ",
+        "kana": "ね",
+        "gloss": "(sentence particle)"
+      },
+      {
+        "text": "6時",
+        "kana": "ろくじ",
+        "gloss": "6 o'clock"
+      },
+      {
+        "text": "以降",
+        "kana": "いこう",
+        "gloss": "after"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "外",
+        "kana": "そと",
+        "gloss": "outside"
+      },
+      {
+        "text": "へ ",
+        "kana": "へ",
+        "gloss": "(to)"
+      },
+      {
+        "text": "出ちゃ ",
+        "kana": "でちゃ",
+        "gloss": "go out"
+      },
+      {
+        "text": "ダメだって。",
+        "kana": "ダメだって",
+        "gloss": "(she says) I'm not allowed"
+      },
+      {
+        "text": "ずるいよ！$s#$e#",
+        "kana": "ずるいよ",
+        "gloss": "that's not fair"
+      },
+      {
+        "text": "もう ",
+        "kana": "もう",
+        "gloss": "anymore"
+      },
+      {
+        "text": "暗いの",
+        "kana": "くらいの",
+        "gloss": "the dark"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "怖くないのに！",
+        "kana": "こわくないのに",
+        "gloss": "even though I'm not scared"
+      }
+    ]
+  },
+  "cropMatured_595": {
+    "japanese": "$y 'えっと…妖精さんに会ったことはある？_あるよ_わぁ！わたしも会ってみたいな。$h_ないよ_…わたしもなの。$s'",
+    "english": "Um... have you ever met a fairy? _Yes_ Wow! I want to meet one too. _No_ ...Me neither.",
+    "segments": [
+      {
+        "text": "$y 'えっと…",
+        "kana": "えっと",
+        "gloss": "um"
+      },
+      {
+        "text": "妖精さん",
+        "kana": "ようせいさん",
+        "gloss": "fairy"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "会った",
+        "kana": "あった",
+        "gloss": "met"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(the fact of)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ある？_",
+        "kana": "ある",
+        "gloss": "have (you) ever"
+      },
+      {
+        "text": "あるよ_",
+        "kana": "あるよ",
+        "gloss": "yes"
+      },
+      {
+        "text": "わぁ！",
+        "kana": "わぁ",
+        "gloss": "wow"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)"
+      },
+      {
+        "text": "会ってみたいな。$h_",
+        "kana": "あってみたいな",
+        "gloss": "want to meet (one) too"
+      },
+      {
+        "text": "ないよ_…",
+        "kana": "ないよ",
+        "gloss": "no"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)"
+      },
+      {
+        "text": "なの。$s'",
+        "kana": "なの",
+        "gloss": "(neither)"
+      }
+    ]
+  },
+  "eventSeen_3910974": {
+    "japanese": "ふふっ… ほら、本物のバニージュエルのサンダルよ！$h",
+    "english": "*giggle*... Look, real bunny-jewel sandals!",
+    "segments": [
+      {
+        "text": "ふふっ… ",
+        "kana": "ふふっ",
+        "gloss": "*giggle*"
+      },
+      {
+        "text": "ほら、",
+        "kana": "ほら",
+        "gloss": "look"
+      },
+      {
+        "text": "本物",
+        "kana": "ほんもの",
+        "gloss": "real"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "バニージュエル",
+        "kana": "バニージュエル",
+        "gloss": "bunny-jewel"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "サンダル",
+        "kana": "サンダル",
+        "gloss": "sandals"
+      },
+      {
+        "text": "よ！$h",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "eventSeen_3910975": {
+    "japanese": "…シェーンはだいじょうぶなの？$s",
+    "english": "...Is Shane going to be okay?",
+    "segments": [
+      {
+        "text": "…シェーン",
+        "kana": "シェーン",
+        "gloss": "Shane"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "だいじょうぶなの？$s",
+        "kana": "だいじょうぶなの",
+        "gloss": "is going to be okay"
+      }
+    ]
+  },
+  "eventSeen_3910975_memory_oneweek": {
+    "japanese": "家がもえちゃうこわい夢を見たの…$s",
+    "english": "I had a scary dream where the house was burning...",
+    "segments": [
+      {
+        "text": "家",
+        "kana": "いえ",
+        "gloss": "house"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "もえちゃう",
+        "kana": "もえちゃう",
+        "gloss": "burning"
+      },
+      {
+        "text": "こわい",
+        "kana": "こわい",
+        "gloss": "scary"
+      },
+      {
+        "text": "夢",
+        "kana": "ゆめ",
+        "gloss": "dream"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見たの…$s",
+        "kana": "みたの",
+        "gloss": "I had"
+      }
+    ]
+  },
+  "married": {
+    "japanese": "はぁ…いつかわたしもけっこんしたいなあ。$u",
+    "english": "*sigh*... Someday I want to get married too.",
+    "segments": [
+      {
+        "text": "はぁ…",
+        "kana": "はぁ",
+        "gloss": "*sigh*"
+      },
+      {
+        "text": "いつか",
+        "kana": "いつか",
+        "gloss": "someday"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)"
+      },
+      {
+        "text": "けっこんしたいなあ。$u",
+        "kana": "けっこんしたいなあ",
+        "gloss": "want to get married"
+      }
+    ]
+  },
+  "married_Shane": {
+    "japanese": "シェーンはまたきっとわたしに会いに来てくれるよね…$s",
+    "english": "Shane will surely come see me again, right...",
+    "segments": [
+      {
+        "text": "シェーン",
+        "kana": "シェーン",
+        "gloss": "Shane"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "また",
+        "kana": "また",
+        "gloss": "again"
+      },
+      {
+        "text": "きっと",
+        "kana": "きっと",
+        "gloss": "surely"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)"
+      },
+      {
+        "text": "会いに来てくれるよね…$s",
+        "kana": "あいにきてくれるよね",
+        "gloss": "will come to see, right"
+      }
+    ]
+  },
+  "movieTheater": {
+    "japanese": "マーニーおばさんから、まだひとりで映画を見ちゃだめって言われてるの…$s",
+    "english": "Aunt Marnie told me I'm still not allowed to watch movies alone...",
+    "segments": [
+      {
+        "text": "マーニーおばさん",
+        "kana": "マーニーおばさん",
+        "gloss": "Aunt Marnie"
+      },
+      {
+        "text": "から、",
+        "kana": "から",
+        "gloss": "(from)"
+      },
+      {
+        "text": "まだ",
+        "kana": "まだ",
+        "gloss": "still"
+      },
+      {
+        "text": "ひとりで",
+        "kana": "ひとりで",
+        "gloss": "alone"
+      },
+      {
+        "text": "映画",
+        "kana": "えいが",
+        "gloss": "movie"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見ちゃだめ",
+        "kana": "みちゃだめ",
+        "gloss": "mustn't watch"
+      },
+      {
+        "text": "って",
+        "kana": "って",
+        "gloss": "(quote marker)"
+      },
+      {
+        "text": "言われてるの…$s",
+        "kana": "いわれてるの",
+        "gloss": "I've been told"
+      }
+    ]
+  },
+  "reject_869": {
+    "japanese": "うわっ、ひどい！$s",
+    "english": "Ugh, that's awful!",
+    "segments": [
+      {
+        "text": "うわっ、",
+        "kana": "うわっ",
+        "gloss": "ugh"
+      },
+      {
+        "text": "ひどい！$s",
+        "kana": "ひどい",
+        "gloss": "awful"
+      }
+    ]
+  }
+}

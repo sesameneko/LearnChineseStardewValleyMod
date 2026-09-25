@@ -181,6 +181,12 @@ Write the words; `merge` supplies the rest.
   one exception is a segment of several words that includes the particle は, へ
   or を. Write its kana out spaced (`には¦に は¦…`), or the generated romaji
   reads "niha".
+- **Item references and decorative symbols count as markup.** `[166]` or
+  `[90 88 86 535]` on a gift line, and symbols like `♡`, are attached the same way.
+- **Two small slips are repaired rather than rejected.** A kanji-free segment
+  written `text¦gloss` (the empty kana dropped along with its separator) is read
+  as `text¦¦gloss`. A segment that starts with the previous sentence's leftovers
+  (`…$u#$b#あれ、`) has them moved back onto the segment before.
 - **Every word must still be written, in order.** Letters, digits, Japanese, `@`
   and `{0}` tokens are never filled in. They are words, or stand for one, so
   they need their own segment. A page break written *inside* a segment

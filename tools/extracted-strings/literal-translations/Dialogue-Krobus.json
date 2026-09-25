@@ -1,0 +1,2781 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Dialogue-Krobus.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "15_*": {
+    "japanese": "私の居場所は秘密にしておいてください。ドワーフが私のことを知ったら、きっと暗殺者を差し向けてくるでしょう。",
+    "english": "Please keep my location a secret. If the dwarves knew of me, they'd surely send an assassin.",
+    "segments": [
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I/my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "居場所",
+        "kana": "いばしょ",
+        "gloss": "location, whereabouts"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "秘密に",
+        "kana": "ひみつに",
+        "gloss": "secretly"
+      },
+      {
+        "text": "しておいて",
+        "kana": "しておいて",
+        "gloss": "keep (it)"
+      },
+      {
+        "text": "ください。",
+        "kana": "ください",
+        "gloss": "please"
+      },
+      {
+        "text": "ドワーフ",
+        "kana": "ドワーフ",
+        "gloss": "dwarves"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "知ったら、",
+        "kana": "しったら",
+        "gloss": "if (they) knew"
+      },
+      {
+        "text": "きっと",
+        "kana": "きっと",
+        "gloss": "surely"
+      },
+      {
+        "text": "暗殺者",
+        "kana": "あんさつしゃ",
+        "gloss": "assassin"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "差し向けてくる",
+        "kana": "さしむけてくる",
+        "gloss": "would send"
+      },
+      {
+        "text": "でしょう。",
+        "kana": "でしょう",
+        "gloss": "probably"
+      }
+    ]
+  },
+  "18_*": {
+    "japanese": "ここではあまり音を立てないようにしています。下水管から奇妙な音が聞こえたら、町の人たちがどうするかを想像してみてください…",
+    "english": "I try not to make too much noise down here. Imagine if the townspeople heard my weird sounds coming from the sewer drain...",
+    "segments": [
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "あまり",
+        "kana": "あまり",
+        "gloss": "not very"
+      },
+      {
+        "text": "音",
+        "kana": "おと",
+        "gloss": "sound"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "立てない",
+        "kana": "たてない",
+        "gloss": "not make"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that"
+      },
+      {
+        "text": "しています。",
+        "kana": "しています",
+        "gloss": "(I) do"
+      },
+      {
+        "text": "下水管",
+        "kana": "げすいかん",
+        "gloss": "sewer drain"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "奇妙な",
+        "kana": "きみょうな",
+        "gloss": "strange"
+      },
+      {
+        "text": "音",
+        "kana": "おと",
+        "gloss": "sound"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "聞こえたら、",
+        "kana": "きこえたら",
+        "gloss": "if (you) heard"
+      },
+      {
+        "text": "町",
+        "kana": "まち",
+        "gloss": "town"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "人たち",
+        "kana": "ひとたち",
+        "gloss": "people"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "どうする",
+        "kana": "どうする",
+        "gloss": "what to do"
+      },
+      {
+        "text": "か",
+        "kana": "か",
+        "gloss": "whether"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "想像して",
+        "kana": "そうぞうして",
+        "gloss": "imagine"
+      },
+      {
+        "text": "みて",
+        "kana": "みて",
+        "gloss": "try"
+      },
+      {
+        "text": "ください…",
+        "kana": "ください",
+        "gloss": "please"
+      }
+    ]
+  },
+  "4_*": {
+    "japanese": "…鉱山で私のような者を見かけましたか？もし彼らから敵対的な態度をとられたのなら、すみません。私たちの多くは人間を恐れています… あまりにも多くの… 不幸な出会いがあったのです。#$e#あなたは… 私の友人を誰も傷つけていないませんよね？",
+    "english": "...Have you encountered others like me, in the mines? I'm sorry if they were hostile towards you. You see, we've learned to fear humans... there have been too many... unpleasant encounters.#$e#You haven't... slain any of my friends, have you?",
+    "segments": [
+      {
+        "text": "…鉱山",
+        "kana": "こうざん",
+        "gloss": "mine"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(genitive marker)"
+      },
+      {
+        "text": "ような",
+        "kana": "ような",
+        "gloss": "like"
+      },
+      {
+        "text": "者",
+        "kana": "もの",
+        "gloss": "one"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見かけました",
+        "kana": "みかけました",
+        "gloss": "have (you) seen"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question marker)"
+      },
+      {
+        "text": "もし",
+        "kana": "もし",
+        "gloss": "if"
+      },
+      {
+        "text": "彼ら",
+        "kana": "かれら",
+        "gloss": "them"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "敵対的な",
+        "kana": "てきたいてきな",
+        "gloss": "hostile"
+      },
+      {
+        "text": "態度",
+        "kana": "たいど",
+        "gloss": "attitude"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "とられた",
+        "kana": "とられた",
+        "gloss": "was treated with"
+      },
+      {
+        "text": "のなら、",
+        "kana": "のなら",
+        "gloss": "if that's the case"
+      },
+      {
+        "text": "すみません。",
+        "kana": "すみません",
+        "gloss": "I'm sorry"
+      },
+      {
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "we"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "多く",
+        "kana": "おおく",
+        "gloss": "most"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "humans"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "恐れています… ",
+        "kana": "おそれています",
+        "gloss": "are afraid of"
+      },
+      {
+        "text": "あまりにも",
+        "kana": "あまりにも",
+        "gloss": "too"
+      },
+      {
+        "text": "多く",
+        "kana": "おおく",
+        "gloss": "many"
+      },
+      {
+        "text": "の… ",
+        "kana": "の",
+        "gloss": "(genitive marker)"
+      },
+      {
+        "text": "不幸な",
+        "kana": "ふこうな",
+        "gloss": "unfortunate"
+      },
+      {
+        "text": "出会い",
+        "kana": "であい",
+        "gloss": "encounters"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あった",
+        "kana": "あった",
+        "gloss": "there were"
+      },
+      {
+        "text": "のです。#$e#",
+        "kana": "のです",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "は… ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "友人",
+        "kana": "ゆうじん",
+        "gloss": "friends"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "誰も",
+        "kana": "だれも",
+        "gloss": "anyone"
+      },
+      {
+        "text": "傷つけていないませんよね？",
+        "kana": "きずつけていないませんよね",
+        "gloss": "haven't hurt, have you"
+      }
+    ]
+  },
+  "8_*": {
+    "japanese": "私の種族とドワーフたちとの1000年にわたる戦争がつい最近終わりました。ですが、お互いにまだ多くの憎しみが残っています。",
+    "english": "A 1000 year war between my people and the dwarves recently ended. There's still a lot of resentment on both sides.",
+    "segments": [
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "種族",
+        "kana": "しゅぞく",
+        "gloss": "race"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "and"
+      },
+      {
+        "text": "ドワーフたち",
+        "kana": "ドワーフたち",
+        "gloss": "the dwarves"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "and"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(genitive marker)"
+      },
+      {
+        "text": "1000年",
+        "kana": "1000ねん",
+        "gloss": "1000 years"
+      },
+      {
+        "text": "にわたる",
+        "kana": "にわたる",
+        "gloss": "spanning"
+      },
+      {
+        "text": "戦争",
+        "kana": "せんそう",
+        "gloss": "war"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "つい最近",
+        "kana": "ついさいきん",
+        "gloss": "just recently"
+      },
+      {
+        "text": "終わりました。",
+        "kana": "おわりました",
+        "gloss": "ended"
+      },
+      {
+        "text": "ですが、",
+        "kana": "ですが",
+        "gloss": "but"
+      },
+      {
+        "text": "お互いに",
+        "kana": "おたがいに",
+        "gloss": "to each other"
+      },
+      {
+        "text": "まだ",
+        "kana": "まだ",
+        "gloss": "still"
+      },
+      {
+        "text": "多く",
+        "kana": "おおく",
+        "gloss": "a lot"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "憎しみ",
+        "kana": "にくしみ",
+        "gloss": "resentment"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "残っています。",
+        "kana": "のこっています",
+        "gloss": "remains"
+      }
+    ]
+  },
+  "AcceptBirthdayGift_Negative": {
+    "japanese": "ええと… これが「誕生日プレゼント」というものですか？私には人間が理解できません…$s",
+    "english": "Oh... is this what you call a 'birthday present'? I don't understand humans...",
+    "segments": [
+      {
+        "text": "ええと… ",
+        "kana": "ええと",
+        "gloss": "um"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "「誕生日プレゼント」",
+        "kana": "たんじょうびプレゼント",
+        "gloss": "birthday present"
+      },
+      {
+        "text": "という",
+        "kana": "という",
+        "gloss": "called"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing"
+      },
+      {
+        "text": "です",
+        "kana": "です",
+        "gloss": "is"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "humans"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "理解できません…$s",
+        "kana": "りかいできません",
+        "gloss": "cannot understand"
+      }
+    ]
+  },
+  "AcceptBirthdayGift_Positive": {
+    "japanese": "ああ！ 私がふ化した日を思い出すためのプレゼントだ！ありがとう！$h",
+    "english": "Oh, a gift to remember the day that I hatched! Thank you!",
+    "segments": [
+      {
+        "text": "ああ！ ",
+        "kana": "ああ",
+        "gloss": "oh"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ふ化した",
+        "kana": "ふかした",
+        "gloss": "hatched"
+      },
+      {
+        "text": "日",
+        "kana": "ひ",
+        "gloss": "day"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "思い出す",
+        "kana": "おもいだす",
+        "gloss": "remember"
+      },
+      {
+        "text": "ため",
+        "kana": "ため",
+        "gloss": "for the sake of"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "gift"
+      },
+      {
+        "text": "だ！",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "ありがとう！$h",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "AcceptGift_(O)308": {
+    "japanese": "おいしそうな香りですね！半分だけ食べて、残りの半分は体の保湿に使うことにします…$h",
+    "english": "This smells delicious! I'll eat half, and use the other half to moisturize my body...",
+    "segments": [
+      {
+        "text": "おいしそうな",
+        "kana": "おいしそうな",
+        "gloss": "delicious-looking"
+      },
+      {
+        "text": "香り",
+        "kana": "かおり",
+        "gloss": "smell"
+      },
+      {
+        "text": "です",
+        "kana": "です",
+        "gloss": "is"
+      },
+      {
+        "text": "ね！",
+        "kana": "ね",
+        "gloss": "(agreement marker)"
+      },
+      {
+        "text": "半分",
+        "kana": "はんぶん",
+        "gloss": "half"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "only"
+      },
+      {
+        "text": "食べて、",
+        "kana": "たべて",
+        "gloss": "eat"
+      },
+      {
+        "text": "残り",
+        "kana": "のこり",
+        "gloss": "remainder"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "半分",
+        "kana": "はんぶん",
+        "gloss": "half"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "体",
+        "kana": "からだ",
+        "gloss": "body"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "保湿",
+        "kana": "ほしつ",
+        "gloss": "moisturizing"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(purpose marker)"
+      },
+      {
+        "text": "使う",
+        "kana": "つかう",
+        "gloss": "use"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(purpose marker)"
+      },
+      {
+        "text": "します…$h",
+        "kana": "します",
+        "gloss": "will do"
+      }
+    ]
+  },
+  "AcceptGift_(O)879": {
+    "japanese": "こんなにすてきな香水をもらっていいんですか？ああ、@…私は赤面していますが、あなたは気づかないでしょうね…$4",
+    "english": "A gift of lovely perfume? Oh, @... I'm blushing, but you probably can't notice...",
+    "segments": [
+      {
+        "text": "こんなに",
+        "kana": "こんなに",
+        "gloss": "this"
+      },
+      {
+        "text": "すてきな",
+        "kana": "すてきな",
+        "gloss": "wonderful"
+      },
+      {
+        "text": "香水",
+        "kana": "こうすい",
+        "gloss": "perfume"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "もらって",
+        "kana": "もらって",
+        "gloss": "receive"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "ん",
+        "kana": "ん",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "です",
+        "kana": "です",
+        "gloss": "is"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question marker)"
+      },
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "oh"
+      },
+      {
+        "text": "@…",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "赤面しています",
+        "kana": "せきめんしています",
+        "gloss": "am blushing"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "but"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "気づかない",
+        "kana": "きづかない",
+        "gloss": "won't notice"
+      },
+      {
+        "text": "でしょう",
+        "kana": "でしょう",
+        "gloss": "probably"
+      },
+      {
+        "text": "ね…$4",
+        "kana": "ね",
+        "gloss": "(agreement marker)"
+      }
+    ]
+  },
+  "AcceptGift_(O)Book_Void": {
+    "japanese": "ほら、見てください！私の友達がみんな載っています！$h#$b#あれ？ これは私…？$7",
+    "english": "Hey, look! All my friends are in here!#$b#Wait a minute, is that me...?",
+    "segments": [
+      {
+        "text": "ほら、",
+        "kana": "ほら",
+        "gloss": "hey"
+      },
+      {
+        "text": "見てください！",
+        "kana": "みてください",
+        "gloss": "look"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "友達",
+        "kana": "ともだち",
+        "gloss": "friends"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "みんな",
+        "kana": "みんな",
+        "gloss": "all"
+      },
+      {
+        "text": "載っています！$h#$b#",
+        "kana": "のっています",
+        "gloss": "are included"
+      },
+      {
+        "text": "あれ？ ",
+        "kana": "あれ",
+        "gloss": "huh"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私…？$7",
+        "kana": "わたし",
+        "gloss": "me"
+      }
+    ]
+  },
+  "AcceptGift_(O)StardropTea": {
+    "japanese": "これはスタードロップティー？ありがとう！一滴で私の部屋が一日中いい香りに包まれるでしょう。",
+    "english": "Is that Stardrop Tea? Thank you! One drop makes my room smell good for the whole day.",
+    "segments": [
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "スタードロップティー？",
+        "kana": "スタードロップティー",
+        "gloss": "Stardrop Tea"
+      },
+      {
+        "text": "ありがとう！",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      },
+      {
+        "text": "一滴",
+        "kana": "いってき",
+        "gloss": "one drop"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "with"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "部屋",
+        "kana": "へや",
+        "gloss": "room"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "一日中",
+        "kana": "いちにちじゅう",
+        "gloss": "all day"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "香り",
+        "kana": "かおり",
+        "gloss": "smell"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(purpose marker)"
+      },
+      {
+        "text": "包まれる",
+        "kana": "つつまれる",
+        "gloss": "be wrapped in"
+      },
+      {
+        "text": "でしょう。",
+        "kana": "でしょう",
+        "gloss": "probably"
+      }
+    ]
+  },
+  "GreenRain": {
+    "japanese": "今日は水の流れがとてもはげしい… 上で何か起こっているのですか？",
+    "english": "The flow of water has been unusually strong today... what's going on up there?",
+    "segments": [
+      {
+        "text": "今日",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "水",
+        "kana": "みず",
+        "gloss": "water"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "流れ",
+        "kana": "ながれ",
+        "gloss": "flow"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very"
+      },
+      {
+        "text": "はげしい… ",
+        "kana": "はげしい",
+        "gloss": "intense"
+      },
+      {
+        "text": "上",
+        "kana": "うえ",
+        "gloss": "above"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "何か",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "起こっている",
+        "kana": "おこっている",
+        "gloss": "is happening"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "です",
+        "kana": "です",
+        "gloss": "is"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question marker)"
+      }
+    ]
+  },
+  "Mon": {
+    "japanese": "怖がらないで ください。私は 他のものとは 違います。#$e#私は 長い間 人間を 観察して いました。商売が 好きなのも 知っています。私の 商品を 見ていきませんか？",
+    "english": "Please, don't be alarmed. I am different than the others.#$e#I've spent a lot of time observing humans. I know you like to shop. Care to see my wares?",
+    "segments": [
+      {
+        "text": "怖がらないで ",
+        "kana": "こわがらないで",
+        "gloss": "don't be afraid"
+      },
+      {
+        "text": "ください。",
+        "kana": "ください",
+        "gloss": "please"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "他の",
+        "kana": "ほかの",
+        "gloss": "other"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "ones"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(comparison marker)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "違います。#$e#",
+        "kana": "ちがいます",
+        "gloss": "am different"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "長い間 ",
+        "kana": "ながいあいだ",
+        "gloss": "for a long time"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "humans"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "観察して ",
+        "kana": "かんさつして",
+        "gloss": "observe"
+      },
+      {
+        "text": "いました。",
+        "kana": "いました",
+        "gloss": "have been (doing)"
+      },
+      {
+        "text": "商売",
+        "kana": "しょうばい",
+        "gloss": "shopping"
+      },
+      {
+        "text": "が ",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "好きな",
+        "kana": "すきな",
+        "gloss": "like"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "も ",
+        "kana": "も",
+        "gloss": "also"
+      },
+      {
+        "text": "知っています。",
+        "kana": "しっています",
+        "gloss": "know"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "商品",
+        "kana": "しょうひん",
+        "gloss": "goods"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見ていきませんか？",
+        "kana": "みていきませんか",
+        "gloss": "won't you take a look"
+      }
+    ]
+  },
+  "Mon2": {
+    "japanese": "また 来たのですね？人間の習性における 私の 仮説どおりですね。",
+    "english": "Back again? I suppose it does fit into my theory of human behavior.",
+    "segments": [
+      {
+        "text": "また ",
+        "kana": "また",
+        "gloss": "again"
+      },
+      {
+        "text": "来た",
+        "kana": "きた",
+        "gloss": "came"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "です",
+        "kana": "です",
+        "gloss": "is"
+      },
+      {
+        "text": "ね？",
+        "kana": "ね",
+        "gloss": "(agreement marker)"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "human"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "習性",
+        "kana": "しゅうせい",
+        "gloss": "behavior"
+      },
+      {
+        "text": "における ",
+        "kana": "における",
+        "gloss": "regarding"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "仮説",
+        "kana": "かせつ",
+        "gloss": "theory"
+      },
+      {
+        "text": "どおり",
+        "kana": "どおり",
+        "gloss": "as expected"
+      },
+      {
+        "text": "です",
+        "kana": "です",
+        "gloss": "is"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(agreement marker)"
+      }
+    ]
+  },
+  "Mon6": {
+    "japanese": "「クロバス」は 私達の言葉で 「橋を渡る者」を意味します。",
+    "english": "'Krobus' means 'bridge-crosser' in our language.",
+    "segments": [
+      {
+        "text": "「クロバス」",
+        "kana": "クロバス",
+        "gloss": "Krobus"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私達",
+        "kana": "わたしたち",
+        "gloss": "our"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "言葉",
+        "kana": "ことば",
+        "gloss": "language"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(means marker)"
+      },
+      {
+        "text": "「橋",
+        "kana": "はし",
+        "gloss": "bridge"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "渡る",
+        "kana": "わたる",
+        "gloss": "cross"
+      },
+      {
+        "text": "者」",
+        "kana": "もの",
+        "gloss": "one who"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "意味します。",
+        "kana": "いみします",
+        "gloss": "means"
+      }
+    ]
+  },
+  "Sat": {
+    "japanese": "金曜日は、 ヨバ神への 祈りを 捧げるため 沈黙を 保ちます。",
+    "english": "On Fridays I stay silent as a sign of devotion to Yoba.",
+    "segments": [
+      {
+        "text": "金曜日",
+        "kana": "きんようび",
+        "gloss": "Friday"
+      },
+      {
+        "text": "は、 ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ヨバ神",
+        "kana": "ヨバしん",
+        "gloss": "Yoba (god)"
+      },
+      {
+        "text": "へ",
+        "kana": "へ",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "の ",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "祈り",
+        "kana": "いのり",
+        "gloss": "prayer"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "捧げる",
+        "kana": "ささげる",
+        "gloss": "offer"
+      },
+      {
+        "text": "ため ",
+        "kana": "ため",
+        "gloss": "for the sake of"
+      },
+      {
+        "text": "沈黙",
+        "kana": "ちんもく",
+        "gloss": "silence"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "保ちます。",
+        "kana": "たもちます",
+        "gloss": "maintain"
+      }
+    ]
+  },
+  "Sat4": {
+    "japanese": "もっと外の世界を見たいのですが、私にとっては安全な場所ではないでしょう。$s",
+    "english": "I'd love to see more of the outside world, but it wouldn't be safe for me.",
+    "segments": [
+      {
+        "text": "もっと",
+        "kana": "もっと",
+        "gloss": "more"
+      },
+      {
+        "text": "外",
+        "kana": "そと",
+        "gloss": "outside"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "世界",
+        "kana": "せかい",
+        "gloss": "world"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見たい",
+        "kana": "みたい",
+        "gloss": "want to see"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "です",
+        "kana": "です",
+        "gloss": "is"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "but"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "とって",
+        "kana": "とって",
+        "gloss": "for"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "安全な",
+        "kana": "あんぜんな",
+        "gloss": "safe"
+      },
+      {
+        "text": "場所",
+        "kana": "ばしょ",
+        "gloss": "place"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(copula stem)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ない",
+        "kana": "ない",
+        "gloss": "not"
+      },
+      {
+        "text": "でしょう。$s",
+        "kana": "でしょう",
+        "gloss": "probably"
+      }
+    ]
+  },
+  "Sat8": {
+    "japanese": "人間がどんなものなのか私には分かりません… でもあなたと話していると、少しだけ分かったような気がするのです。",
+    "english": "I'll never know what it's like to be human... but talking to you, I feel like I understand it a little.",
+    "segments": [
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "human"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "どんな",
+        "kana": "どんな",
+        "gloss": "what kind of"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(copula)"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "か",
+        "kana": "か",
+        "gloss": "(question marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "分かりません… ",
+        "kana": "わかりません",
+        "gloss": "don't know"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(comitative marker)"
+      },
+      {
+        "text": "話している",
+        "kana": "はなしている",
+        "gloss": "talking"
+      },
+      {
+        "text": "と、",
+        "kana": "と",
+        "gloss": "when"
+      },
+      {
+        "text": "少し",
+        "kana": "すこし",
+        "gloss": "a little"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "only"
+      },
+      {
+        "text": "分かった",
+        "kana": "わかった",
+        "gloss": "understood"
+      },
+      {
+        "text": "ような",
+        "kana": "ような",
+        "gloss": "like"
+      },
+      {
+        "text": "気がする",
+        "kana": "きがする",
+        "gloss": "feel"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "です。",
+        "kana": "です",
+        "gloss": "is"
+      }
+    ]
+  },
+  "SpouseStardrop": {
+    "japanese": "私をここに受け入れてくれた感謝の気持ちとして、これをあなたに差し上げたかったのです。$h",
+    "english": "I wanted to give you this as a 'thank you' for letting me live here with you.",
+    "segments": [
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "受け入れてくれた",
+        "kana": "うけいれてくれた",
+        "gloss": "let (me) in"
+      },
+      {
+        "text": "感謝",
+        "kana": "かんしゃ",
+        "gloss": "gratitude"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "気持ち",
+        "kana": "きもち",
+        "gloss": "feeling"
+      },
+      {
+        "text": "として、",
+        "kana": "として",
+        "gloss": "as"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "差し上げたかった",
+        "kana": "さしあげたかった",
+        "gloss": "wanted to give"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "です。$h",
+        "kana": "です",
+        "gloss": "is"
+      }
+    ]
+  },
+  "Sun": {
+    "japanese": "…すみませんが、 人間には まだ 気を 許せないのです。しかし、 あなた相手なら 店を 開けておきますよ。",
+    "english": "...Sorry, I'm still a little wary of humans. My shop is still open to you, however.",
+    "segments": [
+      {
+        "text": "…すみません",
+        "kana": "すみません",
+        "gloss": "sorry"
+      },
+      {
+        "text": "が、 ",
+        "kana": "が",
+        "gloss": "but"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "humans"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "まだ ",
+        "kana": "まだ",
+        "gloss": "still"
+      },
+      {
+        "text": "気",
+        "kana": "き",
+        "gloss": "guard"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "許せない",
+        "kana": "ゆるせない",
+        "gloss": "can't let down"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "です。",
+        "kana": "です",
+        "gloss": "is"
+      },
+      {
+        "text": "しかし、 ",
+        "kana": "しかし",
+        "gloss": "however"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "相手",
+        "kana": "あいて",
+        "gloss": "counterpart"
+      },
+      {
+        "text": "なら ",
+        "kana": "なら",
+        "gloss": "if it's"
+      },
+      {
+        "text": "店",
+        "kana": "みせ",
+        "gloss": "shop"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "開けておきます",
+        "kana": "あけておきます",
+        "gloss": "will keep open"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis marker)"
+      }
+    ]
+  },
+  "Sun4": {
+    "japanese": "あなたは 他の 人間とは 違うようですね。",
+    "english": "You're not like the other humans, are you?",
+    "segments": [
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "他の ",
+        "kana": "ほかの",
+        "gloss": "other"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "humans"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(comparison marker)"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "違うようです",
+        "kana": "ちがうようです",
+        "gloss": "seem different"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(agreement marker)"
+      }
+    ]
+  },
+  "Sun8": {
+    "japanese": "あなたは、 私に 人間の世界を 見せてくれました。本当に感謝しています。",
+    "english": "You've opened my eyes to the world of humans. I appreciate that.",
+    "segments": [
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "は、 ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "human"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "世界",
+        "kana": "せかい",
+        "gloss": "world"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見せてくれました。",
+        "kana": "みせてくれました",
+        "gloss": "showed me"
+      },
+      {
+        "text": "本当に",
+        "kana": "ほんとうに",
+        "gloss": "truly"
+      },
+      {
+        "text": "感謝しています。",
+        "kana": "かんしゃしています",
+        "gloss": "am grateful"
+      }
+    ]
+  },
+  "Thu": {
+    "japanese": "誰にも 私のことを 言わないでください。#$b#人間は 理解できない ものを 滅ぼす 傾向に ありますから。",
+    "english": "Please don't tell anyone about me.#$b#Humans tend to destroy things they can't understand.",
+    "segments": [
+      {
+        "text": "誰",
+        "kana": "だれ",
+        "gloss": "anyone"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "も ",
+        "kana": "も",
+        "gloss": "(emphasis marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "matter"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "言わないでください。#$b#",
+        "kana": "いわないでください",
+        "gloss": "please don't tell"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "humans"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "理解できない ",
+        "kana": "りかいできない",
+        "gloss": "cannot understand"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "滅ぼす ",
+        "kana": "ほろぼす",
+        "gloss": "destroy"
+      },
+      {
+        "text": "傾向",
+        "kana": "けいこう",
+        "gloss": "tendency"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "あります",
+        "kana": "あります",
+        "gloss": "have"
+      },
+      {
+        "text": "から。",
+        "kana": "から",
+        "gloss": "because"
+      }
+    ]
+  },
+  "Thu6": {
+    "japanese": "私について誰にも言わないでください。#$b#ほとんどの人間は私たちに怯えています...おそらく正当な理由で$s#$b#でも、町の人々が私のことを知っているなら、ここも安全ではないな。",
+    "english": "Please don't tell anyone about me.#$b#Most humans are frightened by us shadow people... maybe for good reason.#$b#But regardless, if the townspeople knew about me, I might not be safe here.",
+    "segments": [
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "について",
+        "kana": "について",
+        "gloss": "about"
+      },
+      {
+        "text": "誰",
+        "kana": "だれ",
+        "gloss": "anyone"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(emphasis marker)"
+      },
+      {
+        "text": "言わないでください。#$b#",
+        "kana": "いわないでください",
+        "gloss": "please don't tell"
+      },
+      {
+        "text": "ほとんど",
+        "kana": "ほとんど",
+        "gloss": "most"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "人間",
+        "kana": "にんげん",
+        "gloss": "humans"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "us"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "怯えています...",
+        "kana": "おびえています",
+        "gloss": "are afraid"
+      },
+      {
+        "text": "おそらく",
+        "kana": "おそらく",
+        "gloss": "perhaps"
+      },
+      {
+        "text": "正当な",
+        "kana": "せいとうな",
+        "gloss": "legitimate"
+      },
+      {
+        "text": "理由",
+        "kana": "りゆう",
+        "gloss": "reason"
+      },
+      {
+        "text": "で$s#$b#",
+        "kana": "で",
+        "gloss": "(means marker)"
+      },
+      {
+        "text": "でも、",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "町",
+        "kana": "まち",
+        "gloss": "town"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "人々",
+        "kana": "ひとびと",
+        "gloss": "people"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "matter"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "知っている",
+        "kana": "しっている",
+        "gloss": "know"
+      },
+      {
+        "text": "なら、",
+        "kana": "なら",
+        "gloss": "if"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "also"
+      },
+      {
+        "text": "安全",
+        "kana": "あんぜん",
+        "gloss": "safe"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(copula stem)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ない",
+        "kana": "ない",
+        "gloss": "not"
+      },
+      {
+        "text": "な。",
+        "kana": "な",
+        "gloss": "(assertion marker)"
+      }
+    ]
+  },
+  "Tue": {
+    "japanese": "私は 日の光に 弱いので、 日中 外へ 出られないのです。#$b#ここは 私にとって 理想的な 環境です。#$e#何か ご入用 でしょうか？",
+    "english": "I am too sensitive to sunlight to go out on most days.#$b#The conditions in here are perfect.#$e#Care to buy anything?",
+    "segments": [
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "日",
+        "kana": "ひ",
+        "gloss": "sun"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "光",
+        "kana": "ひかり",
+        "gloss": "light"
+      },
+      {
+        "text": "に ",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "弱い",
+        "kana": "よわい",
+        "gloss": "sensitive"
+      },
+      {
+        "text": "ので、 ",
+        "kana": "ので",
+        "gloss": "because"
+      },
+      {
+        "text": "日中 ",
+        "kana": "にっちゅう",
+        "gloss": "during the day"
+      },
+      {
+        "text": "外",
+        "kana": "そと",
+        "gloss": "outside"
+      },
+      {
+        "text": "へ ",
+        "kana": "へ",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "出られない",
+        "kana": "でられない",
+        "gloss": "can't go out"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "です。#$b#",
+        "kana": "です",
+        "gloss": "is"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me"
+      },
+      {
+        "text": "にとって ",
+        "kana": "にとって",
+        "gloss": "for"
+      },
+      {
+        "text": "理想的な ",
+        "kana": "りそうてきな",
+        "gloss": "ideal"
+      },
+      {
+        "text": "環境",
+        "kana": "かんきょう",
+        "gloss": "environment"
+      },
+      {
+        "text": "です。#$e#",
+        "kana": "です",
+        "gloss": "is"
+      },
+      {
+        "text": "何か ",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "ご入用 ",
+        "kana": "ごにゅうよう",
+        "gloss": "in need of"
+      },
+      {
+        "text": "でしょう",
+        "kana": "でしょう",
+        "gloss": "probably"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question marker)"
+      }
+    ]
+  },
+  "Wed": {
+    "japanese": "私は ここで 何かを 見つけて、 売っています。お買い物は いかがでしょうか？",
+    "english": "I find things here and I sell them. Care to buy anything?",
+    "segments": [
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "で ",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "何か",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "を ",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "見つけて、 ",
+        "kana": "みつけて",
+        "gloss": "find"
+      },
+      {
+        "text": "売っています。",
+        "kana": "うっています",
+        "gloss": "am selling"
+      },
+      {
+        "text": "お買い物",
+        "kana": "おかいもの",
+        "gloss": "shopping"
+      },
+      {
+        "text": "は ",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いかが",
+        "kana": "いかが",
+        "gloss": "how about"
+      },
+      {
+        "text": "でしょう",
+        "kana": "でしょう",
+        "gloss": "probably"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question marker)"
+      }
+    ]
+  },
+  "Wed6": {
+    "japanese": "あなたが正しいパイプに耳をあてているなら、ここから下の家に向かって聞くことができます。#$b#私は盗聴しないです！$3",
+    "english": "If you put your ear up to the right pipe, you can hear into any house from down here.#$b#I wouldn't eavesdrop, though!",
+    "segments": [
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "正しい",
+        "kana": "ただしい",
+        "gloss": "correct"
+      },
+      {
+        "text": "パイプ",
+        "kana": "パイプ",
+        "gloss": "pipe"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "耳",
+        "kana": "みみ",
+        "gloss": "ear"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "あてている",
+        "kana": "あてている",
+        "gloss": "putting against"
+      },
+      {
+        "text": "なら、",
+        "kana": "なら",
+        "gloss": "if"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "下",
+        "kana": "した",
+        "gloss": "below"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "家",
+        "kana": "いえ",
+        "gloss": "house"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "向かって",
+        "kana": "むかって",
+        "gloss": "toward"
+      },
+      {
+        "text": "聞く",
+        "kana": "きく",
+        "gloss": "hear"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "できます。#$b#",
+        "kana": "できます",
+        "gloss": "can"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "盗聴しない",
+        "kana": "とうちょうしない",
+        "gloss": "don't eavesdrop"
+      },
+      {
+        "text": "です！$3",
+        "kana": "です",
+        "gloss": "is"
+      }
+    ]
+  },
+  "eventSeen_691039": {
+    "japanese": "…すこし傷を負いましたが、大丈夫です。",
+    "english": "...I'm a little bruised, but I'm okay.",
+    "segments": [
+      {
+        "text": "…すこし",
+        "kana": "すこし",
+        "gloss": "a little"
+      },
+      {
+        "text": "傷",
+        "kana": "きず",
+        "gloss": "injury"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "負いました",
+        "kana": "おいました",
+        "gloss": "got"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "but"
+      },
+      {
+        "text": "大丈夫",
+        "kana": "だいじょうぶ",
+        "gloss": "okay"
+      },
+      {
+        "text": "です。",
+        "kana": "です",
+        "gloss": "is"
+      }
+    ]
+  },
+  "reject_868": {
+    "japanese": "ああ、北極のかけらだ！それはとても珍しい魔法のアイテムなんだよ。#$b#ぼくだったら魔術師のところに持って行くよ！",
+    "english": "Oh, it's an arctic shard! That's a very rare magical item.#$b#I'd bring that to the Wizard if I were you!",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "oh"
+      },
+      {
+        "text": "北極",
+        "kana": "ほっきょく",
+        "gloss": "arctic"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "かけら",
+        "kana": "かけら",
+        "gloss": "shard"
+      },
+      {
+        "text": "だ！",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very"
+      },
+      {
+        "text": "珍しい",
+        "kana": "めずらしい",
+        "gloss": "rare"
+      },
+      {
+        "text": "魔法",
+        "kana": "まほう",
+        "gloss": "magic"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "アイテム",
+        "kana": "アイテム",
+        "gloss": "item"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(copula)"
+      },
+      {
+        "text": "ん",
+        "kana": "ん",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "だ",
+        "kana": "だ",
+        "gloss": "is"
+      },
+      {
+        "text": "よ。#$b#",
+        "kana": "よ",
+        "gloss": "(emphasis marker)"
+      },
+      {
+        "text": "ぼく",
+        "kana": "ぼく",
+        "gloss": "I"
+      },
+      {
+        "text": "だったら",
+        "kana": "だったら",
+        "gloss": "if it were"
+      },
+      {
+        "text": "魔術師",
+        "kana": "まじゅつし",
+        "gloss": "wizard"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "ところ",
+        "kana": "ところ",
+        "gloss": "place"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)"
+      },
+      {
+        "text": "持って行く",
+        "kana": "もっていく",
+        "gloss": "bring"
+      },
+      {
+        "text": "よ！",
+        "kana": "よ",
+        "gloss": "(emphasis marker)"
+      }
+    ]
+  }
+}

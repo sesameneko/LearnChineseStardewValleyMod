@@ -1,0 +1,2276 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Events-SamHouse.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "100#0": {
+    "japanese": "こんにちは、@。いまちょうどポップコーンを作ってたの。$h",
+    "english": "Hi, @! I'm just making popcorn.",
+    "segments": [
+      {
+        "text": "こんにちは、",
+        "kana": "こんにちは",
+        "gloss": "hi"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "いま",
+        "kana": "いま",
+        "gloss": "now"
+      },
+      {
+        "text": "ちょうど",
+        "kana": "ちょうど",
+        "gloss": "just now"
+      },
+      {
+        "text": "ポップコーン",
+        "kana": "ポップコーン",
+        "gloss": "popcorn"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "作ってたの。$h",
+        "kana": "つくってたの",
+        "gloss": "was making"
+      }
+    ]
+  },
+  "100#1": {
+    "japanese": "うわああああああっ！！！$u",
+    "english": "AAAAAHHHHHHH!!!",
+    "segments": [
+      {
+        "text": "うわああああああっ！！！$u",
+        "kana": "うわああああああっ",
+        "gloss": "aaah (scream)"
+      }
+    ]
+  },
+  "100#2": {
+    "japanese": "その音…$s",
+    "english": "That sound...",
+    "segments": [
+      {
+        "text": "その",
+        "kana": "その",
+        "gloss": "that"
+      },
+      {
+        "text": "音…$s",
+        "kana": "おと",
+        "gloss": "sound"
+      }
+    ]
+  },
+  "100#3": {
+    "japanese": "そんな音、おれが聞いたら戦場を思い出すことくらいわかるだろ！$u",
+    "english": "You should know that sound would remind me of the battlefield!",
+    "segments": [
+      {
+        "text": "そんな",
+        "kana": "そんな",
+        "gloss": "such"
+      },
+      {
+        "text": "音、",
+        "kana": "おと",
+        "gloss": "sound"
+      },
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "聞いたら",
+        "kana": "きいたら",
+        "gloss": "if (I) hear"
+      },
+      {
+        "text": "戦場",
+        "kana": "せんじょう",
+        "gloss": "battlefield"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "思い出す",
+        "kana": "おもいだす",
+        "gloss": "remember"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "くらい",
+        "kana": "くらい",
+        "gloss": "at least"
+      },
+      {
+        "text": "わかるだろ！$u",
+        "kana": "わかるだろ",
+        "gloss": "should know, right"
+      }
+    ]
+  },
+  "100#4": {
+    "japanese": "…血まみれの塹壕…たくさんの仲間があそこで死んだ…$s",
+    "english": "...Lots of my friends died there, in those bloody trenches...",
+    "segments": [
+      {
+        "text": "…血まみれ",
+        "kana": "ちまみれ",
+        "gloss": "bloody"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "塹壕…",
+        "kana": "ざんごう",
+        "gloss": "trench"
+      },
+      {
+        "text": "たくさん",
+        "kana": "たくさん",
+        "gloss": "many"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "仲間",
+        "kana": "なかま",
+        "gloss": "comrades"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あそこ",
+        "kana": "あそこ",
+        "gloss": "there"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "死んだ…$s",
+        "kana": "しんだ",
+        "gloss": "died"
+      }
+    ]
+  },
+  "100#5": {
+    "japanese": "でも…あなた、前はポップコーンが大好物だったじゃない。$s",
+    "english": "But... you used to love popcorn, didn't you?",
+    "segments": [
+      {
+        "text": "でも…",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "あなた、",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "前",
+        "kana": "まえ",
+        "gloss": "before"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ポップコーン",
+        "kana": "ポップコーン",
+        "gloss": "popcorn"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "大好物だった",
+        "kana": "だいこうぶつだった",
+        "gloss": "was (your) favorite"
+      },
+      {
+        "text": "じゃない。$s",
+        "kana": "じゃない",
+        "gloss": "wasn't it"
+      }
+    ]
+  },
+  "100#6": {
+    "japanese": "…事情が変わったんだ。",
+    "english": "...Things have changed.",
+    "segments": [
+      {
+        "text": "…事情",
+        "kana": "じじょう",
+        "gloss": "circumstances"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "変わったんだ。",
+        "kana": "かわったんだ",
+        "gloss": "have changed"
+      }
+    ]
+  },
+  "100#7": {
+    "japanese": "（ひそひそ）@…なにか言ってあげてくれる？$s",
+    "english": "*whisper* @... won't you say something to him?",
+    "segments": [
+      {
+        "text": "（ひそひそ）",
+        "kana": "ひそひそ",
+        "gloss": "whisper (aside)"
+      },
+      {
+        "text": "@…",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "言ってあげてくれる？$s",
+        "kana": "いってあげてくれる",
+        "gloss": "won't you say (it) for him"
+      }
+    ]
+  },
+  "100#8": {
+    "japanese": "$q 215 null#（ケントになんて言おう）$s#$r 215 -25 event_popcorn1#ジョディが悪いよ…気づかいが足りないよね！#$r 215 50 event_popcorn2#傷ついたのはわかるよ…でも奥さんを責めないであげて。#$r 215 -50 event_popcorn3#（ウソ）ごめん…自分がジョディに作ってって言ったんだ。",
+    "english": "(Say something to Kent) / Jodi's to blame, she should've known better! / I know you're hurting, but don't blame your wife. / (Lie) Blame me, I asked for popcorn.",
+    "segments": [
+      {
+        "text": "$q 215 null#",
+        "kana": "215 null",
+        "gloss": "(dialogue choice prompt)"
+      },
+      {
+        "text": "（ケント",
+        "kana": "ケント",
+        "gloss": "Kent"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to... marker)"
+      },
+      {
+        "text": "なんて",
+        "kana": "なんて",
+        "gloss": "what"
+      },
+      {
+        "text": "言おう）$s",
+        "kana": "いおう",
+        "gloss": "should (I) say"
+      },
+      {
+        "text": "#$r 215 -25 event_popcorn1#",
+        "kana": "215 -25 event popcorn1",
+        "gloss": "(dialogue choice: event_popcorn1)"
+      },
+      {
+        "text": "ジョディ",
+        "kana": "ジョディ",
+        "gloss": "Jodi"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "悪いよ…",
+        "kana": "わるいよ",
+        "gloss": "is bad"
+      },
+      {
+        "text": "気づかい",
+        "kana": "きづかい",
+        "gloss": "consideration"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "足りないよね！",
+        "kana": "たりないよね",
+        "gloss": "isn't enough, is it"
+      },
+      {
+        "text": "#$r 215 50 event_popcorn2#",
+        "kana": "215 50 event popcorn2",
+        "gloss": "(dialogue choice: event_popcorn2)"
+      },
+      {
+        "text": "傷ついたの",
+        "kana": "きずついたの",
+        "gloss": "that (he) was hurt"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "わかるよ…",
+        "kana": "わかるよ",
+        "gloss": "I understand"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "奥さん",
+        "kana": "おくさん",
+        "gloss": "(his) wife"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "責めないであげて。",
+        "kana": "せめないであげて",
+        "gloss": "don't blame (her)"
+      },
+      {
+        "text": "#$r 215 -50 event_popcorn3#",
+        "kana": "215 -50 event popcorn3",
+        "gloss": "(dialogue choice: event_popcorn3)"
+      },
+      {
+        "text": "（ウソ）",
+        "kana": "ウソ",
+        "gloss": "lie"
+      },
+      {
+        "text": "ごめん…",
+        "kana": "ごめん",
+        "gloss": "sorry"
+      },
+      {
+        "text": "自分",
+        "kana": "じぶん",
+        "gloss": "I (myself)"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ジョディ",
+        "kana": "ジョディ",
+        "gloss": "Jodi"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "to"
+      },
+      {
+        "text": "作ってって",
+        "kana": "つくってって",
+        "gloss": "to make (quote)"
+      },
+      {
+        "text": "言ったんだ。",
+        "kana": "いったんだ",
+        "gloss": "said"
+      }
+    ]
+  },
+  "100#9": {
+    "japanese": "…$s#$b#ごめんよ、ハニー。ポップコーンの音でおれが不安になるなんて、前もってわかるはずないよな。",
+    "english": "...I'm sorry, honey. You couldn't have known in advance that the sound of popcorn would make me anxious.",
+    "segments": [
+      {
+        "text": "…$s#$b#",
+        "kana": "",
+        "gloss": "(silence)"
+      },
+      {
+        "text": "ごめんよ、",
+        "kana": "",
+        "gloss": "sorry"
+      },
+      {
+        "text": "ハニー。",
+        "kana": "",
+        "gloss": "honey"
+      },
+      {
+        "text": "ポップコーン",
+        "kana": "",
+        "gloss": "popcorn"
+      },
+      {
+        "text": "の",
+        "kana": "",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "音",
+        "kana": "おと",
+        "gloss": "sound"
+      },
+      {
+        "text": "で",
+        "kana": "",
+        "gloss": "(cause marker)"
+      },
+      {
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "不安になる",
+        "kana": "ふあんになる",
+        "gloss": "become anxious"
+      },
+      {
+        "text": "なんて、",
+        "kana": "",
+        "gloss": "(a thing like)"
+      },
+      {
+        "text": "前もって",
+        "kana": "まえもって",
+        "gloss": "in advance"
+      },
+      {
+        "text": "わかるはずない",
+        "kana": "わかるはずない",
+        "gloss": "couldn't have known"
+      },
+      {
+        "text": "よな。",
+        "kana": "",
+        "gloss": "right (emphasis)"
+      }
+    ]
+  },
+  "100#10": {
+    "japanese": "気にしないで、あなた。$s#$b#あなたを不安にさせるのが一番いやだもの。元気になってもらえるように、これからはできる限りがんばるから。",
+    "english": "It's okay, dear. Making you anxious is the thing I hate most. I'll do my best from now on, so that you can feel better.",
+    "segments": [
+      {
+        "text": "気にしないで、",
+        "kana": "きにしないで",
+        "gloss": "don't worry"
+      },
+      {
+        "text": "あなた。$s#$b#",
+        "kana": "あなた",
+        "gloss": "dear"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "不安にさせるの",
+        "kana": "ふあんにさせるの",
+        "gloss": "making (you) anxious"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "一番",
+        "kana": "いちばん",
+        "gloss": "most"
+      },
+      {
+        "text": "いやだもの。",
+        "kana": "いやだもの",
+        "gloss": "is what I hate"
+      },
+      {
+        "text": "元気になってもらえるように、",
+        "kana": "げんきになってもらえるように",
+        "gloss": "so that (you) can feel better"
+      },
+      {
+        "text": "これから",
+        "kana": "これから",
+        "gloss": "from now on"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "できる限り",
+        "kana": "できるかぎり",
+        "gloss": "as much as I can"
+      },
+      {
+        "text": "がんばるから。",
+        "kana": "がんばるから",
+        "gloss": "I'll try hard"
+      }
+    ]
+  },
+  "100#11": {
+    "japanese": "あんたがうちの家族とつきあいがあってよかったよ、@。さっきはすまなかったな。",
+    "english": "I'm glad you're friends with our family, @. I'm sorry about earlier.",
+    "segments": [
+      {
+        "text": "あんた",
+        "kana": "あんた",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "うち",
+        "kana": "うち",
+        "gloss": "our"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "家族",
+        "kana": "かぞく",
+        "gloss": "family"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(with... marker)"
+      },
+      {
+        "text": "つきあいがあって",
+        "kana": "つきあいがあって",
+        "gloss": "being friends"
+      },
+      {
+        "text": "よかったよ、",
+        "kana": "よかったよ",
+        "gloss": "I'm glad"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "さっき",
+        "kana": "さっき",
+        "gloss": "earlier"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "すまなかったな。",
+        "kana": "すまなかったな",
+        "gloss": "I'm sorry"
+      }
+    ]
+  },
+  "44#0": {
+    "japanese": "やあ、@じゃない！ちょうどセバスチャンとオレで、ちょっとした「ジャムセッション」をしてたんだ。",
+    "english": "Oh hey, @! Sebastian and I were just having a little \"jam session\".",
+    "segments": [
+      {
+        "text": "やあ、",
+        "kana": "やあ",
+        "gloss": "hey"
+      },
+      {
+        "text": "@",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "じゃない！",
+        "kana": "じゃない",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "ちょうど",
+        "kana": "ちょうど",
+        "gloss": "just now"
+      },
+      {
+        "text": "セバスチャン",
+        "kana": "セバスチャン",
+        "gloss": "Sebastian"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(with... marker)"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "I"
+      },
+      {
+        "text": "で、",
+        "kana": "で",
+        "gloss": "(means marker)"
+      },
+      {
+        "text": "ちょっとした",
+        "kana": "ちょっとした",
+        "gloss": "a little"
+      },
+      {
+        "text": "「ジャムセッション」",
+        "kana": "ジャムセッション",
+        "gloss": "jam session"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "してたんだ。",
+        "kana": "してたんだ",
+        "gloss": "were doing"
+      }
+    ]
+  },
+  "44#1": {
+    "japanese": "オレたちバンドをはじめようと思ってるんだけどさ、どんなジャンルの曲をつくるかまだ決まってないんだ。選択肢が多すぎてさ。迷っちまうよ。",
+    "english": "We're thinking of starting a band, but we still haven't decided what genre of music to make. There's too many choices, I can't decide.",
+    "segments": [
+      {
+        "text": "オレたち",
+        "kana": "おれたち",
+        "gloss": "we"
+      },
+      {
+        "text": "バンド",
+        "kana": "バンド",
+        "gloss": "band"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "はじめよう",
+        "kana": "はじめよう",
+        "gloss": "start"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quote marker)"
+      },
+      {
+        "text": "思ってるんだけどさ、",
+        "kana": "おもってるんだけどさ",
+        "gloss": "(we) are thinking"
+      },
+      {
+        "text": "どんな",
+        "kana": "どんな",
+        "gloss": "what kind of"
+      },
+      {
+        "text": "ジャンル",
+        "kana": "ジャンル",
+        "gloss": "genre"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "曲",
+        "kana": "きょく",
+        "gloss": "music"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "つくるか",
+        "kana": "つくるか",
+        "gloss": "to make"
+      },
+      {
+        "text": "まだ",
+        "kana": "まだ",
+        "gloss": "still"
+      },
+      {
+        "text": "決まってないんだ。",
+        "kana": "きまってないんだ",
+        "gloss": "hasn't been decided"
+      },
+      {
+        "text": "選択肢",
+        "kana": "せんたくし",
+        "gloss": "options"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "多すぎてさ。",
+        "kana": "おおすぎてさ",
+        "gloss": "there are too many"
+      },
+      {
+        "text": "迷っちまうよ。",
+        "kana": "まよっちまうよ",
+        "gloss": "I can't decide"
+      }
+    ]
+  },
+  "44#2": {
+    "japanese": "#$q 76 null#そうだ、@…お前が好きな音楽ってどんなジャンルなんだ？#$r 76 50 Event_band1#あかるいポップミュージック。#$r 77 50 Event_band2#実験的なノイズロック。#$r 78 50 Event_band3#ハイなダンスミュージック。#$r 79 50 Event_band4#にぎやかなカントリーミュージック。",
+    "english": "Right, @... what genre of music do you like? / Cheerful pop music. / Experimental noise rock. / Hi-energy dance music. / Lively country music.",
+    "segments": [
+      {
+        "text": "#$q 76 null#",
+        "kana": "76 null",
+        "gloss": "(dialogue choice prompt)"
+      },
+      {
+        "text": "そうだ、",
+        "kana": "そうだ",
+        "gloss": "that's right"
+      },
+      {
+        "text": "@…",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "お前",
+        "kana": "おまえ",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "好きな",
+        "kana": "すきな",
+        "gloss": "favorite"
+      },
+      {
+        "text": "音楽って",
+        "kana": "おんがくって",
+        "gloss": "music (topic)"
+      },
+      {
+        "text": "どんな",
+        "kana": "どんな",
+        "gloss": "what kind of"
+      },
+      {
+        "text": "ジャンルなんだ？",
+        "kana": "ジャンルなんだ",
+        "gloss": "genre is it"
+      },
+      {
+        "text": "#$r 76 50 Event_band1#",
+        "kana": "76 50 Event band1",
+        "gloss": "(dialogue choice: Event_band1)"
+      },
+      {
+        "text": "あかるい",
+        "kana": "あかるい",
+        "gloss": "cheerful"
+      },
+      {
+        "text": "ポップミュージック。",
+        "kana": "ポップミュージック",
+        "gloss": "pop music"
+      },
+      {
+        "text": "#$r 77 50 Event_band2#",
+        "kana": "77 50 Event band2",
+        "gloss": "(dialogue choice: Event_band2)"
+      },
+      {
+        "text": "実験的な",
+        "kana": "じっけんてきな",
+        "gloss": "experimental"
+      },
+      {
+        "text": "ノイズロック。",
+        "kana": "ノイズロック",
+        "gloss": "noise rock"
+      },
+      {
+        "text": "#$r 78 50 Event_band3#",
+        "kana": "78 50 Event band3",
+        "gloss": "(dialogue choice: Event_band3)"
+      },
+      {
+        "text": "ハイな",
+        "kana": "ハイな",
+        "gloss": "hi-energy"
+      },
+      {
+        "text": "ダンスミュージック。",
+        "kana": "ダンスミュージック",
+        "gloss": "dance music"
+      },
+      {
+        "text": "#$r 79 50 Event_band4#",
+        "kana": "79 50 Event band4",
+        "gloss": "(dialogue choice: Event_band4)"
+      },
+      {
+        "text": "にぎやかな",
+        "kana": "にぎやかな",
+        "gloss": "lively"
+      },
+      {
+        "text": "カントリーミュージック。",
+        "kana": "カントリーミュージック",
+        "gloss": "country music"
+      }
+    ]
+  },
+  "44#3": {
+    "japanese": "なあセバスチャン、どう思う？それでいいか？",
+    "english": "What do you think, Sebastian? Is that fine?",
+    "segments": [
+      {
+        "text": "なあ",
+        "kana": "なあ",
+        "gloss": "hey"
+      },
+      {
+        "text": "セバスチャン、",
+        "kana": "セバスチャン",
+        "gloss": "Sebastian"
+      },
+      {
+        "text": "どう",
+        "kana": "どう",
+        "gloss": "how"
+      },
+      {
+        "text": "思う？",
+        "kana": "おもう",
+        "gloss": "(do you) think"
+      },
+      {
+        "text": "それで",
+        "kana": "それで",
+        "gloss": "with that"
+      },
+      {
+        "text": "いいか？",
+        "kana": "いいか",
+        "gloss": "is (it) okay"
+      }
+    ]
+  },
+  "44#4": {
+    "japanese": "…ああ。",
+    "english": "...Okay.",
+    "segments": [
+      {
+        "text": "…ああ。",
+        "kana": "ああ",
+        "gloss": "okay"
+      }
+    ]
+  },
+  "44#5": {
+    "japanese": "アイデアありがとな、@。オレのギターテクとセバスチャンの魔法みたいなシンセがあれば、絶対成功間違いなしだ。オレにはわかるぜ！$h",
+    "english": "Thanks for the idea, @. With my guitar skills and Sebastian's magic-like synth, it's sure to be a total success. I just know it!",
+    "segments": [
+      {
+        "text": "アイデアありがとな、",
+        "kana": "アイデアありがとな",
+        "gloss": "thanks for the idea"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "ギターテク",
+        "kana": "ギターテク",
+        "gloss": "guitar skills"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(and marker)"
+      },
+      {
+        "text": "セバスチャン",
+        "kana": "セバスチャン",
+        "gloss": "Sebastian"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "魔法みたいな",
+        "kana": "まほうみたいな",
+        "gloss": "magic-like"
+      },
+      {
+        "text": "シンセ",
+        "kana": "シンセ",
+        "gloss": "synthesizer"
+      },
+      {
+        "text": "があれば、",
+        "kana": "があれば",
+        "gloss": "if (we) have"
+      },
+      {
+        "text": "絶対",
+        "kana": "ぜったい",
+        "gloss": "definitely"
+      },
+      {
+        "text": "成功間違いなしだ。",
+        "kana": "せいこうまちがいなしだ",
+        "gloss": "is sure to succeed"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "I"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(dative marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "わかるぜ！$h",
+        "kana": "わかるぜ",
+        "gloss": "I know it"
+      }
+    ]
+  },
+  "44#6": {
+    "japanese": "じゃあ次は、だれかドラムができるやつを探さなきゃな…$u",
+    "english": "Well then, I need to find someone who can play drums next...",
+    "segments": [
+      {
+        "text": "じゃあ",
+        "kana": "じゃあ",
+        "gloss": "well then"
+      },
+      {
+        "text": "次",
+        "kana": "つぎ",
+        "gloss": "next"
+      },
+      {
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "だれか",
+        "kana": "だれか",
+        "gloss": "someone"
+      },
+      {
+        "text": "ドラム",
+        "kana": "ドラム",
+        "gloss": "drums"
+      },
+      {
+        "text": "ができる",
+        "kana": "ができる",
+        "gloss": "who can play"
+      },
+      {
+        "text": "やつ",
+        "kana": "やつ",
+        "gloss": "person"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "探さなきゃな…$u",
+        "kana": "さがさなきゃな",
+        "gloss": "(I) need to look for"
+      }
+    ]
+  },
+  "46#0": {
+    "japanese": "よう@。なにか食おうとしてたとこだったんだ。",
+    "english": "Hey @. I was just about to eat something.",
+    "segments": [
+      {
+        "text": "よう",
+        "kana": "よう",
+        "gloss": "hey"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "食おうとしてたとこだったんだ。",
+        "kana": "くおうとしてたとこだったんだ",
+        "gloss": "was just about to eat"
+      }
+    ]
+  },
+  "46#1": {
+    "japanese": "ほら、お前もなんか食べてけよ。",
+    "english": "Here, let me get you something to eat too.",
+    "segments": [
+      {
+        "text": "ほら、",
+        "kana": "ほら",
+        "gloss": "here"
+      },
+      {
+        "text": "お前",
+        "kana": "おまえ",
+        "gloss": "you"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "なんか",
+        "kana": "なんか",
+        "gloss": "something"
+      },
+      {
+        "text": "食べてけよ。",
+        "kana": "たべてけよ",
+        "gloss": "have some to eat"
+      }
+    ]
+  },
+  "46#2": {
+    "japanese": "おっと…やっちまった。$s",
+    "english": "Whoops... I messed up.",
+    "segments": [
+      {
+        "text": "おっと…",
+        "kana": "おっと",
+        "gloss": "oops"
+      },
+      {
+        "text": "やっちまった。$s",
+        "kana": "やっちまった",
+        "gloss": "(I) messed up"
+      }
+    ]
+  },
+  "46#3": {
+    "japanese": "いまの音はなあに？",
+    "english": "What was that sound just now?",
+    "segments": [
+      {
+        "text": "いま",
+        "kana": "いま",
+        "gloss": "just now"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "音",
+        "kana": "おと",
+        "gloss": "sound"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "なあに？",
+        "kana": "なあに",
+        "gloss": "what was (that)"
+      }
+    ]
+  },
+  "46#4": {
+    "japanese": "まあ…$s",
+    "english": "*gasp*",
+    "segments": [
+      {
+        "text": "まあ…$s",
+        "kana": "まあ",
+        "gloss": "(gasp)"
+      }
+    ]
+  },
+  "46#5": {
+    "japanese": "なんてひどい！なにがあったの？$u",
+    "english": "How terrible! What happened?",
+    "segments": [
+      {
+        "text": "なんてひどい！",
+        "kana": "なんてひどい",
+        "gloss": "how terrible"
+      },
+      {
+        "text": "なにが",
+        "kana": "なにが",
+        "gloss": "what"
+      },
+      {
+        "text": "あったの？$u",
+        "kana": "あったの",
+        "gloss": "happened"
+      }
+    ]
+  },
+  "46#6": {
+    "japanese": "$q 80 null#…教えてやれよ、@。$s#$r 80 -10 event_snack1#こっちに食べ物を渡そうとして、サムが食べものを落としちゃったんだ。#$r 80 50 event_snack2#サムが食べものを渡してくれたんだけど、こっちが落としちゃったんだ。#$r 81 -50 event_snack3#サムがふざけてわざと落としたんだ。",
+    "english": "...Tell her, @. / I was trying to hand the food over and Sam dropped it. / Sam handed me the food, but I dropped it. / Sam dropped it on purpose, joking around.",
+    "segments": [
+      {
+        "text": "$q 80 null#…",
+        "kana": "80 null",
+        "gloss": "(dialogue choice prompt)"
+      },
+      {
+        "text": "教えてやれよ、",
+        "kana": "おしえてやれよ",
+        "gloss": "tell (her)"
+      },
+      {
+        "text": "@。$s",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "#$r 80 -10 event_snack1#",
+        "kana": "80 -10 event snack1",
+        "gloss": "(dialogue choice: event_snack1)"
+      },
+      {
+        "text": "こっち",
+        "kana": "こっち",
+        "gloss": "I"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to... marker)"
+      },
+      {
+        "text": "食べ物",
+        "kana": "たべもの",
+        "gloss": "food"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "渡そうとして、",
+        "kana": "わたそうとして",
+        "gloss": "was trying to hand"
+      },
+      {
+        "text": "サム",
+        "kana": "サム",
+        "gloss": "Sam"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "食べもの",
+        "kana": "たべもの",
+        "gloss": "food"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "落としちゃったんだ。",
+        "kana": "おとしちゃったんだ",
+        "gloss": "dropped (it)"
+      },
+      {
+        "text": "#$r 80 50 event_snack2#",
+        "kana": "80 50 event snack2",
+        "gloss": "(dialogue choice: event_snack2)"
+      },
+      {
+        "text": "サム",
+        "kana": "サム",
+        "gloss": "Sam"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "食べもの",
+        "kana": "たべもの",
+        "gloss": "food"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "渡してくれたんだけど、",
+        "kana": "わたしてくれたんだけど",
+        "gloss": "handed (it to me) but"
+      },
+      {
+        "text": "こっち",
+        "kana": "こっち",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "落としちゃったんだ。",
+        "kana": "おとしちゃったんだ",
+        "gloss": "dropped (it)"
+      },
+      {
+        "text": "#$r 81 -50 event_snack3#",
+        "kana": "81 -50 event snack3",
+        "gloss": "(dialogue choice: event_snack3)"
+      },
+      {
+        "text": "サム",
+        "kana": "サム",
+        "gloss": "Sam"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ふざけて",
+        "kana": "ふざけて",
+        "gloss": "joking around"
+      },
+      {
+        "text": "わざと",
+        "kana": "わざと",
+        "gloss": "on purpose"
+      },
+      {
+        "text": "落としたんだ。",
+        "kana": "おとしたんだ",
+        "gloss": "dropped (it)"
+      }
+    ]
+  },
+  "46#7": {
+    "japanese": "$p 80#正直に言ってくれてありがとう、@。それくらいなら大したことないわ。|サム、なんですって？！あなた、いったいどうしちゃったの？！$u",
+    "english": "Thanks for telling me the truth, @. It's not that big a deal. / You did WHAT, Sam?! What on earth happened to you?!",
+    "segments": [
+      {
+        "text": "$p 80#",
+        "kana": "80",
+        "gloss": "(dialogue branch marker)"
+      },
+      {
+        "text": "正直に",
+        "kana": "しょうじきに",
+        "gloss": "honestly"
+      },
+      {
+        "text": "言ってくれてありがとう、",
+        "kana": "いってくれてありがとう",
+        "gloss": "thanks for telling (me)"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "それくらいなら",
+        "kana": "それくらいなら",
+        "gloss": "if it's just that much"
+      },
+      {
+        "text": "大したことないわ。|",
+        "kana": "たいしたことないわ",
+        "gloss": "it's not a big deal"
+      },
+      {
+        "text": "サム、",
+        "kana": "サム",
+        "gloss": "Sam"
+      },
+      {
+        "text": "なんですって？！",
+        "kana": "なんですって",
+        "gloss": "what did you say"
+      },
+      {
+        "text": "あなた、",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "いったい",
+        "kana": "いったい",
+        "gloss": "what on earth"
+      },
+      {
+        "text": "どうしちゃったの？！$u",
+        "kana": "どうしちゃったの",
+        "gloss": "what happened to you"
+      }
+    ]
+  },
+  "46#8": {
+    "japanese": "ごめんな、母さん。オレが片づけるよ。$s",
+    "english": "Sorry, mom. I'll clean it up.",
+    "segments": [
+      {
+        "text": "ごめんな、",
+        "kana": "ごめんな",
+        "gloss": "sorry"
+      },
+      {
+        "text": "母さん。",
+        "kana": "かあさん",
+        "gloss": "mom"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "片づけるよ。$s",
+        "kana": "かたづけるよ",
+        "gloss": "will clean (it) up"
+      }
+    ]
+  },
+  "46#9": {
+    "japanese": "ありがとう、おねがいね。$h",
+    "english": "Thanks, honey.",
+    "segments": [
+      {
+        "text": "ありがとう、",
+        "kana": "ありがとう",
+        "gloss": "thanks"
+      },
+      {
+        "text": "おねがいね。$h",
+        "kana": "おねがいね",
+        "gloss": "please (do)"
+      }
+    ]
+  },
+  "46#10": {
+    "japanese": "$p 81#おい、怒ってるからな。なんであんなウソつくんだよ？$s|さっきは悪かったな。",
+    "english": "Hey, I'm angry. Why would you tell a lie like that? / Sorry about earlier.",
+    "segments": [
+      {
+        "text": "$p 81#",
+        "kana": "81",
+        "gloss": "(dialogue branch marker)"
+      },
+      {
+        "text": "おい、",
+        "kana": "おい",
+        "gloss": "hey"
+      },
+      {
+        "text": "怒ってるからな。",
+        "kana": "おこってるからな",
+        "gloss": "I'm angry"
+      },
+      {
+        "text": "なんで",
+        "kana": "なんで",
+        "gloss": "why"
+      },
+      {
+        "text": "あんなウソつくんだよ？$s|",
+        "kana": "あんなウソつくんだよ",
+        "gloss": "would you tell such a lie"
+      },
+      {
+        "text": "さっき",
+        "kana": "さっき",
+        "gloss": "earlier"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "悪かったな。",
+        "kana": "わるかったな",
+        "gloss": "sorry (about that)"
+      }
+    ]
+  },
+  "94#0": {
+    "japanese": "ああ@、いらっしゃい！どうぞ入って。まあ、これって新鮮なお魚のにおい？",
+    "english": "Oh, @, welcome! Please, come in. Oh, is that the smell of fresh fish?",
+    "segments": [
+      {
+        "text": "ああ",
+        "kana": "ああ",
+        "gloss": "oh"
+      },
+      {
+        "text": "@、",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "いらっしゃい！",
+        "kana": "いらっしゃい",
+        "gloss": "welcome"
+      },
+      {
+        "text": "どうぞ",
+        "kana": "どうぞ",
+        "gloss": "please"
+      },
+      {
+        "text": "入って。",
+        "kana": "はいって",
+        "gloss": "come in"
+      },
+      {
+        "text": "まあ、",
+        "kana": "まあ",
+        "gloss": "oh my"
+      },
+      {
+        "text": "これって",
+        "kana": "これって",
+        "gloss": "is this"
+      },
+      {
+        "text": "新鮮な",
+        "kana": "しんせんな",
+        "gloss": "fresh"
+      },
+      {
+        "text": "お魚",
+        "kana": "おさかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "におい？",
+        "kana": "におい",
+        "gloss": "smell"
+      }
+    ]
+  },
+  "94#1": {
+    "japanese": "サム！こっちにきて、ディナーの準備を手伝ってくれる？",
+    "english": "Sam! Could you come here and help with dinner preparations?",
+    "segments": [
+      {
+        "text": "サム！",
+        "kana": "サム",
+        "gloss": "Sam"
+      },
+      {
+        "text": "こっち",
+        "kana": "こっち",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to... marker)"
+      },
+      {
+        "text": "きて、",
+        "kana": "きて",
+        "gloss": "come"
+      },
+      {
+        "text": "ディナー",
+        "kana": "ディナー",
+        "gloss": "dinner"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "準備",
+        "kana": "じゅんび",
+        "gloss": "preparation"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "手伝ってくれる？",
+        "kana": "てつだってくれる",
+        "gloss": "will (you) help"
+      }
+    ]
+  },
+  "94#2": {
+    "japanese": "…了解、母さん。$a",
+    "english": "...Okay, mom.",
+    "segments": [
+      {
+        "text": "…了解、",
+        "kana": "りょうかい",
+        "gloss": "okay"
+      },
+      {
+        "text": "母さん。$a",
+        "kana": "かあさん",
+        "gloss": "mom"
+      }
+    ]
+  },
+  "94#3": {
+    "japanese": "まあ、すっごく上等なバスね、@。持ってきてくれてありがとう。$h",
+    "english": "Oh, this is a really fine bass, @. Thanks for bringing it.",
+    "segments": [
+      {
+        "text": "まあ、",
+        "kana": "まあ",
+        "gloss": "oh"
+      },
+      {
+        "text": "すっごく",
+        "kana": "すっごく",
+        "gloss": "really"
+      },
+      {
+        "text": "上等な",
+        "kana": "じょうとうな",
+        "gloss": "fine"
+      },
+      {
+        "text": "バスね、",
+        "kana": "バスね",
+        "gloss": "bass"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "持ってきてくれてありがとう。$h",
+        "kana": "もってきてくれてありがとう",
+        "gloss": "thanks for bringing (it)"
+      }
+    ]
+  },
+  "94#4": {
+    "japanese": "うーん…バスのキャセロールはおいしかった！パン粉のサクサク感が、この世のものは思えないほど最高だった…",
+    "english": "Mmm... the bass casserole was delicious! The crispiness of the breading was unimaginably wonderful...",
+    "segments": [
+      {
+        "text": "うーん…",
+        "kana": "うーん",
+        "gloss": "mmm"
+      },
+      {
+        "text": "バス",
+        "kana": "バス",
+        "gloss": "bass"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "キャセロール",
+        "kana": "キャセロール",
+        "gloss": "casserole"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "おいしかった！",
+        "kana": "おいしかった",
+        "gloss": "was delicious"
+      },
+      {
+        "text": "パン粉",
+        "kana": "パンこ",
+        "gloss": "breading"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "サクサク感",
+        "kana": "サクサクかん",
+        "gloss": "crispiness"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "この世のもの",
+        "kana": "このよのもの",
+        "gloss": "of this world"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "思えない",
+        "kana": "おもえない",
+        "gloss": "unimaginable"
+      },
+      {
+        "text": "ほど",
+        "kana": "ほど",
+        "gloss": "to the extent"
+      },
+      {
+        "text": "最高だった…",
+        "kana": "さいこうだった",
+        "gloss": "was the best"
+      }
+    ]
+  },
+  "94#5": {
+    "japanese": "まるで家族の一員になれたみたいな気がした。",
+    "english": "I felt just like I'd become part of the family.",
+    "segments": [
+      {
+        "text": "まるで",
+        "kana": "まるで",
+        "gloss": "just like"
+      },
+      {
+        "text": "家族",
+        "kana": "かぞく",
+        "gloss": "family"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "一員",
+        "kana": "いちいん",
+        "gloss": "member"
+      },
+      {
+        "text": "になれたみたいな",
+        "kana": "になれたみたいな",
+        "gloss": "as if (I) became"
+      },
+      {
+        "text": "気がした。",
+        "kana": "きがした",
+        "gloss": "felt"
+      }
+    ]
+  },
+  "95#0": {
+    "japanese": "よう、@。どうぞ、入ってくれ。",
+    "english": "Hey, @. Please, come in.",
+    "segments": [
+      {
+        "text": "よう、",
+        "kana": "よう",
+        "gloss": "hey"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "どうぞ、",
+        "kana": "どうぞ",
+        "gloss": "please"
+      },
+      {
+        "text": "入ってくれ。",
+        "kana": "はいってくれ",
+        "gloss": "come in"
+      }
+    ]
+  },
+  "95#1": {
+    "japanese": "来てくれてうれしいわ、@！魚も持ってきてくれたのね！助かるわ。",
+    "english": "I'm glad you came, @! You brought fish too! That's a big help.",
+    "segments": [
+      {
+        "text": "来てくれてうれしいわ、",
+        "kana": "きてくれてうれしいわ",
+        "gloss": "I'm glad (you) came"
+      },
+      {
+        "text": "@！",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "持ってきてくれたのね！",
+        "kana": "もってきてくれたのね",
+        "gloss": "(you) brought (it)"
+      },
+      {
+        "text": "助かるわ。",
+        "kana": "たすかるわ",
+        "gloss": "that's a big help"
+      }
+    ]
+  },
+  "95#2": {
+    "japanese": "サム！こっちにきて、魚の下ごしらえを手伝ってくれる？",
+    "english": "Sam! Could you come here and help prepare the fish?",
+    "segments": [
+      {
+        "text": "サム！",
+        "kana": "サム",
+        "gloss": "Sam"
+      },
+      {
+        "text": "こっち",
+        "kana": "こっち",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to... marker)"
+      },
+      {
+        "text": "きて、",
+        "kana": "きて",
+        "gloss": "come"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "下ごしらえ",
+        "kana": "したごしらえ",
+        "gloss": "preparation"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "手伝ってくれる？",
+        "kana": "てつだってくれる",
+        "gloss": "will (you) help"
+      }
+    ]
+  },
+  "95#3": {
+    "japanese": "…了解、母さん。$a",
+    "english": "...Okay, mom.",
+    "segments": [
+      {
+        "text": "…了解、",
+        "kana": "りょうかい",
+        "gloss": "okay"
+      },
+      {
+        "text": "母さん。$a",
+        "kana": "かあさん",
+        "gloss": "mom"
+      }
+    ]
+  },
+  "95#4": {
+    "japanese": "まあ、りっぱね…それに新鮮！持ってきてくれてありがとう、@。#$b#ケントも魚を釣るんだけど、あの人はぜんぶ自分で食べちゃうの！$u",
+    "english": "Oh, it's splendid, and fresh too! Thanks for bringing it, @. Sam catches fish too, but he eats them all himself!",
+    "segments": [
+      {
+        "text": "まあ、",
+        "kana": "まあ",
+        "gloss": "oh"
+      },
+      {
+        "text": "りっぱね…",
+        "kana": "りっぱね",
+        "gloss": "splendid"
+      },
+      {
+        "text": "それに",
+        "kana": "それに",
+        "gloss": "and"
+      },
+      {
+        "text": "新鮮！",
+        "kana": "しんせん",
+        "gloss": "fresh"
+      },
+      {
+        "text": "持ってきてくれてありがとう、",
+        "kana": "もってきてくれてありがとう",
+        "gloss": "thanks for bringing (it)"
+      },
+      {
+        "text": "@。#$b#",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "ケント",
+        "kana": "ケント",
+        "gloss": "Kent"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also marker)"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "釣るんだけど、",
+        "kana": "つるんだけど",
+        "gloss": "catches, but"
+      },
+      {
+        "text": "あの人",
+        "kana": "あのひと",
+        "gloss": "he"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ぜんぶ",
+        "kana": "ぜんぶ",
+        "gloss": "all"
+      },
+      {
+        "text": "自分で",
+        "kana": "じぶんで",
+        "gloss": "himself"
+      },
+      {
+        "text": "食べちゃうの！$u",
+        "kana": "たべちゃうの",
+        "gloss": "eats (it)"
+      }
+    ]
+  },
+  "95#5": {
+    "japanese": "いやあ、ははは。$h",
+    "english": "Heh, hahaha.",
+    "segments": [
+      {
+        "text": "いやあ、",
+        "kana": "いやあ",
+        "gloss": "heh"
+      },
+      {
+        "text": "ははは。$h",
+        "kana": "ははは",
+        "gloss": "hahaha"
+      }
+    ]
+  },
+  "95#6": {
+    "japanese": "うーん…バスのキャセロールはおいしかった！パン粉のサクサク感が、天にものぼるほど最高だった…",
+    "english": "Mmm... the bass casserole was delicious! The crispiness of the breading was so good it felt heavenly...",
+    "segments": [
+      {
+        "text": "うーん…",
+        "kana": "うーん",
+        "gloss": "mmm"
+      },
+      {
+        "text": "バス",
+        "kana": "バス",
+        "gloss": "bass"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "キャセロール",
+        "kana": "キャセロール",
+        "gloss": "casserole"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "おいしかった！",
+        "kana": "おいしかった",
+        "gloss": "was delicious"
+      },
+      {
+        "text": "パン粉",
+        "kana": "パンこ",
+        "gloss": "breading"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "サクサク感",
+        "kana": "サクサクかん",
+        "gloss": "crispiness"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "天にものぼるほど",
+        "kana": "てんにものぼるほど",
+        "gloss": "enough to feel heavenly"
+      },
+      {
+        "text": "最高だった…",
+        "kana": "さいこうだった",
+        "gloss": "was the best"
+      }
+    ]
+  },
+  "95#7": {
+    "japanese": "まるで家族の一員になれたみたいな気がした。",
+    "english": "I felt just like I'd become part of the family.",
+    "segments": [
+      {
+        "text": "まるで",
+        "kana": "まるで",
+        "gloss": "just like"
+      },
+      {
+        "text": "家族",
+        "kana": "かぞく",
+        "gloss": "family"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "一員",
+        "kana": "いちいん",
+        "gloss": "member"
+      },
+      {
+        "text": "になれたみたいな",
+        "kana": "になれたみたいな",
+        "gloss": "as if (I) became"
+      },
+      {
+        "text": "気がした。",
+        "kana": "きがした",
+        "gloss": "felt"
+      }
+    ]
+  },
+  "rejectSam#0": {
+    "japanese": "そうか…$s",
+    "english": "I see...",
+    "segments": [
+      {
+        "text": "そうか…$s",
+        "kana": "そうか",
+        "gloss": "I see"
+      }
+    ]
+  },
+  "rejectSam#1": {
+    "japanese": "ごめんな…オレのかんちがいだったんだな。じゃあ、またな。$7",
+    "english": "I'm sorry... I had the wrong idea. Well, see you around.",
+    "segments": [
+      {
+        "text": "ごめんな…",
+        "kana": "ごめんな",
+        "gloss": "sorry"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "my"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(attributive marker)"
+      },
+      {
+        "text": "かんちがいだったんだな。",
+        "kana": "かんちがいだったんだな",
+        "gloss": "was a misunderstanding"
+      },
+      {
+        "text": "じゃあ、",
+        "kana": "じゃあ",
+        "gloss": "well then"
+      },
+      {
+        "text": "また",
+        "kana": "また",
+        "gloss": "again"
+      },
+      {
+        "text": "な。$7",
+        "kana": "な",
+        "gloss": "(you know)"
+      }
+    ]
+  },
+  "stayPut#0": {
+    "japanese": "わかってたさ、オレたちは特別ななにかで結ばれてるんだって…$l",
+    "english": "I knew we were bound together by something special...",
+    "segments": [
+      {
+        "text": "わかってたさ、",
+        "kana": "わかってたさ",
+        "gloss": "I always knew"
+      },
+      {
+        "text": "オレたち",
+        "kana": "おれたち",
+        "gloss": "we"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "特別な",
+        "kana": "とくべつな",
+        "gloss": "special"
+      },
+      {
+        "text": "なにかで",
+        "kana": "なにかで",
+        "gloss": "by something"
+      },
+      {
+        "text": "結ばれてるんだって…$l",
+        "kana": "むすばれてるんだって",
+        "gloss": "were bound together"
+      }
+    ]
+  },
+  "stayPut#1": {
+    "japanese": "今夜のこと、しばらく頭から離れそうにないぜ…$l",
+    "english": "I don't think I'll get tonight out of my head for a while...",
+    "segments": [
+      {
+        "text": "今夜のこと、",
+        "kana": "こんやのこと",
+        "gloss": "tonight"
+      },
+      {
+        "text": "しばらく",
+        "kana": "しばらく",
+        "gloss": "for a while"
+      },
+      {
+        "text": "頭から",
+        "kana": "あたまから",
+        "gloss": "from (my) head"
+      },
+      {
+        "text": "離れそうにないぜ…$l",
+        "kana": "はなれそうにないぜ",
+        "gloss": "doesn't seem like (it will) leave"
+      }
+    ]
+  }
+}

@@ -315,6 +315,10 @@ def parse_line(line):
         if not chunk:
             continue
         bits = SPLIT_FIELD.split(chunk)
+        # text¦gloss: the kana left empty for a kanji-free segment, with its separator dropped
+        # too. With kanji the missing field is ambiguous (kana or gloss?), so that still fails.
+        if len(bits) == 2 and not KANJI.search(bits[0]):
+            bits = [bits[0], "", bits[1]]
         if len(bits) != 3:
             raise ValueError(f"segment {chunk!r} needs text{FIELD}kana{FIELD}gloss")
         text, kana = unesc(bits[0]), " ".join(bits[1].split())
@@ -336,8 +340,9 @@ def parse_line(line):
 # in the wrong places. So an author may leave them out: merge lines the segments up against
 # the source and gives each skipped run to a neighbouring segment.
 
-# dialogue markup: $h $s $1 $q..., %noturn / %fork, and the #...# of a page break
-MARKUP = re.compile(r"\$[A-Za-z0-9]+|%[A-Za-z]+")
+# dialogue markup: $h $s $1 $q..., %noturn / %fork, and the #...# of a page break; plus the
+# item references a gift line carries ([166], [90 88 86 535]), which draw an icon, not a word
+MARKUP = re.compile(r"\$[A-Za-z0-9]+|%[A-Za-z]+|\[[0-9 ]+\]")
 # opening brackets and quotes belong to the word they open, not the one before
 OPENERS = "（(「『【〈《[{“‘"
 # a page break (#$b# / #$e#) followed by more Japanese inside one segment
@@ -396,6 +401,15 @@ def align(source_text, segments):
     if len(folded) > 1 and not japanese(folded[0]["text"]) and attachable(folded[0]["text"]):
         folded[1]["text"] = folded[0]["text"] + folded[1]["text"]
         folded = folded[1:]
+
+    # a segment that *starts* with the previous sentence's leftovers ("…$u#$b#あれ、") just
+    # has them on the wrong side of the boundary; hand them back rather than reject the line
+    for i in range(1, len(folded)):
+        text = folded[i]["text"]
+        cut = max((m.end() for m in re.finditer(r"#\$[be]#", text)), default=0)
+        if cut and attachable(text[:cut]):
+            folded[i - 1]["text"] += text[:cut]
+            folded[i]["text"] = text[cut:]
 
     for seg in folded:
         if BREAK_INSIDE.search(seg["text"]):

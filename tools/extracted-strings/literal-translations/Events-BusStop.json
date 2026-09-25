@@ -1,0 +1,2022 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Events-BusStop.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "4081148#0": {
+    "japanese": "よう、@。来てくれてありがとな。",
+    "english": "Hi @. Thanks for coming.",
+    "segments": [
+      {
+        "text": "よう、",
+        "kana": "よう",
+        "gloss": "hey"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "来てくれて",
+        "kana": "きてくれて",
+        "gloss": "for coming"
+      },
+      {
+        "text": "ありがとな。",
+        "kana": "ありがとな",
+        "gloss": "thanks (casual)"
+      }
+    ]
+  },
+  "4081148#1": {
+    "japanese": "よし、機材はもう積み込んだし…準備はOKだな。",
+    "english": "Well, our gear's loaded already... Looks like everything's set.",
+    "segments": [
+      {
+        "text": "よし、",
+        "kana": "よし",
+        "gloss": "alright"
+      },
+      {
+        "text": "機材",
+        "kana": "きざい",
+        "gloss": "gear"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もう",
+        "kana": "もう",
+        "gloss": "already"
+      },
+      {
+        "text": "積み込んだし…",
+        "kana": "つみこんだし",
+        "gloss": "has loaded already (and)"
+      },
+      {
+        "text": "準備",
+        "kana": "じゅんび",
+        "gloss": "preparations"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "OK",
+        "kana": "OK",
+        "gloss": "(OK, loanword)"
+      },
+      {
+        "text": "だな。",
+        "kana": "だな",
+        "gloss": "is, right"
+      }
+    ]
+  },
+  "4081148#2": {
+    "japanese": "じゃあ、みんな…バスに乗ってくれ！$u",
+    "english": "Alright, everyone... let's get in the bus!$u",
+    "segments": [
+      {
+        "text": "じゃあ、",
+        "kana": "じゃあ",
+        "gloss": "well then"
+      },
+      {
+        "text": "みんな…",
+        "kana": "みんな",
+        "gloss": "everyone"
+      },
+      {
+        "text": "バス",
+        "kana": "バス",
+        "gloss": "bus"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(direction marker)"
+      },
+      {
+        "text": "乗ってくれ！$u",
+        "kana": "のってくれ",
+        "gloss": "get in"
+      }
+    ]
+  },
+  "4081148#3": {
+    "japanese": "（ゴクリ）…めちゃくちゃ緊張してきた。$8",
+    "english": "*gulp*... I'm starting to get really nervous.$8",
+    "segments": [
+      {
+        "text": "（ゴクリ）…",
+        "kana": "ゴクリ",
+        "gloss": "*gulp*"
+      },
+      {
+        "text": "めちゃくちゃ",
+        "kana": "めちゃくちゃ",
+        "gloss": "really"
+      },
+      {
+        "text": "緊張してきた。$8",
+        "kana": "きんちょうしてきた",
+        "gloss": "getting nervous"
+      }
+    ]
+  },
+  "4081148#4": {
+    "japanese": "よし、それじゃあ…いくぜ！$u",
+    "english": "Okay, here we are... wish me luck!$u",
+    "segments": [
+      {
+        "text": "よし、",
+        "kana": "よし",
+        "gloss": "okay"
+      },
+      {
+        "text": "それじゃあ…",
+        "kana": "それじゃあ",
+        "gloss": "well then"
+      },
+      {
+        "text": "いくぜ！$u",
+        "kana": "いくぜ",
+        "gloss": "here goes"
+      }
+    ]
+  },
+  "4081148#5": {
+    "japanese": "やった、ライブ、大成功だったな！ホントにありがとな、@。",
+    "english": "Hey. The show was a great success! Thanks again, @.",
+    "segments": [
+      {
+        "text": "やった、",
+        "kana": "やった",
+        "gloss": "yay"
+      },
+      {
+        "text": "ライブ、",
+        "kana": "ライブ",
+        "gloss": "the show"
+      },
+      {
+        "text": "大成功だったな！",
+        "kana": "だいせいこうだったな",
+        "gloss": "was a great success"
+      },
+      {
+        "text": "ホントに",
+        "kana": "ホントに",
+        "gloss": "really"
+      },
+      {
+        "text": "ありがとな、",
+        "kana": "ありがとな",
+        "gloss": "thanks"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      }
+    ]
+  },
+  "60367#0": {
+    "japanese": "こんにちは！あなたが@だね。#$b#わたしはロビン。地元の大工だよ。ルイス町長から、あなたをあたらしい家まで案内するよう言われたんだ。#$b#町長はここに来てないけど、あなたの到着のためにいろいろ準備してくれてるからね。牧場はすぐそこだよ。案内するからついてきて。",
+    "english": "Hello! You must be @.#$b#I'm Robin, the local carpenter. Mayor Lewis sent me here to fetch you and show you the way to your new home.#$b#He's not here right now, but he's gotten a lot of things ready for your arrival. The farm is right over here. Follow me.",
+    "segments": [
+      {
+        "text": "こんにちは！",
+        "kana": "こんにちは",
+        "gloss": "hello"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "@",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "だね。#$b#",
+        "kana": "だね",
+        "gloss": "right?"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ロビン。",
+        "kana": "ロビン",
+        "gloss": "Robin"
+      },
+      {
+        "text": "地元の",
+        "kana": "じもとの",
+        "gloss": "local"
+      },
+      {
+        "text": "大工",
+        "kana": "だいく",
+        "gloss": "carpenter"
+      },
+      {
+        "text": "だよ。",
+        "kana": "だよ",
+        "gloss": "(is, casual)"
+      },
+      {
+        "text": "ルイス町長",
+        "kana": "ルイスちょうちょう",
+        "gloss": "Mayor Lewis"
+      },
+      {
+        "text": "から、",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "あたらしい",
+        "kana": "あたらしい",
+        "gloss": "new"
+      },
+      {
+        "text": "家",
+        "kana": "いえ",
+        "gloss": "house"
+      },
+      {
+        "text": "まで",
+        "kana": "まで",
+        "gloss": "to"
+      },
+      {
+        "text": "案内する",
+        "kana": "あんないする",
+        "gloss": "guide"
+      },
+      {
+        "text": "よう",
+        "kana": "よう",
+        "gloss": "so that"
+      },
+      {
+        "text": "言われたんだ。#$b#",
+        "kana": "いわれたんだ",
+        "gloss": "was told"
+      },
+      {
+        "text": "町長",
+        "kana": "ちょうちょう",
+        "gloss": "mayor"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "来てない",
+        "kana": "きてない",
+        "gloss": "hasn't come"
+      },
+      {
+        "text": "けど、",
+        "kana": "けど",
+        "gloss": "but"
+      },
+      {
+        "text": "あなたの",
+        "kana": "あなたの",
+        "gloss": "your"
+      },
+      {
+        "text": "到着",
+        "kana": "とうちゃく",
+        "gloss": "arrival"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "ため",
+        "kana": "ため",
+        "gloss": "for the sake"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(purpose marker)"
+      },
+      {
+        "text": "いろいろ",
+        "kana": "いろいろ",
+        "gloss": "various"
+      },
+      {
+        "text": "準備してくれてる",
+        "kana": "じゅんびしてくれてる",
+        "gloss": "is preparing (for you)"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "because"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-ending particle)"
+      },
+      {
+        "text": "牧場",
+        "kana": "ぼくじょう",
+        "gloss": "farm"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "すぐ",
+        "kana": "すぐ",
+        "gloss": "right"
+      },
+      {
+        "text": "そこ",
+        "kana": "そこ",
+        "gloss": "there"
+      },
+      {
+        "text": "だよ。",
+        "kana": "だよ",
+        "gloss": "(is, casual)"
+      },
+      {
+        "text": "案内する",
+        "kana": "あんないする",
+        "gloss": "guide (you)"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "so"
+      },
+      {
+        "text": "ついてきて。",
+        "kana": "ついてきて",
+        "gloss": "follow me"
+      }
+    ]
+  },
+  "60367#1": {
+    "japanese": "ここが%farm牧場だよ。",
+    "english": "This is %farm farm.",
+    "segments": [
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "が%farm",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "牧場",
+        "kana": "ぼくじょう",
+        "gloss": "farm"
+      },
+      {
+        "text": "だよ。",
+        "kana": "だよ",
+        "gloss": "(is, casual)"
+      }
+    ]
+  },
+  "60367#2": {
+    "japanese": "どうしたの？#$b#そうだね、ちょびっと草木がしげっちゃってるけど、このゴチャゴチャの下にはすごくいい土があるんだよ!#$b#まあ、ちょっと手入れして片づければすぐきれいになるって。",
+    "english": "What's the matter?#$b#Sure, it's a bit overgrown, but there's some good soil underneath that mess!#$b#With a little dedication you'll have it cleaned up in no time.",
+    "segments": [
+      {
+        "text": "どうした",
+        "kana": "どうした",
+        "gloss": "what's wrong"
+      },
+      {
+        "text": "の？#$b#",
+        "kana": "の",
+        "gloss": "(question marker)"
+      },
+      {
+        "text": "そうだね、",
+        "kana": "そうだね",
+        "gloss": "that's right"
+      },
+      {
+        "text": "ちょびっと",
+        "kana": "ちょびっと",
+        "gloss": "a little"
+      },
+      {
+        "text": "草木",
+        "kana": "くさき",
+        "gloss": "plants/weeds"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "しげっちゃってる",
+        "kana": "しげっちゃってる",
+        "gloss": "has grown thick"
+      },
+      {
+        "text": "けど、",
+        "kana": "けど",
+        "gloss": "but"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "ゴチャゴチャ",
+        "kana": "ゴチャゴチャ",
+        "gloss": "mess"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "下",
+        "kana": "した",
+        "gloss": "underneath"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "すごく",
+        "kana": "すごく",
+        "gloss": "really"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "土",
+        "kana": "つち",
+        "gloss": "soil"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "there is"
+      },
+      {
+        "text": "ん",
+        "kana": "ん",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "だよ!#$b#",
+        "kana": "だよ",
+        "gloss": "(is, casual)"
+      },
+      {
+        "text": "まあ、",
+        "kana": "まあ",
+        "gloss": "well"
+      },
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a little"
+      },
+      {
+        "text": "手入れして",
+        "kana": "ていれして",
+        "gloss": "tending to it"
+      },
+      {
+        "text": "片づければ",
+        "kana": "かたづければ",
+        "gloss": "if (you) clean up"
+      },
+      {
+        "text": "すぐ",
+        "kana": "すぐ",
+        "gloss": "soon"
+      },
+      {
+        "text": "きれいに",
+        "kana": "きれいに",
+        "gloss": "clean"
+      },
+      {
+        "text": "なる",
+        "kana": "なる",
+        "gloss": "become"
+      },
+      {
+        "text": "って。",
+        "kana": "って",
+        "gloss": "(quotative)"
+      }
+    ]
+  },
+  "60367#3": {
+    "japanese": "…さあ、これがあなたの新しい家だよ！$h",
+    "english": "...And here we are, your new home.$h",
+    "segments": [
+      {
+        "text": "…さあ、",
+        "kana": "さあ",
+        "gloss": "now"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あなたの",
+        "kana": "あなたの",
+        "gloss": "your"
+      },
+      {
+        "text": "新しい",
+        "kana": "あたらしい",
+        "gloss": "new"
+      },
+      {
+        "text": "家",
+        "kana": "いえ",
+        "gloss": "house"
+      },
+      {
+        "text": "だよ！$h",
+        "kana": "だよ",
+        "gloss": "(is, casual)"
+      }
+    ]
+  },
+  "60367#4": {
+    "japanese": "ああ、きみがあたらしい牧場主か！$h",
+    "english": "Ah, the new farmer!$h",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "ah"
+      },
+      {
+        "text": "きみ",
+        "kana": "きみ",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あたらしい",
+        "kana": "あたらしい",
+        "gloss": "new"
+      },
+      {
+        "text": "牧場主",
+        "kana": "ぼくじょうぬし",
+        "gloss": "farm owner"
+      },
+      {
+        "text": "か！$h",
+        "kana": "か",
+        "gloss": "(exclamation particle)"
+      }
+    ]
+  },
+  "60367#5": {
+    "japanese": "ようこそ！わたしはルイス、ペリカンタウンの町長だ。#$b#いやあ、みんなからきみのことを聞かれるよ。#$b#あたらしく人が引っこしてくるなんて、ここではそうないからね。ちょっとした大イベントだよ！",
+    "english": "Welcome! I'm Lewis, Mayor of Pelican Town.#$b#You know, everyone's been asking about you.#$b#It's not every day that someone new moves in. It's quite a big deal!",
+    "segments": [
+      {
+        "text": "ようこそ！",
+        "kana": "ようこそ",
+        "gloss": "welcome"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ルイス、",
+        "kana": "ルイス",
+        "gloss": "Lewis"
+      },
+      {
+        "text": "ペリカンタウン",
+        "kana": "ペリカンタウン",
+        "gloss": "Pelican Town"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "町長",
+        "kana": "ちょうちょう",
+        "gloss": "mayor"
+      },
+      {
+        "text": "だ。#$b#",
+        "kana": "だ",
+        "gloss": "(is)"
+      },
+      {
+        "text": "いやあ、",
+        "kana": "いやあ",
+        "gloss": "well"
+      },
+      {
+        "text": "みんな",
+        "kana": "みんな",
+        "gloss": "everyone"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from"
+      },
+      {
+        "text": "きみ",
+        "kana": "きみ",
+        "gloss": "you"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "about"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "聞かれる",
+        "kana": "きかれる",
+        "gloss": "am asked"
+      },
+      {
+        "text": "よ。#$b#",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "あたらしく",
+        "kana": "あたらしく",
+        "gloss": "newly"
+      },
+      {
+        "text": "人",
+        "kana": "ひと",
+        "gloss": "person"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "引っこしてくる",
+        "kana": "ひっこしてくる",
+        "gloss": "move in"
+      },
+      {
+        "text": "なんて、",
+        "kana": "なんて",
+        "gloss": "such a thing as"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "そう",
+        "kana": "そう",
+        "gloss": "that way"
+      },
+      {
+        "text": "ない",
+        "kana": "ない",
+        "gloss": "there isn't"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "because"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-ending particle)"
+      },
+      {
+        "text": "ちょっとした",
+        "kana": "ちょっとした",
+        "gloss": "quite a"
+      },
+      {
+        "text": "大イベント",
+        "kana": "だいイベント",
+        "gloss": "big event"
+      },
+      {
+        "text": "だよ！",
+        "kana": "だよ",
+        "gloss": "(is, casual)"
+      }
+    ]
+  },
+  "60367#6": {
+    "japanese": "さて…ここが、きみのおじいさんがむかし住んでいた小屋だよ。#$b#いい家だよ…とても「田舎らしい」だろ。",
+    "english": "So... You're moving into your grandfather's old cottage.#$b#It's a good house... very 'rustic'.",
+    "segments": [
+      {
+        "text": "さて…",
+        "kana": "さて",
+        "gloss": "well now"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here"
+      },
+      {
+        "text": "が、",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "きみの",
+        "kana": "きみの",
+        "gloss": "your"
+      },
+      {
+        "text": "おじいさん",
+        "kana": "おじいさん",
+        "gloss": "grandfather"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "むかし",
+        "kana": "むかし",
+        "gloss": "long ago"
+      },
+      {
+        "text": "住んでいた",
+        "kana": "すんでいた",
+        "gloss": "lived in"
+      },
+      {
+        "text": "小屋",
+        "kana": "こや",
+        "gloss": "cottage"
+      },
+      {
+        "text": "だよ。#$b#",
+        "kana": "だよ",
+        "gloss": "(is, casual)"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "家",
+        "kana": "いえ",
+        "gloss": "house"
+      },
+      {
+        "text": "だよ…",
+        "kana": "だよ",
+        "gloss": "(is, casual)"
+      },
+      {
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very"
+      },
+      {
+        "text": "「田舎らしい」",
+        "kana": "いなからしい",
+        "gloss": "rustic"
+      },
+      {
+        "text": "だろ。",
+        "kana": "だろ",
+        "gloss": "right?"
+      }
+    ]
+  },
+  "60367#7": {
+    "japanese": "田舎らしい？それを言うなら…$4#$b#「田舎くさい」のほうがしっくりくるんじゃない？$4",
+    "english": "Rustic? That's one way to put it... $4#$b#'Crusty' might be a little more apt, though.$4",
+    "segments": [
+      {
+        "text": "田舎らしい？",
+        "kana": "いなからしい",
+        "gloss": "rustic"
+      },
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "言うなら…$4#$b#",
+        "kana": "いうなら",
+        "gloss": "if you're going to say"
+      },
+      {
+        "text": "「田舎くさい」",
+        "kana": "いなかくさい",
+        "gloss": "crusty/countrified"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominalizer)"
+      },
+      {
+        "text": "ほう",
+        "kana": "ほう",
+        "gloss": "way"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "しっくりくる",
+        "kana": "しっくりくる",
+        "gloss": "fits better"
+      },
+      {
+        "text": "ん",
+        "kana": "ん",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "じゃない？$4",
+        "kana": "じゃない",
+        "gloss": "isn't it"
+      }
+    ]
+  },
+  "60367#8": {
+    "japanese": "こらっ！",
+    "english": "Rude!",
+    "segments": [
+      {
+        "text": "こらっ！",
+        "kana": "こらっ",
+        "gloss": "hey!"
+      }
+    ]
+  },
+  "60367#9": {
+    "japanese": "聞くんじゃない、@。彼女はああやって不満をもたせて、きみが彼女に増改築をたのみたくなるようしむけてるんだ。$u",
+    "english": "Don't listen to her, @. She's just trying to make you dissatisfied so that you buy one of her house upgrades.$u",
+    "segments": [
+      {
+        "text": "聞くんじゃない、",
+        "kana": "きくんじゃない",
+        "gloss": "don't listen"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "彼女",
+        "kana": "かのじょ",
+        "gloss": "she"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ああやって",
+        "kana": "ああやって",
+        "gloss": "like that"
+      },
+      {
+        "text": "不満",
+        "kana": "ふまん",
+        "gloss": "dissatisfaction"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "もたせて、",
+        "kana": "もたせて",
+        "gloss": "making (you) have"
+      },
+      {
+        "text": "きみ",
+        "kana": "きみ",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "彼女",
+        "kana": "かのじょ",
+        "gloss": "her"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(indirect object marker)"
+      },
+      {
+        "text": "増改築",
+        "kana": "ぞうかいちく",
+        "gloss": "renovation"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "たのみたく",
+        "kana": "たのみたく",
+        "gloss": "want to request"
+      },
+      {
+        "text": "なる",
+        "kana": "なる",
+        "gloss": "become"
+      },
+      {
+        "text": "よう",
+        "kana": "よう",
+        "gloss": "so that"
+      },
+      {
+        "text": "しむけてる",
+        "kana": "しむけてる",
+        "gloss": "is steering (you)"
+      },
+      {
+        "text": "ん",
+        "kana": "ん",
+        "gloss": "(explanatory)"
+      },
+      {
+        "text": "だ。$u",
+        "kana": "だ",
+        "gloss": "(is)"
+      }
+    ]
+  },
+  "60367#10": {
+    "japanese": "むむむ…",
+    "english": "Hmmph.",
+    "segments": [
+      {
+        "text": "むむむ…",
+        "kana": "むむむ",
+        "gloss": "hmmph"
+      }
+    ]
+  },
+  "60367#11": {
+    "japanese": "まあ、それはともかく…長旅でつかれただろう。きょうはもう休むといい。#$b#明日はすこし町を歩きまわって、みんなに自己紹介をするといい。#$b#町のみんなもよろこぶだろう。",
+    "english": "Anyway... You must be tired from the long journey. You should get some rest.#$b#Tomorrow you ought to explore the town a bit and introduce yourself.#$b#The townspeople would appreciate that.",
+    "segments": [
+      {
+        "text": "まあ、",
+        "kana": "まあ",
+        "gloss": "well"
+      },
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "ともかく…",
+        "kana": "ともかく",
+        "gloss": "anyway"
+      },
+      {
+        "text": "長旅",
+        "kana": "ながたび",
+        "gloss": "long journey"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(cause marker)"
+      },
+      {
+        "text": "つかれた",
+        "kana": "つかれた",
+        "gloss": "tired"
+      },
+      {
+        "text": "だろう。",
+        "kana": "だろう",
+        "gloss": "probably"
+      },
+      {
+        "text": "きょう",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "もう",
+        "kana": "もう",
+        "gloss": "already"
+      },
+      {
+        "text": "休むといい。#$b#",
+        "kana": "やすむといい",
+        "gloss": "should rest"
+      },
+      {
+        "text": "明日",
+        "kana": "あした",
+        "gloss": "tomorrow"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "すこし",
+        "kana": "すこし",
+        "gloss": "a little"
+      },
+      {
+        "text": "町",
+        "kana": "まち",
+        "gloss": "town"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "歩きまわって、",
+        "kana": "あるきまわって",
+        "gloss": "walk around"
+      },
+      {
+        "text": "みんな",
+        "kana": "みんな",
+        "gloss": "everyone"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(indirect object marker)"
+      },
+      {
+        "text": "自己紹介",
+        "kana": "じこしょうかい",
+        "gloss": "self-introduction"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "するといい。#$b#",
+        "kana": "するといい",
+        "gloss": "should do"
+      },
+      {
+        "text": "町",
+        "kana": "まち",
+        "gloss": "town"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "みんな",
+        "kana": "みんな",
+        "gloss": "everyone"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "also"
+      },
+      {
+        "text": "よろこぶ",
+        "kana": "よろこぶ",
+        "gloss": "will be happy"
+      },
+      {
+        "text": "だろう。",
+        "kana": "だろう",
+        "gloss": "probably"
+      }
+    ]
+  },
+  "60367#12": {
+    "japanese": "おっと、忘れるところだった。なにか売りたいものがあったら、その出荷箱に入れておいてくれ。夜のあいだに、わたしが引き取っておくからね。#$b#じゃあ、がんばってな！",
+    "english": "Oh, I almost forgot. If you have anything to sell, just place it in this box here. I'll come by during the night to collect it.#$b#Well... Good luck!",
+    "segments": [
+      {
+        "text": "おっと、",
+        "kana": "おっと",
+        "gloss": "oops"
+      },
+      {
+        "text": "忘れるところだった。",
+        "kana": "わすれるところだった",
+        "gloss": "almost forgot"
+      },
+      {
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "売りたい",
+        "kana": "うりたい",
+        "gloss": "want to sell"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "あったら、",
+        "kana": "あったら",
+        "gloss": "if there is"
+      },
+      {
+        "text": "その",
+        "kana": "その",
+        "gloss": "that"
+      },
+      {
+        "text": "出荷箱",
+        "kana": "しゅっかばこ",
+        "gloss": "shipping box"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "入れておいてくれ。",
+        "kana": "いれておいてくれ",
+        "gloss": "put it in (for me)"
+      },
+      {
+        "text": "夜",
+        "kana": "よる",
+        "gloss": "night"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "あいだ",
+        "kana": "あいだ",
+        "gloss": "during"
+      },
+      {
+        "text": "に、",
+        "kana": "に",
+        "gloss": "(time marker)"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "引き取っておく",
+        "kana": "ひきとっておく",
+        "gloss": "will come collect"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "because"
+      },
+      {
+        "text": "ね。#$b#",
+        "kana": "ね",
+        "gloss": "(sentence-ending particle)"
+      },
+      {
+        "text": "じゃあ、",
+        "kana": "じゃあ",
+        "gloss": "well then"
+      },
+      {
+        "text": "がんばってな！",
+        "kana": "がんばってな",
+        "gloss": "good luck"
+      }
+    ]
+  },
+  "9581348#0": {
+    "japanese": "よう、来たか！$6#$b#来てくれてうれしいぜ。さあ、そろそろ行かねえと…$6",
+    "english": "Hey, there you are!$6#$b#I'm glad you decided to come. We should get going...$6",
+    "segments": [
+      {
+        "text": "よう、",
+        "kana": "よう",
+        "gloss": "hey"
+      },
+      {
+        "text": "来たか！$6#$b#",
+        "kana": "きたか",
+        "gloss": "you came"
+      },
+      {
+        "text": "来てくれて",
+        "kana": "きてくれて",
+        "gloss": "for coming"
+      },
+      {
+        "text": "うれしい",
+        "kana": "うれしい",
+        "gloss": "glad"
+      },
+      {
+        "text": "ぜ。",
+        "kana": "ぜ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "さあ、",
+        "kana": "さあ",
+        "gloss": "come on"
+      },
+      {
+        "text": "そろそろ",
+        "kana": "そろそろ",
+        "gloss": "soon"
+      },
+      {
+        "text": "行かねえと…$6",
+        "kana": "いかねえと",
+        "gloss": "gotta go"
+      }
+    ]
+  },
+  "9581348#1": {
+    "japanese": "そろそろ着くぞ…",
+    "english": "We're almost there...",
+    "segments": [
+      {
+        "text": "そろそろ",
+        "kana": "そろそろ",
+        "gloss": "soon"
+      },
+      {
+        "text": "着く",
+        "kana": "つく",
+        "gloss": "arrive"
+      },
+      {
+        "text": "ぞ…",
+        "kana": "ぞ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "9581348#2": {
+    "japanese": "（ゴクリ）…緊張してきたぜ…$10",
+    "english": "*gulp* ...pre-game nerves...$10",
+    "segments": [
+      {
+        "text": "（ゴクリ）…",
+        "kana": "ゴクリ",
+        "gloss": "*gulp*"
+      },
+      {
+        "text": "緊張してきた",
+        "kana": "きんちょうしてきた",
+        "gloss": "getting nervous"
+      },
+      {
+        "text": "ぜ…$10",
+        "kana": "ぜ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "9581348#3": {
+    "japanese": "ほら、冷えてるぜ。やるよ。",
+    "english": "Here, I got you another cold one...",
+    "segments": [
+      {
+        "text": "ほら、",
+        "kana": "ほら",
+        "gloss": "here"
+      },
+      {
+        "text": "冷えてる",
+        "kana": "ひえてる",
+        "gloss": "cold"
+      },
+      {
+        "text": "ぜ。",
+        "kana": "ぜ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "やる",
+        "kana": "やる",
+        "gloss": "give (to you)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "9581348#4": {
+    "japanese": "なあ、ずっと言おうと思ってたんだけど…$6#$b#沈み込んでヤケになってたオレに付き合ってくれて… ありがとよ…$6#$b#おまえがいてくれて、本当によかったよ。$6",
+    "english": "Hey, I've been meaning to say... $6#$b#Thanks for sticking with me through everything... my anxiety, depression... you know...$6#$b#You've been a really good friend to me.$6",
+    "segments": [
+      {
+        "text": "なあ、",
+        "kana": "なあ",
+        "gloss": "hey"
+      },
+      {
+        "text": "ずっと",
+        "kana": "ずっと",
+        "gloss": "all along"
+      },
+      {
+        "text": "言おうと思ってたんだけど…$6#$b#",
+        "kana": "いおうとおもってたんだけど",
+        "gloss": "had been meaning to say (but)"
+      },
+      {
+        "text": "沈み込んで",
+        "kana": "しずみこんで",
+        "gloss": "being down"
+      },
+      {
+        "text": "ヤケになってた",
+        "kana": "ヤケになってた",
+        "gloss": "had become desperate"
+      },
+      {
+        "text": "オレ",
+        "kana": "オレ",
+        "gloss": "me"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(indirect object marker)"
+      },
+      {
+        "text": "付き合ってくれて… ",
+        "kana": "つきあってくれて",
+        "gloss": "for sticking with (me)"
+      },
+      {
+        "text": "ありがと",
+        "kana": "ありがと",
+        "gloss": "thanks"
+      },
+      {
+        "text": "よ…$6#$b#",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "おまえ",
+        "kana": "おまえ",
+        "gloss": "you"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "いてくれて、",
+        "kana": "いてくれて",
+        "gloss": "for being there"
+      },
+      {
+        "text": "本当に",
+        "kana": "ほんとうに",
+        "gloss": "really"
+      },
+      {
+        "text": "よかった",
+        "kana": "よかった",
+        "gloss": "it was good"
+      },
+      {
+        "text": "よ。$6",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "9581348#5": {
+    "japanese": "そういや、グリッドボールの観戦はこれがはじめてなんだっけか？",
+    "english": "Anyway...  it's your first gridball game, huh?",
+    "segments": [
+      {
+        "text": "そういや、",
+        "kana": "そういや",
+        "gloss": "by the way"
+      },
+      {
+        "text": "グリッドボール",
+        "kana": "グリッドボール",
+        "gloss": "gridball"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "観戦",
+        "kana": "かんせん",
+        "gloss": "watching (the game)"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "はじめて",
+        "kana": "はじめて",
+        "gloss": "first time"
+      },
+      {
+        "text": "なんだっけ",
+        "kana": "なんだっけ",
+        "gloss": "was it"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question marker)"
+      }
+    ]
+  },
+  "9581348#6": {
+    "japanese": "$q -1 null#感想を聞かせてくれよ。#$r -1 10 event_stadium1#すごくさわがしいね。静かなところに住んでてよかったよ。#$r -1 10 event_stadium2#楽しいね！これにくらべたら、ペリカンタウンなんて退屈だね。",
+    "english": "$q -1 null#Well, what do you think?#$r -1 10 event_stadium1#Noisy... It makes me appreciate how peaceful it is back home.#$r -1 10 event_stadium2#Fun... Pelican Town seems really boring in comparison.",
+    "segments": [
+      {
+        "text": "$q -1 null#",
+        "kana": "1 null",
+        "gloss": "(question prompt marker)"
+      },
+      {
+        "text": "感想",
+        "kana": "かんそう",
+        "gloss": "thoughts"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "聞かせて",
+        "kana": "きかせて",
+        "gloss": "tell me"
+      },
+      {
+        "text": "くれ",
+        "kana": "くれ",
+        "gloss": "(for me)"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "#$r -1 10 event_stadium1#",
+        "kana": "1 10 event stadium1",
+        "gloss": "(answer option 1 marker)"
+      },
+      {
+        "text": "すごく",
+        "kana": "すごく",
+        "gloss": "really"
+      },
+      {
+        "text": "さわがしい",
+        "kana": "さわがしい",
+        "gloss": "noisy"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(sentence-ending particle)"
+      },
+      {
+        "text": "静かな",
+        "kana": "しずかな",
+        "gloss": "quiet"
+      },
+      {
+        "text": "ところ",
+        "kana": "ところ",
+        "gloss": "place"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)"
+      },
+      {
+        "text": "住んでて",
+        "kana": "すんでて",
+        "gloss": "living"
+      },
+      {
+        "text": "よかった",
+        "kana": "よかった",
+        "gloss": "good"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis particle)"
+      },
+      {
+        "text": "#$r -1 10 event_stadium2#",
+        "kana": "1 10 event stadium2",
+        "gloss": "(answer option 2 marker)"
+      },
+      {
+        "text": "楽しい",
+        "kana": "たのしい",
+        "gloss": "fun"
+      },
+      {
+        "text": "ね！",
+        "kana": "ね",
+        "gloss": "(sentence-ending particle)"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(comparison marker)"
+      },
+      {
+        "text": "くらべたら、",
+        "kana": "くらべたら",
+        "gloss": "compared to"
+      },
+      {
+        "text": "ペリカンタウン",
+        "kana": "ペリカンタウン",
+        "gloss": "Pelican Town"
+      },
+      {
+        "text": "なんて",
+        "kana": "なんて",
+        "gloss": "such a thing"
+      },
+      {
+        "text": "退屈",
+        "kana": "たいくつ",
+        "gloss": "boring"
+      },
+      {
+        "text": "だね。",
+        "kana": "だね",
+        "gloss": "is, right"
+      }
+    ]
+  },
+  "9581348#7": {
+    "japanese": "だーっ！！見ろ、トンネラーズがボールを取ったぞ！$10",
+    "english": "Gahh!! Look, the Tunnelers are on the attack!$10",
+    "segments": [
+      {
+        "text": "だーっ！！",
+        "kana": "だーっ",
+        "gloss": "gahh"
+      },
+      {
+        "text": "見ろ、",
+        "kana": "みろ",
+        "gloss": "look"
+      },
+      {
+        "text": "トンネラーズ",
+        "kana": "トンネラーズ",
+        "gloss": "Tunnelers"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "ボール",
+        "kana": "ボール",
+        "gloss": "ball"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "取った",
+        "kana": "とった",
+        "gloss": "took"
+      },
+      {
+        "text": "ぞ！$10",
+        "kana": "ぞ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "9581348#8": {
+    "japanese": "ゴールしたぞ！！",
+    "english": "Goal!!",
+    "segments": [
+      {
+        "text": "ゴールした",
+        "kana": "ゴールした",
+        "gloss": "scored a goal"
+      },
+      {
+        "text": "ぞ！！",
+        "kana": "ぞ",
+        "gloss": "(emphasis particle)"
+      }
+    ]
+  },
+  "9581348#9": {
+    "japanese": "やった！",
+    "english": "Goal!",
+    "segments": [
+      {
+        "text": "やった！",
+        "kana": "やった",
+        "gloss": "yay"
+      }
+    ]
+  },
+  "9581348#10": {
+    "japanese": "うわっと！…$10",
+    "english": "Oh!...$10",
+    "segments": [
+      {
+        "text": "うわっと！…$10",
+        "kana": "うわっと",
+        "gloss": "whoa"
+      }
+    ]
+  },
+  "9581348#11": {
+    "japanese": "あー…わりい。つい調子にのっちまって。$10#$b#ちょっと飲みすぎたかもな…",
+    "english": "Um... Sorry... I got carried away there.$10#$b#Maybe I had one too many...",
+    "segments": [
+      {
+        "text": "あー…",
+        "kana": "あー",
+        "gloss": "um"
+      },
+      {
+        "text": "わりい。",
+        "kana": "わりい",
+        "gloss": "sorry"
+      },
+      {
+        "text": "つい",
+        "kana": "つい",
+        "gloss": "(unintentionally)"
+      },
+      {
+        "text": "調子にのっちまって。$10#$b#",
+        "kana": "ちょうしにのっちまって",
+        "gloss": "got carried away"
+      },
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a little"
+      },
+      {
+        "text": "飲みすぎた",
+        "kana": "のみすぎた",
+        "gloss": "drank too much"
+      },
+      {
+        "text": "かも",
+        "kana": "かも",
+        "gloss": "maybe"
+      },
+      {
+        "text": "な…",
+        "kana": "な",
+        "gloss": "(sentence-ending particle)"
+      }
+    ]
+  },
+  "9581348#12": {
+    "japanese": "まあ、きょうの試合は文句なしに最高だったな。$l",
+    "english": "Well... that was definitely a good game.$l",
+    "segments": [
+      {
+        "text": "まあ、",
+        "kana": "まあ",
+        "gloss": "well"
+      },
+      {
+        "text": "きょう",
+        "kana": "きょう",
+        "gloss": "today"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "試合",
+        "kana": "しあい",
+        "gloss": "game"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "文句なしに",
+        "kana": "もんくなしに",
+        "gloss": "without complaint"
+      },
+      {
+        "text": "最高",
+        "kana": "さいこう",
+        "gloss": "great"
+      },
+      {
+        "text": "だった",
+        "kana": "だった",
+        "gloss": "was"
+      },
+      {
+        "text": "な。$l",
+        "kana": "な",
+        "gloss": "(sentence-ending particle)"
+      }
+    ]
+  },
+  "9581348#13": {
+    "japanese": "いやあ、よかった…こっちの勝ちだったしな。$l",
+    "english": "Oh, yeah... and we won, too.$l",
+    "segments": [
+      {
+        "text": "いやあ、",
+        "kana": "いやあ",
+        "gloss": "oh yeah"
+      },
+      {
+        "text": "よかった…",
+        "kana": "よかった",
+        "gloss": "good"
+      },
+      {
+        "text": "こっち",
+        "kana": "こっち",
+        "gloss": "our side"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive marker)"
+      },
+      {
+        "text": "勝ち",
+        "kana": "かち",
+        "gloss": "win"
+      },
+      {
+        "text": "だった",
+        "kana": "だった",
+        "gloss": "was"
+      },
+      {
+        "text": "し",
+        "kana": "し",
+        "gloss": "(and)"
+      },
+      {
+        "text": "な。$l",
+        "kana": "な",
+        "gloss": "(sentence-ending particle)"
+      }
+    ]
+  },
+  "9581348#14": {
+    "japanese": "それじゃ…またな。$6",
+    "english": "Well... see you soon.$6",
+    "segments": [
+      {
+        "text": "それじゃ…",
+        "kana": "それじゃ",
+        "gloss": "well then"
+      },
+      {
+        "text": "また",
+        "kana": "また",
+        "gloss": "again"
+      },
+      {
+        "text": "な。$6",
+        "kana": "な",
+        "gloss": "(sentence-ending particle)"
+      }
+    ]
+  }
+}

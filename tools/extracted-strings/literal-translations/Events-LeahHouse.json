@@ -1,0 +1,1941 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Events-LeahHouse.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "50#0": {
+    "japanese": "やあ、@じゃない！入って入って。",
+    "english": "Oh, it's you, @! Come in, come in.",
+    "segments": [
+      {
+        "text": "やあ、",
+        "kana": "やあ",
+        "gloss": "hey"
+      },
+      {
+        "text": "@",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "じゃない！",
+        "kana": "じゃない",
+        "gloss": "isn't it"
+      },
+      {
+        "text": "入って",
+        "kana": "いって",
+        "gloss": "come in"
+      },
+      {
+        "text": "入って。",
+        "kana": "いって",
+        "gloss": "come in"
+      }
+    ]
+  },
+  "50#1": {
+    "japanese": "いまはこの彫刻を彫ってたんだ。",
+    "english": "I'm working on this sculpture right now.",
+    "segments": [
+      {
+        "text": "いま",
+        "kana": "いま",
+        "gloss": "now"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "彫刻",
+        "kana": "ちょうこく",
+        "gloss": "sculpture"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "彫ってたんだ。",
+        "kana": "ほってたんだ",
+        "gloss": "was carving"
+      }
+    ]
+  },
+  "50#2": {
+    "japanese": "こっち来て。近くで見ていきなよ。",
+    "english": "Come here. Take a closer look.",
+    "segments": [
+      {
+        "text": "こっち",
+        "kana": "こっち",
+        "gloss": "this way"
+      },
+      {
+        "text": "来て。",
+        "kana": "きて",
+        "gloss": "come"
+      },
+      {
+        "text": "近くで",
+        "kana": "ちかくで",
+        "gloss": "up close"
+      },
+      {
+        "text": "見ていきなよ。",
+        "kana": "みていきなよ",
+        "gloss": "go ahead and look"
+      }
+    ]
+  },
+  "50#3": {
+    "japanese": "わかる？木のなかの、本当のすがたを削りだしてるんだよ。",
+    "english": "Do you understand? I'm carving the true form out from within the wood.",
+    "segments": [
+      {
+        "text": "わかる？",
+        "kana": "わかる",
+        "gloss": "do you understand"
+      },
+      {
+        "text": "木の",
+        "kana": "きの",
+        "gloss": "of the wood"
+      },
+      {
+        "text": "なかの、",
+        "kana": "なかの",
+        "gloss": "inside"
+      },
+      {
+        "text": "本当の",
+        "kana": "ほんとうの",
+        "gloss": "true"
+      },
+      {
+        "text": "すがたを",
+        "kana": "すがたを",
+        "gloss": "form"
+      },
+      {
+        "text": "削りだしてるんだよ。",
+        "kana": "けずりだしてるんだよ",
+        "gloss": "carving out"
+      }
+    ]
+  },
+  "50#4": {
+    "japanese": "$q -1 null#いったん外側をはぎとれば、内側から本来のすがたが見えてくるんだ…#$r -1 0 event_sculpt1#人間とおなじだね。#$r -1 0 event_sculpt2#削るより、加工してないそのままの木が好きだな。#$r -1 -100 event_sculpt3#（ねこなで声で）ねえ、キスしていい？",
+    "english": "$q -1 null#Once you strip away the outer layer, the true form starts to show from within...#$r -1 0 event_sculpt1#It's the same with people.#$r -1 0 event_sculpt2#Rather than carving, I like unworked wood as it is.#$r -1 -100 event_sculpt3#(in a coy voice) Hey, can I have a kiss?",
+    "segments": [
+      {
+        "text": "$q -1 null#",
+        "kana": "1 null",
+        "gloss": ""
+      },
+      {
+        "text": "いったん",
+        "kana": "いったん",
+        "gloss": "once"
+      },
+      {
+        "text": "外側を",
+        "kana": "そとがわを",
+        "gloss": "the outer layer"
+      },
+      {
+        "text": "はぎとれば、",
+        "kana": "はぎとれば",
+        "gloss": "if you strip away"
+      },
+      {
+        "text": "内側から",
+        "kana": "うちがわから",
+        "gloss": "from the inside"
+      },
+      {
+        "text": "本来の",
+        "kana": "ほんらいの",
+        "gloss": "true"
+      },
+      {
+        "text": "すがた",
+        "kana": "すがた",
+        "gloss": "form"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "見えてくるんだ…",
+        "kana": "みえてくるんだ",
+        "gloss": "starts to become visible"
+      },
+      {
+        "text": "#$r -1 0 event_sculpt1#",
+        "kana": "1 0 event sculpt1",
+        "gloss": ""
+      },
+      {
+        "text": "人間と",
+        "kana": "にんげんと",
+        "gloss": "like a person"
+      },
+      {
+        "text": "おなじだね。",
+        "kana": "おなじだね",
+        "gloss": "it's the same"
+      },
+      {
+        "text": "#$r -1 0 event_sculpt2#",
+        "kana": "1 0 event sculpt2",
+        "gloss": ""
+      },
+      {
+        "text": "削るより、",
+        "kana": "けずるより",
+        "gloss": "rather than carving"
+      },
+      {
+        "text": "加工してない",
+        "kana": "かこうしてない",
+        "gloss": "unworked"
+      },
+      {
+        "text": "そのままの",
+        "kana": "そのままの",
+        "gloss": "as-is"
+      },
+      {
+        "text": "木が",
+        "kana": "きが",
+        "gloss": "wood"
+      },
+      {
+        "text": "好きだな。",
+        "kana": "すきだな",
+        "gloss": "I like"
+      },
+      {
+        "text": "#$r -1 -100 event_sculpt3#（",
+        "kana": "1 100 event sculpt3",
+        "gloss": ""
+      },
+      {
+        "text": "ねこなで声で）",
+        "kana": "ねこなでごえで",
+        "gloss": "in a coy/sweet voice"
+      },
+      {
+        "text": "ねえ、",
+        "kana": "ねえ",
+        "gloss": "hey"
+      },
+      {
+        "text": "キスしていい？",
+        "kana": "きすしていい",
+        "gloss": "can I have a kiss"
+      }
+    ]
+  },
+  "50#5": {
+    "japanese": "この谷にはじめて来たとき、わたしはまだ小さかったなあ。旅行で両親といっしょに来たの。#$b#そのときにはもう、いつかここで暮らすんだって分かってた…だって、この谷は創造力をかきたてるエネルギーに満ちてたんだもの！",
+    "english": "I came to this valley for the first time when I was still little, on a trip with my parents. Even then, I already knew I'd live here someday... because this valley was so full of energy that stirred up my creativity!",
+    "segments": [
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "谷に",
+        "kana": "たにに",
+        "gloss": "to this valley"
+      },
+      {
+        "text": "はじめて",
+        "kana": "はじめて",
+        "gloss": "for the first time"
+      },
+      {
+        "text": "来たとき、",
+        "kana": "きたとき",
+        "gloss": "when I came"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "まだ",
+        "kana": "まだ",
+        "gloss": "still"
+      },
+      {
+        "text": "小さかったなあ。",
+        "kana": "ちいさかったなあ",
+        "gloss": "was little"
+      },
+      {
+        "text": "旅行で",
+        "kana": "りょこうで",
+        "gloss": "on a trip"
+      },
+      {
+        "text": "両親と",
+        "kana": "りょうしんと",
+        "gloss": "with my parents"
+      },
+      {
+        "text": "いっしょに",
+        "kana": "いっしょに",
+        "gloss": "together"
+      },
+      {
+        "text": "来たの。#$b#",
+        "kana": "きたの",
+        "gloss": "came"
+      },
+      {
+        "text": "そのときには",
+        "kana": "そのときには",
+        "gloss": "at that time"
+      },
+      {
+        "text": "もう、",
+        "kana": "もう",
+        "gloss": "already"
+      },
+      {
+        "text": "いつか",
+        "kana": "いつか",
+        "gloss": "someday"
+      },
+      {
+        "text": "ここで",
+        "kana": "ここで",
+        "gloss": "here"
+      },
+      {
+        "text": "暮らすんだって",
+        "kana": "くらすんだって",
+        "gloss": "that I'd live"
+      },
+      {
+        "text": "分かってた…",
+        "kana": "わかってた",
+        "gloss": "I knew"
+      },
+      {
+        "text": "だって、",
+        "kana": "だって",
+        "gloss": "because"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "谷は",
+        "kana": "たには",
+        "gloss": "this valley (topic)"
+      },
+      {
+        "text": "創造力を",
+        "kana": "そうぞうりょくを",
+        "gloss": "creative energy"
+      },
+      {
+        "text": "かきたてる",
+        "kana": "かきたてる",
+        "gloss": "stirring up"
+      },
+      {
+        "text": "エネルギーに",
+        "kana": "えねるぎーに",
+        "gloss": "with energy"
+      },
+      {
+        "text": "満ちてたんだもの！",
+        "kana": "みちてたんだもの",
+        "gloss": "was full of"
+      }
+    ]
+  },
+  "50#6": {
+    "japanese": "とはいえ、認めたくはないんだけど…アーティストをして食べていくってカンタンじゃないんだよね。$s",
+    "english": "That said... I don't really want to admit it, but... making a living as an artist isn't easy.",
+    "segments": [
+      {
+        "text": "とはいえ、",
+        "kana": "とはいえ",
+        "gloss": "that said"
+      },
+      {
+        "text": "認めたくはないんだけど…",
+        "kana": "みとめたくはないんだけど",
+        "gloss": "I don't want to admit but"
+      },
+      {
+        "text": "アーティストを",
+        "kana": "アーティストを",
+        "gloss": "as an artist"
+      },
+      {
+        "text": "して",
+        "kana": "して",
+        "gloss": "doing"
+      },
+      {
+        "text": "食べていくって",
+        "kana": "たべていくって",
+        "gloss": "making a living"
+      },
+      {
+        "text": "カンタンじゃないんだよね。$s",
+        "kana": "かんたんじゃないんだよね",
+        "gloss": "isn't easy"
+      }
+    ]
+  },
+  "50#7": {
+    "japanese": "#じゃあ、町で作品の展示をしたら？#じゃあ、インターネットで作品を売ったら？",
+    "english": "Well, what about having an exhibition of your work in town? Well, what about selling your work on the internet?",
+    "segments": [
+      {
+        "text": "#じゃあ、",
+        "kana": "じゃあ",
+        "gloss": "well"
+      },
+      {
+        "text": "町で",
+        "kana": "まちで",
+        "gloss": "in town"
+      },
+      {
+        "text": "作品の",
+        "kana": "さくひんの",
+        "gloss": "of your work"
+      },
+      {
+        "text": "展示を",
+        "kana": "てんじを",
+        "gloss": "an exhibition"
+      },
+      {
+        "text": "したら？#",
+        "kana": "したら",
+        "gloss": "what if you did"
+      },
+      {
+        "text": "じゃあ、",
+        "kana": "じゃあ",
+        "gloss": "well"
+      },
+      {
+        "text": "インターネットで",
+        "kana": "インターネットで",
+        "gloss": "on the internet"
+      },
+      {
+        "text": "作品を",
+        "kana": "さくひんを",
+        "gloss": "your work"
+      },
+      {
+        "text": "売ったら？",
+        "kana": "うったら",
+        "gloss": "what if you sold"
+      }
+    ]
+  },
+  "50#8": {
+    "japanese": "ふーん…おもしろそうだね。うまくいけば、ペリカンタウンをアートの発信地にできるかもしれない…$7",
+    "english": "Hmm... sounds interesting. If it goes well, maybe I could make Pelican Town into an art hub...",
+    "segments": [
+      {
+        "text": "ふーん…",
+        "kana": "ふーん",
+        "gloss": "hmm"
+      },
+      {
+        "text": "おもしろそうだね。",
+        "kana": "おもしろそうだね",
+        "gloss": "sounds interesting"
+      },
+      {
+        "text": "うまくいけば、",
+        "kana": "うまくいけば",
+        "gloss": "if it goes well"
+      },
+      {
+        "text": "ペリカンタウンを",
+        "kana": "ぺりかんたうんを",
+        "gloss": "Pelican Town"
+      },
+      {
+        "text": "アートの",
+        "kana": "あーとの",
+        "gloss": "of art"
+      },
+      {
+        "text": "発信地に",
+        "kana": "はっしんちに",
+        "gloss": "into a hub"
+      },
+      {
+        "text": "できるかもしれない…$7",
+        "kana": "できるかもしれない",
+        "gloss": "might be able to make"
+      }
+    ]
+  },
+  "50#9": {
+    "japanese": "でも、わたしの彫刻をだれも気にいってくれなかったらどうしよう？そしたらわたし、打ちのめされそう。$s",
+    "english": "But what if no one likes my sculptures? Then I think I'd be devastated.",
+    "segments": [
+      {
+        "text": "でも、",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "わたしの",
+        "kana": "わたしの",
+        "gloss": "my"
+      },
+      {
+        "text": "彫刻を",
+        "kana": "ちょうこくを",
+        "gloss": "my sculptures"
+      },
+      {
+        "text": "だれも",
+        "kana": "だれも",
+        "gloss": "no one"
+      },
+      {
+        "text": "気にいってくれなかったら",
+        "kana": "きにいってくれなかったら",
+        "gloss": "if [they] don't like"
+      },
+      {
+        "text": "どうしよう？",
+        "kana": "どうしよう",
+        "gloss": "what would I do"
+      },
+      {
+        "text": "そしたら",
+        "kana": "そしたら",
+        "gloss": "then"
+      },
+      {
+        "text": "わたし、",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "打ちのめされそう。$s",
+        "kana": "うちのめされそう",
+        "gloss": "seem like I'd be devastated"
+      }
+    ]
+  },
+  "50#10": {
+    "japanese": "…でも、考えてみないとね。$s",
+    "english": "...But I have to think about it.",
+    "segments": [
+      {
+        "text": "…でも、",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "考えてみないとね。$s",
+        "kana": "かんがえてみないとね",
+        "gloss": "I should think about it"
+      }
+    ]
+  },
+  "50#11": {
+    "japanese": "うちに寄ってくれてありがとう、@。",
+    "english": "Thanks for stopping by, @.",
+    "segments": [
+      {
+        "text": "うちに",
+        "kana": "うちに",
+        "gloss": "to my place"
+      },
+      {
+        "text": "寄ってくれて",
+        "kana": "よってくれて",
+        "gloss": "for stopping by"
+      },
+      {
+        "text": "ありがとう、",
+        "kana": "ありがとう",
+        "gloss": "thanks"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      }
+    ]
+  },
+  "50#12": {
+    "japanese": "町で作品を展示する、かあ。だいたんなアイデアだね、@。",
+    "english": "An art show in town, huh. That's a bold idea, @.",
+    "segments": [
+      {
+        "text": "町で",
+        "kana": "まちで",
+        "gloss": "in town"
+      },
+      {
+        "text": "作品を",
+        "kana": "さくひんを",
+        "gloss": "your work"
+      },
+      {
+        "text": "展示する、",
+        "kana": "てんじする",
+        "gloss": "to exhibit"
+      },
+      {
+        "text": "かあ。",
+        "kana": "かあ",
+        "gloss": "huh"
+      },
+      {
+        "text": "だいたんな",
+        "kana": "だいたんな",
+        "gloss": "bold"
+      },
+      {
+        "text": "アイデアだね、",
+        "kana": "あいであだね",
+        "gloss": "what an idea"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      }
+    ]
+  },
+  "51#0": {
+    "japanese": "ケリー…何度言ったら分かってくれるの？街にもどるつもりはないんだってば！$8#$b#もうやめて…二度と電話してこないで！（ガチャッ）$8",
+    "english": "Kelly... how many times do I have to say it before you understand? I have no intention of going back to the city! Stop it already... don't ever call me again! (click)",
+    "segments": [
+      {
+        "text": "ケリー…",
+        "kana": "けりー",
+        "gloss": "Kelly"
+      },
+      {
+        "text": "何度",
+        "kana": "なんど",
+        "gloss": "how many times"
+      },
+      {
+        "text": "言ったら",
+        "kana": "いったら",
+        "gloss": "if I say"
+      },
+      {
+        "text": "分かってくれるの？",
+        "kana": "わかってくれるの",
+        "gloss": "will you understand"
+      },
+      {
+        "text": "街に",
+        "kana": "まちに",
+        "gloss": "to the city"
+      },
+      {
+        "text": "もどる",
+        "kana": "もどる",
+        "gloss": "go back"
+      },
+      {
+        "text": "つもりはないんだってば！$8#$b#",
+        "kana": "つもりはないんだってば",
+        "gloss": "I told you I have no intention"
+      },
+      {
+        "text": "もうやめて…",
+        "kana": "もうやめて",
+        "gloss": "stop it already"
+      },
+      {
+        "text": "二度と",
+        "kana": "にどと",
+        "gloss": "never again"
+      },
+      {
+        "text": "電話してこないで！（",
+        "kana": "でんわしてこないで",
+        "gloss": "don't call me"
+      },
+      {
+        "text": "ガチャッ）$8",
+        "kana": "がちゃっ",
+        "gloss": "click (sound)"
+      }
+    ]
+  },
+  "51#2": {
+    "japanese": "怒鳴ってるとこ、見られちゃった？$s",
+    "english": "So you heard me yelling?",
+    "segments": [
+      {
+        "text": "怒鳴ってるとこ、",
+        "kana": "どなってるとこ",
+        "gloss": "the part where I was yelling"
+      },
+      {
+        "text": "見られちゃった？$s",
+        "kana": "みられちゃった",
+        "gloss": "did you see"
+      }
+    ]
+  },
+  "51#3": {
+    "japanese": "まえにつきあってた相手なんだ…$s",
+    "english": "That was someone I used to date...",
+    "segments": [
+      {
+        "text": "まえに",
+        "kana": "まえに",
+        "gloss": "before"
+      },
+      {
+        "text": "つきあってた",
+        "kana": "つきあってた",
+        "gloss": "was dating"
+      },
+      {
+        "text": "相手なんだ…$s",
+        "kana": "あいてなんだ",
+        "gloss": "the person"
+      }
+    ]
+  },
+  "51#4": {
+    "japanese": "ちょっと説明したほうがいいかな…$u",
+    "english": "I guess I'd better explain a little...",
+    "segments": [
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a little"
+      },
+      {
+        "text": "説明したほうがいいかな…$u",
+        "kana": "せつめいしたほうがいいかな",
+        "gloss": "I should probably explain"
+      }
+    ]
+  },
+  "51#5": {
+    "japanese": "わたしたち、街にいたとき同じアパートメントで暮らしてたの。$u#$b#わたしは昼に日雇いのバイトをして、夜はずっと作品をつくってた…生活はギリギリだったよ。$u#$b#${彼^彼女}$はいつも、学校にもどれ、ビジネスか薬学を勉強しろってうるさくてさ…お金になることをして${くれよ^よ}$、って。$a#$b#きっと、ふつうの暮らしのためにお金を貯めたかったんだと思う。ほら、郊外に家を買うとか、子供と暮らすとか、PTAの集会にでるとか…そういうさ。$u",
+    "english": "We lived together in the same apartment when we were in the city. I worked a day-labor job during the day and spent all night making art... life was a tight squeeze. He/she was always nagging me to go back to school, to study business or pharmacy... to do something that makes money. I think he/she surely wanted to save money for an ordinary life. You know, like buying a house in the suburbs, living with kids, attending PTA meetings... that sort of thing.",
+    "segments": [
+      {
+        "text": "わたしたち、",
+        "kana": "わたしたち",
+        "gloss": "we"
+      },
+      {
+        "text": "街に",
+        "kana": "まちに",
+        "gloss": "in the city"
+      },
+      {
+        "text": "いたとき",
+        "kana": "いたとき",
+        "gloss": "when [we] were"
+      },
+      {
+        "text": "同じ",
+        "kana": "おなじ",
+        "gloss": "same"
+      },
+      {
+        "text": "アパートメントで",
+        "kana": "アパートメントで",
+        "gloss": "apartment"
+      },
+      {
+        "text": "暮らしてたの。$u#$b#",
+        "kana": "くらしてたの",
+        "gloss": "were living"
+      },
+      {
+        "text": "わたし",
+        "kana": "わたし",
+        "gloss": "I"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "昼に",
+        "kana": "ひるに",
+        "gloss": "during the day"
+      },
+      {
+        "text": "日雇いの",
+        "kana": "ひやといの",
+        "gloss": "day-labor"
+      },
+      {
+        "text": "バイトを",
+        "kana": "バイトを",
+        "gloss": "part-time job"
+      },
+      {
+        "text": "して、",
+        "kana": "して",
+        "gloss": "doing"
+      },
+      {
+        "text": "夜は",
+        "kana": "よるは",
+        "gloss": "nights (topic)"
+      },
+      {
+        "text": "ずっと",
+        "kana": "ずっと",
+        "gloss": "the whole time"
+      },
+      {
+        "text": "作品を",
+        "kana": "さくひんを",
+        "gloss": "my art"
+      },
+      {
+        "text": "つくってた…",
+        "kana": "つくってた",
+        "gloss": "was making"
+      },
+      {
+        "text": "生活は",
+        "kana": "せいかつは",
+        "gloss": "life (topic)"
+      },
+      {
+        "text": "ギリギリだったよ。$u#$b#",
+        "kana": "ぎりぎりだったよ",
+        "gloss": "was barely scraping by"
+      },
+      {
+        "text": "${",
+        "kana": "",
+        "gloss": ""
+      },
+      {
+        "text": "彼^",
+        "kana": "かれ",
+        "gloss": "he"
+      },
+      {
+        "text": "彼女",
+        "kana": "かのじょ",
+        "gloss": "she"
+      },
+      {
+        "text": "}$",
+        "kana": "",
+        "gloss": ""
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)"
+      },
+      {
+        "text": "いつも、",
+        "kana": "いつも",
+        "gloss": "always"
+      },
+      {
+        "text": "学校に",
+        "kana": "がっこうに",
+        "gloss": "to school"
+      },
+      {
+        "text": "もどれ、",
+        "kana": "もどれ",
+        "gloss": "go back"
+      },
+      {
+        "text": "ビジネスか",
+        "kana": "びじねすか",
+        "gloss": "business or"
+      },
+      {
+        "text": "薬学を",
+        "kana": "やくがくを",
+        "gloss": "pharmacy"
+      },
+      {
+        "text": "勉強しろって",
+        "kana": "べんきょうしろって",
+        "gloss": "saying study"
+      },
+      {
+        "text": "うるさくてさ…",
+        "kana": "うるさくてさ",
+        "gloss": "was nagging"
+      },
+      {
+        "text": "お金になることを",
+        "kana": "おかねになることを",
+        "gloss": "things that make money"
+      },
+      {
+        "text": "して",
+        "kana": "して",
+        "gloss": "doing"
+      },
+      {
+        "text": "${",
+        "kana": "",
+        "gloss": ""
+      },
+      {
+        "text": "くれよ^",
+        "kana": "くれよ",
+        "gloss": "do it for me"
+      },
+      {
+        "text": "よ",
+        "kana": "よ",
+        "gloss": "just do it"
+      },
+      {
+        "text": "}$、",
+        "kana": "",
+        "gloss": ""
+      },
+      {
+        "text": "って。$a#$b#",
+        "kana": "って",
+        "gloss": "[quote]"
+      },
+      {
+        "text": "きっと、",
+        "kana": "きっと",
+        "gloss": "surely"
+      },
+      {
+        "text": "ふつうの",
+        "kana": "ふつうの",
+        "gloss": "normal"
+      },
+      {
+        "text": "暮らしの",
+        "kana": "くらしの",
+        "gloss": "of a life"
+      },
+      {
+        "text": "ために",
+        "kana": "ために",
+        "gloss": "for the sake of"
+      },
+      {
+        "text": "お金を",
+        "kana": "おかねを",
+        "gloss": "money"
+      },
+      {
+        "text": "貯めたかったんだと思う。",
+        "kana": "ためたかったんだとおもう",
+        "gloss": "I think [he/she] wanted to save"
+      },
+      {
+        "text": "ほら、",
+        "kana": "ほら",
+        "gloss": "you know"
+      },
+      {
+        "text": "郊外に",
+        "kana": "こうがいに",
+        "gloss": "in the suburbs"
+      },
+      {
+        "text": "家を",
+        "kana": "いえを",
+        "gloss": "a house"
+      },
+      {
+        "text": "買うとか、",
+        "kana": "かうとか",
+        "gloss": "like buying"
+      },
+      {
+        "text": "子供と",
+        "kana": "こどもと",
+        "gloss": "with kids"
+      },
+      {
+        "text": "暮らすとか、",
+        "kana": "くらすとか",
+        "gloss": "like living"
+      },
+      {
+        "text": "PTAの",
+        "kana": "PTAの",
+        "gloss": "of the PTA"
+      },
+      {
+        "text": "集会に",
+        "kana": "しゅうかいに",
+        "gloss": "to meetings"
+      },
+      {
+        "text": "でるとか…",
+        "kana": "でるとか",
+        "gloss": "like attending"
+      },
+      {
+        "text": "そういうさ。$u",
+        "kana": "そういうさ",
+        "gloss": "that sort of thing"
+      }
+    ]
+  },
+  "51#6": {
+    "japanese": "でもわたしはまだ、そういう暮らしをするつもりはなくて…だから別れたの。で、アーティストでいる夢を追うためにここに引っこしたわけ。",
+    "english": "But I still wasn't ready for that kind of life... so we broke up. And I moved here to chase my dream of being an artist.",
+    "segments": [
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "わたしは",
+        "kana": "わたしは",
+        "gloss": "I"
+      },
+      {
+        "text": "まだ、",
+        "kana": "まだ",
+        "gloss": "still"
+      },
+      {
+        "text": "そういう",
+        "kana": "そういう",
+        "gloss": "that kind of"
+      },
+      {
+        "text": "暮らしを",
+        "kana": "くらしを",
+        "gloss": "life"
+      },
+      {
+        "text": "するつもりはなくて…",
+        "kana": "するつもりはなくて",
+        "gloss": "wasn't planning to live"
+      },
+      {
+        "text": "だから",
+        "kana": "だから",
+        "gloss": "so"
+      },
+      {
+        "text": "別れたの。",
+        "kana": "わかれたの",
+        "gloss": "broke up"
+      },
+      {
+        "text": "で、",
+        "kana": "で",
+        "gloss": "and"
+      },
+      {
+        "text": "アーティストでいる",
+        "kana": "あーてぃすとでいる",
+        "gloss": "being an artist"
+      },
+      {
+        "text": "夢を",
+        "kana": "ゆめを",
+        "gloss": "dream"
+      },
+      {
+        "text": "追うために",
+        "kana": "おうために",
+        "gloss": "to chase"
+      },
+      {
+        "text": "ここに",
+        "kana": "ここに",
+        "gloss": "here"
+      },
+      {
+        "text": "引っこしたわけ。",
+        "kana": "ひっこしたわけ",
+        "gloss": "moved"
+      }
+    ]
+  },
+  "51#7": {
+    "japanese": "$q 83 null#ねえ@、わたしって自分勝手だと思う？$s#$r 83 0 event_parents1#思わないよ。そうするべきだったんだ。#$r 83 0 event_parents2#思わないよ。相手のほうがバカげてる。#$r 83 -20 event_parents3#思わないけど、君は街にいたほうがよかったんじゃないかな。#$r 83 -20 event_parents4#うん、少し思う。#$r 83 -20 event_parents5#思うけど、自分のことを一番に考えるのは自然なことだよ。",
+    "english": "$q 83 null#Hey @, do you think I was being selfish?#$r 83 0 event_parents1#No, it had to be done.#$r 83 0 event_parents2#No, your ex is the ridiculous one.#$r 83 -20 event_parents3#No, but I think you would've been better off staying in the city.#$r 83 -20 event_parents4#Yeah, a little.#$r 83 -20 event_parents5#Yeah, but it's only natural to think of yourself first.",
+    "segments": [
+      {
+        "text": "$q 83 null#",
+        "kana": "83 null",
+        "gloss": ""
+      },
+      {
+        "text": "ねえ",
+        "kana": "ねえ",
+        "gloss": "hey"
+      },
+      {
+        "text": "@、",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "わたしって",
+        "kana": "わたしって",
+        "gloss": "me"
+      },
+      {
+        "text": "自分勝手だと思う？$s",
+        "kana": "じぶんかってだとおもう",
+        "gloss": "do you think I'm selfish"
+      },
+      {
+        "text": "#$r 83 0 event_parents1#",
+        "kana": "83 0 event parents1",
+        "gloss": ""
+      },
+      {
+        "text": "思わないよ。",
+        "kana": "おもわないよ",
+        "gloss": "I don't think so"
+      },
+      {
+        "text": "そうするべきだったんだ。",
+        "kana": "そうするべきだったんだ",
+        "gloss": "it had to be done"
+      },
+      {
+        "text": "#$r 83 0 event_parents2#",
+        "kana": "83 0 event parents2",
+        "gloss": ""
+      },
+      {
+        "text": "思わないよ。",
+        "kana": "おもわないよ",
+        "gloss": "I don't think so"
+      },
+      {
+        "text": "相手のほうが",
+        "kana": "あいてのほうが",
+        "gloss": "your ex, rather"
+      },
+      {
+        "text": "バカげてる。",
+        "kana": "ばかげてる",
+        "gloss": "is ridiculous"
+      },
+      {
+        "text": "#$r 83 -20 event_parents3#",
+        "kana": "83 20 event parents3",
+        "gloss": ""
+      },
+      {
+        "text": "思わないけど、",
+        "kana": "おもわないけど",
+        "gloss": "I don't think so, but"
+      },
+      {
+        "text": "君は",
+        "kana": "きみは",
+        "gloss": "you (topic)"
+      },
+      {
+        "text": "街にいたほうが",
+        "kana": "まちにいたほうが",
+        "gloss": "staying in the city"
+      },
+      {
+        "text": "よかったんじゃないかな。",
+        "kana": "よかったんじゃないかな",
+        "gloss": "would've been better"
+      },
+      {
+        "text": "#$r 83 -20 event_parents4#",
+        "kana": "83 20 event parents4",
+        "gloss": ""
+      },
+      {
+        "text": "うん、",
+        "kana": "うん",
+        "gloss": "yeah"
+      },
+      {
+        "text": "少し思う。",
+        "kana": "すこしおもう",
+        "gloss": "I think so a little"
+      },
+      {
+        "text": "#$r 83 -20 event_parents5#",
+        "kana": "83 20 event parents5",
+        "gloss": ""
+      },
+      {
+        "text": "思うけど、",
+        "kana": "おもうけど",
+        "gloss": "I think so, but"
+      },
+      {
+        "text": "自分のことを",
+        "kana": "じぶんのことを",
+        "gloss": "yourself"
+      },
+      {
+        "text": "一番に考えるのは",
+        "kana": "いちばんにかんがえるのは",
+        "gloss": "thinking of first"
+      },
+      {
+        "text": "自然なことだよ。",
+        "kana": "しぜんなことだよ",
+        "gloss": "is a natural thing"
+      }
+    ]
+  },
+  "51#8": {
+    "japanese": "うん、聞いてくれてありがとう。いい友達がいてよかった。",
+    "english": "Yeah, thanks for listening. I'm glad I have a good friend.",
+    "segments": [
+      {
+        "text": "うん、",
+        "kana": "うん",
+        "gloss": "yeah"
+      },
+      {
+        "text": "聞いてくれてありがとう。",
+        "kana": "きいてくれてありがとう",
+        "gloss": "thanks for listening"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "友達がいてよかった。",
+        "kana": "ともだちがいてよかった",
+        "gloss": "I'm glad I have a friend"
+      }
+    ]
+  },
+  "51#9": {
+    "japanese": "話を聞いてくれてありがとね。",
+    "english": "Thanks for listening to me earlier.",
+    "segments": [
+      {
+        "text": "話を",
+        "kana": "はなしを",
+        "gloss": "to me talk"
+      },
+      {
+        "text": "聞いてくれてありがとね。",
+        "kana": "きいてくれてありがとね",
+        "gloss": "thanks for listening"
+      }
+    ]
+  },
+  "584059#0": {
+    "japanese": "ねえ！これ見てよ。",
+    "english": "Hey! Come look at this.",
+    "segments": [
+      {
+        "text": "ねえ！",
+        "kana": "ねえ",
+        "gloss": "hey"
+      },
+      {
+        "text": "これ見てよ。",
+        "kana": "これみてよ",
+        "gloss": "look at this"
+      }
+    ]
+  },
+  "584059#1": {
+    "japanese": "ノートパソコンを買って、オンラインショップを立ちあげたんだ…まえ言ってもらったみたいにね。",
+    "english": "I bought a laptop and set up an online shop... like you suggested before.",
+    "segments": [
+      {
+        "text": "ノートパソコンを",
+        "kana": "ノートパソコンを",
+        "gloss": "a laptop"
+      },
+      {
+        "text": "買って、",
+        "kana": "かって",
+        "gloss": "bought"
+      },
+      {
+        "text": "オンラインショップを",
+        "kana": "オンラインショップを",
+        "gloss": "an online shop"
+      },
+      {
+        "text": "立ちあげたんだ…",
+        "kana": "たちあげたんだ",
+        "gloss": "set up"
+      },
+      {
+        "text": "まえ",
+        "kana": "まえ",
+        "gloss": "before"
+      },
+      {
+        "text": "言ってもらったみたいにね。",
+        "kana": "いってもらったみたいにね",
+        "gloss": "like you suggested"
+      }
+    ]
+  },
+  "584059#2": {
+    "japanese": "今の音聞こえた？だれかがネットでわたしの作品を買ってくれたんだ！$h",
+    "english": "Did you just hear that? Someone bought my work online!",
+    "segments": [
+      {
+        "text": "今の",
+        "kana": "いまの",
+        "gloss": "that just now"
+      },
+      {
+        "text": "音聞こえた？",
+        "kana": "おときこえた",
+        "gloss": "did you hear the sound"
+      },
+      {
+        "text": "だれかが",
+        "kana": "だれかが",
+        "gloss": "someone"
+      },
+      {
+        "text": "ネットで",
+        "kana": "ネットで",
+        "gloss": "online"
+      },
+      {
+        "text": "わたしの",
+        "kana": "わたしの",
+        "gloss": "my"
+      },
+      {
+        "text": "作品を",
+        "kana": "さくひんを",
+        "gloss": "work"
+      },
+      {
+        "text": "買ってくれたんだ！$h",
+        "kana": "かってくれたんだ",
+        "gloss": "bought"
+      }
+    ]
+  },
+  "584059#3": {
+    "japanese": "ふーん…この「ミスターK」って人、わたしの彫刻作品をぜんぶ買ってる。$7#$b#きっとお金持ちで、わたしの作品が大好きなんだね。",
+    "english": "Hmm... this person called 'Mr. K' is buying all of my sculptures. He must be rich and really love my work.",
+    "segments": [
+      {
+        "text": "ふーん…",
+        "kana": "ふーん",
+        "gloss": "hmm"
+      },
+      {
+        "text": "この「",
+        "kana": "この",
+        "gloss": "this"
+      },
+      {
+        "text": "ミスターK」",
+        "kana": "みすたーけー",
+        "gloss": "Mr. K"
+      },
+      {
+        "text": "って",
+        "kana": "って",
+        "gloss": "called"
+      },
+      {
+        "text": "人、",
+        "kana": "ひと",
+        "gloss": "person"
+      },
+      {
+        "text": "わたしの",
+        "kana": "わたしの",
+        "gloss": "my"
+      },
+      {
+        "text": "彫刻作品を",
+        "kana": "ちょうこくさくひんを",
+        "gloss": "sculptures"
+      },
+      {
+        "text": "ぜんぶ買ってる。$7#$b#",
+        "kana": "ぜんぶかってる",
+        "gloss": "is buying all of"
+      },
+      {
+        "text": "きっと",
+        "kana": "きっと",
+        "gloss": "surely"
+      },
+      {
+        "text": "お金持ちで、",
+        "kana": "おかねもちで",
+        "gloss": "is rich, and"
+      },
+      {
+        "text": "わたしの",
+        "kana": "わたしの",
+        "gloss": "my"
+      },
+      {
+        "text": "作品が",
+        "kana": "さくひんが",
+        "gloss": "my work"
+      },
+      {
+        "text": "大好きなんだね。",
+        "kana": "だいすきなんだね",
+        "gloss": "really loves"
+      }
+    ]
+  },
+  "584059#4": {
+    "japanese": "やった！セールのおかげで電気代を心配しなくて済むわ…$6",
+    "english": "Yes! Thanks to that sale I won't have to worry about my electricity bill...",
+    "segments": [
+      {
+        "text": "やった！",
+        "kana": "やった",
+        "gloss": "yes"
+      },
+      {
+        "text": "セールのおかげで",
+        "kana": "せーるのおかげで",
+        "gloss": "thanks to the sale"
+      },
+      {
+        "text": "電気代を",
+        "kana": "でんきだいを",
+        "gloss": "electricity bill"
+      },
+      {
+        "text": "心配しなくて済むわ…$6",
+        "kana": "しんぱいしなくてすむわ",
+        "gloss": "won't have to worry"
+      }
+    ]
+  },
+  "584059#5": {
+    "japanese": "それはともかく…いいアイデアをありがとう、@。いまのところ、すっごく順調だよ！これ、フルタイムのアーティストとして暮らすためのいい資金かせぎになりそう。$h",
+    "english": "Anyway... thanks for the idea, @. It's going really well so far! This should be good funding for living as a full-time artist.",
+    "segments": [
+      {
+        "text": "それはともかく…",
+        "kana": "それはともかく",
+        "gloss": "anyway"
+      },
+      {
+        "text": "いいアイデアをありがとう、",
+        "kana": "いいあいであをありがとう",
+        "gloss": "thanks for the good idea"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "いまのところ、",
+        "kana": "いまのところ",
+        "gloss": "so far"
+      },
+      {
+        "text": "すっごく順調だよ！",
+        "kana": "すっごくじゅんちょうだよ",
+        "gloss": "it's going really well"
+      },
+      {
+        "text": "これ、",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "フルタイムの",
+        "kana": "フルタイムの",
+        "gloss": "full-time"
+      },
+      {
+        "text": "アーティストとして",
+        "kana": "あーてぃすととして",
+        "gloss": "as an artist"
+      },
+      {
+        "text": "暮らすための",
+        "kana": "くらすための",
+        "gloss": "for living"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "資金かせぎになりそう。$h",
+        "kana": "しきんかせぎになりそう",
+        "gloss": "should be good funding"
+      }
+    ]
+  },
+  "584059#6": {
+    "japanese": "じゃあごめん、これから作業するね。ページのCSSをいじらなきゃ…$7",
+    "english": "Well, sorry, but I need to get to work now. I need to tweak the CSS on the page...",
+    "segments": [
+      {
+        "text": "じゃあごめん、",
+        "kana": "じゃあごめん",
+        "gloss": "well, sorry"
+      },
+      {
+        "text": "これから作業するね。",
+        "kana": "これからさぎょうするね",
+        "gloss": "I'll work now"
+      },
+      {
+        "text": "ページの",
+        "kana": "ページの",
+        "gloss": "of the page"
+      },
+      {
+        "text": "CSSを",
+        "kana": "しーえすえすを",
+        "gloss": "the CSS"
+      },
+      {
+        "text": "いじらなきゃ…$7",
+        "kana": "いじらなきゃ",
+        "gloss": "I have to tweak"
+      }
+    ]
+  },
+  "angry#0": {
+    "japanese": "ごめんね…怒らなきゃよかった。$s",
+    "english": "Sorry... I shouldn't have gotten angry.",
+    "segments": [
+      {
+        "text": "ごめんね…",
+        "kana": "ごめんね",
+        "gloss": "sorry"
+      },
+      {
+        "text": "怒らなきゃよかった。$s",
+        "kana": "おこらなきゃよかった",
+        "gloss": "I shouldn't have gotten angry"
+      }
+    ]
+  },
+  "angry#1": {
+    "japanese": "きみの言うことにも一理あるよね…街にのこってれば、いまより苦労しなくてすんだのかも。$u#$b#もっと現実的になったほうがいいのかな…このままじゃ きっとわたしはアーティストとしてうまくいかないだろうし、そのままみじめに人生を終えるのかも。$s",
+    "english": "You have a point too... if I'd stayed in the city, maybe I wouldn't have had it so hard. Maybe I should be more realistic... at this rate my career as an artist probably won't work out, and I might end my life in misery.",
+    "segments": [
+      {
+        "text": "きみの",
+        "kana": "きみの",
+        "gloss": "your"
+      },
+      {
+        "text": "言うことにも",
+        "kana": "いうことにも",
+        "gloss": "what you say, too"
+      },
+      {
+        "text": "一理あるよね…",
+        "kana": "いちりあるよね",
+        "gloss": "has a point"
+      },
+      {
+        "text": "街にのこってれば、",
+        "kana": "まちにのこってれば",
+        "gloss": "if I had stayed in the city"
+      },
+      {
+        "text": "いまより",
+        "kana": "いまより",
+        "gloss": "than now"
+      },
+      {
+        "text": "苦労しなくてすんだのかも。$u#$b#",
+        "kana": "くろうしなくてすんだのかも",
+        "gloss": "maybe I wouldn't have had it so hard"
+      },
+      {
+        "text": "もっと",
+        "kana": "もっと",
+        "gloss": "more"
+      },
+      {
+        "text": "現実的になったほうがいいのかな…",
+        "kana": "げんじつてきになったほうがいいのかな",
+        "gloss": "maybe I should be more realistic"
+      },
+      {
+        "text": "このままじゃ ",
+        "kana": "このままじゃ",
+        "gloss": "at this rate"
+      },
+      {
+        "text": "きっと",
+        "kana": "きっと",
+        "gloss": "surely"
+      },
+      {
+        "text": "わたしは",
+        "kana": "わたしは",
+        "gloss": "I"
+      },
+      {
+        "text": "アーティストとして",
+        "kana": "あーてぃすととして",
+        "gloss": "as an artist"
+      },
+      {
+        "text": "うまくいかないだろうし、",
+        "kana": "うまくいかないだろうし",
+        "gloss": "won't work out, and"
+      },
+      {
+        "text": "そのまま",
+        "kana": "そのまま",
+        "gloss": "as is"
+      },
+      {
+        "text": "みじめに",
+        "kana": "みじめに",
+        "gloss": "in misery"
+      },
+      {
+        "text": "人生を",
+        "kana": "じんせいを",
+        "gloss": "my life"
+      },
+      {
+        "text": "終えるのかも。$s",
+        "kana": "おえるのかも",
+        "gloss": "might end"
+      }
+    ]
+  },
+  "angry#2": {
+    "japanese": "うん、聞いてくれてありがとう。いい友だちがいてよかった。",
+    "english": "Yeah, thanks for listening. I'm glad I have a good friend.",
+    "segments": [
+      {
+        "text": "うん、",
+        "kana": "うん",
+        "gloss": "yeah"
+      },
+      {
+        "text": "聞いてくれてありがとう。",
+        "kana": "きいてくれてありがとう",
+        "gloss": "thanks for listening"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "友だちがいてよかった。",
+        "kana": "ともだちがいてよかった",
+        "gloss": "I'm glad I have a friend"
+      }
+    ]
+  },
+  "artShowSuggest#0": {
+    "japanese": "そういえば…最近、まえ言ってもらった展示会のアイデアについてちょっと考えてるの。#$b#展示会のために、あたらしい作品もつくってるんだ…不安もあるけど、作品を人に見てもらえると思うとわくわくするな。#$b#スターデューバレーを第一級のアート発信地にするってアイデアに賛成してくれてうれしいよ、@！$h",
+    "english": "By the way... I've been thinking a bit lately about that art show idea you suggested before. I'm making new work for the show too... I'm nervous, but I'm excited thinking about people seeing my work. I'm glad you're on board with the idea of making Stardew Valley a top-class art hub, @!",
+    "segments": [
+      {
+        "text": "そういえば…",
+        "kana": "そういえば",
+        "gloss": "by the way"
+      },
+      {
+        "text": "最近、",
+        "kana": "さいきん",
+        "gloss": "lately"
+      },
+      {
+        "text": "まえ",
+        "kana": "まえ",
+        "gloss": "before"
+      },
+      {
+        "text": "言ってもらった",
+        "kana": "いってもらった",
+        "gloss": "you suggested"
+      },
+      {
+        "text": "展示会の",
+        "kana": "てんじかいの",
+        "gloss": "of the art show"
+      },
+      {
+        "text": "アイデアについて",
+        "kana": "あいであについて",
+        "gloss": "about the idea"
+      },
+      {
+        "text": "ちょっと考えてるの。#$b#",
+        "kana": "ちょっとかんがえてるの",
+        "gloss": "I've been thinking a bit"
+      },
+      {
+        "text": "展示会のために、",
+        "kana": "てんじかいのために",
+        "gloss": "for the show"
+      },
+      {
+        "text": "あたらしい",
+        "kana": "あたらしい",
+        "gloss": "new"
+      },
+      {
+        "text": "作品も",
+        "kana": "さくひんも",
+        "gloss": "work, too"
+      },
+      {
+        "text": "つくってるんだ…",
+        "kana": "つくってるんだ",
+        "gloss": "I'm making"
+      },
+      {
+        "text": "不安もあるけど、",
+        "kana": "ふあんもあるけど",
+        "gloss": "I'm nervous too, but"
+      },
+      {
+        "text": "作品を",
+        "kana": "さくひんを",
+        "gloss": "my work"
+      },
+      {
+        "text": "人に見てもらえると思うと",
+        "kana": "ひとにみてもらえるとおもうと",
+        "gloss": "thinking people will see"
+      },
+      {
+        "text": "わくわくするな。#$b#",
+        "kana": "わくわくするな",
+        "gloss": "I get excited"
+      },
+      {
+        "text": "スターデューバレーを",
+        "kana": "スターデューバレーを",
+        "gloss": "Stardew Valley"
+      },
+      {
+        "text": "第一級の",
+        "kana": "だいいっきゅうの",
+        "gloss": "top-class"
+      },
+      {
+        "text": "アート発信地にする",
+        "kana": "あーとはっしんちにする",
+        "gloss": "making into an art hub"
+      },
+      {
+        "text": "って",
+        "kana": "って",
+        "gloss": "(quote)"
+      },
+      {
+        "text": "アイデアに",
+        "kana": "あいであに",
+        "gloss": "the idea"
+      },
+      {
+        "text": "賛成してくれて",
+        "kana": "さんせいしてくれて",
+        "gloss": "that you're on board with"
+      },
+      {
+        "text": "うれしいよ、",
+        "kana": "うれしいよ",
+        "gloss": "I'm glad"
+      },
+      {
+        "text": "@！$h",
+        "kana": "",
+        "gloss": "(your name)"
+      }
+    ]
+  },
+  "internet#0": {
+    "japanese": "まあ悪くないアイデアだけど…まずパソコンを買わないと。$7",
+    "english": "Hmm... I guess that's not a bad idea... but first I'd need to buy a computer.",
+    "segments": [
+      {
+        "text": "まあ",
+        "kana": "まあ",
+        "gloss": "well"
+      },
+      {
+        "text": "悪くないアイデアだけど…",
+        "kana": "わるくないあいであだけど",
+        "gloss": "not a bad idea, but"
+      },
+      {
+        "text": "まずパソコンを",
+        "kana": "まずぱそこんを",
+        "gloss": "first, a computer"
+      },
+      {
+        "text": "買わないと。$7",
+        "kana": "かわないと",
+        "gloss": "have to buy"
+      }
+    ]
+  },
+  "internet#1": {
+    "japanese": "あと…それって、お金がかかるよね。$s",
+    "english": "And... that would cost money, too.",
+    "segments": [
+      {
+        "text": "あと…",
+        "kana": "あと",
+        "gloss": "and"
+      },
+      {
+        "text": "それって、",
+        "kana": "それって",
+        "gloss": "that"
+      },
+      {
+        "text": "お金がかかるよね。$s",
+        "kana": "おかねがかかるよね",
+        "gloss": "costs money"
+      }
+    ]
+  },
+  "internet#2": {
+    "japanese": "うん…来てくれて、ありがとう。",
+    "english": "Well... thanks for coming.",
+    "segments": [
+      {
+        "text": "うん…",
+        "kana": "うん",
+        "gloss": "well"
+      },
+      {
+        "text": "来てくれて、",
+        "kana": "きてくれて",
+        "gloss": "for coming"
+      },
+      {
+        "text": "ありがとう。",
+        "kana": "ありがとう",
+        "gloss": "thanks"
+      }
+    ]
+  },
+  "internet2#0": {
+    "japanese": "最近ね、コンピュータを買うためにお金をためてるんだ…まえ言ってもらったみたいに、ネットで作品を売ってみようと思って。",
+    "english": "Lately I've been saving up money to buy a computer... so I can try selling my work online, like you suggested before.",
+    "segments": [
+      {
+        "text": "最近ね、",
+        "kana": "さいきんね",
+        "gloss": "lately"
+      },
+      {
+        "text": "コンピュータを",
+        "kana": "コンピュータを",
+        "gloss": "a computer"
+      },
+      {
+        "text": "買うために",
+        "kana": "かうために",
+        "gloss": "to buy"
+      },
+      {
+        "text": "お金をためてるんだ…",
+        "kana": "おかねをためてるんだ",
+        "gloss": "I've been saving money"
+      },
+      {
+        "text": "まえ",
+        "kana": "まえ",
+        "gloss": "before"
+      },
+      {
+        "text": "言ってもらったみたいに、",
+        "kana": "いってもらったみたいに",
+        "gloss": "like you suggested"
+      },
+      {
+        "text": "ネットで",
+        "kana": "ネットで",
+        "gloss": "online"
+      },
+      {
+        "text": "作品を売ってみようと思って。",
+        "kana": "さくひんをうってみようとおもって",
+        "gloss": "thinking I'd try selling my work"
+      }
+    ]
+  },
+  "internet2#1": {
+    "japanese": "アドバイスをくれる友だちがいてくれてよかった！",
+    "english": "It's great to have a friend who gives me advice!",
+    "segments": [
+      {
+        "text": "アドバイスをくれる",
+        "kana": "あどばいすをくれる",
+        "gloss": "who gives advice"
+      },
+      {
+        "text": "友だちがいてくれてよかった！",
+        "kana": "ともだちがいてくれてよかった",
+        "gloss": "great to have a friend"
+      }
+    ]
+  }
+}

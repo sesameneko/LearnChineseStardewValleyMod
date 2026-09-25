@@ -1,0 +1,2143 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Dialogue-Clint.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Japanese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, reading, gloss} whose \"text\" fields concatenate back to exactly reproduce \"japanese\" (validated by tools/segment-data/segtool.py).",
+  "AcceptBirthdayGift_Negative": {
+    "japanese": "これが誕生日プレゼントだって？これは、うーん… どうしてこんなものを…とにかく、誕生日を覚えといてくれたことには感謝するよ。",
+    "english": "Is this a birthday present, you say? This is... hmm... why something like this... anyway, I'm grateful you remembered my birthday.",
+    "segments": [
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)"
+      },
+      {
+        "text": "誕生日",
+        "kana": "たんじょうび",
+        "gloss": "birthday"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present"
+      },
+      {
+        "text": "だって？",
+        "kana": "だって",
+        "gloss": "so you say"
+      },
+      {
+        "text": "これは、",
+        "kana": "これ は",
+        "gloss": "as for this"
+      },
+      {
+        "text": "うーん… ",
+        "kana": "うーん",
+        "gloss": "hmm"
+      },
+      {
+        "text": "どうして",
+        "kana": "どうして",
+        "gloss": "why"
+      },
+      {
+        "text": "こんなものを…",
+        "kana": "こんな もの を",
+        "gloss": "a thing like this"
+      },
+      {
+        "text": "とにかく、",
+        "kana": "とにかく",
+        "gloss": "anyway"
+      },
+      {
+        "text": "誕生日を",
+        "kana": "たんじょうび を",
+        "gloss": "my birthday"
+      },
+      {
+        "text": "覚えといてくれた",
+        "kana": "おぼえといて くれた",
+        "gloss": "that you remembered"
+      },
+      {
+        "text": "ことには",
+        "kana": "こと に は",
+        "gloss": "for the fact"
+      },
+      {
+        "text": "感謝するよ。",
+        "kana": "かんしゃする よ",
+        "gloss": "I'm grateful"
+      }
+    ]
+  },
+  "AcceptBirthdayGift_Positive": {
+    "japanese": "おれはめったに誕生日プレゼントなんてもらえない。@、感謝するよ。ありがとう。",
+    "english": "I rarely get birthday presents. @, this really means a lot. Thank you.",
+    "segments": [
+      {
+        "text": "おれは",
+        "kana": "おれ は",
+        "gloss": "as for me"
+      },
+      {
+        "text": "めったに",
+        "kana": "めったに",
+        "gloss": "rarely"
+      },
+      {
+        "text": "誕生日プレゼントなんて",
+        "kana": "たんじょうび プレゼント なんて",
+        "gloss": "something like a birthday present"
+      },
+      {
+        "text": "もらえない。",
+        "kana": "もらえない",
+        "gloss": "I don't get"
+      },
+      {
+        "text": "@、",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "感謝するよ。",
+        "kana": "かんしゃする よ",
+        "gloss": "I'm grateful"
+      },
+      {
+        "text": "ありがとう。",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "AcceptGift_(O)SkillBook_3": {
+    "japanese": "これはおもしろそうだ…谷ではこういう本がなかなか手に入らないからな。#$b#いいアイディアがたくさん載っていそうだ。ありがとう、@。",
+    "english": "Oh, this looks interesting... books like this aren't easy to get in the valley.#$b#Looks like it's got a lot of good ideas in it. Thanks, @.",
+    "segments": [
+      {
+        "text": "これは",
+        "kana": "これ は",
+        "gloss": "as for this"
+      },
+      {
+        "text": "おもしろそうだ…",
+        "kana": "おもしろそう だ",
+        "gloss": "it looks interesting"
+      },
+      {
+        "text": "谷では",
+        "kana": "たに で は",
+        "gloss": "in the valley"
+      },
+      {
+        "text": "こういう本が",
+        "kana": "こういう ほん が",
+        "gloss": "books like this"
+      },
+      {
+        "text": "なかなか",
+        "kana": "なかなか",
+        "gloss": "not easily"
+      },
+      {
+        "text": "手に入らないからな。#$b#",
+        "kana": "て に はいらない から な",
+        "gloss": "because you can't get your hands on"
+      },
+      {
+        "text": "いいアイディアが",
+        "kana": "いい アイディア が",
+        "gloss": "good ideas"
+      },
+      {
+        "text": "たくさん",
+        "kana": "たくさん",
+        "gloss": "a lot"
+      },
+      {
+        "text": "載っていそうだ。",
+        "kana": "のっていそう だ",
+        "gloss": "it looks like it has"
+      },
+      {
+        "text": "ありがとう、",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      }
+    ]
+  },
+  "AcceptGift_(O)StardropTea": {
+    "japanese": "それを… おれに？おれにはもったいないものだが… ありがとう。",
+    "english": "You're... giving this to me? I don't think I deserve it, but... thank you.",
+    "segments": [
+      {
+        "text": "それを… ",
+        "kana": "それ を",
+        "gloss": "this (object)"
+      },
+      {
+        "text": "おれに？",
+        "kana": "おれ に",
+        "gloss": "to me"
+      },
+      {
+        "text": "おれには",
+        "kana": "おれ に は",
+        "gloss": "to me"
+      },
+      {
+        "text": "もったいないものだが… ",
+        "kana": "もったいない もの だ が",
+        "gloss": "it's too good for me, but"
+      },
+      {
+        "text": "ありがとう。",
+        "kana": "ありがとう",
+        "gloss": "thank you"
+      }
+    ]
+  },
+  "Fri": {
+    "japanese": "外の天気なんて、 おれにはあまり 関係のないことだ。一年中、 店から離れないからね。#$e#気がめいるだろう？",
+    "english": "I don't really care about the weather outside. I stay near the shop all year round.#$e#It's kind of depressing, huh?",
+    "segments": [
+      {
+        "text": "外の",
+        "kana": "そと の",
+        "gloss": "outside's"
+      },
+      {
+        "text": "天気なんて、 ",
+        "kana": "てんき なんて",
+        "gloss": "weather (topic-ish)"
+      },
+      {
+        "text": "おれには",
+        "kana": "おれ に は",
+        "gloss": "to me"
+      },
+      {
+        "text": "あまり ",
+        "kana": "あまり",
+        "gloss": "not much"
+      },
+      {
+        "text": "関係のないことだ。",
+        "kana": "かんけい の ない こと だ",
+        "gloss": "it's not something that matters"
+      },
+      {
+        "text": "一年中、 ",
+        "kana": "いちねんじゅう",
+        "gloss": "all year round"
+      },
+      {
+        "text": "店から",
+        "kana": "みせ から",
+        "gloss": "from the shop"
+      },
+      {
+        "text": "離れないからね。#$e#",
+        "kana": "はなれない から ね",
+        "gloss": "because I don't leave"
+      },
+      {
+        "text": "気がめいるだろう？",
+        "kana": "き が めいる だろう",
+        "gloss": "it's depressing, isn't it"
+      }
+    ]
+  },
+  "Fri8": {
+    "japanese": "お金をためてパソコンを買わないと…#$e#インターネットで恋人を見つけられるかも知れない…$s#$e#なんだって？別におかしいことじゃないだろ！みんながみんな、カッコよくて社交的な牧場主ってわけじゃないんだ！$u#$e#おれみたいな男はいったいどうしたらいいんだ？ うーん…$s",
+    "english": "I need to save up and buy a computer...#$e#Maybe I could find a girlfriend on the internet...$s#$e#What? It's not weird! Not every farmer is cool and sociable!$u#$e#What's a guy like me supposed to do? ...Hmm...$s",
+    "segments": [
+      {
+        "text": "お金をためて",
+        "kana": "おかね を ためて",
+        "gloss": "saving up money"
+      },
+      {
+        "text": "パソコンを",
+        "kana": "パソコン を",
+        "gloss": "a computer (object)"
+      },
+      {
+        "text": "買わないと…#$e#",
+        "kana": "かわない と",
+        "gloss": "I have to buy"
+      },
+      {
+        "text": "インターネットで",
+        "kana": "インターネット で",
+        "gloss": "on the internet"
+      },
+      {
+        "text": "恋人を",
+        "kana": "こいびと を",
+        "gloss": "a girlfriend (object)"
+      },
+      {
+        "text": "見つけられるかも知れない…$s#$e#",
+        "kana": "みつけられる かも しれない",
+        "gloss": "I might be able to find"
+      },
+      {
+        "text": "なんだって？",
+        "kana": "なんだって",
+        "gloss": "what did you say"
+      },
+      {
+        "text": "別に",
+        "kana": "べつに",
+        "gloss": "not particularly"
+      },
+      {
+        "text": "おかしいことじゃないだろ！",
+        "kana": "おかしい こと じゃ ない だろ",
+        "gloss": "it's not a weird thing, is it"
+      },
+      {
+        "text": "みんなが",
+        "kana": "みんな が",
+        "gloss": "everyone"
+      },
+      {
+        "text": "みんな、",
+        "kana": "みんな",
+        "gloss": "every single one"
+      },
+      {
+        "text": "カッコよくて",
+        "kana": "かっこよくて",
+        "gloss": "being cool and"
+      },
+      {
+        "text": "社交的な",
+        "kana": "しゃこうてき な",
+        "gloss": "sociable"
+      },
+      {
+        "text": "牧場主って",
+        "kana": "ぼくじょうぬしって",
+        "gloss": "as a farmer"
+      },
+      {
+        "text": "わけじゃないんだ！$u#$e#",
+        "kana": "わけ じゃ ない ん だ",
+        "gloss": "it's not the case"
+      },
+      {
+        "text": "おれみたいな男は",
+        "kana": "おれ みたいな おとこ は",
+        "gloss": "a guy like me"
+      },
+      {
+        "text": "いったい",
+        "kana": "いったい",
+        "gloss": "on earth"
+      },
+      {
+        "text": "どうしたらいいんだ？ ",
+        "kana": "どうしたら いい ん だ",
+        "gloss": "what should I do"
+      },
+      {
+        "text": "うーん…$s",
+        "kana": "うーん",
+        "gloss": "hmm"
+      }
+    ]
+  },
+  "GreenRain": {
+    "japanese": "こういう時は、人間の本当の性格が試されるんだ。#$e#おれはエミ…いや、この毒の雨からみんなを守るぞ！",
+    "english": "It's times like this that test a person's true character.#$e#I'll protect Em... I mean, I'll protect everyone from this poisonous rain!",
+    "segments": [
+      {
+        "text": "こういう時は、",
+        "kana": "こういう とき は",
+        "gloss": "times like this"
+      },
+      {
+        "text": "人間の",
+        "kana": "にんげん の",
+        "gloss": "a person's"
+      },
+      {
+        "text": "本当の性格が",
+        "kana": "ほんとう の せいかく が",
+        "gloss": "true character"
+      },
+      {
+        "text": "試されるんだ。#$e#",
+        "kana": "ためされる ん だ",
+        "gloss": "is put to the test"
+      },
+      {
+        "text": "おれは",
+        "kana": "おれ は",
+        "gloss": "as for me"
+      },
+      {
+        "text": "エミ…",
+        "kana": "えみ",
+        "gloss": "Em"
+      },
+      {
+        "text": "いや、",
+        "kana": "いや",
+        "gloss": "no, I mean"
+      },
+      {
+        "text": "この毒の雨から",
+        "kana": "この どく の あめ から",
+        "gloss": "from this poisonous rain"
+      },
+      {
+        "text": "みんなを",
+        "kana": "みんな を",
+        "gloss": "everyone (object)"
+      },
+      {
+        "text": "守るぞ！",
+        "kana": "まもる ぞ",
+        "gloss": "I'll protect"
+      }
+    ]
+  },
+  "GreenRainFinished": {
+    "japanese": "何事もなかったな。やっとヒーローになれるチャンスがきたと思ったのに…まあいいや…仕事にもどるよ。",
+    "english": "Nothing happened. And here I thought I'd finally gotten my chance to be a hero... oh well... back to work.",
+    "segments": [
+      {
+        "text": "何事もなかったな。",
+        "kana": "なにごと も なかった な",
+        "gloss": "nothing happened"
+      },
+      {
+        "text": "やっと",
+        "kana": "やっと",
+        "gloss": "finally"
+      },
+      {
+        "text": "ヒーローになれる",
+        "kana": "ヒーロー に なれる",
+        "gloss": "I could become a hero"
+      },
+      {
+        "text": "チャンスがきたと",
+        "kana": "チャンス が きた と",
+        "gloss": "the chance had come"
+      },
+      {
+        "text": "思ったのに…",
+        "kana": "おもった のに",
+        "gloss": "even though I thought"
+      },
+      {
+        "text": "まあいいや…",
+        "kana": "まあいいや",
+        "gloss": "oh well"
+      },
+      {
+        "text": "仕事にもどるよ。",
+        "kana": "しごと に もどる よ",
+        "gloss": "I'll get back to work"
+      }
+    ]
+  },
+  "GreenRain_2": {
+    "japanese": "縁起でもないことだけど、こんな変な雨じゃなくて本当の災害が起きたらいいのにと思うことがあるよ。#$b#なにもかもを揺さぶるようことが起きたら…#$b#けが人が出たらいいなんて思っちゃいない…#$b#自分が生きていることを感じたいんだ…なにかのために生きていると思いたいんだ…",
+    "english": "I feel bad admitting it, but sometimes I wish something like a real disaster would happen, not just this weird rain.#$b#Something to shake everything up...#$b#I don't mean I want people to get hurt...#$b#I just want to feel like I'm alive... I want to feel like I'm living for something...",
+    "segments": [
+      {
+        "text": "縁起でもないことだけど、",
+        "kana": "えんぎ でも ない こと だけど",
+        "gloss": "it's an inauspicious thing to say, but"
+      },
+      {
+        "text": "こんな変な雨じゃなくて",
+        "kana": "こんな へん な あめ じゃ なくて",
+        "gloss": "not this weird rain"
+      },
+      {
+        "text": "本当の災害が",
+        "kana": "ほんとう の さいがい が",
+        "gloss": "a real disaster"
+      },
+      {
+        "text": "起きたらいいのにと",
+        "kana": "おきたら いい のに と",
+        "gloss": "I wish it would happen"
+      },
+      {
+        "text": "思うことがあるよ。#$b#",
+        "kana": "おもう こと が ある よ",
+        "gloss": "there are times I think"
+      },
+      {
+        "text": "なにもかもを",
+        "kana": "なにもかも を",
+        "gloss": "everything (object)"
+      },
+      {
+        "text": "揺さぶるようことが",
+        "kana": "ゆさぶる よう こと が",
+        "gloss": "something that shakes"
+      },
+      {
+        "text": "起きたら…#$b#",
+        "kana": "おきたら",
+        "gloss": "if it happened"
+      },
+      {
+        "text": "けが人が出たらいいなんて",
+        "kana": "けがにん が でたら いい なんて",
+        "gloss": "that I want people to get hurt"
+      },
+      {
+        "text": "思っちゃいない…#$b#",
+        "kana": "おもっちゃ いない",
+        "gloss": "I don't think"
+      },
+      {
+        "text": "自分が",
+        "kana": "じぶん が",
+        "gloss": "myself"
+      },
+      {
+        "text": "生きていることを",
+        "kana": "いきている こと を",
+        "gloss": "that I'm alive"
+      },
+      {
+        "text": "感じたいんだ…",
+        "kana": "かんじたい ん だ",
+        "gloss": "I want to feel"
+      },
+      {
+        "text": "なにかのために",
+        "kana": "なにか の ため に",
+        "gloss": "for the sake of something"
+      },
+      {
+        "text": "生きていると",
+        "kana": "いきている と",
+        "gloss": "that I'm living"
+      },
+      {
+        "text": "思いたいんだ…",
+        "kana": "おもいたい ん だ",
+        "gloss": "I want to think"
+      }
+    ]
+  },
+  "Introduction": {
+    "japanese": "おや…こんにちは。おれはクリント。#$e#この町の 鍛冶屋だ。道具の 性能を 上げたくなったら、 おれに任せてくれ。",
+    "english": "Oh... hello. I'm Clint.#$e#I'm the blacksmith in this town. If you ever want to upgrade your tools' performance, leave it to me.",
+    "segments": [
+      {
+        "text": "おや…",
+        "kana": "おや",
+        "gloss": "oh"
+      },
+      {
+        "text": "こんにちは。",
+        "kana": "こんにちは",
+        "gloss": "hello"
+      },
+      {
+        "text": "おれは",
+        "kana": "おれ は",
+        "gloss": "as for me"
+      },
+      {
+        "text": "クリント。#$e#",
+        "kana": "くりんと",
+        "gloss": "Clint"
+      },
+      {
+        "text": "この町の ",
+        "kana": "この まち の",
+        "gloss": "this town's"
+      },
+      {
+        "text": "鍛冶屋だ。",
+        "kana": "かじや だ",
+        "gloss": "I'm the blacksmith"
+      },
+      {
+        "text": "道具の ",
+        "kana": "どうぐ の",
+        "gloss": "tool's"
+      },
+      {
+        "text": "性能を ",
+        "kana": "せいのう を",
+        "gloss": "performance (object)"
+      },
+      {
+        "text": "上げたくなったら、 ",
+        "kana": "あげたく なったら",
+        "gloss": "if you come to want to raise"
+      },
+      {
+        "text": "おれに",
+        "kana": "おれ に",
+        "gloss": "to me"
+      },
+      {
+        "text": "任せてくれ。",
+        "kana": "まかせて くれ",
+        "gloss": "leave it"
+      }
+    ]
+  },
+  "Mon": {
+    "japanese": "ああ。おれは鍛冶屋だ。#$e#父もそうだった。#$e#祖父もまた、 鍛冶を やっていた。$u#$q 9/9 Mon_old#でも曽祖父は 何だったか、 分かるかね…#$r 9 30 Mon_9#鍛冶屋。#$r 9 50 Mon_clown#ひょうきんな 道化師。#$r 9 -50 Mon_rude#イヤミな 皮肉屋。",
+    "english": "Yeah. I'm a blacksmith.#$e#My father was one too.#$e#My grandfather was also doing blacksmithing.$u#$q 9/9 Mon_old#But do you know what my great-grandfather was...#$r 9 30 Mon_9#A blacksmith.#$r 9 50 Mon_clown#A comical clown.#$r 9 -50 Mon_rude#A sarcastic jerk.",
+    "segments": [
+      {
+        "text": "ああ。",
+        "kana": "ああ",
+        "gloss": "yeah"
+      },
+      {
+        "text": "おれは",
+        "kana": "おれ は",
+        "gloss": "as for me"
+      },
+      {
+        "text": "鍛冶屋だ。#$e#",
+        "kana": "かじや だ",
+        "gloss": "I'm a blacksmith"
+      },
+      {
+        "text": "父も",
+        "kana": "ちち も",
+        "gloss": "my father too"
+      },
+      {
+        "text": "そうだった。#$e#",
+        "kana": "そうだった",
+        "gloss": "was so"
+      },
+      {
+        "text": "祖父も",
+        "kana": "そふ も",
+        "gloss": "my grandfather too"
+      },
+      {
+        "text": "また、 ",
+        "kana": "また",
+        "gloss": "also"
+      },
+      {
+        "text": "鍛冶を ",
+        "kana": "かじ を",
+        "gloss": "blacksmithing (object)"
+      },
+      {
+        "text": "やっていた。$u",
+        "kana": "やっていた",
+        "gloss": "was doing"
+      },
+      {
+        "text": "#$q 9/9 Mon_old#",
+        "kana": "9 9 Mon old",
+        "gloss": "(dialogue choice prompt)"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "曽祖父は ",
+        "kana": "そうそふ は",
+        "gloss": "my great-grandfather"
+      },
+      {
+        "text": "何だったか、 ",
+        "kana": "なん だった か",
+        "gloss": "what he was"
+      },
+      {
+        "text": "分かるかね…",
+        "kana": "わかる か ね",
+        "gloss": "do you know"
+      },
+      {
+        "text": "#$r 9 30 Mon_9#",
+        "kana": "9 30 Mon 9",
+        "gloss": "(dialogue choice: Mon_9)"
+      },
+      {
+        "text": "鍛冶屋。",
+        "kana": "かじや",
+        "gloss": "a blacksmith"
+      },
+      {
+        "text": "#$r 9 50 Mon_clown#",
+        "kana": "9 50 Mon clown",
+        "gloss": "(dialogue choice: Mon_clown)"
+      },
+      {
+        "text": "ひょうきんな ",
+        "kana": "ひょうきんな",
+        "gloss": "comical"
+      },
+      {
+        "text": "道化師。",
+        "kana": "どうけし",
+        "gloss": "clown"
+      },
+      {
+        "text": "#$r 9 -50 Mon_rude#",
+        "kana": "9 50 Mon rude",
+        "gloss": "(dialogue choice: Mon_rude)"
+      },
+      {
+        "text": "イヤミな ",
+        "kana": "いやみな",
+        "gloss": "sarcastic"
+      },
+      {
+        "text": "皮肉屋。",
+        "kana": "ひにくや",
+        "gloss": "cynic"
+      }
+    ]
+  },
+  "Mon4": {
+    "japanese": "牧場主で いることを 感謝するんだね、@。いつも高温な かまどのそばに いるより、 外で働くほうが ずっといい。#$e#父のせいで、 おれには 鍛冶屋の道しか なかった。",
+    "english": "Be grateful that you're a farmer, @. It's much better to work outside than to always be near a hot furnace.#$e#Because of my father, blacksmithing was the only path I had.",
+    "segments": [
+      {
+        "text": "牧場主で ",
+        "kana": "ぼくじょうぬし で",
+        "gloss": "as a farmer"
+      },
+      {
+        "text": "いることを ",
+        "kana": "いる こと を",
+        "gloss": "being (object)"
+      },
+      {
+        "text": "感謝するんだね、",
+        "kana": "かんしゃする ん だ ね",
+        "gloss": "be grateful"
+      },
+      {
+        "text": "@。",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "いつも",
+        "kana": "いつも",
+        "gloss": "always"
+      },
+      {
+        "text": "高温な ",
+        "kana": "こうおん な",
+        "gloss": "hot"
+      },
+      {
+        "text": "かまどのそばに ",
+        "kana": "かまど の そば に",
+        "gloss": "near the furnace"
+      },
+      {
+        "text": "いるより、 ",
+        "kana": "いる より",
+        "gloss": "than being"
+      },
+      {
+        "text": "外で働くほうが ",
+        "kana": "そと で はたらく ほう が",
+        "gloss": "working outside"
+      },
+      {
+        "text": "ずっといい。#$e#",
+        "kana": "ずっと いい",
+        "gloss": "is much better"
+      },
+      {
+        "text": "父のせいで、 ",
+        "kana": "ちち の せい で",
+        "gloss": "because of my father"
+      },
+      {
+        "text": "おれには ",
+        "kana": "おれ に は",
+        "gloss": "for me"
+      },
+      {
+        "text": "鍛冶屋の道しか ",
+        "kana": "かじや の みち しか",
+        "gloss": "only the path of a blacksmith"
+      },
+      {
+        "text": "なかった。",
+        "kana": "なかった",
+        "gloss": "there wasn't"
+      }
+    ]
+  },
+  "Mon8": {
+    "japanese": "言いたくはないけど、父親から無理やり鍛冶屋にさせられたことに感謝したくなるときもあるんだ。おれには手に職がある。#$e#もし仕事がなかったら、一日中ただ座って自分をあわれんでいたかもしれない。$s",
+    "english": "I don't want to say it, but sometimes I feel like being grateful that my father forced me into blacksmithing. At least I have a trade.#$e#If I didn't have a job, I'd probably just sit around all day feeling sorry for myself.$s",
+    "segments": [
+      {
+        "text": "言いたくはないけど、",
+        "kana": "いいたく は ない けど",
+        "gloss": "I don't want to say it, but"
+      },
+      {
+        "text": "父親から",
+        "kana": "ちちおや から",
+        "gloss": "from my father"
+      },
+      {
+        "text": "無理やり",
+        "kana": "むりやり",
+        "gloss": "by force"
+      },
+      {
+        "text": "鍛冶屋にさせられたことに",
+        "kana": "かじや に させられた こと に",
+        "gloss": "at having been made a blacksmith"
+      },
+      {
+        "text": "感謝したくなるときもあるんだ。",
+        "kana": "かんしゃしたく なる とき も ある ん だ",
+        "gloss": "there are times I feel like being grateful"
+      },
+      {
+        "text": "おれには",
+        "kana": "おれ に は",
+        "gloss": "to me"
+      },
+      {
+        "text": "手に職がある。#$e#",
+        "kana": "て に しょく が ある",
+        "gloss": "I have a trade"
+      },
+      {
+        "text": "もし",
+        "kana": "もし",
+        "gloss": "if"
+      },
+      {
+        "text": "仕事がなかったら、",
+        "kana": "しごと が なかったら",
+        "gloss": "if I had no work"
+      },
+      {
+        "text": "一日中",
+        "kana": "いちにちじゅう",
+        "gloss": "all day"
+      },
+      {
+        "text": "ただ",
+        "kana": "ただ",
+        "gloss": "just"
+      },
+      {
+        "text": "座って",
+        "kana": "すわって",
+        "gloss": "sitting"
+      },
+      {
+        "text": "自分をあわれんでいたかもしれない。$s",
+        "kana": "じぶん を あわれんで いた かも しれない",
+        "gloss": "I might have been feeling sorry for myself"
+      }
+    ]
+  },
+  "Mon_9": {
+    "japanese": "どうして わかった？$u",
+    "english": "How did you know?$u",
+    "segments": [
+      {
+        "text": "どうして ",
+        "kana": "どうして",
+        "gloss": "why"
+      },
+      {
+        "text": "わかった？$u",
+        "kana": "わかった",
+        "gloss": "did you know"
+      }
+    ]
+  },
+  "Mon_clown": {
+    "japanese": "ハハハッ。それは良い。$h",
+    "english": "Hahaha. That's a good one.$h",
+    "segments": [
+      {
+        "text": "ハハハッ。",
+        "kana": "はははっ",
+        "gloss": "hahaha"
+      },
+      {
+        "text": "それは",
+        "kana": "それ は",
+        "gloss": "that"
+      },
+      {
+        "text": "良い。$h",
+        "kana": "いい",
+        "gloss": "is good"
+      }
+    ]
+  },
+  "Mon_old": {
+    "japanese": "そう、 おれの曽祖父も 鍛冶屋だったのさ。",
+    "english": "Yeah, my great-grandfather was also a blacksmith.",
+    "segments": [
+      {
+        "text": "そう、 ",
+        "kana": "そう",
+        "gloss": "yeah"
+      },
+      {
+        "text": "おれの曽祖父も ",
+        "kana": "おれ の そうそふ も",
+        "gloss": "my great-grandfather too"
+      },
+      {
+        "text": "鍛冶屋だったのさ。",
+        "kana": "かじや だった の さ",
+        "gloss": "was a blacksmith"
+      }
+    ]
+  },
+  "Mon_rude": {
+    "japanese": "おやおや。なんてことを 言うんだ。確かにおれも 失礼だったかも しれないが、 あんたほどでは なかったぞ。",
+    "english": "Well, well. What a thing to say. I might've been a little rude too, but not as much as you.",
+    "segments": [
+      {
+        "text": "おやおや。",
+        "kana": "おやおや",
+        "gloss": "well, well"
+      },
+      {
+        "text": "なんてことを ",
+        "kana": "なんて こと を",
+        "gloss": "what a thing"
+      },
+      {
+        "text": "言うんだ。",
+        "kana": "いう ん だ",
+        "gloss": "to say"
+      },
+      {
+        "text": "確かに",
+        "kana": "たしかに",
+        "gloss": "certainly"
+      },
+      {
+        "text": "おれも ",
+        "kana": "おれ も",
+        "gloss": "I too"
+      },
+      {
+        "text": "失礼だったかも ",
+        "kana": "しつれい だった かも",
+        "gloss": "rude, perhaps"
+      },
+      {
+        "text": "しれないが、 ",
+        "kana": "しれない が",
+        "gloss": "(concessive, but)"
+      },
+      {
+        "text": "あんたほどでは ",
+        "kana": "あんた ほど で は",
+        "gloss": "to your extent"
+      },
+      {
+        "text": "なかったぞ。",
+        "kana": "なかった ぞ",
+        "gloss": "it wasn't"
+      }
+    ]
+  },
+  "Resort": {
+    "japanese": "（はぁ）…みんなでビーチにいても、まだ孤独を感じるんだ…$s",
+    "english": "*sigh*... We're all here at the beach and I still feel lonely...$s",
+    "segments": [
+      {
+        "text": "（はぁ）…",
+        "kana": "はあ",
+        "gloss": "sigh"
+      },
+      {
+        "text": "みんなでビーチにいても、",
+        "kana": "みんな で びーち に いても",
+        "gloss": "even though we're all at the beach together"
+      },
+      {
+        "text": "まだ",
+        "kana": "まだ",
+        "gloss": "still"
+      },
+      {
+        "text": "孤独を感じるんだ…$s",
+        "kana": "こどく を かんじる ん だ",
+        "gloss": "I feel lonely"
+      }
+    ]
+  },
+  "Resort_Bar": {
+    "japanese": "腹が減った…$s",
+    "english": "I'm hungry...$s",
+    "segments": [
+      {
+        "text": "腹が減った…$s",
+        "kana": "はら が へった",
+        "gloss": "I'm hungry"
+      }
+    ]
+  },
+  "Resort_Chair": {
+    "japanese": "痛い…全身を日焼けした。$s",
+    "english": "Ow... my whole body is sunburnt.$s",
+    "segments": [
+      {
+        "text": "痛い…",
+        "kana": "いたい",
+        "gloss": "ow"
+      },
+      {
+        "text": "全身を",
+        "kana": "ぜんしん を",
+        "gloss": "my whole body (object)"
+      },
+      {
+        "text": "日焼けした。$s",
+        "kana": "ひやけした",
+        "gloss": "got sunburnt"
+      }
+    ]
+  },
+  "Resort_Entering": {
+    "japanese": "特製の赤いトランクスを履いてみるか。すごく注目を集めるはずだ。",
+    "english": "I think I'll try wearing my special red trunks. They should really get people's attention.",
+    "segments": [
+      {
+        "text": "特製の赤いトランクスを",
+        "kana": "とくせい の あかい トランクス を",
+        "gloss": "my special red trunks (object)"
+      },
+      {
+        "text": "履いてみるか。",
+        "kana": "はいてみる か",
+        "gloss": "shall I try wearing"
+      },
+      {
+        "text": "すごく",
+        "kana": "すごく",
+        "gloss": "a lot"
+      },
+      {
+        "text": "注目を集めるはずだ。",
+        "kana": "ちゅうもく を あつめる はず だ",
+        "gloss": "should attract attention"
+      }
+    ]
+  },
+  "Resort_Leaving": {
+    "japanese": "まあ、想像したようにはいかなかったな…",
+    "english": "Well, it didn't turn out like I imagined...",
+    "segments": [
+      {
+        "text": "まあ、",
+        "kana": "まあ",
+        "gloss": "well"
+      },
+      {
+        "text": "想像したようには",
+        "kana": "そうぞう した よう に は",
+        "gloss": "as I had imagined"
+      },
+      {
+        "text": "いかなかったな…",
+        "kana": "いかなかった な",
+        "gloss": "it didn't go"
+      }
+    ]
+  },
+  "Resort_Shore": {
+    "japanese": "ああ、しまった...足の爪を切るのを忘れていた。$s",
+    "english": "Oh no... I forgot to cut my toenails.$s",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "oh"
+      },
+      {
+        "text": "しまった...",
+        "kana": "しまった",
+        "gloss": "darn it"
+      },
+      {
+        "text": "足の爪を",
+        "kana": "あし の つめ を",
+        "gloss": "my toenails (object)"
+      },
+      {
+        "text": "切るのを",
+        "kana": "きる の を",
+        "gloss": "cutting"
+      },
+      {
+        "text": "忘れていた。$s",
+        "kana": "わすれていた",
+        "gloss": "I forgot"
+      }
+    ]
+  },
+  "Resort_Shore_2": {
+    "japanese": "溶鉱炉で仕事をしているから、このくらいの暑さは何ともないと思ってたが、いつの間にか汗だくだ。$s#$e#誰も気づいてないといいんだが…#$e#%クリントの体はテカっている…",
+    "english": "I thought working the furnace would've gotten me used to this kind of heat, but before I knew it I was drenched in sweat.$s#$e#I hope no one noticed...#$e#%Clint's body is glistening...",
+    "segments": [
+      {
+        "text": "溶鉱炉で",
+        "kana": "ようこうろ で",
+        "gloss": "at the furnace"
+      },
+      {
+        "text": "仕事をしているから、",
+        "kana": "しごと を している から",
+        "gloss": "because I'm working"
+      },
+      {
+        "text": "このくらいの暑さは",
+        "kana": "この くらい の あつさ は",
+        "gloss": "heat like this"
+      },
+      {
+        "text": "何ともないと思ってたが、",
+        "kana": "なん とも ない と おもってた が",
+        "gloss": "I thought it would be nothing, but"
+      },
+      {
+        "text": "いつの間にか",
+        "kana": "いつのまにか",
+        "gloss": "before I knew it"
+      },
+      {
+        "text": "汗だくだ。$s#$e#",
+        "kana": "あせだく だ",
+        "gloss": "I'm drenched in sweat"
+      },
+      {
+        "text": "誰も気づいてないといいんだが…#$e#%",
+        "kana": "だれ も きづいてない と いい ん だ が",
+        "gloss": "I hope no one has noticed"
+      },
+      {
+        "text": "クリントの体は",
+        "kana": "くりんと の からだ は",
+        "gloss": "Clint's body"
+      },
+      {
+        "text": "テカっている…",
+        "kana": "てかっている",
+        "gloss": "is glistening"
+      }
+    ]
+  },
+  "Sat": {
+    "japanese": "時々、 どうして この町に 定住することになったか 考えて しまうんだ。$u",
+    "english": "Sometimes I wonder how I ended up settling in this town.$u",
+    "segments": [
+      {
+        "text": "時々、 ",
+        "kana": "ときどき",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "どうして ",
+        "kana": "どうして",
+        "gloss": "why"
+      },
+      {
+        "text": "この町に ",
+        "kana": "この まち に",
+        "gloss": "in this town"
+      },
+      {
+        "text": "定住することになったか ",
+        "kana": "ていじゅう する こと に なった か",
+        "gloss": "I ended up settling"
+      },
+      {
+        "text": "考えて ",
+        "kana": "かんがえて",
+        "gloss": "thinking"
+      },
+      {
+        "text": "しまうんだ。$u",
+        "kana": "しまう ん だ",
+        "gloss": "end up doing (it)"
+      }
+    ]
+  },
+  "Sat10": {
+    "japanese": "どうぐの調子はどうだ？#$b#修理が必要になったらおれの店に来てくれ。おれのどうぐは永久保証つきだ！",
+    "english": "How are your tools holding up?#$b#If they ever need repairing, come to my shop. My tools come with a lifetime guarantee!",
+    "segments": [
+      {
+        "text": "どうぐの調子はどうだ？#$b#",
+        "kana": "どうぐ の ちょうし は どう だ",
+        "gloss": "how are your tools doing"
+      },
+      {
+        "text": "修理が必要になったら",
+        "kana": "しゅうり が ひつよう に なったら",
+        "gloss": "if repairs become necessary"
+      },
+      {
+        "text": "おれの店に来てくれ。",
+        "kana": "おれ の みせ に きて くれ",
+        "gloss": "come to my shop"
+      },
+      {
+        "text": "おれのどうぐは",
+        "kana": "おれ の どうぐ は",
+        "gloss": "my tools"
+      },
+      {
+        "text": "永久保証つきだ！",
+        "kana": "えいきゅう ほしょう つき だ",
+        "gloss": "come with a lifetime guarantee"
+      }
+    ]
+  },
+  "Sat6": {
+    "japanese": "何か エキサイティングな ことを やるには 年を取りすぎた。この先待っているのは、 汗が流れるほど 暑いかまどでの 作業だけさ。",
+    "english": "Something exciting? I'm too old for that now. All that's waiting for me is work at a furnace so hot it makes me sweat.",
+    "segments": [
+      {
+        "text": "何か ",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "エキサイティングな ",
+        "kana": "えきさいてぃんぐ な",
+        "gloss": "exciting"
+      },
+      {
+        "text": "ことを ",
+        "kana": "こと を",
+        "gloss": "a thing"
+      },
+      {
+        "text": "やるには ",
+        "kana": "やる に は",
+        "gloss": "to do"
+      },
+      {
+        "text": "年を取りすぎた。",
+        "kana": "とし を とりすぎた",
+        "gloss": "I'm too old"
+      },
+      {
+        "text": "この先待っているのは、 ",
+        "kana": "この さき まっている の は",
+        "gloss": "what's waiting for me from here"
+      },
+      {
+        "text": "汗が流れるほど ",
+        "kana": "あせ が ながれる ほど",
+        "gloss": "enough to make sweat flow"
+      },
+      {
+        "text": "暑いかまどでの ",
+        "kana": "あつい かまど で の",
+        "gloss": "at the hot furnace"
+      },
+      {
+        "text": "作業だけさ。",
+        "kana": "さぎょう だけ さ",
+        "gloss": "just the work"
+      }
+    ]
+  },
+  "Sun": {
+    "japanese": "あんた、 やることは ないのか？",
+    "english": "Don't you have anything to do?",
+    "segments": [
+      {
+        "text": "あんた、 ",
+        "kana": "あんた",
+        "gloss": "you"
+      },
+      {
+        "text": "やることは ",
+        "kana": "やる こと は",
+        "gloss": "things to do"
+      },
+      {
+        "text": "ないのか？",
+        "kana": "ない の か",
+        "gloss": "don't you have"
+      }
+    ]
+  },
+  "Sun4": {
+    "japanese": "道具の 調子は どうだい？",
+    "english": "So how are your tools holding up?",
+    "segments": [
+      {
+        "text": "道具の ",
+        "kana": "どうぐ の",
+        "gloss": "tool's"
+      },
+      {
+        "text": "調子は ",
+        "kana": "ちょうし は",
+        "gloss": "condition"
+      },
+      {
+        "text": "どうだい？",
+        "kana": "どうだい",
+        "gloss": "how is it"
+      }
+    ]
+  },
+  "Sun8": {
+    "japanese": "みんなが知っているか、気にしているかどうかは分からないけど、おれは自分の仕事に誇りを持っているんだ。#$e#つまり…子供の頃は、自分が鍛冶屋になるなんて思ってなかった。でも、今のおれがいる。そして、おれは最高の鍛冶屋になりたいんだ。",
+    "english": "I don't know if people realize it or care, but I take a lot of pride in my work.#$e#I mean... as a kid I never dreamed I'd become a blacksmith. But here I am. And I want to be the best blacksmith I can be.",
+    "segments": [
+      {
+        "text": "みんなが知っているか、",
+        "kana": "みんな が しっている か",
+        "gloss": "whether everyone knows"
+      },
+      {
+        "text": "気にしているかどうかは",
+        "kana": "き に している か どう か は",
+        "gloss": "whether they care"
+      },
+      {
+        "text": "分からないけど、",
+        "kana": "わからない けど",
+        "gloss": "I don't know, but"
+      },
+      {
+        "text": "おれは",
+        "kana": "おれ は",
+        "gloss": "as for me"
+      },
+      {
+        "text": "自分の仕事に",
+        "kana": "じぶん の しごと に",
+        "gloss": "in my own work"
+      },
+      {
+        "text": "誇りを持っているんだ。#$e#",
+        "kana": "ほこり を もっている ん だ",
+        "gloss": "I take pride"
+      },
+      {
+        "text": "つまり…",
+        "kana": "つまり",
+        "gloss": "that is to say"
+      },
+      {
+        "text": "子供の頃は、",
+        "kana": "こども の ころ は",
+        "gloss": "as a child"
+      },
+      {
+        "text": "自分が鍛冶屋になるなんて",
+        "kana": "じぶん が かじや に なる なんて",
+        "gloss": "that I would become a blacksmith"
+      },
+      {
+        "text": "思ってなかった。",
+        "kana": "おもってなかった",
+        "gloss": "I didn't think"
+      },
+      {
+        "text": "でも、",
+        "kana": "でも",
+        "gloss": "but"
+      },
+      {
+        "text": "今のおれがいる。",
+        "kana": "いま の おれ が いる",
+        "gloss": "here I am now"
+      },
+      {
+        "text": "そして、",
+        "kana": "そして",
+        "gloss": "and"
+      },
+      {
+        "text": "おれは",
+        "kana": "おれ は",
+        "gloss": "as for me"
+      },
+      {
+        "text": "最高の鍛冶屋になりたいんだ。",
+        "kana": "さいこう の かじや に なりたい ん だ",
+        "gloss": "I want to become the best blacksmith"
+      }
+    ]
+  },
+  "Thu": {
+    "japanese": "最近、 仕事がなかなか来なくてな。#$e# 道具を 強化したほうが いい。おれも儲かるからさ。",
+    "english": "Business has been slow lately. I should upgrade your tools. I could use the money.",
+    "segments": [
+      {
+        "text": "最近、 ",
+        "kana": "さいきん",
+        "gloss": "lately"
+      },
+      {
+        "text": "仕事が",
+        "kana": "しごと が",
+        "gloss": "work"
+      },
+      {
+        "text": "なかなか",
+        "kana": "なかなか",
+        "gloss": "not easily"
+      },
+      {
+        "text": "来なくてな。#$e# ",
+        "kana": "こなくて な",
+        "gloss": "doesn't come"
+      },
+      {
+        "text": "道具を ",
+        "kana": "どうぐ を",
+        "gloss": "tools (object)"
+      },
+      {
+        "text": "強化したほうが ",
+        "kana": "きょうか した ほう が",
+        "gloss": "upgrade"
+      },
+      {
+        "text": "いい。",
+        "kana": "いい",
+        "gloss": "good"
+      },
+      {
+        "text": "おれも",
+        "kana": "おれ も",
+        "gloss": "I too"
+      },
+      {
+        "text": "儲かるからさ。",
+        "kana": "もうかる から さ",
+        "gloss": "will profit"
+      }
+    ]
+  },
+  "Thu8": {
+    "japanese": "エミリーには砂漠に友達がいるらしい。その女性のことをなにか知らないか？#$e#独身なのかな…$s",
+    "english": "I hear Emily has a friend in the desert. Do you know anything about that woman?#$e#I wonder if she's single...$s",
+    "segments": [
+      {
+        "text": "エミリーには",
+        "kana": "えみりー に は",
+        "gloss": "Emily"
+      },
+      {
+        "text": "砂漠に",
+        "kana": "さばく に",
+        "gloss": "in the desert"
+      },
+      {
+        "text": "友達がいるらしい。",
+        "kana": "ともだち が いる らしい",
+        "gloss": "apparently has a friend"
+      },
+      {
+        "text": "その女性のことを",
+        "kana": "その じょせい の こと を",
+        "gloss": "about that woman"
+      },
+      {
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "anything"
+      },
+      {
+        "text": "知らないか？#$e#",
+        "kana": "しらない か",
+        "gloss": "do you know"
+      },
+      {
+        "text": "独身なのかな…$s",
+        "kana": "どくしん な の かな",
+        "gloss": "I wonder if she's single"
+      }
+    ]
+  },
+  "Tue": {
+    "japanese": "もし 道具を 強化したいなら、 正しい種類の 原石を 持ってきてくれ。#$e#もちろん、 作業料も 支払う 必要があるぞ。",
+    "english": "If you want to upgrade your tools, bring me the right kind of ore.#$e#Of course, you'll also need to pay the work fee.",
+    "segments": [
+      {
+        "text": "もし ",
+        "kana": "もし",
+        "gloss": "if"
+      },
+      {
+        "text": "道具を ",
+        "kana": "どうぐ を",
+        "gloss": "tools (object)"
+      },
+      {
+        "text": "強化したいなら、 ",
+        "kana": "きょうか したい なら",
+        "gloss": "if you want to upgrade"
+      },
+      {
+        "text": "正しい種類の ",
+        "kana": "ただしい しゅるい の",
+        "gloss": "the right kind of"
+      },
+      {
+        "text": "原石を ",
+        "kana": "げんせき を",
+        "gloss": "ore (object)"
+      },
+      {
+        "text": "持ってきてくれ。#$e#",
+        "kana": "もってきて くれ",
+        "gloss": "bring"
+      },
+      {
+        "text": "もちろん、 ",
+        "kana": "もちろん",
+        "gloss": "of course"
+      },
+      {
+        "text": "作業料も ",
+        "kana": "さぎょうりょう も",
+        "gloss": "the work fee too"
+      },
+      {
+        "text": "支払う ",
+        "kana": "しはらう",
+        "gloss": "to pay"
+      },
+      {
+        "text": "必要があるぞ。",
+        "kana": "ひつよう が ある ぞ",
+        "gloss": "you need to"
+      }
+    ]
+  },
+  "Wed": {
+    "japanese": "ねぇ、何か 必要かな？",
+    "english": "Hey, is there something you need?",
+    "segments": [
+      {
+        "text": "ねぇ、",
+        "kana": "ねぇ",
+        "gloss": "hey"
+      },
+      {
+        "text": "何か ",
+        "kana": "なにか",
+        "gloss": "something"
+      },
+      {
+        "text": "必要かな？",
+        "kana": "ひつよう かな",
+        "gloss": "do you need"
+      }
+    ]
+  },
+  "Wed6": {
+    "japanese": "あら、 @さんこんにちは。少し 汚れてるように 見えてたら すまない。今朝から ずっと かまどで 作業していたからな。$h#$e#それで、 何か必要か？ 顔を出しに 来ただけかい？",
+    "english": "Oh, hello @. Sorry if I look a little dirty. I've been working at the furnace all morning.#$e#So, is there something you need? Or did you just come to say hi?",
+    "segments": [
+      {
+        "text": "あら、 ",
+        "kana": "あら",
+        "gloss": "oh"
+      },
+      {
+        "text": "@",
+        "kana": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "さん",
+        "kana": "さん",
+        "gloss": "(polite title)"
+      },
+      {
+        "text": "こんにちは。",
+        "kana": "こんにちは",
+        "gloss": "hello"
+      },
+      {
+        "text": "少し ",
+        "kana": "すこし",
+        "gloss": "a little"
+      },
+      {
+        "text": "汚れてるように ",
+        "kana": "よごれてる よう に",
+        "gloss": "as if I'm dirty"
+      },
+      {
+        "text": "見えてたら ",
+        "kana": "みえてたら",
+        "gloss": "if I look"
+      },
+      {
+        "text": "すまない。",
+        "kana": "すまない",
+        "gloss": "sorry"
+      },
+      {
+        "text": "今朝から ",
+        "kana": "けさ から",
+        "gloss": "since this morning"
+      },
+      {
+        "text": "ずっと ",
+        "kana": "ずっと",
+        "gloss": "the whole time"
+      },
+      {
+        "text": "かまどで ",
+        "kana": "かまど で",
+        "gloss": "at the furnace"
+      },
+      {
+        "text": "作業していたからな。$h#$e#",
+        "kana": "さぎょう していた から な",
+        "gloss": "because I've been working"
+      },
+      {
+        "text": "それで、 ",
+        "kana": "それで",
+        "gloss": "so"
+      },
+      {
+        "text": "何か必要か？ ",
+        "kana": "なにか ひつよう か",
+        "gloss": "is there something you need"
+      },
+      {
+        "text": "顔を出しに ",
+        "kana": "かお を だしに",
+        "gloss": "to show your face"
+      },
+      {
+        "text": "来ただけかい？",
+        "kana": "きた だけ かい",
+        "gloss": "did you just come"
+      }
+    ]
+  },
+  "cc_Minecart": {
+    "japanese": "どういうわけか、 町の古い トロッコが また動き 出したんだ。おかげで 鉱山の行き来が 本当に 楽になってね。#$b#まあでも、 当然と 思っちゃダメだよね…とつぜん動くように なったんだから、またとつぜん 止まるかも しれないわけだし…",
+    "english": "Somehow the town's old minecart started moving again. It's made getting to and from the mines really convenient.#$b#But I guess I shouldn't take it for granted... since it suddenly started working, it could just as suddenly stop again...",
+    "segments": [
+      {
+        "text": "どういうわけか、 ",
+        "kana": "どういうわけか",
+        "gloss": "for some reason"
+      },
+      {
+        "text": "町の古い ",
+        "kana": "まち の ふるい",
+        "gloss": "the town's old"
+      },
+      {
+        "text": "トロッコが ",
+        "kana": "トロッコ が",
+        "gloss": "minecart"
+      },
+      {
+        "text": "また",
+        "kana": "また",
+        "gloss": "again"
+      },
+      {
+        "text": "動き ",
+        "kana": "うごき",
+        "gloss": "movement"
+      },
+      {
+        "text": "出したんだ。",
+        "kana": "だした ん だ",
+        "gloss": "started"
+      },
+      {
+        "text": "おかげで ",
+        "kana": "おかげで",
+        "gloss": "thanks to that"
+      },
+      {
+        "text": "鉱山の行き来が ",
+        "kana": "こうざん の いきき が",
+        "gloss": "going to and from the mine"
+      },
+      {
+        "text": "本当に ",
+        "kana": "ほんとうに",
+        "gloss": "really"
+      },
+      {
+        "text": "楽になってね。#$b#",
+        "kana": "らく に なって ね",
+        "gloss": "has become easy"
+      },
+      {
+        "text": "まあでも、 ",
+        "kana": "まあでも",
+        "gloss": "but well"
+      },
+      {
+        "text": "当然と ",
+        "kana": "とうぜん と",
+        "gloss": "as a given"
+      },
+      {
+        "text": "思っちゃダメだよね…",
+        "kana": "おもっちゃ だめ だ よ ね",
+        "gloss": "I shouldn't think of it"
+      },
+      {
+        "text": "とつぜん動くように ",
+        "kana": "とつぜん うごく よう に",
+        "gloss": "to suddenly start moving"
+      },
+      {
+        "text": "なったんだから、",
+        "kana": "なった ん だ から",
+        "gloss": "since it became"
+      },
+      {
+        "text": "またとつぜん ",
+        "kana": "また とつぜん",
+        "gloss": "suddenly again"
+      },
+      {
+        "text": "止まるかも ",
+        "kana": "とまる かも",
+        "gloss": "might stop"
+      },
+      {
+        "text": "しれないわけだし…",
+        "kana": "しれない わけ だし",
+        "gloss": "that's a possibility"
+      }
+    ]
+  },
+  "dating_Emily": {
+    "japanese": "あんたが… エミリーといい感じだと聞いたよ。おめでとう。$s",
+    "english": "I... heard you and Emily are hitting it off. Congratulations.$s",
+    "segments": [
+      {
+        "text": "あんたが… ",
+        "kana": "あんた が",
+        "gloss": "you"
+      },
+      {
+        "text": "エミリーといい感じだと",
+        "kana": "えみりー と いい かんじ だ と",
+        "gloss": "that you and Emily are getting along well"
+      },
+      {
+        "text": "聞いたよ。",
+        "kana": "きいた よ",
+        "gloss": "I heard"
+      },
+      {
+        "text": "おめでとう。$s",
+        "kana": "おめでとう",
+        "gloss": "congratulations"
+      }
+    ]
+  },
+  "divorced_Emily": {
+    "japanese": "このごろ、なんだか希望を感じるんだ。",
+    "english": "Lately, I feel strangely hopeful.",
+    "segments": [
+      {
+        "text": "このごろ、",
+        "kana": "このごろ",
+        "gloss": "lately"
+      },
+      {
+        "text": "なんだか",
+        "kana": "なんだか",
+        "gloss": "somehow"
+      },
+      {
+        "text": "希望を感じるんだ。",
+        "kana": "きぼう を かんじる ん だ",
+        "gloss": "I feel hope"
+      }
+    ]
+  },
+  "eventSeen_101_memory_oneweek": {
+    "japanese": "エミリーはこないだのデートのことを何か言ってたか？#$b#いや、何も言わないでくれ…きっと知らない方がいいんだ。自尊心が傷つかずにすむ。$s",
+    "english": "Did Emily say anything about our date the other day?#$b#No, don't tell me... I'm probably better off not knowing. That way my pride stays intact.$s",
+    "segments": [
+      {
+        "text": "エミリーは",
+        "kana": "えみりー は",
+        "gloss": "Emily"
+      },
+      {
+        "text": "こないだの",
+        "kana": "こないだの",
+        "gloss": "the other day's"
+      },
+      {
+        "text": "デートのことを",
+        "kana": "でーと の こと を",
+        "gloss": "about the date"
+      },
+      {
+        "text": "何か",
+        "kana": "なにか",
+        "gloss": "anything"
+      },
+      {
+        "text": "言ってたか？#$b#",
+        "kana": "いってた か",
+        "gloss": "did she say"
+      },
+      {
+        "text": "いや、",
+        "kana": "いや",
+        "gloss": "no"
+      },
+      {
+        "text": "何も言わないでくれ…",
+        "kana": "なにも いわないで くれ",
+        "gloss": "don't tell me anything"
+      },
+      {
+        "text": "きっと",
+        "kana": "きっと",
+        "gloss": "surely"
+      },
+      {
+        "text": "知らない方がいいんだ。",
+        "kana": "しらない ほう が いい ん だ",
+        "gloss": "it's better not to know"
+      },
+      {
+        "text": "自尊心が",
+        "kana": "じそんしん が",
+        "gloss": "my self-respect"
+      },
+      {
+        "text": "傷つかずにすむ。$s",
+        "kana": "きずつかずに すむ",
+        "gloss": "won't get hurt"
+      }
+    ]
+  },
+  "event_advice1": {
+    "japanese": "わかった…覚えておくよ。",
+    "english": "Got it... I'll keep it in mind.",
+    "segments": [
+      {
+        "text": "わかった…",
+        "kana": "わかった",
+        "gloss": "got it"
+      },
+      {
+        "text": "覚えておくよ。",
+        "kana": "おぼえておく よ",
+        "gloss": "I'll keep it in mind"
+      }
+    ]
+  },
+  "event_advice2": {
+    "japanese": "それが 問題なんだ…自然体で 振舞ってるが… うまくいった 試しはない。$s",
+    "english": "That's the problem... I try to act natural... but it's never worked.$s",
+    "segments": [
+      {
+        "text": "それが ",
+        "kana": "それ が",
+        "gloss": "that"
+      },
+      {
+        "text": "問題なんだ…",
+        "kana": "もんだい な ん だ",
+        "gloss": "is the problem"
+      },
+      {
+        "text": "自然体で ",
+        "kana": "しぜんたい で",
+        "gloss": "naturally"
+      },
+      {
+        "text": "振舞ってるが… ",
+        "kana": "ふるまってる が",
+        "gloss": "I act, but"
+      },
+      {
+        "text": "うまくいった ",
+        "kana": "うまく いった",
+        "gloss": "gone well"
+      },
+      {
+        "text": "試しはない。$s",
+        "kana": "ためし は ない",
+        "gloss": "there's no precedent of"
+      }
+    ]
+  },
+  "married_Emily": {
+    "japanese": "%クリントはうつむいて、なにも言おうとしない。",
+    "english": "%Clint looks down and doesn't try to say anything.",
+    "segments": [
+      {
+        "text": "%クリントは",
+        "kana": "くりんと は",
+        "gloss": "Clint"
+      },
+      {
+        "text": "うつむいて、",
+        "kana": "うつむいて",
+        "gloss": "looking down"
+      },
+      {
+        "text": "なにも",
+        "kana": "なにも",
+        "gloss": "anything"
+      },
+      {
+        "text": "言おうとしない。",
+        "kana": "いおう と しない",
+        "gloss": "doesn't try to say"
+      }
+    ]
+  },
+  "mineArea_121": {
+    "japanese": "こいつはおどろきだ。ツルハシにイリジウムの小さなかけらがついている… 砂漠の洞窟にもぐったのか？#$e#おれはずっとイリジウムを精錬したいと思っていたんだ。簡単には手に入らないからな。",
+    "english": "This is a surprise. There's a small flake of iridium stuck to your pickaxe... did you go down into the desert cave?#$e#I've always wanted to smelt iridium. It's not easy to get.",
+    "segments": [
+      {
+        "text": "こいつは",
+        "kana": "こいつ は",
+        "gloss": "this"
+      },
+      {
+        "text": "おどろきだ。",
+        "kana": "おどろき だ",
+        "gloss": "is a surprise"
+      },
+      {
+        "text": "ツルハシに",
+        "kana": "つるはし に",
+        "gloss": "on the pickaxe"
+      },
+      {
+        "text": "イリジウムの",
+        "kana": "いりじうむ の",
+        "gloss": "iridium's"
+      },
+      {
+        "text": "小さなかけらが",
+        "kana": "ちいさな かけら が",
+        "gloss": "a small flake"
+      },
+      {
+        "text": "ついている… ",
+        "kana": "ついている",
+        "gloss": "is stuck"
+      },
+      {
+        "text": "砂漠の洞窟に",
+        "kana": "さばく の どうくつ に",
+        "gloss": "into the desert cave"
+      },
+      {
+        "text": "もぐったのか？#$e#",
+        "kana": "もぐった の か",
+        "gloss": "did you dive"
+      },
+      {
+        "text": "おれは",
+        "kana": "おれ は",
+        "gloss": "as for me"
+      },
+      {
+        "text": "ずっと",
+        "kana": "ずっと",
+        "gloss": "always"
+      },
+      {
+        "text": "イリジウムを",
+        "kana": "いりじうむ を",
+        "gloss": "iridium (object)"
+      },
+      {
+        "text": "精錬したいと",
+        "kana": "せいれん したい と",
+        "gloss": "that I want to smelt"
+      },
+      {
+        "text": "思っていたんだ。",
+        "kana": "おもっていた ん だ",
+        "gloss": "I've been thinking"
+      },
+      {
+        "text": "簡単には",
+        "kana": "かんたん に は",
+        "gloss": "easily"
+      },
+      {
+        "text": "手に入らないからな。",
+        "kana": "て に はいらない から な",
+        "gloss": "because you can't get it"
+      }
+    ]
+  },
+  "mineArea_40": {
+    "japanese": "ああ、このツルハシの傷を見れば、鉱山の深くまでもぐってたことがわかるよ。#$e#石を割りづらくなってきたら、ツルハシをアップグレードしたほうがいい。おれが力になるよ。",
+    "english": "Ah, I can tell from the scratches on this pickaxe that you've been diving deep into the mines.#$e#If it's getting hard to break stones, you should upgrade your pickaxe. I can help.",
+    "segments": [
+      {
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "ah"
+      },
+      {
+        "text": "このツルハシの傷を",
+        "kana": "この つるはし の きず を",
+        "gloss": "this pickaxe's scratches (object)"
+      },
+      {
+        "text": "見れば、",
+        "kana": "みれば",
+        "gloss": "if I look"
+      },
+      {
+        "text": "鉱山の深くまで",
+        "kana": "こうざん の ふかく まで",
+        "gloss": "deep into the mine"
+      },
+      {
+        "text": "もぐってたことが",
+        "kana": "もぐってた こと が",
+        "gloss": "that you've been diving"
+      },
+      {
+        "text": "わかるよ。#$e#",
+        "kana": "わかる よ",
+        "gloss": "I can tell"
+      },
+      {
+        "text": "石を",
+        "kana": "いし を",
+        "gloss": "stones (object)"
+      },
+      {
+        "text": "割りづらくなってきたら、",
+        "kana": "わりづらく なってきたら",
+        "gloss": "if it's becoming hard to break"
+      },
+      {
+        "text": "ツルハシを",
+        "kana": "つるはし を",
+        "gloss": "pickaxe (object)"
+      },
+      {
+        "text": "アップグレードしたほうがいい。",
+        "kana": "あっぷぐれーど した ほう が いい",
+        "gloss": "you should upgrade"
+      },
+      {
+        "text": "おれが",
+        "kana": "おれ が",
+        "gloss": "I"
+      },
+      {
+        "text": "力になるよ。",
+        "kana": "ちから に なる よ",
+        "gloss": "will help"
+      }
+    ]
+  },
+  "reject_868": {
+    "japanese": "うーん…今までに見たことのない興味深い石だ。#$b#だが使い道がわからないな。おれが扱うのはありふれたものだ、魔法の類じゃない…。",
+    "english": "Hmm... that's an interesting stone, unlike anything I've seen before.#$b#But I don't know what to do with it. I deal in the ordinary, not the magical...",
+    "segments": [
+      {
+        "text": "うーん…",
+        "kana": "うーん",
+        "gloss": "hmm"
+      },
+      {
+        "text": "今までに",
+        "kana": "いままで に",
+        "gloss": "until now"
+      },
+      {
+        "text": "見たことのない",
+        "kana": "みた こと の ない",
+        "gloss": "never seen"
+      },
+      {
+        "text": "興味深い石だ。#$b#",
+        "kana": "きょうみぶかい いし だ",
+        "gloss": "it's an interesting stone"
+      },
+      {
+        "text": "だが",
+        "kana": "だが",
+        "gloss": "but"
+      },
+      {
+        "text": "使い道がわからないな。",
+        "kana": "つかいみち が わからない な",
+        "gloss": "I don't know the use"
+      },
+      {
+        "text": "おれが扱うのは",
+        "kana": "おれ が あつかう の は",
+        "gloss": "what I deal with"
+      },
+      {
+        "text": "ありふれたものだ、",
+        "kana": "ありふれた もの だ",
+        "gloss": "is ordinary things"
+      },
+      {
+        "text": "魔法の類じゃない…。",
+        "kana": "まほう の たぐい じゃ ない",
+        "gloss": "not something magical"
+      }
+    ]
+  }
+}
