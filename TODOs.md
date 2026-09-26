@@ -23,7 +23,6 @@
     - [ ] Trie for whole entries
     - [ ] Narrow template attempts
   - [ ] [Quiet fallback log](#quiet-fallback-log)
-  - [ ] [Fix line-wrap hit-testing](#fix-line-wrap-hit-testing)
   - [ ] [Remove debug logs](#remove-debug-logs)
 
 ## Details
@@ -108,10 +107,6 @@ Alternatives: precompute dialogue pages at load by splitting entries at `#$b#` /
 
 The "fallback split" hover log fires on any text, and most of what it logged in the third session was English (GMCM labels, save names) and bare numbers (`25%`). Skip text with no Japanese characters, so every line it logs is a real gap.
 
-### Fix line-wrap hit-testing
-
-Fix issues detecting word positions on wrapped lines.
-
 ### Remove debug logs
 
 Remove the debug logging added while troubleshooting.
@@ -139,6 +134,12 @@ key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
 - Output goes to `tools/extracted-strings/literal-translations/`, the tracked source of truth. `assets/segments/` is generated from it at build time.
 
 ## Done
+
+### Glyph-accurate word hover (2026-09-26)
+
+Word hover no longer works out word positions from wrapping and font measurements. Transpilers on the game's text renderers (`SpriteText.drawString` and the four `SpriteBatch.DrawString` overloads) record where each character is actually drawn, and `GlyphHitTest` hit-tests those positions. This fixed dialogue words being detected in the wrong place after line breaks. Verified in-game.
+
+If a game update breaks a transpiler, the SMAPI log warns about it and that renderer falls back to the old measured layout. The `Glyph capture: …` startup line shows the state of each renderer.
 
 ### M2 segmentation data (2026-09-25)
 
