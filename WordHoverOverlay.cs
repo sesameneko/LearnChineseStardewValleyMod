@@ -257,8 +257,9 @@ namespace LanguageStudyStardewValleyMod
         /// The label text: the gloss, then the romaji, then the kana, one per line.
         ///
         /// The romaji is generated here from the kana (<see cref="KanaRomaji"/>) rather than read
-        /// from the data's "reading" field -- kana is the source of truth -- and font-safed, since
-        /// the game's font draws a macron as '*'. Where the kana has no kana in it (Joja, 2.0) the
+        /// from the data's "reading" field -- kana is the source of truth -- and font-safed against
+        /// the font it's drawn in: macrons are kept where ExtendedFont has added them, and doubled
+        /// (ō to oo) if it couldn't. Where the kana has no kana in it (Joja, 2.0) the
         /// romaji would just repeat it, so that line is dropped.
         ///
         /// The source word itself is deliberately left out -- it's already on screen directly under
@@ -273,7 +274,7 @@ namespace LanguageStudyStardewValleyMod
             if (string.IsNullOrWhiteSpace(segment.Kana))
                 return segment.Gloss;
 
-            string romaji = FontSafeText.Apply(KanaRomaji.Convert(segment.Kana));
+            string romaji = FontSafeText.Apply(KanaRomaji.Convert(segment.Kana), ExtendedFont.DrawableCharacters(Game1.smallFont));
 
             return romaji == segment.Kana
                 ? $"{segment.Gloss}\n{segment.Kana}"

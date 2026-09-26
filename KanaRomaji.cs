@@ -20,8 +20,9 @@ namespace LanguageStudyStardewValleyMod
     ///   - katakana words stay katakana; ー lengthens the vowel before it
     ///   - latin and digits the on-screen text keeps (Joja, 2.0) pass through unchanged
     ///
-    /// Output uses macrons (ō), which the game's font can't draw; pass it through
-    /// <see cref="FontSafeText"/> before rendering.
+    /// Output uses macrons (ō), which the game's font only draws once ExtendedFont has added
+    /// them; pass it through <see cref="FontSafeText"/> with the font's character set before
+    /// rendering, so it falls back to doubled vowels if that failed.
     /// </summary>
     public static class KanaRomaji
     {

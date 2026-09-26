@@ -24,6 +24,25 @@ namespace LanguageStudyStardewValleyMod
     /// </summary>
     internal static class ExtendedFont
     {
+        private static SpriteFont? drawableFont;
+        private static HashSet<char> drawable = new();
+
+        /// <summary>
+        /// The characters a font can draw, for <see cref="FontSafeText.Apply"/>. Cached per font
+        /// instance: SpriteFont.Characters is a list, too slow to search per character per frame,
+        /// and the font is replaced on every language change.
+        /// </summary>
+        public static IReadOnlySet<char> DrawableCharacters(SpriteFont font)
+        {
+            if (!ReferenceEquals(font, drawableFont))
+            {
+                drawable = new HashSet<char>(font.Characters);
+                drawableFont = font;
+            }
+
+            return drawable;
+        }
+
         public static void Register(IModHelper helper)
         {
             helper.Events.Content.AssetRequested += OnAssetRequested;

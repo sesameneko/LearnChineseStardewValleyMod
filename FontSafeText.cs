@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Text;
 
 namespace LanguageStudyStardewValleyMod
@@ -19,11 +20,19 @@ namespace LanguageStudyStardewValleyMod
     /// the distinction between similar words. Doubling isn't always how the word is typed (がんじょう
     /// is "ganjou"), but the romaji alone can't tell us which kana produced the macron, and showing
     /// the length is worth more to a reader than matching an input convention.
+    ///
+    /// Where the caller knows what the font can draw, it passes that set and those characters are
+    /// kept: ExtendedFont adds the macron vowels to the game's small font, so romaji drawn with it
+    /// can keep proper Hepburn. Text prepared before the font exists (the segment data, at load)
+    /// gets the ASCII-only treatment.
     /// </summary>
     public static class FontSafeText
     {
-        /// <summary>Returns text with every character the font lacks replaced by one it has.</summary>
-        public static string Apply(string? text)
+        /// <summary>
+        /// Returns text with every character the font lacks replaced by one it has. With no
+        /// <paramref name="drawable"/> set, anything non-ASCII is assumed missing.
+        /// </summary>
+        public static string Apply(string? text, IReadOnlySet<char>? drawable = null)
         {
             if (string.IsNullOrEmpty(text))
                 return text ?? string.Empty;
@@ -32,7 +41,7 @@ namespace LanguageStudyStardewValleyMod
             bool needsWork = false;
             foreach (char c in text!)
             {
-                if (c > 127)
+                if (c > 127 && drawable?.Contains(c) != true)
                 {
                     needsWork = true;
                     break;
@@ -46,6 +55,12 @@ namespace LanguageStudyStardewValleyMod
 
             foreach (char c in text)
             {
+                if (drawable?.Contains(c) == true)
+                {
+                    result.Append(c);
+                    continue;
+                }
+
                 switch (c)
                 {
                     // macron vowels: long vowels, shown by doubling

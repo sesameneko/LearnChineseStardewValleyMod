@@ -36,6 +36,15 @@ namespace ModLogic.Tests
         }
 
         [Fact]
+        public void KeepsWhatTheFontCanDraw()
+        {
+            var drawable = new HashSet<char>("abcdefghijklmnopqrstuvwxyz āīūēō");
+
+            // the macron is drawable so it stays; the dash and é aren't, so they're still replaced
+            Assert.Equal("gakkō -- cafe", FontSafeText.Apply("gakkō — café", drawable));
+        }
+
+        [Fact]
         public void HandlesNull()
         {
             Assert.Equal("", FontSafeText.Apply(null));

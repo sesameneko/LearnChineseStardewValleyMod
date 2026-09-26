@@ -534,7 +534,7 @@ namespace LanguageStudyStardewValleyMod
             var offenders = new Dictionary<char, int>();
             foreach (var segment in this.Segments.AllSegments())
             {
-                string romaji = segment.Kana is null ? "" : FontSafeText.Apply(KanaRomaji.Convert(segment.Kana));
+                string romaji = segment.Kana is null ? "" : FontSafeText.Apply(KanaRomaji.Convert(segment.Kana), ExtendedFont.DrawableCharacters(font));
                 foreach (char c in romaji + (segment.Kana ?? "") + (segment.Gloss ?? ""))
                 {
                     if (!font.Characters.Contains(c))
