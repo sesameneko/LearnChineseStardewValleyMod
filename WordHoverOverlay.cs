@@ -183,11 +183,12 @@ namespace LanguageStudyStardewValleyMod
         /// a box drawn in the wrong place.
         /// </summary>
         /// <summary>
-        /// The label text: the gloss on the first line, the reading in brackets on the second.
+        /// The label text: the gloss, then the romaji, then the kana, one per line.
         ///
-        /// Kana is preferred over romaji where the data has it -- the font draws kana natively,
-        /// while a macron comes out as '*' -- with romaji as the fallback for anything not yet
-        /// migrated. A reader-facing choice between the two is a line here once it's wanted.
+        /// The romaji is generated here from the kana (<see cref="KanaRomaji"/>) rather than read
+        /// from the data's "reading" field -- kana is the source of truth -- and font-safed, since
+        /// the game's font draws a macron as '*'. Where the kana has no kana in it (Joja, 2.0) the
+        /// romaji would just repeat it, so that line is dropped.
         ///
         /// The source word itself is deliberately left out -- it's already on screen directly under
         /// the outline, so repeating it just widened the label over the text being read. With no
@@ -198,11 +199,14 @@ namespace LanguageStudyStardewValleyMod
             if (string.IsNullOrWhiteSpace(segment.Gloss))
                 return segment.Text;
 
-            string? reading = !string.IsNullOrWhiteSpace(segment.Kana) ? segment.Kana : segment.Reading;
+            if (string.IsNullOrWhiteSpace(segment.Kana))
+                return segment.Gloss;
 
-            return string.IsNullOrWhiteSpace(reading)
-                ? segment.Gloss
-                : $"{segment.Gloss}\n({reading})";
+            string romaji = FontSafeText.Apply(KanaRomaji.Convert(segment.Kana));
+
+            return romaji == segment.Kana
+                ? $"{segment.Gloss}\n{segment.Kana}"
+                : $"{segment.Gloss}\n{romaji}\n{segment.Kana}";
         }
 
         private static (IReadOnlyList<TextSegment> Segments, bool Exact) ResolveSegments(string drawnText, string[] lines, int lineIndex, string line)

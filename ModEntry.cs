@@ -507,7 +507,8 @@ namespace LanguageStudyStardewValleyMod
             var offenders = new Dictionary<char, int>();
             foreach (var segment in this.Segments.AllSegments())
             {
-                foreach (char c in (segment.Reading ?? "") + (segment.Gloss ?? ""))
+                string romaji = segment.Kana is null ? "" : FontSafeText.Apply(KanaRomaji.Convert(segment.Kana));
+                foreach (char c in romaji + (segment.Kana ?? "") + (segment.Gloss ?? ""))
                 {
                     if (!font.Characters.Contains(c))
                         offenders[c] = offenders.GetValueOrDefault(c) + 1;
@@ -515,7 +516,7 @@ namespace LanguageStudyStardewValleyMod
             }
 
             if (offenders.Count == 0)
-                Log("Every reading and gloss in the loaded segment data is drawable.");
+                Log("Every romaji, kana and gloss in the loaded segment data is drawable.");
             else
             {
                 Log($"{offenders.Count} undrawable character(s) in the loaded segment data:", LogLevel.Warn);
