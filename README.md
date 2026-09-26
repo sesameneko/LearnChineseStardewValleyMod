@@ -55,6 +55,5 @@ Bug reports and suggestions are welcome. Please [open an issue](https://github.c
 
 Pull requests are welcome too. Before you start:
 
-- **Read [`Plan.md`](Plan.md)** for the roadmap and the design decisions behind it, and [`CLAUDE.md`](CLAUDE.md) for an overview of the architecture.
 - **Keep testable logic out of game types.** Code that doesn't need a live game object goes in a plain class covered by the xunit tests in `tools/ModLogic.Tests` (run with `dotnet test` from that folder).
 - **Fix translation and word data at its source.** Word segments, readings and glosses live in `tools/extracted-strings/literal-translations/`, and the tools for editing and validating them are in `tools/segment-data/` (see that folder's README). Don't edit the generated copy under `assets/segments/`.
