@@ -124,19 +124,37 @@ namespace LanguageStudyStardewValleyMod
         }
 
         /// <summary>
-        /// Draws a macron over a glyph: a bar spanning its ink, as thick as its top stroke, one empty
-        /// row above its topmost ink. The bitmap grows upward only if the bar doesn't fit in the
-        /// empty rows it already has; <paramref name="extraRowsAbove"/> is how much, which the
-        /// caller subtracts from the glyph's vertical offset so the base letter stays where it was.
-        /// A glyph with no ink is returned unchanged.
+        /// Draws a macron over a glyph: a bar <paramref name="thickness"/> rows thick, one empty row
+        /// above its topmost ink. The bar spans <paramref name="span"/> (inclusive columns; the
+        /// glyph's own ink by default -- pass the pre-<see cref="StripDot"/> ink for an i so the bar
+        /// isn't a stem-wide stub), inset a pixel either side when it is 6 or more wide so it
+        /// doesn't run into the neighbouring letters.
+        ///
+        /// <paramref name="inkTop"/> overrides which row counts as the top of the ink (it may be
+        /// negative), so the caller can put every vowel's bar at one height -- the way a font sets
+        /// accents at a fixed height per case -- rather than each hugging its own letter; a font's
+        /// u and i are often shorter than its a, e and o.
+        ///
+        /// The bitmap grows upward only if the bar doesn't fit in the empty rows it already has;
+        /// <paramref name="extraRowsAbove"/> is how much, which the caller subtracts from the
+        /// glyph's vertical offset so the base letter stays where it was. A glyph with no ink is
+        /// returned unchanged.
         /// </summary>
-        public static GlyphBitmap AddMacron(GlyphBitmap glyph, out int extraRowsAbove)
+        public static GlyphBitmap AddMacron(GlyphBitmap glyph, int thickness, out int extraRowsAbove, (int Left, int Right)? span = null, int? inkTop = null)
         {
             extraRowsAbove = 0;
-            if (!TryInkBounds(glyph, out int left, out int top, out int right, out _))
+            if (!TryInkBounds(glyph, out int inkLeft, out int ownTop, out int inkRight, out _))
                 return glyph;
 
-            int thickness = StrokeThickness(glyph);
+            int top = inkTop ?? ownTop;
+
+            var (left, right) = span ?? (inkLeft, inkRight);
+            if (right - left + 1 >= 6)
+            {
+                left++;
+                right--;
+            }
+
             const int gap = 1;
             int barTop = top - gap - thickness;
             extraRowsAbove = Math.Max(0, -barTop);
@@ -152,6 +170,26 @@ namespace LanguageStudyStardewValleyMod
                     pixels[y * glyph.Width + x] = ink;
 
             return new GlyphBitmap(glyph.Width, height, pixels);
+        }
+
+        /// <summary>The first row holding ink, or null for a glyph with none.</summary>
+        public static int? InkTop(GlyphBitmap glyph) =>
+            TryInkBounds(glyph, out _, out int top, out _, out _) ? top : null;
+
+        /// <summary>The leftmost and rightmost columns holding ink, or null for a glyph with none.</summary>
+        public static (int Left, int Right)? InkSpan(GlyphBitmap glyph) =>
+            TryInkBounds(glyph, out int left, out _, out int right, out _) ? (left, right) : null;
+
+        /// <summary>
+        /// One bar thickness for a whole font, so every macron has the same weight: the median of
+        /// <see cref="StrokeThickness"/> over the given glyphs (the font's lowercase vowels).
+        /// Per-glyph measures disagree by a pixel wherever antialiasing straddles the ink
+        /// threshold, which left one vowel's bar visibly lighter than the rest.
+        /// </summary>
+        public static int BarThickness(IEnumerable<GlyphBitmap> glyphs)
+        {
+            var thicknesses = glyphs.Select(StrokeThickness).OrderBy(t => t).ToList();
+            return thicknesses.Count == 0 ? 1 : thicknesses[thicknesses.Count / 2];
         }
 
         /// <summary>

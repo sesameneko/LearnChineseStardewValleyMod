@@ -59,6 +59,8 @@ namespace LanguageStudyStardewValleyMod
             helper.Events.Display.RenderedActiveMenu += this.OnRenderedActiveMenu;
             helper.Events.Display.Rendered += this.OnRenderedDiagnostic;
 
+            ExtendedFont.Register(helper);
+
             this.TranslationIndex = new TranslationIndex(helper);
 
             ConfigureMod(helper.ReadConfig<ModConfig>());
@@ -133,6 +135,13 @@ namespace LanguageStudyStardewValleyMod
                 "Logs smallFont's atlas (size, surface format) and the glyph metrics of the given characters -- "
                 + "what extending the font with new glyphs depends on. Usage: ls_font_info [chars]  (defaults to aiueoAIUEO)",
                 this.OnFontInfoCommand
+            );
+
+            helper.ConsoleCommands.Add(
+                "ls_font_export",
+                "Saves smallFont's atlas as a PNG, to see what glyphs added by ExtendedFont look like. "
+                + "Usage: ls_font_export <path.png>",
+                this.OnFontExportCommand
             );
 
             helper.ConsoleCommands.Add(
@@ -553,6 +562,20 @@ namespace LanguageStudyStardewValleyMod
             }
 
             LogFontInfo(font, args.Length > 0 ? string.Join("", args) : "aiueoAIUEO");
+        }
+
+        private void OnFontExportCommand(string command, string[] args)
+        {
+            if (args.Length == 0)
+            {
+                Log("Usage: ls_font_export <path.png>", LogLevel.Warn);
+                return;
+            }
+
+            string path = string.Join(" ", args);
+            using (var stream = System.IO.File.Create(path))
+                Game1.smallFont.Texture.SaveAsPng(stream, Game1.smallFont.Texture.Width, Game1.smallFont.Texture.Height);
+            Log($"Saved the {Game1.smallFont.Texture.Width}x{Game1.smallFont.Texture.Height} atlas to {path}.");
         }
 
         private static void LogFontInfo(SpriteFont font, string chars)

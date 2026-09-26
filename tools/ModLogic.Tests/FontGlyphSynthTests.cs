@@ -27,15 +27,15 @@ public class FontGlyphSynthTests
         ".####.");
 
     [Fact]
-    public void MacronSitsOneRowAboveTheInkAtStrokeThickness()
+    public void MacronSitsOneRowAboveTheInkInsetAPixel()
     {
-        var result = FontGlyphSynth.AddMacron(O, out int extra);
+        var result = FontGlyphSynth.AddMacron(O, 2, out int extra);
 
         Assert.Equal(0, extra);
         Assert.Equal(new[]
         {
-            "######",
-            "######",
+            ".####.",
+            ".####.",
             "......",
             ".####.",
             "######",
@@ -53,10 +53,26 @@ public class FontGlyphSynthTests
             "#..#",
             "####");
 
-        var result = FontGlyphSynth.AddMacron(capital, out int extra);
+        var result = FontGlyphSynth.AddMacron(capital, 1, out int extra);
 
         Assert.Equal(2, extra); // one-pixel stroke + one-row gap
         Assert.Equal(new[] { "####", "....", "#..#", "#..#", "####" }, Render(result));
+    }
+
+    [Fact]
+    public void InkTopOverridePlacesTheBarAtASharedHeight()
+    {
+        var shortU = Art(
+            "....",
+            "....",
+            "#..#",
+            "####");
+
+        // a taller sibling's ink starts two rows higher, at this bitmap's row 0
+        var result = FontGlyphSynth.AddMacron(shortU, 1, out int extra, inkTop: 0);
+
+        Assert.Equal(2, extra);
+        Assert.Equal(new[] { "####", "....", "....", "....", "#..#", "####" }, Render(result));
     }
 
     [Fact]
@@ -64,7 +80,7 @@ public class FontGlyphSynthTests
     {
         var glyph = new GlyphBitmap(2, 3, new uint[] { 0, 0, 0, 0, 0x80FFFFFF, 0xF0EEEEEE });
 
-        var result = FontGlyphSynth.AddMacron(glyph, out _);
+        var result = FontGlyphSynth.AddMacron(glyph, 1, out _);
 
         Assert.Equal(0xF0EEEEEEu, result[0, 0]);
         Assert.Equal(0xF0EEEEEEu, result[1, 0]);
@@ -75,7 +91,7 @@ public class FontGlyphSynthTests
     {
         var empty = Art("...", "...");
 
-        Assert.Same(empty, FontGlyphSynth.AddMacron(empty, out int extra));
+        Assert.Same(empty, FontGlyphSynth.AddMacron(empty, 1, out int extra));
         Assert.Equal(0, extra);
     }
 
@@ -90,6 +106,33 @@ public class FontGlyphSynthTests
             "####");
 
         Assert.Equal(new[] { "....", "....", ".##.", ".##.", "####" }, Render(FontGlyphSynth.StripDot(i)));
+    }
+
+    [Fact]
+    public void BarOverADotlessIUsesTheGivenSpan()
+    {
+        var i = Art(
+            "####",
+            "....",
+            "....",
+            "....",
+            ".#..",
+            ".#..");
+
+        var span = FontGlyphSynth.InkSpan(i);
+        var result = FontGlyphSynth.AddMacron(FontGlyphSynth.StripDot(i), 1, out int extra, span);
+
+        Assert.Equal(0, extra);
+        Assert.Equal(new[] { "....", "....", "####", "....", ".#..", ".#.." }, Render(result));
+    }
+
+    [Fact]
+    public void BarThicknessIsTheMedianAcrossGlyphs()
+    {
+        var thin = Art(".##.", "#..#", ".##.");
+        var thick = Art("####", "####", "#..#");
+
+        Assert.Equal(2, FontGlyphSynth.BarThickness(new[] { thin, thick, thick }));
     }
 
     [Fact]
