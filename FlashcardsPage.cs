@@ -454,6 +454,8 @@ namespace LanguageStudyStardewValleyMod
 
         private Rectangle DeleteBounds(Rectangle row) => new(row.Right - 52, row.Y + 4, 48, row.Height - 8);
 
+        private const int MaxRowWordChars = 8;
+
         private void DrawRow(SpriteBatch b, Flashcard card, Rectangle bounds)
         {
             bool hovered = bounds.Contains(Game1.getMouseX(ui_scale: true), Game1.getMouseY(ui_scale: true));
@@ -463,7 +465,9 @@ namespace LanguageStudyStardewValleyMod
             float textY = bounds.Y + ((bounds.Height - font.LineSpacing) / 2f);
             int x = bounds.X + 16;
 
-            Utility.drawTextWithShadow(b, card.Text, font, new Vector2(x, textY), Game1.textColor);
+            // a saved phrase can be a whole sentence; the list shows its start, the card itself shows it all
+            string word = card.Text.Length > MaxRowWordChars ? card.Text.Substring(0, MaxRowWordChars) + "..." : card.Text;
+            Utility.drawTextWithShadow(b, Truncate(word, font, 184), font, new Vector2(x, textY), Game1.textColor);
             x += 200;
             Utility.drawTextWithShadow(b, Truncate(card.Kana, font, 170), font, new Vector2(x, textY), MutedText);
             x += 180;
