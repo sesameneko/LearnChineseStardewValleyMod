@@ -59,13 +59,6 @@ namespace LanguageStudyStardewValleyMod
             helper.Events.Display.RenderedActiveMenu += this.OnRenderedActiveMenu;
             helper.Events.Display.Rendered += this.OnRenderedDiagnostic;
 
-            // TEMPORARY font probe: do the game's font loads come through the content pipeline?
-            helper.Events.Content.AssetRequested += (_, e) =>
-            {
-                if (e.Name.StartsWith("Fonts/"))
-                    Log($"[font probe] asset requested: {e.Name} (without locale: {e.NameWithoutLocale})");
-            };
-
             this.TranslationIndex = new TranslationIndex(helper);
 
             ConfigureMod(helper.ReadConfig<ModConfig>());
@@ -559,6 +552,11 @@ namespace LanguageStudyStardewValleyMod
                 return;
             }
 
+            LogFontInfo(font, args.Length > 0 ? string.Join("", args) : "aiueoAIUEO");
+        }
+
+        private static void LogFontInfo(SpriteFont font, string chars)
+        {
             var texture = font.Texture;
             Log($"smallFont: atlas {texture.Width}x{texture.Height} {texture.Format}, "
                 + $"graphics profile {Game1.graphics.GraphicsDevice.GraphicsProfile}, "
@@ -566,7 +564,6 @@ namespace LanguageStudyStardewValleyMod
                 + $"default '{font.DefaultCharacter}'");
 
             var glyphs = font.GetGlyphs();
-            string chars = args.Length > 0 ? string.Join("", args) : "aiueoAIUEO";
             foreach (char c in chars.Distinct())
             {
                 Log(glyphs.TryGetValue(c, out var glyph)
@@ -828,9 +825,6 @@ namespace LanguageStudyStardewValleyMod
         #region GenericModConfigMenu
         private void OnGameLaunched(object? sender, GameLaunchedEventArgs e)
         {
-            // TEMPORARY font probe for the font-extension work; see ls_font_info
-            this.OnFontInfoCommand("ls_font_info", Array.Empty<string>());
-
             // get Generic Mod Config Menu's API (if it's installed)
             var configMenu = this.Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (configMenu is null)
