@@ -63,3 +63,35 @@ To check the state after a game update:
 
 - The SMAPI log's `Glyph capture: …` startup line says `on` or `OFF (measured fallback)` for each renderer.
 - `ls_dump_text` shows `glyphs=N` for each recorded string. `-` means that string's renderer is on the fallback. `0` on text that is visible on screen means the capture isn't recording.
+
+## Flashcards
+
+Left-clicking a word saves it as a flashcard, and the pause menu gets a tab for reviewing them. The rules below are in `FlashcardDeck.cs` and `FlashcardContext.cs`. Neither uses any game types, and both are unit-tested in `tools/ModLogic.Tests`.
+
+### Saving a word
+
+A card is made from whatever word hover last found under the mouse. Input is handled before each frame is drawn, so that's the word the player saw when they clicked. Only words with segment data can be saved, since the character-class split has no meaning or reading to put on a card. When a click saves a word, `ModEntry` suppresses it so the game underneath never sees it. A click that misses every word passes through as normal.
+
+A card is identified by source language, word and kana: 上手 read じょうず and 上手 read うわて are separate cards. The word is trimmed of the punctuation segment data attaches to it (`ありがとう！` becomes `ありがとう`). A gloss that is one parenthesised note, like `(object marker)` or `(your name)`, marks a particle or placeholder, and those are refused.
+
+Clicking a saved word again depends on the sentence. The same sentence removes that sentence from the card, and removing the last one deletes the card. A new sentence, or a new meaning, is added to the existing card.
+
+### Pointing back at the sentence
+
+A card stores where its sentence is rather than a copy of it: `table:key@offset+length`, which is the segment file, the entry key, and the word's segment's position in that entry's Japanese text. `SegmentDataLoader` stamps this on every segment as it loads, and it survives the lookups word hover does. A name or number the game filled in has no pointer, and neither does the HUD clock, so words found there are saved without a sentence.
+
+The position is a character offset, not a segment number, because re-splitting an entry's segments renumbers them while the game's text stays put. A pointer is shown only if its span still contains the card's word. A data update can make one stale: it is then hidden and logged, but kept in the file in case a later fix makes it valid again.
+
+### Storage
+
+The deck is saved to SMAPI's global data (`.smapi/mod-data/<mod id>/flashcards.json`) after every change. That makes it shared by every save file, and keeps it outside the mod folder, which a mod update replaces. If the file can't be read, saving is turned off for the session so a damaged deck isn't overwritten with an empty one.
+
+### The pause-menu tab
+
+The game has no way to add a pause-menu tab, so `Patches/GameMenuPatches.cs` patches it in. Its approach rests on three facts from the 1.6.15 IL:
+
+- `GameMenu`'s constructor builds `tabs` and `pages` as matching lists, so a postfix appends one of each.
+- Tab switching turns a tab's name into a page number with a hardcoded lookup that returns -1 for any name it doesn't know. A postfix maps ours.
+- `draw` picks each tab's icon by the same hardcoded names and draws nothing for ours. The icon is drawn from the mod's own overlay pass instead.
+
+`FlashcardsPage.cs` is the tab itself. **Review** shows one card at a time. The back has the kana, romaji and meanings, plus the sentence page the word was on, with the word underlined and the literal and official English below it. Marking a card missed or known only adds to its counts: nothing is scheduled. **Browse** lists every card and can delete them. The tab draws inside `TextCapturePatches.SuppressRecording()`, so none of its own text can be hovered or saved.
