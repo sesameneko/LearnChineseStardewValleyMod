@@ -18,6 +18,15 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>Pins the tooltip under the cursor only for as long as this is held down (Plan.md M2.1).</summary>
         public KeybindList HoldFreezeTooltip { get; set; } = KeybindList.Parse("RightShift");
 
+        /// <summary>
+        /// Whether left-clicking a hovered word saves it as a flashcard (Plan.md M5). The click is
+        /// swallowed when it lands on a word, so the game underneath never sees it.
+        /// </summary>
+        public bool ClickToSaveWords { get; set; } = true;
+
+        /// <summary>The order the flashcards tab reviews cards in; changed from the tab itself.</summary>
+        public CardOrder FlashcardOrder { get; set; } = CardOrder.NewestFirst;
+
         /// <summary>The game's UI language to translate from, as a locale code (e.g. "ja"). Not yet exposed in the config UI.</summary>
         public string SourceLanguage { get; set; } = "ja";
 

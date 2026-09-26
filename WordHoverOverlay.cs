@@ -26,6 +26,31 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>Whether the last hit's boundaries came from hand-segmented data rather than the fallback heuristic.</summary>
         public static bool LastHitWasExact { get; private set; }
 
+        /// <summary>The segment under the cursor on the last draw that had text to test, for click-to-save.</summary>
+        private static TextSegment? lastHitSegment;
+
+        /// <summary>The tick <see cref="lastHitSegment"/> was found on.</summary>
+        private static int lastHitTick = -1;
+
+        /// <summary>
+        /// The word hovered in the last frame or two, when its boundaries came from segment data --
+        /// the only words a flashcard can be made from, since the fallback split has no gloss or kana.
+        ///
+        /// Read from input handling, which runs before the frame is drawn, so this is always the
+        /// previous frame's hit: what the player saw when they clicked. Only frames that recorded
+        /// text update it, because the overlay is drawn from more than one pass per frame and the
+        /// later ones find nothing left to test.
+        /// </summary>
+        public static bool TryGetHoveredWord(out TextSegment segment)
+        {
+            segment = default;
+            if (lastHitSegment is not { } hit || Game1.ticks - lastHitTick > 2)
+                return false;
+
+            segment = hit;
+            return true;
+        }
+
         /// <summary>
         /// Draws the overlay for whatever word is under the cursor right now.
         ///
@@ -52,6 +77,12 @@ namespace LanguageStudyStardewValleyMod
                     var hit = FindWordUnderCursor();
                     LastHitWord = hit?.Segment.Text;
                     LastHitWasExact = hit?.Exact ?? false;
+
+                    if (hit is not null || TextCapturePatches.DrawnThisFrame.Count > 0)
+                    {
+                        lastHitSegment = hit is { Exact: true } exactHit ? exactHit.Segment : null;
+                        lastHitTick = Game1.ticks;
+                    }
 
                     if (hit is null)
                         return;
@@ -271,14 +302,33 @@ namespace LanguageStudyStardewValleyMod
             if (string.IsNullOrWhiteSpace(segment.Gloss))
                 return segment.Text;
 
+            string gloss = IsSaved(segment) ? SavedMark() + segment.Gloss : segment.Gloss;
+
             if (string.IsNullOrWhiteSpace(segment.Kana))
-                return segment.Gloss;
+                return gloss;
 
             string romaji = FontSafeText.Apply(KanaRomaji.Convert(segment.Kana), ExtendedFont.DrawableCharacters(Game1.smallFont));
 
             return romaji == segment.Kana
-                ? $"{segment.Gloss}\n{segment.Kana}"
-                : $"{segment.Gloss}\n{romaji}\n{segment.Kana}";
+                ? $"{gloss}\n{segment.Kana}"
+                : $"{gloss}\n{romaji}\n{segment.Kana}";
+        }
+
+        /// <summary>Whether the word is already a flashcard in the current source language.</summary>
+        private static bool IsSaved(TextSegment segment)
+        {
+            string? language = ModEntry.Instance?.Config.SourceLanguage;
+            return language is not null && FlashcardStore.Deck.Contains(language, segment.Text, segment.Kana);
+        }
+
+        /// <summary>
+        /// Prefixed to a saved word's gloss. A star where the font has one (the Japanese fonts do),
+        /// otherwise a bracketed word -- never a bare '*', which is also what the font draws for a
+        /// glyph it's missing.
+        /// </summary>
+        private static string SavedMark()
+        {
+            return ExtendedFont.DrawableCharacters(Game1.smallFont).Contains('★') ? "★ " : "[saved] ";
         }
 
         private static (IReadOnlyList<TextSegment> Segments, bool Exact) ResolveSegments(string drawnText, string[] lines, int lineIndex, string line)

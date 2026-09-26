@@ -67,6 +67,7 @@ namespace LanguageStudyStardewValleyMod
 
             // plain file IO, so it needs no game state and can happen before the game is up
             this.Segments = SegmentDataLoader.Load(helper, currentConfig.SourceLanguage);
+            FlashcardStore.Load(helper);
 
             ApplyPatches();
 
@@ -159,6 +160,12 @@ namespace LanguageStudyStardewValleyMod
             currentConfig = newConfig;
         }
 
+        /// <summary>Writes the live config back to config.json, for settings changed outside GMCM (the flashcards tab's order).</summary>
+        public void SaveConfig()
+        {
+            this.Helper.WriteConfig(currentConfig);
+        }
+
         private void OnSave(object? sender, SaveCreatingEventArgs e)
         {
         }
@@ -216,6 +223,16 @@ namespace LanguageStudyStardewValleyMod
             catch (Exception ex)
             {
                 Log($"Failed to apply Harmony patches -- hover translation will be inactive. {ex}", LogLevel.Error);
+            }
+
+            // separately, so a pause-menu change in some game update costs only the tab
+            try
+            {
+                GameMenuPatches.Apply(new Harmony(this.ModManifest.UniqueID));
+            }
+            catch (Exception ex)
+            {
+                Log($"Failed to patch the pause menu -- the flashcards tab won't appear. {ex}", LogLevel.Error);
             }
         }
 
@@ -310,6 +327,16 @@ namespace LanguageStudyStardewValleyMod
         {
             if (!Context.IsWorldReady)
                 return;
+
+            // a click on a hovered word saves it as a flashcard, and goes no further: the game
+            // underneath (a dialogue box, a shop row) never sees it
+            if (currentConfig.ClickToSaveWords
+                && e.Pressed.Contains(SButton.MouseLeft)
+                && FlashcardCapture.TryHandleClick(currentConfig.SourceLanguage))
+            {
+                this.Helper.Input.Suppress(SButton.MouseLeft);
+                return;
+            }
 
             // a click can change what the held tooltip describes -- the item may be picked up,
             // consumed, or the menu replaced -- so it stops standing in for anything
@@ -473,6 +500,9 @@ namespace LanguageStudyStardewValleyMod
         private void DrawOverlays(SpriteBatch spriteBatch)
         {
             DrawTrace.Note(Game1.activeClickableMenu is null ? "hudPass" : "menuPass");
+
+            // before the tooltips, which can reach over the tab row
+            GameMenuPatches.DrawTabIcon(spriteBatch);
 
             // exactly one of these draws a tooltip: the pin takes precedence and the linger stands
             // down for it, and the linger itself does nothing in a frame where the game drew its own
@@ -884,6 +914,15 @@ namespace LanguageStudyStardewValleyMod
                 tooltip: () => "Turns hover translations on/off.",
                 getValue: () => this.currentConfig.ToggleTranslation,
                 setValue: value => this.currentConfig.ToggleTranslation = value
+            );
+
+            configMenu.AddBoolOption(
+                mod: this.ModManifest,
+                name: () => "Click to Save Words",
+                tooltip: () => "Left-clicking an underlined word saves it as a flashcard (click it again in the same sentence to remove it). "
+                               + "While on, a click on a word doesn't reach the game.",
+                getValue: () => this.currentConfig.ClickToSaveWords,
+                setValue: value => this.currentConfig.ClickToSaveWords = value
             );
 
             configMenu.AddKeybindList(

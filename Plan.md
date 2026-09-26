@@ -28,7 +28,7 @@ Before committing to an approach, we researched how Stardew Valley/SMAPI actuall
    - Dictionary/flashcards — inspect individual vocab words, save to flashcards.
 3. **Keyboard shortcuts** — at minimum, toggle translation on/off; architecture should allow adding more later (e.g. cycle translation mode).
 4. **Config UI** — via Generic Mod Config Menu (soft dependency, already scaffolded).
-5. **Pause-menu flashcards tab** — a new `GameMenu` tab for reviewing saved vocabulary.
+5. **Pause-menu flashcards tab** — a new `GameMenu` tab for reviewing saved vocabulary (built; see M5 + M6).
 
 ## Build order
 
@@ -141,14 +141,26 @@ This is worth doing before M3 because it reaches the same end goal (hovering a s
 - Add a config/keybind to switch which mode's text is shown when both literal and explanatory data exist for a string; fall back to literal (or "no translation") when explanatory data is missing.
 - No generation tooling in scope — data is produced externally and dropped into the assets folder.
 
-### M5 — Dictionary / flashcards mode
-- Core open problem: Japanese has no whitespace word boundaries, so "select an individual vocab word" out of a multi-word hovered string needs either a bundled tokenizer + dictionary (heavier) or a bundled vocab list matched by substring against hovered text (lighter, recommended starting point). Decide this at the start of the milestone, not now.
-- Persistence: store flashcards globally (not per-save, since learned vocabulary isn't tied to a farm) via `helper.Data.WriteJsonFile`/`ReadJsonFile` on the mod's own data folder.
-- UI: a review flow for saved cards (could reuse whatever UI approach M6 picks for the pause-menu tab).
+### M5 + M6 — Flashcards: click-to-save and the pause-menu tab *(built 2026-09-26, not yet tried live)*
+M5's "core open problem" -- finding word boundaries -- was solved by the segment data and word hover before this milestone started, so a flashcard is made from whatever word hover has already found under the cursor. The behaviour below was settled in a Q&A with the user before building.
 
-### M6 — Pause-menu flashcards tab
-- Spike whether to hand-roll the `GameMenu` Harmony patch (constructor postfix adding to `tabs`/`pages`, patch `getTabNumberFromName`, patch `draw` — pattern confirmed via `ra1nyxin/rainyxinmain_StardewValleyMod`) or depend on a higher-level framework (StardewUI or "Better Game Menu") for the extension point and/or the tab's own UI. Decide based on how much custom UI M5's review flow needs.
-- Follow the existing soft-dependency pattern already used for GMCM (`Helper.ModRegistry.GetApi<T>(...)`, null-check, called from `OnGameLaunched`) for whichever framework is chosen.
+**Saving a word**
+- **Left-click a hovered word.** Only words whose boundaries came from segment data qualify; the character-class fallback has no gloss or kana to put on a card. The click is suppressed (`helper.Input.Suppress`) so the game never sees it. This means a click on a word can't also advance dialogue, pick a question response, or buy a shop row. The `Click to Save Words` GMCM toggle turns the gesture off.
+- **Particles and placeholders are refused**, with a HUD message saying why. The rule is "the gloss is one parenthesised note": `(object marker)`, `(your name)` and `(item)` are refused, while `(my) parents (subject marker)` is allowed.
+- **Card identity is (source language, word, kana)**, so 上手 read じょうず and 上手 read うわて are separate cards. The word is the segment with attached punctuation trimmed (`ありがとう！` → `ありがとう`).
+- **Each card keeps pointers to its sentences, not copies**: `table:key@offset+length`, meaning segment file, entry key, and the authored segment's span in that entry's `japanese` string. A character span rather than a segment index, because re-splitting segments shifts indices while the game's text stays fixed. The loader gives every `TextSegment` a `SegmentSource`, which survives retiling and composite slicing. A token the game filled in (`{0}`), the HUD clock and fallback splits carry none, so a word found there is saved with no sentence.
+- **Clicking again**: the same sentence toggles that sentence off (and deletes the card once none are left); a new sentence or gloss is added to the existing card ("Context added to existing flashcard"). A click with no sentence on a card that has sentences changes nothing. Deletes are permanent.
+- **Feedback**: a HUD toast, a sound, and a ★ before the gloss in the hover label for a word already saved.
+
+**Storage**: SMAPI global data (`.smapi/mod-data/<mod id>/flashcards.json`), written on every change. It is global rather than per save, and outside the mod folder so a mod update can't wipe it. If the file can't be read, saving is disabled for the session rather than overwriting it. A pointer that no longer resolves (entry gone, or its span no longer holds the word) is hidden, logged once, and left in the file.
+
+**Pause-menu tab** (hand-rolled Harmony patch, no framework dependency; see `Patches/GameMenuPatches.cs` for the IL facts it rests on):
+- **Review**: the word alone on the front. The back shows kana, romaji, glosses, and up to two saved sentences, each on the page the word was on, with markup stripped and the word underlined. Under each sentence come the hand-authored literal English and then the game's official English. Grading is pass/fail and **only counts**: nothing is scheduled and there are no due dates. Order is newest, oldest, or fewest correct, picked at the top of the tab and kept in config. Keys: Space flips, 1 = missed, 2 = knew it.
+- **Browse**: a scrolling list (word, kana, glosses, pass/fail counts). Delete asks for a second click. Clicking a row shows its back.
+- Only cards for the configured source language are shown. Word hover is off inside the tab.
+- **Not supported**: controller navigation of the tab, reaching it with the shoulder buttons, and scheduling.
+
+**Still to verify live**: the tab icon's placement and look (a Lost Book on a menu tile, since vanilla's tab art has no blank frame), that suppression really stops dialogue/shop clicks, the back's layout at different UI scales, and that the ★ renders in the label.
 
 ## Verification
 
