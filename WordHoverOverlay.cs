@@ -144,6 +144,15 @@ namespace LanguageStudyStardewValleyMod
                 if (ownTooltipUp && !drawn.FromModTooltip)
                     continue;
 
+                if (drawn.Glyphs is { } glyphs)
+                {
+                    // the renderer was instrumented: its glyphs are the whole truth, including
+                    // "nothing drawn yet" mid-typewriter, so never fall through to re-deriving it
+                    if (FindWordInGlyphs(drawn, glyphs, mouseX, mouseY) is { } glyphHit)
+                        return glyphHit;
+                    continue;
+                }
+
                 string[] lines = TextHitTest.SplitLines(drawn.Text);
                 float lineHeight = drawn.LineHeight;
 
@@ -173,6 +182,68 @@ namespace LanguageStudyStardewValleyMod
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Hit-tests against the positions the renderer recorded for each character (see
+        /// <see cref="GlyphHitTest"/>): find the glyph under the cursor, the segment that character
+        /// belongs to, and outline that segment's glyphs on the hovered line. Nothing is measured or
+        /// re-wrapped, so this can't disagree with what's on screen.
+        /// </summary>
+        private static Hit? FindWordInGlyphs(DrawnText drawn, IReadOnlyList<GlyphCell> glyphs, float mouseX, float mouseY)
+        {
+            if (GlyphHitTest.HitCell(glyphs, mouseX, mouseY) is not { } cellAt)
+                return null;
+
+            GlyphCell cell = glyphs[cellAt];
+            string[] lines = TextHitTest.SplitLines(drawn.Text);
+            string unwrapped = string.Concat(lines);
+
+            var index = ModEntry.Instance?.Segments;
+            IReadOnlyList<TextSegment>? found = null;
+            bool exact = index != null
+                         && index.TryGetSegments(drawn.Text, out found)
+                         && SegmentIndex.Concat(found) == unwrapped;
+            IReadOnlyList<TextSegment> segments = exact
+                ? found!
+                : TextHitTest.SplitSegments(unwrapped).Select(TextSegment.Plain).ToList();
+
+            var texts = segments.Select(segment => segment.Text).ToList();
+            if (GlyphHitTest.SegmentAt(texts, GlyphHitTest.ToUnwrappedIndex(drawn.Text, cell.Index)) is not var (segmentIndex, start))
+                return null;
+
+            var segment = segments[segmentIndex];
+            if (string.IsNullOrWhiteSpace(segment.Text))
+                return null; // the gap between two words, not a word
+
+            if (GlyphHitTest.SpanBounds(glyphs, drawn.Text, start, segment.Text.Length, cell) is not { } word)
+                return null;
+
+            Box line = GlyphHitTest.LineBounds(glyphs, cell);
+            int lineIndex = LineOfCharacter(lines, cell.Index);
+
+            return new Hit(segment, ToRectangle(word), ToRectangle(line), exact, drawn.Text, lines, lineIndex);
+        }
+
+        /// <summary>Which newline-separated line of the drawn text a character index falls in, for the fallback log.</summary>
+        private static int LineOfCharacter(string[] lines, int index)
+        {
+            int position = 0;
+            for (int i = 0; i < lines.Length; i++)
+            {
+                position += lines[i].Length + 1;
+                if (index < position)
+                    return i;
+            }
+
+            return Math.Max(0, lines.Length - 1);
+        }
+
+        private static Rectangle ToRectangle(Box box)
+        {
+            int left = (int)Math.Floor(box.Left);
+            int top = (int)Math.Floor(box.Top);
+            return new Rectangle(left, top, (int)Math.Ceiling(box.Right) - left, (int)Math.Ceiling(box.Bottom) - top);
         }
 
         /// <summary>

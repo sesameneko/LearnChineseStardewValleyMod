@@ -13,6 +13,11 @@
     </ItemGroup>
 
     <ItemGroup>
+      <!-- SpriteText.FontFile's type, for the line height in glyph capture (Patches/GlyphCapturePatches.cs); ships with the game, so never copied -->
+      <Reference Include="BmFont" HintPath="$(GamePath)/BmFont.dll" Private="false" />
+    </ItemGroup>
+
+    <ItemGroup>
       <!-- tools/ holds separate standalone projects (see tools/*/*.csproj); keep them out of this project's own compilation -->
       <Compile Remove="tools/**/*.cs" />
       <None Remove="tools/**" />

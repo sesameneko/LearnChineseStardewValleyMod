@@ -59,6 +59,13 @@ namespace LanguageStudyStardewValleyMod
             helper.Events.Display.RenderedActiveMenu += this.OnRenderedActiveMenu;
             helper.Events.Display.Rendered += this.OnRenderedDiagnostic;
 
+            // TEMPORARY font probe: do the game's font loads come through the content pipeline?
+            helper.Events.Content.AssetRequested += (_, e) =>
+            {
+                if (e.Name.StartsWith("Fonts/"))
+                    Log($"[font probe] asset requested: {e.Name} (without locale: {e.NameWithoutLocale})");
+            };
+
             this.TranslationIndex = new TranslationIndex(helper);
 
             ConfigureMod(helper.ReadConfig<ModConfig>());
@@ -126,6 +133,13 @@ namespace LanguageStudyStardewValleyMod
                 + "the font's substitute character rather than failing, so they're easy to mistake for a data "
                 + "bug. With no text, checks the loaded segment data. Usage: ls_font_check [text]",
                 this.OnFontCheckCommand
+            );
+
+            helper.ConsoleCommands.Add(
+                "ls_font_info",
+                "Logs smallFont's atlas (size, surface format) and the glyph metrics of the given characters -- "
+                + "what extending the font with new glyphs depends on. Usage: ls_font_info [chars]  (defaults to aiueoAIUEO)",
+                this.OnFontInfoCommand
             );
 
             helper.ConsoleCommands.Add(
@@ -248,13 +262,24 @@ namespace LanguageStudyStardewValleyMod
                     continue;
                 }
 
-                harmony.Patch(target, prefix: new HarmonyMethod(typeof(TextCapturePatches), patchName));
+                harmony.Patch(
+                    target,
+                    prefix: new HarmonyMethod(typeof(TextCapturePatches), patchName),
+                    transpiler: new HarmonyMethod(typeof(GlyphCapturePatches), nameof(GlyphCapturePatches.Transpile_DrawString))
+                );
             }
 
             harmony.Patch(
                 original: AccessTools.Method(typeof(SpriteText), nameof(SpriteText.drawString)),
-                prefix: new HarmonyMethod(typeof(TextCapturePatches), nameof(TextCapturePatches.Prefix_SpriteTextDrawString))
+                prefix: new HarmonyMethod(typeof(TextCapturePatches), nameof(TextCapturePatches.Prefix_SpriteTextDrawString)),
+                transpiler: new HarmonyMethod(typeof(GlyphCapturePatches), nameof(GlyphCapturePatches.Transpile_SpriteTextDrawString))
             );
+
+            Log($"Glyph capture: SpriteText {On(GlyphCapturePatches.SpriteTextActive)}; DrawString string {On(GlyphCapturePatches.StringActive)}, "
+                + $"string scaled {On(GlyphCapturePatches.StringScaledActive)}, StringBuilder {On(GlyphCapturePatches.BuilderActive)}, "
+                + $"StringBuilder scaled {On(GlyphCapturePatches.BuilderScaledActive)}.");
+
+            static string On(bool active) => active ? "on" : "OFF (measured fallback)";
 
             // temporary: see QuestLogProbe. The 3-arg overload is the wrapping one menus use.
             harmony.Patch(
@@ -525,6 +550,32 @@ namespace LanguageStudyStardewValleyMod
             }
         }
 
+        private void OnFontInfoCommand(string command, string[] args)
+        {
+            var font = Game1.smallFont;
+            if (font is null)
+            {
+                Log("The font isn't loaded yet.", LogLevel.Warn);
+                return;
+            }
+
+            var texture = font.Texture;
+            Log($"smallFont: atlas {texture.Width}x{texture.Height} {texture.Format}, "
+                + $"graphics profile {Game1.graphics.GraphicsDevice.GraphicsProfile}, "
+                + $"{font.Characters.Count} glyphs, LineSpacing {font.LineSpacing}, Spacing {font.Spacing}, "
+                + $"default '{font.DefaultCharacter}'");
+
+            var glyphs = font.GetGlyphs();
+            string chars = args.Length > 0 ? string.Join("", args) : "aiueoAIUEO";
+            foreach (char c in chars.Distinct())
+            {
+                Log(glyphs.TryGetValue(c, out var glyph)
+                    ? $"  '{c}': bounds {glyph.BoundsInTexture}, cropping {glyph.Cropping}, bearings "
+                        + $"{glyph.LeftSideBearing}/{glyph.Width}/{glyph.RightSideBearing}"
+                    : $"  '{c}': not in the font");
+            }
+        }
+
         private void OnDrawTraceCommand(string command, string[] args)
         {
             if (args.Length == 0 || !int.TryParse(args[0], out int frames) || frames <= 0)
@@ -633,7 +684,8 @@ namespace LanguageStudyStardewValleyMod
 
                 string renderer = drawn.IsBitmapFont ? "SpriteText" : "SpriteFont";
                 Log($"[dump] #{i,-3} {renderer,-10} x={drawn.X,7:0.0} y={drawn.Y,7:0.0} scale={drawn.Scale:0.00} "
-                    + $"lineH={drawn.LineHeight,5:0.0} '{drawn.Text.Replace("\n", "\\n")}'");
+                    + $"lineH={drawn.LineHeight,5:0.0} glyphs={(drawn.Glyphs is null ? "-" : drawn.Glyphs.Count.ToString())} "
+                    + $"'{drawn.Text.Replace("\n", "\\n")}'");
                 shown++;
             }
 
@@ -776,6 +828,9 @@ namespace LanguageStudyStardewValleyMod
         #region GenericModConfigMenu
         private void OnGameLaunched(object? sender, GameLaunchedEventArgs e)
         {
+            // TEMPORARY font probe for the font-extension work; see ls_font_info
+            this.OnFontInfoCommand("ls_font_info", Array.Empty<string>());
+
             // get Generic Mod Config Menu's API (if it's installed)
             var configMenu = this.Helper.ModRegistry.GetApi<IGenericModConfigMenuApi>("spacechase0.GenericModConfigMenu");
             if (configMenu is null)

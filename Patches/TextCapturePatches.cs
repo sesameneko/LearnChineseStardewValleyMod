@@ -14,7 +14,12 @@ namespace LanguageStudyStardewValleyMod.Patches
     /// <param name="Y">Top edge, in UI-space pixels.</param>
     /// <param name="Scale">Draw scale; 1 for the overloads that don't take one.</param>
     /// <param name="Font">The SpriteFont it was drawn with, or null when it was drawn by SpriteText.</param>
-    public readonly record struct DrawnText(string Text, float X, float Y, float Scale, SpriteFont? Font, bool FromModTooltip)
+    /// <param name="Glyphs">
+    /// Where each character actually landed, recorded from inside the renderer's glyph loop (see
+    /// GlyphCapturePatches); null when that renderer couldn't be instrumented, in which case the
+    /// layout is re-derived from <see cref="X"/>, <see cref="Y"/> and the font metrics instead.
+    /// </param>
+    public readonly record struct DrawnText(string Text, float X, float Y, float Scale, SpriteFont? Font, bool FromModTooltip, List<GlyphCell>? Glyphs)
     {
         /// <summary>Whether this came from SpriteText's bitmap font rather than a SpriteFont.</summary>
         public bool IsBitmapFont => this.Font is null;
@@ -122,6 +127,13 @@ namespace LanguageStudyStardewValleyMod.Patches
         public static void ConsumeFrame()
         {
             FrameConsumes++;
+            ClearRecorded();
+        }
+
+        private static void ClearRecorded()
+        {
+            foreach (var drawn in drawnThisFrame)
+                GlyphCapturePatches.Recycle(drawn.Glyphs);
             drawnThisFrame.Clear();
         }
 
@@ -131,8 +143,13 @@ namespace LanguageStudyStardewValleyMod.Patches
             return new Suppression();
         }
 
-        private static void Record(string? text, float x, float y, float scale, SpriteFont? font)
+        /// <param name="instrumented">Whether the renderer about to draw this has had its glyph loop instrumented, so its glyphs will be recorded.</param>
+        /// <param name="lineHeight">The height of one line in the renderer's own (pre-transform) units, for the glyph cells.</param>
+        private static void Record(string? text, float x, float y, float scale, SpriteFont? font, bool instrumented, float lineHeight)
         {
+            // whatever the glyph loop draws next belongs to this string, or to nothing
+            GlyphCapturePatches.Ignore();
+
             if (font is null)
                 SpriteTextCalls++;
             else
@@ -157,16 +174,17 @@ namespace LanguageStudyStardewValleyMod.Patches
 
             // safety valve: if nothing consumes the list (no menu and no HUD drawn), don't grow forever
             if (drawnThisFrame.Count > 4000)
-                drawnThisFrame.Clear();
+                ClearRecorded();
 
             RecordedTotal++;
-            drawnThisFrame.Add(new DrawnText(text!, x, y, scale, font, TooltipReissue.IsReissuing));
+            var glyphs = instrumented ? GlyphCapturePatches.Begin(text!.Length, lineHeight) : null;
+            drawnThisFrame.Add(new DrawnText(text!, x, y, scale, font, TooltipReissue.IsReissuing, glyphs));
         }
 
         #region SpriteBatch.DrawString -- the four overloads the game actually calls
         public static void Prefix_DrawString(SpriteFont spriteFont, string text, Vector2 position)
         {
-            Record(text, position.X, position.Y, 1f, spriteFont);
+            Record(text, position.X, position.Y, 1f, spriteFont, GlyphCapturePatches.StringActive, spriteFont.LineSpacing);
         }
 
         /// <summary>
@@ -176,29 +194,37 @@ namespace LanguageStudyStardewValleyMod.Patches
         /// </summary>
         public static void Prefix_DrawStringScaledVector(SpriteFont spriteFont, string text, Vector2 position, Vector2 scale)
         {
-            Record(text, position.X, position.Y, scale.X, spriteFont);
+            Record(text, position.X, position.Y, scale.X, spriteFont, GlyphCapturePatches.StringScaledActive, spriteFont.LineSpacing);
         }
 
         public static void Prefix_DrawStringBuilder(SpriteFont spriteFont, StringBuilder text, Vector2 position)
         {
-            Record(text?.ToString(), position.X, position.Y, 1f, spriteFont);
+            Record(text?.ToString(), position.X, position.Y, 1f, spriteFont, GlyphCapturePatches.BuilderActive, spriteFont.LineSpacing);
         }
 
         public static void Prefix_DrawStringBuilderScaledVector(SpriteFont spriteFont, StringBuilder text, Vector2 position, Vector2 scale)
         {
-            Record(text?.ToString(), position.X, position.Y, scale.X, spriteFont);
+            Record(text?.ToString(), position.X, position.Y, scale.X, spriteFont, GlyphCapturePatches.BuilderScaledActive, spriteFont.LineSpacing);
         }
         #endregion
 
         #region SpriteText -- the bitmap font (dialogue, quest log, shops)
         /// <summary>
-        /// SpriteText wraps internally rather than receiving pre-wrapped text, so the width it was
-        /// given has to be captured and the wrap replayed -- otherwise every word after the first
-        /// break is hit-tested as though the line ran off the screen (see TextHitTest.WrapToWidth).
+        /// Records a SpriteText string. With its glyph loop instrumented, the text is recorded as
+        /// the loop indexes it -- with the newlines it strips removed -- and the glyphs say where
+        /// everything went.
+        ///
+        /// Otherwise (the fallback) the wrap has to be replayed: SpriteText wraps internally rather
+        /// than receiving pre-wrapped text, so without it every word after the first break is
+        /// hit-tested as though the line ran off the screen (see TextHitTest.WrapToWidth). The replay
+        /// is an approximation of the renderer's rules, which is why it's only the fallback.
         /// </summary>
         public static void Prefix_SpriteTextDrawString(string s, int x, int y, int width)
         {
-            Record(WrapLikeSpriteText(s, width), x, y, 1f, font: null);
+            if (GlyphCapturePatches.SpriteTextActive)
+                Record(s?.Replace(Environment.NewLine, ""), x, y, 1f, font: null, instrumented: true, GlyphCapturePatches.SpriteTextLineHeight());
+            else
+                Record(WrapLikeSpriteText(s, width), x, y, 1f, font: null, instrumented: false, lineHeight: 0f);
         }
 
         /// <summary>
