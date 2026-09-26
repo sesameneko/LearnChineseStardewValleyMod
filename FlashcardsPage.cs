@@ -58,6 +58,7 @@ namespace LanguageStudyStardewValleyMod
         private static readonly Color FaintText = new(150, 125, 95);
         private static readonly Color HighlightText = new(180, 40, 30);
         private static readonly Color DeleteTint = new(255, 150, 150);
+        private static readonly Color CardFill = new(250, 246, 236);
 
         private string Language => ModEntry.Instance.Config.SourceLanguage;
 
@@ -390,7 +391,7 @@ namespace LanguageStudyStardewValleyMod
                 return;
             }
 
-            DrawPanel(b, this.cardArea, fill: Color.White);
+            DrawPanel(b, this.cardArea, fill: CardFill);
 
             string progress = $"{this.session.Position + 1} / {this.session.Count}";
             Utility.drawTextWithShadow(b, progress, Game1.smallFont, new Vector2(this.cardArea.Right - 24 - Game1.smallFont.MeasureString(progress).X, this.cardArea.Top + 20), MutedText);
