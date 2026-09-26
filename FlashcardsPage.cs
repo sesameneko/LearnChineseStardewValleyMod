@@ -390,7 +390,7 @@ namespace LanguageStudyStardewValleyMod
                 return;
             }
 
-            DrawPanel(b, this.cardArea);
+            DrawPanel(b, this.cardArea, fill: Color.White);
 
             string progress = $"{this.session.Position + 1} / {this.session.Count}";
             Utility.drawTextWithShadow(b, progress, Game1.smallFont, new Vector2(this.cardArea.Right - 24 - Game1.smallFont.MeasureString(progress).X, this.cardArea.Top + 20), MutedText);
@@ -660,9 +660,19 @@ namespace LanguageStudyStardewValleyMod
             Utility.drawTextWithShadow(b, after, font, new Vector2(x + beforeWidth + wordWidth, y), Game1.textColor);
         }
 
-        private static void DrawPanel(SpriteBatch b, Rectangle area)
+        /// <summary>
+        /// A menu-tile panel. With <paramref name="fill"/>, its parchment interior is painted over
+        /// in that colour inside the frame -- the card under review is white, like a paper card.
+        /// </summary>
+        private static void DrawPanel(SpriteBatch b, Rectangle area, Color? fill = null)
         {
             drawTextureBox(b, Game1.menuTexture, new Rectangle(0, 256, 60, 60), area.X, area.Y, area.Width, area.Height, Color.White, 1f, false);
+
+            if (fill is { } color)
+            {
+                const int frame = 16; // the menu tile's border at scale 1
+                b.Draw(Game1.staminaRect, new Rectangle(area.X + frame, area.Y + frame, area.Width - (frame * 2), area.Height - (frame * 2)), color);
+            }
         }
 
         private void DrawButton(SpriteBatch b, Rectangle bounds, string label, bool selected = false, Color? tint = null)
