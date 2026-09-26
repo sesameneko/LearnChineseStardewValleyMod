@@ -17,13 +17,28 @@ namespace LanguageStudyStardewValleyMod
     /// romaji/kana preference would be rendered from. It also renders, which romaji doesn't: the
     /// game's font has no macron glyph and silently substitutes '*'.
     /// </param>
-    public readonly record struct TextSegment(string Text, string? Reading, string? Gloss, string? Kana = null)
+    /// <param name="Source">
+    /// The authored entry this segment was written in, for pointing a flashcard back at the sentence
+    /// a word was saved from. Null where the segment isn't a slice of one entry: the clock, the
+    /// character-class fallback, and a token the game filled in.
+    /// </param>
+    public readonly record struct TextSegment(string Text, string? Reading, string? Gloss, string? Kana = null, SegmentSource? Source = null)
     {
         public static TextSegment Plain(string text) => new(text, null, null);
 
-        /// <summary>The same segment covering only part of its text, for one side of a line break.</summary>
+        /// <summary>
+        /// The same segment covering only part of its text, for one side of a line break. The source
+        /// still names the whole authored segment: half a wrapped word is still that word.
+        /// </summary>
         public TextSegment Clip(int start, int length) => this with { Text = this.Text.Substring(start, length) };
     }
+
+    /// <summary>
+    /// Where an authored segment sits: entry <paramref name="Key"/> of the segment file
+    /// <paramref name="Table"/>, characters <paramref name="Offset"/> to
+    /// <paramref name="Offset"/> + <paramref name="Length"/> of its <c>japanese</c> string.
+    /// </summary>
+    public sealed record SegmentSource(string Table, string Key, int Offset, int Length);
 
     /// <summary>
     /// Exact word boundaries for strings we have hand-segmented data for, keyed by the source text.
@@ -92,6 +107,9 @@ namespace LanguageStudyStardewValleyMod
         private const double MinimumCompositeCoverage = 0.7;
 
         public int Count => this.byNormalized.Count;
+
+        /// <summary>Every authored entry by table and key, for resolving a flashcard's context pointer.</summary>
+        public SourceEntries Entries { get; } = new();
 
         /// <summary>The number of token templates that can be matched.</summary>
         public int TemplateCount => this.templates.Count;
@@ -281,10 +299,13 @@ namespace LanguageStudyStardewValleyMod
                     }
                 }
 
+                bool hasToken = TranslationMap.TokenPattern.IsMatch(segment.Text);
                 result.Add(segment with
                 {
                     Text = FillTokens(segment.Text, match),
                     Gloss = segment.Gloss is null ? null : FillTokens(segment.Gloss, match),
+                    // a filled-in value is text no entry holds
+                    Source = hasToken ? null : segment.Source,
                 });
             }
 

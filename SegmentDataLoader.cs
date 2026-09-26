@@ -58,6 +58,7 @@ namespace LanguageStudyStardewValleyMod
         private static int LoadFile(string path, SegmentIndex index)
         {
             using var document = JsonDocument.Parse(File.ReadAllText(path));
+            string table = Path.GetFileNameWithoutExtension(path);
             int rejected = 0;
 
             foreach (var property in document.RootElement.EnumerateObject())
@@ -74,14 +75,29 @@ namespace LanguageStudyStardewValleyMod
                     continue;
                 }
 
-                var segments = segmentsElement
-                    .EnumerateArray()
-                    .Select(ReadSegment)
-                    .Where(segment => segment.Text.Length > 0)
-                    .ToArray();
+                string? japanese = japaneseElement.GetString();
+                string? english = property.Value.TryGetProperty("english", out var englishElement) && englishElement.ValueKind == JsonValueKind.String
+                    ? englishElement.GetString()
+                    : null;
 
-                if (!index.TryAdd(japaneseElement.GetString(), segments))
+                // each segment remembers where it was authored, so a word saved as a flashcard can
+                // point back at its sentence
+                int offset = 0;
+                var segments = new List<TextSegment>();
+                foreach (var element in segmentsElement.EnumerateArray())
+                {
+                    var segment = ReadSegment(element);
+                    if (segment.Text.Length == 0)
+                        continue;
+
+                    segments.Add(segment with { Source = new SegmentSource(table, property.Name, offset, segment.Text.Length) });
+                    offset += segment.Text.Length;
+                }
+
+                if (!index.TryAdd(japanese, segments))
                     rejected++;
+                else
+                    index.Entries.Add(table, property.Name, japanese!, english);
             }
 
             return rejected;
