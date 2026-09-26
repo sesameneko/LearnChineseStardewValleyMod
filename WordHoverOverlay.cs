@@ -93,6 +93,9 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         private static void LogIfNewlyHovered(Hit hit, string label)
         {
+            if (ModEntry.Instance?.LogHoveredWords != true)
+                return;
+
             string word = hit.Segment.Text;
             if (LastLogged == (word, label))
                 return;

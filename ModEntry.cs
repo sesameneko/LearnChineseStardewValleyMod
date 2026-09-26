@@ -35,6 +35,9 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>Whether to log the raw text of hover tooltips that couldn't be translated (see the ls_log_misses command).</summary>
         public bool LogTranslationMisses { get; private set; }
 
+        /// <summary>Whether to log each newly hovered word, and why its lookup failed if it did (see the ls_log_hovers command). Off by default.</summary>
+        public bool LogHoveredWords { get; private set; }
+
         /// <summary>The source -> target text lookup the hover tooltips are translated through.</summary>
         public TranslationIndex TranslationIndex { get; private set; } = null!;
 
@@ -85,6 +88,13 @@ namespace LanguageStudyStardewValleyMod
                 "Toggles logging the raw text of every hover tooltip that couldn't be translated, so the "
                 + "gaps in the index can be found by playing rather than by guessing. Usage: ls_log_misses [on|off]",
                 this.OnLogMissesCommand
+            );
+
+            helper.ConsoleCommands.Add(
+                "ls_log_hovers",
+                "Toggles logging each newly hovered word and its label, plus -- when it fell back to the "
+                + "heuristic split -- the drawn text and why the segment lookup missed. Usage: ls_log_hovers [on|off]",
+                this.OnLogHoversCommand
             );
 
             helper.ConsoleCommands.Add(
@@ -544,6 +554,15 @@ namespace LanguageStudyStardewValleyMod
                 : !this.LogTranslationMisses;
 
             Log($"Logging of untranslated hover text is {(this.LogTranslationMisses ? "on" : "off")}.");
+        }
+
+        private void OnLogHoversCommand(string command, string[] args)
+        {
+            this.LogHoveredWords = args.Length > 0
+                ? args[0].Equals("on", StringComparison.OrdinalIgnoreCase)
+                : !this.LogHoveredWords;
+
+            Log($"Logging of hovered words is {(this.LogHoveredWords ? "on" : "off")}.");
         }
 
         private void OnProbeQuestLogCommand(string command, string[] args)
