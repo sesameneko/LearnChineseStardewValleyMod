@@ -95,3 +95,34 @@ The game has no way to add a pause-menu tab, so `Patches/GameMenuPatches.cs` pat
 - `draw` picks each tab's icon by the same hardcoded names and draws nothing for ours. The icon is drawn from the mod's own overlay pass instead.
 
 `FlashcardsPage.cs` is the tab itself. **Review** shows one card at a time. The back has the kana, romaji and meanings, plus the sentence page the word was on, with the word underlined and the literal and official English below it. Marking a card missed or known only adds to its counts: nothing is scheduled. **Browse** lists every card and can delete them. The tab draws inside `TextCapturePatches.SuppressRecording()`, so none of its own text can be hovered or saved.
+
+## Macron vowels in the font
+
+The word-hover bubble shows romaji in Hepburn, which writes long vowels with a macron (`gakkō`). The game's small font has no glyphs for ā ī ū ē ō, and MonoGame draws any missing character as the font's default, `*`. So the mod adds them to the font as it loads.
+
+### Building the glyphs
+
+`ExtendedFont.cs` handles SMAPI's `AssetRequested` for `Fonts/SmallFont`. That catches the English and Japanese loads at startup and the reload on every language change. For each load it:
+
+1. Reads the font's texture back from the GPU. The texture is DXT3-compressed, so `FontGlyphSynth.DecodeDxt3` decodes it to pixels.
+2. Copies out the plain vowels (a i u e o, A I U E O) and draws a bar over each. `FontGlyphSynth.cs` contains no game types and is unit-tested.
+3. Adds the ten new glyphs in a strip below the original texture and builds a new `SpriteFont` from the result. Every existing glyph is unchanged.
+
+The bars are measured from the font itself, so they match its style:
+
+- **Thickness:** one value for all ten, the median top-stroke thickness of the lowercase vowels. Measuring each letter separately gave bars that differed by a pixel.
+- **Height:** one per case, just above the tallest vowel of that case. Accents in a typeface sit at a fixed height, and in this font u and i are shorter than a, e and o.
+- **i:** its dot is removed, and the bar spans where the dot was. A bar the width of the stem looked like a dot.
+- **Width:** the bar spans the letter, 1px narrower on each side for letters 6px or wider.
+
+### Using them
+
+`FontSafeText` replaces characters the font can't draw: `ō` becomes `oo`, `—` becomes `--`. It is given the font's character set (`ExtendedFont.DrawableCharacters`) and keeps anything in it. The romaji therefore keeps its macrons whenever the font has them. If the font couldn't be extended, the mod logs a warning, keeps the original font, and long vowels are written doubled.
+
+Glosses are converted once, as the segment data loads, before the font exists. They still get the ASCII-only treatment.
+
+### Checking it
+
+- `ls_font_check [text]` reports which characters of the text the font can't draw. With no text, it checks everything in the segment data.
+- `ls_font_info [chars]` logs the texture's size and format, and each character's position and offsets.
+- `ls_font_export <path.png>` saves the font's texture as an image, so the generated glyphs can be seen. They are in the strip at the bottom.
