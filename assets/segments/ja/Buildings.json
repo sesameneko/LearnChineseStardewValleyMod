@@ -47,10 +47,16 @@
     "english": "Barn",
     "segments": [
       {
-        "text": "家畜小屋",
-        "reading": "kachiku goya",
-        "gloss": "livestock barn",
-        "kana": "かちく ごや"
+        "text": "家畜",
+        "kana": "かちく",
+        "gloss": "livestock",
+        "reading": "kachiku"
+      },
+      {
+        "text": "小屋",
+        "kana": "ごや",
+        "gloss": "shed",
+        "reading": "goya"
       }
     ]
   },
@@ -250,10 +256,22 @@
     "english": "Can't enter right now",
     "segments": [
       {
-        "text": "今は入れない",
-        "reading": "ima wa hairenai",
-        "gloss": "can't enter now",
-        "kana": "いま は はいれない"
+        "text": "今",
+        "kana": "いま",
+        "gloss": "now",
+        "reading": "ima"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "入れない",
+        "kana": "はいれない",
+        "gloss": "can't enter",
+        "reading": "hairenai"
       }
     ]
   },
@@ -297,10 +315,40 @@
     "english": "Which buildings do you want to manage?",
     "segments": [
       {
-        "text": "どの施設を管理しますか？",
-        "reading": "dono shisetsu o kanri shimasu ka",
-        "gloss": "which facility will you manage",
-        "kana": "どの しせつ を かんり します か"
+        "text": "どの",
+        "kana": "どの",
+        "gloss": "which",
+        "reading": "dono"
+      },
+      {
+        "text": "施設",
+        "kana": "しせつ",
+        "gloss": "facility",
+        "reading": "shisetsu"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "管理",
+        "kana": "かんり",
+        "gloss": "manage",
+        "reading": "kanri"
+      },
+      {
+        "text": "します",
+        "kana": "します",
+        "gloss": "do",
+        "reading": "shimasu"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question)",
+        "reading": "ka"
       }
     ]
   },
@@ -447,10 +495,28 @@
     "english": "Warps you to the desert.",
     "segments": [
       {
-        "text": "砂漠にワープします。",
-        "reading": "sabaku ni wāpu shimasu",
-        "gloss": "warps you to the desert",
-        "kana": "サバク ニ ワープ シマス"
+        "text": "砂漠",
+        "kana": "さばく",
+        "gloss": "desert",
+        "reading": "sabaku"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "ワープ",
+        "kana": "ワープ",
+        "gloss": "warp",
+        "reading": "wāpu"
+      },
+      {
+        "text": "します。",
+        "kana": "します",
+        "gloss": "do",
+        "reading": "shimasu"
       }
     ]
   },
@@ -483,10 +549,40 @@
     "english": "Please dismount before entering",
     "segments": [
       {
-        "text": "入るまえにウマからおりてください",
-        "reading": "hairu mae ni uma kara orite kudasai",
-        "gloss": "please get off the horse before entering",
-        "kana": "ハイル マエ ニ ウマ カラ オリテ クダサイ"
+        "text": "入る",
+        "kana": "はいる",
+        "gloss": "enter",
+        "reading": "hairu"
+      },
+      {
+        "text": "まえ",
+        "kana": "まえ",
+        "gloss": "before",
+        "reading": "mae"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "ウマ",
+        "kana": "ウマ",
+        "gloss": "horse",
+        "reading": "uma"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
+      },
+      {
+        "text": "おりてください",
+        "kana": "おりて ください",
+        "gloss": "please get off",
+        "reading": "orite kudasai"
       }
     ]
   },
@@ -495,10 +591,28 @@
     "english": "Warps you to the mountains.",
     "segments": [
       {
-        "text": "山にワープできる。",
-        "reading": "yama ni wāpu dekiru",
-        "gloss": "can warp you to the mountains",
-        "kana": "ヤマ ニ ワープ デキル"
+        "text": "山",
+        "kana": "やま",
+        "gloss": "mountain",
+        "reading": "yama"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "ワープ",
+        "kana": "ワープ",
+        "gloss": "warp",
+        "reading": "wāpu"
+      },
+      {
+        "text": "できる。",
+        "kana": "できる",
+        "gloss": "can",
+        "reading": "dekiru"
       }
     ]
   },
@@ -597,10 +711,16 @@
     "english": "Gold clock",
     "segments": [
       {
-        "text": "金時計",
-        "reading": "kin dokei",
-        "gloss": "gold clock",
-        "kana": "きん どけい"
+        "text": "金",
+        "kana": "きん",
+        "gloss": "gold",
+        "reading": "kin"
+      },
+      {
+        "text": "時計",
+        "kana": "どけい",
+        "gloss": "clock",
+        "reading": "dokei"
       }
     ]
   },
@@ -711,10 +831,22 @@
     "english": "No space left",
     "segments": [
       {
-        "text": "場所がありません",
-        "reading": "basho ga arimasen",
-        "gloss": "there is no space",
-        "kana": "ばしょ が ありません"
+        "text": "場所",
+        "kana": "ばしょ",
+        "gloss": "room, space",
+        "reading": "basho"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "ありません",
+        "kana": "ありません",
+        "gloss": "there is none",
+        "reading": "arimasen"
       }
     ]
   },
@@ -974,10 +1106,16 @@
     "english": "Shipping bin",
     "segments": [
       {
-        "text": "出荷箱",
-        "reading": "shukka bako",
-        "gloss": "shipping box",
-        "kana": "しゅっか ばこ"
+        "text": "出荷",
+        "kana": "しゅっか",
+        "gloss": "shipping",
+        "reading": "shukka"
+      },
+      {
+        "text": "箱",
+        "kana": "ばこ",
+        "gloss": "bin",
+        "reading": "bako"
       }
     ]
   },
@@ -1122,10 +1260,28 @@
     "english": "Warps you to the beach.",
     "segments": [
       {
-        "text": "浜辺にワープできる。",
-        "reading": "hamabe ni wāpu dekiru",
-        "gloss": "can warp you to the beach",
-        "kana": "ハマベ ニ ワープ デキル"
+        "text": "浜辺",
+        "kana": "はまべ",
+        "gloss": "beach",
+        "reading": "hamabe"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "ワープ",
+        "kana": "ワープ",
+        "gloss": "warp",
+        "reading": "wāpu"
+      },
+      {
+        "text": "できる。",
+        "kana": "できる",
+        "gloss": "can",
+        "reading": "dekiru"
       }
     ]
   },

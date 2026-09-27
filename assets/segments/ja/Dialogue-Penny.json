@@ -5389,10 +5389,22 @@
     "english": "Me too.",
     "segments": [
       {
-        "text": "私もよ。$h",
-        "reading": "watashi mo yo",
-        "gloss": "me too",
-        "kana": "わたし も よ"
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I",
+        "reading": "watashi"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "too",
+        "reading": "mo"
+      },
+      {
+        "text": "よ。$h",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -5402,9 +5414,9 @@
     "segments": [
       {
         "text": "…ごめんなさい。$s",
-        "reading": "gomen nasai",
-        "gloss": "sorry",
-        "kana": "ごめん なさい"
+        "kana": "ごめんなさい",
+        "gloss": "I'm sorry",
+        "reading": "gomennasai"
       }
     ]
   },
@@ -5413,10 +5425,16 @@
     "english": "I see.",
     "segments": [
       {
-        "text": "なるほどね。$s",
-        "reading": "naruhodo ne",
+        "text": "なるほど",
+        "kana": "なるほど",
         "gloss": "I see",
-        "kana": "なるほど ね"
+        "reading": "naruhodo"
+      },
+      {
+        "text": "ね。$s",
+        "kana": "ね",
+        "gloss": "(isn't it)",
+        "reading": "ne"
       }
     ]
   },

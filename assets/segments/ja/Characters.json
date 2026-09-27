@@ -771,10 +771,16 @@
     "english": "Thanks.",
     "segments": [
       {
-        "text": "ありがとよ。",
-        "reading": "arigato yo",
+        "text": "ありがと",
+        "kana": "ありがと",
         "gloss": "thanks",
-        "kana": "ありがと よ"
+        "reading": "arigato"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -795,10 +801,16 @@
     "english": "A gift!",
     "segments": [
       {
-        "text": "プレゼントだ！",
-        "reading": "purezento da",
-        "gloss": "it's a gift",
-        "kana": "プレゼント ダ"
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "だ！",
+        "kana": "だ",
+        "gloss": "(it is)",
+        "reading": "da"
       }
     ]
   },
@@ -1749,10 +1761,28 @@
     "english": "I'm busy right now",
     "segments": [
       {
-        "text": "今は忙しいんだ",
-        "reading": "ima wa isogashii n da",
-        "gloss": "I'm busy now",
-        "kana": "いま は いそがしい ん だ"
+        "text": "今",
+        "kana": "いま",
+        "gloss": "now",
+        "reading": "ima"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "忙しい",
+        "kana": "いそがしい",
+        "gloss": "busy",
+        "reading": "isogashii"
+      },
+      {
+        "text": "んだ",
+        "kana": "ん だ",
+        "gloss": "(explanatory)",
+        "reading": "n da"
       }
     ]
   },
@@ -1761,10 +1791,16 @@
     "english": "I remember",
     "segments": [
       {
-        "text": "思い出したよ",
-        "reading": "omoidashita yo",
-        "gloss": "I've remembered",
-        "kana": "おもいだした よ"
+        "text": "思い出した",
+        "kana": "おもいだした",
+        "gloss": "remembered",
+        "reading": "omoidashita"
+      },
+      {
+        "text": "よ",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -6632,10 +6668,22 @@
     "english": "(Hang up)",
     "segments": [
       {
-        "text": "（電話を切る）",
-        "reading": "denwa o kiru",
-        "gloss": "hang up the phone",
-        "kana": "でんわ を きる"
+        "text": "（電話",
+        "kana": "でんわ",
+        "gloss": "phone",
+        "reading": "denwa"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "切る）",
+        "kana": "きる",
+        "gloss": "hang up",
+        "reading": "kiru"
       }
     ]
   },
@@ -11115,10 +11163,16 @@
     "english": "Please make a selection:",
     "segments": [
       {
-        "text": "選択してください：",
-        "reading": "sentaku shite kudasai",
-        "gloss": "please make a selection",
-        "kana": "せんたく して ください"
+        "text": "選択",
+        "kana": "せんたく",
+        "gloss": "select",
+        "reading": "sentaku"
+      },
+      {
+        "text": "してください：",
+        "kana": "して ください",
+        "gloss": "please",
+        "reading": "shite kudasai"
       }
     ]
   },
@@ -11720,10 +11774,16 @@
     "english": "Big play!",
     "segments": [
       {
-        "text": "ビッグプレイ！",
-        "reading": "biggu purei",
-        "gloss": "big play",
-        "kana": "ビッグ プレイ"
+        "text": "ビッグ",
+        "kana": "ビッグ",
+        "gloss": "big",
+        "reading": "biggu"
+      },
+      {
+        "text": "プレイ！",
+        "kana": "プレイ",
+        "gloss": "play",
+        "reading": "purei"
       }
     ]
   },
@@ -11744,10 +11804,16 @@
     "english": "Good job!",
     "segments": [
       {
-        "text": "よくやった！",
-        "reading": "yoku yatta",
-        "gloss": "well done",
-        "kana": "よく やった"
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "well",
+        "reading": "yoku"
+      },
+      {
+        "text": "やった！",
+        "kana": "やった",
+        "gloss": "done",
+        "reading": "yatta"
       }
     ]
   },
@@ -11768,10 +11834,16 @@
     "english": "So close!",
     "segments": [
       {
-        "text": "すぐ近く！",
-        "reading": "sugu chikaku",
-        "gloss": "so close",
-        "kana": "すぐ ちかく"
+        "text": "すぐ",
+        "kana": "すぐ",
+        "gloss": "very",
+        "reading": "sugu"
+      },
+      {
+        "text": "近く！",
+        "kana": "ちかく",
+        "gloss": "close",
+        "reading": "chikaku"
       }
     ]
   },

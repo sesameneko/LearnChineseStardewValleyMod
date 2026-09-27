@@ -1180,10 +1180,22 @@
     "english": "I'm hungry...$s",
     "segments": [
       {
-        "text": "腹が減った…$s",
-        "kana": "はら が へった",
-        "gloss": "I'm hungry",
-        "reading": "hara ga hetta"
+        "text": "腹",
+        "kana": "はら",
+        "gloss": "stomach",
+        "reading": "hara"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "減った…$s",
+        "kana": "へった",
+        "gloss": "got empty (hungry)",
+        "reading": "hetta"
       }
     ]
   },
