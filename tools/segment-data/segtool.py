@@ -7,7 +7,8 @@ Sub-commands:
                             print the next n un-authored entries as an authoring worklist
   merge <Table> <file.tsv>  fold an authored batch into the literal-translations source
   skip  <Table> <file.txt>  record keys deliberately left unsegmented
-  validate                  re-check every bundled segment file
+  validate [-v]             re-check every bundled segment file; also warns (never fails)
+                            on tables whose segments look clause-sized, -v lists examples
   audit [contentDir]        check the pipeline's coverage against the game install
 
 Authoring format (TSV, one entry per line, no header):
@@ -15,7 +16,8 @@ Authoring format (TSV, one entry per line, no header):
 Punctuation, whitespace and dialogue markup may be left out of the segments --
 merge attaches them to a neighbour -- and kana may be left empty for a segment
 with no kanji. Every word must still be there, in order; merge refuses a line
-it can't line up with the source, so bad data never reaches the mod. Kana is the
+it can't line up with the source, so bad data never reaches the mod. It also warns
+(without failing) when a batch's segments look clause-sized rather than word-sized. Kana is the
 source of truth for readings; kana_to_romaji.py derives the romaji "reading".
 """
 import json, os, re, sys
@@ -450,6 +452,42 @@ def align(source_text, segments):
     return folded
 
 
+# Segment-size check. Segments are meant to be words, but nothing in align() can tell a
+# word from a clause: a whole sentence as one segment still reproduces the source. On
+# 2026-09-21 one long authoring session drifted from ~2.6 to ~10 characters per segment
+# over a few hours, batch by batch, and merge accepted all of it (Data_mail, Notes,
+# MovieReactions...). Long single words and stock phrases are legitimate (ジンジャーアイランド,
+# おめでとうございます), so this only warns: a word-split table has 0-3% of its segments
+# over the limit, and a clause-split one 25-60%.
+LONG_SEGMENT = 8          # Japanese characters, markup and punctuation not counted
+LONG_SHARE_ALERT = 0.10   # share of long segments at which a batch/table looks clause-split
+
+
+def segment_size(text):
+    return sum(1 for c in MARKUP.sub("", text) if japanese(c))
+
+
+def size_report(label, pairs, listing=0):
+    """Warns about long segments. pairs: (key, segment text). Prints nothing for a
+    clean set; returns True if the share crosses LONG_SHARE_ALERT."""
+    sizes = [(k, t, segment_size(t)) for k, t in pairs if segment_size(t)]
+    if not sizes:
+        return False
+    long = [(k, t, n) for k, t, n in sizes if n > LONG_SEGMENT]
+    if not long:
+        return False
+    share = len(long) / len(sizes)
+    avg = sum(n for _, _, n in sizes) / len(sizes)
+    alert = share > LONG_SHARE_ALERT
+    print(f"  {'WARNING' if alert else 'note'}: {label}: {len(long)} of {len(sizes)} segments "
+          f"({share:.0%}) over {LONG_SEGMENT} characters, avg {avg:.1f} per segment"
+          + (" -- this looks split by clause, not by word; particles belong in their own segments"
+             if alert else ""), file=sys.stderr)
+    for k, t, n in sorted(long, key=lambda x: -x[2])[:listing if alert else 0]:
+        print(f"    {n:3}  {k}: {t.strip()!r}", file=sys.stderr)
+    return alert
+
+
 def kana_of(text):
     """The reading of a segment with no kanji: its own kana, minus punctuation and markup.
     Latin and digits the text keeps pass through, per the kana conventions."""
@@ -463,6 +501,7 @@ def cmd_merge(args):
     ja, _ = source(table)
     existing = authored(table)
     added = rejected = 0
+    merged = []  # (key, segment text) of this batch, for the size check
     with open(path, encoding="utf-8") as f:
         for lineno, line in enumerate(f, 1):
             if not line.strip() or line.startswith("#"):
@@ -487,9 +526,11 @@ def cmd_merge(args):
                       f"    source: {ja[key]!r}\n    joined: {joined!r}", file=sys.stderr)
                 rejected += 1; continue
             existing[key] = {"japanese": ja[key], "english": english, "segments": segs}
+            merged += [(key, s["text"]) for s in segs]
             added += 1
     write_table(table, existing)
     print(f"{table}: merged {added}, rejected {rejected}, total authored {len(existing)}, pending {len(pending(table))}")
+    size_report(f"this batch ({path})", merged, listing=15)  # warns only; never fails a merge
     return 1 if rejected else 0
 
 
@@ -518,6 +559,7 @@ def cmd_skip(args):
 
 def cmd_validate(args):
     bad = 0
+    coarse = []  # tables whose segment sizes look clause-split; reported, not failed
     for name in sorted(os.listdir(OUT)):
         if not name.endswith(".json"):
             continue
@@ -528,6 +570,8 @@ def cmd_validate(args):
         with open(os.path.join(OUT, name), encoding="utf-8") as f:
             doc = json.load(f)
         n = 0
+        pairs = [(k, s.get("text", "")) for k, e in doc.items() if isinstance(e, dict)
+                 for s in e.get("segments", [])]
         for key, entry in doc.items():
             if key == "_comment" or not isinstance(entry, dict):
                 continue
@@ -540,7 +584,12 @@ def cmd_validate(args):
             if not entry.get("english"):
                 print(f"  {name}:{key}: missing english"); bad += 1
         print(f"{name}: {n} entries {'OK' if bad == 0 else ''}")
+        if size_report(name, pairs, listing=5 if "-v" in args else 0):
+            coarse.append(name)
     print("FAILED" if bad else "all segment data valid")
+    if coarse:
+        print(f"{len(coarse)} table(s) look split by clause rather than by word (warning only; "
+              f"`validate -v` lists examples): {', '.join(coarse)}", file=sys.stderr)
     return 1 if bad else 0
 
 

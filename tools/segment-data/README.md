@@ -206,6 +206,26 @@ Write the words; `merge` supplies the rest.
 segment failed, so a bad batch can't reach the mod. Fix it and re-merge;
 merging is idempotent per key.
 
+### Segment size is warned about, not enforced
+
+The alignment check can't tell a word from a clause: a whole sentence as one
+segment still reproduces the source. That is how a quarter of the tables ended
+up clause-split. One long authoring session on 2026-09-21 drifted batch by
+batch from about 2.6 to about 10 characters per segment, and every batch
+merged cleanly.
+
+So `merge` reports the share of the batch's segments over 8 Japanese characters
+(markup and punctuation aren't counted). Above 10% it prints a `WARNING` with
+the longest examples. `validate` does the same per table and lists the tables
+over the line at the end (`validate -v` adds examples). Neither changes the
+exit code. Long single words and stock phrases are legitimate
+(`ジンジャーアイランド`, `おめでとうございます`). A table split by word sits at
+0–3%, and one split by clause at 25–60%.
+
+A batch that trips the warning should be re-split before the next one is
+written, since the drift compounds. Keep authoring runs short, too: the clean
+large-scale data came from jobs of about 80 entries in fresh contexts.
+
 `skip <Table> <file.txt>` records keys deliberately left unsegmented so `status`
 stops counting them as pending.
 
