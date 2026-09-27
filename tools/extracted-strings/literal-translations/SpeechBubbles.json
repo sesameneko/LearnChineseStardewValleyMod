@@ -143,20 +143,44 @@
     "segments": [
       {
         "text": "どうも！",
-        "reading": "dōmo",
+        "kana": "どうも",
         "gloss": "hello",
-        "kana": "どうも"
+        "reading": "dōmo"
       },
       {
         "text": "{1}",
-        "reading": "",
+        "kana": "",
         "gloss": "(farm name)"
       },
       {
-        "text": "牧場のちょうしはどう？",
-        "reading": "bokujō no chōshi wa dō",
-        "gloss": "how is the farm doing",
-        "kana": "ぼくじょう の ちょうし は どう"
+        "text": "牧場",
+        "kana": "ぼくじょう",
+        "gloss": "Farm",
+        "reading": "bokujō"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "ちょうし",
+        "kana": "ちょうし",
+        "gloss": "condition",
+        "reading": "chōshi"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "どう？",
+        "kana": "どう",
+        "gloss": "how is",
+        "reading": "dō"
       }
     ]
   },
@@ -237,10 +261,22 @@
     "english": "Found anything?",
     "segments": [
       {
-        "text": "なにか見つかったかい？",
-        "reading": "nanika mitsukatta kai",
-        "gloss": "did you find anything",
-        "kana": "なにか みつかった かい"
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "anything",
+        "reading": "nanika"
+      },
+      {
+        "text": "見つかった",
+        "kana": "みつかった",
+        "gloss": "was found",
+        "reading": "mitsukatta"
+      },
+      {
+        "text": "かい？",
+        "kana": "かい",
+        "gloss": "(question)",
+        "reading": "kai"
       }
     ]
   },
@@ -249,10 +285,22 @@
     "english": "Dug anything up?",
     "segments": [
       {
-        "text": "なにか堀りだせたかい？",
-        "reading": "nanika horidaseta kai",
-        "gloss": "did you dig anything up",
-        "kana": "なにか ほりだせた かい"
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "anything",
+        "reading": "nanika"
+      },
+      {
+        "text": "堀りだせた",
+        "kana": "ほりだせた",
+        "gloss": "could dig up",
+        "reading": "horidaseta"
+      },
+      {
+        "text": "かい？",
+        "kana": "かい",
+        "gloss": "(question)",
+        "reading": "kai"
       }
     ]
   },
@@ -261,10 +309,34 @@
     "english": "Anything you'd like examined?",
     "segments": [
       {
-        "text": "調べてほしいものはあるかい？",
-        "reading": "shirabete hoshii mono wa aru kai",
-        "gloss": "is there anything you want examined",
-        "kana": "しらべて ほしい もの は ある かい"
+        "text": "調べてほしい",
+        "kana": "しらべてほしい",
+        "gloss": "want examined",
+        "reading": "shirabetehoshii"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing",
+        "reading": "mono"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "is there",
+        "reading": "aru"
+      },
+      {
+        "text": "かい？",
+        "kana": "かい",
+        "gloss": "(question)",
+        "reading": "kai"
       }
     ]
   },
@@ -291,10 +363,22 @@
     "english": "Brought me something?",
     "segments": [
       {
-        "text": "なにか持ってきたのかい？",
-        "reading": "nanika motte kita no kai",
-        "gloss": "did you bring something",
-        "kana": "なにか もって きた の かい"
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "something",
+        "reading": "nanika"
+      },
+      {
+        "text": "持ってきた",
+        "kana": "もってきた",
+        "gloss": "brought",
+        "reading": "mottekita"
+      },
+      {
+        "text": "のかい？",
+        "kana": "のかい",
+        "gloss": "(question)",
+        "reading": "nokai"
       }
     ]
   },
@@ -304,21 +388,57 @@
     "segments": [
       {
         "text": "おや、",
-        "reading": "oya",
+        "kana": "おや",
         "gloss": "oh",
-        "kana": "おや"
+        "reading": "oya"
       },
       {
-        "text": "土のにおいがするな…",
-        "reading": "tsuchi no nioi ga suru na",
-        "gloss": "you smell of earth",
-        "kana": "つち の におい が する な"
+        "text": "土",
+        "kana": "つち",
+        "gloss": "earth",
+        "reading": "tsuchi"
       },
       {
-        "text": "いいね！",
-        "reading": "ii ne",
-        "gloss": "that's good",
-        "kana": "いい ね"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "におい",
+        "kana": "におい",
+        "gloss": "smell",
+        "reading": "nioi"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "する",
+        "kana": "する",
+        "gloss": "there is",
+        "reading": "suru"
+      },
+      {
+        "text": "な…",
+        "kana": "な",
+        "gloss": "(emphasis)",
+        "reading": "na"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good",
+        "reading": "ii"
+      },
+      {
+        "text": "ね！",
+        "kana": "ね",
+        "gloss": "(isn't it)",
+        "reading": "ne"
       }
     ]
   },
@@ -327,10 +447,22 @@
     "english": "I'm glad you came.",
     "segments": [
       {
-        "text": "来てくれてうれしいよ。",
-        "reading": "kite kurete ureshii yo",
-        "gloss": "I'm glad you came",
-        "kana": "きて くれて うれしい よ"
+        "text": "来てくれて",
+        "kana": "きてくれて",
+        "gloss": "that you came",
+        "reading": "kitekurete"
+      },
+      {
+        "text": "うれしい",
+        "kana": "うれしい",
+        "gloss": "glad",
+        "reading": "ureshii"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -392,10 +524,28 @@
     "english": "Would you like some medicine?",
     "segments": [
       {
-        "text": "おくすりはいかがですか？",
-        "reading": "o-kusuri wa ikaga desu ka",
-        "gloss": "how about some medicine",
-        "kana": "おくすり は いかが です か"
+        "text": "おくすり",
+        "kana": "おくすり",
+        "gloss": "medicine",
+        "reading": "okusuri"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "いかが",
+        "kana": "いかが",
+        "gloss": "how about",
+        "reading": "ikaga"
+      },
+      {
+        "text": "ですか？",
+        "kana": "ですか",
+        "gloss": "(question)",
+        "reading": "desuka"
       }
     ]
   },
@@ -404,10 +554,28 @@
     "english": "Is it an emergency?",
     "segments": [
       {
-        "text": "緊急のご用件でしょうか？",
-        "reading": "kinkyū no go-yōken deshō ka",
-        "gloss": "is your business urgent",
-        "kana": "きんきゅう の ごようけん でしょう か"
+        "text": "緊急",
+        "kana": "きんきゅう",
+        "gloss": "urgent",
+        "reading": "kinkyū"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "ご用件",
+        "kana": "ごようけん",
+        "gloss": "matter",
+        "reading": "goyōken"
+      },
+      {
+        "text": "でしょうか？",
+        "kana": "でしょうか",
+        "gloss": "is it",
+        "reading": "deshōka"
       }
     ]
   },
@@ -577,10 +745,34 @@
     "english": "How about something hot to eat?",
     "segments": [
       {
-        "text": "あったかいものでも食べていきなよ！",
-        "reading": "attakai mono demo tabete iki na yo",
-        "gloss": "have something warm to eat",
-        "kana": "あったかい もの でも たべて いき な よ"
+        "text": "あったかい",
+        "kana": "あったかい",
+        "gloss": "hot",
+        "reading": "attakai"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "something",
+        "reading": "mono"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "or so",
+        "reading": "demo"
+      },
+      {
+        "text": "食べていき",
+        "kana": "たべていき",
+        "gloss": "eat before you go",
+        "reading": "tabeteiki"
+      },
+      {
+        "text": "なよ！",
+        "kana": "なよ",
+        "gloss": "(why don't you)",
+        "reading": "nayo"
       }
     ]
   },
@@ -619,10 +811,34 @@
     "english": "Fancy something hot to drink?",
     "segments": [
       {
-        "text": "あったかいものでも飲むかい？",
-        "reading": "attakai mono demo nomu kai",
-        "gloss": "will you have something warm to drink",
-        "kana": "あったかい もの でも のむ かい"
+        "text": "あったかい",
+        "kana": "あったかい",
+        "gloss": "hot",
+        "reading": "attakai"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "something",
+        "reading": "mono"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "or so",
+        "reading": "demo"
+      },
+      {
+        "text": "飲む",
+        "kana": "のむ",
+        "gloss": "drink",
+        "reading": "nomu"
+      },
+      {
+        "text": "かい？",
+        "kana": "かい",
+        "gloss": "(question)",
+        "reading": "kai"
       }
     ]
   },
@@ -631,10 +847,28 @@
     "english": "Looks like you could use a drink.",
     "segments": [
       {
-        "text": "なにか飲んだほうがいいんじゃないか。",
-        "reading": "nanika nonda hō ga ii n ja nai ka",
-        "gloss": "wouldn't it be good to have a drink",
-        "kana": "なにか のんだ ほう が いい ん じゃ ない か"
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "something",
+        "reading": "nanika"
+      },
+      {
+        "text": "飲んだ",
+        "kana": "のんだ",
+        "gloss": "drinking",
+        "reading": "nonda"
+      },
+      {
+        "text": "ほうがいい",
+        "kana": "ほうがいい",
+        "gloss": "would be better",
+        "reading": "hōgaii"
+      },
+      {
+        "text": "んじゃないか。",
+        "kana": "んじゃないか",
+        "gloss": "wouldn't it",
+        "reading": "njanaika"
       }
     ]
   },
@@ -643,16 +877,46 @@
     "english": "It's cold out — how about a coffee?",
     "segments": [
       {
-        "text": "外はさむいだろ、",
-        "reading": "soto wa samui daro",
-        "gloss": "it's cold outside, right",
-        "kana": "そと は さむい だろ"
+        "text": "外",
+        "kana": "そと",
+        "gloss": "outside",
+        "reading": "soto"
       },
       {
-        "text": "コーヒーでもどうだい！",
-        "reading": "kōhī demo dō dai",
-        "gloss": "how about a coffee",
-        "kana": "コーヒー デモ ドー ダイ"
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "さむい",
+        "kana": "さむい",
+        "gloss": "cold",
+        "reading": "samui"
+      },
+      {
+        "text": "だろ、",
+        "kana": "だろ",
+        "gloss": "(isn't it)",
+        "reading": "daro"
+      },
+      {
+        "text": "コーヒー",
+        "kana": "コーヒー",
+        "gloss": "coffee",
+        "reading": "kōhī"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "or so",
+        "reading": "demo"
+      },
+      {
+        "text": "どうだい！",
+        "kana": "どうだい",
+        "gloss": "how about",
+        "reading": "dōdai"
       }
     ]
   },
@@ -679,10 +943,34 @@
     "english": "Fancy something cold to drink?",
     "segments": [
       {
-        "text": "冷たいものでも飲むかい？",
-        "reading": "tsumetai mono demo nomu kai",
-        "gloss": "will you have something cold to drink",
-        "kana": "つめたい もの でも のむ かい"
+        "text": "冷たい",
+        "kana": "つめたい",
+        "gloss": "cold",
+        "reading": "tsumetai"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "something",
+        "reading": "mono"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "or so",
+        "reading": "demo"
+      },
+      {
+        "text": "飲む",
+        "kana": "のむ",
+        "gloss": "drink",
+        "reading": "nomu"
+      },
+      {
+        "text": "かい？",
+        "kana": "かい",
+        "gloss": "(question)",
+        "reading": "kai"
       }
     ]
   },
@@ -728,15 +1016,21 @@
     "segments": [
       {
         "text": "まあ、",
-        "reading": "mā",
+        "kana": "まあ",
         "gloss": "goodness",
-        "kana": "まあ"
+        "reading": "mā"
       },
       {
-        "text": "そんなにひからびちゃって！",
-        "reading": "sonna ni hikarabichatte",
-        "gloss": "so parched",
-        "kana": "そんな に ひからびちゃって"
+        "text": "そんなに",
+        "kana": "そんなに",
+        "gloss": "so",
+        "reading": "sonnani"
+      },
+      {
+        "text": "ひからびちゃって！",
+        "kana": "ひからびちゃって",
+        "gloss": "dried out",
+        "reading": "hikarabichatte"
       }
     ]
   },
@@ -763,16 +1057,28 @@
     "english": "Sweetie, won't you buy something?",
     "segments": [
       {
-        "text": "ねえあなた、",
-        "reading": "nē anata",
-        "gloss": "hey, you",
-        "kana": "ねい あなた"
+        "text": "ねえ",
+        "kana": "ねえ",
+        "gloss": "hey",
+        "reading": "nē"
       },
       {
-        "text": "なにか買ってかない？",
-        "reading": "nanika katte kanai",
-        "gloss": "won't you buy something",
-        "kana": "なにか かって かない"
+        "text": "あなた、",
+        "kana": "あなた",
+        "gloss": "sweetie",
+        "reading": "anata"
+      },
+      {
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "something",
+        "reading": "nanika"
+      },
+      {
+        "text": "買ってかない？",
+        "kana": "かってかない",
+        "gloss": "won't you buy",
+        "reading": "kattekanai"
       }
     ]
   },
@@ -810,10 +1116,22 @@
     "english": "What shall I build for you?",
     "segments": [
       {
-        "text": "なにを建てましょうか？",
-        "reading": "nani o tatemashō ka",
-        "gloss": "what shall I build",
-        "kana": "なに を たてましょう か"
+        "text": "なに",
+        "kana": "なに",
+        "gloss": "what",
+        "reading": "nani"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "建てましょうか？",
+        "kana": "たてましょうか",
+        "gloss": "shall I build",
+        "reading": "tatemashōka"
       }
     ]
   },
@@ -924,16 +1242,34 @@
     "english": "It's warm inside — come in!",
     "segments": [
       {
-        "text": "なかはあったかいよ、",
-        "reading": "naka wa attakai yo",
-        "gloss": "it's warm inside",
-        "kana": "なか は あったかい よ"
+        "text": "なか",
+        "kana": "なか",
+        "gloss": "inside",
+        "reading": "naka"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "あったかい",
+        "kana": "あったかい",
+        "gloss": "warm",
+        "reading": "attakai"
+      },
+      {
+        "text": "よ、",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       },
       {
         "text": "入って！",
-        "reading": "haitte",
+        "kana": "はいって",
         "gloss": "come in",
-        "kana": "はいって"
+        "reading": "haitte"
       }
     ]
   },
@@ -984,10 +1320,28 @@
     "english": "Seeds for sale!",
     "segments": [
       {
-        "text": "タネはいかがですか！",
-        "reading": "tane wa ikaga desu ka",
-        "gloss": "how about some seeds",
-        "kana": "タネ は イカガ デス カ"
+        "text": "タネ",
+        "kana": "タネ",
+        "gloss": "seeds",
+        "reading": "tane"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "いかが",
+        "kana": "いかが",
+        "gloss": "how about",
+        "reading": "ikaga"
+      },
+      {
+        "text": "ですか！",
+        "kana": "ですか",
+        "gloss": "(question)",
+        "reading": "desuka"
       }
     ]
   },
@@ -1014,10 +1368,34 @@
     "english": "Today's a good day for shopping!",
     "segments": [
       {
-        "text": "きょうはお買いもの日和ですよ！",
-        "reading": "kyō wa o-kaimono biyori desu yo",
-        "gloss": "today is fine weather for shopping",
-        "kana": "きょう は おかいもの びより です よ"
+        "text": "きょう",
+        "kana": "きょう",
+        "gloss": "today",
+        "reading": "kyō"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "お買いもの",
+        "kana": "おかいもの",
+        "gloss": "shopping",
+        "reading": "okaimono"
+      },
+      {
+        "text": "日和",
+        "kana": "びより",
+        "gloss": "good day for",
+        "reading": "biyori"
+      },
+      {
+        "text": "ですよ！",
+        "kana": "ですよ",
+        "gloss": "(it is)",
+        "reading": "desuyo"
       }
     ]
   },
@@ -1026,10 +1404,28 @@
     "english": "You did bring your wallet, didn't you?",
     "segments": [
       {
-        "text": "サイフはもってますよね？",
-        "reading": "saifu wa mottemasu yo ne",
-        "gloss": "you have your wallet, don't you",
-        "kana": "サイフ は モッテマス ヨ ネ"
+        "text": "サイフ",
+        "kana": "サイフ",
+        "gloss": "wallet",
+        "reading": "saifu"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "もってます",
+        "kana": "もってます",
+        "gloss": "have",
+        "reading": "mottemasu"
+      },
+      {
+        "text": "よね？",
+        "kana": "よね",
+        "gloss": "(don't you)",
+        "reading": "yone"
       }
     ]
   },
@@ -1056,16 +1452,58 @@
     "english": "It's chilly today. Do come inside!",
     "segments": [
       {
-        "text": "きょうは冷えますね。",
-        "reading": "kyō wa hiemasu ne",
-        "gloss": "it's chilly today",
-        "kana": "きょう は ひえます ね"
+        "text": "きょう",
+        "kana": "きょう",
+        "gloss": "today",
+        "reading": "kyō"
       },
       {
-        "text": "店の中へどうぞ！",
-        "reading": "mise no naka e dōzo",
-        "gloss": "please come inside the shop",
-        "kana": "みせ の なか へ どうぞ"
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "冷えます",
+        "kana": "ひえます",
+        "gloss": "is chilly",
+        "reading": "hiemasu"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(isn't it)",
+        "reading": "ne"
+      },
+      {
+        "text": "店",
+        "kana": "みせ",
+        "gloss": "shop",
+        "reading": "mise"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "中",
+        "kana": "なか",
+        "gloss": "inside",
+        "reading": "naka"
+      },
+      {
+        "text": "へ",
+        "kana": "へ",
+        "gloss": "(to)",
+        "reading": "e"
+      },
+      {
+        "text": "どうぞ！",
+        "kana": "どうぞ",
+        "gloss": "please come",
+        "reading": "dōzo"
       }
     ]
   }
