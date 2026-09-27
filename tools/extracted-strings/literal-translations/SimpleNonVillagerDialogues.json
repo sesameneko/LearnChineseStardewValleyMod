@@ -6,27 +6,111 @@
     "segments": [
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
-        "text": "このためにわざわざグランプルトンから来たんだ。||",
-        "reading": "kono tame ni wazawaza Guranpuruton kara kita n da",
-        "gloss": "I came all the way from Grampleton for this",
-        "kana": "コノ タメ ニ ワザワザ グランプルトン カラ キタ ン ダ"
+        "text": "この",
+        "kana": "この",
+        "gloss": "this",
+        "reading": "kono"
+      },
+      {
+        "text": "ため",
+        "kana": "ため",
+        "gloss": "sake",
+        "reading": "tame"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)",
+        "reading": "ni"
+      },
+      {
+        "text": "わざわざ",
+        "kana": "わざわざ",
+        "gloss": "all the way",
+        "reading": "wazawaza"
+      },
+      {
+        "text": "グランプルトン",
+        "kana": "グランプルトン",
+        "gloss": "Grampleton",
+        "reading": "guranpuruton"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
+      },
+      {
+        "text": "来た",
+        "kana": "きた",
+        "gloss": "came",
+        "reading": "kita"
+      },
+      {
+        "text": "んだ。||",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
       },
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
-        "text": "バッグいっぱいのマスを持たずに帰るわけにはいかない！",
-        "reading": "baggu ippai no masu o motazu ni kaeru wake ni wa ikanai",
-        "gloss": "I can't go home without a bag full of trout",
-        "kana": "バッグ イッパイ ノ マス を モタズ ニ カエル ワケ ニ は イカナイ"
+        "text": "バッグ",
+        "kana": "バッグ",
+        "gloss": "bag",
+        "reading": "baggu"
+      },
+      {
+        "text": "いっぱい",
+        "kana": "いっぱい",
+        "gloss": "full",
+        "reading": "ippai"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "マス",
+        "kana": "マス",
+        "gloss": "trout",
+        "reading": "masu"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "持たずに",
+        "kana": "もたずに",
+        "gloss": "without having",
+        "reading": "motazuni"
+      },
+      {
+        "text": "帰る",
+        "kana": "かえる",
+        "gloss": "go home",
+        "reading": "kaeru"
+      },
+      {
+        "text": "わけにはいかない！",
+        "kana": "わけ に は いかない",
+        "gloss": "can't",
+        "reading": "wake ni wa ikanai"
       }
     ]
   },
@@ -36,15 +120,63 @@
     "segments": [
       {
         "text": "船乗り：",
-        "reading": "funanori",
-        "gloss": "mariner",
-        "kana": "ふなのり"
+        "kana": "ふなのり",
+        "gloss": "Mariner",
+        "reading": "funanori"
       },
       {
-        "text": "このイベントにこの服はちょっと大げさかな？",
-        "reading": "kono ibento ni kono fuku wa chotto ōgesa ka na",
-        "gloss": "are these clothes a bit much for this event",
-        "kana": "コノ イベント ニ コノ フク は チョット オーゲサ カ ナ"
+        "text": "この",
+        "kana": "この",
+        "gloss": "this",
+        "reading": "kono"
+      },
+      {
+        "text": "イベント",
+        "kana": "イベント",
+        "gloss": "event",
+        "reading": "ibento"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)",
+        "reading": "ni"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this",
+        "reading": "kono"
+      },
+      {
+        "text": "服",
+        "kana": "ふく",
+        "gloss": "outfit",
+        "reading": "fuku"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a bit",
+        "reading": "chotto"
+      },
+      {
+        "text": "大げさ",
+        "kana": "おおげさ",
+        "gloss": "overdone",
+        "reading": "ōgesa"
+      },
+      {
+        "text": "かな？",
+        "kana": "かな",
+        "gloss": "I wonder",
+        "reading": "kana"
       }
     ]
   },
@@ -54,21 +186,93 @@
     "segments": [
       {
         "text": "船乗り：",
-        "reading": "funanori",
-        "gloss": "mariner",
-        "kana": "ふなのり"
+        "kana": "ふなのり",
+        "gloss": "Mariner",
+        "reading": "funanori"
       },
       {
-        "text": "きっと私と同じ服装の人も来るだろうけどね。",
-        "reading": "kitto watashi to onaji fukusō no hito mo kuru darō kedo ne",
-        "gloss": "someone in the same outfit as me is sure to come",
-        "kana": "きっと わたし と おなじ ふくそう の ひと も くる だろう けど ね"
+        "text": "きっと",
+        "kana": "きっと",
+        "gloss": "surely",
+        "reading": "kitto"
       },
       {
-        "text": "恥ずかしい人たちだ！",
-        "reading": "hazukashii hitotachi da",
-        "gloss": "what embarrassing people",
-        "kana": "はずかしい ひとたち だ"
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me",
+        "reading": "watashi"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(as)",
+        "reading": "to"
+      },
+      {
+        "text": "同じ",
+        "kana": "おなじ",
+        "gloss": "same",
+        "reading": "onaji"
+      },
+      {
+        "text": "服装",
+        "kana": "ふくそう",
+        "gloss": "outfit",
+        "reading": "fukusō"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "人",
+        "kana": "ひと",
+        "gloss": "person",
+        "reading": "hito"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)",
+        "reading": "mo"
+      },
+      {
+        "text": "来る",
+        "kana": "くる",
+        "gloss": "come",
+        "reading": "kuru"
+      },
+      {
+        "text": "だろう",
+        "kana": "だろう",
+        "gloss": "probably",
+        "reading": "darō"
+      },
+      {
+        "text": "けどね。",
+        "kana": "けどね",
+        "gloss": "(though)",
+        "reading": "kedone"
+      },
+      {
+        "text": "恥ずかしい",
+        "kana": "はずかしい",
+        "gloss": "embarrassing",
+        "reading": "hazukashii"
+      },
+      {
+        "text": "人たち",
+        "kana": "ひとたち",
+        "gloss": "people",
+        "reading": "hitotachi"
+      },
+      {
+        "text": "だ！",
+        "kana": "だ",
+        "gloss": "(they are)",
+        "reading": "da"
       }
     ]
   },
@@ -78,84 +282,189 @@
     "segments": [
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
-        "text": "すまないが、",
-        "reading": "sumanai ga",
-        "gloss": "excuse me, but",
-        "kana": "すまない が"
+        "text": "すまない",
+        "kana": "すまない",
+        "gloss": "sorry",
+        "reading": "sumanai"
       },
       {
-        "text": "私は静かに過ごしたいんだ。||",
-        "reading": "watashi wa shizuka ni sugoshitai n da",
-        "gloss": "I want to pass the time quietly",
-        "kana": "わたし は しずか に すごしたい ん だ"
+        "text": "が、",
+        "kana": "が",
+        "gloss": "but",
+        "reading": "ga"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I",
+        "reading": "watashi"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "静かに",
+        "kana": "しずかに",
+        "gloss": "quietly",
+        "reading": "shizukani"
+      },
+      {
+        "text": "過ごしたい",
+        "kana": "すごしたい",
+        "gloss": "want to spend time",
+        "reading": "sugoshitai"
+      },
+      {
+        "text": "んだ。||",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
       },
       {
         "text": "Fisherman： …||",
-        "reading": "",
-        "gloss": "(silence)"
+        "kana": "Fisherman",
+        "gloss": "Fisherman",
+        "reading": "Fisherman"
       },
       {
         "text": "Fisherman： …||",
-        "reading": "",
-        "gloss": "(silence)"
+        "kana": "Fisherman",
+        "gloss": "Fisherman",
+        "reading": "Fisherman"
       },
       {
         "text": "Fisherman： …||",
-        "reading": "",
-        "gloss": "(silence)"
+        "kana": "Fisherman",
+        "gloss": "Fisherman",
+        "reading": "Fisherman"
       },
       {
         "text": "Fisherman：",
-        "reading": "",
-        "gloss": "(speaker)"
+        "kana": "Fisherman",
+        "gloss": "Fisherman",
+        "reading": "Fisherman"
       },
       {
-        "text": "なにかコツを教えてくれないか？||",
-        "reading": "nanika kotsu o oshiete kurenai ka",
-        "gloss": "won't you tell me some trick",
-        "kana": "ナニカ コツ を オシエテ クレナイ カ"
+        "text": "なにか",
+        "kana": "なにか",
+        "gloss": "some",
+        "reading": "nanika"
+      },
+      {
+        "text": "コツ",
+        "kana": "コツ",
+        "gloss": "tip",
+        "reading": "kotsu"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "教えてくれないか？||",
+        "kana": "おしえてくれないか",
+        "gloss": "could you teach me",
+        "reading": "oshietekurenaika"
       },
       {
         "text": "Fisherman： …||",
-        "reading": "",
-        "gloss": "(silence)"
+        "kana": "Fisherman",
+        "gloss": "Fisherman",
+        "reading": "Fisherman"
       },
       {
         "text": "Fisherman： …||",
-        "reading": "",
-        "gloss": "(silence)"
+        "kana": "Fisherman",
+        "gloss": "Fisherman",
+        "reading": "Fisherman"
       },
       {
         "text": "Fisherman： …||",
-        "reading": "",
-        "gloss": "(silence)"
+        "kana": "Fisherman",
+        "gloss": "Fisherman",
+        "reading": "Fisherman"
       },
       {
         "text": "Fisherman：",
-        "reading": "",
-        "gloss": "(speaker)"
+        "kana": "Fisherman",
+        "gloss": "Fisherman",
+        "reading": "Fisherman"
       },
       {
-        "text": "そろそろ我慢の限界だけど、",
-        "reading": "sorosoro gaman no genkai da kedo",
-        "gloss": "I'm near the limit of my patience, but",
-        "kana": "そろそろ がまん の げんかい だ けど"
+        "text": "そろそろ",
+        "kana": "そろそろ",
+        "gloss": "nearly",
+        "reading": "sorosoro"
       },
       {
-        "text": "それはマスに対してじゃない。||",
-        "reading": "sore wa masu ni taishite ja nai",
-        "gloss": "it's not with the trout",
-        "kana": "ソレ は マス ニ タイシテ ジャ ナイ"
+        "text": "我慢",
+        "kana": "がまん",
+        "gloss": "patience",
+        "reading": "gaman"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "限界",
+        "kana": "げんかい",
+        "gloss": "limit",
+        "reading": "genkai"
+      },
+      {
+        "text": "だけど、",
+        "kana": "だけど",
+        "gloss": "but",
+        "reading": "dakedo"
+      },
+      {
+        "text": "それ",
+        "kana": "それ",
+        "gloss": "that",
+        "reading": "sore"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "マス",
+        "kana": "マス",
+        "gloss": "trout",
+        "reading": "masu"
+      },
+      {
+        "text": "に対して",
+        "kana": "にたいして",
+        "gloss": "toward",
+        "reading": "nitaishite"
+      },
+      {
+        "text": "じゃない。||",
+        "kana": "じゃない",
+        "gloss": "isn't",
+        "reading": "janai"
       },
       {
         "text": "Fisherman： …                                                                                                                                                                                                                                                                                                                                                                                   ",
-        "reading": "",
-        "gloss": "(silence)"
+        "kana": "Fisherman",
+        "gloss": "Fisherman",
+        "reading": "Fisherman"
       }
     ]
   },
@@ -164,34 +473,142 @@
     "english": "Fishing sisters:||We're the somewhat famous fishing sisters! Fishing sisters: We'll catch as many fish as we wish! Don't mind us!",
     "segments": [
       {
-        "text": "釣り姉妹：||",
-        "reading": "tsuri shimai",
-        "gloss": "fishing sisters",
-        "kana": "つり しまい"
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
       },
       {
-        "text": "私たちはちょっと名の知れた釣り姉妹なのよ！",
-        "reading": "watashitachi wa chotto na no shireta tsuri shimai na no yo",
-        "gloss": "we're the somewhat famous fishing sisters",
-        "kana": "わたしたち は ちょっと な の しれた つり しまい な の よ"
+        "text": "姉妹：||",
+        "kana": "しまい",
+        "gloss": "sisters",
+        "reading": "shimai"
       },
       {
-        "text": "釣り姉妹：",
-        "reading": "tsuri shimai",
-        "gloss": "fishing sisters",
-        "kana": "つり しまい"
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "we",
+        "reading": "watashitachi"
       },
       {
-        "text": "釣りたいと思っただけ魚が釣れるの！",
-        "reading": "tsuritai to omotta dake sakana ga tsureru no",
-        "gloss": "we catch as many fish as we wish",
-        "kana": "つりたい と おもった だけ さかな が つれる の"
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       },
       {
-        "text": "私たちには構わないで！",
-        "reading": "watashitachi ni wa kamawanaide",
-        "gloss": "don't mind us",
-        "kana": "わたしたち に は かまわないで"
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "somewhat",
+        "reading": "chotto"
+      },
+      {
+        "text": "名の知れた",
+        "kana": "なのしれた",
+        "gloss": "famous",
+        "reading": "nanoshireta"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "姉妹",
+        "kana": "しまい",
+        "gloss": "sisters",
+        "reading": "shimai"
+      },
+      {
+        "text": "なのよ！",
+        "kana": "なのよ",
+        "gloss": "(we are)",
+        "reading": "nanoyo"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "姉妹：",
+        "kana": "しまい",
+        "gloss": "sisters",
+        "reading": "shimai"
+      },
+      {
+        "text": "釣りたい",
+        "kana": "つりたい",
+        "gloss": "want to catch",
+        "reading": "tsuritai"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quoting)",
+        "reading": "to"
+      },
+      {
+        "text": "思った",
+        "kana": "おもった",
+        "gloss": "thought",
+        "reading": "omotta"
+      },
+      {
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "as much as",
+        "reading": "dake"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "fish",
+        "reading": "sakana"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "釣れる",
+        "kana": "つれる",
+        "gloss": "can be caught",
+        "reading": "tsureru"
+      },
+      {
+        "text": "の！",
+        "kana": "の",
+        "gloss": "(you see)",
+        "reading": "no"
+      },
+      {
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "us",
+        "reading": "watashitachi"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "構わないで！",
+        "kana": "かまわないで",
+        "gloss": "don't mind",
+        "reading": "kamawanaide"
       }
     ]
   },
@@ -201,27 +618,81 @@
     "segments": [
       {
         "text": "釣り師：",
-        "reading": "tsurishi",
-        "gloss": "angler",
-        "kana": "つりし"
+        "kana": "つりし",
+        "gloss": "Angler",
+        "reading": "tsurishi"
       },
       {
-        "text": "釣りの調子？",
-        "reading": "tsuri no chōshi",
-        "gloss": "how's the fishing",
-        "kana": "つり の ちょうし"
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
       },
       {
-        "text": "魚には相手にされずに、",
-        "reading": "sakana ni wa aite ni sarezu ni",
-        "gloss": "being ignored by the fish",
-        "kana": "さかな に は あいて に されず に"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
       },
       {
-        "text": "蚊に刺されてばかりだよ…",
-        "reading": "ka ni sasarete bakari da yo",
-        "gloss": "I just keep getting bitten by mosquitoes",
-        "kana": "か に さされて ばかり だ よ"
+        "text": "調子？",
+        "kana": "ちょうし",
+        "gloss": "how it's going",
+        "reading": "chōshi"
+      },
+      {
+        "text": "魚",
+        "kana": "さかな",
+        "gloss": "the fish",
+        "reading": "sakana"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(by)",
+        "reading": "ni"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "相手にされずに、",
+        "kana": "あいてにされずに",
+        "gloss": "ignored",
+        "reading": "aitenisarezuni"
+      },
+      {
+        "text": "蚊",
+        "kana": "か",
+        "gloss": "mosquitoes",
+        "reading": "ka"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(by)",
+        "reading": "ni"
+      },
+      {
+        "text": "刺されて",
+        "kana": "さされて",
+        "gloss": "bitten",
+        "reading": "sasarete"
+      },
+      {
+        "text": "ばかり",
+        "kana": "ばかり",
+        "gloss": "nothing but",
+        "reading": "bakari"
+      },
+      {
+        "text": "だよ…",
+        "kana": "だよ",
+        "gloss": "(it is)",
+        "reading": "dayo"
       }
     ]
   },
@@ -231,69 +702,249 @@
     "segments": [
       {
         "text": "トラウトマン：",
-        "reading": "Torauto Man",
+        "kana": "トラウトマン",
         "gloss": "Trout Man",
-        "kana": "トラウト マン"
+        "reading": "torautoman"
       },
       {
-        "text": "私は周りから「トラウトマン」と呼ばれているんだ。||",
-        "reading": "watashi wa mawari kara Torauto Man to yobarete iru n da",
-        "gloss": "those around me call me \"Trout Man\"",
-        "kana": "ワタシ は マワリ カラ トラウト マン ト ヨバレテ イル ン ダ"
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I",
+        "reading": "watashi"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "周り",
+        "kana": "まわり",
+        "gloss": "people around",
+        "reading": "mawari"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "by",
+        "reading": "kara"
+      },
+      {
+        "text": "「トラウトマン」",
+        "kana": "トラウトマン",
+        "gloss": "Trout Man",
+        "reading": "torautoman"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quoting)",
+        "reading": "to"
+      },
+      {
+        "text": "呼ばれている",
+        "kana": "よばれている",
+        "gloss": "am called",
+        "reading": "yobareteiru"
+      },
+      {
+        "text": "んだ。||",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
       },
       {
         "text": "トラウトマン：",
-        "reading": "Torauto Man",
+        "kana": "トラウトマン",
         "gloss": "Trout Man",
-        "kana": "トラウト マン"
+        "reading": "torautoman"
       },
       {
-        "text": "私は5年間、",
-        "reading": "watashi wa gonenkan",
-        "gloss": "for five years I",
-        "kana": "わたし は ごねんかん"
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I",
+        "reading": "watashi"
       },
       {
-        "text": "マスになったつもりで生活しているんだ。",
-        "reading": "masu ni natta tsumori de seikatsu shite iru n da",
-        "gloss": "have lived as if I were a trout",
-        "kana": "マス ニ ナッタ ツモリ デ セイカツ シテ イル ン ダ"
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       },
       {
-        "text": "食べる、食べる、食べる、",
-        "reading": "taberu taberu taberu",
-        "gloss": "eat, eat, eat",
-        "kana": "たべる たべる たべる"
+        "text": "5年間、",
+        "kana": "ごねんかん",
+        "gloss": "for five years",
+        "reading": "gonenkan"
       },
       {
-        "text": "タマゴを産む、",
-        "reading": "tamago o umu",
-        "gloss": "lay eggs",
-        "kana": "タマゴ を ウム"
+        "text": "マス",
+        "kana": "マス",
+        "gloss": "trout",
+        "reading": "masu"
       },
       {
-        "text": "また食べる。||",
-        "reading": "mata taberu",
-        "gloss": "eat again",
-        "kana": "また たべる"
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)",
+        "reading": "ni"
+      },
+      {
+        "text": "なった",
+        "kana": "なった",
+        "gloss": "became",
+        "reading": "natta"
+      },
+      {
+        "text": "つもり",
+        "kana": "つもり",
+        "gloss": "as if",
+        "reading": "tsumori"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(in the manner)",
+        "reading": "de"
+      },
+      {
+        "text": "生活している",
+        "kana": "せいかつしている",
+        "gloss": "am living",
+        "reading": "seikatsushiteiru"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
+      },
+      {
+        "text": "食べる、",
+        "kana": "たべる",
+        "gloss": "eat",
+        "reading": "taberu"
+      },
+      {
+        "text": "食べる、",
+        "kana": "たべる",
+        "gloss": "eat",
+        "reading": "taberu"
+      },
+      {
+        "text": "食べる、",
+        "kana": "たべる",
+        "gloss": "eat",
+        "reading": "taberu"
+      },
+      {
+        "text": "タマゴ",
+        "kana": "タマゴ",
+        "gloss": "eggs",
+        "reading": "tamago"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "産む、",
+        "kana": "うむ",
+        "gloss": "lay",
+        "reading": "umu"
+      },
+      {
+        "text": "また",
+        "kana": "また",
+        "gloss": "again",
+        "reading": "mata"
+      },
+      {
+        "text": "食べる。||",
+        "kana": "たべる",
+        "gloss": "eat",
+        "reading": "taberu"
       },
       {
         "text": "トラウトマン：",
-        "reading": "Torauto Man",
+        "kana": "トラウトマン",
         "gloss": "Trout Man",
-        "kana": "トラウト マン"
+        "reading": "torautoman"
       },
       {
-        "text": "食べるのは得意なんだ。",
-        "reading": "taberu no wa tokui na n da",
-        "gloss": "I'm good at eating",
-        "kana": "たべる の は とくい な ん だ"
+        "text": "食べる",
+        "kana": "たべる",
+        "gloss": "eating",
+        "reading": "taberu"
       },
       {
-        "text": "タマゴを産むのはうまくいかないけどね。",
-        "reading": "tamago o umu no wa umaku ikanai kedo ne",
-        "gloss": "the egg-laying doesn't go well though",
-        "kana": "タマゴ を ウム ノ は ウマク イカナイ ケド ネ"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominaliser)",
+        "reading": "no"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "得意",
+        "kana": "とくい",
+        "gloss": "good at",
+        "reading": "tokui"
+      },
+      {
+        "text": "なんだ。",
+        "kana": "なんだ",
+        "gloss": "(you see)",
+        "reading": "nanda"
+      },
+      {
+        "text": "タマゴ",
+        "kana": "タマゴ",
+        "gloss": "eggs",
+        "reading": "tamago"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "産む",
+        "kana": "うむ",
+        "gloss": "laying",
+        "reading": "umu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominaliser)",
+        "reading": "no"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "うまくいかない",
+        "kana": "うまくいかない",
+        "gloss": "doesn't go well",
+        "reading": "umakuikanai"
+      },
+      {
+        "text": "けどね。",
+        "kana": "けどね",
+        "gloss": "(though)",
+        "reading": "kedone"
       }
     ]
   },
@@ -303,21 +954,63 @@
     "segments": [
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
-        "text": "人込みから離れたいって？",
-        "reading": "hitogomi kara hanaretai tte",
-        "gloss": "you want to get away from the crowds",
-        "kana": "ひとごみ から はなれたい って"
+        "text": "人込み",
+        "kana": "ひとごみ",
+        "gloss": "the crowds",
+        "reading": "hitogomi"
       },
       {
-        "text": "私も同じ気持ちだよ。",
-        "reading": "watashi mo onaji kimochi da yo",
-        "gloss": "I feel the same",
-        "kana": "わたし も おなじ きもち だ よ"
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
+      },
+      {
+        "text": "離れたい",
+        "kana": "はなれたい",
+        "gloss": "want to get away",
+        "reading": "hanaretai"
+      },
+      {
+        "text": "って？",
+        "kana": "って",
+        "gloss": "(you say)",
+        "reading": "tte"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I",
+        "reading": "watashi"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)",
+        "reading": "mo"
+      },
+      {
+        "text": "同じ",
+        "kana": "おなじ",
+        "gloss": "same",
+        "reading": "onaji"
+      },
+      {
+        "text": "気持ち",
+        "kana": "きもち",
+        "gloss": "feeling",
+        "reading": "kimochi"
+      },
+      {
+        "text": "だよ。",
+        "kana": "だよ",
+        "gloss": "(it is)",
+        "reading": "dayo"
       }
     ]
   },
@@ -326,70 +1019,346 @@
     "english": "Fishing Pro: It isn't a competition, but... whoever gets the most tags gets a year of bragging rights!||Fishing Pro: I'll come back for SquidFest in winter... now that's a real challenge!||Fishing Pro: The secret to catching trout is mastering the technique of making your bait look so delicious the trout can't help but bite...",
     "segments": [
       {
-        "text": "釣りのプロ：",
-        "reading": "tsuri no puro",
-        "gloss": "fishing pro",
-        "kana": "ツリ ノ プロ"
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
       },
       {
-        "text": "これは競争ではないが… ",
-        "reading": "kore wa kyōsō de wa nai ga",
-        "gloss": "this isn't a competition, but",
-        "kana": "これ は きょうそう で は ない が"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
       },
       {
-        "text": "タグを一番多く手に入れたら、",
-        "reading": "tagu o ichiban ōku te ni iretara",
-        "gloss": "whoever gets the most tags",
-        "kana": "タグ を イチバン オーク テ ニ イレタラ"
+        "text": "プロ：",
+        "kana": "プロ",
+        "gloss": "pro",
+        "reading": "puro"
       },
       {
-        "text": "一年間自慢して暮らせるんだ！||",
-        "reading": "ichinenkan jiman shite kuraseru n da",
-        "gloss": "can boast for a year",
-        "kana": "いちねんかん じまん して くらせる ん だ"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
       },
       {
-        "text": "釣りのプロ：",
-        "reading": "tsuri no puro",
-        "gloss": "fishing pro",
-        "kana": "ツリ ノ プロ"
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       },
       {
-        "text": "冬になったらイカ釣りまつりにも来るよ…",
-        "reading": "fuyu ni nattara ika tsuri matsuri ni mo kuru yo",
-        "gloss": "come winter I'll come to SquidFest too",
-        "kana": "フユ ニ ナッタラ イカ ツリ マツリ ニ モ クル ヨ"
+        "text": "競争",
+        "kana": "きょうそう",
+        "gloss": "competition",
+        "reading": "kyōsō"
       },
       {
-        "text": "あれは真の挑戦だ！||",
-        "reading": "are wa shin no chōsen da",
-        "gloss": "that's a real challenge",
-        "kana": "あれ は しん の ちょうせん だ"
+        "text": "ではないが… ",
+        "kana": "で は ないが",
+        "gloss": "isn't, but",
+        "reading": "de wa naiga"
       },
       {
-        "text": "釣りのプロ：",
-        "reading": "tsuri no puro",
-        "gloss": "fishing pro",
-        "kana": "ツリ ノ プロ"
+        "text": "タグ",
+        "kana": "タグ",
+        "gloss": "tags",
+        "reading": "tagu"
       },
       {
-        "text": "マスを釣る秘訣は、",
-        "reading": "masu o tsuru hiketsu wa",
-        "gloss": "the secret to catching trout",
-        "kana": "マス を ツル ヒケツ は"
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
       },
       {
-        "text": "エサをおいしく見せるテクニックを身につけて、",
-        "reading": "esa o oishiku miseru tekunikku o mi ni tsukete",
-        "gloss": "is mastering the technique of making bait look delicious",
-        "kana": "エサ を オイシク ミセル テクニック を ミ ニ ツケテ"
+        "text": "一番",
+        "kana": "いちばん",
+        "gloss": "the most",
+        "reading": "ichiban"
       },
       {
-        "text": "マスが思わず食いつくようにすることだよ…",
-        "reading": "masu ga omowazu kuitsuku yō ni suru koto da yo",
-        "gloss": "so the trout can't help but bite",
-        "kana": "マス ガ オモワズ クイツク ヨー ニ スル コト ダ ヨ"
+        "text": "多く",
+        "kana": "おおく",
+        "gloss": "many",
+        "reading": "ōku"
+      },
+      {
+        "text": "手に入れたら、",
+        "kana": "てにいれたら",
+        "gloss": "if you get",
+        "reading": "teniiretara"
+      },
+      {
+        "text": "一年間",
+        "kana": "いちねんかん",
+        "gloss": "for a year",
+        "reading": "ichinenkan"
+      },
+      {
+        "text": "自慢して",
+        "kana": "じまんして",
+        "gloss": "bragging",
+        "reading": "jimanshite"
+      },
+      {
+        "text": "暮らせる",
+        "kana": "くらせる",
+        "gloss": "can live",
+        "reading": "kuraseru"
+      },
+      {
+        "text": "んだ！||",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "プロ：",
+        "kana": "プロ",
+        "gloss": "pro",
+        "reading": "puro"
+      },
+      {
+        "text": "冬",
+        "kana": "ふゆ",
+        "gloss": "winter",
+        "reading": "fuyu"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)",
+        "reading": "ni"
+      },
+      {
+        "text": "なったら",
+        "kana": "なったら",
+        "gloss": "when it becomes",
+        "reading": "nattara"
+      },
+      {
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "まつり",
+        "kana": "まつり",
+        "gloss": "festival",
+        "reading": "matsuri"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)",
+        "reading": "mo"
+      },
+      {
+        "text": "来る",
+        "kana": "くる",
+        "gloss": "will come",
+        "reading": "kuru"
+      },
+      {
+        "text": "よ…",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
+      },
+      {
+        "text": "あれ",
+        "kana": "あれ",
+        "gloss": "that",
+        "reading": "are"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "真の",
+        "kana": "しんの",
+        "gloss": "true",
+        "reading": "shinno"
+      },
+      {
+        "text": "挑戦",
+        "kana": "ちょうせん",
+        "gloss": "challenge",
+        "reading": "chōsen"
+      },
+      {
+        "text": "だ！||",
+        "kana": "だ",
+        "gloss": "(it is)",
+        "reading": "da"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "プロ：",
+        "kana": "プロ",
+        "gloss": "pro",
+        "reading": "puro"
+      },
+      {
+        "text": "マス",
+        "kana": "マス",
+        "gloss": "trout",
+        "reading": "masu"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "釣る",
+        "kana": "つる",
+        "gloss": "catching",
+        "reading": "tsuru"
+      },
+      {
+        "text": "秘訣",
+        "kana": "ひけつ",
+        "gloss": "secret",
+        "reading": "hiketsu"
+      },
+      {
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "エサ",
+        "kana": "エサ",
+        "gloss": "bait",
+        "reading": "esa"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "おいしく",
+        "kana": "おいしく",
+        "gloss": "delicious",
+        "reading": "oishiku"
+      },
+      {
+        "text": "見せる",
+        "kana": "みせる",
+        "gloss": "make look",
+        "reading": "miseru"
+      },
+      {
+        "text": "テクニック",
+        "kana": "テクニック",
+        "gloss": "technique",
+        "reading": "tekunikku"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "身につけて、",
+        "kana": "みにつけて",
+        "gloss": "master",
+        "reading": "minitsukete"
+      },
+      {
+        "text": "マス",
+        "kana": "マス",
+        "gloss": "trout",
+        "reading": "masu"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "思わず",
+        "kana": "おもわず",
+        "gloss": "without meaning to",
+        "reading": "omowazu"
+      },
+      {
+        "text": "食いつく",
+        "kana": "くいつく",
+        "gloss": "bite",
+        "reading": "kuitsuku"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that",
+        "reading": "yōni"
+      },
+      {
+        "text": "する",
+        "kana": "する",
+        "gloss": "make",
+        "reading": "suru"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "thing",
+        "reading": "koto"
+      },
+      {
+        "text": "だよ…",
+        "kana": "だよ",
+        "gloss": "(it is)",
+        "reading": "dayo"
       }
     ]
   },
@@ -399,27 +1368,105 @@
     "segments": [
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
         "text": "ああ、",
-        "reading": "ā",
+        "kana": "ああ",
         "gloss": "ah",
-        "kana": "ああ"
+        "reading": "ā"
       },
       {
-        "text": "これこそが人生だよ。",
-        "reading": "kore koso ga jinsei da yo",
-        "gloss": "this is what life is",
-        "kana": "これ こそ が じんせい だ よ"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
       },
       {
-        "text": "マス釣りよりも落ち着けるものは他にないね。",
-        "reading": "masu tsuri yori mo ochitsukeru mono wa hoka ni nai ne",
-        "gloss": "nothing is more calming than trout fishing",
-        "kana": "マス ツリ ヨリ モ オチツケル モノ は ホカ ニ ナイ ネ"
+        "text": "こそ",
+        "kana": "こそ",
+        "gloss": "(indeed)",
+        "reading": "koso"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "人生",
+        "kana": "じんせい",
+        "gloss": "life",
+        "reading": "jinsei"
+      },
+      {
+        "text": "だよ。",
+        "kana": "だよ",
+        "gloss": "(it is)",
+        "reading": "dayo"
+      },
+      {
+        "text": "マス",
+        "kana": "マス",
+        "gloss": "trout",
+        "reading": "masu"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "より",
+        "kana": "より",
+        "gloss": "than",
+        "reading": "yori"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(even)",
+        "reading": "mo"
+      },
+      {
+        "text": "落ち着ける",
+        "kana": "おちつける",
+        "gloss": "can relax",
+        "reading": "ochitsukeru"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing",
+        "reading": "mono"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "他に",
+        "kana": "ほかに",
+        "gloss": "else",
+        "reading": "hokani"
+      },
+      {
+        "text": "ない",
+        "kana": "ない",
+        "gloss": "there is no",
+        "reading": "nai"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(you know)",
+        "reading": "ne"
       }
     ]
   },
@@ -429,33 +1476,141 @@
     "segments": [
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
-        "text": "イカはたいてい夜にしか姿を見せない。",
-        "reading": "ika wa taitei yoru ni shika sugata o misenai",
-        "gloss": "squid usually only appear at night",
-        "kana": "イカ は タイテイ ヨル ニ シカ スガタ を ミセナイ"
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "たいてい",
+        "kana": "たいてい",
+        "gloss": "usually",
+        "reading": "taitei"
+      },
+      {
+        "text": "夜",
+        "kana": "よる",
+        "gloss": "night",
+        "reading": "yoru"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "しか",
+        "kana": "しか",
+        "gloss": "only",
+        "reading": "shika"
+      },
+      {
+        "text": "姿",
+        "kana": "すがた",
+        "gloss": "themselves",
+        "reading": "sugata"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "見せない。",
+        "kana": "みせない",
+        "gloss": "don't show",
+        "reading": "misenai"
       },
       {
         "text": "しかし、",
-        "reading": "shikashi",
-        "gloss": "however",
-        "kana": "しかし"
+        "kana": "しかし",
+        "gloss": "but",
+        "reading": "shikashi"
       },
       {
-        "text": "今日は特別なエサがまかれているから",
-        "reading": "kyō wa tokubetsu na esa ga makarete iru kara",
-        "gloss": "since special bait has been scattered today",
-        "kana": "キョー は トクベツ ナ エサ ガ マカレテ イル カラ"
+        "text": "今日",
+        "kana": "きょう",
+        "gloss": "today",
+        "reading": "kyō"
       },
       {
-        "text": "一日中イカが釣れるんだ。",
-        "reading": "ichinichi jū ika ga tsureru n da",
-        "gloss": "squid can be caught all day",
-        "kana": "イチニチ ジュー イカ ガ ツレル ン ダ"
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "特別な",
+        "kana": "とくべつな",
+        "gloss": "special",
+        "reading": "tokubetsuna"
+      },
+      {
+        "text": "エサ",
+        "kana": "エサ",
+        "gloss": "bait",
+        "reading": "esa"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "まかれている",
+        "kana": "まかれている",
+        "gloss": "has been scattered",
+        "reading": "makareteiru"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "so",
+        "reading": "kara"
+      },
+      {
+        "text": "一日中",
+        "kana": "いちにちじゅう",
+        "gloss": "all day",
+        "reading": "ichinichijū"
+      },
+      {
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "釣れる",
+        "kana": "つれる",
+        "gloss": "can be caught",
+        "reading": "tsureru"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
       }
     ]
   },
@@ -465,27 +1620,147 @@
     "segments": [
       {
         "text": "船乗り：",
-        "reading": "funanori",
-        "gloss": "mariner",
-        "kana": "ふなのり"
+        "kana": "ふなのり",
+        "gloss": "Mariner",
+        "reading": "funanori"
       },
       {
-        "text": "冷えた空気は私の体をジャーキーのように引きしめてくれる。||",
-        "reading": "hieta kūki wa watashi no karada o jākī no yō ni hikishimete kureru",
-        "gloss": "the cold air firms my body up like jerky",
-        "kana": "ヒエタ クーキ は ワタシ ノ カラダ を ジャーキー ノ ヨー ニ ヒキシメテ クレル"
+        "text": "冷えた",
+        "kana": "ひえた",
+        "gloss": "cold",
+        "reading": "hieta"
+      },
+      {
+        "text": "空気",
+        "kana": "くうき",
+        "gloss": "air",
+        "reading": "kūki"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my",
+        "reading": "watashi"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "体",
+        "kana": "からだ",
+        "gloss": "body",
+        "reading": "karada"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "ジャーキー",
+        "kana": "ジャーキー",
+        "gloss": "jerky",
+        "reading": "jākī"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "like",
+        "reading": "yōni"
+      },
+      {
+        "text": "引きしめてくれる。||",
+        "kana": "ひきしめてくれる",
+        "gloss": "firms up",
+        "reading": "hikishimetekureru"
       },
       {
         "text": "船乗り：",
-        "reading": "funanori",
-        "gloss": "mariner",
-        "kana": "ふなのり"
+        "kana": "ふなのり",
+        "gloss": "Mariner",
+        "reading": "funanori"
       },
       {
-        "text": "暖かすぎる空気は私の体をプリンのようにしてしまう。",
-        "reading": "atatakasugiru kūki wa watashi no karada o purin no yō ni shite shimau",
-        "gloss": "air that's too warm turns my body into a pudding",
-        "kana": "アタタカスギル クーキ は ワタシ ノ カラダ を プリン ノ ヨー ニ シテ シマウ"
+        "text": "暖かすぎる",
+        "kana": "あたたかすぎる",
+        "gloss": "too warm",
+        "reading": "atatakasugiru"
+      },
+      {
+        "text": "空気",
+        "kana": "くうき",
+        "gloss": "air",
+        "reading": "kūki"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "my",
+        "reading": "watashi"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "体",
+        "kana": "からだ",
+        "gloss": "body",
+        "reading": "karada"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "プリン",
+        "kana": "プリン",
+        "gloss": "pudding",
+        "reading": "purin"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "like",
+        "reading": "yōni"
+      },
+      {
+        "text": "してしまう。",
+        "kana": "してしまう",
+        "gloss": "turns into",
+        "reading": "shiteshimau"
       }
     ]
   },
@@ -495,27 +1770,87 @@
     "segments": [
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
-        "text": "手が凍えそうだから、",
-        "reading": "te ga kogoesō da kara",
-        "gloss": "since my hands are about to freeze",
-        "kana": "て が こごえそう だ から"
+        "text": "手",
+        "kana": "て",
+        "gloss": "hands",
+        "reading": "te"
       },
       {
-        "text": "こっちでホットサイダーを飲んでるんだ。",
-        "reading": "kotchi de hotto saidā o nonderu n da",
-        "gloss": "I'm drinking hot cider over here",
-        "kana": "コッチ デ ホット サイダー を ノンデル ン ダ"
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
       },
       {
-        "text": "幸運を！",
-        "reading": "kōun o",
+        "text": "凍えそう",
+        "kana": "こごえそう",
+        "gloss": "about to freeze",
+        "reading": "kogoesō"
+      },
+      {
+        "text": "だから、",
+        "kana": "だから",
+        "gloss": "so",
+        "reading": "dakara"
+      },
+      {
+        "text": "こっち",
+        "kana": "こっち",
+        "gloss": "over here",
+        "reading": "kotchi"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)",
+        "reading": "de"
+      },
+      {
+        "text": "ホット",
+        "kana": "ホット",
+        "gloss": "hot",
+        "reading": "hotto"
+      },
+      {
+        "text": "サイダー",
+        "kana": "サイダー",
+        "gloss": "cider",
+        "reading": "saidā"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "飲んでる",
+        "kana": "のんでる",
+        "gloss": "am drinking",
+        "reading": "nonderu"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
+      },
+      {
+        "text": "幸運",
+        "kana": "こううん",
         "gloss": "good luck",
-        "kana": "こううん を"
+        "reading": "kōun"
+      },
+      {
+        "text": "を！",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
       }
     ]
   },
@@ -524,46 +1859,190 @@
     "english": "Squid chef: Oh, don't mind me... I've come to see the price of squid.||Squid chef: What are you doing here? The squid won't come to you!",
     "segments": [
       {
-        "text": "イカの料理人：",
-        "reading": "ika no ryōrinin",
-        "gloss": "squid chef",
-        "kana": "イカ ノ リョーリニン"
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "料理人：",
+        "kana": "りょうりにん",
+        "gloss": "chef",
+        "reading": "ryōrinin"
       },
       {
         "text": "ああ、",
-        "reading": "ā",
+        "kana": "ああ",
         "gloss": "oh",
-        "kana": "ああ"
+        "reading": "ā"
       },
       {
-        "text": "私のことは気にしないで…",
-        "reading": "watashi no koto wa ki ni shinaide",
-        "gloss": "don't mind me",
-        "kana": "わたし の こと は き に しないで"
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "me",
+        "reading": "watashi"
       },
       {
-        "text": "イカの値段を見に来たんだ。||",
-        "reading": "ika no nedan o mi ni kita n da",
-        "gloss": "I came to see the price of squid",
-        "kana": "イカ ノ ネダン を ミ ニ キタ ン ダ"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
       },
       {
-        "text": "イカの料理人：",
-        "reading": "ika no ryōrinin",
-        "gloss": "squid chef",
-        "kana": "イカ ノ リョーリニン"
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "matter",
+        "reading": "koto"
       },
       {
-        "text": "ここで何をしているんだい？",
-        "reading": "koko de nani o shite iru n dai",
-        "gloss": "what are you doing here",
-        "kana": "ここ で なに を して いる ん だい"
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       },
       {
-        "text": "イカは向こうからはやってこないよ！",
-        "reading": "ika wa mukō kara wa yatte konai yo",
-        "gloss": "squid won't come to you",
-        "kana": "イカ は ムコー カラ は ヤッテ コナイ ヨ"
+        "text": "気にしないで…",
+        "kana": "きにしないで",
+        "gloss": "don't mind",
+        "reading": "kinishinaide"
+      },
+      {
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "値段",
+        "kana": "ねだん",
+        "gloss": "price",
+        "reading": "nedan"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "見に来た",
+        "kana": "みにきた",
+        "gloss": "came to see",
+        "reading": "minikita"
+      },
+      {
+        "text": "んだ。||",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
+      },
+      {
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "料理人：",
+        "kana": "りょうりにん",
+        "gloss": "chef",
+        "reading": "ryōrinin"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here",
+        "reading": "koko"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)",
+        "reading": "de"
+      },
+      {
+        "text": "何",
+        "kana": "なに",
+        "gloss": "what",
+        "reading": "nani"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "している",
+        "kana": "している",
+        "gloss": "are doing",
+        "reading": "shiteiru"
+      },
+      {
+        "text": "んだい？",
+        "kana": "んだい",
+        "gloss": "(question)",
+        "reading": "ndai"
+      },
+      {
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "向こう",
+        "kana": "むこう",
+        "gloss": "their side",
+        "reading": "mukō"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(contrast)",
+        "reading": "wa"
+      },
+      {
+        "text": "やってこない",
+        "kana": "やってこない",
+        "gloss": "won't come",
+        "reading": "yattekonai"
+      },
+      {
+        "text": "よ！",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -597,21 +2076,75 @@
     "segments": [
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
-        "text": "地元の人かい？",
-        "reading": "jimoto no hito kai",
-        "gloss": "are you a local",
-        "kana": "じもと の ひと かい"
+        "text": "地元",
+        "kana": "じもと",
+        "gloss": "local",
+        "reading": "jimoto"
       },
       {
-        "text": "きみのイカを少しわけてもらえないかな…",
-        "reading": "kimi no ika o sukoshi wakete moraenai ka na",
-        "gloss": "might I have a few of your squid",
-        "kana": "キミ ノ イカ を スコシ ワケテ モラエナイ カ ナ"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "人",
+        "kana": "ひと",
+        "gloss": "person",
+        "reading": "hito"
+      },
+      {
+        "text": "かい？",
+        "kana": "かい",
+        "gloss": "(question)",
+        "reading": "kai"
+      },
+      {
+        "text": "きみ",
+        "kana": "きみ",
+        "gloss": "your",
+        "reading": "kimi"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "少し",
+        "kana": "すこし",
+        "gloss": "a few",
+        "reading": "sukoshi"
+      },
+      {
+        "text": "わけてもらえない",
+        "kana": "わけてもらえない",
+        "gloss": "couldn't share",
+        "reading": "waketemoraenai"
+      },
+      {
+        "text": "かな…",
+        "kana": "かな",
+        "gloss": "I wonder",
+        "reading": "kana"
       }
     ]
   },
@@ -620,34 +2153,136 @@
     "english": "Fishing sisters: We're the somewhat famous fishing sisters.||Fishing sisters: We've been catching squid since we were small. Don't mind us!",
     "segments": [
       {
-        "text": "釣り姉妹：",
-        "reading": "tsuri shimai",
-        "gloss": "fishing sisters",
-        "kana": "つり しまい"
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
       },
       {
-        "text": "私たちはちょっと名の知れた釣り姉妹なのよ。||",
-        "reading": "watashitachi wa chotto na no shireta tsuri shimai na no yo",
-        "gloss": "we're the somewhat famous fishing sisters",
-        "kana": "わたしたち は ちょっと な の しれた つり しまい な の よ"
+        "text": "姉妹：",
+        "kana": "しまい",
+        "gloss": "sisters",
+        "reading": "shimai"
       },
       {
-        "text": "釣り姉妹：",
-        "reading": "tsuri shimai",
-        "gloss": "fishing sisters",
-        "kana": "つり しまい"
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "we",
+        "reading": "watashitachi"
       },
       {
-        "text": "小さなころからイカを釣ってきたわ。",
-        "reading": "chiisa na koro kara ika o tsutte kita wa",
-        "gloss": "we've caught squid since we were small",
-        "kana": "チイサ ナ コロ カラ イカ を ツッテ キタ は"
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       },
       {
-        "text": "私たちには構わないで！",
-        "reading": "watashitachi ni wa kamawanaide",
-        "gloss": "don't mind us",
-        "kana": "わたしたち に は かまわないで"
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "somewhat",
+        "reading": "chotto"
+      },
+      {
+        "text": "名の知れた",
+        "kana": "なのしれた",
+        "gloss": "famous",
+        "reading": "nanoshireta"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "姉妹",
+        "kana": "しまい",
+        "gloss": "sisters",
+        "reading": "shimai"
+      },
+      {
+        "text": "なのよ。||",
+        "kana": "なのよ",
+        "gloss": "(we are)",
+        "reading": "nanoyo"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "姉妹：",
+        "kana": "しまい",
+        "gloss": "sisters",
+        "reading": "shimai"
+      },
+      {
+        "text": "小さな",
+        "kana": "ちいさな",
+        "gloss": "small",
+        "reading": "chiisana"
+      },
+      {
+        "text": "ころ",
+        "kana": "ころ",
+        "gloss": "time",
+        "reading": "koro"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "since",
+        "reading": "kara"
+      },
+      {
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "釣ってきた",
+        "kana": "つってきた",
+        "gloss": "have been catching",
+        "reading": "tsuttekita"
+      },
+      {
+        "text": "わ。",
+        "kana": "わ",
+        "gloss": "(softener)",
+        "reading": "wa"
+      },
+      {
+        "text": "私たち",
+        "kana": "わたしたち",
+        "gloss": "us",
+        "reading": "watashitachi"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(target marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "構わないで！",
+        "kana": "かまわないで",
+        "gloss": "don't mind",
+        "reading": "kamawanaide"
       }
     ]
   },
@@ -657,39 +2292,123 @@
     "segments": [
       {
         "text": "釣り師：",
-        "reading": "tsurishi",
-        "gloss": "angler",
-        "kana": "つりし"
+        "kana": "つりし",
+        "gloss": "Angler",
+        "reading": "tsurishi"
       },
       {
         "text": "（ブルブル）…",
-        "reading": "buruburu",
-        "gloss": "*shiver*",
-        "kana": "ブルブル"
+        "kana": "ブルブル",
+        "gloss": "shiver",
+        "reading": "buruburu"
       },
       {
         "text": "寒い！",
-        "reading": "samui",
-        "gloss": "it's cold",
-        "kana": "さむい"
+        "kana": "さむい",
+        "gloss": "cold",
+        "reading": "samui"
       },
       {
-        "text": "私は冬の海釣りには向いていないのかもしれない。||",
-        "reading": "watashi wa fuyu no umizuri ni wa muite inai no kamo shirenai",
-        "gloss": "maybe I'm not suited to winter sea fishing",
-        "kana": "わたし は ふゆ の うみずり に は むいて いない の かも しれない"
+        "text": "私",
+        "kana": "わたし",
+        "gloss": "I",
+        "reading": "watashi"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "冬",
+        "kana": "ふゆ",
+        "gloss": "winter",
+        "reading": "fuyu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "海",
+        "kana": "うみ",
+        "gloss": "sea",
+        "reading": "umi"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)",
+        "reading": "ni"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "向いていない",
+        "kana": "むいていない",
+        "gloss": "am not suited",
+        "reading": "muiteinai"
+      },
+      {
+        "text": "のかもしれない。||",
+        "kana": "のかもしれない",
+        "gloss": "maybe",
+        "reading": "nokamoshirenai"
       },
       {
         "text": "釣り師：",
-        "reading": "tsurishi",
-        "gloss": "angler",
-        "kana": "つりし"
+        "kana": "つりし",
+        "gloss": "Angler",
+        "reading": "tsurishi"
       },
       {
-        "text": "コイ釣りまつりもあればいのに…",
-        "reading": "koi tsuri matsuri mo areba i no ni",
-        "gloss": "if only there were a carp-fishing festival too",
-        "kana": "コイ ツリ マツリ モ アレバ イ ノ ニ"
+        "text": "コイ",
+        "kana": "コイ",
+        "gloss": "carp",
+        "reading": "koi"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "まつり",
+        "kana": "まつり",
+        "gloss": "festival",
+        "reading": "matsuri"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)",
+        "reading": "mo"
+      },
+      {
+        "text": "あれば",
+        "kana": "あれば",
+        "gloss": "if there were",
+        "reading": "areba"
+      },
+      {
+        "text": "いのに…",
+        "kana": "いのに",
+        "gloss": "I wish",
+        "reading": "inoni"
       }
     ]
   },
@@ -699,39 +2418,135 @@
     "segments": [
       {
         "text": "トラウトマン：",
-        "reading": "Torauto Man",
+        "kana": "トラウトマン",
         "gloss": "Trout Man",
-        "kana": "トラウト マン"
+        "reading": "torautoman"
       },
       {
-        "text": "イカはマスとは違うけど、",
-        "reading": "ika wa masu to wa chigau kedo",
-        "gloss": "squid differ from trout, but",
-        "kana": "イカ は マス ト は チガウ ケド"
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
       },
       {
-        "text": "同じように釣れるよ。||",
-        "reading": "onaji yō ni tsureru yo",
-        "gloss": "I catch them the same way",
-        "kana": "おなじ よう に つれる よ"
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "マス",
+        "kana": "マス",
+        "gloss": "trout",
+        "reading": "masu"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(from)",
+        "reading": "to"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(contrast)",
+        "reading": "wa"
+      },
+      {
+        "text": "違う",
+        "kana": "ちがう",
+        "gloss": "differ",
+        "reading": "chigau"
+      },
+      {
+        "text": "けど、",
+        "kana": "けど",
+        "gloss": "but",
+        "reading": "kedo"
+      },
+      {
+        "text": "同じ",
+        "kana": "おなじ",
+        "gloss": "same",
+        "reading": "onaji"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "way",
+        "reading": "yōni"
+      },
+      {
+        "text": "釣れる",
+        "kana": "つれる",
+        "gloss": "can be caught",
+        "reading": "tsureru"
+      },
+      {
+        "text": "よ。||",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       },
       {
         "text": "トラウトマン：",
-        "reading": "Torauto Man",
+        "kana": "トラウトマン",
         "gloss": "Trout Man",
-        "kana": "トラウト マン"
+        "reading": "torautoman"
       },
       {
-        "text": "賞品をねらっているなら、",
-        "reading": "shōhin o neratte iru nara",
-        "gloss": "if you're after the prize",
-        "kana": "しょうひん を ねらって いる なら"
+        "text": "賞品",
+        "kana": "しょうひん",
+        "gloss": "the prize",
+        "reading": "shōhin"
       },
       {
-        "text": "釣りに行った方がいいよ！",
-        "reading": "tsuri ni itta hō ga ii yo",
-        "gloss": "you'd better go fishing",
-        "kana": "つり に いった ほう が いい よ"
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "ねらっている",
+        "kana": "ねらっている",
+        "gloss": "are aiming for",
+        "reading": "neratteiru"
+      },
+      {
+        "text": "なら、",
+        "kana": "なら",
+        "gloss": "if",
+        "reading": "nara"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(purpose)",
+        "reading": "ni"
+      },
+      {
+        "text": "行った",
+        "kana": "いった",
+        "gloss": "go",
+        "reading": "itta"
+      },
+      {
+        "text": "方がいい",
+        "kana": "ほうがいい",
+        "gloss": "had better",
+        "reading": "hōgaii"
+      },
+      {
+        "text": "よ！",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -741,21 +2556,111 @@
     "segments": [
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
-        "text": "出かけるときに妻が保温ポットに熱いコーヒーを入れてくれたんだ。",
-        "reading": "dekakeru toki ni tsuma ga hoon potto ni atsui kōhī o irete kureta n da",
-        "gloss": "my wife filled a flask with hot coffee when I set off",
-        "kana": "デカケル トキ ニ ツマ ガ ホオン ポット ニ アツイ コーヒー を イレテ クレタ ン ダ"
+        "text": "出かける",
+        "kana": "でかける",
+        "gloss": "set off",
+        "reading": "dekakeru"
       },
       {
-        "text": "最高の女性だよ！",
-        "reading": "saikō no josei da yo",
-        "gloss": "what a wonderful woman",
-        "kana": "さいこう の じょせい だ よ"
+        "text": "とき",
+        "kana": "とき",
+        "gloss": "when",
+        "reading": "toki"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "妻",
+        "kana": "つま",
+        "gloss": "my wife",
+        "reading": "tsuma"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "保温",
+        "kana": "ほおん",
+        "gloss": "insulated",
+        "reading": "hōn"
+      },
+      {
+        "text": "ポット",
+        "kana": "ポット",
+        "gloss": "flask",
+        "reading": "potto"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)",
+        "reading": "ni"
+      },
+      {
+        "text": "熱い",
+        "kana": "あつい",
+        "gloss": "hot",
+        "reading": "atsui"
+      },
+      {
+        "text": "コーヒー",
+        "kana": "コーヒー",
+        "gloss": "coffee",
+        "reading": "kōhī"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "入れてくれた",
+        "kana": "いれてくれた",
+        "gloss": "poured for me",
+        "reading": "iretekureta"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
+      },
+      {
+        "text": "最高",
+        "kana": "さいこう",
+        "gloss": "the best",
+        "reading": "saikō"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "女性",
+        "kana": "じょせい",
+        "gloss": "woman",
+        "reading": "josei"
+      },
+      {
+        "text": "だよ！",
+        "kana": "だよ",
+        "gloss": "(she is)",
+        "reading": "dayo"
       }
     ]
   },
@@ -764,58 +2669,244 @@
     "english": "Fishing Pro: Shh... I don't want to startle the squid.||Fishing Pro: I came over here to get away from the crowd. Squid can be shy.||Fishing Pro: You can fish here if you like. Just be quiet.",
     "segments": [
       {
-        "text": "釣りのプロ：",
-        "reading": "tsuri no puro",
-        "gloss": "fishing pro",
-        "kana": "ツリ ノ プロ"
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "プロ：",
+        "kana": "プロ",
+        "gloss": "pro",
+        "reading": "puro"
       },
       {
         "text": "しーっ…",
-        "reading": "shī",
+        "kana": "しーっ",
         "gloss": "shh",
-        "kana": "シー"
+        "reading": "shī"
       },
       {
-        "text": "イカを刺激したくないんだ。||",
-        "reading": "ika o shigeki shitakunai n da",
-        "gloss": "I don't want to startle the squid",
-        "kana": "イカ を シゲキ シタクナイ ン ダ"
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
       },
       {
-        "text": "釣りのプロ：",
-        "reading": "tsuri no puro",
-        "gloss": "fishing pro",
-        "kana": "ツリ ノ プロ"
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
       },
       {
-        "text": "人込みから離れたくってこっちに来たんだ。",
-        "reading": "hitogomi kara hanaretakutte kotchi ni kita n da",
-        "gloss": "I came here wanting to get away from the crowd",
-        "kana": "ひとごみ から はなれたくって こっち に きた ん だ"
+        "text": "刺激したくない",
+        "kana": "しげきしたくない",
+        "gloss": "don't want to startle",
+        "reading": "shigekishitakunai"
       },
       {
-        "text": "イカには引っ込み思案なところがあるからね。||",
-        "reading": "ika ni wa hikkomijian na tokoro ga aru kara ne",
-        "gloss": "squid have a shy side",
-        "kana": "イカ ニ は ヒッコミジアン ナ トコロ ガ アル カラ ネ"
+        "text": "んだ。||",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
       },
       {
-        "text": "釣りのプロ：",
-        "reading": "tsuri no puro",
-        "gloss": "fishing pro",
-        "kana": "ツリ ノ プロ"
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
       },
       {
-        "text": "お望みならここで釣ってもいいよ。",
-        "reading": "o-nozomi nara koko de tsutte mo ii yo",
-        "gloss": "you may fish here if you wish",
-        "kana": "おのぞみ なら ここ で つって も いい よ"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
       },
       {
-        "text": "でも静かにね。",
-        "reading": "demo shizuka ni ne",
-        "gloss": "but quietly",
-        "kana": "でも しずか に ね"
+        "text": "プロ：",
+        "kana": "プロ",
+        "gloss": "pro",
+        "reading": "puro"
+      },
+      {
+        "text": "人込み",
+        "kana": "ひとごみ",
+        "gloss": "the crowd",
+        "reading": "hitogomi"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
+      },
+      {
+        "text": "離れたくって",
+        "kana": "はなれたくって",
+        "gloss": "wanting to get away",
+        "reading": "hanaretakutte"
+      },
+      {
+        "text": "こっち",
+        "kana": "こっち",
+        "gloss": "over here",
+        "reading": "kotchi"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "来た",
+        "kana": "きた",
+        "gloss": "came",
+        "reading": "kita"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
+      },
+      {
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(in)",
+        "reading": "ni"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "引っ込み思案な",
+        "kana": "ひっこみじあんな",
+        "gloss": "shy",
+        "reading": "hikkomijianna"
+      },
+      {
+        "text": "ところ",
+        "kana": "ところ",
+        "gloss": "side",
+        "reading": "tokoro"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "there is",
+        "reading": "aru"
+      },
+      {
+        "text": "からね。||",
+        "kana": "からね",
+        "gloss": "(because)",
+        "reading": "karane"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "プロ：",
+        "kana": "プロ",
+        "gloss": "pro",
+        "reading": "puro"
+      },
+      {
+        "text": "お望み",
+        "kana": "おのぞみ",
+        "gloss": "your wish",
+        "reading": "onozomi"
+      },
+      {
+        "text": "なら",
+        "kana": "なら",
+        "gloss": "if",
+        "reading": "nara"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here",
+        "reading": "koko"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(location marker)",
+        "reading": "de"
+      },
+      {
+        "text": "釣って",
+        "kana": "つって",
+        "gloss": "fish",
+        "reading": "tsutte"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(even)",
+        "reading": "mo"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "fine",
+        "reading": "ii"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "but",
+        "reading": "demo"
+      },
+      {
+        "text": "静かに",
+        "kana": "しずかに",
+        "gloss": "quietly",
+        "reading": "shizukani"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(okay?)",
+        "reading": "ne"
       }
     ]
   },
@@ -825,45 +2916,201 @@
     "segments": [
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
-        "text": "勝ち負けはあまり気にしてないよ。",
-        "reading": "kachimake wa amari ki ni shitenai yo",
-        "gloss": "I'm not much bothered about winning or losing",
-        "kana": "かちまけ は あまり き に してない よ"
+        "text": "勝ち負け",
+        "kana": "かちまけ",
+        "gloss": "winning or losing",
+        "reading": "kachimake"
       },
       {
-        "text": "雰囲気を楽しめればそれでいいんだ。||",
-        "reading": "fun'iki o tanoshimereba sore de ii n da",
-        "gloss": "enjoying the atmosphere is enough",
-        "kana": "ふんいき を たのしめれば それ で いい ん だ"
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "あまり",
+        "kana": "あまり",
+        "gloss": "not much",
+        "reading": "amari"
+      },
+      {
+        "text": "気にしてない",
+        "kana": "きにしてない",
+        "gloss": "am not bothered",
+        "reading": "kinishitenai"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
+      },
+      {
+        "text": "雰囲気",
+        "kana": "ふんいき",
+        "gloss": "the atmosphere",
+        "reading": "fun'iki"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "楽しめれば",
+        "kana": "たのしめれば",
+        "gloss": "if I can enjoy",
+        "reading": "tanoshimereba"
+      },
+      {
+        "text": "それで",
+        "kana": "それで",
+        "gloss": "with that",
+        "reading": "sorede"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "fine",
+        "reading": "ii"
+      },
+      {
+        "text": "んだ。||",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
       },
       {
         "text": "釣り人：",
-        "reading": "tsuribito",
-        "gloss": "fisherman",
-        "kana": "つりびと"
+        "kana": "つりびと",
+        "gloss": "Fisherman",
+        "reading": "tsuribito"
       },
       {
-        "text": "夏もいいけど、",
-        "reading": "natsu mo ii kedo",
-        "gloss": "summer is good too, but",
-        "kana": "なつ も いい けど"
+        "text": "夏",
+        "kana": "なつ",
+        "gloss": "summer",
+        "reading": "natsu"
       },
       {
-        "text": "冬のきびしい寒さも好きなんだ。",
-        "reading": "fuyu no kibishii samusa mo suki na n da",
-        "gloss": "I also like the harsh cold of winter",
-        "kana": "ふゆ の きびしい さむさ も すき な ん だ"
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)",
+        "reading": "mo"
       },
       {
-        "text": "人生にだって対照的なことはたくさんあるだろう？",
-        "reading": "jinsei ni datte taishōteki na koto wa takusan aru darō",
-        "gloss": "life too is full of contrasts, isn't it",
-        "kana": "じんせい に だって たいしょうてき な こと は たくさん ある だろう"
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good",
+        "reading": "ii"
+      },
+      {
+        "text": "けど、",
+        "kana": "けど",
+        "gloss": "but",
+        "reading": "kedo"
+      },
+      {
+        "text": "冬",
+        "kana": "ふゆ",
+        "gloss": "winter",
+        "reading": "fuyu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "きびしい",
+        "kana": "きびしい",
+        "gloss": "harsh",
+        "reading": "kibishii"
+      },
+      {
+        "text": "寒さ",
+        "kana": "さむさ",
+        "gloss": "cold",
+        "reading": "samusa"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)",
+        "reading": "mo"
+      },
+      {
+        "text": "好き",
+        "kana": "すき",
+        "gloss": "like",
+        "reading": "suki"
+      },
+      {
+        "text": "なんだ。",
+        "kana": "なんだ",
+        "gloss": "(you see)",
+        "reading": "nanda"
+      },
+      {
+        "text": "人生",
+        "kana": "じんせい",
+        "gloss": "life",
+        "reading": "jinsei"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(in)",
+        "reading": "ni"
+      },
+      {
+        "text": "だって",
+        "kana": "だって",
+        "gloss": "too",
+        "reading": "datte"
+      },
+      {
+        "text": "対照的な",
+        "kana": "たいしょうてきな",
+        "gloss": "contrasting",
+        "reading": "taishōtekina"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "things",
+        "reading": "koto"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "たくさん",
+        "kana": "たくさん",
+        "gloss": "many",
+        "reading": "takusan"
+      },
+      {
+        "text": "ある",
+        "kana": "ある",
+        "gloss": "there are",
+        "reading": "aru"
+      },
+      {
+        "text": "だろう？",
+        "kana": "だろう",
+        "gloss": "(right?)",
+        "reading": "darō"
       }
     ]
   }
