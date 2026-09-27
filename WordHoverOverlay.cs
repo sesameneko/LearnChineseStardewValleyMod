@@ -180,7 +180,7 @@ namespace LanguageStudyStardewValleyMod
                     // the renderer was instrumented: its glyphs are the whole truth, including
                     // "nothing drawn yet" mid-typewriter, so never fall through to re-deriving it
                     if (FindWordInGlyphs(drawn, glyphs, mouseX, mouseY) is { } glyphHit)
-                        return glyphHit;
+                        return drawn.Excluded ? null : glyphHit;
                     continue;
                 }
 
@@ -208,6 +208,10 @@ namespace LanguageStudyStardewValleyMod
                 float lineTop = drawn.Y + (lineIndex.Value * lineHeight);
                 var wordBounds = new Rectangle((int)(drawn.X + left), (int)lineTop, (int)Math.Ceiling(width), (int)Math.Ceiling(lineHeight));
                 var lineBounds = new Rectangle((int)drawn.X, (int)lineTop, (int)Math.Ceiling(drawn.MeasurePrefix(line)), (int)Math.Ceiling(lineHeight));
+
+                // excluded text still sits on top of what's under it, so it ends the search
+                if (drawn.Excluded)
+                    return null;
 
                 return new Hit(segment, wordBounds, lineBounds, exact, drawn.Text, lines, lineIndex.Value);
             }
