@@ -8081,10 +8081,28 @@
     "english": "Only works in the cellar.",
     "segments": [
       {
-        "text": "地下室でしかつかえない。",
-        "reading": "chikashitsu de shika tsukaenai",
-        "gloss": "it only works in the cellar",
-        "kana": "ちかしつ で しか つかえない"
+        "text": "地下室",
+        "reading": "chikashitsu",
+        "gloss": "cellar, basement",
+        "kana": "ちかしつ"
+      },
+      {
+        "text": "で",
+        "reading": "de",
+        "gloss": "in (place of action)",
+        "kana": "で"
+      },
+      {
+        "text": "しか",
+        "reading": "shika",
+        "gloss": "only (with a negative)",
+        "kana": "しか"
+      },
+      {
+        "text": "つかえない。",
+        "reading": "tsukaenai",
+        "gloss": "can't be used",
+        "kana": "つかえない"
       }
     ]
   },
@@ -14020,10 +14038,16 @@
     "english": "Dried Mushrooms",
     "segments": [
       {
-        "text": "干しキノコ",
-        "reading": "hoshi kinoko",
-        "gloss": "dried mushrooms",
-        "kana": "ホシ キノコ"
+        "text": "干し",
+        "reading": "hoshi",
+        "gloss": "dried",
+        "kana": "ほし"
+      },
+      {
+        "text": "キノコ",
+        "reading": "kinoko",
+        "gloss": "mushrooms",
+        "kana": "キノコ"
       }
     ]
   },
@@ -25750,10 +25774,21 @@
     "english": "Requires {0} pieces.",
     "segments": [
       {
-        "text": "{0}個必要",
-        "reading": "ko hitsuyō",
-        "gloss": "{0} pieces required",
-        "kana": "こ ひつよう"
+        "text": "{0}",
+        "reading": "",
+        "gloss": "(number)"
+      },
+      {
+        "text": "個",
+        "reading": "ko",
+        "gloss": "(counter for things), pieces",
+        "kana": "こ"
+      },
+      {
+        "text": "必要",
+        "reading": "hitsuyō",
+        "gloss": "necessary, required",
+        "kana": "ひつよう"
       }
     ]
   },
@@ -30776,10 +30811,70 @@
     "english": "This package seems to belong to someone else",
     "segments": [
       {
-        "text": "この小包は他の人のもののようだ",
-        "reading": "kono kozutsumi wa hoka no hito no mono no yō da",
-        "gloss": "this package seems to be someone else's",
-        "kana": "この こずつみ は ほか の ひと の もの の よう だ"
+        "text": "この",
+        "reading": "kono",
+        "gloss": "this",
+        "kana": "この"
+      },
+      {
+        "text": "小包",
+        "reading": "kozutsumi",
+        "gloss": "package, parcel",
+        "kana": "こずつみ"
+      },
+      {
+        "text": "は",
+        "reading": "wa",
+        "gloss": "(topic marker)",
+        "kana": "は"
+      },
+      {
+        "text": "他",
+        "reading": "hoka",
+        "gloss": "other",
+        "kana": "ほか"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(possessive)",
+        "kana": "の"
+      },
+      {
+        "text": "人",
+        "reading": "hito",
+        "gloss": "person",
+        "kana": "ひと"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(possessive)",
+        "kana": "の"
+      },
+      {
+        "text": "もの",
+        "reading": "mono",
+        "gloss": "thing (belonging to)",
+        "kana": "もの"
+      },
+      {
+        "text": "の",
+        "reading": "no",
+        "gloss": "(links to ようだ)",
+        "kana": "の"
+      },
+      {
+        "text": "よう",
+        "reading": "yō",
+        "gloss": "appearance; seems",
+        "kana": "よう"
+      },
+      {
+        "text": "だ",
+        "reading": "da",
+        "gloss": "(it) is",
+        "kana": "だ"
       }
     ]
   },
