@@ -127,15 +127,8 @@ Glosses are converted once, as the segment data loads, before the font exists. T
 - `ls_font_info [chars]` logs the texture's size and format, and each character's position and offsets.
 - `ls_font_export <path.png>` saves the font's texture as an image, so the generated glyphs can be seen. They are in the strip at the bottom.
 
-## Where the word data lives
+## Word data
 
-The segment data (each entry's Japanese text split into words, with kana, romaji and a gloss for each) is in `assets/segments/ja/`, one JSON file per game table. The mod loads it from there, and the tools in `tools/segment-data/` edit it there. There is no second copy.
+The "segment" data (containing each entry's Japanese text split into words, with kana, romaji and a gloss for each) is in `assets/segments/ja/`, one JSON file per game table. The mod loads it from there, and the tools in `tools/segment-data/` edit it there.
 
-It used to be authored in `tools/extracted-strings/literal-translations/` and copied into a gitignored `assets/segments/ja/` on every build. The copy was needed because of how ModBuildConfig builds the deployed mod folder (from its 4.1.1 package):
-
-- `manifest.json`, `i18n/` and `assets/` come from the **project folder**.
-- Everything else comes from the **build output**. Any `manifest.json`, `i18n/` or `assets/` found there is skipped, so the project's copies win.
-
-So data kept outside `assets/` can't reach the mod's `assets/` folder by being copied into the build output. Keeping the one copy in `assets/` removed the build step and the chance of editing a stale copy.
-
-The same rule means **everything in `assets/` ships**, whatever its file type. Scratch files left there (TSV batches, backups) end up in the deployed mod and its release zip, so keep them elsewhere.
+Note, **everything in `assets/` ships**, whatever its file type. Scratch files left there (TSV batches, backups) end up in the deployed mod and its release zip, so keep them elsewhere.
