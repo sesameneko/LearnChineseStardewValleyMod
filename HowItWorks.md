@@ -1,6 +1,6 @@
 # How it works
 
-Notes on how the mod's main pieces work, one section per piece. For the roadmap and the reasons behind the design, see `Plan.md`. For a short map of the code and the rules for changing it, see `CLAUDE.md`. For bugs that were costly to find, and how they were found, see `PostMortems.md`.
+Notes on how the mod's main pieces work, one section per piece, and the reasons behind the design. For a short map of the code and the rules for changing it, see `CLAUDE.md`. For bugs that were costly to find, and how they were found, see `PostMortems.md`.
 
 ## Hover translation
 
@@ -14,12 +14,12 @@ The mod doesn't recalculate where the tooltip went. `drawHoverText` draws its ow
 
 ### Building the lookup
 
-`TranslationIndex.cs` loads every `Strings/*` table, plus the per-NPC and per-festival families, in both locales. A non-English locale is loaded by its suffixed name (`Strings/Objects.ja-JP`). English has no suffixed file on disk, so the whole batch loads under one temporary change of `LocalizedContentManager.CurrentLanguageCode`. Because of that change, the index is built on `SaveLoaded` and never during a draw.
+`TranslationIndex.cs` loads every `Strings/*` table, plus the per-NPC and per-festival families, in both locales. A non-English locale is loaded by its suffixed name (`Strings/Objects.ja-JP`). English has no suffixed file on disk, so the whole batch loads under one temporary change of `LocalizedContentManager.CurrentLanguageCode`. Because of that change, the index is built on `SaveLoaded` and never during a draw. Both halves were confirmed live with `ls_spike_locale`, with the game set to Japanese: the suffixed load works through `Helper.GameContent.Load` with no need to go around SMAPI, and the language-code change had no visible side effects.
 
 `TranslationMap.cs` holds the joined table (no game types; unit-tested). The text on screen often isn't the stored string, and the map handles each way they can differ:
 
 - **Variants and wrapping.** It splits on the game's `^` gender-variant delimiter. The game word-wraps tooltips by inserting newlines, in Japanese in the middle of a sentence, so the map keeps a whitespace-stripped index as well as a whitespace-collapsed one.
-- **Token templates.** About 9% of entries are templates like `日記 （{0}）` → `Journal ({0})`, filled in with `string.Format` when drawn. They're registered only when both locales use the same set of tokens, matched by regex when an exact lookup fails, and filled **by token index**, because locales order tokens differently. The most literal templates are tried first, each is screened with an ordinal `Contains` on its longest literal run, and results (misses included) are memoised. A hovered tooltip looks itself up every frame, and scanning all 699 templates without these guards cost about 2.7ms per frame.
+- **Token templates.** Templates like `日記 （{0}）` → `Journal ({0})` are filled in with `string.Format` when drawn. When counted, 761 of the 8,069 shared entries (about 9%) were templates whose two locales use the same set of tokens. Only those are registered. They're matched by regex when an exact lookup fails, and filled **by token index**, because locales order tokens differently (`攻撃 +{0}` vs `+{0} Attack`). 699 of the 761 register. The rest are refused, since a template that is all token, or has two tokens with no text between them, would match any text or split it arbitrarily. A captured value that is itself a known source string is translated too, so an item name filled into a sentence doesn't stay in Japanese. The most literal templates are tried first, each is screened with an ordinal `Contains` on its longest literal run, and results (misses included) are memoised. A hovered tooltip looks itself up every frame, and scanning all 699 templates without these guards cost about 2.7ms per frame. With them, an uncached miss takes about 0.065ms.
 - **Lookup order.** Exact whole match first, then paragraph by paragraph, and only then templates on the whole text. A template's `{N}` capture will otherwise swallow a blank line and every paragraph after it. The secret-note header `ひみつのメモ #{0}` once matched an entire note that way.
 
 ### Achievements and secret notes
@@ -34,6 +34,13 @@ The mod doesn't recalculate where the tooltip went. `drawHoverText` draws its ow
 ### The HUD clock
 
 The Japanese clock isn't in any string table. `DayTimeMoneyBox.draw` builds it in code, with a hardcoded ja branch: `{day}日 ({weekday})` and `{午前|午後} {h}:{mm}`, where noon and midnight are written as 0. `ClockSegments.cs` lists every date and time the clock can draw as an exact `SegmentIndex` entry rather than as a template, because the readings are irregular per value (1日 is ついたち, 4時 is よじ). `SegmentDataLoader` adds them when the source language is `ja`.
+
+## Frozen tooltips
+
+A frozen tooltip stays where it is with its content fixed, so the cursor can move across it and hover the words inside. `Z` locks and unlocks one, and holding `Right Shift` pins one until the key is released (`ModConfig.FreezeTooltip` / `HoldFreezeTooltip`). `FrozenTooltip.cs` holds the state, and `TooltipReissue.cs` draws it. Two facts about the game, from the 1.6.15 IL, make this possible:
+
+- **Hover is polled, and nothing marks it handled.** `Game1.updateActiveMenu` calls the menu's `performHoverAction` every frame, and nested menus forward it by hand. Neither it nor `receiveLeftClick` returns anything. A handler writes its result to fields (`hoverText`, `hoverItem`) that `draw()` reads later in the frame. A Harmony prefix returning `false` is therefore the way to block hover, and one on the StringBuilder `drawHoverText` suppresses every vanilla tooltip.
+- **`drawHoverText` can be re-issued at a fixed position.** Its `overrideX`/`overrideY` parameters (default `-1`, meaning "relative to the cursor") draw a pixel-identical vanilla tooltip, money line, buff icons and all, wherever they point. So the frozen tooltip is vanilla's own, re-drawn with the argument list `HoverTextPatches` recorded, rather than a hand-built copy.
 
 ## Word-position detection
 
@@ -69,9 +76,24 @@ Characters that are never drawn never get a cell. That covers line breaks, chara
 
 Nothing in this path measures text or works out where lines break. The positions are exactly what the renderer did.
 
+### Matching drawn text to segment data
+
+`SegmentIndex.TryGetSegments` finds the segment data for a drawn string. Much of what the game draws isn't stored verbatim, so the lookup tries these in order:
+
+1. **Exact**, then **ignoring whitespace**.
+2. **Token template.** 833 authored entries hold `{N}` tokens (the load-screen date `{2}年目、{0}日、{1}`, `手持ちのお金：{0}G`, `{0} 牧場`). They're matched with `TranslationMap`'s regex builder, and the captured values are substituted into the segments. A segment that is only a token, whose value is itself an entry (a season, an item name), takes that entry's segments and gloss.
+3. **Prefix of a longer entry.** Mail's stored text ends in `%item … %%[#]title` commands that the game removes before drawing. Drawn text of 6+ characters that starts a longer entry uses that entry's segments, clipped. Shorter text too often starts something unrelated: a drawn `500` is the start of `50000Gをかせぐ`.
+4. **Composite.** Quest descriptions (several `ItemDeliveryQuest` strings, a filled-in item and NPC name, two reward templates), clothing description + `可染性。`, and dialogue pages after the first are built from several stored pieces. The drawn text is tiled with known pieces laid end to end: whole entries of 2+ characters, templates placed mid-text, and runs of 6+ characters from inside a longer entry. The tiling covering the most characters wins, then the one with the fewest pieces. A tiling under 70% coverage is rejected as coincidence, and uncovered characters keep the character-class split. A template's captured value only counts as covered if it is itself an entry. Otherwise `{0} 牧場` placed at the start of a quest captured everything up to 牧場主 and labelled half the sentence "(farm name)".
+
+Whatever is found is re-laid over the drawn text, so the segments reproduce the drawn lines exactly, including whitespace the game added (`手持ちのお金： 29,560G` has a space the template doesn't). Non-exact results are memoised per drawn string. The composite's first lookup of a new string costs about 20–40ms (see `TODOs.md`).
+
+The HUD clock has no template anywhere, so it's handled by `ClockSegments` (see "The HUD clock" above).
+
+Without segment data, words come from a character-class split (`TextHitTest.SplitSegments`), which groups runs of the same script. It merges an unbroken kanji run (`長時間快適` is really 長時間 + 快適) and a long hiragana run (`たちはきっといるはず` is really たち + は + きっと + いる + はず). This is why every string has hand-authored data rather than a runtime tokenizer: Japanese word boundaries can't be derived by rule.
+
 ### Text word hover ignores
 
-`Patches/HoverExclusionPatches.cs` holds a list of rules. Each is a game draw method plus a font test; the only one so far is `Toolbar.draw` with `tinyFont`, for the hotbar slot numbers. Text recorded while a rule's method is running is flagged `DrawnText.Excluded`. Hovering it shows no label, and clicking it doesn't save anything. It still covers the text beneath it, so the hover doesn't reach through to that text. The font test keeps other text drawn by the same method hoverable, such as the item tooltip `Toolbar.draw` also draws. To exclude more text, add a rule there.
+`TextHitTest.IsHoverable` decides by content. A word from the character-class split that has no letters in it (kana and kanji count as letters) gets no label, because its label would only repeat it. That covers the hotbar's 1-9, 0, - and =. A word from segment data is always hoverable, numbers included, because it was authored with a reading (5000 ごせん), and the reading is the point.
 
 The word-hover label (gloss, romaji, kana on three lines) is built by `WordHoverOverlay.Describe`. Its romaji is generated from each segment's `kana` at runtime by `KanaRomaji.cs`, a C# port of `tools/segment-data/kana_to_romaji.py`, not taken from the data's `reading`.
 
@@ -109,11 +131,13 @@ Left-clicking a word saves it as a flashcard, and the pause menu gets a tab for 
 
 ### Saving a word
 
-A card is made from whatever word hover last found under the mouse. Input is handled before each frame is drawn, so that's the word the player saw when they clicked. Only words with segment data can be saved, since the character-class split has no meaning or reading to put on a card. When a click saves a word, `ModEntry` suppresses it so the game underneath never sees it. A click that misses every word passes through as normal.
+A card is made from whatever word hover last found under the mouse. Input is handled before each frame is drawn, so that's the word the player saw when they clicked. Only words with segment data can be saved, since the character-class split has no meaning or reading to put on a card. When a click saves a word, `ModEntry` suppresses it so the game underneath never sees it. This is a deliberate trade: a click on a word can't also advance dialogue, pick a question response or buy a shop row. A click that misses every word passes through as normal, and the `Click to Save Words` GMCM option turns the gesture off.
 
 A card is identified by source language, word and kana: 上手 read じょうず and 上手 read うわて are separate cards. The word is trimmed of the punctuation segment data attaches to it (`ありがとう！` becomes `ありがとう`). A gloss that is one parenthesised note, like `(object marker)` or `(your name)`, marks a particle or placeholder, and those are refused.
 
-Clicking a saved word again depends on the sentence. The same sentence removes that sentence from the card, and removing the last one deletes the card. A new sentence, or a new meaning, is added to the existing card.
+Clicking a saved word again depends on the sentence. The same sentence removes that sentence from the card, and removing the last one deletes the card. A new sentence, or a new meaning, is added to the existing card. A click with no sentence on a card that already has some changes nothing. Deletes are permanent.
+
+Each save or removal shows a HUD message and plays a sound, and the hover label puts a ★ before the gloss of a word already saved.
 
 ### Pointing back at the sentence
 
@@ -133,7 +157,7 @@ The game has no way to add a pause-menu tab, so `Patches/GameMenuPatches.cs` pat
 - Tab switching turns a tab's name into a page number with a hardcoded lookup that returns -1 for any name it doesn't know. A postfix maps ours.
 - `draw` picks each tab's icon by the same hardcoded names and draws nothing for ours. The icon is drawn from the mod's own overlay pass instead.
 
-`FlashcardsPage.cs` is the tab itself. **Review** shows one card at a time. The back has the kana, romaji and meanings, plus the sentence page the word was on, with the word underlined and the literal and official English below it. Marking a card missed or known only adds to its counts: nothing is scheduled. **Browse** lists every card and can delete them. The tab draws inside `TextCapturePatches.SuppressRecording()`, so none of its own text can be hovered or saved.
+`FlashcardsPage.cs` is the tab itself. **Review** shows one card at a time. The back has the kana, romaji and meanings, plus the sentence page the word was on, with the word underlined and the literal and official English below it. Marking a card missed or known only adds to its counts: nothing is scheduled. The order (newest, oldest, or fewest correct) is picked at the top of the tab and kept in config. `Space` flips, `1` marks missed and `2` marks known. **Browse** lists every card and can delete them, with a second click to confirm. Only cards for the configured source language are shown. The tab can't be navigated with a controller or reached with the shoulder buttons. The tab draws inside `TextCapturePatches.SuppressRecording()`, so none of its own text can be hovered or saved.
 
 ## Macron vowels in the font
 

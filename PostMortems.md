@@ -10,7 +10,7 @@ Bugs that cost real time to find, what caused them, and how to avoid them next t
 
 **Fix:** draw from `Display.RenderedHud` / `Display.RenderedActiveMenu`. They run inside the draw, in UI mode, in the same sprite batch and coordinate space as the menus. Hit-test against `Game1.getMouseX(ui_scale: true)`: the no-arg `getMouseX()` picks its space from `Game1.uiMode`.
 
-This was introduced once for the translation tooltip (early `Plan.md` M1 notes still describe drawing it from `Display.Rendered`) and again for the word-hover overlay.
+This was introduced once for the translation tooltip, which was first drawn from `Display.Rendered` because it's the one event that comes after every vanilla tooltip, and again for the word-hover overlay.
 
 ## Word overlay buried under the frozen tooltip
 
@@ -30,13 +30,15 @@ This was introduced once for the translation tooltip (early `Plan.md` M1 notes s
 
 **Cause:** `IGenericModConfigMenuApi.cs` was refreshed from upstream `develop`, which is ahead of the installed GMCM (1.16.0). SMAPI's Pintail proxy needs *every* declared method to map onto the real DLL, so one newer method (`AddComplexOptionWithGamepadSupport`) broke the whole proxy.
 
-**Fix and details:** see the constraints section of `Plan.md`.
+**Fix:** that method and everything declared after it upstream were removed (`SetTitleScreenOnlyForNextOptions`, `OnFieldChanged`, `OpenModMenu`, `OpenModMenuAsChildMenu`, `TryGetCurrentMenu`). Everything before it (`Register` through `AddPageLink`, including `AddKeybind`/`AddKeybindList`) is known to work against 1.16.0, because Pintail reports the *first* method it can't map, in declaration order.
+
+**Why it's easy to repeat:** there's no shortcut to the right upstream version. GMCM's repo tags stop at 1.8.1, so there's no tag for 1.16.0. The installed DLL is the only ground truth, and it can't be reflected into on this Mac either, because it references MonoGame types that won't load under the arm64 .NET SDK. Test that `GetApi` succeeds in game after any change to the file.
 
 ## Coverage counters read "done" while whole asset families were missing
 
 **Symptom:** villager dialogue, events, festivals, TV and schedules had no segment data, while every `segtool.py status` counter read `pending=0`.
 
-**Cause:** `status` measures coverage against `tools/extracted-strings/`, i.e. against files somebody already chose to extract. It can't report an asset family nobody imported.
+**Cause:** `status` measures coverage against `tools/extracted-strings/`, i.e. against files somebody already chose to extract. It can't report an asset family nobody imported. `tables()` listed `extracted-strings/ja/` plus a hardcoded `DATA_TABLES`, so `pending=0` could only ever mean "nothing left in what we already imported", and the docs then described that as "every table". The scope itself had been set by a file-format test, "dictionary-shaped tables under `Content/Strings/`", inherited from what `XnbStringTool` had first been pointed at. `Characters/Dialogue/Pam.ja-JP.xnb` is a plain `Dictionary<string,string>` that parses with no tool changes. It was never rejected, just never looked at. The five missing families came to 6,519 entries, found on 2026-09-22 when villager dialogue showed up untranslated in play.
 
 **Fix:** `segtool.py audit` walks the installed game's `Content/**/*.ja-JP.xnb` and classifies every localized asset as covered, excluded with a reason, or a known gap, and exits non-zero on anything that's in none of those. It then checks text coverage: every Japanese character must be held by an authored entry, or by a skipped script whose spoken lines were extracted. That second check found the Quests completion lines (a record field missing from `DATA_TABLES`) and the dialogue inside skipped event scripts.
 

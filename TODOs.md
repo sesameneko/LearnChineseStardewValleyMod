@@ -5,6 +5,7 @@
 - [ ] In-game checks
   - [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
   - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
+  - [ ] [Verify flashcards](#verify-flashcards)
 - [ ] Kana readings
   - [ ] [Review kana long vowels](#review-kana-long-vowels)
   - [ ] [Normalise kana script](#normalise-kana-script)
@@ -24,6 +25,9 @@
     - [ ] Narrow template attempts
   - [ ] [Quiet fallback log](#quiet-fallback-log)
   - [ ] [Remove debug logs](#remove-debug-logs)
+  - [ ] [Guard gendered-string splitting](#guard-gendered-string-splitting)
+- [ ] Features
+  - [ ] [Explanatory translation mode](#explanatory-translation-mode)
 
 ## Details
 
@@ -42,6 +46,15 @@ Sentence translation for achievements and secret notes is wired up and unit-test
 
 - Hover them in the Collections tab, including a long journal scrap for the `(...)` path.
 - Or run `ls_lookup 新人牧場主`, which should give `Greenhorn (15k)`.
+
+### Verify flashcards
+
+Click-to-save and the pause-menu tab are built but haven't been tried live. Check:
+
+- the tab icon's placement and look (a Lost Book on a menu tile, since vanilla's tab art has no blank frame)
+- that suppressing the click really stops dialogue from advancing and shop rows from being bought
+- the card back's layout at different UI scales
+- that the ★ before a saved word's gloss renders in the hover label
 
 ### Review kana long vowels
 
@@ -111,6 +124,18 @@ The "fallback split" hover log fires on any text, and most of what it logged in 
 
 Remove the debug logging added while troubleshooting.
 
+### Guard gendered-string splitting
+
+Some locales have known bugs in how the game's `^` gender-variant delimiter is used. Where splitting a string on `^` gives something malformed, show no translation rather than a garbled one. There's no sign this has been done.
+
+### Explanatory translation mode
+
+A second translation mode: offline, AI-generated semi-literal translations shown instead of the game's official English. Not built. The data format is defined in the stub `assets/translations/explanatory/ja.json`: entries keyed by a hash of the source string, each holding `original`, `literal` (a word-for-word gloss) and `natural`. Plan:
+
+- Load it alongside `TranslationIndex`, keyed by the original string, so both modes share one lookup path.
+- Add a config option or keybind to switch which mode is shown, falling back to the literal translation when there's no explanatory entry.
+- Generating the data is out of scope. It's produced elsewhere and dropped into `assets/`.
+
 ## The pipeline
 
 Details are in `tools/segment-data/README.md`.
@@ -156,7 +181,7 @@ python3 tools/segment-data/segtool.py audit      # coverage vs the game install
 1. **Assets:** all 207 Japanese-localized assets are covered or excluded with a reason, with no known gaps left.
 2. **Text:** every Japanese character in a covered asset is held by an entry.
 
-Run it after any game update. It fails loudly on anything new, which is what `status` could never do. `status` only measures against files somebody already chose to extract. That blind spot is how dialogue, events, festivals, TV and schedules sat unnoticed while everything read `pending=0` (post-mortem in `Plan.md`'s data task).
+Run it after any game update. It fails loudly on anything new, which is what `status` could never do. `status` only measures against files somebody already chose to extract. That blind spot is how dialogue, events, festivals, TV and schedules sat unnoticed while everything read `pending=0` (see `PostMortems.md`).
 
 How it got here, for the record:
 
