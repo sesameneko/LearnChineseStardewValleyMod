@@ -343,8 +343,8 @@ namespace ModLogic.Tests
         public void Every_authored_segment_resolves_back_to_its_own_text()
         {
             // the loader's offset arithmetic, over a real file: each segment's span must be exactly its text
-            string path = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..",
-                "extracted-strings", "literal-translations", "Dialogue-Abigail.json");
+            string path = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "..",
+                "assets", "segments", "ja", "Dialogue-Abigail.json");
             using var document = JsonDocument.Parse(File.ReadAllText(path));
 
             int checkedCount = 0;

@@ -36,7 +36,7 @@ re-running this script would undo that work. It is kept for reference only.
 import json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-NAMES = os.path.join(ROOT, "tools", "extracted-strings", "literal-translations", "Objects_Name.json")
+NAMES = os.path.join(ROOT, "assets", "segments", "ja", "Objects_Name.json")
 SOURCE = os.path.join(ROOT, "tools", "extracted-strings", "ja", "Objects.json")
 
 COMMENT = (

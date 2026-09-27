@@ -6,7 +6,7 @@ for Japanese).
 
 ## The schema — one format, everywhere
 
-Every file in `../extracted-strings/literal-translations/` is a JSON object keyed
+Every file in `assets/segments/ja/` is a JSON object keyed
 by the game's own string key. `_comment` is a header string; every other value is
 an object:
 
@@ -142,9 +142,9 @@ like punctuation. That way a page break always falls on a segment boundary.
 
 ## Where the files live
 
-`../extracted-strings/literal-translations/` is the **tracked source of truth**.
-`assets/segments/ja/` is gitignored and generated from it by the csproj's
-`CopySegmentData` target on every build — never edit that copy.
+`assets/segments/ja/` is the **tracked source of truth**, and ships with the mod
+as-is: ModBuildConfig deploys the project's whole `assets/` folder, whatever the
+file type. Keep scratch files (TSV batches, backups) out of it, or they ship too.
 
 ## Authoring a table
 

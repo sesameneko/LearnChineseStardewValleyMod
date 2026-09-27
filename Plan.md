@@ -99,7 +99,7 @@ This is worth doing before M3 because it reaches the same end goal (hovering a s
 - Suppress vanilla tooltips while frozen: prefix returning `false` on the **StringBuilder** overload of `IClickableMenu.drawHoverText` — the same single funnel M1 patches, so one prefix suppresses every tooltip in the game.
 - Re-issue the frozen tooltip ourselves via `drawHoverText` with `overrideX`/`overrideY` set to the frozen position.
 - Optionally also prefix `performHoverAction` to return `false` while frozen, so the menu underneath stops animating button scales and changing `hoverItem` as the cursor crosses the frozen box. Cosmetic, not required.
-- Word hit-testing: compute segment x-ranges **once** on freeze (not per frame) by measuring cumulative prefixes in the same font. No runtime tokenizer needed — `tools/extracted-strings/literal-translations` already guarantees that concatenating a segment's `text` values reproduces the source string character-for-character.
+- Word hit-testing: compute segment x-ranges **once** on freeze (not per frame) by measuring cumulative prefixes in the same font. No runtime tokenizer needed — `assets/segments/ja` already guarantees that concatenating a segment's `text` values reproduces the source string character-for-character.
 - Per-word definition tooltip: reuse `TooltipOverlay`.
 - **First milestone deliverable is a debug rectangle per word**, before any definition lookup is wired up — that proves freeze + suppression + per-word hit-testing in isolation.
 
@@ -108,7 +108,7 @@ This is worth doing before M3 because it reaches the same end goal (hovering a s
 ### Data task — hand-segmented word boundaries for every string table *(complete 2026-09-25)*
 **Not a code milestone; a data-production gap that caps how good word-level hover can get.** Word boundaries for Japanese can't be derived by rule — hiragana carries particles, inflections and whole words with no orthographic break — so the mod reads them from hand-segmented data rather than tokenizing at runtime.
 
-- **Status** *(complete, 2026-09-25)*: `tools/extracted-strings/literal-translations/` holds **15,768 hand-authored entries**, covering every piece of Japanese text the game ships. `segtool.py status` reports pending=0, `validate` passes, and `audit` reports all 207 Japanese-localized assets covered, with no known gaps. 10 keys are deliberately skipped: event scripts the game never draws whole, whose spoken lines are authored as separate `<key>#<n>` entries.
+- **Status** *(complete, 2026-09-25)*: `assets/segments/ja/` (formerly `tools/extracted-strings/literal-translations/`) holds **15,768 hand-authored entries**, covering every piece of Japanese text the game ships. `segtool.py status` reports pending=0, `validate` passes, and `audit` reports all 207 Japanese-localized assets covered, with no known gaps. 10 keys are deliberately skipped: event scripts the game never draws whole, whose spoken lines are authored as separate `<key>#<n>` entries.
 - **How coverage grew**:
   - **9,039 entries**: every `Strings/*` table plus the `Content/Data` record tables in `DATA_TABLES`.
   - **6,519 entries**: five asset families that were never in scope at all. They were found 2026-09-22, when villager dialogue turned up untranslated in play (sizes as measured then):

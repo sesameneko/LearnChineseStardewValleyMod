@@ -163,8 +163,8 @@ namespace ModLogic.Tests
         public void Loads_the_real_hand_segmented_objects_data()
         {
             string path = Path.GetFullPath(Path.Combine(
-                AppContext.BaseDirectory, "..", "..", "..", "..",
-                "extracted-strings", "literal-translations", "Objects_Description.json"));
+                AppContext.BaseDirectory, "..", "..", "..", "..", "..",
+                "assets", "segments", "ja", "Objects_Description.json"));
             Assert.True(File.Exists(path), $"Expected hand-segmented data at '{path}'.");
 
             var index = new SegmentIndex();
@@ -406,8 +406,8 @@ namespace ModLogic.Tests
         private static void LoadRealTable(SegmentIndex index, string table)
         {
             string path = Path.GetFullPath(Path.Combine(
-                AppContext.BaseDirectory, "..", "..", "..", "..",
-                "extracted-strings", "literal-translations", table + ".json"));
+                AppContext.BaseDirectory, "..", "..", "..", "..", "..",
+                "assets", "segments", "ja", table + ".json"));
 
             using var document = JsonDocument.Parse(File.ReadAllText(path));
             foreach (var property in document.RootElement.EnumerateObject())

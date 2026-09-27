@@ -5,7 +5,7 @@ Sub-commands:
   status                    coverage per string table
   batch <Table> [n] [--offset k]
                             print the next n un-authored entries as an authoring worklist
-  merge <Table> <file.tsv>  fold an authored batch into the literal-translations source
+  merge <Table> <file.tsv>  fold an authored batch into the assets/segments/ja source
   skip  <Table> <file.txt>  record keys deliberately left unsegmented
   validate [-v]             re-check every bundled segment file; also warns (never fails)
                             on tables whose segments look clause-sized, -v lists examples
@@ -78,9 +78,8 @@ CONTENT_FAMILIES = {
     "Events": ("Data/Events", "script"),
 }
 
-# tracked source of truth; assets/segments/ja is generated from it by the
-# csproj's CopySegmentData target and is gitignored
-OUT = os.path.join(ROOT, "tools", "extracted-strings", "literal-translations")
+# tracked source of truth, shipped with the mod as-is
+OUT = os.path.join(ROOT, "assets", "segments", "ja")
 SKIPS = os.path.join(ROOT, "tools", "segment-data", "skipped")
 
 FIELD, SEG = "¦", "‖"

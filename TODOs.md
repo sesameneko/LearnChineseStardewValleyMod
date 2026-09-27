@@ -131,7 +131,7 @@ key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
 
 - Kana is the source of truth; romaji is generated. Write only the words.
 - `merge` attaches punctuation and dialogue markup to a neighbouring segment, fills in kana for kanji-free segments, and rejects any line it can't line up with the source.
-- Output goes to `tools/extracted-strings/literal-translations/`, the tracked source of truth. `assets/segments/` is generated from it at build time.
+- Output goes to `assets/segments/ja/`, the tracked source of truth, which ships with the mod as-is.
 
 ## Done
 

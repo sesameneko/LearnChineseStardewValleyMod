@@ -25,7 +25,7 @@ import os
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DATA = os.path.join(ROOT, "tools", "extracted-strings", "literal-translations")
+DATA = os.path.join(ROOT, "assets", "segments", "ja")
 
 # hiragana; katakana is folded onto it by codepoint shift first. Two-kana combinations are
 # tried before single kana.

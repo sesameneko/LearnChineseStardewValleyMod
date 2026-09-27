@@ -26,7 +26,7 @@ import sys
 import glob
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DATA = os.path.join(ROOT, "tools", "extracted-strings", "literal-translations")
+DATA = os.path.join(ROOT, "assets", "segments", "ja")
 REVIEW = os.path.join(os.path.dirname(os.path.abspath(__file__)), "kana-review.tsv")
 
 LONG = "\x01"  # marks "the preceding vowel was written with a macron"

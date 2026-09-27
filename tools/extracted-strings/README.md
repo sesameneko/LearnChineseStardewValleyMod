@@ -14,9 +14,10 @@ readable JSON (`{ typeReaders, wasCompressed, entries }`). `credits.xnb` is
 excluded -- it's a `List<string>`, not a dictionary, and isn't relevant to
 UI/item translation.
 
-## `literal-translations/`
+## The literal translations (`assets/segments/ja/`)
 
-Hand-translated **from the Japanese source text** (not just a copy of the
+These used to live here as `literal-translations/`; they now live in the mod's
+`assets/segments/ja/`, which ships as-is. Hand-translated **from the Japanese source text** (not just a copy of the
 official English localization).
 
 **Every file here uses one schema**, whatever the table: a JSON object keyed by
@@ -25,7 +26,7 @@ than one translation per sentence. There is no second format -- item names used
 to be a flat `"key": "English (reading)"` map, and were migrated into this schema
 by `../segment-data/migrate_names.py.retired` (retired: that one-off migration has
 been applied, and re-running it would flatten the hand-authored word segments in
-`literal-translations/Objects_Name.json`). Anything new must be written this way,
+`assets/segments/ja/Objects_Name.json`). Anything new must be written this way,
 because `SegmentDataLoader` silently skips entries whose value isn't an object.
 
 Coverage is tracked by `../segment-data/segtool.py status`; that script is also
