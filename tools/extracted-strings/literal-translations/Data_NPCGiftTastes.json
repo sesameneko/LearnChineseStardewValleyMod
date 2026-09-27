@@ -47,39 +47,81 @@
     "segments": [
       {
         "text": "ねえ、",
-        "reading": "nē",
+        "kana": "ねえ",
         "gloss": "hey",
-        "kana": "ねい"
+        "reading": "nē"
       },
       {
         "text": "あたし",
-        "reading": "atashi",
+        "kana": "あたし",
         "gloss": "I",
-        "kana": "あたし"
+        "reading": "atashi"
       },
       {
-        "text": "がこれ",
-        "reading": "ga kore",
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "がこれ"
+        "reading": "kore"
       },
       {
-        "text": "を欲しがってる",
-        "reading": "o hoshigatteru",
-        "gloss": "was wanting",
-        "kana": "を ほしがってる"
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
       },
       {
-        "text": "ってどうしてわかったの？",
-        "reading": "tte dōshite wakatta no",
-        "gloss": "how did you know",
-        "kana": "って どうして わかった の"
+        "text": "欲しがってる",
+        "kana": "ほしがってる",
+        "gloss": "wanted",
+        "reading": "hoshigatteru"
       },
       {
-        "text": "ちょうどピッタリだね！",
-        "reading": "chōdo pittari da ne",
-        "gloss": "it's just right",
-        "kana": "チョード ピッタリ ダ ネ"
+        "text": "って",
+        "kana": "って",
+        "gloss": "(quoting)",
+        "reading": "tte"
+      },
+      {
+        "text": "どうして",
+        "kana": "どうして",
+        "gloss": "how",
+        "reading": "dōshite"
+      },
+      {
+        "text": "わかった",
+        "kana": "わかった",
+        "gloss": "knew",
+        "reading": "wakatta"
+      },
+      {
+        "text": "の？",
+        "kana": "の",
+        "gloss": "(question)",
+        "reading": "no"
+      },
+      {
+        "text": "ちょうど",
+        "kana": "ちょうど",
+        "gloss": "just",
+        "reading": "chōdo"
+      },
+      {
+        "text": "ピッタリ",
+        "kana": "ピッタリ",
+        "gloss": "right",
+        "reading": "pittari"
+      },
+      {
+        "text": "だね！",
+        "kana": "だね",
+        "gloss": "(it is, isn't it)",
+        "reading": "dane"
       }
     ]
   },
@@ -148,28 +190,46 @@
     "english": "This is awesome! I really love this stuff!",
     "segments": [
       {
-        "text": "サイコーじゃんか！",
-        "reading": "saikō jan ka",
-        "gloss": "isn't this the best",
-        "kana": "サイコー ジャン カ"
+        "text": "サイコー",
+        "kana": "サイコー",
+        "gloss": "the best",
+        "reading": "saikō"
+      },
+      {
+        "text": "じゃんか！",
+        "kana": "じゃんか",
+        "gloss": "(isn't it)",
+        "reading": "janka"
       },
       {
         "text": "オレ、",
-        "reading": "ore",
+        "kana": "オレ",
         "gloss": "I",
-        "kana": "オレ"
+        "reading": "ore"
       },
       {
         "text": "これ",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "すっげー好きなんだ！",
-        "reading": "suggē suki na n da",
-        "gloss": "really love it",
-        "kana": "スッゲー スキ ナ ン ダ"
+        "text": "すっげー",
+        "kana": "すっげー",
+        "gloss": "really",
+        "reading": "suggē"
+      },
+      {
+        "text": "好き",
+        "kana": "すき",
+        "gloss": "love",
+        "reading": "suki"
+      },
+      {
+        "text": "なんだ！",
+        "kana": "なんだ",
+        "gloss": "(you see)",
+        "reading": "nanda"
       }
     ]
   },
@@ -262,34 +322,64 @@
     "english": "This... for me? Oh, I don't know how to thank you.",
     "segments": [
       {
-        "text": "これを…",
-        "reading": "kore o",
+        "text": "これ",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ を"
+        "reading": "kore"
+      },
+      {
+        "text": "を…",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
       },
       {
         "text": "わたし",
-        "reading": "watashi",
+        "kana": "わたし",
         "gloss": "me",
-        "kana": "わたし"
+        "reading": "watashi"
       },
       {
         "text": "に？",
-        "reading": "ni",
-        "gloss": "for",
-        "kana": "に"
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
       },
       {
         "text": "ああ、",
-        "reading": "ā",
+        "kana": "ああ",
         "gloss": "oh",
-        "kana": "ああ"
+        "reading": "ā"
       },
       {
-        "text": "なんてお礼を言ったらいいか。",
-        "reading": "nante o-rei o ittara ii ka",
-        "gloss": "how should I thank you",
-        "kana": "なんて おれい を いったら いい か"
+        "text": "なんて",
+        "kana": "なんて",
+        "gloss": "what",
+        "reading": "nante"
+      },
+      {
+        "text": "お礼",
+        "kana": "おれい",
+        "gloss": "thanks",
+        "reading": "orei"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "言ったら",
+        "kana": "いったら",
+        "gloss": "should I say",
+        "reading": "ittara"
+      },
+      {
+        "text": "いいか。",
+        "kana": "いいか",
+        "gloss": "I wonder",
+        "reading": "iika"
       }
     ]
   },
@@ -424,16 +514,28 @@
     "english": "That's a fun present. Thanks!",
     "segments": [
       {
-        "text": "おもしろいプレゼントだな。",
-        "reading": "omoshiroi purezento da na",
-        "gloss": "that's an interesting present",
-        "kana": "オモシロイ プレゼント ダ ナ"
+        "text": "おもしろい",
+        "kana": "おもしろい",
+        "gloss": "fun",
+        "reading": "omoshiroi"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "だな。",
+        "kana": "だな",
+        "gloss": "(it is)",
+        "reading": "dana"
       },
       {
         "text": "ありがとう！",
-        "reading": "arigatō",
-        "gloss": "thank you",
-        "kana": "ありがとう"
+        "kana": "ありがとう",
+        "gloss": "thanks",
+        "reading": "arigatō"
       }
     ]
   },
@@ -515,15 +617,33 @@
     "segments": [
       {
         "text": "ありがとう！",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       },
       {
-        "text": "とても興味深いサンプルだね。",
-        "reading": "totemo kyōmibukai sanpuru da ne",
-        "gloss": "a very interesting specimen",
-        "kana": "トテモ キョーミブカイ サンプル ダ ネ"
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very",
+        "reading": "totemo"
+      },
+      {
+        "text": "興味深い",
+        "kana": "きょうみぶかい",
+        "gloss": "interesting",
+        "reading": "kyōmibukai"
+      },
+      {
+        "text": "サンプル",
+        "kana": "サンプル",
+        "gloss": "specimen",
+        "reading": "sanpuru"
+      },
+      {
+        "text": "だね。",
+        "kana": "だね",
+        "gloss": "(it is)",
+        "reading": "dane"
       }
     ]
   },
@@ -581,51 +701,81 @@
     "segments": [
       {
         "text": "ねえ、",
-        "reading": "nē",
+        "kana": "ねえ",
         "gloss": "hey",
-        "kana": "ねい"
+        "reading": "nē"
       },
       {
         "text": "これ",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "すっごく気に入ったよ。",
-        "reading": "suggoku ki ni itta yo",
-        "gloss": "I really liked",
-        "kana": "すっごく き に いった よ"
+        "text": "すっごく",
+        "kana": "すっごく",
+        "gloss": "really",
+        "reading": "suggoku"
+      },
+      {
+        "text": "気に入った",
+        "kana": "きにいった",
+        "gloss": "liked",
+        "reading": "kiniitta"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       },
       {
         "text": "あなた",
-        "reading": "anata",
+        "kana": "あなた",
         "gloss": "you",
-        "kana": "あなた"
+        "reading": "anata"
       },
       {
         "text": "って、",
-        "reading": "tte",
-        "gloss": "(topic marker)",
-        "kana": "って"
+        "kana": "って",
+        "gloss": "(as for)",
+        "reading": "tte"
       },
       {
         "text": "鉱山",
-        "reading": "kōzan",
-        "gloss": "mines",
-        "kana": "こうざん"
+        "kana": "こうざん",
+        "gloss": "the mines",
+        "reading": "kōzan"
       },
       {
-        "text": "からいいもの",
-        "reading": "kara ii mono",
-        "gloss": "good things from",
-        "kana": "からいいもの"
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
       },
       {
-        "text": "見つけてくるよね。",
-        "reading": "mitsukete kuru yo ne",
-        "gloss": "do go and find",
-        "kana": "みつけて くる よ ね"
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good",
+        "reading": "ii"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things",
+        "reading": "mono"
+      },
+      {
+        "text": "見つけてくる",
+        "kana": "みつけてくる",
+        "gloss": "find and bring",
+        "reading": "mitsuketekuru"
+      },
+      {
+        "text": "よね。",
+        "kana": "よね",
+        "gloss": "(don't you)",
+        "reading": "yone"
       }
     ]
   },
@@ -701,39 +851,87 @@
     "segments": [
       {
         "text": "あなたたち",
-        "reading": "anatatachi",
-        "gloss": "you lot",
-        "kana": "あなたたち"
+        "kana": "あなたたち",
+        "gloss": "you (plural)",
+        "reading": "anatatachi"
       },
       {
-        "text": "の種族",
-        "reading": "no shuzoku",
-        "gloss": "'s species",
-        "kana": "の しゅぞく"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
       },
       {
-        "text": "はどうか知らないけど、",
-        "reading": "wa dō ka shiranai kedo",
-        "gloss": "I don't know about, but",
-        "kana": "は どう か しらない けど"
+        "text": "種族",
+        "kana": "しゅぞく",
+        "gloss": "species",
+        "reading": "shuzoku"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "どうか",
+        "kana": "どうか",
+        "gloss": "how it is",
+        "reading": "dōka"
+      },
+      {
+        "text": "知らない",
+        "kana": "しらない",
+        "gloss": "don't know",
+        "reading": "shiranai"
+      },
+      {
+        "text": "けど、",
+        "kana": "けど",
+        "gloss": "but",
+        "reading": "kedo"
       },
       {
         "text": "わたし",
-        "reading": "watashi",
+        "kana": "わたし",
         "gloss": "me",
-        "kana": "わたし"
+        "reading": "watashi"
       },
       {
-        "text": "からすると",
-        "reading": "kara suru to",
-        "gloss": "from the point of view of",
-        "kana": "からすると"
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
       },
       {
-        "text": "ただのゴミだな。",
-        "reading": "tada no gomi da na",
-        "gloss": "it's just rubbish",
-        "kana": "タダ ノ ゴミ ダ ナ"
+        "text": "すると",
+        "kana": "すると",
+        "gloss": "looking at it",
+        "reading": "suruto"
+      },
+      {
+        "text": "ただ",
+        "kana": "ただ",
+        "gloss": "just",
+        "reading": "tada"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "ゴミ",
+        "kana": "ゴミ",
+        "gloss": "rubbish",
+        "reading": "gomi"
+      },
+      {
+        "text": "だな。",
+        "kana": "だな",
+        "gloss": "(it is)",
+        "reading": "dana"
       }
     ]
   },
@@ -761,26 +959,38 @@
     "segments": [
       {
         "text": "@、",
-        "reading": "",
-        "gloss": "(player name)"
+        "kana": "",
+        "gloss": "(player's name)"
       },
       {
-        "text": "ほれぼれするような",
-        "reading": "horebore suru yō na",
+        "text": "ほれぼれする",
+        "kana": "ほれぼれする",
         "gloss": "captivating",
-        "kana": "ほれぼれするような"
+        "reading": "horeboresuru"
       },
       {
-        "text": "プレゼントじゃないか！",
-        "reading": "purezento ja nai ka",
-        "gloss": "what a present",
-        "kana": "プレゼント ジャ ナイ カ"
+        "text": "ような",
+        "kana": "ような",
+        "gloss": "like",
+        "reading": "yōna"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "gift",
+        "reading": "purezento"
+      },
+      {
+        "text": "じゃないか！",
+        "kana": "じゃないか",
+        "gloss": "isn't it",
+        "reading": "janaika"
       },
       {
         "text": "ありがとう！",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       }
     ]
   },
@@ -790,21 +1000,39 @@
     "segments": [
       {
         "text": "僕",
-        "reading": "boku",
+        "kana": "ぼく",
         "gloss": "I",
-        "kana": "ぼく"
+        "reading": "boku"
       },
       {
-        "text": "がもらっていいのかい？",
-        "reading": "ga moratte ii no kai",
-        "gloss": "may I have this",
-        "kana": "が もらって いい の かい"
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "もらって",
+        "kana": "もらって",
+        "gloss": "receive",
+        "reading": "moratte"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "is it OK",
+        "reading": "ii"
+      },
+      {
+        "text": "のかい？",
+        "kana": "のかい",
+        "gloss": "(question)",
+        "reading": "nokai"
       },
       {
         "text": "すばらしい！",
-        "reading": "subarashii",
+        "kana": "すばらしい",
         "gloss": "marvellous",
-        "kana": "すばらしい"
+        "reading": "subarashii"
       }
     ]
   },
@@ -843,28 +1071,82 @@
     "english": "Just looking at it makes me feel awful. I'll dispose of it later, I think.",
     "segments": [
       {
-        "text": "見てるだけで",
-        "reading": "miteru dake de",
-        "gloss": "just by looking",
-        "kana": "みてる だけ で"
+        "text": "見てる",
+        "kana": "みてる",
+        "gloss": "looking",
+        "reading": "miteru"
       },
       {
-        "text": "イヤな気分になるね。",
-        "reading": "iya na kibun ni naru ne",
-        "gloss": "it makes me feel unpleasant",
-        "kana": "イヤ ナ キブン ニ ナル ネ"
+        "text": "だけ",
+        "kana": "だけ",
+        "gloss": "just",
+        "reading": "dake"
       },
       {
-        "text": "あとで処分する",
-        "reading": "ato de shobun suru",
-        "gloss": "to dispose of it later",
-        "kana": "あと で しょぶん する"
+        "text": "で",
+        "kana": "で",
+        "gloss": "(by)",
+        "reading": "de"
       },
       {
-        "text": "と思うな。",
-        "reading": "to omou na",
-        "gloss": "I think",
-        "kana": "と おもう な"
+        "text": "イヤな",
+        "kana": "イヤな",
+        "gloss": "awful",
+        "reading": "iyana"
+      },
+      {
+        "text": "気分",
+        "kana": "きぶん",
+        "gloss": "feeling",
+        "reading": "kibun"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)",
+        "reading": "ni"
+      },
+      {
+        "text": "なる",
+        "kana": "なる",
+        "gloss": "become",
+        "reading": "naru"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(you know)",
+        "reading": "ne"
+      },
+      {
+        "text": "あとで",
+        "kana": "あとで",
+        "gloss": "later",
+        "reading": "atode"
+      },
+      {
+        "text": "処分する",
+        "kana": "しょぶんする",
+        "gloss": "dispose of it",
+        "reading": "shobunsuru"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quoting)",
+        "reading": "to"
+      },
+      {
+        "text": "思う",
+        "kana": "おもう",
+        "gloss": "think",
+        "reading": "omou"
+      },
+      {
+        "text": "な。",
+        "kana": "な",
+        "gloss": "(emphasis)",
+        "reading": "na"
       }
     ]
   },
@@ -897,22 +1179,40 @@
     "english": "A present like this — I'm enchanted! Thank you so much!",
     "segments": [
       {
-        "text": "こんなプレゼント、",
-        "reading": "konna purezento",
-        "gloss": "a present like this",
-        "kana": "コンナ プレゼント"
+        "text": "こんな",
+        "kana": "こんな",
+        "gloss": "like this",
+        "reading": "konna"
       },
       {
-        "text": "うっとりしちゃうよ！",
-        "reading": "uttori shichau yo",
-        "gloss": "I'm enchanted",
-        "kana": "うっとり しちゃう よ"
+        "text": "プレゼント、",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
       },
       {
-        "text": "ほんとにありがとう！",
-        "reading": "honto ni arigatō",
-        "gloss": "thank you so much",
-        "kana": "ほんと に ありがとう"
+        "text": "うっとりしちゃう",
+        "kana": "うっとりしちゃう",
+        "gloss": "am enchanted",
+        "reading": "uttorishichau"
+      },
+      {
+        "text": "よ！",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
+      },
+      {
+        "text": "ほんとに",
+        "kana": "ほんとに",
+        "gloss": "really",
+        "reading": "hontoni"
+      },
+      {
+        "text": "ありがとう！",
+        "kana": "ありがとう",
+        "gloss": "thank you",
+        "reading": "arigatō"
       }
     ]
   },
@@ -922,33 +1222,63 @@
     "segments": [
       {
         "text": "ありがとう！",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       },
       {
-        "text": "このプレゼント",
-        "reading": "kono purezento",
-        "gloss": "this present",
-        "kana": "このプレゼント"
+        "text": "この",
+        "kana": "この",
+        "gloss": "this",
+        "reading": "kono"
       },
       {
-        "text": "からは、",
-        "reading": "kara wa",
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "gift",
+        "reading": "purezento"
+      },
+      {
+        "text": "から",
+        "kana": "から",
         "gloss": "from",
-        "kana": "から は"
+        "reading": "kara"
       },
       {
-        "text": "ポジティブなエネルギー",
-        "reading": "pojitibu na enerugī",
-        "gloss": "positive energy",
-        "kana": "ポジティブなエネルギー"
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       },
       {
-        "text": "を感じるよ。",
-        "reading": "o kanjiru yo",
-        "gloss": "I feel",
-        "kana": "を かんじる よ"
+        "text": "ポジティブな",
+        "kana": "ポジティブな",
+        "gloss": "positive",
+        "reading": "pojitibuna"
+      },
+      {
+        "text": "エネルギー",
+        "kana": "エネルギー",
+        "gloss": "energy",
+        "reading": "enerugī"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "感じる",
+        "kana": "かんじる",
+        "gloss": "feel",
+        "reading": "kanjiru"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -958,26 +1288,38 @@
     "segments": [
       {
         "text": "ごめん、",
-        "reading": "gomen",
+        "kana": "ごめん",
         "gloss": "sorry",
-        "kana": "ごめん"
+        "reading": "gomen"
       },
       {
         "text": "@。",
-        "reading": "",
-        "gloss": "(player name)"
+        "kana": "",
+        "gloss": "(player's name)"
       },
       {
         "text": "これ、",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "あんまり好きじゃないや。",
-        "reading": "anmari suki ja nai ya",
-        "gloss": "I don't much like",
-        "kana": "あんまり すき じゃ ない や"
+        "text": "あんまり",
+        "kana": "あんまり",
+        "gloss": "not much",
+        "reading": "anmari"
+      },
+      {
+        "text": "好き",
+        "kana": "すき",
+        "gloss": "like",
+        "reading": "suki"
+      },
+      {
+        "text": "じゃないや。",
+        "kana": "じゃないや",
+        "gloss": "don't",
+        "reading": "janaiya"
       }
     ]
   },
@@ -986,34 +1328,64 @@
     "english": "This gift carries strong negative energy. It's too awful to bear.",
     "segments": [
       {
-        "text": "このプレゼント、",
-        "reading": "kono purezento",
-        "gloss": "this present",
-        "kana": "コノ プレゼント"
+        "text": "この",
+        "kana": "この",
+        "gloss": "this",
+        "reading": "kono"
       },
       {
-        "text": "強いネガティブなエネルギー",
-        "reading": "tsuyoi negatibu na enerugī",
-        "gloss": "strong negative energy",
-        "kana": "ツヨイ ネガティブ ナ エネルギー"
+        "text": "プレゼント、",
+        "kana": "プレゼント",
+        "gloss": "gift",
+        "reading": "purezento"
       },
       {
-        "text": "を持ってる。",
-        "reading": "o motteru",
+        "text": "強い",
+        "kana": "つよい",
+        "gloss": "strong",
+        "reading": "tsuyoi"
+      },
+      {
+        "text": "ネガティブな",
+        "kana": "ネガティブな",
+        "gloss": "negative",
+        "reading": "negatibuna"
+      },
+      {
+        "text": "エネルギー",
+        "kana": "エネルギー",
+        "gloss": "energy",
+        "reading": "enerugī"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "持ってる。",
+        "kana": "もってる",
         "gloss": "carries",
-        "kana": "を もってる"
+        "reading": "motteru"
       },
       {
         "text": "ひどすぎて",
-        "reading": "hidosugite",
-        "gloss": "being too awful",
-        "kana": "ひどすぎて"
+        "kana": "ひどすぎて",
+        "gloss": "too awful",
+        "reading": "hidosugite"
       },
       {
-        "text": "耐えられないよ。",
-        "reading": "taerarenai yo",
-        "gloss": "I can't bear it",
-        "kana": "たえられない よ"
+        "text": "耐えられない",
+        "kana": "たえられない",
+        "gloss": "can't bear",
+        "reading": "taerarenai"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -1035,33 +1407,69 @@
     "segments": [
       {
         "text": "まあ…",
-        "reading": "mā",
+        "kana": "まあ",
         "gloss": "oh my",
-        "kana": "まあ"
+        "reading": "mā"
       },
       {
-        "text": "なんてステキなプレゼントなの！$u#$e#",
-        "reading": "nante suteki na purezento na no",
-        "gloss": "what a lovely present",
-        "kana": "ナンテ ステキ ナ プレゼント ナ ノ"
+        "text": "なんて",
+        "kana": "なんて",
+        "gloss": "what",
+        "reading": "nante"
       },
       {
-        "text": "こんなおばあさん",
-        "reading": "konna obāsan",
-        "gloss": "an old woman like me",
-        "kana": "こんなおばあさん"
+        "text": "ステキな",
+        "kana": "ステキな",
+        "gloss": "lovely",
+        "reading": "sutekina"
       },
       {
-        "text": "を喜ばせてくれて",
-        "reading": "o yorokobasete kurete",
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "なの！$u#$e#",
+        "kana": "なの",
+        "gloss": "(it is)",
+        "reading": "nano"
+      },
+      {
+        "text": "こんな",
+        "kana": "こんな",
+        "gloss": "such",
+        "reading": "konna"
+      },
+      {
+        "text": "おばあさん",
+        "kana": "おばあさん",
+        "gloss": "an old woman",
+        "reading": "obāsan"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "喜ばせてくれて",
+        "kana": "よろこばせてくれて",
         "gloss": "for making happy",
-        "kana": "を よろこばせて くれて"
+        "reading": "yorokobasetekurete"
       },
       {
-        "text": "ありがとうね。",
-        "reading": "arigatō ne",
+        "text": "ありがとう",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう ね"
+        "reading": "arigatō"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(softener)",
+        "reading": "ne"
       }
     ]
   },
@@ -1095,15 +1503,45 @@
     "segments": [
       {
         "text": "えっと…",
-        "reading": "etto",
+        "kana": "えっと",
         "gloss": "um",
-        "kana": "えっと"
+        "reading": "etto"
       },
       {
-        "text": "どこにおいたらいいかしらね？",
-        "reading": "doko ni oitara ii kashira ne",
-        "gloss": "where should I put it, I wonder",
-        "kana": "どこ に おいたら いい かしら ね"
+        "text": "どこ",
+        "kana": "どこ",
+        "gloss": "where",
+        "reading": "doko"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "おいたら",
+        "kana": "おいたら",
+        "gloss": "should I put it",
+        "reading": "oitara"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good",
+        "reading": "ii"
+      },
+      {
+        "text": "かしら",
+        "kana": "かしら",
+        "gloss": "I wonder",
+        "reading": "kashira"
+      },
+      {
+        "text": "ね？",
+        "kana": "ね",
+        "gloss": "(softener)",
+        "reading": "ne"
       }
     ]
   },
@@ -1112,10 +1550,22 @@
     "english": "...It smells unpleasant.",
     "segments": [
       {
-        "text": "…イヤなにおいですねえ。",
-        "reading": "iya na nioi desu nē",
-        "gloss": "it's an unpleasant smell",
-        "kana": "イヤ ナ ニオイ デス ネー"
+        "text": "…イヤな",
+        "kana": "イヤな",
+        "gloss": "unpleasant",
+        "reading": "iyana"
+      },
+      {
+        "text": "におい",
+        "kana": "におい",
+        "gloss": "smell",
+        "reading": "nioi"
+      },
+      {
+        "text": "ですねえ。",
+        "kana": "ですねえ",
+        "gloss": "(it is, isn't it)",
+        "reading": "desunē"
       }
     ]
   },
@@ -1209,33 +1659,75 @@
     "segments": [
       {
         "text": "今まで",
-        "reading": "ima made",
-        "gloss": "up to now",
-        "kana": "いま まで"
+        "kana": "いままで",
+        "gloss": "until now",
+        "reading": "imamade"
       },
       {
-        "text": "もらったなか",
-        "reading": "moratta naka",
-        "gloss": "among what I've received",
-        "kana": "もらったなか"
+        "text": "もらった",
+        "kana": "もらった",
+        "gloss": "received",
+        "reading": "moratta"
       },
       {
-        "text": "で最悪のプレゼントだな、",
-        "reading": "de saiaku no purezento da na",
-        "gloss": "is the worst present",
-        "kana": "デ サイアク ノ プレゼント ダ ナ"
+        "text": "なか",
+        "kana": "なか",
+        "gloss": "among",
+        "reading": "naka"
       },
       {
-        "text": "こいつは。",
-        "reading": "koitsu wa",
+        "text": "で",
+        "kana": "で",
+        "gloss": "(in)",
+        "reading": "de"
+      },
+      {
+        "text": "最悪",
+        "kana": "さいあく",
+        "gloss": "the worst",
+        "reading": "saiaku"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "だな、",
+        "kana": "だな",
+        "gloss": "(it is)",
+        "reading": "dana"
+      },
+      {
+        "text": "こいつ",
+        "kana": "こいつ",
         "gloss": "this thing",
-        "kana": "こいつ は"
+        "reading": "koitsu"
       },
       {
-        "text": "ありがとうよ。",
-        "reading": "arigatō yo",
-        "gloss": "thanks a lot",
-        "kana": "ありがとう よ"
+        "text": "は。",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "ありがとう",
+        "kana": "ありがとう",
+        "gloss": "thanks",
+        "reading": "arigatō"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(sarcastic emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -1280,34 +1772,64 @@
     "english": "This... for me? Oh, I don't know how to thank you.",
     "segments": [
       {
-        "text": "これを…",
-        "reading": "kore o",
+        "text": "これ",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ を"
+        "reading": "kore"
+      },
+      {
+        "text": "を…",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
       },
       {
         "text": "私",
-        "reading": "watashi",
+        "kana": "わたし",
         "gloss": "me",
-        "kana": "わたし"
+        "reading": "watashi"
       },
       {
         "text": "に？",
-        "reading": "ni",
-        "gloss": "for",
-        "kana": "に"
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
       },
       {
         "text": "ああ、",
-        "reading": "ā",
+        "kana": "ああ",
         "gloss": "oh",
-        "kana": "ああ"
+        "reading": "ā"
       },
       {
-        "text": "なんてお礼を言ったらいいか。",
-        "reading": "nante o-rei o ittara ii ka",
-        "gloss": "how should I thank you",
-        "kana": "なんて おれい を いったら いい か"
+        "text": "なんて",
+        "kana": "なんて",
+        "gloss": "what",
+        "reading": "nante"
+      },
+      {
+        "text": "お礼",
+        "kana": "おれい",
+        "gloss": "thanks",
+        "reading": "orei"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "言ったら",
+        "kana": "いったら",
+        "gloss": "should I say",
+        "reading": "ittara"
+      },
+      {
+        "text": "いいか。",
+        "kana": "いいか",
+        "gloss": "I wonder",
+        "reading": "iika"
       }
     ]
   },
@@ -1317,21 +1839,33 @@
     "segments": [
       {
         "text": "おお、",
-        "reading": "ō",
+        "kana": "おお",
         "gloss": "oh",
-        "kana": "おう"
+        "reading": "ō"
       },
       {
         "text": "ありがとう！",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       },
       {
-        "text": "もらっていいのかい？",
-        "reading": "moratte ii no kai",
-        "gloss": "may I have it",
-        "kana": "もらって いい の かい"
+        "text": "もらって",
+        "kana": "もらって",
+        "gloss": "receive",
+        "reading": "moratte"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "is it OK",
+        "reading": "ii"
+      },
+      {
+        "text": "のかい？",
+        "kana": "のかい",
+        "gloss": "(question)",
+        "reading": "nokai"
       }
     ]
   },
@@ -1551,45 +2085,81 @@
     "segments": [
       {
         "text": "これ、",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
         "text": "僕",
-        "reading": "boku",
+        "kana": "ぼく",
         "gloss": "me",
-        "kana": "ぼく"
+        "reading": "boku"
       },
       {
         "text": "に？",
-        "reading": "ni",
-        "gloss": "for",
-        "kana": "に"
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
       },
       {
         "text": "わあ、",
-        "reading": "wā",
+        "kana": "わあ",
         "gloss": "wow",
-        "kana": "わあ"
+        "reading": "wā"
       },
       {
-        "text": "これ大好きなんだよ！",
-        "reading": "kore daisuki na n da yo",
-        "gloss": "I love this",
-        "kana": "これ だいすき な ん だ よ"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
       },
       {
-        "text": "僕の心でも",
-        "reading": "boku no kokoro demo",
-        "gloss": "even my mind",
-        "kana": "ぼく の こころ でも"
+        "text": "大好き",
+        "kana": "だいすき",
+        "gloss": "love",
+        "reading": "daisuki"
       },
       {
-        "text": "読んだのかい？",
-        "reading": "yonda no kai",
-        "gloss": "did you read",
-        "kana": "よんだ の かい"
+        "text": "なんだよ！",
+        "kana": "なんだよ",
+        "gloss": "(you see)",
+        "reading": "nandayo"
+      },
+      {
+        "text": "僕",
+        "kana": "ぼく",
+        "gloss": "my",
+        "reading": "boku"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "心",
+        "kana": "こころ",
+        "gloss": "mind",
+        "reading": "kokoro"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "or something",
+        "reading": "demo"
+      },
+      {
+        "text": "読んだ",
+        "kana": "よんだ",
+        "gloss": "read",
+        "reading": "yonda"
+      },
+      {
+        "text": "のかい？",
+        "kana": "のかい",
+        "gloss": "(question)",
+        "reading": "nokai"
       }
     ]
   },
@@ -1598,16 +2168,28 @@
     "english": "What a lovely present. Thank you!",
     "segments": [
       {
-        "text": "ステキなプレゼントだね。",
-        "reading": "suteki na purezento da ne",
-        "gloss": "that's a lovely present",
-        "kana": "ステキ ナ プレゼント ダ ネ"
+        "text": "ステキな",
+        "kana": "ステキな",
+        "gloss": "lovely",
+        "reading": "sutekina"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "だね。",
+        "kana": "だね",
+        "gloss": "(it is)",
+        "reading": "dane"
       },
       {
         "text": "ありがとう！",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       }
     ]
   },
@@ -1617,21 +2199,45 @@
     "segments": [
       {
         "text": "うーん…",
-        "reading": "ūn",
+        "kana": "うーん",
         "gloss": "hmm",
-        "kana": "ウーン"
+        "reading": "ūn"
       },
       {
-        "text": "これって",
-        "reading": "kore tte",
+        "text": "これ",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これって"
+        "reading": "kore"
       },
       {
-        "text": "健康に悪いんじゃないかな？",
-        "reading": "kenkō ni warui n ja nai ka na",
-        "gloss": "isn't it bad for the health",
-        "kana": "けんこう に わるい ん じゃ ない か な"
+        "text": "って",
+        "kana": "って",
+        "gloss": "(as for)",
+        "reading": "tte"
+      },
+      {
+        "text": "健康",
+        "kana": "けんこう",
+        "gloss": "health",
+        "reading": "kenkō"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)",
+        "reading": "ni"
+      },
+      {
+        "text": "悪い",
+        "kana": "わるい",
+        "gloss": "bad",
+        "reading": "warui"
+      },
+      {
+        "text": "んじゃないかな？",
+        "kana": "んじゃないかな",
+        "gloss": "isn't it, I wonder",
+        "reading": "njanaikana"
       }
     ]
   },
@@ -1641,15 +2247,33 @@
     "segments": [
       {
         "text": "…僕、",
-        "reading": "boku",
+        "kana": "ぼく",
         "gloss": "I",
-        "kana": "ぼく"
+        "reading": "boku"
       },
       {
-        "text": "これのアレルギーなんだよね。",
-        "reading": "kore no arerugī na n da yo ne",
-        "gloss": "am allergic to this",
-        "kana": "コレ ノ アレルギー ナ ン ダ ヨ ネ"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(to)",
+        "reading": "no"
+      },
+      {
+        "text": "アレルギー",
+        "kana": "アレルギー",
+        "gloss": "allergy",
+        "reading": "arerugī"
+      },
+      {
+        "text": "なんだよね。",
+        "kana": "なんだよね",
+        "gloss": "(you see)",
+        "reading": "nandayone"
       }
     ]
   },
@@ -1785,33 +2409,57 @@
     "segments": [
       {
         "text": "まあ、",
-        "reading": "mā",
+        "kana": "まあ",
         "gloss": "oh",
-        "kana": "まあ"
+        "reading": "mā"
       },
       {
         "text": "あなた",
-        "reading": "anata",
+        "kana": "あなた",
         "gloss": "you",
-        "kana": "あなた"
+        "reading": "anata"
       },
       {
-        "text": "ってほんとに親切ね！",
-        "reading": "tte honto ni shinsetsu ne",
-        "gloss": "really are kind",
-        "kana": "って ほんと に しんせつ ね"
+        "text": "って",
+        "kana": "って",
+        "gloss": "(as for)",
+        "reading": "tte"
+      },
+      {
+        "text": "ほんとに",
+        "kana": "ほんとに",
+        "gloss": "really",
+        "reading": "hontoni"
+      },
+      {
+        "text": "親切",
+        "kana": "しんせつ",
+        "gloss": "kind",
+        "reading": "shinsetsu"
+      },
+      {
+        "text": "ね！",
+        "kana": "ね",
+        "gloss": "(aren't you)",
+        "reading": "ne"
       },
       {
         "text": "これ、",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "大好きなの！",
-        "reading": "daisuki na no",
-        "gloss": "I love it",
-        "kana": "だいすき な の"
+        "text": "大好き",
+        "kana": "だいすき",
+        "gloss": "love",
+        "reading": "daisuki"
+      },
+      {
+        "text": "なの！",
+        "kana": "なの",
+        "gloss": "(you see)",
+        "reading": "nano"
       }
     ]
   },
@@ -1928,52 +2576,100 @@
     "english": "This...! My mother used to make this for me when I was small. It brings back the old days. Thank you.",
     "segments": [
       {
-        "text": "これは…！",
-        "reading": "kore wa",
-        "gloss": "this is",
-        "kana": "これ は"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
+      },
+      {
+        "text": "は…！",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       },
       {
         "text": "オレ",
-        "reading": "ore",
+        "kana": "オレ",
         "gloss": "I",
-        "kana": "オレ"
+        "reading": "ore"
       },
       {
-        "text": "が小さかったころ、",
-        "reading": "ga chiisakatta koro",
-        "gloss": "when I was small",
-        "kana": "が ちいさかった ころ"
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "小さかった",
+        "kana": "ちいさかった",
+        "gloss": "was small",
+        "reading": "chiisakatta"
+      },
+      {
+        "text": "ころ、",
+        "kana": "ころ",
+        "gloss": "back when",
+        "reading": "koro"
       },
       {
         "text": "おふくろ",
-        "reading": "ofukuro",
+        "kana": "おふくろ",
         "gloss": "my mother",
-        "kana": "おふくろ"
+        "reading": "ofukuro"
       },
       {
-        "text": "がよくつくってくれたもんだ。",
-        "reading": "ga yoku tsukutte kureta mon da",
-        "gloss": "used to make for me",
-        "kana": "が よく つくって くれた もん だ"
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "よく",
+        "kana": "よく",
+        "gloss": "often",
+        "reading": "yoku"
+      },
+      {
+        "text": "つくってくれた",
+        "kana": "つくってくれた",
+        "gloss": "made for me",
+        "reading": "tsukuttekureta"
+      },
+      {
+        "text": "もんだ。",
+        "kana": "もんだ",
+        "gloss": "(used to)",
+        "reading": "monda"
       },
       {
         "text": "むかし",
-        "reading": "mukashi",
+        "kana": "むかし",
         "gloss": "the old days",
-        "kana": "むかし"
+        "reading": "mukashi"
       },
       {
-        "text": "を思い出すよ。",
-        "reading": "o omoidasu yo",
-        "gloss": "I remember",
-        "kana": "を おもいだす よ"
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "思い出す",
+        "kana": "おもいだす",
+        "gloss": "remember",
+        "reading": "omoidasu"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       },
       {
         "text": "ありがとう。",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       }
     ]
   },
@@ -1983,21 +2679,45 @@
     "segments": [
       {
         "text": "へえ、",
-        "reading": "hē",
-        "gloss": "oh",
-        "kana": "へい"
+        "kana": "へえ",
+        "gloss": "well now",
+        "reading": "hē"
       },
       {
-        "text": "こいつはうれしいプレゼントだ。",
-        "reading": "koitsu wa ureshii purezento da",
-        "gloss": "this is a welcome present",
-        "kana": "コイツ は ウレシイ プレゼント ダ"
+        "text": "こいつ",
+        "kana": "こいつ",
+        "gloss": "this",
+        "reading": "koitsu"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "うれしい",
+        "kana": "うれしい",
+        "gloss": "welcome",
+        "reading": "ureshii"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "(it is)",
+        "reading": "da"
       },
       {
         "text": "ありがとう。",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       }
     ]
   },
@@ -2037,51 +2757,123 @@
     "segments": [
       {
         "text": "うっ…",
-        "reading": "u",
+        "kana": "うっ",
         "gloss": "ugh",
-        "kana": "う"
+        "reading": "u"
       },
       {
         "text": "ゴトロ",
-        "reading": "Gotoro",
+        "kana": "ゴトロ",
         "gloss": "Gotoro",
-        "kana": "ゴトロ"
+        "reading": "gotoro"
       },
       {
-        "text": "の捕りょ収容所で、",
-        "reading": "no horyo shūyōjo de",
-        "gloss": "at the prison camp of",
-        "kana": "の ほりょ しゅうようじょ で"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
       },
       {
-        "text": "これと同じもの",
-        "reading": "kore to onaji mono",
-        "gloss": "the same thing as this",
-        "kana": "これ と おなじ もの"
+        "text": "捕りょ",
+        "kana": "ほりょ",
+        "gloss": "prisoner",
+        "reading": "horyo"
       },
       {
-        "text": "をよこされたんだ。",
-        "reading": "o yokosareta n da",
-        "gloss": "I was handed",
-        "kana": "を よこされた ん だ"
+        "text": "収容所",
+        "kana": "しゅうようじょ",
+        "gloss": "camp",
+        "reading": "shūyōjo"
       },
       {
-        "text": "あそこのこと",
-        "reading": "asoko no koto",
-        "gloss": "about that place",
-        "kana": "あそこのこと"
+        "text": "で、",
+        "kana": "で",
+        "gloss": "(location marker)",
+        "reading": "de"
       },
       {
-        "text": "は忘れたいんだがな。",
-        "reading": "wa wasuretai n da ga na",
-        "gloss": "I'd like to forget",
-        "kana": "は わすれたい ん だ が な"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(as)",
+        "reading": "to"
+      },
+      {
+        "text": "同じ",
+        "kana": "おなじ",
+        "gloss": "same",
+        "reading": "onaji"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing",
+        "reading": "mono"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "よこされた",
+        "kana": "よこされた",
+        "gloss": "was given",
+        "reading": "yokosareta"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
+      },
+      {
+        "text": "あそこ",
+        "kana": "あそこ",
+        "gloss": "that place",
+        "reading": "asoko"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "matters",
+        "reading": "koto"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "忘れたい",
+        "kana": "わすれたい",
+        "gloss": "want to forget",
+        "reading": "wasuretai"
+      },
+      {
+        "text": "んだがな。",
+        "kana": "んだがな",
+        "gloss": "(but, you know)",
+        "reading": "ndagana"
       },
       {
         "text": "（ぶるるっ）",
-        "reading": "bururu",
-        "gloss": "*shudder*",
-        "kana": "ぶるる"
+        "kana": "ぶるるっ",
+        "gloss": "shudder",
+        "reading": "bururu"
       }
     ]
   },
@@ -2120,46 +2912,118 @@
     "english": "This is a tremendous gift. Among my people, receiving something like this is a great honour.",
     "segments": [
       {
-        "text": "こいつはすんごいプレゼントだねえ。",
-        "reading": "koitsu wa sungoi purezento da nē",
-        "gloss": "this is an amazing present",
-        "kana": "コイツ は スンゴイ プレゼント ダ ネー"
+        "text": "こいつ",
+        "kana": "こいつ",
+        "gloss": "this",
+        "reading": "koitsu"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "すんごい",
+        "kana": "すんごい",
+        "gloss": "tremendous",
+        "reading": "sungoi"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "gift",
+        "reading": "purezento"
+      },
+      {
+        "text": "だねえ。",
+        "kana": "だねえ",
+        "gloss": "(it is)",
+        "reading": "danē"
       },
       {
         "text": "ぼくら",
-        "reading": "bokura",
-        "gloss": "we",
-        "kana": "ぼくら"
+        "kana": "ぼくら",
+        "gloss": "us",
+        "reading": "bokura"
       },
       {
-        "text": "の種族",
-        "reading": "no shuzoku",
-        "gloss": "'s species",
-        "kana": "の しゅぞく"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
       },
       {
-        "text": "にとっては、",
-        "reading": "ni totte wa",
+        "text": "種族",
+        "kana": "しゅぞく",
+        "gloss": "people",
+        "reading": "shuzoku"
+      },
+      {
+        "text": "にとって",
+        "kana": "にとって",
         "gloss": "for",
-        "kana": "に とって は"
+        "reading": "nitotte"
       },
       {
-        "text": "こいつをもらう",
-        "reading": "koitsu o morau",
-        "gloss": "receiving this",
-        "kana": "こいつをもらう"
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       },
       {
-        "text": "のはすごく名誉なこと",
-        "reading": "no wa sugoku meiyo na koto",
-        "gloss": "is a great honour",
-        "kana": "の は すごく めいよ な こと"
+        "text": "こいつ",
+        "kana": "こいつ",
+        "gloss": "this",
+        "reading": "koitsu"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "もらう",
+        "kana": "もらう",
+        "gloss": "receiving",
+        "reading": "morau"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominaliser)",
+        "reading": "no"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "すごく",
+        "kana": "すごく",
+        "gloss": "very",
+        "reading": "sugoku"
+      },
+      {
+        "text": "名誉な",
+        "kana": "めいよな",
+        "gloss": "honourable",
+        "reading": "meiyona"
+      },
+      {
+        "text": "こと",
+        "kana": "こと",
+        "gloss": "thing",
+        "reading": "koto"
       },
       {
         "text": "なのさ。",
-        "reading": "na no sa",
-        "gloss": "it is",
-        "kana": "な の さ"
+        "kana": "なのさ",
+        "gloss": "(it is, you see)",
+        "reading": "nanosa"
       }
     ]
   },
@@ -2217,27 +3081,39 @@
     "segments": [
       {
         "text": "おっと…",
-        "reading": "otto",
+        "kana": "おっと",
         "gloss": "oh",
-        "kana": "おっと"
+        "reading": "otto"
       },
       {
         "text": "えーっと。",
-        "reading": "ētto",
+        "kana": "えーっと",
         "gloss": "um",
-        "kana": "エーット"
+        "reading": "ētto"
       },
       {
         "text": "まあ、",
-        "reading": "mā",
+        "kana": "まあ",
         "gloss": "well",
-        "kana": "まあ"
+        "reading": "mā"
       },
       {
-        "text": "いちおうもらっとくよ。",
-        "reading": "ichiō morattoku yo",
-        "gloss": "I'll take it anyway",
-        "kana": "いちおう もらっとく よ"
+        "text": "いちおう",
+        "kana": "いちおう",
+        "gloss": "for now",
+        "reading": "ichiō"
+      },
+      {
+        "text": "もらっとく",
+        "kana": "もらっとく",
+        "gloss": "I'll accept it",
+        "reading": "morattoku"
+      },
+      {
+        "text": "よ。",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -2265,27 +3141,51 @@
     "segments": [
       {
         "text": "わあ！",
-        "reading": "wā",
+        "kana": "わあ",
         "gloss": "wow",
-        "kana": "わあ"
+        "reading": "wā"
       },
       {
-        "text": "ちょうどこういうの",
-        "reading": "chōdo kō iu no",
-        "gloss": "exactly this sort of thing",
-        "kana": "ちょうどこういうの"
+        "text": "ちょうど",
+        "kana": "ちょうど",
+        "gloss": "exactly",
+        "reading": "chōdo"
       },
       {
-        "text": "が欲しかったんだ！",
-        "reading": "ga hoshikatta n da",
-        "gloss": "is what I wanted",
-        "kana": "が ほしかった ん だ"
+        "text": "こういう",
+        "kana": "こういう",
+        "gloss": "this kind of",
+        "reading": "kōiu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(one)",
+        "reading": "no"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "欲しかった",
+        "kana": "ほしかった",
+        "gloss": "wanted",
+        "reading": "hoshikatta"
+      },
+      {
+        "text": "んだ！",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
       },
       {
         "text": "ありがとう！",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       }
     ]
   },
@@ -2295,21 +3195,27 @@
     "segments": [
       {
         "text": "わあ、",
-        "reading": "wā",
+        "kana": "わあ",
         "gloss": "wow",
-        "kana": "わあ"
+        "reading": "wā"
       },
       {
-        "text": "すっごく気に入っちゃった！",
-        "reading": "suggoku ki ni itchatta",
-        "gloss": "I really took to it",
-        "kana": "すっごく き に いっちゃった"
+        "text": "すっごく",
+        "kana": "すっごく",
+        "gloss": "really",
+        "reading": "suggoku"
+      },
+      {
+        "text": "気に入っちゃった！",
+        "kana": "きにいっちゃった",
+        "gloss": "love it",
+        "reading": "kiniitchatta"
       },
       {
         "text": "ありがとう！",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       }
     ]
   },
@@ -2319,27 +3225,45 @@
     "segments": [
       {
         "text": "うーん…",
-        "reading": "ūn",
+        "kana": "うーん",
         "gloss": "hmm",
-        "kana": "ウーン"
+        "reading": "ūn"
       },
       {
         "text": "まあ、",
-        "reading": "mā",
+        "kana": "まあ",
         "gloss": "well",
-        "kana": "まあ"
+        "reading": "mā"
       },
       {
         "text": "感性",
-        "reading": "kansei",
-        "gloss": "sensibility / taste",
-        "kana": "かんせい"
+        "kana": "かんせい",
+        "gloss": "taste",
+        "reading": "kansei"
       },
       {
-        "text": "って人それぞれだよね。",
-        "reading": "tte hito sorezore da yo ne",
-        "gloss": "differs from person to person",
-        "kana": "って ひと それぞれ だ よ ね"
+        "text": "って",
+        "kana": "って",
+        "gloss": "(as for)",
+        "reading": "tte"
+      },
+      {
+        "text": "人",
+        "kana": "ひと",
+        "gloss": "people",
+        "reading": "hito"
+      },
+      {
+        "text": "それぞれ",
+        "kana": "それぞれ",
+        "gloss": "each their own",
+        "reading": "sorezore"
+      },
+      {
+        "text": "だよね。",
+        "kana": "だよね",
+        "gloss": "(isn't it)",
+        "reading": "dayone"
       }
     ]
   },
@@ -2349,27 +3273,45 @@
     "segments": [
       {
         "text": "ねえ、",
-        "reading": "nē",
+        "kana": "ねえ",
         "gloss": "hey",
-        "kana": "ねい"
+        "reading": "nē"
       },
       {
         "text": "これ、",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "プレゼントとしては",
-        "reading": "purezento to shite wa",
-        "gloss": "as a present",
-        "kana": "プレゼントとしては"
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
       },
       {
-        "text": "最悪じゃない？",
-        "reading": "saiaku ja nai",
-        "gloss": "isn't it the worst",
-        "kana": "さいあく じゃ ない"
+        "text": "として",
+        "kana": "として",
+        "gloss": "as",
+        "reading": "toshite"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "最悪",
+        "kana": "さいあく",
+        "gloss": "the worst",
+        "reading": "saiaku"
+      },
+      {
+        "text": "じゃない？",
+        "kana": "じゃない",
+        "gloss": "isn't it",
+        "reading": "janai"
       }
     ]
   },
@@ -2421,15 +3363,33 @@
     "segments": [
       {
         "text": "本当に？",
-        "reading": "hontō ni",
+        "kana": "ほんとうに",
         "gloss": "really",
-        "kana": "ほんとう に"
+        "reading": "hontōni"
       },
       {
-        "text": "とってもいいものだね…",
-        "reading": "tottemo ii mono da ne",
-        "gloss": "it's such a nice thing",
-        "kana": "とっても いい もの だ ね"
+        "text": "とっても",
+        "kana": "とっても",
+        "gloss": "very",
+        "reading": "tottemo"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "nice",
+        "reading": "ii"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing",
+        "reading": "mono"
+      },
+      {
+        "text": "だね…",
+        "kana": "だね",
+        "gloss": "(it is)",
+        "reading": "dane"
       }
     ]
   },
@@ -2439,15 +3399,33 @@
     "segments": [
       {
         "text": "うーん…",
-        "reading": "ūn",
+        "kana": "うーん",
         "gloss": "hmm",
-        "kana": "ウーン"
+        "reading": "ūn"
       },
       {
-        "text": "これは食べられるのかな…",
-        "reading": "kore wa taberareru no ka na",
-        "gloss": "can this be eaten, I wonder",
-        "kana": "これ は たべられる の か な"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "食べられる",
+        "kana": "たべられる",
+        "gloss": "can be eaten",
+        "reading": "taberareru"
+      },
+      {
+        "text": "のかな…",
+        "kana": "のかな",
+        "gloss": "I wonder",
+        "reading": "nokana"
       }
     ]
   },
@@ -2457,39 +3435,63 @@
     "segments": [
       {
         "text": "（クンクン）",
-        "reading": "kunkun",
-        "gloss": "*sniff*",
-        "kana": "クンクン"
+        "kana": "クンクン",
+        "gloss": "sniff",
+        "reading": "kunkun"
       },
       {
         "text": "（クンクン）…",
-        "reading": "kunkun",
-        "gloss": "*sniff*",
-        "kana": "クンクン"
+        "kana": "クンクン",
+        "gloss": "sniff",
+        "reading": "kunkun"
       },
       {
-        "text": "何でこれ",
-        "reading": "nande kore",
-        "gloss": "why this",
-        "kana": "なんで これ"
+        "text": "何で",
+        "kana": "なんで",
+        "gloss": "why",
+        "reading": "nande"
       },
       {
-        "text": "をボク",
-        "reading": "o boku",
-        "gloss": "to me",
-        "kana": "をボク"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "ボク",
+        "kana": "ボク",
+        "gloss": "me",
+        "reading": "boku"
       },
       {
         "text": "に？",
-        "reading": "ni",
-        "gloss": "to",
-        "kana": "に"
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
       },
       {
-        "text": "埋めておけばいいの？",
-        "reading": "umete okeba ii no",
-        "gloss": "should I bury it",
-        "kana": "うめて おけば いい の"
+        "text": "埋めておけば",
+        "kana": "うめておけば",
+        "gloss": "if I bury it",
+        "reading": "umeteokeba"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good",
+        "reading": "ii"
+      },
+      {
+        "text": "の？",
+        "kana": "の",
+        "gloss": "(question)",
+        "reading": "no"
       }
     ]
   },
@@ -2517,21 +3519,39 @@
     "segments": [
       {
         "text": "おお、",
-        "reading": "ō",
+        "kana": "おお",
         "gloss": "oh",
-        "kana": "おう"
+        "reading": "ō"
       },
       {
-        "text": "こいつは好物なんだ！",
-        "reading": "koitsu wa kōbutsu na n da",
-        "gloss": "this is my favourite",
-        "kana": "こいつ は こうぶつ な ん だ"
+        "text": "こいつ",
+        "kana": "こいつ",
+        "gloss": "this",
+        "reading": "koitsu"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "好物",
+        "kana": "こうぶつ",
+        "gloss": "favourite",
+        "reading": "kōbutsu"
+      },
+      {
+        "text": "なんだ！",
+        "kana": "なんだ",
+        "gloss": "(you see)",
+        "reading": "nanda"
       },
       {
         "text": "ありがとう！",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       }
     ]
   },
@@ -2582,16 +3602,52 @@
     "english": "This makes me feel ill. What a dreadful present.",
     "segments": [
       {
-        "text": "気分が悪くなるな。",
-        "reading": "kibun ga waruku naru na",
-        "gloss": "it makes me feel unwell",
-        "kana": "きぶん が わるく なる な"
+        "text": "気分",
+        "kana": "きぶん",
+        "gloss": "feeling",
+        "reading": "kibun"
       },
       {
-        "text": "なんてひどいプレゼントなんだ。",
-        "reading": "nante hidoi purezento na n da",
-        "gloss": "what a dreadful present",
-        "kana": "ナンテ ヒドイ プレゼント ナ ン ダ"
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "悪くなる",
+        "kana": "わるくなる",
+        "gloss": "turns bad",
+        "reading": "warukunaru"
+      },
+      {
+        "text": "な。",
+        "kana": "な",
+        "gloss": "(emphasis)",
+        "reading": "na"
+      },
+      {
+        "text": "なんて",
+        "kana": "なんて",
+        "gloss": "what a",
+        "reading": "nante"
+      },
+      {
+        "text": "ひどい",
+        "kana": "ひどい",
+        "gloss": "dreadful",
+        "reading": "hidoi"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "なんだ。",
+        "kana": "なんだ",
+        "gloss": "(it is)",
+        "reading": "nanda"
       }
     ]
   },
@@ -2654,16 +3710,28 @@
     "english": "Thank you for such a wonderful present!",
     "segments": [
       {
-        "text": "すばらしいプレゼント",
-        "reading": "subarashii purezento",
-        "gloss": "a wonderful present",
-        "kana": "すばらしいプレゼント"
+        "text": "すばらしい",
+        "kana": "すばらしい",
+        "gloss": "wonderful",
+        "reading": "subarashii"
       },
       {
-        "text": "をありがとう！",
-        "reading": "o arigatō",
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "ありがとう！",
+        "kana": "ありがとう",
         "gloss": "thank you for",
-        "kana": "を ありがとう"
+        "reading": "arigatō"
       }
     ]
   },
@@ -2673,21 +3741,39 @@
     "segments": [
       {
         "text": "うーん…",
-        "reading": "ūn",
+        "kana": "うーん",
         "gloss": "hmm",
-        "kana": "ウーン"
+        "reading": "ūn"
       },
       {
-        "text": "悪いけど、",
-        "reading": "warui kedo",
-        "gloss": "sorry, but",
-        "kana": "わるい けど"
+        "text": "悪い",
+        "kana": "わるい",
+        "gloss": "sorry",
+        "reading": "warui"
       },
       {
-        "text": "どうもしっくりこないな。",
-        "reading": "dōmo shikkuri konai na",
-        "gloss": "it doesn't quite fit",
-        "kana": "どうも しっくり こない な"
+        "text": "けど、",
+        "kana": "けど",
+        "gloss": "but",
+        "reading": "kedo"
+      },
+      {
+        "text": "どうも",
+        "kana": "どうも",
+        "gloss": "somehow",
+        "reading": "dōmo"
+      },
+      {
+        "text": "しっくりこない",
+        "kana": "しっくりこない",
+        "gloss": "doesn't sit right",
+        "reading": "shikkurikonai"
+      },
+      {
+        "text": "な。",
+        "kana": "な",
+        "gloss": "(emphasis)",
+        "reading": "na"
       }
     ]
   },
@@ -2696,52 +3782,130 @@
     "english": "Why would you hand me this? Do you think I like rubbish just because I live in a tent? That's awful.",
     "segments": [
       {
-        "text": "なんでこんなもの",
-        "reading": "nande konna mono",
-        "gloss": "why such a thing",
-        "kana": "なんでこんなもの"
+        "text": "なんで",
+        "kana": "なんで",
+        "gloss": "why",
+        "reading": "nande"
       },
       {
-        "text": "を渡そうと？",
-        "reading": "o watasō to",
-        "gloss": "would you hand over",
-        "kana": "を わたそう と"
+        "text": "こんな",
+        "kana": "こんな",
+        "gloss": "such a",
+        "reading": "konna"
       },
       {
-        "text": "こんなテント",
-        "reading": "konna tento",
-        "gloss": "a tent like this",
-        "kana": "こんなテント"
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing",
+        "reading": "mono"
       },
       {
-        "text": "に住んでるなら、",
-        "reading": "ni sunderu nara",
-        "gloss": "if I live in",
-        "kana": "に すんでる なら"
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "渡そう",
+        "kana": "わたそう",
+        "gloss": "try to hand over",
+        "reading": "watasō"
+      },
+      {
+        "text": "と？",
+        "kana": "と",
+        "gloss": "(quoting)",
+        "reading": "to"
+      },
+      {
+        "text": "こんな",
+        "kana": "こんな",
+        "gloss": "such a",
+        "reading": "konna"
+      },
+      {
+        "text": "テント",
+        "kana": "テント",
+        "gloss": "tent",
+        "reading": "tento"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "住んでる",
+        "kana": "すんでる",
+        "gloss": "live",
+        "reading": "sunderu"
+      },
+      {
+        "text": "なら、",
+        "kana": "なら",
+        "gloss": "if",
+        "reading": "nara"
       },
       {
         "text": "ゴミ",
-        "reading": "gomi",
+        "kana": "ゴミ",
         "gloss": "rubbish",
-        "kana": "ゴミ"
+        "reading": "gomi"
       },
       {
-        "text": "が好きだろう",
-        "reading": "ga suki darō",
-        "gloss": "I must like",
-        "kana": "が すき だろう"
+        "text": "が",
+        "kana": "が",
+        "gloss": "(object marker)",
+        "reading": "ga"
       },
       {
-        "text": "とでも思ったのかい？",
-        "reading": "to demo omotta no kai",
-        "gloss": "did you perhaps think",
-        "kana": "と でも おもった の かい"
+        "text": "好き",
+        "kana": "すき",
+        "gloss": "like",
+        "reading": "suki"
       },
       {
-        "text": "最悪だよ。",
-        "reading": "saiaku da yo",
-        "gloss": "that's awful",
-        "kana": "さいあく だ よ"
+        "text": "だろう",
+        "kana": "だろう",
+        "gloss": "probably",
+        "reading": "darō"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quoting)",
+        "reading": "to"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "or something",
+        "reading": "demo"
+      },
+      {
+        "text": "思った",
+        "kana": "おもった",
+        "gloss": "thought",
+        "reading": "omotta"
+      },
+      {
+        "text": "のかい？",
+        "kana": "のかい",
+        "gloss": "(question)",
+        "reading": "nokai"
+      },
+      {
+        "text": "最悪",
+        "kana": "さいあく",
+        "gloss": "awful",
+        "reading": "saiaku"
+      },
+      {
+        "text": "だよ。",
+        "kana": "だよ",
+        "gloss": "(it is)",
+        "reading": "dayo"
       }
     ]
   },
@@ -2775,21 +3939,33 @@
     "segments": [
       {
         "text": "わあ、",
-        "reading": "wā",
+        "kana": "わあ",
         "gloss": "wow",
-        "kana": "わあ"
+        "reading": "wā"
       },
       {
-        "text": "このプレゼント最高！",
-        "reading": "kono purezento saikō",
-        "gloss": "this present is the best",
-        "kana": "コノ プレゼント サイコー"
+        "text": "この",
+        "kana": "この",
+        "gloss": "this",
+        "reading": "kono"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "最高！",
+        "kana": "さいこう",
+        "gloss": "the best",
+        "reading": "saikō"
       },
       {
         "text": "ありがとう！！",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       }
     ]
   },
@@ -2811,15 +3987,27 @@
     "segments": [
       {
         "text": "えっ…",
-        "reading": "e",
+        "kana": "えっ",
         "gloss": "oh",
-        "kana": "へ"
+        "reading": "e"
       },
       {
-        "text": "いちおうもらっておくね。",
-        "reading": "ichiō moratte oku ne",
-        "gloss": "I'll take it anyway",
-        "kana": "いちおう もらって おく ね"
+        "text": "いちおう",
+        "kana": "いちおう",
+        "gloss": "for now",
+        "reading": "ichiō"
+      },
+      {
+        "text": "もらっておく",
+        "kana": "もらっておく",
+        "gloss": "I'll take it",
+        "reading": "moratteoku"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(softener)",
+        "reading": "ne"
       }
     ]
   },
@@ -2829,21 +4017,69 @@
     "segments": [
       {
         "text": "これ、",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "なんの役にも立たないよね。",
-        "reading": "nan no yaku ni mo tatanai yo ne",
-        "gloss": "is no use at all",
-        "kana": "なん の やく に も たたない よ ね"
+        "text": "なん",
+        "kana": "なん",
+        "gloss": "any",
+        "reading": "nan"
       },
       {
-        "text": "なんでくれたの？",
-        "reading": "nande kureta no",
-        "gloss": "why did you give it",
-        "kana": "なんで くれた の"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "役",
+        "kana": "やく",
+        "gloss": "use",
+        "reading": "yaku"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)",
+        "reading": "ni"
+      },
+      {
+        "text": "も",
+        "kana": "も",
+        "gloss": "(even)",
+        "reading": "mo"
+      },
+      {
+        "text": "立たない",
+        "kana": "たたない",
+        "gloss": "is not",
+        "reading": "tatanai"
+      },
+      {
+        "text": "よね。",
+        "kana": "よね",
+        "gloss": "(is it)",
+        "reading": "yone"
+      },
+      {
+        "text": "なんで",
+        "kana": "なんで",
+        "gloss": "why",
+        "reading": "nande"
+      },
+      {
+        "text": "くれた",
+        "kana": "くれた",
+        "gloss": "gave me",
+        "reading": "kureta"
+      },
+      {
+        "text": "の？",
+        "kana": "の",
+        "gloss": "(question)",
+        "reading": "no"
       }
     ]
   },
@@ -2936,39 +4172,69 @@
     "segments": [
       {
         "text": "えっ…",
-        "reading": "e",
+        "kana": "えっ",
         "gloss": "oh",
-        "kana": "へ"
+        "reading": "e"
       },
       {
         "text": "これ、",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
         "text": "わたし",
-        "reading": "watashi",
+        "kana": "わたし",
         "gloss": "me",
-        "kana": "わたし"
+        "reading": "watashi"
       },
       {
         "text": "に？",
-        "reading": "ni",
-        "gloss": "for",
-        "kana": "に"
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
       },
       {
         "text": "そう、",
-        "reading": "sō",
-        "gloss": "I see",
-        "kana": "そう"
+        "kana": "そう",
+        "gloss": "right",
+        "reading": "sō"
       },
       {
-        "text": "じゃあそのへんにおいとくね…",
-        "reading": "jā sono hen ni oitoku ne",
-        "gloss": "then I'll leave it around there",
-        "kana": "じゃあ その へん に おいとく ね"
+        "text": "じゃあ",
+        "kana": "じゃあ",
+        "gloss": "then",
+        "reading": "jā"
+      },
+      {
+        "text": "その",
+        "kana": "その",
+        "gloss": "that",
+        "reading": "sono"
+      },
+      {
+        "text": "へん",
+        "kana": "へん",
+        "gloss": "area",
+        "reading": "hen"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "おいとく",
+        "kana": "おいとく",
+        "gloss": "I'll put it",
+        "reading": "oitoku"
+      },
+      {
+        "text": "ね…",
+        "kana": "ね",
+        "gloss": "(softener)",
+        "reading": "ne"
       }
     ]
   },
@@ -2978,27 +4244,57 @@
     "segments": [
       {
         "text": "うえっ！",
-        "reading": "ue",
+        "kana": "うえっ",
         "gloss": "ugh",
-        "kana": "うえ"
+        "reading": "ue"
       },
       {
         "text": "わたし",
-        "reading": "watashi",
+        "kana": "わたし",
         "gloss": "I",
-        "kana": "わたし"
+        "reading": "watashi"
       },
       {
-        "text": "がこんなの",
-        "reading": "ga konna no",
-        "gloss": "such a thing",
-        "kana": "がこんなの"
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
       },
       {
-        "text": "気にいると思ったの？",
-        "reading": "ki ni iru to omotta no",
-        "gloss": "did you think I'd like",
-        "kana": "き に いる と おもった の"
+        "text": "こんな",
+        "kana": "こんな",
+        "gloss": "like this",
+        "reading": "konna"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(one)",
+        "reading": "no"
+      },
+      {
+        "text": "気にいる",
+        "kana": "きにいる",
+        "gloss": "would like",
+        "reading": "kiniiru"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quoting)",
+        "reading": "to"
+      },
+      {
+        "text": "思った",
+        "kana": "おもった",
+        "gloss": "thought",
+        "reading": "omotta"
+      },
+      {
+        "text": "の？",
+        "kana": "の",
+        "gloss": "(question)",
+        "reading": "no"
       }
     ]
   },
@@ -3020,33 +4316,63 @@
     "segments": [
       {
         "text": "おいおい！",
-        "reading": "oi oi",
+        "kana": "おいおい",
         "gloss": "hey hey",
-        "kana": "おい おい"
+        "reading": "oioi"
       },
       {
-        "text": "こいつは上モノじゃないか。",
-        "reading": "koitsu wa jōmono ja nai ka",
-        "gloss": "isn't this the good stuff",
-        "kana": "コイツ は ジョーモノ ジャ ナイ カ"
+        "text": "こいつ",
+        "kana": "こいつ",
+        "gloss": "this",
+        "reading": "koitsu"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "上モノ",
+        "kana": "じょうモノ",
+        "gloss": "good stuff",
+        "reading": "jōmono"
+      },
+      {
+        "text": "じゃないか。",
+        "kana": "じゃないか",
+        "gloss": "isn't it",
+        "reading": "janaika"
       },
       {
         "text": "まったく、",
-        "reading": "mattaku",
-        "gloss": "honestly",
-        "kana": "まったく"
+        "kana": "まったく",
+        "gloss": "really",
+        "reading": "mattaku"
       },
       {
-        "text": "ありがとよ、",
-        "reading": "arigato yo",
+        "text": "ありがと",
+        "kana": "ありがと",
         "gloss": "thanks",
-        "kana": "ありがと よ"
+        "reading": "arigato"
       },
       {
-        "text": "若いの！",
-        "reading": "wakai no",
-        "gloss": "young one",
-        "kana": "わかい の"
+        "text": "よ、",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
+      },
+      {
+        "text": "若い",
+        "kana": "わかい",
+        "gloss": "young",
+        "reading": "wakai"
+      },
+      {
+        "text": "の！",
+        "kana": "の",
+        "gloss": "(one)",
+        "reading": "no"
       }
     ]
   },
@@ -3266,15 +4592,27 @@
     "segments": [
       {
         "text": "ありがとう。",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       },
       {
-        "text": "ステキなプレゼントだね。",
-        "reading": "suteki na purezento da ne",
-        "gloss": "that's a lovely present",
-        "kana": "ステキ ナ プレゼント ダ ネ"
+        "text": "ステキな",
+        "kana": "ステキな",
+        "gloss": "lovely",
+        "reading": "sutekina"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "だね。",
+        "kana": "だね",
+        "gloss": "(it is)",
+        "reading": "dane"
       }
     ]
   },
@@ -3284,21 +4622,33 @@
     "segments": [
       {
         "text": "ああ、",
-        "reading": "ā",
+        "kana": "ああ",
         "gloss": "ah",
-        "kana": "ああ"
+        "reading": "ā"
       },
       {
-        "text": "これ大好きなんですよ！",
-        "reading": "kore daisuki na n desu yo",
-        "gloss": "I love this",
-        "kana": "これ だいすき な ん です よ"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
+      },
+      {
+        "text": "大好き",
+        "kana": "だいすき",
+        "gloss": "love",
+        "reading": "daisuki"
+      },
+      {
+        "text": "なんですよ！",
+        "kana": "なんですよ",
+        "gloss": "(you see)",
+        "reading": "nandesuyo"
       },
       {
         "text": "ありがとうございます！",
-        "reading": "arigatō gozaimasu",
+        "kana": "ありがとうございます",
         "gloss": "thank you very much",
-        "kana": "ありがとう ございます"
+        "reading": "arigatōgozaimasu"
       }
     ]
   },
@@ -3307,22 +4657,40 @@
     "english": "Thank you for your kindness. I like this.",
     "segments": [
       {
-        "text": "ご親切にありがとうございます。",
-        "reading": "go-shinsetsu ni arigatō gozaimasu",
-        "gloss": "thank you for your kindness",
-        "kana": "ごしんせつ に ありがとう ございます"
+        "text": "ご親切",
+        "kana": "ごしんせつ",
+        "gloss": "kindness",
+        "reading": "goshinsetsu"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)",
+        "reading": "ni"
+      },
+      {
+        "text": "ありがとうございます。",
+        "kana": "ありがとうございます",
+        "gloss": "thank you",
+        "reading": "arigatōgozaimasu"
       },
       {
         "text": "これ、",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "好きなんですよ。",
-        "reading": "suki na n desu yo",
-        "gloss": "I like",
-        "kana": "すき な ん です よ"
+        "text": "好き",
+        "kana": "すき",
+        "gloss": "like",
+        "reading": "suki"
+      },
+      {
+        "text": "なんですよ。",
+        "kana": "なんですよ",
+        "gloss": "(you see)",
+        "reading": "nandesuyo"
       }
     ]
   },
@@ -3331,16 +4699,34 @@
     "english": "This... isn't quite to my taste...",
     "segments": [
       {
-        "text": "これは…",
-        "reading": "kore wa",
+        "text": "これ",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ は"
+        "reading": "kore"
       },
       {
-        "text": "あまり好みじゃないですね…",
-        "reading": "amari konomi ja nai desu ne",
-        "gloss": "isn't much to my taste",
-        "kana": "あまり このみ じゃ ない です ね"
+        "text": "は…",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "あまり",
+        "kana": "あまり",
+        "gloss": "not very",
+        "reading": "amari"
+      },
+      {
+        "text": "好み",
+        "kana": "このみ",
+        "gloss": "to my taste",
+        "reading": "konomi"
+      },
+      {
+        "text": "じゃないですね…",
+        "kana": "じゃないですね",
+        "gloss": "isn't",
+        "reading": "janaidesune"
       }
     ]
   },
@@ -3349,22 +4735,40 @@
     "english": "Please, never bring me this again.",
     "segments": [
       {
-        "text": "こいつはもう二度と",
-        "reading": "koitsu wa mō nido to",
-        "gloss": "this, never again",
-        "kana": "こいつ は もう にど と"
+        "text": "こいつ",
+        "kana": "こいつ",
+        "gloss": "this",
+        "reading": "koitsu"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "もう",
+        "kana": "もう",
+        "gloss": "ever",
+        "reading": "mō"
+      },
+      {
+        "text": "二度と",
+        "kana": "にどと",
+        "gloss": "again",
+        "reading": "nidoto"
       },
       {
         "text": "持ってこないでください、",
-        "reading": "motte konaide kudasai",
+        "kana": "もってこないでください",
         "gloss": "please don't bring",
-        "kana": "もって こないで ください"
+        "reading": "mottekonaidekudasai"
       },
       {
         "text": "頼みます。",
-        "reading": "tanomimasu",
+        "kana": "たのみます",
         "gloss": "I beg you",
-        "kana": "たのみます"
+        "reading": "tanomimasu"
       }
     ]
   },
@@ -3373,16 +4777,22 @@
     "english": "A present? Thank you very much!",
     "segments": [
       {
-        "text": "プレゼントですか？",
-        "reading": "purezento desu ka",
-        "gloss": "is it a present",
-        "kana": "プレゼント デス カ"
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "a present",
+        "reading": "purezento"
+      },
+      {
+        "text": "ですか？",
+        "kana": "ですか",
+        "gloss": "(is it?)",
+        "reading": "desuka"
       },
       {
         "text": "ありがとうございます！",
-        "reading": "arigatō gozaimasu",
+        "kana": "ありがとうございます",
         "gloss": "thank you very much",
-        "kana": "ありがとう ございます"
+        "reading": "arigatōgozaimasu"
       }
     ]
   },
@@ -3392,33 +4802,57 @@
     "segments": [
       {
         "text": "えっ、",
-        "reading": "e",
+        "kana": "えっ",
         "gloss": "oh",
-        "kana": "へ"
+        "reading": "e"
       },
       {
-        "text": "もらっていいの？",
-        "reading": "moratte ii no",
-        "gloss": "may I have it",
-        "kana": "もらって いい の"
+        "text": "もらって",
+        "kana": "もらって",
+        "gloss": "receive",
+        "reading": "moratte"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "is it OK",
+        "reading": "ii"
+      },
+      {
+        "text": "の？",
+        "kana": "の",
+        "gloss": "(question)",
+        "reading": "no"
       },
       {
         "text": "わあ、",
-        "reading": "wā",
+        "kana": "わあ",
         "gloss": "wow",
-        "kana": "わあ"
+        "reading": "wā"
       },
       {
         "text": "これ",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "ほんと大好きなんだ！！",
-        "reading": "honto daisuki na n da",
-        "gloss": "I really love",
-        "kana": "ほんと だいすき な ん だ"
+        "text": "ほんと",
+        "kana": "ほんと",
+        "gloss": "really",
+        "reading": "honto"
+      },
+      {
+        "text": "大好き",
+        "kana": "だいすき",
+        "gloss": "love",
+        "reading": "daisuki"
+      },
+      {
+        "text": "なんだ！！",
+        "kana": "なんだ",
+        "gloss": "(you see)",
+        "reading": "nanda"
       }
     ]
   },
@@ -3428,15 +4862,27 @@
     "segments": [
       {
         "text": "ありがと！",
-        "reading": "arigato",
+        "kana": "ありがと",
         "gloss": "thanks",
-        "kana": "ありがと"
+        "reading": "arigato"
       },
       {
-        "text": "ステキなプレゼントだね！",
-        "reading": "suteki na purezento da ne",
-        "gloss": "what a lovely present",
-        "kana": "ステキ ナ プレゼント ダ ネ"
+        "text": "ステキな",
+        "kana": "ステキな",
+        "gloss": "lovely",
+        "reading": "sutekina"
+      },
+      {
+        "text": "プレゼント",
+        "kana": "プレゼント",
+        "gloss": "present",
+        "reading": "purezento"
+      },
+      {
+        "text": "だね！",
+        "kana": "だね",
+        "gloss": "(it is)",
+        "reading": "dane"
       }
     ]
   },
@@ -3518,21 +4964,33 @@
     "segments": [
       {
         "text": "よっしゃあ！",
-        "reading": "yosshā",
+        "kana": "よっしゃあ",
         "gloss": "yesss",
-        "kana": "よっしゃあ"
+        "reading": "yosshā"
       },
       {
         "text": "これ、",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "めっちゃ好きなんだよ！",
-        "reading": "metcha suki na n da yo",
-        "gloss": "I really love",
-        "kana": "めっちゃ すき な ん だ よ"
+        "text": "めっちゃ",
+        "kana": "めっちゃ",
+        "gloss": "really",
+        "reading": "metcha"
+      },
+      {
+        "text": "好き",
+        "kana": "すき",
+        "gloss": "love",
+        "reading": "suki"
+      },
+      {
+        "text": "なんだよ！",
+        "kana": "なんだよ",
+        "gloss": "(you see)",
+        "reading": "nandayo"
       }
     ]
   },
@@ -3541,16 +4999,34 @@
     "english": "Thanks! I really like it.",
     "segments": [
       {
-        "text": "ありがとよ！",
-        "reading": "arigato yo",
+        "text": "ありがと",
+        "kana": "ありがと",
         "gloss": "thanks",
-        "kana": "ありがと よ"
+        "reading": "arigato"
       },
       {
-        "text": "すごく気に入ったぜ。",
-        "reading": "sugoku ki ni itta ze",
-        "gloss": "I really took to it",
-        "kana": "すごく き に いった ぜ"
+        "text": "よ！",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
+      },
+      {
+        "text": "すごく",
+        "kana": "すごく",
+        "gloss": "really",
+        "reading": "sugoku"
+      },
+      {
+        "text": "気に入った",
+        "kana": "きにいった",
+        "gloss": "like it",
+        "reading": "kiniitta"
+      },
+      {
+        "text": "ぜ。",
+        "kana": "ぜ",
+        "gloss": "(emphasis)",
+        "reading": "ze"
       }
     ]
   },
@@ -3584,15 +5060,27 @@
     "segments": [
       {
         "text": "おい、",
-        "reading": "oi",
+        "kana": "おい",
         "gloss": "hey",
-        "kana": "おい"
+        "reading": "oi"
       },
       {
-        "text": "まさかイヤがらせじゃないよな？",
-        "reading": "masaka iyagarase ja nai yo na",
-        "gloss": "surely this isn't harassment",
-        "kana": "マサカ イヤガラセ ジャ ナイ ヨ ナ"
+        "text": "まさか",
+        "kana": "まさか",
+        "gloss": "surely not",
+        "reading": "masaka"
+      },
+      {
+        "text": "イヤがらせ",
+        "kana": "イヤがらせ",
+        "gloss": "a wind-up",
+        "reading": "iyagarase"
+      },
+      {
+        "text": "じゃないよな？",
+        "kana": "じゃないよな",
+        "gloss": "isn't it",
+        "reading": "janaiyona"
       }
     ]
   },
@@ -3602,21 +5090,33 @@
     "segments": [
       {
         "text": "オレ",
-        "reading": "ore",
+        "kana": "オレ",
         "gloss": "me",
-        "kana": "オレ"
+        "reading": "ore"
       },
       {
-        "text": "にくれんの？",
-        "reading": "ni kuren no",
-        "gloss": "are you giving it to",
-        "kana": "に くれん の"
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "くれん",
+        "kana": "くれん",
+        "gloss": "giving",
+        "reading": "kuren"
+      },
+      {
+        "text": "の？",
+        "kana": "の",
+        "gloss": "(question)",
+        "reading": "no"
       },
       {
         "text": "ありがとうございます！",
-        "reading": "arigatō gozaimasu",
-        "gloss": "thank you very much",
-        "kana": "ありがとう ございます"
+        "kana": "ありがとうございます",
+        "gloss": "thank you",
+        "reading": "arigatōgozaimasu"
       }
     ]
   },
@@ -3626,33 +5126,63 @@
     "segments": [
       {
         "text": "ワァオ！",
-        "reading": "wāo",
+        "kana": "ワァオ",
         "gloss": "wow",
-        "kana": "ワーオ"
+        "reading": "wāo"
       },
       {
-        "text": "あの谷",
-        "reading": "ano tani",
-        "gloss": "that valley",
-        "kana": "あの たに"
+        "text": "あの",
+        "kana": "あの",
+        "gloss": "that",
+        "reading": "ano"
       },
       {
-        "text": "のお土産、",
-        "reading": "no o-miyage",
-        "gloss": "'s souvenirs",
-        "kana": "の おみやげ"
+        "text": "谷",
+        "kana": "たに",
+        "gloss": "valley",
+        "reading": "tani"
       },
       {
-        "text": "ほんとうに大好きなの。",
-        "reading": "hontō ni daisuki na no",
-        "gloss": "I really love",
-        "kana": "ほんとう に だいすき な の"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
       },
       {
-        "text": "すっごくうれしい～！",
-        "reading": "suggoku ureshii",
-        "gloss": "I'm so happy",
-        "kana": "すっごく うれしい"
+        "text": "お土産、",
+        "kana": "おみやげ",
+        "gloss": "gifts",
+        "reading": "omiyage"
+      },
+      {
+        "text": "ほんとうに",
+        "kana": "ほんとうに",
+        "gloss": "really",
+        "reading": "hontōni"
+      },
+      {
+        "text": "大好き",
+        "kana": "だいすき",
+        "gloss": "love",
+        "reading": "daisuki"
+      },
+      {
+        "text": "なの。",
+        "kana": "なの",
+        "gloss": "(you see)",
+        "reading": "nano"
+      },
+      {
+        "text": "すっごく",
+        "kana": "すっごく",
+        "gloss": "so",
+        "reading": "suggoku"
+      },
+      {
+        "text": "うれしい～！",
+        "kana": "うれしい",
+        "gloss": "happy",
+        "reading": "ureshii"
       }
     ]
   },
@@ -3758,21 +5288,45 @@
     "segments": [
       {
         "text": "これ、",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "すごく好きなんだ。",
-        "reading": "sugoku suki na n da",
-        "gloss": "I really love",
-        "kana": "すごく すき な ん だ"
+        "text": "すごく",
+        "kana": "すごく",
+        "gloss": "really",
+        "reading": "sugoku"
       },
       {
-        "text": "どうしてわかったんだ？",
-        "reading": "dōshite wakatta n da",
-        "gloss": "how did you know",
-        "kana": "どうして わかった ん だ"
+        "text": "好き",
+        "kana": "すき",
+        "gloss": "love",
+        "reading": "suki"
+      },
+      {
+        "text": "なんだ。",
+        "kana": "なんだ",
+        "gloss": "(you see)",
+        "reading": "nanda"
+      },
+      {
+        "text": "どうして",
+        "kana": "どうして",
+        "gloss": "how",
+        "reading": "dōshite"
+      },
+      {
+        "text": "わかった",
+        "kana": "わかった",
+        "gloss": "did you know",
+        "reading": "wakatta"
+      },
+      {
+        "text": "んだ？",
+        "kana": "んだ",
+        "gloss": "(question)",
+        "reading": "nda"
       }
     ]
   },
@@ -3830,44 +5384,86 @@
     "segments": [
       {
         "text": "えっ、",
-        "reading": "e",
+        "kana": "えっ",
         "gloss": "oh",
-        "kana": "へ"
+        "reading": "e"
       },
       {
-        "text": "いいの、",
-        "reading": "ii no",
-        "gloss": "is it all right",
-        "kana": "いい の"
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "is it OK",
+        "reading": "ii"
+      },
+      {
+        "text": "の、",
+        "kana": "の",
+        "gloss": "(question)",
+        "reading": "no"
       },
       {
         "text": "@！",
-        "reading": "",
-        "gloss": "(player name)"
+        "kana": "",
+        "gloss": "(player's name)"
       },
       {
-        "text": "おれの好物",
-        "reading": "ore no kōbutsu",
-        "gloss": "my favourite",
-        "kana": "おれ の こうぶつ"
+        "text": "おれ",
+        "kana": "おれ",
+        "gloss": "my",
+        "reading": "ore"
       },
       {
-        "text": "がこれだ",
-        "reading": "ga kore da",
-        "gloss": "is this",
-        "kana": "がこれだ"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "好物",
+        "kana": "こうぶつ",
+        "gloss": "favourite",
+        "reading": "kōbutsu"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
+      },
+      {
+        "text": "だ",
+        "kana": "だ",
+        "gloss": "is",
+        "reading": "da"
       },
       {
         "text": "って、",
-        "reading": "tte",
-        "gloss": "(quoting particle)",
-        "kana": "って"
+        "kana": "って",
+        "gloss": "(quoting)",
+        "reading": "tte"
       },
       {
-        "text": "どうしてわかったんだ？",
-        "reading": "dōshite wakatta n da",
-        "gloss": "how did you know",
-        "kana": "どうして わかった ん だ"
+        "text": "どうして",
+        "kana": "どうして",
+        "gloss": "how",
+        "reading": "dōshite"
+      },
+      {
+        "text": "わかった",
+        "kana": "わかった",
+        "gloss": "did you know",
+        "reading": "wakatta"
+      },
+      {
+        "text": "んだ？",
+        "kana": "んだ",
+        "gloss": "(question)",
+        "reading": "nda"
       }
     ]
   },
@@ -3943,21 +5539,33 @@
     "segments": [
       {
         "text": "おっ、",
-        "reading": "o",
+        "kana": "おっ",
         "gloss": "oh",
-        "kana": "を"
+        "reading": "o"
       },
       {
-        "text": "なんかくれるのか？",
-        "reading": "nanka kureru no ka",
-        "gloss": "are you giving me something",
-        "kana": "なんか くれる の か"
+        "text": "なんか",
+        "kana": "なんか",
+        "gloss": "something",
+        "reading": "nanka"
+      },
+      {
+        "text": "くれる",
+        "kana": "くれる",
+        "gloss": "give me",
+        "reading": "kureru"
+      },
+      {
+        "text": "のか？",
+        "kana": "のか",
+        "gloss": "(question)",
+        "reading": "noka"
       },
       {
         "text": "ありがとうございます！",
-        "reading": "arigatō gozaimasu",
-        "gloss": "thank you very much",
-        "kana": "ありがとう ございます"
+        "kana": "ありがとうございます",
+        "gloss": "thank you",
+        "reading": "arigatōgozaimasu"
       }
     ]
   },
@@ -3967,27 +5575,39 @@
     "segments": [
       {
         "text": "うわぁ、",
-        "reading": "uwā",
+        "kana": "うわぁ",
         "gloss": "wow",
-        "kana": "うわあ"
+        "reading": "uwā"
       },
       {
         "text": "ありがとう！",
-        "reading": "arigatō",
+        "kana": "ありがとう",
         "gloss": "thank you",
-        "kana": "ありがとう"
+        "reading": "arigatō"
       },
       {
         "text": "これ、",
-        "reading": "kore",
+        "kana": "これ",
         "gloss": "this",
-        "kana": "これ"
+        "reading": "kore"
       },
       {
-        "text": "めちゃくちゃすごいや！",
-        "reading": "metchakucha sugoi ya",
-        "gloss": "is incredibly amazing",
-        "kana": "めっちゃくちゃ すごい や"
+        "text": "めちゃくちゃ",
+        "kana": "めちゃくちゃ",
+        "gloss": "absolutely",
+        "reading": "mechakucha"
+      },
+      {
+        "text": "すごい",
+        "kana": "すごい",
+        "gloss": "amazing",
+        "reading": "sugoi"
+      },
+      {
+        "text": "や！",
+        "kana": "や",
+        "gloss": "(exclamation)",
+        "reading": "ya"
       }
     ]
   },
@@ -4068,46 +5688,100 @@
     "english": "This is good! Ah, if only my old man were here. He was mad about this too.",
     "segments": [
       {
-        "text": "こいつはいい！",
-        "reading": "koitsu wa ii",
-        "gloss": "this is good",
-        "kana": "こいつ は いい"
+        "text": "こいつ",
+        "kana": "こいつ",
+        "gloss": "this",
+        "reading": "koitsu"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "いい！",
+        "kana": "いい",
+        "gloss": "good",
+        "reading": "ii"
       },
       {
         "text": "ああ、",
-        "reading": "ā",
+        "kana": "ああ",
         "gloss": "ah",
-        "kana": "ああ"
+        "reading": "ā"
       },
       {
         "text": "親父",
-        "reading": "oyaji",
+        "kana": "おやじ",
         "gloss": "my old man",
-        "kana": "おやじ"
+        "reading": "oyaji"
       },
       {
-        "text": "がここにいたらなあ。",
-        "reading": "ga koko ni itara nā",
-        "gloss": "if only he were here",
-        "kana": "が ここ に いたら なあ"
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here",
+        "reading": "koko"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(location marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "いたら",
+        "kana": "いたら",
+        "gloss": "if were",
+        "reading": "itara"
+      },
+      {
+        "text": "なあ。",
+        "kana": "なあ",
+        "gloss": "(if only)",
+        "reading": "nā"
       },
       {
         "text": "親父",
-        "reading": "oyaji",
+        "kana": "おやじ",
         "gloss": "my old man",
-        "kana": "おやじ"
+        "reading": "oyaji"
       },
       {
-        "text": "もこいつ",
-        "reading": "mo koitsu",
-        "gloss": "this too",
-        "kana": "もこいつ"
+        "text": "も",
+        "kana": "も",
+        "gloss": "(also)",
+        "reading": "mo"
       },
       {
-        "text": "に目がなかったんだ。",
-        "reading": "ni me ga nakatta n da",
-        "gloss": "had no eyes for / was mad about",
-        "kana": "に め が なかった ん だ"
+        "text": "こいつ",
+        "kana": "こいつ",
+        "gloss": "this",
+        "reading": "koitsu"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)",
+        "reading": "ni"
+      },
+      {
+        "text": "目がなかった",
+        "kana": "めがなかった",
+        "gloss": "was mad about",
+        "reading": "meganakatta"
+      },
+      {
+        "text": "んだ。",
+        "kana": "んだ",
+        "gloss": "(you see)",
+        "reading": "nda"
       }
     ]
   },
@@ -4171,27 +5845,63 @@
     "segments": [
       {
         "text": "…（クンクン）…",
-        "reading": "kunkun",
-        "gloss": "*sniff*",
-        "kana": "クンクン"
+        "kana": "クンクン",
+        "gloss": "sniff",
+        "reading": "kunkun"
       },
       {
         "text": "ふん、",
-        "reading": "fun",
+        "kana": "ふん",
         "gloss": "hmph",
-        "kana": "ふん"
+        "reading": "fun"
       },
       {
-        "text": "撒きエサのバケツ",
-        "reading": "makiesa no baketsu",
-        "gloss": "chum bucket",
-        "kana": "マキエサ ノ バケツ"
+        "text": "撒きエサ",
+        "kana": "まきエサ",
+        "gloss": "chum",
+        "reading": "makiesa"
       },
       {
-        "text": "にでも入れとくとするかね。",
-        "reading": "ni demo iretoku to suru ka ne",
-        "gloss": "I suppose I'll put it in",
-        "kana": "に でも いれとく と する か ね"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "バケツ",
+        "kana": "バケツ",
+        "gloss": "bucket",
+        "reading": "baketsu"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)",
+        "reading": "ni"
+      },
+      {
+        "text": "でも",
+        "kana": "でも",
+        "gloss": "or so",
+        "reading": "demo"
+      },
+      {
+        "text": "入れとく",
+        "kana": "いれとく",
+        "gloss": "put it",
+        "reading": "iretoku"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "(quoting)",
+        "reading": "to"
+      },
+      {
+        "text": "するかね。",
+        "kana": "するかね",
+        "gloss": "I suppose I'll",
+        "reading": "surukane"
       }
     ]
   },
@@ -4219,39 +5929,99 @@
     "segments": [
       {
         "text": "おお、",
-        "reading": "ō",
+        "kana": "おお",
         "gloss": "ah",
-        "kana": "おう"
+        "reading": "ō"
       },
       {
-        "text": "強力な神秘のエネルギー",
-        "reading": "kyōryoku na shinpi no enerugī",
-        "gloss": "potent mystic energy",
-        "kana": "キョーリョク ナ シンピ ノ エネルギー"
+        "text": "強力な",
+        "kana": "きょうりょくな",
+        "gloss": "potent",
+        "reading": "kyōryokuna"
       },
       {
-        "text": "が染みこんでいるな…",
-        "reading": "ga shimikonde iru na",
-        "gloss": "is steeped in it",
-        "kana": "が しみこんで いる な"
+        "text": "神秘",
+        "kana": "しんぴ",
+        "gloss": "arcane",
+        "reading": "shinpi"
       },
       {
-        "text": "我が研究",
-        "reading": "waga kenkyū",
-        "gloss": "my research",
-        "kana": "わが けんきゅう"
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
       },
       {
-        "text": "にとても役立ちそうだ。",
-        "reading": "ni totemo yakudachisō da",
-        "gloss": "looks very useful for",
-        "kana": "に とても やくだちそう だ"
+        "text": "エネルギー",
+        "kana": "エネルギー",
+        "gloss": "energy",
+        "reading": "enerugī"
       },
       {
-        "text": "感謝するぞ！",
-        "reading": "kansha suru zo",
-        "gloss": "I thank you",
-        "kana": "かんしゃ する ぞ"
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "染みこんでいる",
+        "kana": "しみこんでいる",
+        "gloss": "is steeped in",
+        "reading": "shimikondeiru"
+      },
+      {
+        "text": "な…",
+        "kana": "な",
+        "gloss": "(emphasis)",
+        "reading": "na"
+      },
+      {
+        "text": "我が",
+        "kana": "わが",
+        "gloss": "my",
+        "reading": "waga"
+      },
+      {
+        "text": "研究",
+        "kana": "けんきゅう",
+        "gloss": "studies",
+        "reading": "kenkyū"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(for)",
+        "reading": "ni"
+      },
+      {
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very",
+        "reading": "totemo"
+      },
+      {
+        "text": "役立ちそう",
+        "kana": "やくだちそう",
+        "gloss": "looks useful",
+        "reading": "yakudachisō"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "(it is)",
+        "reading": "da"
+      },
+      {
+        "text": "感謝する",
+        "kana": "かんしゃする",
+        "gloss": "thank you",
+        "reading": "kanshasuru"
+      },
+      {
+        "text": "ぞ！",
+        "kana": "ぞ",
+        "gloss": "(emphasis)",
+        "reading": "zo"
       }
     ]
   },
@@ -4261,27 +6031,63 @@
     "segments": [
       {
         "text": "感謝する。",
-        "reading": "kansha suru",
-        "gloss": "I thank you",
-        "kana": "かんしゃ する"
+        "kana": "かんしゃする",
+        "gloss": "my thanks",
+        "reading": "kanshasuru"
       },
       {
-        "text": "この品",
-        "reading": "kono shina",
-        "gloss": "this item",
-        "kana": "この しな"
+        "text": "この",
+        "kana": "この",
+        "gloss": "this",
+        "reading": "kono"
       },
       {
-        "text": "が備えている特性",
-        "reading": "ga sonaete iru tokusei",
-        "gloss": "the properties it possesses",
-        "kana": "が そなえて いる とくせい"
+        "text": "品",
+        "kana": "しな",
+        "gloss": "item",
+        "reading": "shina"
       },
       {
-        "text": "は非常に興味ぶかいな。",
-        "reading": "wa hijō ni kyōmibukai na",
-        "gloss": "are extremely interesting",
-        "kana": "は ひじょう に きょうみぶかい な"
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "備えている",
+        "kana": "そなえている",
+        "gloss": "possesses",
+        "reading": "sonaeteiru"
+      },
+      {
+        "text": "特性",
+        "kana": "とくせい",
+        "gloss": "properties",
+        "reading": "tokusei"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "非常に",
+        "kana": "ひじょうに",
+        "gloss": "most",
+        "reading": "hijōni"
+      },
+      {
+        "text": "興味ぶかい",
+        "kana": "きょうみぶかい",
+        "gloss": "interesting",
+        "reading": "kyōmibukai"
+      },
+      {
+        "text": "な。",
+        "kana": "な",
+        "gloss": "(emphasis)",
+        "reading": "na"
       }
     ]
   },
@@ -4333,51 +6139,111 @@
     "segments": [
       {
         "text": "ぐぬぬ…",
-        "reading": "gununu",
+        "kana": "ぐぬぬ",
         "gloss": "grr",
-        "kana": "ぐぬぬ"
+        "reading": "gununu"
       },
       {
-        "text": "つまらぬ俗世の品",
-        "reading": "tsumaranu zokuse no shina",
-        "gloss": "a trifling worldly item",
-        "kana": "つまらぬ ぞくせ の しな"
+        "text": "つまらぬ",
+        "kana": "つまらぬ",
+        "gloss": "trifling",
+        "reading": "tsumaranu"
+      },
+      {
+        "text": "俗世",
+        "kana": "ぞくせ",
+        "gloss": "mundane world",
+        "reading": "zokuse"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(linking)",
+        "reading": "no"
+      },
+      {
+        "text": "品",
+        "kana": "しな",
+        "gloss": "thing",
+        "reading": "shina"
       },
       {
         "text": "ではないか。",
-        "reading": "de wa nai ka",
-        "gloss": "is it not",
-        "kana": "で は ない か"
+        "kana": "で は ないか",
+        "gloss": "isn't it",
+        "reading": "de wa naika"
       },
       {
-        "text": "今後は、",
-        "reading": "kongo wa",
+        "text": "今後",
+        "kana": "こんご",
         "gloss": "in future",
-        "kana": "こんご は"
+        "reading": "kongo"
       },
       {
-        "text": "このようなもの",
-        "reading": "kono yō na mono",
-        "gloss": "things like this",
-        "kana": "このようなもの"
+        "text": "は、",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       },
       {
-        "text": "で吾輩",
-        "reading": "de wagahai",
-        "gloss": "me, with",
-        "kana": "で わがはい"
+        "text": "この",
+        "kana": "この",
+        "gloss": "this",
+        "reading": "kono"
       },
       {
-        "text": "をわずらわせるのは",
-        "reading": "o wazurawaseru no wa",
-        "gloss": "troubling",
-        "kana": "をわずらわせるのは"
+        "text": "ような",
+        "kana": "ような",
+        "gloss": "kind of",
+        "reading": "yōna"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing",
+        "reading": "mono"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(with)",
+        "reading": "de"
+      },
+      {
+        "text": "吾輩",
+        "kana": "わがはい",
+        "gloss": "me",
+        "reading": "wagahai"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "わずらわせる",
+        "kana": "わずらわせる",
+        "gloss": "trouble",
+        "reading": "wazurawaseru"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominaliser)",
+        "reading": "no"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       },
       {
         "text": "遠慮してくれたまえ。",
-        "reading": "enryo shite kure tamae",
-        "gloss": "kindly refrain from",
-        "kana": "えんりょ して くれ たまえ"
+        "kana": "えんりょしてくれたまえ",
+        "gloss": "kindly refrain",
+        "reading": "enryoshitekuretamae"
       }
     ]
   },
@@ -4387,15 +6253,27 @@
     "segments": [
       {
         "text": "感謝する。",
-        "reading": "kansha suru",
-        "gloss": "I thank you",
-        "kana": "かんしゃ する"
+        "kana": "かんしゃする",
+        "gloss": "my thanks",
+        "reading": "kanshasuru"
       },
       {
-        "text": "きっと役立つことだろう。",
-        "reading": "kitto yakudatsu koto darō",
-        "gloss": "it will surely prove useful",
-        "kana": "きっと やくだつ こと だろう"
+        "text": "きっと",
+        "kana": "きっと",
+        "gloss": "surely",
+        "reading": "kitto"
+      },
+      {
+        "text": "役立つ",
+        "kana": "やくだつ",
+        "gloss": "be useful",
+        "reading": "yakudatsu"
+      },
+      {
+        "text": "ことだろう。",
+        "kana": "ことだろう",
+        "gloss": "(it will)",
+        "reading": "kotodarō"
       }
     ]
   }
