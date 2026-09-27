@@ -107,10 +107,22 @@
     "english": "Adopt Pets",
     "segments": [
       {
-        "text": "ペットを飼う",
-        "reading": "petto o kau",
-        "gloss": "keep a pet",
-        "kana": "ペット を カウ"
+        "text": "ペット",
+        "kana": "ペット",
+        "gloss": "pet",
+        "reading": "petto"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "飼う",
+        "kana": "かう",
+        "gloss": "to keep, adopt",
+        "reading": "kau"
       }
     ]
   },
@@ -238,10 +250,34 @@
     "english": "You become immune to debuffs.",
     "segments": [
       {
-        "text": "デバフの効果を受けなくなる。",
-        "reading": "debafu no kōka o ukenaku naru",
-        "gloss": "you stop taking debuff effects",
-        "kana": "デバフ ノ コーカ を ウケナク ナル"
+        "text": "デバフ",
+        "kana": "デバフ",
+        "gloss": "debuff",
+        "reading": "debafu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "効果",
+        "kana": "こうか",
+        "gloss": "effect",
+        "reading": "kōka"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "受けなくなる。",
+        "kana": "うけなくなる",
+        "gloss": "no longer receive",
+        "reading": "ukenakunaru"
       }
     ]
   },
@@ -304,10 +340,34 @@
     "english": "You have infinite energy.",
     "segments": [
       {
-        "text": "エナジーが無限になる。",
-        "reading": "enajī ga mugen ni naru",
-        "gloss": "your energy becomes infinite",
-        "kana": "エナジー ガ ムゲン ニ ナル"
+        "text": "エナジー",
+        "kana": "エナジー",
+        "gloss": "energy",
+        "reading": "enajī"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "無限",
+        "kana": "むげん",
+        "gloss": "infinite",
+        "reading": "mugen"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(becomes)",
+        "reading": "ni"
+      },
+      {
+        "text": "なる。",
+        "kana": "なる",
+        "gloss": "becomes",
+        "reading": "naru"
       }
     ]
   },
@@ -334,10 +394,28 @@
     "english": "+10% critical strike chance",
     "segments": [
       {
-        "text": "クリティカル確率10%アップ",
-        "reading": "kuritikaru kakuritsu jippāsento appu",
-        "gloss": "critical rate up 10%",
-        "kana": "クリティカル カクリツ ジッパーセント アップ"
+        "text": "クリティカル",
+        "kana": "クリティカル",
+        "gloss": "critical",
+        "reading": "kuritikaru"
+      },
+      {
+        "text": "確率",
+        "kana": "かくりつ",
+        "gloss": "chance",
+        "reading": "kakuritsu"
+      },
+      {
+        "text": "10%",
+        "kana": "10%",
+        "gloss": "10%",
+        "reading": "10%"
+      },
+      {
+        "text": "アップ",
+        "kana": "アップ",
+        "gloss": "up",
+        "reading": "appu"
       }
     ]
   },
@@ -364,10 +442,46 @@
     "english": "You gain extra friendship from talking to people.",
     "segments": [
       {
-        "text": "会話で得られる有効度がアップする。",
-        "reading": "kaiwa de erareru yūkōdo ga appu suru",
-        "gloss": "the friendship gained from conversation goes up",
-        "kana": "カイワ デ エラレル ユーコード ガ アップ スル"
+        "text": "会話",
+        "kana": "かいわ",
+        "gloss": "conversation",
+        "reading": "kaiwa"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(by means of)",
+        "reading": "de"
+      },
+      {
+        "text": "得られる",
+        "kana": "えられる",
+        "gloss": "gained",
+        "reading": "erareru"
+      },
+      {
+        "text": "有効度",
+        "kana": "ゆうこうど",
+        "gloss": "friendship points",
+        "reading": "yūkōdo"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "アップ",
+        "kana": "アップ",
+        "gloss": "goes up",
+        "reading": "appu"
+      },
+      {
+        "text": "する。",
+        "kana": "する",
+        "gloss": "(does)",
+        "reading": "suru"
       }
     ]
   },
@@ -944,10 +1058,22 @@
     "english": "Bobber Style:",
     "segments": [
       {
-        "text": "ウキのタイプ：",
-        "reading": "uki no taipu",
-        "gloss": "bobber type",
-        "kana": "ウキ ノ タイプ"
+        "text": "ウキ",
+        "kana": "ウキ",
+        "gloss": "bobber",
+        "reading": "uki"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "タイプ：",
+        "kana": "タイプ",
+        "gloss": "type",
+        "reading": "taipu"
       }
     ]
   },
@@ -956,10 +1082,16 @@
     "english": "Choose One:",
     "segments": [
       {
-        "text": "ひとつ選択：",
-        "reading": "hitotsu sentaku",
-        "gloss": "choose one",
-        "kana": "ひとつ せんたく"
+        "text": "ひとつ",
+        "kana": "ひとつ",
+        "gloss": "one",
+        "reading": "hitotsu"
+      },
+      {
+        "text": "選択：",
+        "kana": "せんたく",
+        "gloss": "choose",
+        "reading": "sentaku"
       }
     ]
   },
@@ -1475,10 +1607,16 @@
     "english": "Hearty Beans",
     "segments": [
       {
-        "text": "ハーティー豆",
-        "reading": "hātī mame",
-        "gloss": "hearty beans",
-        "kana": "ハーティー マメ"
+        "text": "ハーティー",
+        "kana": "ハーティー",
+        "gloss": "hearty",
+        "reading": "hātī"
+      },
+      {
+        "text": "豆",
+        "kana": "まめ",
+        "gloss": "beans",
+        "reading": "mame"
       }
     ]
   },
@@ -1799,10 +1937,21 @@
     "english": "+{0} Crit. Chance",
     "segments": [
       {
-        "text": "クリティカル率+{0}",
-        "reading": "kuritikaru ritsu",
-        "gloss": "critical rate",
-        "kana": "クリティカル リツ"
+        "text": "クリティカル",
+        "kana": "クリティカル",
+        "gloss": "critical",
+        "reading": "kuritikaru"
+      },
+      {
+        "text": "率+",
+        "kana": "りつ",
+        "gloss": "rate",
+        "reading": "ritsu"
+      },
+      {
+        "text": "{0}",
+        "kana": "",
+        "gloss": "(amount)"
       }
     ]
   },
@@ -1811,10 +1960,21 @@
     "english": "+{0} Crit. Power",
     "segments": [
       {
-        "text": "クリティカル威力+{0}",
-        "reading": "kuritikaru iryoku",
-        "gloss": "critical power",
-        "kana": "クリティカル イリョク"
+        "text": "クリティカル",
+        "kana": "クリティカル",
+        "gloss": "critical",
+        "reading": "kuritikaru"
+      },
+      {
+        "text": "威力+",
+        "kana": "いりょく",
+        "gloss": "power",
+        "reading": "iryoku"
+      },
+      {
+        "text": "{0}",
+        "kana": "",
+        "gloss": "(amount)"
       }
     ]
   },
@@ -1955,10 +2115,16 @@
     "english": "Full refresh!",
     "segments": [
       {
-        "text": "完全回復！",
-        "reading": "kanzen kaifuku",
-        "gloss": "full recovery",
-        "kana": "かんぜん かいふく"
+        "text": "完全",
+        "kana": "かんぜん",
+        "gloss": "full, complete",
+        "reading": "kanzen"
+      },
+      {
+        "text": "回復！",
+        "kana": "かいふく",
+        "gloss": "recovery",
+        "reading": "kaifuku"
       }
     ]
   },
@@ -1967,10 +2133,22 @@
     "english": "50 Calico Eggs",
     "segments": [
       {
-        "text": "カリコエッグ50個",
-        "reading": "Kariko eggu gojikko",
-        "gloss": "50 Calico Eggs",
-        "kana": "カリコ エッグ ゴジッコ"
+        "text": "カリコ",
+        "kana": "カリコ",
+        "gloss": "Calico",
+        "reading": "kariko"
+      },
+      {
+        "text": "エッグ",
+        "kana": "エッグ",
+        "gloss": "egg",
+        "reading": "eggu"
+      },
+      {
+        "text": "50個",
+        "kana": "50こ",
+        "gloss": "50 (pieces)",
+        "reading": "50ko"
       }
     ]
   },
@@ -1991,10 +2169,46 @@
     "english": "Monsters do less damage",
     "segments": [
       {
-        "text": "モンスターから受けるダメージが減少する",
-        "reading": "monsutā kara ukeru damēji ga genshō suru",
-        "gloss": "damage taken from monsters decreases",
-        "kana": "モンスター カラ ウケル ダメージ ガ ゲンショー スル"
+        "text": "モンスター",
+        "kana": "モンスター",
+        "gloss": "monsters",
+        "reading": "monsutā"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
+      },
+      {
+        "text": "受ける",
+        "kana": "うける",
+        "gloss": "received",
+        "reading": "ukeru"
+      },
+      {
+        "text": "ダメージ",
+        "kana": "ダメージ",
+        "gloss": "damage",
+        "reading": "damēji"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "減少",
+        "kana": "げんしょう",
+        "gloss": "decrease",
+        "reading": "genshō"
+      },
+      {
+        "text": "する",
+        "kana": "する",
+        "gloss": "(does)",
+        "reading": "suru"
       }
     ]
   },
@@ -2003,10 +2217,22 @@
     "english": "25 Calico Eggs",
     "segments": [
       {
-        "text": "カリコエッグ25個",
-        "reading": "Kariko eggu nijūgoko",
-        "gloss": "25 Calico Eggs",
-        "kana": "カリコ エッグ ニジューゴコ"
+        "text": "カリコ",
+        "kana": "カリコ",
+        "gloss": "Calico",
+        "reading": "kariko"
+      },
+      {
+        "text": "エッグ",
+        "kana": "エッグ",
+        "gloss": "egg",
+        "reading": "eggu"
+      },
+      {
+        "text": "25個",
+        "kana": "25こ",
+        "gloss": "25 (pieces)",
+        "reading": "25ko"
       }
     ]
   },
@@ -2015,10 +2241,22 @@
     "english": "10 Calico Eggs",
     "segments": [
       {
-        "text": "カリコエッグ10個",
-        "reading": "Kariko eggu jikko",
-        "gloss": "10 Calico Eggs",
-        "kana": "カリコ エッグ ジッコ"
+        "text": "カリコ",
+        "kana": "カリコ",
+        "gloss": "Calico",
+        "reading": "kariko"
+      },
+      {
+        "text": "エッグ",
+        "kana": "エッグ",
+        "gloss": "egg",
+        "reading": "eggu"
+      },
+      {
+        "text": "10個",
+        "kana": "10こ",
+        "gloss": "10 (pieces)",
+        "reading": "10ko"
       }
     ]
   },
@@ -2027,10 +2265,22 @@
     "english": "100 Calico Eggs!",
     "segments": [
       {
-        "text": "カリコエッグ100個！",
-        "reading": "Kariko eggu hyakko",
-        "gloss": "100 Calico Eggs",
-        "kana": "カリコ エッグ ヒャッコ"
+        "text": "カリコ",
+        "kana": "カリコ",
+        "gloss": "Calico",
+        "reading": "kariko"
+      },
+      {
+        "text": "エッグ",
+        "kana": "エッグ",
+        "gloss": "egg",
+        "reading": "eggu"
+      },
+      {
+        "text": "100個！",
+        "kana": "100こ",
+        "gloss": "100 (pieces)",
+        "reading": "100ko"
       }
     ]
   },
@@ -2111,10 +2361,46 @@
     "english": "Food is half as effective",
     "segments": [
       {
-        "text": "食べ物の効果が半分になる",
-        "reading": "tabemono no kōka ga hanbun ni naru",
-        "gloss": "food's effect becomes half",
-        "kana": "たべもの の こうか が はんぶん に なる"
+        "text": "食べ物",
+        "kana": "たべもの",
+        "gloss": "food",
+        "reading": "tabemono"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "効果",
+        "kana": "こうか",
+        "gloss": "effect",
+        "reading": "kōka"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "半分",
+        "kana": "はんぶん",
+        "gloss": "half",
+        "reading": "hanbun"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(becomes)",
+        "reading": "ni"
+      },
+      {
+        "text": "なる",
+        "kana": "なる",
+        "gloss": "becomes",
+        "reading": "naru"
       }
     ]
   },
@@ -2141,10 +2427,46 @@
     "english": "Monsters do more damage",
     "segments": [
       {
-        "text": "モンスターから受けるダメージが増加する",
-        "reading": "monsutā kara ukeru damēji ga zōka suru",
-        "gloss": "damage taken from monsters increases",
-        "kana": "モンスター カラ ウケル ダメージ ガ ゾーカ スル"
+        "text": "モンスター",
+        "kana": "モンスター",
+        "gloss": "monsters",
+        "reading": "monsutā"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
+      },
+      {
+        "text": "受ける",
+        "kana": "うける",
+        "gloss": "received",
+        "reading": "ukeru"
+      },
+      {
+        "text": "ダメージ",
+        "kana": "ダメージ",
+        "gloss": "damage",
+        "reading": "damēji"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "増加",
+        "kana": "ぞうか",
+        "gloss": "increase",
+        "reading": "zōka"
+      },
+      {
+        "text": "する",
+        "kana": "する",
+        "gloss": "(does)",
+        "reading": "suru"
       }
     ]
   },
@@ -2248,10 +2570,16 @@
     "english": "Full Refresh",
     "segments": [
       {
-        "text": "完全回復",
-        "reading": "kanzen kaifuku",
-        "gloss": "full recovery",
-        "kana": "かんぜん かいふく"
+        "text": "完全",
+        "kana": "かんぜん",
+        "gloss": "full, complete",
+        "reading": "kanzen"
+      },
+      {
+        "text": "回復",
+        "kana": "かいふく",
+        "gloss": "recovery",
+        "reading": "kaifuku"
       }
     ]
   },
@@ -2260,10 +2588,28 @@
     "english": "50 Egg Treasure",
     "segments": [
       {
-        "text": "宝のタマゴ50個",
-        "reading": "takara no tamago gojikko",
-        "gloss": "50 treasure eggs",
-        "kana": "タカラ ノ タマゴ ゴジッコ"
+        "text": "宝",
+        "kana": "たから",
+        "gloss": "treasure",
+        "reading": "takara"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "タマゴ",
+        "kana": "タマゴ",
+        "gloss": "eggs",
+        "reading": "tamago"
+      },
+      {
+        "text": "50個",
+        "kana": "50こ",
+        "gloss": "50 (pieces)",
+        "reading": "50ko"
       }
     ]
   },
@@ -2302,10 +2648,28 @@
     "english": "25 Egg Treasure",
     "segments": [
       {
-        "text": "宝のタマゴ25個",
-        "reading": "takara no tamago nijūgoko",
-        "gloss": "25 treasure eggs",
-        "kana": "タカラ ノ タマゴ ニジューゴコ"
+        "text": "宝",
+        "kana": "たから",
+        "gloss": "treasure",
+        "reading": "takara"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "タマゴ",
+        "kana": "タマゴ",
+        "gloss": "eggs",
+        "reading": "tamago"
+      },
+      {
+        "text": "25個",
+        "kana": "25こ",
+        "gloss": "25 (pieces)",
+        "reading": "25ko"
       }
     ]
   },
@@ -2314,10 +2678,28 @@
     "english": "10 Egg Treasure",
     "segments": [
       {
-        "text": "宝のタマゴ10個",
-        "reading": "takara no tamago jikko",
-        "gloss": "10 treasure eggs",
-        "kana": "タカラ ノ タマゴ ジッコ"
+        "text": "宝",
+        "kana": "たから",
+        "gloss": "treasure",
+        "reading": "takara"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "タマゴ",
+        "kana": "タマゴ",
+        "gloss": "eggs",
+        "reading": "tamago"
+      },
+      {
+        "text": "10個",
+        "kana": "10こ",
+        "gloss": "10 (pieces)",
+        "reading": "10ko"
       }
     ]
   },
@@ -2326,10 +2708,28 @@
     "english": "100 Egg Treasure",
     "segments": [
       {
-        "text": "宝のタマゴ100個",
-        "reading": "takara no tamago hyakko",
-        "gloss": "100 treasure eggs",
-        "kana": "タカラ ノ タマゴ ヒャッコ"
+        "text": "宝",
+        "kana": "たから",
+        "gloss": "treasure",
+        "reading": "takara"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "タマゴ",
+        "kana": "タマゴ",
+        "gloss": "eggs",
+        "reading": "tamago"
+      },
+      {
+        "text": "100個",
+        "kana": "100こ",
+        "gloss": "100 (pieces)",
+        "reading": "100ko"
       }
     ]
   },
@@ -2374,10 +2774,16 @@
     "english": "Assassin Bugs",
     "segments": [
       {
-        "text": "キラー昆虫",
-        "reading": "kirā konchū",
-        "gloss": "killer bugs",
-        "kana": "キラー コンチュー"
+        "text": "キラー",
+        "kana": "キラー",
+        "gloss": "killer",
+        "reading": "kirā"
+      },
+      {
+        "text": "昆虫",
+        "kana": "こんちゅう",
+        "gloss": "insects",
+        "reading": "konchū"
       }
     ]
   },
@@ -2404,10 +2810,16 @@
     "english": "Meager Meals",
     "segments": [
       {
-        "text": "食欲なし",
-        "reading": "shokuyoku nashi",
-        "gloss": "no appetite",
-        "kana": "しょくよく なし"
+        "text": "食欲",
+        "kana": "しょくよく",
+        "gloss": "appetite",
+        "reading": "shokuyoku"
+      },
+      {
+        "text": "なし",
+        "kana": "なし",
+        "gloss": "none",
+        "reading": "nashi"
       }
     ]
   },
@@ -2596,10 +3008,46 @@
     "english": "This can process 3 jugs of milk at a time.",
     "segments": [
       {
-        "text": "一度に3本のミルクを加工できる。",
-        "reading": "ichido ni sanbon no miruku o kakō dekiru",
-        "gloss": "it can process 3 jugs of milk at once",
-        "kana": "イチド ニ サンボン ノ ミルク を カコー デキル"
+        "text": "一度に",
+        "kana": "いちどに",
+        "gloss": "at once",
+        "reading": "ichidoni"
+      },
+      {
+        "text": "3本",
+        "kana": "3ぼん",
+        "gloss": "3 (bottles)",
+        "reading": "3bon"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "ミルク",
+        "kana": "ミルク",
+        "gloss": "milk",
+        "reading": "miruku"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "加工",
+        "kana": "かこう",
+        "gloss": "process",
+        "reading": "kakō"
+      },
+      {
+        "text": "できる。",
+        "kana": "できる",
+        "gloss": "can",
+        "reading": "dekiru"
       }
     ]
   },
@@ -2662,10 +3110,46 @@
     "english": "This can process 3 pieces of wool at a time.",
     "segments": [
       {
-        "text": "一度に3つのウールを加工できる。",
-        "reading": "ichido ni mittsu no ūru o kakō dekiru",
-        "gloss": "it can process 3 pieces of wool at once",
-        "kana": "イチド ニ ミッツ ノ ウール を カコー デキル"
+        "text": "一度に",
+        "kana": "いちどに",
+        "gloss": "at once",
+        "reading": "ichidoni"
+      },
+      {
+        "text": "3つ",
+        "kana": "3つ",
+        "gloss": "3",
+        "reading": "3tsu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "ウール",
+        "kana": "ウール",
+        "gloss": "wool",
+        "reading": "ūru"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "加工",
+        "kana": "かこう",
+        "gloss": "process",
+        "reading": "kakō"
+      },
+      {
+        "text": "できる。",
+        "kana": "できる",
+        "gloss": "can",
+        "reading": "dekiru"
       }
     ]
   },
@@ -2692,10 +3176,46 @@
     "english": "This can process 3 eggs at a time.",
     "segments": [
       {
-        "text": "一度に3個のタマゴを加工できる。",
-        "reading": "ichido ni sanko no tamago o kakō dekiru",
-        "gloss": "it can process 3 eggs at once",
-        "kana": "イチド ニ サンコ ノ タマゴ を カコー デキル"
+        "text": "一度に",
+        "kana": "いちどに",
+        "gloss": "at once",
+        "reading": "ichidoni"
+      },
+      {
+        "text": "3個",
+        "kana": "3こ",
+        "gloss": "3 (pieces)",
+        "reading": "3ko"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "タマゴ",
+        "kana": "タマゴ",
+        "gloss": "eggs",
+        "reading": "tamago"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "加工",
+        "kana": "かこう",
+        "gloss": "process",
+        "reading": "kakō"
+      },
+      {
+        "text": "できる。",
+        "kana": "できる",
+        "gloss": "can",
+        "reading": "dekiru"
       }
     ]
   },
@@ -3538,10 +4058,88 @@
     "english": "I'm impressed by how much these little racers have trained!$h",
     "segments": [
       {
-        "text": "この小さなレーサーたちはたくさん練習してきたんだなって感心してるの！$h",
-        "reading": "kono chiisana rēsā-tachi wa takusan renshū shite kita n da na tte kanshin shiteru no",
-        "gloss": "I'm impressed at how much these little racers have practised",
-        "kana": "コノ チイサナ レーサータチ は タクサン レンシュー シテ キタ ン ダ ナ ッテ カンシン シテル ノ"
+        "text": "この",
+        "kana": "この",
+        "gloss": "these",
+        "reading": "kono"
+      },
+      {
+        "text": "小さな",
+        "kana": "ちいさな",
+        "gloss": "little",
+        "reading": "chiisana"
+      },
+      {
+        "text": "レーサー",
+        "kana": "レーサー",
+        "gloss": "racer",
+        "reading": "rēsā"
+      },
+      {
+        "text": "たち",
+        "kana": "たち",
+        "gloss": "(plural)",
+        "reading": "tachi"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "たくさん",
+        "kana": "たくさん",
+        "gloss": "a lot",
+        "reading": "takusan"
+      },
+      {
+        "text": "練習",
+        "kana": "れんしゅう",
+        "gloss": "practice",
+        "reading": "renshū"
+      },
+      {
+        "text": "して",
+        "kana": "して",
+        "gloss": "doing",
+        "reading": "shite"
+      },
+      {
+        "text": "きた",
+        "kana": "きた",
+        "gloss": "have (been)",
+        "reading": "kita"
+      },
+      {
+        "text": "んだ",
+        "kana": "ん だ",
+        "gloss": "(explanatory)",
+        "reading": "n da"
+      },
+      {
+        "text": "なって",
+        "kana": "なって",
+        "gloss": "(quoting: that)",
+        "reading": "natte"
+      },
+      {
+        "text": "感心",
+        "kana": "かんしん",
+        "gloss": "impressed",
+        "reading": "kanshin"
+      },
+      {
+        "text": "してる",
+        "kana": "してる",
+        "gloss": "am (being)",
+        "reading": "shiteru"
+      },
+      {
+        "text": "の！$h",
+        "kana": "の",
+        "gloss": "(soft emphasis)",
+        "reading": "no"
       }
     ]
   },
@@ -3968,10 +4566,28 @@
     "english": "A bag of beautiful dried flowers.",
     "segments": [
       {
-        "text": "美しいドライフラワーが入っている。",
-        "reading": "utsukushii dorai furawā ga haitte iru",
-        "gloss": "beautiful dried flowers are inside",
-        "kana": "ウツクシイ ドライ フラワー ガ ハイッテ イル"
+        "text": "美しい",
+        "kana": "うつくしい",
+        "gloss": "beautiful",
+        "reading": "utsukushii"
+      },
+      {
+        "text": "ドライフラワー",
+        "kana": "ドライフラワー",
+        "gloss": "dried flowers",
+        "reading": "doraifurawā"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "入っている。",
+        "kana": "はいって いる",
+        "gloss": "are inside",
+        "reading": "haitte iru"
       }
     ]
   },
@@ -3992,10 +4608,58 @@
     "english": "+1 ore from ore nodes.",
     "segments": [
       {
-        "text": "ひとつの鉱脈から手に入る鉱石が1個増える。",
-        "reading": "hitotsu no kōmyaku kara te ni hairu kōseki ga ikko fueru",
-        "gloss": "you get one more ore from each node",
-        "kana": "ひとつ の こうみゃく から て に はいる こうせき が いっこ ふえる"
+        "text": "ひとつ",
+        "kana": "ひとつ",
+        "gloss": "one",
+        "reading": "hitotsu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "鉱脈",
+        "kana": "こうみゃく",
+        "gloss": "ore node",
+        "reading": "kōmyaku"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
+      },
+      {
+        "text": "手に入る",
+        "kana": "てにはいる",
+        "gloss": "obtained",
+        "reading": "tenihairu"
+      },
+      {
+        "text": "鉱石",
+        "kana": "こうせき",
+        "gloss": "ore",
+        "reading": "kōseki"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "1個",
+        "kana": "1こ",
+        "gloss": "one (piece)",
+        "reading": "1ko"
+      },
+      {
+        "text": "増える。",
+        "kana": "ふえる",
+        "gloss": "increases",
+        "reading": "fueru"
       }
     ]
   },
@@ -4004,10 +4668,52 @@
     "english": "Greater chance to find ladders and shafts.",
     "segments": [
       {
-        "text": "ハシゴやシャフトを見つける確率が上がる。",
-        "reading": "hashigo ya shafuto o mitsukeru kakuritsu ga agaru",
-        "gloss": "the chance of finding ladders and shafts rises",
-        "kana": "ハシゴ ヤ シャフト を ミツケル カクリツ ガ アガル"
+        "text": "ハシゴ",
+        "kana": "ハシゴ",
+        "gloss": "ladders",
+        "reading": "hashigo"
+      },
+      {
+        "text": "や",
+        "kana": "や",
+        "gloss": "and (among others)",
+        "reading": "ya"
+      },
+      {
+        "text": "シャフト",
+        "kana": "シャフト",
+        "gloss": "shafts",
+        "reading": "shafuto"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "見つける",
+        "kana": "みつける",
+        "gloss": "finding",
+        "reading": "mitsukeru"
+      },
+      {
+        "text": "確率",
+        "kana": "かくりつ",
+        "gloss": "chance",
+        "reading": "kakuritsu"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "上がる。",
+        "kana": "あがる",
+        "gloss": "goes up",
+        "reading": "agaru"
       }
     ]
   },
@@ -4016,10 +4722,40 @@
     "english": "Greater chance to find coal.",
     "segments": [
       {
-        "text": "石炭を見つける確率が上がる。",
-        "reading": "sekitan o mitsukeru kakuritsu ga agaru",
-        "gloss": "the chance of finding coal rises",
-        "kana": "せきたん を みつける かくりつ が あがる"
+        "text": "石炭",
+        "kana": "せきたん",
+        "gloss": "coal",
+        "reading": "sekitan"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "見つける",
+        "kana": "みつける",
+        "gloss": "finding",
+        "reading": "mitsukeru"
+      },
+      {
+        "text": "確率",
+        "kana": "かくりつ",
+        "gloss": "chance",
+        "reading": "kakuritsu"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "上がる。",
+        "kana": "あがる",
+        "gloss": "goes up",
+        "reading": "agaru"
       }
     ]
   },
@@ -4028,10 +4764,34 @@
     "english": "Bombs cannot damage you.",
     "segments": [
       {
-        "text": "ボムからダメージをうけない。",
-        "reading": "bomu kara damēji o ukenai",
-        "gloss": "you take no damage from bombs",
-        "kana": "ボム カラ ダメージ を ウケナイ"
+        "text": "ボム",
+        "kana": "ボム",
+        "gloss": "bombs",
+        "reading": "bomu"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
+      },
+      {
+        "text": "ダメージ",
+        "kana": "ダメージ",
+        "gloss": "damage",
+        "reading": "damēji"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "うけない。",
+        "kana": "うけない",
+        "gloss": "don't receive",
+        "reading": "ukenai"
       }
     ]
   },
@@ -4040,10 +4800,40 @@
     "english": "Greater chance to find geodes.",
     "segments": [
       {
-        "text": "ジオードを見つける確率が上がる。",
-        "reading": "jiōdo o mitsukeru kakuritsu ga agaru",
-        "gloss": "the chance of finding geodes rises",
-        "kana": "ジオード を ミツケル カクリツ ガ アガル"
+        "text": "ジオード",
+        "kana": "ジオード",
+        "gloss": "geodes",
+        "reading": "jiōdo"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "見つける",
+        "kana": "みつける",
+        "gloss": "finding",
+        "reading": "mitsukeru"
+      },
+      {
+        "text": "確率",
+        "kana": "かくりつ",
+        "gloss": "chance",
+        "reading": "kakuritsu"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "上がる。",
+        "kana": "あがる",
+        "gloss": "goes up",
+        "reading": "agaru"
       }
     ]
   },
@@ -4100,10 +4890,64 @@
     "english": "Summons a fairy companion that heals you in combat.",
     "segments": [
       {
-        "text": "戦闘中に回復してくれる妖精を召喚する。",
-        "reading": "sentōchū ni kaifuku shite kureru yōsei o shōkan suru",
-        "gloss": "summons a fairy that heals you in combat",
-        "kana": "せんとうちゅう に かいふく して くれる ようせい を しょうかん する"
+        "text": "戦闘",
+        "kana": "せんとう",
+        "gloss": "combat",
+        "reading": "sentō"
+      },
+      {
+        "text": "中",
+        "kana": "ちゅう",
+        "gloss": "during",
+        "reading": "chū"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "回復",
+        "kana": "かいふく",
+        "gloss": "healing",
+        "reading": "kaifuku"
+      },
+      {
+        "text": "して",
+        "kana": "して",
+        "gloss": "do",
+        "reading": "shite"
+      },
+      {
+        "text": "くれる",
+        "kana": "くれる",
+        "gloss": "(for you)",
+        "reading": "kureru"
+      },
+      {
+        "text": "妖精",
+        "kana": "ようせい",
+        "gloss": "fairy",
+        "reading": "yōsei"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "召喚",
+        "kana": "しょうかん",
+        "gloss": "summon",
+        "reading": "shōkan"
+      },
+      {
+        "text": "する。",
+        "kana": "する",
+        "gloss": "(does)",
+        "reading": "suru"
       }
     ]
   },
@@ -4226,10 +5070,28 @@
     "english": "Tomorrow is a festival.",
     "segments": [
       {
-        "text": "明日はおまつりです。",
-        "reading": "asu wa o-matsuri desu",
-        "gloss": "tomorrow is a festival",
-        "kana": "あす は おまつり です"
+        "text": "明日",
+        "kana": "あした",
+        "gloss": "tomorrow",
+        "reading": "ashita"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "おまつり",
+        "kana": "おまつり",
+        "gloss": "festival",
+        "reading": "omatsuri"
+      },
+      {
+        "text": "です。",
+        "kana": "です",
+        "gloss": "is",
+        "reading": "desu"
       }
     ]
   },
@@ -4238,10 +5100,22 @@
     "english": "The final path:",
     "segments": [
       {
-        "text": "最後の道：",
-        "reading": "saigo no michi",
-        "gloss": "the final path",
-        "kana": "さいご の みち"
+        "text": "最後",
+        "kana": "さいご",
+        "gloss": "final",
+        "reading": "saigo"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "道：",
+        "kana": "みち",
+        "gloss": "path",
+        "reading": "michi"
       }
     ]
   },
@@ -4250,10 +5124,16 @@
     "english": "First Catch!",
     "segments": [
       {
-        "text": "初ゲット！",
-        "reading": "hatsu getto",
-        "gloss": "first catch",
-        "kana": "ハツ ゲット"
+        "text": "初",
+        "kana": "はつ",
+        "gloss": "first",
+        "reading": "hatsu"
+      },
+      {
+        "text": "ゲット！",
+        "kana": "ゲット",
+        "gloss": "catch",
+        "reading": "getto"
       }
     ]
   },
@@ -4491,10 +5371,16 @@
     "english": "Got one!",
     "segments": [
       {
-        "text": "ゲットだ！",
-        "reading": "getto da",
-        "gloss": "got one",
-        "kana": "ゲット ダ"
+        "text": "ゲット",
+        "kana": "ゲット",
+        "gloss": "got it",
+        "reading": "getto"
+      },
+      {
+        "text": "だ！",
+        "kana": "だ",
+        "gloss": "(it is)",
+        "reading": "da"
       }
     ]
   },
@@ -4527,10 +5413,22 @@
     "english": "Felt a nibble!",
     "segments": [
       {
-        "text": "アタリがきた！",
-        "reading": "atari ga kita",
-        "gloss": "I felt a nibble",
-        "kana": "アタリ ガ キタ"
+        "text": "アタリ",
+        "kana": "アタリ",
+        "gloss": "a bite",
+        "reading": "atari"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "きた！",
+        "kana": "きた",
+        "gloss": "came",
+        "reading": "kita"
       }
     ]
   },
@@ -4587,10 +5485,46 @@
     "english": "You can now reel in Golden Fishing Chests.",
     "segments": [
       {
-        "text": "金の宝箱を釣り上げられるようになりました。",
-        "reading": "kin no takarabako o tsuriagerareru yō ni narimashita",
-        "gloss": "you can now reel in golden treasure chests",
-        "kana": "きん の たからばこ を つりあげられる よう に なりました"
+        "text": "金",
+        "kana": "きん",
+        "gloss": "gold",
+        "reading": "kin"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "宝箱",
+        "kana": "たからばこ",
+        "gloss": "treasure chests",
+        "reading": "takarabako"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "釣り上げられる",
+        "kana": "つりあげられる",
+        "gloss": "be able to reel in",
+        "reading": "tsuriagerareru"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that",
+        "reading": "yōni"
+      },
+      {
+        "text": "なりました。",
+        "kana": "なりました",
+        "gloss": "have become",
+        "reading": "narimashita"
       }
     ]
   },
@@ -4599,10 +5533,40 @@
     "english": "Maybe someone will decide to move in...",
     "segments": [
       {
-        "text": "もしかしたら、誰かが引っ越してくるかもしれません…",
-        "reading": "moshikashitara dareka ga hikkoshite kuru kamoshiremasen",
-        "gloss": "perhaps someone will move in",
-        "kana": "もしかしたら だれか が ひっこして くる かもしれません"
+        "text": "もしかしたら、",
+        "kana": "もしかしたら",
+        "gloss": "perhaps",
+        "reading": "moshikashitara"
+      },
+      {
+        "text": "誰か",
+        "kana": "だれか",
+        "gloss": "someone",
+        "reading": "dareka"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "引っ越して",
+        "kana": "ひっこして",
+        "gloss": "move in",
+        "reading": "hikkoshite"
+      },
+      {
+        "text": "くる",
+        "kana": "くる",
+        "gloss": "(coming)",
+        "reading": "kuru"
+      },
+      {
+        "text": "かもしれません…",
+        "kana": "かも しれません",
+        "gloss": "might",
+        "reading": "kamo shiremasen"
       }
     ]
   },
@@ -4964,10 +5928,76 @@
     "english": "You can now find Golden Mystery Boxes containing superior items.",
     "segments": [
       {
-        "text": "上質なアイテムが入った金のミステリーボックスを見つけられるようになりました。",
-        "reading": "jōshitsu na aitemu ga haitta kin no misuterī bokkusu o mitsukerareru yō ni narimashita",
-        "gloss": "you can now find golden mystery boxes containing superior items",
-        "kana": "ジョーシツ ナ アイテム ガ ハイッタ キン ノ ミステリー ボックス を ミツケラレル ヨー ニ ナリマシタ"
+        "text": "上質",
+        "kana": "じょうしつ",
+        "gloss": "high-quality",
+        "reading": "jōshitsu"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(adjective link)",
+        "reading": "na"
+      },
+      {
+        "text": "アイテム",
+        "kana": "アイテム",
+        "gloss": "items",
+        "reading": "aitemu"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "入った",
+        "kana": "はいった",
+        "gloss": "containing",
+        "reading": "haitta"
+      },
+      {
+        "text": "金",
+        "kana": "きん",
+        "gloss": "gold",
+        "reading": "kin"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "ミステリーボックス",
+        "kana": "ミステリーボックス",
+        "gloss": "mystery boxes",
+        "reading": "misuterībokkusu"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "見つけられる",
+        "kana": "みつけられる",
+        "gloss": "be able to find",
+        "reading": "mitsukerareru"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that",
+        "reading": "yōni"
+      },
+      {
+        "text": "なりました。",
+        "kana": "なりました",
+        "gloss": "have become",
+        "reading": "narimashita"
       }
     ]
   },
@@ -4994,10 +6024,52 @@
     "english": "You are one with forest magic...",
     "segments": [
       {
-        "text": "あなたは森の魔法と共にあります…",
-        "reading": "anata wa mori no mahō to tomo ni arimasu",
-        "gloss": "you are one with forest magic",
-        "kana": "あなた は もり の まほう と とも に あります"
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you",
+        "reading": "anata"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "森",
+        "kana": "もり",
+        "gloss": "forest",
+        "reading": "mori"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "魔法",
+        "kana": "まほう",
+        "gloss": "magic",
+        "reading": "mahō"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "with",
+        "reading": "to"
+      },
+      {
+        "text": "共に",
+        "kana": "ともに",
+        "gloss": "together",
+        "reading": "tomoni"
+      },
+      {
+        "text": "あります…",
+        "kana": "あります",
+        "gloss": "are",
+        "reading": "arimasu"
       }
     ]
   },
@@ -5006,10 +6078,28 @@
     "english": "A receptacle of unknown origin...",
     "segments": [
       {
-        "text": "起源不明の器…",
-        "reading": "kigen fumei no utsuwa",
-        "gloss": "a vessel of unknown origin",
-        "kana": "きげん ふめい の うつわ"
+        "text": "起源",
+        "kana": "きげん",
+        "gloss": "origin",
+        "reading": "kigen"
+      },
+      {
+        "text": "不明",
+        "kana": "ふめい",
+        "gloss": "unknown",
+        "reading": "fumei"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "器…",
+        "kana": "うつわ",
+        "gloss": "vessel",
+        "reading": "utsuwa"
       }
     ]
   },
@@ -5018,10 +6108,40 @@
     "english": "It's a strange relic from another world.",
     "segments": [
       {
-        "text": "別世界の不可思議な遺物だ。",
-        "reading": "bessekai no fukashigi na ibutsu da",
-        "gloss": "it's a mysterious relic from another world",
-        "kana": "べっせかい の ふかしぎ な いぶつ だ"
+        "text": "別世界",
+        "kana": "べつせかい",
+        "gloss": "another world",
+        "reading": "betsusekai"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "不可思議",
+        "kana": "ふかしぎ",
+        "gloss": "mysterious",
+        "reading": "fukashigi"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(adjective link)",
+        "reading": "na"
+      },
+      {
+        "text": "遺物",
+        "kana": "いぶつ",
+        "gloss": "relic",
+        "reading": "ibutsu"
+      },
+      {
+        "text": "だ。",
+        "kana": "だ",
+        "gloss": "(it is)",
+        "reading": "da"
       }
     ]
   },
@@ -5047,10 +6167,70 @@
     "english": "Items placed inside will lose quality overnight.",
     "segments": [
       {
-        "text": "一晩で中に入れたアイテムの品質が低下する。",
-        "reading": "hitoban de naka ni ireta aitemu no hinshitsu ga teika suru",
-        "gloss": "items placed inside lose quality overnight",
-        "kana": "ヒトバン デ ナカ ニ イレタ アイテム ノ ヒンシツ ガ テイカ スル"
+        "text": "一晩",
+        "kana": "ひとばん",
+        "gloss": "overnight",
+        "reading": "hitoban"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "(in)",
+        "reading": "de"
+      },
+      {
+        "text": "中",
+        "kana": "なか",
+        "gloss": "inside",
+        "reading": "naka"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(into)",
+        "reading": "ni"
+      },
+      {
+        "text": "入れた",
+        "kana": "いれた",
+        "gloss": "put",
+        "reading": "ireta"
+      },
+      {
+        "text": "アイテム",
+        "kana": "アイテム",
+        "gloss": "items",
+        "reading": "aitemu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "品質",
+        "kana": "ひんしつ",
+        "gloss": "quality",
+        "reading": "hinshitsu"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "低下",
+        "kana": "ていか",
+        "gloss": "decline",
+        "reading": "teika"
+      },
+      {
+        "text": "する。",
+        "kana": "する",
+        "gloss": "(does)",
+        "reading": "suru"
       }
     ]
   },
@@ -5071,10 +6251,46 @@
     "english": "Summons a hungry frog companion.",
     "segments": [
       {
-        "text": "お腹を空かせたカエルを召喚する。",
-        "reading": "onaka o sukaseta kaeru o shōkan suru",
-        "gloss": "summons a hungry frog",
-        "kana": "オナカ を スカセタ カエル を ショーカン スル"
+        "text": "お腹",
+        "kana": "おなか",
+        "gloss": "stomach",
+        "reading": "onaka"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "空かせた",
+        "kana": "すかせた",
+        "gloss": "hungry",
+        "reading": "sukaseta"
+      },
+      {
+        "text": "カエル",
+        "kana": "カエル",
+        "gloss": "frog",
+        "reading": "kaeru"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "召喚",
+        "kana": "しょうかん",
+        "gloss": "summon",
+        "reading": "shōkan"
+      },
+      {
+        "text": "する。",
+        "kana": "する",
+        "gloss": "(does)",
+        "reading": "suru"
       }
     ]
   },
@@ -5113,10 +6329,22 @@
     "english": "Special Items & Powers",
     "segments": [
       {
-        "text": "スペシャルアイテム＆パワー",
-        "reading": "supesharu aitemu ando pawā",
-        "gloss": "special items & powers",
-        "kana": "スペシャル アイテム アンド パワー"
+        "text": "スペシャル",
+        "kana": "スペシャル",
+        "gloss": "special",
+        "reading": "supesharu"
+      },
+      {
+        "text": "アイテム＆",
+        "kana": "アイテム",
+        "gloss": "items",
+        "reading": "aitemu"
+      },
+      {
+        "text": "パワー",
+        "kana": "パワー",
+        "gloss": "powers",
+        "reading": "pawā"
       }
     ]
   },
@@ -5125,10 +6353,22 @@
     "english": "Get Rewards",
     "segments": [
       {
-        "text": "賞品を受け取る",
-        "reading": "shōhin o uketoru",
-        "gloss": "receive prizes",
-        "kana": "しょうひん を うけとる"
+        "text": "賞品",
+        "kana": "しょうひん",
+        "gloss": "prizes",
+        "reading": "shōhin"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "受け取る",
+        "kana": "うけとる",
+        "gloss": "receive",
+        "reading": "uketoru"
       }
     ]
   },
@@ -5461,10 +6701,28 @@
     "english": "Turn the Golden Clock off?",
     "segments": [
       {
-        "text": "金時計をとめますか？",
-        "reading": "kin dokei o tomemasu ka",
-        "gloss": "will you stop the golden clock",
-        "kana": "きん どけい を とめます か"
+        "text": "金時計",
+        "kana": "きんどけい",
+        "gloss": "gold clock",
+        "reading": "kindokei"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "とめます",
+        "kana": "とめます",
+        "gloss": "stop",
+        "reading": "tomemasu"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question)",
+        "reading": "ka"
       }
     ]
   },
@@ -5473,10 +6731,28 @@
     "english": "Turn the Golden Clock back on?",
     "segments": [
       {
-        "text": "金時計を動かしますか？",
-        "reading": "kin dokei o ugokashimasu ka",
-        "gloss": "will you set the golden clock going",
-        "kana": "きん どけい を うごかします か"
+        "text": "金時計",
+        "kana": "きんどけい",
+        "gloss": "gold clock",
+        "reading": "kindokei"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "動かします",
+        "kana": "うごかします",
+        "gloss": "start (running)",
+        "reading": "ugokashimasu"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question)",
+        "reading": "ka"
       }
     ]
   },
@@ -5701,10 +6977,28 @@
     "english": "Requires 3 coal",
     "segments": [
       {
-        "text": "石炭が3個必要",
-        "reading": "sekitan ga sanko hitsuyō",
-        "gloss": "3 coal required",
-        "kana": "せきたん が さんこ ひつよう"
+        "text": "石炭",
+        "kana": "せきたん",
+        "gloss": "coal",
+        "reading": "sekitan"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "3個",
+        "kana": "3こ",
+        "gloss": "3 (pieces)",
+        "reading": "3ko"
+      },
+      {
+        "text": "必要",
+        "kana": "ひつよう",
+        "gloss": "needed",
+        "reading": "hitsuyō"
       }
     ]
   },
@@ -5713,10 +7007,28 @@
     "english": "Requires 25 ore.",
     "segments": [
       {
-        "text": "鉱石が25個必要",
-        "reading": "kōseki ga nijūgoko hitsuyō",
-        "gloss": "25 ore required",
-        "kana": "こうせき が にじゅうごこ ひつよう"
+        "text": "鉱石",
+        "kana": "こうせき",
+        "gloss": "ore",
+        "reading": "kōseki"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "25個",
+        "kana": "25こ",
+        "gloss": "25 (pieces)",
+        "reading": "25ko"
+      },
+      {
+        "text": "必要",
+        "kana": "ひつよう",
+        "gloss": "needed",
+        "reading": "hitsuyō"
       }
     ]
   },
@@ -5749,10 +7061,52 @@
     "english": "Hide IP and invite code",
     "segments": [
       {
-        "text": "IPと招待コードを非表示にする",
-        "reading": "IP to shōtai kōdo o hihyōji ni suru",
-        "gloss": "hide the IP and invite code",
-        "kana": "IP ト ショータイ コード を ヒヒョージ ニ スル"
+        "text": "IP",
+        "kana": "IP",
+        "gloss": "IP",
+        "reading": "IP"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "and",
+        "reading": "to"
+      },
+      {
+        "text": "招待",
+        "kana": "しょうたい",
+        "gloss": "invite",
+        "reading": "shōtai"
+      },
+      {
+        "text": "コード",
+        "kana": "コード",
+        "gloss": "code",
+        "reading": "kōdo"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "非表示",
+        "kana": "ひひょうじ",
+        "gloss": "hidden",
+        "reading": "hihyōji"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(make into)",
+        "reading": "ni"
+      },
+      {
+        "text": "する",
+        "kana": "する",
+        "gloss": "make",
+        "reading": "suru"
       }
     ]
   },
@@ -5797,10 +7151,22 @@
     "english": "Instant",
     "segments": [
       {
-        "text": "時間はかからない",
-        "reading": "jikan wa kakaranai",
-        "gloss": "it takes no time",
-        "kana": "じかん は かからない"
+        "text": "時間",
+        "kana": "じかん",
+        "gloss": "time",
+        "reading": "jikan"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "かからない",
+        "kana": "かからない",
+        "gloss": "doesn't take",
+        "reading": "kakaranai"
       }
     ]
   },
@@ -6001,10 +7367,34 @@
     "english": "No Joja services used!",
     "segments": [
       {
-        "text": "Jojaのサービスはありません！",
-        "reading": "Joja no sābisu wa arimasen",
-        "gloss": "no Joja services",
-        "kana": "Joja ノ サービス は アリマセン"
+        "text": "Joja",
+        "kana": "Joja",
+        "gloss": "Joja",
+        "reading": "Joja"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "サービス",
+        "kana": "サービス",
+        "gloss": "services",
+        "reading": "sābisu"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "ありません！",
+        "kana": "ありません",
+        "gloss": "there are none",
+        "reading": "arimasen"
       }
     ]
   },
@@ -6090,10 +7480,34 @@
     "english": "You've learned a new power!",
     "segments": [
       {
-        "text": "新たな力を身につけた！",
-        "reading": "arata na chikara o mi ni tsuketa",
-        "gloss": "you've gained a new power",
-        "kana": "あらた な ちから を み に つけた"
+        "text": "新た",
+        "kana": "あらた",
+        "gloss": "new",
+        "reading": "arata"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(adjective link)",
+        "reading": "na"
+      },
+      {
+        "text": "力",
+        "kana": "ちから",
+        "gloss": "power",
+        "reading": "chikara"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "身につけた！",
+        "kana": "みに つけた",
+        "gloss": "acquired",
+        "reading": "mini tsuketa"
       }
     ]
   },
@@ -6444,10 +7858,16 @@
     "english": "Here, catch!",
     "segments": [
       {
-        "text": "これよ！",
-        "reading": "kore yo",
-        "gloss": "here it is",
-        "kana": "これ よ"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
+      },
+      {
+        "text": "よ！",
+        "kana": "よ",
+        "gloss": "(emphasis)",
+        "reading": "yo"
       }
     ]
   },
@@ -6474,10 +7894,34 @@
     "english": "Let's trim this a bit here...",
     "segments": [
       {
-        "text": "ここをもうちょっと切り詰めて、と…",
-        "reading": "koko o mō chotto kiritsumete to",
-        "gloss": "let's trim this a bit more here",
-        "kana": "ここ を もう ちょっと きりつめて と"
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here",
+        "reading": "koko"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "もうちょっと",
+        "kana": "もう ちょっと",
+        "gloss": "a little more",
+        "reading": "mō chotto"
+      },
+      {
+        "text": "切り詰めて、",
+        "kana": "きりつめて",
+        "gloss": "trim",
+        "reading": "kiritsumete"
+      },
+      {
+        "text": "と…",
+        "kana": "と",
+        "gloss": "(and so...)",
+        "reading": "to"
       }
     ]
   },
@@ -6486,10 +7930,40 @@
     "english": "Let me smudge this a little with my finger...",
     "segments": [
       {
-        "text": "ここは指でちょっとにじませて…",
-        "reading": "koko wa yubi de chotto nijimasete",
-        "gloss": "let me smudge this a little with my finger",
-        "kana": "ここ は ゆび で ちょっと にじませて"
+        "text": "ここ",
+        "kana": "ここ",
+        "gloss": "here",
+        "reading": "koko"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "指",
+        "kana": "ゆび",
+        "gloss": "finger",
+        "reading": "yubi"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "with",
+        "reading": "de"
+      },
+      {
+        "text": "ちょっと",
+        "kana": "ちょっと",
+        "gloss": "a little",
+        "reading": "chotto"
+      },
+      {
+        "text": "にじませて…",
+        "kana": "にじませて",
+        "gloss": "smudge",
+        "reading": "nijimasete"
       }
     ]
   },
@@ -6516,10 +7990,40 @@
     "english": "Please come back when an attendant is present.",
     "segments": [
       {
-        "text": "担当者がいるときにお越しください。",
-        "reading": "tantōsha ga iru toki ni o-koshi kudasai",
-        "gloss": "please come when an attendant is here",
-        "kana": "たんとうしゃ が いる とき に おこし ください"
+        "text": "担当者",
+        "kana": "たんとうしゃ",
+        "gloss": "the person in charge",
+        "reading": "tantōsha"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "いる",
+        "kana": "いる",
+        "gloss": "is present",
+        "reading": "iru"
+      },
+      {
+        "text": "とき",
+        "kana": "とき",
+        "gloss": "when",
+        "reading": "toki"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "お越しください。",
+        "kana": "おこし ください",
+        "gloss": "please come",
+        "reading": "okoshi kudasai"
       }
     ]
   },
@@ -6564,10 +8068,16 @@
     "english": "Let's see here...",
     "segments": [
       {
-        "text": "さてと…",
-        "reading": "sate to",
-        "gloss": "now then",
-        "kana": "さて と"
+        "text": "さて",
+        "kana": "さて",
+        "gloss": "well then",
+        "reading": "sate"
+      },
+      {
+        "text": "と…",
+        "kana": "と",
+        "gloss": "(musing)",
+        "reading": "to"
       }
     ]
   },
@@ -6708,10 +8218,34 @@
     "english": "You can dress it up however you like.",
     "segments": [
       {
-        "text": "自分好みにドレスアップできる。",
-        "reading": "jibun gonomi ni doresu appu dekiru",
-        "gloss": "you can dress it up to your taste",
-        "kana": "ジブン ゴノミ ニ ドレス アップ デキル"
+        "text": "自分",
+        "kana": "じぶん",
+        "gloss": "your own",
+        "reading": "jibun"
+      },
+      {
+        "text": "好み",
+        "kana": "ごのみ",
+        "gloss": "taste",
+        "reading": "gonomi"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "ドレスアップ",
+        "kana": "ドレスアップ",
+        "gloss": "dress up",
+        "reading": "doresuappu"
+      },
+      {
+        "text": "できる。",
+        "kana": "できる",
+        "gloss": "can",
+        "reading": "dekiru"
       }
     ]
   },
@@ -7024,10 +8558,58 @@
     "english": "You feel Grandpa's hand patting your shoulder...",
     "segments": [
       {
-        "text": "おじいさんが肩をなでてくれるのを感じます…",
-        "reading": "ojīsan ga kata o nadete kureru no o kanjimasu",
-        "gloss": "you feel Grandpa patting your shoulder",
-        "kana": "おじいさん が かた を なでて くれる の を かんじます"
+        "text": "おじいさん",
+        "kana": "おじいさん",
+        "gloss": "grandfather",
+        "reading": "ojiisan"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "肩",
+        "kana": "かた",
+        "gloss": "shoulder",
+        "reading": "kata"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "なでて",
+        "kana": "なでて",
+        "gloss": "stroke",
+        "reading": "nadete"
+      },
+      {
+        "text": "くれる",
+        "kana": "くれる",
+        "gloss": "(for you)",
+        "reading": "kureru"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(nominaliser)",
+        "reading": "no"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "感じます…",
+        "kana": "かんじます",
+        "gloss": "feel",
+        "reading": "kanjimasu"
       }
     ]
   },
@@ -7036,10 +8618,40 @@
     "english": "You sense that a new way has opened...",
     "segments": [
       {
-        "text": "新しい道がひらけたような気がする…",
-        "reading": "atarashii michi ga hiraketa yō na ki ga suru",
-        "gloss": "you feel a new way has opened",
-        "kana": "あたらしい みち が ひらけた よう な き が する"
+        "text": "新しい",
+        "kana": "あたらしい",
+        "gloss": "new",
+        "reading": "atarashii"
+      },
+      {
+        "text": "道",
+        "kana": "みち",
+        "gloss": "path",
+        "reading": "michi"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "ひらけた",
+        "kana": "ひらけた",
+        "gloss": "opened up",
+        "reading": "hiraketa"
+      },
+      {
+        "text": "ような",
+        "kana": "ような",
+        "gloss": "as if",
+        "reading": "yōna"
+      },
+      {
+        "text": "気がする…",
+        "kana": "きが する",
+        "gloss": "feel",
+        "reading": "kiga suru"
       }
     ]
   },
@@ -7048,10 +8660,58 @@
     "english": "You don't yet have the knowledge to use this...",
     "segments": [
       {
-        "text": "あなたはまだこれを使う知識を持っていません…",
-        "reading": "anata wa mada kore o tsukau chishiki o motte imasen",
-        "gloss": "you don't yet have the knowledge to use this",
-        "kana": "あなた は まだ これ を つかう ちしき を もって いません"
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you",
+        "reading": "anata"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "まだ",
+        "kana": "まだ",
+        "gloss": "still",
+        "reading": "mada"
+      },
+      {
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "使う",
+        "kana": "つかう",
+        "gloss": "use",
+        "reading": "tsukau"
+      },
+      {
+        "text": "知識",
+        "kana": "ちしき",
+        "gloss": "knowledge",
+        "reading": "chishiki"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "持っていません…",
+        "kana": "もって いません",
+        "gloss": "don't have",
+        "reading": "motte imasen"
       }
     ]
   },
@@ -7060,10 +8720,52 @@
     "english": "You've reached a new level of understanding...",
     "segments": [
       {
-        "text": "あなたは新たな理解レベルに達しました…",
-        "reading": "anata wa arata na rikai reberu ni tasshimashita",
-        "gloss": "you've reached a new level of understanding",
-        "kana": "アナタ は アラタ ナ リカイ レベル ニ タッシマシタ"
+        "text": "あなた",
+        "kana": "あなた",
+        "gloss": "you",
+        "reading": "anata"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "新た",
+        "kana": "あらた",
+        "gloss": "new",
+        "reading": "arata"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(adjective link)",
+        "reading": "na"
+      },
+      {
+        "text": "理解",
+        "kana": "りかい",
+        "gloss": "understanding",
+        "reading": "rikai"
+      },
+      {
+        "text": "レベル",
+        "kana": "レベル",
+        "gloss": "level",
+        "reading": "reberu"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "達しました…",
+        "kana": "たっしました",
+        "gloss": "reached",
+        "reading": "tasshimashita"
       }
     ]
   },
@@ -7072,10 +8774,21 @@
     "english": "+{0} Max Health",
     "segments": [
       {
-        "text": "最大体力 +{0}",
-        "reading": "saidai tairyoku",
-        "gloss": "max health",
-        "kana": "さいだい たいりょく"
+        "text": "最大",
+        "kana": "さいだい",
+        "gloss": "max",
+        "reading": "saidai"
+      },
+      {
+        "text": "体力 +",
+        "kana": "たいりょく",
+        "gloss": "health",
+        "reading": "tairyoku"
+      },
+      {
+        "text": "{0}",
+        "kana": "",
+        "gloss": "(amount)"
       }
     ]
   },
@@ -7096,10 +8809,16 @@
     "english": "Did you just...?",
     "segments": [
       {
-        "text": "これは…？",
-        "reading": "kore wa",
-        "gloss": "what's this",
-        "kana": "これ は"
+        "text": "これ",
+        "kana": "これ",
+        "gloss": "this",
+        "reading": "kore"
+      },
+      {
+        "text": "は…？",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       }
     ]
   },
@@ -7144,10 +8863,88 @@
     "english": "Gem-bearing rocks now grant twice the gems.",
     "segments": [
       {
-        "text": "宝石が入った石から2倍の宝石が手が入るようになりました。",
-        "reading": "hōseki ga haitta ishi kara nibai no hōseki ga te ga hairu yō ni narimashita",
-        "gloss": "gem-bearing rocks now give twice the gems",
-        "kana": "ほうせき が はいった いし から にばい の ほうせき が て が はいる よう に なりました"
+        "text": "宝石",
+        "kana": "ほうせき",
+        "gloss": "gems",
+        "reading": "hōseki"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "入った",
+        "kana": "はいった",
+        "gloss": "containing",
+        "reading": "haitta"
+      },
+      {
+        "text": "石",
+        "kana": "いし",
+        "gloss": "stones",
+        "reading": "ishi"
+      },
+      {
+        "text": "から",
+        "kana": "から",
+        "gloss": "from",
+        "reading": "kara"
+      },
+      {
+        "text": "2倍",
+        "kana": "2ばい",
+        "gloss": "twice as many",
+        "reading": "2bai"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "宝石",
+        "kana": "ほうせき",
+        "gloss": "gems",
+        "reading": "hōseki"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "手",
+        "kana": "て",
+        "gloss": "hand",
+        "reading": "te"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(typo for に)",
+        "reading": "ga"
+      },
+      {
+        "text": "入る",
+        "kana": "はいる",
+        "gloss": "(get in hand) obtained",
+        "reading": "hairu"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that",
+        "reading": "yōni"
+      },
+      {
+        "text": "なりました。",
+        "kana": "なりました",
+        "gloss": "have become",
+        "reading": "narimashita"
       }
     ]
   },
@@ -7168,10 +8965,34 @@
     "english": "Mystery Boxes can now be found...",
     "segments": [
       {
-        "text": "ミステリーボックスを見つけられるようになりました…",
-        "reading": "misuterī bokkusu o mitsukerareru yō ni narimashita",
-        "gloss": "you can now find mystery boxes",
-        "kana": "ミステリー ボックス を ミツケラレル ヨー ニ ナリマシタ"
+        "text": "ミステリーボックス",
+        "kana": "ミステリーボックス",
+        "gloss": "mystery boxes",
+        "reading": "misuterībokkusu"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "見つけられる",
+        "kana": "みつけられる",
+        "gloss": "be able to find",
+        "reading": "mitsukerareru"
+      },
+      {
+        "text": "ように",
+        "kana": "ように",
+        "gloss": "so that",
+        "reading": "yōni"
+      },
+      {
+        "text": "なりました…",
+        "kana": "なりました",
+        "gloss": "have become",
+        "reading": "narimashita"
       }
     ]
   },
@@ -7180,10 +9001,46 @@
     "english": "You've got some new ideas to sleep on...",
     "segments": [
       {
-        "text": "寝るための新しいアイディアが浮かんできた…",
-        "reading": "neru tame no atarashii aidia ga ukande kita",
-        "gloss": "new ideas to sleep on have come to you",
-        "kana": "ネル タメ ノ アタラシイ アイディア ガ ウカンデ キタ"
+        "text": "寝る",
+        "kana": "ねる",
+        "gloss": "sleeping",
+        "reading": "neru"
+      },
+      {
+        "text": "ため",
+        "kana": "ため",
+        "gloss": "for",
+        "reading": "tame"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "新しい",
+        "kana": "あたらしい",
+        "gloss": "new",
+        "reading": "atarashii"
+      },
+      {
+        "text": "アイディア",
+        "kana": "アイディア",
+        "gloss": "idea",
+        "reading": "aidia"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "浮かんできた…",
+        "kana": "うかんで きた",
+        "gloss": "came to mind",
+        "reading": "ukande kita"
       }
     ]
   },
@@ -7300,10 +9157,16 @@
     "english": "very high",
     "segments": [
       {
-        "text": "とても高い",
-        "reading": "totemo takai",
-        "gloss": "very high",
-        "kana": "とても たかい"
+        "text": "とても",
+        "kana": "とても",
+        "gloss": "very",
+        "reading": "totemo"
+      },
+      {
+        "text": "高い",
+        "kana": "たかい",
+        "gloss": "high",
+        "reading": "takai"
       }
     ]
   },
@@ -7546,10 +9409,45 @@
     "english": "You learned {0} new recipes.",
     "segments": [
       {
-        "text": "{0}品の新しいレシピをおぼえた。",
-        "reading": "hin no atarashii reshipi o oboeta",
-        "gloss": "you learned {0} new recipes",
-        "kana": "ヒン ノ アタラシイ レシピ を オボエタ"
+        "text": "{0}",
+        "kana": "",
+        "gloss": "(number)"
+      },
+      {
+        "text": "品",
+        "kana": "ひん",
+        "gloss": "(counter for dishes)",
+        "reading": "hin"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "新しい",
+        "kana": "あたらしい",
+        "gloss": "new",
+        "reading": "atarashii"
+      },
+      {
+        "text": "レシピ",
+        "kana": "レシピ",
+        "gloss": "recipes",
+        "reading": "reshipi"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "おぼえた。",
+        "kana": "おぼえた",
+        "gloss": "learned",
+        "reading": "oboeta"
       }
     ]
   },
@@ -7558,10 +9456,40 @@
     "english": "Your new neighbours seem to be thriving!",
     "segments": [
       {
-        "text": "新しいご近所さんたちは元気そうだ！",
-        "reading": "atarashii go-kinjo-san-tachi wa genki sō da",
-        "gloss": "your new neighbours look well",
-        "kana": "あたらしい ごきんじょさんたち は げんき そう だ"
+        "text": "新しい",
+        "kana": "あたらしい",
+        "gloss": "new",
+        "reading": "atarashii"
+      },
+      {
+        "text": "ご近所さん",
+        "kana": "ごきんじょさん",
+        "gloss": "neighbours",
+        "reading": "gokinjosan"
+      },
+      {
+        "text": "たち",
+        "kana": "たち",
+        "gloss": "(plural)",
+        "reading": "tachi"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "元気",
+        "kana": "げんき",
+        "gloss": "well, lively",
+        "reading": "genki"
+      },
+      {
+        "text": "そうだ！",
+        "kana": "そう だ",
+        "gloss": "seem",
+        "reading": "sō da"
       }
     ]
   },
@@ -7570,10 +9498,70 @@
     "english": "Another player is talking to the raccoon right now.",
     "segments": [
       {
-        "text": "今は別のプレイヤーがアライグマと話をしています。",
-        "reading": "ima wa betsu no pureiyā ga araiguma to hanashi o shite imasu",
-        "gloss": "another player is talking with the raccoon right now",
-        "kana": "イマ は ベツ ノ プレイヤー ガ アライグマ ト ハナシ を シテ イマス"
+        "text": "今",
+        "kana": "いま",
+        "gloss": "now",
+        "reading": "ima"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "別",
+        "kana": "べつ",
+        "gloss": "another",
+        "reading": "betsu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "プレイヤー",
+        "kana": "プレイヤー",
+        "gloss": "player",
+        "reading": "pureiyā"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "アライグマ",
+        "kana": "アライグマ",
+        "gloss": "raccoon",
+        "reading": "araiguma"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "with",
+        "reading": "to"
+      },
+      {
+        "text": "話",
+        "kana": "はなし",
+        "gloss": "talk",
+        "reading": "hanashi"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "しています。",
+        "kana": "して います",
+        "gloss": "is doing",
+        "reading": "shite imasu"
       }
     ]
   },
@@ -7582,10 +9570,40 @@
     "english": "The raccoon shop has been expanded.",
     "segments": [
       {
-        "text": "アライグマの店が広くなりました。",
-        "reading": "araiguma no mise ga hiroku narimashita",
-        "gloss": "the raccoon's shop has grown larger",
-        "kana": "アライグマ ノ ミセ ガ ヒロク ナリマシタ"
+        "text": "アライグマ",
+        "kana": "アライグマ",
+        "gloss": "raccoon",
+        "reading": "araiguma"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "店",
+        "kana": "みせ",
+        "gloss": "shop",
+        "reading": "mise"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "広く",
+        "kana": "ひろく",
+        "gloss": "bigger",
+        "reading": "hiroku"
+      },
+      {
+        "text": "なりました。",
+        "kana": "なりました",
+        "gloss": "has become",
+        "reading": "narimashita"
       }
     ]
   },
@@ -7918,10 +9936,40 @@
     "english": "The next race is about to begin...",
     "segments": [
       {
-        "text": "次のレースが始まるぞ…",
-        "reading": "tsugi no rēsu ga hajimaru zo",
-        "gloss": "the next race is starting",
-        "kana": "ツギ ノ レース ガ ハジマル ゾ"
+        "text": "次",
+        "kana": "つぎ",
+        "gloss": "next",
+        "reading": "tsugi"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "レース",
+        "kana": "レース",
+        "gloss": "race",
+        "reading": "rēsu"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "始まる",
+        "kana": "はじまる",
+        "gloss": "begins",
+        "reading": "hajimaru"
+      },
+      {
+        "text": "ぞ…",
+        "kana": "ぞ",
+        "gloss": "(emphasis)",
+        "reading": "zo"
       }
     ]
   },
@@ -8051,9 +10099,9 @@
     "segments": [
       {
         "text": "危機一髪！",
-        "reading": "kiki ippatsu",
+        "kana": "ききいっぱつ",
         "gloss": "a close call",
-        "kana": "きき いっぱつ"
+        "reading": "kikiippatsu"
       }
     ]
   },
@@ -8062,10 +10110,16 @@
     "english": "Neck and neck!",
     "segments": [
       {
-        "text": "接戦だ！",
-        "reading": "sessen da",
-        "gloss": "it's a close contest",
-        "kana": "せっせん だ"
+        "text": "接戦",
+        "kana": "せっせん",
+        "gloss": "close race",
+        "reading": "sessen"
+      },
+      {
+        "text": "だ！",
+        "kana": "だ",
+        "gloss": "(it is)",
+        "reading": "da"
       }
     ]
   },
@@ -8074,10 +10128,34 @@
     "english": "Such a high-speed race!",
     "segments": [
       {
-        "text": "ハイスピードなレースが繰り広げられている！",
-        "reading": "hai supīdo na rēsu ga kurihirogerarete iru",
-        "gloss": "a high-speed race is unfolding",
-        "kana": "ハイ スピード ナ レース ガ クリヒロゲラレテ イル"
+        "text": "ハイスピード",
+        "kana": "ハイスピード",
+        "gloss": "high-speed",
+        "reading": "haisupīdo"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(adjective link)",
+        "reading": "na"
+      },
+      {
+        "text": "レース",
+        "kana": "レース",
+        "gloss": "race",
+        "reading": "rēsu"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "繰り広げられている！",
+        "kana": "くりひろげられて いる",
+        "gloss": "is unfolding",
+        "reading": "kurihirogerarete iru"
       }
     ]
   },
@@ -8086,10 +10164,34 @@
     "english": "And now, the moment at last...",
     "segments": [
       {
-        "text": "さあ、ついにこの瞬間が…",
-        "reading": "sā tsui ni kono shunkan ga",
-        "gloss": "and now, at last, this moment",
-        "kana": "さあ つい に この しゅんかん が"
+        "text": "さあ、",
+        "kana": "さあ",
+        "gloss": "now then",
+        "reading": "sā"
+      },
+      {
+        "text": "ついに",
+        "kana": "ついに",
+        "gloss": "at last",
+        "reading": "tsuini"
+      },
+      {
+        "text": "この",
+        "kana": "この",
+        "gloss": "this",
+        "reading": "kono"
+      },
+      {
+        "text": "瞬間",
+        "kana": "しゅんかん",
+        "gloss": "moment",
+        "reading": "shunkan"
+      },
+      {
+        "text": "が…",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
       }
     ]
   },
@@ -8252,10 +10354,40 @@
     "english": "Better luck next time!",
     "segments": [
       {
-        "text": "次は当たるといいですね！",
-        "reading": "tsugi wa ataru to ii desu ne",
-        "gloss": "I hope you guess right next time",
-        "kana": "つぎ は あたる と いい です ね"
+        "text": "次",
+        "kana": "つぎ",
+        "gloss": "next time",
+        "reading": "tsugi"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "当たる",
+        "kana": "あたる",
+        "gloss": "win (a bet)",
+        "reading": "ataru"
+      },
+      {
+        "text": "と",
+        "kana": "と",
+        "gloss": "if",
+        "reading": "to"
+      },
+      {
+        "text": "いい",
+        "kana": "いい",
+        "gloss": "good",
+        "reading": "ii"
+      },
+      {
+        "text": "ですね！",
+        "kana": "です ね",
+        "gloss": "(isn't it)",
+        "reading": "desu ne"
       }
     ]
   },
@@ -8312,10 +10444,22 @@
     "english": "On your marks...",
     "segments": [
       {
-        "text": "位置について…",
-        "reading": "ichi ni tsuite",
-        "gloss": "on your marks",
-        "kana": "いち に ついて"
+        "text": "位置",
+        "kana": "いち",
+        "gloss": "position",
+        "reading": "ichi"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "ついて…",
+        "kana": "ついて",
+        "gloss": "take",
+        "reading": "tsuite"
       }
     ]
   },
@@ -8336,10 +10480,34 @@
     "english": "Come and collect your prize!",
     "segments": [
       {
-        "text": "賞品を受け取りに来てください！",
-        "reading": "shōhin o uketori ni kite kudasai",
-        "gloss": "please come and collect your prize",
-        "kana": "しょうひん を うけとり に きて ください"
+        "text": "賞品",
+        "kana": "しょうひん",
+        "gloss": "prize",
+        "reading": "shōhin"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "受け取り",
+        "kana": "うけとり",
+        "gloss": "receiving",
+        "reading": "uketori"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(purpose: to)",
+        "reading": "ni"
+      },
+      {
+        "text": "来てください！",
+        "kana": "きて ください",
+        "gloss": "please come",
+        "reading": "kite kudasai"
       }
     ]
   },
@@ -8348,10 +10516,34 @@
     "english": "The winner of this race is...",
     "segments": [
       {
-        "text": "このレースの勝者は…",
-        "reading": "kono rēsu no shōsha wa",
-        "gloss": "this race's winner is",
-        "kana": "コノ レース ノ ショーシャ は"
+        "text": "この",
+        "kana": "この",
+        "gloss": "this",
+        "reading": "kono"
+      },
+      {
+        "text": "レース",
+        "kana": "レース",
+        "gloss": "race",
+        "reading": "rēsu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "勝者",
+        "kana": "しょうしゃ",
+        "gloss": "winner",
+        "reading": "shōsha"
+      },
+      {
+        "text": "は…",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
       }
     ]
   },
@@ -10163,10 +12355,34 @@
     "english": "Need any ore?",
     "segments": [
       {
-        "text": "鉱石がほしいのか？",
-        "reading": "kōseki ga hoshii no ka",
-        "gloss": "do you want ore",
-        "kana": "こうせき が ほしい の か"
+        "text": "鉱石",
+        "kana": "こうせき",
+        "gloss": "ore",
+        "reading": "kōseki"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(object of wanting)",
+        "reading": "ga"
+      },
+      {
+        "text": "ほしい",
+        "kana": "ほしい",
+        "gloss": "want",
+        "reading": "hoshii"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(question)",
+        "reading": "no"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question)",
+        "reading": "ka"
       }
     ]
   },
@@ -10229,10 +12445,34 @@
     "english": "Ah, it feels good here in the shade.",
     "segments": [
       {
-        "text": "ああ、日陰は気持ちいいね。",
-        "reading": "ā hikage wa kimochi ii ne",
-        "gloss": "ah, the shade feels good",
-        "kana": "ああ ひかげ は きもち いい ね"
+        "text": "ああ、",
+        "kana": "ああ",
+        "gloss": "ah",
+        "reading": "ā"
+      },
+      {
+        "text": "日陰",
+        "kana": "ひかげ",
+        "gloss": "shade",
+        "reading": "hikage"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "気持ちいい",
+        "kana": "きもちいい",
+        "gloss": "feels good",
+        "reading": "kimochiii"
+      },
+      {
+        "text": "ね。",
+        "kana": "ね",
+        "gloss": "(isn't it)",
+        "reading": "ne"
       }
     ]
   },
@@ -10265,10 +12505,52 @@
     "english": "I've brought everything worth selling.",
     "segments": [
       {
-        "text": "売れそうなものはぜんぶ持ってきたぞ。",
-        "reading": "uresō na mono wa zenbu motte kita zo",
-        "gloss": "I brought everything that might sell",
-        "kana": "うれそう な もの は ぜんぶ もって きた ぞ"
+        "text": "売れ",
+        "kana": "うれ",
+        "gloss": "sell (can)",
+        "reading": "ure"
+      },
+      {
+        "text": "そう",
+        "kana": "そう",
+        "gloss": "looks like",
+        "reading": "sō"
+      },
+      {
+        "text": "な",
+        "kana": "な",
+        "gloss": "(adjective link)",
+        "reading": "na"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things",
+        "reading": "mono"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "ぜんぶ",
+        "kana": "ぜんぶ",
+        "gloss": "all",
+        "reading": "zenbu"
+      },
+      {
+        "text": "持ってきた",
+        "kana": "もって きた",
+        "gloss": "brought",
+        "reading": "motte kita"
+      },
+      {
+        "text": "ぞ。",
+        "kana": "ぞ",
+        "gloss": "(emphasis)",
+        "reading": "zo"
       }
     ]
   },
@@ -10277,10 +12559,34 @@
     "english": "In the mood for something delicious?",
     "segments": [
       {
-        "text": "おいしいものを食べたくないか？",
-        "reading": "oishii mono o tabetakunai ka",
-        "gloss": "don't you fancy something delicious",
-        "kana": "おいしい もの を たべたくない か"
+        "text": "おいしい",
+        "kana": "おいしい",
+        "gloss": "delicious",
+        "reading": "oishii"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "things",
+        "reading": "mono"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "食べたくない",
+        "kana": "たべたく ない",
+        "gloss": "don't want to eat",
+        "reading": "tabetaku nai"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question)",
+        "reading": "ka"
       }
     ]
   },
@@ -10445,10 +12751,34 @@
     "english": "See anything you like?",
     "segments": [
       {
-        "text": "何か気に入ったものはある？",
-        "reading": "nanika ki ni itta mono wa aru",
-        "gloss": "is there anything you like",
-        "kana": "なにか き に いった もの は ある"
+        "text": "何か",
+        "kana": "なにか",
+        "gloss": "anything",
+        "reading": "nanika"
+      },
+      {
+        "text": "気に入った",
+        "kana": "きに いった",
+        "gloss": "you like",
+        "reading": "kini itta"
+      },
+      {
+        "text": "もの",
+        "kana": "もの",
+        "gloss": "thing",
+        "reading": "mono"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "ある？",
+        "kana": "ある",
+        "gloss": "is there",
+        "reading": "aru"
       }
     ]
   },
@@ -10559,10 +12889,46 @@
     "english": "I found some stuff by the lake.",
     "segments": [
       {
-        "text": "湖のそばでいろいろ見つけたんだ。",
-        "reading": "mizuumi no soba de iroiro mitsuketa n da",
-        "gloss": "I found various things by the lake",
-        "kana": "みずうみ の そば で いろいろ みつけた ん だ"
+        "text": "湖",
+        "kana": "みずうみ",
+        "gloss": "lake",
+        "reading": "mizūmi"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "そば",
+        "kana": "そば",
+        "gloss": "near",
+        "reading": "soba"
+      },
+      {
+        "text": "で",
+        "kana": "で",
+        "gloss": "at",
+        "reading": "de"
+      },
+      {
+        "text": "いろいろ",
+        "kana": "いろいろ",
+        "gloss": "various things",
+        "reading": "iroiro"
+      },
+      {
+        "text": "見つけた",
+        "kana": "みつけた",
+        "gloss": "found",
+        "reading": "mitsuketa"
+      },
+      {
+        "text": "んだ。",
+        "kana": "ん だ",
+        "gloss": "(explanatory)",
+        "reading": "n da"
       }
     ]
   },
@@ -10780,10 +13146,46 @@
     "english": "Take the secret shortcut back?",
     "segments": [
       {
-        "text": "秘密の近道を通って帰りますか？",
-        "reading": "himitsu no chikamichi o tōtte kaerimasu ka",
-        "gloss": "will you go back by the secret shortcut",
-        "kana": "ひみつ の ちかみち を とうって かえります か"
+        "text": "秘密",
+        "kana": "ひみつ",
+        "gloss": "secret",
+        "reading": "himitsu"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "近道",
+        "kana": "ちかみち",
+        "gloss": "shortcut",
+        "reading": "chikamichi"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(through)",
+        "reading": "o"
+      },
+      {
+        "text": "通って",
+        "kana": "とおって",
+        "gloss": "going through",
+        "reading": "tōtte"
+      },
+      {
+        "text": "帰ります",
+        "kana": "かえります",
+        "gloss": "go home",
+        "reading": "kaerimasu"
+      },
+      {
+        "text": "か？",
+        "kana": "か",
+        "gloss": "(question)",
+        "reading": "ka"
       }
     ]
   },
@@ -10809,10 +13211,22 @@
     "english": "Coming to bed?",
     "segments": [
       {
-        "text": "ベッドに来る？",
-        "reading": "beddo ni kuru",
-        "gloss": "are you coming to bed",
-        "kana": "ベッド ニ クル"
+        "text": "ベッド",
+        "kana": "ベッド",
+        "gloss": "bed",
+        "reading": "beddo"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "来る？",
+        "kana": "くる",
+        "gloss": "coming",
+        "reading": "kuru"
       }
     ]
   },
@@ -10821,10 +13235,46 @@
     "english": "Spring onions are worth 5x the gold.",
     "segments": [
       {
-        "text": "葉タマネギの値段が5倍になる。",
-        "reading": "ha tamanegi no nedan ga gobai ni naru",
-        "gloss": "spring onions' price becomes five times",
-        "kana": "ハ タマネギ ノ ネダン ガ ゴバイ ニ ナル"
+        "text": "葉タマネギ",
+        "kana": "はタマネギ",
+        "gloss": "spring onions",
+        "reading": "hatamanegi"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "値段",
+        "kana": "ねだん",
+        "gloss": "price",
+        "reading": "nedan"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "5倍",
+        "kana": "5ばい",
+        "gloss": "five times",
+        "reading": "5bai"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(becomes)",
+        "reading": "ni"
+      },
+      {
+        "text": "なる。",
+        "kana": "なる",
+        "gloss": "becomes",
+        "reading": "naru"
       }
     ]
   },
@@ -10833,10 +13283,22 @@
     "english": "SquidFest",
     "segments": [
       {
-        "text": "イカ釣りまつり",
-        "reading": "ika tsuri matsuri",
-        "gloss": "squid fishing festival",
-        "kana": "イカ ツリ マツリ"
+        "text": "イカ",
+        "kana": "イカ",
+        "gloss": "squid",
+        "reading": "ika"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "まつり",
+        "kana": "まつり",
+        "gloss": "festival",
+        "reading": "matsuri"
       }
     ]
   },
@@ -11220,10 +13682,52 @@
     "english": "It needs a little more space to deploy.",
     "segments": [
       {
-        "text": "広げるにはもうすこしスペースが必要です。",
-        "reading": "hirogeru ni wa mō sukoshi supēsu ga hitsuyō desu",
-        "gloss": "it needs a bit more space to unfold",
-        "kana": "ヒロゲル ニ は モー スコシ スペース ガ ヒツヨー デス"
+        "text": "広げる",
+        "kana": "ひろげる",
+        "gloss": "to spread out",
+        "reading": "hirogeru"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(in order to)",
+        "reading": "ni"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "もうすこし",
+        "kana": "もう すこし",
+        "gloss": "a little more",
+        "reading": "mō sukoshi"
+      },
+      {
+        "text": "スペース",
+        "kana": "スペース",
+        "gloss": "space",
+        "reading": "supēsu"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "必要",
+        "kana": "ひつよう",
+        "gloss": "needed",
+        "reading": "hitsuyō"
+      },
+      {
+        "text": "です。",
+        "kana": "です",
+        "gloss": "is",
+        "reading": "desu"
       }
     ]
   },
@@ -11232,10 +13736,46 @@
     "english": "I shouldn't cut down trees in town.",
     "segments": [
       {
-        "text": "町の木を切ってはいけません。",
-        "reading": "machi no ki o kitte wa ikemasen",
-        "gloss": "you mustn't cut down the town's trees",
-        "kana": "まち の き を きって は いけません"
+        "text": "町",
+        "kana": "まち",
+        "gloss": "town",
+        "reading": "machi"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "木",
+        "kana": "き",
+        "gloss": "trees",
+        "reading": "ki"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "切って",
+        "kana": "きって",
+        "gloss": "cutting",
+        "reading": "kitte"
+      },
+      {
+        "text": "は",
+        "kana": "は",
+        "gloss": "(topic marker)",
+        "reading": "wa"
+      },
+      {
+        "text": "いけません。",
+        "kana": "いけません",
+        "gloss": "must not",
+        "reading": "ikemasen"
       }
     ]
   },
@@ -11286,10 +13826,22 @@
     "english": "Closed until noon.",
     "segments": [
       {
-        "text": "正午まで閉店",
-        "reading": "shōgo made heiten",
-        "gloss": "closed until noon",
-        "kana": "しょうご まで へいてん"
+        "text": "正午",
+        "kana": "しょうご",
+        "gloss": "noon",
+        "reading": "shōgo"
+      },
+      {
+        "text": "まで",
+        "kana": "まで",
+        "gloss": "until",
+        "reading": "made"
+      },
+      {
+        "text": "閉店",
+        "kana": "へいてん",
+        "gloss": "closed",
+        "reading": "heiten"
       }
     ]
   },
@@ -11346,10 +13898,22 @@
     "english": "Trout Derby",
     "segments": [
       {
-        "text": "マス釣り大会",
-        "reading": "masu tsuri taikai",
-        "gloss": "trout fishing contest",
-        "kana": "マス ツリ タイカイ"
+        "text": "マス",
+        "kana": "マス",
+        "gloss": "trout",
+        "reading": "masu"
+      },
+      {
+        "text": "釣り",
+        "kana": "つり",
+        "gloss": "fishing",
+        "reading": "tsuri"
+      },
+      {
+        "text": "大会",
+        "kana": "たいかい",
+        "gloss": "tournament",
+        "reading": "taikai"
       }
     ]
   },
@@ -11639,10 +14203,52 @@
     "english": "Find Willy's Golden Bobber and return it.",
     "segments": [
       {
-        "text": "金色のウキを見つけてウィリーに返そう。",
-        "reading": "kin'iro no uki o mitsukete Wirī ni kaesō",
-        "gloss": "find the golden bobber and return it to Willy",
-        "kana": "キンイロ ノ ウキ を ミツケテ ウィリー ニ カエソー"
+        "text": "金色",
+        "kana": "きんいろ",
+        "gloss": "golden",
+        "reading": "kin'iro"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(of)",
+        "reading": "no"
+      },
+      {
+        "text": "ウキ",
+        "kana": "ウキ",
+        "gloss": "bobber",
+        "reading": "uki"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "見つけて",
+        "kana": "みつけて",
+        "gloss": "find",
+        "reading": "mitsukete"
+      },
+      {
+        "text": "ウィリー",
+        "kana": "ウィリー",
+        "gloss": "Willy",
+        "reading": "wirī"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(to)",
+        "reading": "ni"
+      },
+      {
+        "text": "返そう。",
+        "kana": "かえそう",
+        "gloss": "let's return",
+        "reading": "kaesō"
       }
     ]
   },
@@ -11813,10 +14419,22 @@
     "english": "Buy Books",
     "segments": [
       {
-        "text": "本を買う",
-        "reading": "hon o kau",
-        "gloss": "buy books",
-        "kana": "ほん を かう"
+        "text": "本",
+        "kana": "ほん",
+        "gloss": "books",
+        "reading": "hon"
+      },
+      {
+        "text": "を",
+        "kana": "を",
+        "gloss": "(object marker)",
+        "reading": "o"
+      },
+      {
+        "text": "買う",
+        "kana": "かう",
+        "gloss": "buy",
+        "reading": "kau"
       }
     ]
   },
@@ -12148,10 +14766,22 @@
     "english": "Trade In Books",
     "segments": [
       {
-        "text": "本の下取り",
-        "reading": "hon no shitadori",
-        "gloss": "trading in books",
-        "kana": "ほん の したどり"
+        "text": "本",
+        "kana": "ほん",
+        "gloss": "books",
+        "reading": "hon"
+      },
+      {
+        "text": "の",
+        "kana": "の",
+        "gloss": "(possessive)",
+        "reading": "no"
+      },
+      {
+        "text": "下取り",
+        "kana": "したどり",
+        "gloss": "trade-in",
+        "reading": "shitadori"
       }
     ]
   },
@@ -12160,10 +14790,40 @@
     "english": "A strong wind storm blew through the night...",
     "segments": [
       {
-        "text": "夜中に強い風が吹き荒れました…",
-        "reading": "yonaka ni tsuyoi kaze ga fukiaremashita",
-        "gloss": "a strong wind raged in the night",
-        "kana": "よなか に つよい かぜ が ふきあれました"
+        "text": "夜中",
+        "kana": "よなか",
+        "gloss": "in the night",
+        "reading": "yonaka"
+      },
+      {
+        "text": "に",
+        "kana": "に",
+        "gloss": "(time marker)",
+        "reading": "ni"
+      },
+      {
+        "text": "強い",
+        "kana": "つよい",
+        "gloss": "strong",
+        "reading": "tsuyoi"
+      },
+      {
+        "text": "風",
+        "kana": "かぜ",
+        "gloss": "wind",
+        "reading": "kaze"
+      },
+      {
+        "text": "が",
+        "kana": "が",
+        "gloss": "(subject marker)",
+        "reading": "ga"
+      },
+      {
+        "text": "吹き荒れました…",
+        "kana": "ふきあれました",
+        "gloss": "raged",
+        "reading": "fukiaremashita"
       }
     ]
   },
