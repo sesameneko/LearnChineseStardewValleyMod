@@ -45,7 +45,7 @@ A game restart is slow, so avoid needing one:
 - **Keep `KanaRomaji.cs` and `tools/segment-data/kana_to_romaji.py` in step.** A rule changed in one belongs in the other.
 - **Keep `SegmentSource`** on any new path that builds segments with `with { ... }`. Drop it where the text no longer comes from one entry, as `SegmentIndex.Fill` does. Flashcard sentence pointers depend on it.
 - **One segment schema** for every file in `assets/segments/ja/`: `{japanese, english, segments[{text, kana, gloss, reading}]}`. `SegmentDataLoader` silently skips anything else. `segtool.py merge` enforces that the segments reproduce the source string character for character.
-- **Text word hover should ignore** goes in `Patches/HoverExclusionPatches.cs` as a new rule (method + font test).
+- **Text word hover should ignore** is decided by content in `TextHitTest.IsHoverable`: a fallback-split word with no letters (the hotbar's 1-9, 0, -, =) is skipped; words from segment data never are.
 - **Glyph-capture transpilers** leave a method alone and log a warning when the IL doesn't match. After a game update, check the `Glyph capture: ...` startup log line.
 - **`TranslationIndex` is built on `SaveLoaded`, never during a draw**, because it temporarily changes the language code.
 - Keybinds are checked with `.JustPressed()` in `OnButtonsChanged`, not `Input.ButtonPressed`, which fires twice for multi-key `KeybindList`s.

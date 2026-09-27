@@ -180,7 +180,7 @@ namespace LanguageStudyStardewValleyMod
                     // the renderer was instrumented: its glyphs are the whole truth, including
                     // "nothing drawn yet" mid-typewriter, so never fall through to re-deriving it
                     if (FindWordInGlyphs(drawn, glyphs, mouseX, mouseY) is { } glyphHit)
-                        return drawn.Excluded ? null : glyphHit;
+                        return glyphHit;
                     continue;
                 }
 
@@ -200,18 +200,14 @@ namespace LanguageStudyStardewValleyMod
                     continue;
 
                 var segment = segments[segmentIndex.Value];
-                if (string.IsNullOrWhiteSpace(segment.Text))
-                    continue; // the gap between two words, not a word
+                if (!TextHitTest.IsHoverable(segment.Text, exact))
+                    continue; // the gap between two words, or a bare number or symbol
 
                 var (left, width) = TextHitTest.SegmentExtent(texts, drawn.MeasurePrefix, segmentIndex.Value);
 
                 float lineTop = drawn.Y + (lineIndex.Value * lineHeight);
                 var wordBounds = new Rectangle((int)(drawn.X + left), (int)lineTop, (int)Math.Ceiling(width), (int)Math.Ceiling(lineHeight));
                 var lineBounds = new Rectangle((int)drawn.X, (int)lineTop, (int)Math.Ceiling(drawn.MeasurePrefix(line)), (int)Math.Ceiling(lineHeight));
-
-                // excluded text still sits on top of what's under it, so it ends the search
-                if (drawn.Excluded)
-                    return null;
 
                 return new Hit(segment, wordBounds, lineBounds, exact, drawn.Text, lines, lineIndex.Value);
             }
@@ -248,8 +244,8 @@ namespace LanguageStudyStardewValleyMod
                 return null;
 
             var segment = segments[segmentIndex];
-            if (string.IsNullOrWhiteSpace(segment.Text))
-                return null; // the gap between two words, not a word
+            if (!TextHitTest.IsHoverable(segment.Text, exact))
+                return null; // the gap between two words, or a bare number or symbol
 
             if (GlyphHitTest.SpanBounds(glyphs, drawn.Text, start, segment.Text.Length, cell) is not { } word)
                 return null;

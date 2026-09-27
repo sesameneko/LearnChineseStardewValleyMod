@@ -1,6 +1,7 @@
 using System;
 using System.Text;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LanguageStudyStardewValleyMod
 {
@@ -122,6 +123,22 @@ namespace LanguageStudyStardewValleyMod
 
             segments.Add(line.Substring(start));
             return segments;
+        }
+
+        /// <summary>
+        /// Whether a word is worth a hover label: a fallback-split word (no segment data behind it)
+        /// with no letters in it -- a bare number or symbol, like the hotbar's 1-9, 0, - and = --
+        /// isn't, because its label would only repeat it. Letters here include kana and kanji.
+        ///
+        /// Words from segment data always are, numbers included: those were authored with a reading
+        /// (5000 ごせん), and the reading is the point.
+        /// </summary>
+        public static bool IsHoverable(string word, bool fromSegmentData)
+        {
+            if (string.IsNullOrWhiteSpace(word))
+                return false;
+
+            return fromSegmentData || word.Any(char.IsLetter);
         }
 
         /// <summary>Which rendered line (if any) a y coordinate falls on.</summary>

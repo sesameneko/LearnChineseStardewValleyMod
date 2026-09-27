@@ -10,6 +10,24 @@ namespace ModLogic.Tests
         /// <summary>A stand-in for real font metrics: every character is 10px wide.</summary>
         private static Func<string, float> FixedWidth(float perChar = 10f) => text => text.Length * perChar;
 
+        [Theory]
+        [InlineData("1", false, false)]
+        [InlineData("0", false, false)]
+        [InlineData("-", false, false)]
+        [InlineData("=", false, false)]
+        [InlineData("250", false, false)]
+        [InlineData(" ", false, false)]
+        [InlineData(" ", true, false)]
+        [InlineData("5000", true, true)]   // authored numbers carry a reading
+        [InlineData("オーク", false, true)]
+        [InlineData("木", false, true)]
+        [InlineData("Wood", false, true)]
+        [InlineData("x5", false, true)]
+        public void Bare_numbers_and_symbols_are_hoverable_only_from_segment_data(string word, bool fromSegmentData, bool expected)
+        {
+            Assert.Equal(expected, TextHitTest.IsHoverable(word, fromSegmentData));
+        }
+
         [Fact]
         public void Segments_always_tile_the_line_exactly()
         {

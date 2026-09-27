@@ -19,8 +19,7 @@ namespace LanguageStudyStardewValleyMod.Patches
     /// GlyphCapturePatches); null when that renderer couldn't be instrumented, in which case the
     /// layout is re-derived from <see cref="X"/>, <see cref="Y"/> and the font metrics instead.
     /// </param>
-    /// <param name="Excluded">Text word hover should show nothing for (see HoverExclusionPatches); it still covers what's beneath it.</param>
-    public readonly record struct DrawnText(string Text, float X, float Y, float Scale, SpriteFont? Font, bool FromModTooltip, List<GlyphCell>? Glyphs, bool Excluded)
+    public readonly record struct DrawnText(string Text, float X, float Y, float Scale, SpriteFont? Font, bool FromModTooltip, List<GlyphCell>? Glyphs)
     {
         /// <summary>Whether this came from SpriteText's bitmap font rather than a SpriteFont.</summary>
         public bool IsBitmapFont => this.Font is null;
@@ -179,7 +178,7 @@ namespace LanguageStudyStardewValleyMod.Patches
 
             RecordedTotal++;
             var glyphs = instrumented ? GlyphCapturePatches.Begin(text!.Length, lineHeight) : null;
-            drawnThisFrame.Add(new DrawnText(text!, x, y, scale, font, TooltipReissue.IsReissuing, glyphs, HoverExclusionPatches.IsExcluded(font)));
+            drawnThisFrame.Add(new DrawnText(text!, x, y, scale, font, TooltipReissue.IsReissuing, glyphs));
         }
 
         #region SpriteBatch.DrawString -- the four overloads the game actually calls

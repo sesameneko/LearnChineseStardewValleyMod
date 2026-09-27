@@ -219,7 +219,6 @@ namespace LanguageStudyStardewValleyMod
                 }
 
                 ApplyTextCapturePatches(harmony);
-                HoverExclusionPatches.Apply(harmony);
             }
             catch (Exception ex)
             {
