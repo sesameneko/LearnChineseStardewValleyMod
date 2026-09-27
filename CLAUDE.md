@@ -6,10 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A SMAPI mod for Stardew Valley that translates the game's UI for language learners: hover text to see a translation, hover a word for its gloss, click it to save a flashcard. Further reading:
 
-- **`Plan.md`:** roadmap, milestones, and researched constraints such as the game's single-active-locale limitation. Read it before making architectural changes.
-- **`HowItWorks.md`:** how each feature works (hover translation, word-position detection, flashcards, macron font, word data).
+- **`HowItWorks.md`:** how each feature works and why it's built that way (hover translation, frozen tooltips, word-position detection and segment lookup, flashcards, macron font, word data). Read the relevant section before making architectural changes.
 - **`PostMortems.md`:** the history behind the "Hard rules" below.
-- **`TODOs.md`:** segment-data table priority. It overrides `Plan.md`'s ordering.
+- **`TODOs.md`:** open work, including things built but not yet verified in game.
 
 ## Build and verify
 
@@ -28,6 +27,7 @@ A game restart is slow, so avoid needing one:
 
 - **Parameterize debug console commands** (`helper.ConsoleCommands.Add` in `ModEntry.cs`) so one session can try many variations. See `ls_spike_locale` for the pattern.
 - **Put logic that doesn't need live game objects in plain classes with no `StardewValley`/`MonoGame` types** (lookups, string matching, hit-testing math, data parsing), and test them in `tools/ModLogic.Tests`. That project can't reference the mod (it links x64-only game assemblies), so it `<Compile Include>`s the source files directly. Any game type in such a file breaks it. Save game launches for Harmony patches, rendering and GMCM.
+- **There's no decompiled 1.6.15 source.** For questions about game behaviour, disassemble the installed assembly with `ikdasm` (`ikdasm "…/Contents/MacOS/Stardew Valley.dll" > sdv.il`) and read the IL, rather than trusting older decompiles or the wiki.
 
 ## Hard rules
 

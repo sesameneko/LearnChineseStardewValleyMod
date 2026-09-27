@@ -11,7 +11,7 @@ using StardewValley.BellsAndWhistles;
 namespace LanguageStudyStardewValleyMod
 {
     /// <summary>
-    /// The M3 proof of concept: hit-tests the mouse against the text
+    /// Word hover: hit-tests the mouse against the text
     /// <see cref="TextCapturePatches"/> recorded this frame and outlines the word underneath it.
     ///
     /// No translation is wired up on purpose -- this exists to prove that the word under the cursor

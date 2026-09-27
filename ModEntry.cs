@@ -73,7 +73,7 @@ namespace LanguageStudyStardewValleyMod
 
             helper.ConsoleCommands.Add(
                 "ls_spike_locale",
-                "Spike for M1: tries to load a Strings/* asset in both the configured source and target locales, "
+                "Tries to load a Strings/* asset in both the configured source and target locales, "
                 + "via a couple of different APIs, and logs what worked. Usage: ls_spike_locale [assetName]  "
                 + "(defaults to 'Strings/Objects')",
                 this.OnSpikeLocaleCommand
@@ -237,7 +237,7 @@ namespace LanguageStudyStardewValleyMod
         }
 
         /// <summary>
-        /// Patches the text-draw entry points for the M3 word-hover proof of concept.
+        /// Patches the text-draw entry points so word hover can see what was drawn where.
         ///
         /// The game calls exactly four of MonoGame's DrawString overloads; patching those four
         /// records each SpriteFont draw once (the overloads that delegate are ones the game never
@@ -401,7 +401,7 @@ namespace LanguageStudyStardewValleyMod
         {
         }
 
-        #region M1: hover translation
+        #region Hover translation
         private void OnSaveLoaded(object? sender, SaveLoadedEventArgs e)
         {
             // built here rather than on GameLaunched because the English side may briefly flip the
@@ -759,7 +759,7 @@ namespace LanguageStudyStardewValleyMod
         }
         #endregion
 
-        #region M1 spike: confirm locale-suffixed asset loading works at runtime
+        #region Spike: confirm locale-suffixed asset loading works at runtime
         /// <summary>
         /// Tries to load <paramref name="assetName"/> in the given locale code (e.g. "ja"), using
         /// whichever of a few candidate approaches actually works, and logs the outcome of each

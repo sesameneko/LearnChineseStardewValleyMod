@@ -75,7 +75,7 @@ public class RealGameDataTests
     {
         RequireGameInstalled();
 
-        // This is the table M1 (item/object hover tooltips) depends on. The
+        // This is the table item/object hover tooltips depend on. The
         // key sets are NOT perfectly 1:1: a handful of templated flavor-text
         // keys (e.g. "Jelly_Flavored_(O)282_Name") exist in en but not ja --
         // a real property of the game data, not a bug in this tool. This

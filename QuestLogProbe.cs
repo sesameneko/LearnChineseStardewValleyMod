@@ -10,15 +10,15 @@ using StardewValley.Quests;
 namespace LanguageStudyStardewValleyMod
 {
     /// <summary>
-    /// Temporary diagnostic for the journal (QuestLog), which became the de-facto test case for the
-    /// M3 word-hover work. Reports when the quest *detail* page opens and what text it holds, so
+    /// Temporary diagnostic for the journal (QuestLog), which became the de-facto test case for
+    /// word hover. Reports when the quest *detail* page opens and what text it holds, so
     /// that "is the text even on screen?" stops being something we infer from draw-call counts.
     ///
     /// Most of this needs no Harmony: QuestLog's questPage/_shownQuest/_objectiveText are protected
     /// fields that SMAPI's reflection helper can read straight off the live menu. Only the wrapped
     /// text needs a hook, because wrapping happens inside Game1.parseText at draw time.
     ///
-    /// Delete this file once M3's capture is trustworthy.
+    /// Delete this file once word-hover text capture is trustworthy.
     /// </summary>
     public static class QuestLogProbe
     {

@@ -1,8 +1,8 @@
 # segment-data
 
 Tooling for authoring the hand-segmented word-boundary data the mod reads at
-runtime (see `Plan.md`'s data task for why runtime tokenization isn't an option
-for Japanese).
+runtime (see "Matching drawn text to segment data" in `HowItWorks.md` for why
+runtime tokenization isn't an option for Japanese).
 
 ## The schema — one format, everywhere
 
@@ -231,4 +231,4 @@ stops counting them as pending.
 
 ## Priority
 
-See `TODOs.md` at the repo root, which overrides `Plan.md`'s ordering.
+See `TODOs.md` at the repo root.

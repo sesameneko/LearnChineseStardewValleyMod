@@ -20,7 +20,7 @@ python3 tools/segment-data/segtool.py batch Tools 50
 python3 tools/segment-data/segtool.py merge Tools batch.tsv
 python3 tools/segment-data/segtool.py validate
 
-Table priority comes from TODOs.md, not Plan.md. Its sibling migrate_names.py.retired is deliberately named off .py — it's already been applied, and re-running it would flatten Objects_Name.json's hand-authored segments.
+Table priority comes from TODOs.md. Its sibling migrate_names.py.retired is deliberately named off .py — it's already been applied, and re-running it would flatten Objects_Name.json's hand-authored segments.
 
 ✻ Churned for 18s · done 11:22 AM
 

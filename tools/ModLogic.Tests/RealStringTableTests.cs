@@ -93,7 +93,7 @@ namespace ModLogic.Tests
         [Fact]
         public void Indexes_the_real_token_templates_across_every_table()
         {
-            // Plan.md counted 761 shared ja/en entries whose two locales use the same token set;
+            // 761 shared ja/en entries were counted whose two locales use the same token set;
             // the registered count is a little lower because the all-token and adjacent-token ones
             // are refused as unmatchable.
             Assert.InRange(AllTablesMap().TemplateCount, 500, 900);

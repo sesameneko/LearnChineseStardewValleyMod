@@ -24,7 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <!-- bundled translation data (see Plan.md M0/M4); must be copied to the deployed mod folder to be loadable at runtime -->
+      <!-- bundled translation and segment data; must be copied to the deployed mod folder to be loadable at runtime -->
       <None Include="assets/**/*.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>

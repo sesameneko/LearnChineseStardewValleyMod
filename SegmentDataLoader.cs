@@ -11,8 +11,8 @@ namespace LanguageStudyStardewValleyMod
     /// Loads the hand-segmented word boundaries bundled with the mod into a <see cref="SegmentIndex"/>.
     ///
     /// The files are read loosely on purpose: each one carries a "_comment" header alongside its real
-    /// entries, and coverage is partial (item descriptions only today -- see Plan.md's data task), so
-    /// anything unparseable is skipped rather than failing the load and costing every string its
+    /// entries, and the loader shouldn't depend on every file being well-formed, so anything
+    /// unparseable is skipped rather than failing the load and costing every string its
     /// boundaries.
     /// </summary>
     public static class SegmentDataLoader

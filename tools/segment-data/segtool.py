@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Work pipeline for hand-authored Japanese word segmentation (see Plan.md's data task).
+"""Work pipeline for hand-authored Japanese word segmentation (see tools/segment-data/README.md).
 
 Sub-commands:
   status                    coverage per string table

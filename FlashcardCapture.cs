@@ -6,7 +6,7 @@ namespace LanguageStudyStardewValleyMod
 {
     /// <summary>
     /// Click-to-save: a left-click on a hovered word adds it to the flashcard deck, or -- clicked
-    /// again in the same sentence -- takes it back off (Plan.md M5).
+    /// again in the same sentence -- takes it back off.
     ///
     /// Only words whose boundaries came from segment data qualify: the fallback split has no gloss
     /// or reading to put on a card. Such clicks pass through to the game untouched.

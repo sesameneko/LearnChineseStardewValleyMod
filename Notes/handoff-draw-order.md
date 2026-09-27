@@ -5,7 +5,7 @@ Verify with the recipe under "How to verify" below.
 
 ## The bug
 
-The M3 word-hover debug overlay (a coloured outline around the hovered word, plus a text label
+The word-hover debug overlay (a coloured outline around the hovered word, plus a text label
 above it) is drawn *underneath* the tooltip it is annotating, so it is mostly invisible.
 
 Only the **z-order** is wrong. The right word is identified, the label content is right, and the

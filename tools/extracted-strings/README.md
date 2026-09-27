@@ -81,8 +81,8 @@ An entry looks like:
   (`Object.cs.12847`-`12869`, e.g. 素材 / Resource) are done because they appear
   under the name on every item tooltip.
 
-`Objects.xnb` was done first because it's exactly what M1 (item/object hover
-tooltips) needs. The remaining dictionary-shaped tables (`1_6_Strings`,
+`Objects.xnb` was done first because it's exactly what item/object hover
+tooltips need. The remaining dictionary-shaped tables (`1_6_Strings`,
 `BigCraftables`, `Characters`, `Furniture`, `Weapons`, `Tools`, etc.) are
 extracted to JSON under `en/` and `ja/` but not yet translated.
 

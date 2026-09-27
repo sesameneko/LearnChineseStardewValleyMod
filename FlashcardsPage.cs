@@ -11,7 +11,7 @@ using StardewValley.Menus;
 namespace LanguageStudyStardewValleyMod
 {
     /// <summary>
-    /// The pause-menu flashcards tab (Plan.md M6), added to <see cref="GameMenu"/> by
+    /// The pause-menu flashcards tab, added to <see cref="GameMenu"/> by
     /// <see cref="GameMenuPatches"/>. Two views:
     ///
     /// - Review: one card at a time, Japanese word on the front; flip for kana, romaji, meanings,

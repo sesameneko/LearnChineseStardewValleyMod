@@ -53,7 +53,7 @@ verified live: Harmony patch behavior, real rendering, GMCM's UI.
 [IDEA] Write our own "reload data" console command.
   Mirrors Content Patcher's own `patch reload` command, which exists exactly
   so content-pack authors can edit and reload without restarting the game.
-  Once we're loading bundled JSON (M4's explanatory translations, eventually
+  Once we're loading bundled JSON (the explanatory translations, eventually
   the TranslationIndex itself), a command that just re-reads the files and
   rebuilds the index in-place means *data* edits never need a restart -- only
   actual C# logic changes would still require one.

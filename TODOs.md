@@ -166,7 +166,7 @@ Word hover no longer works out word positions from wrapping and font measurement
 
 If a game update breaks a transpiler, the SMAPI log warns about it and that renderer falls back to the old measured layout. The `Glyph capture: …` startup line shows the state of each renderer.
 
-### M2 segmentation data (2026-09-25)
+### Segmentation data (2026-09-25)
 
 Every piece of Japanese text the game ships has hand-authored segment data: **15,768 entries, 10 keys deliberately skipped, 0 pending.** The live checks:
 

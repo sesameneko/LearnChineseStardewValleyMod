@@ -7,7 +7,7 @@ namespace LanguageStudyStardewValleyMod
 {
     /// <summary>
     /// Pins the tooltip currently under the cursor so it stops following the mouse, letting the
-    /// cursor move across it to hover individual words (Plan.md M2.1).
+    /// cursor move across it to hover individual words.
     ///
     /// This is the deliberate gesture: it suppresses every vanilla tooltip for as long as the pin
     /// lasts, so nothing else can replace what you're reading. <see cref="TooltipLinger"/> is the

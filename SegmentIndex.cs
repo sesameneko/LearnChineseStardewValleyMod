@@ -45,8 +45,8 @@ namespace LanguageStudyStardewValleyMod
     ///
     /// Japanese word boundaries can't be derived by rule, so <see cref="TextHitTest.SplitSegments"/>'s
     /// character-class heuristic is only ever a fallback: it blobs an unbroken kanji or hiragana run
-    /// into one unit. Where data exists (currently item names and descriptions -- see the data task
-    /// in Plan.md) this supplies the real boundaries instead.
+    /// into one unit. Where data exists (every string the game ships) this supplies the real boundaries
+    /// instead.
     ///
     /// Game-free so it can be unit-tested; the mod loads the JSON and feeds it in.
     /// </summary>

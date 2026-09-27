@@ -9,7 +9,7 @@ using StardewValley.Menus;
 namespace LanguageStudyStardewValleyMod.Patches
 {
     /// <summary>
-    /// Adds the flashcards tab to the pause menu (Plan.md M6). The game has no extension point for
+    /// Adds the flashcards tab to the pause menu. The game has no extension point for
     /// this, so it's hand-rolled against the installed 1.6.15 IL:
     ///
     /// - <c>GameMenu(bool)</c> builds <c>tabs</c> and <c>pages</c> as parallel lists -- every other

@@ -12,14 +12,14 @@ namespace LanguageStudyStardewValleyMod
         // I Item Spawner, U Automate). Left-hand keys, since the right hand is on the mouse.
         public KeybindList ToggleTranslation { get; set; } = KeybindList.Parse("G");
 
-        /// <summary>Locks the tooltip under the cursor on/off so individual words in it can be hovered (Plan.md M2.1).</summary>
+        /// <summary>Locks the tooltip under the cursor on/off so individual words in it can be hovered.</summary>
         public KeybindList FreezeTooltip { get; set; } = KeybindList.Parse("Z");
 
-        /// <summary>Pins the tooltip under the cursor only for as long as this is held down (Plan.md M2.1).</summary>
+        /// <summary>Pins the tooltip under the cursor only for as long as this is held down.</summary>
         public KeybindList HoldFreezeTooltip { get; set; } = KeybindList.Parse("RightShift");
 
         /// <summary>
-        /// Whether left-clicking a hovered word saves it as a flashcard (Plan.md M5). The click is
+        /// Whether left-clicking a hovered word saves it as a flashcard. The click is
         /// swallowed when it lands on a word, so the game underneath never sees it.
         /// </summary>
         public bool ClickToSaveWords { get; set; } = true;

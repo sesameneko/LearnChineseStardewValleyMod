@@ -123,7 +123,7 @@ namespace LanguageStudyStardewValleyMod.Patches
 
                 if (mod.LogTranslationMisses && (!haveTitle || !haveBody))
                 {
-                    // the raw text of anything that didn't translate -- this is how M2's list of
+                    // the raw text of anything that didn't translate -- this is how the list of
                     // still-uncovered assets gets built, since the only way to know what a tooltip
                     // actually displays is to read what arrives here
                     string signature = $"{boldTitleText}\u0000{rawBody}";

@@ -44,7 +44,7 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>
         /// Every Strings/* asset that is a plain Dictionary&lt;string,string&gt; in both locales
         /// (the list is the one extracted by tools/XnbStringTool -- see tools/extracted-strings).
-        /// Item names/descriptions, the ones M1 actually targets, live in Objects/BigCraftables/
+        /// Item names/descriptions, the first target, live in Objects/BigCraftables/
         /// Tools/Weapons/Furniture/Shirts/Pants; the rest are included because they're free.
         /// Followed by the per-NPC/per-festival asset families outside Strings/ (the lists mirror
         /// what tools/extracted-strings/content-ja holds; `segtool.py audit` names any the game adds).

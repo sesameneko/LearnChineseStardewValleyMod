@@ -40,8 +40,8 @@ namespace LanguageStudyStardewValleyMod.Patches
 
     /// <summary>
     /// Records every piece of UI text the game draws in a frame, so the mouse can be hit-tested
-    /// against it afterwards. This is the M3 proof of concept: SDV keeps no record of where text
-    /// landed (labels are immediate-mode -- see Plan.md), so the only way to know is to watch it
+    /// against it afterwards. SDV keeps no record of where text landed (labels are immediate-mode),
+    /// so the only way to know is to watch it
     /// being drawn.
     ///
     /// Two renderers have to be covered, because the game has two:
@@ -63,7 +63,7 @@ namespace LanguageStudyStardewValleyMod.Patches
         /// Whether to record at all. This runs on a very hot path -- every text draw in the game --
         /// so it stays a single flag that the prefixes check first.
         ///
-        /// Hardcoded on while M3 word hover is the feature being built. It used to default to off
+        /// Hardcoded on, since word hover depends on it. It used to default to off
         /// with an ls_word_hover console command to switch it on, and that cost real debugging time:
         /// the flag isn't persisted, so every game launch came up with word hover silently off, and
         /// a perfectly good build looks exactly like a broken one -- no highlighting, no glosses,
