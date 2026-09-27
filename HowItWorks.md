@@ -1,6 +1,39 @@
 # How it works
 
-Notes on how the mod's main pieces work, one section per piece. For the roadmap and the reasons behind the design, see `Plan.md`. For a file-by-file map of the code, see `CLAUDE.md`.
+Notes on how the mod's main pieces work, one section per piece. For the roadmap and the reasons behind the design, see `Plan.md`. For a short map of the code and the rules for changing it, see `CLAUDE.md`. For bugs that were costly to find, and how they were found, see `PostMortems.md`.
+
+## Hover translation
+
+Hovering something that shows a vanilla tooltip adds a second box with the tooltip's text in the target language. The text comes from the game's own string tables, loaded in both locales and joined on their keys.
+
+### Capturing the tooltip
+
+`Patches/HoverTextPatches.cs` patches only the **StringBuilder** overload of `IClickableMenu.drawHoverText`. `drawToolTip` and the `string` overload both call it (checked against the 1.6.15 IL), so every tooltip passes through it exactly once.
+
+The mod doesn't recalculate where the tooltip went. `drawHoverText` draws its own background with `drawTextureBox` before anything else, so the first `drawTextureBox` call made while inside `drawHoverText` is the tooltip's box, and the patch records that rect. `TooltipLayout.cs` places the translation box relative to it: above if there's room, below if not, and clamped into the viewport either way. `TooltipOverlay.cs` draws the box and clears it in `Display.Rendering` so nothing is left over from a previous frame.
+
+### Building the lookup
+
+`TranslationIndex.cs` loads every `Strings/*` table, plus the per-NPC and per-festival families, in both locales. A non-English locale is loaded by its suffixed name (`Strings/Objects.ja-JP`). English has no suffixed file on disk, so the whole batch loads under one temporary change of `LocalizedContentManager.CurrentLanguageCode`. Because of that change, the index is built on `SaveLoaded` and never during a draw.
+
+`TranslationMap.cs` holds the joined table (no game types; unit-tested). The text on screen often isn't the stored string, and the map handles each way they can differ:
+
+- **Variants and wrapping.** It splits on the game's `^` gender-variant delimiter. The game word-wraps tooltips by inserting newlines, in Japanese in the middle of a sentence, so the map keeps a whitespace-stripped index as well as a whitespace-collapsed one.
+- **Token templates.** About 9% of entries are templates like `日記 （{0}）` → `Journal ({0})`, filled in with `string.Format` when drawn. They're registered only when both locales use the same set of tokens, matched by regex when an exact lookup fails, and filled **by token index**, because locales order tokens differently. The most literal templates are tried first, each is screened with an ordinal `Contains` on its longest literal run, and results (misses included) are memoised. A hovered tooltip looks itself up every frame, and scanning all 699 templates without these guards cost about 2.7ms per frame.
+- **Lookup order.** Exact whole match first, then paragraph by paragraph, and only then templates on the whole text. A template's `{N}` capture will otherwise swallow a blank line and every paragraph after it. The secret-note header `ひみつのメモ #{0}` once matched an entire note that way.
+
+### Achievements and secret notes
+
+`Data/Achievements` and `Data/SecretNotes` are `Dictionary<int,string>` assets whose raw values never appear on screen as-is. `DataTextShapes.cs` (no game types) reshapes them into the text their Collections-page tooltips draw, following `CollectionsPage.createDescription` in the IL:
+
+- An achievement's `name^description^…` record becomes the two paragraphs the tooltip shows.
+- A note is cleaned the way the game cleans it (gift-reveal tags removed, `^` becomes a newline, `@` becomes a `{0}` template for the player's name) and split into one entry per paragraph. There's also a `ひみつのメモ #{0}` header template.
+
+`TranslationIndex` loads these through a separate int-keyed path. Two `TranslationMap` behaviours exist for them. A note the game cut at 15 lines and ended with `(...)` is matched by prefix. A paragraph that is identical in both locales (a note signed `-Qi`) is carried through the paragraph pass unchanged.
+
+### The HUD clock
+
+The Japanese clock isn't in any string table. `DayTimeMoneyBox.draw` builds it in code, with a hardcoded ja branch: `{day}日 ({weekday})` and `{午前|午後} {h}:{mm}`, where noon and midnight are written as 0. `ClockSegments.cs` lists every date and time the clock can draw as an exact `SegmentIndex` entry rather than as a template, because the readings are irregular per value (1日 is ついたち, 4時 is よじ). `SegmentDataLoader` adds them when the source language is `ja`.
 
 ## Word-position detection
 
@@ -35,6 +68,12 @@ Characters that are never drawn never get a cell. That covers line breaks, chara
 3. **Draw the outline.** It is drawn around that word's cells on the hovered line only. A word the renderer split across two lines gets outlined only on the line under the mouse.
 
 Nothing in this path measures text or works out where lines break. The positions are exactly what the renderer did.
+
+### Text word hover ignores
+
+`Patches/HoverExclusionPatches.cs` holds a list of rules. Each is a game draw method plus a font test; the only one so far is `Toolbar.draw` with `tinyFont`, for the hotbar slot numbers. Text recorded while a rule's method is running is flagged `DrawnText.Excluded`. Hovering it shows no label, and clicking it doesn't save anything. It still covers the text beneath it, so the hover doesn't reach through to that text. The font test keeps other text drawn by the same method hoverable, such as the item tooltip `Toolbar.draw` also draws. To exclude more text, add a rule there.
+
+The word-hover label (gloss, romaji, kana on three lines) is built by `WordHoverOverlay.Describe`. Its romaji is generated from each segment's `kana` at runtime by `KanaRomaji.cs`, a C# port of `tools/segment-data/kana_to_romaji.py`, not taken from the data's `reading`.
 
 ### Why not calculate the layout instead?
 
