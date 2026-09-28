@@ -1,0 +1,389 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Events-Mountain.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "2#0": {
+    "chinese": "$q 32 null#@！你怎么站在雨里啊？$7#$r 32 0 Event_Rain_1#我在干活儿#$r 32 50 Event_Rain_2#我在享受这种天气#$r 32 10 Event_Rain_3#我还想问你呢",
+    "english": "@! Why are you standing in the rain? / I'm working / I'm enjoying this kind of weather / I was going to ask you that",
+    "segments": [
+      {
+        "text": "$q 32 null#@！",
+        "pinyin": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "怎么",
+        "pinyin": "zěn me",
+        "gloss": "why"
+      },
+      {
+        "text": "站",
+        "pinyin": "zhàn",
+        "gloss": "stand"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "雨",
+        "pinyin": "yǔ",
+        "gloss": "rain"
+      },
+      {
+        "text": "里",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      },
+      {
+        "text": "啊？$7#$r 32 0 Event_Rain_1#",
+        "pinyin": "a",
+        "gloss": "(exclamation)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "干活儿#$r 32 50 Event_Rain_2#",
+        "pinyin": "gàn huó r",
+        "gloss": "working"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "享受",
+        "pinyin": "xiǎng shòu",
+        "gloss": "enjoy"
+      },
+      {
+        "text": "这种",
+        "pinyin": "zhè zhǒng",
+        "gloss": "this kind of"
+      },
+      {
+        "text": "天气#$r 32 10 Event_Rain_3#",
+        "pinyin": "tiān qì",
+        "gloss": "weather"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "还",
+        "pinyin": "hái",
+        "gloss": "(actually)"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "问",
+        "pinyin": "wèn",
+        "gloss": "ask"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "呢",
+        "pinyin": "ne",
+        "gloss": "(and you?)"
+      }
+    ]
+  },
+  "2#1": {
+    "chinese": "我想一个人在这儿静静。$8",
+    "english": "I want to be alone here, in quiet.",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "人",
+        "pinyin": "rén",
+        "gloss": "person (alone)"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "这儿",
+        "pinyin": "zhè r",
+        "gloss": "here"
+      },
+      {
+        "text": "静静。$8",
+        "pinyin": "jìng jing",
+        "gloss": "be quiet"
+      }
+    ]
+  },
+  "2#2": {
+    "chinese": "你陪我也好！",
+    "english": "You keeping me company is good too!",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "陪",
+        "pinyin": "péi",
+        "gloss": "keep company"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "me"
+      },
+      {
+        "text": "也",
+        "pinyin": "yě",
+        "gloss": "also"
+      },
+      {
+        "text": "好！",
+        "pinyin": "hǎo",
+        "gloss": "good"
+      }
+    ]
+  },
+  "2#3": {
+    "chinese": "你都淋透了……来，站到树底下。",
+    "english": "You're all soaked through... come, stand under the tree.",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "all (already)"
+      },
+      {
+        "text": "淋",
+        "pinyin": "lín",
+        "gloss": "drench"
+      },
+      {
+        "text": "透",
+        "pinyin": "tòu",
+        "gloss": "(result: through)"
+      },
+      {
+        "text": "了……",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "来，",
+        "pinyin": "lái",
+        "gloss": "come"
+      },
+      {
+        "text": "站",
+        "pinyin": "zhàn",
+        "gloss": "stand"
+      },
+      {
+        "text": "到",
+        "pinyin": "dào",
+        "gloss": "(result: to)"
+      },
+      {
+        "text": "树",
+        "pinyin": "shù",
+        "gloss": "tree"
+      },
+      {
+        "text": "底下。",
+        "pinyin": "dǐ xia",
+        "gloss": "under"
+      }
+    ]
+  },
+  "2#4": {
+    "chinese": "看着雨帘在寂静的湖面上飘荡……这种感觉难以形容。$8",
+    "english": "Watching the curtain of rain drift over the silent lake surface... this feeling is hard to describe.",
+    "segments": [
+      {
+        "text": "看",
+        "pinyin": "kàn",
+        "gloss": "watch"
+      },
+      {
+        "text": "着",
+        "pinyin": "zhe",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "雨帘",
+        "pinyin": "yǔ lián",
+        "gloss": "curtain of rain"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "on"
+      },
+      {
+        "text": "寂静",
+        "pinyin": "jì jìng",
+        "gloss": "silent"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "湖面",
+        "pinyin": "hú miàn",
+        "gloss": "lake surface"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "飘荡……",
+        "pinyin": "piāo dàng",
+        "gloss": "drift"
+      },
+      {
+        "text": "这种",
+        "pinyin": "zhè zhǒng",
+        "gloss": "this kind of"
+      },
+      {
+        "text": "感觉",
+        "pinyin": "gǎn jué",
+        "gloss": "feeling"
+      },
+      {
+        "text": "难以",
+        "pinyin": "nán yǐ",
+        "gloss": "hard to"
+      },
+      {
+        "text": "形容。$8",
+        "pinyin": "xíng róng",
+        "gloss": "describe"
+      }
+    ]
+  },
+  "2#5": {
+    "chinese": "嘿！迷你竖琴！$h#$b#你身上到处充满惊喜，@。我很惊讶。",
+    "english": "Hey! A mini harp! / You're full of surprises all over, @. I'm very surprised.",
+    "segments": [
+      {
+        "text": "嘿！",
+        "pinyin": "hēi",
+        "gloss": "hey"
+      },
+      {
+        "text": "迷你",
+        "pinyin": "mí nǐ",
+        "gloss": "mini"
+      },
+      {
+        "text": "竖琴！$h#$b#",
+        "pinyin": "shù qín",
+        "gloss": "harp"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "身上",
+        "pinyin": "shēn shang",
+        "gloss": "on you"
+      },
+      {
+        "text": "到处",
+        "pinyin": "dào chù",
+        "gloss": "everywhere"
+      },
+      {
+        "text": "充满",
+        "pinyin": "chōng mǎn",
+        "gloss": "full of"
+      },
+      {
+        "text": "惊喜，",
+        "pinyin": "jīng xǐ",
+        "gloss": "surprises"
+      },
+      {
+        "text": "@。",
+        "pinyin": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "惊讶。",
+        "pinyin": "jīng yà",
+        "gloss": "surprised"
+      }
+    ]
+  }
+}

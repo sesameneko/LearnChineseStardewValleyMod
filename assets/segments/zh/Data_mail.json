@@ -1,0 +1,726 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Data_mail.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "Bouquet": {
+    "chinese": "@：^最近你似乎和镇上的某个人走得很近。如果你想示爱的话，就得送上一束漂亮的鲜花。我这儿卖的花，价钱极其公道！如果你某一天想组建一个家庭，这是第一步！^——皮埃尔[#]关于鲜花",
+    "english": "@: Lately you seem to be getting very close to someone in town. If you want to show love, you must give a bunch of pretty flowers. The flowers I sell here are priced extremely fairly! If one day you want to start a family, this is the first step! - Pierre [About flowers]",
+    "segments": [
+      {
+        "text": "@：^",
+        "pinyin": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "最近",
+        "pinyin": "zuì jìn",
+        "gloss": "lately"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "似乎",
+        "pinyin": "sì hū",
+        "gloss": "seem"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "with"
+      },
+      {
+        "text": "镇",
+        "pinyin": "zhèn",
+        "gloss": "town"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "in"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "某个",
+        "pinyin": "mǒu ge",
+        "gloss": "some"
+      },
+      {
+        "text": "人",
+        "pinyin": "rén",
+        "gloss": "person"
+      },
+      {
+        "text": "走",
+        "pinyin": "zǒu",
+        "gloss": "go (get)"
+      },
+      {
+        "text": "得",
+        "pinyin": "de",
+        "gloss": "(complement marker)"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "近。",
+        "pinyin": "jìn",
+        "gloss": "close"
+      },
+      {
+        "text": "如果",
+        "pinyin": "rú guǒ",
+        "gloss": "if"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "示爱",
+        "pinyin": "shì ài",
+        "gloss": "show love"
+      },
+      {
+        "text": "的话，",
+        "pinyin": "de huà",
+        "gloss": "(if…)"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "then"
+      },
+      {
+        "text": "得",
+        "pinyin": "děi",
+        "gloss": "must"
+      },
+      {
+        "text": "送",
+        "pinyin": "sòng",
+        "gloss": "give"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "(result: offer up)"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "束",
+        "pinyin": "shù",
+        "gloss": "(measure word for bunches)"
+      },
+      {
+        "text": "漂亮",
+        "pinyin": "piào liang",
+        "gloss": "pretty"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "鲜花。",
+        "pinyin": "xiān huā",
+        "gloss": "flowers"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "这儿",
+        "pinyin": "zhè r",
+        "gloss": "here"
+      },
+      {
+        "text": "卖",
+        "pinyin": "mài",
+        "gloss": "sell"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "花，",
+        "pinyin": "huā",
+        "gloss": "flowers"
+      },
+      {
+        "text": "价钱",
+        "pinyin": "jià qián",
+        "gloss": "price"
+      },
+      {
+        "text": "极其",
+        "pinyin": "jí qí",
+        "gloss": "extremely"
+      },
+      {
+        "text": "公道！",
+        "pinyin": "gōng dào",
+        "gloss": "fair"
+      },
+      {
+        "text": "如果",
+        "pinyin": "rú guǒ",
+        "gloss": "if"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "某",
+        "pinyin": "mǒu",
+        "gloss": "some"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "天",
+        "pinyin": "tiān",
+        "gloss": "day"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "组建",
+        "pinyin": "zǔ jiàn",
+        "gloss": "form"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "家庭，",
+        "pinyin": "jiā tíng",
+        "gloss": "family"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "第一",
+        "pinyin": "dì yī",
+        "gloss": "first"
+      },
+      {
+        "text": "步！^——",
+        "pinyin": "bù",
+        "gloss": "step"
+      },
+      {
+        "text": "皮埃尔[#]",
+        "pinyin": "pí āi ěr",
+        "gloss": "Pierre"
+      },
+      {
+        "text": "关于",
+        "pinyin": "guān yú",
+        "gloss": "about"
+      },
+      {
+        "text": "鲜花",
+        "pinyin": "xiān huā",
+        "gloss": "flowers"
+      }
+    ]
+  },
+  "CF_Fish": {
+    "chinese": "亲爱的@：^你的钓鱼技术比我家老头子还厉害啊！我很震撼。^这个星之果实从老威利传到小威利，再传到……哇。反正有快一千年的历史了。^我膝下无子……干脆把他传给你吧。^^——威利 ^%item id (O)434 1 %%[#]威利的传家宝",
+    "english": "Dear @: Your fishing skill is even more impressive than my family's old man! I'm stunned. This stardrop was passed from old Willy to little Willy, then passed to... wow. Anyway it has almost a thousand years of history. I have no children... might as well pass it to you. - Willy [Willy's family heirloom]",
+    "segments": [
+      {
+        "text": "亲爱",
+        "pinyin": "qīn ài",
+        "gloss": "dear"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "@：^",
+        "pinyin": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "钓鱼",
+        "pinyin": "diào yú",
+        "gloss": "fishing"
+      },
+      {
+        "text": "技术",
+        "pinyin": "jì shù",
+        "gloss": "skill"
+      },
+      {
+        "text": "比",
+        "pinyin": "bǐ",
+        "gloss": "than"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "家",
+        "pinyin": "jiā",
+        "gloss": "family's"
+      },
+      {
+        "text": "老头子",
+        "pinyin": "lǎo tóu zi",
+        "gloss": "old man"
+      },
+      {
+        "text": "还",
+        "pinyin": "hái",
+        "gloss": "even more"
+      },
+      {
+        "text": "厉害",
+        "pinyin": "lì hai",
+        "gloss": "impressive"
+      },
+      {
+        "text": "啊！",
+        "pinyin": "a",
+        "gloss": "(exclamation)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "震撼。^",
+        "pinyin": "zhèn hàn",
+        "gloss": "stunned"
+      },
+      {
+        "text": "这个",
+        "pinyin": "zhè ge",
+        "gloss": "this"
+      },
+      {
+        "text": "星之果实",
+        "pinyin": "xīng zhī guǒ shí",
+        "gloss": "stardrop (lit. star's fruit)"
+      },
+      {
+        "text": "从",
+        "pinyin": "cóng",
+        "gloss": "from"
+      },
+      {
+        "text": "老",
+        "pinyin": "lǎo",
+        "gloss": "old (Sr.)"
+      },
+      {
+        "text": "威利",
+        "pinyin": "wēi lì",
+        "gloss": "Willy"
+      },
+      {
+        "text": "传",
+        "pinyin": "chuán",
+        "gloss": "passed"
+      },
+      {
+        "text": "到",
+        "pinyin": "dào",
+        "gloss": "(result: to)"
+      },
+      {
+        "text": "小",
+        "pinyin": "xiǎo",
+        "gloss": "little (Jr.)"
+      },
+      {
+        "text": "威利，",
+        "pinyin": "wēi lì",
+        "gloss": "Willy"
+      },
+      {
+        "text": "再",
+        "pinyin": "zài",
+        "gloss": "then again"
+      },
+      {
+        "text": "传",
+        "pinyin": "chuán",
+        "gloss": "passed"
+      },
+      {
+        "text": "到……",
+        "pinyin": "dào",
+        "gloss": "(result: to)"
+      },
+      {
+        "text": "哇。",
+        "pinyin": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "反正",
+        "pinyin": "fǎn zhèng",
+        "gloss": "anyway"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "has"
+      },
+      {
+        "text": "快",
+        "pinyin": "kuài",
+        "gloss": "almost"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "千",
+        "pinyin": "qiān",
+        "gloss": "thousand"
+      },
+      {
+        "text": "年",
+        "pinyin": "nián",
+        "gloss": "years"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "历史",
+        "pinyin": "lì shǐ",
+        "gloss": "history"
+      },
+      {
+        "text": "了。^",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "膝下无子……",
+        "pinyin": "xī xià wú zǐ",
+        "gloss": "have no children (lit. no son at the knee)"
+      },
+      {
+        "text": "干脆",
+        "pinyin": "gān cuì",
+        "gloss": "might as well"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "it (lit. him)"
+      },
+      {
+        "text": "传",
+        "pinyin": "chuán",
+        "gloss": "pass"
+      },
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "to"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "吧。^^——",
+        "pinyin": "ba",
+        "gloss": "(suggestion)"
+      },
+      {
+        "text": "威利 ^%item id (O)434 1 %%[#]",
+        "pinyin": "wēi lì",
+        "gloss": "Willy"
+      },
+      {
+        "text": "威利",
+        "pinyin": "wēi lì",
+        "gloss": "Willy"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "传家宝",
+        "pinyin": "chuán jiā bǎo",
+        "gloss": "family heirloom"
+      }
+    ]
+  },
+  "Caroline": {
+    "chinese": "亲爱的@：^这是我在小院里种的青菜。或许你那儿的蔬菜已经多到连你都不知该怎么处理了，但没关系。 ^—卡洛琳%item id (O)190 1 (O)192 1 (O)24 1 %%[#]来自卡洛琳的礼物",
+    "english": "Dear @: These are greens I grew in my little yard. Perhaps the vegetables at your place are already so many that even you don't know how to deal with them, but it doesn't matter. - Caroline [A gift from Caroline]",
+    "segments": [
+      {
+        "text": "亲爱",
+        "pinyin": "qīn ài",
+        "gloss": "dear"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "@：^",
+        "pinyin": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "小院",
+        "pinyin": "xiǎo yuàn",
+        "gloss": "little yard"
+      },
+      {
+        "text": "里",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      },
+      {
+        "text": "种",
+        "pinyin": "zhòng",
+        "gloss": "grew"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "青菜。",
+        "pinyin": "qīng cài",
+        "gloss": "greens"
+      },
+      {
+        "text": "或许",
+        "pinyin": "huò xǔ",
+        "gloss": "perhaps"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "那儿",
+        "pinyin": "nà r",
+        "gloss": "there"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "蔬菜",
+        "pinyin": "shū cài",
+        "gloss": "vegetables"
+      },
+      {
+        "text": "已经",
+        "pinyin": "yǐ jīng",
+        "gloss": "already"
+      },
+      {
+        "text": "多",
+        "pinyin": "duō",
+        "gloss": "many"
+      },
+      {
+        "text": "到",
+        "pinyin": "dào",
+        "gloss": "to the point that"
+      },
+      {
+        "text": "连",
+        "pinyin": "lián",
+        "gloss": "even"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "(even: with 连)"
+      },
+      {
+        "text": "不",
+        "pinyin": "bù",
+        "gloss": "not"
+      },
+      {
+        "text": "知",
+        "pinyin": "zhī",
+        "gloss": "know"
+      },
+      {
+        "text": "该",
+        "pinyin": "gāi",
+        "gloss": "should"
+      },
+      {
+        "text": "怎么",
+        "pinyin": "zěn me",
+        "gloss": "how"
+      },
+      {
+        "text": "处理",
+        "pinyin": "chǔ lǐ",
+        "gloss": "deal with"
+      },
+      {
+        "text": "了，",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "但",
+        "pinyin": "dàn",
+        "gloss": "but"
+      },
+      {
+        "text": "没关系。 ^—",
+        "pinyin": "méi guān xi",
+        "gloss": "it doesn't matter"
+      },
+      {
+        "text": "卡洛琳%item id (O)190 1 (O)192 1 (O)24 1 %%[#]",
+        "pinyin": "kǎ luò lín",
+        "gloss": "Caroline"
+      },
+      {
+        "text": "来自",
+        "pinyin": "lái zì",
+        "gloss": "from"
+      },
+      {
+        "text": "卡洛琳",
+        "pinyin": "kǎ luò lín",
+        "gloss": "Caroline"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "礼物",
+        "pinyin": "lǐ wù",
+        "gloss": "gift"
+      }
+    ]
+  }
+}

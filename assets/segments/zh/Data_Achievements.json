@@ -1,0 +1,66 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Data_Achievements.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "0#0": {
+    "chinese": "新手（1.5万）",
+    "english": "Novice (15 thousand)",
+    "segments": [
+      {
+        "text": "新手",
+        "pinyin": "xīn shǒu",
+        "gloss": "novice"
+      },
+      {
+        "text": "（1.5",
+        "pinyin": "yī diǎn wǔ",
+        "gloss": "1.5"
+      },
+      {
+        "text": "万）",
+        "pinyin": "wàn",
+        "gloss": "ten thousand"
+      }
+    ]
+  },
+  "0#1": {
+    "chinese": "赚取 15,000 金",
+    "english": "Earn 15,000 gold",
+    "segments": [
+      {
+        "text": "赚取 ",
+        "pinyin": "zhuàn qǔ",
+        "gloss": "earn"
+      },
+      {
+        "text": "15,000 ",
+        "pinyin": "yí wàn wǔ qiān",
+        "gloss": "15,000"
+      },
+      {
+        "text": "金",
+        "pinyin": "jīn",
+        "gloss": "gold (g)"
+      }
+    ]
+  },
+  "1#0": {
+    "chinese": "牛仔（5万）",
+    "english": "Cowboy (50 thousand)",
+    "segments": [
+      {
+        "text": "牛仔",
+        "pinyin": "niú zǎi",
+        "gloss": "cowboy"
+      },
+      {
+        "text": "（5",
+        "pinyin": "wǔ",
+        "gloss": "five"
+      },
+      {
+        "text": "万）",
+        "pinyin": "wàn",
+        "gloss": "ten thousand"
+      }
+    ]
+  }
+}

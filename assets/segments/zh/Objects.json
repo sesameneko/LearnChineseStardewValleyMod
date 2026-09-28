@@ -1,0 +1,551 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Objects.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "Acorn_Description": {
+    "chinese": "可以种出一棵橡树。",
+    "english": "Can plant out one oak tree.",
+    "segments": [
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "种",
+        "pinyin": "zhòng",
+        "gloss": "plant"
+      },
+      {
+        "text": "出",
+        "pinyin": "chū",
+        "gloss": "(result: out)"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "棵",
+        "pinyin": "kē",
+        "gloss": "(measure word for trees)"
+      },
+      {
+        "text": "橡树。",
+        "pinyin": "xiàng shù",
+        "gloss": "oak tree"
+      }
+    ]
+  },
+  "Acorn_Name": {
+    "chinese": "橡子",
+    "english": "Acorn",
+    "segments": [
+      {
+        "text": "橡子",
+        "pinyin": "xiàng zi",
+        "gloss": "acorn"
+      }
+    ]
+  },
+  "AdvancedTVRemote_Description": {
+    "chinese": "比一般的遥控器按键更多。专为资深电视迷设计！",
+    "english": "Compared to an ordinary remote control, its buttons are more. Specially designed for seasoned TV fans!",
+    "segments": [
+      {
+        "text": "比",
+        "pinyin": "bǐ",
+        "gloss": "compared to"
+      },
+      {
+        "text": "一般",
+        "pinyin": "yì bān",
+        "gloss": "ordinary"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "遥控器",
+        "pinyin": "yáo kòng qì",
+        "gloss": "remote control"
+      },
+      {
+        "text": "按键",
+        "pinyin": "àn jiàn",
+        "gloss": "buttons"
+      },
+      {
+        "text": "更",
+        "pinyin": "gèng",
+        "gloss": "more"
+      },
+      {
+        "text": "多。",
+        "pinyin": "duō",
+        "gloss": "many"
+      },
+      {
+        "text": "专为",
+        "pinyin": "zhuān wèi",
+        "gloss": "specially for"
+      },
+      {
+        "text": "资深",
+        "pinyin": "zī shēn",
+        "gloss": "seasoned"
+      },
+      {
+        "text": "电视迷",
+        "pinyin": "diàn shì mí",
+        "gloss": "TV fan"
+      },
+      {
+        "text": "设计！",
+        "pinyin": "shè jì",
+        "gloss": "designed"
+      }
+    ]
+  },
+  "AdvancedTVRemote_Name": {
+    "chinese": "高级电视遥控器",
+    "english": "Advanced TV remote control",
+    "segments": [
+      {
+        "text": "高级",
+        "pinyin": "gāo jí",
+        "gloss": "advanced"
+      },
+      {
+        "text": "电视",
+        "pinyin": "diàn shì",
+        "gloss": "TV"
+      },
+      {
+        "text": "遥控器",
+        "pinyin": "yáo kòng qì",
+        "gloss": "remote control"
+      }
+    ]
+  },
+  "Aerinite_Description": {
+    "chinese": "这个晶石不可思议地轻。",
+    "english": "This crystal is unbelievably light.",
+    "segments": [
+      {
+        "text": "这个",
+        "pinyin": "zhè ge",
+        "gloss": "this"
+      },
+      {
+        "text": "晶石",
+        "pinyin": "jīng shí",
+        "gloss": "crystal"
+      },
+      {
+        "text": "不可思议",
+        "pinyin": "bù kě sī yì",
+        "gloss": "unbelievable"
+      },
+      {
+        "text": "地",
+        "pinyin": "de",
+        "gloss": "(adverb marker)"
+      },
+      {
+        "text": "轻。",
+        "pinyin": "qīng",
+        "gloss": "light (in weight)"
+      }
+    ]
+  },
+  "Aerinite_Name": {
+    "chinese": "青泥石",
+    "english": "Green-mud stone (Aerinite)",
+    "segments": [
+      {
+        "text": "青泥石",
+        "pinyin": "qīng ní shí",
+        "gloss": "aerinite (lit. green-mud stone)"
+      }
+    ]
+  },
+  "AgedRoe_Description": {
+    "chinese": "在盐中腌制使之入味的鱼籽。",
+    "english": "Fish roe cured in salt to make it take on flavor.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "盐",
+        "pinyin": "yán",
+        "gloss": "salt"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "inside"
+      },
+      {
+        "text": "腌制",
+        "pinyin": "yān zhì",
+        "gloss": "cured"
+      },
+      {
+        "text": "使",
+        "pinyin": "shǐ",
+        "gloss": "to make"
+      },
+      {
+        "text": "之",
+        "pinyin": "zhī",
+        "gloss": "it (literary)"
+      },
+      {
+        "text": "入味",
+        "pinyin": "rù wèi",
+        "gloss": "take on flavor"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "鱼籽。",
+        "pinyin": "yú zǐ",
+        "gloss": "fish roe"
+      }
+    ]
+  },
+  "AgedRoe_Flavored_Name": {
+    "chinese": "腌制的{0}鱼籽",
+    "english": "Cured {0} fish roe",
+    "segments": [
+      {
+        "text": "腌制",
+        "pinyin": "yān zhì",
+        "gloss": "cured"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(fish)"
+      },
+      {
+        "text": "鱼籽",
+        "pinyin": "yú zǐ",
+        "gloss": "fish roe"
+      }
+    ]
+  },
+  "AgedRoe_Name": {
+    "chinese": "腌鱼籽",
+    "english": "Cured fish roe",
+    "segments": [
+      {
+        "text": "腌",
+        "pinyin": "yān",
+        "gloss": "cured"
+      },
+      {
+        "text": "鱼籽",
+        "pinyin": "yú zǐ",
+        "gloss": "fish roe"
+      }
+    ]
+  },
+  "Alamite_Description": {
+    "chinese": "它与众不同的荧光使它成为许多岩石收集爱好者的最爱。",
+    "english": "Its distinctive fluorescence makes it the favorite of many rock-collecting enthusiasts.",
+    "segments": [
+      {
+        "text": "它",
+        "pinyin": "tā",
+        "gloss": "its"
+      },
+      {
+        "text": "与众不同",
+        "pinyin": "yǔ zhòng bù tóng",
+        "gloss": "distinctive"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "荧光",
+        "pinyin": "yíng guāng",
+        "gloss": "fluorescence"
+      },
+      {
+        "text": "使",
+        "pinyin": "shǐ",
+        "gloss": "makes"
+      },
+      {
+        "text": "它",
+        "pinyin": "tā",
+        "gloss": "it"
+      },
+      {
+        "text": "成为",
+        "pinyin": "chéng wéi",
+        "gloss": "become"
+      },
+      {
+        "text": "许多",
+        "pinyin": "xǔ duō",
+        "gloss": "many"
+      },
+      {
+        "text": "岩石",
+        "pinyin": "yán shí",
+        "gloss": "rock"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collecting"
+      },
+      {
+        "text": "爱好者",
+        "pinyin": "ài hào zhě",
+        "gloss": "enthusiasts"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "最爱。",
+        "pinyin": "zuì ài",
+        "gloss": "favorite"
+      }
+    ]
+  },
+  "Alamite_Name": {
+    "chinese": "透闪石",
+    "english": "Tremolite (Alamite)",
+    "segments": [
+      {
+        "text": "透闪石",
+        "pinyin": "tòu shǎn shí",
+        "gloss": "alamite (lit. tremolite)"
+      }
+    ]
+  },
+  "Albacore_Description": {
+    "chinese": "喜欢温度的\"交界处\"，即指冷水与温水交界的地方。",
+    "english": "Likes the \"borders\" of temperature, meaning the places where cold water and warm water meet.",
+    "segments": [
+      {
+        "text": "喜欢",
+        "pinyin": "xǐ huan",
+        "gloss": "likes"
+      },
+      {
+        "text": "温度",
+        "pinyin": "wēn dù",
+        "gloss": "temperature"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "\"交界处\"，",
+        "pinyin": "jiāo jiè chù",
+        "gloss": "border"
+      },
+      {
+        "text": "即",
+        "pinyin": "jí",
+        "gloss": "that is"
+      },
+      {
+        "text": "指",
+        "pinyin": "zhǐ",
+        "gloss": "refers to"
+      },
+      {
+        "text": "冷水",
+        "pinyin": "lěng shuǐ",
+        "gloss": "cold water"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "and"
+      },
+      {
+        "text": "温水",
+        "pinyin": "wēn shuǐ",
+        "gloss": "warm water"
+      },
+      {
+        "text": "交界",
+        "pinyin": "jiāo jiè",
+        "gloss": "meet"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "地方。",
+        "pinyin": "dì fang",
+        "gloss": "place"
+      }
+    ]
+  },
+  "Albacore_Name": {
+    "chinese": "青花鱼",
+    "english": "Blue-flower fish (Albacore)",
+    "segments": [
+      {
+        "text": "青花鱼",
+        "pinyin": "qīng huā yú",
+        "gloss": "albacore (lit. mackerel)"
+      }
+    ]
+  },
+  "AlgaeSoup_Description": {
+    "chinese": "有些粘稠。",
+    "english": "Somewhat thick and sticky.",
+    "segments": [
+      {
+        "text": "有些",
+        "pinyin": "yǒu xiē",
+        "gloss": "somewhat"
+      },
+      {
+        "text": "粘稠。",
+        "pinyin": "nián chóu",
+        "gloss": "thick and sticky"
+      }
+    ]
+  },
+  "AlgaeSoup_Name": {
+    "chinese": "海藻汤",
+    "english": "Seaweed soup",
+    "segments": [
+      {
+        "text": "海藻",
+        "pinyin": "hǎi zǎo",
+        "gloss": "seaweed"
+      },
+      {
+        "text": "汤",
+        "pinyin": "tāng",
+        "gloss": "soup"
+      }
+    ]
+  },
+  "AmaranthSeeds_Description": {
+    "chinese": "秋天播种。7 天成熟。用镰刀收获。",
+    "english": "Sow in autumn. Matures in 7 days. Harvest using a scythe.",
+    "segments": [
+      {
+        "text": "秋天",
+        "pinyin": "qiū tiān",
+        "gloss": "autumn"
+      },
+      {
+        "text": "播种。",
+        "pinyin": "bō zhǒng",
+        "gloss": "sow"
+      },
+      {
+        "text": "7 ",
+        "pinyin": "qī",
+        "gloss": "seven"
+      },
+      {
+        "text": "天",
+        "pinyin": "tiān",
+        "gloss": "days"
+      },
+      {
+        "text": "成熟。",
+        "pinyin": "chéng shú",
+        "gloss": "mature"
+      },
+      {
+        "text": "用",
+        "pinyin": "yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "镰刀",
+        "pinyin": "lián dāo",
+        "gloss": "scythe"
+      },
+      {
+        "text": "收获。",
+        "pinyin": "shōu huò",
+        "gloss": "harvest"
+      }
+    ]
+  },
+  "AmaranthSeeds_Name": {
+    "chinese": "苋菜种子",
+    "english": "Amaranth seeds",
+    "segments": [
+      {
+        "text": "苋菜",
+        "pinyin": "xiàn cài",
+        "gloss": "amaranth"
+      },
+      {
+        "text": "种子",
+        "pinyin": "zhǒng zi",
+        "gloss": "seeds"
+      }
+    ]
+  },
+  "AmethystRing_Description": {
+    "chinese": "增加 10% 的击退率。",
+    "english": "Increases the knockback rate by 10%.",
+    "segments": [
+      {
+        "text": "增加 ",
+        "pinyin": "zēng jiā",
+        "gloss": "increases"
+      },
+      {
+        "text": "10% ",
+        "pinyin": "bǎi fēn zhī shí",
+        "gloss": "10 percent"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "击退",
+        "pinyin": "jī tuì",
+        "gloss": "knockback"
+      },
+      {
+        "text": "率。",
+        "pinyin": "lǜ",
+        "gloss": "rate"
+      }
+    ]
+  }
+}

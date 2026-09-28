@@ -362,10 +362,17 @@ def parse_line(line):
 
 # dialogue markup: $h $s $1 $q..., %noturn / %fork, and the #...# of a page break; plus the
 # item references a gift line carries ([166], [90 88 86 535]), which draw an icon, not a word
-# %revealtaste:Haley:221 (a secret note revealing a gift taste) is one token too
-MARKUP = re.compile(r"%revealtaste(:[A-Za-z]+:[0-9A-Za-z()]+)?|\$[A-Za-z0-9]+|%[A-Za-z]+[0-9]*|\[[0-9 ]+\]")  # %kid1 is one token
+# %revealtaste:Haley:221 (a secret note revealing a gift taste) is one token too.
+# Commands whose ASCII arguments run up to the next # are never drawn either: a question and
+# its answers ($q 17/18 Sun_old#, $r 17 0 Sun_17#), a random ($c .5#) or conditional ($p 17#,
+# $d joja#, $query PLAYER_NPC_RELATIONSHIP ...#) choice, a mail attachment (%item id (O)434 1 %%)
+# and the braces of a gendered ${male^female}$ pair. They must come before the bare $x form.
+MARKUP = re.compile(r"\$(?:query|[qrpcd1])[ ][ -\"$-~]*|%item[^%]*%%|\$\{|\}\$|"
+                    r"%revealtaste(:[A-Za-z]+:[0-9A-Za-z()]+)?|\$[A-Za-z0-9]+|%[A-Za-z]+[0-9]*|\[[0-9 ]+\]")  # %kid1 is one token
 # opening brackets and quotes belong to the word they open, not the one before
 OPENERS = "（(「『【〈《[{“‘"
+# marks that open and close alike; which one it is depends on how many came before
+SYMMETRIC = "\"*"
 # a page break (#$b# / #$e#) followed by more Chinese inside one segment
 BREAK_INSIDE = re.compile(r"#\$[be]#.*" + py.HAN.pattern, re.DOTALL)
 
@@ -394,8 +401,10 @@ def align(source_text, segments):
             raise ValueError(f"can't place segment {text!r} after {source_text[:pos]!r}")
         gap = source_text[pos:at]
         # an opening bracket starts the next word; everything else ends the previous one
+        # (a straight " or the * of *唉* opens when an even number of them come before it)
         split = len(gap)
-        while split > 0 and gap[split - 1] in OPENERS:
+        while split > 0 and (gap[split - 1] in OPENERS or
+                             gap[split - 1] in SYMMETRIC and source_text[:pos + split - 1].count(gap[split - 1]) % 2 == 0):
             split -= 1
         trailing, leading = gap[:split], gap[split:]
         if out:
@@ -453,12 +462,14 @@ def align(source_text, segments):
 # word from a clause: a whole sentence as one segment still reproduces the source. On
 # 2026-09-21 one long authoring session drifted from ~2.6 to ~10 characters per segment
 # over a few hours, batch by batch, and merge accepted all of it (Data_mail, Notes,
-# MovieReactions...). That was the Japanese data; the Chinese limit is lower, since most
-# Chinese words are one to four hanzi. Long names and set phrases are legitimate
+# MovieReactions...). That was the Japanese data. Long names and set phrases are legitimate
 # (德米特里厄斯, 一模一样), so this only warns. The Japanese tables sat at 0-3% of segments
-# over the limit when split by word and 25-60% when split by clause; the zh threshold is
-# a first guess, to be re-tuned once real zh data exists.
-LONG_SEGMENT = 4          # hanzi, markup and punctuation not counted
+# over the limit when split by word and 25-60% when split by clause.
+# Tuned on the zh pilot (81 entries across every table kind, 2026-09-28): 1.5 hanzi per
+# segment, and every segment of 4+ was a name or a chengyu. Over 3 hanzi, that data is at
+# 1.1%, the same data with pairs of segments merged at 19% and split by clause at 70%. Over
+# 4, the pairs-merged drift scored 4% and would never have warned.
+LONG_SEGMENT = 3          # hanzi, markup and punctuation not counted
 LONG_SHARE_ALERT = 0.10   # share of long segments at which a batch/table looks clause-split
 
 
@@ -479,7 +490,7 @@ def size_report(label, pairs, listing=0):
     avg = sum(n for _, _, n in sizes) / len(sizes)
     alert = share > LONG_SHARE_ALERT
     print(f"  {'WARNING' if alert else 'note'}: {label}: {len(long)} of {len(sizes)} segments "
-          f"({share:.0%}) over {LONG_SEGMENT} characters, avg {avg:.1f} per segment"
+          f"({share:.0%}) over {LONG_SEGMENT} hanzi, avg {avg:.1f} per segment"
           + (" -- this looks split by clause, not by word; particles belong in their own segments"
              if alert else ""), file=sys.stderr)
     for k, t, n in sorted(long, key=lambda x: -x[2])[:listing if alert else 0]:

@@ -42,12 +42,14 @@ This repo is a copy of the Japanese mod, being turned into a **Simplified Chines
 
 #### Phase 1: author the zh segment data
 
-**15,706 entries** pending across 178 tables (`segtool.py status`), 10 skipped event-script keys carried over from ja. The workflow is in `tools/segment-data/README.md`:
+**15,706 entries** across 178 tables (`segtool.py status`), 10 skipped event-script keys carried over from ja. The workflow is in `tools/segment-data/README.md`.
+
+**Pilot done 2026-09-28:** 81 entries from every kind of table (Objects, UI, StringsFromCSFiles with the weekdays, Data_Quests, Data_mail, Data_Achievements, Dialogue-Abigail, Events-Mountain, Festivals-spring13, TV-TipChannel, Schedules-Emily). 15,625 remain. The pilot made `merge` treat command markup (`$q`/`$r`/`$p`/`$c`/`$d`/`$query …#`, `%item … %%`, `${ }$`) as markup rather than words, place straight `"` and `*` by parity, and lowered `LONG_SEGMENT` to 3. It also wrote down conventions for item names, potential complements, and known-wrong pypinyin notes. Next is the bulk run:
 
 - Author in batches of about 80 entries, each in a fresh context. The Japanese data drifted into clause-sized segments over long sessions.
 - Suggested order, most visible first: item names and descriptions (`Objects`, `BigCraftables`, `Tools`, `Weapons`, `Furniture`, `Shirts`, `Pants`), `UI`, `StringsFromCSFiles` (includes the weekdays 星期一…星期天 the HUD clock draws), `1_6_Strings`, then the `Data_*` tables, then dialogue, events, festivals, TV and schedules.
 - Read `merge`'s pinyin `note:` lines. They're the likeliest wrong readings.
-- After the first few tables, re-tune `LONG_SEGMENT` (4 hanzi, a guess) against what word-split zh data actually looks like.
+- `LONG_SEGMENT` is 3 hanzi, tuned on the pilot (see "Segment size" in that README).
 - `StringsFromMaps` signs: author arrow markup (`` ` ``, `>`) as separate gloss-less segments, so hovering a sign doesn't outline the arrow. The ja data got this wrong.
 - Finish with `segtool.py validate` and `segtool.py audit`, both clean.
 
@@ -62,7 +64,7 @@ This repo is a copy of the Japanese mod, being turned into a **Simplified Chines
 - **Flashcards:** identity becomes (language, text, pinyin). `FlashcardsPage`'s card back shows pinyin instead of kana plus romaji. Rename the stored `Kana` field (no zh cards exist yet, so no migration is needed).
 - **HUD clock** (`ClockSegments`): the zh branch of `DayTimeMoneyBox.draw` (IL, 1.6.15) builds the date as `{day}日 {weekday}`, with the weekday from `StringsFromCSFiles:Game1.cs.3042-3048` (星期天…星期六), and the time as 24-hour `HH:MM` with no 上午/下午. Add zh date entries: `{day}日` read as a number plus `rì`, joined to the authored weekday segments. The time is digits only, so it needs nothing. Gate on `sourceLanguage == "zh"` in `SegmentDataLoader`.
 - **Fallback split** (`TextHitTest.SplitSegments`): it groups a hanzi run into one blob, which is wrong for Chinese. For zh, fall back to one hanzi per segment. Drop the kana classes from the zh path.
-- **Lookup thresholds** (`SegmentIndex`): the prefix match (6+ characters), composite runs (6+) and minimum whole entries (2+) were tuned on Japanese. Chinese says the same in fewer characters, so re-check them against real zh strings once phase 1 data exists (unit tests in `SegmentIndexTests`).
+- **Lookup thresholds** (`SegmentIndex`): the prefix match (6+ characters), composite runs (6+) and minimum whole entries (2+) were tuned on Japanese. Chinese says the same in fewer characters, so re-check them against real zh strings once phase 1 data exists (unit tests in `SegmentIndexTests`). Found in the pilot: in the Sebastian delivery quest (`ItemDeliveryQuest.cs.13324` + `13612`), `－塞巴斯蒂安会很开心` is tiled from a 6-character run of the first entry's `…起来。－塞巴斯蒂安` rather than from its own template `\n－{0}会很开心`. So `－` gets the gloss "(result: up)", and `会很开心` gets none. With any other NPC's name, the template wins. A composite run shouldn't beat a template that covers the same text and more.
 - **Quiet fallback log:** skip text with no hanzi rather than no Japanese (see [Quiet fallback log](#quiet-fallback-log)).
 
 #### Phase 3: tests, names and docs

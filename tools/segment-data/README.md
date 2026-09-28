@@ -46,10 +46,18 @@ A segment is a word, roughly as a learner's dictionary (CC-CEDICT, Pleco) would 
 it. When unsure, ask whether a learner would look it up as one item.
 
 - **Dictionary words stay whole:** 遥控器, 橡树, 不可思议, 我们, 已经, 因为. So do
-  four-character idioms (一模一样) and names (皮埃尔, 德米特里厄斯, 鹈鹕镇).
+  four-character idioms (一模一样) and names of people and places (皮埃尔,
+  德米特里厄斯, 鹈鹕镇), including places the game builds from ordinary words
+  (社区中心 `Community Center`).
+- **Item names and titles are split into their words**, because they're descriptions
+  rather than names: 高级 / 电视 / 遥控器, 红叶 / 卷心菜, 旅行 / 商人. A name that is
+  itself one dictionary word stays whole (苋菜, 紫水晶), and so does a coined game term
+  whose parts don't add up to its meaning (星之果实 `stardrop`, 收集包 `bundle`).
 - **Productive combinations are split.** A verb plus a result or direction complement
   that a dictionary wouldn't list is two segments: 种 / 出, 拿 / 过来. One it does list
-  stays whole: 打开, 看见, 找到, 起来 (when lexicalised).
+  stays whole: 打开, 看见, 找到, 起来 (when lexicalised). A potential complement is
+  three: 用 / 不 / 惯, 过 / 不 / 了 (`liǎo`). Its 不 is neutral (`bu`) and glossed as
+  a word, `not (can't)`, since it can be saved like one.
 - **Grammar words are their own segment, with a bracketed functional gloss:**
   的 `(possessive)` or `(modifier marker)`, 地 `(adverb marker)`, 得 `(complement
   marker)`, 了 `(completed action)` or `(change of state)`, 着 `(ongoing)`, 过
@@ -67,8 +75,9 @@ it. When unsure, ask whether a learner would look it up as one item.
 - **Tokens** (`{0}`, `@`) are their own segment, with empty pinyin and a gloss naming
   what the game puts there: `(your name)`, `(item)`.
 
-Most Chinese words are one to four hanzi, so segments over four hanzi are counted as a
-sign of clause-splitting (see "Segment size").
+Word-split Chinese averages about 1.5 hanzi per segment, and almost nothing but names
+and idioms reaches four. So segments over three hanzi are counted as a sign of
+clause-splitting (see "Segment size").
 
 ## Readings: pinyin
 
@@ -107,7 +116,9 @@ It then prints a `note:` (warning only) where a multi-hanzi segment's reading di
 from pypinyin's phrase dictionary: 你好 written `nǐ hào` passes check 3, because 好
 does have a `hào` reading, but gets a note. pypinyin is wrong often enough on
 polyphones (银行 as `yín xíng`) that its opinion can't be a rule. Read each note and
-fix the ones that are right.
+fix the ones that are right. Notes seen to be wrong, so leave these readings alone:
+塞 in transliterated names (塞巴斯蒂安 `sài`, not `sāi`), 挣 "earn" (挣取 `zhèng`,
+not `zhēng`), and interjections (哇哦 `wā ò`).
 
 ```
 python3 tools/segment-data/pinyin.py check 橡树 "xiang4 shu4"   # normalise and check one segment
@@ -210,6 +221,14 @@ Write the words, and `merge` supplies the rest.
   latin and digits it keeps: `Joja¦¦Joja`.
 - **Item references and decorative symbols count as markup.** `[166]` or
   `[90 88 86 535]` on a gift line, and symbols like `♡`, are attached the same way.
+- **So are commands the game never draws**, arguments and all: a question and its
+  answers (`$q 32 null#`, `$r 32 0 Event_Rain_1#`), a random or conditional choice
+  (`$c .5#`, `$p 17#`, `$d joja#`, `$query PLAYER_NPC_RELATIONSHIP …#`), a mail
+  attachment (`%item id (O)434 1 %%`), and the `${` `}$` around a gendered pair. The
+  text on each side of a choice (`#`, `|`, `^`, the `_` of a `$y` question) is drawn,
+  so write the words of every alternative, in source order.
+- **Straight quotes and asterisks** (`"交界处"`, `*唉*`) open or close depending on
+  how many came before, and go to the start or the end of a word accordingly.
 - **Two small slips are repaired rather than rejected.** A hanzi-free segment written
   `text¦gloss` (the empty pinyin dropped along with its separator) is read as
   `text¦¦gloss`. A segment that starts with the previous sentence's leftovers
@@ -230,12 +249,17 @@ still reproduces the source. In the Japanese mod this is how a quarter of the ta
 ended up clause-split. One long authoring session on 2026-09-21 drifted batch by batch
 from about 2.6 to about 10 characters per segment, and every batch merged cleanly.
 
-So `merge` reports the share of the batch's segments over 4 hanzi (markup and
+So `merge` reports the share of the batch's segments over 3 hanzi (markup and
 punctuation aren't counted). Above 10% it prints a `WARNING` with the longest
 examples. `validate` does the same per table and lists the tables over the line at the
 end (`validate -v` adds examples). Neither changes the exit code. Long names and idioms
-are legitimate. The 4-hanzi limit is a first guess for Chinese, so re-tune it once the
-first tables are authored.
+are legitimate, so a names-heavy table may cross the line honestly.
+
+The limit was tuned on the 2026-09-28 pilot (81 entries from every kind of table).
+Authored by word, 1.1% of its segments were over 3 hanzi, all of them names and
+chengyu. The same entries with pairs of segments merged came to 19%, and split by
+clause to 70%. With a limit of 4, the merged pairs came to 4% and would never have
+warned.
 
 A batch that trips the warning should be re-split before the next one is written,
 since the drift compounds. Keep authoring runs short too: the clean large-scale

@@ -1,0 +1,369 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley UI.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "AGO_CCB": {
+    "chinese": "社区中心收集包：",
+    "english": "Community Center collection packs:",
+    "segments": [
+      {
+        "text": "社区中心",
+        "pinyin": "shè qū zhōng xīn",
+        "gloss": "Community Center"
+      },
+      {
+        "text": "收集包：",
+        "pinyin": "shōu jí bāo",
+        "gloss": "bundles (lit. collection packs)"
+      }
+    ]
+  },
+  "AGO_CCB_Tooltip": {
+    "chinese": "修改出现在社区中心里的收集包。",
+    "english": "Modifies the collection packs that appear in the Community Center.",
+    "segments": [
+      {
+        "text": "修改",
+        "pinyin": "xiū gǎi",
+        "gloss": "modify"
+      },
+      {
+        "text": "出现",
+        "pinyin": "chū xiàn",
+        "gloss": "appear"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "社区中心",
+        "pinyin": "shè qū zhōng xīn",
+        "gloss": "Community Center"
+      },
+      {
+        "text": "里",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "收集包。",
+        "pinyin": "shōu jí bāo",
+        "gloss": "bundles"
+      }
+    ]
+  },
+  "AGO_CabinLayout_Tooltip": {
+    "chinese": "调整小屋之间的距离远近。",
+    "english": "Adjust how far or near the distance between the cabins is.",
+    "segments": [
+      {
+        "text": "调整",
+        "pinyin": "tiáo zhěng",
+        "gloss": "adjust"
+      },
+      {
+        "text": "小屋",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabins"
+      },
+      {
+        "text": "之间",
+        "pinyin": "zhī jiān",
+        "gloss": "between"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "距离",
+        "pinyin": "jù lí",
+        "gloss": "distance"
+      },
+      {
+        "text": "远近。",
+        "pinyin": "yuǎn jìn",
+        "gloss": "how far or near"
+      }
+    ]
+  },
+  "AGO_FarmMonsters": {
+    "chinese": "在农场出现怪物",
+    "english": "Monsters appear on the farm",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "on"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "出现",
+        "pinyin": "chū xiàn",
+        "gloss": "appear"
+      },
+      {
+        "text": "怪物",
+        "pinyin": "guài wù",
+        "gloss": "monsters"
+      }
+    ]
+  },
+  "AGO_LegacyRandomization_Tooltip": {
+    "chinese": "使用旧版本的伪随机算法，大多数玩家无需开启。",
+    "english": "Uses the old version's pseudo-random algorithm; most players need not turn it on.",
+    "segments": [
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "旧",
+        "pinyin": "jiù",
+        "gloss": "old"
+      },
+      {
+        "text": "版本",
+        "pinyin": "bǎn běn",
+        "gloss": "version"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "伪随机",
+        "pinyin": "wěi suí jī",
+        "gloss": "pseudo-random"
+      },
+      {
+        "text": "算法，",
+        "pinyin": "suàn fǎ",
+        "gloss": "algorithm"
+      },
+      {
+        "text": "大多数",
+        "pinyin": "dà duō shù",
+        "gloss": "most"
+      },
+      {
+        "text": "玩家",
+        "pinyin": "wán jiā",
+        "gloss": "players"
+      },
+      {
+        "text": "无需",
+        "pinyin": "wú xū",
+        "gloss": "need not"
+      },
+      {
+        "text": "开启。",
+        "pinyin": "kāi qǐ",
+        "gloss": "turn on"
+      }
+    ]
+  },
+  "AGO_Year1Completable_Tooltip": {
+    "chinese": "确保旅行商人在第一年的某个时间出售红叶卷心菜种子。",
+    "english": "Ensures the traveling merchant sells red-leaf cabbage seeds at some time in the first year.",
+    "segments": [
+      {
+        "text": "确保",
+        "pinyin": "què bǎo",
+        "gloss": "ensure"
+      },
+      {
+        "text": "旅行",
+        "pinyin": "lǚ xíng",
+        "gloss": "traveling"
+      },
+      {
+        "text": "商人",
+        "pinyin": "shāng rén",
+        "gloss": "merchant"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "第一",
+        "pinyin": "dì yī",
+        "gloss": "first"
+      },
+      {
+        "text": "年",
+        "pinyin": "nián",
+        "gloss": "year"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "某个",
+        "pinyin": "mǒu ge",
+        "gloss": "some"
+      },
+      {
+        "text": "时间",
+        "pinyin": "shí jiān",
+        "gloss": "time"
+      },
+      {
+        "text": "出售",
+        "pinyin": "chū shòu",
+        "gloss": "sell"
+      },
+      {
+        "text": "红叶",
+        "pinyin": "hóng yè",
+        "gloss": "red-leaf"
+      },
+      {
+        "text": "卷心菜",
+        "pinyin": "juǎn xīn cài",
+        "gloss": "cabbage"
+      },
+      {
+        "text": "种子。",
+        "pinyin": "zhǒng zi",
+        "gloss": "seeds"
+      }
+    ]
+  },
+  "AcceptQuest": {
+    "chinese": "接受任务",
+    "english": "Accept quest",
+    "segments": [
+      {
+        "text": "接受",
+        "pinyin": "jiē shòu",
+        "gloss": "accept"
+      },
+      {
+        "text": "任务",
+        "pinyin": "rèn wù",
+        "gloss": "quest"
+      }
+    ]
+  },
+  "AlreadyDatingBouquet": {
+    "chinese": "你已经在和{0}约会了。",
+    "english": "You are already dating {0}.",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "已经",
+        "pinyin": "yǐ jīng",
+        "gloss": "already"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "with"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(villager)"
+      },
+      {
+        "text": "约会",
+        "pinyin": "yuē huì",
+        "gloss": "dating"
+      },
+      {
+        "text": "了。",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      }
+    ]
+  },
+  "AnimalQuery_Age1": {
+    "chinese": "年龄：1 个月",
+    "english": "Age: 1 month",
+    "segments": [
+      {
+        "text": "年龄：",
+        "pinyin": "nián líng",
+        "gloss": "age"
+      },
+      {
+        "text": "1 ",
+        "pinyin": "yī",
+        "gloss": "one"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "月",
+        "pinyin": "yuè",
+        "gloss": "month"
+      }
+    ]
+  },
+  "AnimalQuery_AgeBaby": {
+    "chinese": "（宝宝）",
+    "english": "(baby)",
+    "segments": [
+      {
+        "text": "（宝宝）",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      }
+    ]
+  },
+  "AnimalQuery_AgeN": {
+    "chinese": "年龄：{0} 个月",
+    "english": "Age: {0} months",
+    "segments": [
+      {
+        "text": "年龄：",
+        "pinyin": "nián líng",
+        "gloss": "age"
+      },
+      {
+        "text": "{0} ",
+        "pinyin": "",
+        "gloss": "(number)"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "月",
+        "pinyin": "yuè",
+        "gloss": "months"
+      }
+    ]
+  }
+}

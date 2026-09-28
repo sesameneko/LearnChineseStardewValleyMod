@@ -1,0 +1,308 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Data_Quests.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "1#1": {
+    "chinese": "会见法师",
+    "english": "Meet the wizard",
+    "segments": [
+      {
+        "text": "会见",
+        "pinyin": "huì jiàn",
+        "gloss": "meet"
+      },
+      {
+        "text": "法师",
+        "pinyin": "fǎ shī",
+        "gloss": "wizard"
+      }
+    ]
+  },
+  "1#2": {
+    "chinese": "你收到本地一位法师的信件。他自称拥有关于旧社区活动中心的情报。",
+    "english": "You received a letter from a local wizard. He claims to have information about the old community activity center.",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "收到",
+        "pinyin": "shōu dào",
+        "gloss": "received"
+      },
+      {
+        "text": "本地",
+        "pinyin": "běn dì",
+        "gloss": "local"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "位",
+        "pinyin": "wèi",
+        "gloss": "(polite measure word for people)"
+      },
+      {
+        "text": "法师",
+        "pinyin": "fǎ shī",
+        "gloss": "wizard"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "信件。",
+        "pinyin": "xìn jiàn",
+        "gloss": "letter"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "he"
+      },
+      {
+        "text": "自称",
+        "pinyin": "zì chēng",
+        "gloss": "claims"
+      },
+      {
+        "text": "拥有",
+        "pinyin": "yōng yǒu",
+        "gloss": "to have"
+      },
+      {
+        "text": "关于",
+        "pinyin": "guān yú",
+        "gloss": "about"
+      },
+      {
+        "text": "旧",
+        "pinyin": "jiù",
+        "gloss": "old"
+      },
+      {
+        "text": "社区",
+        "pinyin": "shè qū",
+        "gloss": "community"
+      },
+      {
+        "text": "活动",
+        "pinyin": "huó dòng",
+        "gloss": "activity"
+      },
+      {
+        "text": "中心",
+        "pinyin": "zhōng xīn",
+        "gloss": "center"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "情报。",
+        "pinyin": "qíng bào",
+        "gloss": "information"
+      }
+    ]
+  },
+  "1#3": {
+    "chinese": "进入法师塔。",
+    "english": "Enter the wizard's tower.",
+    "segments": [
+      {
+        "text": "进入",
+        "pinyin": "jìn rù",
+        "gloss": "enter"
+      },
+      {
+        "text": "法师",
+        "pinyin": "fǎ shī",
+        "gloss": "wizard"
+      },
+      {
+        "text": "塔。",
+        "pinyin": "tǎ",
+        "gloss": "tower"
+      }
+    ]
+  },
+  "100#1": {
+    "chinese": "罗宾丢失的斧子",
+    "english": "Robin's lost axe",
+    "segments": [
+      {
+        "text": "罗宾",
+        "pinyin": "luó bīn",
+        "gloss": "Robin"
+      },
+      {
+        "text": "丢失",
+        "pinyin": "diū shī",
+        "gloss": "lost"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "斧子",
+        "pinyin": "fǔ zi",
+        "gloss": "axe"
+      }
+    ]
+  },
+  "100#9": {
+    "chinese": "嘿，你找到我的斧子了！这我就放心了……另一把斧子我用不惯，差点砍了自己的脚趾。非常感谢！",
+    "english": "Hey, you found my axe! Now I can relax... I can't get used to using the other axe, and nearly chopped my own toe. Thanks so much!",
+    "segments": [
+      {
+        "text": "嘿，",
+        "pinyin": "hēi",
+        "gloss": "hey"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "找到",
+        "pinyin": "zhǎo dào",
+        "gloss": "found"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "斧子",
+        "pinyin": "fǔ zi",
+        "gloss": "axe"
+      },
+      {
+        "text": "了！",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this (now)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "then"
+      },
+      {
+        "text": "放心",
+        "pinyin": "fàng xīn",
+        "gloss": "be relieved"
+      },
+      {
+        "text": "了……",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "另",
+        "pinyin": "lìng",
+        "gloss": "other"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(measure word for tools)"
+      },
+      {
+        "text": "斧子",
+        "pinyin": "fǔ zi",
+        "gloss": "axe"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "用",
+        "pinyin": "yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "不",
+        "pinyin": "bu",
+        "gloss": "not (can't)"
+      },
+      {
+        "text": "惯，",
+        "pinyin": "guàn",
+        "gloss": "be used to"
+      },
+      {
+        "text": "差点",
+        "pinyin": "chà diǎn",
+        "gloss": "nearly"
+      },
+      {
+        "text": "砍",
+        "pinyin": "kǎn",
+        "gloss": "chop"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "自己",
+        "pinyin": "zì jǐ",
+        "gloss": "my own"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "脚趾。",
+        "pinyin": "jiǎo zhǐ",
+        "gloss": "toe"
+      },
+      {
+        "text": "非常",
+        "pinyin": "fēi cháng",
+        "gloss": "very much"
+      },
+      {
+        "text": "感谢！",
+        "pinyin": "gǎn xiè",
+        "gloss": "thank"
+      }
+    ]
+  }
+}

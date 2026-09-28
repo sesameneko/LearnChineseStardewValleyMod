@@ -1,0 +1,291 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Festivals-spring13.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "AbbyWin#0": {
+    "chinese": "这是你的奖品，阿比盖尔。希望你会喜欢！",
+    "english": "This is your prize, Abigail. Hope you'll like it!",
+    "segments": [
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "奖品，",
+        "pinyin": "jiǎng pǐn",
+        "gloss": "prize"
+      },
+      {
+        "text": "阿比盖尔。",
+        "pinyin": "ā bǐ gài ěr",
+        "gloss": "Abigail"
+      },
+      {
+        "text": "希望",
+        "pinyin": "xī wàng",
+        "gloss": "hope"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "喜欢！",
+        "pinyin": "xǐ huan",
+        "gloss": "like"
+      }
+    ]
+  },
+  "Abigail": {
+    "chinese": "寻找彩蛋就犹如寻找宝藏。$h",
+    "english": "Searching for colored eggs is just like searching for treasure.",
+    "segments": [
+      {
+        "text": "寻找",
+        "pinyin": "xún zhǎo",
+        "gloss": "search for"
+      },
+      {
+        "text": "彩蛋",
+        "pinyin": "cǎi dàn",
+        "gloss": "colored eggs"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "just"
+      },
+      {
+        "text": "犹如",
+        "pinyin": "yóu rú",
+        "gloss": "is like"
+      },
+      {
+        "text": "寻找",
+        "pinyin": "xún zhǎo",
+        "gloss": "search for"
+      },
+      {
+        "text": "宝藏。$h",
+        "pinyin": "bǎo zàng",
+        "gloss": "treasure"
+      }
+    ]
+  },
+  "Abigail_y2": {
+    "chinese": "$y '你觉得我现在还去玩彩蛋寻宝是不是太幼稚了？_是的_唔……你这话说得跟我妈一样！$a_不会_哈，我也觉得。只要能玩得开心，那为什么不玩？'",
+    "english": "Do you think it's too childish of me to still go do the egg hunt now? / Yes / Hmph... what you said sounds just like my mom! / No / Ha, I think so too. As long as I can have fun, then why not play?",
+    "segments": [
+      {
+        "text": "$y '你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "觉得",
+        "pinyin": "jué de",
+        "gloss": "think"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "现在",
+        "pinyin": "xiàn zài",
+        "gloss": "now"
+      },
+      {
+        "text": "还",
+        "pinyin": "hái",
+        "gloss": "still"
+      },
+      {
+        "text": "去",
+        "pinyin": "qù",
+        "gloss": "go"
+      },
+      {
+        "text": "玩",
+        "pinyin": "wán",
+        "gloss": "play"
+      },
+      {
+        "text": "彩蛋",
+        "pinyin": "cǎi dàn",
+        "gloss": "colored egg"
+      },
+      {
+        "text": "寻宝",
+        "pinyin": "xún bǎo",
+        "gloss": "treasure hunt"
+      },
+      {
+        "text": "是不是",
+        "pinyin": "shì bu shì",
+        "gloss": "is it or not"
+      },
+      {
+        "text": "太",
+        "pinyin": "tài",
+        "gloss": "too"
+      },
+      {
+        "text": "幼稚",
+        "pinyin": "yòu zhì",
+        "gloss": "childish"
+      },
+      {
+        "text": "了？_",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "是的_",
+        "pinyin": "shì de",
+        "gloss": "yes"
+      },
+      {
+        "text": "唔……",
+        "pinyin": "ń",
+        "gloss": "hmm"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "话",
+        "pinyin": "huà",
+        "gloss": "remark"
+      },
+      {
+        "text": "说",
+        "pinyin": "shuō",
+        "gloss": "say"
+      },
+      {
+        "text": "得",
+        "pinyin": "de",
+        "gloss": "(complement marker)"
+      },
+      {
+        "text": "跟",
+        "pinyin": "gēn",
+        "gloss": "(same) as"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "妈",
+        "pinyin": "mā",
+        "gloss": "mom"
+      },
+      {
+        "text": "一样！$a_",
+        "pinyin": "yí yàng",
+        "gloss": "the same"
+      },
+      {
+        "text": "不会_",
+        "pinyin": "bú huì",
+        "gloss": "no (it won't be)"
+      },
+      {
+        "text": "哈，",
+        "pinyin": "hā",
+        "gloss": "ha"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "也",
+        "pinyin": "yě",
+        "gloss": "also"
+      },
+      {
+        "text": "觉得。",
+        "pinyin": "jué de",
+        "gloss": "think (so)"
+      },
+      {
+        "text": "只要",
+        "pinyin": "zhǐ yào",
+        "gloss": "as long as"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "玩",
+        "pinyin": "wán",
+        "gloss": "play"
+      },
+      {
+        "text": "得",
+        "pinyin": "de",
+        "gloss": "(complement marker)"
+      },
+      {
+        "text": "开心，",
+        "pinyin": "kāi xīn",
+        "gloss": "happily"
+      },
+      {
+        "text": "那",
+        "pinyin": "nà",
+        "gloss": "then"
+      },
+      {
+        "text": "为什么",
+        "pinyin": "wèi shén me",
+        "gloss": "why"
+      },
+      {
+        "text": "不",
+        "pinyin": "bù",
+        "gloss": "not"
+      },
+      {
+        "text": "玩？'",
+        "pinyin": "wán",
+        "gloss": "play"
+      }
+    ]
+  }
+}

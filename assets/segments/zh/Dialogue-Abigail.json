@@ -1,0 +1,1008 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Dialogue-Abigail.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "4": {
+    "chinese": "嗨。",
+    "english": "Hi.",
+    "segments": [
+      {
+        "text": "嗨。",
+        "pinyin": "hāi",
+        "gloss": "hi"
+      }
+    ]
+  },
+  "AcceptBirthdayGift_Negative": {
+    "chinese": "欸，你还记得我的生日啊……谢谢你，@！$h#$b#呃，这个……（闻了一下）……这是什么东西？$s",
+    "english": "Hey, you still remembered my birthday... thank you, @! / Uh, this... (sniffed it)... what is this thing?",
+    "segments": [
+      {
+        "text": "欸，",
+        "pinyin": "éi",
+        "gloss": "hey"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "还",
+        "pinyin": "hái",
+        "gloss": "still (actually)"
+      },
+      {
+        "text": "记得",
+        "pinyin": "jì de",
+        "gloss": "remember"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "生日",
+        "pinyin": "shēng rì",
+        "gloss": "birthday"
+      },
+      {
+        "text": "啊……",
+        "pinyin": "a",
+        "gloss": "(exclamation)"
+      },
+      {
+        "text": "谢谢",
+        "pinyin": "xiè xie",
+        "gloss": "thank"
+      },
+      {
+        "text": "你，",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "@！$h#$b#",
+        "pinyin": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "呃，",
+        "pinyin": "è",
+        "gloss": "uh"
+      },
+      {
+        "text": "这个……",
+        "pinyin": "zhè ge",
+        "gloss": "this"
+      },
+      {
+        "text": "（闻",
+        "pinyin": "wén",
+        "gloss": "sniff"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "一下）……",
+        "pinyin": "yí xià",
+        "gloss": "(briefly)"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "什么",
+        "pinyin": "shén me",
+        "gloss": "what"
+      },
+      {
+        "text": "东西？$s",
+        "pinyin": "dōng xi",
+        "gloss": "thing"
+      }
+    ]
+  },
+  "AcceptGift_(O)66": {
+    "chinese": "$c 0.5#哇……我最喜欢这个颜色了！@，谢谢你！$h#谢谢你！这是我最喜欢的石头，非常好看。",
+    "english": "Wow... I like this color the most! @, thank you! / Thank you! This is the stone I like the most, very pretty.",
+    "segments": [
+      {
+        "text": "$c 0.5#哇……",
+        "pinyin": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "最",
+        "pinyin": "zuì",
+        "gloss": "most"
+      },
+      {
+        "text": "喜欢",
+        "pinyin": "xǐ huan",
+        "gloss": "like"
+      },
+      {
+        "text": "这个",
+        "pinyin": "zhè ge",
+        "gloss": "this"
+      },
+      {
+        "text": "颜色",
+        "pinyin": "yán sè",
+        "gloss": "color"
+      },
+      {
+        "text": "了！",
+        "pinyin": "le",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "@，",
+        "pinyin": "",
+        "gloss": "(your name)"
+      },
+      {
+        "text": "谢谢",
+        "pinyin": "xiè xie",
+        "gloss": "thank"
+      },
+      {
+        "text": "你！$h#",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "谢谢",
+        "pinyin": "xiè xie",
+        "gloss": "thank"
+      },
+      {
+        "text": "你！",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "最",
+        "pinyin": "zuì",
+        "gloss": "most"
+      },
+      {
+        "text": "喜欢",
+        "pinyin": "xǐ huan",
+        "gloss": "like"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "石头，",
+        "pinyin": "shí tou",
+        "gloss": "stone"
+      },
+      {
+        "text": "非常",
+        "pinyin": "fēi cháng",
+        "gloss": "very"
+      },
+      {
+        "text": "好看。",
+        "pinyin": "hǎo kàn",
+        "gloss": "pretty"
+      }
+    ]
+  },
+  "AcceptGift_(O)Book_Void": {
+    "chinese": "哇，这本书看着好吓人……我很喜欢！#$b#（翻、翻、翻）……哇……全是怪物……$h#$b#进洞穴探险之前我得好好研究一下……谢谢你！",
+    "english": "Wow, this book looks so scary... I love it! / (Flip, flip, flip)... wow... it's all monsters... / Before going into the caves to explore I have to study it properly... thank you!",
+    "segments": [
+      {
+        "text": "哇，",
+        "pinyin": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "本",
+        "pinyin": "běn",
+        "gloss": "(measure word for books)"
+      },
+      {
+        "text": "书",
+        "pinyin": "shū",
+        "gloss": "book"
+      },
+      {
+        "text": "看",
+        "pinyin": "kàn",
+        "gloss": "look"
+      },
+      {
+        "text": "着",
+        "pinyin": "zhe",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "好",
+        "pinyin": "hǎo",
+        "gloss": "so"
+      },
+      {
+        "text": "吓人……",
+        "pinyin": "xià rén",
+        "gloss": "scary"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "喜欢！#$b#",
+        "pinyin": "xǐ huan",
+        "gloss": "like"
+      },
+      {
+        "text": "（翻、",
+        "pinyin": "fān",
+        "gloss": "flip"
+      },
+      {
+        "text": "翻、",
+        "pinyin": "fān",
+        "gloss": "flip"
+      },
+      {
+        "text": "翻）……",
+        "pinyin": "fān",
+        "gloss": "flip"
+      },
+      {
+        "text": "哇……",
+        "pinyin": "wā",
+        "gloss": "wow"
+      },
+      {
+        "text": "全",
+        "pinyin": "quán",
+        "gloss": "all"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "are"
+      },
+      {
+        "text": "怪物……$h#$b#",
+        "pinyin": "guài wù",
+        "gloss": "monsters"
+      },
+      {
+        "text": "进",
+        "pinyin": "jìn",
+        "gloss": "enter"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "caves"
+      },
+      {
+        "text": "探险",
+        "pinyin": "tàn xiǎn",
+        "gloss": "explore"
+      },
+      {
+        "text": "之前",
+        "pinyin": "zhī qián",
+        "gloss": "before"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "得",
+        "pinyin": "děi",
+        "gloss": "have to"
+      },
+      {
+        "text": "好好",
+        "pinyin": "hǎo hǎo",
+        "gloss": "properly"
+      },
+      {
+        "text": "研究",
+        "pinyin": "yán jiū",
+        "gloss": "study"
+      },
+      {
+        "text": "一下……",
+        "pinyin": "yí xià",
+        "gloss": "(a bit)"
+      },
+      {
+        "text": "谢谢",
+        "pinyin": "xiè xie",
+        "gloss": "thank"
+      },
+      {
+        "text": "你！",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      }
+    ]
+  },
+  "AcceptGift_(TR)BasiliskPaw": {
+    "chinese": "好恶心……不过我喜欢！$h",
+    "english": "So disgusting... but I like it!",
+    "segments": [
+      {
+        "text": "好",
+        "pinyin": "hǎo",
+        "gloss": "so"
+      },
+      {
+        "text": "恶心……",
+        "pinyin": "ě xin",
+        "gloss": "disgusting"
+      },
+      {
+        "text": "不过",
+        "pinyin": "bú guò",
+        "gloss": "but"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "喜欢！$h",
+        "pinyin": "xǐ huan",
+        "gloss": "like"
+      }
+    ]
+  },
+  "Event_Grave3": {
+    "chinese": "哦，就因为我是个女孩儿……对不对？呃……$u^怎么啦？我哪里不如你了！$a#$b#我不是娇滴滴的小公主……我能照顾自己！$a#$b#我一辈子都住在山谷里，但从没做过一件值得纪念的事情。我想去闯荡一番！$8",
+    "english": "Oh, it's just because I'm a girl... right? Ugh... / What's wrong? In what way am I not as good as you! / I'm not some delicate little princess... I can take care of myself! / I've lived in the valley my whole life, but I've never done one thing worth remembering. I want to go venture out!",
+    "segments": [
+      {
+        "text": "哦，",
+        "pinyin": "ò",
+        "gloss": "oh"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "just"
+      },
+      {
+        "text": "因为",
+        "pinyin": "yīn wèi",
+        "gloss": "because"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "am"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "女孩儿……",
+        "pinyin": "nǚ hái r",
+        "gloss": "girl"
+      },
+      {
+        "text": "对不对？",
+        "pinyin": "duì bu duì",
+        "gloss": "right?"
+      },
+      {
+        "text": "呃……$u^",
+        "pinyin": "è",
+        "gloss": "ugh"
+      },
+      {
+        "text": "怎么",
+        "pinyin": "zěn me",
+        "gloss": "what's wrong"
+      },
+      {
+        "text": "啦？",
+        "pinyin": "la",
+        "gloss": "(exclamation)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "哪里",
+        "pinyin": "nǎ lǐ",
+        "gloss": "in what way"
+      },
+      {
+        "text": "不如",
+        "pinyin": "bù rú",
+        "gloss": "not as good as"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "了！$a#$b#",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "不",
+        "pinyin": "bú",
+        "gloss": "not"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "am"
+      },
+      {
+        "text": "娇滴滴",
+        "pinyin": "jiāo dī dī",
+        "gloss": "delicate"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "小",
+        "pinyin": "xiǎo",
+        "gloss": "little"
+      },
+      {
+        "text": "公主……",
+        "pinyin": "gōng zhǔ",
+        "gloss": "princess"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "照顾",
+        "pinyin": "zhào gù",
+        "gloss": "take care of"
+      },
+      {
+        "text": "自己！$a#$b#",
+        "pinyin": "zì jǐ",
+        "gloss": "myself"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "一辈子",
+        "pinyin": "yí bèi zi",
+        "gloss": "my whole life"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "all along"
+      },
+      {
+        "text": "住",
+        "pinyin": "zhù",
+        "gloss": "live"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "山谷",
+        "pinyin": "shān gǔ",
+        "gloss": "valley"
+      },
+      {
+        "text": "里，",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      },
+      {
+        "text": "但",
+        "pinyin": "dàn",
+        "gloss": "but"
+      },
+      {
+        "text": "从没",
+        "pinyin": "cóng méi",
+        "gloss": "never"
+      },
+      {
+        "text": "做",
+        "pinyin": "zuò",
+        "gloss": "do"
+      },
+      {
+        "text": "过",
+        "pinyin": "guo",
+        "gloss": "(experienced)"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "件",
+        "pinyin": "jiàn",
+        "gloss": "(measure word for matters)"
+      },
+      {
+        "text": "值得",
+        "pinyin": "zhí de",
+        "gloss": "worth"
+      },
+      {
+        "text": "纪念",
+        "pinyin": "jì niàn",
+        "gloss": "remembering"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "事情。",
+        "pinyin": "shì qing",
+        "gloss": "thing"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "去",
+        "pinyin": "qù",
+        "gloss": "to go"
+      },
+      {
+        "text": "闯荡",
+        "pinyin": "chuǎng dàng",
+        "gloss": "venture out"
+      },
+      {
+        "text": "一番！$8",
+        "pinyin": "yì fān",
+        "gloss": "(for a while)"
+      }
+    ]
+  },
+  "Event_Tragic_3": {
+    "chinese": "如果我能相信的话，可能会感觉好点儿……#$b#但我并不相信。$s",
+    "english": "If I could believe it, maybe I would feel a bit better... / But I don't actually believe it.",
+    "segments": [
+      {
+        "text": "如果",
+        "pinyin": "rú guǒ",
+        "gloss": "if"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "could"
+      },
+      {
+        "text": "相信",
+        "pinyin": "xiāng xìn",
+        "gloss": "believe"
+      },
+      {
+        "text": "的话，",
+        "pinyin": "de huà",
+        "gloss": "(if…)"
+      },
+      {
+        "text": "可能",
+        "pinyin": "kě néng",
+        "gloss": "maybe"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "would"
+      },
+      {
+        "text": "感觉",
+        "pinyin": "gǎn jué",
+        "gloss": "feel"
+      },
+      {
+        "text": "好",
+        "pinyin": "hǎo",
+        "gloss": "better"
+      },
+      {
+        "text": "点儿……#$b#",
+        "pinyin": "diǎn r",
+        "gloss": "a bit"
+      },
+      {
+        "text": "但",
+        "pinyin": "dàn",
+        "gloss": "but"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "并",
+        "pinyin": "bìng",
+        "gloss": "(emphatic: actually)"
+      },
+      {
+        "text": "不",
+        "pinyin": "bù",
+        "gloss": "not"
+      },
+      {
+        "text": "相信。$s",
+        "pinyin": "xiāng xìn",
+        "gloss": "believe"
+      }
+    ]
+  },
+  "Event_VideoGame_No": {
+    "chinese": "哦？*唉* ……我倒觉得我永远也过不了这一关。$s",
+    "english": "Oh? *sigh*... I rather feel I'll never be able to get past this level.",
+    "segments": [
+      {
+        "text": "哦？",
+        "pinyin": "ó",
+        "gloss": "oh"
+      },
+      {
+        "text": "*唉* ……",
+        "pinyin": "āi",
+        "gloss": "sigh"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "倒",
+        "pinyin": "dào",
+        "gloss": "rather"
+      },
+      {
+        "text": "觉得",
+        "pinyin": "jué de",
+        "gloss": "feel"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "永远",
+        "pinyin": "yǒng yuǎn",
+        "gloss": "ever"
+      },
+      {
+        "text": "也",
+        "pinyin": "yě",
+        "gloss": "(even)"
+      },
+      {
+        "text": "过",
+        "pinyin": "guò",
+        "gloss": "get past"
+      },
+      {
+        "text": "不",
+        "pinyin": "bu",
+        "gloss": "not (can't)"
+      },
+      {
+        "text": "了",
+        "pinyin": "liǎo",
+        "gloss": "(potential: able to)"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "关。$s",
+        "pinyin": "guān",
+        "gloss": "level"
+      }
+    ]
+  },
+  "FlowerDance_Accept_Spouse": {
+    "chinese": "但……但是……我理想的舞伴是……$s#$b#开个玩笑而已！我的舞伴当然是你啊，我爱你。$h",
+    "english": "But... but... my ideal dance partner is... / Just making a joke! My dance partner is of course you, I love you.",
+    "segments": [
+      {
+        "text": "但……",
+        "pinyin": "dàn",
+        "gloss": "but"
+      },
+      {
+        "text": "但是……",
+        "pinyin": "dàn shì",
+        "gloss": "but"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "理想",
+        "pinyin": "lǐ xiǎng",
+        "gloss": "ideal"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "舞伴",
+        "pinyin": "wǔ bàn",
+        "gloss": "dance partner"
+      },
+      {
+        "text": "是……$s#$b#",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "开",
+        "pinyin": "kāi",
+        "gloss": "make (a joke)"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "玩笑",
+        "pinyin": "wán xiào",
+        "gloss": "joke"
+      },
+      {
+        "text": "而已！",
+        "pinyin": "ér yǐ",
+        "gloss": "only"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "舞伴",
+        "pinyin": "wǔ bàn",
+        "gloss": "dance partner"
+      },
+      {
+        "text": "当然",
+        "pinyin": "dāng rán",
+        "gloss": "of course"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "啊，",
+        "pinyin": "a",
+        "gloss": "(exclamation)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "爱",
+        "pinyin": "ài",
+        "gloss": "love"
+      },
+      {
+        "text": "你。$h",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      }
+    ]
+  },
+  "Fri": {
+    "chinese": "哇哦，我才想起来今天是周五。$u#$e#有时候我真是过的稀里糊涂的。",
+    "english": "Wow, I only just remembered today is Friday. / Sometimes I really live in a muddle.",
+    "segments": [
+      {
+        "text": "哇哦，",
+        "pinyin": "wā ò",
+        "gloss": "wow"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "才",
+        "pinyin": "cái",
+        "gloss": "only just"
+      },
+      {
+        "text": "想起来",
+        "pinyin": "xiǎng qǐ lái",
+        "gloss": "remember"
+      },
+      {
+        "text": "今天",
+        "pinyin": "jīn tiān",
+        "gloss": "today"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "周五。$u#$e#",
+        "pinyin": "zhōu wǔ",
+        "gloss": "Friday"
+      },
+      {
+        "text": "有时候",
+        "pinyin": "yǒu shí hou",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "真是",
+        "pinyin": "zhēn shì",
+        "gloss": "really"
+      },
+      {
+        "text": "过",
+        "pinyin": "guò",
+        "gloss": "live"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(complement marker; standard 得)"
+      },
+      {
+        "text": "稀里糊涂",
+        "pinyin": "xī li hú tú",
+        "gloss": "muddled"
+      },
+      {
+        "text": "的。",
+        "pinyin": "de",
+        "gloss": "(emphasis)"
+      }
+    ]
+  }
+}

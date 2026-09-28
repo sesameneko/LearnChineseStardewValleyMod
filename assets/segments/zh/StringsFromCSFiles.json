@@ -1,0 +1,489 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley StringsFromCSFiles.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "Event.cs.1068": {
+    "chinese": "哈维医生收了我 {0} 金用于医院就诊。",
+    "english": "Doctor Harvey charged me {0} gold for the hospital visit.",
+    "segments": [
+      {
+        "text": "哈维",
+        "pinyin": "hā wéi",
+        "gloss": "Harvey"
+      },
+      {
+        "text": "医生",
+        "pinyin": "yī shēng",
+        "gloss": "doctor"
+      },
+      {
+        "text": "收",
+        "pinyin": "shōu",
+        "gloss": "charged"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "我 ",
+        "pinyin": "wǒ",
+        "gloss": "me"
+      },
+      {
+        "text": "{0} ",
+        "pinyin": "",
+        "gloss": "(amount)"
+      },
+      {
+        "text": "金",
+        "pinyin": "jīn",
+        "gloss": "gold (g)"
+      },
+      {
+        "text": "用于",
+        "pinyin": "yòng yú",
+        "gloss": "used for"
+      },
+      {
+        "text": "医院",
+        "pinyin": "yī yuàn",
+        "gloss": "hospital"
+      },
+      {
+        "text": "就诊。",
+        "pinyin": "jiù zhěn",
+        "gloss": "seeing a doctor"
+      }
+    ]
+  },
+  "Event.cs.1872": {
+    "chinese": "{0}，和 {1} 条大型而生猛的鱼！",
+    "english": "{0}, with {1} large and lively fish!",
+    "segments": [
+      {
+        "text": "{0}，",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "和 ",
+        "pinyin": "hé",
+        "gloss": "with"
+      },
+      {
+        "text": "{1} ",
+        "pinyin": "",
+        "gloss": "(number)"
+      },
+      {
+        "text": "条",
+        "pinyin": "tiáo",
+        "gloss": "(measure word for fish)"
+      },
+      {
+        "text": "大型",
+        "pinyin": "dà xíng",
+        "gloss": "large"
+      },
+      {
+        "text": "而",
+        "pinyin": "ér",
+        "gloss": "and"
+      },
+      {
+        "text": "生猛",
+        "pinyin": "shēng měng",
+        "gloss": "lively"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "鱼！",
+        "pinyin": "yú",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "FishingQuest.cs.13244": {
+    "chinese": "{0}/{1} {2} 被抓到",
+    "english": "{0}/{1} {2} caught",
+    "segments": [
+      {
+        "text": "{0}/",
+        "pinyin": "",
+        "gloss": "(number caught)"
+      },
+      {
+        "text": "{1} ",
+        "pinyin": "",
+        "gloss": "(number needed)"
+      },
+      {
+        "text": "{2} ",
+        "pinyin": "",
+        "gloss": "(fish)"
+      },
+      {
+        "text": "被",
+        "pinyin": "bèi",
+        "gloss": "(passive marker)"
+      },
+      {
+        "text": "抓到",
+        "pinyin": "zhuā dào",
+        "gloss": "caught"
+      }
+    ]
+  },
+  "Game1.cs.3042": {
+    "chinese": "星期天",
+    "english": "Sunday",
+    "segments": [
+      {
+        "text": "星期天",
+        "pinyin": "xīng qī tiān",
+        "gloss": "Sunday"
+      }
+    ]
+  },
+  "Game1.cs.3043": {
+    "chinese": "星期一",
+    "english": "Monday",
+    "segments": [
+      {
+        "text": "星期一",
+        "pinyin": "xīng qī yī",
+        "gloss": "Monday"
+      }
+    ]
+  },
+  "Game1.cs.3044": {
+    "chinese": "星期二",
+    "english": "Tuesday",
+    "segments": [
+      {
+        "text": "星期二",
+        "pinyin": "xīng qī èr",
+        "gloss": "Tuesday"
+      }
+    ]
+  },
+  "Game1.cs.3045": {
+    "chinese": "星期三",
+    "english": "Wednesday",
+    "segments": [
+      {
+        "text": "星期三",
+        "pinyin": "xīng qī sān",
+        "gloss": "Wednesday"
+      }
+    ]
+  },
+  "Game1.cs.3046": {
+    "chinese": "星期四",
+    "english": "Thursday",
+    "segments": [
+      {
+        "text": "星期四",
+        "pinyin": "xīng qī sì",
+        "gloss": "Thursday"
+      }
+    ]
+  },
+  "Game1.cs.3047": {
+    "chinese": "星期五",
+    "english": "Friday",
+    "segments": [
+      {
+        "text": "星期五",
+        "pinyin": "xīng qī wǔ",
+        "gloss": "Friday"
+      }
+    ]
+  },
+  "Game1.cs.3048": {
+    "chinese": "星期六",
+    "english": "Saturday",
+    "segments": [
+      {
+        "text": "星期六",
+        "pinyin": "xīng qī liù",
+        "gloss": "Saturday"
+      }
+    ]
+  },
+  "Game1.cs.3159": {
+    "chinese": "要喝掉“{0}”吗？",
+    "english": "Drink up \"{0}\"?",
+    "segments": [
+      {
+        "text": "要",
+        "pinyin": "yào",
+        "gloss": "want to"
+      },
+      {
+        "text": "喝",
+        "pinyin": "hē",
+        "gloss": "drink"
+      },
+      {
+        "text": "掉",
+        "pinyin": "diào",
+        "gloss": "(result: up, away)"
+      },
+      {
+        "text": "“{0}”",
+        "pinyin": "",
+        "gloss": "(item)"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "ItemDeliveryQuest.cs.13324": {
+    "chinese": "我感觉有些抑郁。也许{0}能让我精神振作起来。－塞巴斯蒂安",
+    "english": "I feel somewhat depressed. Maybe {0} could get my spirits lifted up. - Sebastian",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "感觉",
+        "pinyin": "gǎn jué",
+        "gloss": "feel"
+      },
+      {
+        "text": "有些",
+        "pinyin": "yǒu xiē",
+        "gloss": "somewhat"
+      },
+      {
+        "text": "抑郁。",
+        "pinyin": "yì yù",
+        "gloss": "depressed"
+      },
+      {
+        "text": "也许",
+        "pinyin": "yě xǔ",
+        "gloss": "maybe"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(item)"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "让",
+        "pinyin": "ràng",
+        "gloss": "make"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "精神",
+        "pinyin": "jīng shén",
+        "gloss": "spirits"
+      },
+      {
+        "text": "振作",
+        "pinyin": "zhèn zuò",
+        "gloss": "lift"
+      },
+      {
+        "text": "起来。－",
+        "pinyin": "qi lai",
+        "gloss": "(result: up)"
+      },
+      {
+        "text": "塞巴斯蒂安",
+        "pinyin": "sài bā sī dì ān",
+        "gloss": "Sebastian"
+      }
+    ]
+  },
+  "ItemDeliveryQuest.cs.13612": {
+    "chinese": "\n－{0}会很开心",
+    "english": "- {0} will be very happy",
+    "segments": [
+      {
+        "text": "\n－{0}",
+        "pinyin": "",
+        "gloss": "(villager)"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "开心",
+        "pinyin": "kāi xīn",
+        "gloss": "happy"
+      }
+    ]
+  },
+  "NPC.cs.4106": {
+    "chinese": "如果你想和{0}交朋友，送“{1}”准没错。",
+    "english": "If you want to make friends with {0}, giving \"{1}\" surely can't go wrong.",
+    "segments": [
+      {
+        "text": "如果",
+        "pinyin": "rú guǒ",
+        "gloss": "if"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "with"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(villager)"
+      },
+      {
+        "text": "交朋友，",
+        "pinyin": "jiāo péng you",
+        "gloss": "make friends"
+      },
+      {
+        "text": "送",
+        "pinyin": "sòng",
+        "gloss": "give"
+      },
+      {
+        "text": "“{1}”",
+        "pinyin": "",
+        "gloss": "(gift)"
+      },
+      {
+        "text": "准",
+        "pinyin": "zhǔn",
+        "gloss": "surely"
+      },
+      {
+        "text": "没错。",
+        "pinyin": "méi cuò",
+        "gloss": "can't go wrong"
+      }
+    ]
+  },
+  "SocializeQuest.cs.13802": {
+    "chinese": "已和 {0}/{1} 的人打过招呼",
+    "english": "Have already greeted {0}/{1} of the people",
+    "segments": [
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "和 ",
+        "pinyin": "hé",
+        "gloss": "with"
+      },
+      {
+        "text": "{0}/",
+        "pinyin": "",
+        "gloss": "(number greeted)"
+      },
+      {
+        "text": "{1} ",
+        "pinyin": "",
+        "gloss": "(total)"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "人",
+        "pinyin": "rén",
+        "gloss": "people"
+      },
+      {
+        "text": "打",
+        "pinyin": "dǎ",
+        "gloss": "greet (打…招呼)"
+      },
+      {
+        "text": "过",
+        "pinyin": "guo",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "招呼",
+        "pinyin": "zhāo hu",
+        "gloss": "greeting"
+      }
+    ]
+  },
+  "ToolReady": {
+    "chinese": "你的{0}已经完成了。",
+    "english": "Your {0} is already finished.",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(tool)"
+      },
+      {
+        "text": "已经",
+        "pinyin": "yǐ jīng",
+        "gloss": "already"
+      },
+      {
+        "text": "完成",
+        "pinyin": "wán chéng",
+        "gloss": "finished"
+      },
+      {
+        "text": "了。",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      }
+    ]
+  }
+}
