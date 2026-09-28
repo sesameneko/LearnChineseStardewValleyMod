@@ -70,7 +70,7 @@ This repo is a copy of the Japanese mod, being turned into a **Simplified Chines
 - Move `DataTextShapesTests` and `RealStringTableTests` to the zh extracted data, and the real-data cases in `SegmentIndexTests` and `FlashcardTests` from `tools/ModLogic.Tests/fixtures/segments-ja/` to `assets/segments/zh/`. Move the `FlashcardTests` samples to Chinese, and port `ClockSegmentsTests`. Then delete `tools/extracted-strings/{ja,data-ja,content-ja}` and the fixtures.
 - Rename Japanese-specific identifiers: `SourceEntry.Japanese`, `ContextBlock.Japanese`, `ClockSegments`' `(Japanese, …)` tuples and the ja examples in comments (`SegmentIndex`, `TextHitTest`, `FlashcardDeck`, `FlashcardContext`, `TranslationMap`).
 - Rewrite `HowItWorks.md` (hover label, readings, macron font, HUD clock, fallback split) and `README.md` for Chinese.
-- Repo: repoint `origin` (it still points at `LearnJapaneseStardewValleyMod`) and fix the README's release and issue links. Optionally rename the `.sln`/`.csproj`, which changes the build command in `CLAUDE.md`.
+- Optionally rename the `.sln`/`.csproj`, which changes the build command in `CLAUDE.md`. (The repo is done: `origin` is `sesameneko/LearnChineseStardewValleyMod` since 2026-09-28, and the Japanese repo is `upstream-ja`.)
 
 #### Phase 4: verify in game
 

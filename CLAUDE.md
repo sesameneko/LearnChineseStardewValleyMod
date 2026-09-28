@@ -11,7 +11,7 @@ A SMAPI mod for Stardew Valley that translates the game's UI for language learne
 - The data pipeline is already Chinese. `tools/segment-data/` authors `assets/segments/zh/` with pinyin readings, and `tools/extracted-strings/{zh,data-zh,content-zh}` hold the source text.
 - Much of the runtime and the docs still describe Japanese: kana/romaji labels, `KanaRomaji.cs`, the ja HUD clock, macron-only font synthesis, and ja examples in comments and `HowItWorks.md`. Treat that as the inherited design, not as a statement of what zh needs, and check "Chinese migration" before changing it.
 - The mod has its own identity (`com.galacticrailroad.languagestudy.chinese`, deployed to `Mods/LanguageStudyChinese`) so it never overwrites the Japanese mod. If both are installed, both load and both patch the same methods, so disable one (prefix its folder with `.`) when testing.
-- `origin` still points at the Japanese repo. Don't push until it's repointed.
+- `origin` is this fork's repo (`sesameneko/LearnChineseStardewValleyMod`). The Japanese repo is the `upstream-ja` remote, for pulling across fixes to shared code. Never push to it.
 
 Further reading:
 

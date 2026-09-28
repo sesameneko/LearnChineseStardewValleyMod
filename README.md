@@ -10,7 +10,8 @@ The goal is to let you play the game in the language you're learning without hav
 
 1. Install the mod loader, SMAPI, and learn how mods are installed by following the
    [Stardew Valley Wiki's modding guide for players](https://stardewvalleywiki.com/Modding:Player_Guide/Getting_Started).
-2. Download the latest release from this repository's Releases page (none yet) and unzip it into your `Mods` folder.
+2. Download the latest release from this repository's
+   [Releases page](https://github.com/sesameneko/LearnChineseStardewValleyMod/releases) (none yet) and unzip it into your `Mods` folder.
 3. *(Optional but recommended)* Install [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) to change the mod's settings and keybinds in game.
 4. Launch the game through SMAPI and set the in-game language to **中文 (Chinese)**.
 
@@ -46,7 +47,7 @@ You can rebind all of these, and turn off click-to-save, in Generic Mod Config M
 
 ## Contributing & reporting issues
 
-Bug reports and suggestions are welcome. Please open an issue and include:
+Bug reports and suggestions are welcome. Please [open an issue](https://github.com/sesameneko/LearnChineseStardewValleyMod/issues) and include:
 
 - what you were doing and what you expected to happen,
 - your SMAPI log: upload it at [smapi.io/log](https://smapi.io/log) and paste the link,
