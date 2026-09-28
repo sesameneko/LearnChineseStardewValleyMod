@@ -6,6 +6,7 @@
   - [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
   - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
   - [ ] [Verify flashcards](#verify-flashcards)
+  - [ ] [Verify language activation](#verify-language-activation)
 - [ ] Kana readings
   - [ ] [Review kana long vowels](#review-kana-long-vowels)
   - [ ] [Normalise kana script](#normalise-kana-script)
@@ -55,6 +56,16 @@ Click-to-save and the pause-menu tab are built but haven't been tried live. Chec
 - that suppressing the click really stops dialogue from advancing and shop rows from being bought
 - the card back's layout at different UI scales
 - that the ★ before a saved word's gloss renders in the hover label
+
+### Verify language activation
+
+Activation by game language and the title-screen prompt are built and the decision logic is unit-tested, but none of it has been tried live (see `HowItWorks.md`). Check:
+
+- Game in Japanese: `Active` in the log with no prompt, and hover, the flashcards tab and `G`/`Z` all work.
+- Game in English, one copy: the popup appears once the title settles. Yes switches to Japanese, the choice survives a restart, and the mod activates. No leaves it inactive (no hover, no tab, commands report inactive). Switching to Japanese by hand then activates it, and switching back deactivates it.
+- Two copies: build a throwaway copy with its own `AssemblyName`/`EntryDll`, `UniqueID` and `"StudyLanguage": "zh"`. Both load, one chooser appears, each choice activates only its own copy, Cancel leaves both inactive, and the second copy's commands get the `_zh` suffix.
+- The `Glyph capture: …` line shows every renderer on after activating, including after switching back and forth.
+- The chooser with a controller: snapping between buttons, and B/Escape as Cancel.
 
 ### Review kana long vowels
 

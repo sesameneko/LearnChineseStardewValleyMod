@@ -317,7 +317,7 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>Whether the word is already a flashcard in the current source language.</summary>
         private static bool IsSaved(TextSegment segment)
         {
-            string? language = ModEntry.Instance?.Config.SourceLanguage;
+            string? language = ModEntry.Instance?.StudyLanguage;
             return language is not null && FlashcardStore.Deck.Contains(language, segment.Text, segment.Kana);
         }
 

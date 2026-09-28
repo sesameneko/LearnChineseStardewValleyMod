@@ -17,6 +17,11 @@ namespace LanguageStudyStardewValleyMod
     /// twice at startup (the base asset, then Fonts/SmallFont.ja-JP when the language is applied)
     /// and again on every language change; each load goes through here and is extended.
     ///
+    /// Only while the game is in the study language, checked when the font is requested rather
+    /// than through ModEntry.IsActive: the font reloads inside the language change, a tick or two
+    /// before the mod activates. That also keeps copies for other languages from each extending
+    /// the atlas.
+    ///
     /// The glyph work itself is in <see cref="FontGlyphSynth"/>; this half reads the atlas back
     /// from the GPU, appends the new glyphs in a strip below it, and builds a new SpriteFont.
     /// Anything going wrong leaves the original font in place, in which case FontSafeText keeps
@@ -43,14 +48,18 @@ namespace LanguageStudyStardewValleyMod
             return drawable;
         }
 
-        public static void Register(IModHelper helper)
+        private static string studyLanguage = "";
+
+        public static void Register(IModHelper helper, string language)
         {
+            studyLanguage = language;
             helper.Events.Content.AssetRequested += OnAssetRequested;
         }
 
         private static void OnAssetRequested(object? sender, AssetRequestedEventArgs e)
         {
-            if (!e.NameWithoutLocale.IsEquivalentTo("Fonts/SmallFont"))
+            if (!e.NameWithoutLocale.IsEquivalentTo("Fonts/SmallFont")
+                || !LanguageActivation.Matches(studyLanguage, LocalizedContentManager.CurrentLanguageCode.ToString()))
                 return;
 
             // late, so any other mod's edit to the font is what gets extended

@@ -2,6 +2,45 @@
 
 Notes on how the mod's main pieces work, one section per piece, and the reasons behind the design. For a short map of the code and the rules for changing it, see `CLAUDE.md`. For bugs that were costly to find, and how they were found, see `PostMortems.md`.
 
+## Language activation and sibling copies
+
+The mod ships as one copy per study language: this codebase, with that language's data and its own manifest. A player may install several, so each copy runs only while the game language is its own. At most one copy is live at a time, and the copies never communicate.
+
+### Activation
+
+Each copy's study language is the manifest's `StudyLanguage` field, a game language code (`ja`, `zh`, …). `ModEntry.OnLanguageTick` polls `LocalizedContentManager.CurrentLanguageCode` every tick, and `ActivationTracker` (`LanguageActivation.cs`, no game types, unit-tested) turns that into activate and deactivate steps:
+
+- **Active:** the Harmony patches are applied, the handlers run, and the index is built once a save is loaded. The segment data and flashcard deck are read on the first activation only.
+- **Inactive:** every patch is removed with `UnpatchAll(<UniqueID>)`, and the handlers and console commands return straight away. The font isn't extended either.
+
+It polls instead of using `Content.LocaleChanged` because `TranslationIndex.Build` flips the game to English and back inside one call. An event would fire during that flip; a poll never sees it.
+
+Deactivation happens on the first tick the language stops matching, activation only on the second matching tick. When the player moves from one copy's language to another's, both copies see the change on the same tick, so the delay means the old copy has unpatched before the new one patches. Otherwise the new copy's glyph transpilers could see the old copy's inserted IL, fail to match, and warn.
+
+`ExtendedFont` checks the language itself, when the font is requested, instead of reading `IsActive`. The font reloads inside the language change, a tick or two before the copy activates.
+
+### The title-screen prompt
+
+Once per launch, when the title screen has settled (`titleInPosition`, no submenu open), `LanguagePrompt` finds every installed copy through `ModRegistry` by its `StudyLanguage` field and asks `LanguageActivation.DecidePrompt`:
+
+- If the game is already in any copy's language, nothing is shown, and that copy activates by itself.
+- Only the copy with the lowest `UniqueID` asks, so one popup appears however many copies are installed.
+- With one copy, a `ConfirmationDialog` offers to switch. With several, `LanguageChoiceMenu` lists each language plus Cancel. The labels are English names, since the game's current font may lack the native script.
+
+A choice only sets `CurrentLanguageCode`, as the game's own language menu does (`LanguageSelectionMenu.ApplyLanguage`). `TitleMenu.OnLanguageChange` then saves it to the startup preferences, and the copy for that language activates on its own. No or Cancel closes the popup and nothing is remembered, so the next launch asks again.
+
+### Making a copy for another language
+
+SMAPI won't load two mods with the same assembly name ("…already loaded. Do you have two copies of this mod?"), and each copy's global data is keyed by its `UniqueID`. Each copy sets its own:
+
+- `UniqueID`: `com.oldclovercat.<lang>languagestudy` (this one is `jp`)
+- `Name`
+- `<AssemblyName>` in the `.csproj`, with `EntryDll` in the manifest to match
+- `StudyLanguage`
+- `assets/segments/<lang>/`
+
+The C# namespace stays the same. Types in different assemblies never collide, and the Harmony ID is the `UniqueID`. A console command name another copy already took is registered with a language suffix (`ls_lookup_zh`).
+
 ## Hover translation
 
 Hovering something that shows a vanilla tooltip adds a second box with the tooltip's text in the target language. The text comes from the game's own string tables, loaded in both locales and joined on their keys.

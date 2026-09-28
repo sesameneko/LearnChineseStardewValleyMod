@@ -44,9 +44,41 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>Hand-segmented word boundaries, used by word hover in preference to the character-class fallback.</summary>
         public SegmentIndex Segments { get; private set; } = new();
 
+        /// <summary>
+        /// The game language this copy of the mod studies, e.g. "ja", from the manifest's
+        /// StudyLanguage field. Empty if the field is missing, in which case the mod never activates.
+        /// </summary>
+        public string StudyLanguage { get; private set; } = "";
+
+        /// <summary>The study language's English name, for messages.</summary>
+        private string StudyLanguageName => LanguageActivation.DisplayName(this.StudyLanguage);
+
+        /// <summary>
+        /// Whether this copy is running: only while the game is in its study language. Inactive,
+        /// it has no Harmony patches and its handlers return straight away, so the copies for other
+        /// languages installed alongside it never meet it (see HowItWorks.md).
+        /// </summary>
+        public bool IsActive => this.activation.IsActive;
+
+        private readonly ActivationTracker activation = new();
+
+        /// <summary>Owns every patch, so deactivating can remove exactly this copy's.</summary>
+        private Harmony harmony = null!;
+
+        /// <summary>Whether the segment data and flashcard deck have been read, which happens on the first activation.</summary>
+        private bool dataLoaded;
+
         public override void Entry(IModHelper helper)
         {
             Instance = this;
+            this.StudyLanguage = LanguagePrompt.StudyLanguageOf(this.ModManifest) ?? "";
+            if (this.StudyLanguage == "")
+                Log($"manifest.json has no '{LanguageActivation.ManifestField}' field, so this copy doesn't know which language it studies and will stay inactive.", LogLevel.Error);
+
+            this.harmony = new Harmony(this.ModManifest.UniqueID);
+
+            // first, so a language change is acted on before anything else this tick
+            helper.Events.GameLoop.UpdateTicked += this.OnLanguageTick;
             helper.Events.Input.ButtonsChanged += this.OnButtonsChanged;
             helper.Events.GameLoop.UpdateTicked += this.OnTick;
             helper.Events.GameLoop.SaveCreating += this.OnSave;
@@ -59,19 +91,13 @@ namespace LanguageStudyStardewValleyMod
             helper.Events.Display.RenderedActiveMenu += this.OnRenderedActiveMenu;
             helper.Events.Display.Rendered += this.OnRenderedDiagnostic;
 
-            ExtendedFont.Register(helper);
+            ExtendedFont.Register(helper, this.StudyLanguage);
 
             this.TranslationIndex = new TranslationIndex(helper);
 
             ConfigureMod(helper.ReadConfig<ModConfig>());
 
-            // plain file IO, so it needs no game state and can happen before the game is up
-            this.Segments = SegmentDataLoader.Load(helper, currentConfig.SourceLanguage);
-            FlashcardStore.Load(helper);
-
-            ApplyPatches();
-
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_spike_locale",
                 "Tries to load a Strings/* asset in both the configured source and target locales, "
                 + "via a couple of different APIs, and logs what worked. Usage: ls_spike_locale [assetName]  "
@@ -79,35 +105,35 @@ namespace LanguageStudyStardewValleyMod
                 this.OnSpikeLocaleCommand
             );
 
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_build_index",
                 "Rebuilds the translation index, optionally for a different locale pair than the config's. "
                 + "Usage: ls_build_index [sourceLocale] [targetLocale]  (e.g. ls_build_index ja en)",
                 this.OnBuildIndexCommand
             );
 
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_log_misses",
                 "Toggles logging the raw text of every hover tooltip that couldn't be translated, so the "
                 + "gaps in the index can be found by playing rather than by guessing. Usage: ls_log_misses [on|off]",
                 this.OnLogMissesCommand
             );
 
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_log_hovers",
                 "Toggles logging each newly hovered word and its label, plus -- when it fell back to the "
                 + "heuristic split -- the drawn text and why the segment lookup missed. Usage: ls_log_hovers [on|off]",
                 this.OnLogHoversCommand
             );
 
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_probe_questlog",
                 "Temporary diagnostic: reports when the journal's quest detail page opens and what text it holds "
                 + "(name, description, objectives, and how the game wraps them). Usage: ls_probe_questlog [on|off]",
                 this.OnProbeQuestLogCommand
             );
 
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_dump_text",
                 "Logs every string the word-hover capture recorded for the frame currently on screen, "
                 + "with its position and font, plus what the hit-test last matched. "
@@ -115,7 +141,7 @@ namespace LanguageStudyStardewValleyMod
                 this.OnDumpTextCommand
             );
 
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_draw_trace",
                 "Logs the order in which the tooltip and this mod's overlays are drawn, for the next few frames. "
                 + "Use it to diagnose anything appearing behind anything else -- z-order here is call order, which "
@@ -123,7 +149,7 @@ namespace LanguageStudyStardewValleyMod
                 this.OnDrawTraceCommand
             );
 
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_font_check",
                 "Reports which characters of the given text the game's font can't draw -- those render as "
                 + "the font's substitute character rather than failing, so they're easy to mistake for a data "
@@ -131,29 +157,122 @@ namespace LanguageStudyStardewValleyMod
                 this.OnFontCheckCommand
             );
 
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_font_info",
                 "Logs smallFont's atlas (size, surface format) and the glyph metrics of the given characters -- "
                 + "what extending the font with new glyphs depends on. Usage: ls_font_info [chars]  (defaults to aiueoAIUEO)",
                 this.OnFontInfoCommand
             );
 
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_font_export",
                 "Saves smallFont's atlas as a PNG, to see what glyphs added by ExtendedFont look like. "
                 + "Usage: ls_font_export <path.png>",
                 this.OnFontExportCommand
             );
 
-            helper.ConsoleCommands.Add(
+            this.AddCommand(
                 "ls_lookup",
                 "Looks a piece of source-language text up in the translation index, the same way a hover would. "
                 + "Usage: ls_lookup <text>",
                 this.OnLookupCommand
             );
 
-            Log("Language Study Mod initialized");
+            if (this.renamedCommands)
+                Log($"Another copy of the mod already registered the ls_* console commands, so this copy's end in _{this.CommandSuffix} (e.g. ls_lookup_{this.CommandSuffix}).");
+
+            Log($"Language Study mod loaded; it runs while the game language is {this.StudyLanguageName}.");
         }
+
+        #region Activation
+        /// <summary>
+        /// Polled every tick rather than driven by Content.LocaleChanged: TranslationIndex.Build
+        /// flips the game language to English and back within a single call, and an event would
+        /// deactivate this copy (and activate an English one) halfway through its own build.
+        /// </summary>
+        private void OnLanguageTick(object? sender, UpdateTickedEventArgs e)
+        {
+            bool matches = this.StudyLanguage != "" && LanguageActivation.Matches(this.StudyLanguage, LanguagePrompt.CurrentLanguage());
+            switch (this.activation.Step(matches))
+            {
+                case ActivationChange.Activate:
+                    this.Activate();
+                    break;
+
+                case ActivationChange.Deactivate:
+                    this.Deactivate();
+                    break;
+            }
+
+            LanguagePrompt.Poll(this.Helper, this.ModManifest);
+        }
+
+        private void Activate()
+        {
+            // plain file IO, but 20+ MB of it, so not until the copy is actually used
+            if (!this.dataLoaded)
+            {
+                this.Segments = SegmentDataLoader.Load(this.Helper, this.StudyLanguage);
+                FlashcardStore.Load(this.Helper);
+                this.dataLoaded = true;
+            }
+
+            this.ApplyPatches();
+
+            // update, not draw, so the index's language flip is safe here
+            if (Context.IsWorldReady)
+                this.EnsureIndexBuilt();
+
+            Log($"Active: the game language is {this.StudyLanguageName}.");
+        }
+
+        private void Deactivate()
+        {
+            // the ID matters: without it Harmony removes every mod's patches
+            this.harmony.UnpatchAll(this.harmony.Id);
+
+            FrozenTooltip.Unfreeze();
+            TooltipLinger.Clear();
+            TooltipOverlay.Clear();
+            TextCapturePatches.ConsumeFrame();
+
+            Log($"Inactive: the game language is no longer {this.StudyLanguageName}.");
+        }
+
+        /// <summary>Set when a command name was taken by another copy of the mod and this copy's got a suffix.</summary>
+        private bool renamedCommands;
+
+        private string CommandSuffix => this.StudyLanguage == "" ? "unknown" : this.StudyLanguage;
+
+        /// <summary>
+        /// Registers a console command that only runs while this copy is active. SMAPI rejects a
+        /// name that's already registered, which another copy of the mod will have done with the
+        /// same names, so on a clash the command is registered with this copy's language as a suffix.
+        /// </summary>
+        private void AddCommand(string name, string documentation, Action<string, string[]> callback)
+        {
+            void RunIfActive(string command, string[] args)
+            {
+                if (!this.IsActive)
+                {
+                    Log($"{command}: this copy of the mod is inactive, because the game language isn't {this.StudyLanguageName}.", LogLevel.Warn);
+                    return;
+                }
+
+                callback(command, args);
+            }
+
+            try
+            {
+                this.Helper.ConsoleCommands.Add(name, documentation, RunIfActive);
+            }
+            catch (ArgumentException)
+            {
+                this.Helper.ConsoleCommands.Add($"{name}_{this.CommandSuffix}", documentation, RunIfActive);
+                this.renamedCommands = true;
+            }
+        }
+        #endregion
 
         private void ConfigureMod(ModConfig newConfig)
         {
@@ -174,7 +293,7 @@ namespace LanguageStudyStardewValleyMod
         {
             try
             {
-                var harmony = new Harmony(this.ModManifest.UniqueID);
+                var harmony = this.harmony;
 
                 // The StringBuilder overload is the single funnel point: drawToolTip and the string
                 // overload of drawHoverText both call through to it (see HoverTextPatches).
@@ -228,7 +347,7 @@ namespace LanguageStudyStardewValleyMod
             // separately, so a pause-menu change in some game update costs only the tab
             try
             {
-                GameMenuPatches.Apply(new Harmony(this.ModManifest.UniqueID));
+                GameMenuPatches.Apply(this.harmony);
             }
             catch (Exception ex)
             {
@@ -325,14 +444,14 @@ namespace LanguageStudyStardewValleyMod
 
         private void OnButtonsChanged(object? sender, ButtonsChangedEventArgs e)
         {
-            if (!Context.IsWorldReady)
+            if (!this.IsActive || !Context.IsWorldReady)
                 return;
 
             // a click on a hovered word saves it as a flashcard, and goes no further: the game
             // underneath (a dialogue box, a shop row) never sees it
             if (currentConfig.ClickToSaveWords
                 && e.Pressed.Contains(SButton.MouseLeft)
-                && FlashcardCapture.TryHandleClick(currentConfig.SourceLanguage))
+                && FlashcardCapture.TryHandleClick(this.StudyLanguage))
             {
                 this.Helper.Input.Suppress(SButton.MouseLeft);
                 return;
@@ -385,6 +504,9 @@ namespace LanguageStudyStardewValleyMod
 
         private void OnTick(object? sender, UpdateTickedEventArgs updateTickedEventArgs)
         {
+            if (!this.IsActive)
+                return;
+
             // polled rather than handled in OnButtonsChanged so the pin also drops if the key stops
             // being reported as down without a release event (e.g. the window losing focus)
             if (FrozenTooltip.IsFrozen && !FrozenTooltip.IsLocked && !currentConfig.HoldFreezeTooltip.IsDown())
@@ -404,6 +526,9 @@ namespace LanguageStudyStardewValleyMod
         #region Hover translation
         private void OnSaveLoaded(object? sender, SaveLoadedEventArgs e)
         {
+            if (!this.IsActive)
+                return;
+
             // built here rather than on GameLaunched because the English side may briefly flip the
             // game's active language, which needs loaded content to flip against
             this.EnsureIndexBuilt();
@@ -411,15 +536,18 @@ namespace LanguageStudyStardewValleyMod
 
         private void EnsureIndexBuilt()
         {
-            if (this.TranslationIndex.IsBuiltFor(currentConfig.SourceLanguage, currentConfig.TargetLanguage))
+            if (this.TranslationIndex.IsBuiltFor(this.StudyLanguage, currentConfig.TargetLanguage))
                 return;
 
-            this.TranslationIndex.Build(currentConfig.SourceLanguage, currentConfig.TargetLanguage);
+            this.TranslationIndex.Build(this.StudyLanguage, currentConfig.TargetLanguage);
         }
 
         /// <summary>Drops any tooltip captured last frame that was never drawn, so nothing goes stale.</summary>
         private void OnRendering(object? sender, RenderingEventArgs e)
         {
+            if (!this.IsActive)
+                return;
+
             DrawTrace.BeginFrame();
             TooltipLinger.BeginFrame();
             TooltipOverlay.Clear();
@@ -439,14 +567,14 @@ namespace LanguageStudyStardewValleyMod
         private void OnRenderedHud(object? sender, RenderedHudEventArgs e)
         {
             // with a menu open the menu's own pass comes later and would draw straight over these
-            if (!this.CursorPatchIsDrawing && Game1.activeClickableMenu is null)
+            if (this.IsActive && !this.CursorPatchIsDrawing && Game1.activeClickableMenu is null)
                 this.DrawOverlays(e.SpriteBatch);
         }
 
         /// <summary>Draws this mod's overlays once the open menu -- and any tooltip it raised -- is on screen.</summary>
         private void OnRenderedActiveMenu(object? sender, RenderedActiveMenuEventArgs e)
         {
-            if (!this.CursorPatchIsDrawing)
+            if (this.IsActive && !this.CursorPatchIsDrawing)
                 this.DrawOverlays(e.SpriteBatch);
         }
 
@@ -643,7 +771,7 @@ namespace LanguageStudyStardewValleyMod
                 return;
             }
 
-            string source = args.Length > 0 ? args[0] : currentConfig.SourceLanguage;
+            string source = args.Length > 0 ? args[0] : this.StudyLanguage;
             string target = args.Length > 1 ? args[1] : currentConfig.TargetLanguage;
 
             this.TranslationIndex.Build(source, target);
@@ -703,7 +831,7 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         private void OnRenderedDiagnostic(object? sender, RenderedEventArgs e)
         {
-            if (!this.dumpAtEndOfFrame)
+            if (!this.IsActive || !this.dumpAtEndOfFrame)
                 return;
 
             this.dumpAtEndOfFrame = false;
@@ -844,9 +972,9 @@ namespace LanguageStudyStardewValleyMod
             string assetName = args.Length > 0 ? args[0] : "Strings/Objects";
 
             Log($"[spike] active game language: {LocalizedContentManager.CurrentLanguageCode}", LogLevel.Info);
-            Log($"[spike] loading '{assetName}' as source='{currentConfig.SourceLanguage}' and target='{currentConfig.TargetLanguage}'...", LogLevel.Info);
+            Log($"[spike] loading '{assetName}' as source='{this.StudyLanguage}' and target='{currentConfig.TargetLanguage}'...", LogLevel.Info);
 
-            var source = TryLoadLocaleVariant(assetName, currentConfig.SourceLanguage);
+            var source = TryLoadLocaleVariant(assetName, this.StudyLanguage);
             var target = TryLoadLocaleVariant(assetName, currentConfig.TargetLanguage);
 
             if (source is null || target is null)
@@ -855,7 +983,7 @@ namespace LanguageStudyStardewValleyMod
                 return;
             }
 
-            Log($"[spike] loaded {source.Count} '{currentConfig.SourceLanguage}' entries and {target.Count} '{currentConfig.TargetLanguage}' entries for '{assetName}'.", LogLevel.Info);
+            Log($"[spike] loaded {source.Count} '{this.StudyLanguage}' entries and {target.Count} '{currentConfig.TargetLanguage}' entries for '{assetName}'.", LogLevel.Info);
 
             int shown = 0;
             foreach (var key in source.Keys)
@@ -890,7 +1018,7 @@ namespace LanguageStudyStardewValleyMod
                 save: () =>
                 {
                     this.Helper.WriteConfig(currentConfig);
-                    if (Context.IsWorldReady)
+                    if (this.IsActive && Context.IsWorldReady)
                         this.EnsureIndexBuilt();
                 }
             );

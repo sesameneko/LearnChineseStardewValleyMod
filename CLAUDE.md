@@ -41,13 +41,17 @@ A game restart is slow, so avoid needing one:
 
 ## Invariants
 
+- **A copy is active only while the game language equals its manifest `StudyLanguage`.** Copies for other languages may be installed alongside it (see `HowItWorks.md`), so:
+  - Harmony patches exist only while active. `ApplyPatches` runs on each activation, and deactivation calls `UnpatchAll(this.harmony.Id)`. Never call it without the ID: that removes every mod's patches.
+  - Every new event handler returns early unless `IsActive`, and every new console command goes through `AddCommand`.
+  - Activation is polled in `OnLanguageTick`, never driven by `LocaleChanged`, because `TranslationIndex.Build` flips the language mid-call.
 - **`TranslationMap` lookup order:** exact whole match, then paragraph by paragraph, then templates on the whole text. A template tried earlier swallows the following paragraphs.
 - **Keep `KanaRomaji.cs` and `tools/segment-data/kana_to_romaji.py` in step.** A rule changed in one belongs in the other.
 - **Keep `SegmentSource`** on any new path that builds segments with `with { ... }`. Drop it where the text no longer comes from one entry, as `SegmentIndex.Fill` does. Flashcard sentence pointers depend on it.
 - **One segment schema** for every file in `assets/segments/ja/`: `{japanese, english, segments[{text, kana, gloss, reading}]}`. `SegmentDataLoader` silently skips anything else. `segtool.py merge` enforces that the segments reproduce the source string character for character.
 - **Text word hover should ignore** is decided by content in `TextHitTest.IsHoverable`: a fallback-split word with no letters (the hotbar's 1-9, 0, -, =) is skipped; words from segment data never are.
 - **Glyph-capture transpilers** leave a method alone and log a warning when the IL doesn't match. After a game update, check the `Glyph capture: ...` startup log line.
-- **`TranslationIndex` is built on `SaveLoaded`, never during a draw**, because it temporarily changes the language code.
+- **`TranslationIndex` is built on `SaveLoaded` or on activation (an update tick), never during a draw**, because it temporarily changes the language code.
 - Keybinds are checked with `.JustPressed()` in `OnButtonsChanged`, not `Input.ButtonPressed`, which fires twice for multi-key `KeybindList`s.
 
 ## Code map
@@ -57,6 +61,7 @@ A game restart is slow, so avoid needing one:
 - Word hover: `Patches/GlyphCapturePatches`, `Patches/TextCapturePatches` → `GlyphHitTest` (pure), with `TextHitTest` as the fallback → `WordHoverOverlay`. Data comes from `SegmentDataLoader` / `SegmentIndex`, plus `ClockSegments` (pure) for the ja HUD clock.
 - Font: `ExtendedFont` + `FontGlyphSynth` (pure) add macron vowels to `smallFont`. `FontSafeText` falls back to doubled vowels.
 - Flashcards: `FlashcardDeck`, `FlashcardContext` (pure), `FlashcardStore`, `FlashcardCapture`, `FlashcardsPage`, `Patches/GameMenuPatches`.
+- Activation: `LanguageActivation` (pure: activation tracker, prompt decision) → `LanguagePrompt` (finds sibling copies, shows the title-screen popup) / `LanguageChoiceMenu`.
 - `ModConfig.cs` is the config (`config.json`); `manifest.json`'s `Version` should match releases.
 - `tools/` holds standalone projects, not part of the mod:
   - `XnbStringTool` (+ `.Tests`): `.xnb` reader/writer, used because the game's assemblies won't load on arm64.

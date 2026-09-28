@@ -60,7 +60,7 @@ namespace LanguageStudyStardewValleyMod
         private static readonly Color DeleteTint = new(255, 150, 150);
         private static readonly Color CardFill = new(250, 246, 236);
 
-        private string Language => ModEntry.Instance.Config.SourceLanguage;
+        private string Language => ModEntry.Instance.StudyLanguage;
 
         public FlashcardsPage(int x, int y, int width, int height)
             : base(x, y, width, height)
