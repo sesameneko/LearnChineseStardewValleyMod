@@ -4,9 +4,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-A SMAPI mod for Stardew Valley that translates the game's UI for language learners: hover text to see a translation, hover a word for its gloss, click it to save a flashcard. Further reading:
+A SMAPI mod for Stardew Valley that translates the game's UI for language learners: hover text to see a translation, hover a word for its gloss, click it to save a flashcard.
 
-- **`HowItWorks.md`:** how each feature works and why it's built that way (hover translation, frozen tooltips, word-position detection and segment lookup, flashcards, macron font, word data). Read the relevant section before making architectural changes.
+**This repo is the Chinese fork.** It was copied from the Japanese mod (`LearnJapaneseStardewValleyMod`) and is being turned into a **Simplified Chinese → English** mod for learners of Chinese: the game runs in 中文 (`zh-CN`) and the mod explains it in English. The migration is in progress, and its plan and status are in `TODOs.md` under "Chinese migration". Until it's finished:
+
+- The data pipeline is already Chinese. `tools/segment-data/` authors `assets/segments/zh/` with pinyin readings, and `tools/extracted-strings/{zh,data-zh,content-zh}` hold the source text.
+- Much of the runtime and the docs still describe Japanese: kana/romaji labels, `KanaRomaji.cs`, the ja HUD clock, macron-only font synthesis, and ja examples in comments and `HowItWorks.md`. Treat that as the inherited design, not as a statement of what zh needs, and check "Chinese migration" before changing it.
+- The mod has its own identity (`com.galacticrailroad.languagestudy.chinese`, deployed to `Mods/LanguageStudyChinese`) so it never overwrites the Japanese mod. If both are installed, both load and both patch the same methods, so disable one (prefix its folder with `.`) when testing.
+- `origin` still points at the Japanese repo. Don't push until it's repointed.
+
+Further reading:
+
+- **`HowItWorks.md`:** how each feature works and why it's built that way (hover translation, frozen tooltips, word-position detection and segment lookup, flashcards, macron font, word data). Read the relevant section before making architectural changes. Written for the Japanese mod; the mechanisms carry over, the language details don't.
 - **`PostMortems.md`:** the history behind the "Hard rules" below.
 - **`TODOs.md`:** open work, including things built but not yet verified in game.
 
@@ -18,7 +27,8 @@ dotnet build LanguageStudyStardewValleyMod.csproj
 
 - Name the project explicitly. The root has both a `.sln` and a `.csproj`, so a bare `dotnet build` fails.
 - `Pathoschild.Stardew.ModBuildConfig` deploys the built mod into SMAPI's `Mods` folder on every build; there is no separate deploy step. If it can't find the game, set `<GamePath>` or add a `game.config.json`.
-- The mod itself has no tests. Verification is `dotnet build` plus launching the game (`scripts/run.sh` builds and launches SMAPI directly).
+- To check that it compiles without deploying into the game, add `-p:EnableModDeploy=false -p:EnableModZip=false`.
+- The mod itself has no tests. Verification is `dotnet build` plus launching the game (`scripts/run.sh` builds and launches SMAPI directly). Set the in-game language to 中文.
 - The tools under `tools/` have xunit suites. Run `dotnet test` from inside each tool's directory.
 
 ## Development workflow
@@ -36,15 +46,14 @@ A game restart is slow, so avoid needing one:
 - **Don't sync `IGenericModConfigMenuApi.cs` from upstream** without testing that `GetApi` still succeeds in-game. Pintail fails the whole proxy silently if any method doesn't exist in the installed GMCM (1.16.0). The file deliberately stops before `AddComplexOptionWithGamepadSupport`. Keep its `#nullable disable` so it stays diffable against upstream. Follow its `GetApi`-returns-null pattern for any other soft dependency.
 - **Don't remove `<Compile Remove="tools/**/*.cs" />`** from the `.csproj`. Without it the tools compile into the mod.
 - **Everything in `assets/` ships**, whatever its file type. Keep scratch files out.
-- **Don't re-run `tools/segment-data/migrate_names.py.retired`.** It has already been applied, and re-running it would flatten hand-authored segments.
 - Only the **StringBuilder** overload of `drawHoverText` is patched; the other tooltip paths all call it. Don't add patches on the others.
 
 ## Invariants
 
 - **`TranslationMap` lookup order:** exact whole match, then paragraph by paragraph, then templates on the whole text. A template tried earlier swallows the following paragraphs.
-- **Keep `KanaRomaji.cs` and `tools/segment-data/kana_to_romaji.py` in step.** A rule changed in one belongs in the other.
+- **Pinyin is stored one syllable per hanzi, space-separated, with tone marks** (`牧场` → `mù chǎng`), and `tools/segment-data/pinyin.py` defines and checks it. Runtime code that displays or compares pinyin must read that form. Joining syllables into words (`mùchǎng`) is a display step, never a stored one. (`KanaRomaji.cs` is Japanese-only and will be removed in the migration. Its Python twin is already gone.)
 - **Keep `SegmentSource`** on any new path that builds segments with `with { ... }`. Drop it where the text no longer comes from one entry, as `SegmentIndex.Fill` does. Flashcard sentence pointers depend on it.
-- **One segment schema** for every file in `assets/segments/ja/`: `{japanese, english, segments[{text, kana, gloss, reading}]}`. `SegmentDataLoader` silently skips anything else. `segtool.py merge` enforces that the segments reproduce the source string character for character.
+- **One segment schema** for every file in `assets/segments/zh/`: `{chinese, english, segments[{text, pinyin, gloss}]}`. `SegmentDataLoader` silently skips anything else. `segtool.py merge` enforces that the segments reproduce the source string character for character, and that each segment's pinyin is a dictionary reading of its hanzi.
 - **Text word hover should ignore** is decided by content in `TextHitTest.IsHoverable`: a fallback-split word with no letters (the hotbar's 1-9, 0, -, =) is skipped; words from segment data never are.
 - **Glyph-capture transpilers** leave a method alone and log a warning when the IL doesn't match. After a game update, check the `Glyph capture: ...` startup log line.
 - **`TranslationIndex` is built on `SaveLoaded`, never during a draw**, because it temporarily changes the language code.
@@ -61,6 +70,6 @@ A game restart is slow, so avoid needing one:
 - `tools/` holds standalone projects, not part of the mod:
   - `XnbStringTool` (+ `.Tests`): `.xnb` reader/writer, used because the game's assemblies won't load on arm64.
   - `ModLogic.Tests`: tests for the game-free classes.
-  - `extracted-strings/`: en/ja string tables as JSON.
-  - `segment-data/`: the `segtool.py` authoring pipeline for `assets/segments/ja/`, the hand-authored source of truth. Each folder has a `README.md`.
+  - `extracted-strings/`: en/zh string tables as JSON (`zh`, `data-zh`, `content-zh`). The ja copies remain only because `ModLogic.Tests` still reads them.
+  - `segment-data/`: the `segtool.py` authoring pipeline for `assets/segments/zh/`, the hand-authored source of truth, and `pinyin.py`, which normalises and checks readings (needs `pip3 install --user pypinyin`). Each folder has a `README.md`.
 - **`segtool.py status` can't see asset families nobody extracted.** Run `segtool.py audit` after a game update. When adding scope, put the new asset in `EXCLUDED` or `KNOWN_GAPS` rather than leaving it unaccounted for.

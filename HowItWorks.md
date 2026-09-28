@@ -2,6 +2,8 @@
 
 Notes on how the mod's main pieces work, one section per piece, and the reasons behind the design. For a short map of the code and the rules for changing it, see `CLAUDE.md`. For bugs that were costly to find, and how they were found, see `PostMortems.md`.
 
+> **Written for the Japanese mod this repo was forked from.** The mechanisms are language-independent and still accurate: tooltip capture, locale loading, glyph capture, segment lookup, frozen tooltips and flashcards. The language details are not. Kana and romaji, the ja HUD clock, the macron-only font work and the kana/kanji fallback split are all being replaced for Chinese. See "Chinese migration" in `TODOs.md` for what changes, and `tools/segment-data/README.md` for the zh data format.
+
 ## Hover translation
 
 Hovering something that shows a vanilla tooltip adds a second box with the tooltip's text in the target language. The text comes from the game's own string tables, loaded in both locales and joined on their keys.
@@ -192,6 +194,6 @@ Glosses are converted once, as the segment data loads, before the font exists. T
 
 ## Word data
 
-The "segment" data (containing each entry's Japanese text split into words, with kana, romaji and a gloss for each) is in `assets/segments/ja/`, one JSON file per game table. The mod loads it from there, and the tools in `tools/segment-data/` edit it there.
+The "segment" data (containing each entry's Chinese text split into words, with pinyin and a gloss for each) is in `assets/segments/zh/`, one JSON file per game table. The mod loads it from there, and the tools in `tools/segment-data/` edit it there.
 
 Note, **everything in `assets/` ships**, whatever its file type. Scratch files left there (TSV batches, backups) end up in the deployed mod and its release zip, so keep them elsewhere.

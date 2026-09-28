@@ -23,7 +23,7 @@ namespace LanguageStudyStardewValleyMod
             var index = new SegmentIndex();
 
             // the HUD clock's frames are built in code rather than read from a table, so their
-            // segments are too
+            // segments are too (ja only so far; the zh clock is a TODOs.md item)
             if (sourceLanguage == "ja")
                 ClockSegments.AddTo(index);
 
@@ -67,7 +67,7 @@ namespace LanguageStudyStardewValleyMod
                 if (property.Value.ValueKind != JsonValueKind.Object)
                     continue;
 
-                if (!property.Value.TryGetProperty("japanese", out var japaneseElement)
+                if (!property.Value.TryGetProperty("chinese", out var sourceElement)
                     || !property.Value.TryGetProperty("segments", out var segmentsElement)
                     || segmentsElement.ValueKind != JsonValueKind.Array)
                 {
@@ -75,7 +75,7 @@ namespace LanguageStudyStardewValleyMod
                     continue;
                 }
 
-                string? japanese = japaneseElement.GetString();
+                string? sourceText = sourceElement.GetString();
                 string? english = property.Value.TryGetProperty("english", out var englishElement) && englishElement.ValueKind == JsonValueKind.String
                     ? englishElement.GetString()
                     : null;
@@ -94,10 +94,10 @@ namespace LanguageStudyStardewValleyMod
                     offset += segment.Text.Length;
                 }
 
-                if (!index.TryAdd(japanese, segments))
+                if (!index.TryAdd(sourceText, segments))
                     rejected++;
                 else
-                    index.Entries.Add(table, property.Name, japanese!, english);
+                    index.Entries.Add(table, property.Name, sourceText!, english);
             }
 
             return rejected;
@@ -106,16 +106,17 @@ namespace LanguageStudyStardewValleyMod
         private static TextSegment ReadSegment(JsonElement element)
         {
             string text = element.TryGetProperty("text", out var textElement) ? textElement.GetString() ?? "" : "";
-            string? reading = element.TryGetProperty("reading", out var readingElement) ? readingElement.GetString() : null;
+            string? pinyin = element.TryGetProperty("pinyin", out var pinyinElement) ? pinyinElement.GetString() : null;
             string? gloss = element.TryGetProperty("gloss", out var glossElement) ? glossElement.GetString() : null;
-            string? kana = element.TryGetProperty("kana", out var kanaElement) ? kanaElement.GetString() : null;
 
-            // the reading and gloss are shown in the game's font, which has no glyph for a macron
-            // and silently draws '*' instead; the Japanese text itself is left exactly as authored,
+            // the gloss is shown in the game's font and gets the ASCII-only treatment, since the
+            // font doesn't exist yet at load; the Chinese text itself is left exactly as authored,
             // since it has to keep matching what the game drew
-            // the kana needs no font-safing: the game's font draws kana natively, which is half the
-            // reason the readings were migrated to it
-            return new TextSegment(text, FontSafeText.Apply(reading), FontSafeText.Apply(gloss), kana);
+            // the pinyin is stored as authored (space-separated syllables with tone marks): the
+            // ASCII-only pass would strip its tones, so it's font-safed where it's drawn instead
+            // TODO(zh migration): WordHoverOverlay and the flashcards still read Kana, so pinyin
+            // isn't displayed yet -- see TODOs.md, "Chinese migration"
+            return new TextSegment(text, pinyin, FontSafeText.Apply(gloss));
         }
     }
 }

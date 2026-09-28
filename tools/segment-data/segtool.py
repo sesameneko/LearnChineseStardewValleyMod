@@ -1,31 +1,34 @@
 #!/usr/bin/env python3
-"""Work pipeline for hand-authored Japanese word segmentation (see tools/segment-data/README.md).
+"""Work pipeline for hand-authored Chinese word segmentation (see tools/segment-data/README.md).
 
 Sub-commands:
   status                    coverage per string table
   batch <Table> [n] [--offset k]
                             print the next n un-authored entries as an authoring worklist
-  merge <Table> <file.tsv>  fold an authored batch into the assets/segments/ja source
+  merge <Table> <file.tsv>  fold an authored batch into the assets/segments/zh source
   skip  <Table> <file.txt>  record keys deliberately left unsegmented
   validate [-v]             re-check every bundled segment file; also warns (never fails)
                             on tables whose segments look clause-sized, -v lists examples
   audit [contentDir]        check the pipeline's coverage against the game install
 
 Authoring format (TSV, one entry per line, no header):
-  key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
+  key <TAB> english <TAB> text¦pinyin¦gloss‖text¦pinyin¦gloss‖...
 Punctuation, whitespace and dialogue markup may be left out of the segments --
-merge attaches them to a neighbour -- and kana may be left empty for a segment
-with no kanji. Every word must still be there, in order; merge refuses a line
-it can't line up with the source, so bad data never reaches the mod. It also warns
-(without failing) when a batch's segments look clause-sized rather than word-sized. Kana is the
-source of truth for readings; kana_to_romaji.py derives the romaji "reading".
+merge attaches them to a neighbour -- and pinyin may be left empty for a segment
+with no hanzi. Every word must still be there, in order; merge refuses a line
+it can't line up with the source, or whose pinyin isn't a reading of its hanzi
+(pinyin.py), so bad data never reaches the mod. It also warns (without failing)
+when a batch's segments look clause-sized rather than word-sized, and where the
+pinyin differs from pypinyin's reading in context.
 """
 import json, os, re, sys
 
+import pinyin as py
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-JA = os.path.join(ROOT, "tools", "extracted-strings", "ja")
+SRC = os.path.join(ROOT, "tools", "extracted-strings", "zh")
 EN = os.path.join(ROOT, "tools", "extracted-strings", "en")
-DATA_JA = os.path.join(ROOT, "tools", "extracted-strings", "data-ja")
+DATA_SRC = os.path.join(ROOT, "tools", "extracted-strings", "data-zh")
 DATA_EN = os.path.join(ROOT, "tools", "extracted-strings", "data-en")
 
 # Assets under Content/Data are not one string per key: each value is a
@@ -60,7 +63,7 @@ DATA_TABLES = {
     "Data_SecretNotes": {"asset": "SecretNotes", "fields": None},
 }
 # Whole asset families outside Strings/ and the flat Data/ records above, extracted
-# with XnbStringTool into content-ja/ and content-en/, mirroring their path under
+# with XnbStringTool into content-zh/ and content-en/, mirroring their path under
 # Content/. Each file becomes one table named "<Family>-<file>" (Dialogue-Abigail);
 # the hyphen matters, since authored() treats "<Table>_" as a split file of <Table>
 # and there is already a Strings/Characters table.
@@ -68,7 +71,7 @@ DATA_TABLES = {
 #   "script" -- every value is an event command script; the spoken text is lifted
 #               out of it (see script_lines)
 #   "mixed"  -- a festival file: most values are dialogue, a few are scripts
-CONTENT_JA = os.path.join(ROOT, "tools", "extracted-strings", "content-ja")
+CONTENT_SRC = os.path.join(ROOT, "tools", "extracted-strings", "content-zh")
 CONTENT_EN = os.path.join(ROOT, "tools", "extracted-strings", "content-en")
 CONTENT_FAMILIES = {
     "Dialogue": ("Characters/Dialogue", "text"),
@@ -79,7 +82,7 @@ CONTENT_FAMILIES = {
 }
 
 # tracked source of truth, shipped with the mod as-is
-OUT = os.path.join(ROOT, "assets", "segments", "ja")
+OUT = os.path.join(ROOT, "assets", "segments", "zh")
 SKIPS = os.path.join(ROOT, "tools", "segment-data", "skipped")
 
 FIELD, SEG = "¦", "‖"
@@ -91,19 +94,19 @@ SPLIT_SEG = re.compile(r"(?<!\\)" + SEG)
 SPLIT_FIELD = re.compile(r"(?<!\\)" + FIELD)
 
 COMMENT = ("Word/phrase-level breakdown of Stardew Valley {table}.xnb strings, for in-context "
-           "mouse-over translation of individual pieces of a sentence (not a general Japanese-"
+           "mouse-over translation of individual pieces of a sentence (not a general Chinese-"
            "English dictionary -- glosses are chosen for how each word/phrase functions in THIS "
-           "specific sentence). Each entry: \"japanese\" (exact source text), \"english\" (a "
+           "specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a "
            "natural-ish literal translation, for context), and \"segments\" -- an ordered array of "
-           "{{text, reading, gloss}} whose \"text\" fields concatenate back to exactly reproduce "
-           "\"japanese\" (validated by tools/segment-data/segtool.py).")
+           "{{text, pinyin, gloss}} whose \"text\" fields concatenate back to exactly reproduce "
+           "\"chinese\" (validated by tools/segment-data/segtool.py).")
 
 
 def content_tables():
     """table name -> (asset path under Content/, kind), for every extracted content-family file."""
     out = {}
     for family, (folder, kind) in CONTENT_FAMILIES.items():
-        directory = os.path.join(CONTENT_JA, folder)
+        directory = os.path.join(CONTENT_SRC, folder)
         if not os.path.isdir(directory):
             continue
         for name in sorted(os.listdir(directory)):
@@ -113,18 +116,18 @@ def content_tables():
 
 
 def source(table):
-    """(ja, en) entries for a table. A key deliberately skipped because its value is an event
+    """(zh, en) entries for a table. A key deliberately skipped because its value is an event
     script (Strings/Locations has a few) still has spoken lines the player reads, so those are
     lifted out into "<key>#<n>" pseudo-entries exactly as for Data/Events."""
-    ja, en = raw_source(table)
+    zh, en = raw_source(table)
     for key in skipped(table):
-        if key in ja and is_script(ja[key]):
-            lines, en_lines = script_lines(ja[key]), script_lines(en.get(key, ""))
+        if key in zh and is_script(zh[key]):
+            lines, en_lines = script_lines(zh[key]), script_lines(en.get(key, ""))
             for n, line in enumerate(lines):
-                ja[f"{key}#{n}"] = line
+                zh[f"{key}#{n}"] = line
                 if len(en_lines) == len(lines):
                     en[f"{key}#{n}"] = en_lines[n]
-    return ja, en
+    return zh, en
 
 
 def raw_source(table):
@@ -134,14 +137,14 @@ def raw_source(table):
     if table in content:
         return content_source(*content[table])
 
-    with open(os.path.join(JA, table + ".json"), encoding="utf-8") as f:
-        ja = json.load(f)["entries"]
+    with open(os.path.join(SRC, table + ".json"), encoding="utf-8") as f:
+        zh = json.load(f)["entries"]
     try:
         with open(os.path.join(EN, table + ".json"), encoding="utf-8") as f:
             en = json.load(f)["entries"]
     except FileNotFoundError:
         en = {}
-    return ja, en
+    return zh, en
 
 
 def data_source(table):
@@ -149,24 +152,24 @@ def data_source(table):
     displayed field. A field that is empty or a placeholder ('.', 'null') is
     dropped, since the player never sees it."""
     spec = DATA_TABLES[table]
-    with open(os.path.join(DATA_JA, spec["asset"] + ".json"), encoding="utf-8") as f:
-        ja_records = json.load(f)["entries"]
+    with open(os.path.join(DATA_SRC, spec["asset"] + ".json"), encoding="utf-8") as f:
+        zh_records = json.load(f)["entries"]
     try:
         with open(os.path.join(DATA_EN, spec["asset"] + ".json"), encoding="utf-8") as f:
             en_records = json.load(f)["entries"]
     except FileNotFoundError:
         en_records = {}
 
-    ja, en = {}, {}
+    zh, en = {}, {}
     if spec["fields"] is None:
-        for record_id, record in ja_records.items():
-            ja[record_id] = record
+        for record_id, record in zh_records.items():
+            zh[record_id] = record
             if record_id in en_records:
                 en[record_id] = en_records[record_id]
-        return ja, en
+        return zh, en
 
     sep = spec.get("sep", "/")
-    for record_id, record in ja_records.items():
+    for record_id, record in zh_records.items():
         parts = record.split(sep)
         en_parts = en_records.get(record_id, "").split(sep)
         for index in spec["fields"]:
@@ -176,10 +179,10 @@ def data_source(table):
             if not text or text in (".", "null"):
                 continue
             key = f"{record_id}#{index}"
-            ja[key] = text
+            zh[key] = text
             if index < len(en_parts):
                 en[key] = en_parts[index]
-    return ja, en
+    return zh, en
 
 
 # A script is '/'-separated commands; spoken text is a double-quoted argument
@@ -213,11 +216,11 @@ def content_source(asset, kind):
         except FileNotFoundError:
             return {}
 
-    ja_all, en_all = load(CONTENT_JA), load(CONTENT_EN)
-    ja, en = {}, {}
-    for key, value in ja_all.items():
+    zh_all, en_all = load(CONTENT_SRC), load(CONTENT_EN)
+    zh, en = {}, {}
+    for key, value in zh_all.items():
         if kind == "text" or (kind == "mixed" and not is_script(value)):
-            ja[key] = value
+            zh[key] = value
             if key in en_all:
                 en[key] = en_all[key]
             continue
@@ -227,15 +230,15 @@ def content_source(asset, kind):
         lines = script_lines(value)
         en_lines = script_lines(en_all.get(key, ""))
         script_id = key.split("/")[0]
-        if any(k.startswith(script_id + "#") for k in ja):
+        if any(k.startswith(script_id + "#") for k in zh):
             script_id = key
         for n, line in enumerate(lines):
-            ja[f"{script_id}#{n}"] = line
+            zh[f"{script_id}#{n}"] = line
             # locales can disagree on how a script's lines are split; only pair the
             # English when the shapes match, rather than offset every line after a mismatch
             if len(en_lines) == len(lines):
                 en[f"{script_id}#{n}"] = en_lines[n]
-    return ja, en
+    return zh, en
 
 
 def authored(table):
@@ -265,29 +268,29 @@ def skipped(table):
         return {line.strip() for line in f if line.strip() and not line.startswith("#")}
 
 
-def has_japanese(text):
-    return any("぀" <= c <= "ヿ" or "一" <= c <= "鿿" for c in text)
+def has_chinese(text):
+    return bool(py.HAN.search(text))
 
 
 def pending(table):
-    ja, en = source(table)
+    zh, en = source(table)
     done, skip = authored(table), skipped(table)
-    return [(k, v, en.get(k, "")) for k, v in ja.items()
-            if k not in done and k not in skip and has_japanese(v)]
+    return [(k, v, en.get(k, "")) for k, v in zh.items()
+            if k not in done and k not in skip and has_chinese(v)]
 
 
 def tables():
-    return sorted([f[:-5] for f in os.listdir(JA) if f.endswith(".json")] + list(DATA_TABLES) + list(content_tables()))
+    return sorted([f[:-5] for f in os.listdir(SRC) if f.endswith(".json")] + list(DATA_TABLES) + list(content_tables()))
 
 
 def cmd_status(args):
     tot_d = tot_p = tot_s = 0
     rows = []
     for t in tables():
-        ja, _ = source(t)
+        zh, _ = source(t)
         d, s = len(authored(t)), len(skipped(t))
         p = len(pending(t))
-        n = len(ja)
+        n = len(zh)
         tot_d, tot_p, tot_s = tot_d + d, tot_p + p, tot_s + s
         rows.append((p, t, n, d, s, p))
     for _, t, n, d, s, p in sorted(rows, reverse=True):
@@ -324,9 +327,6 @@ def cmd_batch(args):
           file=sys.stderr)
 
 
-KANJI = re.compile(r"[一-鿿々〆]")
-
-
 def parse_line(line):
     parts = line.rstrip("\n").split("\t")
     if len(parts) < 3:
@@ -337,20 +337,18 @@ def parse_line(line):
         if not chunk:
             continue
         bits = SPLIT_FIELD.split(chunk)
-        # text¦gloss: the kana left empty for a kanji-free segment, with its separator dropped
-        # too. With kanji the missing field is ambiguous (kana or gloss?), so that still fails.
-        if len(bits) == 2 and not KANJI.search(bits[0]):
+        # text¦gloss: the pinyin left empty for a hanzi-free segment, with its separator dropped
+        # too. With hanzi the missing field is ambiguous (pinyin or gloss?), so that still fails.
+        if len(bits) == 2 and not py.HAN.search(bits[0]):
             bits = [bits[0], "", bits[1]]
         if len(bits) != 3:
-            raise ValueError(f"segment {chunk!r} needs text{FIELD}kana{FIELD}gloss")
-        text, kana = unesc(bits[0]), " ".join(bits[1].split())
-        # the kana is a reading: a kanji in it means the field was filled with the text, or
-        # with romaji-era habits; and a kanji segment with no kana would show no reading at all
-        if KANJI.search(kana):
-            raise ValueError(f"segment {text!r}: kana {kana!r} contains kanji")
-        if KANJI.search(text) and not kana:
-            raise ValueError(f"segment {text!r} has kanji but no kana")
-        out.append({"text": text, "kana": kana, "gloss": bits[2].strip()})
+            raise ValueError(f"segment {chunk!r} needs text{FIELD}pinyin{FIELD}gloss")
+        text = unesc(bits[0])
+        pinyin = py.normalize(bits[1], text)
+        problems = py.check(text, pinyin)
+        if problems:
+            raise ValueError(f"segment {text!r}: " + "; ".join(problems))
+        out.append({"text": text, "pinyin": pinyin, "gloss": bits[2].strip()})
     return key, english, out
 
 
@@ -368,20 +366,20 @@ def parse_line(line):
 MARKUP = re.compile(r"%revealtaste(:[A-Za-z]+:[0-9A-Za-z()]+)?|\$[A-Za-z0-9]+|%[A-Za-z]+[0-9]*|\[[0-9 ]+\]")  # %kid1 is one token
 # opening brackets and quotes belong to the word they open, not the one before
 OPENERS = "（(「『【〈《[{“‘"
-# a page break (#$b# / #$e#) followed by more Japanese inside one segment
-BREAK_INSIDE = re.compile(r"#\$[be]#.*[぀-ヿ一-鿿]", re.DOTALL)
+# a page break (#$b# / #$e#) followed by more Chinese inside one segment
+BREAK_INSIDE = re.compile(r"#\$[be]#.*" + py.HAN.pattern, re.DOTALL)
 
 
-def japanese(text):
-    return any("぀" <= c <= "ヿ" or "一" <= c <= "鿿" or c == "々" for c in text)
+def chinese(text):
+    return bool(py.HAN.search(text))
 
 
 def attachable(gap):
     """True if a run of source text holds nothing a reader would hover: only punctuation,
-    whitespace and markup. Letters, digits, Japanese, @ and {0}-style tokens don't qualify --
+    whitespace and markup. Letters, digits, Chinese, @ and {0}-style tokens don't qualify --
     those are words (or stand for one) and need a segment of their own."""
     rest = MARKUP.sub("", gap)
-    return not any(c.isalnum() or c in "@{}" or japanese(c) for c in rest)
+    return not any(c.isalnum() or c in "@{}" or chinese(c) for c in rest)
 
 
 def align(source_text, segments):
@@ -419,16 +417,16 @@ def align(source_text, segments):
     # needs its own hover, not the previous page's
     folded = []
     for seg in out:
-        if (folded and not japanese(seg["text"]) and attachable(seg["text"])
+        if (folded and not chinese(seg["text"]) and attachable(seg["text"])
                 and not re.search(r"#\$[be]#\s*$", folded[-1]["text"])):
             folded[-1]["text"] += seg["text"]
         else:
             folded.append(seg)
-    if len(folded) > 1 and not japanese(folded[0]["text"]) and attachable(folded[0]["text"]):
+    if len(folded) > 1 and not chinese(folded[0]["text"]) and attachable(folded[0]["text"]):
         folded[1]["text"] = folded[0]["text"] + folded[1]["text"]
         folded = folded[1:]
 
-    # a segment that *starts* with the previous sentence's leftovers ("…$u#$b#あれ、") just
+    # a segment that *starts* with the previous sentence's leftovers ("…$u#$b#那个，") just
     # has them on the wrong side of the boundary; hand them back rather than reject the line
     for i in range(1, len(folded)):
         text = folded[i]["text"]
@@ -437,13 +435,13 @@ def align(source_text, segments):
             folded[i - 1]["text"] += text[:cut]
             folded[i]["text"] = text[cut:]
 
-    # a source that *opens* with a page break ("…$u#$b#…キミは") has no previous segment to own
+    # a source that *opens* with a page break ("…$u#$b#…你") has no previous segment to own
     # it, so it becomes a markup-only segment of its own -- the page before is just "…"
     head = folded[0]["text"]
     cut = max((m.end() for m in re.finditer(r"#\$[be]#", head)), default=0)
     if cut and cut < len(head) and attachable(head[:cut]):
         folded[0] = dict(folded[0], text=head[cut:])
-        folded.insert(0, {"text": head[:cut], "kana": "", "gloss": "(page break)"})
+        folded.insert(0, {"text": head[:cut], "pinyin": "", "gloss": "(page break)"})
 
     for seg in folded:
         if BREAK_INSIDE.search(seg["text"]):
@@ -455,15 +453,17 @@ def align(source_text, segments):
 # word from a clause: a whole sentence as one segment still reproduces the source. On
 # 2026-09-21 one long authoring session drifted from ~2.6 to ~10 characters per segment
 # over a few hours, batch by batch, and merge accepted all of it (Data_mail, Notes,
-# MovieReactions...). Long single words and stock phrases are legitimate (ジンジャーアイランド,
-# おめでとうございます), so this only warns: a word-split table has 0-3% of its segments
-# over the limit, and a clause-split one 25-60%.
-LONG_SEGMENT = 8          # Japanese characters, markup and punctuation not counted
+# MovieReactions...). That was the Japanese data; the Chinese limit is lower, since most
+# Chinese words are one to four hanzi. Long names and set phrases are legitimate
+# (德米特里厄斯, 一模一样), so this only warns. The Japanese tables sat at 0-3% of segments
+# over the limit when split by word and 25-60% when split by clause; the zh threshold is
+# a first guess, to be re-tuned once real zh data exists.
+LONG_SEGMENT = 4          # hanzi, markup and punctuation not counted
 LONG_SHARE_ALERT = 0.10   # share of long segments at which a batch/table looks clause-split
 
 
 def segment_size(text):
-    return sum(1 for c in MARKUP.sub("", text) if japanese(c))
+    return len(py.HAN.findall(MARKUP.sub("", text)))
 
 
 def size_report(label, pairs, listing=0):
@@ -487,17 +487,17 @@ def size_report(label, pairs, listing=0):
     return alert
 
 
-def kana_of(text):
-    """The reading of a segment with no kanji: its own kana, minus punctuation and markup.
-    Latin and digits the text keeps pass through, per the kana conventions."""
+def pinyin_of(text):
+    """The reading of a segment with no hanzi: the latin and digits it keeps, as they are,
+    minus punctuation and markup (Joja, 2.0). Empty for markup and symbols."""
     rest = MARKUP.sub("", re.sub(r"\{\d+\}", "", text))  # a {0} token is substituted, not read
-    kept = "".join(c if (japanese(c) or c == "ー" or c.isalnum() or c.isspace()) else " " for c in rest)
-    return " ".join(kept.split())
+    kept = "".join(c if (c.isalnum() or c in ".,'-" or c.isspace()) else " " for c in rest)
+    return " ".join(w.strip(".,'-") for w in kept.split() if w.strip(".,'-"))
 
 
 def cmd_merge(args):
     table, path = args[0], args[1]
-    ja, _ = source(table)
+    zh, _ = source(table)
     existing = authored(table)
     added = rejected = 0
     merged = []  # (key, segment text) of this batch, for the size check
@@ -509,22 +509,24 @@ def cmd_merge(args):
                 key, english, segs = parse_line(line)
             except ValueError as ex:
                 print(f"  line {lineno}: {ex}", file=sys.stderr); rejected += 1; continue
-            if key not in ja:
+            if key not in zh:
                 print(f"  line {lineno}: no such key {key!r} in {table}", file=sys.stderr); rejected += 1; continue
             try:
-                segs = align(ja[key], segs)
+                segs = align(zh[key], segs)
             except ValueError as ex:
-                print(f"  line {lineno}: {key}: {ex}\n    source: {ja[key]!r}", file=sys.stderr)
+                print(f"  line {lineno}: {key}: {ex}\n    source: {zh[key]!r}", file=sys.stderr)
                 rejected += 1; continue
             for seg in segs:
-                if not seg["kana"] and not KANJI.search(seg["text"]):
-                    seg["kana"] = kana_of(seg["text"])
+                if not seg["pinyin"] and not py.HAN.search(seg["text"]):
+                    seg["pinyin"] = pinyin_of(seg["text"])
+                for note in py.disagreements(seg["text"], seg["pinyin"]):
+                    print(f"  note: line {lineno}: {key}: {note}", file=sys.stderr)
             joined = "".join(s["text"] for s in segs)
-            if joined != ja[key]:  # align() guarantees this; kept as the last line of defence
+            if joined != zh[key]:  # align() guarantees this; kept as the last line of defence
                 print(f"  line {lineno}: {key}: segments don't reproduce source\n"
-                      f"    source: {ja[key]!r}\n    joined: {joined!r}", file=sys.stderr)
+                      f"    source: {zh[key]!r}\n    joined: {joined!r}", file=sys.stderr)
                 rejected += 1; continue
-            existing[key] = {"japanese": ja[key], "english": english, "segments": segs}
+            existing[key] = {"chinese": zh[key], "english": english, "segments": segs}
             merged += [(key, s["text"]) for s in segs]
             added += 1
     write_table(table, existing)
@@ -535,8 +537,8 @@ def cmd_merge(args):
 
 def write_table(table, entries):
     os.makedirs(OUT, exist_ok=True)
-    ja, _ = source(table)
-    order = {k: i for i, k in enumerate(ja)}
+    zh, _ = source(table)
+    order = {k: i for i, k in enumerate(zh)}
     doc = {"_comment": COMMENT.format(table=table)}
     for k in sorted(entries, key=lambda k: order.get(k, 1 << 30)):
         doc[k] = entries[k]
@@ -559,13 +561,13 @@ def cmd_skip(args):
 def cmd_validate(args):
     bad = 0
     coarse = []  # tables whose segment sizes look clause-split; reported, not failed
-    for name in sorted(os.listdir(OUT)):
+    for name in sorted(os.listdir(OUT)) if os.path.isdir(OUT) else []:
         if not name.endswith(".json"):
             continue
         table = name[:-5]
         if table not in DATA_TABLES and "-" not in table:
             table = table.replace("_Description", "").replace("_Name", "")
-        ja, _ = source(table)
+        zh, _ = source(table)
         with open(os.path.join(OUT, name), encoding="utf-8") as f:
             doc = json.load(f)
         n = 0
@@ -576,10 +578,13 @@ def cmd_validate(args):
                 continue
             n += 1
             joined = "".join(s.get("text", "") for s in entry.get("segments", []))
-            if joined != entry.get("japanese"):
-                print(f"  {name}:{key}: segments != japanese"); bad += 1
-            elif key in ja and ja[key] != entry["japanese"]:
-                print(f"  {name}:{key}: japanese != game string"); bad += 1
+            if joined != entry.get("chinese"):
+                print(f"  {name}:{key}: segments != chinese"); bad += 1
+            elif key in zh and zh[key] != entry["chinese"]:
+                print(f"  {name}:{key}: chinese != game string"); bad += 1
+            for seg in entry.get("segments", []):
+                for problem in py.check(seg.get("text", ""), seg.get("pinyin", "")):
+                    print(f"  {name}:{key}: {problem}"); bad += 1
             if not entry.get("english"):
                 print(f"  {name}:{key}: missing english"); bad += 1
         print(f"{name}: {n} entries {'OK' if bad == 0 else ''}")
@@ -612,7 +617,7 @@ CONTENT_GUESSES = [
     "C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Content",
 ]
 
-# Every localized asset carries a .ja-JP variant, textures included. These are
+# Every localized asset carries a .zh-CN variant, textures included. These are
 # the ones that hold no author-able text; each needs a reason on record, so that
 # leaving something out is a decision rather than an omission.
 EXCLUDED = {
@@ -645,7 +650,7 @@ def covered_assets():
     list -- a table that was dropped from tools/extracted-strings/ must show up
     here as uncovered."""
     out = {}
-    for name in sorted(os.listdir(JA)):
+    for name in sorted(os.listdir(SRC)):
         if name.endswith(".json"):
             out["Strings/" + name[:-5]] = name[:-5]
     for table, spec in DATA_TABLES.items():
@@ -656,13 +661,13 @@ def covered_assets():
 
 
 def localized_assets(content):
-    """Every asset the game ships a Japanese variant of, as paths under Content/."""
+    """Every asset the game ships a Chinese variant of, as paths under Content/."""
     found = []
     for dirpath, _, filenames in os.walk(content):
         for name in filenames:
-            if name.endswith(".ja-JP.xnb"):
+            if name.endswith(".zh-CN.xnb"):
                 rel = os.path.relpath(os.path.join(dirpath, name), content)
-                found.append(rel.replace(os.sep, "/")[: -len(".ja-JP.xnb")])
+                found.append(rel.replace(os.sep, "/")[: -len(".zh-CN.xnb")])
     return sorted(found)
 
 
@@ -677,36 +682,36 @@ def classify(asset, covered):
 
 
 def raw_text(table):
-    """A table's Japanese exactly as extracted, before any field selection or script expansion."""
+    """A table's Chinese exactly as extracted, before any field selection or script expansion."""
     if table in DATA_TABLES:
-        path = os.path.join(DATA_JA, DATA_TABLES[table]["asset"] + ".json")
+        path = os.path.join(DATA_SRC, DATA_TABLES[table]["asset"] + ".json")
     elif table in content_tables():
-        path = os.path.join(CONTENT_JA, content_tables()[table][0] + ".json")
+        path = os.path.join(CONTENT_SRC, content_tables()[table][0] + ".json")
     else:
-        path = os.path.join(JA, table + ".json")
+        path = os.path.join(SRC, table + ".json")
     with open(path, encoding="utf-8") as f:
         return json.load(f)["entries"]
 
 
 def text_gaps():
-    """(table, key, text) for Japanese that no authored entry covers.
+    """(table, key, text) for Chinese that no authored entry covers.
 
     Compares character counts per table between the raw asset and what source() hands to
     authoring, then checks that everything source() hands over is authored or deliberately
     skipped."""
-    ja_char = re.compile(r"[぀-ヿ一-鿿]")
+    zh_char = py.HAN
     gaps = []
     for table in tables():
-        ja, _ = source(table)
+        zh, _ = source(table)
         done, skip = authored(table), skipped(table)
-        raw = sum(len(ja_char.findall(v)) for v in raw_text(table).values())
+        raw = sum(len(zh_char.findall(v)) for v in raw_text(table).values())
         # skipped scripts appear in source() both whole and as extracted lines; count them once
-        offered = sum(len(ja_char.findall(v)) for k, v in ja.items()
+        offered = sum(len(zh_char.findall(v)) for k, v in zh.items()
                       if not (k in skip and is_script(v)))
         if offered < raw:
-            gaps.append((table, "(extraction)", f"{raw - offered} Japanese chars never offered for authoring"))
-        for key, text in ja.items():
-            if key not in done and key not in skip and ja_char.search(text):
+            gaps.append((table, "(extraction)", f"{raw - offered} Chinese chars never offered for authoring"))
+        for key, text in zh.items():
+            if key not in done and key not in skip and zh_char.search(text):
                 gaps.append((table, key, text))
     return gaps
 
@@ -748,17 +753,17 @@ def cmd_audit(args):
 
     # asset coverage isn't text coverage: a Data record field nobody listed in DATA_TABLES
     # (Quests' completion line) or the dialogue inside a skipped event script is text in a
-    # "covered" asset that no entry holds. Every Japanese character of every covered table must
+    # "covered" asset that no entry holds. Every Chinese character of every covered table must
     # sit in an authored entry, or in a skipped script whose spoken lines were extracted.
     uncovered = text_gaps()
     if uncovered:
-        print(f"\nFAILED -- Japanese text in covered assets that no entry holds ({len(uncovered)}):")
+        print(f"\nFAILED -- Chinese text in covered assets that no entry holds ({len(uncovered)}):")
         for table, key, text in uncovered[:40]:
             print(f"  {table} {key}: {text[:60]!r}")
         print("\nExtend the table's extraction (DATA_TABLES fields, script expansion), author it,\n"
               "or skip it with a reason.")
         return 1
-    print("text: every Japanese character in covered assets is held by an entry")
+    print("text: every Chinese character in covered assets is held by an entry")
 
     if buckets["unclassified"]:
         print(f"\nFAILED -- {len(buckets['unclassified'])} localized asset(s) are accounted for nowhere:")

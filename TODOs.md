@@ -2,22 +2,18 @@
 
 ## Open
 
-- [ ] In-game checks
+- [ ] [Chinese migration](#chinese-migration)
+  - [x] Phase 0: groundwork (2026-09-28)
+  - [ ] [Phase 1: author the zh segment data](#phase-1-author-the-zh-segment-data)
+  - [ ] [Phase 2: runtime shows pinyin](#phase-2-runtime-shows-pinyin)
+  - [ ] [Phase 3: tests, names and docs](#phase-3-tests-names-and-docs)
+  - [ ] [Phase 4: verify in game](#phase-4-verify-in-game)
+- [ ] In-game checks (inherited from the ja mod; redo in zh as part of phase 4)
   - [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
   - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
   - [ ] [Verify flashcards](#verify-flashcards)
-- [ ] Kana readings
-  - [ ] [Review kana long vowels](#review-kana-long-vowels)
-  - [ ] [Normalise kana script](#normalise-kana-script)
-    - [ ] Survey every segment
-    - [ ] Enforce in validate and merge
-    - [ ] Convert existing data
 - [ ] Segment data
   - [ ] [Consolidate redundant glosses](#consolidate-redundant-glosses)
-    - [ ] Merge same-sense glosses
-    - [ ] Measure compound redundancy
-    - [ ] Decide on shared glossary
-  - [ ] [Split sign markup segments](#split-sign-markup-segments)
 - [ ] Code
   - [ ] [Optimize composite lookup](#optimize-composite-lookup)
     - [ ] N-gram index for substrings
@@ -30,6 +26,61 @@
   - [ ] [Explanatory translation mode](#explanatory-translation-mode)
 
 ## Details
+
+### Chinese migration
+
+This repo is a copy of the Japanese mod, being turned into a **Simplified Chinese (zh-CN) → English** mod. The mechanisms (tooltip capture, glyph capture, segment lookup, frozen tooltips, flashcards) are language-independent. What changes is the data, the reading shown under each word (pinyin instead of kana and romaji), the font glyphs that reading needs, and a few places that hard-code Japanese.
+
+#### Phase 0: groundwork (done 2026-09-28)
+
+- **Identity.** `manifest.json` is `com.galacticrailroad.languagestudy.chinese`, "Language Study (Chinese)", and the `.csproj` builds `LanguageStudyChinese.dll` into `Mods/LanguageStudyChinese`. Before this, a build would have overwritten the Japanese mod's deployed folder and shared its flashcard store and Harmony ID.
+- **Source text.** All 178 tables the ja pipeline covered are extracted in zh-CN to `tools/extracted-strings/{zh,data-zh,content-zh}` (see that README to regenerate). `segtool.py audit` accounts for every zh-CN asset. The only ones that aren't ja's are fonts and map textures.
+- **Pipeline.** `segtool.py` authors `assets/segments/zh/` with the schema `{chinese, english, segments[{text, pinyin, gloss}]}`. The new `pinyin.py` normalises pinyin and checks it (one syllable per hanzi, each a dictionary reading of its character, via pypinyin), and warns where a multi-hanzi reading differs from pypinyin's phrase dictionary. Conventions are in `tools/segment-data/README.md`.
+- **Runtime, minimal.** `ModConfig.SourceLanguage` defaults to `zh`, and `SegmentDataLoader` reads the new schema (pinyin goes into `TextSegment.Reading`, unmodified). Nothing displays pinyin yet.
+- **Removed:** `assets/segments/ja/` (22 MB that would have shipped; the 9 files unit tests read are kept in `tools/ModLogic.Tests/fixtures/segments-ja/`), `kana_to_romaji.py`, `romaji_to_kana.py`, `kana-review.tsv`, `migrate_names.py.retired`, and the ja kana TODOs. All of it is in git history. The explanatory-translation stub is now `zh.json`.
+- **Found:** the zh `SmallFont` (6,988 glyphs) has the 2nd- and 4th-tone vowels (á à é è í ì ó ò ú ù) and ü, but **not** the 1st tone (ā ē ī ō ū), the 3rd tone (ǎ ě ǐ ǒ ǔ), ǖ ǘ ǚ ǜ, or ★. The SpriteText font `Fonts/Chinese.fnt` has none of them.
+
+#### Phase 1: author the zh segment data
+
+**15,706 entries** pending across 178 tables (`segtool.py status`), 10 skipped event-script keys carried over from ja. The workflow is in `tools/segment-data/README.md`:
+
+- Author in batches of about 80 entries, each in a fresh context. The Japanese data drifted into clause-sized segments over long sessions.
+- Suggested order, most visible first: item names and descriptions (`Objects`, `BigCraftables`, `Tools`, `Weapons`, `Furniture`, `Shirts`, `Pants`), `UI`, `StringsFromCSFiles` (includes the weekdays 星期一…星期天 the HUD clock draws), `1_6_Strings`, then the `Data_*` tables, then dialogue, events, festivals, TV and schedules.
+- Read `merge`'s pinyin `note:` lines. They're the likeliest wrong readings.
+- After the first few tables, re-tune `LONG_SEGMENT` (4 hanzi, a guess) against what word-split zh data actually looks like.
+- `StringsFromMaps` signs: author arrow markup (`` ` ``, `>`) as separate gloss-less segments, so hovering a sign doesn't outline the arrow. The ja data got this wrong.
+- Finish with `segtool.py validate` and `segtool.py audit`, both clean.
+
+#### Phase 2: runtime shows pinyin
+
+- **Reading field.** Replace `TextSegment.Kana` with the pinyin (`Reading` already holds it). Make a pure `Pinyin` class (tested in `ModLogic.Tests`) that turns the stored `mù chǎng` into the display form `mùchǎng`: syllables joined per segment, an apostrophe before a syllable starting with a/o/e (`xī'ān`), and erhua `r` attached.
+- **Hover label** (`WordHoverOverlay.Describe`): gloss, then pinyin. Drop the romaji and kana lines, and delete `KanaRomaji.cs` and `KanaRomajiTests.cs`.
+- **Tone glyphs** (`FontGlyphSynth` / `ExtendedFont`): the macron synthesis already covers tone 1. Add a caron (ˇ) for tone 3 on a e i o u, and ǖ ǘ ǚ ǜ built from the font's own ü. Tones 2 and 4 exist already. Then `ls_font_check mù chǎng lǚ` should report nothing missing.
+- **Font fallback** (`FontSafeText`): if synthesis fails, fall back to tone numbers (`mu4 chang3`) rather than dropping the tone. A doubled vowel means nothing in pinyin.
+- **Saved mark:** the zh font has no ★, so the label falls back to `[saved]`. Synthesise one or pick a glyph the zh font has.
+- **Chinese_round font.** The game ships `Fonts/Chinese_round/SmallFont` and `SpriteFont1` (zh only, not in ja). If a player setting switches to it, `ExtendedFont`'s `Fonts/SmallFont` match won't catch it. Find out in the IL when it's used, and extend it too.
+- **Flashcards:** identity becomes (language, text, pinyin). `FlashcardsPage`'s card back shows pinyin instead of kana plus romaji. Rename the stored `Kana` field (no zh cards exist yet, so no migration is needed).
+- **HUD clock** (`ClockSegments`): the zh branch of `DayTimeMoneyBox.draw` (IL, 1.6.15) builds the date as `{day}日 {weekday}`, with the weekday from `StringsFromCSFiles:Game1.cs.3042-3048` (星期天…星期六), and the time as 24-hour `HH:MM` with no 上午/下午. Add zh date entries: `{day}日` read as a number plus `rì`, joined to the authored weekday segments. The time is digits only, so it needs nothing. Gate on `sourceLanguage == "zh"` in `SegmentDataLoader`.
+- **Fallback split** (`TextHitTest.SplitSegments`): it groups a hanzi run into one blob, which is wrong for Chinese. For zh, fall back to one hanzi per segment. Drop the kana classes from the zh path.
+- **Lookup thresholds** (`SegmentIndex`): the prefix match (6+ characters), composite runs (6+) and minimum whole entries (2+) were tuned on Japanese. Chinese says the same in fewer characters, so re-check them against real zh strings once phase 1 data exists (unit tests in `SegmentIndexTests`).
+- **Quiet fallback log:** skip text with no hanzi rather than no Japanese (see [Quiet fallback log](#quiet-fallback-log)).
+
+#### Phase 3: tests, names and docs
+
+- Move `DataTextShapesTests` and `RealStringTableTests` to the zh extracted data, and the real-data cases in `SegmentIndexTests` and `FlashcardTests` from `tools/ModLogic.Tests/fixtures/segments-ja/` to `assets/segments/zh/`. Move the `FlashcardTests` samples to Chinese, and port `ClockSegmentsTests`. Then delete `tools/extracted-strings/{ja,data-ja,content-ja}` and the fixtures.
+- Rename Japanese-specific identifiers: `SourceEntry.Japanese`, `ContextBlock.Japanese`, `ClockSegments`' `(Japanese, …)` tuples and the ja examples in comments (`SegmentIndex`, `TextHitTest`, `FlashcardDeck`, `FlashcardContext`, `TranslationMap`).
+- Rewrite `HowItWorks.md` (hover label, readings, macron font, HUD clock, fallback split) and `README.md` for Chinese.
+- Repo: repoint `origin` (it still points at `LearnJapaneseStardewValleyMod`) and fix the README's release and issue links. Optionally rename the `.sln`/`.csproj`, which changes the build command in `CLAUDE.md`.
+
+#### Phase 4: verify in game
+
+With the game set to 中文 and the Japanese mod disabled (prefix its `Mods` folder with `.`):
+
+- `ls_spike_locale` with the source set to `zh`: suffixed `zh-CN` loads and the language-code flip both work.
+- `ls_build_index zh en`, then `ls_lookup` on an item name.
+- The `Glyph capture: ...` startup line is `on` for every renderer, and `ls_dump_text` shows glyph counts on Chinese dialogue. SpriteText uses `Fonts/Chinese.fnt` here, and the transpilers were only tested with the Japanese font's line height.
+- Tooltip translation, word hover on a tooltip, dialogue, mail, a quest and the HUD clock, with the pinyin tone marks drawing correctly.
+- The inherited checks below: dialogue pages, achievements and notes, and flashcards.
 
 ### Verify dialogue sentence translation
 
@@ -56,31 +107,9 @@ Click-to-save and the pause-menu tab are built but haven't been tried live. Chec
 - the card back's layout at different UI scales
 - that the ★ before a saved word's gloss renders in the hover label
 
-### Review kana long vowels
-
-`kana-review.tsv` holds ~15k long-vowel guesses in the *older* data, which was authored romaji-first. `romaji_to_kana.py` guessed each long vowel (ō is おう or おお). They have never been reviewed, and some are known wrong (ēto came out えいと). Newer data is authored in kana and isn't affected. Do this together with [Normalise kana script](#normalise-kana-script).
-
-### Normalise kana script
-
-Decided 2026-09-25, rule in `tools/segment-data/README.md`: **each part in its own script.** Kanji and hiragana are read in hiragana and katakana stays katakana, so `バス停` → `バスてい`. The data breaks it widely. Of the segments mixing katakana and kanji:
-
-| Style | Segments | Example |
-|---|---|---|
-| all-katakana | ~2,030 | `サイロに入れた。` → `サイロニイレタ` |
-| mixed | ~850 | `インテリアを飾ることができます。` → `インテリアをカザルコトガデキマス` (only the particle is hiragana) |
-| all-hiragana | ~50 | `クリスタルの木の` → `くりすたるのきの` |
-
-The survey counted only katakana+kanji segments; kanji-only ones are unchecked. Steps:
-
-1. Survey every segment, not just katakana+kanji ones.
-2. Add the check to `validate` and `merge`.
-3. Convert: each kana run takes the script of the text it reads. **Not fully mechanical.** The all-katakana readings write long vowels with `ー` (`ヤギガカエルヨーニナル`, `ドーブツ`), and in a hiragana reading `ヨー` must become `よう`, not `よー`. Whether `ー` is う or お can't be derived (どう vs とお), so those need a word list or review, like [the long-vowel review](#review-kana-long-vowels). Do the two together.
-
-Romaji is generated from kana. Regenerate it only for segments whose kana was authored, not for the older romaji-first data (see the README).
-
 ### Consolidate redundant glosses
 
-Review redundancy in the segment data, and consider pointing repeats at a shared glossary instead of storing a copy in every sentence. Two kinds:
+Review redundancy in the segment data, and consider pointing repeats at a shared glossary instead of storing a copy in every sentence. The figures below were measured on the **Japanese** data, and Chinese particles (的, 了, 是) will repeat the same way. Re-measure once phase 1 is done. Two kinds:
 
 - **Exact repeats.** Measured 2026-09-25: 126,307 glossed segments hold only 54,761 distinct (text, kana, gloss) triples, so ~71,500 (57%) are copies. The top ones:
 
@@ -95,16 +124,9 @@ Review redundancy in the segment data, and consider pointing repeats at a shared
 
 **Caveat:** glosses are deliberately *in context*, so a shared entry must be keyed by sense, never by text alone. を alone has 14 distinct glosses, e.g. "(object marker)", "(along)", "(from, off)", "(path marker)", and each is correct somewhere. Some of those are the same sense spelled differently ("(object)" vs "(object marker)"). Merging those first would both shrink the data and make hover labels consistent.
 
-**Possible shape:** a glossary file of senses `{id, text, kana, gloss}`, with segments holding a sense id where they match one and inline fields where they don't. The loader expands ids on load, so `SegmentIndex` and the concatenation invariant are unaffected.
+**Possible shape:** a glossary file of senses `{id, text, pinyin, gloss}`, with segments holding a sense id where they match one and inline fields where they don't. The loader expands ids on load, so `SegmentIndex` and the concatenation invariant are unaffected.
 
 **Weigh the gain first:** bundled JSON size, load time and memory, against a more complex authoring format (`segtool` `merge`/`validate`/`batch` and the TSV worklists all assume inline fields). The consistency gain may matter more than the size.
-
-### Split sign markup segments
-
-`StringsFromMaps` `BusStop.1` is `` ` バス停^> ペリカンタウン ``, where `` ` `` and `>` draw as arrow glyphs and `^` is a line break. `merge` attached them to the neighbouring words, so hovering the sign outlines `` ` バス停^ `` and `> ペリカンタウン`, arrows included.
-
-- Split the markup into its own gloss-less segments, and check other `StringsFromMaps` signs for the same thing.
-- Its kana (`バステイ`) should be `バスてい`; see [Normalise kana script](#normalise-kana-script).
 
 ### Optimize composite lookup
 
@@ -118,7 +140,7 @@ Alternatives: precompute dialogue pages at load by splitting entries at `#$b#` /
 
 ### Quiet fallback log
 
-The "fallback split" hover log fires on any text, and most of what it logged in the third session was English (GMCM labels, save names) and bare numbers (`25%`). Skip text with no Japanese characters, so every line it logs is a real gap.
+The "fallback split" hover log fires on any text, and most of what it logged in the third session was English (GMCM labels, save names) and bare numbers (`25%`). Skip text with no hanzi, so every line it logs is a real gap.
 
 ### Remove debug logs
 
@@ -130,7 +152,7 @@ Some locales have known bugs in how the game's `^` gender-variant delimiter is u
 
 ### Explanatory translation mode
 
-A second translation mode: offline, AI-generated semi-literal translations shown instead of the game's official English. Not built. The data format is defined in the stub `assets/translations/explanatory/ja.json`: entries keyed by a hash of the source string, each holding `original`, `literal` (a word-for-word gloss) and `natural`. Plan:
+A second translation mode: offline, AI-generated semi-literal translations shown instead of the game's official English. Not built. The data format is defined in the stub `assets/translations/explanatory/zh.json`: entries keyed by a hash of the source string, each holding `original`, `literal` (a word-for-word gloss) and `natural`. Plan:
 
 - Load it alongside `TranslationIndex`, keyed by the original string, so both modes share one lookup path.
 - Add a config option or keybind to switch which mode is shown, falling back to the literal translation when there's no explanatory entry.
@@ -141,22 +163,21 @@ A second translation mode: offline, AI-generated semi-literal translations shown
 Details are in `tools/segment-data/README.md`.
 
 ```sh
-python3 tools/segment-data/segtool.py batch <Table> 40      # worklist, TSV
-# ...author a .tsv...
-python3 tools/segment-data/segtool.py merge <Table> <file>  # align + validate
-python3 tools/segment-data/kana_to_romaji.py write          # generate romaji
+python3 tools/segment-data/segtool.py batch <Table> 80      # worklist, TSV
+# ...author a .tsv outside assets/...
+python3 tools/segment-data/segtool.py merge <Table> <file>  # align + check pinyin
 python3 tools/segment-data/segtool.py validate
 ```
 
 Authoring format, one entry per line, tab-separated:
 
 ```
-key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
+key <TAB> english <TAB> text¦pinyin¦gloss‖text¦pinyin¦gloss‖...
 ```
 
-- Kana is the source of truth; romaji is generated. Write only the words.
-- `merge` attaches punctuation and dialogue markup to a neighbouring segment, fills in kana for kanji-free segments, and rejects any line it can't line up with the source.
-- Output goes to `assets/segments/ja/`, the tracked source of truth, which ships with the mod as-is.
+- Pinyin is one syllable per hanzi, with tone marks or numbers. `merge` normalises it to tone marks and refuses a syllable that isn't a reading of its character.
+- `merge` attaches punctuation and dialogue markup to a neighbouring segment, fills in pinyin for hanzi-free segments, and rejects any line it can't line up with the source.
+- Output goes to `assets/segments/zh/`, the tracked source of truth, which ships with the mod as-is.
 
 ## Done
 
@@ -166,9 +187,9 @@ Word hover no longer works out word positions from wrapping and font measurement
 
 If a game update breaks a transpiler, the SMAPI log warns about it and that renderer falls back to the old measured layout. The `Glyph capture: …` startup line shows the state of each renderer.
 
-### Segmentation data (2026-09-25)
+### Segmentation data, Japanese mod (2026-09-25)
 
-Every piece of Japanese text the game ships has hand-authored segment data: **15,768 entries, 10 keys deliberately skipped, 0 pending.** The live checks:
+From before the fork: the ja data is not in this repo any more. Every piece of Japanese text the game ships has hand-authored segment data: **15,768 entries, 10 keys deliberately skipped, 0 pending.** The live checks:
 
 ```sh
 python3 tools/segment-data/segtool.py status     # pending=0 everywhere
@@ -194,6 +215,6 @@ How it got here, for the record:
 
 The 10 skipped keys are event scripts the game never draws whole; their spoken lines are extracted and authored as `<key>#<n>` entries.
 
-### Objects item names
+### Objects item names, Japanese mod
 
-The 756 `Objects_Name.json` entries have been hand-split into word segments. 526 multi-word names now hover per word (`アメシストの指輪` → `アメシスト` / `の` / `指輪`). The other 230 are single lexical items (one-word names, fish and mineral names, and lexicalized kanji compounds like `黒曜石`) and are deliberately left whole.
+From before the fork. The 756 `Objects_Name.json` entries have been hand-split into word segments. 526 multi-word names now hover per word (`アメシストの指輪` → `アメシスト` / `の` / `指輪`). The other 230 are single lexical items (one-word names, fish and mineral names, and lexicalized kanji compounds like `黒曜石`) and are deliberately left whole.

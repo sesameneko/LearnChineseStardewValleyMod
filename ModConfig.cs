@@ -27,8 +27,8 @@ namespace LanguageStudyStardewValleyMod
         /// <summary>The order the flashcards tab reviews cards in; changed from the tab itself.</summary>
         public CardOrder FlashcardOrder { get; set; } = CardOrder.NewestFirst;
 
-        /// <summary>The game's UI language to translate from, as a locale code (e.g. "ja"). Not yet exposed in the config UI.</summary>
-        public string SourceLanguage { get; set; } = "ja";
+        /// <summary>The game's UI language to translate from, as a locale code (e.g. "zh"). Not yet exposed in the config UI.</summary>
+        public string SourceLanguage { get; set; } = "zh";
 
         /// <summary>The language to translate into, as a locale code (e.g. "en"). Not yet exposed in the config UI.</summary>
         public string TargetLanguage { get; set; } = "en";

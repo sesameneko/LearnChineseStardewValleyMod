@@ -6,6 +6,9 @@
         <Nullable>enable</Nullable>
         <RootNamespace>LanguageStudyStardewValleyMod</RootNamespace>
         <EnableHarmony>true</EnableHarmony>
+        <!-- forked from the Japanese mod (LanguageStudyStardewValleyMod): a distinct assembly and Mods folder, so building this one never overwrites that one's deployment -->
+        <AssemblyName>LanguageStudyChinese</AssemblyName>
+        <ModFolderName>LanguageStudyChinese</ModFolderName>
     </PropertyGroup>
 
     <ItemGroup>
