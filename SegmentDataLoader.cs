@@ -22,9 +22,9 @@ namespace LanguageStudyStardewValleyMod
         {
             var index = new SegmentIndex();
 
-            // the HUD clock's frames are built in code rather than read from a table, so their
-            // segments are too (ja only so far; the zh clock is a TODOs.md item)
-            if (sourceLanguage == "ja")
+            // the HUD clock's date is built in code rather than read from a table, so its
+            // segments are too
+            if (sourceLanguage == "zh")
                 ClockSegments.AddTo(index);
 
             string directory = Path.Combine(helper.DirectoryPath, "assets", "segments", sourceLanguage);
@@ -113,9 +113,7 @@ namespace LanguageStudyStardewValleyMod
             // font doesn't exist yet at load; the Chinese text itself is left exactly as authored,
             // since it has to keep matching what the game drew
             // the pinyin is stored as authored (space-separated syllables with tone marks): the
-            // ASCII-only pass would strip its tones, so it's font-safed where it's drawn instead
-            // TODO(zh migration): WordHoverOverlay and the flashcards still read Kana, so pinyin
-            // isn't displayed yet -- see TODOs.md, "Chinese migration"
+            // ASCII-only pass would strip its tones, so Pinyin.ForFont prepares it where it's drawn
             return new TextSegment(text, pinyin, FontSafeText.Apply(gloss));
         }
     }

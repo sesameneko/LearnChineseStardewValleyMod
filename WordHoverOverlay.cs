@@ -34,7 +34,7 @@ namespace LanguageStudyStardewValleyMod
 
         /// <summary>
         /// The word hovered in the last frame or two, when its boundaries came from segment data --
-        /// the only words a flashcard can be made from, since the fallback split has no gloss or kana.
+        /// the only words a flashcard can be made from, since the fallback split has no gloss or pinyin.
         ///
         /// Read from input handling, which runs before the frame is drawn, so this is always the
         /// previous frame's hit: what the player saw when they clicked. Only frames that recorded
@@ -285,13 +285,11 @@ namespace LanguageStudyStardewValleyMod
         /// a box drawn in the wrong place.
         /// </summary>
         /// <summary>
-        /// The label text: the gloss, then the romaji, then the kana, one per line.
+        /// The label text: the gloss, then the pinyin, one per line.
         ///
-        /// The romaji is generated here from the kana (<see cref="KanaRomaji"/>) rather than read
-        /// from the data's "reading" field -- kana is the source of truth -- and font-safed against
-        /// the font it's drawn in: macrons are kept where ExtendedFont has added them, and doubled
-        /// (ō to oo) if it couldn't. Where the kana has no kana in it (Joja, 2.0) the
-        /// romaji would just repeat it, so that line is dropped.
+        /// The pinyin is joined per word and drawn with tone marks where the font has them, tone
+        /// numbers where it doesn't (<see cref="Pinyin.ForFont"/>). A reading with no hanzi in it
+        /// (Joja, 2.0) would just repeat the word, so that line is dropped.
         ///
         /// The source word itself is deliberately left out -- it's already on screen directly under
         /// the outline, so repeating it just widened the label over the text being read. With no
@@ -304,21 +302,17 @@ namespace LanguageStudyStardewValleyMod
 
             string gloss = IsSaved(segment) ? SavedMark() + segment.Gloss : segment.Gloss;
 
-            if (string.IsNullOrWhiteSpace(segment.Kana))
-                return gloss;
-
-            string romaji = FontSafeText.Apply(KanaRomaji.Convert(segment.Kana), ExtendedFont.DrawableCharacters(Game1.smallFont));
-
-            return romaji == segment.Kana
-                ? $"{gloss}\n{segment.Kana}"
-                : $"{gloss}\n{romaji}\n{segment.Kana}";
+            string pinyin = Pinyin.ForFont(segment.Reading, ExtendedFont.DrawableCharacters(Game1.smallFont));
+            return pinyin.Length == 0 || pinyin == segment.Text.Trim()
+                ? gloss
+                : $"{gloss}\n{pinyin}";
         }
 
         /// <summary>Whether the word is already a flashcard in the current source language.</summary>
         private static bool IsSaved(TextSegment segment)
         {
             string? language = ModEntry.Instance?.Config.SourceLanguage;
-            return language is not null && FlashcardStore.Deck.Contains(language, segment.Text, segment.Kana);
+            return language is not null && FlashcardStore.Deck.Contains(language, segment.Text, segment.Reading);
         }
 
         /// <summary>

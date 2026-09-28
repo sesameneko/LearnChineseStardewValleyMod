@@ -24,7 +24,7 @@ namespace LanguageStudyStardewValleyMod
                 return false;
 
             ContextRef? context = segment.Source is { } source ? ContextRef.From(source) : null;
-            var (outcome, card) = FlashcardStore.Deck.Toggle(language, segment.Text, segment.Kana, segment.Gloss, context, DateTime.UtcNow);
+            var (outcome, card) = FlashcardStore.Deck.Toggle(language, segment.Text, segment.Reading, segment.Gloss, context, DateTime.UtcNow);
 
             string word = card?.Text ?? FlashcardDeck.CardText(segment.Text);
             switch (outcome)

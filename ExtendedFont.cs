@@ -10,17 +10,18 @@ using StardewValley;
 namespace LanguageStudyStardewValleyMod
 {
     /// <summary>
-    /// Adds glyphs the game's small font lacks -- the macron vowels romaji needs -- by rebuilding
-    /// the font as it loads.
+    /// Adds glyphs the game's small font lacks -- the macron vowels of pinyin's 1st tone -- by
+    /// rebuilding the font as it loads. (Tone 3 and the marked ü are still missing; until they're
+    /// added, Pinyin.ForFont shows those words with tone numbers.)
     ///
     /// Hooked on AssetRequested rather than done once at launch because the game loads the font
-    /// twice at startup (the base asset, then Fonts/SmallFont.ja-JP when the language is applied)
+    /// twice at startup (the base asset, then Fonts/SmallFont.zh-CN when the language is applied)
     /// and again on every language change; each load goes through here and is extended.
     ///
     /// The glyph work itself is in <see cref="FontGlyphSynth"/>; this half reads the atlas back
     /// from the GPU, appends the new glyphs in a strip below it, and builds a new SpriteFont.
-    /// Anything going wrong leaves the original font in place, in which case FontSafeText keeps
-    /// writing long vowels doubled.
+    /// Anything going wrong leaves the original font in place, in which case Pinyin.ForFont shows
+    /// tone numbers for every word with a 1st tone too.
     /// </summary>
     internal static class ExtendedFont
     {

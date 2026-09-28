@@ -14,7 +14,7 @@ namespace LanguageStudyStardewValleyMod
     /// The pause-menu flashcards tab, added to <see cref="GameMenu"/> by
     /// <see cref="GameMenuPatches"/>. Two views:
     ///
-    /// - Review: one card at a time, Japanese word on the front; flip for kana, romaji, meanings,
+    /// - Review: one card at a time, Chinese word on the front; flip for pinyin, meanings,
     ///   and the sentences it was saved from, then mark it missed or known. Nothing is scheduled --
     ///   the answer only counts -- so a pass is every card once, in the order picked at the top.
     /// - Browse: every card in a scrolling list with its counts; click one for its back, delete it.
@@ -469,7 +469,7 @@ namespace LanguageStudyStardewValleyMod
             string word = card.Text.Length > MaxRowWordChars ? card.Text.Substring(0, MaxRowWordChars) + "..." : card.Text;
             Utility.drawTextWithShadow(b, Truncate(word, font, 184), font, new Vector2(x, textY), Game1.textColor);
             x += 200;
-            Utility.drawTextWithShadow(b, Truncate(card.Kana, font, 170), font, new Vector2(x, textY), MutedText);
+            Utility.drawTextWithShadow(b, Truncate(Reading(card), font, 170), font, new Vector2(x, textY), MutedText);
             x += 180;
 
             string stats = $"+{card.Passes} -{card.Fails}";
@@ -499,11 +499,7 @@ namespace LanguageStudyStardewValleyMod
             Utility.drawTextWithShadow(b, card.Text, Game1.dialogueFont, new Vector2(left, y), Game1.textColor);
             float wordWidth = Game1.dialogueFont.MeasureString(card.Text).X;
 
-            string reading = card.Kana;
-            string romaji = Safe(KanaRomaji.Convert(card.Kana));
-            if (romaji.Length > 0 && romaji != card.Kana)
-                reading += "   " + romaji;
-            Utility.drawTextWithShadow(b, reading, small, new Vector2(left + wordWidth + 24, y + 16), MutedText);
+            Utility.drawTextWithShadow(b, Reading(card), small, new Vector2(left + wordWidth + 24, y + 16), MutedText);
             y += Game1.dialogueFont.LineSpacing + 8;
 
             foreach (string line in Game1.parseText(Safe(string.Join("; ", card.Glosses)), small, width).Split('\n'))
@@ -719,8 +715,11 @@ namespace LanguageStudyStardewValleyMod
             return "";
         }
 
-        /// <summary>English and romaji in smallFont, whose missing glyphs would draw as '*'.</summary>
+        /// <summary>English in smallFont, whose missing glyphs would draw as '*'.</summary>
         private static string Safe(string text) => FontSafeText.Apply(text, ExtendedFont.DrawableCharacters(Game1.smallFont));
+
+        /// <summary>A card's pinyin in smallFont: tone marks where it has them, tone numbers where it doesn't.</summary>
+        private static string Reading(Flashcard card) => Pinyin.ForFont(card.Pinyin, ExtendedFont.DrawableCharacters(Game1.smallFont));
 
         #endregion
     }

@@ -9,20 +9,17 @@ namespace LanguageStudyStardewValleyMod
     /// hand-segmented data supplies them. The heuristic fallback produces text with no gloss.
     /// </summary>
     /// <param name="Text">The characters this segment covers on screen.</param>
-    /// <param name="Reading">Romanised reading, e.g. "ueru".</param>
-    /// <param name="Gloss">What the word means *in this sentence*, e.g. "to plant".</param>
-    /// <param name="Kana">
-    /// Kana reading, e.g. "うえる". The lossless form: kana to romaji is deterministic, romaji to
-    /// kana is not (ō is おう in gakkō but おお in tōri), so this is what the data holds and what a
-    /// romaji/kana preference would be rendered from. It also renders, which romaji doesn't: the
-    /// game's font has no macron glyph and silently substitutes '*'.
+    /// <param name="Reading">
+    /// Pinyin as stored: one syllable per hanzi, space-separated, with tone marks ("mù chǎng").
+    /// <see cref="Pinyin"/> turns it into what's drawn.
     /// </param>
+    /// <param name="Gloss">What the word means *in this sentence*, e.g. "to plant".</param>
     /// <param name="Source">
     /// The authored entry this segment was written in, for pointing a flashcard back at the sentence
     /// a word was saved from. Null where the segment isn't a slice of one entry: the clock, the
     /// character-class fallback, and a token the game filled in.
     /// </param>
-    public readonly record struct TextSegment(string Text, string? Reading, string? Gloss, string? Kana = null, SegmentSource? Source = null)
+    public readonly record struct TextSegment(string Text, string? Reading, string? Gloss, SegmentSource? Source = null)
     {
         public static TextSegment Plain(string text) => new(text, null, null);
 
@@ -36,7 +33,7 @@ namespace LanguageStudyStardewValleyMod
     /// <summary>
     /// Where an authored segment sits: entry <paramref name="Key"/> of the segment file
     /// <paramref name="Table"/>, characters <paramref name="Offset"/> to
-    /// <paramref name="Offset"/> + <paramref name="Length"/> of its <c>japanese</c> string.
+    /// <paramref name="Offset"/> + <paramref name="Length"/> of its <c>chinese</c> string.
     /// </summary>
     public sealed record SegmentSource(string Table, string Key, int Offset, int Length);
 

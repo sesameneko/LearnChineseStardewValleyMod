@@ -564,8 +564,8 @@ namespace LanguageStudyStardewValleyMod
             var offenders = new Dictionary<char, int>();
             foreach (var segment in this.Segments.AllSegments())
             {
-                string romaji = segment.Kana is null ? "" : FontSafeText.Apply(KanaRomaji.Convert(segment.Kana), ExtendedFont.DrawableCharacters(font));
-                foreach (char c in romaji + (segment.Kana ?? "") + (segment.Gloss ?? ""))
+                // the pinyin as marked, not as ForFont would fall back: the point is to find the marks the font lacks
+                foreach (char c in Pinyin.Display(segment.Reading) + (segment.Gloss ?? ""))
                 {
                     if (!font.Characters.Contains(c))
                         offenders[c] = offenders.GetValueOrDefault(c) + 1;
@@ -573,7 +573,7 @@ namespace LanguageStudyStardewValleyMod
             }
 
             if (offenders.Count == 0)
-                Log("Every romaji, kana and gloss in the loaded segment data is drawable.");
+                Log("Every pinyin and gloss in the loaded segment data is drawable.");
             else
             {
                 Log($"{offenders.Count} undrawable character(s) in the loaded segment data:", LogLevel.Warn);

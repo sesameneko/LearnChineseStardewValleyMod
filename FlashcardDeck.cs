@@ -8,19 +8,20 @@ namespace LanguageStudyStardewValleyMod
     /// One saved word. Serialised as-is into SMAPI's global data by the game side, so it's a
     /// plain get/set shape.
     ///
-    /// Identity is (<see cref="Language"/>, <see cref="Text"/>, <see cref="Kana"/>): 上手 read
-    /// じょうず and read うわて are different cards, while 行く saved from ten sentences with three
+    /// Identity is (<see cref="Language"/>, <see cref="Text"/>, <see cref="Pinyin"/>): 行 read
+    /// xíng and read háng are different cards, while 喜欢 saved from ten sentences with three
     /// slightly different glosses is one card carrying all of them.
     /// </summary>
     public sealed class Flashcard
     {
-        /// <summary>The source language the word is in, e.g. "ja".</summary>
+        /// <summary>The source language the word is in, e.g. "zh".</summary>
         public string Language { get; set; } = "";
 
         /// <summary>The word, without the punctuation and markup segment data attaches to it.</summary>
         public string Text { get; set; } = "";
 
-        public string Kana { get; set; } = "";
+        /// <summary>The reading as stored in the segment data ("mù chǎng"); see <see cref="LanguageStudyStardewValleyMod.Pinyin"/> for display.</summary>
+        public string Pinyin { get; set; } = "";
 
         /// <summary>Every gloss the word was saved with, first first.</summary>
         public List<string> Glosses { get; set; } = new();
@@ -35,11 +36,11 @@ namespace LanguageStudyStardewValleyMod
 
         public int Fails { get; set; }
 
-        public bool Is(string language, string text, string kana)
+        public bool Is(string language, string text, string pinyin)
         {
             return string.Equals(this.Language, language, StringComparison.Ordinal)
                    && string.Equals(this.Text, text, StringComparison.Ordinal)
-                   && string.Equals(this.Kana, kana, StringComparison.Ordinal);
+                   && string.Equals(this.Pinyin, pinyin, StringComparison.Ordinal);
         }
     }
 
@@ -103,13 +104,13 @@ namespace LanguageStudyStardewValleyMod
 
         public IEnumerable<Flashcard> CardsFor(string language) => this.Data.Cards.Where(card => card.Language == language);
 
-        public Flashcard? Find(string language, string text, string kana) => this.Data.Cards.FirstOrDefault(card => card.Is(language, text, kana));
+        public Flashcard? Find(string language, string text, string pinyin) => this.Data.Cards.FirstOrDefault(card => card.Is(language, text, pinyin));
 
         /// <summary>Whether a hovered segment's word is in the deck, for marking it in the hover label.</summary>
-        public bool Contains(string language, string segmentText, string? kana)
+        public bool Contains(string language, string segmentText, string? pinyin)
         {
             string text = CardText(segmentText);
-            return text.Length > 0 && this.Find(language, text, kana ?? "") is not null;
+            return text.Length > 0 && this.Find(language, text, pinyin ?? "") is not null;
         }
 
         /// <summary>
@@ -118,7 +119,7 @@ namespace LanguageStudyStardewValleyMod
         /// </summary>
         /// <param name="segmentText">The segment as drawn; trimmed to the word here.</param>
         /// <param name="context">The sentence it was clicked in, or null where it traces to no single entry.</param>
-        public (SaveOutcome Outcome, Flashcard? Card) Toggle(string language, string segmentText, string? kana, string? gloss, ContextRef? context, DateTime now)
+        public (SaveOutcome Outcome, Flashcard? Card) Toggle(string language, string segmentText, string? pinyin, string? gloss, ContextRef? context, DateTime now)
         {
             if (IsGrammarGloss(gloss))
                 return (SaveOutcome.RefusedGrammar, null);
@@ -127,14 +128,14 @@ namespace LanguageStudyStardewValleyMod
             if (text.Length == 0)
                 return (SaveOutcome.RefusedEmpty, null);
 
-            kana ??= "";
+            pinyin ??= "";
             gloss = string.IsNullOrWhiteSpace(gloss) ? null : gloss.Trim();
             string? contextId = context?.ToString();
 
-            var card = this.Find(language, text, kana);
+            var card = this.Find(language, text, pinyin);
             if (card is null)
             {
-                card = new Flashcard { Language = language, Text = text, Kana = kana, Created = now };
+                card = new Flashcard { Language = language, Text = text, Pinyin = pinyin, Created = now };
                 if (gloss is not null)
                     card.Glosses.Add(gloss);
                 if (contextId is not null)

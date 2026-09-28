@@ -307,19 +307,19 @@ namespace ModLogic.Tests
         [Fact]
         public void Segments_keep_their_source_through_a_lookup_of_wrapped_text()
         {
-            var source = new SegmentSource("T", "k", 0, 3);
+            var source = new SegmentSource("T", "k", 0, 2);
             var index = new SegmentIndex();
-            index.TryAdd("誕生日を祝う", new TextSegment[]
+            index.TryAdd("喜欢吃苹果", new TextSegment[]
             {
-                new("誕生日", null, "birthday", "たんじょうび", source),
-                new("を", null, "(object marker)", "を", source with { Offset = 3, Length = 1 }),
-                new("祝う", null, "to celebrate", "いわう", source with { Offset = 4, Length = 2 }),
+                new("喜欢", "xǐ huan", "like", source),
+                new("吃", "chī", "eat", source with { Offset = 2, Length = 1 }),
+                new("苹果", "píng guǒ", "apples", source with { Offset = 3, Length = 2 }),
             });
 
             // the game wrapped it mid-word
-            Assert.True(index.TryGetSegments("誕生日を祝\nう", out var segments));
+            Assert.True(index.TryGetSegments("喜欢吃苹\n果", out var segments));
             Assert.Equal(source, segments[0].Source);
-            Assert.Equal(source with { Offset = 4, Length = 2 }, segments[^1].Source);
+            Assert.Equal(source with { Offset = 3, Length = 2 }, segments[^1].Source);
         }
 
         [Fact]
@@ -327,16 +327,16 @@ namespace ModLogic.Tests
         {
             var source = new SegmentSource("T", "k", 0, 3);
             var index = new SegmentIndex();
-            index.TryAdd("{0}に会った", new TextSegment[]
+            index.TryAdd("{0}已经来了", new TextSegment[]
             {
-                new("{0}", null, "(name)", null, source),
-                new("に", null, "(target)", "に", source with { Offset = 3, Length = 1 }),
-                new("会った", null, "met", "あった", source with { Offset = 4, Length = 3 }),
+                new("{0}", "", "(name)", source),
+                new("已经", "yǐ jīng", "already", source with { Offset = 3, Length = 2 }),
+                new("来了", "lái le", "came", source with { Offset = 5, Length = 2 }),
             });
 
-            Assert.True(index.TryGetSegments("ハーヴェイさんに会った", out var segments));
+            Assert.True(index.TryGetSegments("哈维已经来了", out var segments));
             Assert.Null(segments[0].Source);
-            Assert.Equal(source with { Offset = 4, Length = 3 }, segments[^1].Source);
+            Assert.Equal(source with { Offset = 5, Length = 2 }, segments[^1].Source);
         }
 
         [Fact]
