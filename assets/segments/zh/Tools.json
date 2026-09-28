@@ -1,0 +1,94 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Tools.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "Axe_Copper_Name": {
+    "chinese": "铜斧头",
+    "english": "Copper axe",
+    "segments": [
+      {
+        "text": "铜",
+        "pinyin": "tóng",
+        "gloss": "copper"
+      },
+      {
+        "text": "斧头",
+        "pinyin": "fǔ tou",
+        "gloss": "axe"
+      }
+    ]
+  },
+  "Axe_Description": {
+    "chinese": "用于砍柴。",
+    "english": "Used for chopping firewood.",
+    "segments": [
+      {
+        "text": "用于",
+        "pinyin": "yòng yú",
+        "gloss": "used for"
+      },
+      {
+        "text": "砍柴。",
+        "pinyin": "kǎn chái",
+        "gloss": "chopping firewood"
+      }
+    ]
+  },
+  "Axe_Gold_Name": {
+    "chinese": "金斧头",
+    "english": "Gold axe",
+    "segments": [
+      {
+        "text": "金",
+        "pinyin": "jīn",
+        "gloss": "gold"
+      },
+      {
+        "text": "斧头",
+        "pinyin": "fǔ tou",
+        "gloss": "axe"
+      }
+    ]
+  },
+  "Axe_Iridium_Name": {
+    "chinese": "铱斧头",
+    "english": "Iridium axe",
+    "segments": [
+      {
+        "text": "铱",
+        "pinyin": "yī",
+        "gloss": "iridium"
+      },
+      {
+        "text": "斧头",
+        "pinyin": "fǔ tou",
+        "gloss": "axe"
+      }
+    ]
+  },
+  "Axe_Name": {
+    "chinese": "斧头",
+    "english": "Axe",
+    "segments": [
+      {
+        "text": "斧头",
+        "pinyin": "fǔ tou",
+        "gloss": "axe"
+      }
+    ]
+  },
+  "Axe_Steel_Name": {
+    "chinese": "钢斧头",
+    "english": "Steel axe",
+    "segments": [
+      {
+        "text": "钢",
+        "pinyin": "gāng",
+        "gloss": "steel"
+      },
+      {
+        "text": "斧头",
+        "pinyin": "fǔ tou",
+        "gloss": "axe"
+      }
+    ]
+  }
+}
