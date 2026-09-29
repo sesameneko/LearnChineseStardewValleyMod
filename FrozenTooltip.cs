@@ -42,7 +42,8 @@ namespace LanguageStudyStardewValleyMod
         /// lasting only as long as the hold key is down.</param>
         public static bool Freeze(bool locked)
         {
-            if (!TooltipReissue.IsReady)
+            // the last tooltip captured belongs to whatever was open before
+            if (!TooltipReissue.IsReady || HoverExclusion.InExcludedMenu)
                 return false;
 
             if (!HoverTextPatches.TryGetLastTooltip(out object[] args, out TooltipBox box))

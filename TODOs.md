@@ -6,6 +6,7 @@
   - [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
   - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
   - [ ] [Verify flashcards](#verify-flashcards)
+  - [ ] [Verify GMCM hover exclusion](#verify-gmcm-hover-exclusion)
 - [ ] Kana readings
   - [ ] [Review kana long vowels](#review-kana-long-vowels)
   - [ ] [Normalise kana script](#normalise-kana-script)
@@ -55,6 +56,14 @@ Click-to-save and the pause-menu tab are built but haven't been tried live. Chec
 - that suppressing the click really stops dialogue from advancing and shop rows from being bought
 - the card back's layout at different UI scales
 - that the ★ before a saved word's gloss renders in the hover label
+
+### Verify GMCM hover exclusion
+
+`HoverExclusion` turns off tooltip capture, word recording and freezing while GMCM's menu is open. It finds the menu by namespace (`GenericModConfigMenu.*`) along the active menu's child chain, or in `TitleMenu.subMenu`. Not yet tried live. Check:
+
+- no translation box or word label in GMCM, from the title screen and from the in-game Options tab
+- hover works again as soon as GMCM closes
+- a tooltip locked before opening GMCM is dropped rather than drawn over it
 
 ### Review kana long vowels
 

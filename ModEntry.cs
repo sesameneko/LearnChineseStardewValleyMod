@@ -549,6 +549,7 @@ namespace LanguageStudyStardewValleyMod
                 return;
 
             DrawTrace.BeginFrame();
+            HoverExclusion.Update();
             TooltipLinger.BeginFrame();
             TooltipOverlay.Clear();
             TextCapturePatches.BeginFrame();

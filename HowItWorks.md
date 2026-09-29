@@ -45,6 +45,8 @@ The C# namespace stays the same. Types in different assemblies never collide, an
 
 Hovering something that shows a vanilla tooltip adds a second box with the tooltip's text in the target language. The text comes from the game's own string tables, loaded in both locales and joined on their keys.
 
+Every hover feature (this box, word hover, click-to-save and freezing) is switched off while Generic Mod Config Menu is open, because its text is mod settings rather than game text. `HoverExclusion` checks the open menu once per frame in `Display.Rendering`. The tooltip patch then lets vanilla tooltips draw without capturing them, and text capture records nothing, so word hover has nothing to find.
+
 ### Capturing the tooltip
 
 `Patches/HoverTextPatches.cs` patches only the **StringBuilder** overload of `IClickableMenu.drawHoverText`. `drawToolTip` and the `string` overload both call it (checked against the 1.6.15 IL), so every tooltip passes through it exactly once.
