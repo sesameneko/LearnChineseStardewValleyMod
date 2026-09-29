@@ -52,7 +52,7 @@ Sentence translation for achievements and secret notes is wired up and unit-test
 
 Click-to-save and the pause-menu tab are built but haven't been tried live. Check:
 
-- the tab icon's placement and look (a Lost Book on a menu tile, since vanilla's tab art has no blank frame)
+- the tab icon's placement (left of the Inventory tab, and whether it clears the menu frame's corner) and look (a Lost Book on a menu tile, since vanilla's tab art has no blank frame)
 - that suppressing the click really stops dialogue from advancing and shop rows from being bought
 - the card back's layout at different UI scales
 - that the ★ before a saved word's gloss renders in the hover label

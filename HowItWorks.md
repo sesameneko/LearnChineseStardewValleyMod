@@ -192,7 +192,7 @@ The deck is saved to SMAPI's global data (`.smapi/mod-data/<mod id>/flashcards.j
 
 The game has no way to add a pause-menu tab, so `Patches/GameMenuPatches.cs` patches it in. Its approach rests on three facts from the 1.6.15 IL:
 
-- `GameMenu`'s constructor builds `tabs` and `pages` as matching lists, so a postfix appends one of each.
+- `GameMenu`'s constructor builds `tabs` and `pages` as matching lists, so a postfix appends one of each. The tab is drawn left of the first vanilla tab, but stays last in both lists because the game opens tabs by hardcoded number.
 - Tab switching turns a tab's name into a page number with a hardcoded lookup that returns -1 for any name it doesn't know. A postfix maps ours.
 - `draw` picks each tab's icon by the same hardcoded names and draws nothing for ours. The icon is drawn from the mod's own overlay pass instead.
 

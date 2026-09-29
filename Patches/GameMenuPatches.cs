@@ -13,7 +13,8 @@ namespace LanguageStudyStardewValleyMod.Patches
     /// this, so it's hand-rolled against the installed 1.6.15 IL:
     ///
     /// - <c>GameMenu(bool)</c> builds <c>tabs</c> and <c>pages</c> as parallel lists -- every other
-    ///   constructor chains to it -- so a postfix appends one of each.
+    ///   constructor chains to it -- so a postfix appends one of each. The tab is drawn left of
+    ///   the first one but stays last in both lists.
     /// - Tab clicks go <c>tabs[i].name</c> → <c>getTabNumberFromName</c> → <c>changeTab</c>, which then
     ///   indexes <c>pages</c> by the number it gets back. The lookup is a hardcoded switch returning -1
     ///   for an unknown name, so a postfix maps ours to its index.
@@ -58,16 +59,18 @@ namespace LanguageStudyStardewValleyMod.Patches
                     return;
                 }
 
-                var last = __instance.tabs[^1];
-                var tab = new ClickableComponent(new Rectangle(last.bounds.X + 64, last.bounds.Y, 64, 64), TabName, "Flashcards")
+                // drawn left of the first tab, but appended last: vanilla opens tabs by hardcoded
+                // index (GameMenu.craftingTab etc.), so inserting at the front would shift them all
+                var first = __instance.tabs[0];
+                var tab = new ClickableComponent(new Rectangle(first.bounds.X - 64, first.bounds.Y, 64, 64), TabName, "Flashcards")
                 {
                     myID = TabId,
-                    leftNeighborID = last.myID,
-                    downNeighborID = last.downNeighborID,
+                    rightNeighborID = first.myID,
+                    downNeighborID = first.downNeighborID,
                     tryDefaultIfNoDownNeighborExists = true,
                     fullyImmutable = true,
                 };
-                last.rightNeighborID = TabId;
+                first.leftNeighborID = TabId;
 
                 __instance.tabs.Add(tab);
                 __instance.pages.Add(new FlashcardsPage(__instance.xPositionOnScreen, __instance.yPositionOnScreen, __instance.width, __instance.height));
