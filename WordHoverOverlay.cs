@@ -285,7 +285,8 @@ namespace LanguageStudyStardewValleyMod
         /// a box drawn in the wrong place.
         /// </summary>
         /// <summary>
-        /// The label text: the gloss, then the romaji, then the kana, one per line.
+        /// The label text: the kana, then the romaji, then the gloss, one per line -- English last,
+        /// matching the title-screen bubbles.
         ///
         /// The romaji is generated here from the kana (<see cref="KanaRomaji"/>) rather than read
         /// from the data's "reading" field -- kana is the source of truth -- and font-safed against
@@ -310,8 +311,8 @@ namespace LanguageStudyStardewValleyMod
             string romaji = FontSafeText.Apply(KanaRomaji.Convert(segment.Kana), ExtendedFont.DrawableCharacters(Game1.smallFont));
 
             return romaji == segment.Kana
-                ? $"{gloss}\n{segment.Kana}"
-                : $"{gloss}\n{romaji}\n{segment.Kana}";
+                ? $"{segment.Kana}\n{gloss}"
+                : $"{segment.Kana}\n{romaji}\n{gloss}";
         }
 
         /// <summary>Whether the word is already a flashcard in the current source language.</summary>

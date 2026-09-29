@@ -136,7 +136,7 @@ Without segment data, words come from a character-class split (`TextHitTest.Spli
 
 `TextHitTest.IsHoverable` decides by content. A word from the character-class split that has no letters in it (kana and kanji count as letters) gets no label, because its label would only repeat it. That covers the hotbar's 1-9, 0, - and =. A word from segment data is always hoverable, numbers included, because it was authored with a reading (5000 ごせん), and the reading is the point.
 
-The word-hover label (gloss, romaji, kana on three lines) is built by `WordHoverOverlay.Describe`. Its romaji is generated from each segment's `kana` at runtime by `KanaRomaji.cs`, a C# port of `tools/segment-data/kana_to_romaji.py`, not taken from the data's `reading`.
+The word-hover label (kana, romaji, gloss on three lines, English last as on the title-screen bubbles) is built by `WordHoverOverlay.Describe`. Its romaji is generated from each segment's `kana` at runtime by `KanaRomaji.cs`, a C# port of `tools/segment-data/kana_to_romaji.py`, not taken from the data's `reading`.
 
 ### Why not calculate the layout instead?
 
