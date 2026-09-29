@@ -3,7 +3,6 @@
 ## Open
 
 - [ ] In-game checks
-  - [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
   - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
   - [ ] [Verify flashcards](#verify-flashcards)
   - [ ] [Verify GMCM hover exclusion](#verify-gmcm-hover-exclusion)
@@ -29,18 +28,16 @@
   - [ ] [Remove debug logs](#remove-debug-logs)
   - [ ] [Guard gendered-string splitting](#guard-gendered-string-splitting)
 - [ ] Features
+  - [ ] [Dialogue translation bubble](#dialogue-translation-bubble)
+    - [ ] English by key
+    - [ ] Page splitting
+    - [ ] Keyed dialogue
+    - [ ] Inline event lines
+    - [ ] Icon and bubble
+    - [ ] Code-built strings
   - [ ] [Explanatory translation mode](#explanatory-translation-mode)
 
 ## Details
-
-### Verify dialogue sentence translation
-
-Entries are keyed by the whole raw string, markup and all (`$h`, `#$b#`…), and the game draws one page at a time with the markup removed.
-
-- Word hover handles this now: `SegmentIndex`'s composite lookup, with page 2 of Lewis's `Introduction` verified live 2026-09-25.
-- `TranslationMap` has no equivalent, so a non-first page likely gets no sentence translation.
-- Check live. If it misses, split entries at `#$b#` / `#$e#` on load and strip the markup. Page breaks always fall on a segment boundary (`merge` enforces it), so that split is clean.
-- Doing the same split for `SegmentIndex` would make pages exact lookups (see [Optimize composite lookup](#optimize-composite-lookup)).
 
 ### Verify achievements and notes
 
@@ -132,7 +129,7 @@ In the user's words, this was "a bad oversight" and "a huge waste of resources":
 2. Every position tries every length as a whole-entry lookup, allocating a substring each time (O(n²) allocations). Walk a trie of the spaceless keys instead; it gives every entry starting at a position in one pass.
 3. Each position runs every template whose anchor appears in the text. Only try one where its first literal actually starts at that position.
 
-Alternatives: precompute dialogue pages at load by splitting entries at `#$b#` / `#$e#` (see [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)), which moves the commonest case to an exact lookup; or run the composite off the draw thread.
+Alternatives: precompute dialogue pages at load by splitting entries at `#$b#` / `#$e#` (see [Dialogue translation bubble](#dialogue-translation-bubble)), which moves the commonest case to an exact lookup; or run the composite off the draw thread.
 
 ### Quiet fallback log
 
@@ -145,6 +142,37 @@ Remove the debug logging added while troubleshooting.
 ### Guard gendered-string splitting
 
 Some locales have known bugs in how the game's `^` gender-variant delimiter is used. Where splitting a string on `^` gives something malformed, show no translation rather than a garbled one. There's no sign this has been done.
+
+### Dialogue translation bubble
+
+No dialogue box shows a sentence translation yet. The tooltip translation box works only because tooltips go through `drawHoverText`, and dialogue boxes don't. The plan: while a `DialogueBox` is open, show a language icon, and on hover show a large speech bubble with the game's official English for the page on screen. It replaces "Verify dialogue sentence translation", whose page-lookup gap still applies. `TranslationMap` keys are whole raw strings, markup included, so a lookup of the text drawn on a page misses for every page, not only the later ones.
+
+**Take the key from the game, not from a text lookup.** Each source leaves a different record (from the 1.6.15 IL, 2026-09-29):
+
+| Source | Where the key comes from | Harmony needed |
+|---|---|---|
+| NPC dialogue, keyed event lines, festival chatter | `DialogueBox.characterDialogue.TranslationKey`, with `currentDialogueIndex` for the page | Only to capture `FromTranslation` arguments |
+| Inline event lines (`speak "…"`, `message`, `question`) | `Game1.CurrentEvent`: `fromAssetName`, `id`, `CurrentCommand` | Postfix on the `DialogueBox` constructors |
+| Code-built strings (`drawObjectDialogue(string)`, `new DialogueBox(string)`) | Recent `LoadString(path, args)` calls | Postfixes on `LoadString` |
+| Hardcoded text | None | None: fall back to `TranslationMap`, or hide the icon |
+
+Steps:
+
+1. **English by key.** English can't be loaded at draw time (the language flip), so `TranslationIndex.Build` keeps the English it already loads as `asset:key → raw`. It also loads the English `Data/Events` scripts, which the index leaves out now.
+2. **Page splitting.** `currentDialogueIndex` points into the game's own parse of the Japanese (`Dialogue.dialogues`), so the English has to be split by the same rules. Either mirror the parser from the IL in a pure class, or check whether `new Dialogue(null, null, english)` can be run without side effects. When the page counts differ, show the whole entry. The English also needs the same substitutions the Japanese got on screen (`@`, `^`, `${…}`).
+3. **Keyed dialogue.** No patch is needed to read the key. `FromTranslation(speaker, key, sub…)` drops its arguments, though, so a postfix stores them against the `Dialogue` instance (a `ConditionalWeakTable`), and the English is formatted with the same values.
+4. **Inline event lines.** When there's no key and an event is running, a `DialogueBox` constructor postfix records `fromAssetName`, `id` and `CurrentCommand`. Find the same event key in the English asset, parse it with `Event.ParseCommands`, and take the same command index. If the command there isn't the same one (e.g. `speak Lewis`), hide the icon. This replaces porting `segtool`'s script lifter. Still to check with a log probe:
+   - whether `CurrentCommand` still points at the command when the box is built
+   - which argument is which in `question` / `quickQuestion`, which hold several strings
+5. **Icon and bubble.**
+   - The icon uses the title screen's language button sprite, `(52, 458, 27, 25)` on `Minigames/TitleButtons` at `TitleMenu.pixelZoom`. It's anchored to the box's `x/y/width`, so it follows question boxes of any height, and hidden while `transitioning`. The box's top-right corner is the portrait panel.
+   - The bubble uses `SpriteText.drawSmallTextBubble` with pre-wrapped text, like the word labels, so the two look and behave the same. It must fit 3+ sentences. Check it at that size, with a small window and at a large UI scale, and clamp it into the viewport.
+   - Draw both from `DrawOverlays`, inside `SuppressRecording()`.
+   - `DialogueBox.receiveLeftClick` doesn't check where the click lands, so the icon must suppress `MouseLeft` or the click advances the page.
+   - Hide the icon when no English was found. `textAboveHead` has no box, so it's out of scope.
+6. **Code-built strings** (later, riskier). Record `(path, args, result)` from the `LoadString` / `LoadStringReturnNullIfNotFound` overloads in a buffer cleared every tick. The `DialogueBox` constructor then works out which recent results make up its text. `LoadString` is called constantly, so the postfix has to be cheap, and it should ignore the calls `TranslationIndex.Build` makes.
+
+Open: what a click on the icon should do later, if anything (freezing the bubble, like `Z`, is the obvious candidate), and whether a held button should show the bubble for controller players.
 
 ### Explanatory translation mode
 
