@@ -19,6 +19,7 @@
     - [ ] Measure compound redundancy
     - [ ] Decide on shared glossary
   - [ ] [Split sign markup segments](#split-sign-markup-segments)
+  - [ ] [Redundant authored English](#redundant-authored-english)
 - [ ] Code
   - [ ] [Optimize composite lookup](#optimize-composite-lookup)
     - [ ] N-gram index for substrings
@@ -114,6 +115,14 @@ Review redundancy in the segment data, and consider pointing repeats at a shared
 
 - Split the markup into its own gloss-less segments, and check other `StringsFromMaps` signs for the same thing.
 - Its kana (`バステイ`) should be `バスてい`; see [Normalise kana script](#normalise-kana-script).
+
+### Redundant authored English
+
+Every segment entry has an authored `english` field (all 17,255 entries in the 178 files, counted 2026-09-29), which is a literal translation written alongside the official one. The official English is already in `TranslationMap`, taken from the game's own tables. Only the flashcard back uses the authored text, where it's shown above the official "Game:" line.
+
+In the user's words, this was "a bad oversight" and "a huge waste of resources": it was never meant to be authored separately. It's also not identical to the official text. Of the 3,277 dialogue entries whose keys are in the English tables, only 207 match once markup and whitespace are stripped.
+
+**Consistency now matters more than fixing it.** Keep writing `english` for new entries, the same way, so the data stays uniform. Don't strip or regenerate the field, and don't make it optional in the schema.
 
 ### Optimize composite lookup
 
