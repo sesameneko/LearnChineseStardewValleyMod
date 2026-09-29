@@ -1,0 +1,464 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley Data_Bundles.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "Abandoned Joja Mart/36#6": {
+    "chinese": "失踪的",
+    "english": "Missing",
+    "segments": [
+      {
+        "text": "失踪",
+        "pinyin": "shī zōng",
+        "gloss": "missing"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(nominaliser: one)"
+      }
+    ]
+  },
+  "Boiler Room/20#6": {
+    "chinese": "铁匠的",
+    "english": "Blacksmith's",
+    "segments": [
+      {
+        "text": "铁匠",
+        "pinyin": "tiě jiang",
+        "gloss": "blacksmith"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      }
+    ]
+  },
+  "Boiler Room/21#6": {
+    "chinese": "地理学家的",
+    "english": "Geologist's",
+    "segments": [
+      {
+        "text": "地理学家",
+        "pinyin": "dì lǐ xué jiā",
+        "gloss": "geologist"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      }
+    ]
+  },
+  "Boiler Room/22#6": {
+    "chinese": "冒险家的",
+    "english": "Adventurer's",
+    "segments": [
+      {
+        "text": "冒险家",
+        "pinyin": "mào xiǎn jiā",
+        "gloss": "adventurer"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      }
+    ]
+  },
+  "Bulletin Board/31#6": {
+    "chinese": "厨师",
+    "english": "Chef",
+    "segments": [
+      {
+        "text": "厨师",
+        "pinyin": "chú shī",
+        "gloss": "chef"
+      }
+    ]
+  },
+  "Bulletin Board/32#6": {
+    "chinese": "土地研究",
+    "english": "Field research",
+    "segments": [
+      {
+        "text": "土地",
+        "pinyin": "tǔ dì",
+        "gloss": "land"
+      },
+      {
+        "text": "研究",
+        "pinyin": "yán jiū",
+        "gloss": "research"
+      }
+    ]
+  },
+  "Bulletin Board/33#6": {
+    "chinese": "魔法师",
+    "english": "Enchanter",
+    "segments": [
+      {
+        "text": "魔法师",
+        "pinyin": "mó fǎ shī",
+        "gloss": "enchanter, magician"
+      }
+    ]
+  },
+  "Bulletin Board/34#6": {
+    "chinese": "染料",
+    "english": "Dye",
+    "segments": [
+      {
+        "text": "染料",
+        "pinyin": "rǎn liào",
+        "gloss": "dye"
+      }
+    ]
+  },
+  "Bulletin Board/35#6": {
+    "chinese": "饲料",
+    "english": "Fodder",
+    "segments": [
+      {
+        "text": "饲料",
+        "pinyin": "sì liào",
+        "gloss": "fodder"
+      }
+    ]
+  },
+  "Crafts Room/13#6": {
+    "chinese": "春季采集",
+    "english": "Spring foraging",
+    "segments": [
+      {
+        "text": "春季",
+        "pinyin": "chūn jì",
+        "gloss": "spring"
+      },
+      {
+        "text": "采集",
+        "pinyin": "cǎi jí",
+        "gloss": "foraging"
+      }
+    ]
+  },
+  "Crafts Room/14#6": {
+    "chinese": "夏季采集",
+    "english": "Summer foraging",
+    "segments": [
+      {
+        "text": "夏季",
+        "pinyin": "xià jì",
+        "gloss": "summer"
+      },
+      {
+        "text": "采集",
+        "pinyin": "cǎi jí",
+        "gloss": "foraging"
+      }
+    ]
+  },
+  "Crafts Room/15#6": {
+    "chinese": "秋季采集",
+    "english": "Autumn foraging",
+    "segments": [
+      {
+        "text": "秋季",
+        "pinyin": "qiū jì",
+        "gloss": "autumn"
+      },
+      {
+        "text": "采集",
+        "pinyin": "cǎi jí",
+        "gloss": "foraging"
+      }
+    ]
+  },
+  "Crafts Room/16#6": {
+    "chinese": "冬季采集",
+    "english": "Winter foraging",
+    "segments": [
+      {
+        "text": "冬季",
+        "pinyin": "dōng jì",
+        "gloss": "winter"
+      },
+      {
+        "text": "采集",
+        "pinyin": "cǎi jí",
+        "gloss": "foraging"
+      }
+    ]
+  },
+  "Crafts Room/17#6": {
+    "chinese": "建筑",
+    "english": "Construction",
+    "segments": [
+      {
+        "text": "建筑",
+        "pinyin": "jiàn zhù",
+        "gloss": "construction"
+      }
+    ]
+  },
+  "Crafts Room/19#6": {
+    "chinese": "异国情调采集",
+    "english": "Exotic foraging",
+    "segments": [
+      {
+        "text": "异国情调",
+        "pinyin": "yì guó qíng diào",
+        "gloss": "exotic"
+      },
+      {
+        "text": "采集",
+        "pinyin": "cǎi jí",
+        "gloss": "foraging"
+      }
+    ]
+  },
+  "Fish Tank/10#6": {
+    "chinese": "特色鱼类",
+    "english": "Specialty fish",
+    "segments": [
+      {
+        "text": "特色",
+        "pinyin": "tè sè",
+        "gloss": "specialty"
+      },
+      {
+        "text": "鱼类",
+        "pinyin": "yú lèi",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Fish Tank/11#6": {
+    "chinese": "蟹笼",
+    "english": "Crab pot",
+    "segments": [
+      {
+        "text": "蟹笼",
+        "pinyin": "xiè lóng",
+        "gloss": "crab pot"
+      }
+    ]
+  },
+  "Fish Tank/6#6": {
+    "chinese": "河鱼",
+    "english": "River fish",
+    "segments": [
+      {
+        "text": "河",
+        "pinyin": "hé",
+        "gloss": "river"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Fish Tank/7#6": {
+    "chinese": "湖鱼",
+    "english": "Lake fish",
+    "segments": [
+      {
+        "text": "湖",
+        "pinyin": "hú",
+        "gloss": "lake"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Fish Tank/8#6": {
+    "chinese": "海鱼",
+    "english": "Ocean fish",
+    "segments": [
+      {
+        "text": "海",
+        "pinyin": "hǎi",
+        "gloss": "ocean"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Fish Tank/9#6": {
+    "chinese": "夜间垂钓",
+    "english": "Night fishing",
+    "segments": [
+      {
+        "text": "夜间",
+        "pinyin": "yè jiān",
+        "gloss": "nighttime"
+      },
+      {
+        "text": "垂钓",
+        "pinyin": "chuí diào",
+        "gloss": "fishing"
+      }
+    ]
+  },
+  "Pantry/0#6": {
+    "chinese": "春季作物",
+    "english": "Spring crops",
+    "segments": [
+      {
+        "text": "春季",
+        "pinyin": "chūn jì",
+        "gloss": "spring"
+      },
+      {
+        "text": "作物",
+        "pinyin": "zuò wù",
+        "gloss": "crops"
+      }
+    ]
+  },
+  "Pantry/1#6": {
+    "chinese": "夏季作物",
+    "english": "Summer crops",
+    "segments": [
+      {
+        "text": "夏季",
+        "pinyin": "xià jì",
+        "gloss": "summer"
+      },
+      {
+        "text": "作物",
+        "pinyin": "zuò wù",
+        "gloss": "crops"
+      }
+    ]
+  },
+  "Pantry/2#6": {
+    "chinese": "秋季作物",
+    "english": "Autumn crops",
+    "segments": [
+      {
+        "text": "秋季",
+        "pinyin": "qiū jì",
+        "gloss": "autumn"
+      },
+      {
+        "text": "作物",
+        "pinyin": "zuò wù",
+        "gloss": "crops"
+      }
+    ]
+  },
+  "Pantry/3#6": {
+    "chinese": "高品质作物",
+    "english": "High-quality crops",
+    "segments": [
+      {
+        "text": "高",
+        "pinyin": "gāo",
+        "gloss": "high"
+      },
+      {
+        "text": "品质",
+        "pinyin": "pǐn zhì",
+        "gloss": "quality"
+      },
+      {
+        "text": "作物",
+        "pinyin": "zuò wù",
+        "gloss": "crops"
+      }
+    ]
+  },
+  "Pantry/4#6": {
+    "chinese": "动物",
+    "english": "Animals",
+    "segments": [
+      {
+        "text": "动物",
+        "pinyin": "dòng wù",
+        "gloss": "animals"
+      }
+    ]
+  },
+  "Pantry/5#6": {
+    "chinese": "工匠",
+    "english": "Artisan",
+    "segments": [
+      {
+        "text": "工匠",
+        "pinyin": "gōng jiàng",
+        "gloss": "artisan"
+      }
+    ]
+  },
+  "Vault/23#6": {
+    "chinese": "2500 金",
+    "english": "2500 gold",
+    "segments": [
+      {
+        "text": "2500 ",
+        "pinyin": "liǎng qiān wǔ bǎi",
+        "gloss": "2500"
+      },
+      {
+        "text": "金",
+        "pinyin": "jīn",
+        "gloss": "gold"
+      }
+    ]
+  },
+  "Vault/24#6": {
+    "chinese": "5000 金",
+    "english": "5000 gold",
+    "segments": [
+      {
+        "text": "5000 ",
+        "pinyin": "wǔ qiān",
+        "gloss": "5000"
+      },
+      {
+        "text": "金",
+        "pinyin": "jīn",
+        "gloss": "gold"
+      }
+    ]
+  },
+  "Vault/25#6": {
+    "chinese": "10000 金",
+    "english": "10000 gold",
+    "segments": [
+      {
+        "text": "10000 ",
+        "pinyin": "yí wàn",
+        "gloss": "10000"
+      },
+      {
+        "text": "金",
+        "pinyin": "jīn",
+        "gloss": "gold"
+      }
+    ]
+  },
+  "Vault/26#6": {
+    "chinese": "25000 金",
+    "english": "25000 gold",
+    "segments": [
+      {
+        "text": "25000 ",
+        "pinyin": "liǎng wàn wǔ qiān",
+        "gloss": "25000"
+      },
+      {
+        "text": "金",
+        "pinyin": "jīn",
+        "gloss": "gold"
+      }
+    ]
+  }
+}

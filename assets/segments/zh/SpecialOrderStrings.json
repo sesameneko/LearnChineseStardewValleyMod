@@ -1,0 +1,7704 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley SpecialOrderStrings.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "Caroline_Name": {
+    "chinese": "岛屿食材",
+    "english": "Island Ingredients",
+    "segments": [
+      {
+        "text": "岛屿",
+        "pinyin": "dǎo yǔ",
+        "gloss": "island"
+      },
+      {
+        "text": "食材",
+        "pinyin": "shí cái",
+        "gloss": "ingredients"
+      }
+    ]
+  },
+  "Caroline_Objective_0_Text": {
+    "chinese": "售出 100 份{Crop:Text}。",
+    "english": "Sell 100 portions of {Crop:Text}.",
+    "segments": [
+      {
+        "text": "售出 ",
+        "pinyin": "shòu chū",
+        "gloss": "sell"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "{Crop:Text}。",
+        "pinyin": "Crop Text",
+        "gloss": "(crop)"
+      }
+    ]
+  },
+  "Caroline_Text": {
+    "chinese": "我想尝试烹饪热带菜肴，但是寻找食材真的很困难。如果有人能售出 100 份{Crop:TextPlural}，应该能帮上忙！",
+    "english": "I want to try cooking tropical dishes, but finding ingredients is really difficult. If someone could sell 100 portions of {Crop:TextPlural}, that should help!",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "尝试",
+        "pinyin": "cháng shì",
+        "gloss": "try"
+      },
+      {
+        "text": "烹饪",
+        "pinyin": "pēng rèn",
+        "gloss": "cook"
+      },
+      {
+        "text": "热带",
+        "pinyin": "rè dài",
+        "gloss": "tropical"
+      },
+      {
+        "text": "菜肴，",
+        "pinyin": "cài yáo",
+        "gloss": "dishes"
+      },
+      {
+        "text": "但是",
+        "pinyin": "dàn shì",
+        "gloss": "but"
+      },
+      {
+        "text": "寻找",
+        "pinyin": "xún zhǎo",
+        "gloss": "look for"
+      },
+      {
+        "text": "食材",
+        "pinyin": "shí cái",
+        "gloss": "ingredients"
+      },
+      {
+        "text": "真的",
+        "pinyin": "zhēn de",
+        "gloss": "really"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "困难。",
+        "pinyin": "kùn nan",
+        "gloss": "difficult"
+      },
+      {
+        "text": "如果",
+        "pinyin": "rú guǒ",
+        "gloss": "if"
+      },
+      {
+        "text": "有人",
+        "pinyin": "yǒu rén",
+        "gloss": "someone"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "could"
+      },
+      {
+        "text": "售出 ",
+        "pinyin": "shòu chū",
+        "gloss": "sell"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "{Crop:TextPlural}，",
+        "pinyin": "Crop TextPlural",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "应该",
+        "pinyin": "yīng gāi",
+        "gloss": "should"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "帮",
+        "pinyin": "bāng",
+        "gloss": "help"
+      },
+      {
+        "text": "上",
+        "pinyin": "shàng",
+        "gloss": "(result: succeed)"
+      },
+      {
+        "text": "忙！",
+        "pinyin": "máng",
+        "gloss": "(help: favor)"
+      }
+    ]
+  },
+  "Clint_Name": {
+    "chinese": "洞穴巡查",
+    "english": "Cave Patrol",
+    "segments": [
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "cave"
+      },
+      {
+        "text": "巡查",
+        "pinyin": "xún chá",
+        "gloss": "patrol"
+      }
+    ]
+  },
+  "Clint_Objective_0_Text": {
+    "chinese": "杀死 50 只{Monster:LocalizedName}。",
+    "english": "Kill 50 {Monster:LocalizedName}.",
+    "segments": [
+      {
+        "text": "杀死 ",
+        "pinyin": "shā sǐ",
+        "gloss": "kill"
+      },
+      {
+        "text": "50 ",
+        "pinyin": "50",
+        "gloss": "50"
+      },
+      {
+        "text": "只",
+        "pinyin": "zhī",
+        "gloss": "(measure word for animals)"
+      },
+      {
+        "text": "{Monster:LocalizedName}。",
+        "pinyin": "Monster LocalizedName",
+        "gloss": "(monster)"
+      }
+    ]
+  },
+  "Clint_RE_Monster_0_LocalizedName": {
+    "chinese": "蝙蝠",
+    "english": "Bats",
+    "segments": [
+      {
+        "text": "蝙蝠",
+        "pinyin": "biān fú",
+        "gloss": "bat"
+      }
+    ]
+  },
+  "Clint_RE_Monster_1_LocalizedName": {
+    "chinese": "灰尘精灵",
+    "english": "Dust sprites",
+    "segments": [
+      {
+        "text": "灰尘",
+        "pinyin": "huī chén",
+        "gloss": "dust"
+      },
+      {
+        "text": "精灵",
+        "pinyin": "jīng líng",
+        "gloss": "sprite"
+      }
+    ]
+  },
+  "Clint_RE_Monster_2_LocalizedName": {
+    "chinese": "骨头",
+    "english": "Bones",
+    "segments": [
+      {
+        "text": "骨头",
+        "pinyin": "gǔ tou",
+        "gloss": "bones (skeletons)"
+      }
+    ]
+  },
+  "Clint_RE_Monster_3_LocalizedName": {
+    "chinese": "蛆",
+    "english": "Grubs",
+    "segments": [
+      {
+        "text": "蛆",
+        "pinyin": "qū",
+        "gloss": "maggot"
+      }
+    ]
+  },
+  "Clint_Text": {
+    "chinese": "当地洞穴中的{Monster:LocalizedName}数量已经导致我……不对，是其他人——其他人采矿变得十分危险。凡是愿意杀死 50 只怪物的人都能得到一笔可观的报酬。——克林特",
+    "english": "The number of {Monster:LocalizedName} in the local caves has already caused me... no wait, other people -- other people's mining to become very dangerous. Anyone willing to kill 50 monsters can get a considerable payment. -- Clint",
+    "segments": [
+      {
+        "text": "当地",
+        "pinyin": "dāng dì",
+        "gloss": "local"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "cave"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "{Monster:LocalizedName}",
+        "pinyin": "Monster LocalizedName",
+        "gloss": "(monster)"
+      },
+      {
+        "text": "数量",
+        "pinyin": "shù liàng",
+        "gloss": "number"
+      },
+      {
+        "text": "已经",
+        "pinyin": "yǐ jīng",
+        "gloss": "already"
+      },
+      {
+        "text": "导致",
+        "pinyin": "dǎo zhì",
+        "gloss": "cause"
+      },
+      {
+        "text": "我……",
+        "pinyin": "wǒ",
+        "gloss": "me"
+      },
+      {
+        "text": "不对，",
+        "pinyin": "bú duì",
+        "gloss": "no wait"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "其他",
+        "pinyin": "qí tā",
+        "gloss": "other"
+      },
+      {
+        "text": "人——",
+        "pinyin": "rén",
+        "gloss": "people"
+      },
+      {
+        "text": "其他",
+        "pinyin": "qí tā",
+        "gloss": "other"
+      },
+      {
+        "text": "人",
+        "pinyin": "rén",
+        "gloss": "people"
+      },
+      {
+        "text": "采矿",
+        "pinyin": "cǎi kuàng",
+        "gloss": "mining"
+      },
+      {
+        "text": "变得",
+        "pinyin": "biàn de",
+        "gloss": "become"
+      },
+      {
+        "text": "十分",
+        "pinyin": "shí fēn",
+        "gloss": "very"
+      },
+      {
+        "text": "危险。",
+        "pinyin": "wēi xiǎn",
+        "gloss": "dangerous"
+      },
+      {
+        "text": "凡是",
+        "pinyin": "fán shì",
+        "gloss": "every"
+      },
+      {
+        "text": "愿意",
+        "pinyin": "yuàn yì",
+        "gloss": "willing"
+      },
+      {
+        "text": "杀死 ",
+        "pinyin": "shā sǐ",
+        "gloss": "kill"
+      },
+      {
+        "text": "50 ",
+        "pinyin": "50",
+        "gloss": "50"
+      },
+      {
+        "text": "只",
+        "pinyin": "zhī",
+        "gloss": "(measure word for animals)"
+      },
+      {
+        "text": "怪物",
+        "pinyin": "guài wu",
+        "gloss": "monsters"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "人",
+        "pinyin": "rén",
+        "gloss": "person"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "all"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "得到",
+        "pinyin": "dé dào",
+        "gloss": "get"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "笔",
+        "pinyin": "bǐ",
+        "gloss": "(measure word for sums of money)"
+      },
+      {
+        "text": "可观",
+        "pinyin": "kě guān",
+        "gloss": "considerable"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "报酬。——",
+        "pinyin": "bào chou",
+        "gloss": "payment"
+      },
+      {
+        "text": "克林特",
+        "pinyin": "kè lín tè",
+        "gloss": "Clint"
+      }
+    ]
+  },
+  "Demetrius2_Name": {
+    "chinese": "生态平衡",
+    "english": "Ecological Balance",
+    "segments": [
+      {
+        "text": "生态",
+        "pinyin": "shēng tài",
+        "gloss": "ecology"
+      },
+      {
+        "text": "平衡",
+        "pinyin": "píng héng",
+        "gloss": "balance"
+      }
+    ]
+  },
+  "Demetrius2_Objective_0_Text": {
+    "chinese": "捕获 20 条{FishType:Text}。",
+    "english": "Catch 20 {FishType:Text}.",
+    "segments": [
+      {
+        "text": "捕获 ",
+        "pinyin": "bǔ huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "20 ",
+        "pinyin": "20",
+        "gloss": "20"
+      },
+      {
+        "text": "条",
+        "pinyin": "tiáo",
+        "gloss": "(measure word for fish)"
+      },
+      {
+        "text": "{FishType:Text}。",
+        "pinyin": "FishType Text",
+        "gloss": "(fish type)"
+      }
+    ]
+  },
+  "Demetrius2_RE_FishType_0_Text": {
+    "chinese": "河鱼",
+    "english": "River fish",
+    "segments": [
+      {
+        "text": "河",
+        "pinyin": "hé",
+        "gloss": "river"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Demetrius2_RE_FishType_1_Text": {
+    "chinese": "海鱼",
+    "english": "Sea fish",
+    "segments": [
+      {
+        "text": "海",
+        "pinyin": "hǎi",
+        "gloss": "sea"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Demetrius2_RE_FishType_2_Text": {
+    "chinese": "湖鱼",
+    "english": "Lake fish",
+    "segments": [
+      {
+        "text": "湖",
+        "pinyin": "hú",
+        "gloss": "lake"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Demetrius2_Text": {
+    "chinese": "本地的{FishType:Text}数量泛滥成灾，具体原因不明。我需要一名本地的垂钓者帮忙减少鱼群数量。",
+    "english": "The number of local {FishType:Text} has flooded into a disaster, for unknown specific reasons. I need a local angler to help reduce the fish population.",
+    "segments": [
+      {
+        "text": "本地",
+        "pinyin": "běn dì",
+        "gloss": "local"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "{FishType:Text}",
+        "pinyin": "FishType Text",
+        "gloss": "(fish type)"
+      },
+      {
+        "text": "数量",
+        "pinyin": "shù liàng",
+        "gloss": "number"
+      },
+      {
+        "text": "泛滥成灾，",
+        "pinyin": "fàn làn chéng zāi",
+        "gloss": "run rampant"
+      },
+      {
+        "text": "具体",
+        "pinyin": "jù tǐ",
+        "gloss": "specific"
+      },
+      {
+        "text": "原因",
+        "pinyin": "yuán yīn",
+        "gloss": "reason"
+      },
+      {
+        "text": "不明。",
+        "pinyin": "bù míng",
+        "gloss": "unknown"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "需要",
+        "pinyin": "xū yào",
+        "gloss": "need"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "名",
+        "pinyin": "míng",
+        "gloss": "(measure word for people)"
+      },
+      {
+        "text": "本地",
+        "pinyin": "běn dì",
+        "gloss": "local"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "垂钓者",
+        "pinyin": "chuí diào zhě",
+        "gloss": "angler"
+      },
+      {
+        "text": "帮忙",
+        "pinyin": "bāng máng",
+        "gloss": "help"
+      },
+      {
+        "text": "减少",
+        "pinyin": "jiǎn shǎo",
+        "gloss": "reduce"
+      },
+      {
+        "text": "鱼群",
+        "pinyin": "yú qún",
+        "gloss": "fish population"
+      },
+      {
+        "text": "数量。",
+        "pinyin": "shù liàng",
+        "gloss": "number"
+      }
+    ]
+  },
+  "Demetrius_Name": {
+    "chinese": "水生物泛滥",
+    "english": "Aquatic creatures running rampant",
+    "segments": [
+      {
+        "text": "水",
+        "pinyin": "shuǐ",
+        "gloss": "water"
+      },
+      {
+        "text": "生物",
+        "pinyin": "shēng wù",
+        "gloss": "creatures"
+      },
+      {
+        "text": "泛滥",
+        "pinyin": "fàn làn",
+        "gloss": "run rampant"
+      }
+    ]
+  },
+  "Demetrius_Objective_0_Text": {
+    "chinese": "捕获 10 条{FishType:Text}。",
+    "english": "Catch 10 {FishType:Text}.",
+    "segments": [
+      {
+        "text": "捕获 ",
+        "pinyin": "bǔ huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "10 ",
+        "pinyin": "10",
+        "gloss": "10"
+      },
+      {
+        "text": "条",
+        "pinyin": "tiáo",
+        "gloss": "(measure word for fish)"
+      },
+      {
+        "text": "{FishType:Text}。",
+        "pinyin": "FishType Text",
+        "gloss": "(fish type)"
+      }
+    ]
+  },
+  "Demetrius_Text": {
+    "chinese": "本地的{FishType:Text}数量泛滥成灾，具体原因不明。我需要一名本地的垂钓者帮忙减少鱼群数量。",
+    "english": "The number of local {FishType:Text} has flooded into a disaster, for unknown specific reasons. I need a local angler to help reduce the fish population.",
+    "segments": [
+      {
+        "text": "本地",
+        "pinyin": "běn dì",
+        "gloss": "local"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "{FishType:Text}",
+        "pinyin": "FishType Text",
+        "gloss": "(fish type)"
+      },
+      {
+        "text": "数量",
+        "pinyin": "shù liàng",
+        "gloss": "number"
+      },
+      {
+        "text": "泛滥成灾，",
+        "pinyin": "fàn làn chéng zāi",
+        "gloss": "run rampant"
+      },
+      {
+        "text": "具体",
+        "pinyin": "jù tǐ",
+        "gloss": "specific"
+      },
+      {
+        "text": "原因",
+        "pinyin": "yuán yīn",
+        "gloss": "reason"
+      },
+      {
+        "text": "不明。",
+        "pinyin": "bù míng",
+        "gloss": "unknown"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "需要",
+        "pinyin": "xū yào",
+        "gloss": "need"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "名",
+        "pinyin": "míng",
+        "gloss": "(measure word for people)"
+      },
+      {
+        "text": "本地",
+        "pinyin": "běn dì",
+        "gloss": "local"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "垂钓者",
+        "pinyin": "chuí diào zhě",
+        "gloss": "angler"
+      },
+      {
+        "text": "帮忙",
+        "pinyin": "bāng máng",
+        "gloss": "help"
+      },
+      {
+        "text": "减少",
+        "pinyin": "jiǎn shǎo",
+        "gloss": "reduce"
+      },
+      {
+        "text": "鱼群",
+        "pinyin": "yú qún",
+        "gloss": "fish population"
+      },
+      {
+        "text": "数量。",
+        "pinyin": "shù liàng",
+        "gloss": "number"
+      }
+    ]
+  },
+  "Emily_Name": {
+    "chinese": "宝石能量",
+    "english": "Gem Energy",
+    "segments": [
+      {
+        "text": "宝石",
+        "pinyin": "bǎo shí",
+        "gloss": "gem"
+      },
+      {
+        "text": "能量",
+        "pinyin": "néng liàng",
+        "gloss": "energy"
+      }
+    ]
+  },
+  "Emily_Objective_0_Text": {
+    "chinese": "给艾米丽送一个红宝石",
+    "english": "Give Emily a ruby",
+    "segments": [
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "to"
+      },
+      {
+        "text": "艾米丽",
+        "pinyin": "ài mǐ lì",
+        "gloss": "Emily"
+      },
+      {
+        "text": "送",
+        "pinyin": "sòng",
+        "gloss": "deliver"
+      },
+      {
+        "text": "一个",
+        "pinyin": "yí gè",
+        "gloss": "a"
+      },
+      {
+        "text": "红宝石",
+        "pinyin": "hóng bǎo shí",
+        "gloss": "ruby"
+      }
+    ]
+  },
+  "Emily_Objective_1_Text": {
+    "chinese": "给艾米丽送一个黄水晶",
+    "english": "Give Emily a topaz",
+    "segments": [
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "to"
+      },
+      {
+        "text": "艾米丽",
+        "pinyin": "ài mǐ lì",
+        "gloss": "Emily"
+      },
+      {
+        "text": "送",
+        "pinyin": "sòng",
+        "gloss": "deliver"
+      },
+      {
+        "text": "一个",
+        "pinyin": "yí gè",
+        "gloss": "a"
+      },
+      {
+        "text": "黄",
+        "pinyin": "huáng",
+        "gloss": "yellow"
+      },
+      {
+        "text": "水晶",
+        "pinyin": "shuǐ jīng",
+        "gloss": "crystal"
+      }
+    ]
+  },
+  "Emily_Objective_2_Text": {
+    "chinese": "给艾米丽送一个绿宝石",
+    "english": "Give Emily an emerald",
+    "segments": [
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "to"
+      },
+      {
+        "text": "艾米丽",
+        "pinyin": "ài mǐ lì",
+        "gloss": "Emily"
+      },
+      {
+        "text": "送",
+        "pinyin": "sòng",
+        "gloss": "deliver"
+      },
+      {
+        "text": "一个",
+        "pinyin": "yí gè",
+        "gloss": "an"
+      },
+      {
+        "text": "绿宝石",
+        "pinyin": "lǜ bǎo shí",
+        "gloss": "emerald"
+      }
+    ]
+  },
+  "Emily_Objective_3_Text": {
+    "chinese": "给艾米丽送一个翡翠",
+    "english": "Give Emily a jade",
+    "segments": [
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "to"
+      },
+      {
+        "text": "艾米丽",
+        "pinyin": "ài mǐ lì",
+        "gloss": "Emily"
+      },
+      {
+        "text": "送",
+        "pinyin": "sòng",
+        "gloss": "deliver"
+      },
+      {
+        "text": "一个",
+        "pinyin": "yí gè",
+        "gloss": "a"
+      },
+      {
+        "text": "翡翠",
+        "pinyin": "fěi cuì",
+        "gloss": "jade"
+      }
+    ]
+  },
+  "Emily_Objective_4_Text": {
+    "chinese": "给艾米丽送一个紫水晶",
+    "english": "Give Emily an amethyst",
+    "segments": [
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "to"
+      },
+      {
+        "text": "艾米丽",
+        "pinyin": "ài mǐ lì",
+        "gloss": "Emily"
+      },
+      {
+        "text": "送",
+        "pinyin": "sòng",
+        "gloss": "deliver"
+      },
+      {
+        "text": "一个",
+        "pinyin": "yí gè",
+        "gloss": "an"
+      },
+      {
+        "text": "紫水晶",
+        "pinyin": "zǐ shuǐ jīng",
+        "gloss": "amethyst"
+      }
+    ]
+  },
+  "Emily_Text": {
+    "chinese": "嘿！我打算邀请一些朋友过来，办一个“宝石能量”仪式，但我需要一些水晶才能聚集相应的能量。你能帮把手吗？",
+    "english": "Hey! I plan to invite some friends over to hold a \"gem energy\" ritual, but I need some crystals to gather the corresponding energy. Can you lend a hand?",
+    "segments": [
+      {
+        "text": "嘿！",
+        "pinyin": "hēi",
+        "gloss": "hey"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "打算",
+        "pinyin": "dǎ suàn",
+        "gloss": "plan"
+      },
+      {
+        "text": "邀请",
+        "pinyin": "yāo qǐng",
+        "gloss": "invite"
+      },
+      {
+        "text": "一些",
+        "pinyin": "yì xiē",
+        "gloss": "some"
+      },
+      {
+        "text": "朋友",
+        "pinyin": "péng you",
+        "gloss": "friends"
+      },
+      {
+        "text": "过来，",
+        "pinyin": "guò lai",
+        "gloss": "(direction: over)"
+      },
+      {
+        "text": "办",
+        "pinyin": "bàn",
+        "gloss": "hold"
+      },
+      {
+        "text": "一个",
+        "pinyin": "yí gè",
+        "gloss": "a"
+      },
+      {
+        "text": "“宝石",
+        "pinyin": "bǎo shí",
+        "gloss": "gem"
+      },
+      {
+        "text": "能量”",
+        "pinyin": "néng liàng",
+        "gloss": "energy"
+      },
+      {
+        "text": "仪式，",
+        "pinyin": "yí shì",
+        "gloss": "ceremony"
+      },
+      {
+        "text": "但",
+        "pinyin": "dàn",
+        "gloss": "but"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "需要",
+        "pinyin": "xū yào",
+        "gloss": "need"
+      },
+      {
+        "text": "一些",
+        "pinyin": "yì xiē",
+        "gloss": "some"
+      },
+      {
+        "text": "水晶",
+        "pinyin": "shuǐ jīng",
+        "gloss": "crystals"
+      },
+      {
+        "text": "才",
+        "pinyin": "cái",
+        "gloss": "only then"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "聚集",
+        "pinyin": "jù jí",
+        "gloss": "gather"
+      },
+      {
+        "text": "相应",
+        "pinyin": "xiāng yìng",
+        "gloss": "corresponding"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "能量。",
+        "pinyin": "néng liàng",
+        "gloss": "energy"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "帮把手",
+        "pinyin": "bāng bǎ shǒu",
+        "gloss": "lend a hand"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "Evelyn_Name": {
+    "chinese": "给乔治的礼物",
+    "english": "A gift for George",
+    "segments": [
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "for"
+      },
+      {
+        "text": "乔治",
+        "pinyin": "qiáo zhì",
+        "gloss": "George"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "礼物",
+        "pinyin": "lǐ wù",
+        "gloss": "gift"
+      }
+    ]
+  },
+  "Evelyn_Objective_0_Text": {
+    "chinese": "收集 12 份韭葱。",
+    "english": "Collect 12 leeks.",
+    "segments": [
+      {
+        "text": "收集 ",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "12 ",
+        "pinyin": "12",
+        "gloss": "12"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "韭葱。",
+        "pinyin": "jiǔ cōng",
+        "gloss": "leek"
+      }
+    ]
+  },
+  "Evelyn_Objective_1_Text": {
+    "chinese": "把韭葱放在艾芙琳的厨房里。",
+    "english": "Put the leeks in Evelyn's kitchen.",
+    "segments": [
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "韭葱",
+        "pinyin": "jiǔ cōng",
+        "gloss": "leeks"
+      },
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "艾芙琳",
+        "pinyin": "ài fú lín",
+        "gloss": "Evelyn"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "厨房",
+        "pinyin": "chú fáng",
+        "gloss": "kitchen"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "Evelyn_Text": {
+    "chinese": "乔治认为镇子上没人在乎他，我想要证明他是错的！一打韭葱应该就足够了……他最喜欢韭葱了。——艾芙琳",
+    "english": "George thinks no one in town cares about him, I want to prove he's wrong! A dozen leeks should be enough... he likes leeks most. -- Evelyn",
+    "segments": [
+      {
+        "text": "乔治",
+        "pinyin": "qiáo zhì",
+        "gloss": "George"
+      },
+      {
+        "text": "认为",
+        "pinyin": "rèn wéi",
+        "gloss": "thinks"
+      },
+      {
+        "text": "镇子",
+        "pinyin": "zhèn zi",
+        "gloss": "town"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "in"
+      },
+      {
+        "text": "没",
+        "pinyin": "méi",
+        "gloss": "no"
+      },
+      {
+        "text": "人",
+        "pinyin": "rén",
+        "gloss": "one"
+      },
+      {
+        "text": "在乎",
+        "pinyin": "zài hu",
+        "gloss": "care about"
+      },
+      {
+        "text": "他，",
+        "pinyin": "tā",
+        "gloss": "him"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "想要",
+        "pinyin": "xiǎng yào",
+        "gloss": "want"
+      },
+      {
+        "text": "证明",
+        "pinyin": "zhèng míng",
+        "gloss": "prove"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "he"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "错",
+        "pinyin": "cuò",
+        "gloss": "wrong"
+      },
+      {
+        "text": "的！",
+        "pinyin": "de",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "打",
+        "pinyin": "dá",
+        "gloss": "dozen"
+      },
+      {
+        "text": "韭葱",
+        "pinyin": "jiǔ cōng",
+        "gloss": "leeks"
+      },
+      {
+        "text": "应该",
+        "pinyin": "yīng gāi",
+        "gloss": "should"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "then"
+      },
+      {
+        "text": "足够",
+        "pinyin": "zú gòu",
+        "gloss": "be enough"
+      },
+      {
+        "text": "了……",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "he"
+      },
+      {
+        "text": "最",
+        "pinyin": "zuì",
+        "gloss": "most"
+      },
+      {
+        "text": "喜欢",
+        "pinyin": "xǐ huan",
+        "gloss": "like"
+      },
+      {
+        "text": "韭葱",
+        "pinyin": "jiǔ cōng",
+        "gloss": "leeks"
+      },
+      {
+        "text": "了。——",
+        "pinyin": "le",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "艾芙琳",
+        "pinyin": "ài fú lín",
+        "gloss": "Evelyn"
+      }
+    ]
+  },
+  "Gunther_Name": {
+    "chinese": "历史的碎片",
+    "english": "Fragments of history",
+    "segments": [
+      {
+        "text": "历史",
+        "pinyin": "lì shǐ",
+        "gloss": "history"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "碎片",
+        "pinyin": "suì piàn",
+        "gloss": "fragments"
+      }
+    ]
+  },
+  "Gunther_Objective_0_Text": {
+    "chinese": "把骨头放在博物馆柜台的投递箱里。",
+    "english": "Put the bones in the drop box at the museum counter.",
+    "segments": [
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "骨头",
+        "pinyin": "gǔ tou",
+        "gloss": "bones"
+      },
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "博物馆",
+        "pinyin": "bó wù guǎn",
+        "gloss": "museum"
+      },
+      {
+        "text": "柜台",
+        "pinyin": "guì tái",
+        "gloss": "counter"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "投递",
+        "pinyin": "tóu dì",
+        "gloss": "deliver"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "box"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "Gunther_Objective_1_Text": {
+    "chinese": "收集 100 块骨头。",
+    "english": "Collect 100 pieces of bone.",
+    "segments": [
+      {
+        "text": "收集 ",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for pieces)"
+      },
+      {
+        "text": "骨头。",
+        "pinyin": "gǔ tou",
+        "gloss": "bone"
+      }
+    ]
+  },
+  "Gunther_Text": {
+    "chinese": "全体古生物爱好者们！我的研究需要 100 块骨头。请把它们放在博物馆柜台！——冈瑟",
+    "english": "All paleontology enthusiasts! My research needs 100 pieces of bone. Please put them at the museum counter! -- Gunther",
+    "segments": [
+      {
+        "text": "全体",
+        "pinyin": "quán tǐ",
+        "gloss": "all"
+      },
+      {
+        "text": "古生物",
+        "pinyin": "gǔ shēng wù",
+        "gloss": "paleontology"
+      },
+      {
+        "text": "爱好者",
+        "pinyin": "ài hào zhě",
+        "gloss": "enthusiast"
+      },
+      {
+        "text": "们！",
+        "pinyin": "men",
+        "gloss": "(plural)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "研究",
+        "pinyin": "yán jiū",
+        "gloss": "research"
+      },
+      {
+        "text": "需要 ",
+        "pinyin": "xū yào",
+        "gloss": "needs"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for pieces)"
+      },
+      {
+        "text": "骨头。",
+        "pinyin": "gǔ tou",
+        "gloss": "bone"
+      },
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "please"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "博物馆",
+        "pinyin": "bó wù guǎn",
+        "gloss": "museum"
+      },
+      {
+        "text": "柜台！——",
+        "pinyin": "guì tái",
+        "gloss": "counter"
+      },
+      {
+        "text": "冈瑟",
+        "pinyin": "gāng sè",
+        "gloss": "Gunther"
+      }
+    ]
+  },
+  "Gus_Name": {
+    "chinese": "格斯的著名煎蛋卷",
+    "english": "Gus's famous omelette",
+    "segments": [
+      {
+        "text": "格斯",
+        "pinyin": "gé sī",
+        "gloss": "Gus"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "著名",
+        "pinyin": "zhù míng",
+        "gloss": "famous"
+      },
+      {
+        "text": "煎蛋卷",
+        "pinyin": "jiān dàn juǎn",
+        "gloss": "omelette"
+      }
+    ]
+  },
+  "Gus_Objective_0_Text": {
+    "chinese": "收集 24 个蛋。",
+    "english": "Collect 24 eggs.",
+    "segments": [
+      {
+        "text": "收集 ",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "24 ",
+        "pinyin": "24",
+        "gloss": "24"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "蛋。",
+        "pinyin": "dàn",
+        "gloss": "eggs"
+      }
+    ]
+  },
+  "Gus_Objective_1_Text": {
+    "chinese": "把蛋放到格斯的冰箱里。",
+    "english": "Put the eggs in Gus's fridge.",
+    "segments": [
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "蛋",
+        "pinyin": "dàn",
+        "gloss": "eggs"
+      },
+      {
+        "text": "放到",
+        "pinyin": "fàng dào",
+        "gloss": "put into"
+      },
+      {
+        "text": "格斯",
+        "pinyin": "gé sī",
+        "gloss": "Gus"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "冰箱",
+        "pinyin": "bīng xiāng",
+        "gloss": "fridge"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "Gus_RE_Greeting_0": {
+    "chinese": "我想要做一份我出了名的巨型煎蛋卷",
+    "english": "I want to make one of my famous giant omelettes",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "想要",
+        "pinyin": "xiǎng yào",
+        "gloss": "want"
+      },
+      {
+        "text": "做",
+        "pinyin": "zuò",
+        "gloss": "make"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "出了名",
+        "pinyin": "chū le míng",
+        "gloss": "famous"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "巨型",
+        "pinyin": "jù xíng",
+        "gloss": "giant"
+      },
+      {
+        "text": "煎蛋卷",
+        "pinyin": "jiān dàn juǎn",
+        "gloss": "omelette"
+      }
+    ]
+  },
+  "Gus_RE_Greeting_1": {
+    "chinese": "我想要再做一份巨型煎蛋卷",
+    "english": "I want to make another giant omelette",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "想要",
+        "pinyin": "xiǎng yào",
+        "gloss": "want"
+      },
+      {
+        "text": "再",
+        "pinyin": "zài",
+        "gloss": "again"
+      },
+      {
+        "text": "做",
+        "pinyin": "zuò",
+        "gloss": "make"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "巨型",
+        "pinyin": "jù xíng",
+        "gloss": "giant"
+      },
+      {
+        "text": "煎蛋卷",
+        "pinyin": "jiān dàn juǎn",
+        "gloss": "omelette"
+      }
+    ]
+  },
+  "Gus_Text": {
+    "chinese": "{Greeting}……我需要 24 个蛋。有人帮忙吗？——格斯",
+    "english": "{Greeting}... I need 24 eggs. Anyone help? -- Gus",
+    "segments": [
+      {
+        "text": "{Greeting}……",
+        "pinyin": "Greeting",
+        "gloss": "(greeting)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "需要 ",
+        "pinyin": "xū yào",
+        "gloss": "need"
+      },
+      {
+        "text": "24 ",
+        "pinyin": "24",
+        "gloss": "24"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "蛋。",
+        "pinyin": "dàn",
+        "gloss": "eggs"
+      },
+      {
+        "text": "有人",
+        "pinyin": "yǒu rén",
+        "gloss": "anyone"
+      },
+      {
+        "text": "帮忙",
+        "pinyin": "bāng máng",
+        "gloss": "help"
+      },
+      {
+        "text": "吗？——",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      },
+      {
+        "text": "格斯",
+        "pinyin": "gé sī",
+        "gloss": "Gus"
+      }
+    ]
+  },
+  "Lewis_Name": {
+    "chinese": "农作物订单",
+    "english": "Crop order",
+    "segments": [
+      {
+        "text": "农作物",
+        "pinyin": "nóng zuò wù",
+        "gloss": "crops"
+      },
+      {
+        "text": "订单",
+        "pinyin": "dìng dān",
+        "gloss": "order"
+      }
+    ]
+  },
+  "Lewis_Objective_0_Text": {
+    "chinese": "售出 100 份{Crop:Text}。",
+    "english": "Sell 100 portions of {Crop:Text}.",
+    "segments": [
+      {
+        "text": "售出 ",
+        "pinyin": "shòu chū",
+        "gloss": "sell"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "{Crop:Text}。",
+        "pinyin": "Crop Text",
+        "gloss": "(crop)"
+      }
+    ]
+  },
+  "Lewis_Objective_1_Text": {
+    "chinese": "收获 100 份{Crop:Text}。",
+    "english": "Harvest 100 portions of {Crop:Text}.",
+    "segments": [
+      {
+        "text": "收获 ",
+        "pinyin": "shōu huò",
+        "gloss": "harvest"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "{Crop:Text}。",
+        "pinyin": "Crop Text",
+        "gloss": "(crop)"
+      }
+    ]
+  },
+  "Lewis_RE_Text_0": {
+    "chinese": "今年{Crop:TextPlural}的需求量很大。",
+    "english": "This year the demand for {Crop:TextPlural} is very large.",
+    "segments": [
+      {
+        "text": "今年",
+        "pinyin": "jīn nián",
+        "gloss": "this year"
+      },
+      {
+        "text": "{Crop:TextPlural}",
+        "pinyin": "Crop TextPlural",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "需求量",
+        "pinyin": "xū qiú liàng",
+        "gloss": "demand"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "大。",
+        "pinyin": "dà",
+        "gloss": "large"
+      }
+    ]
+  },
+  "Lewis_RE_Text_1": {
+    "chinese": "{Crop:TextPlural}在祖祖市似乎得到了最新的“健康食物”称号。",
+    "english": "{Crop:TextPlural} seem to have gotten the newest \"health food\" title in Zuzu City.",
+    "segments": [
+      {
+        "text": "{Crop:TextPlural}",
+        "pinyin": "Crop TextPlural",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "祖祖市",
+        "pinyin": "zǔ zǔ shì",
+        "gloss": "Zuzu City"
+      },
+      {
+        "text": "似乎",
+        "pinyin": "sì hū",
+        "gloss": "seem"
+      },
+      {
+        "text": "得到",
+        "pinyin": "dé dào",
+        "gloss": "get"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "最新",
+        "pinyin": "zuì xīn",
+        "gloss": "latest"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "“健康",
+        "pinyin": "jiàn kāng",
+        "gloss": "healthy"
+      },
+      {
+        "text": "食物”",
+        "pinyin": "shí wù",
+        "gloss": "food"
+      },
+      {
+        "text": "称号。",
+        "pinyin": "chēng hào",
+        "gloss": "title"
+      }
+    ]
+  },
+  "Lewis_RE_Text_2": {
+    "chinese": "祖祖市掀起了一股新的美容热潮……据说，一种由{Crop:Text}制成的乳液可以去除皱纹。",
+    "english": "Zuzu City has stirred up a new beauty craze... reportedly, a lotion made from {Crop:Text} can remove wrinkles.",
+    "segments": [
+      {
+        "text": "祖祖市",
+        "pinyin": "zǔ zǔ shì",
+        "gloss": "Zuzu City"
+      },
+      {
+        "text": "掀起",
+        "pinyin": "xiān qǐ",
+        "gloss": "stir up"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "股",
+        "pinyin": "gǔ",
+        "gloss": "(measure word for trends)"
+      },
+      {
+        "text": "新",
+        "pinyin": "xīn",
+        "gloss": "new"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "美容",
+        "pinyin": "měi róng",
+        "gloss": "beauty"
+      },
+      {
+        "text": "热潮……",
+        "pinyin": "rè cháo",
+        "gloss": "craze"
+      },
+      {
+        "text": "据说，",
+        "pinyin": "jù shuō",
+        "gloss": "reportedly"
+      },
+      {
+        "text": "一种",
+        "pinyin": "yì zhǒng",
+        "gloss": "a kind of"
+      },
+      {
+        "text": "由",
+        "pinyin": "yóu",
+        "gloss": "from"
+      },
+      {
+        "text": "{Crop:Text}",
+        "pinyin": "Crop Text",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "制成",
+        "pinyin": "zhì chéng",
+        "gloss": "made"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "乳液",
+        "pinyin": "rǔ yè",
+        "gloss": "lotion"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "去除",
+        "pinyin": "qù chú",
+        "gloss": "remove"
+      },
+      {
+        "text": "皱纹。",
+        "pinyin": "zhòu wén",
+        "gloss": "wrinkles"
+      }
+    ]
+  },
+  "Lewis_RE_Text_3": {
+    "chinese": "最近有人看到酱汁女王在吃新鲜的{Crop:Text}。现在全世界都想尝尝看！",
+    "english": "Recently someone saw the Queen of Sauce eating fresh {Crop:Text}. Now the whole world wants to taste it!",
+    "segments": [
+      {
+        "text": "最近",
+        "pinyin": "zuì jìn",
+        "gloss": "recently"
+      },
+      {
+        "text": "有人",
+        "pinyin": "yǒu rén",
+        "gloss": "someone"
+      },
+      {
+        "text": "看到",
+        "pinyin": "kàn dào",
+        "gloss": "see"
+      },
+      {
+        "text": "酱汁",
+        "pinyin": "jiàng zhī",
+        "gloss": "sauce"
+      },
+      {
+        "text": "女王",
+        "pinyin": "nǚ wáng",
+        "gloss": "queen"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "吃",
+        "pinyin": "chī",
+        "gloss": "eat"
+      },
+      {
+        "text": "新鲜",
+        "pinyin": "xīn xiān",
+        "gloss": "fresh"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "{Crop:Text}。",
+        "pinyin": "Crop Text",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "现在",
+        "pinyin": "xiàn zài",
+        "gloss": "now"
+      },
+      {
+        "text": "全世界",
+        "pinyin": "quán shì jiè",
+        "gloss": "whole world"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "all"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "尝尝",
+        "pinyin": "cháng chang",
+        "gloss": "taste"
+      },
+      {
+        "text": "看！",
+        "pinyin": "kan",
+        "gloss": "(try and see)"
+      }
+    ]
+  },
+  "Lewis_RE_Text_4": {
+    "chinese": "州长正在举行宴会，他的厨师订购了大量的{Crop:TextPlural}。",
+    "english": "The governor is holding a banquet, and his chefs have ordered a large amount of {Crop:TextPlural}.",
+    "segments": [
+      {
+        "text": "州长",
+        "pinyin": "zhōu zhǎng",
+        "gloss": "governor"
+      },
+      {
+        "text": "正在",
+        "pinyin": "zhèng zài",
+        "gloss": "currently"
+      },
+      {
+        "text": "举行",
+        "pinyin": "jǔ xíng",
+        "gloss": "hold"
+      },
+      {
+        "text": "宴会，",
+        "pinyin": "yàn huì",
+        "gloss": "banquet"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "his"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "厨师",
+        "pinyin": "chú shī",
+        "gloss": "chefs"
+      },
+      {
+        "text": "订购",
+        "pinyin": "dìng gòu",
+        "gloss": "order"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "大量",
+        "pinyin": "dà liàng",
+        "gloss": "large amount"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "{Crop:TextPlural}。",
+        "pinyin": "Crop TextPlural",
+        "gloss": "(crop)"
+      }
+    ]
+  },
+  "Lewis_Text": {
+    "chinese": "{Text}所有在本季度结束前售出 100 份{Crop:TextPlural}的人都将获得一份由鹈鹕镇农业基金提供的丰厚奖励。",
+    "english": "{Text} Everyone who sells 100 portions of {Crop:TextPlural} before the end of this season will receive a generous reward provided by the Pelican Town Agricultural Fund.",
+    "segments": [
+      {
+        "text": "{Text}",
+        "pinyin": "Text",
+        "gloss": "(reason text)"
+      },
+      {
+        "text": "所有",
+        "pinyin": "suǒ yǒu",
+        "gloss": "all"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "本",
+        "pinyin": "běn",
+        "gloss": "this"
+      },
+      {
+        "text": "季度",
+        "pinyin": "jì dù",
+        "gloss": "season"
+      },
+      {
+        "text": "结束",
+        "pinyin": "jié shù",
+        "gloss": "end"
+      },
+      {
+        "text": "前",
+        "pinyin": "qián",
+        "gloss": "before"
+      },
+      {
+        "text": "售出 ",
+        "pinyin": "shòu chū",
+        "gloss": "sell"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "{Crop:TextPlural}",
+        "pinyin": "Crop TextPlural",
+        "gloss": "(crop)"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "人",
+        "pinyin": "rén",
+        "gloss": "people"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "all"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "will"
+      },
+      {
+        "text": "获得",
+        "pinyin": "huò dé",
+        "gloss": "receive"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "由",
+        "pinyin": "yóu",
+        "gloss": "by"
+      },
+      {
+        "text": "鹈鹕镇",
+        "pinyin": "tí hú zhèn",
+        "gloss": "Pelican Town"
+      },
+      {
+        "text": "农业",
+        "pinyin": "nóng yè",
+        "gloss": "agriculture"
+      },
+      {
+        "text": "基金",
+        "pinyin": "jī jīn",
+        "gloss": "fund"
+      },
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provide"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "丰厚",
+        "pinyin": "fēng hòu",
+        "gloss": "generous"
+      },
+      {
+        "text": "奖励。",
+        "pinyin": "jiǎng lì",
+        "gloss": "reward"
+      }
+    ]
+  },
+  "Linus_Name": {
+    "chinese": "社区清理",
+    "english": "Community cleanup",
+    "segments": [
+      {
+        "text": "社区",
+        "pinyin": "shè qū",
+        "gloss": "community"
+      },
+      {
+        "text": "清理",
+        "pinyin": "qīng lǐ",
+        "gloss": "cleanup"
+      }
+    ]
+  },
+  "Linus_Objective_0_Text": {
+    "chinese": "钓起 20 件垃圾。",
+    "english": "Fish up 20 pieces of trash.",
+    "segments": [
+      {
+        "text": "钓",
+        "pinyin": "diào",
+        "gloss": "fish"
+      },
+      {
+        "text": "起 ",
+        "pinyin": "qǐ",
+        "gloss": "(result: up)"
+      },
+      {
+        "text": "20 ",
+        "pinyin": "20",
+        "gloss": "20"
+      },
+      {
+        "text": "件",
+        "pinyin": "jiàn",
+        "gloss": "(measure word for items)"
+      },
+      {
+        "text": "垃圾。",
+        "pinyin": "lā jī",
+        "gloss": "trash"
+      }
+    ]
+  },
+  "Linus_Objective_1_Text": {
+    "chinese": "把垃圾倒在火车站台后面的回收桶里。",
+    "english": "Dump the trash in the recycling bin behind the train platform.",
+    "segments": [
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "垃圾",
+        "pinyin": "lā jī",
+        "gloss": "trash"
+      },
+      {
+        "text": "倒",
+        "pinyin": "dào",
+        "gloss": "dump"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "火车",
+        "pinyin": "huǒ chē",
+        "gloss": "train"
+      },
+      {
+        "text": "站台",
+        "pinyin": "zhàn tái",
+        "gloss": "platform"
+      },
+      {
+        "text": "后面",
+        "pinyin": "hòu miàn",
+        "gloss": "behind"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "回收",
+        "pinyin": "huí shōu",
+        "gloss": "recycling"
+      },
+      {
+        "text": "桶",
+        "pinyin": "tǒng",
+        "gloss": "bin"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "Linus_Text": {
+    "chinese": "我有个主意。水里有很多垃圾，我们为什么不钓一些出来，使山谷更美丽呢？——莱纳斯",
+    "english": "I have an idea. There's a lot of trash in the water, why don't we fish some out and make the valley more beautiful? -- Linus",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "have"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "主意。",
+        "pinyin": "zhǔ yi",
+        "gloss": "idea"
+      },
+      {
+        "text": "水",
+        "pinyin": "shuǐ",
+        "gloss": "water"
+      },
+      {
+        "text": "里",
+        "pinyin": "lǐ",
+        "gloss": "in"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "there is"
+      },
+      {
+        "text": "很多",
+        "pinyin": "hěn duō",
+        "gloss": "a lot of"
+      },
+      {
+        "text": "垃圾，",
+        "pinyin": "lā jī",
+        "gloss": "trash"
+      },
+      {
+        "text": "我们",
+        "pinyin": "wǒ men",
+        "gloss": "we"
+      },
+      {
+        "text": "为什么",
+        "pinyin": "wèi shén me",
+        "gloss": "why"
+      },
+      {
+        "text": "不",
+        "pinyin": "bú",
+        "gloss": "not"
+      },
+      {
+        "text": "钓",
+        "pinyin": "diào",
+        "gloss": "fish"
+      },
+      {
+        "text": "一些",
+        "pinyin": "yì xiē",
+        "gloss": "some"
+      },
+      {
+        "text": "出来，",
+        "pinyin": "chū lai",
+        "gloss": "(direction: out)"
+      },
+      {
+        "text": "使",
+        "pinyin": "shǐ",
+        "gloss": "make"
+      },
+      {
+        "text": "山谷",
+        "pinyin": "shān gǔ",
+        "gloss": "valley"
+      },
+      {
+        "text": "更",
+        "pinyin": "gèng",
+        "gloss": "more"
+      },
+      {
+        "text": "美丽",
+        "pinyin": "měi lì",
+        "gloss": "beautiful"
+      },
+      {
+        "text": "呢？——",
+        "pinyin": "ne",
+        "gloss": "(question particle)"
+      },
+      {
+        "text": "莱纳斯",
+        "pinyin": "lái nà sī",
+        "gloss": "Linus"
+      }
+    ]
+  },
+  "Marlon_DF_0_Name": {
+    "chinese": "怪物狩猎",
+    "english": "Monster hunting",
+    "segments": [
+      {
+        "text": "怪物",
+        "pinyin": "guài wu",
+        "gloss": "monster"
+      },
+      {
+        "text": "狩猎",
+        "pinyin": "shòu liè",
+        "gloss": "hunt"
+      }
+    ]
+  },
+  "Marlon_DF_0_Objective": {
+    "chinese": "杀掉 10 只{Monster:LocalizedName}。",
+    "english": "Kill 10 {Monster:LocalizedName}.",
+    "segments": [
+      {
+        "text": "杀掉 ",
+        "pinyin": "shā diào",
+        "gloss": "kill"
+      },
+      {
+        "text": "10 ",
+        "pinyin": "10",
+        "gloss": "10"
+      },
+      {
+        "text": "只",
+        "pinyin": "zhī",
+        "gloss": "(measure word for animals)"
+      },
+      {
+        "text": "{Monster:LocalizedName}。",
+        "pinyin": "Monster LocalizedName",
+        "gloss": "(monster)"
+      }
+    ]
+  },
+  "Marlon_DF_0_Text": {
+    "chinese": "进入骷髅洞穴，杀掉 10 只{Monster:LocalizedName}。",
+    "english": "Enter the Skull Cavern and kill 10 {Monster:LocalizedName}.",
+    "segments": [
+      {
+        "text": "进入",
+        "pinyin": "jìn rù",
+        "gloss": "enter"
+      },
+      {
+        "text": "骷髅",
+        "pinyin": "kū lóu",
+        "gloss": "skull"
+      },
+      {
+        "text": "洞穴，",
+        "pinyin": "dòng xué",
+        "gloss": "cavern"
+      },
+      {
+        "text": "杀掉 ",
+        "pinyin": "shā diào",
+        "gloss": "kill"
+      },
+      {
+        "text": "10 ",
+        "pinyin": "10",
+        "gloss": "10"
+      },
+      {
+        "text": "只",
+        "pinyin": "zhī",
+        "gloss": "(measure word for animals)"
+      },
+      {
+        "text": "{Monster:LocalizedName}。",
+        "pinyin": "Monster LocalizedName",
+        "gloss": "(monster)"
+      }
+    ]
+  },
+  "Marlon_DF_1_Name": {
+    "chinese": "深层探险",
+    "english": "Deep-level expedition",
+    "segments": [
+      {
+        "text": "深层",
+        "pinyin": "shēn céng",
+        "gloss": "deep level"
+      },
+      {
+        "text": "探险",
+        "pinyin": "tàn xiǎn",
+        "gloss": "expedition"
+      }
+    ]
+  },
+  "Marlon_DF_1_Objective": {
+    "chinese": "到达骷髅洞穴第 30 层。",
+    "english": "Reach floor 30 of the Skull Cavern.",
+    "segments": [
+      {
+        "text": "到达",
+        "pinyin": "dào dá",
+        "gloss": "reach"
+      },
+      {
+        "text": "骷髅",
+        "pinyin": "kū lóu",
+        "gloss": "skull"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "cavern"
+      },
+      {
+        "text": "第 ",
+        "pinyin": "dì",
+        "gloss": "(ordinal)"
+      },
+      {
+        "text": "30 ",
+        "pinyin": "30",
+        "gloss": "30"
+      },
+      {
+        "text": "层。",
+        "pinyin": "céng",
+        "gloss": "floor"
+      }
+    ]
+  },
+  "Marlon_DF_1_Text": {
+    "chinese": "到达骷髅洞穴第 30 层。",
+    "english": "Reach floor 30 of the Skull Cavern.",
+    "segments": [
+      {
+        "text": "到达",
+        "pinyin": "dào dá",
+        "gloss": "reach"
+      },
+      {
+        "text": "骷髅",
+        "pinyin": "kū lóu",
+        "gloss": "skull"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "cavern"
+      },
+      {
+        "text": "第 ",
+        "pinyin": "dì",
+        "gloss": "(ordinal)"
+      },
+      {
+        "text": "30 ",
+        "pinyin": "30",
+        "gloss": "30"
+      },
+      {
+        "text": "层。",
+        "pinyin": "céng",
+        "gloss": "floor"
+      }
+    ]
+  },
+  "Marlon_DF_2_Name": {
+    "chinese": "寻宝",
+    "english": "Treasure hunt",
+    "segments": [
+      {
+        "text": "寻宝",
+        "pinyin": "xún bǎo",
+        "gloss": "treasure hunt"
+      }
+    ]
+  },
+  "Marlon_DF_2_Objective": {
+    "chinese": "收集 {Treasure:Count} 个{Treasure:LocalizedName}。",
+    "english": "Collect {Treasure:Count} {Treasure:LocalizedName}.",
+    "segments": [
+      {
+        "text": "收集 ",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "{Treasure:Count} ",
+        "pinyin": "Treasure Count",
+        "gloss": "(number)"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "{Treasure:LocalizedName}。",
+        "pinyin": "Treasure LocalizedName",
+        "gloss": "(treasure)"
+      }
+    ]
+  },
+  "Marlon_DF_2_Text": {
+    "chinese": "在骷髅洞穴中收集 {Treasure:Count} 个{Treasure:LocalizedName}。",
+    "english": "Collect {Treasure:Count} {Treasure:LocalizedName} in the Skull Cavern.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "骷髅",
+        "pinyin": "kū lóu",
+        "gloss": "skull"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "cavern"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      },
+      {
+        "text": "收集 ",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "{Treasure:Count} ",
+        "pinyin": "Treasure Count",
+        "gloss": "(number)"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "{Treasure:LocalizedName}。",
+        "pinyin": "Treasure LocalizedName",
+        "gloss": "(treasure)"
+      }
+    ]
+  },
+  "Marlon_DF_Item_0_LocalizedName": {
+    "chinese": "万象晶球",
+    "english": "Omni geodes",
+    "segments": [
+      {
+        "text": "万象",
+        "pinyin": "wàn xiàng",
+        "gloss": "all phenomena (omni)"
+      },
+      {
+        "text": "晶球",
+        "pinyin": "jīng qiú",
+        "gloss": "geode"
+      }
+    ]
+  },
+  "Marlon_DF_Item_1_LocalizedName": {
+    "chinese": "铱矿石",
+    "english": "Iridium ore",
+    "segments": [
+      {
+        "text": "铱",
+        "pinyin": "yī",
+        "gloss": "iridium"
+      },
+      {
+        "text": "矿石",
+        "pinyin": "kuàng shí",
+        "gloss": "ore"
+      }
+    ]
+  },
+  "Marlon_DF_Item_2_LocalizedName": {
+    "chinese": "个五彩碎片",
+    "english": "(measure word) prismatic shards",
+    "segments": [
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "五彩",
+        "pinyin": "wǔ cǎi",
+        "gloss": "multicoloured"
+      },
+      {
+        "text": "碎片",
+        "pinyin": "suì piàn",
+        "gloss": "shard"
+      }
+    ]
+  },
+  "Marlon_DF_Monster_0_LocalizedName": {
+    "chinese": "飞蛇",
+    "english": "Flying snakes",
+    "segments": [
+      {
+        "text": "飞",
+        "pinyin": "fēi",
+        "gloss": "flying"
+      },
+      {
+        "text": "蛇",
+        "pinyin": "shé",
+        "gloss": "snake"
+      }
+    ]
+  },
+  "Marlon_DF_Monster_1_LocalizedName": {
+    "chinese": "紫色史莱姆",
+    "english": "Purple slimes",
+    "segments": [
+      {
+        "text": "紫色",
+        "pinyin": "zǐ sè",
+        "gloss": "purple"
+      },
+      {
+        "text": "史莱姆",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slime"
+      }
+    ]
+  },
+  "Marlon_DF_Monster_2_LocalizedName": {
+    "chinese": "木乃伊",
+    "english": "Mummies",
+    "segments": [
+      {
+        "text": "木乃伊",
+        "pinyin": "mù nǎi yī",
+        "gloss": "mummy"
+      }
+    ]
+  },
+  "Pam_Name": {
+    "chinese": "烈酒",
+    "english": "Strong liquor",
+    "segments": [
+      {
+        "text": "烈酒",
+        "pinyin": "liè jiǔ",
+        "gloss": "strong liquor"
+      }
+    ]
+  },
+  "Pam_Objective_0_Text": {
+    "chinese": "在小桶里装一些土豆，收集 12 桶。",
+    "english": "Put some potatoes in kegs, collect 12 kegs.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "小桶",
+        "pinyin": "xiǎo tǒng",
+        "gloss": "keg"
+      },
+      {
+        "text": "里",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      },
+      {
+        "text": "装",
+        "pinyin": "zhuāng",
+        "gloss": "load"
+      },
+      {
+        "text": "一些",
+        "pinyin": "yì xiē",
+        "gloss": "some"
+      },
+      {
+        "text": "土豆，",
+        "pinyin": "tǔ dòu",
+        "gloss": "potatoes"
+      },
+      {
+        "text": "收集 ",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "12 ",
+        "pinyin": "12",
+        "gloss": "12"
+      },
+      {
+        "text": "桶。",
+        "pinyin": "tǒng",
+        "gloss": "(measure word: kegs)"
+      }
+    ]
+  },
+  "Pam_Objective_1_Text": {
+    "chinese": "把东西放在潘姆的厨房里。",
+    "english": "Put the stuff in Pam's kitchen.",
+    "segments": [
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "东西",
+        "pinyin": "dōng xi",
+        "gloss": "stuff"
+      },
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "潘姆",
+        "pinyin": "pān mǔ",
+        "gloss": "Pam"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "厨房",
+        "pinyin": "chú fáng",
+        "gloss": "kitchen"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "Pam_Text": {
+    "chinese": "我听说有一种用土豆做的烈酒，超级猛——你懂的。可以帮我在小桶里放一点土豆，然后给我送来几桶吗？",
+    "english": "I heard there's a strong liquor made from potatoes, super potent -- you know. Can you help me put a bit of potato in a keg, then bring me a few kegs?",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "听说",
+        "pinyin": "tīng shuō",
+        "gloss": "hear"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "there is"
+      },
+      {
+        "text": "一种",
+        "pinyin": "yì zhǒng",
+        "gloss": "a kind of"
+      },
+      {
+        "text": "用",
+        "pinyin": "yòng",
+        "gloss": "with"
+      },
+      {
+        "text": "土豆",
+        "pinyin": "tǔ dòu",
+        "gloss": "potatoes"
+      },
+      {
+        "text": "做",
+        "pinyin": "zuò",
+        "gloss": "make"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "烈酒，",
+        "pinyin": "liè jiǔ",
+        "gloss": "strong liquor"
+      },
+      {
+        "text": "超级",
+        "pinyin": "chāo jí",
+        "gloss": "super"
+      },
+      {
+        "text": "猛——",
+        "pinyin": "měng",
+        "gloss": "fierce"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "懂",
+        "pinyin": "dǒng",
+        "gloss": "understand"
+      },
+      {
+        "text": "的。",
+        "pinyin": "de",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "帮",
+        "pinyin": "bāng",
+        "gloss": "help"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "me"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "小桶",
+        "pinyin": "xiǎo tǒng",
+        "gloss": "keg"
+      },
+      {
+        "text": "里",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      },
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "一点",
+        "pinyin": "yì diǎn",
+        "gloss": "a little"
+      },
+      {
+        "text": "土豆，",
+        "pinyin": "tǔ dòu",
+        "gloss": "potato"
+      },
+      {
+        "text": "然后",
+        "pinyin": "rán hòu",
+        "gloss": "then"
+      },
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "to"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "me"
+      },
+      {
+        "text": "送来",
+        "pinyin": "sòng lái",
+        "gloss": "deliver"
+      },
+      {
+        "text": "几",
+        "pinyin": "jǐ",
+        "gloss": "a few"
+      },
+      {
+        "text": "桶",
+        "pinyin": "tǒng",
+        "gloss": "(measure word: kegs)"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "Pierre_Name": {
+    "chinese": "皮埃尔优选",
+    "english": "Pierre's premium selection",
+    "segments": [
+      {
+        "text": "皮埃尔",
+        "pinyin": "pí āi ěr",
+        "gloss": "Pierre"
+      },
+      {
+        "text": "优选",
+        "pinyin": "yōu xuǎn",
+        "gloss": "premium pick"
+      }
+    ]
+  },
+  "Pierre_Objective_0_Text": {
+    "chinese": "收获金星品质的蔬菜。",
+    "english": "Harvest gold-star-quality vegetables.",
+    "segments": [
+      {
+        "text": "收获",
+        "pinyin": "shōu huò",
+        "gloss": "harvest"
+      },
+      {
+        "text": "金星",
+        "pinyin": "jīn xīng",
+        "gloss": "gold star"
+      },
+      {
+        "text": "品质",
+        "pinyin": "pǐn zhì",
+        "gloss": "quality"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "蔬菜。",
+        "pinyin": "shū cài",
+        "gloss": "vegetables"
+      }
+    ]
+  },
+  "Pierre_Objective_1_Text": {
+    "chinese": "把农作物放进皮埃尔商店里的空箱子中。",
+    "english": "Put the crops into the empty box in Pierre's store.",
+    "segments": [
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "农作物",
+        "pinyin": "nóng zuò wù",
+        "gloss": "crops"
+      },
+      {
+        "text": "放进",
+        "pinyin": "fàng jìn",
+        "gloss": "put into"
+      },
+      {
+        "text": "皮埃尔",
+        "pinyin": "pí āi ěr",
+        "gloss": "Pierre"
+      },
+      {
+        "text": "商店",
+        "pinyin": "shāng diàn",
+        "gloss": "store"
+      },
+      {
+        "text": "里",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "空",
+        "pinyin": "kōng",
+        "gloss": "empty"
+      },
+      {
+        "text": "箱子",
+        "pinyin": "xiāng zi",
+        "gloss": "box"
+      },
+      {
+        "text": "中。",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      }
+    ]
+  },
+  "Pierre_Text": {
+    "chinese": "你好。为了即将到来的促销活动，我打算售卖一些价格稍高的高品质蔬菜……考虑到我是节俭的店主，有谁知道哪里可以找到 25 份金星品质的蔬菜吗？",
+    "english": "Hello. For the upcoming promotion, I plan to sell some slightly pricier high-quality vegetables... considering I'm a frugal shopkeeper, does anyone know where to find 25 gold-star-quality vegetables?",
+    "segments": [
+      {
+        "text": "你好。",
+        "pinyin": "nǐ hǎo",
+        "gloss": "hello"
+      },
+      {
+        "text": "为了",
+        "pinyin": "wèi le",
+        "gloss": "for"
+      },
+      {
+        "text": "即将",
+        "pinyin": "jí jiāng",
+        "gloss": "soon"
+      },
+      {
+        "text": "到来",
+        "pinyin": "dào lái",
+        "gloss": "arrive"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "促销",
+        "pinyin": "cù xiāo",
+        "gloss": "promotion"
+      },
+      {
+        "text": "活动，",
+        "pinyin": "huó dòng",
+        "gloss": "event"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "打算",
+        "pinyin": "dǎ suàn",
+        "gloss": "plan"
+      },
+      {
+        "text": "售卖",
+        "pinyin": "shòu mài",
+        "gloss": "sell"
+      },
+      {
+        "text": "一些",
+        "pinyin": "yì xiē",
+        "gloss": "some"
+      },
+      {
+        "text": "价格",
+        "pinyin": "jià gé",
+        "gloss": "price"
+      },
+      {
+        "text": "稍",
+        "pinyin": "shāo",
+        "gloss": "slightly"
+      },
+      {
+        "text": "高",
+        "pinyin": "gāo",
+        "gloss": "high"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "高",
+        "pinyin": "gāo",
+        "gloss": "high"
+      },
+      {
+        "text": "品质",
+        "pinyin": "pǐn zhì",
+        "gloss": "quality"
+      },
+      {
+        "text": "蔬菜……",
+        "pinyin": "shū cài",
+        "gloss": "vegetables"
+      },
+      {
+        "text": "考虑到",
+        "pinyin": "kǎo lǜ dào",
+        "gloss": "considering"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "am"
+      },
+      {
+        "text": "节俭",
+        "pinyin": "jié jiǎn",
+        "gloss": "frugal"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "店主，",
+        "pinyin": "diàn zhǔ",
+        "gloss": "shopkeeper"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "is there"
+      },
+      {
+        "text": "谁",
+        "pinyin": "shéi",
+        "gloss": "anyone"
+      },
+      {
+        "text": "知道",
+        "pinyin": "zhī dào",
+        "gloss": "know"
+      },
+      {
+        "text": "哪里",
+        "pinyin": "nǎ lǐ",
+        "gloss": "where"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "找到 ",
+        "pinyin": "zhǎo dào",
+        "gloss": "find"
+      },
+      {
+        "text": "25 ",
+        "pinyin": "25",
+        "gloss": "25"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "金星",
+        "pinyin": "jīn xīng",
+        "gloss": "gold star"
+      },
+      {
+        "text": "品质",
+        "pinyin": "pǐn zhì",
+        "gloss": "quality"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "蔬菜",
+        "pinyin": "shū cài",
+        "gloss": "vegetables"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "QiChallenge10_Name": {
+    "chinese": "骷髅洞穴入侵",
+    "english": "Skull Cavern invasion",
+    "segments": [
+      {
+        "text": "骷髅",
+        "pinyin": "kū lóu",
+        "gloss": "skull"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "cavern"
+      },
+      {
+        "text": "入侵",
+        "pinyin": "rù qīn",
+        "gloss": "invasion"
+      }
+    ]
+  },
+  "QiChallenge10_Objective_0_Text": {
+    "chinese": "在骷髅洞穴抵达 100 层。",
+    "english": "Reach floor 100 in the Skull Cavern.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "骷髅",
+        "pinyin": "kū lóu",
+        "gloss": "skull"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "cavern"
+      },
+      {
+        "text": "抵达 ",
+        "pinyin": "dǐ dá",
+        "gloss": "reach"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "层。",
+        "pinyin": "céng",
+        "gloss": "floor"
+      }
+    ]
+  },
+  "QiChallenge10_Text": {
+    "chinese": "骷髅洞穴受到强大怪物的入侵。安全抵达 100 层吧。",
+    "english": "The Skull Cavern has been invaded by powerful monsters. Reach floor 100 safely.",
+    "segments": [
+      {
+        "text": "骷髅",
+        "pinyin": "kū lóu",
+        "gloss": "skull"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "cavern"
+      },
+      {
+        "text": "受到",
+        "pinyin": "shòu dào",
+        "gloss": "suffer"
+      },
+      {
+        "text": "强大",
+        "pinyin": "qiáng dà",
+        "gloss": "powerful"
+      },
+      {
+        "text": "怪物",
+        "pinyin": "guài wu",
+        "gloss": "monsters"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "入侵。",
+        "pinyin": "rù qīn",
+        "gloss": "invasion"
+      },
+      {
+        "text": "安全",
+        "pinyin": "ān quán",
+        "gloss": "safely"
+      },
+      {
+        "text": "抵达 ",
+        "pinyin": "dǐ dá",
+        "gloss": "reach"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "层",
+        "pinyin": "céng",
+        "gloss": "floor"
+      },
+      {
+        "text": "吧。",
+        "pinyin": "ba",
+        "gloss": "(suggestion)"
+      }
+    ]
+  },
+  "QiChallenge11_Name": {
+    "chinese": "找到齐先生的分身",
+    "english": "Find Mr. Qi's double",
+    "segments": [
+      {
+        "text": "找到",
+        "pinyin": "zhǎo dào",
+        "gloss": "find"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "分身",
+        "pinyin": "fēn shēn",
+        "gloss": "double"
+      }
+    ]
+  },
+  "QiChallenge11_Objective_0_Text": {
+    "chinese": "抓住齐先生的分身。",
+    "english": "Catch Mr. Qi's double.",
+    "segments": [
+      {
+        "text": "抓住",
+        "pinyin": "zhuā zhù",
+        "gloss": "catch"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "分身。",
+        "pinyin": "fēn shēn",
+        "gloss": "double"
+      }
+    ]
+  },
+  "QiChallenge11_Text": {
+    "chinese": "有另一个我藏在镇上的某个地方。你能抓住他吗？",
+    "english": "There's another me hidden somewhere in town. Can you catch him?",
+    "segments": [
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "there is"
+      },
+      {
+        "text": "另",
+        "pinyin": "lìng",
+        "gloss": "another"
+      },
+      {
+        "text": "一个",
+        "pinyin": "yí gè",
+        "gloss": "one"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "me"
+      },
+      {
+        "text": "藏",
+        "pinyin": "cáng",
+        "gloss": "hide"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "镇",
+        "pinyin": "zhèn",
+        "gloss": "town"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "in"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "某个",
+        "pinyin": "mǒu gè",
+        "gloss": "some"
+      },
+      {
+        "text": "地方。",
+        "pinyin": "dì fang",
+        "gloss": "place"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "抓住",
+        "pinyin": "zhuā zhù",
+        "gloss": "catch"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "him"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "QiChallenge12_Name": {
+    "chinese": "齐先生的五彩农场",
+    "english": "Mr. Qi's multicoloured farm",
+    "segments": [
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "五彩",
+        "pinyin": "wǔ cǎi",
+        "gloss": "multicoloured"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_0_Text": {
+    "chinese": "把 100 个红色的物品放进齐先生的收集箱里。",
+    "english": "Put 100 red items into Mr. Qi's collection box.",
+    "segments": [
+      {
+        "text": "把 ",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "红色",
+        "pinyin": "hóng sè",
+        "gloss": "red"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "放进",
+        "pinyin": "fàng jìn",
+        "gloss": "put into"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collection"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "box"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_1_Text": {
+    "chinese": "把 100 个橙色的物品放进齐先生的收集箱里。",
+    "english": "Put 100 orange items into Mr. Qi's collection box.",
+    "segments": [
+      {
+        "text": "把 ",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "橙色",
+        "pinyin": "chéng sè",
+        "gloss": "orange"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "放进",
+        "pinyin": "fàng jìn",
+        "gloss": "put into"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collection"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "box"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_2_Text": {
+    "chinese": "把 100 个黄色的物品放进齐先生的收集箱里。",
+    "english": "Put 100 yellow items into Mr. Qi's collection box.",
+    "segments": [
+      {
+        "text": "把 ",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "黄色",
+        "pinyin": "huáng sè",
+        "gloss": "yellow"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "放进",
+        "pinyin": "fàng jìn",
+        "gloss": "put into"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collection"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "box"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_3_Text": {
+    "chinese": "把 100 个绿色的物品放进齐先生的收集箱里。",
+    "english": "Put 100 green items into Mr. Qi's collection box.",
+    "segments": [
+      {
+        "text": "把 ",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "绿色",
+        "pinyin": "lǜ sè",
+        "gloss": "green"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "放进",
+        "pinyin": "fàng jìn",
+        "gloss": "put into"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collection"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "box"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_4_Text": {
+    "chinese": "把 100 个蓝色的物品放进齐先生的收集箱里。",
+    "english": "Put 100 blue items into Mr. Qi's collection box.",
+    "segments": [
+      {
+        "text": "把 ",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "蓝色",
+        "pinyin": "lán sè",
+        "gloss": "blue"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "放进",
+        "pinyin": "fàng jìn",
+        "gloss": "put into"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collection"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "box"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "QiChallenge12_Objective_5_Text": {
+    "chinese": "把 100 个紫色的物品放进齐先生的收集箱里。",
+    "english": "Put 100 purple items into Mr. Qi's collection box.",
+    "segments": [
+      {
+        "text": "把 ",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "紫色",
+        "pinyin": "zǐ sè",
+        "gloss": "purple"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "放进",
+        "pinyin": "fàng jìn",
+        "gloss": "put into"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collection"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "box"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "QiChallenge12_Text": {
+    "chinese": "找到红色、橙色、黄色、绿色、蓝色、紫色的物品各 100 个，把它们放进我的收集箱里。",
+    "english": "Find 100 each of red, orange, yellow, green, blue and purple items, and put them into my collection box.",
+    "segments": [
+      {
+        "text": "找到",
+        "pinyin": "zhǎo dào",
+        "gloss": "find"
+      },
+      {
+        "text": "红色、",
+        "pinyin": "hóng sè",
+        "gloss": "red"
+      },
+      {
+        "text": "橙色、",
+        "pinyin": "chéng sè",
+        "gloss": "orange"
+      },
+      {
+        "text": "黄色、",
+        "pinyin": "huáng sè",
+        "gloss": "yellow"
+      },
+      {
+        "text": "绿色、",
+        "pinyin": "lǜ sè",
+        "gloss": "green"
+      },
+      {
+        "text": "蓝色、",
+        "pinyin": "lán sè",
+        "gloss": "blue"
+      },
+      {
+        "text": "紫色",
+        "pinyin": "zǐ sè",
+        "gloss": "purple"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "各 ",
+        "pinyin": "gè",
+        "gloss": "each"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "个，",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "放进",
+        "pinyin": "fàng jìn",
+        "gloss": "put into"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collection"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "box"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "QiChallenge2_Name": {
+    "chinese": "齐先生的作物",
+    "english": "Mr. Qi's crop",
+    "segments": [
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "作物",
+        "pinyin": "zuò wù",
+        "gloss": "crop"
+      }
+    ]
+  },
+  "QiChallenge2_Objective_0_Text": {
+    "chinese": "售出 500 个齐瓜。",
+    "english": "Sell 500 Qi melons.",
+    "segments": [
+      {
+        "text": "售出 ",
+        "pinyin": "shòu chū",
+        "gloss": "sell"
+      },
+      {
+        "text": "500 ",
+        "pinyin": "500",
+        "gloss": "500"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "瓜。",
+        "pinyin": "guā",
+        "gloss": "melon"
+      }
+    ]
+  },
+  "QiChallenge2_Text": {
+    "chinese": "我把齐豆藏到了世界各地。把它们找出来，然后种下去，在期限内售出 500 个齐瓜。",
+    "english": "I've hidden Qi beans all over the world. Find them, then plant them, and sell 500 Qi melons within the time limit.",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "豆",
+        "pinyin": "dòu",
+        "gloss": "beans"
+      },
+      {
+        "text": "藏",
+        "pinyin": "cáng",
+        "gloss": "hide"
+      },
+      {
+        "text": "到",
+        "pinyin": "dào",
+        "gloss": "to"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "世界",
+        "pinyin": "shì jiè",
+        "gloss": "world"
+      },
+      {
+        "text": "各地。",
+        "pinyin": "gè dì",
+        "gloss": "all over"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "找",
+        "pinyin": "zhǎo",
+        "gloss": "find"
+      },
+      {
+        "text": "出来，",
+        "pinyin": "chū lai",
+        "gloss": "(direction: out)"
+      },
+      {
+        "text": "然后",
+        "pinyin": "rán hòu",
+        "gloss": "then"
+      },
+      {
+        "text": "种",
+        "pinyin": "zhòng",
+        "gloss": "plant"
+      },
+      {
+        "text": "下去，",
+        "pinyin": "xià qu",
+        "gloss": "(direction: down)"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "within"
+      },
+      {
+        "text": "期限",
+        "pinyin": "qī xiàn",
+        "gloss": "time limit"
+      },
+      {
+        "text": "内",
+        "pinyin": "nèi",
+        "gloss": "inside"
+      },
+      {
+        "text": "售出 ",
+        "pinyin": "shòu chū",
+        "gloss": "sell"
+      },
+      {
+        "text": "500 ",
+        "pinyin": "500",
+        "gloss": "500"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "瓜。",
+        "pinyin": "guā",
+        "gloss": "melon"
+      }
+    ]
+  },
+  "QiChallenge3_Name": {
+    "chinese": "来玩游戏吧",
+    "english": "Come play a game",
+    "segments": [
+      {
+        "text": "来",
+        "pinyin": "lái",
+        "gloss": "come"
+      },
+      {
+        "text": "玩",
+        "pinyin": "wán",
+        "gloss": "play"
+      },
+      {
+        "text": "游戏",
+        "pinyin": "yóu xì",
+        "gloss": "game"
+      },
+      {
+        "text": "吧",
+        "pinyin": "ba",
+        "gloss": "(suggestion)"
+      }
+    ]
+  },
+  "QiChallenge3_Objective_0_Text": {
+    "chinese": "在祝尼魔赛车无限模式下得 5 万分。",
+    "english": "Score 50,000 points in Junimo Kart endless mode.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "祝尼魔",
+        "pinyin": "zhù ní mó",
+        "gloss": "Junimo"
+      },
+      {
+        "text": "赛车",
+        "pinyin": "sài chē",
+        "gloss": "kart racing"
+      },
+      {
+        "text": "无限",
+        "pinyin": "wú xiàn",
+        "gloss": "endless"
+      },
+      {
+        "text": "模式",
+        "pinyin": "mó shì",
+        "gloss": "mode"
+      },
+      {
+        "text": "下",
+        "pinyin": "xià",
+        "gloss": "under"
+      },
+      {
+        "text": "得 ",
+        "pinyin": "dé",
+        "gloss": "score"
+      },
+      {
+        "text": "5 ",
+        "pinyin": "5",
+        "gloss": "5"
+      },
+      {
+        "text": "万",
+        "pinyin": "wàn",
+        "gloss": "ten thousand"
+      },
+      {
+        "text": "分。",
+        "pinyin": "fēn",
+        "gloss": "points"
+      }
+    ]
+  },
+  "QiChallenge3_Text": {
+    "chinese": "你能在祝尼魔赛车无限模式下得 5 万分吗？证明给我看。",
+    "english": "Can you score 50,000 points in Junimo Kart endless mode? Prove it to me.",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "祝尼魔",
+        "pinyin": "zhù ní mó",
+        "gloss": "Junimo"
+      },
+      {
+        "text": "赛车",
+        "pinyin": "sài chē",
+        "gloss": "kart racing"
+      },
+      {
+        "text": "无限",
+        "pinyin": "wú xiàn",
+        "gloss": "endless"
+      },
+      {
+        "text": "模式",
+        "pinyin": "mó shì",
+        "gloss": "mode"
+      },
+      {
+        "text": "下",
+        "pinyin": "xià",
+        "gloss": "under"
+      },
+      {
+        "text": "得 ",
+        "pinyin": "dé",
+        "gloss": "score"
+      },
+      {
+        "text": "5 ",
+        "pinyin": "5",
+        "gloss": "5"
+      },
+      {
+        "text": "万",
+        "pinyin": "wàn",
+        "gloss": "ten thousand"
+      },
+      {
+        "text": "分",
+        "pinyin": "fēn",
+        "gloss": "points"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      },
+      {
+        "text": "证明",
+        "pinyin": "zhèng míng",
+        "gloss": "prove"
+      },
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "to"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "me"
+      },
+      {
+        "text": "看。",
+        "pinyin": "kàn",
+        "gloss": "see"
+      }
+    ]
+  },
+  "QiChallenge4_Name": {
+    "chinese": "四颗宝石",
+    "english": "Four gems",
+    "segments": [
+      {
+        "text": "四",
+        "pinyin": "sì",
+        "gloss": "four"
+      },
+      {
+        "text": "颗",
+        "pinyin": "kē",
+        "gloss": "(measure word for small round things)"
+      },
+      {
+        "text": "宝石",
+        "pinyin": "bǎo shí",
+        "gloss": "gems"
+      }
+    ]
+  },
+  "QiChallenge4_Objective_0_Text": {
+    "chinese": "把 4 个五彩碎片放到齐先生的收集箱里。",
+    "english": "Put 4 prismatic shards into Mr. Qi's collection box.",
+    "segments": [
+      {
+        "text": "把 ",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "4 ",
+        "pinyin": "4",
+        "gloss": "4"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "五彩",
+        "pinyin": "wǔ cǎi",
+        "gloss": "multicoloured"
+      },
+      {
+        "text": "碎片",
+        "pinyin": "suì piàn",
+        "gloss": "shards"
+      },
+      {
+        "text": "放到",
+        "pinyin": "fàng dào",
+        "gloss": "put into"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collection"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "box"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "QiChallenge4_Text": {
+    "chinese": "找到 4 个五彩碎片。放到我的收集箱里。",
+    "english": "Find 4 prismatic shards. Put them into my collection box.",
+    "segments": [
+      {
+        "text": "找到 ",
+        "pinyin": "zhǎo dào",
+        "gloss": "find"
+      },
+      {
+        "text": "4 ",
+        "pinyin": "4",
+        "gloss": "4"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "五彩",
+        "pinyin": "wǔ cǎi",
+        "gloss": "multicoloured"
+      },
+      {
+        "text": "碎片。",
+        "pinyin": "suì piàn",
+        "gloss": "shards"
+      },
+      {
+        "text": "放到",
+        "pinyin": "fàng dào",
+        "gloss": "put into"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collection"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "box"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "QiChallenge5_Name": {
+    "chinese": "齐先生的饥饿挑战",
+    "english": "Mr. Qi's hunger challenge",
+    "segments": [
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "饥饿",
+        "pinyin": "jī è",
+        "gloss": "hunger"
+      },
+      {
+        "text": "挑战",
+        "pinyin": "tiǎo zhàn",
+        "gloss": "challenge"
+      }
+    ]
+  },
+  "QiChallenge5_Objective_0_Text": {
+    "chinese": "在骷髅洞穴到达 100 层。",
+    "english": "Reach floor 100 in the Skull Cavern.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "骷髅",
+        "pinyin": "kū lóu",
+        "gloss": "skull"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "cavern"
+      },
+      {
+        "text": "到达 ",
+        "pinyin": "dào dá",
+        "gloss": "reach"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "层。",
+        "pinyin": "céng",
+        "gloss": "floor"
+      }
+    ]
+  },
+  "QiChallenge5_Text": {
+    "chinese": "你的任务是在骷髅洞穴到达 100 层，而且不能吃不能喝。",
+    "english": "Your task is to reach floor 100 in the Skull Cavern, and you can't eat or drink.",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "任务",
+        "pinyin": "rèn wu",
+        "gloss": "task"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "骷髅",
+        "pinyin": "kū lóu",
+        "gloss": "skull"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "cavern"
+      },
+      {
+        "text": "到达 ",
+        "pinyin": "dào dá",
+        "gloss": "reach"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "层，",
+        "pinyin": "céng",
+        "gloss": "floor"
+      },
+      {
+        "text": "而且",
+        "pinyin": "ér qiě",
+        "gloss": "and"
+      },
+      {
+        "text": "不能",
+        "pinyin": "bù néng",
+        "gloss": "can't"
+      },
+      {
+        "text": "吃",
+        "pinyin": "chī",
+        "gloss": "eat"
+      },
+      {
+        "text": "不能",
+        "pinyin": "bù néng",
+        "gloss": "can't"
+      },
+      {
+        "text": "喝。",
+        "pinyin": "hē",
+        "gloss": "drink"
+      }
+    ]
+  },
+  "QiChallenge6_Name": {
+    "chinese": "齐先生的菜肴",
+    "english": "Mr. Qi's cuisine",
+    "segments": [
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "菜肴",
+        "pinyin": "cài yáo",
+        "gloss": "cuisine"
+      }
+    ]
+  },
+  "QiChallenge6_Objective_0_Text": {
+    "chinese": "售出价值 100,000 金的新鲜烹饪食品。",
+    "english": "Sell freshly cooked food worth 100,000 gold.",
+    "segments": [
+      {
+        "text": "售出",
+        "pinyin": "shòu chū",
+        "gloss": "sell"
+      },
+      {
+        "text": "价值 ",
+        "pinyin": "jià zhí",
+        "gloss": "worth"
+      },
+      {
+        "text": "100,000 ",
+        "pinyin": "100,000",
+        "gloss": "100,000"
+      },
+      {
+        "text": "金",
+        "pinyin": "jīn",
+        "gloss": "gold"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "新鲜",
+        "pinyin": "xīn xiān",
+        "gloss": "fresh"
+      },
+      {
+        "text": "烹饪",
+        "pinyin": "pēng rèn",
+        "gloss": "cooked"
+      },
+      {
+        "text": "食品。",
+        "pinyin": "shí pǐn",
+        "gloss": "food"
+      }
+    ]
+  },
+  "QiChallenge6_Text": {
+    "chinese": "售出价值 100,000 金的新鲜烹饪食品。",
+    "english": "Sell freshly cooked food worth 100,000 gold.",
+    "segments": [
+      {
+        "text": "售出",
+        "pinyin": "shòu chū",
+        "gloss": "sell"
+      },
+      {
+        "text": "价值 ",
+        "pinyin": "jià zhí",
+        "gloss": "worth"
+      },
+      {
+        "text": "100,000 ",
+        "pinyin": "100,000",
+        "gloss": "100,000"
+      },
+      {
+        "text": "金",
+        "pinyin": "jīn",
+        "gloss": "gold"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "新鲜",
+        "pinyin": "xīn xiān",
+        "gloss": "fresh"
+      },
+      {
+        "text": "烹饪",
+        "pinyin": "pēng rèn",
+        "gloss": "cooked"
+      },
+      {
+        "text": "食品。",
+        "pinyin": "shí pǐn",
+        "gloss": "food"
+      }
+    ]
+  },
+  "QiChallenge7_Name": {
+    "chinese": "齐先生的善意",
+    "english": "Mr. Qi's goodwill",
+    "segments": [
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "先生",
+        "pinyin": "xiān sheng",
+        "gloss": "Mr."
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "善意",
+        "pinyin": "shàn yì",
+        "gloss": "goodwill"
+      }
+    ]
+  },
+  "QiChallenge7_Objective_0_Text": {
+    "chinese": "在一周内送出 50 份受喜爱的礼物。",
+    "english": "Give 50 loved gifts within one week.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "within"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "周",
+        "pinyin": "zhōu",
+        "gloss": "week"
+      },
+      {
+        "text": "内",
+        "pinyin": "nèi",
+        "gloss": "inside"
+      },
+      {
+        "text": "送出 ",
+        "pinyin": "sòng chū",
+        "gloss": "give out"
+      },
+      {
+        "text": "50 ",
+        "pinyin": "50",
+        "gloss": "50"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "受",
+        "pinyin": "shòu",
+        "gloss": "receive"
+      },
+      {
+        "text": "喜爱",
+        "pinyin": "xǐ ài",
+        "gloss": "love"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "礼物。",
+        "pinyin": "lǐ wù",
+        "gloss": "gifts"
+      }
+    ]
+  },
+  "QiChallenge7_Text": {
+    "chinese": "在一周内送出 50 份受喜爱的礼物。",
+    "english": "Give 50 loved gifts within one week.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "within"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "周",
+        "pinyin": "zhōu",
+        "gloss": "week"
+      },
+      {
+        "text": "内",
+        "pinyin": "nèi",
+        "gloss": "inside"
+      },
+      {
+        "text": "送出 ",
+        "pinyin": "sòng chū",
+        "gloss": "give out"
+      },
+      {
+        "text": "50 ",
+        "pinyin": "50",
+        "gloss": "50"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "受",
+        "pinyin": "shòu",
+        "gloss": "receive"
+      },
+      {
+        "text": "喜爱",
+        "pinyin": "xǐ ài",
+        "gloss": "love"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "礼物。",
+        "pinyin": "lǐ wù",
+        "gloss": "gifts"
+      }
+    ]
+  },
+  "QiChallenge8_Name": {
+    "chinese": "大家族",
+    "english": "Big family",
+    "segments": [
+      {
+        "text": "大",
+        "pinyin": "dà",
+        "gloss": "big"
+      },
+      {
+        "text": "家族",
+        "pinyin": "jiā zú",
+        "gloss": "family (clan)"
+      }
+    ]
+  },
+  "QiChallenge8_Objective_0_Text": {
+    "chinese": "捕获雌鮟鱇鱼。",
+    "english": "Catch the female anglerfish.",
+    "segments": [
+      {
+        "text": "捕获",
+        "pinyin": "bǔ huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "雌",
+        "pinyin": "cí",
+        "gloss": "female"
+      },
+      {
+        "text": "鮟鱇鱼。",
+        "pinyin": "ān kāng yú",
+        "gloss": "anglerfish"
+      }
+    ]
+  },
+  "QiChallenge8_Objective_1_Text": {
+    "chinese": "捕获小冰川鱼。",
+    "english": "Catch the little glacier fish.",
+    "segments": [
+      {
+        "text": "捕获",
+        "pinyin": "bǔ huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "小",
+        "pinyin": "xiǎo",
+        "gloss": "little"
+      },
+      {
+        "text": "冰川",
+        "pinyin": "bīng chuān",
+        "gloss": "glacier"
+      },
+      {
+        "text": "鱼。",
+        "pinyin": "yú",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "QiChallenge8_Objective_2_Text": {
+    "chinese": "捕获绯红鱼之子。",
+    "english": "Catch the son of the crimson fish.",
+    "segments": [
+      {
+        "text": "捕获",
+        "pinyin": "bǔ huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "绯红",
+        "pinyin": "fēi hóng",
+        "gloss": "crimson"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      },
+      {
+        "text": "之",
+        "pinyin": "zhī",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "子。",
+        "pinyin": "zǐ",
+        "gloss": "son"
+      }
+    ]
+  },
+  "QiChallenge8_Objective_3_Text": {
+    "chinese": "捕获放射性鲤鱼。",
+    "english": "Catch the radioactive carp.",
+    "segments": [
+      {
+        "text": "捕获",
+        "pinyin": "bǔ huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "放射性",
+        "pinyin": "fàng shè xìng",
+        "gloss": "radioactive"
+      },
+      {
+        "text": "鲤鱼。",
+        "pinyin": "lǐ yú",
+        "gloss": "carp"
+      }
+    ]
+  },
+  "QiChallenge8_Objective_4_Text": {
+    "chinese": "捕获传说之鱼二代。",
+    "english": "Catch the legendary fish, second generation.",
+    "segments": [
+      {
+        "text": "捕获",
+        "pinyin": "bǔ huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "传说",
+        "pinyin": "chuán shuō",
+        "gloss": "legend"
+      },
+      {
+        "text": "之",
+        "pinyin": "zhī",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      },
+      {
+        "text": "二代。",
+        "pinyin": "èr dài",
+        "gloss": "second generation"
+      }
+    ]
+  },
+  "QiChallenge8_Text": {
+    "chinese": "传说鱼类的家族成员回到了山谷里。你要在三天内捕捉到雌鮟鱇鱼、小冰川鱼、绯红鱼之子、放射性鲤鱼，还有传说之鱼二代。",
+    "english": "Family members of the legendary fish have come back to the valley. You must catch the female anglerfish, the little glacier fish, the son of the crimson fish, the radioactive carp, and the legendary fish II within three days.",
+    "segments": [
+      {
+        "text": "传说",
+        "pinyin": "chuán shuō",
+        "gloss": "legendary"
+      },
+      {
+        "text": "鱼类",
+        "pinyin": "yú lèi",
+        "gloss": "fish"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "家族",
+        "pinyin": "jiā zú",
+        "gloss": "family"
+      },
+      {
+        "text": "成员",
+        "pinyin": "chéng yuán",
+        "gloss": "members"
+      },
+      {
+        "text": "回到",
+        "pinyin": "huí dào",
+        "gloss": "return to"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "山谷",
+        "pinyin": "shān gǔ",
+        "gloss": "valley"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "in"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "要",
+        "pinyin": "yào",
+        "gloss": "must"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "within"
+      },
+      {
+        "text": "三",
+        "pinyin": "sān",
+        "gloss": "three"
+      },
+      {
+        "text": "天",
+        "pinyin": "tiān",
+        "gloss": "days"
+      },
+      {
+        "text": "内",
+        "pinyin": "nèi",
+        "gloss": "inside"
+      },
+      {
+        "text": "捕捉",
+        "pinyin": "bǔ zhuō",
+        "gloss": "catch"
+      },
+      {
+        "text": "到",
+        "pinyin": "dào",
+        "gloss": "(result: attained)"
+      },
+      {
+        "text": "雌",
+        "pinyin": "cí",
+        "gloss": "female"
+      },
+      {
+        "text": "鮟鱇鱼、",
+        "pinyin": "ān kāng yú",
+        "gloss": "anglerfish"
+      },
+      {
+        "text": "小",
+        "pinyin": "xiǎo",
+        "gloss": "little"
+      },
+      {
+        "text": "冰川",
+        "pinyin": "bīng chuān",
+        "gloss": "glacier"
+      },
+      {
+        "text": "鱼、",
+        "pinyin": "yú",
+        "gloss": "fish"
+      },
+      {
+        "text": "绯红",
+        "pinyin": "fēi hóng",
+        "gloss": "crimson"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      },
+      {
+        "text": "之",
+        "pinyin": "zhī",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "子、",
+        "pinyin": "zǐ",
+        "gloss": "son"
+      },
+      {
+        "text": "放射性",
+        "pinyin": "fàng shè xìng",
+        "gloss": "radioactive"
+      },
+      {
+        "text": "鲤鱼，",
+        "pinyin": "lǐ yú",
+        "gloss": "carp"
+      },
+      {
+        "text": "还有",
+        "pinyin": "hái yǒu",
+        "gloss": "and also"
+      },
+      {
+        "text": "传说",
+        "pinyin": "chuán shuō",
+        "gloss": "legend"
+      },
+      {
+        "text": "之",
+        "pinyin": "zhī",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      },
+      {
+        "text": "二代。",
+        "pinyin": "èr dài",
+        "gloss": "second generation"
+      }
+    ]
+  },
+  "QiChallenge9_Name": {
+    "chinese": "深处的危险",
+    "english": "Danger in the depths",
+    "segments": [
+      {
+        "text": "深处",
+        "pinyin": "shēn chù",
+        "gloss": "depths"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "危险",
+        "pinyin": "wēi xiǎn",
+        "gloss": "danger"
+      }
+    ]
+  },
+  "QiChallenge9_Objective_0_Text": {
+    "chinese": "再次抵达矿井底部。",
+    "english": "Reach the bottom of the mine again.",
+    "segments": [
+      {
+        "text": "再次",
+        "pinyin": "zài cì",
+        "gloss": "again"
+      },
+      {
+        "text": "抵达",
+        "pinyin": "dǐ dá",
+        "gloss": "reach"
+      },
+      {
+        "text": "矿井",
+        "pinyin": "kuàng jǐng",
+        "gloss": "mine"
+      },
+      {
+        "text": "底部。",
+        "pinyin": "dǐ bù",
+        "gloss": "bottom"
+      }
+    ]
+  },
+  "QiChallenge9_Text": {
+    "chinese": "矿井的电梯系统已重置，地底深处出现了新的危险。在一周内到达矿井底部。",
+    "english": "The mine's elevator system has been reset, and new dangers have appeared deep underground. Reach the bottom of the mine within one week.",
+    "segments": [
+      {
+        "text": "矿井",
+        "pinyin": "kuàng jǐng",
+        "gloss": "mine"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "电梯",
+        "pinyin": "diàn tī",
+        "gloss": "elevator"
+      },
+      {
+        "text": "系统",
+        "pinyin": "xì tǒng",
+        "gloss": "system"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "重置，",
+        "pinyin": "chóng zhì",
+        "gloss": "reset"
+      },
+      {
+        "text": "地底",
+        "pinyin": "dì dǐ",
+        "gloss": "underground"
+      },
+      {
+        "text": "深处",
+        "pinyin": "shēn chù",
+        "gloss": "depths"
+      },
+      {
+        "text": "出现",
+        "pinyin": "chū xiàn",
+        "gloss": "appear"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "新",
+        "pinyin": "xīn",
+        "gloss": "new"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "危险。",
+        "pinyin": "wēi xiǎn",
+        "gloss": "dangers"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "within"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "周",
+        "pinyin": "zhōu",
+        "gloss": "week"
+      },
+      {
+        "text": "内",
+        "pinyin": "nèi",
+        "gloss": "inside"
+      },
+      {
+        "text": "到达",
+        "pinyin": "dào dá",
+        "gloss": "reach"
+      },
+      {
+        "text": "矿井",
+        "pinyin": "kuàng jǐng",
+        "gloss": "mine"
+      },
+      {
+        "text": "底部。",
+        "pinyin": "dǐ bù",
+        "gloss": "bottom"
+      }
+    ]
+  },
+  "QiChallenge_Name": {
+    "chinese": "五灾",
+    "english": "Five disasters",
+    "segments": [
+      {
+        "text": "五",
+        "pinyin": "wǔ",
+        "gloss": "five"
+      },
+      {
+        "text": "灾",
+        "pinyin": "zāi",
+        "gloss": "disaster"
+      }
+    ]
+  },
+  "QiChallenge_Objective_0_Text": {
+    "chinese": "售出 500 个齐瓜。",
+    "english": "Sell 500 Qi melons.",
+    "segments": [
+      {
+        "text": "售出 ",
+        "pinyin": "shòu chū",
+        "gloss": "sell"
+      },
+      {
+        "text": "500 ",
+        "pinyin": "500",
+        "gloss": "500"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "瓜。",
+        "pinyin": "guā",
+        "gloss": "melon"
+      }
+    ]
+  },
+  "QiChallenge_Text": {
+    "chinese": "我会给你 600 个齐豆。把它们种下去，好好栽培，然后在一周指内给售出至少 500 个果实。但要小心，五场灾害会降临，威胁到你的农作物……",
+    "english": "I'll give you 600 Qi beans. Plant them, cultivate them well, then sell at least 500 fruits within one week. But be careful, five disasters will descend, threatening your crops...",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "give"
+      },
+      {
+        "text": "你 ",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "600 ",
+        "pinyin": "600",
+        "gloss": "600"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "齐",
+        "pinyin": "qí",
+        "gloss": "Qi"
+      },
+      {
+        "text": "豆。",
+        "pinyin": "dòu",
+        "gloss": "beans"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "种",
+        "pinyin": "zhòng",
+        "gloss": "plant"
+      },
+      {
+        "text": "下去，",
+        "pinyin": "xià qu",
+        "gloss": "(direction: down)"
+      },
+      {
+        "text": "好好",
+        "pinyin": "hǎo hǎo",
+        "gloss": "properly"
+      },
+      {
+        "text": "栽培，",
+        "pinyin": "zāi péi",
+        "gloss": "cultivate"
+      },
+      {
+        "text": "然后",
+        "pinyin": "rán hòu",
+        "gloss": "then"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "within"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "周",
+        "pinyin": "zhōu",
+        "gloss": "week"
+      },
+      {
+        "text": "指",
+        "pinyin": "zhǐ",
+        "gloss": "(typo in source)"
+      },
+      {
+        "text": "内",
+        "pinyin": "nèi",
+        "gloss": "inside"
+      },
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "(typo in source)"
+      },
+      {
+        "text": "售出",
+        "pinyin": "shòu chū",
+        "gloss": "sell"
+      },
+      {
+        "text": "至少 ",
+        "pinyin": "zhì shǎo",
+        "gloss": "at least"
+      },
+      {
+        "text": "500 ",
+        "pinyin": "500",
+        "gloss": "500"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "果实。",
+        "pinyin": "guǒ shí",
+        "gloss": "fruits"
+      },
+      {
+        "text": "但",
+        "pinyin": "dàn",
+        "gloss": "but"
+      },
+      {
+        "text": "要",
+        "pinyin": "yào",
+        "gloss": "must"
+      },
+      {
+        "text": "小心，",
+        "pinyin": "xiǎo xīn",
+        "gloss": "be careful"
+      },
+      {
+        "text": "五",
+        "pinyin": "wǔ",
+        "gloss": "five"
+      },
+      {
+        "text": "场",
+        "pinyin": "cháng",
+        "gloss": "(measure word for events)"
+      },
+      {
+        "text": "灾害",
+        "pinyin": "zāi hài",
+        "gloss": "disasters"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "降临，",
+        "pinyin": "jiàng lín",
+        "gloss": "descend"
+      },
+      {
+        "text": "威胁",
+        "pinyin": "wēi xié",
+        "gloss": "threaten"
+      },
+      {
+        "text": "到",
+        "pinyin": "dào",
+        "gloss": "(result: reach)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "农作物……",
+        "pinyin": "nóng zuò wù",
+        "gloss": "crops"
+      }
+    ]
+  },
+  "Robin2_Name": {
+    "chinese": "罗宾的资源活动",
+    "english": "Robin's resource event",
+    "segments": [
+      {
+        "text": "罗宾",
+        "pinyin": "luó bīn",
+        "gloss": "Robin"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "资源",
+        "pinyin": "zī yuán",
+        "gloss": "resource"
+      },
+      {
+        "text": "活动",
+        "pinyin": "huó dòng",
+        "gloss": "event"
+      }
+    ]
+  },
+  "Robin2_Objective_0_Text": {
+    "chinese": "收集 1000 份{Resource:Text}。",
+    "english": "Collect 1000 units of {Resource:Text}.",
+    "segments": [
+      {
+        "text": "收集 ",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "1000 ",
+        "pinyin": "1000",
+        "gloss": "1000"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "{Resource:Text}。",
+        "pinyin": "Resource Text",
+        "gloss": "(resource)"
+      }
+    ]
+  },
+  "Robin2_Text": {
+    "chinese": "我想搞一次小小的促销活动，当然只是为了娱乐。如果有人能在一周内收集到 1000 份{Resource:Text}，就能获得一份奖赏。而且你可以留着收集到的{Resource:Text}！——罗宾",
+    "english": "I want to run a small promotion, of course just for fun. If anyone can collect 1000 units of {Resource:Text} within one week, they can get a reward. And you can keep the {Resource:Text} you collected! -- Robin",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "搞",
+        "pinyin": "gǎo",
+        "gloss": "do"
+      },
+      {
+        "text": "一次",
+        "pinyin": "yí cì",
+        "gloss": "one time"
+      },
+      {
+        "text": "小小",
+        "pinyin": "xiǎo xiǎo",
+        "gloss": "little"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "促销",
+        "pinyin": "cù xiāo",
+        "gloss": "promotion"
+      },
+      {
+        "text": "活动，",
+        "pinyin": "huó dòng",
+        "gloss": "event"
+      },
+      {
+        "text": "当然",
+        "pinyin": "dāng rán",
+        "gloss": "of course"
+      },
+      {
+        "text": "只是",
+        "pinyin": "zhǐ shì",
+        "gloss": "only"
+      },
+      {
+        "text": "为了",
+        "pinyin": "wèi le",
+        "gloss": "for"
+      },
+      {
+        "text": "娱乐。",
+        "pinyin": "yú lè",
+        "gloss": "fun"
+      },
+      {
+        "text": "如果",
+        "pinyin": "rú guǒ",
+        "gloss": "if"
+      },
+      {
+        "text": "有人",
+        "pinyin": "yǒu rén",
+        "gloss": "anyone"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "within"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "周",
+        "pinyin": "zhōu",
+        "gloss": "week"
+      },
+      {
+        "text": "内",
+        "pinyin": "nèi",
+        "gloss": "inside"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "到 ",
+        "pinyin": "dào",
+        "gloss": "(result: attained)"
+      },
+      {
+        "text": "1000 ",
+        "pinyin": "1000",
+        "gloss": "1000"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "{Resource:Text}，",
+        "pinyin": "Resource Text",
+        "gloss": "(resource)"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "then"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "获得",
+        "pinyin": "huò dé",
+        "gloss": "get"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "奖赏。",
+        "pinyin": "jiǎng shǎng",
+        "gloss": "reward"
+      },
+      {
+        "text": "而且",
+        "pinyin": "ér qiě",
+        "gloss": "and"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "留着",
+        "pinyin": "liú zhe",
+        "gloss": "keep"
+      },
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "到",
+        "pinyin": "dào",
+        "gloss": "(result: attained)"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "{Resource:Text}！——",
+        "pinyin": "Resource Text",
+        "gloss": "(resource)"
+      },
+      {
+        "text": "罗宾",
+        "pinyin": "luó bīn",
+        "gloss": "Robin"
+      }
+    ]
+  },
+  "Robin_Name": {
+    "chinese": "罗宾的项目",
+    "english": "Robin's project",
+    "segments": [
+      {
+        "text": "罗宾",
+        "pinyin": "luó bīn",
+        "gloss": "Robin"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "项目",
+        "pinyin": "xiàng mù",
+        "gloss": "project"
+      }
+    ]
+  },
+  "Robin_Objective_0_Text": {
+    "chinese": "收集 80 块硬木。",
+    "english": "Collect 80 pieces of hardwood.",
+    "segments": [
+      {
+        "text": "收集 ",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "80 ",
+        "pinyin": "80",
+        "gloss": "80"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for pieces)"
+      },
+      {
+        "text": "硬木。",
+        "pinyin": "yìng mù",
+        "gloss": "hardwood"
+      }
+    ]
+  },
+  "Robin_Objective_1_Text": {
+    "chinese": "把硬木放到罗宾房子的库存中。",
+    "english": "Put the hardwood into the stock at Robin's house.",
+    "segments": [
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "硬木",
+        "pinyin": "yìng mù",
+        "gloss": "hardwood"
+      },
+      {
+        "text": "放到",
+        "pinyin": "fàng dào",
+        "gloss": "put into"
+      },
+      {
+        "text": "罗宾",
+        "pinyin": "luó bīn",
+        "gloss": "Robin"
+      },
+      {
+        "text": "房子",
+        "pinyin": "fáng zi",
+        "gloss": "house"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "库存",
+        "pinyin": "kù cún",
+        "gloss": "stock"
+      },
+      {
+        "text": "中。",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      }
+    ]
+  },
+  "Robin_Text": {
+    "chinese": "嗨！我构思了一种新造型的床，但我需要 80 块硬木才能做出来。有人能帮把手吗？——罗宾",
+    "english": "Hi! I've conceived a new style of bed, but I need 80 pieces of hardwood to make it. Can anyone lend a hand? -- Robin",
+    "segments": [
+      {
+        "text": "嗨！",
+        "pinyin": "hāi",
+        "gloss": "hi"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "构思",
+        "pinyin": "gòu sī",
+        "gloss": "conceive"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "一种",
+        "pinyin": "yì zhǒng",
+        "gloss": "a kind of"
+      },
+      {
+        "text": "新",
+        "pinyin": "xīn",
+        "gloss": "new"
+      },
+      {
+        "text": "造型",
+        "pinyin": "zào xíng",
+        "gloss": "style"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "床，",
+        "pinyin": "chuáng",
+        "gloss": "bed"
+      },
+      {
+        "text": "但",
+        "pinyin": "dàn",
+        "gloss": "but"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "需要 ",
+        "pinyin": "xū yào",
+        "gloss": "need"
+      },
+      {
+        "text": "80 ",
+        "pinyin": "80",
+        "gloss": "80"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for pieces)"
+      },
+      {
+        "text": "硬木",
+        "pinyin": "yìng mù",
+        "gloss": "hardwood"
+      },
+      {
+        "text": "才",
+        "pinyin": "cái",
+        "gloss": "only then"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "做",
+        "pinyin": "zuò",
+        "gloss": "make"
+      },
+      {
+        "text": "出来。",
+        "pinyin": "chū lai",
+        "gloss": "(result: out)"
+      },
+      {
+        "text": "有人",
+        "pinyin": "yǒu rén",
+        "gloss": "anyone"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "帮把手",
+        "pinyin": "bāng bǎ shǒu",
+        "gloss": "lend a hand"
+      },
+      {
+        "text": "吗？——",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      },
+      {
+        "text": "罗宾",
+        "pinyin": "luó bīn",
+        "gloss": "Robin"
+      }
+    ]
+  },
+  "Willy2_Name": {
+    "chinese": "热带鱼",
+    "english": "Tropical fish",
+    "segments": [
+      {
+        "text": "热带",
+        "pinyin": "rè dài",
+        "gloss": "tropical"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Willy2_Objective_0_Text": {
+    "chinese": "捕获 5 条狮子鱼。",
+    "english": "Catch 5 lionfish.",
+    "segments": [
+      {
+        "text": "捕获 ",
+        "pinyin": "bǔ huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "5 ",
+        "pinyin": "5",
+        "gloss": "5"
+      },
+      {
+        "text": "条",
+        "pinyin": "tiáo",
+        "gloss": "(measure word for fish)"
+      },
+      {
+        "text": "狮子鱼。",
+        "pinyin": "shī zi yú",
+        "gloss": "lionfish"
+      }
+    ]
+  },
+  "Willy2_Objective_1_Text": {
+    "chinese": "捕获 5 条蓝铁饼鱼。",
+    "english": "Catch 5 blue discus fish.",
+    "segments": [
+      {
+        "text": "捕获 ",
+        "pinyin": "bǔ huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "5 ",
+        "pinyin": "5",
+        "gloss": "5"
+      },
+      {
+        "text": "条",
+        "pinyin": "tiáo",
+        "gloss": "(measure word for fish)"
+      },
+      {
+        "text": "蓝",
+        "pinyin": "lán",
+        "gloss": "blue"
+      },
+      {
+        "text": "铁饼",
+        "pinyin": "tiě bǐng",
+        "gloss": "discus"
+      },
+      {
+        "text": "鱼。",
+        "pinyin": "yú",
+        "gloss": "fish"
+      }
+    ]
+  },
+  "Willy2_Objective_2_Text": {
+    "chinese": "捕获 5 条黄貂鱼。",
+    "english": "Catch 5 stingrays.",
+    "segments": [
+      {
+        "text": "捕获 ",
+        "pinyin": "bǔ huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "5 ",
+        "pinyin": "5",
+        "gloss": "5"
+      },
+      {
+        "text": "条",
+        "pinyin": "tiáo",
+        "gloss": "(measure word for fish)"
+      },
+      {
+        "text": "黄貂鱼。",
+        "pinyin": "huáng diāo yú",
+        "gloss": "stingray"
+      }
+    ]
+  },
+  "Willy2_Text": {
+    "chinese": "在热带地区钓鱼的体验是无与伦比的……为了让这项技艺得到传承，所有带来大量岛屿渔获的人都能得到我的奖励。",
+    "english": "The experience of fishing in the tropics is unmatched... to let this craft be passed on, everyone who brings a big island catch can get my reward.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "热带",
+        "pinyin": "rè dài",
+        "gloss": "tropical"
+      },
+      {
+        "text": "地区",
+        "pinyin": "dì qū",
+        "gloss": "region"
+      },
+      {
+        "text": "钓鱼",
+        "pinyin": "diào yú",
+        "gloss": "fishing"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "体验",
+        "pinyin": "tǐ yàn",
+        "gloss": "experience"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "无与伦比",
+        "pinyin": "wú yǔ lún bǐ",
+        "gloss": "incomparable"
+      },
+      {
+        "text": "的……",
+        "pinyin": "de",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "为了",
+        "pinyin": "wèi le",
+        "gloss": "in order to"
+      },
+      {
+        "text": "让",
+        "pinyin": "ràng",
+        "gloss": "let"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "项",
+        "pinyin": "xiàng",
+        "gloss": "(measure word for skills)"
+      },
+      {
+        "text": "技艺",
+        "pinyin": "jì yì",
+        "gloss": "craft"
+      },
+      {
+        "text": "得到",
+        "pinyin": "dé dào",
+        "gloss": "get"
+      },
+      {
+        "text": "传承，",
+        "pinyin": "chuán chéng",
+        "gloss": "passing on"
+      },
+      {
+        "text": "所有",
+        "pinyin": "suǒ yǒu",
+        "gloss": "all"
+      },
+      {
+        "text": "带来",
+        "pinyin": "dài lái",
+        "gloss": "bring"
+      },
+      {
+        "text": "大量",
+        "pinyin": "dà liàng",
+        "gloss": "large amount"
+      },
+      {
+        "text": "岛屿",
+        "pinyin": "dǎo yǔ",
+        "gloss": "island"
+      },
+      {
+        "text": "渔获",
+        "pinyin": "yú huò",
+        "gloss": "catch"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "人",
+        "pinyin": "rén",
+        "gloss": "people"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "all"
+      },
+      {
+        "text": "能",
+        "pinyin": "néng",
+        "gloss": "can"
+      },
+      {
+        "text": "得到",
+        "pinyin": "dé dào",
+        "gloss": "get"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "奖励。",
+        "pinyin": "jiǎng lì",
+        "gloss": "reward"
+      }
+    ]
+  },
+  "Willy_Name": {
+    "chinese": "需要多汁的虫子！",
+    "english": "Need juicy bugs!",
+    "segments": [
+      {
+        "text": "需要",
+        "pinyin": "xū yào",
+        "gloss": "need"
+      },
+      {
+        "text": "多汁",
+        "pinyin": "duō zhī",
+        "gloss": "juicy"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "虫子！",
+        "pinyin": "chóng zi",
+        "gloss": "bugs"
+      }
+    ]
+  },
+  "Willy_Objective_0_Text": {
+    "chinese": "收集一些虫肉。",
+    "english": "Collect some bug meat.",
+    "segments": [
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collect"
+      },
+      {
+        "text": "一些",
+        "pinyin": "yì xiē",
+        "gloss": "some"
+      },
+      {
+        "text": "虫",
+        "pinyin": "chóng",
+        "gloss": "bug"
+      },
+      {
+        "text": "肉。",
+        "pinyin": "ròu",
+        "gloss": "meat"
+      }
+    ]
+  },
+  "Willy_Objective_1_Text": {
+    "chinese": "把虫肉放进威利房子旁边的桶里。",
+    "english": "Put the bug meat into the barrel next to Willy's house.",
+    "segments": [
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "虫",
+        "pinyin": "chóng",
+        "gloss": "bug"
+      },
+      {
+        "text": "肉",
+        "pinyin": "ròu",
+        "gloss": "meat"
+      },
+      {
+        "text": "放进",
+        "pinyin": "fàng jìn",
+        "gloss": "put into"
+      },
+      {
+        "text": "威利",
+        "pinyin": "wēi lì",
+        "gloss": "Willy"
+      },
+      {
+        "text": "房子",
+        "pinyin": "fáng zi",
+        "gloss": "house"
+      },
+      {
+        "text": "旁边",
+        "pinyin": "páng biān",
+        "gloss": "next to"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "桶",
+        "pinyin": "tǒng",
+        "gloss": "barrel"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "Willy_Text": {
+    "chinese": "你好啊，我需要大量的虫子内脏。越多汁越好……至少，螃蟹似乎喜欢多汁的虫子……100 块应该就够用了。",
+    "english": "Hello, I need a large amount of bug guts. The juicier the better... at least, crabs seem to like juicy bugs... 100 pieces should be enough to use.",
+    "segments": [
+      {
+        "text": "你好",
+        "pinyin": "nǐ hǎo",
+        "gloss": "hello"
+      },
+      {
+        "text": "啊，",
+        "pinyin": "a",
+        "gloss": "(exclamation)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "需要",
+        "pinyin": "xū yào",
+        "gloss": "need"
+      },
+      {
+        "text": "大量",
+        "pinyin": "dà liàng",
+        "gloss": "a large amount"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "虫子",
+        "pinyin": "chóng zi",
+        "gloss": "bug"
+      },
+      {
+        "text": "内脏。",
+        "pinyin": "nèi zàng",
+        "gloss": "guts"
+      },
+      {
+        "text": "越",
+        "pinyin": "yuè",
+        "gloss": "the more"
+      },
+      {
+        "text": "多汁",
+        "pinyin": "duō zhī",
+        "gloss": "juicy"
+      },
+      {
+        "text": "越",
+        "pinyin": "yuè",
+        "gloss": "the more"
+      },
+      {
+        "text": "好……",
+        "pinyin": "hǎo",
+        "gloss": "good"
+      },
+      {
+        "text": "至少，",
+        "pinyin": "zhì shǎo",
+        "gloss": "at least"
+      },
+      {
+        "text": "螃蟹",
+        "pinyin": "páng xiè",
+        "gloss": "crabs"
+      },
+      {
+        "text": "似乎",
+        "pinyin": "sì hū",
+        "gloss": "seem"
+      },
+      {
+        "text": "喜欢",
+        "pinyin": "xǐ huan",
+        "gloss": "like"
+      },
+      {
+        "text": "多汁",
+        "pinyin": "duō zhī",
+        "gloss": "juicy"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "虫子……",
+        "pinyin": "chóng zi",
+        "gloss": "bugs"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "100",
+        "gloss": "100"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for pieces)"
+      },
+      {
+        "text": "应该",
+        "pinyin": "yīng gāi",
+        "gloss": "should"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "then"
+      },
+      {
+        "text": "够用",
+        "pinyin": "gòu yòng",
+        "gloss": "be enough"
+      },
+      {
+        "text": "了。",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      }
+    ]
+  },
+  "Wizard2_Name": {
+    "chinese": "五彩胶冻",
+    "english": "Multicoloured jelly",
+    "segments": [
+      {
+        "text": "五彩",
+        "pinyin": "wǔ cǎi",
+        "gloss": "multicoloured"
+      },
+      {
+        "text": "胶冻",
+        "pinyin": "jiāo dòng",
+        "gloss": "jelly"
+      }
+    ]
+  },
+  "Wizard2_Objective_0_Text": {
+    "chinese": "杀死一只五彩史莱姆。",
+    "english": "Kill a prismatic slime.",
+    "segments": [
+      {
+        "text": "杀死",
+        "pinyin": "shā sǐ",
+        "gloss": "kill"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "只",
+        "pinyin": "zhī",
+        "gloss": "(measure word for animals)"
+      },
+      {
+        "text": "五彩",
+        "pinyin": "wǔ cǎi",
+        "gloss": "multicoloured"
+      },
+      {
+        "text": "史莱姆。",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slime"
+      }
+    ]
+  },
+  "Wizard2_Objective_1_Message": {
+    "chinese": "啊……你已经狩猎回来了。我感觉得到这是一次成功的狩猎！$h#$b#来，把胶冻给我然后就走吧！我还有重要的工作要做。",
+    "english": "Ah... you've already come back from the hunt. I can feel this was a successful hunt! Come, give me the jelly and then leave! I still have important work to do.",
+    "segments": [
+      {
+        "text": "啊……",
+        "pinyin": "a",
+        "gloss": "ah"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "已经",
+        "pinyin": "yǐ jīng",
+        "gloss": "already"
+      },
+      {
+        "text": "狩猎",
+        "pinyin": "shòu liè",
+        "gloss": "hunt"
+      },
+      {
+        "text": "回来",
+        "pinyin": "huí lai",
+        "gloss": "come back"
+      },
+      {
+        "text": "了。",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "感觉",
+        "pinyin": "gǎn jué",
+        "gloss": "feel"
+      },
+      {
+        "text": "得",
+        "pinyin": "de",
+        "gloss": "(potential: can)"
+      },
+      {
+        "text": "到",
+        "pinyin": "dào",
+        "gloss": "(result: attained)"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "一次",
+        "pinyin": "yí cì",
+        "gloss": "one"
+      },
+      {
+        "text": "成功",
+        "pinyin": "chéng gōng",
+        "gloss": "successful"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "狩猎！$h#$b#",
+        "pinyin": "shòu liè",
+        "gloss": "hunt"
+      },
+      {
+        "text": "来，",
+        "pinyin": "lái",
+        "gloss": "come"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "胶冻",
+        "pinyin": "jiāo dòng",
+        "gloss": "jelly"
+      },
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "give"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "me"
+      },
+      {
+        "text": "然后",
+        "pinyin": "rán hòu",
+        "gloss": "then"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "just"
+      },
+      {
+        "text": "走",
+        "pinyin": "zǒu",
+        "gloss": "leave"
+      },
+      {
+        "text": "吧！",
+        "pinyin": "ba",
+        "gloss": "(suggestion)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "还有",
+        "pinyin": "hái yǒu",
+        "gloss": "still have"
+      },
+      {
+        "text": "重要",
+        "pinyin": "zhòng yào",
+        "gloss": "important"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "工作",
+        "pinyin": "gōng zuò",
+        "gloss": "work"
+      },
+      {
+        "text": "要",
+        "pinyin": "yào",
+        "gloss": "need to"
+      },
+      {
+        "text": "做。",
+        "pinyin": "zuò",
+        "gloss": "do"
+      }
+    ]
+  },
+  "Wizard2_Objective_1_Text": {
+    "chinese": "给法师送去一份五彩胶冻。",
+    "english": "Deliver a portion of prismatic jelly to the Wizard.",
+    "segments": [
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "to"
+      },
+      {
+        "text": "法师",
+        "pinyin": "fǎ shī",
+        "gloss": "wizard"
+      },
+      {
+        "text": "送去",
+        "pinyin": "sòng qù",
+        "gloss": "deliver"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "五彩",
+        "pinyin": "wǔ cǎi",
+        "gloss": "multicoloured"
+      },
+      {
+        "text": "胶冻。",
+        "pinyin": "jiāo dòng",
+        "gloss": "jelly"
+      }
+    ]
+  },
+  "Wizard2_Text": {
+    "chinese": "我需要人手协助追查当地洞穴内罕见而危险的五彩史莱姆。给我拿一罐它的五彩胶冻来，你会得到应有的奖励的。——M·拉斯莫迪斯",
+    "english": "I need help tracking down the rare and dangerous prismatic slime in the local caves. Bring me a jar of its prismatic jelly, and you'll get the reward you deserve. -- M. Rasmodius",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "需要",
+        "pinyin": "xū yào",
+        "gloss": "need"
+      },
+      {
+        "text": "人手",
+        "pinyin": "rén shǒu",
+        "gloss": "manpower"
+      },
+      {
+        "text": "协助",
+        "pinyin": "xié zhù",
+        "gloss": "assist"
+      },
+      {
+        "text": "追查",
+        "pinyin": "zhuī chá",
+        "gloss": "track down"
+      },
+      {
+        "text": "当地",
+        "pinyin": "dāng dì",
+        "gloss": "local"
+      },
+      {
+        "text": "洞穴",
+        "pinyin": "dòng xué",
+        "gloss": "caves"
+      },
+      {
+        "text": "内",
+        "pinyin": "nèi",
+        "gloss": "inside"
+      },
+      {
+        "text": "罕见",
+        "pinyin": "hǎn jiàn",
+        "gloss": "rare"
+      },
+      {
+        "text": "而",
+        "pinyin": "ér",
+        "gloss": "and"
+      },
+      {
+        "text": "危险",
+        "pinyin": "wēi xiǎn",
+        "gloss": "dangerous"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "五彩",
+        "pinyin": "wǔ cǎi",
+        "gloss": "multicoloured"
+      },
+      {
+        "text": "史莱姆。",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slime"
+      },
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "for"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "me"
+      },
+      {
+        "text": "拿",
+        "pinyin": "ná",
+        "gloss": "bring"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "罐",
+        "pinyin": "guàn",
+        "gloss": "jar"
+      },
+      {
+        "text": "它",
+        "pinyin": "tā",
+        "gloss": "its"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "五彩",
+        "pinyin": "wǔ cǎi",
+        "gloss": "multicoloured"
+      },
+      {
+        "text": "胶冻",
+        "pinyin": "jiāo dòng",
+        "gloss": "jelly"
+      },
+      {
+        "text": "来，",
+        "pinyin": "lái",
+        "gloss": "(direction: here)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "得到",
+        "pinyin": "dé dào",
+        "gloss": "get"
+      },
+      {
+        "text": "应有",
+        "pinyin": "yīng yǒu",
+        "gloss": "deserved"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "奖励",
+        "pinyin": "jiǎng lì",
+        "gloss": "reward"
+      },
+      {
+        "text": "的。——",
+        "pinyin": "de",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "M·",
+        "pinyin": "M",
+        "gloss": "M"
+      },
+      {
+        "text": "拉斯莫迪斯",
+        "pinyin": "lā sī mò dí sī",
+        "gloss": "Rasmodius"
+      }
+    ]
+  },
+  "Wizard_Name": {
+    "chinese": "奇特物质",
+    "english": "Peculiar substance",
+    "segments": [
+      {
+        "text": "奇特",
+        "pinyin": "qí tè",
+        "gloss": "peculiar"
+      },
+      {
+        "text": "物质",
+        "pinyin": "wù zhì",
+        "gloss": "substance"
+      }
+    ]
+  },
+  "Wizard_Objective_0_Message": {
+    "chinese": "啊，它充满了被遗忘的灵魂的能量……太完美了。$h#$b#现在你可以走了！我需要绝对的安静来辨别这种物质的真实性质。",
+    "english": "Ah, it's full of the energy of forgotten souls... too perfect. Now you may leave! I need absolute quiet to discern this substance's true nature.",
+    "segments": [
+      {
+        "text": "啊，",
+        "pinyin": "a",
+        "gloss": "ah"
+      },
+      {
+        "text": "它",
+        "pinyin": "tā",
+        "gloss": "it"
+      },
+      {
+        "text": "充满",
+        "pinyin": "chōng mǎn",
+        "gloss": "full of"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "被",
+        "pinyin": "bèi",
+        "gloss": "(passive marker)"
+      },
+      {
+        "text": "遗忘",
+        "pinyin": "yí wàng",
+        "gloss": "forget"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "灵魂",
+        "pinyin": "líng hún",
+        "gloss": "souls"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "能量……",
+        "pinyin": "néng liàng",
+        "gloss": "energy"
+      },
+      {
+        "text": "太",
+        "pinyin": "tài",
+        "gloss": "too"
+      },
+      {
+        "text": "完美",
+        "pinyin": "wán měi",
+        "gloss": "perfect"
+      },
+      {
+        "text": "了。$h#$b#",
+        "pinyin": "le",
+        "gloss": "(exclamation)"
+      },
+      {
+        "text": "现在",
+        "pinyin": "xiàn zài",
+        "gloss": "now"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "may"
+      },
+      {
+        "text": "走",
+        "pinyin": "zǒu",
+        "gloss": "go"
+      },
+      {
+        "text": "了！",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "需要",
+        "pinyin": "xū yào",
+        "gloss": "need"
+      },
+      {
+        "text": "绝对",
+        "pinyin": "jué duì",
+        "gloss": "absolute"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "安静",
+        "pinyin": "ān jìng",
+        "gloss": "quiet"
+      },
+      {
+        "text": "来",
+        "pinyin": "lái",
+        "gloss": "in order to"
+      },
+      {
+        "text": "辨别",
+        "pinyin": "biàn bié",
+        "gloss": "discern"
+      },
+      {
+        "text": "这种",
+        "pinyin": "zhè zhǒng",
+        "gloss": "this kind of"
+      },
+      {
+        "text": "物质",
+        "pinyin": "wù zhì",
+        "gloss": "substance"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "真实",
+        "pinyin": "zhēn shí",
+        "gloss": "true"
+      },
+      {
+        "text": "性质。",
+        "pinyin": "xìng zhì",
+        "gloss": "nature"
+      }
+    ]
+  },
+  "Wizard_Objective_0_Text": {
+    "chinese": "给法师送去一份灵外质。",
+    "english": "Deliver a portion of ectoplasm to the Wizard.",
+    "segments": [
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "to"
+      },
+      {
+        "text": "法师",
+        "pinyin": "fǎ shī",
+        "gloss": "wizard"
+      },
+      {
+        "text": "送去",
+        "pinyin": "sòng qù",
+        "gloss": "deliver"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "份",
+        "pinyin": "fèn",
+        "gloss": "(measure word for portions)"
+      },
+      {
+        "text": "灵外质。",
+        "pinyin": "líng wài zhì",
+        "gloss": "ectoplasm"
+      }
+    ]
+  },
+  "Wizard_Text": {
+    "chinese": "我在寻找一种极为罕见的粘液，即所谓的“灵外质”，它有很强的力量，可以在杀死的鬼魂的遗骸中找到。——M·拉斯莫迪斯",
+    "english": "I'm looking for an extremely rare slime, the so-called \"ectoplasm\"; it has great power, and can be found in the remains of killed ghosts. -- M. Rasmodius",
+    "segments": [
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "I"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "寻找",
+        "pinyin": "xún zhǎo",
+        "gloss": "look for"
+      },
+      {
+        "text": "一种",
+        "pinyin": "yì zhǒng",
+        "gloss": "a kind of"
+      },
+      {
+        "text": "极为",
+        "pinyin": "jí wéi",
+        "gloss": "extremely"
+      },
+      {
+        "text": "罕见",
+        "pinyin": "hǎn jiàn",
+        "gloss": "rare"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "粘液，",
+        "pinyin": "nián yè",
+        "gloss": "slime"
+      },
+      {
+        "text": "即",
+        "pinyin": "jí",
+        "gloss": "namely"
+      },
+      {
+        "text": "所谓",
+        "pinyin": "suǒ wèi",
+        "gloss": "so-called"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "“灵外质”，",
+        "pinyin": "líng wài zhì",
+        "gloss": "ectoplasm"
+      },
+      {
+        "text": "它",
+        "pinyin": "tā",
+        "gloss": "it"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "has"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "强",
+        "pinyin": "qiáng",
+        "gloss": "strong"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "力量，",
+        "pinyin": "lì liang",
+        "gloss": "power"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "杀死",
+        "pinyin": "shā sǐ",
+        "gloss": "kill"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "鬼魂",
+        "pinyin": "guǐ hún",
+        "gloss": "ghosts"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "遗骸",
+        "pinyin": "yí hái",
+        "gloss": "remains"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      },
+      {
+        "text": "找到。——",
+        "pinyin": "zhǎo dào",
+        "gloss": "find"
+      },
+      {
+        "text": "M·",
+        "pinyin": "M",
+        "gloss": "M"
+      },
+      {
+        "text": "拉斯莫迪斯",
+        "pinyin": "lā sī mò dí sī",
+        "gloss": "Rasmodius"
+      }
+    ]
+  }
+}

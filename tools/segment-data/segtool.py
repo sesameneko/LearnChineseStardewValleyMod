@@ -81,8 +81,9 @@ CONTENT_FAMILIES = {
     "Events": ("Data/Events", "script"),
 }
 
-# tracked source of truth, shipped with the mod as-is
-OUT = os.path.join(ROOT, "assets", "segments", "zh")
+# tracked source of truth, shipped with the mod as-is. SEGTOOL_OUT points merge/validate at a
+# scratch folder instead, so parallel authors can check batches without racing on the real files
+OUT = os.environ.get("SEGTOOL_OUT") or os.path.join(ROOT, "assets", "segments", "zh")
 SKIPS = os.path.join(ROOT, "tools", "segment-data", "skipped")
 
 FIELD, SEG = "¦", "‖"
@@ -367,7 +368,10 @@ def parse_line(line):
 # its answers ($q 17/18 Sun_old#, $r 17 0 Sun_17#), a random ($c .5#) or conditional ($p 17#,
 # $d joja#, $query PLAYER_NPC_RELATIONSHIP ...#) choice, a mail attachment (%item id (O)434 1 %%)
 # and the braces of a gendered ${male^female}$ pair. They must come before the bare $x form.
-MARKUP = re.compile(r"\$(?:query|[qrpcd1])[ ][ -\"$-~]*|%item[^%]*%%|\$\{|\}\$|"
+# Letter formatting ([textcolor black], [letterbg ...]) and event-script commands left inside a
+# string between two spoken lines (/pause 500/speak MrQi ") are never drawn either.
+MARKUP = re.compile(r"\[(?:textcolor|letterbg)[^\]]*\]|\"?(?:/[A-Za-z][^/\"㐀-鿿]*)+\"|"
+                    r"\$(?:query|[qrpcd1])[ ][ -\"$-~]*|%item[^%]*%%|\$\{|\}\$|"
                     r"%revealtaste(:[A-Za-z]+:[0-9A-Za-z()]+)?|\$[A-Za-z0-9]+|%[A-Za-z]+[0-9]*|\[[0-9 ]+\]")  # %kid1 is one token
 # opening brackets and quotes belong to the word they open, not the one before
 OPENERS = "（(「『【〈《[{“‘"
