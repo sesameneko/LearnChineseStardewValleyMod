@@ -631,6 +631,7 @@ namespace LanguageStudyStardewValleyMod
 
             // before the tooltips, which can reach over the tab row
             GameMenuPatches.DrawTabIcon(spriteBatch);
+            TitleScreenOverlay.Draw(spriteBatch);
 
             // exactly one of these draws a tooltip: the pin takes precedence and the linger stands
             // down for it, and the linger itself does nothing in a frame where the game drew its own
