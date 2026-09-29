@@ -6,7 +6,6 @@
   - [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
   - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
   - [ ] [Verify flashcards](#verify-flashcards)
-  - [ ] [Verify language activation](#verify-language-activation)
 - [ ] Kana readings
   - [ ] [Review kana long vowels](#review-kana-long-vowels)
   - [ ] [Normalise kana script](#normalise-kana-script)
@@ -56,16 +55,6 @@ Click-to-save and the pause-menu tab are built but haven't been tried live. Chec
 - that suppressing the click really stops dialogue from advancing and shop rows from being bought
 - the card back's layout at different UI scales
 - that the ★ before a saved word's gloss renders in the hover label
-
-### Verify language activation
-
-Activation by game language and the title-screen prompt are built and the decision logic is unit-tested, but none of it has been tried live (see `HowItWorks.md`). Check:
-
-- Game in Japanese: `Active` in the log with no prompt, and hover, the flashcards tab and `G`/`Z` all work.
-- Game in English, one copy: the popup appears once the title settles. Yes switches to Japanese, the choice survives a restart, and the mod activates. No leaves it inactive (no hover, no tab, commands report inactive). Switching to Japanese by hand then activates it, and switching back deactivates it.
-- Two copies: build a throwaway copy with its own `AssemblyName`/`EntryDll`, `UniqueID` and `"StudyLanguage": "zh"`. Both load, one chooser appears, each choice activates only its own copy, Cancel leaves both inactive, and the second copy's commands get the `_zh` suffix.
-- The `Glyph capture: …` line shows every renderer on after activating, including after switching back and forth.
-- The chooser with a controller: snapping between buttons, and B/Escape as Cancel.
 
 ### Review kana long vowels
 
@@ -170,6 +159,12 @@ key <TAB> english <TAB> text¦kana¦gloss‖text¦kana¦gloss‖...
 - Output goes to `assets/segments/ja/`, the tracked source of truth, which ships with the mod as-is.
 
 ## Done
+
+### Language activation and sibling copies (2026-09-29)
+
+Each copy of the mod reads its study language from the manifest's `StudyLanguage` field and runs only while the game is in that language. In any other language it has no patches, handlers or font edit, so copies for other languages can be installed alongside it. Once per launch, the title screen offers to switch to the copy's language, or asks which to study when several copies are installed. Verified in-game.
+
+How it works, and the checklist for making a copy for another language, are in `HowItWorks.md`.
 
 ### Glyph-accurate word hover (2026-09-26)
 
