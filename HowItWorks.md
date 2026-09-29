@@ -35,7 +35,7 @@ A choice only sets `CurrentLanguageCode`, as the game's own language menu does (
 
 SMAPI won't load two mods with the same assembly name ("…already loaded. Do you have two copies of this mod?"), and each copy's global data is keyed by its `UniqueID`. Each copy sets its own:
 
-- `UniqueID`: `com.oldclovercat.<lang>languagestudy` for new copies (the Japanese one is `jp`). This Chinese copy predates the convention and keeps `com.galacticrailroad.languagestudy.chinese`
+- `UniqueID`: `com.oldclovercat.<lang>languagestudy` (this one is `zh`, the Japanese one `jp`)
 - `Name`
 - `<AssemblyName>` in the `.csproj`, with `EntryDll` in the manifest to match
 - `StudyLanguage`
