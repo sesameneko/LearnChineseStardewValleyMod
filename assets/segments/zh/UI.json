@@ -16,6 +16,33 @@
       }
     ]
   },
+  "AGO_CCB_Normal": {
+    "chinese": "普通",
+    "english": "Normal",
+    "segments": [
+      {
+        "text": "普通",
+        "pinyin": "pǔ tōng",
+        "gloss": "normal"
+      }
+    ]
+  },
+  "AGO_CCB_Remixed": {
+    "chinese": "重新混合",
+    "english": "Remixed",
+    "segments": [
+      {
+        "text": "重新",
+        "pinyin": "chóng xīn",
+        "gloss": "re-"
+      },
+      {
+        "text": "混合",
+        "pinyin": "hùn hé",
+        "gloss": "mixed"
+      }
+    ]
+  },
   "AGO_CCB_Tooltip": {
     "chinese": "修改出现在社区中心里的收集包。",
     "english": "Modifies the collection packs that appear in the Community Center.",
@@ -119,6 +146,79 @@
       }
     ]
   },
+  "AGO_FarmMonsters_Tooltip": {
+    "chinese": "允许怪物在夜间出现。",
+    "english": "Allows monsters to appear at night.",
+    "segments": [
+      {
+        "text": "允许",
+        "pinyin": "yǔn xǔ",
+        "gloss": "allows"
+      },
+      {
+        "text": "怪物",
+        "pinyin": "guài wù",
+        "gloss": "monsters"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "夜间",
+        "pinyin": "yè jiān",
+        "gloss": "night"
+      },
+      {
+        "text": "出现。",
+        "pinyin": "chū xiàn",
+        "gloss": "appear"
+      }
+    ]
+  },
+  "AGO_Label": {
+    "chinese": "高级游戏设置：",
+    "english": "Advanced game settings:",
+    "segments": [
+      {
+        "text": "高级",
+        "pinyin": "gāo jí",
+        "gloss": "advanced"
+      },
+      {
+        "text": "游戏",
+        "pinyin": "yóu xì",
+        "gloss": "game"
+      },
+      {
+        "text": "设置：",
+        "pinyin": "shè zhì",
+        "gloss": "settings"
+      }
+    ]
+  },
+  "AGO_LegacyRandomization": {
+    "chinese": "使用旧版随机",
+    "english": "Use old-version randomness",
+    "segments": [
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "旧版",
+        "pinyin": "jiù bǎn",
+        "gloss": "old version"
+      },
+      {
+        "text": "随机",
+        "pinyin": "suí jī",
+        "gloss": "randomness"
+      }
+    ]
+  },
   "AGO_LegacyRandomization_Tooltip": {
     "chinese": "使用旧版本的伪随机算法，大多数玩家无需开启。",
     "english": "Uses the old version's pseudo-random algorithm; most players need not turn it on.",
@@ -172,6 +272,230 @@
         "text": "开启。",
         "pinyin": "kāi qǐ",
         "gloss": "turn on"
+      }
+    ]
+  },
+  "AGO_MPOptions_Label": {
+    "chinese": "多人游戏设置：",
+    "english": "Multiplayer game settings:",
+    "segments": [
+      {
+        "text": "多人",
+        "pinyin": "duō rén",
+        "gloss": "multiplayer"
+      },
+      {
+        "text": "游戏",
+        "pinyin": "yóu xì",
+        "gloss": "game"
+      },
+      {
+        "text": "设置：",
+        "pinyin": "shè zhì",
+        "gloss": "settings"
+      }
+    ]
+  },
+  "AGO_MineTreasureShuffle": {
+    "chinese": "矿洞掉落：",
+    "english": "Mine drops:",
+    "segments": [
+      {
+        "text": "矿洞",
+        "pinyin": "kuàng dòng",
+        "gloss": "mine"
+      },
+      {
+        "text": "掉落：",
+        "pinyin": "diào luò",
+        "gloss": "drops"
+      }
+    ]
+  },
+  "AGO_MineTreasureShuffle_Tooltip": {
+    "chinese": "修改矿洞里的掉落。",
+    "english": "Modifies the drops in the mines.",
+    "segments": [
+      {
+        "text": "修改",
+        "pinyin": "xiū gǎi",
+        "gloss": "modify"
+      },
+      {
+        "text": "矿洞",
+        "pinyin": "kuàng dòng",
+        "gloss": "mine"
+      },
+      {
+        "text": "里",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "掉落。",
+        "pinyin": "diào luò",
+        "gloss": "drops"
+      }
+    ]
+  },
+  "AGO_OtherOptions_Label": {
+    "chinese": "其它设置：",
+    "english": "Other settings:",
+    "segments": [
+      {
+        "text": "其它",
+        "pinyin": "qí tā",
+        "gloss": "other"
+      },
+      {
+        "text": "设置：",
+        "pinyin": "shè zhì",
+        "gloss": "settings"
+      }
+    ]
+  },
+  "AGO_ProfitMargin_Tooltip": {
+    "chinese": "物品售出价格的倍数。",
+    "english": "The multiplier on the selling price of items.",
+    "segments": [
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "item"
+      },
+      {
+        "text": "售出",
+        "pinyin": "shòu chū",
+        "gloss": "selling"
+      },
+      {
+        "text": "价格",
+        "pinyin": "jià gé",
+        "gloss": "price"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "倍数。",
+        "pinyin": "bèi shù",
+        "gloss": "multiplier"
+      }
+    ]
+  },
+  "AGO_RandomSeed": {
+    "chinese": "随机种子：",
+    "english": "Random seed:",
+    "segments": [
+      {
+        "text": "随机",
+        "pinyin": "suí jī",
+        "gloss": "random"
+      },
+      {
+        "text": "种子：",
+        "pinyin": "zhǒng zi",
+        "gloss": "seed"
+      }
+    ]
+  },
+  "AGO_RandomSeed_Tooltip": {
+    "chinese": "用于游戏世界随机化的种子。",
+    "english": "The seed used for randomizing the game world.",
+    "segments": [
+      {
+        "text": "用于",
+        "pinyin": "yòng yú",
+        "gloss": "used for"
+      },
+      {
+        "text": "游戏",
+        "pinyin": "yóu xì",
+        "gloss": "game"
+      },
+      {
+        "text": "世界",
+        "pinyin": "shì jiè",
+        "gloss": "world"
+      },
+      {
+        "text": "随机化",
+        "pinyin": "suí jī huà",
+        "gloss": "randomizing"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "种子。",
+        "pinyin": "zhǒng zi",
+        "gloss": "seed"
+      }
+    ]
+  },
+  "AGO_StartingCabins_Tooltip": {
+    "chinese": "初始小屋的数目。",
+    "english": "The number of starting cabins.",
+    "segments": [
+      {
+        "text": "初始",
+        "pinyin": "chū shǐ",
+        "gloss": "starting"
+      },
+      {
+        "text": "小屋",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabins"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "数目。",
+        "pinyin": "shù mù",
+        "gloss": "number"
+      }
+    ]
+  },
+  "AGO_Year1Completable": {
+    "chinese": "确保第一年可完成",
+    "english": "Ensure the first year can be completed",
+    "segments": [
+      {
+        "text": "确保",
+        "pinyin": "què bǎo",
+        "gloss": "ensure"
+      },
+      {
+        "text": "第一",
+        "pinyin": "dì yī",
+        "gloss": "first"
+      },
+      {
+        "text": "年",
+        "pinyin": "nián",
+        "gloss": "year"
+      },
+      {
+        "text": "可",
+        "pinyin": "kě",
+        "gloss": "can"
+      },
+      {
+        "text": "完成",
+        "pinyin": "wán chéng",
+        "gloss": "be completed"
       }
     ]
   },
@@ -363,6 +687,4922 @@
         "text": "月",
         "pinyin": "yuè",
         "gloss": "months"
+      }
+    ]
+  },
+  "AnimalQuery_AllowReproduction": {
+    "chinese": "允许怀孕",
+    "english": "Allow pregnancy",
+    "segments": [
+      {
+        "text": "允许",
+        "pinyin": "yǔn xǔ",
+        "gloss": "allow"
+      },
+      {
+        "text": "怀孕",
+        "pinyin": "huái yùn",
+        "gloss": "pregnancy"
+      }
+    ]
+  },
+  "AnimalQuery_ChooseBuilding": {
+    "chinese": "请为你的{1}选择一个{0}",
+    "english": "Please choose a {0} for your {1}",
+    "segments": [
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "please"
+      },
+      {
+        "text": "为",
+        "pinyin": "wèi",
+        "gloss": "for"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "{1}",
+        "pinyin": "",
+        "gloss": "(animal)"
+      },
+      {
+        "text": "选择",
+        "pinyin": "xuǎn zé",
+        "gloss": "choose"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(building)"
+      }
+    ]
+  },
+  "AnimalQuery_ConfirmSell": {
+    "chinese": "你确定吗？",
+    "english": "Are you sure?",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "确定",
+        "pinyin": "què dìng",
+        "gloss": "sure"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "AnimalQuery_Move": {
+    "chinese": "改变住所",
+    "english": "Change residence",
+    "segments": [
+      {
+        "text": "改变",
+        "pinyin": "gǎi biàn",
+        "gloss": "change"
+      },
+      {
+        "text": "住所",
+        "pinyin": "zhù suǒ",
+        "gloss": "residence"
+      }
+    ]
+  },
+  "AnimalQuery_Moving_AlreadyHome": {
+    "chinese": "这是我的家",
+    "english": "This is my home",
+    "segments": [
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "我",
+        "pinyin": "wǒ",
+        "gloss": "my"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "家",
+        "pinyin": "jiā",
+        "gloss": "home"
+      }
+    ]
+  },
+  "AnimalQuery_Moving_BuildingFull": {
+    "chinese": "该建筑物已经满了",
+    "english": "That building is already full",
+    "segments": [
+      {
+        "text": "该",
+        "pinyin": "gāi",
+        "gloss": "that"
+      },
+      {
+        "text": "建筑物",
+        "pinyin": "jiàn zhù wù",
+        "gloss": "building"
+      },
+      {
+        "text": "已经",
+        "pinyin": "yǐ jīng",
+        "gloss": "already"
+      },
+      {
+        "text": "满",
+        "pinyin": "mǎn",
+        "gloss": "full"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      }
+    ]
+  },
+  "AnimalQuery_Moving_CantLiveThere": {
+    "chinese": "{0}不能住在那里。",
+    "english": "{0} can't live there.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(animal)"
+      },
+      {
+        "text": "不能",
+        "pinyin": "bù néng",
+        "gloss": "cannot"
+      },
+      {
+        "text": "住",
+        "pinyin": "zhù",
+        "gloss": "live"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "那里。",
+        "pinyin": "nà lǐ",
+        "gloss": "there"
+      }
+    ]
+  },
+  "AnimalQuery_Moving_HomeChanged": {
+    "chinese": "首页改变",
+    "english": "Home page changed",
+    "segments": [
+      {
+        "text": "首页",
+        "pinyin": "shǒu yè",
+        "gloss": "home page"
+      },
+      {
+        "text": "改变",
+        "pinyin": "gǎi biàn",
+        "gloss": "changed"
+      }
+    ]
+  },
+  "AnimalQuery_Parent": {
+    "chinese": "父母：{0}",
+    "english": "Parents: {0}",
+    "segments": [
+      {
+        "text": "父母：",
+        "pinyin": "fù mǔ",
+        "gloss": "parents"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(animal)"
+      }
+    ]
+  },
+  "AnimalQuery_Sell": {
+    "chinese": "出售，要价为 {0} 金",
+    "english": "Sell, asking price {0} gold",
+    "segments": [
+      {
+        "text": "出售，",
+        "pinyin": "chū shòu",
+        "gloss": "sell"
+      },
+      {
+        "text": "要价",
+        "pinyin": "yào jià",
+        "gloss": "asking price"
+      },
+      {
+        "text": "为 ",
+        "pinyin": "wéi",
+        "gloss": "is"
+      },
+      {
+        "text": "{0} ",
+        "pinyin": "",
+        "gloss": "(amount)"
+      },
+      {
+        "text": "金",
+        "pinyin": "jīn",
+        "gloss": "gold (g)"
+      }
+    ]
+  },
+  "AskToDance_Female": {
+    "chinese": "请{0}与你跳一支舞？",
+    "english": "Ask {0} to dance a dance with you?",
+    "segments": [
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "ask"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "跳",
+        "pinyin": "tiào",
+        "gloss": "dance"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "支",
+        "pinyin": "zhī",
+        "gloss": "(measure word for dances)"
+      },
+      {
+        "text": "舞？",
+        "pinyin": "wǔ",
+        "gloss": "dance"
+      }
+    ]
+  },
+  "AskToDance_Male": {
+    "chinese": "请{0}与你跳一支舞？",
+    "english": "Ask {0} to dance a dance with you?",
+    "segments": [
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "ask"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "跳",
+        "pinyin": "tiào",
+        "gloss": "dance"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "支",
+        "pinyin": "zhī",
+        "gloss": "(measure word for dances)"
+      },
+      {
+        "text": "舞？",
+        "pinyin": "wǔ",
+        "gloss": "dance"
+      }
+    ]
+  },
+  "AskToMarry_Female": {
+    "chinese": "请{0}与你结婚？",
+    "english": "Ask {0} to marry you?",
+    "segments": [
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "ask"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "结婚？",
+        "pinyin": "jié hūn",
+        "gloss": "marry"
+      }
+    ]
+  },
+  "AskToMarry_Male": {
+    "chinese": "请{0}与你结婚？",
+    "english": "Ask {0} to marry you?",
+    "segments": [
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "ask"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "结婚？",
+        "pinyin": "jié hūn",
+        "gloss": "marry"
+      }
+    ]
+  },
+  "AskedToAdoptBaby_Accepted_Female": {
+    "chinese": "{0}同意了与你一起收养个宝宝！收养文书已全部提交。宝宝将在 14 天后送到。",
+    "english": "{0} agreed to adopt a baby with you! The adoption papers have all been submitted. The baby will be delivered in 14 days.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "同意",
+        "pinyin": "tóng yì",
+        "gloss": "agreed"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "一起",
+        "pinyin": "yì qǐ",
+        "gloss": "together"
+      },
+      {
+        "text": "收养",
+        "pinyin": "shōu yǎng",
+        "gloss": "adopt"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "宝宝！",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "收养",
+        "pinyin": "shōu yǎng",
+        "gloss": "adoption"
+      },
+      {
+        "text": "文书",
+        "pinyin": "wén shū",
+        "gloss": "papers"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "全部",
+        "pinyin": "quán bù",
+        "gloss": "all"
+      },
+      {
+        "text": "提交。",
+        "pinyin": "tí jiāo",
+        "gloss": "submitted"
+      },
+      {
+        "text": "宝宝",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "will"
+      },
+      {
+        "text": "在 ",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "14 ",
+        "pinyin": "shí sì",
+        "gloss": "fourteen"
+      },
+      {
+        "text": "天",
+        "pinyin": "tiān",
+        "gloss": "days"
+      },
+      {
+        "text": "后",
+        "pinyin": "hòu",
+        "gloss": "later"
+      },
+      {
+        "text": "送到。",
+        "pinyin": "sòng dào",
+        "gloss": "be delivered"
+      }
+    ]
+  },
+  "AskedToAdoptBaby_Accepted_Male": {
+    "chinese": "{0}同意了与你一起收养个宝宝！收养文书已全部提交。宝宝将在 14 天后送到。",
+    "english": "{0} agreed to adopt a baby with you! The adoption papers have all been submitted. The baby will be delivered in 14 days.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "同意",
+        "pinyin": "tóng yì",
+        "gloss": "agreed"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "一起",
+        "pinyin": "yì qǐ",
+        "gloss": "together"
+      },
+      {
+        "text": "收养",
+        "pinyin": "shōu yǎng",
+        "gloss": "adopt"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "宝宝！",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "收养",
+        "pinyin": "shōu yǎng",
+        "gloss": "adoption"
+      },
+      {
+        "text": "文书",
+        "pinyin": "wén shū",
+        "gloss": "papers"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "全部",
+        "pinyin": "quán bù",
+        "gloss": "all"
+      },
+      {
+        "text": "提交。",
+        "pinyin": "tí jiāo",
+        "gloss": "submitted"
+      },
+      {
+        "text": "宝宝",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "will"
+      },
+      {
+        "text": "在 ",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "14 ",
+        "pinyin": "shí sì",
+        "gloss": "fourteen"
+      },
+      {
+        "text": "天",
+        "pinyin": "tiān",
+        "gloss": "days"
+      },
+      {
+        "text": "后",
+        "pinyin": "hòu",
+        "gloss": "later"
+      },
+      {
+        "text": "送到。",
+        "pinyin": "sòng dào",
+        "gloss": "be delivered"
+      }
+    ]
+  },
+  "AskedToAdoptBaby_Female": {
+    "chinese": "{0}已请你与她一起收养个宝宝！你想要个宝宝吗？",
+    "english": "{0} has asked you to adopt a baby with her! Do you want a baby?",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "asked"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "她",
+        "pinyin": "tā",
+        "gloss": "her"
+      },
+      {
+        "text": "一起",
+        "pinyin": "yì qǐ",
+        "gloss": "together"
+      },
+      {
+        "text": "收养",
+        "pinyin": "shōu yǎng",
+        "gloss": "adopt"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "宝宝！",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "想要",
+        "pinyin": "xiǎng yào",
+        "gloss": "want"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "宝宝",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "AskedToAdoptBaby_Male": {
+    "chinese": "{0}已请你与他一起收养个宝宝！你想要个宝宝吗？",
+    "english": "{0} has asked you to adopt a baby with him! Do you want a baby?",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "asked"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "him"
+      },
+      {
+        "text": "一起",
+        "pinyin": "yì qǐ",
+        "gloss": "together"
+      },
+      {
+        "text": "收养",
+        "pinyin": "shōu yǎng",
+        "gloss": "adopt"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "宝宝！",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "想要",
+        "pinyin": "xiǎng yào",
+        "gloss": "want"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "宝宝",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "AskedToAdoptBaby_Rejected_Female": {
+    "chinese": "{0}已决定目前她还不想收养宝宝。",
+    "english": "{0} has decided she doesn't want to adopt a baby for now.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "决定",
+        "pinyin": "jué dìng",
+        "gloss": "decided"
+      },
+      {
+        "text": "目前",
+        "pinyin": "mù qián",
+        "gloss": "for now"
+      },
+      {
+        "text": "她",
+        "pinyin": "tā",
+        "gloss": "she"
+      },
+      {
+        "text": "还",
+        "pinyin": "hái",
+        "gloss": "still"
+      },
+      {
+        "text": "不",
+        "pinyin": "bù",
+        "gloss": "not"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "收养",
+        "pinyin": "shōu yǎng",
+        "gloss": "adopt"
+      },
+      {
+        "text": "宝宝。",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      }
+    ]
+  },
+  "AskedToAdoptBaby_Rejected_Male": {
+    "chinese": "{0}已决定目前他还不想收养宝宝。",
+    "english": "{0} has decided he doesn't want to adopt a baby for now.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "决定",
+        "pinyin": "jué dìng",
+        "gloss": "decided"
+      },
+      {
+        "text": "目前",
+        "pinyin": "mù qián",
+        "gloss": "for now"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "he"
+      },
+      {
+        "text": "还",
+        "pinyin": "hái",
+        "gloss": "still"
+      },
+      {
+        "text": "不",
+        "pinyin": "bù",
+        "gloss": "not"
+      },
+      {
+        "text": "想",
+        "pinyin": "xiǎng",
+        "gloss": "want"
+      },
+      {
+        "text": "收养",
+        "pinyin": "shōu yǎng",
+        "gloss": "adopt"
+      },
+      {
+        "text": "宝宝。",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      }
+    ]
+  },
+  "AskedToDance_Accepted_Female": {
+    "chinese": "{0}接受了你的跳舞邀请！",
+    "english": "{0} accepted your dance invitation!",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "接受",
+        "pinyin": "jiē shòu",
+        "gloss": "accepted"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "跳舞",
+        "pinyin": "tiào wǔ",
+        "gloss": "dance"
+      },
+      {
+        "text": "邀请！",
+        "pinyin": "yāo qǐng",
+        "gloss": "invitation"
+      }
+    ]
+  },
+  "AskedToDance_Accepted_Male": {
+    "chinese": "{0}接受了你的跳舞邀请！",
+    "english": "{0} accepted your dance invitation!",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "接受",
+        "pinyin": "jiē shòu",
+        "gloss": "accepted"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "跳舞",
+        "pinyin": "tiào wǔ",
+        "gloss": "dance"
+      },
+      {
+        "text": "邀请！",
+        "pinyin": "yāo qǐng",
+        "gloss": "invitation"
+      }
+    ]
+  },
+  "AskedToDance_Female": {
+    "chinese": "{0}已请你与她跳一支舞。你会和{0}跳舞吗？",
+    "english": "{0} has asked you to dance a dance with her. Will you dance with {0}?",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "asked"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "她",
+        "pinyin": "tā",
+        "gloss": "her"
+      },
+      {
+        "text": "跳",
+        "pinyin": "tiào",
+        "gloss": "dance"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "支",
+        "pinyin": "zhī",
+        "gloss": "(measure word for dances)"
+      },
+      {
+        "text": "舞。",
+        "pinyin": "wǔ",
+        "gloss": "dance"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "with"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "跳舞",
+        "pinyin": "tiào wǔ",
+        "gloss": "dance"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "AskedToDance_Male": {
+    "chinese": "{0}已请你与他跳一支舞。你会和{0}跳舞吗？",
+    "english": "{0} has asked you to dance a dance with him. Will you dance with {0}?",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "asked"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "him"
+      },
+      {
+        "text": "跳",
+        "pinyin": "tiào",
+        "gloss": "dance"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "支",
+        "pinyin": "zhī",
+        "gloss": "(measure word for dances)"
+      },
+      {
+        "text": "舞。",
+        "pinyin": "wǔ",
+        "gloss": "dance"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "with"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "跳舞",
+        "pinyin": "tiào wǔ",
+        "gloss": "dance"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "AskedToDance_Rejected_Female": {
+    "chinese": "{0}拒绝你的跳舞邀请。",
+    "english": "{0} declined your dance invitation.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "拒绝",
+        "pinyin": "jù jué",
+        "gloss": "declined"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "跳舞",
+        "pinyin": "tiào wǔ",
+        "gloss": "dance"
+      },
+      {
+        "text": "邀请。",
+        "pinyin": "yāo qǐng",
+        "gloss": "invitation"
+      }
+    ]
+  },
+  "AskedToDance_Rejected_Male": {
+    "chinese": "{0}拒绝你的跳舞邀请。",
+    "english": "{0} declined your dance invitation.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "拒绝",
+        "pinyin": "jù jué",
+        "gloss": "declined"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "跳舞",
+        "pinyin": "tiào wǔ",
+        "gloss": "dance"
+      },
+      {
+        "text": "邀请。",
+        "pinyin": "yāo qǐng",
+        "gloss": "invitation"
+      }
+    ]
+  },
+  "AskedToHaveBaby_Accepted_Female": {
+    "chinese": "{0}同意了与你一起生个宝宝！宝宝将在 14 天后出生。",
+    "english": "{0} agreed to have a baby with you! The baby will be born in 14 days.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "同意",
+        "pinyin": "tóng yì",
+        "gloss": "agreed"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "一起",
+        "pinyin": "yì qǐ",
+        "gloss": "together"
+      },
+      {
+        "text": "生",
+        "pinyin": "shēng",
+        "gloss": "give birth to"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "宝宝！",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "宝宝",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "will"
+      },
+      {
+        "text": "在 ",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "14 ",
+        "pinyin": "shí sì",
+        "gloss": "fourteen"
+      },
+      {
+        "text": "天",
+        "pinyin": "tiān",
+        "gloss": "days"
+      },
+      {
+        "text": "后",
+        "pinyin": "hòu",
+        "gloss": "later"
+      },
+      {
+        "text": "出生。",
+        "pinyin": "chū shēng",
+        "gloss": "be born"
+      }
+    ]
+  },
+  "AskedToHaveBaby_Accepted_Male": {
+    "chinese": "{0}同意了与你一起生个宝宝！宝宝将在 14 天后出生。",
+    "english": "{0} agreed to have a baby with you! The baby will be born in 14 days.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "同意",
+        "pinyin": "tóng yì",
+        "gloss": "agreed"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "一起",
+        "pinyin": "yì qǐ",
+        "gloss": "together"
+      },
+      {
+        "text": "生",
+        "pinyin": "shēng",
+        "gloss": "give birth to"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "宝宝！",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "宝宝",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "will"
+      },
+      {
+        "text": "在 ",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "14 ",
+        "pinyin": "shí sì",
+        "gloss": "fourteen"
+      },
+      {
+        "text": "天",
+        "pinyin": "tiān",
+        "gloss": "days"
+      },
+      {
+        "text": "后",
+        "pinyin": "hòu",
+        "gloss": "later"
+      },
+      {
+        "text": "出生。",
+        "pinyin": "chū shēng",
+        "gloss": "be born"
+      }
+    ]
+  },
+  "AskedToHaveBaby_Female": {
+    "chinese": "{0}已请你与她一起生孩子！你想要生宝宝吗？",
+    "english": "{0} has asked you to have a child with her! Do you want to have a baby?",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "asked"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "她",
+        "pinyin": "tā",
+        "gloss": "her"
+      },
+      {
+        "text": "一起",
+        "pinyin": "yì qǐ",
+        "gloss": "together"
+      },
+      {
+        "text": "生",
+        "pinyin": "shēng",
+        "gloss": "have"
+      },
+      {
+        "text": "孩子！",
+        "pinyin": "hái zi",
+        "gloss": "a child"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "想要",
+        "pinyin": "xiǎng yào",
+        "gloss": "want"
+      },
+      {
+        "text": "生",
+        "pinyin": "shēng",
+        "gloss": "have"
+      },
+      {
+        "text": "宝宝",
+        "pinyin": "bǎo bao",
+        "gloss": "a baby"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "AskedToHaveBaby_Male": {
+    "chinese": "{0}已请你与他一起生个宝宝！你想要生宝宝吗？",
+    "english": "{0} has asked you to have a baby with him! Do you want to have a baby?",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "asked"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "with"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "him"
+      },
+      {
+        "text": "一起",
+        "pinyin": "yì qǐ",
+        "gloss": "together"
+      },
+      {
+        "text": "生",
+        "pinyin": "shēng",
+        "gloss": "have"
+      },
+      {
+        "text": "个",
+        "pinyin": "ge",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "宝宝！",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "想要",
+        "pinyin": "xiǎng yào",
+        "gloss": "want"
+      },
+      {
+        "text": "生",
+        "pinyin": "shēng",
+        "gloss": "have"
+      },
+      {
+        "text": "宝宝",
+        "pinyin": "bǎo bao",
+        "gloss": "a baby"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "AskedToHaveBaby_Rejected_Female": {
+    "chinese": "{0}已决定目前她还不想要宝宝。",
+    "english": "{0} has decided she doesn't want a baby for now.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "决定",
+        "pinyin": "jué dìng",
+        "gloss": "decided"
+      },
+      {
+        "text": "目前",
+        "pinyin": "mù qián",
+        "gloss": "for now"
+      },
+      {
+        "text": "她",
+        "pinyin": "tā",
+        "gloss": "she"
+      },
+      {
+        "text": "还",
+        "pinyin": "hái",
+        "gloss": "still"
+      },
+      {
+        "text": "不",
+        "pinyin": "bù",
+        "gloss": "not"
+      },
+      {
+        "text": "想要",
+        "pinyin": "xiǎng yào",
+        "gloss": "want"
+      },
+      {
+        "text": "宝宝。",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      }
+    ]
+  },
+  "AskedToHaveBaby_Rejected_Male": {
+    "chinese": "{0}已决定目前他还不想要宝宝。",
+    "english": "{0} has decided he doesn't want a baby for now.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "决定",
+        "pinyin": "jué dìng",
+        "gloss": "decided"
+      },
+      {
+        "text": "目前",
+        "pinyin": "mù qián",
+        "gloss": "for now"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "he"
+      },
+      {
+        "text": "还",
+        "pinyin": "hái",
+        "gloss": "still"
+      },
+      {
+        "text": "不",
+        "pinyin": "bù",
+        "gloss": "not"
+      },
+      {
+        "text": "想要",
+        "pinyin": "xiǎng yào",
+        "gloss": "want"
+      },
+      {
+        "text": "宝宝。",
+        "pinyin": "bǎo bao",
+        "gloss": "baby"
+      }
+    ]
+  },
+  "AskedToMarry_Accepted_Female": {
+    "chinese": "{0}接受了你的结婚提议！^婚礼将在 3 天后举行。",
+    "english": "{0} accepted your marriage proposal! The wedding will be held in 3 days.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "接受",
+        "pinyin": "jiē shòu",
+        "gloss": "accepted"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "结婚",
+        "pinyin": "jié hūn",
+        "gloss": "marriage"
+      },
+      {
+        "text": "提议！^",
+        "pinyin": "tí yì",
+        "gloss": "proposal"
+      },
+      {
+        "text": "婚礼",
+        "pinyin": "hūn lǐ",
+        "gloss": "wedding"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "will"
+      },
+      {
+        "text": "在 ",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "3 ",
+        "pinyin": "sān",
+        "gloss": "three"
+      },
+      {
+        "text": "天",
+        "pinyin": "tiān",
+        "gloss": "days"
+      },
+      {
+        "text": "后",
+        "pinyin": "hòu",
+        "gloss": "later"
+      },
+      {
+        "text": "举行。",
+        "pinyin": "jǔ xíng",
+        "gloss": "be held"
+      }
+    ]
+  },
+  "AskedToMarry_Accepted_Male": {
+    "chinese": "{0}接受了你的结婚提议！^婚礼将在 3 天后举行。",
+    "english": "{0} accepted your marriage proposal! The wedding will be held in 3 days.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "接受",
+        "pinyin": "jiē shòu",
+        "gloss": "accepted"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "结婚",
+        "pinyin": "jié hūn",
+        "gloss": "marriage"
+      },
+      {
+        "text": "提议！^",
+        "pinyin": "tí yì",
+        "gloss": "proposal"
+      },
+      {
+        "text": "婚礼",
+        "pinyin": "hūn lǐ",
+        "gloss": "wedding"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "will"
+      },
+      {
+        "text": "在 ",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "3 ",
+        "pinyin": "sān",
+        "gloss": "three"
+      },
+      {
+        "text": "天",
+        "pinyin": "tiān",
+        "gloss": "days"
+      },
+      {
+        "text": "后",
+        "pinyin": "hòu",
+        "gloss": "later"
+      },
+      {
+        "text": "举行。",
+        "pinyin": "jǔ xíng",
+        "gloss": "be held"
+      }
+    ]
+  },
+  "AskedToMarry_Female": {
+    "chinese": "{0}已请你娶她！你会接受她的结婚提议吗？",
+    "english": "{0} has asked you to marry her! Will you accept her marriage proposal?",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "asked"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "娶",
+        "pinyin": "qǔ",
+        "gloss": "marry (a wife)"
+      },
+      {
+        "text": "她！",
+        "pinyin": "tā",
+        "gloss": "her"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "接受",
+        "pinyin": "jiē shòu",
+        "gloss": "accept"
+      },
+      {
+        "text": "她",
+        "pinyin": "tā",
+        "gloss": "her"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "结婚",
+        "pinyin": "jié hūn",
+        "gloss": "marriage"
+      },
+      {
+        "text": "提议",
+        "pinyin": "tí yì",
+        "gloss": "proposal"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "AskedToMarry_Male": {
+    "chinese": "{0}已请你嫁给他！你会接受他的结婚提议吗？",
+    "english": "{0} has asked you to marry him! Will you accept his marriage proposal?",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "已",
+        "pinyin": "yǐ",
+        "gloss": "already"
+      },
+      {
+        "text": "请",
+        "pinyin": "qǐng",
+        "gloss": "asked"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "嫁给",
+        "pinyin": "jià gěi",
+        "gloss": "marry (a husband)"
+      },
+      {
+        "text": "他！",
+        "pinyin": "tā",
+        "gloss": "him"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "接受",
+        "pinyin": "jiē shòu",
+        "gloss": "accept"
+      },
+      {
+        "text": "他",
+        "pinyin": "tā",
+        "gloss": "his"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "结婚",
+        "pinyin": "jié hūn",
+        "gloss": "marriage"
+      },
+      {
+        "text": "提议",
+        "pinyin": "tí yì",
+        "gloss": "proposal"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "AskedToMarry_NotSingle_Female": {
+    "chinese": "{0}并非单身！",
+    "english": "{0} is not single!",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "并非",
+        "pinyin": "bìng fēi",
+        "gloss": "is not (actually)"
+      },
+      {
+        "text": "单身！",
+        "pinyin": "dān shēn",
+        "gloss": "single"
+      }
+    ]
+  },
+  "AskedToMarry_NotSingle_Male": {
+    "chinese": "{0}并非单身！",
+    "english": "{0} is not single!",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "并非",
+        "pinyin": "bìng fēi",
+        "gloss": "is not (actually)"
+      },
+      {
+        "text": "单身！",
+        "pinyin": "dān shēn",
+        "gloss": "single"
+      }
+    ]
+  },
+  "AskedToMarry_Rejected_Female": {
+    "chinese": "{0}拒绝了你的结婚提议。",
+    "english": "{0} declined your marriage proposal.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "拒绝",
+        "pinyin": "jù jué",
+        "gloss": "declined"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "结婚",
+        "pinyin": "jié hūn",
+        "gloss": "marriage"
+      },
+      {
+        "text": "提议。",
+        "pinyin": "tí yì",
+        "gloss": "proposal"
+      }
+    ]
+  },
+  "AskedToMarry_Rejected_Male": {
+    "chinese": "{0}拒绝了你的结婚提议。",
+    "english": "{0} declined your marriage proposal.",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "拒绝",
+        "pinyin": "jù jué",
+        "gloss": "declined"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "结婚",
+        "pinyin": "jié hūn",
+        "gloss": "marriage"
+      },
+      {
+        "text": "提议。",
+        "pinyin": "tí yì",
+        "gloss": "proposal"
+      }
+    ]
+  },
+  "Bed_CantMoveOthersBeds": {
+    "chinese": "你不能移动其他玩家房子里的床。",
+    "english": "You can't move beds in other players' houses.",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "不能",
+        "pinyin": "bù néng",
+        "gloss": "cannot"
+      },
+      {
+        "text": "移动",
+        "pinyin": "yí dòng",
+        "gloss": "move"
+      },
+      {
+        "text": "其他",
+        "pinyin": "qí tā",
+        "gloss": "other"
+      },
+      {
+        "text": "玩家",
+        "pinyin": "wán jiā",
+        "gloss": "players"
+      },
+      {
+        "text": "房子",
+        "pinyin": "fáng zi",
+        "gloss": "houses"
+      },
+      {
+        "text": "里",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "床。",
+        "pinyin": "chuáng",
+        "gloss": "beds"
+      }
+    ]
+  },
+  "Bed_InUse": {
+    "chinese": "无法移动当前正在使用的床。",
+    "english": "Can't move a bed that's currently in use.",
+    "segments": [
+      {
+        "text": "无法",
+        "pinyin": "wú fǎ",
+        "gloss": "unable to"
+      },
+      {
+        "text": "移动",
+        "pinyin": "yí dòng",
+        "gloss": "move"
+      },
+      {
+        "text": "当前",
+        "pinyin": "dāng qián",
+        "gloss": "currently"
+      },
+      {
+        "text": "正在",
+        "pinyin": "zhèng zài",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "being used"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "床。",
+        "pinyin": "chuáng",
+        "gloss": "bed"
+      }
+    ]
+  },
+  "Bed_NeedsUpgrade": {
+    "chinese": "尚未升级房屋，不能放置该床型。",
+    "english": "The house hasn't been upgraded yet; this bed type can't be placed.",
+    "segments": [
+      {
+        "text": "尚未",
+        "pinyin": "shàng wèi",
+        "gloss": "not yet"
+      },
+      {
+        "text": "升级",
+        "pinyin": "shēng jí",
+        "gloss": "upgraded"
+      },
+      {
+        "text": "房屋，",
+        "pinyin": "fáng wū",
+        "gloss": "house"
+      },
+      {
+        "text": "不能",
+        "pinyin": "bù néng",
+        "gloss": "cannot"
+      },
+      {
+        "text": "放置",
+        "pinyin": "fàng zhì",
+        "gloss": "place"
+      },
+      {
+        "text": "该",
+        "pinyin": "gāi",
+        "gloss": "this"
+      },
+      {
+        "text": "床型。",
+        "pinyin": "chuáng xíng",
+        "gloss": "bed type"
+      }
+    ]
+  },
+  "Billboard_Birthday": {
+    "chinese": "{0}的生日",
+    "english": "{0}'s birthday",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "生日",
+        "pinyin": "shēng rì",
+        "gloss": "birthday"
+      }
+    ]
+  },
+  "Billboard_NightMarket": {
+    "chinese": "夜市",
+    "english": "Night market",
+    "segments": [
+      {
+        "text": "夜市",
+        "pinyin": "yè shì",
+        "gloss": "night market"
+      }
+    ]
+  },
+  "Billboard_NothingPosted": {
+    "chinese": "今天未公布任何内容。",
+    "english": "Nothing has been posted today.",
+    "segments": [
+      {
+        "text": "今天",
+        "pinyin": "jīn tiān",
+        "gloss": "today"
+      },
+      {
+        "text": "未",
+        "pinyin": "wèi",
+        "gloss": "not"
+      },
+      {
+        "text": "公布",
+        "pinyin": "gōng bù",
+        "gloss": "announced"
+      },
+      {
+        "text": "任何",
+        "pinyin": "rèn hé",
+        "gloss": "any"
+      },
+      {
+        "text": "内容。",
+        "pinyin": "nèi róng",
+        "gloss": "content"
+      }
+    ]
+  },
+  "Billboard_SBirthday": {
+    "chinese": "{0}的生日",
+    "english": "{0}'s birthday",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "生日",
+        "pinyin": "shēng rì",
+        "gloss": "birthday"
+      }
+    ]
+  },
+  "Billboard_Year": {
+    "chinese": "第 {0} 年",
+    "english": "Year {0}",
+    "segments": [
+      {
+        "text": "第 ",
+        "pinyin": "dì",
+        "gloss": "(ordinal prefix)"
+      },
+      {
+        "text": "{0} ",
+        "pinyin": "",
+        "gloss": "(number)"
+      },
+      {
+        "text": "年",
+        "pinyin": "nián",
+        "gloss": "year"
+      }
+    ]
+  },
+  "BirthdayOrder": {
+    "chinese": "{1} {0} 日",
+    "english": "{1} day {0}",
+    "segments": [
+      {
+        "text": "{1} ",
+        "pinyin": "",
+        "gloss": "(season)"
+      },
+      {
+        "text": "{0} ",
+        "pinyin": "",
+        "gloss": "(day number)"
+      },
+      {
+        "text": "日",
+        "pinyin": "rì",
+        "gloss": "day (of the month)"
+      }
+    ]
+  },
+  "BobberBar_Perfect": {
+    "chinese": "完美！",
+    "english": "Perfect!",
+    "segments": [
+      {
+        "text": "完美！",
+        "pinyin": "wán měi",
+        "gloss": "perfect"
+      }
+    ]
+  },
+  "Calendar_Wedding": {
+    "chinese": "{0}和{1}的婚礼",
+    "english": "{0} and {1}'s wedding",
+    "segments": [
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "{1}",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "婚礼",
+        "pinyin": "hūn lǐ",
+        "gloss": "wedding"
+      }
+    ]
+  },
+  "Cancel": {
+    "chinese": "取消",
+    "english": "Cancel",
+    "segments": [
+      {
+        "text": "取消",
+        "pinyin": "qǔ xiāo",
+        "gloss": "cancel"
+      }
+    ]
+  },
+  "Carpenter_Build": {
+    "chinese": "建造",
+    "english": "Build",
+    "segments": [
+      {
+        "text": "建造",
+        "pinyin": "jiàn zào",
+        "gloss": "build"
+      }
+    ]
+  },
+  "Carpenter_CannotPaint": {
+    "chinese": "这座建筑不能粉刷",
+    "english": "This building can't be painted",
+    "segments": [
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "座",
+        "pinyin": "zuò",
+        "gloss": "(measure word for buildings)"
+      },
+      {
+        "text": "建筑",
+        "pinyin": "jiàn zhù",
+        "gloss": "building"
+      },
+      {
+        "text": "不能",
+        "pinyin": "bù néng",
+        "gloss": "cannot"
+      },
+      {
+        "text": "粉刷",
+        "pinyin": "fěn shuā",
+        "gloss": "be painted"
+      }
+    ]
+  },
+  "Carpenter_CannotPaint_Permission": {
+    "chinese": "你没有粉刷这栋建筑的权限",
+    "english": "You don't have permission to paint this building",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "没有",
+        "pinyin": "méi yǒu",
+        "gloss": "don't have"
+      },
+      {
+        "text": "粉刷",
+        "pinyin": "fěn shuā",
+        "gloss": "painting"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "栋",
+        "pinyin": "dòng",
+        "gloss": "(measure word for buildings)"
+      },
+      {
+        "text": "建筑",
+        "pinyin": "jiàn zhù",
+        "gloss": "building"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "权限",
+        "pinyin": "quán xiàn",
+        "gloss": "permission"
+      }
+    ]
+  },
+  "Carpenter_CantBuild": {
+    "chinese": "不能在那儿建",
+    "english": "Can't build there",
+    "segments": [
+      {
+        "text": "不能",
+        "pinyin": "bù néng",
+        "gloss": "cannot"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "那儿",
+        "pinyin": "nà r",
+        "gloss": "there"
+      },
+      {
+        "text": "建",
+        "pinyin": "jiàn",
+        "gloss": "build"
+      }
+    ]
+  },
+  "Carpenter_CantDemolish_AnimalsHere": {
+    "chinese": "将动物搬走前不能拆除",
+    "english": "Can't demolish before the animals are moved out",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "动物",
+        "pinyin": "dòng wù",
+        "gloss": "animals"
+      },
+      {
+        "text": "搬",
+        "pinyin": "bān",
+        "gloss": "move"
+      },
+      {
+        "text": "走",
+        "pinyin": "zǒu",
+        "gloss": "(result: away)"
+      },
+      {
+        "text": "前",
+        "pinyin": "qián",
+        "gloss": "before"
+      },
+      {
+        "text": "不能",
+        "pinyin": "bù néng",
+        "gloss": "cannot"
+      },
+      {
+        "text": "拆除",
+        "pinyin": "chāi chú",
+        "gloss": "demolish"
+      }
+    ]
+  },
+  "Carpenter_CantDemolish_DuringConstruction": {
+    "chinese": "施工期间不能拆除",
+    "english": "Can't demolish during construction",
+    "segments": [
+      {
+        "text": "施工",
+        "pinyin": "shī gōng",
+        "gloss": "construction"
+      },
+      {
+        "text": "期间",
+        "pinyin": "qī jiān",
+        "gloss": "during"
+      },
+      {
+        "text": "不能",
+        "pinyin": "bù néng",
+        "gloss": "cannot"
+      },
+      {
+        "text": "拆除",
+        "pinyin": "chāi chú",
+        "gloss": "demolish"
+      }
+    ]
+  },
+  "Carpenter_CantDemolish_FarmhandOnline": {
+    "chinese": "这间联机小屋的农场工人在线时不能将其拆除",
+    "english": "Can't demolish this cabin while its farmhand is online",
+    "segments": [
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "间",
+        "pinyin": "jiān",
+        "gloss": "(measure word for rooms)"
+      },
+      {
+        "text": "联机",
+        "pinyin": "lián jī",
+        "gloss": "online (multiplayer)"
+      },
+      {
+        "text": "小屋",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabin"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "工人",
+        "pinyin": "gōng rén",
+        "gloss": "worker"
+      },
+      {
+        "text": "在线",
+        "pinyin": "zài xiàn",
+        "gloss": "online"
+      },
+      {
+        "text": "时",
+        "pinyin": "shí",
+        "gloss": "while"
+      },
+      {
+        "text": "不能",
+        "pinyin": "bù néng",
+        "gloss": "cannot"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "其",
+        "pinyin": "qí",
+        "gloss": "it"
+      },
+      {
+        "text": "拆除",
+        "pinyin": "chāi chú",
+        "gloss": "demolish"
+      }
+    ]
+  },
+  "Carpenter_CantDemolish_LockFailed": {
+    "chinese": "现在无法拆除",
+    "english": "Can't demolish now",
+    "segments": [
+      {
+        "text": "现在",
+        "pinyin": "xiàn zài",
+        "gloss": "now"
+      },
+      {
+        "text": "无法",
+        "pinyin": "wú fǎ",
+        "gloss": "unable to"
+      },
+      {
+        "text": "拆除",
+        "pinyin": "chāi chú",
+        "gloss": "demolish"
+      }
+    ]
+  },
+  "Carpenter_CantDemolish_PlayerHere": {
+    "chinese": "当玩家在这里时，无法拆除",
+    "english": "Can't demolish while a player is here",
+    "segments": [
+      {
+        "text": "当",
+        "pinyin": "dāng",
+        "gloss": "when"
+      },
+      {
+        "text": "玩家",
+        "pinyin": "wán jiā",
+        "gloss": "a player"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "is at"
+      },
+      {
+        "text": "这里",
+        "pinyin": "zhè lǐ",
+        "gloss": "here"
+      },
+      {
+        "text": "时，",
+        "pinyin": "shí",
+        "gloss": "time"
+      },
+      {
+        "text": "无法",
+        "pinyin": "wú fǎ",
+        "gloss": "unable to"
+      },
+      {
+        "text": "拆除",
+        "pinyin": "chāi chú",
+        "gloss": "demolish"
+      }
+    ]
+  },
+  "Carpenter_CantUpgrade_BuildingType": {
+    "chinese": "不正确的建筑类型",
+    "english": "Incorrect building type",
+    "segments": [
+      {
+        "text": "不",
+        "pinyin": "bú",
+        "gloss": "not"
+      },
+      {
+        "text": "正确",
+        "pinyin": "zhèng què",
+        "gloss": "correct"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "建筑",
+        "pinyin": "jiàn zhù",
+        "gloss": "building"
+      },
+      {
+        "text": "类型",
+        "pinyin": "lèi xíng",
+        "gloss": "type"
+      }
+    ]
+  },
+  "Carpenter_ChangeAppearance": {
+    "chinese": "修改外观",
+    "english": "Modify appearance",
+    "segments": [
+      {
+        "text": "修改",
+        "pinyin": "xiū gǎi",
+        "gloss": "modify"
+      },
+      {
+        "text": "外观",
+        "pinyin": "wài guān",
+        "gloss": "appearance"
+      }
+    ]
+  },
+  "Carpenter_ChooseLocation": {
+    "chinese": "选择位置",
+    "english": "Choose a location",
+    "segments": [
+      {
+        "text": "选择",
+        "pinyin": "xuǎn zé",
+        "gloss": "choose"
+      },
+      {
+        "text": "位置",
+        "pinyin": "wèi zhì",
+        "gloss": "location"
+      }
+    ]
+  },
+  "Carpenter_Demolish": {
+    "chinese": "拆除建筑",
+    "english": "Demolish buildings",
+    "segments": [
+      {
+        "text": "拆除",
+        "pinyin": "chāi chú",
+        "gloss": "demolish"
+      },
+      {
+        "text": "建筑",
+        "pinyin": "jiàn zhù",
+        "gloss": "buildings"
+      }
+    ]
+  },
+  "Carpenter_DemolishCabinConfirm": {
+    "chinese": "这将永久地从游戏中移除{0}。确定要拆除这间联机小屋吗？",
+    "english": "This will permanently remove {0} from the game. Are you sure you want to demolish this cabin?",
+    "segments": [
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "will"
+      },
+      {
+        "text": "永久",
+        "pinyin": "yǒng jiǔ",
+        "gloss": "permanently"
+      },
+      {
+        "text": "地",
+        "pinyin": "de",
+        "gloss": "(adverb marker)"
+      },
+      {
+        "text": "从",
+        "pinyin": "cóng",
+        "gloss": "from"
+      },
+      {
+        "text": "游戏",
+        "pinyin": "yóu xì",
+        "gloss": "the game"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      },
+      {
+        "text": "移除",
+        "pinyin": "yí chú",
+        "gloss": "remove"
+      },
+      {
+        "text": "{0}。",
+        "pinyin": "",
+        "gloss": "(name)"
+      },
+      {
+        "text": "确定",
+        "pinyin": "què dìng",
+        "gloss": "sure"
+      },
+      {
+        "text": "要",
+        "pinyin": "yào",
+        "gloss": "want to"
+      },
+      {
+        "text": "拆除",
+        "pinyin": "chāi chú",
+        "gloss": "demolish"
+      },
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "间",
+        "pinyin": "jiān",
+        "gloss": "(measure word for rooms)"
+      },
+      {
+        "text": "联机",
+        "pinyin": "lián jī",
+        "gloss": "online"
+      },
+      {
+        "text": "小屋",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabin"
+      },
+      {
+        "text": "吗？",
+        "pinyin": "ma",
+        "gloss": "(yes/no question)"
+      }
+    ]
+  },
+  "Carpenter_MoveBuildings": {
+    "chinese": "移动建筑",
+    "english": "Move buildings",
+    "segments": [
+      {
+        "text": "移动",
+        "pinyin": "yí dòng",
+        "gloss": "move"
+      },
+      {
+        "text": "建筑",
+        "pinyin": "jiàn zhù",
+        "gloss": "buildings"
+      }
+    ]
+  },
+  "Carpenter_PaintBuildings": {
+    "chinese": "粉刷建筑物",
+    "english": "Paint buildings",
+    "segments": [
+      {
+        "text": "粉刷",
+        "pinyin": "fěn shuā",
+        "gloss": "paint"
+      },
+      {
+        "text": "建筑物",
+        "pinyin": "jiàn zhù wù",
+        "gloss": "buildings"
+      }
+    ]
+  },
+  "Carpenter_SelectBuilding_Demolish": {
+    "chinese": "选择一个建筑来进行拆除",
+    "english": "Choose a building to demolish",
+    "segments": [
+      {
+        "text": "选择",
+        "pinyin": "xuǎn zé",
+        "gloss": "choose"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "建筑",
+        "pinyin": "jiàn zhù",
+        "gloss": "building"
+      },
+      {
+        "text": "来",
+        "pinyin": "lái",
+        "gloss": "to"
+      },
+      {
+        "text": "进行",
+        "pinyin": "jìn xíng",
+        "gloss": "carry out"
+      },
+      {
+        "text": "拆除",
+        "pinyin": "chāi chú",
+        "gloss": "demolition"
+      }
+    ]
+  },
+  "Carpenter_SelectBuilding_Move": {
+    "chinese": "选择一个建筑来进行移动",
+    "english": "Choose a building to move",
+    "segments": [
+      {
+        "text": "选择",
+        "pinyin": "xuǎn zé",
+        "gloss": "choose"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "建筑",
+        "pinyin": "jiàn zhù",
+        "gloss": "building"
+      },
+      {
+        "text": "来",
+        "pinyin": "lái",
+        "gloss": "to"
+      },
+      {
+        "text": "进行",
+        "pinyin": "jìn xíng",
+        "gloss": "carry out"
+      },
+      {
+        "text": "移动",
+        "pinyin": "yí dòng",
+        "gloss": "moving"
+      }
+    ]
+  },
+  "Carpenter_SelectBuilding_Paint": {
+    "chinese": "选择一座建筑粉刷",
+    "english": "Choose a building to paint",
+    "segments": [
+      {
+        "text": "选择",
+        "pinyin": "xuǎn zé",
+        "gloss": "choose"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "座",
+        "pinyin": "zuò",
+        "gloss": "(measure word for buildings)"
+      },
+      {
+        "text": "建筑",
+        "pinyin": "jiàn zhù",
+        "gloss": "building"
+      },
+      {
+        "text": "粉刷",
+        "pinyin": "fěn shuā",
+        "gloss": "paint"
+      }
+    ]
+  },
+  "Carpenter_SelectBuilding_Upgrade": {
+    "chinese": "选择一个{0}来升级",
+    "english": "Choose a {0} to upgrade",
+    "segments": [
+      {
+        "text": "选择",
+        "pinyin": "xuǎn zé",
+        "gloss": "choose"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(building)"
+      },
+      {
+        "text": "来",
+        "pinyin": "lái",
+        "gloss": "to"
+      },
+      {
+        "text": "升级",
+        "pinyin": "shēng jí",
+        "gloss": "upgrade"
+      }
+    ]
+  },
+  "Carpenter_Upgrade": {
+    "chinese": "升级{0}",
+    "english": "Upgrade {0}",
+    "segments": [
+      {
+        "text": "升级",
+        "pinyin": "shēng jí",
+        "gloss": "upgrade"
+      },
+      {
+        "text": "{0}",
+        "pinyin": "",
+        "gloss": "(building)"
+      }
+    ]
+  },
+  "Character_Accessory": {
+    "chinese": "配饰",
+    "english": "Accessory",
+    "segments": [
+      {
+        "text": "配饰",
+        "pinyin": "pèi shì",
+        "gloss": "accessory"
+      }
+    ]
+  },
+  "Character_Animal": {
+    "chinese": "动物偏好",
+    "english": "Animal preference",
+    "segments": [
+      {
+        "text": "动物",
+        "pinyin": "dòng wù",
+        "gloss": "animal"
+      },
+      {
+        "text": "偏好",
+        "pinyin": "piān hào",
+        "gloss": "preference"
+      }
+    ]
+  },
+  "Character_CabinLayout": {
+    "chinese": "联机小屋布局",
+    "english": "Cabin layout",
+    "segments": [
+      {
+        "text": "联机",
+        "pinyin": "lián jī",
+        "gloss": "online (multiplayer)"
+      },
+      {
+        "text": "小屋",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabin"
+      },
+      {
+        "text": "布局",
+        "pinyin": "bù jú",
+        "gloss": "layout"
+      }
+    ]
+  },
+  "Character_Close": {
+    "chinese": "附近",
+    "english": "Nearby",
+    "segments": [
+      {
+        "text": "附近",
+        "pinyin": "fù jìn",
+        "gloss": "nearby"
+      }
+    ]
+  },
+  "Character_CoopHelp": {
+    "chinese": "帮助",
+    "english": "Help",
+    "segments": [
+      {
+        "text": "帮助",
+        "pinyin": "bāng zhù",
+        "gloss": "help"
+      }
+    ]
+  },
+  "Character_CoopHelpString": {
+    "chinese": "初始联机小屋：开始时已有 1 至 {0} 间联机小屋就位，可让你的朋友立即加入。或者，你可以选择“无”，并（通过罗宾）自己建造联机小屋。^^联机小屋布局：如果你决定用原本存在的联机小屋开始你的农场，则可在两种布局风格之间做选择：“附近”将所有联机小屋都放在主农舍附近，鼓励社区型耕种风格。“独立”将尽可能拉开联机小屋之间的距离，提供更多的独立空间。^^利润率：调节你所出售商品的利润率（你赚的钱）。“普通”是原汁原味的星露谷体验。经验较丰富和/或规模较大的团队员可能会压低利润。",
+    "english": "Starting cabins: start with 1 to {0} cabins already in place, letting your friends join right away. Or you can choose \"none\" and build cabins yourself (through Robin). Cabin layout: if you decide to start your farm with existing cabins, you can choose between two layout styles: \"nearby\" puts all cabins near the main farmhouse, encouraging a community-style farming. \"Separate\" spaces the cabins as far apart as possible, giving more independent space. Profit margin: adjusts the profit margin (the money you earn) on goods you sell. \"Normal\" is the original Stardew Valley experience. More experienced and/or larger teams may lower the profit.",
+    "segments": [
+      {
+        "text": "初始",
+        "pinyin": "chū shǐ",
+        "gloss": "starting"
+      },
+      {
+        "text": "联机",
+        "pinyin": "lián jī",
+        "gloss": "online"
+      },
+      {
+        "text": "小屋：",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabins"
+      },
+      {
+        "text": "开始",
+        "pinyin": "kāi shǐ",
+        "gloss": "start"
+      },
+      {
+        "text": "时",
+        "pinyin": "shí",
+        "gloss": "when"
+      },
+      {
+        "text": "已有 ",
+        "pinyin": "yǐ yǒu",
+        "gloss": "already have"
+      },
+      {
+        "text": "1 ",
+        "pinyin": "yī",
+        "gloss": "one"
+      },
+      {
+        "text": "至 ",
+        "pinyin": "zhì",
+        "gloss": "to"
+      },
+      {
+        "text": "{0} ",
+        "pinyin": "",
+        "gloss": "(number)"
+      },
+      {
+        "text": "间",
+        "pinyin": "jiān",
+        "gloss": "(measure word for rooms)"
+      },
+      {
+        "text": "联机",
+        "pinyin": "lián jī",
+        "gloss": "online"
+      },
+      {
+        "text": "小屋",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabins"
+      },
+      {
+        "text": "就位，",
+        "pinyin": "jiù wèi",
+        "gloss": "in place"
+      },
+      {
+        "text": "可",
+        "pinyin": "kě",
+        "gloss": "can"
+      },
+      {
+        "text": "让",
+        "pinyin": "ràng",
+        "gloss": "let"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "朋友",
+        "pinyin": "péng you",
+        "gloss": "friends"
+      },
+      {
+        "text": "立即",
+        "pinyin": "lì jí",
+        "gloss": "immediately"
+      },
+      {
+        "text": "加入。",
+        "pinyin": "jiā rù",
+        "gloss": "join"
+      },
+      {
+        "text": "或者，",
+        "pinyin": "huò zhě",
+        "gloss": "or"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "选择",
+        "pinyin": "xuǎn zé",
+        "gloss": "choose"
+      },
+      {
+        "text": "“无”，",
+        "pinyin": "wú",
+        "gloss": "none"
+      },
+      {
+        "text": "并",
+        "pinyin": "bìng",
+        "gloss": "and"
+      },
+      {
+        "text": "（通过",
+        "pinyin": "tōng guò",
+        "gloss": "through"
+      },
+      {
+        "text": "罗宾）",
+        "pinyin": "luó bīn",
+        "gloss": "Robin"
+      },
+      {
+        "text": "自己",
+        "pinyin": "zì jǐ",
+        "gloss": "yourself"
+      },
+      {
+        "text": "建造",
+        "pinyin": "jiàn zào",
+        "gloss": "build"
+      },
+      {
+        "text": "联机",
+        "pinyin": "lián jī",
+        "gloss": "online"
+      },
+      {
+        "text": "小屋。^^",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabins"
+      },
+      {
+        "text": "联机",
+        "pinyin": "lián jī",
+        "gloss": "online"
+      },
+      {
+        "text": "小屋",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabin"
+      },
+      {
+        "text": "布局：",
+        "pinyin": "bù jú",
+        "gloss": "layout"
+      },
+      {
+        "text": "如果",
+        "pinyin": "rú guǒ",
+        "gloss": "if"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "决定",
+        "pinyin": "jué dìng",
+        "gloss": "decide"
+      },
+      {
+        "text": "用",
+        "pinyin": "yòng",
+        "gloss": "with"
+      },
+      {
+        "text": "原本",
+        "pinyin": "yuán běn",
+        "gloss": "originally"
+      },
+      {
+        "text": "存在",
+        "pinyin": "cún zài",
+        "gloss": "existing"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "联机",
+        "pinyin": "lián jī",
+        "gloss": "online"
+      },
+      {
+        "text": "小屋",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabins"
+      },
+      {
+        "text": "开始",
+        "pinyin": "kāi shǐ",
+        "gloss": "start"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "农场，",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "则",
+        "pinyin": "zé",
+        "gloss": "then"
+      },
+      {
+        "text": "可",
+        "pinyin": "kě",
+        "gloss": "can"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "between"
+      },
+      {
+        "text": "两",
+        "pinyin": "liǎng",
+        "gloss": "two"
+      },
+      {
+        "text": "种",
+        "pinyin": "zhǒng",
+        "gloss": "kinds of"
+      },
+      {
+        "text": "布局",
+        "pinyin": "bù jú",
+        "gloss": "layout"
+      },
+      {
+        "text": "风格",
+        "pinyin": "fēng gé",
+        "gloss": "styles"
+      },
+      {
+        "text": "之间",
+        "pinyin": "zhī jiān",
+        "gloss": "between"
+      },
+      {
+        "text": "做",
+        "pinyin": "zuò",
+        "gloss": "make"
+      },
+      {
+        "text": "选择：",
+        "pinyin": "xuǎn zé",
+        "gloss": "choice"
+      },
+      {
+        "text": "“附近”",
+        "pinyin": "fù jìn",
+        "gloss": "nearby"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "所有",
+        "pinyin": "suǒ yǒu",
+        "gloss": "all"
+      },
+      {
+        "text": "联机",
+        "pinyin": "lián jī",
+        "gloss": "online"
+      },
+      {
+        "text": "小屋",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabins"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "all"
+      },
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "主",
+        "pinyin": "zhǔ",
+        "gloss": "main"
+      },
+      {
+        "text": "农舍",
+        "pinyin": "nóng shè",
+        "gloss": "farmhouse"
+      },
+      {
+        "text": "附近，",
+        "pinyin": "fù jìn",
+        "gloss": "near"
+      },
+      {
+        "text": "鼓励",
+        "pinyin": "gǔ lì",
+        "gloss": "encouraging"
+      },
+      {
+        "text": "社区型",
+        "pinyin": "shè qū xíng",
+        "gloss": "community-style"
+      },
+      {
+        "text": "耕种",
+        "pinyin": "gēng zhòng",
+        "gloss": "farming"
+      },
+      {
+        "text": "风格。",
+        "pinyin": "fēng gé",
+        "gloss": "style"
+      },
+      {
+        "text": "“独立”",
+        "pinyin": "dú lì",
+        "gloss": "separate"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "will"
+      },
+      {
+        "text": "尽可能",
+        "pinyin": "jǐn kě néng",
+        "gloss": "as far as possible"
+      },
+      {
+        "text": "拉开",
+        "pinyin": "lā kāi",
+        "gloss": "pull apart"
+      },
+      {
+        "text": "联机",
+        "pinyin": "lián jī",
+        "gloss": "online"
+      },
+      {
+        "text": "小屋",
+        "pinyin": "xiǎo wū",
+        "gloss": "cabins"
+      },
+      {
+        "text": "之间",
+        "pinyin": "zhī jiān",
+        "gloss": "between"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "距离，",
+        "pinyin": "jù lí",
+        "gloss": "distance"
+      },
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provide"
+      },
+      {
+        "text": "更多",
+        "pinyin": "gèng duō",
+        "gloss": "more"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "独立",
+        "pinyin": "dú lì",
+        "gloss": "independent"
+      },
+      {
+        "text": "空间。^^",
+        "pinyin": "kōng jiān",
+        "gloss": "space"
+      },
+      {
+        "text": "利润率：",
+        "pinyin": "lì rùn lǜ",
+        "gloss": "profit margin"
+      },
+      {
+        "text": "调节",
+        "pinyin": "tiáo jié",
+        "gloss": "adjust"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "所",
+        "pinyin": "suǒ",
+        "gloss": "(that which)"
+      },
+      {
+        "text": "出售",
+        "pinyin": "chū shòu",
+        "gloss": "sell"
+      },
+      {
+        "text": "商品",
+        "pinyin": "shāng pǐn",
+        "gloss": "goods"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "利润率",
+        "pinyin": "lì rùn lǜ",
+        "gloss": "profit margin"
+      },
+      {
+        "text": "（你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "赚",
+        "pinyin": "zhuàn",
+        "gloss": "earn"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "钱）。",
+        "pinyin": "qián",
+        "gloss": "money"
+      },
+      {
+        "text": "“普通”",
+        "pinyin": "pǔ tōng",
+        "gloss": "normal"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "原汁原味",
+        "pinyin": "yuán zhī yuán wèi",
+        "gloss": "original"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "星露谷",
+        "pinyin": "xīng lù gǔ",
+        "gloss": "Stardew Valley"
+      },
+      {
+        "text": "体验。",
+        "pinyin": "tǐ yàn",
+        "gloss": "experience"
+      },
+      {
+        "text": "经验",
+        "pinyin": "jīng yàn",
+        "gloss": "experience"
+      },
+      {
+        "text": "较",
+        "pinyin": "jiào",
+        "gloss": "relatively"
+      },
+      {
+        "text": "丰富",
+        "pinyin": "fēng fù",
+        "gloss": "rich"
+      },
+      {
+        "text": "和/",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "或",
+        "pinyin": "huò",
+        "gloss": "or"
+      },
+      {
+        "text": "规模",
+        "pinyin": "guī mó",
+        "gloss": "scale"
+      },
+      {
+        "text": "较",
+        "pinyin": "jiào",
+        "gloss": "relatively"
+      },
+      {
+        "text": "大",
+        "pinyin": "dà",
+        "gloss": "large"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "团队",
+        "pinyin": "tuán duì",
+        "gloss": "team"
+      },
+      {
+        "text": "员",
+        "pinyin": "yuán",
+        "gloss": "members"
+      },
+      {
+        "text": "可能",
+        "pinyin": "kě néng",
+        "gloss": "may"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "压低",
+        "pinyin": "yā dī",
+        "gloss": "lower"
+      },
+      {
+        "text": "利润。",
+        "pinyin": "lì rùn",
+        "gloss": "profit"
+      }
+    ]
+  },
+  "Character_CoopHelpString2": {
+    "chinese": "资金管理：你可以选择收支管理的方式。在“共享”模式下，所有玩家共享同一个资金池。在“独立”模式下，每个玩家都有自己的单独的资金池。“共享”模式是经典的星露谷物语体验模式。 ",
+    "english": "Money management: you can choose how income and spending are managed. In \"shared\" mode, all players share the same money pool. In \"separate\" mode, each player has their own separate money pool. \"Shared\" mode is the classic Stardew Valley experience.",
+    "segments": [
+      {
+        "text": "资金",
+        "pinyin": "zī jīn",
+        "gloss": "money"
+      },
+      {
+        "text": "管理：",
+        "pinyin": "guǎn lǐ",
+        "gloss": "management"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "选择",
+        "pinyin": "xuǎn zé",
+        "gloss": "choose"
+      },
+      {
+        "text": "收支",
+        "pinyin": "shōu zhī",
+        "gloss": "income and spending"
+      },
+      {
+        "text": "管理",
+        "pinyin": "guǎn lǐ",
+        "gloss": "management"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "方式。",
+        "pinyin": "fāng shì",
+        "gloss": "way"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "“共享”",
+        "pinyin": "gòng xiǎng",
+        "gloss": "shared"
+      },
+      {
+        "text": "模式",
+        "pinyin": "mó shì",
+        "gloss": "mode"
+      },
+      {
+        "text": "下，",
+        "pinyin": "xià",
+        "gloss": "under"
+      },
+      {
+        "text": "所有",
+        "pinyin": "suǒ yǒu",
+        "gloss": "all"
+      },
+      {
+        "text": "玩家",
+        "pinyin": "wán jiā",
+        "gloss": "players"
+      },
+      {
+        "text": "共享",
+        "pinyin": "gòng xiǎng",
+        "gloss": "share"
+      },
+      {
+        "text": "同一个",
+        "pinyin": "tóng yí gè",
+        "gloss": "the same"
+      },
+      {
+        "text": "资金",
+        "pinyin": "zī jīn",
+        "gloss": "money"
+      },
+      {
+        "text": "池。",
+        "pinyin": "chí",
+        "gloss": "pool"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "“独立”",
+        "pinyin": "dú lì",
+        "gloss": "separate"
+      },
+      {
+        "text": "模式",
+        "pinyin": "mó shì",
+        "gloss": "mode"
+      },
+      {
+        "text": "下，",
+        "pinyin": "xià",
+        "gloss": "under"
+      },
+      {
+        "text": "每个",
+        "pinyin": "měi gè",
+        "gloss": "each"
+      },
+      {
+        "text": "玩家",
+        "pinyin": "wán jiā",
+        "gloss": "player"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "all"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "have"
+      },
+      {
+        "text": "自己",
+        "pinyin": "zì jǐ",
+        "gloss": "own"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "单独",
+        "pinyin": "dān dú",
+        "gloss": "separate"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "资金",
+        "pinyin": "zī jīn",
+        "gloss": "money"
+      },
+      {
+        "text": "池。",
+        "pinyin": "chí",
+        "gloss": "pool"
+      },
+      {
+        "text": "“共享”",
+        "pinyin": "gòng xiǎng",
+        "gloss": "shared"
+      },
+      {
+        "text": "模式",
+        "pinyin": "mó shì",
+        "gloss": "mode"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "经典",
+        "pinyin": "jīng diǎn",
+        "gloss": "classic"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "星露谷物语",
+        "pinyin": "xīng lù gǔ wù yǔ",
+        "gloss": "Stardew Valley (game title)"
+      },
+      {
+        "text": "体验",
+        "pinyin": "tǐ yàn",
+        "gloss": "experience"
+      },
+      {
+        "text": "模式。 ",
+        "pinyin": "mó shì",
+        "gloss": "mode"
+      }
+    ]
+  },
+  "Character_Difficulty": {
+    "chinese": "利润率",
+    "english": "Profit margin",
+    "segments": [
+      {
+        "text": "利润率",
+        "pinyin": "lì rùn lǜ",
+        "gloss": "profit margin"
+      }
+    ]
+  },
+  "Character_DyeColor": {
+    "chinese": "染料颜色：",
+    "english": "Dye color:",
+    "segments": [
+      {
+        "text": "染料",
+        "pinyin": "rǎn liào",
+        "gloss": "dye"
+      },
+      {
+        "text": "颜色：",
+        "pinyin": "yán sè",
+        "gloss": "color"
+      }
+    ]
+  },
+  "Character_EyeColor": {
+    "chinese": "眼睛颜色：",
+    "english": "Eye color:",
+    "segments": [
+      {
+        "text": "眼睛",
+        "pinyin": "yǎn jing",
+        "gloss": "eye"
+      },
+      {
+        "text": "颜色：",
+        "pinyin": "yán sè",
+        "gloss": "color"
+      }
+    ]
+  },
+  "Character_Farm": {
+    "chinese": "农场名字",
+    "english": "Farm name",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "名字",
+        "pinyin": "míng zi",
+        "gloss": "name"
+      }
+    ]
+  },
+  "Character_FarmBeach": {
+    "chinese": "海滩农场_采集与钓鱼的好去处，还有成片的空地。有时会有补给箱冲到沙滩上。但是，洒水器在沙土上没有用。",
+    "english": "Beach farm _ A good place for foraging and fishing, with large stretches of open land. Sometimes supply crates wash up on the beach. However, sprinklers don't work on sandy soil.",
+    "segments": [
+      {
+        "text": "海滩",
+        "pinyin": "hǎi tān",
+        "gloss": "beach"
+      },
+      {
+        "text": "农场_",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "采集",
+        "pinyin": "cǎi jí",
+        "gloss": "foraging"
+      },
+      {
+        "text": "与",
+        "pinyin": "yǔ",
+        "gloss": "and"
+      },
+      {
+        "text": "钓鱼",
+        "pinyin": "diào yú",
+        "gloss": "fishing"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "好",
+        "pinyin": "hǎo",
+        "gloss": "good"
+      },
+      {
+        "text": "去处，",
+        "pinyin": "qù chù",
+        "gloss": "place to go"
+      },
+      {
+        "text": "还有",
+        "pinyin": "hái yǒu",
+        "gloss": "and also"
+      },
+      {
+        "text": "成片",
+        "pinyin": "chéng piàn",
+        "gloss": "large stretches"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "空地。",
+        "pinyin": "kòng dì",
+        "gloss": "open land"
+      },
+      {
+        "text": "有时",
+        "pinyin": "yǒu shí",
+        "gloss": "sometimes"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "there be"
+      },
+      {
+        "text": "补给箱",
+        "pinyin": "bǔ jǐ xiāng",
+        "gloss": "supply crates"
+      },
+      {
+        "text": "冲",
+        "pinyin": "chōng",
+        "gloss": "washed"
+      },
+      {
+        "text": "到",
+        "pinyin": "dào",
+        "gloss": "(result: to)"
+      },
+      {
+        "text": "沙滩",
+        "pinyin": "shā tān",
+        "gloss": "beach"
+      },
+      {
+        "text": "上。",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "但是，",
+        "pinyin": "dàn shì",
+        "gloss": "but"
+      },
+      {
+        "text": "洒水器",
+        "pinyin": "sǎ shuǐ qì",
+        "gloss": "sprinklers"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "on"
+      },
+      {
+        "text": "沙土",
+        "pinyin": "shā tǔ",
+        "gloss": "sandy soil"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "没有",
+        "pinyin": "méi yǒu",
+        "gloss": "have no"
+      },
+      {
+        "text": "用。",
+        "pinyin": "yòng",
+        "gloss": "use"
+      }
+    ]
+  },
+  "Character_FarmCombat": {
+    "chinese": "荒野农场_这里到处都是肥沃的土地，但一定要小心……在夜间有怪物出没。",
+    "english": "Wilderness farm _ There's fertile land everywhere here, but be careful... monsters appear at night.",
+    "segments": [
+      {
+        "text": "荒野",
+        "pinyin": "huāng yě",
+        "gloss": "wilderness"
+      },
+      {
+        "text": "农场_",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "这里",
+        "pinyin": "zhè lǐ",
+        "gloss": "here"
+      },
+      {
+        "text": "到处",
+        "pinyin": "dào chù",
+        "gloss": "everywhere"
+      },
+      {
+        "text": "都是",
+        "pinyin": "dōu shì",
+        "gloss": "is all"
+      },
+      {
+        "text": "肥沃",
+        "pinyin": "féi wò",
+        "gloss": "fertile"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "土地，",
+        "pinyin": "tǔ dì",
+        "gloss": "land"
+      },
+      {
+        "text": "但",
+        "pinyin": "dàn",
+        "gloss": "but"
+      },
+      {
+        "text": "一定",
+        "pinyin": "yí dìng",
+        "gloss": "must"
+      },
+      {
+        "text": "要",
+        "pinyin": "yào",
+        "gloss": "be"
+      },
+      {
+        "text": "小心……",
+        "pinyin": "xiǎo xīn",
+        "gloss": "careful"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "夜间",
+        "pinyin": "yè jiān",
+        "gloss": "night"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "there are"
+      },
+      {
+        "text": "怪物",
+        "pinyin": "guài wù",
+        "gloss": "monsters"
+      },
+      {
+        "text": "出没。",
+        "pinyin": "chū mò",
+        "gloss": "appearing"
+      }
+    ]
+  },
+  "Character_FarmFishing": {
+    "chinese": "河边农场_你的农场散布在几座岛屿和风景优美的河岸之间。这里的鱼要比其他地方更多。开始时有一台熏鱼机。",
+    "english": "Riverside farm _ Your farm is spread across several islands and scenic riverbanks. There are more fish here than elsewhere. You start with a fish smoker.",
+    "segments": [
+      {
+        "text": "河边",
+        "pinyin": "hé biān",
+        "gloss": "riverside"
+      },
+      {
+        "text": "农场_",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "散布",
+        "pinyin": "sàn bù",
+        "gloss": "spread"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "几",
+        "pinyin": "jǐ",
+        "gloss": "several"
+      },
+      {
+        "text": "座",
+        "pinyin": "zuò",
+        "gloss": "(measure word for islands)"
+      },
+      {
+        "text": "岛屿",
+        "pinyin": "dǎo yǔ",
+        "gloss": "islands"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "风景优美",
+        "pinyin": "fēng jǐng yōu měi",
+        "gloss": "scenic"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "河岸",
+        "pinyin": "hé àn",
+        "gloss": "riverbanks"
+      },
+      {
+        "text": "之间。",
+        "pinyin": "zhī jiān",
+        "gloss": "between"
+      },
+      {
+        "text": "这里",
+        "pinyin": "zhè lǐ",
+        "gloss": "here"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      },
+      {
+        "text": "要",
+        "pinyin": "yào",
+        "gloss": "(comparison)"
+      },
+      {
+        "text": "比",
+        "pinyin": "bǐ",
+        "gloss": "than"
+      },
+      {
+        "text": "其他",
+        "pinyin": "qí tā",
+        "gloss": "other"
+      },
+      {
+        "text": "地方",
+        "pinyin": "dì fang",
+        "gloss": "places"
+      },
+      {
+        "text": "更",
+        "pinyin": "gèng",
+        "gloss": "more"
+      },
+      {
+        "text": "多。",
+        "pinyin": "duō",
+        "gloss": "many"
+      },
+      {
+        "text": "开始",
+        "pinyin": "kāi shǐ",
+        "gloss": "start"
+      },
+      {
+        "text": "时",
+        "pinyin": "shí",
+        "gloss": "when"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "have"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "台",
+        "pinyin": "tái",
+        "gloss": "(measure word for machines)"
+      },
+      {
+        "text": "熏鱼机。",
+        "pinyin": "xūn yú jī",
+        "gloss": "fish smoker"
+      }
+    ]
+  },
+  "Character_FarmForaging": {
+    "chinese": "森林农场_树木把你农场的空间给限制住了。但是，森林的馈赠就几乎在你的门口……",
+    "english": "Forest farm _ Trees limit your farm's space. But the forest's gifts are almost at your doorstep...",
+    "segments": [
+      {
+        "text": "森林",
+        "pinyin": "sēn lín",
+        "gloss": "forest"
+      },
+      {
+        "text": "农场_",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "树木",
+        "pinyin": "shù mù",
+        "gloss": "trees"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "空间",
+        "pinyin": "kōng jiān",
+        "gloss": "space"
+      },
+      {
+        "text": "给",
+        "pinyin": "gěi",
+        "gloss": "(passive emphasis)"
+      },
+      {
+        "text": "限制",
+        "pinyin": "xiàn zhì",
+        "gloss": "limit"
+      },
+      {
+        "text": "住",
+        "pinyin": "zhù",
+        "gloss": "(result: firmly)"
+      },
+      {
+        "text": "了。",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      },
+      {
+        "text": "但是，",
+        "pinyin": "dàn shì",
+        "gloss": "but"
+      },
+      {
+        "text": "森林",
+        "pinyin": "sēn lín",
+        "gloss": "forest"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "馈赠",
+        "pinyin": "kuì zèng",
+        "gloss": "gifts"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "just"
+      },
+      {
+        "text": "几乎",
+        "pinyin": "jī hū",
+        "gloss": "almost"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "门口……",
+        "pinyin": "mén kǒu",
+        "gloss": "doorstep"
+      }
+    ]
+  },
+  "Character_FarmFourCorners": {
+    "chinese": "四角农场_土地分为四个地块，每个地块都有各自的补贴。非常适合多人游戏！",
+    "english": "Four corners farm _ The land is divided into four plots, each with its own bonus. Very suited to multiplayer!",
+    "segments": [
+      {
+        "text": "四角",
+        "pinyin": "sì jiǎo",
+        "gloss": "four corners"
+      },
+      {
+        "text": "农场_",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "土地",
+        "pinyin": "tǔ dì",
+        "gloss": "land"
+      },
+      {
+        "text": "分",
+        "pinyin": "fēn",
+        "gloss": "divided"
+      },
+      {
+        "text": "为",
+        "pinyin": "wéi",
+        "gloss": "into"
+      },
+      {
+        "text": "四",
+        "pinyin": "sì",
+        "gloss": "four"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "地块，",
+        "pinyin": "dì kuài",
+        "gloss": "plots"
+      },
+      {
+        "text": "每个",
+        "pinyin": "měi gè",
+        "gloss": "each"
+      },
+      {
+        "text": "地块",
+        "pinyin": "dì kuài",
+        "gloss": "plot"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "all"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "has"
+      },
+      {
+        "text": "各自",
+        "pinyin": "gè zì",
+        "gloss": "its own"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "补贴。",
+        "pinyin": "bǔ tiē",
+        "gloss": "bonus"
+      },
+      {
+        "text": "非常",
+        "pinyin": "fēi cháng",
+        "gloss": "very"
+      },
+      {
+        "text": "适合",
+        "pinyin": "shì hé",
+        "gloss": "suited to"
+      },
+      {
+        "text": "多人",
+        "pinyin": "duō rén",
+        "gloss": "multiplayer"
+      },
+      {
+        "text": "游戏！",
+        "pinyin": "yóu xì",
+        "gloss": "game"
+      }
+    ]
+  },
+  "Character_FarmMining": {
+    "chinese": "山顶农场_岩石地形和蜿蜒的河流提高了你设计农场的难度。但是矿床提供了不少采矿的机会。",
+    "english": "Hilltop farm _ Rocky terrain and a winding river make your farm harder to design. But a mineral deposit offers plenty of mining opportunities.",
+    "segments": [
+      {
+        "text": "山顶",
+        "pinyin": "shān dǐng",
+        "gloss": "hilltop"
+      },
+      {
+        "text": "农场_",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "岩石",
+        "pinyin": "yán shí",
+        "gloss": "rocky"
+      },
+      {
+        "text": "地形",
+        "pinyin": "dì xíng",
+        "gloss": "terrain"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "蜿蜒",
+        "pinyin": "wān yán",
+        "gloss": "winding"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "河流",
+        "pinyin": "hé liú",
+        "gloss": "river"
+      },
+      {
+        "text": "提高",
+        "pinyin": "tí gāo",
+        "gloss": "raise"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "设计",
+        "pinyin": "shè jì",
+        "gloss": "designing"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "难度。",
+        "pinyin": "nán dù",
+        "gloss": "difficulty"
+      },
+      {
+        "text": "但是",
+        "pinyin": "dàn shì",
+        "gloss": "but"
+      },
+      {
+        "text": "矿床",
+        "pinyin": "kuàng chuáng",
+        "gloss": "mineral deposit"
+      },
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "不少",
+        "pinyin": "bù shǎo",
+        "gloss": "quite a few"
+      },
+      {
+        "text": "采矿",
+        "pinyin": "cǎi kuàng",
+        "gloss": "mining"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "机会。",
+        "pinyin": "jī huì",
+        "gloss": "opportunities"
+      }
+    ]
+  },
+  "Character_FarmNameSuffix": {
+    "chinese": "农场",
+    "english": "Farm",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      }
+    ]
+  },
+  "Character_FarmStandard": {
+    "chinese": "标准农场_一块简单的地，有大量空间可以设计你的农场。",
+    "english": "Standard farm _ A simple piece of land, with lots of space to design your farm.",
+    "segments": [
+      {
+        "text": "标准",
+        "pinyin": "biāo zhǔn",
+        "gloss": "standard"
+      },
+      {
+        "text": "农场_",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word: piece)"
+      },
+      {
+        "text": "简单",
+        "pinyin": "jiǎn dān",
+        "gloss": "simple"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "地，",
+        "pinyin": "dì",
+        "gloss": "land"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "has"
+      },
+      {
+        "text": "大量",
+        "pinyin": "dà liàng",
+        "gloss": "a lot of"
+      },
+      {
+        "text": "空间",
+        "pinyin": "kōng jiān",
+        "gloss": "space"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "设计",
+        "pinyin": "shè jì",
+        "gloss": "design"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "农场。",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      }
+    ]
+  },
+  "Character_FavoriteThing": {
+    "chinese": "最喜欢\n的东西",
+    "english": "Favorite thing",
+    "segments": [
+      {
+        "text": "最",
+        "pinyin": "zuì",
+        "gloss": "most"
+      },
+      {
+        "text": "喜欢\n",
+        "pinyin": "xǐ huan",
+        "gloss": "liked"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "东西",
+        "pinyin": "dōng xi",
+        "gloss": "thing"
+      }
+    ]
+  },
+  "Character_Hair": {
+    "chinese": "头发",
+    "english": "Hair",
+    "segments": [
+      {
+        "text": "头发",
+        "pinyin": "tóu fa",
+        "gloss": "hair"
+      }
+    ]
+  },
+  "Character_HairColor": {
+    "chinese": "头发颜色：",
+    "english": "Hair color:",
+    "segments": [
+      {
+        "text": "头发",
+        "pinyin": "tóu fa",
+        "gloss": "hair"
+      },
+      {
+        "text": "颜色：",
+        "pinyin": "yán sè",
+        "gloss": "color"
+      }
+    ]
+  },
+  "Character_Name": {
+    "chinese": "名字",
+    "english": "Name",
+    "segments": [
+      {
+        "text": "名字",
+        "pinyin": "míng zi",
+        "gloss": "name"
       }
     ]
   }
