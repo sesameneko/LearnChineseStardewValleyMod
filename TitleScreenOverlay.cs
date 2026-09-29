@@ -8,22 +8,18 @@ using StardewValley.Menus;
 namespace LanguageStudyStardewValleyMod
 {
     /// <summary>
-    /// Readings for the Japanese title screen (see <see cref="TitleScreenText"/>): one under the
-    /// logo, and one in a speech bubble for whichever main button the cursor is over.
+    /// Readings for the Japanese title screen (see <see cref="TitleScreenText"/>), in a speech
+    /// bubble for whichever main button the cursor is over.
     ///
-    /// Positions mirror TitleMenu in the 1.6.15 IL:
-    ///  - logo: drawn at (globalXOffset + width / 2 - 200s, -300s - viewportY / 3 * s), 400 x 187
-    ///    source pixels at scale s, where s is 2 if ShouldShrinkLogo() (height at most 850) and
-    ///    TitleMenu.pixelZoom (3) otherwise;
-    ///  - buttons: 58 * pixelZoom tall, with their bottom edge 8 * pixelZoom above the screen's.
-    /// That bottom margin (24px) is far too short for a bubble, so the button bubbles sit above the
-    /// buttons and point down at them.
+    /// Per TitleMenu in the 1.6.15 IL, the buttons are 58 * pixelZoom tall, with their bottom edge
+    /// 8 * pixelZoom above the screen's. That bottom margin (24px) is far too short for a bubble, so
+    /// the bubbles sit above the buttons and point down at them.
     /// </summary>
     public static class TitleScreenOverlay
     {
         private const float LayerDepth = 1f;
 
-        /// <summary>Space between what a bubble describes and its pointer.</summary>
+        /// <summary>Space between the button and the bubble's pointer.</summary>
         private const int Gap = 8;
 
         public static void Draw(SpriteBatch b)
@@ -31,38 +27,11 @@ namespace LanguageStudyStardewValleyMod
             if (ModEntry.Instance?.StudyLanguage != "ja"
                 || Game1.activeClickableMenu is not TitleMenu title
                 || TitleMenu.subMenu is not null
-                || !title.titleInPosition)
+                || !title.titleInPosition
+                || title.isTransitioningButtons)
                 return;
 
-            int buttonsTop = title.height - (66 * TitleMenu.pixelZoom);
-
-            DrawLogoReading(b, title, buttonsTop);
-
-            if (!title.isTransitioningButtons)
-                DrawButtonReading(b, title);
-        }
-
-        private static void DrawLogoReading(SpriteBatch b, TitleMenu title, int buttonsTop)
-        {
-            int scale = title.ShouldShrinkLogo() ? 2 : TitleMenu.pixelZoom;
-            float logoBottom = (-300 * scale) - (title.viewportY / 3 * scale) + (187 * scale);
-
-            string text = Describe(TitleScreenText.Logo);
-            Vector2 size = Game1.smallFont.MeasureString(text);
-
-            // the anchor is the pointer's tip on top; the box ends 12px below the anchor + size.Y.
-            // On a short window the logo reaches the buttons, so it's pulled up over the sign's
-            // bottom edge rather than drawn across them.
-            float anchorY = Math.Min(logoBottom + Gap + size.Y, buttonsTop - Gap - 12);
-
-            SpriteText.drawSmallTextBubble(
-                b,
-                text,
-                new Vector2(title.globalXOffset + (title.width / 2f), anchorY),
-                maxWidth: -1,
-                layerDepth: LayerDepth,
-                drawPointerOnTop: true
-            );
+            DrawButtonReading(b, title);
         }
 
         private static void DrawButtonReading(SpriteBatch b, TitleMenu title)

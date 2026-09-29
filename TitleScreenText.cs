@@ -18,18 +18,14 @@ namespace LanguageStudyStardewValleyMod
     /// Minigames/TitleButtons.ja-JP texture rather than drawn from any string table -- so neither
     /// the translation index nor the segment data can see it.
     ///
-    /// Per that texture in 1.6.15: the buttons read はじめから, つづきから, CO-OP and 終了, and the
-    /// logo is the English "STARDEW VALLEY" sign. The game's own ja text calls the game
-    /// スターデューバレー and co-op 協力プレイ (UI.json StartLocalMulti), so those are the readings
-    /// given for the two things drawn in English.
+    /// Per that texture in 1.6.15: the buttons read はじめから, つづきから, CO-OP and 終了. The game's
+    /// own ja text calls co-op 協力プレイ (UI.json StartLocalMulti), so that's the reading given for
+    /// the button drawn in English.
     ///
     /// Game-free so it can be unit-tested; the romaji is checked there against KanaRomaji.
     /// </summary>
     public static class TitleScreenText
     {
-        /// <summary>The reading shown under the logo.</summary>
-        public static readonly TitleReading Logo = new("スターデューバレー", "Sutādyū Barē");
-
         /// <summary>Button readings, keyed by the name TitleMenu.setUpIcons gives each button.</summary>
         public static readonly IReadOnlyDictionary<string, TitleReading> Buttons = new Dictionary<string, TitleReading>
         {
