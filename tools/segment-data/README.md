@@ -58,6 +58,10 @@ it. When unsure, ask whether a learner would look it up as one item.
   stays whole: 打开, 看见, 找到, 起来 (when lexicalised). A potential complement is
   three: 用 / 不 / 惯, 过 / 不 / 了 (`liǎo`). Its 不 is neutral (`bu`) and glossed as
   a word, `not (can't)`, since it can be saved like one.
+- **的 has two more glosses:** `(nominaliser: what)` / `(nominaliser: one who)` for 我需要的,
+  爱你的, and `(emphasis)` for the 是…的 construction or a sentence-final 的. Where the
+  source writes 的 for standard 得 or 地, gloss it `(complement marker, written 的)` /
+  `(adverb marker, written 的)`.
 - **Grammar words are their own segment, with a bracketed functional gloss:**
   的 `(possessive)` or `(modifier marker)`, 地 `(adverb marker)`, 得 `(complement
   marker)`, 了 `(completed action)` or `(change of state)`, 着 `(ongoing)`, 过
@@ -96,7 +100,11 @@ segment against it:
   it to the syllable before. 儿 as a word (儿子) is `ér`.
 - **Latin and digits** the text keeps are copied as they are: `Joja超市` →
   `Joja chāo shì`. A number written in digits may instead be read aloud (`500金` →
-  `wǔ bǎi jīn`), which is more useful to a learner. Both forms pass.
+  `wǔ bǎi jīn`), which is more useful to a learner, so prefer it for short numbers. Long
+  or comma-grouped numbers (`1,000,000`) and codes can keep empty pinyin. Both forms pass.
+- **Mistakes and dialect in the source** are segmented as written. Gloss what is meant:
+  `woods (typo for 丛林)`, `you (accent for 你)`. A misspelled hanzi keeps a real reading of
+  its own character.
 - Pinyin is left empty for a segment that is only a token, markup or symbols. `merge`
   fills it for a hanzi-free segment you leave empty.
 - Proper names use the ordinary lowercase reading of their characters (皮埃尔 `pí āi
@@ -167,6 +175,19 @@ Dialogue markup (`$h`, `#$b#`, `#$e#`, `@`, `%`...) stays in the source string, 
 has to stay in the segments. It is folded into the end of the segment before it, like
 punctuation, so a page break always falls on a segment boundary.
 
+`%farm`, `%spouse`, `%year`, `%secretsanta` and the like are the game's placeholders.
+`MARKUP` treats them as markup, so they fold into the word before and need no segment.
+That means the name the game draws there has no hover of its own (see "Chinese migration"
+in `TODOs.md`).
+
+## Parallel authoring
+
+`merge` rewrites a table's whole file, so two authors must never merge into the same table at
+once. For parallel runs, give each author a private output folder: with
+`SEGTOOL_OUT=<scratch>/out-N`, `merge` and `validate` read and write there instead of
+`assets/segments/zh/`. Authors check their TSVs that way, and one person then merges every
+TSV into the real data in sequence.
+
 ## Where the files live
 
 `assets/segments/zh/` is the **tracked source of truth**, and ships with the mod as-is:
@@ -224,7 +245,9 @@ Write the words, and `merge` supplies the rest.
 - **So are commands the game never draws**, arguments and all: a question and its
   answers (`$q 32 null#`, `$r 32 0 Event_Rain_1#`), a random or conditional choice
   (`$c .5#`, `$p 17#`, `$d joja#`, `$query PLAYER_NPC_RELATIONSHIP …#`), a mail
-  attachment (`%item id (O)434 1 %%`), and the `${` `}$` around a gendered pair. The
+  attachment (`%item id (O)434 1 %%`), the `${` `}$` around a gendered pair, letter
+  formatting (`[textcolor black]`, `[letterbg …]`), and event-script commands left between
+  two spoken lines (`/pause 500/speak MrQi "`). The
   text on each side of a choice (`#`, `|`, `^`, the `_` of a `$y` question) is drawn,
   so write the words of every alternative, in source order.
 - **Straight quotes and asterisks** (`"交界处"`, `*唉*`) open or close depending on
