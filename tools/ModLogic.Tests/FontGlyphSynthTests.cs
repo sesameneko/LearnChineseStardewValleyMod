@@ -127,6 +127,56 @@ public class FontGlyphSynthTests
     }
 
     [Fact]
+    public void FlipAccentTurnsACircumflexIntoACaron()
+    {
+        // the zh font's â, simplified: a faint row above the accent, then the gap
+        var circumflex = Art(
+            "......",
+            "..##..",
+            ".#..#.",
+            "#....#",
+            "......",
+            ".####.",
+            "#...##",
+            ".#####");
+
+        var result = FontGlyphSynth.FlipAccent(circumflex);
+
+        Assert.NotNull(result);
+        Assert.Equal(new[]
+        {
+            "......",
+            "#....#",
+            ".#..#.",
+            "..##..",
+            "......",
+            ".####.",
+            "#...##",
+            ".#####",
+        }, Render(result!));
+    }
+
+    [Fact]
+    public void FlipAccentCarriesTheFaintEdgesWithIt()
+    {
+        // alpha below the ink threshold: the antialiased tip above the accent must end up below it
+        const uint Faint = 0x40FFFFFF;
+        var glyph = new GlyphBitmap(1, 5, new[] { Faint, Ink, 0u, 0u, Ink });
+
+        var result = FontGlyphSynth.FlipAccent(glyph)!;
+
+        Assert.Equal(new[] { 0u, Ink, Faint, 0u, Ink }, result.Pixels);
+    }
+
+    [Fact]
+    public void FlipAccentNeedsAGapBetweenAccentAndLetter()
+    {
+        var joined = Art(".##.", "#..#", "####");
+
+        Assert.Null(FontGlyphSynth.FlipAccent(joined));
+    }
+
+    [Fact]
     public void BarThicknessIsTheMedianAcrossGlyphs()
     {
         var thin = Art(".##.", "#..#", ".##.");

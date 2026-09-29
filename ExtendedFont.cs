@@ -10,9 +10,9 @@ using StardewValley;
 namespace LanguageStudyStardewValleyMod
 {
     /// <summary>
-    /// Adds glyphs the game's small font lacks -- the macron vowels of pinyin's 1st tone -- by
-    /// rebuilding the font as it loads. (Tone 3 and the marked ü are still missing; until they're
-    /// added, Pinyin.ForFont shows those words with tone numbers.)
+    /// Adds glyphs the game's small font lacks -- the macron vowels of pinyin's 1st tone and the
+    /// caron vowels of its 3rd -- by rebuilding the font as it loads. (The marked ü are still
+    /// missing; until they're added, Pinyin.ForFont shows those words with tone numbers.)
     ///
     /// Hooked on AssetRequested rather than done once at launch because the game loads the font
     /// twice at startup (the base asset, then Fonts/SmallFont.zh-CN when the language is applied)
@@ -26,7 +26,7 @@ namespace LanguageStudyStardewValleyMod
     /// The glyph work itself is in <see cref="FontGlyphSynth"/>; this half reads the atlas back
     /// from the GPU, appends the new glyphs in a strip below it, and builds a new SpriteFont.
     /// Anything going wrong leaves the original font in place, in which case Pinyin.ForFont shows
-    /// tone numbers for every word with a 1st tone too.
+    /// tone numbers for every word with a 1st or 3rd tone too.
     /// </summary>
     internal static class ExtendedFont
     {
@@ -78,12 +78,12 @@ namespace LanguageStudyStardewValleyMod
                 }
                 catch (Exception ex)
                 {
-                    ModEntry.Log($"Couldn't extend {e.Name}; long vowels will be written doubled. {ex.GetType().Name}: {ex.Message}", LogLevel.Warn);
+                    ModEntry.Log($"Couldn't extend {e.Name}; pinyin needing the missing tone marks will show tone numbers. {ex.GetType().Name}: {ex.Message}", LogLevel.Warn);
                 }
             }, AssetEditPriority.Late);
         }
 
-        /// <summary>The font with the macron vowels added, or null if it has nothing to add.</summary>
+        /// <summary>The font with the macron and caron vowels added, or null if it has nothing to add.</summary>
         private static SpriteFont? Extend(SpriteFont font, out string summary)
         {
             summary = "";
@@ -92,7 +92,10 @@ namespace LanguageStudyStardewValleyMod
             var toAdd = FontGlyphSynth.MacronVowels
                 .Where(pair => !glyphs.ContainsKey(pair.Macron) && glyphs.ContainsKey(pair.Base))
                 .ToList();
-            if (toAdd.Count == 0)
+            var carons = FontGlyphSynth.CaronVowels
+                .Where(pair => !glyphs.ContainsKey(pair.Caron) && glyphs.ContainsKey(pair.Circumflex))
+                .ToList();
+            if (toAdd.Count == 0 && carons.Count == 0)
                 return null;
 
             var texture = font.Texture;
@@ -133,6 +136,19 @@ namespace LanguageStudyStardewValleyMod
                 var bitmap = FontGlyphSynth.AddMacron(shapes[baseChar], thickness, out int extra, spans[baseChar], inkTop);
                 newGlyphs.Add((macron, bitmap, glyph, extra));
             }
+
+            // carons: the circumflex vowel with its accent flipped in place, so same size and metrics
+            foreach (var (caron, circumflex) in carons)
+            {
+                var glyph = glyphs[circumflex];
+                var source = glyph.BoundsInTexture;
+                var bitmap = FontGlyphSynth.FlipAccent(FontGlyphSynth.Crop(atlas, texture.Width, source.X, source.Y, source.Width, source.Height));
+                if (bitmap is not null)
+                    newGlyphs.Add((caron, bitmap, glyph, 0));
+            }
+
+            if (newGlyphs.Count == 0)
+                return null;
 
             var (positions, stripHeight) = FontGlyphSynth.PackStrip(newGlyphs.Select(g => (g.Bitmap.Width, g.Bitmap.Height)).ToList(), texture.Width, padding: 1);
 

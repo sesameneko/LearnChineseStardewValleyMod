@@ -17,8 +17,10 @@ namespace LanguageStudyStardewValleyMod
     }
 
     /// <summary>
-    /// Builds new font glyphs out of a font's existing ones: macron vowels (ā ī ū ē ō) drawn as
-    /// the base vowel with a bar over it, so they match the font's own weight and style.
+    /// Builds new font glyphs out of a font's existing ones, so they match the font's own weight
+    /// and style: macron vowels (ā ī ū ē ō) drawn as the base vowel with a bar over it, and caron
+    /// vowels (ǎ ě ǐ ǒ ǔ, pinyin's 3rd tone) as the font's circumflex vowel with its accent
+    /// turned upside down.
     ///
     /// Deliberately free of StardewValley/MonoGame types so it can be unit-tested; ExtendedFont is
     /// the game-side half that reads the atlas and assembles the new SpriteFont.
@@ -30,6 +32,20 @@ namespace LanguageStudyStardewValleyMod
         {
             ('ā', 'a'), ('ī', 'i'), ('ū', 'u'), ('ē', 'e'), ('ō', 'o'),
             ('Ā', 'A'), ('Ī', 'I'), ('Ū', 'U'), ('Ē', 'E'), ('Ō', 'O'),
+        };
+
+        /// <summary>
+        /// Each caron vowel and the circumflex vowel it is flipped from. A caron is a circumflex
+        /// upside down, and flipping the font's own keeps the accent's weight, antialiasing and
+        /// the height and centring the font gives it over each letter.
+        ///
+        /// Lowercase only: pinyin is never shown capitalised, and the zh font's capitals have no
+        /// empty row between accent and letter (Ô), so the flip would carry the letter's faint top
+        /// edge up with it.
+        /// </summary>
+        public static readonly IReadOnlyList<(char Caron, char Circumflex)> CaronVowels = new[]
+        {
+            ('ǎ', 'â'), ('ǐ', 'î'), ('ǔ', 'û'), ('ě', 'ê'), ('ǒ', 'ô'),
         };
 
         /// <summary>Alpha at or above which a pixel counts as ink when measuring a glyph's shape.</summary>
@@ -95,32 +111,40 @@ namespace LanguageStudyStardewValleyMod
         }
 
         /// <summary>
-        /// Removes the tittle from an i: all ink above the first fully empty row that has ink both
-        /// above and below it. A glyph with no such gap (I, or an i drawn without a dot) is
-        /// returned unchanged.
+        /// Removes the tittle from an i: all ink above the <see cref="AccentGap"/>. A glyph with no
+        /// gap (I, or an i drawn without a dot) is returned unchanged.
         /// </summary>
         public static GlyphBitmap StripDot(GlyphBitmap glyph)
         {
-            bool seenInk = false;
-            for (int y = 0; y < glyph.Height; y++)
+            if (AccentGap(glyph) is not int gap)
+                return glyph;
+
+            var pixels = (uint[])glyph.Pixels.Clone();
+            Array.Clear(pixels, 0, gap * glyph.Width);
+            return glyph with { Pixels = pixels };
+        }
+
+        /// <summary>
+        /// Turns the accent over a letter upside down, making a circumflex vowel (â) a caron one
+        /// (ǎ). The accent is everything above the <see cref="AccentGap"/>; it is flipped within
+        /// its own ink rows plus a row of margin either side, so its faint antialiased edges flip
+        /// with it and it stays at the height the font drew it. The letter below is untouched.
+        /// Null for a glyph with no gap, whose accent can't be told apart from its letter.
+        /// </summary>
+        public static GlyphBitmap? FlipAccent(GlyphBitmap glyph)
+        {
+            if (AccentGap(glyph) is not int gap || InkTop(glyph) is not int inkTop)
+                return null;
+
+            int first = Math.Max(0, inkTop - 1);
+            var pixels = (uint[])glyph.Pixels.Clone();
+            for (int top = first, bottom = gap; top < bottom; top++, bottom--)
             {
-                bool rowHasInk = RowHasInk(glyph, y);
-                if (rowHasInk)
-                {
-                    seenInk = true;
-                    continue;
-                }
-
-                if (!seenInk || !Enumerable.Range(y + 1, glyph.Height - y - 1).Any(below => RowHasInk(glyph, below)))
-                    continue;
-
-                // y is the gap: clear everything above it
-                var pixels = (uint[])glyph.Pixels.Clone();
-                Array.Clear(pixels, 0, y * glyph.Width);
-                return glyph with { Pixels = pixels };
+                Array.Copy(glyph.Pixels, bottom * glyph.Width, pixels, top * glyph.Width, glyph.Width);
+                Array.Copy(glyph.Pixels, top * glyph.Width, pixels, bottom * glyph.Width, glyph.Width);
             }
 
-            return glyph;
+            return glyph with { Pixels = pixels };
         }
 
         /// <summary>
@@ -258,6 +282,28 @@ namespace LanguageStudyStardewValleyMod
         }
 
         private static byte Alpha(uint pixel) => GlyphBitmap.Alpha(pixel);
+
+        /// <summary>
+        /// The row separating an accent (or an i's tittle) from the letter under it: the first
+        /// row without ink that has ink both above and below it. Null if there is none.
+        /// </summary>
+        private static int? AccentGap(GlyphBitmap glyph)
+        {
+            bool seenInk = false;
+            for (int y = 0; y < glyph.Height; y++)
+            {
+                if (RowHasInk(glyph, y))
+                {
+                    seenInk = true;
+                    continue;
+                }
+
+                if (seenInk && Enumerable.Range(y + 1, glyph.Height - y - 1).Any(below => RowHasInk(glyph, below)))
+                    return y;
+            }
+
+            return null;
+        }
 
         private static bool RowHasInk(GlyphBitmap glyph, int y)
         {

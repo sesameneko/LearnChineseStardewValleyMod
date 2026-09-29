@@ -6,6 +6,7 @@
   - [x] Phase 0: groundwork (2026-09-28)
   - [ ] [Phase 1: author the zh segment data](#phase-1-author-the-zh-segment-data)
   - [ ] [Phase 2: runtime shows pinyin](#phase-2-runtime-shows-pinyin)
+    - [ ] [Add the missing pinyin vowels to the zh font](#phase-2-runtime-shows-pinyin): ā ē ī ō ū, ǎ ě ǐ ǒ ǔ, ǖ ǘ ǚ ǜ
   - [ ] [Phase 3: tests, names and docs](#phase-3-tests-names-and-docs)
   - [ ] [Phase 4: verify in game](#phase-4-verify-in-game)
 - [ ] In-game checks (inherited from the ja mod; redo in zh as part of phase 4)
@@ -56,11 +57,21 @@ This repo is a copy of the Japanese mod, being turned into a **Simplified Chines
 
 #### Phase 2: runtime shows pinyin
 
-**Done 2026-09-28:** the hover label and flashcards show pinyin. `TextSegment.Kana` is gone and `Reading` holds the stored pinyin; the pure `Pinyin` class joins it per word (`mùchǎng`, `xī'ān`, `yìdiǎnr`) and falls back to tone numbers (`mu4chang3`) for a word the font can't draw every mark of. `Flashcard.Pinyin` replaces `Kana` in card identity. `ClockSegments` builds the zh date (`1日 星期一`, checked in the 1.6.15 IL), and `KanaRomaji` is deleted. Until the tone glyphs below exist, a word with a 3rd tone or a marked ü shows tone numbers (the existing macron synthesis should cover the 1st tone; unverified on the zh font). Still to do:
+**Done 2026-09-28:** the hover label and flashcards show pinyin. `TextSegment.Kana` is gone and `Reading` holds the stored pinyin; the pure `Pinyin` class joins it per word (`mùchǎng`, `xī'ān`, `yìdiǎnr`) and falls back to tone numbers (`mu4chang3`) for a word the font can't draw every mark of. `Flashcard.Pinyin` replaces `Kana` in card identity. `ClockSegments` builds the zh date (`1日 星期一`, checked in the 1.6.15 IL), and `KanaRomaji` is deleted. Until the marked ü below exist, a word with one shows tone numbers (the macron and caron synthesis should cover the 1st and 3rd tones; unverified in game on the zh font). Still to do:
 
-- **Tone glyphs** (`FontGlyphSynth` / `ExtendedFont`): the macron synthesis already covers tone 1. Add a caron (ˇ) for tone 3 on a e i o u, and ǖ ǘ ǚ ǜ built from the font's own ü. Tones 2 and 4 exist already. Then `ls_font_check mù chǎng lǚ` should report nothing missing.
+- **Tone glyphs** (`FontGlyphSynth` / `ExtendedFont`). The zh `SmallFont` is missing 14 of the vowels pinyin needs (probed from `Fonts/SmallFont.zh-CN.xnb`, 1.6.15):
+
+  | Tone | Missing | How to make them |
+  |---|---|---|
+  | 1st (macron) | ā ē ī ō ū | the existing macron synthesis, unchanged |
+  | 3rd (caron) | ǎ ě ǐ ǒ ǔ | **done, not yet seen in game:** `FontGlyphSynth.FlipAccent` turns the font's own â ê î ô û accent upside down. Offline render of the real atlas looks right; the font's circumflex is round-topped, so the caron is round-bottomed and reads slightly like a breve at high zoom |
+  | ü, all four tones | ǖ ǘ ǚ ǜ | new: macron, acute, caron and grave over the font's own ü, placed above its dots |
+
+  The font already has the 2nd and 4th tones (á é í ó ú, à è ì ò ù) and ü, and `ǘ`/`ǜ` can copy the acute and grave strokes from á and à rather than drawing new ones. Capitals (Ā Ǎ …) are only needed if the display ever capitalises names, which it doesn't plan to. `FontGlyphSynth`'s tests cover the new marks the way they cover macrons. Afterwards, `ls_font_check āǎēěīǐōǒūǔǖǘǚǜ` should report nothing missing.
+
+  **Tabled (2026-09-28): hand-drawn tone marks.** Rather than synthesising marks, hand-draw only the marks (ˉ ˊ ˇ ˋ, plus a set sized for over ü's dots) as small PNGs, and have `ExtendedFont` stamp each onto the font's own vowel in the atlas, centred with `InkSpan` and placed with `InkTop` as the macrons are. It gives hand-tuned marks without shipping the game's letter pixels, and still adapts if the font changes. The cost is no per-letter tuning. Full hand-drawn letters were also considered: fine for the one font that matters, but they'd need a hash of each base vowel to detect a changed font and fall back. Revisit if the synthesised marks look wrong in game.
 - **Saved mark:** the zh font has no ★, so the label falls back to `[saved]`. Synthesise one or pick a glyph the zh font has.
-- **Chinese_round font.** The game ships `Fonts/Chinese_round/SmallFont` and `SpriteFont1` (zh only, not in ja). If a player setting switches to it, `ExtendedFont`'s `Fonts/SmallFont` match won't catch it. Find out in the IL when it's used, and extend it too.
+- **Chinese_round font.** The game ships `Fonts/Chinese_round/SmallFont` and `SpriteFont1` (zh only, not in ja). If a player setting switches to it, `ExtendedFont`'s `Fonts/SmallFont` match won't catch it. Find out in the IL when it's used. It may need nothing: probed offline, it already has every pinyin vowel (ā á ǎ à … ǖ ǘ ǚ ǜ), unlike `Fonts/SmallFont.zh-CN`.
 - **Fallback split** (`TextHitTest.SplitSegments`): it groups a hanzi run into one blob, which is wrong for Chinese. For zh, fall back to one hanzi per segment. Drop the kana classes from the zh path.
 - **Lookup thresholds** (`SegmentIndex`): the prefix match (6+ characters), composite runs (6+) and minimum whole entries (2+) were tuned on Japanese. Chinese says the same in fewer characters, so re-check them against real zh strings once phase 1 data exists (unit tests in `SegmentIndexTests`). Found in the pilot: in the Sebastian delivery quest (`ItemDeliveryQuest.cs.13324` + `13612`), `－塞巴斯蒂安会很开心` is tiled from a 6-character run of the first entry's `…起来。－塞巴斯蒂安` rather than from its own template `\n－{0}会很开心`. So `－` gets the gloss "(result: up)", and `会很开心` gets none. With any other NPC's name, the template wins. A composite run shouldn't beat a template that covers the same text and more.
 - **Quiet fallback log:** skip text with no hanzi rather than no Japanese (see [Quiet fallback log](#quiet-fallback-log)).
