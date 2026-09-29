@@ -1,0 +1,9120 @@
+{
+  "_comment": "Word/phrase-level breakdown of Stardew Valley BigCraftables.xnb strings, for in-context mouse-over translation of individual pieces of a sentence (not a general Chinese-English dictionary -- glosses are chosen for how each word/phrase functions in THIS specific sentence). Each entry: \"chinese\" (exact source text), \"english\" (a natural-ish literal translation, for context), and \"segments\" -- an ordered array of {text, pinyin, gloss} whose \"text\" fields concatenate back to exactly reproduce \"chinese\" (validated by tools/segment-data/segtool.py).",
+  "AncientStool_Description": {
+    "chinese": "有种祖母的公寓的味道。",
+    "english": "Has a smell like grandma's apartment.",
+    "segments": [
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "has"
+      },
+      {
+        "text": "种",
+        "pinyin": "zhǒng",
+        "gloss": "a kind of"
+      },
+      {
+        "text": "祖母",
+        "pinyin": "zǔ mǔ",
+        "gloss": "grandma"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "公寓",
+        "pinyin": "gōng yù",
+        "gloss": "apartment"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "味道。",
+        "pinyin": "wèi dào",
+        "gloss": "smell"
+      }
+    ]
+  },
+  "AncientStool_Name": {
+    "chinese": "远古凳子",
+    "english": "Ancient stool",
+    "segments": [
+      {
+        "text": "远古",
+        "pinyin": "yuǎn gǔ",
+        "gloss": "ancient"
+      },
+      {
+        "text": "凳子",
+        "pinyin": "dèng zi",
+        "gloss": "stool"
+      }
+    ]
+  },
+  "AncientTable_Description": {
+    "chinese": "满满都是蛛网的桌子。",
+    "english": "A table completely full of cobwebs.",
+    "segments": [
+      {
+        "text": "满满",
+        "pinyin": "mǎn mǎn",
+        "gloss": "completely full"
+      },
+      {
+        "text": "都是",
+        "pinyin": "dōu shì",
+        "gloss": "all is"
+      },
+      {
+        "text": "蛛网",
+        "pinyin": "zhū wǎng",
+        "gloss": "cobwebs"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "桌子。",
+        "pinyin": "zhuō zi",
+        "gloss": "table"
+      }
+    ]
+  },
+  "AncientTable_Name": {
+    "chinese": "远古桌子",
+    "english": "Ancient table",
+    "segments": [
+      {
+        "text": "远古",
+        "pinyin": "yuǎn gǔ",
+        "gloss": "ancient"
+      },
+      {
+        "text": "桌子",
+        "pinyin": "zhuō zi",
+        "gloss": "table"
+      }
+    ]
+  },
+  "Anvil_Description": {
+    "chinese": "可以“重新锻造”饰品。每次使用消耗 3 块铱锭。",
+    "english": "Can \"re-forge\" trinkets. Each use consumes 3 iridium bars.",
+    "segments": [
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "“重新",
+        "pinyin": "chóng xīn",
+        "gloss": "re-"
+      },
+      {
+        "text": "锻造”",
+        "pinyin": "duàn zào",
+        "gloss": "forge"
+      },
+      {
+        "text": "饰品。",
+        "pinyin": "shì pǐn",
+        "gloss": "trinkets"
+      },
+      {
+        "text": "每次",
+        "pinyin": "měi cì",
+        "gloss": "each time"
+      },
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "消耗 ",
+        "pinyin": "xiāo hào",
+        "gloss": "consumes"
+      },
+      {
+        "text": "3 ",
+        "pinyin": "sān",
+        "gloss": "three"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for bars)"
+      },
+      {
+        "text": "铱锭。",
+        "pinyin": "yī dìng",
+        "gloss": "iridium bars"
+      }
+    ]
+  },
+  "Anvil_Name": {
+    "chinese": "铁砧",
+    "english": "Anvil",
+    "segments": [
+      {
+        "text": "铁砧",
+        "pinyin": "tiě zhēn",
+        "gloss": "anvil"
+      }
+    ]
+  },
+  "AutoGrabber_Description": {
+    "chinese": "每天早晨自动采集动物产品。必须放在鸡舍或畜棚内。",
+    "english": "Automatically collects animal products every morning. Must be placed inside a coop or barn.",
+    "segments": [
+      {
+        "text": "每天",
+        "pinyin": "měi tiān",
+        "gloss": "every day"
+      },
+      {
+        "text": "早晨",
+        "pinyin": "zǎo chen",
+        "gloss": "morning"
+      },
+      {
+        "text": "自动",
+        "pinyin": "zì dòng",
+        "gloss": "automatically"
+      },
+      {
+        "text": "采集",
+        "pinyin": "cǎi jí",
+        "gloss": "collects"
+      },
+      {
+        "text": "动物",
+        "pinyin": "dòng wù",
+        "gloss": "animal"
+      },
+      {
+        "text": "产品。",
+        "pinyin": "chǎn pǐn",
+        "gloss": "products"
+      },
+      {
+        "text": "必须",
+        "pinyin": "bì xū",
+        "gloss": "must"
+      },
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "be placed"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(result: at)"
+      },
+      {
+        "text": "鸡舍",
+        "pinyin": "jī shè",
+        "gloss": "coop"
+      },
+      {
+        "text": "或",
+        "pinyin": "huò",
+        "gloss": "or"
+      },
+      {
+        "text": "畜棚",
+        "pinyin": "chù péng",
+        "gloss": "barn"
+      },
+      {
+        "text": "内。",
+        "pinyin": "nèi",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "AutoGrabber_Name": {
+    "chinese": "自动采集器",
+    "english": "Automatic collector",
+    "segments": [
+      {
+        "text": "自动",
+        "pinyin": "zì dòng",
+        "gloss": "automatic"
+      },
+      {
+        "text": "采集器",
+        "pinyin": "cǎi jí qì",
+        "gloss": "collector"
+      }
+    ]
+  },
+  "AutoPetter_Description": {
+    "chinese": "Joja 公司专利技术，适用于鸡舍和畜棚。可以让动物们满足，但是无法实现亲自抚摸的所有好处。使用后仍可手动抚摸来补足。",
+    "english": "Joja company patented technology, suitable for coops and barns. Can keep animals content, but can't achieve all the benefits of petting them in person. After use you can still pet them by hand to make up for it.",
+    "segments": [
+      {
+        "text": "Joja ",
+        "pinyin": "Joja",
+        "gloss": "Joja"
+      },
+      {
+        "text": "公司",
+        "pinyin": "gōng sī",
+        "gloss": "company"
+      },
+      {
+        "text": "专利",
+        "pinyin": "zhuān lì",
+        "gloss": "patent"
+      },
+      {
+        "text": "技术，",
+        "pinyin": "jì shù",
+        "gloss": "technology"
+      },
+      {
+        "text": "适用于",
+        "pinyin": "shì yòng yú",
+        "gloss": "suitable for"
+      },
+      {
+        "text": "鸡舍",
+        "pinyin": "jī shè",
+        "gloss": "coops"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "畜棚。",
+        "pinyin": "chù péng",
+        "gloss": "barns"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "让",
+        "pinyin": "ràng",
+        "gloss": "make"
+      },
+      {
+        "text": "动物们",
+        "pinyin": "dòng wù men",
+        "gloss": "the animals"
+      },
+      {
+        "text": "满足，",
+        "pinyin": "mǎn zú",
+        "gloss": "content"
+      },
+      {
+        "text": "但是",
+        "pinyin": "dàn shì",
+        "gloss": "but"
+      },
+      {
+        "text": "无法",
+        "pinyin": "wú fǎ",
+        "gloss": "unable to"
+      },
+      {
+        "text": "实现",
+        "pinyin": "shí xiàn",
+        "gloss": "achieve"
+      },
+      {
+        "text": "亲自",
+        "pinyin": "qīn zì",
+        "gloss": "in person"
+      },
+      {
+        "text": "抚摸",
+        "pinyin": "fǔ mō",
+        "gloss": "petting"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "所有",
+        "pinyin": "suǒ yǒu",
+        "gloss": "all"
+      },
+      {
+        "text": "好处。",
+        "pinyin": "hǎo chu",
+        "gloss": "benefits"
+      },
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "后",
+        "pinyin": "hòu",
+        "gloss": "after"
+      },
+      {
+        "text": "仍",
+        "pinyin": "réng",
+        "gloss": "still"
+      },
+      {
+        "text": "可",
+        "pinyin": "kě",
+        "gloss": "can"
+      },
+      {
+        "text": "手动",
+        "pinyin": "shǒu dòng",
+        "gloss": "by hand"
+      },
+      {
+        "text": "抚摸",
+        "pinyin": "fǔ mō",
+        "gloss": "pet"
+      },
+      {
+        "text": "来",
+        "pinyin": "lái",
+        "gloss": "to"
+      },
+      {
+        "text": "补足。",
+        "pinyin": "bǔ zú",
+        "gloss": "make up for it"
+      }
+    ]
+  },
+  "AutoPetter_Name": {
+    "chinese": "自动抚摸机",
+    "english": "Automatic petting machine",
+    "segments": [
+      {
+        "text": "自动",
+        "pinyin": "zì dòng",
+        "gloss": "automatic"
+      },
+      {
+        "text": "抚摸",
+        "pinyin": "fǔ mō",
+        "gloss": "petting"
+      },
+      {
+        "text": "机",
+        "pinyin": "jī",
+        "gloss": "machine"
+      }
+    ]
+  },
+  "BaitMaker_Description": {
+    "chinese": "放入鱼即可制造有针对性的鱼饵。",
+    "english": "Put in a fish to make targeted bait.",
+    "segments": [
+      {
+        "text": "放入",
+        "pinyin": "fàng rù",
+        "gloss": "put in"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      },
+      {
+        "text": "即可",
+        "pinyin": "jí kě",
+        "gloss": "and then can"
+      },
+      {
+        "text": "制造",
+        "pinyin": "zhì zào",
+        "gloss": "make"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "have"
+      },
+      {
+        "text": "针对性",
+        "pinyin": "zhēn duì xìng",
+        "gloss": "targeting"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "鱼饵。",
+        "pinyin": "yú ěr",
+        "gloss": "bait"
+      }
+    ]
+  },
+  "BaitMaker_Name": {
+    "chinese": "鱼饵制造机",
+    "english": "Bait-making machine",
+    "segments": [
+      {
+        "text": "鱼饵",
+        "pinyin": "yú ěr",
+        "gloss": "bait"
+      },
+      {
+        "text": "制造机",
+        "pinyin": "zhì zào jī",
+        "gloss": "making machine"
+      }
+    ]
+  },
+  "BarrelBrazier_Description": {
+    "chinese": "提供一点亮光。",
+    "english": "Provides a little light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "一点",
+        "pinyin": "yì diǎn",
+        "gloss": "a little"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "BarrelBrazier_Name": {
+    "chinese": "木桶火炬",
+    "english": "Barrel torch",
+    "segments": [
+      {
+        "text": "木桶",
+        "pinyin": "mù tǒng",
+        "gloss": "barrel"
+      },
+      {
+        "text": "火炬",
+        "pinyin": "huǒ jù",
+        "gloss": "torch"
+      }
+    ]
+  },
+  "Barrel_Name": {
+    "chinese": "木桶",
+    "english": "Wooden barrel",
+    "segments": [
+      {
+        "text": "木桶",
+        "pinyin": "mù tǒng",
+        "gloss": "barrel"
+      }
+    ]
+  },
+  "BasicLog_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "BasicLog_Name": {
+    "chinese": "普通圆木",
+    "english": "Ordinary log",
+    "segments": [
+      {
+        "text": "普通",
+        "pinyin": "pǔ tōng",
+        "gloss": "ordinary"
+      },
+      {
+        "text": "圆木",
+        "pinyin": "yuán mù",
+        "gloss": "log"
+      }
+    ]
+  },
+  "BeeHouse_Description": {
+    "chinese": "置放在屋外，然后等着吃甜蜜的蜂蜜吧！（除了冬天）。",
+    "english": "Place it outdoors, then wait to eat sweet honey! (Except in winter).",
+    "segments": [
+      {
+        "text": "置放",
+        "pinyin": "zhì fàng",
+        "gloss": "place"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(result: at)"
+      },
+      {
+        "text": "屋外，",
+        "pinyin": "wū wài",
+        "gloss": "outdoors"
+      },
+      {
+        "text": "然后",
+        "pinyin": "rán hòu",
+        "gloss": "then"
+      },
+      {
+        "text": "等",
+        "pinyin": "děng",
+        "gloss": "wait"
+      },
+      {
+        "text": "着",
+        "pinyin": "zhe",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "吃",
+        "pinyin": "chī",
+        "gloss": "eat"
+      },
+      {
+        "text": "甜蜜",
+        "pinyin": "tián mì",
+        "gloss": "sweet"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "蜂蜜",
+        "pinyin": "fēng mì",
+        "gloss": "honey"
+      },
+      {
+        "text": "吧！",
+        "pinyin": "ba",
+        "gloss": "(suggestion)"
+      },
+      {
+        "text": "（除了",
+        "pinyin": "chú le",
+        "gloss": "except"
+      },
+      {
+        "text": "冬天）。",
+        "pinyin": "dōng tiān",
+        "gloss": "winter"
+      }
+    ]
+  },
+  "BeeHouse_Name": {
+    "chinese": "蜂房",
+    "english": "Bee house",
+    "segments": [
+      {
+        "text": "蜂房",
+        "pinyin": "fēng fáng",
+        "gloss": "bee house"
+      }
+    ]
+  },
+  "BigChest_Description": {
+    "chinese": "容量几乎是普通箱子的两倍。",
+    "english": "Its capacity is almost twice that of an ordinary chest.",
+    "segments": [
+      {
+        "text": "容量",
+        "pinyin": "róng liàng",
+        "gloss": "capacity"
+      },
+      {
+        "text": "几乎",
+        "pinyin": "jī hū",
+        "gloss": "almost"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "普通",
+        "pinyin": "pǔ tōng",
+        "gloss": "ordinary"
+      },
+      {
+        "text": "箱子",
+        "pinyin": "xiāng zi",
+        "gloss": "chest"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "两",
+        "pinyin": "liǎng",
+        "gloss": "two"
+      },
+      {
+        "text": "倍。",
+        "pinyin": "bèi",
+        "gloss": "times"
+      }
+    ]
+  },
+  "BigChest_Name": {
+    "chinese": "大箱子",
+    "english": "Big chest",
+    "segments": [
+      {
+        "text": "大",
+        "pinyin": "dà",
+        "gloss": "big"
+      },
+      {
+        "text": "箱子",
+        "pinyin": "xiāng zi",
+        "gloss": "chest"
+      }
+    ]
+  },
+  "BigGreenCane_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "BigGreenCane_Name": {
+    "chinese": "大绿杖",
+    "english": "Big green cane",
+    "segments": [
+      {
+        "text": "大",
+        "pinyin": "dà",
+        "gloss": "big"
+      },
+      {
+        "text": "绿",
+        "pinyin": "lǜ",
+        "gloss": "green"
+      },
+      {
+        "text": "杖",
+        "pinyin": "zhàng",
+        "gloss": "cane"
+      }
+    ]
+  },
+  "BigRedCane_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "BigRedCane_Name": {
+    "chinese": "大红杖",
+    "english": "Big red cane",
+    "segments": [
+      {
+        "text": "大",
+        "pinyin": "dà",
+        "gloss": "big"
+      },
+      {
+        "text": "红",
+        "pinyin": "hóng",
+        "gloss": "red"
+      },
+      {
+        "text": "杖",
+        "pinyin": "zhàng",
+        "gloss": "cane"
+      }
+    ]
+  },
+  "BigStoneChest_Name": {
+    "chinese": "石制大箱子",
+    "english": "Big stone chest",
+    "segments": [
+      {
+        "text": "石制",
+        "pinyin": "shí zhì",
+        "gloss": "stone-made"
+      },
+      {
+        "text": "大",
+        "pinyin": "dà",
+        "gloss": "big"
+      },
+      {
+        "text": "箱子",
+        "pinyin": "xiāng zi",
+        "gloss": "chest"
+      }
+    ]
+  },
+  "BoneMill_Description": {
+    "chinese": "可以把骨头制成肥料。",
+    "english": "Can make bones into fertilizer.",
+    "segments": [
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "骨头",
+        "pinyin": "gǔ tou",
+        "gloss": "bones"
+      },
+      {
+        "text": "制",
+        "pinyin": "zhì",
+        "gloss": "make"
+      },
+      {
+        "text": "成",
+        "pinyin": "chéng",
+        "gloss": "(result: into)"
+      },
+      {
+        "text": "肥料。",
+        "pinyin": "féi liào",
+        "gloss": "fertilizer"
+      }
+    ]
+  },
+  "BoneMill_Name": {
+    "chinese": "碎骨机",
+    "english": "Bone crusher",
+    "segments": [
+      {
+        "text": "碎骨机",
+        "pinyin": "suì gǔ jī",
+        "gloss": "bone mill"
+      }
+    ]
+  },
+  "Bonfire_Description": {
+    "chinese": "余烬徐徐燃烧。",
+    "english": "The embers burn slowly.",
+    "segments": [
+      {
+        "text": "余烬",
+        "pinyin": "yú jìn",
+        "gloss": "embers"
+      },
+      {
+        "text": "徐徐",
+        "pinyin": "xú xú",
+        "gloss": "slowly"
+      },
+      {
+        "text": "燃烧。",
+        "pinyin": "rán shāo",
+        "gloss": "burn"
+      }
+    ]
+  },
+  "Bonfire_Name": {
+    "chinese": "篝火",
+    "english": "Bonfire",
+    "segments": [
+      {
+        "text": "篝火",
+        "pinyin": "gōu huǒ",
+        "gloss": "bonfire"
+      }
+    ]
+  },
+  "Bongo_Description": {
+    "chinese": "一种声音浑厚的装饰乐器。",
+    "english": "A decorative instrument with a deep sound.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "a"
+      },
+      {
+        "text": "种",
+        "pinyin": "zhǒng",
+        "gloss": "kind of"
+      },
+      {
+        "text": "声音",
+        "pinyin": "shēng yīn",
+        "gloss": "sound"
+      },
+      {
+        "text": "浑厚",
+        "pinyin": "hún hòu",
+        "gloss": "deep and rich"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "装饰",
+        "pinyin": "zhuāng shì",
+        "gloss": "decorative"
+      },
+      {
+        "text": "乐器。",
+        "pinyin": "yuè qì",
+        "gloss": "instrument"
+      }
+    ]
+  },
+  "Bongo_Name": {
+    "chinese": "小手鼓",
+    "english": "Small hand drum",
+    "segments": [
+      {
+        "text": "小",
+        "pinyin": "xiǎo",
+        "gloss": "small"
+      },
+      {
+        "text": "手鼓",
+        "pinyin": "shǒu gǔ",
+        "gloss": "hand drum"
+      }
+    ]
+  },
+  "Bookcase_Description": {
+    "chinese": "书本的家。",
+    "english": "A home for books.",
+    "segments": [
+      {
+        "text": "书本",
+        "pinyin": "shū běn",
+        "gloss": "books"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "家。",
+        "pinyin": "jiā",
+        "gloss": "home"
+      }
+    ]
+  },
+  "Bookcase_Name": {
+    "chinese": "书架",
+    "english": "Bookshelf",
+    "segments": [
+      {
+        "text": "书架",
+        "pinyin": "shū jià",
+        "gloss": "bookshelf"
+      }
+    ]
+  },
+  "Boulder_Description": {
+    "chinese": "一块非常沉重的石头。",
+    "english": "A very heavy stone.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for chunks)"
+      },
+      {
+        "text": "非常",
+        "pinyin": "fēi cháng",
+        "gloss": "very"
+      },
+      {
+        "text": "沉重",
+        "pinyin": "chén zhòng",
+        "gloss": "heavy"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "石头。",
+        "pinyin": "shí tou",
+        "gloss": "stone"
+      }
+    ]
+  },
+  "Boulder_Name": {
+    "chinese": "圆石",
+    "english": "Round stone",
+    "segments": [
+      {
+        "text": "圆石",
+        "pinyin": "yuán shí",
+        "gloss": "boulder"
+      }
+    ]
+  },
+  "Camera_Description": {
+    "chinese": "装在三脚架上的旧相机。",
+    "english": "An old camera mounted on a tripod.",
+    "segments": [
+      {
+        "text": "装",
+        "pinyin": "zhuāng",
+        "gloss": "mounted"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(result: on)"
+      },
+      {
+        "text": "三脚架",
+        "pinyin": "sān jiǎo jià",
+        "gloss": "tripod"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "旧",
+        "pinyin": "jiù",
+        "gloss": "old"
+      },
+      {
+        "text": "相机。",
+        "pinyin": "xiàng jī",
+        "gloss": "camera"
+      }
+    ]
+  },
+  "Camera_Name": {
+    "chinese": "相机",
+    "english": "Camera",
+    "segments": [
+      {
+        "text": "相机",
+        "pinyin": "xiàng jī",
+        "gloss": "camera"
+      }
+    ]
+  },
+  "Campfire_2_Description": {
+    "chinese": "随时随地做饭！",
+    "english": "Cook anytime, anywhere!",
+    "segments": [
+      {
+        "text": "随时随地",
+        "pinyin": "suí shí suí dì",
+        "gloss": "anytime, anywhere"
+      },
+      {
+        "text": "做饭！",
+        "pinyin": "zuò fàn",
+        "gloss": "cook"
+      }
+    ]
+  },
+  "Campfire_2_Name": {
+    "chinese": "篝火",
+    "english": "Campfire",
+    "segments": [
+      {
+        "text": "篝火",
+        "pinyin": "gōu huǒ",
+        "gloss": "campfire"
+      }
+    ]
+  },
+  "Campfire_Description": {
+    "chinese": "提供一点亮光。",
+    "english": "Provides a little light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "一点",
+        "pinyin": "yì diǎn",
+        "gloss": "a little"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "Campfire_Name": {
+    "chinese": "篝火",
+    "english": "Campfire",
+    "segments": [
+      {
+        "text": "篝火",
+        "pinyin": "gōu huǒ",
+        "gloss": "campfire"
+      }
+    ]
+  },
+  "CarvedBrazier_Description": {
+    "chinese": "提供一点亮光。",
+    "english": "Provides a little light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "一点",
+        "pinyin": "yì diǎn",
+        "gloss": "a little"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "CarvedBrazier_Name": {
+    "chinese": "镂空火炬",
+    "english": "Openwork torch",
+    "segments": [
+      {
+        "text": "镂空",
+        "pinyin": "lòu kōng",
+        "gloss": "openwork (carved)"
+      },
+      {
+        "text": "火炬",
+        "pinyin": "huǒ jù",
+        "gloss": "torch"
+      }
+    ]
+  },
+  "Cask_Description": {
+    "chinese": "在地窖中使用以使产品变陈，如葡萄酒和奶酪。",
+    "english": "Use in the cellar to age products, such as wine and cheese.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "地窖",
+        "pinyin": "dì jiào",
+        "gloss": "cellar"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      },
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "以",
+        "pinyin": "yǐ",
+        "gloss": "in order to"
+      },
+      {
+        "text": "使",
+        "pinyin": "shǐ",
+        "gloss": "make"
+      },
+      {
+        "text": "产品",
+        "pinyin": "chǎn pǐn",
+        "gloss": "products"
+      },
+      {
+        "text": "变",
+        "pinyin": "biàn",
+        "gloss": "become"
+      },
+      {
+        "text": "陈，",
+        "pinyin": "chén",
+        "gloss": "aged"
+      },
+      {
+        "text": "如",
+        "pinyin": "rú",
+        "gloss": "such as"
+      },
+      {
+        "text": "葡萄酒",
+        "pinyin": "pú tao jiǔ",
+        "gloss": "wine"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "奶酪。",
+        "pinyin": "nǎi lào",
+        "gloss": "cheese"
+      }
+    ]
+  },
+  "Cask_Name": {
+    "chinese": "木桶",
+    "english": "Wooden cask",
+    "segments": [
+      {
+        "text": "木桶",
+        "pinyin": "mù tǒng",
+        "gloss": "cask"
+      }
+    ]
+  },
+  "CharcoalKiln_Description": {
+    "chinese": "将 10 块木头转换成一块煤炭。",
+    "english": "Turns 10 pieces of wood into one piece of coal.",
+    "segments": [
+      {
+        "text": "将 ",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "10 ",
+        "pinyin": "shí",
+        "gloss": "ten"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for pieces)"
+      },
+      {
+        "text": "木头",
+        "pinyin": "mù tou",
+        "gloss": "wood"
+      },
+      {
+        "text": "转换",
+        "pinyin": "zhuǎn huàn",
+        "gloss": "convert"
+      },
+      {
+        "text": "成",
+        "pinyin": "chéng",
+        "gloss": "(result: into)"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for pieces)"
+      },
+      {
+        "text": "煤炭。",
+        "pinyin": "méi tàn",
+        "gloss": "coal"
+      }
+    ]
+  },
+  "CharcoalKiln_Name": {
+    "chinese": "煤炭窑",
+    "english": "Coal kiln",
+    "segments": [
+      {
+        "text": "煤炭",
+        "pinyin": "méi tàn",
+        "gloss": "coal"
+      },
+      {
+        "text": "窑",
+        "pinyin": "yáo",
+        "gloss": "kiln"
+      }
+    ]
+  },
+  "CheesePress_Description": {
+    "chinese": "将牛奶转换成乳酪。",
+    "english": "Turns milk into cheese.",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "牛奶",
+        "pinyin": "niú nǎi",
+        "gloss": "milk"
+      },
+      {
+        "text": "转换",
+        "pinyin": "zhuǎn huàn",
+        "gloss": "convert"
+      },
+      {
+        "text": "成",
+        "pinyin": "chéng",
+        "gloss": "(result: into)"
+      },
+      {
+        "text": "乳酪。",
+        "pinyin": "rǔ lào",
+        "gloss": "cheese"
+      }
+    ]
+  },
+  "CheesePress_Name": {
+    "chinese": "压酪机",
+    "english": "Cheese press",
+    "segments": [
+      {
+        "text": "压",
+        "pinyin": "yā",
+        "gloss": "press"
+      },
+      {
+        "text": "酪",
+        "pinyin": "lào",
+        "gloss": "cheese"
+      },
+      {
+        "text": "机",
+        "pinyin": "jī",
+        "gloss": "machine"
+      }
+    ]
+  },
+  "Chest_Description": {
+    "chinese": "收藏你的物品的地方。",
+    "english": "A place to store your items.",
+    "segments": [
+      {
+        "text": "收藏",
+        "pinyin": "shōu cáng",
+        "gloss": "store"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "地方。",
+        "pinyin": "dì fang",
+        "gloss": "place"
+      }
+    ]
+  },
+  "Chest_Name": {
+    "chinese": "宝箱",
+    "english": "Treasure chest",
+    "segments": [
+      {
+        "text": "宝箱",
+        "pinyin": "bǎo xiāng",
+        "gloss": "chest (lit. treasure chest)"
+      }
+    ]
+  },
+  "ChickenStatue_Description": {
+    "chinese": "一只母鸡的木质雕像。",
+    "english": "A wooden statue of a hen.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "a"
+      },
+      {
+        "text": "只",
+        "pinyin": "zhī",
+        "gloss": "(measure word for animals)"
+      },
+      {
+        "text": "母鸡",
+        "pinyin": "mǔ jī",
+        "gloss": "hen"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "木质",
+        "pinyin": "mù zhì",
+        "gloss": "wooden"
+      },
+      {
+        "text": "雕像。",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "ChickenStatue_Name": {
+    "chinese": "鸡雕像",
+    "english": "Chicken statue",
+    "segments": [
+      {
+        "text": "鸡",
+        "pinyin": "jī",
+        "gloss": "chicken"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "CoffeeMaker_Description": {
+    "chinese": "每天早上自动煮一杯新鲜的咖啡。",
+    "english": "Automatically brews a cup of fresh coffee every morning.",
+    "segments": [
+      {
+        "text": "每天",
+        "pinyin": "měi tiān",
+        "gloss": "every day"
+      },
+      {
+        "text": "早上",
+        "pinyin": "zǎo shang",
+        "gloss": "morning"
+      },
+      {
+        "text": "自动",
+        "pinyin": "zì dòng",
+        "gloss": "automatically"
+      },
+      {
+        "text": "煮",
+        "pinyin": "zhǔ",
+        "gloss": "brew"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "杯",
+        "pinyin": "bēi",
+        "gloss": "(measure word: cup)"
+      },
+      {
+        "text": "新鲜",
+        "pinyin": "xīn xiān",
+        "gloss": "fresh"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "咖啡。",
+        "pinyin": "kā fēi",
+        "gloss": "coffee"
+      }
+    ]
+  },
+  "CoffeeMaker_Name": {
+    "chinese": "咖啡机",
+    "english": "Coffee machine",
+    "segments": [
+      {
+        "text": "咖啡机",
+        "pinyin": "kā fēi jī",
+        "gloss": "coffee machine"
+      }
+    ]
+  },
+  "Crate_Name": {
+    "chinese": "木箱",
+    "english": "Wooden crate",
+    "segments": [
+      {
+        "text": "木箱",
+        "pinyin": "mù xiāng",
+        "gloss": "wooden crate"
+      }
+    ]
+  },
+  "Crystalarium_Description": {
+    "chinese": "置入你的宝石，它就会被复制。",
+    "english": "Put in your gem, and it will be copied.",
+    "segments": [
+      {
+        "text": "置入",
+        "pinyin": "zhì rù",
+        "gloss": "put in"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "宝石，",
+        "pinyin": "bǎo shí",
+        "gloss": "gem"
+      },
+      {
+        "text": "它",
+        "pinyin": "tā",
+        "gloss": "it"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "then"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "被",
+        "pinyin": "bèi",
+        "gloss": "(passive marker)"
+      },
+      {
+        "text": "复制。",
+        "pinyin": "fù zhì",
+        "gloss": "copied"
+      }
+    ]
+  },
+  "Crystalarium_Name": {
+    "chinese": "宝石复制机",
+    "english": "Gem copier",
+    "segments": [
+      {
+        "text": "宝石",
+        "pinyin": "bǎo shí",
+        "gloss": "gem"
+      },
+      {
+        "text": "复制机",
+        "pinyin": "fù zhì jī",
+        "gloss": "copying machine"
+      }
+    ]
+  },
+  "CursedPKArcadeSystem_Description": {
+    "chinese": "这台草原之王街机系统有哪里不对劲……",
+    "english": "Something is wrong with this Prairie King arcade system...",
+    "segments": [
+      {
+        "text": "这",
+        "pinyin": "zhè",
+        "gloss": "this"
+      },
+      {
+        "text": "台",
+        "pinyin": "tái",
+        "gloss": "(measure word for machines)"
+      },
+      {
+        "text": "草原之王",
+        "pinyin": "cǎo yuán zhī wáng",
+        "gloss": "Prairie King"
+      },
+      {
+        "text": "街机",
+        "pinyin": "jiē jī",
+        "gloss": "arcade"
+      },
+      {
+        "text": "系统",
+        "pinyin": "xì tǒng",
+        "gloss": "system"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "has"
+      },
+      {
+        "text": "哪里",
+        "pinyin": "nǎ lǐ",
+        "gloss": "somewhere"
+      },
+      {
+        "text": "不对劲……",
+        "pinyin": "bú duì jìn",
+        "gloss": "not right"
+      }
+    ]
+  },
+  "CursedPKArcadeSystem_Name": {
+    "chinese": "被诅咒的P.K.街机系统",
+    "english": "Cursed P.K. arcade system",
+    "segments": [
+      {
+        "text": "被",
+        "pinyin": "bèi",
+        "gloss": "(passive marker)"
+      },
+      {
+        "text": "诅咒",
+        "pinyin": "zǔ zhòu",
+        "gloss": "cursed"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "P.K.",
+        "pinyin": "P.K",
+        "gloss": "P.K. (Prairie King)"
+      },
+      {
+        "text": "街机",
+        "pinyin": "jiē jī",
+        "gloss": "arcade"
+      },
+      {
+        "text": "系统",
+        "pinyin": "xì tǒng",
+        "gloss": "system"
+      }
+    ]
+  },
+  "DarkSign_Description": {
+    "chinese": "在此上使用一个道具，即可改变显示的内容。道具不会被消耗掉。",
+    "english": "Use an item on it to change what it displays. The item won't be used up.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "on"
+      },
+      {
+        "text": "此",
+        "pinyin": "cǐ",
+        "gloss": "this"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "道具，",
+        "pinyin": "dào jù",
+        "gloss": "item"
+      },
+      {
+        "text": "即可",
+        "pinyin": "jí kě",
+        "gloss": "and then can"
+      },
+      {
+        "text": "改变",
+        "pinyin": "gǎi biàn",
+        "gloss": "change"
+      },
+      {
+        "text": "显示",
+        "pinyin": "xiǎn shì",
+        "gloss": "displayed"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "内容。",
+        "pinyin": "nèi róng",
+        "gloss": "content"
+      },
+      {
+        "text": "道具",
+        "pinyin": "dào jù",
+        "gloss": "item"
+      },
+      {
+        "text": "不会",
+        "pinyin": "bú huì",
+        "gloss": "won't"
+      },
+      {
+        "text": "被",
+        "pinyin": "bèi",
+        "gloss": "(passive marker)"
+      },
+      {
+        "text": "消耗",
+        "pinyin": "xiāo hào",
+        "gloss": "consumed"
+      },
+      {
+        "text": "掉。",
+        "pinyin": "diào",
+        "gloss": "(result: away)"
+      }
+    ]
+  },
+  "DarkSign_Name": {
+    "chinese": "深色牌子",
+    "english": "Dark sign",
+    "segments": [
+      {
+        "text": "深色",
+        "pinyin": "shēn sè",
+        "gloss": "dark-colored"
+      },
+      {
+        "text": "牌子",
+        "pinyin": "pái zi",
+        "gloss": "sign"
+      }
+    ]
+  },
+  "DeadTree_Description": {
+    "chinese": "已经风干了很久的可怜树木。",
+    "english": "A poor tree that has long since dried out.",
+    "segments": [
+      {
+        "text": "已经",
+        "pinyin": "yǐ jīng",
+        "gloss": "already"
+      },
+      {
+        "text": "风干",
+        "pinyin": "fēng gān",
+        "gloss": "air-dried"
+      },
+      {
+        "text": "了",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      },
+      {
+        "text": "很久",
+        "pinyin": "hěn jiǔ",
+        "gloss": "a long time"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "可怜",
+        "pinyin": "kě lián",
+        "gloss": "poor"
+      },
+      {
+        "text": "树木。",
+        "pinyin": "shù mù",
+        "gloss": "tree"
+      }
+    ]
+  },
+  "DeadTree_Name": {
+    "chinese": "枯死的树",
+    "english": "Withered tree",
+    "segments": [
+      {
+        "text": "枯死",
+        "pinyin": "kū sǐ",
+        "gloss": "withered"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "树",
+        "pinyin": "shù",
+        "gloss": "tree"
+      }
+    ]
+  },
+  "Deconstructor_Description": {
+    "chinese": "销毁打造的物品，回收最有价值的材料。",
+    "english": "Destroys crafted items, recovering the most valuable material.",
+    "segments": [
+      {
+        "text": "销毁",
+        "pinyin": "xiāo huǐ",
+        "gloss": "destroys"
+      },
+      {
+        "text": "打造",
+        "pinyin": "dǎ zào",
+        "gloss": "crafted"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "物品，",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "回收",
+        "pinyin": "huí shōu",
+        "gloss": "recovers"
+      },
+      {
+        "text": "最",
+        "pinyin": "zuì",
+        "gloss": "most"
+      },
+      {
+        "text": "有",
+        "pinyin": "yǒu",
+        "gloss": "have"
+      },
+      {
+        "text": "价值",
+        "pinyin": "jià zhí",
+        "gloss": "value"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "材料。",
+        "pinyin": "cái liào",
+        "gloss": "material"
+      }
+    ]
+  },
+  "Deconstructor_Name": {
+    "chinese": "分解机",
+    "english": "Breakdown machine",
+    "segments": [
+      {
+        "text": "分解",
+        "pinyin": "fēn jiě",
+        "gloss": "break down"
+      },
+      {
+        "text": "机",
+        "pinyin": "jī",
+        "gloss": "machine"
+      }
+    ]
+  },
+  "DecorativePitcher_Description": {
+    "chinese": "用黄铜手工打造。",
+    "english": "Handmade from brass.",
+    "segments": [
+      {
+        "text": "用",
+        "pinyin": "yòng",
+        "gloss": "with"
+      },
+      {
+        "text": "黄铜",
+        "pinyin": "huáng tóng",
+        "gloss": "brass"
+      },
+      {
+        "text": "手工",
+        "pinyin": "shǒu gōng",
+        "gloss": "by hand"
+      },
+      {
+        "text": "打造。",
+        "pinyin": "dǎ zào",
+        "gloss": "made"
+      }
+    ]
+  },
+  "DecorativePitcher_Name": {
+    "chinese": "装饰瓶子",
+    "english": "Decorative bottle",
+    "segments": [
+      {
+        "text": "装饰",
+        "pinyin": "zhuāng shì",
+        "gloss": "decorative"
+      },
+      {
+        "text": "瓶子",
+        "pinyin": "píng zi",
+        "gloss": "bottle"
+      }
+    ]
+  },
+  "DecorativeSpears_Description": {
+    "chinese": "不是很安全的装饰物。",
+    "english": "A not very safe decoration.",
+    "segments": [
+      {
+        "text": "不",
+        "pinyin": "bú",
+        "gloss": "not"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "安全",
+        "pinyin": "ān quán",
+        "gloss": "safe"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "装饰物。",
+        "pinyin": "zhuāng shì wù",
+        "gloss": "decoration"
+      }
+    ]
+  },
+  "DecorativeSpears_Name": {
+    "chinese": "装饰长矛",
+    "english": "Decorative spears",
+    "segments": [
+      {
+        "text": "装饰",
+        "pinyin": "zhuāng shì",
+        "gloss": "decorative"
+      },
+      {
+        "text": "长矛",
+        "pinyin": "cháng máo",
+        "gloss": "spears"
+      }
+    ]
+  },
+  "Dehydrator_Description": {
+    "chinese": "放入 5 个水果或可食用的蘑菇即可烘干。",
+    "english": "Put in 5 pieces of fruit or edible mushrooms to dry them.",
+    "segments": [
+      {
+        "text": "放入 ",
+        "pinyin": "fàng rù",
+        "gloss": "put in"
+      },
+      {
+        "text": "5 ",
+        "pinyin": "wǔ",
+        "gloss": "five"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "水果",
+        "pinyin": "shuǐ guǒ",
+        "gloss": "fruit"
+      },
+      {
+        "text": "或",
+        "pinyin": "huò",
+        "gloss": "or"
+      },
+      {
+        "text": "可",
+        "pinyin": "kě",
+        "gloss": "can"
+      },
+      {
+        "text": "食用",
+        "pinyin": "shí yòng",
+        "gloss": "eat"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "蘑菇",
+        "pinyin": "mó gu",
+        "gloss": "mushrooms"
+      },
+      {
+        "text": "即可",
+        "pinyin": "jí kě",
+        "gloss": "and then can"
+      },
+      {
+        "text": "烘干。",
+        "pinyin": "hōng gān",
+        "gloss": "dry"
+      }
+    ]
+  },
+  "Dehydrator_Name": {
+    "chinese": "烘干机",
+    "english": "Drying machine",
+    "segments": [
+      {
+        "text": "烘干机",
+        "pinyin": "hōng gān jī",
+        "gloss": "dehydrator"
+      }
+    ]
+  },
+  "DeluxeScarecrow_Description": {
+    "chinese": "阻止乌鸦攻击你的庄稼。范围很大（大约半径 16 格）。",
+    "english": "Stops crows attacking your crops. Very large range (about 16 tiles radius).",
+    "segments": [
+      {
+        "text": "阻止",
+        "pinyin": "zǔ zhǐ",
+        "gloss": "prevent"
+      },
+      {
+        "text": "乌鸦",
+        "pinyin": "wū yā",
+        "gloss": "crows"
+      },
+      {
+        "text": "攻击",
+        "pinyin": "gōng jī",
+        "gloss": "attacking"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "庄稼。",
+        "pinyin": "zhuāng jia",
+        "gloss": "crops"
+      },
+      {
+        "text": "范围",
+        "pinyin": "fàn wéi",
+        "gloss": "range"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "大",
+        "pinyin": "dà",
+        "gloss": "large"
+      },
+      {
+        "text": "（大约",
+        "pinyin": "dà yuē",
+        "gloss": "about"
+      },
+      {
+        "text": "半径 ",
+        "pinyin": "bàn jìng",
+        "gloss": "radius"
+      },
+      {
+        "text": "16 ",
+        "pinyin": "shí liù",
+        "gloss": "sixteen"
+      },
+      {
+        "text": "格）。",
+        "pinyin": "gé",
+        "gloss": "tiles (lit. squares)"
+      }
+    ]
+  },
+  "DeluxeScarecrow_Name": {
+    "chinese": "豪华稻草人",
+    "english": "Luxury scarecrow",
+    "segments": [
+      {
+        "text": "豪华",
+        "pinyin": "háo huá",
+        "gloss": "luxury"
+      },
+      {
+        "text": "稻草人",
+        "pinyin": "dào cǎo rén",
+        "gloss": "scarecrow"
+      }
+    ]
+  },
+  "DeluxeWormBin_Description": {
+    "chinese": "定期产生高级鱼饵。里面的虫子可以自给自足。",
+    "english": "Regularly produces advanced bait. The worms inside are self-sufficient.",
+    "segments": [
+      {
+        "text": "定期",
+        "pinyin": "dìng qī",
+        "gloss": "regularly"
+      },
+      {
+        "text": "产生",
+        "pinyin": "chǎn shēng",
+        "gloss": "produces"
+      },
+      {
+        "text": "高级",
+        "pinyin": "gāo jí",
+        "gloss": "advanced"
+      },
+      {
+        "text": "鱼饵。",
+        "pinyin": "yú ěr",
+        "gloss": "bait"
+      },
+      {
+        "text": "里面",
+        "pinyin": "lǐ miàn",
+        "gloss": "inside"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "虫子",
+        "pinyin": "chóng zi",
+        "gloss": "worms"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "自给自足。",
+        "pinyin": "zì jǐ zì zú",
+        "gloss": "be self-sufficient"
+      }
+    ]
+  },
+  "DeluxeWormBin_Name": {
+    "chinese": "高级虫饵盒",
+    "english": "Advanced worm bait box",
+    "segments": [
+      {
+        "text": "高级",
+        "pinyin": "gāo jí",
+        "gloss": "advanced"
+      },
+      {
+        "text": "虫饵",
+        "pinyin": "chóng ěr",
+        "gloss": "worm bait"
+      },
+      {
+        "text": "盒",
+        "pinyin": "hé",
+        "gloss": "box"
+      }
+    ]
+  },
+  "Door_Description": {
+    "chinese": "一种使它缩回地面的隐蔽装置。",
+    "english": "A hidden device that makes it retract into the ground.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "a"
+      },
+      {
+        "text": "种",
+        "pinyin": "zhǒng",
+        "gloss": "kind of"
+      },
+      {
+        "text": "使",
+        "pinyin": "shǐ",
+        "gloss": "make"
+      },
+      {
+        "text": "它",
+        "pinyin": "tā",
+        "gloss": "it"
+      },
+      {
+        "text": "缩回",
+        "pinyin": "suō huí",
+        "gloss": "retract"
+      },
+      {
+        "text": "地面",
+        "pinyin": "dì miàn",
+        "gloss": "ground"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "隐蔽",
+        "pinyin": "yǐn bì",
+        "gloss": "hidden"
+      },
+      {
+        "text": "装置。",
+        "pinyin": "zhuāng zhì",
+        "gloss": "device"
+      }
+    ]
+  },
+  "Door_Name": {
+    "chinese": "门",
+    "english": "Door",
+    "segments": [
+      {
+        "text": "门",
+        "pinyin": "mén",
+        "gloss": "door"
+      }
+    ]
+  },
+  "DriedSunflowers_Description": {
+    "chinese": "鲜艳的家具饰物。",
+    "english": "A bright home decoration.",
+    "segments": [
+      {
+        "text": "鲜艳",
+        "pinyin": "xiān yàn",
+        "gloss": "bright-colored"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "家具",
+        "pinyin": "jiā jù",
+        "gloss": "furniture"
+      },
+      {
+        "text": "饰物。",
+        "pinyin": "shì wù",
+        "gloss": "decoration"
+      }
+    ]
+  },
+  "DriedSunflowers_Name": {
+    "chinese": "风干太阳花",
+    "english": "Air-dried sunflowers",
+    "segments": [
+      {
+        "text": "风干",
+        "pinyin": "fēng gān",
+        "gloss": "air-dried"
+      },
+      {
+        "text": "太阳花",
+        "pinyin": "tài yáng huā",
+        "gloss": "sunflowers"
+      }
+    ]
+  },
+  "EmptyCapsule_Description": {
+    "chinese": "一部分玻璃被击碎了。",
+    "english": "Part of the glass has been smashed.",
+    "segments": [
+      {
+        "text": "一部分",
+        "pinyin": "yí bù fen",
+        "gloss": "part"
+      },
+      {
+        "text": "玻璃",
+        "pinyin": "bō li",
+        "gloss": "glass"
+      },
+      {
+        "text": "被",
+        "pinyin": "bèi",
+        "gloss": "(passive marker)"
+      },
+      {
+        "text": "击碎",
+        "pinyin": "jī suì",
+        "gloss": "smashed"
+      },
+      {
+        "text": "了。",
+        "pinyin": "le",
+        "gloss": "(completed action)"
+      }
+    ]
+  },
+  "EmptyCapsule_Name": {
+    "chinese": "空置的胶囊",
+    "english": "Empty capsule",
+    "segments": [
+      {
+        "text": "空置",
+        "pinyin": "kōng zhì",
+        "gloss": "empty (unused)"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "胶囊",
+        "pinyin": "jiāo náng",
+        "gloss": "capsule"
+      }
+    ]
+  },
+  "FancyTable_Description": {
+    "chinese": "制作精良的圆桌。",
+    "english": "A finely made round table.",
+    "segments": [
+      {
+        "text": "制作",
+        "pinyin": "zhì zuò",
+        "gloss": "made"
+      },
+      {
+        "text": "精良",
+        "pinyin": "jīng liáng",
+        "gloss": "finely"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "圆桌。",
+        "pinyin": "yuán zhuō",
+        "gloss": "round table"
+      }
+    ]
+  },
+  "FancyTable_Name": {
+    "chinese": "漂亮的桌子",
+    "english": "Pretty table",
+    "segments": [
+      {
+        "text": "漂亮",
+        "pinyin": "piào liang",
+        "gloss": "pretty"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "桌子",
+        "pinyin": "zhuō zi",
+        "gloss": "table"
+      }
+    ]
+  },
+  "FarmComputer_Description": {
+    "chinese": "可以扫描农场，显示实用的信息。",
+    "english": "Can scan the farm and display useful information.",
+    "segments": [
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "扫描",
+        "pinyin": "sǎo miáo",
+        "gloss": "scan"
+      },
+      {
+        "text": "农场，",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "显示",
+        "pinyin": "xiǎn shì",
+        "gloss": "display"
+      },
+      {
+        "text": "实用",
+        "pinyin": "shí yòng",
+        "gloss": "useful"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "信息。",
+        "pinyin": "xìn xī",
+        "gloss": "information"
+      }
+    ]
+  },
+  "FarmComputer_Name": {
+    "chinese": "农场电脑",
+    "english": "Farm computer",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "电脑",
+        "pinyin": "diàn nǎo",
+        "gloss": "computer"
+      }
+    ]
+  },
+  "FeedHopper_Description": {
+    "chinese": "可以轻易进入饲料筒仓。",
+    "english": "Gives easy access to the feed silo.",
+    "segments": [
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "轻易",
+        "pinyin": "qīng yì",
+        "gloss": "easily"
+      },
+      {
+        "text": "进入",
+        "pinyin": "jìn rù",
+        "gloss": "access"
+      },
+      {
+        "text": "饲料",
+        "pinyin": "sì liào",
+        "gloss": "feed"
+      },
+      {
+        "text": "筒仓。",
+        "pinyin": "tǒng cāng",
+        "gloss": "silo"
+      }
+    ]
+  },
+  "FeedHopper_Name": {
+    "chinese": "喂料斗",
+    "english": "Feed hopper",
+    "segments": [
+      {
+        "text": "喂料",
+        "pinyin": "wèi liào",
+        "gloss": "feeding"
+      },
+      {
+        "text": "斗",
+        "pinyin": "dǒu",
+        "gloss": "hopper"
+      }
+    ]
+  },
+  "FishSmoker_Description": {
+    "chinese": "放入鱼和一块煤炭即可烟熏，熏鱼价格是普通的两倍。",
+    "english": "Put in fish and a piece of coal to smoke it; smoked fish are worth twice the usual price.",
+    "segments": [
+      {
+        "text": "放入",
+        "pinyin": "fàng rù",
+        "gloss": "put in"
+      },
+      {
+        "text": "鱼",
+        "pinyin": "yú",
+        "gloss": "fish"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for pieces)"
+      },
+      {
+        "text": "煤炭",
+        "pinyin": "méi tàn",
+        "gloss": "coal"
+      },
+      {
+        "text": "即可",
+        "pinyin": "jí kě",
+        "gloss": "and then can"
+      },
+      {
+        "text": "烟熏，",
+        "pinyin": "yān xūn",
+        "gloss": "smoke"
+      },
+      {
+        "text": "熏鱼",
+        "pinyin": "xūn yú",
+        "gloss": "smoked fish"
+      },
+      {
+        "text": "价格",
+        "pinyin": "jià gé",
+        "gloss": "price"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "普通",
+        "pinyin": "pǔ tōng",
+        "gloss": "ordinary"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "两",
+        "pinyin": "liǎng",
+        "gloss": "two"
+      },
+      {
+        "text": "倍。",
+        "pinyin": "bèi",
+        "gloss": "times"
+      }
+    ]
+  },
+  "FishSmoker_Name": {
+    "chinese": "熏鱼机",
+    "english": "Fish smoker",
+    "segments": [
+      {
+        "text": "熏鱼",
+        "pinyin": "xūn yú",
+        "gloss": "fish-smoking"
+      },
+      {
+        "text": "机",
+        "pinyin": "jī",
+        "gloss": "machine"
+      }
+    ]
+  },
+  "Foroguemon_Description": {
+    "chinese": "??碎屑雕像??",
+    "english": "??Debris statue??",
+    "segments": [
+      {
+        "text": "??碎屑",
+        "pinyin": "suì xiè",
+        "gloss": "debris"
+      },
+      {
+        "text": "雕像??",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "Foroguemon_Name": {
+    "chinese": "??碎屑雕像??",
+    "english": "??Debris statue??",
+    "segments": [
+      {
+        "text": "??碎屑",
+        "pinyin": "suì xiè",
+        "gloss": "debris"
+      },
+      {
+        "text": "雕像??",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "Furnace_Description": {
+    "chinese": "将矿石和煤炭转换为金属方块。",
+    "english": "Turns ore and coal into metal bars.",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "矿石",
+        "pinyin": "kuàng shí",
+        "gloss": "ore"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "煤炭",
+        "pinyin": "méi tàn",
+        "gloss": "coal"
+      },
+      {
+        "text": "转换",
+        "pinyin": "zhuǎn huàn",
+        "gloss": "convert"
+      },
+      {
+        "text": "为",
+        "pinyin": "wéi",
+        "gloss": "into"
+      },
+      {
+        "text": "金属",
+        "pinyin": "jīn shǔ",
+        "gloss": "metal"
+      },
+      {
+        "text": "方块。",
+        "pinyin": "fāng kuài",
+        "gloss": "bars (lit. blocks)"
+      }
+    ]
+  },
+  "Furnace_Name": {
+    "chinese": "熔炉",
+    "english": "Furnace",
+    "segments": [
+      {
+        "text": "熔炉",
+        "pinyin": "róng lú",
+        "gloss": "furnace"
+      }
+    ]
+  },
+  "GardenPot_Description": {
+    "chinese": "在室内时，可种植任何季节的作物。在户外时，只能容纳季节性作物。",
+    "english": "Indoors, can grow crops of any season. Outdoors, can only hold seasonal crops.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "室内",
+        "pinyin": "shì nèi",
+        "gloss": "indoors"
+      },
+      {
+        "text": "时，",
+        "pinyin": "shí",
+        "gloss": "when"
+      },
+      {
+        "text": "可",
+        "pinyin": "kě",
+        "gloss": "can"
+      },
+      {
+        "text": "种植",
+        "pinyin": "zhòng zhí",
+        "gloss": "grow"
+      },
+      {
+        "text": "任何",
+        "pinyin": "rèn hé",
+        "gloss": "any"
+      },
+      {
+        "text": "季节",
+        "pinyin": "jì jié",
+        "gloss": "season"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "作物。",
+        "pinyin": "zuò wù",
+        "gloss": "crops"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "户外",
+        "pinyin": "hù wài",
+        "gloss": "outdoors"
+      },
+      {
+        "text": "时，",
+        "pinyin": "shí",
+        "gloss": "when"
+      },
+      {
+        "text": "只能",
+        "pinyin": "zhǐ néng",
+        "gloss": "can only"
+      },
+      {
+        "text": "容纳",
+        "pinyin": "róng nà",
+        "gloss": "hold"
+      },
+      {
+        "text": "季节性",
+        "pinyin": "jì jié xìng",
+        "gloss": "seasonal"
+      },
+      {
+        "text": "作物。",
+        "pinyin": "zuò wù",
+        "gloss": "crops"
+      }
+    ]
+  },
+  "GardenPot_Name": {
+    "chinese": "花盆",
+    "english": "Flowerpot",
+    "segments": [
+      {
+        "text": "花盆",
+        "pinyin": "huā pén",
+        "gloss": "flowerpot"
+      }
+    ]
+  },
+  "GeodeCrusher_Description": {
+    "chinese": "可以自动地破开晶球。",
+    "english": "Can crack open geodes automatically.",
+    "segments": [
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "自动",
+        "pinyin": "zì dòng",
+        "gloss": "automatic"
+      },
+      {
+        "text": "地",
+        "pinyin": "de",
+        "gloss": "(adverb marker)"
+      },
+      {
+        "text": "破开",
+        "pinyin": "pò kāi",
+        "gloss": "break open"
+      },
+      {
+        "text": "晶球。",
+        "pinyin": "jīng qiú",
+        "gloss": "geodes (lit. crystal balls)"
+      }
+    ]
+  },
+  "GeodeCrusher_Name": {
+    "chinese": "晶球破开器",
+    "english": "Geode breaker",
+    "segments": [
+      {
+        "text": "晶球",
+        "pinyin": "jīng qiú",
+        "gloss": "geode"
+      },
+      {
+        "text": "破开器",
+        "pinyin": "pò kāi qì",
+        "gloss": "breaker"
+      }
+    ]
+  },
+  "GoldBrazier_Description": {
+    "chinese": "提供一点亮光。",
+    "english": "Provides a little light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "一点",
+        "pinyin": "yì diǎn",
+        "gloss": "a little"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "GoldBrazier_Name": {
+    "chinese": "金制火炬",
+    "english": "Gold torch",
+    "segments": [
+      {
+        "text": "金制",
+        "pinyin": "jīn zhì",
+        "gloss": "gold-made"
+      },
+      {
+        "text": "火炬",
+        "pinyin": "huǒ jù",
+        "gloss": "torch"
+      }
+    ]
+  },
+  "GrandfatherClock_Description": {
+    "chinese": "很古老……钟摆都生锈卡着了。",
+    "english": "Very old... even the pendulum has rusted stuck.",
+    "segments": [
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "古老……",
+        "pinyin": "gǔ lǎo",
+        "gloss": "old"
+      },
+      {
+        "text": "钟摆",
+        "pinyin": "zhōng bǎi",
+        "gloss": "pendulum"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "even"
+      },
+      {
+        "text": "生锈",
+        "pinyin": "shēng xiù",
+        "gloss": "rusted"
+      },
+      {
+        "text": "卡",
+        "pinyin": "qiǎ",
+        "gloss": "stuck"
+      },
+      {
+        "text": "着",
+        "pinyin": "zhe",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "了。",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      }
+    ]
+  },
+  "GrandfatherClock_Name": {
+    "chinese": "祖父的钟",
+    "english": "Grandfather's clock",
+    "segments": [
+      {
+        "text": "祖父",
+        "pinyin": "zǔ fù",
+        "gloss": "grandfather"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "钟",
+        "pinyin": "zhōng",
+        "gloss": "clock"
+      }
+    ]
+  },
+  "GraveStone_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "GraveStone_Name": {
+    "chinese": "墓石",
+    "english": "Gravestone",
+    "segments": [
+      {
+        "text": "墓石",
+        "pinyin": "mù shí",
+        "gloss": "gravestone"
+      }
+    ]
+  },
+  "GreenCanes_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "GreenCanes_Name": {
+    "chinese": "绿杖",
+    "english": "Green canes",
+    "segments": [
+      {
+        "text": "绿",
+        "pinyin": "lǜ",
+        "gloss": "green"
+      },
+      {
+        "text": "杖",
+        "pinyin": "zhàng",
+        "gloss": "canes"
+      }
+    ]
+  },
+  "Heater_Description": {
+    "chinese": "为你的动物在冬天中保暖。",
+    "english": "Keeps your animals warm in winter.",
+    "segments": [
+      {
+        "text": "为",
+        "pinyin": "wèi",
+        "gloss": "for"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "动物",
+        "pinyin": "dòng wù",
+        "gloss": "animals"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "冬天",
+        "pinyin": "dōng tiān",
+        "gloss": "winter"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "during"
+      },
+      {
+        "text": "保暖。",
+        "pinyin": "bǎo nuǎn",
+        "gloss": "keep warm"
+      }
+    ]
+  },
+  "Heater_Name": {
+    "chinese": "加热器",
+    "english": "Heater",
+    "segments": [
+      {
+        "text": "加热器",
+        "pinyin": "jiā rè qì",
+        "gloss": "heater"
+      }
+    ]
+  },
+  "HeavyFurnace_Description": {
+    "chinese": "比普通熔炉效率更高。每次使用需要 25 个矿石和 3 块煤炭。",
+    "english": "More efficient than an ordinary furnace. Each use needs 25 ore and 3 pieces of coal.",
+    "segments": [
+      {
+        "text": "比",
+        "pinyin": "bǐ",
+        "gloss": "than"
+      },
+      {
+        "text": "普通",
+        "pinyin": "pǔ tōng",
+        "gloss": "ordinary"
+      },
+      {
+        "text": "熔炉",
+        "pinyin": "róng lú",
+        "gloss": "furnace"
+      },
+      {
+        "text": "效率",
+        "pinyin": "xiào lǜ",
+        "gloss": "efficiency"
+      },
+      {
+        "text": "更",
+        "pinyin": "gèng",
+        "gloss": "more"
+      },
+      {
+        "text": "高。",
+        "pinyin": "gāo",
+        "gloss": "high"
+      },
+      {
+        "text": "每次",
+        "pinyin": "měi cì",
+        "gloss": "each time"
+      },
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "需要 ",
+        "pinyin": "xū yào",
+        "gloss": "needs"
+      },
+      {
+        "text": "25 ",
+        "pinyin": "èr shí wǔ",
+        "gloss": "twenty-five"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "矿石",
+        "pinyin": "kuàng shí",
+        "gloss": "ore"
+      },
+      {
+        "text": "和 ",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "3 ",
+        "pinyin": "sān",
+        "gloss": "three"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for pieces)"
+      },
+      {
+        "text": "煤炭。",
+        "pinyin": "méi tàn",
+        "gloss": "coal"
+      }
+    ]
+  },
+  "HeavyFurnace_Name": {
+    "chinese": "重型熔炉",
+    "english": "Heavy-duty furnace",
+    "segments": [
+      {
+        "text": "重型",
+        "pinyin": "zhòng xíng",
+        "gloss": "heavy-duty"
+      },
+      {
+        "text": "熔炉",
+        "pinyin": "róng lú",
+        "gloss": "furnace"
+      }
+    ]
+  },
+  "HeavyTapper_Description": {
+    "chinese": "放在枫树、橡树、松树上，然后等着装满树液吧！比普通树液采集器快一倍。",
+    "english": "Put it on a maple, oak or pine tree, then wait for it to fill with sap! Twice as fast as an ordinary tapper.",
+    "segments": [
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(result: on)"
+      },
+      {
+        "text": "枫树、",
+        "pinyin": "fēng shù",
+        "gloss": "maple tree"
+      },
+      {
+        "text": "橡树、",
+        "pinyin": "xiàng shù",
+        "gloss": "oak tree"
+      },
+      {
+        "text": "松树",
+        "pinyin": "sōng shù",
+        "gloss": "pine tree"
+      },
+      {
+        "text": "上，",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "然后",
+        "pinyin": "rán hòu",
+        "gloss": "then"
+      },
+      {
+        "text": "等",
+        "pinyin": "děng",
+        "gloss": "wait"
+      },
+      {
+        "text": "着",
+        "pinyin": "zhe",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "装满",
+        "pinyin": "zhuāng mǎn",
+        "gloss": "fill up"
+      },
+      {
+        "text": "树液",
+        "pinyin": "shù yè",
+        "gloss": "sap"
+      },
+      {
+        "text": "吧！",
+        "pinyin": "ba",
+        "gloss": "(suggestion)"
+      },
+      {
+        "text": "比",
+        "pinyin": "bǐ",
+        "gloss": "than"
+      },
+      {
+        "text": "普通",
+        "pinyin": "pǔ tōng",
+        "gloss": "ordinary"
+      },
+      {
+        "text": "树液",
+        "pinyin": "shù yè",
+        "gloss": "sap"
+      },
+      {
+        "text": "采集器",
+        "pinyin": "cǎi jí qì",
+        "gloss": "collector"
+      },
+      {
+        "text": "快",
+        "pinyin": "kuài",
+        "gloss": "fast"
+      },
+      {
+        "text": "一倍。",
+        "pinyin": "yí bèi",
+        "gloss": "double"
+      }
+    ]
+  },
+  "HeavyTapper_Name": {
+    "chinese": "重型树液采集器",
+    "english": "Heavy-duty sap collector",
+    "segments": [
+      {
+        "text": "重型",
+        "pinyin": "zhòng xíng",
+        "gloss": "heavy-duty"
+      },
+      {
+        "text": "树液",
+        "pinyin": "shù yè",
+        "gloss": "sap"
+      },
+      {
+        "text": "采集器",
+        "pinyin": "cǎi jí qì",
+        "gloss": "collector"
+      }
+    ]
+  },
+  "Hopper_Description": {
+    "chinese": "把东西放进去，会自动加进前面的机器里。",
+    "english": "Put things in, and they are automatically fed into the machine in front.",
+    "segments": [
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "东西",
+        "pinyin": "dōng xi",
+        "gloss": "things"
+      },
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "进去，",
+        "pinyin": "jin qu",
+        "gloss": "(result: in)"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "自动",
+        "pinyin": "zì dòng",
+        "gloss": "automatically"
+      },
+      {
+        "text": "加",
+        "pinyin": "jiā",
+        "gloss": "add"
+      },
+      {
+        "text": "进",
+        "pinyin": "jìn",
+        "gloss": "(result: into)"
+      },
+      {
+        "text": "前面",
+        "pinyin": "qián miàn",
+        "gloss": "in front"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "机器",
+        "pinyin": "jī qì",
+        "gloss": "machine"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "Hopper_Name": {
+    "chinese": "加料器",
+    "english": "Feeder",
+    "segments": [
+      {
+        "text": "加料器",
+        "pinyin": "jiā liào qì",
+        "gloss": "hopper (feeder)"
+      }
+    ]
+  },
+  "HousePlant_Description": {
+    "chinese": "为你的房子或农场添加一些角色。",
+    "english": "Adds some character to your house or farm.",
+    "segments": [
+      {
+        "text": "为",
+        "pinyin": "wèi",
+        "gloss": "for"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "房子",
+        "pinyin": "fáng zi",
+        "gloss": "house"
+      },
+      {
+        "text": "或",
+        "pinyin": "huò",
+        "gloss": "or"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "添加",
+        "pinyin": "tiān jiā",
+        "gloss": "add"
+      },
+      {
+        "text": "一些",
+        "pinyin": "yì xiē",
+        "gloss": "some"
+      },
+      {
+        "text": "角色。",
+        "pinyin": "jué sè",
+        "gloss": "character"
+      }
+    ]
+  },
+  "HousePlant_Name": {
+    "chinese": "家居植物",
+    "english": "Household plant",
+    "segments": [
+      {
+        "text": "家居",
+        "pinyin": "jiā jū",
+        "gloss": "household"
+      },
+      {
+        "text": "植物",
+        "pinyin": "zhí wù",
+        "gloss": "plant"
+      }
+    ]
+  },
+  "Incubator_Description": {
+    "chinese": "将蛋孵化为小鸡和小鸭。",
+    "english": "Hatches eggs into chicks and ducklings.",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "蛋",
+        "pinyin": "dàn",
+        "gloss": "eggs"
+      },
+      {
+        "text": "孵化",
+        "pinyin": "fū huà",
+        "gloss": "hatch"
+      },
+      {
+        "text": "为",
+        "pinyin": "wéi",
+        "gloss": "into"
+      },
+      {
+        "text": "小鸡",
+        "pinyin": "xiǎo jī",
+        "gloss": "chicks"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "小鸭。",
+        "pinyin": "xiǎo yā",
+        "gloss": "ducklings"
+      }
+    ]
+  },
+  "Incubator_Name": {
+    "chinese": "孵化器",
+    "english": "Incubator",
+    "segments": [
+      {
+        "text": "孵化器",
+        "pinyin": "fū huà qì",
+        "gloss": "incubator"
+      }
+    ]
+  },
+  "IronLamppost_Description": {
+    "chinese": "提供不少亮光。",
+    "english": "Provides quite a lot of light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "不少",
+        "pinyin": "bù shǎo",
+        "gloss": "quite a lot of"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "IronLamppost_Name": {
+    "chinese": "铁灯柱",
+    "english": "Iron lamppost",
+    "segments": [
+      {
+        "text": "铁",
+        "pinyin": "tiě",
+        "gloss": "iron"
+      },
+      {
+        "text": "灯柱",
+        "pinyin": "dēng zhù",
+        "gloss": "lamppost"
+      }
+    ]
+  },
+  "JunimoChest_Description": {
+    "chinese": "通过森林魔法的力量，每个祝尼魔箱都连接到同一个储存处。",
+    "english": "Through the power of forest magic, every Junimo chest connects to the same storage place.",
+    "segments": [
+      {
+        "text": "通过",
+        "pinyin": "tōng guò",
+        "gloss": "through"
+      },
+      {
+        "text": "森林",
+        "pinyin": "sēn lín",
+        "gloss": "forest"
+      },
+      {
+        "text": "魔法",
+        "pinyin": "mó fǎ",
+        "gloss": "magic"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "力量，",
+        "pinyin": "lì liang",
+        "gloss": "power"
+      },
+      {
+        "text": "每个",
+        "pinyin": "měi gè",
+        "gloss": "every"
+      },
+      {
+        "text": "祝尼魔",
+        "pinyin": "zhù ní mó",
+        "gloss": "Junimo"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "chest"
+      },
+      {
+        "text": "都",
+        "pinyin": "dōu",
+        "gloss": "all"
+      },
+      {
+        "text": "连接",
+        "pinyin": "lián jiē",
+        "gloss": "connect"
+      },
+      {
+        "text": "到",
+        "pinyin": "dào",
+        "gloss": "to"
+      },
+      {
+        "text": "同一个",
+        "pinyin": "tóng yí gè",
+        "gloss": "the same"
+      },
+      {
+        "text": "储存处。",
+        "pinyin": "chǔ cún chù",
+        "gloss": "storage place"
+      }
+    ]
+  },
+  "JunimoChest_Name": {
+    "chinese": "祝尼魔箱",
+    "english": "Junimo chest",
+    "segments": [
+      {
+        "text": "祝尼魔",
+        "pinyin": "zhù ní mó",
+        "gloss": "Junimo"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "chest"
+      }
+    ]
+  },
+  "JunimoKartArcadeSystem_Description": {
+    "chinese": "在家玩“祝尼魔赛车”！",
+    "english": "Play \"Junimo Racing\" at home!",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "家",
+        "pinyin": "jiā",
+        "gloss": "home"
+      },
+      {
+        "text": "玩",
+        "pinyin": "wán",
+        "gloss": "play"
+      },
+      {
+        "text": "“祝尼魔",
+        "pinyin": "zhù ní mó",
+        "gloss": "Junimo"
+      },
+      {
+        "text": "赛车”！",
+        "pinyin": "sài chē",
+        "gloss": "racing (Kart)"
+      }
+    ]
+  },
+  "JunimoKartArcadeSystem_Name": {
+    "chinese": "祝尼魔赛车街机系统",
+    "english": "Junimo Racing arcade system",
+    "segments": [
+      {
+        "text": "祝尼魔",
+        "pinyin": "zhù ní mó",
+        "gloss": "Junimo"
+      },
+      {
+        "text": "赛车",
+        "pinyin": "sài chē",
+        "gloss": "racing (Kart)"
+      },
+      {
+        "text": "街机",
+        "pinyin": "jiē jī",
+        "gloss": "arcade"
+      },
+      {
+        "text": "系统",
+        "pinyin": "xì tǒng",
+        "gloss": "system"
+      }
+    ]
+  },
+  "Keg_Description": {
+    "chinese": "置放水果或蔬菜在内。最终会变成饮品。",
+    "english": "Put fruit or vegetables inside. In the end they turn into a drink.",
+    "segments": [
+      {
+        "text": "置放",
+        "pinyin": "zhì fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "水果",
+        "pinyin": "shuǐ guǒ",
+        "gloss": "fruit"
+      },
+      {
+        "text": "或",
+        "pinyin": "huò",
+        "gloss": "or"
+      },
+      {
+        "text": "蔬菜",
+        "pinyin": "shū cài",
+        "gloss": "vegetables"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "内。",
+        "pinyin": "nèi",
+        "gloss": "inside"
+      },
+      {
+        "text": "最终",
+        "pinyin": "zuì zhōng",
+        "gloss": "in the end"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "变成",
+        "pinyin": "biàn chéng",
+        "gloss": "turn into"
+      },
+      {
+        "text": "饮品。",
+        "pinyin": "yǐn pǐn",
+        "gloss": "a drink"
+      }
+    ]
+  },
+  "Keg_Name": {
+    "chinese": "小桶",
+    "english": "Small keg",
+    "segments": [
+      {
+        "text": "小桶",
+        "pinyin": "xiǎo tǒng",
+        "gloss": "keg (lit. small barrel)"
+      }
+    ]
+  },
+  "LawnFlamingo_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "LawnFlamingo_Name": {
+    "chinese": "草坪火烈鸟",
+    "english": "Lawn flamingo",
+    "segments": [
+      {
+        "text": "草坪",
+        "pinyin": "cǎo píng",
+        "gloss": "lawn"
+      },
+      {
+        "text": "火烈鸟",
+        "pinyin": "huǒ liè niǎo",
+        "gloss": "flamingo"
+      }
+    ]
+  },
+  "LightningRod_Description": {
+    "chinese": "收集暴风雨的能量，转换为电池。",
+    "english": "Collects the energy of thunderstorms and converts it into batteries.",
+    "segments": [
+      {
+        "text": "收集",
+        "pinyin": "shōu jí",
+        "gloss": "collects"
+      },
+      {
+        "text": "暴风雨",
+        "pinyin": "bào fēng yǔ",
+        "gloss": "storm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "能量，",
+        "pinyin": "néng liàng",
+        "gloss": "energy"
+      },
+      {
+        "text": "转换",
+        "pinyin": "zhuǎn huàn",
+        "gloss": "convert"
+      },
+      {
+        "text": "为",
+        "pinyin": "wéi",
+        "gloss": "into"
+      },
+      {
+        "text": "电池。",
+        "pinyin": "diàn chí",
+        "gloss": "batteries"
+      }
+    ]
+  },
+  "LightningRod_Name": {
+    "chinese": "避雷针",
+    "english": "Lightning rod",
+    "segments": [
+      {
+        "text": "避雷针",
+        "pinyin": "bì léi zhēn",
+        "gloss": "lightning rod"
+      }
+    ]
+  },
+  "LockedDoor_Description": {
+    "chinese": "一种使它缩回地面的隐蔽装置。",
+    "english": "A hidden device that makes it retract into the ground.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "a"
+      },
+      {
+        "text": "种",
+        "pinyin": "zhǒng",
+        "gloss": "kind of"
+      },
+      {
+        "text": "使",
+        "pinyin": "shǐ",
+        "gloss": "make"
+      },
+      {
+        "text": "它",
+        "pinyin": "tā",
+        "gloss": "it"
+      },
+      {
+        "text": "缩回",
+        "pinyin": "suō huí",
+        "gloss": "retract"
+      },
+      {
+        "text": "地面",
+        "pinyin": "dì miàn",
+        "gloss": "ground"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "隐蔽",
+        "pinyin": "yǐn bì",
+        "gloss": "hidden"
+      },
+      {
+        "text": "装置。",
+        "pinyin": "zhuāng zhì",
+        "gloss": "device"
+      }
+    ]
+  },
+  "LockedDoor_Name": {
+    "chinese": "上锁的门",
+    "english": "Locked door",
+    "segments": [
+      {
+        "text": "上锁",
+        "pinyin": "shàng suǒ",
+        "gloss": "locked"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "门",
+        "pinyin": "mén",
+        "gloss": "door"
+      }
+    ]
+  },
+  "LogSection_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "LogSection_Name": {
+    "chinese": "圆木段",
+    "english": "Log section",
+    "segments": [
+      {
+        "text": "圆木",
+        "pinyin": "yuán mù",
+        "gloss": "log"
+      },
+      {
+        "text": "段",
+        "pinyin": "duàn",
+        "gloss": "section"
+      }
+    ]
+  },
+  "Loom_Description": {
+    "chinese": "将动物毛转换成美丽的布料。",
+    "english": "Turns animal hair into beautiful cloth.",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "动物",
+        "pinyin": "dòng wù",
+        "gloss": "animal"
+      },
+      {
+        "text": "毛",
+        "pinyin": "máo",
+        "gloss": "hair (wool)"
+      },
+      {
+        "text": "转换",
+        "pinyin": "zhuǎn huàn",
+        "gloss": "convert"
+      },
+      {
+        "text": "成",
+        "pinyin": "chéng",
+        "gloss": "(result: into)"
+      },
+      {
+        "text": "美丽",
+        "pinyin": "měi lì",
+        "gloss": "beautiful"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "布料。",
+        "pinyin": "bù liào",
+        "gloss": "cloth"
+      }
+    ]
+  },
+  "Loom_Name": {
+    "chinese": "织布机",
+    "english": "Loom",
+    "segments": [
+      {
+        "text": "织布机",
+        "pinyin": "zhī bù jī",
+        "gloss": "loom"
+      }
+    ]
+  },
+  "MarbleBrazier_Description": {
+    "chinese": "提供一点亮光。",
+    "english": "Provides a little light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "一点",
+        "pinyin": "yì diǎn",
+        "gloss": "a little"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "MarbleBrazier_Name": {
+    "chinese": "大理石火炬",
+    "english": "Marble torch",
+    "segments": [
+      {
+        "text": "大理石",
+        "pinyin": "dà lǐ shí",
+        "gloss": "marble"
+      },
+      {
+        "text": "火炬",
+        "pinyin": "huǒ jù",
+        "gloss": "torch"
+      }
+    ]
+  },
+  "MayonnaiseMachine_Description": {
+    "chinese": "将鸡蛋转换为蛋黄酱。",
+    "english": "Turns eggs into mayonnaise.",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "鸡蛋",
+        "pinyin": "jī dàn",
+        "gloss": "eggs"
+      },
+      {
+        "text": "转换",
+        "pinyin": "zhuǎn huàn",
+        "gloss": "convert"
+      },
+      {
+        "text": "为",
+        "pinyin": "wéi",
+        "gloss": "into"
+      },
+      {
+        "text": "蛋黄酱。",
+        "pinyin": "dàn huáng jiàng",
+        "gloss": "mayonnaise"
+      }
+    ]
+  },
+  "MayonnaiseMachine_Name": {
+    "chinese": "蛋黄酱机",
+    "english": "Mayonnaise machine",
+    "segments": [
+      {
+        "text": "蛋黄酱",
+        "pinyin": "dàn huáng jiàng",
+        "gloss": "mayonnaise"
+      },
+      {
+        "text": "机",
+        "pinyin": "jī",
+        "gloss": "machine"
+      }
+    ]
+  },
+  "MiniForge_Description": {
+    "chinese": "你可以在家中方便地使用矮人锻造台了。",
+    "english": "You can conveniently use a dwarf forge at home now.",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "家",
+        "pinyin": "jiā",
+        "gloss": "home"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      },
+      {
+        "text": "方便",
+        "pinyin": "fāng biàn",
+        "gloss": "conveniently"
+      },
+      {
+        "text": "地",
+        "pinyin": "de",
+        "gloss": "(adverb marker)"
+      },
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "矮人",
+        "pinyin": "ǎi rén",
+        "gloss": "dwarf"
+      },
+      {
+        "text": "锻造台",
+        "pinyin": "duàn zào tái",
+        "gloss": "forge"
+      },
+      {
+        "text": "了。",
+        "pinyin": "le",
+        "gloss": "(change of state)"
+      }
+    ]
+  },
+  "MiniForge_Name": {
+    "chinese": "迷你锻造台",
+    "english": "Mini forge",
+    "segments": [
+      {
+        "text": "迷你",
+        "pinyin": "mí nǐ",
+        "gloss": "mini"
+      },
+      {
+        "text": "锻造台",
+        "pinyin": "duàn zào tái",
+        "gloss": "forge"
+      }
+    ]
+  },
+  "MiniFridge_Description": {
+    "chinese": "可以储存额外的烹饪原材料。",
+    "english": "Can store extra cooking ingredients.",
+    "segments": [
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "储存",
+        "pinyin": "chǔ cún",
+        "gloss": "store"
+      },
+      {
+        "text": "额外",
+        "pinyin": "é wài",
+        "gloss": "extra"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "烹饪",
+        "pinyin": "pēng rèn",
+        "gloss": "cooking"
+      },
+      {
+        "text": "原材料。",
+        "pinyin": "yuán cái liào",
+        "gloss": "ingredients"
+      }
+    ]
+  },
+  "MiniFridge_Name": {
+    "chinese": "迷你冰箱",
+    "english": "Mini fridge",
+    "segments": [
+      {
+        "text": "迷你",
+        "pinyin": "mí nǐ",
+        "gloss": "mini"
+      },
+      {
+        "text": "冰箱",
+        "pinyin": "bīng xiāng",
+        "gloss": "fridge"
+      }
+    ]
+  },
+  "MiniJukebox_Description": {
+    "chinese": "可以播放自己最喜欢的音乐。",
+    "english": "Can play your own favorite music.",
+    "segments": [
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "播放",
+        "pinyin": "bō fàng",
+        "gloss": "play"
+      },
+      {
+        "text": "自己",
+        "pinyin": "zì jǐ",
+        "gloss": "one's own"
+      },
+      {
+        "text": "最",
+        "pinyin": "zuì",
+        "gloss": "most"
+      },
+      {
+        "text": "喜欢",
+        "pinyin": "xǐ huan",
+        "gloss": "liked"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "音乐。",
+        "pinyin": "yīn yuè",
+        "gloss": "music"
+      }
+    ]
+  },
+  "MiniJukebox_Name": {
+    "chinese": "迷你点唱机",
+    "english": "Mini jukebox",
+    "segments": [
+      {
+        "text": "迷你",
+        "pinyin": "mí nǐ",
+        "gloss": "mini"
+      },
+      {
+        "text": "点唱机",
+        "pinyin": "diǎn chàng jī",
+        "gloss": "jukebox"
+      }
+    ]
+  },
+  "MiniObelisk_Description": {
+    "chinese": "在农场中放置两个，就可以在它们之间传送。",
+    "english": "Place two on the farm, and you can teleport between them.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "on"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      },
+      {
+        "text": "放置",
+        "pinyin": "fàng zhì",
+        "gloss": "place"
+      },
+      {
+        "text": "两",
+        "pinyin": "liǎng",
+        "gloss": "two"
+      },
+      {
+        "text": "个，",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "then"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "之间",
+        "pinyin": "zhī jiān",
+        "gloss": "between"
+      },
+      {
+        "text": "传送。",
+        "pinyin": "chuán sòng",
+        "gloss": "teleport"
+      }
+    ]
+  },
+  "MiniObelisk_Name": {
+    "chinese": "迷你图腾尖塔",
+    "english": "Mini totem spire",
+    "segments": [
+      {
+        "text": "迷你",
+        "pinyin": "mí nǐ",
+        "gloss": "mini"
+      },
+      {
+        "text": "图腾",
+        "pinyin": "tú téng",
+        "gloss": "totem"
+      },
+      {
+        "text": "尖塔",
+        "pinyin": "jiān tǎ",
+        "gloss": "spire"
+      }
+    ]
+  },
+  "MiniShippingBin_Description": {
+    "chinese": "放在里面的物品会在每晚售出。",
+    "english": "Items put inside will be sold every night.",
+    "segments": [
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(result: at)"
+      },
+      {
+        "text": "里面",
+        "pinyin": "lǐ miàn",
+        "gloss": "inside"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "每晚",
+        "pinyin": "měi wǎn",
+        "gloss": "every night"
+      },
+      {
+        "text": "售出。",
+        "pinyin": "shòu chū",
+        "gloss": "be sold"
+      }
+    ]
+  },
+  "MiniShippingBin_Name": {
+    "chinese": "迷你出货箱",
+    "english": "Mini shipping box",
+    "segments": [
+      {
+        "text": "迷你",
+        "pinyin": "mí nǐ",
+        "gloss": "mini"
+      },
+      {
+        "text": "出货箱",
+        "pinyin": "chū huò xiāng",
+        "gloss": "shipping bin"
+      }
+    ]
+  },
+  "MixedCane_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "MixedCane_Name": {
+    "chinese": "混色杖",
+    "english": "Mixed-color cane",
+    "segments": [
+      {
+        "text": "混色",
+        "pinyin": "hùn sè",
+        "gloss": "mixed-color"
+      },
+      {
+        "text": "杖",
+        "pinyin": "zhàng",
+        "gloss": "cane"
+      }
+    ]
+  },
+  "MushroomBox_Description": {
+    "chinese": "每过几天就会长出蘑菇。",
+    "english": "Mushrooms will grow every few days.",
+    "segments": [
+      {
+        "text": "每",
+        "pinyin": "měi",
+        "gloss": "every"
+      },
+      {
+        "text": "过",
+        "pinyin": "guò",
+        "gloss": "pass"
+      },
+      {
+        "text": "几",
+        "pinyin": "jǐ",
+        "gloss": "a few"
+      },
+      {
+        "text": "天",
+        "pinyin": "tiān",
+        "gloss": "days"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "then"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "长",
+        "pinyin": "zhǎng",
+        "gloss": "grow"
+      },
+      {
+        "text": "出",
+        "pinyin": "chū",
+        "gloss": "(result: out)"
+      },
+      {
+        "text": "蘑菇。",
+        "pinyin": "mó gu",
+        "gloss": "mushrooms"
+      }
+    ]
+  },
+  "MushroomBox_Name": {
+    "chinese": "蘑菇盒子",
+    "english": "Mushroom box",
+    "segments": [
+      {
+        "text": "蘑菇",
+        "pinyin": "mó gu",
+        "gloss": "mushroom"
+      },
+      {
+        "text": "盒子",
+        "pinyin": "hé zi",
+        "gloss": "box"
+      }
+    ]
+  },
+  "MushroomLog_Description": {
+    "chinese": "偶尔会长蘑菇。附近野树越多，效果越好。",
+    "english": "Occasionally grows mushrooms. The more wild trees nearby, the better it works.",
+    "segments": [
+      {
+        "text": "偶尔",
+        "pinyin": "ǒu ěr",
+        "gloss": "occasionally"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "长",
+        "pinyin": "zhǎng",
+        "gloss": "grow"
+      },
+      {
+        "text": "蘑菇。",
+        "pinyin": "mó gu",
+        "gloss": "mushrooms"
+      },
+      {
+        "text": "附近",
+        "pinyin": "fù jìn",
+        "gloss": "nearby"
+      },
+      {
+        "text": "野",
+        "pinyin": "yě",
+        "gloss": "wild"
+      },
+      {
+        "text": "树",
+        "pinyin": "shù",
+        "gloss": "trees"
+      },
+      {
+        "text": "越",
+        "pinyin": "yuè",
+        "gloss": "the more"
+      },
+      {
+        "text": "多，",
+        "pinyin": "duō",
+        "gloss": "many"
+      },
+      {
+        "text": "效果",
+        "pinyin": "xiào guǒ",
+        "gloss": "effect"
+      },
+      {
+        "text": "越",
+        "pinyin": "yuè",
+        "gloss": "the more"
+      },
+      {
+        "text": "好。",
+        "pinyin": "hǎo",
+        "gloss": "good"
+      }
+    ]
+  },
+  "MushroomLog_Name": {
+    "chinese": "蘑菇树桩",
+    "english": "Mushroom stump",
+    "segments": [
+      {
+        "text": "蘑菇",
+        "pinyin": "mó gu",
+        "gloss": "mushroom"
+      },
+      {
+        "text": "树桩",
+        "pinyin": "shù zhuāng",
+        "gloss": "tree stump"
+      }
+    ]
+  },
+  "Obelisk_Description": {
+    "chinese": "一个散发着邪恶能量的可怕传送阵。",
+    "english": "A frightening teleport array giving off evil energy.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "散发",
+        "pinyin": "sàn fā",
+        "gloss": "giving off"
+      },
+      {
+        "text": "着",
+        "pinyin": "zhe",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "邪恶",
+        "pinyin": "xié è",
+        "gloss": "evil"
+      },
+      {
+        "text": "能量",
+        "pinyin": "néng liàng",
+        "gloss": "energy"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "可怕",
+        "pinyin": "kě pà",
+        "gloss": "frightening"
+      },
+      {
+        "text": "传送阵。",
+        "pinyin": "chuán sòng zhèn",
+        "gloss": "teleport array"
+      }
+    ]
+  },
+  "Obelisk_Name": {
+    "chinese": "方尖碑",
+    "english": "Obelisk",
+    "segments": [
+      {
+        "text": "方尖碑",
+        "pinyin": "fāng jiān bēi",
+        "gloss": "obelisk"
+      }
+    ]
+  },
+  "ObsidianVase_Description": {
+    "chinese": "一个由黑曜石和黄金打造的美丽装饰花瓶。",
+    "english": "A beautiful decorative vase made of obsidian and gold.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "由",
+        "pinyin": "yóu",
+        "gloss": "from"
+      },
+      {
+        "text": "黑曜石",
+        "pinyin": "hēi yào shí",
+        "gloss": "obsidian"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "黄金",
+        "pinyin": "huáng jīn",
+        "gloss": "gold"
+      },
+      {
+        "text": "打造",
+        "pinyin": "dǎ zào",
+        "gloss": "made"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "美丽",
+        "pinyin": "měi lì",
+        "gloss": "beautiful"
+      },
+      {
+        "text": "装饰",
+        "pinyin": "zhuāng shì",
+        "gloss": "decorative"
+      },
+      {
+        "text": "花瓶。",
+        "pinyin": "huā píng",
+        "gloss": "vase"
+      }
+    ]
+  },
+  "ObsidianVase_Name": {
+    "chinese": "黑曜石花瓶",
+    "english": "Obsidian vase",
+    "segments": [
+      {
+        "text": "黑曜石",
+        "pinyin": "hēi yào shí",
+        "gloss": "obsidian"
+      },
+      {
+        "text": "花瓶",
+        "pinyin": "huā píng",
+        "gloss": "vase"
+      }
+    ]
+  },
+  "OilMaker_Description": {
+    "chinese": "生产松露美食油",
+    "english": "Produces gourmet truffle oil",
+    "segments": [
+      {
+        "text": "生产",
+        "pinyin": "shēng chǎn",
+        "gloss": "produces"
+      },
+      {
+        "text": "松露",
+        "pinyin": "sōng lù",
+        "gloss": "truffle"
+      },
+      {
+        "text": "美食",
+        "pinyin": "měi shí",
+        "gloss": "gourmet"
+      },
+      {
+        "text": "油",
+        "pinyin": "yóu",
+        "gloss": "oil"
+      }
+    ]
+  },
+  "OilMaker_Name": {
+    "chinese": "产油机",
+    "english": "Oil-producing machine",
+    "segments": [
+      {
+        "text": "产",
+        "pinyin": "chǎn",
+        "gloss": "produce"
+      },
+      {
+        "text": "油",
+        "pinyin": "yóu",
+        "gloss": "oil"
+      },
+      {
+        "text": "机",
+        "pinyin": "jī",
+        "gloss": "machine"
+      }
+    ]
+  },
+  "OrnamentalHayBale_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "OrnamentalHayBale_Name": {
+    "chinese": "装饰干草捆",
+    "english": "Decorative hay bale",
+    "segments": [
+      {
+        "text": "装饰",
+        "pinyin": "zhuāng shì",
+        "gloss": "decorative"
+      },
+      {
+        "text": "干草",
+        "pinyin": "gān cǎo",
+        "gloss": "hay"
+      },
+      {
+        "text": "捆",
+        "pinyin": "kǔn",
+        "gloss": "bale"
+      }
+    ]
+  },
+  "OstrichIncubator_Description": {
+    "chinese": "将鸵鸟蛋孵化成鸵鸟雏鸟。放置在畜棚里。",
+    "english": "Hatches ostrich eggs into ostrich chicks. Place in a barn.",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "鸵鸟蛋",
+        "pinyin": "tuó niǎo dàn",
+        "gloss": "ostrich eggs"
+      },
+      {
+        "text": "孵化",
+        "pinyin": "fū huà",
+        "gloss": "hatch"
+      },
+      {
+        "text": "成",
+        "pinyin": "chéng",
+        "gloss": "(result: into)"
+      },
+      {
+        "text": "鸵鸟",
+        "pinyin": "tuó niǎo",
+        "gloss": "ostrich"
+      },
+      {
+        "text": "雏鸟。",
+        "pinyin": "chú niǎo",
+        "gloss": "chicks"
+      },
+      {
+        "text": "放置",
+        "pinyin": "fàng zhì",
+        "gloss": "place"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "畜棚",
+        "pinyin": "chù péng",
+        "gloss": "barn"
+      },
+      {
+        "text": "里。",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      }
+    ]
+  },
+  "OstrichIncubator_Name": {
+    "chinese": "鸵鸟孵化器",
+    "english": "Ostrich incubator",
+    "segments": [
+      {
+        "text": "鸵鸟",
+        "pinyin": "tuó niǎo",
+        "gloss": "ostrich"
+      },
+      {
+        "text": "孵化器",
+        "pinyin": "fū huà qì",
+        "gloss": "incubator"
+      }
+    ]
+  },
+  "PinkyLemon_Description": {
+    "chinese": "??粉色柠檬??",
+    "english": "??Pink lemon??",
+    "segments": [
+      {
+        "text": "??粉色",
+        "pinyin": "fěn sè",
+        "gloss": "pink"
+      },
+      {
+        "text": "柠檬??",
+        "pinyin": "níng méng",
+        "gloss": "lemon"
+      }
+    ]
+  },
+  "PinkyLemon_Name": {
+    "chinese": "??粉色柠檬??",
+    "english": "??Pink lemon??",
+    "segments": [
+      {
+        "text": "??粉色",
+        "pinyin": "fěn sè",
+        "gloss": "pink"
+      },
+      {
+        "text": "柠檬??",
+        "pinyin": "níng méng",
+        "gloss": "lemon"
+      }
+    ]
+  },
+  "PlushBunny_Description": {
+    "chinese": "很大、很软、很可爱。",
+    "english": "Very big, very soft, very cute.",
+    "segments": [
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "大、",
+        "pinyin": "dà",
+        "gloss": "big"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "软、",
+        "pinyin": "ruǎn",
+        "gloss": "soft"
+      },
+      {
+        "text": "很",
+        "pinyin": "hěn",
+        "gloss": "very"
+      },
+      {
+        "text": "可爱。",
+        "pinyin": "kě ài",
+        "gloss": "cute"
+      }
+    ]
+  },
+  "PlushBunny_Name": {
+    "chinese": "绒毛兔子",
+    "english": "Plush bunny",
+    "segments": [
+      {
+        "text": "绒毛",
+        "pinyin": "róng máo",
+        "gloss": "plush"
+      },
+      {
+        "text": "兔子",
+        "pinyin": "tù zi",
+        "gloss": "bunny"
+      }
+    ]
+  },
+  "PrairieKingArcadeSystem_Description": {
+    "chinese": "在家里玩“草原之王的冒险之旅”！",
+    "english": "Play \"Journey of the Prairie King\" at home!",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "家里",
+        "pinyin": "jiā li",
+        "gloss": "home"
+      },
+      {
+        "text": "玩",
+        "pinyin": "wán",
+        "gloss": "play"
+      },
+      {
+        "text": "“草原之王",
+        "pinyin": "cǎo yuán zhī wáng",
+        "gloss": "Prairie King"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "冒险",
+        "pinyin": "mào xiǎn",
+        "gloss": "adventure"
+      },
+      {
+        "text": "之",
+        "pinyin": "zhī",
+        "gloss": "(possessive, literary)"
+      },
+      {
+        "text": "旅”！",
+        "pinyin": "lǚ",
+        "gloss": "journey"
+      }
+    ]
+  },
+  "PrairieKingArcadeSystem_Name": {
+    "chinese": "草原之王街机系统",
+    "english": "Prairie King arcade system",
+    "segments": [
+      {
+        "text": "草原之王",
+        "pinyin": "cǎo yuán zhī wáng",
+        "gloss": "Prairie King"
+      },
+      {
+        "text": "街机",
+        "pinyin": "jiē jī",
+        "gloss": "arcade"
+      },
+      {
+        "text": "系统",
+        "pinyin": "xì tǒng",
+        "gloss": "system"
+      }
+    ]
+  },
+  "PreservesJar_Description": {
+    "chinese": "将蔬菜转换成泡菜，水果为果酱。",
+    "english": "Turns vegetables into pickles, fruit into jam.",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "蔬菜",
+        "pinyin": "shū cài",
+        "gloss": "vegetables"
+      },
+      {
+        "text": "转换",
+        "pinyin": "zhuǎn huàn",
+        "gloss": "convert"
+      },
+      {
+        "text": "成",
+        "pinyin": "chéng",
+        "gloss": "(result: into)"
+      },
+      {
+        "text": "泡菜，",
+        "pinyin": "pào cài",
+        "gloss": "pickles"
+      },
+      {
+        "text": "水果",
+        "pinyin": "shuǐ guǒ",
+        "gloss": "fruit"
+      },
+      {
+        "text": "为",
+        "pinyin": "wéi",
+        "gloss": "into"
+      },
+      {
+        "text": "果酱。",
+        "pinyin": "guǒ jiàng",
+        "gloss": "jam"
+      }
+    ]
+  },
+  "PreservesJar_Name": {
+    "chinese": "罐头瓶",
+    "english": "Canning jar",
+    "segments": [
+      {
+        "text": "罐头",
+        "pinyin": "guàn tou",
+        "gloss": "canned food"
+      },
+      {
+        "text": "瓶",
+        "pinyin": "píng",
+        "gloss": "jar"
+      }
+    ]
+  },
+  "RareCrow_1_Description": {
+    "chinese": "将它们全部收齐！（8-1）",
+    "english": "Collect them all! (1 of 8)",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "全部",
+        "pinyin": "quán bù",
+        "gloss": "all"
+      },
+      {
+        "text": "收齐！",
+        "pinyin": "shōu qí",
+        "gloss": "collect the full set"
+      },
+      {
+        "text": "（8-",
+        "pinyin": "bā",
+        "gloss": "(of) eight"
+      },
+      {
+        "text": "1）",
+        "pinyin": "yī",
+        "gloss": "number one"
+      }
+    ]
+  },
+  "RareCrow_1_Name": {
+    "chinese": "珍奇乌鸦",
+    "english": "Rare crow",
+    "segments": [
+      {
+        "text": "珍奇",
+        "pinyin": "zhēn qí",
+        "gloss": "rare"
+      },
+      {
+        "text": "乌鸦",
+        "pinyin": "wū yā",
+        "gloss": "crow"
+      }
+    ]
+  },
+  "RareCrow_2_Description": {
+    "chinese": "将它们全部收齐！（8-2）",
+    "english": "Collect them all! (2 of 8)",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "全部",
+        "pinyin": "quán bù",
+        "gloss": "all"
+      },
+      {
+        "text": "收齐！",
+        "pinyin": "shōu qí",
+        "gloss": "collect the full set"
+      },
+      {
+        "text": "（8-",
+        "pinyin": "bā",
+        "gloss": "(of) eight"
+      },
+      {
+        "text": "2）",
+        "pinyin": "èr",
+        "gloss": "number two"
+      }
+    ]
+  },
+  "RareCrow_2_Name": {
+    "chinese": "珍奇乌鸦",
+    "english": "Rare crow",
+    "segments": [
+      {
+        "text": "珍奇",
+        "pinyin": "zhēn qí",
+        "gloss": "rare"
+      },
+      {
+        "text": "乌鸦",
+        "pinyin": "wū yā",
+        "gloss": "crow"
+      }
+    ]
+  },
+  "RareCrow_3_Description": {
+    "chinese": "将它们全部收齐！（8-3）",
+    "english": "Collect them all! (3 of 8)",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "全部",
+        "pinyin": "quán bù",
+        "gloss": "all"
+      },
+      {
+        "text": "收齐！",
+        "pinyin": "shōu qí",
+        "gloss": "collect the full set"
+      },
+      {
+        "text": "（8-",
+        "pinyin": "bā",
+        "gloss": "(of) eight"
+      },
+      {
+        "text": "3）",
+        "pinyin": "sān",
+        "gloss": "number three"
+      }
+    ]
+  },
+  "RareCrow_3_Name": {
+    "chinese": "珍奇乌鸦",
+    "english": "Rare crow",
+    "segments": [
+      {
+        "text": "珍奇",
+        "pinyin": "zhēn qí",
+        "gloss": "rare"
+      },
+      {
+        "text": "乌鸦",
+        "pinyin": "wū yā",
+        "gloss": "crow"
+      }
+    ]
+  },
+  "RareCrow_4_Description": {
+    "chinese": "将它们全部收齐！（8-4）",
+    "english": "Collect them all! (4 of 8)",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "全部",
+        "pinyin": "quán bù",
+        "gloss": "all"
+      },
+      {
+        "text": "收齐！",
+        "pinyin": "shōu qí",
+        "gloss": "collect the full set"
+      },
+      {
+        "text": "（8-",
+        "pinyin": "bā",
+        "gloss": "(of) eight"
+      },
+      {
+        "text": "4）",
+        "pinyin": "sì",
+        "gloss": "number four"
+      }
+    ]
+  },
+  "RareCrow_4_Name": {
+    "chinese": "珍奇乌鸦",
+    "english": "Rare crow",
+    "segments": [
+      {
+        "text": "珍奇",
+        "pinyin": "zhēn qí",
+        "gloss": "rare"
+      },
+      {
+        "text": "乌鸦",
+        "pinyin": "wū yā",
+        "gloss": "crow"
+      }
+    ]
+  },
+  "RareCrow_5_Description": {
+    "chinese": "将它们全部收齐！（8-5）",
+    "english": "Collect them all! (5 of 8)",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "全部",
+        "pinyin": "quán bù",
+        "gloss": "all"
+      },
+      {
+        "text": "收齐！",
+        "pinyin": "shōu qí",
+        "gloss": "collect the full set"
+      },
+      {
+        "text": "（8-",
+        "pinyin": "bā",
+        "gloss": "(of) eight"
+      },
+      {
+        "text": "5）",
+        "pinyin": "wǔ",
+        "gloss": "number five"
+      }
+    ]
+  },
+  "RareCrow_5_Name": {
+    "chinese": "珍奇乌鸦",
+    "english": "Rare crow",
+    "segments": [
+      {
+        "text": "珍奇",
+        "pinyin": "zhēn qí",
+        "gloss": "rare"
+      },
+      {
+        "text": "乌鸦",
+        "pinyin": "wū yā",
+        "gloss": "crow"
+      }
+    ]
+  },
+  "RareCrow_6_Description": {
+    "chinese": "将它们全部收齐！（8-6）",
+    "english": "Collect them all! (6 of 8)",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "全部",
+        "pinyin": "quán bù",
+        "gloss": "all"
+      },
+      {
+        "text": "收齐！",
+        "pinyin": "shōu qí",
+        "gloss": "collect the full set"
+      },
+      {
+        "text": "（8-",
+        "pinyin": "bā",
+        "gloss": "(of) eight"
+      },
+      {
+        "text": "6）",
+        "pinyin": "liù",
+        "gloss": "number six"
+      }
+    ]
+  },
+  "RareCrow_6_Name": {
+    "chinese": "珍奇乌鸦",
+    "english": "Rare crow",
+    "segments": [
+      {
+        "text": "珍奇",
+        "pinyin": "zhēn qí",
+        "gloss": "rare"
+      },
+      {
+        "text": "乌鸦",
+        "pinyin": "wū yā",
+        "gloss": "crow"
+      }
+    ]
+  },
+  "RareCrow_7_Description": {
+    "chinese": "将它们全部收齐！（8-7）",
+    "english": "Collect them all! (7 of 8)",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "全部",
+        "pinyin": "quán bù",
+        "gloss": "all"
+      },
+      {
+        "text": "收齐！",
+        "pinyin": "shōu qí",
+        "gloss": "collect the full set"
+      },
+      {
+        "text": "（8-",
+        "pinyin": "bā",
+        "gloss": "(of) eight"
+      },
+      {
+        "text": "7）",
+        "pinyin": "qī",
+        "gloss": "number seven"
+      }
+    ]
+  },
+  "RareCrow_7_Name": {
+    "chinese": "珍奇乌鸦",
+    "english": "Rare crow",
+    "segments": [
+      {
+        "text": "珍奇",
+        "pinyin": "zhēn qí",
+        "gloss": "rare"
+      },
+      {
+        "text": "乌鸦",
+        "pinyin": "wū yā",
+        "gloss": "crow"
+      }
+    ]
+  },
+  "RareCrow_8_Description": {
+    "chinese": "将它们全部收齐！（8-8）",
+    "english": "Collect them all! (8 of 8)",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它们",
+        "pinyin": "tā men",
+        "gloss": "them"
+      },
+      {
+        "text": "全部",
+        "pinyin": "quán bù",
+        "gloss": "all"
+      },
+      {
+        "text": "收齐！",
+        "pinyin": "shōu qí",
+        "gloss": "collect the full set"
+      },
+      {
+        "text": "（8-",
+        "pinyin": "bā",
+        "gloss": "(of) eight"
+      },
+      {
+        "text": "8）",
+        "pinyin": "bā",
+        "gloss": "number eight"
+      }
+    ]
+  },
+  "RareCrow_8_Name": {
+    "chinese": "珍奇乌鸦",
+    "english": "Rare crow",
+    "segments": [
+      {
+        "text": "珍奇",
+        "pinyin": "zhēn qí",
+        "gloss": "rare"
+      },
+      {
+        "text": "乌鸦",
+        "pinyin": "wū yā",
+        "gloss": "crow"
+      }
+    ]
+  },
+  "RecyclingMachine_Description": {
+    "chinese": "将捕鱼废料转换为资源。",
+    "english": "Turns fishing waste into resources.",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "捕鱼",
+        "pinyin": "bǔ yú",
+        "gloss": "fishing"
+      },
+      {
+        "text": "废料",
+        "pinyin": "fèi liào",
+        "gloss": "waste"
+      },
+      {
+        "text": "转换",
+        "pinyin": "zhuǎn huàn",
+        "gloss": "convert"
+      },
+      {
+        "text": "为",
+        "pinyin": "wéi",
+        "gloss": "into"
+      },
+      {
+        "text": "资源。",
+        "pinyin": "zī yuán",
+        "gloss": "resources"
+      }
+    ]
+  },
+  "RecyclingMachine_Name": {
+    "chinese": "回收机",
+    "english": "Recycling machine",
+    "segments": [
+      {
+        "text": "回收",
+        "pinyin": "huí shōu",
+        "gloss": "recycling"
+      },
+      {
+        "text": "机",
+        "pinyin": "jī",
+        "gloss": "machine"
+      }
+    ]
+  },
+  "RedCanes_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "RedCanes_Name": {
+    "chinese": "红杖",
+    "english": "Red canes",
+    "segments": [
+      {
+        "text": "红",
+        "pinyin": "hóng",
+        "gloss": "red"
+      },
+      {
+        "text": "杖",
+        "pinyin": "zhàng",
+        "gloss": "canes"
+      }
+    ]
+  },
+  "RitualMask_Description": {
+    "chinese": "过于巨大，戴不上。",
+    "english": "Far too big to wear.",
+    "segments": [
+      {
+        "text": "过于",
+        "pinyin": "guò yú",
+        "gloss": "too"
+      },
+      {
+        "text": "巨大，",
+        "pinyin": "jù dà",
+        "gloss": "huge"
+      },
+      {
+        "text": "戴",
+        "pinyin": "dài",
+        "gloss": "wear"
+      },
+      {
+        "text": "不",
+        "pinyin": "bu",
+        "gloss": "not (can't)"
+      },
+      {
+        "text": "上。",
+        "pinyin": "shàng",
+        "gloss": "(result: on)"
+      }
+    ]
+  },
+  "RitualMask_Name": {
+    "chinese": "仪式面具",
+    "english": "Ritual mask",
+    "segments": [
+      {
+        "text": "仪式",
+        "pinyin": "yí shì",
+        "gloss": "ritual"
+      },
+      {
+        "text": "面具",
+        "pinyin": "miàn jù",
+        "gloss": "mask"
+      }
+    ]
+  },
+  "Scarecrow_Description": {
+    "chinese": "防止乌鸦袭击你的农作物。范围有限（大约半径 8 格）。",
+    "english": "Stops crows attacking your crops. Limited range (about 8 tiles radius).",
+    "segments": [
+      {
+        "text": "防止",
+        "pinyin": "fáng zhǐ",
+        "gloss": "prevent"
+      },
+      {
+        "text": "乌鸦",
+        "pinyin": "wū yā",
+        "gloss": "crows"
+      },
+      {
+        "text": "袭击",
+        "pinyin": "xí jī",
+        "gloss": "attacking"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "农作物。",
+        "pinyin": "nóng zuò wù",
+        "gloss": "crops"
+      },
+      {
+        "text": "范围",
+        "pinyin": "fàn wéi",
+        "gloss": "range"
+      },
+      {
+        "text": "有限",
+        "pinyin": "yǒu xiàn",
+        "gloss": "limited"
+      },
+      {
+        "text": "（大约",
+        "pinyin": "dà yuē",
+        "gloss": "about"
+      },
+      {
+        "text": "半径 ",
+        "pinyin": "bàn jìng",
+        "gloss": "radius"
+      },
+      {
+        "text": "8 ",
+        "pinyin": "bā",
+        "gloss": "eight"
+      },
+      {
+        "text": "格）。",
+        "pinyin": "gé",
+        "gloss": "tiles (lit. squares)"
+      }
+    ]
+  },
+  "Scarecrow_Name": {
+    "chinese": "稻草人",
+    "english": "Scarecrow",
+    "segments": [
+      {
+        "text": "稻草人",
+        "pinyin": "dào cǎo rén",
+        "gloss": "scarecrow"
+      }
+    ]
+  },
+  "SeasonalDecor_Description": {
+    "chinese": "此装饰随季节变化。",
+    "english": "This decoration changes with the season.",
+    "segments": [
+      {
+        "text": "此",
+        "pinyin": "cǐ",
+        "gloss": "this"
+      },
+      {
+        "text": "装饰",
+        "pinyin": "zhuāng shì",
+        "gloss": "decoration"
+      },
+      {
+        "text": "随",
+        "pinyin": "suí",
+        "gloss": "with"
+      },
+      {
+        "text": "季节",
+        "pinyin": "jì jié",
+        "gloss": "season"
+      },
+      {
+        "text": "变化。",
+        "pinyin": "biàn huà",
+        "gloss": "change"
+      }
+    ]
+  },
+  "SeasonalDecor_Name": {
+    "chinese": "季节性装饰",
+    "english": "Seasonal decoration",
+    "segments": [
+      {
+        "text": "季节性",
+        "pinyin": "jì jié xìng",
+        "gloss": "seasonal"
+      },
+      {
+        "text": "装饰",
+        "pinyin": "zhuāng shì",
+        "gloss": "decoration"
+      }
+    ]
+  },
+  "SeasonalPlant_Description": {
+    "chinese": "随着季节变化的观赏性植物。不需要浇水。",
+    "english": "An ornamental plant that changes with the seasons. Doesn't need watering.",
+    "segments": [
+      {
+        "text": "随着",
+        "pinyin": "suí zhe",
+        "gloss": "along with"
+      },
+      {
+        "text": "季节",
+        "pinyin": "jì jié",
+        "gloss": "season"
+      },
+      {
+        "text": "变化",
+        "pinyin": "biàn huà",
+        "gloss": "change"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "观赏性",
+        "pinyin": "guān shǎng xìng",
+        "gloss": "ornamental"
+      },
+      {
+        "text": "植物。",
+        "pinyin": "zhí wù",
+        "gloss": "plant"
+      },
+      {
+        "text": "不",
+        "pinyin": "bù",
+        "gloss": "not"
+      },
+      {
+        "text": "需要",
+        "pinyin": "xū yào",
+        "gloss": "need"
+      },
+      {
+        "text": "浇水。",
+        "pinyin": "jiāo shuǐ",
+        "gloss": "watering"
+      }
+    ]
+  },
+  "SeasonalPlant_Name": {
+    "chinese": "季节性植物",
+    "english": "Seasonal plant",
+    "segments": [
+      {
+        "text": "季节性",
+        "pinyin": "jì jié xìng",
+        "gloss": "seasonal"
+      },
+      {
+        "text": "植物",
+        "pinyin": "zhí wù",
+        "gloss": "plant"
+      }
+    ]
+  },
+  "SeedMaker_Description": {
+    "chinese": "将作物放入，将会产出各种各样的种子。对果树类的作物无效。",
+    "english": "Put crops in and it will produce all kinds of seeds. Doesn't work on fruit-tree crops.",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "作物",
+        "pinyin": "zuò wù",
+        "gloss": "crops"
+      },
+      {
+        "text": "放入，",
+        "pinyin": "fàng rù",
+        "gloss": "put in"
+      },
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "will"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "产出",
+        "pinyin": "chǎn chū",
+        "gloss": "produce"
+      },
+      {
+        "text": "各种各样",
+        "pinyin": "gè zhǒng gè yàng",
+        "gloss": "all kinds of"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "种子。",
+        "pinyin": "zhǒng zi",
+        "gloss": "seeds"
+      },
+      {
+        "text": "对",
+        "pinyin": "duì",
+        "gloss": "for"
+      },
+      {
+        "text": "果树",
+        "pinyin": "guǒ shù",
+        "gloss": "fruit tree"
+      },
+      {
+        "text": "类",
+        "pinyin": "lèi",
+        "gloss": "kind"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "作物",
+        "pinyin": "zuò wù",
+        "gloss": "crops"
+      },
+      {
+        "text": "无效。",
+        "pinyin": "wú xiào",
+        "gloss": "ineffective"
+      }
+    ]
+  },
+  "SeedMaker_Name": {
+    "chinese": "种子生产器",
+    "english": "Seed producer",
+    "segments": [
+      {
+        "text": "种子",
+        "pinyin": "zhǒng zi",
+        "gloss": "seed"
+      },
+      {
+        "text": "生产器",
+        "pinyin": "shēng chǎn qì",
+        "gloss": "producer"
+      }
+    ]
+  },
+  "SewingMachine_Description": {
+    "chinese": "用来在家中方便地量身定做衣服！",
+    "english": "For conveniently tailoring clothes at home!",
+    "segments": [
+      {
+        "text": "用来",
+        "pinyin": "yòng lái",
+        "gloss": "used to"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "家",
+        "pinyin": "jiā",
+        "gloss": "home"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      },
+      {
+        "text": "方便",
+        "pinyin": "fāng biàn",
+        "gloss": "conveniently"
+      },
+      {
+        "text": "地",
+        "pinyin": "de",
+        "gloss": "(adverb marker)"
+      },
+      {
+        "text": "量身定做",
+        "pinyin": "liáng shēn dìng zuò",
+        "gloss": "tailor-make"
+      },
+      {
+        "text": "衣服！",
+        "pinyin": "yī fu",
+        "gloss": "clothes"
+      }
+    ]
+  },
+  "SewingMachine_Name": {
+    "chinese": "缝纫机",
+    "english": "Sewing machine",
+    "segments": [
+      {
+        "text": "缝纫机",
+        "pinyin": "féng rèn jī",
+        "gloss": "sewing machine"
+      }
+    ]
+  },
+  "SignOfTheVessel_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "SignOfTheVessel_Name": {
+    "chinese": "船标",
+    "english": "Ship emblem",
+    "segments": [
+      {
+        "text": "船",
+        "pinyin": "chuán",
+        "gloss": "ship"
+      },
+      {
+        "text": "标",
+        "pinyin": "biāo",
+        "gloss": "emblem"
+      }
+    ]
+  },
+  "SingingStone_Description": {
+    "chinese": "被击中就会发出纯音。",
+    "english": "Gives out a pure tone when struck.",
+    "segments": [
+      {
+        "text": "被",
+        "pinyin": "bèi",
+        "gloss": "(passive marker)"
+      },
+      {
+        "text": "击中",
+        "pinyin": "jī zhòng",
+        "gloss": "struck"
+      },
+      {
+        "text": "就",
+        "pinyin": "jiù",
+        "gloss": "then"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "发出",
+        "pinyin": "fā chū",
+        "gloss": "give out"
+      },
+      {
+        "text": "纯音。",
+        "pinyin": "chún yīn",
+        "gloss": "pure tone"
+      }
+    ]
+  },
+  "SingingStone_Name": {
+    "chinese": "唱歌的石头",
+    "english": "Singing stone",
+    "segments": [
+      {
+        "text": "唱歌",
+        "pinyin": "chàng gē",
+        "gloss": "singing"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "石头",
+        "pinyin": "shí tou",
+        "gloss": "stone"
+      }
+    ]
+  },
+  "SkeletonModel_Description": {
+    "chinese": "一具模型骨架。",
+    "english": "A model skeleton.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "具",
+        "pinyin": "jù",
+        "gloss": "(measure word for skeletons)"
+      },
+      {
+        "text": "模型",
+        "pinyin": "mó xíng",
+        "gloss": "model"
+      },
+      {
+        "text": "骨架。",
+        "pinyin": "gǔ jià",
+        "gloss": "skeleton"
+      }
+    ]
+  },
+  "SkeletonModel_Name": {
+    "chinese": "骨架模型",
+    "english": "Skeleton model",
+    "segments": [
+      {
+        "text": "骨架",
+        "pinyin": "gǔ jià",
+        "gloss": "skeleton"
+      },
+      {
+        "text": "模型",
+        "pinyin": "mó xíng",
+        "gloss": "model"
+      }
+    ]
+  },
+  "SkullBrazier_Description": {
+    "chinese": "提供一点亮光。",
+    "english": "Provides a little light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "一点",
+        "pinyin": "yì diǎn",
+        "gloss": "a little"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "SkullBrazier_Name": {
+    "chinese": "骷髅火炬",
+    "english": "Skull torch",
+    "segments": [
+      {
+        "text": "骷髅",
+        "pinyin": "kū lóu",
+        "gloss": "skull"
+      },
+      {
+        "text": "火炬",
+        "pinyin": "huǒ jù",
+        "gloss": "torch"
+      }
+    ]
+  },
+  "SlimeBall_Description": {
+    "chinese": "满是粘液的物体。",
+    "english": "An object full of slime.",
+    "segments": [
+      {
+        "text": "满是",
+        "pinyin": "mǎn shì",
+        "gloss": "full of"
+      },
+      {
+        "text": "粘液",
+        "pinyin": "nián yè",
+        "gloss": "slime"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "物体。",
+        "pinyin": "wù tǐ",
+        "gloss": "object"
+      }
+    ]
+  },
+  "SlimeBall_Name": {
+    "chinese": "史莱姆球",
+    "english": "Slime ball",
+    "segments": [
+      {
+        "text": "史莱姆",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slime"
+      },
+      {
+        "text": "球",
+        "pinyin": "qiú",
+        "gloss": "ball"
+      }
+    ]
+  },
+  "SlimeEggPress_Description": {
+    "chinese": "将 100 团史莱姆泥压成一个史莱姆蛋。简直是奇迹！",
+    "english": "Presses 100 lumps of slime into one slime egg. Simply a miracle!",
+    "segments": [
+      {
+        "text": "将 ",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "100 ",
+        "pinyin": "yì bǎi",
+        "gloss": "one hundred"
+      },
+      {
+        "text": "团",
+        "pinyin": "tuán",
+        "gloss": "(measure word for lumps)"
+      },
+      {
+        "text": "史莱姆",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slime"
+      },
+      {
+        "text": "泥",
+        "pinyin": "ní",
+        "gloss": "mud (goo)"
+      },
+      {
+        "text": "压",
+        "pinyin": "yā",
+        "gloss": "press"
+      },
+      {
+        "text": "成",
+        "pinyin": "chéng",
+        "gloss": "(result: into)"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "one"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "史莱姆",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slime"
+      },
+      {
+        "text": "蛋。",
+        "pinyin": "dàn",
+        "gloss": "egg"
+      },
+      {
+        "text": "简直",
+        "pinyin": "jiǎn zhí",
+        "gloss": "simply"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "奇迹！",
+        "pinyin": "qí jì",
+        "gloss": "a miracle"
+      }
+    ]
+  },
+  "SlimeEggPress_Name": {
+    "chinese": "史莱姆压蛋器",
+    "english": "Slime egg press",
+    "segments": [
+      {
+        "text": "史莱姆",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slime"
+      },
+      {
+        "text": "压",
+        "pinyin": "yā",
+        "gloss": "press"
+      },
+      {
+        "text": "蛋",
+        "pinyin": "dàn",
+        "gloss": "egg"
+      },
+      {
+        "text": "器",
+        "pinyin": "qì",
+        "gloss": "device"
+      }
+    ]
+  },
+  "SlimeIncubator_Description": {
+    "chinese": "将史莱姆蛋孵化成史莱姆。让你能够在室外饲养史莱姆。",
+    "english": "Hatches slime eggs into slimes. Lets you raise slimes outdoors.",
+    "segments": [
+      {
+        "text": "将",
+        "pinyin": "jiāng",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "史莱姆",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slime"
+      },
+      {
+        "text": "蛋",
+        "pinyin": "dàn",
+        "gloss": "eggs"
+      },
+      {
+        "text": "孵化",
+        "pinyin": "fū huà",
+        "gloss": "hatch"
+      },
+      {
+        "text": "成",
+        "pinyin": "chéng",
+        "gloss": "(result: into)"
+      },
+      {
+        "text": "史莱姆。",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slimes"
+      },
+      {
+        "text": "让",
+        "pinyin": "ràng",
+        "gloss": "let"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "能够",
+        "pinyin": "néng gòu",
+        "gloss": "be able to"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "室外",
+        "pinyin": "shì wài",
+        "gloss": "outdoors"
+      },
+      {
+        "text": "饲养",
+        "pinyin": "sì yǎng",
+        "gloss": "raise"
+      },
+      {
+        "text": "史莱姆。",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slimes"
+      }
+    ]
+  },
+  "SlimeIncubator_Name": {
+    "chinese": "史莱姆孵化器",
+    "english": "Slime incubator",
+    "segments": [
+      {
+        "text": "史莱姆",
+        "pinyin": "shǐ lái mǔ",
+        "gloss": "slime"
+      },
+      {
+        "text": "孵化器",
+        "pinyin": "fū huà qì",
+        "gloss": "incubator"
+      }
+    ]
+  },
+  "SlothSkeletonL_Description": {
+    "chinese": "这种已经灭绝的树懒曾经生活在星露谷的史前森林中。它强大的上下顎可以咬断最坚硬的植物纤维。",
+    "english": "This extinct sloth once lived in the prehistoric forests of Stardew Valley. Its powerful upper and lower jaws could bite through the hardest plant fibers.",
+    "segments": [
+      {
+        "text": "这种",
+        "pinyin": "zhè zhǒng",
+        "gloss": "this kind of"
+      },
+      {
+        "text": "已经",
+        "pinyin": "yǐ jīng",
+        "gloss": "already"
+      },
+      {
+        "text": "灭绝",
+        "pinyin": "miè jué",
+        "gloss": "extinct"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "树懒",
+        "pinyin": "shù lǎn",
+        "gloss": "sloth"
+      },
+      {
+        "text": "曾经",
+        "pinyin": "céng jīng",
+        "gloss": "once"
+      },
+      {
+        "text": "生活",
+        "pinyin": "shēng huó",
+        "gloss": "lived"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "星露谷",
+        "pinyin": "xīng lù gǔ",
+        "gloss": "Stardew Valley"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "史前",
+        "pinyin": "shǐ qián",
+        "gloss": "prehistoric"
+      },
+      {
+        "text": "森林",
+        "pinyin": "sēn lín",
+        "gloss": "forests"
+      },
+      {
+        "text": "中。",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      },
+      {
+        "text": "它",
+        "pinyin": "tā",
+        "gloss": "its"
+      },
+      {
+        "text": "强大",
+        "pinyin": "qiáng dà",
+        "gloss": "powerful"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "上下",
+        "pinyin": "shàng xià",
+        "gloss": "upper and lower"
+      },
+      {
+        "text": "顎",
+        "pinyin": "è",
+        "gloss": "jaws"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "could"
+      },
+      {
+        "text": "咬",
+        "pinyin": "yǎo",
+        "gloss": "bite"
+      },
+      {
+        "text": "断",
+        "pinyin": "duàn",
+        "gloss": "(result: through)"
+      },
+      {
+        "text": "最",
+        "pinyin": "zuì",
+        "gloss": "most"
+      },
+      {
+        "text": "坚硬",
+        "pinyin": "jiān yìng",
+        "gloss": "hard"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "植物",
+        "pinyin": "zhí wù",
+        "gloss": "plant"
+      },
+      {
+        "text": "纤维。",
+        "pinyin": "xiān wéi",
+        "gloss": "fibers"
+      }
+    ]
+  },
+  "SlothSkeletonL_Name": {
+    "chinese": "树懒骨架（左）",
+    "english": "Sloth skeleton (left)",
+    "segments": [
+      {
+        "text": "树懒",
+        "pinyin": "shù lǎn",
+        "gloss": "sloth"
+      },
+      {
+        "text": "骨架",
+        "pinyin": "gǔ jià",
+        "gloss": "skeleton"
+      },
+      {
+        "text": "（左）",
+        "pinyin": "zuǒ",
+        "gloss": "left"
+      }
+    ]
+  },
+  "SlothSkeletonM_Description": {
+    "chinese": "史前树懒的肋骨。 ",
+    "english": "The ribs of a prehistoric sloth.",
+    "segments": [
+      {
+        "text": "史前",
+        "pinyin": "shǐ qián",
+        "gloss": "prehistoric"
+      },
+      {
+        "text": "树懒",
+        "pinyin": "shù lǎn",
+        "gloss": "sloth"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "肋骨。 ",
+        "pinyin": "lèi gǔ",
+        "gloss": "ribs"
+      }
+    ]
+  },
+  "SlothSkeletonM_Name": {
+    "chinese": "树懒骨架（中）",
+    "english": "Sloth skeleton (middle)",
+    "segments": [
+      {
+        "text": "树懒",
+        "pinyin": "shù lǎn",
+        "gloss": "sloth"
+      },
+      {
+        "text": "骨架",
+        "pinyin": "gǔ jià",
+        "gloss": "skeleton"
+      },
+      {
+        "text": "（中）",
+        "pinyin": "zhōng",
+        "gloss": "middle"
+      }
+    ]
+  },
+  "SlothSkeletonR_Description": {
+    "chinese": "史前树懒的后腿和尾巴。",
+    "english": "The hind legs and tail of a prehistoric sloth.",
+    "segments": [
+      {
+        "text": "史前",
+        "pinyin": "shǐ qián",
+        "gloss": "prehistoric"
+      },
+      {
+        "text": "树懒",
+        "pinyin": "shù lǎn",
+        "gloss": "sloth"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "后腿",
+        "pinyin": "hòu tuǐ",
+        "gloss": "hind legs"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "尾巴。",
+        "pinyin": "wěi ba",
+        "gloss": "tail"
+      }
+    ]
+  },
+  "SlothSkeletonR_Name": {
+    "chinese": "树懒骨架（右）",
+    "english": "Sloth skeleton (right)",
+    "segments": [
+      {
+        "text": "树懒",
+        "pinyin": "shù lǎn",
+        "gloss": "sloth"
+      },
+      {
+        "text": "骨架",
+        "pinyin": "gǔ jià",
+        "gloss": "skeleton"
+      },
+      {
+        "text": "（右）",
+        "pinyin": "yòu",
+        "gloss": "right"
+      }
+    ]
+  },
+  "SodaMachine_Description": {
+    "chinese": "总会弹出美妙的东西。",
+    "english": "Always pops out wonderful things.",
+    "segments": [
+      {
+        "text": "总",
+        "pinyin": "zǒng",
+        "gloss": "always"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "弹",
+        "pinyin": "tán",
+        "gloss": "pop"
+      },
+      {
+        "text": "出",
+        "pinyin": "chū",
+        "gloss": "(result: out)"
+      },
+      {
+        "text": "美妙",
+        "pinyin": "měi miào",
+        "gloss": "wonderful"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "东西。",
+        "pinyin": "dōng xi",
+        "gloss": "things"
+      }
+    ]
+  },
+  "SodaMachine_Name": {
+    "chinese": "汽水机",
+    "english": "Soda machine",
+    "segments": [
+      {
+        "text": "汽水",
+        "pinyin": "qì shuǐ",
+        "gloss": "soda"
+      },
+      {
+        "text": "机",
+        "pinyin": "jī",
+        "gloss": "machine"
+      }
+    ]
+  },
+  "SolarPanel_Description": {
+    "chinese": "放在阳光下会缓慢地生产出电池。",
+    "english": "Placed in sunlight, it slowly produces batteries.",
+    "segments": [
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(result: in)"
+      },
+      {
+        "text": "阳光",
+        "pinyin": "yáng guāng",
+        "gloss": "sunlight"
+      },
+      {
+        "text": "下",
+        "pinyin": "xià",
+        "gloss": "under"
+      },
+      {
+        "text": "会",
+        "pinyin": "huì",
+        "gloss": "will"
+      },
+      {
+        "text": "缓慢",
+        "pinyin": "huǎn màn",
+        "gloss": "slow"
+      },
+      {
+        "text": "地",
+        "pinyin": "de",
+        "gloss": "(adverb marker)"
+      },
+      {
+        "text": "生产",
+        "pinyin": "shēng chǎn",
+        "gloss": "produce"
+      },
+      {
+        "text": "出",
+        "pinyin": "chū",
+        "gloss": "(result: out)"
+      },
+      {
+        "text": "电池。",
+        "pinyin": "diàn chí",
+        "gloss": "batteries"
+      }
+    ]
+  },
+  "SolarPanel_Name": {
+    "chinese": "太阳能板",
+    "english": "Solar panel",
+    "segments": [
+      {
+        "text": "太阳能",
+        "pinyin": "tài yáng néng",
+        "gloss": "solar energy"
+      },
+      {
+        "text": "板",
+        "pinyin": "bǎn",
+        "gloss": "panel"
+      }
+    ]
+  },
+  "SolidGoldLewis_Description": {
+    "chinese": "市长的秘密项目。",
+    "english": "The mayor's secret project.",
+    "segments": [
+      {
+        "text": "市长",
+        "pinyin": "shì zhǎng",
+        "gloss": "mayor"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "秘密",
+        "pinyin": "mì mì",
+        "gloss": "secret"
+      },
+      {
+        "text": "项目。",
+        "pinyin": "xiàng mù",
+        "gloss": "project"
+      }
+    ]
+  },
+  "SolidGoldLewis_Name": {
+    "chinese": "刘易斯黄金像",
+    "english": "Lewis gold statue",
+    "segments": [
+      {
+        "text": "刘易斯",
+        "pinyin": "liú yì sī",
+        "gloss": "Lewis"
+      },
+      {
+        "text": "黄金",
+        "pinyin": "huáng jīn",
+        "gloss": "gold"
+      },
+      {
+        "text": "像",
+        "pinyin": "xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "Staircase_Description": {
+    "chinese": "前往矿场的下一层。",
+    "english": "Go to the next level of the mine.",
+    "segments": [
+      {
+        "text": "前往",
+        "pinyin": "qián wǎng",
+        "gloss": "go to"
+      },
+      {
+        "text": "矿场",
+        "pinyin": "kuàng chǎng",
+        "gloss": "mine"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "下",
+        "pinyin": "xià",
+        "gloss": "next"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "one"
+      },
+      {
+        "text": "层。",
+        "pinyin": "céng",
+        "gloss": "level"
+      }
+    ]
+  },
+  "Staircase_Name": {
+    "chinese": "楼梯",
+    "english": "Staircase",
+    "segments": [
+      {
+        "text": "楼梯",
+        "pinyin": "lóu tī",
+        "gloss": "staircase"
+      }
+    ]
+  },
+  "StandingGeode_Description": {
+    "chinese": "一块巨大的晶洞镶嵌在一个基座上。成千上百的紫色水晶在其中闪闪发光。",
+    "english": "A huge geode set on a base. Hundreds of purple crystals glitter in it.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for chunks)"
+      },
+      {
+        "text": "巨大",
+        "pinyin": "jù dà",
+        "gloss": "huge"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "晶洞",
+        "pinyin": "jīng dòng",
+        "gloss": "geode"
+      },
+      {
+        "text": "镶嵌",
+        "pinyin": "xiāng qiàn",
+        "gloss": "set"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(result: on)"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "基座",
+        "pinyin": "jī zuò",
+        "gloss": "base"
+      },
+      {
+        "text": "上。",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "成千上百",
+        "pinyin": "chéng qiān shàng bǎi",
+        "gloss": "hundreds and thousands"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "紫色",
+        "pinyin": "zǐ sè",
+        "gloss": "purple"
+      },
+      {
+        "text": "水晶",
+        "pinyin": "shuǐ jīng",
+        "gloss": "crystals"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "其中",
+        "pinyin": "qí zhōng",
+        "gloss": "it"
+      },
+      {
+        "text": "闪闪发光。",
+        "pinyin": "shǎn shǎn fā guāng",
+        "gloss": "glitter"
+      }
+    ]
+  },
+  "StandingGeode_Name": {
+    "chinese": "直立的晶洞",
+    "english": "Upright geode",
+    "segments": [
+      {
+        "text": "直立",
+        "pinyin": "zhí lì",
+        "gloss": "upright"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "晶洞",
+        "pinyin": "jīng dòng",
+        "gloss": "geode"
+      }
+    ]
+  },
+  "StardewHeroTrophy_Description": {
+    "chinese": "星露谷居民的至高奖项！",
+    "english": "The highest award for a Stardew Valley resident!",
+    "segments": [
+      {
+        "text": "星露谷",
+        "pinyin": "xīng lù gǔ",
+        "gloss": "Stardew Valley"
+      },
+      {
+        "text": "居民",
+        "pinyin": "jū mín",
+        "gloss": "resident"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "至高",
+        "pinyin": "zhì gāo",
+        "gloss": "highest"
+      },
+      {
+        "text": "奖项！",
+        "pinyin": "jiǎng xiàng",
+        "gloss": "award"
+      }
+    ]
+  },
+  "StardewHeroTrophy_Name": {
+    "chinese": "星露谷英雄奖杯",
+    "english": "Stardew Valley hero trophy",
+    "segments": [
+      {
+        "text": "星露谷",
+        "pinyin": "xīng lù gǔ",
+        "gloss": "Stardew Valley"
+      },
+      {
+        "text": "英雄",
+        "pinyin": "yīng xióng",
+        "gloss": "hero"
+      },
+      {
+        "text": "奖杯",
+        "pinyin": "jiǎng bēi",
+        "gloss": "trophy"
+      }
+    ]
+  },
+  "StatueOfBlessings_Description": {
+    "chinese": "每天触摸雕像可以获得随机祝福。",
+    "english": "Touching the statue every day gets you a random blessing.",
+    "segments": [
+      {
+        "text": "每天",
+        "pinyin": "měi tiān",
+        "gloss": "every day"
+      },
+      {
+        "text": "触摸",
+        "pinyin": "chù mō",
+        "gloss": "touch"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "获得",
+        "pinyin": "huò dé",
+        "gloss": "obtain"
+      },
+      {
+        "text": "随机",
+        "pinyin": "suí jī",
+        "gloss": "random"
+      },
+      {
+        "text": "祝福。",
+        "pinyin": "zhù fú",
+        "gloss": "blessing"
+      }
+    ]
+  },
+  "StatueOfBlessings_Name": {
+    "chinese": "祝福雕像",
+    "english": "Blessing statue",
+    "segments": [
+      {
+        "text": "祝福",
+        "pinyin": "zhù fú",
+        "gloss": "blessing"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "StatueOfEndlessFortune_Description": {
+    "chinese": "黄金打造的。干什么用的呢？",
+    "english": "Made of gold. What's it for?",
+    "segments": [
+      {
+        "text": "黄金",
+        "pinyin": "huáng jīn",
+        "gloss": "gold"
+      },
+      {
+        "text": "打造",
+        "pinyin": "dǎ zào",
+        "gloss": "made"
+      },
+      {
+        "text": "的。",
+        "pinyin": "de",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "干",
+        "pinyin": "gàn",
+        "gloss": "do"
+      },
+      {
+        "text": "什么",
+        "pinyin": "shén me",
+        "gloss": "what"
+      },
+      {
+        "text": "用",
+        "pinyin": "yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(emphasis)"
+      },
+      {
+        "text": "呢？",
+        "pinyin": "ne",
+        "gloss": "(question particle)"
+      }
+    ]
+  },
+  "StatueOfEndlessFortune_Name": {
+    "chinese": "无尽财富之雕像",
+    "english": "Statue of endless wealth",
+    "segments": [
+      {
+        "text": "无尽",
+        "pinyin": "wú jìn",
+        "gloss": "endless"
+      },
+      {
+        "text": "财富",
+        "pinyin": "cái fù",
+        "gloss": "wealth"
+      },
+      {
+        "text": "之",
+        "pinyin": "zhī",
+        "gloss": "(possessive, literary)"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "StatueOfPerfection_Description": {
+    "chinese": "由纯铱打造而成。",
+    "english": "Made of pure iridium.",
+    "segments": [
+      {
+        "text": "由",
+        "pinyin": "yóu",
+        "gloss": "from"
+      },
+      {
+        "text": "纯",
+        "pinyin": "chún",
+        "gloss": "pure"
+      },
+      {
+        "text": "铱",
+        "pinyin": "yī",
+        "gloss": "iridium"
+      },
+      {
+        "text": "打造",
+        "pinyin": "dǎ zào",
+        "gloss": "made"
+      },
+      {
+        "text": "而成。",
+        "pinyin": "ér chéng",
+        "gloss": "(made into)"
+      }
+    ]
+  },
+  "StatueOfPerfection_Name": {
+    "chinese": "完美雕像",
+    "english": "Perfection statue",
+    "segments": [
+      {
+        "text": "完美",
+        "pinyin": "wán měi",
+        "gloss": "perfection"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "StatueOfTheDwarfKing_Description": {
+    "chinese": "每天二选一获得采矿能力。",
+    "english": "Each day, choose one of two to get a mining ability.",
+    "segments": [
+      {
+        "text": "每天",
+        "pinyin": "měi tiān",
+        "gloss": "every day"
+      },
+      {
+        "text": "二",
+        "pinyin": "èr",
+        "gloss": "two"
+      },
+      {
+        "text": "选",
+        "pinyin": "xuǎn",
+        "gloss": "choose"
+      },
+      {
+        "text": "一",
+        "pinyin": "yī",
+        "gloss": "one"
+      },
+      {
+        "text": "获得",
+        "pinyin": "huò dé",
+        "gloss": "obtain"
+      },
+      {
+        "text": "采矿",
+        "pinyin": "cǎi kuàng",
+        "gloss": "mining"
+      },
+      {
+        "text": "能力。",
+        "pinyin": "néng lì",
+        "gloss": "ability"
+      }
+    ]
+  },
+  "StatueOfTheDwarfKing_Name": {
+    "chinese": "矮人之王雕像",
+    "english": "Statue of the dwarf king",
+    "segments": [
+      {
+        "text": "矮人",
+        "pinyin": "ǎi rén",
+        "gloss": "dwarf"
+      },
+      {
+        "text": "之",
+        "pinyin": "zhī",
+        "gloss": "(possessive, literary)"
+      },
+      {
+        "text": "王",
+        "pinyin": "wáng",
+        "gloss": "king"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "StatueOfTruePerfection_Description": {
+    "chinese": "由纯铱打造而成。",
+    "english": "Made of pure iridium.",
+    "segments": [
+      {
+        "text": "由",
+        "pinyin": "yóu",
+        "gloss": "from"
+      },
+      {
+        "text": "纯",
+        "pinyin": "chún",
+        "gloss": "pure"
+      },
+      {
+        "text": "铱",
+        "pinyin": "yī",
+        "gloss": "iridium"
+      },
+      {
+        "text": "打造",
+        "pinyin": "dǎ zào",
+        "gloss": "made"
+      },
+      {
+        "text": "而成。",
+        "pinyin": "ér chéng",
+        "gloss": "(made into)"
+      }
+    ]
+  },
+  "StatueOfTruePerfection_Name": {
+    "chinese": "真正完美的雕像",
+    "english": "Truly perfect statue",
+    "segments": [
+      {
+        "text": "真正",
+        "pinyin": "zhēn zhèng",
+        "gloss": "truly"
+      },
+      {
+        "text": "完美",
+        "pinyin": "wán měi",
+        "gloss": "perfect"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "StoneBrazier_Description": {
+    "chinese": "提供一点亮光。",
+    "english": "Provides a little light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "一点",
+        "pinyin": "yì diǎn",
+        "gloss": "a little"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "StoneBrazier_Name": {
+    "chinese": "石头火炬",
+    "english": "Stone torch",
+    "segments": [
+      {
+        "text": "石头",
+        "pinyin": "shí tou",
+        "gloss": "stone"
+      },
+      {
+        "text": "火炬",
+        "pinyin": "huǒ jù",
+        "gloss": "torch"
+      }
+    ]
+  },
+  "StoneCairn_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "StoneCairn_Name": {
+    "chinese": "石堆",
+    "english": "Stone pile",
+    "segments": [
+      {
+        "text": "石堆",
+        "pinyin": "shí duī",
+        "gloss": "stone pile"
+      }
+    ]
+  },
+  "StoneChest_Description": {
+    "chinese": "可以储存你的物品。",
+    "english": "Can store your items.",
+    "segments": [
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "储存",
+        "pinyin": "chǔ cún",
+        "gloss": "store"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "your"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "物品。",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      }
+    ]
+  },
+  "StoneChest_Name": {
+    "chinese": "石箱",
+    "english": "Stone chest",
+    "segments": [
+      {
+        "text": "石",
+        "pinyin": "shí",
+        "gloss": "stone"
+      },
+      {
+        "text": "箱",
+        "pinyin": "xiāng",
+        "gloss": "chest"
+      }
+    ]
+  },
+  "StoneFrog_Description": {
+    "chinese": "适合农场的园艺。",
+    "english": "Garden art suited to the farm.",
+    "segments": [
+      {
+        "text": "适合",
+        "pinyin": "shì hé",
+        "gloss": "suited to"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "园艺。",
+        "pinyin": "yuán yì",
+        "gloss": "garden art"
+      }
+    ]
+  },
+  "StoneFrog_Name": {
+    "chinese": "石蛙",
+    "english": "Stone frog",
+    "segments": [
+      {
+        "text": "石",
+        "pinyin": "shí",
+        "gloss": "stone"
+      },
+      {
+        "text": "蛙",
+        "pinyin": "wā",
+        "gloss": "frog"
+      }
+    ]
+  },
+  "StoneJunimo_Description": {
+    "chinese": "适合农场的园艺。",
+    "english": "Garden art suited to the farm.",
+    "segments": [
+      {
+        "text": "适合",
+        "pinyin": "shì hé",
+        "gloss": "suited to"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "园艺。",
+        "pinyin": "yuán yì",
+        "gloss": "garden art"
+      }
+    ]
+  },
+  "StoneJunimo_Name": {
+    "chinese": "石祝尼魔",
+    "english": "Stone Junimo",
+    "segments": [
+      {
+        "text": "石",
+        "pinyin": "shí",
+        "gloss": "stone"
+      },
+      {
+        "text": "祝尼魔",
+        "pinyin": "zhù ní mó",
+        "gloss": "Junimo"
+      }
+    ]
+  },
+  "StoneOwl_Decorative_Description": {
+    "chinese": "适合农场的园艺。",
+    "english": "Garden art suited to the farm.",
+    "segments": [
+      {
+        "text": "适合",
+        "pinyin": "shì hé",
+        "gloss": "suited to"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "园艺。",
+        "pinyin": "yuán yì",
+        "gloss": "garden art"
+      }
+    ]
+  },
+  "StoneOwl_Decorative_Name": {
+    "chinese": "石猫头鹰",
+    "english": "Stone owl",
+    "segments": [
+      {
+        "text": "石",
+        "pinyin": "shí",
+        "gloss": "stone"
+      },
+      {
+        "text": "猫头鹰",
+        "pinyin": "māo tóu yīng",
+        "gloss": "owl"
+      }
+    ]
+  },
+  "StoneOwl_Secret_Description": {
+    "chinese": "不知道从哪儿来，但是挺耐看。",
+    "english": "No idea where it came from, but it's quite pleasing to look at.",
+    "segments": [
+      {
+        "text": "不",
+        "pinyin": "bù",
+        "gloss": "not"
+      },
+      {
+        "text": "知道",
+        "pinyin": "zhī dào",
+        "gloss": "know"
+      },
+      {
+        "text": "从",
+        "pinyin": "cóng",
+        "gloss": "from"
+      },
+      {
+        "text": "哪儿",
+        "pinyin": "nǎ r",
+        "gloss": "where"
+      },
+      {
+        "text": "来，",
+        "pinyin": "lái",
+        "gloss": "come"
+      },
+      {
+        "text": "但是",
+        "pinyin": "dàn shì",
+        "gloss": "but"
+      },
+      {
+        "text": "挺",
+        "pinyin": "tǐng",
+        "gloss": "quite"
+      },
+      {
+        "text": "耐看。",
+        "pinyin": "nài kàn",
+        "gloss": "pleasing to look at"
+      }
+    ]
+  },
+  "StoneOwl_Secret_Name": {
+    "chinese": "石猫头鹰",
+    "english": "Stone owl",
+    "segments": [
+      {
+        "text": "石",
+        "pinyin": "shí",
+        "gloss": "stone"
+      },
+      {
+        "text": "猫头鹰",
+        "pinyin": "māo tóu yīng",
+        "gloss": "owl"
+      }
+    ]
+  },
+  "StoneParrot_Description": {
+    "chinese": "适合农场的园艺。",
+    "english": "Garden art suited to the farm.",
+    "segments": [
+      {
+        "text": "适合",
+        "pinyin": "shì hé",
+        "gloss": "suited to"
+      },
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "园艺。",
+        "pinyin": "yuán yì",
+        "gloss": "garden art"
+      }
+    ]
+  },
+  "StoneParrot_Name": {
+    "chinese": "石鹦鹉",
+    "english": "Stone parrot",
+    "segments": [
+      {
+        "text": "石",
+        "pinyin": "shí",
+        "gloss": "stone"
+      },
+      {
+        "text": "鹦鹉",
+        "pinyin": "yīng wǔ",
+        "gloss": "parrot"
+      }
+    ]
+  },
+  "StoneSign_Description": {
+    "chinese": "在此上使用一个道具，即可改变显示的内容。道具不会被消耗掉。",
+    "english": "Use an item on it to change what it displays. The item won't be used up.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "on"
+      },
+      {
+        "text": "此",
+        "pinyin": "cǐ",
+        "gloss": "this"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "道具，",
+        "pinyin": "dào jù",
+        "gloss": "item"
+      },
+      {
+        "text": "即可",
+        "pinyin": "jí kě",
+        "gloss": "and then can"
+      },
+      {
+        "text": "改变",
+        "pinyin": "gǎi biàn",
+        "gloss": "change"
+      },
+      {
+        "text": "显示",
+        "pinyin": "xiǎn shì",
+        "gloss": "displayed"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "内容。",
+        "pinyin": "nèi róng",
+        "gloss": "content"
+      },
+      {
+        "text": "道具",
+        "pinyin": "dào jù",
+        "gloss": "item"
+      },
+      {
+        "text": "不会",
+        "pinyin": "bú huì",
+        "gloss": "won't"
+      },
+      {
+        "text": "被",
+        "pinyin": "bèi",
+        "gloss": "(passive marker)"
+      },
+      {
+        "text": "消耗",
+        "pinyin": "xiāo hào",
+        "gloss": "consumed"
+      },
+      {
+        "text": "掉。",
+        "pinyin": "diào",
+        "gloss": "(result: away)"
+      }
+    ]
+  },
+  "StoneSign_Name": {
+    "chinese": "石牌",
+    "english": "Stone sign",
+    "segments": [
+      {
+        "text": "石",
+        "pinyin": "shí",
+        "gloss": "stone"
+      },
+      {
+        "text": "牌",
+        "pinyin": "pái",
+        "gloss": "sign"
+      }
+    ]
+  },
+  "StrangeCapsule_Description": {
+    "chinese": "里面的液体有点不对劲……",
+    "english": "The liquid inside is a bit off...",
+    "segments": [
+      {
+        "text": "里面",
+        "pinyin": "lǐ miàn",
+        "gloss": "inside"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "液体",
+        "pinyin": "yè tǐ",
+        "gloss": "liquid"
+      },
+      {
+        "text": "有点",
+        "pinyin": "yǒu diǎn",
+        "gloss": "a bit"
+      },
+      {
+        "text": "不对劲……",
+        "pinyin": "bú duì jìn",
+        "gloss": "not right"
+      }
+    ]
+  },
+  "StrangeCapsule_Name": {
+    "chinese": "奇怪的胶囊",
+    "english": "Strange capsule",
+    "segments": [
+      {
+        "text": "奇怪",
+        "pinyin": "qí guài",
+        "gloss": "strange"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "胶囊",
+        "pinyin": "jiāo náng",
+        "gloss": "capsule"
+      }
+    ]
+  },
+  "StumpBrazier_Description": {
+    "chinese": "提供一点亮光。",
+    "english": "Provides a little light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "一点",
+        "pinyin": "yì diǎn",
+        "gloss": "a little"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "StumpBrazier_Name": {
+    "chinese": "树桩火炬",
+    "english": "Stump torch",
+    "segments": [
+      {
+        "text": "树桩",
+        "pinyin": "shù zhuāng",
+        "gloss": "tree stump"
+      },
+      {
+        "text": "火炬",
+        "pinyin": "huǒ jù",
+        "gloss": "torch"
+      }
+    ]
+  },
+  "SuitOfArmor_Description": {
+    "chinese": "农场的装饰件。",
+    "english": "A decorative piece for the farm.",
+    "segments": [
+      {
+        "text": "农场",
+        "pinyin": "nóng chǎng",
+        "gloss": "farm"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "装饰件。",
+        "pinyin": "zhuāng shì jiàn",
+        "gloss": "decorative piece"
+      }
+    ]
+  },
+  "SuitOfArmor_Name": {
+    "chinese": "装甲",
+    "english": "Armor",
+    "segments": [
+      {
+        "text": "装甲",
+        "pinyin": "zhuāng jiǎ",
+        "gloss": "armor"
+      }
+    ]
+  },
+  "TablePieceL_Description": {
+    "chinese": "一张大桌子的左角。",
+    "english": "The left corner of a big table.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "a"
+      },
+      {
+        "text": "张",
+        "pinyin": "zhāng",
+        "gloss": "(measure word for tables)"
+      },
+      {
+        "text": "大",
+        "pinyin": "dà",
+        "gloss": "big"
+      },
+      {
+        "text": "桌子",
+        "pinyin": "zhuō zi",
+        "gloss": "table"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "左",
+        "pinyin": "zuǒ",
+        "gloss": "left"
+      },
+      {
+        "text": "角。",
+        "pinyin": "jiǎo",
+        "gloss": "corner"
+      }
+    ]
+  },
+  "TablePieceL_Name": {
+    "chinese": "桌子部件（左）",
+    "english": "Table part (left)",
+    "segments": [
+      {
+        "text": "桌子",
+        "pinyin": "zhuō zi",
+        "gloss": "table"
+      },
+      {
+        "text": "部件",
+        "pinyin": "bù jiàn",
+        "gloss": "part"
+      },
+      {
+        "text": "（左）",
+        "pinyin": "zuǒ",
+        "gloss": "left"
+      }
+    ]
+  },
+  "TablePieceR_Description": {
+    "chinese": "一张大桌子的右角。",
+    "english": "The right corner of a big table.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "a"
+      },
+      {
+        "text": "张",
+        "pinyin": "zhāng",
+        "gloss": "(measure word for tables)"
+      },
+      {
+        "text": "大",
+        "pinyin": "dà",
+        "gloss": "big"
+      },
+      {
+        "text": "桌子",
+        "pinyin": "zhuō zi",
+        "gloss": "table"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "右",
+        "pinyin": "yòu",
+        "gloss": "right"
+      },
+      {
+        "text": "角。",
+        "pinyin": "jiǎo",
+        "gloss": "corner"
+      }
+    ]
+  },
+  "TablePieceR_Name": {
+    "chinese": "桌子部件（右）",
+    "english": "Table part (right)",
+    "segments": [
+      {
+        "text": "桌子",
+        "pinyin": "zhuō zi",
+        "gloss": "table"
+      },
+      {
+        "text": "部件",
+        "pinyin": "bù jiàn",
+        "gloss": "part"
+      },
+      {
+        "text": "（右）",
+        "pinyin": "yòu",
+        "gloss": "right"
+      }
+    ]
+  },
+  "TallTorch_Description": {
+    "chinese": "火把是用竹子打造的。",
+    "english": "The torch is made of bamboo.",
+    "segments": [
+      {
+        "text": "火把",
+        "pinyin": "huǒ bǎ",
+        "gloss": "torch"
+      },
+      {
+        "text": "是",
+        "pinyin": "shì",
+        "gloss": "is"
+      },
+      {
+        "text": "用",
+        "pinyin": "yòng",
+        "gloss": "with"
+      },
+      {
+        "text": "竹子",
+        "pinyin": "zhú zi",
+        "gloss": "bamboo"
+      },
+      {
+        "text": "打造",
+        "pinyin": "dǎ zào",
+        "gloss": "made"
+      },
+      {
+        "text": "的。",
+        "pinyin": "de",
+        "gloss": "(emphasis)"
+      }
+    ]
+  },
+  "TallTorch_Name": {
+    "chinese": "高高的火把",
+    "english": "Tall torch",
+    "segments": [
+      {
+        "text": "高高",
+        "pinyin": "gāo gāo",
+        "gloss": "tall"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "火把",
+        "pinyin": "huǒ bǎ",
+        "gloss": "torch"
+      }
+    ]
+  },
+  "Tapper_Description": {
+    "chinese": "放在枫树、橡树、松树上，然后等着装满树液吧！",
+    "english": "Put it on a maple, oak or pine tree, then wait for it to fill with sap!",
+    "segments": [
+      {
+        "text": "放",
+        "pinyin": "fàng",
+        "gloss": "put"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "(result: on)"
+      },
+      {
+        "text": "枫树、",
+        "pinyin": "fēng shù",
+        "gloss": "maple tree"
+      },
+      {
+        "text": "橡树、",
+        "pinyin": "xiàng shù",
+        "gloss": "oak tree"
+      },
+      {
+        "text": "松树",
+        "pinyin": "sōng shù",
+        "gloss": "pine tree"
+      },
+      {
+        "text": "上，",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "然后",
+        "pinyin": "rán hòu",
+        "gloss": "then"
+      },
+      {
+        "text": "等",
+        "pinyin": "děng",
+        "gloss": "wait"
+      },
+      {
+        "text": "着",
+        "pinyin": "zhe",
+        "gloss": "(ongoing)"
+      },
+      {
+        "text": "装满",
+        "pinyin": "zhuāng mǎn",
+        "gloss": "fill up"
+      },
+      {
+        "text": "树液",
+        "pinyin": "shù yè",
+        "gloss": "sap"
+      },
+      {
+        "text": "吧！",
+        "pinyin": "ba",
+        "gloss": "(suggestion)"
+      }
+    ]
+  },
+  "Tapper_Name": {
+    "chinese": "树液采集器",
+    "english": "Sap collector",
+    "segments": [
+      {
+        "text": "树液",
+        "pinyin": "shù yè",
+        "gloss": "sap"
+      },
+      {
+        "text": "采集器",
+        "pinyin": "cǎi jí qì",
+        "gloss": "collector"
+      }
+    ]
+  },
+  "TeddyTimer_Description": {
+    "chinese": "祖父的一个泰迪熊型状闹钟。",
+    "english": "Grandfather's teddy-bear-shaped alarm clock.",
+    "segments": [
+      {
+        "text": "祖父",
+        "pinyin": "zǔ fù",
+        "gloss": "grandfather"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "泰迪熊",
+        "pinyin": "tài dí xióng",
+        "gloss": "teddy bear"
+      },
+      {
+        "text": "型状",
+        "pinyin": "xíng zhuàng",
+        "gloss": "shaped"
+      },
+      {
+        "text": "闹钟。",
+        "pinyin": "nào zhōng",
+        "gloss": "alarm clock"
+      }
+    ]
+  },
+  "TeddyTimer_Name": {
+    "chinese": "泰迪熊闹钟",
+    "english": "Teddy bear alarm clock",
+    "segments": [
+      {
+        "text": "泰迪熊",
+        "pinyin": "tài dí xióng",
+        "gloss": "teddy bear"
+      },
+      {
+        "text": "闹钟",
+        "pinyin": "nào zhōng",
+        "gloss": "alarm clock"
+      }
+    ]
+  },
+  "Telephone_Description": {
+    "chinese": "可以用来了解商店的营业时间和库存。",
+    "english": "Can be used to find out shops' opening hours and stock.",
+    "segments": [
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "用来",
+        "pinyin": "yòng lái",
+        "gloss": "be used to"
+      },
+      {
+        "text": "了解",
+        "pinyin": "liǎo jiě",
+        "gloss": "find out"
+      },
+      {
+        "text": "商店",
+        "pinyin": "shāng diàn",
+        "gloss": "shops"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(possessive)"
+      },
+      {
+        "text": "营业",
+        "pinyin": "yíng yè",
+        "gloss": "business"
+      },
+      {
+        "text": "时间",
+        "pinyin": "shí jiān",
+        "gloss": "hours"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "库存。",
+        "pinyin": "kù cún",
+        "gloss": "stock"
+      }
+    ]
+  },
+  "Telephone_Name": {
+    "chinese": "电话",
+    "english": "Telephone",
+    "segments": [
+      {
+        "text": "电话",
+        "pinyin": "diàn huà",
+        "gloss": "telephone"
+      }
+    ]
+  },
+  "TextSign_Description": {
+    "chinese": "你可以在这个标牌上写一条信息。",
+    "english": "You can write a message on this sign.",
+    "segments": [
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "on"
+      },
+      {
+        "text": "这个",
+        "pinyin": "zhè ge",
+        "gloss": "this"
+      },
+      {
+        "text": "标牌",
+        "pinyin": "biāo pái",
+        "gloss": "sign"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "写",
+        "pinyin": "xiě",
+        "gloss": "write"
+      },
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "a"
+      },
+      {
+        "text": "条",
+        "pinyin": "tiáo",
+        "gloss": "(measure word for messages)"
+      },
+      {
+        "text": "信息。",
+        "pinyin": "xìn xī",
+        "gloss": "message"
+      }
+    ]
+  },
+  "TextSign_Name": {
+    "chinese": "文字标牌",
+    "english": "Text sign",
+    "segments": [
+      {
+        "text": "文字",
+        "pinyin": "wén zì",
+        "gloss": "text"
+      },
+      {
+        "text": "标牌",
+        "pinyin": "biāo pái",
+        "gloss": "sign"
+      }
+    ]
+  },
+  "TuboFlowers_Description": {
+    "chinese": "种植在橡木桶里的花朵。春天和夏天开花。",
+    "english": "Flowers planted in an oak barrel. Blooms in spring and summer.",
+    "segments": [
+      {
+        "text": "种植",
+        "pinyin": "zhòng zhí",
+        "gloss": "planted"
+      },
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "in"
+      },
+      {
+        "text": "橡木",
+        "pinyin": "xiàng mù",
+        "gloss": "oak"
+      },
+      {
+        "text": "桶",
+        "pinyin": "tǒng",
+        "gloss": "barrel"
+      },
+      {
+        "text": "里",
+        "pinyin": "lǐ",
+        "gloss": "inside"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "花朵。",
+        "pinyin": "huā duǒ",
+        "gloss": "flowers"
+      },
+      {
+        "text": "春天",
+        "pinyin": "chūn tiān",
+        "gloss": "spring"
+      },
+      {
+        "text": "和",
+        "pinyin": "hé",
+        "gloss": "and"
+      },
+      {
+        "text": "夏天",
+        "pinyin": "xià tiān",
+        "gloss": "summer"
+      },
+      {
+        "text": "开花。",
+        "pinyin": "kāi huā",
+        "gloss": "bloom"
+      }
+    ]
+  },
+  "TuboFlowers_Name": {
+    "chinese": "一簇鲜花",
+    "english": "A cluster of flowers",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "簇",
+        "pinyin": "cù",
+        "gloss": "(measure word for clusters)"
+      },
+      {
+        "text": "鲜花",
+        "pinyin": "xiān huā",
+        "gloss": "flowers"
+      }
+    ]
+  },
+  "WickedStatue_Description": {
+    "chinese": "这个雕像看上去有点瘆人。",
+    "english": "This statue looks a bit creepy.",
+    "segments": [
+      {
+        "text": "这个",
+        "pinyin": "zhè ge",
+        "gloss": "this"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      },
+      {
+        "text": "看上去",
+        "pinyin": "kàn shang qu",
+        "gloss": "looks"
+      },
+      {
+        "text": "有点",
+        "pinyin": "yǒu diǎn",
+        "gloss": "a bit"
+      },
+      {
+        "text": "瘆人。",
+        "pinyin": "shèn rén",
+        "gloss": "creepy"
+      }
+    ]
+  },
+  "WickedStatue_LitEyes_Description": {
+    "chinese": "这个雕像有点不太对劲。",
+    "english": "There's something not quite right with this statue.",
+    "segments": [
+      {
+        "text": "这个",
+        "pinyin": "zhè ge",
+        "gloss": "this"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      },
+      {
+        "text": "有点",
+        "pinyin": "yǒu diǎn",
+        "gloss": "a bit"
+      },
+      {
+        "text": "不太",
+        "pinyin": "bú tài",
+        "gloss": "not very"
+      },
+      {
+        "text": "对劲。",
+        "pinyin": "duì jìn",
+        "gloss": "right"
+      }
+    ]
+  },
+  "WickedStatue_LitEyes_Name": {
+    "chinese": "邪恶雕像",
+    "english": "Evil statue",
+    "segments": [
+      {
+        "text": "邪恶",
+        "pinyin": "xié è",
+        "gloss": "evil"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "WickedStatue_Name": {
+    "chinese": "邪恶雕像",
+    "english": "Evil statue",
+    "segments": [
+      {
+        "text": "邪恶",
+        "pinyin": "xié è",
+        "gloss": "evil"
+      },
+      {
+        "text": "雕像",
+        "pinyin": "diāo xiàng",
+        "gloss": "statue"
+      }
+    ]
+  },
+  "WoodChair_Description": {
+    "chinese": "一种可面朝四个方向的椅子。",
+    "english": "A chair that can face four directions.",
+    "segments": [
+      {
+        "text": "一",
+        "pinyin": "yì",
+        "gloss": "a"
+      },
+      {
+        "text": "种",
+        "pinyin": "zhǒng",
+        "gloss": "kind of"
+      },
+      {
+        "text": "可",
+        "pinyin": "kě",
+        "gloss": "can"
+      },
+      {
+        "text": "面朝",
+        "pinyin": "miàn cháo",
+        "gloss": "face"
+      },
+      {
+        "text": "四",
+        "pinyin": "sì",
+        "gloss": "four"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "方向",
+        "pinyin": "fāng xiàng",
+        "gloss": "directions"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "椅子。",
+        "pinyin": "yǐ zi",
+        "gloss": "chair"
+      }
+    ]
+  },
+  "WoodChair_Name": {
+    "chinese": "木椅",
+    "english": "Wooden chair",
+    "segments": [
+      {
+        "text": "木椅",
+        "pinyin": "mù yǐ",
+        "gloss": "wooden chair"
+      }
+    ]
+  },
+  "WoodChipper_Description": {
+    "chinese": "放入一块硬木，把它分解成普通的木头。",
+    "english": "Put in a piece of hardwood to break it down into ordinary wood.",
+    "segments": [
+      {
+        "text": "放入",
+        "pinyin": "fàng rù",
+        "gloss": "put in"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "块",
+        "pinyin": "kuài",
+        "gloss": "(measure word for pieces)"
+      },
+      {
+        "text": "硬木，",
+        "pinyin": "yìng mù",
+        "gloss": "hardwood"
+      },
+      {
+        "text": "把",
+        "pinyin": "bǎ",
+        "gloss": "(object marker)"
+      },
+      {
+        "text": "它",
+        "pinyin": "tā",
+        "gloss": "it"
+      },
+      {
+        "text": "分解",
+        "pinyin": "fēn jiě",
+        "gloss": "break down"
+      },
+      {
+        "text": "成",
+        "pinyin": "chéng",
+        "gloss": "(result: into)"
+      },
+      {
+        "text": "普通",
+        "pinyin": "pǔ tōng",
+        "gloss": "ordinary"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "木头。",
+        "pinyin": "mù tou",
+        "gloss": "wood"
+      }
+    ]
+  },
+  "WoodChipper_Name": {
+    "chinese": "碎木机",
+    "english": "Wood chipper",
+    "segments": [
+      {
+        "text": "碎木机",
+        "pinyin": "suì mù jī",
+        "gloss": "wood chipper"
+      }
+    ]
+  },
+  "WoodLamppost_Description": {
+    "chinese": "提供不少亮光。",
+    "english": "Provides quite a lot of light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "不少",
+        "pinyin": "bù shǎo",
+        "gloss": "quite a lot of"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "WoodLamppost_Name": {
+    "chinese": "木灯柱",
+    "english": "Wooden lamppost",
+    "segments": [
+      {
+        "text": "木",
+        "pinyin": "mù",
+        "gloss": "wooden"
+      },
+      {
+        "text": "灯柱",
+        "pinyin": "dēng zhù",
+        "gloss": "lamppost"
+      }
+    ]
+  },
+  "WoodSign_Description": {
+    "chinese": "在此上使用一个道具，即可改变显示的内容。道具不会被消耗掉。",
+    "english": "Use an item on it to change what it displays. The item won't be used up.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "on"
+      },
+      {
+        "text": "此",
+        "pinyin": "cǐ",
+        "gloss": "this"
+      },
+      {
+        "text": "上",
+        "pinyin": "shang",
+        "gloss": "on"
+      },
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "一",
+        "pinyin": "yí",
+        "gloss": "a"
+      },
+      {
+        "text": "个",
+        "pinyin": "gè",
+        "gloss": "(measure word)"
+      },
+      {
+        "text": "道具，",
+        "pinyin": "dào jù",
+        "gloss": "item"
+      },
+      {
+        "text": "即可",
+        "pinyin": "jí kě",
+        "gloss": "and then can"
+      },
+      {
+        "text": "改变",
+        "pinyin": "gǎi biàn",
+        "gloss": "change"
+      },
+      {
+        "text": "显示",
+        "pinyin": "xiǎn shì",
+        "gloss": "displayed"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "内容。",
+        "pinyin": "nèi róng",
+        "gloss": "content"
+      },
+      {
+        "text": "道具",
+        "pinyin": "dào jù",
+        "gloss": "item"
+      },
+      {
+        "text": "不会",
+        "pinyin": "bú huì",
+        "gloss": "won't"
+      },
+      {
+        "text": "被",
+        "pinyin": "bèi",
+        "gloss": "(passive marker)"
+      },
+      {
+        "text": "消耗",
+        "pinyin": "xiāo hào",
+        "gloss": "consumed"
+      },
+      {
+        "text": "掉。",
+        "pinyin": "diào",
+        "gloss": "(result: away)"
+      }
+    ]
+  },
+  "WoodSign_Name": {
+    "chinese": "木牌",
+    "english": "Wooden sign",
+    "segments": [
+      {
+        "text": "木",
+        "pinyin": "mù",
+        "gloss": "wooden"
+      },
+      {
+        "text": "牌",
+        "pinyin": "pái",
+        "gloss": "sign"
+      }
+    ]
+  },
+  "WoodenBrazier_Description": {
+    "chinese": "提供一点亮光。",
+    "english": "Provides a little light.",
+    "segments": [
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provides"
+      },
+      {
+        "text": "一点",
+        "pinyin": "yì diǎn",
+        "gloss": "a little"
+      },
+      {
+        "text": "亮光。",
+        "pinyin": "liàng guāng",
+        "gloss": "light"
+      }
+    ]
+  },
+  "WoodenBrazier_Name": {
+    "chinese": "木头火炬",
+    "english": "Wooden torch",
+    "segments": [
+      {
+        "text": "木头",
+        "pinyin": "mù tou",
+        "gloss": "wood"
+      },
+      {
+        "text": "火炬",
+        "pinyin": "huǒ jù",
+        "gloss": "torch"
+      }
+    ]
+  },
+  "Workbench_Description": {
+    "chinese": "在这里制作物品时，你可以使用任何相邻箱子中的材料。",
+    "english": "When crafting items here, you can use materials in any adjacent chest.",
+    "segments": [
+      {
+        "text": "在",
+        "pinyin": "zài",
+        "gloss": "at"
+      },
+      {
+        "text": "这里",
+        "pinyin": "zhè lǐ",
+        "gloss": "here"
+      },
+      {
+        "text": "制作",
+        "pinyin": "zhì zuò",
+        "gloss": "make"
+      },
+      {
+        "text": "物品",
+        "pinyin": "wù pǐn",
+        "gloss": "items"
+      },
+      {
+        "text": "时，",
+        "pinyin": "shí",
+        "gloss": "when"
+      },
+      {
+        "text": "你",
+        "pinyin": "nǐ",
+        "gloss": "you"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "使用",
+        "pinyin": "shǐ yòng",
+        "gloss": "use"
+      },
+      {
+        "text": "任何",
+        "pinyin": "rèn hé",
+        "gloss": "any"
+      },
+      {
+        "text": "相邻",
+        "pinyin": "xiāng lín",
+        "gloss": "adjacent"
+      },
+      {
+        "text": "箱子",
+        "pinyin": "xiāng zi",
+        "gloss": "chest"
+      },
+      {
+        "text": "中",
+        "pinyin": "zhōng",
+        "gloss": "in"
+      },
+      {
+        "text": "的",
+        "pinyin": "de",
+        "gloss": "(modifier marker)"
+      },
+      {
+        "text": "材料。",
+        "pinyin": "cái liào",
+        "gloss": "materials"
+      }
+    ]
+  },
+  "Workbench_Name": {
+    "chinese": "工作台",
+    "english": "Workbench",
+    "segments": [
+      {
+        "text": "工作台",
+        "pinyin": "gōng zuò tái",
+        "gloss": "workbench"
+      }
+    ]
+  },
+  "WormBin_Description": {
+    "chinese": "稳定地提供诱饵。这些虫可以依靠自身维持生存。",
+    "english": "Steadily provides bait. These worms can keep themselves alive on their own.",
+    "segments": [
+      {
+        "text": "稳定",
+        "pinyin": "wěn dìng",
+        "gloss": "steady"
+      },
+      {
+        "text": "地",
+        "pinyin": "de",
+        "gloss": "(adverb marker)"
+      },
+      {
+        "text": "提供",
+        "pinyin": "tí gōng",
+        "gloss": "provide"
+      },
+      {
+        "text": "诱饵。",
+        "pinyin": "yòu ěr",
+        "gloss": "bait"
+      },
+      {
+        "text": "这些",
+        "pinyin": "zhè xiē",
+        "gloss": "these"
+      },
+      {
+        "text": "虫",
+        "pinyin": "chóng",
+        "gloss": "worms"
+      },
+      {
+        "text": "可以",
+        "pinyin": "kě yǐ",
+        "gloss": "can"
+      },
+      {
+        "text": "依靠",
+        "pinyin": "yī kào",
+        "gloss": "rely on"
+      },
+      {
+        "text": "自身",
+        "pinyin": "zì shēn",
+        "gloss": "themselves"
+      },
+      {
+        "text": "维持",
+        "pinyin": "wéi chí",
+        "gloss": "maintain"
+      },
+      {
+        "text": "生存。",
+        "pinyin": "shēng cún",
+        "gloss": "survival"
+      }
+    ]
+  },
+  "WormBin_Name": {
+    "chinese": "虫饵盒",
+    "english": "Worm bait box",
+    "segments": [
+      {
+        "text": "虫饵",
+        "pinyin": "chóng ěr",
+        "gloss": "worm bait"
+      },
+      {
+        "text": "盒",
+        "pinyin": "hé",
+        "gloss": "box"
+      }
+    ]
+  }
+}
