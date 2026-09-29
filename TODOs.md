@@ -14,6 +14,7 @@
   - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
   - [ ] [Verify flashcards](#verify-flashcards)
   - [ ] [Verify language activation](#verify-language-activation)
+  - [ ] [Verify title-screen readings](#verify-title-screen-readings)
 - [ ] Segment data
   - [ ] [Consolidate redundant glosses](#consolidate-redundant-glosses)
 - [ ] Code
@@ -128,6 +129,10 @@ Activation by game language and the title-screen prompt are built and the decisi
 - The `Glyph capture: …` line shows every renderer on after activating, including after switching back and forth.
 - The chooser with a controller: snapping between buttons, and B/Escape as Cancel.
 
+### Verify title-screen readings
+
+Ported from the ja mod on 2026-09-29, not tried live. Hovering a main title button (创建, 加载, 合作, 退出, read from `Minigames/TitleButtons.zh-CN` in 1.6.15) shows a bubble above it with the hanzi, pinyin and English (`TitleScreenText`, `TitleScreenOverlay`). Check that the bubble's hanzi render in `smallFont`, that the pinyin shows tone marks rather than numbers, and that the Exit bubble stays on screen in a narrow window. The 后退 back button in submenus has no reading, as in the ja mod.
+
 ### Consolidate redundant glosses
 
 Review redundancy in the segment data, and consider pointing repeats at a shared glossary instead of storing a copy in every sentence. The figures below were measured on the **Japanese** data, and Chinese particles (的, 了, 是) will repeat the same way. Re-measure once phase 1 is done. Two kinds:
@@ -201,6 +206,12 @@ key <TAB> english <TAB> text¦pinyin¦gloss‖text¦pinyin¦gloss‖...
 - Output goes to `assets/segments/zh/`, the tracked source of truth, which ships with the mod as-is.
 
 ## Done
+
+### Language activation and sibling copies (2026-09-29)
+
+Each copy of the mod reads its study language from the manifest's `StudyLanguage` field and runs only while the game is in that language. In any other language it has no patches, handlers or font edit, so copies for other languages can be installed alongside it. Once per launch, the title screen offers to switch to the copy's language, or asks which to study when several copies are installed. Verified in-game in the Japanese mod; this copy's checks are in [Verify language activation](#verify-language-activation).
+
+How it works, and the checklist for making a copy for another language, are in `HowItWorks.md`.
 
 ### Glyph-accurate word hover (2026-09-26)
 
