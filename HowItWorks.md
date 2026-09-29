@@ -4,6 +4,45 @@ Notes on how the mod's main pieces work, one section per piece, and the reasons 
 
 > **Written for the Japanese mod this repo was forked from.** The mechanisms are language-independent and still accurate: tooltip capture, locale loading, glyph capture, segment lookup, frozen tooltips and flashcards. The language details are not. Kana and romaji, the ja HUD clock, the macron-only font work and the kana/kanji fallback split are all being replaced for Chinese. See "Chinese migration" in `TODOs.md` for what changes, and `tools/segment-data/README.md` for the zh data format.
 
+## Language activation and sibling copies
+
+The mod ships as one copy per study language: this codebase, with that language's data and its own manifest. A player may install several, so each copy runs only while the game language is its own. At most one copy is live at a time, and the copies never communicate.
+
+### Activation
+
+Each copy's study language is the manifest's `StudyLanguage` field, a game language code (`ja`, `zh`, …). `ModEntry.OnLanguageTick` polls `LocalizedContentManager.CurrentLanguageCode` every tick, and `ActivationTracker` (`LanguageActivation.cs`, no game types, unit-tested) turns that into activate and deactivate steps:
+
+- **Active:** the Harmony patches are applied, the handlers run, and the index is built once a save is loaded. The segment data and flashcard deck are read on the first activation only.
+- **Inactive:** every patch is removed with `UnpatchAll(<UniqueID>)`, and the handlers and console commands return straight away. The font isn't extended either.
+
+It polls instead of using `Content.LocaleChanged` because `TranslationIndex.Build` flips the game to English and back inside one call. An event would fire during that flip; a poll never sees it.
+
+Deactivation happens on the first tick the language stops matching, activation only on the second matching tick. When the player moves from one copy's language to another's, both copies see the change on the same tick, so the delay means the old copy has unpatched before the new one patches. Otherwise the new copy's glyph transpilers could see the old copy's inserted IL, fail to match, and warn.
+
+`ExtendedFont` checks the language itself, when the font is requested, instead of reading `IsActive`. The font reloads inside the language change, a tick or two before the copy activates.
+
+### The title-screen prompt
+
+Once per launch, when the title screen has settled (`titleInPosition`, no submenu open), `LanguagePrompt` finds every installed copy through `ModRegistry` by its `StudyLanguage` field and asks `LanguageActivation.DecidePrompt`:
+
+- If the game is already in any copy's language, nothing is shown, and that copy activates by itself.
+- Only the copy with the lowest `UniqueID` asks, so one popup appears however many copies are installed.
+- With one copy, a `ConfirmationDialog` offers to switch. With several, `LanguageChoiceMenu` lists each language plus Cancel. The labels are English names, since the game's current font may lack the native script.
+
+A choice only sets `CurrentLanguageCode`, as the game's own language menu does (`LanguageSelectionMenu.ApplyLanguage`). `TitleMenu.OnLanguageChange` then saves it to the startup preferences, and the copy for that language activates on its own. No or Cancel closes the popup and nothing is remembered, so the next launch asks again.
+
+### Making a copy for another language
+
+SMAPI won't load two mods with the same assembly name ("…already loaded. Do you have two copies of this mod?"), and each copy's global data is keyed by its `UniqueID`. Each copy sets its own:
+
+- `UniqueID`: `com.oldclovercat.<lang>languagestudy` for new copies (the Japanese one is `jp`). This Chinese copy predates the convention and keeps `com.galacticrailroad.languagestudy.chinese`
+- `Name`
+- `<AssemblyName>` in the `.csproj`, with `EntryDll` in the manifest to match
+- `StudyLanguage`
+- `assets/segments/<lang>/`
+
+The C# namespace stays the same. Types in different assemblies never collide, and the Harmony ID is the `UniqueID`. A console command name another copy already took is registered with a language suffix (`ls_lookup_zh`, or `ls_lookup_ja` if this copy loaded first).
+
 ## Hover translation
 
 Hovering something that shows a vanilla tooltip adds a second box with the tooltip's text in the target language. The text comes from the game's own string tables, loaded in both locales and joined on their keys.
@@ -155,7 +194,7 @@ The deck is saved to SMAPI's global data (`.smapi/mod-data/<mod id>/flashcards.j
 
 The game has no way to add a pause-menu tab, so `Patches/GameMenuPatches.cs` patches it in. Its approach rests on three facts from the 1.6.15 IL:
 
-- `GameMenu`'s constructor builds `tabs` and `pages` as matching lists, so a postfix appends one of each.
+- `GameMenu`'s constructor builds `tabs` and `pages` as matching lists, so a postfix appends one of each. The tab is drawn left of the first vanilla tab, but stays last in both lists because the game opens tabs by hardcoded number.
 - Tab switching turns a tab's name into a page number with a hardcoded lookup that returns -1 for any name it doesn't know. A postfix maps ours.
 - `draw` picks each tab's icon by the same hardcoded names and draws nothing for ours. The icon is drawn from the mod's own overlay pass instead.
 

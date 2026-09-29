@@ -12,6 +12,7 @@
   - [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
   - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
   - [ ] [Verify flashcards](#verify-flashcards)
+  - [ ] [Verify language activation](#verify-language-activation)
 - [ ] Segment data
   - [ ] [Consolidate redundant glosses](#consolidate-redundant-glosses)
 - [ ] Code
@@ -36,7 +37,7 @@ This repo is a copy of the Japanese mod, being turned into a **Simplified Chines
 - **Identity.** `manifest.json` is `com.galacticrailroad.languagestudy.chinese`, "Language Study (Chinese)", and the `.csproj` builds `LanguageStudyChinese.dll` into `Mods/LanguageStudyChinese`. Before this, a build would have overwritten the Japanese mod's deployed folder and shared its flashcard store and Harmony ID.
 - **Source text.** All 178 tables the ja pipeline covered are extracted in zh-CN to `tools/extracted-strings/{zh,data-zh,content-zh}` (see that README to regenerate). `segtool.py audit` accounts for every zh-CN asset. The only ones that aren't ja's are fonts and map textures.
 - **Pipeline.** `segtool.py` authors `assets/segments/zh/` with the schema `{chinese, english, segments[{text, pinyin, gloss}]}`. The new `pinyin.py` normalises pinyin and checks it (one syllable per hanzi, each a dictionary reading of its character, via pypinyin), and warns where a multi-hanzi reading differs from pypinyin's phrase dictionary. Conventions are in `tools/segment-data/README.md`.
-- **Runtime, minimal.** `ModConfig.SourceLanguage` defaults to `zh`, and `SegmentDataLoader` reads the new schema (pinyin goes into `TextSegment.Reading`, unmodified). Nothing displays pinyin yet.
+- **Runtime, minimal.** `ModConfig.SourceLanguage` defaults to `zh` (since replaced by the manifest's `StudyLanguage`), and `SegmentDataLoader` reads the new schema (pinyin goes into `TextSegment.Reading`, unmodified). Nothing displays pinyin yet.
 - **Removed:** `assets/segments/ja/` (22 MB that would have shipped; the 9 files unit tests read are kept in `tools/ModLogic.Tests/fixtures/segments-ja/`), `kana_to_romaji.py`, `romaji_to_kana.py`, `kana-review.tsv`, `migrate_names.py.retired`, and the ja kana TODOs. All of it is in git history. The explanatory-translation stub is now `zh.json`.
 - **Found:** the zh `SmallFont` (6,988 glyphs) has the 2nd- and 4th-tone vowels (á à é è í ì ó ò ú ù) and ü, but **not** the 1st tone (ā ē ī ō ū), the 3rd tone (ǎ ě ǐ ǒ ǔ), ǖ ǘ ǚ ǜ, or ★. The SpriteText font `Fonts/Chinese.fnt` has none of them.
 
@@ -101,10 +102,20 @@ Sentence translation for achievements and secret notes is wired up and unit-test
 
 Click-to-save and the pause-menu tab are built but haven't been tried live. Check:
 
-- the tab icon's placement and look (a Lost Book on a menu tile, since vanilla's tab art has no blank frame)
+- the tab icon's placement (left of the Inventory tab, and whether it clears the menu frame's corner) and look (a Lost Book on a menu tile, since vanilla's tab art has no blank frame)
 - that suppressing the click really stops dialogue from advancing and shop rows from being bought
 - the card back's layout at different UI scales
 - that the ★ before a saved word's gloss renders in the hover label
+
+### Verify language activation
+
+Activation by game language and the title-screen prompt are built and the decision logic is unit-tested, but none of it has been tried live (see `HowItWorks.md`). Check:
+
+- Game in 中文: `Active` in the log with no prompt, and hover, the flashcards tab and `G`/`Z` all work.
+- Game in English, one copy: the popup appears once the title settles. Yes switches to Chinese, the choice survives a restart, and the mod activates. No leaves it inactive (no hover, no tab, commands report inactive). Switching to Chinese by hand then activates it, and switching back deactivates it.
+- Two copies: install the Japanese mod (with this activation change) alongside this one, both enabled. Both load, one chooser appears, each choice activates only its own copy, Cancel leaves both inactive, and whichever copy loads second gets suffixed commands (`_zh` or `_ja`).
+- The `Glyph capture: …` line shows every renderer on after activating, including after switching back and forth.
+- The chooser with a controller: snapping between buttons, and B/Escape as Cancel.
 
 ### Consolidate redundant glosses
 

@@ -13,7 +13,7 @@ The goal is to let you play the game in the language you're learning without hav
 2. Download the latest release from this repository's
    [Releases page](https://github.com/sesameneko/LearnChineseStardewValleyMod/releases) (none yet) and unzip it into your `Mods` folder.
 3. *(Optional but recommended)* Install [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098) to change the mod's settings and keybinds in game.
-4. Launch the game through SMAPI and set the in-game language to **中文 (Chinese)**.
+4. Launch the game through SMAPI. If the game isn't in **中文 (Chinese)**, the mod offers to switch it for you on the title screen. The mod only runs while the game is in Chinese. It stays inactive in any other language, so it can be installed alongside the copies of this mod for other languages; if several are installed, the title screen asks which language to study.
 
 ### Building from source
 

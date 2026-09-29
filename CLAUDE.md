@@ -10,7 +10,7 @@ A SMAPI mod for Stardew Valley that translates the game's UI for language learne
 
 - The data pipeline is already Chinese. `tools/segment-data/` authors `assets/segments/zh/` with pinyin readings, and `tools/extracted-strings/{zh,data-zh,content-zh}` hold the source text.
 - Much of the runtime and the docs still describe Japanese: kana/romaji labels, `KanaRomaji.cs`, the ja HUD clock, macron-only font synthesis, and ja examples in comments and `HowItWorks.md`. Treat that as the inherited design, not as a statement of what zh needs, and check "Chinese migration" before changing it.
-- The mod has its own identity (`com.galacticrailroad.languagestudy.chinese`, deployed to `Mods/LanguageStudyChinese`) so it never overwrites the Japanese mod. If both are installed, both load and both patch the same methods, so disable one (prefix its folder with `.`) when testing.
+- The mod has its own identity (`com.galacticrailroad.languagestudy.chinese`, deployed to `Mods/LanguageStudyChinese`) so it never overwrites the Japanese mod. Its manifest's `StudyLanguage` is `zh`, so it runs only while the game is in 中文, and it can be installed alongside a Japanese copy that has the same activation code (see "Language activation" in `HowItWorks.md`). A Japanese copy from before that change still patches in every language, so disable it (prefix its folder with `.`) when testing.
 - `origin` is this fork's repo (`sesameneko/LearnChineseStardewValleyMod`). The Japanese repo is the `upstream-ja` remote, for pulling across fixes to shared code. Never push to it.
 
 Further reading:
@@ -50,13 +50,17 @@ A game restart is slow, so avoid needing one:
 
 ## Invariants
 
+- **A copy is active only while the game language equals its manifest `StudyLanguage`.** Copies for other languages may be installed alongside it (see `HowItWorks.md`), so:
+  - Harmony patches exist only while active. `ApplyPatches` runs on each activation, and deactivation calls `UnpatchAll(this.harmony.Id)`. Never call it without the ID: that removes every mod's patches.
+  - Every new event handler returns early unless `IsActive`, and every new console command goes through `AddCommand`.
+  - Activation is polled in `OnLanguageTick`, never driven by `LocaleChanged`, because `TranslationIndex.Build` flips the language mid-call.
 - **`TranslationMap` lookup order:** exact whole match, then paragraph by paragraph, then templates on the whole text. A template tried earlier swallows the following paragraphs.
 - **Pinyin is stored one syllable per hanzi, space-separated, with tone marks** (`牧场` → `mù chǎng`), and `tools/segment-data/pinyin.py` defines and checks it. Runtime code that displays or compares pinyin must read that form. Joining syllables into words (`mùchǎng`) is a display step, never a stored one. (`KanaRomaji.cs` is Japanese-only and will be removed in the migration. Its Python twin is already gone.)
 - **Keep `SegmentSource`** on any new path that builds segments with `with { ... }`. Drop it where the text no longer comes from one entry, as `SegmentIndex.Fill` does. Flashcard sentence pointers depend on it.
 - **One segment schema** for every file in `assets/segments/zh/`: `{chinese, english, segments[{text, pinyin, gloss}]}`. `SegmentDataLoader` silently skips anything else. `segtool.py merge` enforces that the segments reproduce the source string character for character, and that each segment's pinyin is a dictionary reading of its hanzi.
 - **Text word hover should ignore** is decided by content in `TextHitTest.IsHoverable`: a fallback-split word with no letters (the hotbar's 1-9, 0, -, =) is skipped; words from segment data never are.
 - **Glyph-capture transpilers** leave a method alone and log a warning when the IL doesn't match. After a game update, check the `Glyph capture: ...` startup log line.
-- **`TranslationIndex` is built on `SaveLoaded`, never during a draw**, because it temporarily changes the language code.
+- **`TranslationIndex` is built on `SaveLoaded` or on activation (an update tick), never during a draw**, because it temporarily changes the language code.
 - Keybinds are checked with `.JustPressed()` in `OnButtonsChanged`, not `Input.ButtonPressed`, which fires twice for multi-key `KeybindList`s.
 
 ## Code map
@@ -66,6 +70,7 @@ A game restart is slow, so avoid needing one:
 - Word hover: `Patches/GlyphCapturePatches`, `Patches/TextCapturePatches` → `GlyphHitTest` (pure), with `TextHitTest` as the fallback → `WordHoverOverlay`. Data comes from `SegmentDataLoader` / `SegmentIndex`, plus `ClockSegments` (pure) for the ja HUD clock.
 - Font: `ExtendedFont` + `FontGlyphSynth` (pure) add macron vowels to `smallFont`. `FontSafeText` falls back to doubled vowels.
 - Flashcards: `FlashcardDeck`, `FlashcardContext` (pure), `FlashcardStore`, `FlashcardCapture`, `FlashcardsPage`, `Patches/GameMenuPatches`.
+- Activation: `LanguageActivation` (pure: activation tracker, prompt decision) → `LanguagePrompt` (finds sibling copies, shows the title-screen popup) / `LanguageChoiceMenu`.
 - `ModConfig.cs` is the config (`config.json`); `manifest.json`'s `Version` should match releases.
 - `tools/` holds standalone projects, not part of the mod:
   - `XnbStringTool` (+ `.Tests`): `.xnb` reader/writer, used because the game's assemblies won't load on arm64.
