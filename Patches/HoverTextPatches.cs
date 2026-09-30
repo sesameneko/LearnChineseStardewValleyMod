@@ -78,6 +78,14 @@ namespace LanguageStudyStardewValleyMod.Patches
                 return false;
             }
 
+            // drawn as normal, but not captured: nothing to translate, linger or freeze
+            if (HoverExclusion.InExcludedMenu)
+            {
+                DrawTrace.Note("vanillaTooltip(excluded menu)");
+                capturing = false;
+                return true;
+            }
+
             DrawTrace.Note(TooltipReissue.IsReissuing ? "reissue" : "vanillaTooltip");
             capturing = true;
             haveBox = false;

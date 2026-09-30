@@ -10,13 +10,15 @@
   - [ ] [Phase 3: tests, names and docs](#phase-3-tests-names-and-docs)
   - [ ] [Phase 4: verify in game](#phase-4-verify-in-game)
 - [ ] In-game checks (inherited from the ja mod; redo in zh as part of phase 4)
-  - [ ] [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)
   - [ ] [Verify achievements and notes](#verify-achievements-and-notes)
   - [ ] [Verify flashcards](#verify-flashcards)
   - [ ] [Verify language activation](#verify-language-activation)
   - [ ] [Verify title-screen readings](#verify-title-screen-readings)
+  - [ ] [Verify GMCM hover exclusion](#verify-gmcm-hover-exclusion)
+  - [ ] [Verify dialogue bubble](#verify-dialogue-bubble)
 - [ ] Segment data
   - [ ] [Consolidate redundant glosses](#consolidate-redundant-glosses)
+  - [ ] [Redundant authored English](#redundant-authored-english)
 - [ ] Code
   - [ ] [Optimize composite lookup](#optimize-composite-lookup)
     - [ ] N-gram index for substrings
@@ -26,6 +28,14 @@
   - [ ] [Remove debug logs](#remove-debug-logs)
   - [ ] [Guard gendered-string splitting](#guard-gendered-string-splitting)
 - [ ] Features
+  - [ ] [Dialogue translation bubble](#dialogue-translation-bubble)
+    - [x] English by key
+    - [x] Page splitting
+    - [x] Keyed dialogue
+    - [x] Inline event lines (`speak`, `message`)
+    - [ ] Event questions (`question`, `quickQuestion`)
+    - [x] Icon and bubble
+    - [ ] Code-built strings
   - [ ] [Explanatory translation mode](#explanatory-translation-mode)
 
 ## Details
@@ -80,7 +90,7 @@ This repo is a copy of the Japanese mod, being turned into a **Simplified Chines
 #### Phase 3: tests, names and docs
 
 - Move `DataTextShapesTests` and `RealStringTableTests` to the zh extracted data, and the real-data cases in `SegmentIndexTests` and `FlashcardTests` from `tools/ModLogic.Tests/fixtures/segments-ja/` to `assets/segments/zh/`. Move the `FlashcardTests` samples to Chinese, and port `ClockSegmentsTests`. Then delete `tools/extracted-strings/{ja,data-ja,content-ja}` and the fixtures.
-- Rename Japanese-specific identifiers: `SourceEntry.Japanese`, `ContextBlock.Japanese`, `ClockSegments`' `(Japanese, …)` tuples and the ja examples in comments (`SegmentIndex`, `TextHitTest`, `FlashcardDeck`, `FlashcardContext`, `TranslationMap`).
+- Rename Japanese-specific identifiers: `SourceEntry.Japanese`, `ContextBlock.Japanese`, `ClockSegments`' `(Japanese, …)` tuples, the `japanese` parameters in `DialoguePages` and the ja examples in comments (`SegmentIndex`, `TextHitTest`, `FlashcardDeck`, `FlashcardContext`, `TranslationMap`).
 - Rewrite `HowItWorks.md` (hover label, readings, macron font, HUD clock, fallback split) and `README.md` for Chinese.
 - Optionally rename the `.sln`/`.csproj`, which changes the build command in `CLAUDE.md`. (The repo is done: `origin` is `sesameneko/LearnChineseStardewValleyMod` since 2026-09-28, and the Japanese repo is `upstream-ja`.)
 
@@ -92,16 +102,7 @@ With the game set to 中文 and the Japanese mod disabled (prefix its `Mods` fol
 - `ls_build_index zh en`, then `ls_lookup` on an item name.
 - The `Glyph capture: ...` startup line is `on` for every renderer, and `ls_dump_text` shows glyph counts on Chinese dialogue. SpriteText uses `Fonts/Chinese.fnt` here, and the transpilers were only tested with the Japanese font's line height.
 - Tooltip translation, word hover on a tooltip, dialogue, mail, a quest and the HUD clock, with the pinyin tone marks drawing correctly.
-- The inherited checks below: dialogue pages, achievements and notes, and flashcards.
-
-### Verify dialogue sentence translation
-
-Entries are keyed by the whole raw string, markup and all (`$h`, `#$b#`…), and the game draws one page at a time with the markup removed.
-
-- Word hover handles this now: `SegmentIndex`'s composite lookup, with page 2 of Lewis's `Introduction` verified live 2026-09-25.
-- `TranslationMap` has no equivalent, so a non-first page likely gets no sentence translation.
-- Check live. If it misses, split entries at `#$b#` / `#$e#` on load and strip the markup. Page breaks always fall on a segment boundary (`merge` enforces it), so that split is clean.
-- Doing the same split for `SegmentIndex` would make pages exact lookups (see [Optimize composite lookup](#optimize-composite-lookup)).
+- The inherited checks below: the dialogue bubble, achievements and notes, flashcards, and GMCM hover exclusion.
 
 ### Verify achievements and notes
 
@@ -118,6 +119,28 @@ Click-to-save and the pause-menu tab are built but haven't been tried live. Chec
 - that suppressing the click really stops dialogue from advancing and shop rows from being bought
 - the card back's layout at different UI scales
 - that the ★ before a saved word's gloss renders in the hover label
+
+### Verify GMCM hover exclusion
+
+`HoverExclusion` turns off tooltip capture, word recording and freezing while GMCM's menu is open. It finds the menu by namespace (`GenericModConfigMenu.*`) along the active menu's child chain, or in `TitleMenu.subMenu`. Not yet tried live. Check:
+
+- no translation box or word label in GMCM, from the title screen and from the in-game Options tab
+- hover works again as soon as GMCM closes
+- a tooltip locked before opening GMCM is dropped rather than drawn over it
+
+### Verify dialogue bubble
+
+The [dialogue translation bubble](#dialogue-translation-bubble) is built and its page mapping is unit-tested against the real tables, but it hasn't been tried live. Run `ls_dialogue` with a box open to see how it resolved. Check:
+
+- the capture patches apply (no "Failed to patch dialogue parsing" in the log) and `ls_dialogue` shows a key and page-to-segment map for villager dialogue
+- the English matches the page on screen through a multi-page conversation (`#$b#`), and on a `$q` question with its answers listed
+- a `$c` line (random choice) shows the branch that was actually picked
+- an inline event `speak` line resolves. `ls_dialogue` shows the event command it was captured at. If `currentCommand` has already moved past the `speak`, the ±3 search should still find it.
+- a `message` box in an event, and an object dialogue (`drawObjectDialogue`) outside one
+- the icon's placement on the box's top-left (not over the portrait, and clear of question boxes of any height), and that it's hidden while the box opens and closes
+- that clicking the icon doesn't advance the page
+- the bubble with 3+ sentences, in a small window and at a large UI scale: it should stay on screen, going below the icon when there's no room above
+- (zh) that the English in the bubble draws correctly in `SpriteText`, which uses `Fonts/Chinese.fnt` in 中文, and that page mapping holds with the wider hanzi line wrapping
 
 ### Verify language activation
 
@@ -154,6 +177,14 @@ Review redundancy in the segment data, and consider pointing repeats at a shared
 
 **Weigh the gain first:** bundled JSON size, load time and memory, against a more complex authoring format (`segtool` `merge`/`validate`/`batch` and the TSV worklists all assume inline fields). The consistency gain may matter more than the size.
 
+### Redundant authored English
+
+Every segment entry has an authored `english` field (all 17,255 entries in the 178 files, counted 2026-09-29), which is a literal translation written alongside the official one. The official English is already in `TranslationMap`, taken from the game's own tables. Only the flashcard back uses the authored text, where it's shown above the official "Game:" line.
+
+In the user's words, this was "a bad oversight" and "a huge waste of resources": it was never meant to be authored separately. It's also not identical to the official text. Of the 3,277 dialogue entries whose keys are in the English tables, only 207 match once markup and whitespace are stripped.
+
+**Consistency now matters more than fixing it.** Keep writing `english` for new entries, the same way, so the data stays uniform. Don't strip or regenerate the field, and don't make it optional in the schema.
+
 ### Optimize composite lookup
 
 `SegmentIndex.MatchComposite` is the word-hover lookup for text the game joins from several entries (quest descriptions, clothing + `可染性。`, dialogue pages). It runs only after every other lookup misses and is memoised per drawn string. But the first frame a new string is hovered pays for it: ~40ms for the 67-char Lewis parsnip quest and ~20ms for a string that matches nothing, against the full 15k-entry index. That's a visible hitch, and it grows with text length. Costs, biggest first:
@@ -162,7 +193,7 @@ Review redundancy in the segment data, and consider pointing repeats at a shared
 2. Every position tries every length as a whole-entry lookup, allocating a substring each time (O(n²) allocations). Walk a trie of the spaceless keys instead; it gives every entry starting at a position in one pass.
 3. Each position runs every template whose anchor appears in the text. Only try one where its first literal actually starts at that position.
 
-Alternatives: precompute dialogue pages at load by splitting entries at `#$b#` / `#$e#` (see [Verify dialogue sentence translation](#verify-dialogue-sentence-translation)), which moves the commonest case to an exact lookup; or run the composite off the draw thread.
+Alternatives: precompute dialogue pages at load by splitting entries at `#$b#` / `#$e#` (see [Dialogue translation bubble](#dialogue-translation-bubble)), which moves the commonest case to an exact lookup; or run the composite off the draw thread.
 
 ### Quiet fallback log
 
@@ -175,6 +206,22 @@ Remove the debug logging added while troubleshooting.
 ### Guard gendered-string splitting
 
 Some locales have known bugs in how the game's `^` gender-variant delimiter is used. Where splitting a string on `^` gives something malformed, show no translation rather than a garbled one. There's no sign this has been done.
+
+### Dialogue translation bubble
+
+Built, not yet verified in game (see [Verify dialogue bubble](#verify-dialogue-bubble)). While a `DialogueBox` is open, a language icon on its top-left corner shows the page's official English in a speech bubble on hover. How it works is in `HowItWorks.md`. It departs from the original plan in two places, both simpler:
+
+- **Page splitting records the game's parse instead of mirroring it.** `DialogueCapturePatches` watches which segments `parseDialogueString` feeds to `checkForSpecialCharacters`, and `DialoguePages` maps each page back to its raw `#` segment. Random and state-dependent branches (`$c`, `$1`, `$q`) come out right without re-evaluating them. `new Dialogue(null, null, english)` was ruled out: it advances `Game1.random`, and `%fork` sets an event flag.
+- **`FromTranslation` arguments are recovered, not captured.** The `{0}` values are found by matching the Chinese template against the parsed text (`DialoguePages.TemplateArguments`), so no `FromTranslation` postfix or `ConditionalWeakTable` of arguments is needed.
+
+Still to do:
+
+1. **Event questions.** `question` and `quickQuestion` hold several strings in one command, and which argument is which hasn't been checked. They currently fall through to the translation map, which misses.
+2. **Code-built strings.** String boxes (`drawObjectDialogue(string)`, `new DialogueBox(string)`) outside events are looked up in `TranslationMap` as a whole and page by page. That covers strings loaded whole and templates the map knows, but not text built from several `LoadString` calls. The plan for those: record `(path, args, result)` from the `LoadString` / `LoadStringReturnNullIfNotFound` overloads in a buffer cleared every tick, and have the `DialogueBox` constructor work out which recent results make up its text. `LoadString` is called constantly, so the postfix has to be cheap, and it should ignore the calls `TranslationIndex.Build` makes.
+3. **Structure mismatches.** In zh-CN, one shared dialogue entry splits into a different number of `#` segments than the English: Leah's `Mon_22` is one page in Chinese and several in English (counted 2026-09-30; the ja tables had 9, three of them `/`-split gendered lines). It shows the whole entry. The 12 `OptionsPage.cs.11289`-`11300` inventory-slot labels also differ, but only because the English uses a literal `#` (the Chinese has `＃`), and they're never dialogue.
+4. `$d`, `$p` and `$query` pages (45 entries) aren't mapped: those commands swap in text from inside their own segment. They fall back to the whole entry, which leaves out the command segments, so the icon can be missing on them.
+
+Open: what a click on the icon should do, if anything (freezing the bubble, like `Z`, is the obvious candidate), and whether a held button should show the bubble for controller players. `textAboveHead` has no box, so it's out of scope.
 
 ### Explanatory translation mode
 

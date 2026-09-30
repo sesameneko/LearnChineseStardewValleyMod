@@ -155,7 +155,8 @@ namespace LanguageStudyStardewValleyMod.Patches
             else
                 SpriteFontCalls++;
 
-            if (!Enabled || suppressed)
+            // with nothing recorded, word hover finds nothing and click-to-save lets the click through
+            if (!Enabled || suppressed || HoverExclusion.InExcludedMenu)
                 return;
 
             // world-space text (damage numbers, speech bubbles) is drawn in a different coordinate

@@ -285,7 +285,8 @@ namespace LanguageStudyStardewValleyMod
         /// a box drawn in the wrong place.
         /// </summary>
         /// <summary>
-        /// The label text: the gloss, then the pinyin, one per line.
+        /// The label text: the pinyin, then the gloss, one per line -- English last, matching the
+        /// title-screen bubbles.
         ///
         /// The pinyin is joined per word and drawn with tone marks where the font has them, tone
         /// numbers where it doesn't (<see cref="Pinyin.ForFont"/>). A reading with no hanzi in it
@@ -305,7 +306,7 @@ namespace LanguageStudyStardewValleyMod
             string pinyin = Pinyin.ForFont(segment.Reading, ExtendedFont.DrawableCharacters(Game1.smallFont));
             return pinyin.Length == 0 || pinyin == segment.Text.Trim()
                 ? gloss
-                : $"{gloss}\n{pinyin}";
+                : $"{pinyin}\n{gloss}";
         }
 
         /// <summary>Whether the word is already a flashcard in the current source language.</summary>
