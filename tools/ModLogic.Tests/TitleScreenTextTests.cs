@@ -30,9 +30,9 @@ public class TitleScreenTextTests
     }
 
     [Fact]
-    public void DescribesHanziThenPinyinThenEnglish()
+    public void DescribesPinyinThenEnglish()
     {
-        Assert.Equal("退出\ntuìchū\nExit (lit. withdraw, go out)", TitleScreenText.Buttons["Exit"].Describe(p => Pinyin.Display(p)));
-        Assert.Equal("加载\njia1zai4\nLoad", TitleScreenText.Buttons["Load"].Describe(p => Pinyin.ForFont(p, null)));
+        Assert.Equal("tuìchū\nExit (lit. withdraw, go out)", TitleScreenText.Buttons["Exit"].Describe(p => Pinyin.Display(p)));
+        Assert.Equal("jia1zai4\nLoad", TitleScreenText.Buttons["Load"].Describe(p => Pinyin.ForFont(p, null)));
     }
 }

@@ -2,13 +2,16 @@ using System.Collections.Generic;
 
 namespace LanguageStudyStardewValleyMod
 {
-    /// <summary>A reading of a piece of Chinese text: its hanzi, stored pinyin and English.</summary>
+    /// <summary>
+    /// A reading of a piece of Chinese text: its hanzi, stored pinyin and English. The hanzi is kept
+    /// to check the pinyin against, but isn't shown: the button already displays it.
+    /// </summary>
     public sealed record TitleReading(string Hanzi, string Pinyin, string English = "")
     {
-        /// <summary>The lines to show, hanzi first, with the stored pinyin passed through <paramref name="pinyinForFont"/>.</summary>
+        /// <summary>The lines to show, pinyin then English, with the stored pinyin passed through <paramref name="pinyinForFont"/>.</summary>
         public string Describe(System.Func<string, string> pinyinForFont)
         {
-            string text = $"{this.Hanzi}\n{pinyinForFont(this.Pinyin)}";
+            string text = pinyinForFont(this.Pinyin);
             return this.English == "" ? text : $"{text}\n{this.English}";
         }
     }
