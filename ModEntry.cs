@@ -178,6 +178,13 @@ namespace LanguageStudyStardewValleyMod
                 this.OnLookupCommand
             );
 
+            this.AddCommand(
+                "ls_dialogue",
+                "Reports how the dialogue translation bubble resolved the open dialogue box: where its text came from, "
+                + "which raw segment each page maps to, and the target-language text found. Usage: ls_dialogue",
+                this.OnDialogueCommand
+            );
+
             if (this.renamedCommands)
                 Log($"Another copy of the mod already registered the ls_* console commands, so this copy's end in _{this.CommandSuffix} (e.g. ls_lookup_{this.CommandSuffix}).");
 
@@ -235,6 +242,7 @@ namespace LanguageStudyStardewValleyMod
             TooltipLinger.Clear();
             TooltipOverlay.Clear();
             TextCapturePatches.ConsumeFrame();
+            DialogueTranslation.Clear();
 
             Log($"Inactive: the game language is no longer {this.StudyLanguageName}.");
         }
@@ -344,6 +352,16 @@ namespace LanguageStudyStardewValleyMod
                 Log($"Failed to apply Harmony patches -- hover translation will be inactive. {ex}", LogLevel.Error);
             }
 
+            // separately, so a dialogue change in some game update costs only the translation bubble
+            try
+            {
+                DialogueCapturePatches.Apply(this.harmony);
+            }
+            catch (Exception ex)
+            {
+                Log($"Failed to patch dialogue parsing -- dialogue boxes won't get a translation bubble. {ex}", LogLevel.Error);
+            }
+
             // separately, so a pause-menu change in some game update costs only the tab
             try
             {
@@ -447,6 +465,14 @@ namespace LanguageStudyStardewValleyMod
             if (!this.IsActive || !Context.IsWorldReady)
                 return;
 
+            // the bubble icon sits on the box, and DialogueBox.receiveLeftClick doesn't check where a
+            // click lands, so without this hovering the icon and clicking would turn the page
+            if (e.Pressed.Contains(SButton.MouseLeft) && DialogueBubbleOverlay.IsCursorOverIcon())
+            {
+                this.Helper.Input.Suppress(SButton.MouseLeft);
+                return;
+            }
+
             // a click on a hovered word saves it as a flashcard, and goes no further: the game
             // underneath (a dialogue box, a shop row) never sees it
             if (currentConfig.ClickToSaveWords
@@ -513,6 +539,10 @@ namespace LanguageStudyStardewValleyMod
                 FrozenTooltip.Unfreeze();
 
             QuestLogProbe.Poll(this.Helper);
+
+            // here rather than while drawing: resolving an event line parses scripts
+            DialogueTranslation.Update(this.TranslationIndex);
+            DialogueBubbleOverlay.Update(this.Helper);
         }
 
         private void OnDayStart(object? sender, DayStartedEventArgs e)
@@ -540,6 +570,7 @@ namespace LanguageStudyStardewValleyMod
                 return;
 
             this.TranslationIndex.Build(this.StudyLanguage, currentConfig.TargetLanguage);
+            DialogueTranslation.Clear();
         }
 
         /// <summary>Drops any tooltip captured last frame that was never drawn, so nothing goes stale.</summary>
@@ -640,6 +671,7 @@ namespace LanguageStudyStardewValleyMod
             TooltipLinger.Draw(spriteBatch);
 
             TooltipOverlay.Draw(spriteBatch);
+            DialogueBubbleOverlay.Draw(spriteBatch);
             this.DrawWordHover(spriteBatch);
         }
 
@@ -777,6 +809,7 @@ namespace LanguageStudyStardewValleyMod
             string target = args.Length > 1 ? args[1] : currentConfig.TargetLanguage;
 
             this.TranslationIndex.Build(source, target);
+            DialogueTranslation.Clear();
         }
 
         private void OnLogMissesCommand(string command, string[] args)
@@ -871,6 +904,45 @@ namespace LanguageStudyStardewValleyMod
 
             if (shown == 0)
                 Log("[dump] nothing matched -- is the text actually on screen right now?", LogLevel.Warn);
+        }
+
+        private void OnDialogueCommand(string command, string[] args)
+        {
+            if (Game1.activeClickableMenu is not DialogueBox box)
+            {
+                Log("No dialogue box is open.", LogLevel.Warn);
+                return;
+            }
+
+            if (box.characterDialogue is { } dialogue)
+            {
+                if (DialogueCapturePatches.TryGetSource(dialogue, out var source))
+                {
+                    Log($"[dialogue] key {source.TranslationKey ?? "(none)"}, alternative {source.Alternative}, raw {SegmentIndex.Quote(source.Master)}");
+                    if (source.Event is { } line)
+                        Log($"[dialogue] built during event '{line.AssetName}' at command #{line.CurrentCommand} of {line.Commands.Length}: "
+                            + (line.CurrentCommand >= 0 && line.CurrentCommand < line.Commands.Length ? SegmentIndex.Quote(line.Commands[line.CurrentCommand]) : "(out of range)"));
+
+                    for (int i = 0; i < dialogue.dialogues.Count; i++)
+                    {
+                        int segment = i < source.LineSegments.Length ? source.LineSegments[i] : -1;
+                        Log($"[dialogue] {(i == dialogue.currentDialogueIndex ? ">" : " ")} page {i} <- segment {segment}: {SegmentIndex.Quote(dialogue.dialogues[i].Text ?? "")}");
+                    }
+                }
+                else
+                    Log("[dialogue] this Dialogue has no parse record.");
+            }
+            else if (DialogueCapturePatches.TryGetSource(box, out var boxSource))
+            {
+                Log($"[dialogue] string box, {boxSource.PageCount} page(s) at creation, {box.dialogues.Count} left: {SegmentIndex.Quote(boxSource.Text)}");
+                if (boxSource.Event is { } line)
+                    Log($"[dialogue] built during event '{line.AssetName}' at command #{line.CurrentCommand} of {line.Commands.Length}");
+            }
+            else
+                Log("[dialogue] this box has no record.");
+
+            Log($"[dialogue] resolved: {DialogueTranslation.Explanation}");
+            Log($"[dialogue] text: {(DialogueTranslation.Text is { } text ? SegmentIndex.Quote(text) : "(none -- the icon is hidden)")}");
         }
 
         private void OnLookupCommand(string command, string[] args)

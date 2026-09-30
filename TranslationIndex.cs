@@ -86,7 +86,8 @@ namespace LanguageStudyStardewValleyMod
         // villager dialogue, festival chatter, TV and schedule lines -- flat tables that join on
         // shared keys like any other. Data/Events is left out: every value is a command script,
         // which never matches drawn text as a whole (its spoken lines are covered by the
-        // segment data instead, where tools/segment-data lifts them out of the scripts).
+        // segment data instead, where tools/segment-data lifts them out of the scripts). It is
+        // loaded, though, for the dialogue bubble to look lines up in: see KeyedOnlyTables.
         .Concat(Family("Characters/Dialogue",
                 "Abigail", "Alex", "Caroline", "Clint", "Demetrius", "Dwarf", "Elliott", "Emily", "Evelyn",
                 "George", "Gil", "Gus", "Haley", "Harvey", "Jas", "Jodi", "Kent", "Krobus", "Leah", "Leo",
@@ -106,6 +107,24 @@ namespace LanguageStudyStardewValleyMod
                 "winter25", "winter8"))
         .Concat(Family("Data/TV", "CookingChannel", "TipChannel"))
         .ToArray();
+
+        /// <summary>
+        /// Tables loaded only so the dialogue translation bubble can look entries up by key, and
+        /// never joined into <see cref="Map"/>: event scripts are command lists that never match
+        /// drawn text as a whole, and the two dialogue tables are left out of the map as they
+        /// always were, so tooltips behave as before.
+        /// </summary>
+        private static readonly string[] KeyedOnlyTables = new[] { "Data/ExtraDialogue", "Data/EngagementDialogue" }
+            .Concat(Family(EventsFolder,
+                "AbandonedJojaMart", "AnimalShop", "ArchaeologyHouse", "Backwoods", "BathHouse_Pool", "Beach", "BoatTunnel",
+                "BusStop", "CommunityCenter", "DesertFestival", "ElliottHouse", "Farm", "FarmHouse", "FishShop", "Forest",
+                "HaleyHouse", "HarveyRoom", "Hospital", "IslandFarmHouse", "IslandHut", "IslandNorth", "IslandSouth",
+                "IslandWest", "JoshHouse", "LeahHouse", "ManorHouse", "Mine", "Mountain", "QiNutRoom", "Railroad", "Saloon",
+                "SamHouse", "SandyHouse", "ScienceHouse", "SebastianRoom", "SeedShop", "Sewer", "Sunroom", "Temp", "Tent",
+                "Town", "Trailer", "Trailer_Big", "WizardHouse", "Woods"))
+            .ToArray();
+
+        private const string EventsFolder = "Data/Events";
 
         /// <summary>
         /// The two <c>Dictionary&lt;int,string&gt;</c> assets. Their raw values are records and notes
@@ -131,6 +150,39 @@ namespace LanguageStudyStardewValleyMod
 
         /// <summary>The lookup built by the last successful <see cref="Build"/>; empty until then.</summary>
         public TranslationMap Map { get; private set; } = new();
+
+        /// <summary>Every table loaded by the last <see cref="Build"/>, by asset name ("Characters/Dialogue/Abigail"), in the source language.</summary>
+        public IReadOnlyDictionary<string, Dictionary<string, string>> SourceTables { get; private set; } = new Dictionary<string, Dictionary<string, string>>();
+
+        /// <summary>The same tables in the target language.</summary>
+        public IReadOnlyDictionary<string, Dictionary<string, string>> TargetTables { get; private set; } = new Dictionary<string, Dictionary<string, string>>();
+
+        /// <summary>
+        /// Looks an entry up by a game translation key ("Characters\\Dialogue\\Abigail:Mon") or an
+        /// asset name and key, in the source or target language.
+        /// </summary>
+        public bool TryGetByKey(string translationKey, bool target, out string text)
+        {
+            text = "";
+            int colon = translationKey.IndexOf(':');
+            if (colon <= 0)
+                return false;
+
+            return this.TryGetEntry(translationKey.Substring(0, colon), translationKey.Substring(colon + 1), target, out text);
+        }
+
+        public bool TryGetEntry(string assetName, string key, bool target, out string text)
+        {
+            text = "";
+            var tables = target ? this.TargetTables : this.SourceTables;
+            return tables.TryGetValue(NormalizeAssetName(assetName), out var table) && table.TryGetValue(key, out text!);
+        }
+
+        /// <summary>The game writes asset names with either slash; the tables here are keyed with '/'.</summary>
+        public static string NormalizeAssetName(string assetName)
+        {
+            return assetName.Replace('\\', '/');
+        }
 
         /// <summary>The locale pair <see cref="Map"/> was built for, or null if it hasn't been built.</summary>
         public string? BuiltSourceLanguage { get; private set; }
@@ -170,6 +222,8 @@ namespace LanguageStudyStardewValleyMod
             this.AddShapedDataTables(map, sourceTables, targetTables);
 
             this.Map = map;
+            this.SourceTables = sourceTables;
+            this.TargetTables = targetTables;
             this.BuiltSourceLanguage = sourceLanguage;
             this.BuiltTargetLanguage = targetLanguage;
 
@@ -246,7 +300,7 @@ namespace LanguageStudyStardewValleyMod
             Dictionary<string, Dictionary<string, string>> result, string localeCode, Func<string, string> localized,
             Func<string, Dictionary<string, string>> loadStringKeyed, Func<string, Dictionary<int, string>> loadIntKeyed)
         {
-            foreach (string assetName in StringTables)
+            foreach (string assetName in StringTables.Concat(KeyedOnlyTables))
             {
                 var table = this.TryLoad(() => loadStringKeyed(localized(assetName)), assetName, localeCode);
                 if (table != null)

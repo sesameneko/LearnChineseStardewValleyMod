@@ -59,6 +59,7 @@ A game restart is slow, so avoid needing one:
 - `ModEntry.cs`: entry point. Registers SMAPI events, console commands, and Harmony patches (`ApplyPatches`, using its own `FindOverload` helper because `drawHoverText` takes 25 arguments). `ModEntry.Log(...)` works from anywhere.
 - Hover translation: `TranslationIndex` (loads the tables) → `TranslationMap` / `DataTextShapes` (pure) → `Patches/HoverTextPatches` → `TooltipLayout` (pure) / `TooltipOverlay`.
 - Word hover: `Patches/GlyphCapturePatches`, `Patches/TextCapturePatches` → `GlyphHitTest` (pure), with `TextHitTest` as the fallback → `WordHoverOverlay`. Data comes from `SegmentDataLoader` / `SegmentIndex`, plus `ClockSegments` (pure) for the ja HUD clock.
+- Dialogue bubble: `Patches/DialogueCapturePatches` (records each parsed dialogue's key and page-to-segment map) → `DialoguePages` (pure) → `DialogueTranslation` → `DialogueBubbleOverlay`.
 - Font: `ExtendedFont` + `FontGlyphSynth` (pure) add macron vowels to `smallFont`. `FontSafeText` falls back to doubled vowels.
 - Flashcards: `FlashcardDeck`, `FlashcardContext` (pure), `FlashcardStore`, `FlashcardCapture`, `FlashcardsPage`, `Patches/GameMenuPatches`.
 - Activation: `LanguageActivation` (pure: activation tracker, prompt decision) → `LanguagePrompt` (finds sibling copies, shows the title-screen popup) / `LanguageChoiceMenu`.

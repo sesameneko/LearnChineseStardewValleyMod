@@ -83,6 +83,32 @@ A frozen tooltip stays where it is with its content fixed, so the cursor can mov
 - **Hover is polled, and nothing marks it handled.** `Game1.updateActiveMenu` calls the menu's `performHoverAction` every frame, and nested menus forward it by hand. Neither it nor `receiveLeftClick` returns anything. A handler writes its result to fields (`hoverText`, `hoverItem`) that `draw()` reads later in the frame. A Harmony prefix returning `false` is therefore the way to block hover, and one on the StringBuilder `drawHoverText` suppresses every vanilla tooltip.
 - **`drawHoverText` can be re-issued at a fixed position.** Its `overrideX`/`overrideY` parameters (default `-1`, meaning "relative to the cursor") draw a pixel-identical vanilla tooltip, money line, buff icons and all, wherever they point. So the frozen tooltip is vanilla's own, re-drawn with the argument list `HoverTextPatches` recorded, rather than a hand-built copy.
 
+## Dialogue translation bubble
+
+Dialogue boxes don't go through `drawHoverText`, so they get their own translation. While a `DialogueBox` is open and the page on screen has target-language text, the title screen's language icon sits on the box's top-left corner. Hovering it shows that text in a small speech bubble, and a click on it is suppressed so it doesn't turn the page. `DialogueBubbleOverlay.cs` draws both, and `DialogueTranslation.cs` works out the text on the update tick, once per page.
+
+The drawn text can't be looked up. `TranslationMap` keys are whole raw entries, markup and all, and a page is one substituted piece of one. So the key comes from the game instead:
+
+| Source | Where the target-language entry comes from |
+|---|---|
+| NPC dialogue, keyed event lines, festival chatter | `Dialogue.TranslationKey`, looked up in `TranslationIndex.TargetTables` |
+| Inline event lines (`speak "…"`, `message "…"`) | The same command in the target-language `Data/Events` script |
+| Anything else | The whole raw text, looked up in `TranslationMap` |
+
+### Which page is which
+
+`Dialogue.parseDialogueString` (1.6.15 IL) picks one `||` alternative by `DaysPlayed / 7`, splits it on `#`, and makes a page from each text segment of two or more characters. Which segments become pages depends on game state and on `Game1.random` (`$c`, `$1`, `$q`, `$d`…), so the mod doesn't re-parse. `Patches/DialogueCapturePatches.cs` watches the parse instead. It calls `checkForSpecialCharacters` once on each segment it's about to make a page of, so the recorded (input, output) pairs say which segments it chose, and `DialoguePages.SegmentsOfLines` matches each page back to one. The target-language entry is split the same way and the same segment taken. That relies on the two locales sharing their `#` structure, which is true of 12,391 of the 12,400 shared entries. Where they differ, the bubble shows every text page of the entry instead.
+
+Running the game's own parser on the English would have been simpler, but it isn't free of side effects: it advances `Game1.random` and `%fork` sets an event flag.
+
+Values filled into `{0}` by `FromTranslation(speaker, key, sub…)` are recovered by matching the source-language template against the parsed text (`DialoguePages.TemplateArguments`), then translated through the map where they're item or NPC names. The English is then cleaned the way the game cleans the Japanese: gender switches via `Dialogue.applyGenderSwitch`, and emotion markers, gift lists and `%` tokens stripped. The player's name and other typed names are filled in, and a random word (`%adj`) becomes `...`.
+
+### Event lines
+
+An inline `speak` has no key. When the dialogue is parsed during an event, the capture records `fromAssetName`, the live `eventCommands` and `currentCommand`. The resolver finds the command holding the same text near the current one, then finds which script in that asset the event came from by comparing parsed commands, which also handles forks. It takes the command at the same index in the target-language script, and only if its name and actor match. `TranslationIndex` loads the `Data/Events` assets for this (`KeyedOnlyTables`), but doesn't join them into the map.
+
+`ls_dialogue` logs the whole resolution for the open box: the key or event command, each page's segment, and the text found or why none was.
+
 ## Word-position detection
 
 Word hover has to know which word is under the mouse. The game keeps no record of where its text ends up: every frame it draws each string one character at a time and then forgets where they went. So the mod watches the text being drawn and records where each character lands.
